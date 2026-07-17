@@ -26,7 +26,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/whoosh.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -39,7 +39,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/ping.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -52,7 +52,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/pop.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -65,7 +65,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/ping.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -78,7 +78,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/riser.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -91,7 +91,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/pop.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -104,7 +104,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -117,7 +117,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/whoosh.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -130,7 +130,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/pop.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -143,7 +143,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/error.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -156,7 +156,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/riser.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -169,7 +169,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -182,7 +182,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/error.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -195,7 +195,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/pop.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -208,7 +208,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/whoosh.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -221,7 +221,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/clock-ticking.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -234,7 +234,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -247,7 +247,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/clock-ticking.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -260,7 +260,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -273,7 +273,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/anime-wow.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -286,7 +286,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/error.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -299,7 +299,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -312,7 +312,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/pop.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -325,7 +325,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/riser.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -338,7 +338,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/anime-wow.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -351,7 +351,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -364,7 +364,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/notification.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -377,7 +377,7 @@
       "animation": "none",
       "sfx": {
         "src": "projects/common_assets/sfx/chime.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     },
@@ -390,7 +390,7 @@
       "animation": "ken-burns",
       "sfx": {
         "src": "projects/common_assets/sfx/whoosh.mp3",
-        "volume": 0.8,
+        "volume": 0.5,
         "startOffsetSeconds": 0.0
       }
     }
@@ -1856,6 +1856,13 @@
     "narration": {
       "src": "projects/fifa_prediction_project_9/voiceover.wav",
       "volume": 1.0
+    },
+    "music": {
+      "src": "projects/common_assets/calm-soothing-bgm.mp3",
+      "volume": 0.12,
+      "fadeInSeconds": 2,
+      "fadeOutSeconds": 3,
+      "loop": true
     }
   }
 }
