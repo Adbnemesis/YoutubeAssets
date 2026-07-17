@@ -1856,13 +1856,6 @@
     "narration": {
       "src": "projects/fifa_prediction_project_9/voiceover.wav",
       "volume": 1.0
-    },
-    "music": {
-      "src": "projects/common_assets/calm-soothing-bgm.mp3",
-      "volume": 0.12,
-      "fadeInSeconds": 2,
-      "fadeOutSeconds": 3,
-      "loop": true
     }
   }
 }
