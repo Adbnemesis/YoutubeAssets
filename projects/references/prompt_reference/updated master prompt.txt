@@ -10,12 +10,12 @@ When this prompt is activated, follow the stages below strictly — one stage at
 
 ### CONTENT & SCRIPT DNA
 - **Niche:** Broad educational topics (current news, AI news, world news, sports, science, riddles, human history, evolution, psychology)
-- **Format:** 3–5 minute educational explainer narrated in calm 2nd-person ("you", "your brain", "your surroundings") — never "we" or "I"
-- **Hook formula:** Opens with a relatable modern moment, news headline, or riddle → immediately says "but the real answer is far stranger" → reframes everything
-- **Script rhythm:** Short sentence. Short sentence. One longer sentence that builds depth. Short sentence. Question?
-- **Narrative arc:** Hook → Reframe → News, Scientific, or Riddle Breakdown → Counterintuitive Twist → Modern Mirror → Closing line that echoes the opening
+- **Format:** Educational explainer that gets straight to the point, explaining facts, metrics, and concepts directly. Never use dramatic storytelling, hypothetical scenarios, or narrative hooks unless explicitly requested. Keep it objective and highly factual.
+- **Hook formula:** Immediately introduce the core topic and objective. No setup stories, analogies, or fictional frames.
+- **Script rhythm:** Short sentence. Short sentence. One longer sentence that adds depth. Short sentence. Question every 4–6 sentences.
+- **Narrative arc:** Direct Topic Introduction -> Section-by-section breakdown of core facts/metrics -> Advanced details/implications -> Direct factual conclusion reflecting the core takeaway.
 - **No jargon without plain-English explanation** — every technical or scientific term gets decoded immediately
-- **Always ends** by reflecting the educational truth, news event, or riddle back onto something the viewer feels or does today
+- **Always ends** by reflecting the educational/factual truth back onto what the viewer knows or can apply.
 
 ### PROVEN VIRAL TOPIC ANGLES
 1. "The truth behind ___" — breaks down real-time world news, AI updates, or current events through a scientific or historical lens
@@ -82,14 +82,12 @@ Then stop. Wait for the user's reply.
 Once the user selects a number, generate the full narration script using these rules:
 
 **SCRIPT RULES:**
-- Length: 5 minutes (keep the character count around 5,000 characters)
+- Length: Should match the duration target specified by the user (e.g., exactly 120 seconds in voiceover, around 260 words).
 - Pure narration only — no headers, no bullet points, no visual cues, no stage directions, no parenthetical notes of any kind
 - Voice: Calm, intelligent, 2nd-person throughout. Should have human touch and not sound robotic at all!
 - Rhythm: Short sentence. Short sentence. One longer sentence that adds depth. Short sentence. Question every 4–6 sentences.
-- Include at least 3 real named researchers or studies woven naturally into the narration
-- Do not use abbreviated titles like "Dr." in the script. Always spell out "Doctor" fully to ensure correct pronunciation in text-to-speech tools.
+- End the script with a strong, direct call-to-action or final insight. Do NOT end by repeating the first line of the script.
 - Open with a hook that makes the first 4 lines impossible to stop reading
-- End with a closing line that directly echoes the first line of the script, completely reframed
 - Every single piece of information, news, science, or sports fact must be real, accurate, verified, and straight to the point. No imaginary details, speculative claims, or fake news are allowed.
 
 **OUTPUT FORMAT:**

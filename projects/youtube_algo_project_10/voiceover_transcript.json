@@ -1,0 +1,3254 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.04,
+      "text": "I spent three months to understand the YouTube shorts algorithm, and here it is in 120 seconds.",
+      "words": [
+        {
+          "word": " I",
+          "start": 0.0,
+          "end": 0.08,
+          "probability": 0.978
+        },
+        {
+          "word": " spent",
+          "start": 0.08,
+          "end": 0.28,
+          "probability": 0.937
+        },
+        {
+          "word": " three",
+          "start": 0.28,
+          "end": 0.56,
+          "probability": 0.907
+        },
+        {
+          "word": " months",
+          "start": 0.56,
+          "end": 0.72,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 0.72,
+          "end": 0.98,
+          "probability": 0.997
+        },
+        {
+          "word": " understand",
+          "start": 0.98,
+          "end": 1.4,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 1.4,
+          "end": 1.58,
+          "probability": 0.988
+        },
+        {
+          "word": " YouTube",
+          "start": 1.58,
+          "end": 1.84,
+          "probability": 0.933
+        },
+        {
+          "word": " shorts",
+          "start": 1.84,
+          "end": 2.2,
+          "probability": 0.594
+        },
+        {
+          "word": " algorithm,",
+          "start": 2.2,
+          "end": 2.66,
+          "probability": 0.978
+        },
+        {
+          "word": " and",
+          "start": 3.08,
+          "end": 3.18,
+          "probability": 0.992
+        },
+        {
+          "word": " here",
+          "start": 3.18,
+          "end": 3.34,
+          "probability": 0.788
+        },
+        {
+          "word": " it",
+          "start": 3.34,
+          "end": 3.48,
+          "probability": 0.983
+        },
+        {
+          "word": " is",
+          "start": 3.48,
+          "end": 3.56,
+          "probability": 0.994
+        },
+        {
+          "word": " in",
+          "start": 3.56,
+          "end": 3.7,
+          "probability": 0.987
+        },
+        {
+          "word": " 120",
+          "start": 3.7,
+          "end": 4.16,
+          "probability": 0.935
+        },
+        {
+          "word": " seconds.",
+          "start": 4.16,
+          "end": 5.04,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 5.52,
+      "end": 9.7,
+      "text": "The shorts feed algorithm uses a single metric as the ultimate gatekeeper for your reach.",
+      "words": [
+        {
+          "word": " The",
+          "start": 5.52,
+          "end": 5.62,
+          "probability": 0.98
+        },
+        {
+          "word": " shorts",
+          "start": 5.62,
+          "end": 5.88,
+          "probability": 0.373
+        },
+        {
+          "word": " feed",
+          "start": 5.88,
+          "end": 6.1,
+          "probability": 0.612
+        },
+        {
+          "word": " algorithm",
+          "start": 6.1,
+          "end": 6.62,
+          "probability": 0.97
+        },
+        {
+          "word": " uses",
+          "start": 6.62,
+          "end": 6.98,
+          "probability": 0.988
+        },
+        {
+          "word": " a",
+          "start": 6.98,
+          "end": 7.16,
+          "probability": 0.995
+        },
+        {
+          "word": " single",
+          "start": 7.16,
+          "end": 7.38,
+          "probability": 0.999
+        },
+        {
+          "word": " metric",
+          "start": 7.38,
+          "end": 7.74,
+          "probability": 0.999
+        },
+        {
+          "word": " as",
+          "start": 7.74,
+          "end": 7.98,
+          "probability": 0.966
+        },
+        {
+          "word": " the",
+          "start": 7.98,
+          "end": 8.12,
+          "probability": 0.996
+        },
+        {
+          "word": " ultimate",
+          "start": 8.12,
+          "end": 8.52,
+          "probability": 0.985
+        },
+        {
+          "word": " gatekeeper",
+          "start": 8.52,
+          "end": 8.96,
+          "probability": 0.955
+        },
+        {
+          "word": " for",
+          "start": 8.96,
+          "end": 9.22,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 9.22,
+          "end": 9.36,
+          "probability": 0.977
+        },
+        {
+          "word": " reach.",
+          "start": 9.36,
+          "end": 9.7,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 10.2,
+      "end": 12.06,
+      "text": "This is the viewed versus swiped away rate.",
+      "words": [
+        {
+          "word": " This",
+          "start": 10.2,
+          "end": 10.36,
+          "probability": 0.995
+        },
+        {
+          "word": " is",
+          "start": 10.36,
+          "end": 10.5,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 10.5,
+          "end": 10.64,
+          "probability": 0.989
+        },
+        {
+          "word": " viewed",
+          "start": 10.64,
+          "end": 10.88,
+          "probability": 0.891
+        },
+        {
+          "word": " versus",
+          "start": 10.88,
+          "end": 11.2,
+          "probability": 0.831
+        },
+        {
+          "word": " swiped",
+          "start": 11.2,
+          "end": 11.6,
+          "probability": 0.732
+        },
+        {
+          "word": " away",
+          "start": 11.6,
+          "end": 11.78,
+          "probability": 0.918
+        },
+        {
+          "word": " rate.",
+          "start": 11.78,
+          "end": 12.06,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 12.54,
+      "end": 16.7,
+      "text": "It tracks the exact percentage of viewers who stop to watch your short versus those who",
+      "words": [
+        {
+          "word": " It",
+          "start": 12.54,
+          "end": 12.64,
+          "probability": 0.995
+        },
+        {
+          "word": " tracks",
+          "start": 12.64,
+          "end": 12.9,
+          "probability": 0.978
+        },
+        {
+          "word": " the",
+          "start": 12.9,
+          "end": 13.18,
+          "probability": 0.998
+        },
+        {
+          "word": " exact",
+          "start": 13.18,
+          "end": 13.48,
+          "probability": 0.999
+        },
+        {
+          "word": " percentage",
+          "start": 13.48,
+          "end": 14.0,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 14.0,
+          "end": 14.2,
+          "probability": 0.999
+        },
+        {
+          "word": " viewers",
+          "start": 14.2,
+          "end": 14.48,
+          "probability": 0.997
+        },
+        {
+          "word": " who",
+          "start": 14.48,
+          "end": 14.76,
+          "probability": 0.992
+        },
+        {
+          "word": " stop",
+          "start": 14.76,
+          "end": 15.0,
+          "probability": 0.945
+        },
+        {
+          "word": " to",
+          "start": 15.0,
+          "end": 15.24,
+          "probability": 0.98
+        },
+        {
+          "word": " watch",
+          "start": 15.24,
+          "end": 15.42,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 15.42,
+          "end": 15.64,
+          "probability": 0.992
+        },
+        {
+          "word": " short",
+          "start": 15.64,
+          "end": 15.86,
+          "probability": 0.99
+        },
+        {
+          "word": " versus",
+          "start": 15.86,
+          "end": 16.24,
+          "probability": 0.835
+        },
+        {
+          "word": " those",
+          "start": 16.24,
+          "end": 16.46,
+          "probability": 0.999
+        },
+        {
+          "word": " who",
+          "start": 16.46,
+          "end": 16.7,
+          "probability": 0.856
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.7,
+      "end": 17.62,
+      "text": "swipe past it.",
+      "words": [
+        {
+          "word": " swipe",
+          "start": 16.7,
+          "end": 17.02,
+          "probability": 0.728
+        },
+        {
+          "word": " past",
+          "start": 17.02,
+          "end": 17.42,
+          "probability": 0.968
+        },
+        {
+          "word": " it.",
+          "start": 17.42,
+          "end": 17.62,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 18.02,
+      "end": 21.94,
+      "text": "To go viral today, you need at least 70-90% of those viewers to stay.",
+      "words": [
+        {
+          "word": " To",
+          "start": 18.02,
+          "end": 18.12,
+          "probability": 0.988
+        },
+        {
+          "word": " go",
+          "start": 18.12,
+          "end": 18.28,
+          "probability": 0.996
+        },
+        {
+          "word": " viral",
+          "start": 18.28,
+          "end": 18.58,
+          "probability": 0.998
+        },
+        {
+          "word": " today,",
+          "start": 18.58,
+          "end": 18.9,
+          "probability": 0.997
+        },
+        {
+          "word": " you",
+          "start": 19.22,
+          "end": 19.3,
+          "probability": 0.998
+        },
+        {
+          "word": " need",
+          "start": 19.3,
+          "end": 19.44,
+          "probability": 0.998
+        },
+        {
+          "word": " at",
+          "start": 19.44,
+          "end": 19.6,
+          "probability": 0.995
+        },
+        {
+          "word": " least",
+          "start": 19.6,
+          "end": 19.7,
+          "probability": 0.997
+        },
+        {
+          "word": " 70",
+          "start": 19.7,
+          "end": 20.06,
+          "probability": 0.993
+        },
+        {
+          "word": "-90",
+          "start": 20.06,
+          "end": 20.5,
+          "probability": 0.64
+        },
+        {
+          "word": "%",
+          "start": 20.5,
+          "end": 20.8,
+          "probability": 0.934
+        },
+        {
+          "word": " of",
+          "start": 20.8,
+          "end": 21.0,
+          "probability": 0.998
+        },
+        {
+          "word": " those",
+          "start": 21.0,
+          "end": 21.2,
+          "probability": 0.996
+        },
+        {
+          "word": " viewers",
+          "start": 21.2,
+          "end": 21.5,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 21.5,
+          "end": 21.72,
+          "probability": 0.999
+        },
+        {
+          "word": " stay.",
+          "start": 21.72,
+          "end": 21.94,
+          "probability": 0.971
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 22.44,
+      "end": 23.82,
+      "text": "How do you pass this initial gate?",
+      "words": [
+        {
+          "word": " How",
+          "start": 22.44,
+          "end": 22.56,
+          "probability": 0.986
+        },
+        {
+          "word": " do",
+          "start": 22.56,
+          "end": 22.64,
+          "probability": 0.99
+        },
+        {
+          "word": " you",
+          "start": 22.64,
+          "end": 22.74,
+          "probability": 0.999
+        },
+        {
+          "word": " pass",
+          "start": 22.74,
+          "end": 23.0,
+          "probability": 0.953
+        },
+        {
+          "word": " this",
+          "start": 23.0,
+          "end": 23.28,
+          "probability": 0.998
+        },
+        {
+          "word": " initial",
+          "start": 23.28,
+          "end": 23.62,
+          "probability": 0.997
+        },
+        {
+          "word": " gate?",
+          "start": 23.62,
+          "end": 23.82,
+          "probability": 0.982
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 24.38,
+      "end": 28.02,
+      "text": "You must optimize the first two seconds of your video to capture attention immediately.",
+      "words": [
+        {
+          "word": " You",
+          "start": 24.38,
+          "end": 24.5,
+          "probability": 0.994
+        },
+        {
+          "word": " must",
+          "start": 24.5,
+          "end": 24.74,
+          "probability": 0.999
+        },
+        {
+          "word": " optimize",
+          "start": 24.74,
+          "end": 25.02,
+          "probability": 0.947
+        },
+        {
+          "word": " the",
+          "start": 25.02,
+          "end": 25.26,
+          "probability": 0.993
+        },
+        {
+          "word": " first",
+          "start": 25.26,
+          "end": 25.44,
+          "probability": 0.993
+        },
+        {
+          "word": " two",
+          "start": 25.44,
+          "end": 25.72,
+          "probability": 0.958
+        },
+        {
+          "word": " seconds",
+          "start": 25.72,
+          "end": 26.06,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 26.06,
+          "end": 26.24,
+          "probability": 0.99
+        },
+        {
+          "word": " your",
+          "start": 26.24,
+          "end": 26.38,
+          "probability": 0.92
+        },
+        {
+          "word": " video",
+          "start": 26.38,
+          "end": 26.66,
+          "probability": 0.988
+        },
+        {
+          "word": " to",
+          "start": 26.66,
+          "end": 26.82,
+          "probability": 0.998
+        },
+        {
+          "word": " capture",
+          "start": 26.82,
+          "end": 27.12,
+          "probability": 0.997
+        },
+        {
+          "word": " attention",
+          "start": 27.12,
+          "end": 27.58,
+          "probability": 0.99
+        },
+        {
+          "word": " immediately.",
+          "start": 27.58,
+          "end": 28.02,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 28.54,
+      "end": 29.64,
+      "text": "This is the hook gate.",
+      "words": [
+        {
+          "word": " This",
+          "start": 28.54,
+          "end": 28.84,
+          "probability": 0.216
+        },
+        {
+          "word": " is",
+          "start": 28.84,
+          "end": 28.98,
+          "probability": 0.98
+        },
+        {
+          "word": " the",
+          "start": 28.98,
+          "end": 29.14,
+          "probability": 0.971
+        },
+        {
+          "word": " hook",
+          "start": 29.14,
+          "end": 29.34,
+          "probability": 0.662
+        },
+        {
+          "word": " gate.",
+          "start": 29.34,
+          "end": 29.64,
+          "probability": 0.733
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 30.18,
+      "end": 33.42,
+      "text": "If more than 40% of viewers swipe away in those first moments,",
+      "words": [
+        {
+          "word": " If",
+          "start": 30.18,
+          "end": 30.28,
+          "probability": 0.969
+        },
+        {
+          "word": " more",
+          "start": 30.28,
+          "end": 30.46,
+          "probability": 0.992
+        },
+        {
+          "word": " than",
+          "start": 30.46,
+          "end": 30.62,
+          "probability": 0.989
+        },
+        {
+          "word": " 40",
+          "start": 30.62,
+          "end": 30.94,
+          "probability": 0.942
+        },
+        {
+          "word": "%",
+          "start": 30.94,
+          "end": 31.26,
+          "probability": 0.93
+        },
+        {
+          "word": " of",
+          "start": 31.26,
+          "end": 31.44,
+          "probability": 0.995
+        },
+        {
+          "word": " viewers",
+          "start": 31.44,
+          "end": 31.74,
+          "probability": 0.97
+        },
+        {
+          "word": " swipe",
+          "start": 31.74,
+          "end": 32.08,
+          "probability": 0.949
+        },
+        {
+          "word": " away",
+          "start": 32.08,
+          "end": 32.4,
+          "probability": 0.997
+        },
+        {
+          "word": " in",
+          "start": 32.4,
+          "end": 32.62,
+          "probability": 0.995
+        },
+        {
+          "word": " those",
+          "start": 32.62,
+          "end": 32.76,
+          "probability": 0.982
+        },
+        {
+          "word": " first",
+          "start": 32.76,
+          "end": 33.04,
+          "probability": 0.981
+        },
+        {
+          "word": " moments,",
+          "start": 33.04,
+          "end": 33.42,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 33.88,
+      "end": 35.58,
+      "text": "YouTube stops distributing your video.",
+      "words": [
+        {
+          "word": " YouTube",
+          "start": 33.88,
+          "end": 34.1,
+          "probability": 0.903
+        },
+        {
+          "word": " stops",
+          "start": 34.1,
+          "end": 34.5,
+          "probability": 0.988
+        },
+        {
+          "word": " distributing",
+          "start": 34.5,
+          "end": 35.1,
+          "probability": 0.991
+        },
+        {
+          "word": " your",
+          "start": 35.1,
+          "end": 35.32,
+          "probability": 0.947
+        },
+        {
+          "word": " video.",
+          "start": 35.32,
+          "end": 35.58,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 36.06,
+      "end": 39.26,
+      "text": "A recent major platform up he changed how views are calculated.",
+      "words": [
+        {
+          "word": " A",
+          "start": 36.06,
+          "end": 36.2,
+          "probability": 0.982
+        },
+        {
+          "word": " recent",
+          "start": 36.2,
+          "end": 36.48,
+          "probability": 0.994
+        },
+        {
+          "word": " major",
+          "start": 36.48,
+          "end": 36.8,
+          "probability": 0.992
+        },
+        {
+          "word": " platform",
+          "start": 36.8,
+          "end": 37.26,
+          "probability": 0.997
+        },
+        {
+          "word": " up",
+          "start": 37.26,
+          "end": 37.52,
+          "probability": 0.278
+        },
+        {
+          "word": " he",
+          "start": 37.52,
+          "end": 37.6,
+          "probability": 0.117
+        },
+        {
+          "word": " changed",
+          "start": 37.6,
+          "end": 37.94,
+          "probability": 0.961
+        },
+        {
+          "word": " how",
+          "start": 37.94,
+          "end": 38.14,
+          "probability": 0.987
+        },
+        {
+          "word": " views",
+          "start": 38.14,
+          "end": 38.46,
+          "probability": 0.984
+        },
+        {
+          "word": " are",
+          "start": 38.46,
+          "end": 38.78,
+          "probability": 0.996
+        },
+        {
+          "word": " calculated.",
+          "start": 38.78,
+          "end": 39.26,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 39.84,
+      "end": 42.5,
+      "text": "A view is now counted the moment your video starts to play.",
+      "words": [
+        {
+          "word": " A",
+          "start": 39.84,
+          "end": 39.92,
+          "probability": 0.674
+        },
+        {
+          "word": " view",
+          "start": 39.92,
+          "end": 40.08,
+          "probability": 0.89
+        },
+        {
+          "word": " is",
+          "start": 40.08,
+          "end": 40.34,
+          "probability": 0.922
+        },
+        {
+          "word": " now",
+          "start": 40.34,
+          "end": 40.5,
+          "probability": 0.994
+        },
+        {
+          "word": " counted",
+          "start": 40.5,
+          "end": 40.86,
+          "probability": 0.928
+        },
+        {
+          "word": " the",
+          "start": 40.86,
+          "end": 41.04,
+          "probability": 0.983
+        },
+        {
+          "word": " moment",
+          "start": 41.04,
+          "end": 41.24,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 41.24,
+          "end": 41.42,
+          "probability": 0.977
+        },
+        {
+          "word": " video",
+          "start": 41.42,
+          "end": 41.72,
+          "probability": 0.975
+        },
+        {
+          "word": " starts",
+          "start": 41.72,
+          "end": 42.04,
+          "probability": 0.993
+        },
+        {
+          "word": " to",
+          "start": 42.04,
+          "end": 42.28,
+          "probability": 0.998
+        },
+        {
+          "word": " play.",
+          "start": 42.28,
+          "end": 42.5,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 42.98,
+      "end": 44.26,
+      "text": "Why is this update dangerous?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 42.98,
+          "end": 43.12,
+          "probability": 0.973
+        },
+        {
+          "word": " is",
+          "start": 43.12,
+          "end": 43.26,
+          "probability": 0.978
+        },
+        {
+          "word": " this",
+          "start": 43.26,
+          "end": 43.38,
+          "probability": 0.995
+        },
+        {
+          "word": " update",
+          "start": 43.38,
+          "end": 43.74,
+          "probability": 0.969
+        },
+        {
+          "word": " dangerous?",
+          "start": 43.74,
+          "end": 44.26,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 44.92,
+      "end": 48.24,
+      "text": "Raw views have become a vanity metric because of instant scroll buys.",
+      "words": [
+        {
+          "word": " Raw",
+          "start": 44.92,
+          "end": 45.08,
+          "probability": 0.803
+        },
+        {
+          "word": " views",
+          "start": 45.08,
+          "end": 45.34,
+          "probability": 0.955
+        },
+        {
+          "word": " have",
+          "start": 45.34,
+          "end": 45.54,
+          "probability": 0.991
+        },
+        {
+          "word": " become",
+          "start": 45.54,
+          "end": 45.86,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 45.86,
+          "end": 46.0,
+          "probability": 0.858
+        },
+        {
+          "word": " vanity",
+          "start": 46.0,
+          "end": 46.34,
+          "probability": 0.963
+        },
+        {
+          "word": " metric",
+          "start": 46.34,
+          "end": 46.7,
+          "probability": 0.998
+        },
+        {
+          "word": " because",
+          "start": 46.7,
+          "end": 47.02,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 47.02,
+          "end": 47.24,
+          "probability": 0.999
+        },
+        {
+          "word": " instant",
+          "start": 47.24,
+          "end": 47.52,
+          "probability": 0.506
+        },
+        {
+          "word": " scroll",
+          "start": 47.52,
+          "end": 47.9,
+          "probability": 0.969
+        },
+        {
+          "word": " buys.",
+          "start": 47.9,
+          "end": 48.24,
+          "probability": 0.382
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 48.74,
+      "end": 52.56,
+      "text": "The algorithm now relies heavily on average percentage viewed or av.",
+      "words": [
+        {
+          "word": " The",
+          "start": 48.74,
+          "end": 48.88,
+          "probability": 0.994
+        },
+        {
+          "word": " algorithm",
+          "start": 48.88,
+          "end": 49.32,
+          "probability": 0.991
+        },
+        {
+          "word": " now",
+          "start": 49.32,
+          "end": 49.6,
+          "probability": 0.991
+        },
+        {
+          "word": " relies",
+          "start": 49.6,
+          "end": 49.88,
+          "probability": 0.999
+        },
+        {
+          "word": " heavily",
+          "start": 49.88,
+          "end": 50.36,
+          "probability": 0.998
+        },
+        {
+          "word": " on",
+          "start": 50.36,
+          "end": 50.68,
+          "probability": 0.996
+        },
+        {
+          "word": " average",
+          "start": 50.68,
+          "end": 51.0,
+          "probability": 0.979
+        },
+        {
+          "word": " percentage",
+          "start": 51.0,
+          "end": 51.54,
+          "probability": 0.989
+        },
+        {
+          "word": " viewed",
+          "start": 51.54,
+          "end": 51.86,
+          "probability": 0.98
+        },
+        {
+          "word": " or",
+          "start": 51.86,
+          "end": 52.34,
+          "probability": 0.693
+        },
+        {
+          "word": " av.",
+          "start": 52.34,
+          "end": 52.56,
+          "probability": 0.814
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 52.56,
+      "end": 57.92,
+      "text": "It favors videos with APV over 100%, which means people are looping your video.",
+      "words": [
+        {
+          "word": " It",
+          "start": 52.56,
+          "end": 53.16,
+          "probability": 0.312
+        },
+        {
+          "word": " favors",
+          "start": 53.16,
+          "end": 53.44,
+          "probability": 0.987
+        },
+        {
+          "word": " videos",
+          "start": 53.44,
+          "end": 53.84,
+          "probability": 0.986
+        },
+        {
+          "word": " with",
+          "start": 53.84,
+          "end": 54.16,
+          "probability": 0.992
+        },
+        {
+          "word": " APV",
+          "start": 54.16,
+          "end": 54.74,
+          "probability": 0.816
+        },
+        {
+          "word": " over",
+          "start": 54.74,
+          "end": 55.08,
+          "probability": 0.629
+        },
+        {
+          "word": " 100%,",
+          "start": 55.08,
+          "end": 56.08,
+          "probability": 0.764
+        },
+        {
+          "word": " which",
+          "start": 56.08,
+          "end": 56.4,
+          "probability": 0.996
+        },
+        {
+          "word": " means",
+          "start": 56.4,
+          "end": 56.66,
+          "probability": 0.996
+        },
+        {
+          "word": " people",
+          "start": 56.66,
+          "end": 57.02,
+          "probability": 0.987
+        },
+        {
+          "word": " are",
+          "start": 57.02,
+          "end": 57.14,
+          "probability": 0.995
+        },
+        {
+          "word": " looping",
+          "start": 57.14,
+          "end": 57.42,
+          "probability": 0.828
+        },
+        {
+          "word": " your",
+          "start": 57.42,
+          "end": 57.58,
+          "probability": 0.439
+        },
+        {
+          "word": " video.",
+          "start": 57.58,
+          "end": 57.92,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 58.42,
+      "end": 61.22,
+      "text": "Rewatch behavior is the strongest signal of high quality.",
+      "words": [
+        {
+          "word": " Rewatch",
+          "start": 58.42,
+          "end": 58.7,
+          "probability": 0.79
+        },
+        {
+          "word": " behavior",
+          "start": 58.7,
+          "end": 59.2,
+          "probability": 0.861
+        },
+        {
+          "word": " is",
+          "start": 59.2,
+          "end": 59.44,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 59.44,
+          "end": 59.56,
+          "probability": 0.998
+        },
+        {
+          "word": " strongest",
+          "start": 59.56,
+          "end": 59.9,
+          "probability": 0.995
+        },
+        {
+          "word": " signal",
+          "start": 59.9,
+          "end": 60.28,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 60.28,
+          "end": 60.54,
+          "probability": 0.995
+        },
+        {
+          "word": " high",
+          "start": 60.54,
+          "end": 60.72,
+          "probability": 0.984
+        },
+        {
+          "word": " quality.",
+          "start": 60.72,
+          "end": 61.22,
+          "probability": 0.922
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 61.72,
+      "end": 62.62,
+      "text": "How do you induce a loop?",
+      "words": [
+        {
+          "word": " How",
+          "start": 61.72,
+          "end": 61.82,
+          "probability": 0.975
+        },
+        {
+          "word": " do",
+          "start": 61.82,
+          "end": 61.9,
+          "probability": 0.939
+        },
+        {
+          "word": " you",
+          "start": 61.9,
+          "end": 62.0,
+          "probability": 0.997
+        },
+        {
+          "word": " induce",
+          "start": 62.0,
+          "end": 62.26,
+          "probability": 0.975
+        },
+        {
+          "word": " a",
+          "start": 62.26,
+          "end": 62.48,
+          "probability": 0.978
+        },
+        {
+          "word": " loop?",
+          "start": 62.48,
+          "end": 62.62,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 63.14,
+      "end": 66.42,
+      "text": "You must design a seamless transition from the end of the video back to the start.",
+      "words": [
+        {
+          "word": " You",
+          "start": 63.14,
+          "end": 63.26,
+          "probability": 0.989
+        },
+        {
+          "word": " must",
+          "start": 63.26,
+          "end": 63.44,
+          "probability": 0.997
+        },
+        {
+          "word": " design",
+          "start": 63.44,
+          "end": 63.72,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 63.72,
+          "end": 63.9,
+          "probability": 0.996
+        },
+        {
+          "word": " seamless",
+          "start": 63.9,
+          "end": 64.18,
+          "probability": 0.998
+        },
+        {
+          "word": " transition",
+          "start": 64.18,
+          "end": 64.62,
+          "probability": 0.391
+        },
+        {
+          "word": " from",
+          "start": 64.62,
+          "end": 64.92,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 64.92,
+          "end": 65.06,
+          "probability": 0.979
+        },
+        {
+          "word": " end",
+          "start": 65.06,
+          "end": 65.24,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 65.24,
+          "end": 65.36,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 65.36,
+          "end": 65.46,
+          "probability": 0.982
+        },
+        {
+          "word": " video",
+          "start": 65.46,
+          "end": 65.72,
+          "probability": 0.998
+        },
+        {
+          "word": " back",
+          "start": 65.72,
+          "end": 65.94,
+          "probability": 0.987
+        },
+        {
+          "word": " to",
+          "start": 65.94,
+          "end": 66.1,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 66.1,
+          "end": 66.2,
+          "probability": 0.992
+        },
+        {
+          "word": " start.",
+          "start": 66.2,
+          "end": 66.42,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 66.9,
+      "end": 71.58,
+      "text": "The system also tracks engaged views, which measures viewers who stay for a significant duration.",
+      "words": [
+        {
+          "word": " The",
+          "start": 66.9,
+          "end": 67.02,
+          "probability": 0.992
+        },
+        {
+          "word": " system",
+          "start": 67.02,
+          "end": 67.32,
+          "probability": 0.996
+        },
+        {
+          "word": " also",
+          "start": 67.32,
+          "end": 67.62,
+          "probability": 0.998
+        },
+        {
+          "word": " tracks",
+          "start": 67.62,
+          "end": 67.94,
+          "probability": 0.983
+        },
+        {
+          "word": " engaged",
+          "start": 67.94,
+          "end": 68.5,
+          "probability": 0.982
+        },
+        {
+          "word": " views,",
+          "start": 68.5,
+          "end": 68.8,
+          "probability": 0.997
+        },
+        {
+          "word": " which",
+          "start": 69.12,
+          "end": 69.24,
+          "probability": 0.999
+        },
+        {
+          "word": " measures",
+          "start": 69.24,
+          "end": 69.54,
+          "probability": 0.991
+        },
+        {
+          "word": " viewers",
+          "start": 69.54,
+          "end": 69.88,
+          "probability": 0.989
+        },
+        {
+          "word": " who",
+          "start": 69.88,
+          "end": 70.12,
+          "probability": 0.967
+        },
+        {
+          "word": " stay",
+          "start": 70.12,
+          "end": 70.34,
+          "probability": 0.979
+        },
+        {
+          "word": " for",
+          "start": 70.34,
+          "end": 70.56,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 70.56,
+          "end": 70.66,
+          "probability": 0.996
+        },
+        {
+          "word": " significant",
+          "start": 70.66,
+          "end": 71.06,
+          "probability": 0.994
+        },
+        {
+          "word": " duration.",
+          "start": 71.06,
+          "end": 71.58,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 72.12,
+      "end": 75.32,
+      "text": "This metric decides your partner program revenue and long-term reach.",
+      "words": [
+        {
+          "word": " This",
+          "start": 72.12,
+          "end": 72.22,
+          "probability": 0.989
+        },
+        {
+          "word": " metric",
+          "start": 72.22,
+          "end": 72.54,
+          "probability": 0.996
+        },
+        {
+          "word": " decides",
+          "start": 72.54,
+          "end": 72.84,
+          "probability": 0.986
+        },
+        {
+          "word": " your",
+          "start": 72.84,
+          "end": 73.12,
+          "probability": 0.994
+        },
+        {
+          "word": " partner",
+          "start": 73.12,
+          "end": 73.42,
+          "probability": 0.967
+        },
+        {
+          "word": " program",
+          "start": 73.42,
+          "end": 73.86,
+          "probability": 0.895
+        },
+        {
+          "word": " revenue",
+          "start": 73.86,
+          "end": 74.28,
+          "probability": 0.993
+        },
+        {
+          "word": " and",
+          "start": 74.28,
+          "end": 74.56,
+          "probability": 0.943
+        },
+        {
+          "word": " long",
+          "start": 74.56,
+          "end": 74.76,
+          "probability": 0.997
+        },
+        {
+          "word": "-term",
+          "start": 74.76,
+          "end": 75.0,
+          "probability": 0.782
+        },
+        {
+          "word": " reach.",
+          "start": 75.0,
+          "end": 75.32,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 75.76,
+      "end": 79.8,
+      "text": "To grow your channel, focus entirely on holding attention past the three second mark.",
+      "words": [
+        {
+          "word": " To",
+          "start": 75.76,
+          "end": 75.88,
+          "probability": 0.996
+        },
+        {
+          "word": " grow",
+          "start": 75.88,
+          "end": 76.06,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 76.06,
+          "end": 76.28,
+          "probability": 0.997
+        },
+        {
+          "word": " channel,",
+          "start": 76.28,
+          "end": 76.64,
+          "probability": 0.997
+        },
+        {
+          "word": " focus",
+          "start": 76.78,
+          "end": 76.98,
+          "probability": 0.996
+        },
+        {
+          "word": " entirely",
+          "start": 76.98,
+          "end": 77.54,
+          "probability": 0.998
+        },
+        {
+          "word": " on",
+          "start": 77.54,
+          "end": 77.82,
+          "probability": 0.997
+        },
+        {
+          "word": " holding",
+          "start": 77.82,
+          "end": 78.1,
+          "probability": 0.995
+        },
+        {
+          "word": " attention",
+          "start": 78.1,
+          "end": 78.46,
+          "probability": 0.983
+        },
+        {
+          "word": " past",
+          "start": 78.46,
+          "end": 78.84,
+          "probability": 0.988
+        },
+        {
+          "word": " the",
+          "start": 78.84,
+          "end": 79.04,
+          "probability": 0.965
+        },
+        {
+          "word": " three",
+          "start": 79.04,
+          "end": 79.28,
+          "probability": 0.623
+        },
+        {
+          "word": " second",
+          "start": 79.28,
+          "end": 79.58,
+          "probability": 0.432
+        },
+        {
+          "word": " mark.",
+          "start": 79.58,
+          "end": 79.8,
+          "probability": 0.961
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " I",
+      "start": 0.0,
+      "end": 0.08,
+      "probability": 0.978
+    },
+    {
+      "word": " spent",
+      "start": 0.08,
+      "end": 0.28,
+      "probability": 0.937
+    },
+    {
+      "word": " three",
+      "start": 0.28,
+      "end": 0.56,
+      "probability": 0.907
+    },
+    {
+      "word": " months",
+      "start": 0.56,
+      "end": 0.72,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 0.72,
+      "end": 0.98,
+      "probability": 0.997
+    },
+    {
+      "word": " understand",
+      "start": 0.98,
+      "end": 1.4,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 1.4,
+      "end": 1.58,
+      "probability": 0.988
+    },
+    {
+      "word": " YouTube",
+      "start": 1.58,
+      "end": 1.84,
+      "probability": 0.933
+    },
+    {
+      "word": " shorts",
+      "start": 1.84,
+      "end": 2.2,
+      "probability": 0.594
+    },
+    {
+      "word": " algorithm,",
+      "start": 2.2,
+      "end": 2.66,
+      "probability": 0.978
+    },
+    {
+      "word": " and",
+      "start": 3.08,
+      "end": 3.18,
+      "probability": 0.992
+    },
+    {
+      "word": " here",
+      "start": 3.18,
+      "end": 3.34,
+      "probability": 0.788
+    },
+    {
+      "word": " it",
+      "start": 3.34,
+      "end": 3.48,
+      "probability": 0.983
+    },
+    {
+      "word": " is",
+      "start": 3.48,
+      "end": 3.56,
+      "probability": 0.994
+    },
+    {
+      "word": " in",
+      "start": 3.56,
+      "end": 3.7,
+      "probability": 0.987
+    },
+    {
+      "word": " 120",
+      "start": 3.7,
+      "end": 4.16,
+      "probability": 0.935
+    },
+    {
+      "word": " seconds.",
+      "start": 4.16,
+      "end": 5.04,
+      "probability": 0.99
+    },
+    {
+      "word": " The",
+      "start": 5.52,
+      "end": 5.62,
+      "probability": 0.98
+    },
+    {
+      "word": " shorts",
+      "start": 5.62,
+      "end": 5.88,
+      "probability": 0.373
+    },
+    {
+      "word": " feed",
+      "start": 5.88,
+      "end": 6.1,
+      "probability": 0.612
+    },
+    {
+      "word": " algorithm",
+      "start": 6.1,
+      "end": 6.62,
+      "probability": 0.97
+    },
+    {
+      "word": " uses",
+      "start": 6.62,
+      "end": 6.98,
+      "probability": 0.988
+    },
+    {
+      "word": " a",
+      "start": 6.98,
+      "end": 7.16,
+      "probability": 0.995
+    },
+    {
+      "word": " single",
+      "start": 7.16,
+      "end": 7.38,
+      "probability": 0.999
+    },
+    {
+      "word": " metric",
+      "start": 7.38,
+      "end": 7.74,
+      "probability": 0.999
+    },
+    {
+      "word": " as",
+      "start": 7.74,
+      "end": 7.98,
+      "probability": 0.966
+    },
+    {
+      "word": " the",
+      "start": 7.98,
+      "end": 8.12,
+      "probability": 0.996
+    },
+    {
+      "word": " ultimate",
+      "start": 8.12,
+      "end": 8.52,
+      "probability": 0.985
+    },
+    {
+      "word": " gatekeeper",
+      "start": 8.52,
+      "end": 8.96,
+      "probability": 0.955
+    },
+    {
+      "word": " for",
+      "start": 8.96,
+      "end": 9.22,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 9.22,
+      "end": 9.36,
+      "probability": 0.977
+    },
+    {
+      "word": " reach.",
+      "start": 9.36,
+      "end": 9.7,
+      "probability": 0.985
+    },
+    {
+      "word": " This",
+      "start": 10.2,
+      "end": 10.36,
+      "probability": 0.995
+    },
+    {
+      "word": " is",
+      "start": 10.36,
+      "end": 10.5,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 10.5,
+      "end": 10.64,
+      "probability": 0.989
+    },
+    {
+      "word": " viewed",
+      "start": 10.64,
+      "end": 10.88,
+      "probability": 0.891
+    },
+    {
+      "word": " versus",
+      "start": 10.88,
+      "end": 11.2,
+      "probability": 0.831
+    },
+    {
+      "word": " swiped",
+      "start": 11.2,
+      "end": 11.6,
+      "probability": 0.732
+    },
+    {
+      "word": " away",
+      "start": 11.6,
+      "end": 11.78,
+      "probability": 0.918
+    },
+    {
+      "word": " rate.",
+      "start": 11.78,
+      "end": 12.06,
+      "probability": 0.99
+    },
+    {
+      "word": " It",
+      "start": 12.54,
+      "end": 12.64,
+      "probability": 0.995
+    },
+    {
+      "word": " tracks",
+      "start": 12.64,
+      "end": 12.9,
+      "probability": 0.978
+    },
+    {
+      "word": " the",
+      "start": 12.9,
+      "end": 13.18,
+      "probability": 0.998
+    },
+    {
+      "word": " exact",
+      "start": 13.18,
+      "end": 13.48,
+      "probability": 0.999
+    },
+    {
+      "word": " percentage",
+      "start": 13.48,
+      "end": 14.0,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 14.0,
+      "end": 14.2,
+      "probability": 0.999
+    },
+    {
+      "word": " viewers",
+      "start": 14.2,
+      "end": 14.48,
+      "probability": 0.997
+    },
+    {
+      "word": " who",
+      "start": 14.48,
+      "end": 14.76,
+      "probability": 0.992
+    },
+    {
+      "word": " stop",
+      "start": 14.76,
+      "end": 15.0,
+      "probability": 0.945
+    },
+    {
+      "word": " to",
+      "start": 15.0,
+      "end": 15.24,
+      "probability": 0.98
+    },
+    {
+      "word": " watch",
+      "start": 15.24,
+      "end": 15.42,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 15.42,
+      "end": 15.64,
+      "probability": 0.992
+    },
+    {
+      "word": " short",
+      "start": 15.64,
+      "end": 15.86,
+      "probability": 0.99
+    },
+    {
+      "word": " versus",
+      "start": 15.86,
+      "end": 16.24,
+      "probability": 0.835
+    },
+    {
+      "word": " those",
+      "start": 16.24,
+      "end": 16.46,
+      "probability": 0.999
+    },
+    {
+      "word": " who",
+      "start": 16.46,
+      "end": 16.7,
+      "probability": 0.856
+    },
+    {
+      "word": " swipe",
+      "start": 16.7,
+      "end": 17.02,
+      "probability": 0.728
+    },
+    {
+      "word": " past",
+      "start": 17.02,
+      "end": 17.42,
+      "probability": 0.968
+    },
+    {
+      "word": " it.",
+      "start": 17.42,
+      "end": 17.62,
+      "probability": 0.998
+    },
+    {
+      "word": " To",
+      "start": 18.02,
+      "end": 18.12,
+      "probability": 0.988
+    },
+    {
+      "word": " go",
+      "start": 18.12,
+      "end": 18.28,
+      "probability": 0.996
+    },
+    {
+      "word": " viral",
+      "start": 18.28,
+      "end": 18.58,
+      "probability": 0.998
+    },
+    {
+      "word": " today,",
+      "start": 18.58,
+      "end": 18.9,
+      "probability": 0.997
+    },
+    {
+      "word": " you",
+      "start": 19.22,
+      "end": 19.3,
+      "probability": 0.998
+    },
+    {
+      "word": " need",
+      "start": 19.3,
+      "end": 19.44,
+      "probability": 0.998
+    },
+    {
+      "word": " at",
+      "start": 19.44,
+      "end": 19.6,
+      "probability": 0.995
+    },
+    {
+      "word": " least",
+      "start": 19.6,
+      "end": 19.7,
+      "probability": 0.997
+    },
+    {
+      "word": " 70",
+      "start": 19.7,
+      "end": 20.06,
+      "probability": 0.993
+    },
+    {
+      "word": "-90",
+      "start": 20.06,
+      "end": 20.5,
+      "probability": 0.64
+    },
+    {
+      "word": "%",
+      "start": 20.5,
+      "end": 20.8,
+      "probability": 0.934
+    },
+    {
+      "word": " of",
+      "start": 20.8,
+      "end": 21.0,
+      "probability": 0.998
+    },
+    {
+      "word": " those",
+      "start": 21.0,
+      "end": 21.2,
+      "probability": 0.996
+    },
+    {
+      "word": " viewers",
+      "start": 21.2,
+      "end": 21.5,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 21.5,
+      "end": 21.72,
+      "probability": 0.999
+    },
+    {
+      "word": " stay.",
+      "start": 21.72,
+      "end": 21.94,
+      "probability": 0.971
+    },
+    {
+      "word": " How",
+      "start": 22.44,
+      "end": 22.56,
+      "probability": 0.986
+    },
+    {
+      "word": " do",
+      "start": 22.56,
+      "end": 22.64,
+      "probability": 0.99
+    },
+    {
+      "word": " you",
+      "start": 22.64,
+      "end": 22.74,
+      "probability": 0.999
+    },
+    {
+      "word": " pass",
+      "start": 22.74,
+      "end": 23.0,
+      "probability": 0.953
+    },
+    {
+      "word": " this",
+      "start": 23.0,
+      "end": 23.28,
+      "probability": 0.998
+    },
+    {
+      "word": " initial",
+      "start": 23.28,
+      "end": 23.62,
+      "probability": 0.997
+    },
+    {
+      "word": " gate?",
+      "start": 23.62,
+      "end": 23.82,
+      "probability": 0.982
+    },
+    {
+      "word": " You",
+      "start": 24.38,
+      "end": 24.5,
+      "probability": 0.994
+    },
+    {
+      "word": " must",
+      "start": 24.5,
+      "end": 24.74,
+      "probability": 0.999
+    },
+    {
+      "word": " optimize",
+      "start": 24.74,
+      "end": 25.02,
+      "probability": 0.947
+    },
+    {
+      "word": " the",
+      "start": 25.02,
+      "end": 25.26,
+      "probability": 0.993
+    },
+    {
+      "word": " first",
+      "start": 25.26,
+      "end": 25.44,
+      "probability": 0.993
+    },
+    {
+      "word": " two",
+      "start": 25.44,
+      "end": 25.72,
+      "probability": 0.958
+    },
+    {
+      "word": " seconds",
+      "start": 25.72,
+      "end": 26.06,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 26.06,
+      "end": 26.24,
+      "probability": 0.99
+    },
+    {
+      "word": " your",
+      "start": 26.24,
+      "end": 26.38,
+      "probability": 0.92
+    },
+    {
+      "word": " video",
+      "start": 26.38,
+      "end": 26.66,
+      "probability": 0.988
+    },
+    {
+      "word": " to",
+      "start": 26.66,
+      "end": 26.82,
+      "probability": 0.998
+    },
+    {
+      "word": " capture",
+      "start": 26.82,
+      "end": 27.12,
+      "probability": 0.997
+    },
+    {
+      "word": " attention",
+      "start": 27.12,
+      "end": 27.58,
+      "probability": 0.99
+    },
+    {
+      "word": " immediately.",
+      "start": 27.58,
+      "end": 28.02,
+      "probability": 0.985
+    },
+    {
+      "word": " This",
+      "start": 28.54,
+      "end": 28.84,
+      "probability": 0.216
+    },
+    {
+      "word": " is",
+      "start": 28.84,
+      "end": 28.98,
+      "probability": 0.98
+    },
+    {
+      "word": " the",
+      "start": 28.98,
+      "end": 29.14,
+      "probability": 0.971
+    },
+    {
+      "word": " hook",
+      "start": 29.14,
+      "end": 29.34,
+      "probability": 0.662
+    },
+    {
+      "word": " gate.",
+      "start": 29.34,
+      "end": 29.64,
+      "probability": 0.733
+    },
+    {
+      "word": " If",
+      "start": 30.18,
+      "end": 30.28,
+      "probability": 0.969
+    },
+    {
+      "word": " more",
+      "start": 30.28,
+      "end": 30.46,
+      "probability": 0.992
+    },
+    {
+      "word": " than",
+      "start": 30.46,
+      "end": 30.62,
+      "probability": 0.989
+    },
+    {
+      "word": " 40",
+      "start": 30.62,
+      "end": 30.94,
+      "probability": 0.942
+    },
+    {
+      "word": "%",
+      "start": 30.94,
+      "end": 31.26,
+      "probability": 0.93
+    },
+    {
+      "word": " of",
+      "start": 31.26,
+      "end": 31.44,
+      "probability": 0.995
+    },
+    {
+      "word": " viewers",
+      "start": 31.44,
+      "end": 31.74,
+      "probability": 0.97
+    },
+    {
+      "word": " swipe",
+      "start": 31.74,
+      "end": 32.08,
+      "probability": 0.949
+    },
+    {
+      "word": " away",
+      "start": 32.08,
+      "end": 32.4,
+      "probability": 0.997
+    },
+    {
+      "word": " in",
+      "start": 32.4,
+      "end": 32.62,
+      "probability": 0.995
+    },
+    {
+      "word": " those",
+      "start": 32.62,
+      "end": 32.76,
+      "probability": 0.982
+    },
+    {
+      "word": " first",
+      "start": 32.76,
+      "end": 33.04,
+      "probability": 0.981
+    },
+    {
+      "word": " moments,",
+      "start": 33.04,
+      "end": 33.42,
+      "probability": 0.984
+    },
+    {
+      "word": " YouTube",
+      "start": 33.88,
+      "end": 34.1,
+      "probability": 0.903
+    },
+    {
+      "word": " stops",
+      "start": 34.1,
+      "end": 34.5,
+      "probability": 0.988
+    },
+    {
+      "word": " distributing",
+      "start": 34.5,
+      "end": 35.1,
+      "probability": 0.991
+    },
+    {
+      "word": " your",
+      "start": 35.1,
+      "end": 35.32,
+      "probability": 0.947
+    },
+    {
+      "word": " video.",
+      "start": 35.32,
+      "end": 35.58,
+      "probability": 0.993
+    },
+    {
+      "word": " A",
+      "start": 36.06,
+      "end": 36.2,
+      "probability": 0.982
+    },
+    {
+      "word": " recent",
+      "start": 36.2,
+      "end": 36.48,
+      "probability": 0.994
+    },
+    {
+      "word": " major",
+      "start": 36.48,
+      "end": 36.8,
+      "probability": 0.992
+    },
+    {
+      "word": " platform",
+      "start": 36.8,
+      "end": 37.26,
+      "probability": 0.997
+    },
+    {
+      "word": " up",
+      "start": 37.26,
+      "end": 37.52,
+      "probability": 0.278
+    },
+    {
+      "word": " he",
+      "start": 37.52,
+      "end": 37.6,
+      "probability": 0.117
+    },
+    {
+      "word": " changed",
+      "start": 37.6,
+      "end": 37.94,
+      "probability": 0.961
+    },
+    {
+      "word": " how",
+      "start": 37.94,
+      "end": 38.14,
+      "probability": 0.987
+    },
+    {
+      "word": " views",
+      "start": 38.14,
+      "end": 38.46,
+      "probability": 0.984
+    },
+    {
+      "word": " are",
+      "start": 38.46,
+      "end": 38.78,
+      "probability": 0.996
+    },
+    {
+      "word": " calculated.",
+      "start": 38.78,
+      "end": 39.26,
+      "probability": 0.995
+    },
+    {
+      "word": " A",
+      "start": 39.84,
+      "end": 39.92,
+      "probability": 0.674
+    },
+    {
+      "word": " view",
+      "start": 39.92,
+      "end": 40.08,
+      "probability": 0.89
+    },
+    {
+      "word": " is",
+      "start": 40.08,
+      "end": 40.34,
+      "probability": 0.922
+    },
+    {
+      "word": " now",
+      "start": 40.34,
+      "end": 40.5,
+      "probability": 0.994
+    },
+    {
+      "word": " counted",
+      "start": 40.5,
+      "end": 40.86,
+      "probability": 0.928
+    },
+    {
+      "word": " the",
+      "start": 40.86,
+      "end": 41.04,
+      "probability": 0.983
+    },
+    {
+      "word": " moment",
+      "start": 41.04,
+      "end": 41.24,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 41.24,
+      "end": 41.42,
+      "probability": 0.977
+    },
+    {
+      "word": " video",
+      "start": 41.42,
+      "end": 41.72,
+      "probability": 0.975
+    },
+    {
+      "word": " starts",
+      "start": 41.72,
+      "end": 42.04,
+      "probability": 0.993
+    },
+    {
+      "word": " to",
+      "start": 42.04,
+      "end": 42.28,
+      "probability": 0.998
+    },
+    {
+      "word": " play.",
+      "start": 42.28,
+      "end": 42.5,
+      "probability": 0.999
+    },
+    {
+      "word": " Why",
+      "start": 42.98,
+      "end": 43.12,
+      "probability": 0.973
+    },
+    {
+      "word": " is",
+      "start": 43.12,
+      "end": 43.26,
+      "probability": 0.978
+    },
+    {
+      "word": " this",
+      "start": 43.26,
+      "end": 43.38,
+      "probability": 0.995
+    },
+    {
+      "word": " update",
+      "start": 43.38,
+      "end": 43.74,
+      "probability": 0.969
+    },
+    {
+      "word": " dangerous?",
+      "start": 43.74,
+      "end": 44.26,
+      "probability": 0.994
+    },
+    {
+      "word": " Raw",
+      "start": 44.92,
+      "end": 45.08,
+      "probability": 0.803
+    },
+    {
+      "word": " views",
+      "start": 45.08,
+      "end": 45.34,
+      "probability": 0.955
+    },
+    {
+      "word": " have",
+      "start": 45.34,
+      "end": 45.54,
+      "probability": 0.991
+    },
+    {
+      "word": " become",
+      "start": 45.54,
+      "end": 45.86,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 45.86,
+      "end": 46.0,
+      "probability": 0.858
+    },
+    {
+      "word": " vanity",
+      "start": 46.0,
+      "end": 46.34,
+      "probability": 0.963
+    },
+    {
+      "word": " metric",
+      "start": 46.34,
+      "end": 46.7,
+      "probability": 0.998
+    },
+    {
+      "word": " because",
+      "start": 46.7,
+      "end": 47.02,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 47.02,
+      "end": 47.24,
+      "probability": 0.999
+    },
+    {
+      "word": " instant",
+      "start": 47.24,
+      "end": 47.52,
+      "probability": 0.506
+    },
+    {
+      "word": " scroll",
+      "start": 47.52,
+      "end": 47.9,
+      "probability": 0.969
+    },
+    {
+      "word": " buys.",
+      "start": 47.9,
+      "end": 48.24,
+      "probability": 0.382
+    },
+    {
+      "word": " The",
+      "start": 48.74,
+      "end": 48.88,
+      "probability": 0.994
+    },
+    {
+      "word": " algorithm",
+      "start": 48.88,
+      "end": 49.32,
+      "probability": 0.991
+    },
+    {
+      "word": " now",
+      "start": 49.32,
+      "end": 49.6,
+      "probability": 0.991
+    },
+    {
+      "word": " relies",
+      "start": 49.6,
+      "end": 49.88,
+      "probability": 0.999
+    },
+    {
+      "word": " heavily",
+      "start": 49.88,
+      "end": 50.36,
+      "probability": 0.998
+    },
+    {
+      "word": " on",
+      "start": 50.36,
+      "end": 50.68,
+      "probability": 0.996
+    },
+    {
+      "word": " average",
+      "start": 50.68,
+      "end": 51.0,
+      "probability": 0.979
+    },
+    {
+      "word": " percentage",
+      "start": 51.0,
+      "end": 51.54,
+      "probability": 0.989
+    },
+    {
+      "word": " viewed",
+      "start": 51.54,
+      "end": 51.86,
+      "probability": 0.98
+    },
+    {
+      "word": " or",
+      "start": 51.86,
+      "end": 52.34,
+      "probability": 0.693
+    },
+    {
+      "word": " av.",
+      "start": 52.34,
+      "end": 52.56,
+      "probability": 0.814
+    },
+    {
+      "word": " It",
+      "start": 52.56,
+      "end": 53.16,
+      "probability": 0.312
+    },
+    {
+      "word": " favors",
+      "start": 53.16,
+      "end": 53.44,
+      "probability": 0.987
+    },
+    {
+      "word": " videos",
+      "start": 53.44,
+      "end": 53.84,
+      "probability": 0.986
+    },
+    {
+      "word": " with",
+      "start": 53.84,
+      "end": 54.16,
+      "probability": 0.992
+    },
+    {
+      "word": " APV",
+      "start": 54.16,
+      "end": 54.74,
+      "probability": 0.816
+    },
+    {
+      "word": " over",
+      "start": 54.74,
+      "end": 55.08,
+      "probability": 0.629
+    },
+    {
+      "word": " 100%,",
+      "start": 55.08,
+      "end": 56.08,
+      "probability": 0.764
+    },
+    {
+      "word": " which",
+      "start": 56.08,
+      "end": 56.4,
+      "probability": 0.996
+    },
+    {
+      "word": " means",
+      "start": 56.4,
+      "end": 56.66,
+      "probability": 0.996
+    },
+    {
+      "word": " people",
+      "start": 56.66,
+      "end": 57.02,
+      "probability": 0.987
+    },
+    {
+      "word": " are",
+      "start": 57.02,
+      "end": 57.14,
+      "probability": 0.995
+    },
+    {
+      "word": " looping",
+      "start": 57.14,
+      "end": 57.42,
+      "probability": 0.828
+    },
+    {
+      "word": " your",
+      "start": 57.42,
+      "end": 57.58,
+      "probability": 0.439
+    },
+    {
+      "word": " video.",
+      "start": 57.58,
+      "end": 57.92,
+      "probability": 0.997
+    },
+    {
+      "word": " Rewatch",
+      "start": 58.42,
+      "end": 58.7,
+      "probability": 0.79
+    },
+    {
+      "word": " behavior",
+      "start": 58.7,
+      "end": 59.2,
+      "probability": 0.861
+    },
+    {
+      "word": " is",
+      "start": 59.2,
+      "end": 59.44,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 59.44,
+      "end": 59.56,
+      "probability": 0.998
+    },
+    {
+      "word": " strongest",
+      "start": 59.56,
+      "end": 59.9,
+      "probability": 0.995
+    },
+    {
+      "word": " signal",
+      "start": 59.9,
+      "end": 60.28,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 60.28,
+      "end": 60.54,
+      "probability": 0.995
+    },
+    {
+      "word": " high",
+      "start": 60.54,
+      "end": 60.72,
+      "probability": 0.984
+    },
+    {
+      "word": " quality.",
+      "start": 60.72,
+      "end": 61.22,
+      "probability": 0.922
+    },
+    {
+      "word": " How",
+      "start": 61.72,
+      "end": 61.82,
+      "probability": 0.975
+    },
+    {
+      "word": " do",
+      "start": 61.82,
+      "end": 61.9,
+      "probability": 0.939
+    },
+    {
+      "word": " you",
+      "start": 61.9,
+      "end": 62.0,
+      "probability": 0.997
+    },
+    {
+      "word": " induce",
+      "start": 62.0,
+      "end": 62.26,
+      "probability": 0.975
+    },
+    {
+      "word": " a",
+      "start": 62.26,
+      "end": 62.48,
+      "probability": 0.978
+    },
+    {
+      "word": " loop?",
+      "start": 62.48,
+      "end": 62.62,
+      "probability": 0.984
+    },
+    {
+      "word": " You",
+      "start": 63.14,
+      "end": 63.26,
+      "probability": 0.989
+    },
+    {
+      "word": " must",
+      "start": 63.26,
+      "end": 63.44,
+      "probability": 0.997
+    },
+    {
+      "word": " design",
+      "start": 63.44,
+      "end": 63.72,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 63.72,
+      "end": 63.9,
+      "probability": 0.996
+    },
+    {
+      "word": " seamless",
+      "start": 63.9,
+      "end": 64.18,
+      "probability": 0.998
+    },
+    {
+      "word": " transition",
+      "start": 64.18,
+      "end": 64.62,
+      "probability": 0.391
+    },
+    {
+      "word": " from",
+      "start": 64.62,
+      "end": 64.92,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 64.92,
+      "end": 65.06,
+      "probability": 0.979
+    },
+    {
+      "word": " end",
+      "start": 65.06,
+      "end": 65.24,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 65.24,
+      "end": 65.36,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 65.36,
+      "end": 65.46,
+      "probability": 0.982
+    },
+    {
+      "word": " video",
+      "start": 65.46,
+      "end": 65.72,
+      "probability": 0.998
+    },
+    {
+      "word": " back",
+      "start": 65.72,
+      "end": 65.94,
+      "probability": 0.987
+    },
+    {
+      "word": " to",
+      "start": 65.94,
+      "end": 66.1,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 66.1,
+      "end": 66.2,
+      "probability": 0.992
+    },
+    {
+      "word": " start.",
+      "start": 66.2,
+      "end": 66.42,
+      "probability": 0.999
+    },
+    {
+      "word": " The",
+      "start": 66.9,
+      "end": 67.02,
+      "probability": 0.992
+    },
+    {
+      "word": " system",
+      "start": 67.02,
+      "end": 67.32,
+      "probability": 0.996
+    },
+    {
+      "word": " also",
+      "start": 67.32,
+      "end": 67.62,
+      "probability": 0.998
+    },
+    {
+      "word": " tracks",
+      "start": 67.62,
+      "end": 67.94,
+      "probability": 0.983
+    },
+    {
+      "word": " engaged",
+      "start": 67.94,
+      "end": 68.5,
+      "probability": 0.982
+    },
+    {
+      "word": " views,",
+      "start": 68.5,
+      "end": 68.8,
+      "probability": 0.997
+    },
+    {
+      "word": " which",
+      "start": 69.12,
+      "end": 69.24,
+      "probability": 0.999
+    },
+    {
+      "word": " measures",
+      "start": 69.24,
+      "end": 69.54,
+      "probability": 0.991
+    },
+    {
+      "word": " viewers",
+      "start": 69.54,
+      "end": 69.88,
+      "probability": 0.989
+    },
+    {
+      "word": " who",
+      "start": 69.88,
+      "end": 70.12,
+      "probability": 0.967
+    },
+    {
+      "word": " stay",
+      "start": 70.12,
+      "end": 70.34,
+      "probability": 0.979
+    },
+    {
+      "word": " for",
+      "start": 70.34,
+      "end": 70.56,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 70.56,
+      "end": 70.66,
+      "probability": 0.996
+    },
+    {
+      "word": " significant",
+      "start": 70.66,
+      "end": 71.06,
+      "probability": 0.994
+    },
+    {
+      "word": " duration.",
+      "start": 71.06,
+      "end": 71.58,
+      "probability": 0.977
+    },
+    {
+      "word": " This",
+      "start": 72.12,
+      "end": 72.22,
+      "probability": 0.989
+    },
+    {
+      "word": " metric",
+      "start": 72.22,
+      "end": 72.54,
+      "probability": 0.996
+    },
+    {
+      "word": " decides",
+      "start": 72.54,
+      "end": 72.84,
+      "probability": 0.986
+    },
+    {
+      "word": " your",
+      "start": 72.84,
+      "end": 73.12,
+      "probability": 0.994
+    },
+    {
+      "word": " partner",
+      "start": 73.12,
+      "end": 73.42,
+      "probability": 0.967
+    },
+    {
+      "word": " program",
+      "start": 73.42,
+      "end": 73.86,
+      "probability": 0.895
+    },
+    {
+      "word": " revenue",
+      "start": 73.86,
+      "end": 74.28,
+      "probability": 0.993
+    },
+    {
+      "word": " and",
+      "start": 74.28,
+      "end": 74.56,
+      "probability": 0.943
+    },
+    {
+      "word": " long",
+      "start": 74.56,
+      "end": 74.76,
+      "probability": 0.997
+    },
+    {
+      "word": "-term",
+      "start": 74.76,
+      "end": 75.0,
+      "probability": 0.782
+    },
+    {
+      "word": " reach.",
+      "start": 75.0,
+      "end": 75.32,
+      "probability": 0.992
+    },
+    {
+      "word": " To",
+      "start": 75.76,
+      "end": 75.88,
+      "probability": 0.996
+    },
+    {
+      "word": " grow",
+      "start": 75.88,
+      "end": 76.06,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 76.06,
+      "end": 76.28,
+      "probability": 0.997
+    },
+    {
+      "word": " channel,",
+      "start": 76.28,
+      "end": 76.64,
+      "probability": 0.997
+    },
+    {
+      "word": " focus",
+      "start": 76.78,
+      "end": 76.98,
+      "probability": 0.996
+    },
+    {
+      "word": " entirely",
+      "start": 76.98,
+      "end": 77.54,
+      "probability": 0.998
+    },
+    {
+      "word": " on",
+      "start": 77.54,
+      "end": 77.82,
+      "probability": 0.997
+    },
+    {
+      "word": " holding",
+      "start": 77.82,
+      "end": 78.1,
+      "probability": 0.995
+    },
+    {
+      "word": " attention",
+      "start": 78.1,
+      "end": 78.46,
+      "probability": 0.983
+    },
+    {
+      "word": " past",
+      "start": 78.46,
+      "end": 78.84,
+      "probability": 0.988
+    },
+    {
+      "word": " the",
+      "start": 78.84,
+      "end": 79.04,
+      "probability": 0.965
+    },
+    {
+      "word": " three",
+      "start": 79.04,
+      "end": 79.28,
+      "probability": 0.623
+    },
+    {
+      "word": " second",
+      "start": 79.28,
+      "end": 79.58,
+      "probability": 0.432
+    },
+    {
+      "word": " mark.",
+      "start": 79.58,
+      "end": 79.8,
+      "probability": 0.961
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 79.959,
+  "model_size": "base",
+  "device": "cpu"
+}

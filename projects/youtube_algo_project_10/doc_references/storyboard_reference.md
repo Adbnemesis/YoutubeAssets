@@ -1,0 +1,27 @@
+# Storyboard Reference - The YouTube Shorts Algorithm in 120 Seconds
+
+This document maps the timestamps, narration script lines, image filenames, and completion status for Project 10.
+
+| Timestamp | Narration Line | Image Filename | Status |
+|-----------|----------------|----------------|--------|
+| `[00:00]` | I spent three months to understand the YouTube Shorts algorithm, and here it is in one hundred and twenty seconds. | `[00-00]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:05]` | The Shorts feed algorithm uses a single metric as the ultimate gatekeeper for your reach. | `[00-05]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:10]` | This is the Viewed versus Swiped Away rate. | `[00-10]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:12]` | It tracks the exact percentage of viewers who stop to watch your Short versus those who swipe past it. | `[00-12]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:18]` | To go viral today, you need at least seventy to ninety percent of those viewers to stay. | `[00-18]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:22]` | How do you pass this initial gate? | `[00-22]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:24]` | You must optimize the first two seconds of your video to capture attention immediately. | `[00-24]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:28]` | This is the Hook Gate. | `[00-28]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:30]` | If more than forty percent of viewers swipe away in those first moments, YouTube stops distributing your video. | `[00-30]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:36]` | A recent major platform update changed how views are calculated. | `[00-36]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:39]` | A view is now counted the moment your video starts to play. | `[00-39]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:42]` | Why is this update dangerous? | `[00-42]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:44]` | Raw views have become a vanity metric because of instant scroll-bys. | `[00-44]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:48]` | The algorithm now relies heavily on Average Percentage Viewed, or APV. | `[00-48]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:52]` | It favors videos with an APV of over one hundred percent, which means people are looping your video. | `[00-52]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[00:58]` | Re-watch behavior is the strongest signal of high quality. | `[00-58]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[01:01]` | How do you induce a loop? | `[01-01]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[01:03]` | You must design a seamless transition from the end of the video back to the start. | `[01-03]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[01:06]` | The system also tracks Engaged Views, which measures viewers who stay for a significant duration. | `[01-06]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[01:12]` | This metric decides your Partner Program revenue and long-term reach. | `[01-12]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |
+| `[01:15]` | To grow your channel, focus entirely on holding attention past the three-second mark. | `[01-15]_Hand-drawn_2D_doo.jpg` | ⏳ Pending |

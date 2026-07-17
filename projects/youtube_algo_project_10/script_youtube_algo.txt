@@ -1,0 +1,9 @@
+I spent three months to understand the YouTube Shorts algorithm, and here it is in one hundred and twenty seconds.
+
+The Shorts feed algorithm uses a single metric as the ultimate gatekeeper for your reach. This is the Viewed versus Swiped Away rate. It tracks the exact percentage of viewers who stop to watch your Short versus those who swipe past it. To go viral today, you need at least seventy to ninety percent of those viewers to stay. How do you pass this initial gate?
+
+You must optimize the first two seconds of your video to capture attention immediately. This is the Hook Gate. If more than forty percent of viewers swipe away in those first moments, YouTube stops distributing your video. A recent major platform update changed how views are calculated. A view is now counted the moment your video starts to play. Why is this update dangerous?
+
+Raw views have become a vanity metric because of instant scroll-bys. The algorithm now relies heavily on Average Percentage Viewed, or APV. It favors videos with an APV of over one hundred percent, which means people are looping your video. Re-watch behavior is the strongest signal of high quality. How do you induce a loop?
+
+You must design a seamless transition from the end of the video back to the start. The system also tracks Engaged Views, which measures viewers who stay for a significant duration. This metric decides your Partner Program revenue and long-term reach. To grow your channel, focus entirely on holding attention past the three-second mark.
