@@ -1,0 +1,89 @@
+# Project 1: Storyboard Prompts Reference
+
+This file contains the exact timestamps and image generation prompts for Project 1. Antigravity must strictly refer to this list when calling the `generate_image` tool. Do not hallucinate timestamps or prompts.
+
+## 00:00 - 04:22 (Completed)
+- `[00:00]_image_1.png` - Character reference base setup (Hand-drawn 2D doodle cartoon...)
+- `[00:05]_image_1.png` - Noise sources (hum of computer, road traffic)
+- `[00:09]_image_1.png` - Digital wall surrounding the user
+- `[00:11]_image_1.png` - Stick figure looking up craving peace
+- `[00:13]_image_1.png` - Empty box outline room with question mark
+- `[00:17]_image_1.png` - Stick figure inside box looking terrified
+- `[00:21]_image_1.png` - Stick figure head turning red with thoughts
+- `[00:22]_image_1.png` - Stick figure sitting with head in hands
+- `[00:25]_image_1.png` - Giant question mark above stick figure
+- `[00:27]_image_1.png` - Stick figure looking around nervously
+- `[00:29]_image_1.png` - Green cabin in a dark pine forest
+- `[00:32]_image_1.png` - Stick figure standing under "SILENCE" black cloud
+- `[00:37]_image_1.png` - "SILENCE" cloud showing angry face with "THREAT" text
+- `[00:38]_image_1.png` - Close-up of ear showing internal sound amplification
+- `[00:43]_image_1.png` - Large beating red heart labeled "HEARTBEAT"
+- `[00:45]_image_1.png` - Yellow electrical lines inside nervous system
+- `[00:47]_image_1.png` - Stick figure head turning red with "THUMP THUMP" thought bubbles
+- `[00:51]_image_1.png` - Stick figure covering ears with text "SO LOUD!"
+- `[00:53]_image_1.png` - Scroll labeled "UVA STUDY" with arrow
+- `[00:58]_image_1.png` - Stick figure scientist in lab coat holding clipboard
+- `[01:01]_image_1.png` - Stick figure sitting on chair in room outline with text "15 MINUTES"
+- `[01:07]_image_1.png` - Crossed-out floating devices (smartphone, laptop, book)
+- `[01:09]_image_1.png` - Grey box with single red button connected to yellow battery
+- `[01:12]_image_1.png` - Hand pointing to button with lightning sparks zapping stick figure
+- `[01:16]_image_1.png` - Stick figure hugging knees looking lonely
+- `[01:17]_image_1.png` - Stick figure offering money to scientist waving hands "no"
+- `[01:21]_image_1.png` - Split screen: "PAIN" (shock) vs "THOUGHTS" (chaotic black cloud)
+- `[01:24]_image_1.png` - Three cartoon scientists in lab coats with shocked expressions, glasses flying off
+- `[01:26]_image_1.png` - Pie chart (67% red, 33% white) labeled "67% CHOSE SHOCK" showing stick figure pressing button
+- `[01:31]_image_1.png` - Close-up of finger repeatedly pressing button, bubble saying "190 TIMES!"
+- `[01:37]_image_1.png` - Stick figure smiling while receiving a minor shock, thought bubble empty/clear
+- `[01:41]_image_1.png` - Stick figure running from a giant black shadow shaped like a brain with angry eyes
+- `[01:44]_image_1.png` - Stick figure standing in front of blue mirror, reflection is nervous/sweaty
+- `[01:47]_image_1.png` - Side-profile diagram of head showing pink brain, yellow arrow pointing inside skull
+- `[01:50]_image_1.png` - Personified brain sleeping in bed with giant active lightbulb above
+- `[01:53]_image_1.png` - Brain showing glowing blue neural network/nodes firing up
+- `[02:00]_image_1.png` - Scientist pointing to brain chalkboard labeled "DEFAULT MODE NETWORK"
+- `[02:04]_image_1.png` - Brain holding a glowing orb of cosmic energy with text "DARK ENERGY"
+- `[02:08]_image_1.png` - Stage spotlight with stick figure holding microphone, red stage floor
+- `[02:11]_image_1.png` - Stage backdrop showing a giant clock with an anxious face
+- `[02:13]_image_1.png` - Same stage backdrop showing a giant clock with an anxious face (re-use/new frame)
+- `[02:16]_image_1.png` - Stick figure looking up at empty red theater seats, feeling isolated
+- `[02:19]_image_1.png` - Personified brain eating a giant yellow lightning bolt like a sandwich
+- `[02:22]_image_1.png` - Battery indicator silhouette shaped like body, head is red labeled "20%"
+- `[02:26]_image_1.png` - Brain sitting at sewing machine spinning blue thread with text "WHAT IF..."
+- `[02:33]_image_1.png` - Stick figure inside box surrounded by giant red text "WHAT IF..." and "WHY..."
+- `[02:36]_image_1.png` - Brain wearing detective sunglasses scanning the floor with magnifying glass
+- `[02:39]_image_1.png` - Stick figure inside protective yellow dome shield, looking confused
+- `[02:40]_image_1.png` - Evolution line: small ape -> caveman with spear -> modern stick figure, green ground
+- `[02:44]_image_1.png` - Caveman sitting at cave entrance holding stone tool, dark pine trees
+- `[02:47]_image_1.png` - Prehistoric forest, glowing red predator eyes in bushes, orange sunset sky
+- `[02:53]_image_1.png` - Caveman looking left/right with hand on brow, yellow arrow labeled "SCANNING"
+- `[02:57]_image_1.png` - Caveman sleeping peacefully inside cave, giant saber-toothed cat standing behind in shadow
+- `[03:02]_image_1.png` - Modern stick figure walking nervously, surrounded by beast outline shadows
+- `[03:04]_image_1.png` - Modern stick figure patting a nervous cartoon brain on the head
+- `[03:08]_image_1.png` - Stick figure looking at blue smartphone with glowing blue lines, text "THE ESCAPE"
+- `[03:11]_image_1.png` - Close-up of face looking down at phone screen, face lit with blue glow
+- `[03:12]_image_1.png` - Smartphone screen showing scrolling feed of red/yellow hearts and thumbs up
+- `[03:14]_image_1.png` - Portrait of scientist Dr. Eastwood holding a book with yellow arrow
+- `[03:19]_image_1.png` - Stick figure head with yellow funnel, laptop pouring stars/symbols into it
+- `[03:23]_image_1.png` - Stick figure yawning looking at blank wall, text "BOREDOM"
+- `[03:25]_image_1.png` - Bar graph labeled "STIMULATION NEEDED" with one red bar shooting past axis line
+
+## 03:28 onwards (To Be Generated)
+- `[03:28]_image_1.png` - Stick figure hugging giant blue smartphone, red heart icons floating
+- `[03:29]_image_1.png` - Stick figure running away from friendly cartoon brain extending arms for a hug
+- `[03:32]_image_1.png` - Winding brown path up mountain peak, arrow pointing to chest labeled "TWIST"
+- `[03:34]_image_1.png` - Portrait of female scientist Sandi Mann holding pink brain, smiling
+- `[03:38]_image_1.png` - Stick figure floating upside down in relaxed pose among white clouds, sky-blue bg
+- `[03:39]_image_1.png` - Brain with glowing yellow wire connecting lightbulbs "MEMORY A" and "MEMORY B"
+- `[03:44]_image_1.png` - Green sprout growing from brown soil with yellow lightbulb blooming on top
+- `[03:47]_image_1.png` - Hand holding red watering can watering the green sprout, green ground
+- `[03:49]_image_1.png` - Stick figure sitting cross-legged under large green tree, grass ground, blue sky
+- `[03:52]_image_1.png` - Portrait of Blaise Pascal, collar/17th-century clothes, yellow arrow
+- `[03:54]_image_1.png` - Stick figure sitting alone on chair in middle of empty room, text "ALONE IN A ROOM"
+- `[03:58]_image_1.png` - Modern stick figure surrounded by floating tech (VR headset, tablet, smartwatch)
+- `[04:04]_image_1.png` - Stick figure trying to climb out of brain outline, pulled back by blue neural lines
+- `[04:06]_image_1.png` - Close-up of hand reaching for phone, blocked by red stop sign text "STOP"
+- `[04:10]_image_1.png` - Blank black phone screen with faint sketchy reflection of stick figure face
+- `[04:11]_image_1.png` - Glowing neon blue brain outline floating in dark starry night sky
+- `[04:16]_image_1.png` - Stick figure walking forward casting shadow shaped like giant phone screen
+
+- `[04:19]_image_1.png` - Stick figure sitting at desk, surrounded by blue noise waves "BZZZ" and "HUMM"
+- `[04:22]_image_1.png` - Stick figure sitting cross-legged in empty white room, eyes closed, smiling peacefully

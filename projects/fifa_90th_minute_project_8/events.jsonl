@@ -1,0 +1,16 @@
+{"ts": "2026-07-16T05:19:58.184874+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_90th_minute_project_8/voiceover.wav"}
+{"ts": "2026-07-16T05:19:58.185335+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_90th_minute_project_8/voiceover.wav", "success": false, "cost_usd": 0.0, "duration_s": 0.0}
+{"ts": "2026-07-16T05:20:06.190575+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_90th_minute_project_8/voiceover.wav"}
+{"ts": "2026-07-16T05:20:52.470518+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_90th_minute_project_8/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 46.28}
+{"ts": "2026-07-16T05:21:49.568279+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_90th_minute_project_8/voiceover.wav"}
+{"ts": "2026-07-16T05:22:24.338861+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_90th_minute_project_8/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 34.77}
+{"ts": "2026-07-16T05:24:04.584397+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-16T05:24:19.543980+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 14.96}
+{"ts": "2026-07-16T05:24:37.091918+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-16T05:24:52.369748+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 15.28}
+{"ts": "2026-07-16T05:25:33.437966+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-16T05:25:48.470368+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 15.03}
+{"ts": "2026-07-16T05:26:47.980199+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-16T05:27:03.296322+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 15.32}
+{"ts": "2026-07-16T05:30:45.652316+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-16T05:31:00.382442+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 14.73}

@@ -1,0 +1,8362 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.5,
+      "text": "In July, 2026, you watched Argentina defy all odds to reach the World Cup final.",
+      "words": [
+        {
+          "word": " In",
+          "start": 0.0,
+          "end": 0.08,
+          "probability": 0.885
+        },
+        {
+          "word": " July,",
+          "start": 0.08,
+          "end": 0.36,
+          "probability": 0.985
+        },
+        {
+          "word": " 2026,",
+          "start": 0.52,
+          "end": 1.68,
+          "probability": 0.89
+        },
+        {
+          "word": " you",
+          "start": 2.04,
+          "end": 2.1,
+          "probability": 0.982
+        },
+        {
+          "word": " watched",
+          "start": 2.1,
+          "end": 2.4,
+          "probability": 0.99
+        },
+        {
+          "word": " Argentina",
+          "start": 2.4,
+          "end": 2.9,
+          "probability": 0.97
+        },
+        {
+          "word": " defy",
+          "start": 2.9,
+          "end": 3.38,
+          "probability": 0.947
+        },
+        {
+          "word": " all",
+          "start": 3.38,
+          "end": 3.72,
+          "probability": 0.971
+        },
+        {
+          "word": " odds",
+          "start": 3.72,
+          "end": 4.06,
+          "probability": 0.995
+        },
+        {
+          "word": " to",
+          "start": 4.06,
+          "end": 4.2,
+          "probability": 0.99
+        },
+        {
+          "word": " reach",
+          "start": 4.2,
+          "end": 4.36,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 4.36,
+          "end": 4.58,
+          "probability": 0.985
+        },
+        {
+          "word": " World",
+          "start": 4.58,
+          "end": 4.8,
+          "probability": 0.95
+        },
+        {
+          "word": " Cup",
+          "start": 4.8,
+          "end": 5.02,
+          "probability": 0.992
+        },
+        {
+          "word": " final.",
+          "start": 5.02,
+          "end": 5.5,
+          "probability": 0.375
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 5.92,
+      "end": 7.42,
+      "text": "You sat on the edge of your seat.",
+      "words": [
+        {
+          "word": " You",
+          "start": 5.92,
+          "end": 6.06,
+          "probability": 0.945
+        },
+        {
+          "word": " sat",
+          "start": 6.06,
+          "end": 6.3,
+          "probability": 0.989
+        },
+        {
+          "word": " on",
+          "start": 6.3,
+          "end": 6.48,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 6.48,
+          "end": 6.64,
+          "probability": 0.997
+        },
+        {
+          "word": " edge",
+          "start": 6.64,
+          "end": 6.8,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 6.8,
+          "end": 7.0,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 7.0,
+          "end": 7.08,
+          "probability": 0.773
+        },
+        {
+          "word": " seat.",
+          "start": 7.08,
+          "end": 7.42,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 7.96,
+      "end": 11.26,
+      "text": "You screamed as they defeated Egypt and England in the final seconds.",
+      "words": [
+        {
+          "word": " You",
+          "start": 7.96,
+          "end": 8.06,
+          "probability": 0.996
+        },
+        {
+          "word": " screamed",
+          "start": 8.06,
+          "end": 8.4,
+          "probability": 0.958
+        },
+        {
+          "word": " as",
+          "start": 8.4,
+          "end": 8.68,
+          "probability": 0.985
+        },
+        {
+          "word": " they",
+          "start": 8.68,
+          "end": 8.82,
+          "probability": 0.997
+        },
+        {
+          "word": " defeated",
+          "start": 8.82,
+          "end": 9.16,
+          "probability": 0.989
+        },
+        {
+          "word": " Egypt",
+          "start": 9.16,
+          "end": 9.6,
+          "probability": 0.997
+        },
+        {
+          "word": " and",
+          "start": 9.6,
+          "end": 9.92,
+          "probability": 0.984
+        },
+        {
+          "word": " England",
+          "start": 9.92,
+          "end": 10.2,
+          "probability": 0.994
+        },
+        {
+          "word": " in",
+          "start": 10.2,
+          "end": 10.4,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 10.4,
+          "end": 10.48,
+          "probability": 0.997
+        },
+        {
+          "word": " final",
+          "start": 10.48,
+          "end": 10.76,
+          "probability": 0.974
+        },
+        {
+          "word": " seconds.",
+          "start": 10.76,
+          "end": 11.26,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 11.76,
+      "end": 14.94,
+      "text": "But the real reason they won is far stranger than soccer tactics.",
+      "words": [
+        {
+          "word": " But",
+          "start": 11.76,
+          "end": 11.92,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 11.92,
+          "end": 12.04,
+          "probability": 0.975
+        },
+        {
+          "word": " real",
+          "start": 12.04,
+          "end": 12.24,
+          "probability": 0.994
+        },
+        {
+          "word": " reason",
+          "start": 12.24,
+          "end": 12.64,
+          "probability": 0.999
+        },
+        {
+          "word": " they",
+          "start": 12.64,
+          "end": 12.8,
+          "probability": 0.951
+        },
+        {
+          "word": " won",
+          "start": 12.8,
+          "end": 12.98,
+          "probability": 0.999
+        },
+        {
+          "word": " is",
+          "start": 12.98,
+          "end": 13.22,
+          "probability": 0.956
+        },
+        {
+          "word": " far",
+          "start": 13.22,
+          "end": 13.44,
+          "probability": 0.938
+        },
+        {
+          "word": " stranger",
+          "start": 13.44,
+          "end": 13.94,
+          "probability": 0.981
+        },
+        {
+          "word": " than",
+          "start": 13.94,
+          "end": 14.14,
+          "probability": 0.991
+        },
+        {
+          "word": " soccer",
+          "start": 14.14,
+          "end": 14.48,
+          "probability": 0.892
+        },
+        {
+          "word": " tactics.",
+          "start": 14.48,
+          "end": 14.94,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 15.54,
+      "end": 16.92,
+      "text": "It was not just skill or luck.",
+      "words": [
+        {
+          "word": " It",
+          "start": 15.54,
+          "end": 15.7,
+          "probability": 0.995
+        },
+        {
+          "word": " was",
+          "start": 15.7,
+          "end": 15.8,
+          "probability": 0.995
+        },
+        {
+          "word": " not",
+          "start": 15.8,
+          "end": 16.0,
+          "probability": 0.996
+        },
+        {
+          "word": " just",
+          "start": 16.0,
+          "end": 16.2,
+          "probability": 0.998
+        },
+        {
+          "word": " skill",
+          "start": 16.2,
+          "end": 16.5,
+          "probability": 0.962
+        },
+        {
+          "word": " or",
+          "start": 16.5,
+          "end": 16.7,
+          "probability": 0.995
+        },
+        {
+          "word": " luck.",
+          "start": 16.7,
+          "end": 16.92,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 17.46,
+      "end": 19.98,
+      "text": "It was a biological hijack of the human brain.",
+      "words": [
+        {
+          "word": " It",
+          "start": 17.46,
+          "end": 17.54,
+          "probability": 0.996
+        },
+        {
+          "word": " was",
+          "start": 17.54,
+          "end": 17.64,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 17.64,
+          "end": 17.78,
+          "probability": 0.991
+        },
+        {
+          "word": " biological",
+          "start": 17.78,
+          "end": 18.24,
+          "probability": 0.98
+        },
+        {
+          "word": " hijack",
+          "start": 18.24,
+          "end": 19.02,
+          "probability": 0.966
+        },
+        {
+          "word": " of",
+          "start": 19.02,
+          "end": 19.28,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 19.28,
+          "end": 19.38,
+          "probability": 0.966
+        },
+        {
+          "word": " human",
+          "start": 19.38,
+          "end": 19.64,
+          "probability": 0.919
+        },
+        {
+          "word": " brain.",
+          "start": 19.64,
+          "end": 19.98,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 20.5,
+      "end": 24.82,
+      "text": "Why does the human mind wait until the brink of disaster to perform its greatest miracles?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 20.5,
+          "end": 20.66,
+          "probability": 0.949
+        },
+        {
+          "word": " does",
+          "start": 20.66,
+          "end": 20.78,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 20.78,
+          "end": 20.96,
+          "probability": 0.997
+        },
+        {
+          "word": " human",
+          "start": 20.96,
+          "end": 21.18,
+          "probability": 0.992
+        },
+        {
+          "word": " mind",
+          "start": 21.18,
+          "end": 21.46,
+          "probability": 0.996
+        },
+        {
+          "word": " wait",
+          "start": 21.46,
+          "end": 21.8,
+          "probability": 0.972
+        },
+        {
+          "word": " until",
+          "start": 21.8,
+          "end": 22.24,
+          "probability": 0.987
+        },
+        {
+          "word": " the",
+          "start": 22.24,
+          "end": 22.42,
+          "probability": 0.997
+        },
+        {
+          "word": " brink",
+          "start": 22.42,
+          "end": 22.62,
+          "probability": 0.897
+        },
+        {
+          "word": " of",
+          "start": 22.62,
+          "end": 22.74,
+          "probability": 0.994
+        },
+        {
+          "word": " disaster",
+          "start": 22.74,
+          "end": 23.06,
+          "probability": 0.989
+        },
+        {
+          "word": " to",
+          "start": 23.06,
+          "end": 23.44,
+          "probability": 0.994
+        },
+        {
+          "word": " perform",
+          "start": 23.44,
+          "end": 23.8,
+          "probability": 0.996
+        },
+        {
+          "word": " its",
+          "start": 23.8,
+          "end": 24.0,
+          "probability": 0.992
+        },
+        {
+          "word": " greatest",
+          "start": 24.0,
+          "end": 24.36,
+          "probability": 0.994
+        },
+        {
+          "word": " miracles?",
+          "start": 24.36,
+          "end": 24.82,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 25.48,
+      "end": 27.84,
+      "text": "Consider the round of 16 against Egypt.",
+      "words": [
+        {
+          "word": " Consider",
+          "start": 25.48,
+          "end": 25.8,
+          "probability": 0.988
+        },
+        {
+          "word": " the",
+          "start": 25.8,
+          "end": 26.04,
+          "probability": 0.989
+        },
+        {
+          "word": " round",
+          "start": 26.04,
+          "end": 26.26,
+          "probability": 0.927
+        },
+        {
+          "word": " of",
+          "start": 26.26,
+          "end": 26.44,
+          "probability": 0.996
+        },
+        {
+          "word": " 16",
+          "start": 26.44,
+          "end": 26.92,
+          "probability": 0.86
+        },
+        {
+          "word": " against",
+          "start": 26.92,
+          "end": 27.32,
+          "probability": 0.999
+        },
+        {
+          "word": " Egypt.",
+          "start": 27.32,
+          "end": 27.84,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 27.84,
+      "end": 31.54,
+      "text": "Argentina was trailing two to zero in the 78th minute.",
+      "words": [
+        {
+          "word": " Argentina",
+          "start": 27.84,
+          "end": 28.78,
+          "probability": 0.286
+        },
+        {
+          "word": " was",
+          "start": 28.78,
+          "end": 29.22,
+          "probability": 0.975
+        },
+        {
+          "word": " trailing",
+          "start": 29.22,
+          "end": 29.54,
+          "probability": 0.993
+        },
+        {
+          "word": " two",
+          "start": 29.54,
+          "end": 29.8,
+          "probability": 0.467
+        },
+        {
+          "word": " to",
+          "start": 29.8,
+          "end": 29.96,
+          "probability": 0.963
+        },
+        {
+          "word": " zero",
+          "start": 29.96,
+          "end": 30.26,
+          "probability": 0.927
+        },
+        {
+          "word": " in",
+          "start": 30.26,
+          "end": 30.46,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 30.46,
+          "end": 30.56,
+          "probability": 0.988
+        },
+        {
+          "word": " 78th",
+          "start": 30.56,
+          "end": 31.28,
+          "probability": 0.84
+        },
+        {
+          "word": " minute.",
+          "start": 31.28,
+          "end": 31.54,
+          "probability": 0.969
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 32.04,
+      "end": 33.28,
+      "text": "Their legs felt like lead.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 32.04,
+          "end": 32.12,
+          "probability": 0.988
+        },
+        {
+          "word": " legs",
+          "start": 32.12,
+          "end": 32.36,
+          "probability": 0.997
+        },
+        {
+          "word": " felt",
+          "start": 32.36,
+          "end": 32.64,
+          "probability": 0.966
+        },
+        {
+          "word": " like",
+          "start": 32.64,
+          "end": 33.0,
+          "probability": 0.989
+        },
+        {
+          "word": " lead.",
+          "start": 33.0,
+          "end": 33.28,
+          "probability": 0.958
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 33.82,
+      "end": 35.28,
+      "text": "Their lungs were burning for oxygen.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 33.82,
+          "end": 33.92,
+          "probability": 0.986
+        },
+        {
+          "word": " lungs",
+          "start": 33.92,
+          "end": 34.1,
+          "probability": 0.885
+        },
+        {
+          "word": " were",
+          "start": 34.1,
+          "end": 34.34,
+          "probability": 0.998
+        },
+        {
+          "word": " burning",
+          "start": 34.34,
+          "end": 34.58,
+          "probability": 0.998
+        },
+        {
+          "word": " for",
+          "start": 34.58,
+          "end": 34.8,
+          "probability": 0.999
+        },
+        {
+          "word": " oxygen.",
+          "start": 34.8,
+          "end": 35.28,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 35.86,
+      "end": 39.88,
+      "text": "Earlier, the Egyptian goalkeeper had even saved the penalty from Lionel Messi.",
+      "words": [
+        {
+          "word": " Earlier,",
+          "start": 35.86,
+          "end": 36.12,
+          "probability": 0.986
+        },
+        {
+          "word": " the",
+          "start": 36.48,
+          "end": 36.54,
+          "probability": 0.993
+        },
+        {
+          "word": " Egyptian",
+          "start": 36.54,
+          "end": 36.96,
+          "probability": 0.997
+        },
+        {
+          "word": " goalkeeper",
+          "start": 36.96,
+          "end": 37.54,
+          "probability": 0.954
+        },
+        {
+          "word": " had",
+          "start": 37.54,
+          "end": 37.76,
+          "probability": 0.991
+        },
+        {
+          "word": " even",
+          "start": 37.76,
+          "end": 38.1,
+          "probability": 0.991
+        },
+        {
+          "word": " saved",
+          "start": 38.1,
+          "end": 38.46,
+          "probability": 0.951
+        },
+        {
+          "word": " the",
+          "start": 38.46,
+          "end": 38.6,
+          "probability": 0.797
+        },
+        {
+          "word": " penalty",
+          "start": 38.6,
+          "end": 38.84,
+          "probability": 0.995
+        },
+        {
+          "word": " from",
+          "start": 38.84,
+          "end": 39.24,
+          "probability": 0.993
+        },
+        {
+          "word": " Lionel",
+          "start": 39.24,
+          "end": 39.6,
+          "probability": 0.986
+        },
+        {
+          "word": " Messi.",
+          "start": 39.6,
+          "end": 39.88,
+          "probability": 0.975
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 40.46,
+      "end": 43.5,
+      "text": "Under normal circumstances, their bodies should have shut down.",
+      "words": [
+        {
+          "word": " Under",
+          "start": 40.46,
+          "end": 40.66,
+          "probability": 0.994
+        },
+        {
+          "word": " normal",
+          "start": 40.66,
+          "end": 41.0,
+          "probability": 0.997
+        },
+        {
+          "word": " circumstances,",
+          "start": 41.0,
+          "end": 41.76,
+          "probability": 0.999
+        },
+        {
+          "word": " their",
+          "start": 42.2,
+          "end": 42.28,
+          "probability": 0.997
+        },
+        {
+          "word": " bodies",
+          "start": 42.28,
+          "end": 42.6,
+          "probability": 0.985
+        },
+        {
+          "word": " should",
+          "start": 42.6,
+          "end": 42.86,
+          "probability": 0.99
+        },
+        {
+          "word": " have",
+          "start": 42.86,
+          "end": 42.98,
+          "probability": 0.845
+        },
+        {
+          "word": " shut",
+          "start": 42.98,
+          "end": 43.16,
+          "probability": 0.959
+        },
+        {
+          "word": " down.",
+          "start": 43.16,
+          "end": 43.5,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 43.94,
+      "end": 45.64,
+      "text": "But then, a sudden shift occurred.",
+      "words": [
+        {
+          "word": " But",
+          "start": 43.94,
+          "end": 44.06,
+          "probability": 0.991
+        },
+        {
+          "word": " then,",
+          "start": 44.06,
+          "end": 44.36,
+          "probability": 0.98
+        },
+        {
+          "word": " a",
+          "start": 44.62,
+          "end": 44.72,
+          "probability": 0.771
+        },
+        {
+          "word": " sudden",
+          "start": 44.72,
+          "end": 44.98,
+          "probability": 0.999
+        },
+        {
+          "word": " shift",
+          "start": 44.98,
+          "end": 45.26,
+          "probability": 0.996
+        },
+        {
+          "word": " occurred.",
+          "start": 45.26,
+          "end": 45.64,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 46.2,
+      "end": 48.82,
+      "text": "In the 79th minute, Christian Romero scored.",
+      "words": [
+        {
+          "word": " In",
+          "start": 46.2,
+          "end": 46.28,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 46.28,
+          "end": 46.4,
+          "probability": 0.995
+        },
+        {
+          "word": " 79th",
+          "start": 46.4,
+          "end": 47.12,
+          "probability": 0.977
+        },
+        {
+          "word": " minute,",
+          "start": 47.12,
+          "end": 47.36,
+          "probability": 0.985
+        },
+        {
+          "word": " Christian",
+          "start": 47.72,
+          "end": 48.0,
+          "probability": 0.959
+        },
+        {
+          "word": " Romero",
+          "start": 48.0,
+          "end": 48.48,
+          "probability": 0.897
+        },
+        {
+          "word": " scored.",
+          "start": 48.48,
+          "end": 48.82,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 49.38,
+      "end": 52.24,
+      "text": "Four minutes later, Lionel Messi equalized.",
+      "words": [
+        {
+          "word": " Four",
+          "start": 49.38,
+          "end": 49.6,
+          "probability": 0.833
+        },
+        {
+          "word": " minutes",
+          "start": 49.6,
+          "end": 49.9,
+          "probability": 0.998
+        },
+        {
+          "word": " later,",
+          "start": 49.9,
+          "end": 50.38,
+          "probability": 0.992
+        },
+        {
+          "word": " Lionel",
+          "start": 50.78,
+          "end": 51.04,
+          "probability": 0.999
+        },
+        {
+          "word": " Messi",
+          "start": 51.04,
+          "end": 51.36,
+          "probability": 0.985
+        },
+        {
+          "word": " equalized.",
+          "start": 51.36,
+          "end": 52.24,
+          "probability": 0.954
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 52.58,
+      "end": 55.68,
+      "text": "In the 92nd minute, Enzo Fernandez scored the winning goal.",
+      "words": [
+        {
+          "word": " In",
+          "start": 52.58,
+          "end": 52.76,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 52.76,
+          "end": 52.86,
+          "probability": 0.999
+        },
+        {
+          "word": " 92nd",
+          "start": 52.86,
+          "end": 53.54,
+          "probability": 0.884
+        },
+        {
+          "word": " minute,",
+          "start": 53.54,
+          "end": 53.78,
+          "probability": 0.994
+        },
+        {
+          "word": " Enzo",
+          "start": 54.08,
+          "end": 54.24,
+          "probability": 0.519
+        },
+        {
+          "word": " Fernandez",
+          "start": 54.24,
+          "end": 54.72,
+          "probability": 0.583
+        },
+        {
+          "word": " scored",
+          "start": 54.72,
+          "end": 55.02,
+          "probability": 0.98
+        },
+        {
+          "word": " the",
+          "start": 55.02,
+          "end": 55.24,
+          "probability": 0.988
+        },
+        {
+          "word": " winning",
+          "start": 55.24,
+          "end": 55.4,
+          "probability": 0.991
+        },
+        {
+          "word": " goal.",
+          "start": 55.4,
+          "end": 55.68,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 55.68,
+      "end": 60.0,
+      "text": "How did a team that looked completely dead score three times in 13 minutes?",
+      "words": [
+        {
+          "word": " How",
+          "start": 55.68,
+          "end": 56.3,
+          "probability": 0.519
+        },
+        {
+          "word": " did",
+          "start": 56.3,
+          "end": 56.42,
+          "probability": 0.75
+        },
+        {
+          "word": " a",
+          "start": 56.42,
+          "end": 56.54,
+          "probability": 0.995
+        },
+        {
+          "word": " team",
+          "start": 56.54,
+          "end": 56.78,
+          "probability": 0.938
+        },
+        {
+          "word": " that",
+          "start": 56.78,
+          "end": 57.04,
+          "probability": 0.989
+        },
+        {
+          "word": " looked",
+          "start": 57.04,
+          "end": 57.26,
+          "probability": 0.978
+        },
+        {
+          "word": " completely",
+          "start": 57.26,
+          "end": 57.72,
+          "probability": 0.994
+        },
+        {
+          "word": " dead",
+          "start": 57.72,
+          "end": 57.98,
+          "probability": 0.979
+        },
+        {
+          "word": " score",
+          "start": 57.98,
+          "end": 58.32,
+          "probability": 0.939
+        },
+        {
+          "word": " three",
+          "start": 58.32,
+          "end": 58.64,
+          "probability": 0.858
+        },
+        {
+          "word": " times",
+          "start": 58.64,
+          "end": 58.94,
+          "probability": 0.994
+        },
+        {
+          "word": " in",
+          "start": 58.94,
+          "end": 59.18,
+          "probability": 0.96
+        },
+        {
+          "word": " 13",
+          "start": 59.18,
+          "end": 59.52,
+          "probability": 0.791
+        },
+        {
+          "word": " minutes?",
+          "start": 59.52,
+          "end": 60.0,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 60.48,
+      "end": 63.92,
+      "text": "The answer lies in a theory proposed by Dr. Samuel Marcora.",
+      "words": [
+        {
+          "word": " The",
+          "start": 60.48,
+          "end": 60.56,
+          "probability": 0.713
+        },
+        {
+          "word": " answer",
+          "start": 60.56,
+          "end": 60.92,
+          "probability": 0.991
+        },
+        {
+          "word": " lies",
+          "start": 60.92,
+          "end": 61.24,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 61.24,
+          "end": 61.52,
+          "probability": 0.973
+        },
+        {
+          "word": " a",
+          "start": 61.52,
+          "end": 61.62,
+          "probability": 0.973
+        },
+        {
+          "word": " theory",
+          "start": 61.62,
+          "end": 61.9,
+          "probability": 0.996
+        },
+        {
+          "word": " proposed",
+          "start": 61.9,
+          "end": 62.34,
+          "probability": 0.991
+        },
+        {
+          "word": " by",
+          "start": 62.34,
+          "end": 62.64,
+          "probability": 0.999
+        },
+        {
+          "word": " Dr.",
+          "start": 62.64,
+          "end": 62.94,
+          "probability": 0.951
+        },
+        {
+          "word": " Samuel",
+          "start": 63.12,
+          "end": 63.38,
+          "probability": 0.97
+        },
+        {
+          "word": " Marcora.",
+          "start": 63.38,
+          "end": 63.92,
+          "probability": 0.625
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 64.44,
+      "end": 67.26,
+      "text": "He developed the psychobiological model of exercise.",
+      "words": [
+        {
+          "word": " He",
+          "start": 64.44,
+          "end": 64.52,
+          "probability": 0.963
+        },
+        {
+          "word": " developed",
+          "start": 64.52,
+          "end": 64.88,
+          "probability": 0.984
+        },
+        {
+          "word": " the",
+          "start": 64.88,
+          "end": 65.08,
+          "probability": 0.985
+        },
+        {
+          "word": " psychobiological",
+          "start": 65.08,
+          "end": 66.06,
+          "probability": 0.779
+        },
+        {
+          "word": " model",
+          "start": 66.06,
+          "end": 66.48,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 66.48,
+          "end": 66.72,
+          "probability": 0.996
+        },
+        {
+          "word": " exercise.",
+          "start": 66.72,
+          "end": 67.26,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 67.74,
+      "end": 71.32,
+      "text": "This model suggests that your muscles do not actually stop you when you are tired.",
+      "words": [
+        {
+          "word": " This",
+          "start": 67.74,
+          "end": 68.02,
+          "probability": 0.989
+        },
+        {
+          "word": " model",
+          "start": 68.02,
+          "end": 68.3,
+          "probability": 0.996
+        },
+        {
+          "word": " suggests",
+          "start": 68.3,
+          "end": 68.62,
+          "probability": 0.992
+        },
+        {
+          "word": " that",
+          "start": 68.62,
+          "end": 68.92,
+          "probability": 0.981
+        },
+        {
+          "word": " your",
+          "start": 68.92,
+          "end": 69.0,
+          "probability": 0.99
+        },
+        {
+          "word": " muscles",
+          "start": 69.0,
+          "end": 69.24,
+          "probability": 0.996
+        },
+        {
+          "word": " do",
+          "start": 69.24,
+          "end": 69.48,
+          "probability": 0.979
+        },
+        {
+          "word": " not",
+          "start": 69.48,
+          "end": 69.62,
+          "probability": 0.998
+        },
+        {
+          "word": " actually",
+          "start": 69.62,
+          "end": 70.08,
+          "probability": 0.987
+        },
+        {
+          "word": " stop",
+          "start": 70.08,
+          "end": 70.44,
+          "probability": 0.997
+        },
+        {
+          "word": " you",
+          "start": 70.44,
+          "end": 70.66,
+          "probability": 0.99
+        },
+        {
+          "word": " when",
+          "start": 70.66,
+          "end": 70.78,
+          "probability": 0.994
+        },
+        {
+          "word": " you",
+          "start": 70.78,
+          "end": 70.88,
+          "probability": 0.998
+        },
+        {
+          "word": " are",
+          "start": 70.88,
+          "end": 70.94,
+          "probability": 0.704
+        },
+        {
+          "word": " tired.",
+          "start": 70.94,
+          "end": 71.32,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 71.82,
+      "end": 74.6,
+      "text": "Instead, your brain acts as a central governor.",
+      "words": [
+        {
+          "word": " Instead,",
+          "start": 71.82,
+          "end": 72.28,
+          "probability": 0.993
+        },
+        {
+          "word": " your",
+          "start": 72.64,
+          "end": 72.72,
+          "probability": 0.996
+        },
+        {
+          "word": " brain",
+          "start": 72.72,
+          "end": 73.0,
+          "probability": 0.998
+        },
+        {
+          "word": " acts",
+          "start": 73.0,
+          "end": 73.42,
+          "probability": 0.997
+        },
+        {
+          "word": " as",
+          "start": 73.42,
+          "end": 73.68,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 73.68,
+          "end": 73.76,
+          "probability": 0.991
+        },
+        {
+          "word": " central",
+          "start": 73.76,
+          "end": 74.12,
+          "probability": 0.992
+        },
+        {
+          "word": " governor.",
+          "start": 74.12,
+          "end": 74.6,
+          "probability": 0.966
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 75.02,
+      "end": 79.74,
+      "text": "A constantly monitors your effort and creates the feeling of fatigue to protect your body from damage.",
+      "words": [
+        {
+          "word": " A",
+          "start": 75.02,
+          "end": 75.16,
+          "probability": 0.866
+        },
+        {
+          "word": " constantly",
+          "start": 75.16,
+          "end": 75.58,
+          "probability": 0.992
+        },
+        {
+          "word": " monitors",
+          "start": 75.58,
+          "end": 76.06,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 76.06,
+          "end": 76.3,
+          "probability": 0.996
+        },
+        {
+          "word": " effort",
+          "start": 76.3,
+          "end": 76.58,
+          "probability": 0.993
+        },
+        {
+          "word": " and",
+          "start": 76.58,
+          "end": 76.8,
+          "probability": 0.979
+        },
+        {
+          "word": " creates",
+          "start": 76.8,
+          "end": 77.16,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 77.16,
+          "end": 77.4,
+          "probability": 0.993
+        },
+        {
+          "word": " feeling",
+          "start": 77.4,
+          "end": 77.68,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 77.68,
+          "end": 77.9,
+          "probability": 0.989
+        },
+        {
+          "word": " fatigue",
+          "start": 77.9,
+          "end": 78.14,
+          "probability": 0.97
+        },
+        {
+          "word": " to",
+          "start": 78.14,
+          "end": 78.38,
+          "probability": 0.994
+        },
+        {
+          "word": " protect",
+          "start": 78.38,
+          "end": 78.64,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 78.64,
+          "end": 78.88,
+          "probability": 0.994
+        },
+        {
+          "word": " body",
+          "start": 78.88,
+          "end": 79.16,
+          "probability": 0.998
+        },
+        {
+          "word": " from",
+          "start": 79.16,
+          "end": 79.38,
+          "probability": 0.996
+        },
+        {
+          "word": " damage.",
+          "start": 79.38,
+          "end": 79.74,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 80.28,
+      "end": 84.48,
+      "text": "If you have a powerful reason to keep going, your brain recalculates the cost of energy.",
+      "words": [
+        {
+          "word": " If",
+          "start": 80.28,
+          "end": 80.42,
+          "probability": 0.992
+        },
+        {
+          "word": " you",
+          "start": 80.42,
+          "end": 80.5,
+          "probability": 0.998
+        },
+        {
+          "word": " have",
+          "start": 80.5,
+          "end": 80.62,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 80.62,
+          "end": 80.7,
+          "probability": 0.994
+        },
+        {
+          "word": " powerful",
+          "start": 80.7,
+          "end": 81.08,
+          "probability": 0.993
+        },
+        {
+          "word": " reason",
+          "start": 81.08,
+          "end": 81.44,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 81.44,
+          "end": 81.64,
+          "probability": 0.998
+        },
+        {
+          "word": " keep",
+          "start": 81.64,
+          "end": 81.8,
+          "probability": 0.999
+        },
+        {
+          "word": " going,",
+          "start": 81.8,
+          "end": 82.16,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 82.52,
+          "end": 82.62,
+          "probability": 0.995
+        },
+        {
+          "word": " brain",
+          "start": 82.62,
+          "end": 82.9,
+          "probability": 0.999
+        },
+        {
+          "word": " recalculates",
+          "start": 82.9,
+          "end": 83.58,
+          "probability": 0.984
+        },
+        {
+          "word": " the",
+          "start": 83.58,
+          "end": 83.7,
+          "probability": 0.998
+        },
+        {
+          "word": " cost",
+          "start": 83.7,
+          "end": 83.94,
+          "probability": 0.991
+        },
+        {
+          "word": " of",
+          "start": 83.94,
+          "end": 84.14,
+          "probability": 0.997
+        },
+        {
+          "word": " energy.",
+          "start": 84.14,
+          "end": 84.48,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 84.48,
+      "end": 87.18,
+      "text": "It releases its grip on your safety reserves.",
+      "words": [
+        {
+          "word": " It",
+          "start": 84.48,
+          "end": 85.06,
+          "probability": 0.511
+        },
+        {
+          "word": " releases",
+          "start": 85.06,
+          "end": 85.44,
+          "probability": 0.967
+        },
+        {
+          "word": " its",
+          "start": 85.44,
+          "end": 85.66,
+          "probability": 0.92
+        },
+        {
+          "word": " grip",
+          "start": 85.66,
+          "end": 85.9,
+          "probability": 0.503
+        },
+        {
+          "word": " on",
+          "start": 85.9,
+          "end": 86.1,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 86.1,
+          "end": 86.22,
+          "probability": 0.985
+        },
+        {
+          "word": " safety",
+          "start": 86.22,
+          "end": 86.6,
+          "probability": 0.994
+        },
+        {
+          "word": " reserves.",
+          "start": 86.6,
+          "end": 87.18,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 87.54,
+      "end": 92.42,
+      "text": "Did the fear of a World Cup exit unlock a chemical override in the Argentine players?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 87.54,
+          "end": 87.72,
+          "probability": 0.914
+        },
+        {
+          "word": " the",
+          "start": 87.72,
+          "end": 87.88,
+          "probability": 0.972
+        },
+        {
+          "word": " fear",
+          "start": 87.88,
+          "end": 88.1,
+          "probability": 0.991
+        },
+        {
+          "word": " of",
+          "start": 88.1,
+          "end": 88.3,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 88.3,
+          "end": 88.4,
+          "probability": 0.982
+        },
+        {
+          "word": " World",
+          "start": 88.4,
+          "end": 88.64,
+          "probability": 0.775
+        },
+        {
+          "word": " Cup",
+          "start": 88.64,
+          "end": 88.9,
+          "probability": 0.972
+        },
+        {
+          "word": " exit",
+          "start": 88.9,
+          "end": 89.32,
+          "probability": 0.926
+        },
+        {
+          "word": " unlock",
+          "start": 89.32,
+          "end": 89.8,
+          "probability": 0.919
+        },
+        {
+          "word": " a",
+          "start": 89.8,
+          "end": 90.12,
+          "probability": 0.997
+        },
+        {
+          "word": " chemical",
+          "start": 90.12,
+          "end": 90.5,
+          "probability": 0.989
+        },
+        {
+          "word": " override",
+          "start": 90.5,
+          "end": 91.02,
+          "probability": 0.485
+        },
+        {
+          "word": " in",
+          "start": 91.02,
+          "end": 91.38,
+          "probability": 0.984
+        },
+        {
+          "word": " the",
+          "start": 91.38,
+          "end": 91.5,
+          "probability": 0.98
+        },
+        {
+          "word": " Argentine",
+          "start": 91.5,
+          "end": 92.04,
+          "probability": 0.979
+        },
+        {
+          "word": " players?",
+          "start": 92.04,
+          "end": 92.42,
+          "probability": 0.92
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 93.02,
+      "end": 95.62,
+      "text": "It happened again in the semifinal against England.",
+      "words": [
+        {
+          "word": " It",
+          "start": 93.02,
+          "end": 93.18,
+          "probability": 0.977
+        },
+        {
+          "word": " happened",
+          "start": 93.18,
+          "end": 93.46,
+          "probability": 0.995
+        },
+        {
+          "word": " again",
+          "start": 93.46,
+          "end": 93.8,
+          "probability": 0.956
+        },
+        {
+          "word": " in",
+          "start": 93.8,
+          "end": 94.12,
+          "probability": 0.894
+        },
+        {
+          "word": " the",
+          "start": 94.12,
+          "end": 94.22,
+          "probability": 0.969
+        },
+        {
+          "word": " semifinal",
+          "start": 94.22,
+          "end": 94.86,
+          "probability": 0.843
+        },
+        {
+          "word": " against",
+          "start": 94.86,
+          "end": 95.28,
+          "probability": 0.996
+        },
+        {
+          "word": " England.",
+          "start": 95.28,
+          "end": 95.62,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 96.16,
+      "end": 99.26,
+      "text": "Argentina was trailing 1-0 in the 85th minute.",
+      "words": [
+        {
+          "word": " Argentina",
+          "start": 96.16,
+          "end": 96.52,
+          "probability": 0.791
+        },
+        {
+          "word": " was",
+          "start": 96.52,
+          "end": 97.0,
+          "probability": 0.997
+        },
+        {
+          "word": " trailing",
+          "start": 97.0,
+          "end": 97.4,
+          "probability": 0.995
+        },
+        {
+          "word": " 1",
+          "start": 97.4,
+          "end": 97.58,
+          "probability": 0.56
+        },
+        {
+          "word": "-0",
+          "start": 97.58,
+          "end": 98.06,
+          "probability": 0.894
+        },
+        {
+          "word": " in",
+          "start": 98.06,
+          "end": 98.32,
+          "probability": 0.987
+        },
+        {
+          "word": " the",
+          "start": 98.32,
+          "end": 98.44,
+          "probability": 0.973
+        },
+        {
+          "word": " 85th",
+          "start": 98.44,
+          "end": 99.06,
+          "probability": 0.886
+        },
+        {
+          "word": " minute.",
+          "start": 99.06,
+          "end": 99.26,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 99.78,
+      "end": 101.38,
+      "text": "The physical fatigue was crushing.",
+      "words": [
+        {
+          "word": " The",
+          "start": 99.78,
+          "end": 99.84,
+          "probability": 0.988
+        },
+        {
+          "word": " physical",
+          "start": 99.84,
+          "end": 100.2,
+          "probability": 0.982
+        },
+        {
+          "word": " fatigue",
+          "start": 100.2,
+          "end": 100.58,
+          "probability": 0.993
+        },
+        {
+          "word": " was",
+          "start": 100.58,
+          "end": 101.02,
+          "probability": 0.997
+        },
+        {
+          "word": " crushing.",
+          "start": 101.02,
+          "end": 101.38,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 101.86,
+      "end": 103.84,
+      "text": "Yet Enzo Fernandez equalized.",
+      "words": [
+        {
+          "word": " Yet",
+          "start": 101.86,
+          "end": 102.1,
+          "probability": 0.991
+        },
+        {
+          "word": " Enzo",
+          "start": 102.1,
+          "end": 102.56,
+          "probability": 0.533
+        },
+        {
+          "word": " Fernandez",
+          "start": 102.56,
+          "end": 103.08,
+          "probability": 0.573
+        },
+        {
+          "word": " equalized.",
+          "start": 103.08,
+          "end": 103.84,
+          "probability": 0.935
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 104.26,
+      "end": 107.7,
+      "text": "In the 92nd minute, La Tera Martine scored the winning goal.",
+      "words": [
+        {
+          "word": " In",
+          "start": 104.26,
+          "end": 104.34,
+          "probability": 0.981
+        },
+        {
+          "word": " the",
+          "start": 104.34,
+          "end": 104.44,
+          "probability": 0.996
+        },
+        {
+          "word": " 92nd",
+          "start": 104.44,
+          "end": 105.1,
+          "probability": 0.794
+        },
+        {
+          "word": " minute,",
+          "start": 105.1,
+          "end": 105.32,
+          "probability": 0.971
+        },
+        {
+          "word": " La",
+          "start": 105.78,
+          "end": 105.86,
+          "probability": 0.374
+        },
+        {
+          "word": " Tera",
+          "start": 105.86,
+          "end": 106.14,
+          "probability": 0.416
+        },
+        {
+          "word": " Martine",
+          "start": 106.14,
+          "end": 106.66,
+          "probability": 0.474
+        },
+        {
+          "word": " scored",
+          "start": 106.66,
+          "end": 106.96,
+          "probability": 0.444
+        },
+        {
+          "word": " the",
+          "start": 106.96,
+          "end": 107.22,
+          "probability": 0.988
+        },
+        {
+          "word": " winning",
+          "start": 107.22,
+          "end": 107.38,
+          "probability": 0.994
+        },
+        {
+          "word": " goal.",
+          "start": 107.38,
+          "end": 107.7,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 108.26,
+      "end": 110.9,
+      "text": "How did they make perfect decisions in these frantic moments?",
+      "words": [
+        {
+          "word": " How",
+          "start": 108.26,
+          "end": 108.36,
+          "probability": 0.99
+        },
+        {
+          "word": " did",
+          "start": 108.36,
+          "end": 108.44,
+          "probability": 0.965
+        },
+        {
+          "word": " they",
+          "start": 108.44,
+          "end": 108.56,
+          "probability": 0.994
+        },
+        {
+          "word": " make",
+          "start": 108.56,
+          "end": 108.74,
+          "probability": 0.998
+        },
+        {
+          "word": " perfect",
+          "start": 108.74,
+          "end": 109.1,
+          "probability": 0.99
+        },
+        {
+          "word": " decisions",
+          "start": 109.1,
+          "end": 109.68,
+          "probability": 0.988
+        },
+        {
+          "word": " in",
+          "start": 109.68,
+          "end": 110.02,
+          "probability": 0.994
+        },
+        {
+          "word": " these",
+          "start": 110.02,
+          "end": 110.16,
+          "probability": 0.973
+        },
+        {
+          "word": " frantic",
+          "start": 110.16,
+          "end": 110.54,
+          "probability": 0.98
+        },
+        {
+          "word": " moments?",
+          "start": 110.54,
+          "end": 110.9,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 111.46,
+      "end": 113.74,
+      "text": "We must look to the research of Dr. Jared Jordan.",
+      "words": [
+        {
+          "word": " We",
+          "start": 111.46,
+          "end": 111.66,
+          "probability": 0.992
+        },
+        {
+          "word": " must",
+          "start": 111.66,
+          "end": 111.84,
+          "probability": 0.997
+        },
+        {
+          "word": " look",
+          "start": 111.84,
+          "end": 112.04,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 112.04,
+          "end": 112.22,
+          "probability": 0.984
+        },
+        {
+          "word": " the",
+          "start": 112.22,
+          "end": 112.32,
+          "probability": 0.993
+        },
+        {
+          "word": " research",
+          "start": 112.32,
+          "end": 112.64,
+          "probability": 0.959
+        },
+        {
+          "word": " of",
+          "start": 112.64,
+          "end": 112.88,
+          "probability": 0.984
+        },
+        {
+          "word": " Dr.",
+          "start": 112.88,
+          "end": 113.2,
+          "probability": 0.967
+        },
+        {
+          "word": " Jared",
+          "start": 113.38,
+          "end": 113.52,
+          "probability": 0.304
+        },
+        {
+          "word": " Jordan.",
+          "start": 113.52,
+          "end": 113.74,
+          "probability": 0.604
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 113.74,
+      "end": 117.2,
+      "text": "He spent years studying elite soccer players under pressure.",
+      "words": [
+        {
+          "word": " He",
+          "start": 113.74,
+          "end": 114.46,
+          "probability": 0.404
+        },
+        {
+          "word": " spent",
+          "start": 114.46,
+          "end": 114.68,
+          "probability": 0.962
+        },
+        {
+          "word": " years",
+          "start": 114.68,
+          "end": 114.94,
+          "probability": 0.968
+        },
+        {
+          "word": " studying",
+          "start": 114.94,
+          "end": 115.3,
+          "probability": 0.995
+        },
+        {
+          "word": " elite",
+          "start": 115.3,
+          "end": 115.7,
+          "probability": 0.465
+        },
+        {
+          "word": " soccer",
+          "start": 115.7,
+          "end": 116.06,
+          "probability": 0.998
+        },
+        {
+          "word": " players",
+          "start": 116.06,
+          "end": 116.44,
+          "probability": 0.932
+        },
+        {
+          "word": " under",
+          "start": 116.44,
+          "end": 116.78,
+          "probability": 0.954
+        },
+        {
+          "word": " pressure.",
+          "start": 116.78,
+          "end": 117.2,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 117.72,
+      "end": 120.26,
+      "text": "Jordan discovered that under extreme stress,",
+      "words": [
+        {
+          "word": " Jordan",
+          "start": 117.72,
+          "end": 117.98,
+          "probability": 0.52
+        },
+        {
+          "word": " discovered",
+          "start": 117.98,
+          "end": 118.58,
+          "probability": 0.984
+        },
+        {
+          "word": " that",
+          "start": 118.58,
+          "end": 118.9,
+          "probability": 0.986
+        },
+        {
+          "word": " under",
+          "start": 118.9,
+          "end": 119.24,
+          "probability": 0.845
+        },
+        {
+          "word": " extreme",
+          "start": 119.24,
+          "end": 119.66,
+          "probability": 0.966
+        },
+        {
+          "word": " stress,",
+          "start": 119.66,
+          "end": 120.26,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 120.52,
+      "end": 122.92,
+      "text": "most players experience cognitive tunnel vision.",
+      "words": [
+        {
+          "word": " most",
+          "start": 120.52,
+          "end": 120.7,
+          "probability": 0.974
+        },
+        {
+          "word": " players",
+          "start": 120.7,
+          "end": 121.06,
+          "probability": 0.97
+        },
+        {
+          "word": " experience",
+          "start": 121.06,
+          "end": 121.76,
+          "probability": 0.812
+        },
+        {
+          "word": " cognitive",
+          "start": 121.76,
+          "end": 122.22,
+          "probability": 0.896
+        },
+        {
+          "word": " tunnel",
+          "start": 122.22,
+          "end": 122.54,
+          "probability": 0.996
+        },
+        {
+          "word": " vision.",
+          "start": 122.54,
+          "end": 122.92,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 123.42,
+      "end": 124.24,
+      "text": "Their eyes freeze.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 123.42,
+          "end": 123.58,
+          "probability": 0.942
+        },
+        {
+          "word": " eyes",
+          "start": 123.58,
+          "end": 123.88,
+          "probability": 0.996
+        },
+        {
+          "word": " freeze.",
+          "start": 123.88,
+          "end": 124.24,
+          "probability": 0.976
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 124.86,
+      "end": 126.38,
+      "text": "They fail to scan their surroundings.",
+      "words": [
+        {
+          "word": " They",
+          "start": 124.86,
+          "end": 124.98,
+          "probability": 0.991
+        },
+        {
+          "word": " fail",
+          "start": 124.98,
+          "end": 125.2,
+          "probability": 0.898
+        },
+        {
+          "word": " to",
+          "start": 125.2,
+          "end": 125.4,
+          "probability": 0.999
+        },
+        {
+          "word": " scan",
+          "start": 125.4,
+          "end": 125.68,
+          "probability": 0.994
+        },
+        {
+          "word": " their",
+          "start": 125.68,
+          "end": 125.86,
+          "probability": 0.999
+        },
+        {
+          "word": " surroundings.",
+          "start": 125.86,
+          "end": 126.38,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 127.02,
+      "end": 128.88,
+      "text": "What elite performers do the opposite.",
+      "words": [
+        {
+          "word": " What",
+          "start": 127.02,
+          "end": 127.16,
+          "probability": 0.786
+        },
+        {
+          "word": " elite",
+          "start": 127.16,
+          "end": 127.46,
+          "probability": 0.981
+        },
+        {
+          "word": " performers",
+          "start": 127.46,
+          "end": 127.94,
+          "probability": 0.995
+        },
+        {
+          "word": " do",
+          "start": 127.94,
+          "end": 128.26,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 128.26,
+          "end": 128.46,
+          "probability": 0.664
+        },
+        {
+          "word": " opposite.",
+          "start": 128.46,
+          "end": 128.88,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 129.42,
+      "end": 132.96,
+      "text": "They scan a field more frequently in the finals seconds that any other time.",
+      "words": [
+        {
+          "word": " They",
+          "start": 129.42,
+          "end": 129.54,
+          "probability": 0.986
+        },
+        {
+          "word": " scan",
+          "start": 129.54,
+          "end": 129.82,
+          "probability": 0.993
+        },
+        {
+          "word": " a",
+          "start": 129.82,
+          "end": 129.92,
+          "probability": 0.963
+        },
+        {
+          "word": " field",
+          "start": 129.92,
+          "end": 130.08,
+          "probability": 0.982
+        },
+        {
+          "word": " more",
+          "start": 130.08,
+          "end": 130.38,
+          "probability": 0.903
+        },
+        {
+          "word": " frequently",
+          "start": 130.38,
+          "end": 130.76,
+          "probability": 0.969
+        },
+        {
+          "word": " in",
+          "start": 130.76,
+          "end": 131.1,
+          "probability": 0.983
+        },
+        {
+          "word": " the",
+          "start": 131.1,
+          "end": 131.18,
+          "probability": 0.997
+        },
+        {
+          "word": " finals",
+          "start": 131.18,
+          "end": 131.44,
+          "probability": 0.163
+        },
+        {
+          "word": " seconds",
+          "start": 131.44,
+          "end": 131.84,
+          "probability": 0.826
+        },
+        {
+          "word": " that",
+          "start": 131.84,
+          "end": 132.06,
+          "probability": 0.133
+        },
+        {
+          "word": " any",
+          "start": 132.06,
+          "end": 132.38,
+          "probability": 0.99
+        },
+        {
+          "word": " other",
+          "start": 132.38,
+          "end": 132.62,
+          "probability": 0.998
+        },
+        {
+          "word": " time.",
+          "start": 132.62,
+          "end": 132.96,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 133.5,
+      "end": 138.28,
+      "text": "How does the brain maintain this intense visual control when every instinct is screaming to panic?",
+      "words": [
+        {
+          "word": " How",
+          "start": 133.5,
+          "end": 133.6,
+          "probability": 0.964
+        },
+        {
+          "word": " does",
+          "start": 133.6,
+          "end": 133.74,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 133.74,
+          "end": 133.86,
+          "probability": 0.988
+        },
+        {
+          "word": " brain",
+          "start": 133.86,
+          "end": 134.04,
+          "probability": 0.965
+        },
+        {
+          "word": " maintain",
+          "start": 134.04,
+          "end": 134.48,
+          "probability": 0.996
+        },
+        {
+          "word": " this",
+          "start": 134.48,
+          "end": 134.78,
+          "probability": 0.995
+        },
+        {
+          "word": " intense",
+          "start": 134.78,
+          "end": 135.04,
+          "probability": 0.991
+        },
+        {
+          "word": " visual",
+          "start": 135.04,
+          "end": 135.46,
+          "probability": 0.986
+        },
+        {
+          "word": " control",
+          "start": 135.46,
+          "end": 135.98,
+          "probability": 0.997
+        },
+        {
+          "word": " when",
+          "start": 135.98,
+          "end": 136.28,
+          "probability": 0.867
+        },
+        {
+          "word": " every",
+          "start": 136.28,
+          "end": 136.66,
+          "probability": 0.994
+        },
+        {
+          "word": " instinct",
+          "start": 136.66,
+          "end": 137.14,
+          "probability": 0.955
+        },
+        {
+          "word": " is",
+          "start": 137.14,
+          "end": 137.4,
+          "probability": 0.986
+        },
+        {
+          "word": " screaming",
+          "start": 137.4,
+          "end": 137.74,
+          "probability": 0.992
+        },
+        {
+          "word": " to",
+          "start": 137.74,
+          "end": 138.0,
+          "probability": 0.973
+        },
+        {
+          "word": " panic?",
+          "start": 138.0,
+          "end": 138.28,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 138.76,
+      "end": 141.5,
+      "text": "This brings us to the research of Dr. Christian Swan.",
+      "words": [
+        {
+          "word": " This",
+          "start": 138.76,
+          "end": 138.96,
+          "probability": 0.989
+        },
+        {
+          "word": " brings",
+          "start": 138.96,
+          "end": 139.28,
+          "probability": 0.998
+        },
+        {
+          "word": " us",
+          "start": 139.28,
+          "end": 139.48,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 139.48,
+          "end": 139.68,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 139.68,
+          "end": 139.8,
+          "probability": 0.994
+        },
+        {
+          "word": " research",
+          "start": 139.8,
+          "end": 140.14,
+          "probability": 0.971
+        },
+        {
+          "word": " of",
+          "start": 140.14,
+          "end": 140.4,
+          "probability": 0.993
+        },
+        {
+          "word": " Dr.",
+          "start": 140.4,
+          "end": 140.74,
+          "probability": 0.931
+        },
+        {
+          "word": " Christian",
+          "start": 140.92,
+          "end": 141.12,
+          "probability": 0.743
+        },
+        {
+          "word": " Swan.",
+          "start": 141.12,
+          "end": 141.5,
+          "probability": 0.64
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 141.5,
+      "end": 145.26,
+      "text": "He studied the difference between flow states and clutch states.",
+      "words": [
+        {
+          "word": " He",
+          "start": 141.5,
+          "end": 142.18,
+          "probability": 0.372
+        },
+        {
+          "word": " studied",
+          "start": 142.18,
+          "end": 142.48,
+          "probability": 0.785
+        },
+        {
+          "word": " the",
+          "start": 142.48,
+          "end": 142.7,
+          "probability": 0.992
+        },
+        {
+          "word": " difference",
+          "start": 142.7,
+          "end": 143.02,
+          "probability": 0.986
+        },
+        {
+          "word": " between",
+          "start": 143.02,
+          "end": 143.42,
+          "probability": 0.997
+        },
+        {
+          "word": " flow",
+          "start": 143.42,
+          "end": 143.7,
+          "probability": 0.793
+        },
+        {
+          "word": " states",
+          "start": 143.7,
+          "end": 144.04,
+          "probability": 0.956
+        },
+        {
+          "word": " and",
+          "start": 144.04,
+          "end": 144.46,
+          "probability": 0.977
+        },
+        {
+          "word": " clutch",
+          "start": 144.46,
+          "end": 144.66,
+          "probability": 0.987
+        },
+        {
+          "word": " states.",
+          "start": 144.66,
+          "end": 145.26,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 145.56,
+      "end": 148.02,
+      "text": "A flow state is effortless and automatic.",
+      "words": [
+        {
+          "word": " A",
+          "start": 145.56,
+          "end": 145.78,
+          "probability": 0.916
+        },
+        {
+          "word": " flow",
+          "start": 145.78,
+          "end": 146.04,
+          "probability": 0.953
+        },
+        {
+          "word": " state",
+          "start": 146.04,
+          "end": 146.4,
+          "probability": 0.996
+        },
+        {
+          "word": " is",
+          "start": 146.4,
+          "end": 146.68,
+          "probability": 0.996
+        },
+        {
+          "word": " effortless",
+          "start": 146.68,
+          "end": 147.18,
+          "probability": 0.964
+        },
+        {
+          "word": " and",
+          "start": 147.18,
+          "end": 147.48,
+          "probability": 0.989
+        },
+        {
+          "word": " automatic.",
+          "start": 147.48,
+          "end": 148.02,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 148.58,
+      "end": 150.26,
+      "text": "You feel it when everything is going perfectly.",
+      "words": [
+        {
+          "word": " You",
+          "start": 148.58,
+          "end": 148.72,
+          "probability": 0.992
+        },
+        {
+          "word": " feel",
+          "start": 148.72,
+          "end": 148.88,
+          "probability": 0.997
+        },
+        {
+          "word": " it",
+          "start": 148.88,
+          "end": 149.02,
+          "probability": 0.965
+        },
+        {
+          "word": " when",
+          "start": 149.02,
+          "end": 149.14,
+          "probability": 0.99
+        },
+        {
+          "word": " everything",
+          "start": 149.14,
+          "end": 149.44,
+          "probability": 0.994
+        },
+        {
+          "word": " is",
+          "start": 149.44,
+          "end": 149.66,
+          "probability": 0.991
+        },
+        {
+          "word": " going",
+          "start": 149.66,
+          "end": 149.86,
+          "probability": 0.997
+        },
+        {
+          "word": " perfectly.",
+          "start": 149.86,
+          "end": 150.26,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 150.84,
+      "end": 153.0,
+      "text": "But a clutch state is deliberate and intense.",
+      "words": [
+        {
+          "word": " But",
+          "start": 150.84,
+          "end": 150.94,
+          "probability": 0.982
+        },
+        {
+          "word": " a",
+          "start": 150.94,
+          "end": 151.04,
+          "probability": 0.985
+        },
+        {
+          "word": " clutch",
+          "start": 151.04,
+          "end": 151.22,
+          "probability": 0.992
+        },
+        {
+          "word": " state",
+          "start": 151.22,
+          "end": 151.6,
+          "probability": 0.996
+        },
+        {
+          "word": " is",
+          "start": 151.6,
+          "end": 151.88,
+          "probability": 0.998
+        },
+        {
+          "word": " deliberate",
+          "start": 151.88,
+          "end": 152.3,
+          "probability": 0.999
+        },
+        {
+          "word": " and",
+          "start": 152.3,
+          "end": 152.66,
+          "probability": 0.978
+        },
+        {
+          "word": " intense.",
+          "start": 152.66,
+          "end": 153.0,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 153.68,
+      "end": 157.12,
+      "text": "It occurs when you realize that failure is imminent and you must act now.",
+      "words": [
+        {
+          "word": " It",
+          "start": 153.68,
+          "end": 153.82,
+          "probability": 0.991
+        },
+        {
+          "word": " occurs",
+          "start": 153.82,
+          "end": 154.1,
+          "probability": 0.997
+        },
+        {
+          "word": " when",
+          "start": 154.1,
+          "end": 154.36,
+          "probability": 0.992
+        },
+        {
+          "word": " you",
+          "start": 154.36,
+          "end": 154.48,
+          "probability": 0.998
+        },
+        {
+          "word": " realize",
+          "start": 154.48,
+          "end": 154.86,
+          "probability": 0.939
+        },
+        {
+          "word": " that",
+          "start": 154.86,
+          "end": 155.12,
+          "probability": 0.988
+        },
+        {
+          "word": " failure",
+          "start": 155.12,
+          "end": 155.48,
+          "probability": 0.998
+        },
+        {
+          "word": " is",
+          "start": 155.48,
+          "end": 155.74,
+          "probability": 0.997
+        },
+        {
+          "word": " imminent",
+          "start": 155.74,
+          "end": 155.94,
+          "probability": 0.995
+        },
+        {
+          "word": " and",
+          "start": 155.94,
+          "end": 156.24,
+          "probability": 0.767
+        },
+        {
+          "word": " you",
+          "start": 156.24,
+          "end": 156.36,
+          "probability": 0.997
+        },
+        {
+          "word": " must",
+          "start": 156.36,
+          "end": 156.6,
+          "probability": 0.996
+        },
+        {
+          "word": " act",
+          "start": 156.6,
+          "end": 156.8,
+          "probability": 0.999
+        },
+        {
+          "word": " now.",
+          "start": 156.8,
+          "end": 157.12,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 157.74,
+      "end": 160.3,
+      "text": "Your brain actively pushes through the physical fatigue.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 157.74,
+          "end": 157.84,
+          "probability": 0.932
+        },
+        {
+          "word": " brain",
+          "start": 157.84,
+          "end": 158.12,
+          "probability": 0.998
+        },
+        {
+          "word": " actively",
+          "start": 158.12,
+          "end": 158.64,
+          "probability": 0.993
+        },
+        {
+          "word": " pushes",
+          "start": 158.64,
+          "end": 159.1,
+          "probability": 0.998
+        },
+        {
+          "word": " through",
+          "start": 159.1,
+          "end": 159.48,
+          "probability": 0.992
+        },
+        {
+          "word": " the",
+          "start": 159.48,
+          "end": 159.6,
+          "probability": 0.983
+        },
+        {
+          "word": " physical",
+          "start": 159.6,
+          "end": 159.96,
+          "probability": 0.998
+        },
+        {
+          "word": " fatigue.",
+          "start": 159.96,
+          "end": 160.3,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 160.92,
+      "end": 162.92,
+      "text": "It focuses inherently on immediate goal.",
+      "words": [
+        {
+          "word": " It",
+          "start": 160.92,
+          "end": 161.02,
+          "probability": 0.815
+        },
+        {
+          "word": " focuses",
+          "start": 161.02,
+          "end": 161.34,
+          "probability": 0.975
+        },
+        {
+          "word": " inherently",
+          "start": 161.34,
+          "end": 161.8,
+          "probability": 0.855
+        },
+        {
+          "word": " on",
+          "start": 161.8,
+          "end": 162.22,
+          "probability": 0.999
+        },
+        {
+          "word": " immediate",
+          "start": 162.22,
+          "end": 162.56,
+          "probability": 0.51
+        },
+        {
+          "word": " goal.",
+          "start": 162.56,
+          "end": 162.92,
+          "probability": 0.964
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 163.46,
+      "end": 165.74,
+      "text": "The Argentine team did not win by accident.",
+      "words": [
+        {
+          "word": " The",
+          "start": 163.46,
+          "end": 163.54,
+          "probability": 0.86
+        },
+        {
+          "word": " Argentine",
+          "start": 163.54,
+          "end": 164.1,
+          "probability": 0.973
+        },
+        {
+          "word": " team",
+          "start": 164.1,
+          "end": 164.46,
+          "probability": 0.979
+        },
+        {
+          "word": " did",
+          "start": 164.46,
+          "end": 164.62,
+          "probability": 0.992
+        },
+        {
+          "word": " not",
+          "start": 164.62,
+          "end": 164.8,
+          "probability": 0.998
+        },
+        {
+          "word": " win",
+          "start": 164.8,
+          "end": 165.04,
+          "probability": 0.999
+        },
+        {
+          "word": " by",
+          "start": 165.04,
+          "end": 165.34,
+          "probability": 0.996
+        },
+        {
+          "word": " accident.",
+          "start": 165.34,
+          "end": 165.74,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 166.26,
+      "end": 169.18,
+      "text": "They entered a collective clutch state where the pressure became fuel.",
+      "words": [
+        {
+          "word": " They",
+          "start": 166.26,
+          "end": 166.44,
+          "probability": 0.994
+        },
+        {
+          "word": " entered",
+          "start": 166.44,
+          "end": 166.74,
+          "probability": 0.968
+        },
+        {
+          "word": " a",
+          "start": 166.74,
+          "end": 166.88,
+          "probability": 0.997
+        },
+        {
+          "word": " collective",
+          "start": 166.88,
+          "end": 167.24,
+          "probability": 0.984
+        },
+        {
+          "word": " clutch",
+          "start": 167.24,
+          "end": 167.46,
+          "probability": 0.993
+        },
+        {
+          "word": " state",
+          "start": 167.46,
+          "end": 167.8,
+          "probability": 0.998
+        },
+        {
+          "word": " where",
+          "start": 167.8,
+          "end": 168.02,
+          "probability": 0.971
+        },
+        {
+          "word": " the",
+          "start": 168.02,
+          "end": 168.14,
+          "probability": 0.997
+        },
+        {
+          "word": " pressure",
+          "start": 168.14,
+          "end": 168.46,
+          "probability": 0.999
+        },
+        {
+          "word": " became",
+          "start": 168.46,
+          "end": 168.82,
+          "probability": 0.996
+        },
+        {
+          "word": " fuel.",
+          "start": 168.82,
+          "end": 169.18,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 169.18,
+      "end": 172.72,
+      "text": "Why do some teams fold under this pressure while others thrive?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 169.18,
+          "end": 169.82,
+          "probability": 0.382
+        },
+        {
+          "word": " do",
+          "start": 169.82,
+          "end": 169.92,
+          "probability": 0.591
+        },
+        {
+          "word": " some",
+          "start": 169.92,
+          "end": 170.14,
+          "probability": 0.993
+        },
+        {
+          "word": " teams",
+          "start": 170.14,
+          "end": 170.5,
+          "probability": 0.945
+        },
+        {
+          "word": " fold",
+          "start": 170.5,
+          "end": 170.78,
+          "probability": 0.969
+        },
+        {
+          "word": " under",
+          "start": 170.78,
+          "end": 171.06,
+          "probability": 0.594
+        },
+        {
+          "word": " this",
+          "start": 171.06,
+          "end": 171.26,
+          "probability": 0.985
+        },
+        {
+          "word": " pressure",
+          "start": 171.26,
+          "end": 171.6,
+          "probability": 0.997
+        },
+        {
+          "word": " while",
+          "start": 171.6,
+          "end": 171.96,
+          "probability": 0.745
+        },
+        {
+          "word": " others",
+          "start": 171.96,
+          "end": 172.26,
+          "probability": 0.998
+        },
+        {
+          "word": " thrive?",
+          "start": 172.26,
+          "end": 172.72,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 173.28,
+      "end": 174.74,
+      "text": "This is not just about soccer.",
+      "words": [
+        {
+          "word": " This",
+          "start": 173.28,
+          "end": 173.56,
+          "probability": 0.976
+        },
+        {
+          "word": " is",
+          "start": 173.56,
+          "end": 173.66,
+          "probability": 0.985
+        },
+        {
+          "word": " not",
+          "start": 173.66,
+          "end": 173.86,
+          "probability": 0.994
+        },
+        {
+          "word": " just",
+          "start": 173.86,
+          "end": 174.1,
+          "probability": 0.99
+        },
+        {
+          "word": " about",
+          "start": 174.1,
+          "end": 174.36,
+          "probability": 0.977
+        },
+        {
+          "word": " soccer.",
+          "start": 174.36,
+          "end": 174.74,
+          "probability": 0.959
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 175.3,
+      "end": 177.7,
+      "text": "It is a mirror of your own evolutionary history.",
+      "words": [
+        {
+          "word": " It",
+          "start": 175.3,
+          "end": 175.38,
+          "probability": 0.98
+        },
+        {
+          "word": " is",
+          "start": 175.38,
+          "end": 175.5,
+          "probability": 0.989
+        },
+        {
+          "word": " a",
+          "start": 175.5,
+          "end": 175.6,
+          "probability": 0.988
+        },
+        {
+          "word": " mirror",
+          "start": 175.6,
+          "end": 175.82,
+          "probability": 0.994
+        },
+        {
+          "word": " of",
+          "start": 175.82,
+          "end": 176.1,
+          "probability": 0.995
+        },
+        {
+          "word": " your",
+          "start": 176.1,
+          "end": 176.2,
+          "probability": 0.994
+        },
+        {
+          "word": " own",
+          "start": 176.2,
+          "end": 176.44,
+          "probability": 0.996
+        },
+        {
+          "word": " evolutionary",
+          "start": 176.44,
+          "end": 177.06,
+          "probability": 0.993
+        },
+        {
+          "word": " history.",
+          "start": 177.06,
+          "end": 177.7,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 178.16,
+      "end": 181.64,
+      "text": "For thousands of years, your ancestors did not hunt when they were fresh.",
+      "words": [
+        {
+          "word": " For",
+          "start": 178.16,
+          "end": 178.22,
+          "probability": 0.969
+        },
+        {
+          "word": " thousands",
+          "start": 178.22,
+          "end": 178.6,
+          "probability": 0.997
+        },
+        {
+          "word": " of",
+          "start": 178.6,
+          "end": 178.82,
+          "probability": 0.998
+        },
+        {
+          "word": " years,",
+          "start": 178.82,
+          "end": 179.14,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 179.52,
+          "end": 179.62,
+          "probability": 0.987
+        },
+        {
+          "word": " ancestors",
+          "start": 179.62,
+          "end": 180.14,
+          "probability": 0.995
+        },
+        {
+          "word": " did",
+          "start": 180.14,
+          "end": 180.48,
+          "probability": 0.986
+        },
+        {
+          "word": " not",
+          "start": 180.48,
+          "end": 180.66,
+          "probability": 1.0
+        },
+        {
+          "word": " hunt",
+          "start": 180.66,
+          "end": 180.86,
+          "probability": 0.997
+        },
+        {
+          "word": " when",
+          "start": 180.86,
+          "end": 181.08,
+          "probability": 0.999
+        },
+        {
+          "word": " they",
+          "start": 181.08,
+          "end": 181.22,
+          "probability": 0.998
+        },
+        {
+          "word": " were",
+          "start": 181.22,
+          "end": 181.36,
+          "probability": 0.998
+        },
+        {
+          "word": " fresh.",
+          "start": 181.36,
+          "end": 181.64,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 182.22,
+      "end": 183.96,
+      "text": "They hunted when they were starving and desperate.",
+      "words": [
+        {
+          "word": " They",
+          "start": 182.22,
+          "end": 182.36,
+          "probability": 0.996
+        },
+        {
+          "word": " hunted",
+          "start": 182.36,
+          "end": 182.6,
+          "probability": 0.998
+        },
+        {
+          "word": " when",
+          "start": 182.6,
+          "end": 182.82,
+          "probability": 0.996
+        },
+        {
+          "word": " they",
+          "start": 182.82,
+          "end": 182.96,
+          "probability": 0.997
+        },
+        {
+          "word": " were",
+          "start": 182.96,
+          "end": 183.06,
+          "probability": 0.988
+        },
+        {
+          "word": " starving",
+          "start": 183.06,
+          "end": 183.44,
+          "probability": 0.996
+        },
+        {
+          "word": " and",
+          "start": 183.44,
+          "end": 183.66,
+          "probability": 0.84
+        },
+        {
+          "word": " desperate.",
+          "start": 183.66,
+          "end": 183.96,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 184.58,
+      "end": 189.02,
+      "text": "Their survival depended on their ability to run down prey when their bodies were completely spent.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 184.58,
+          "end": 184.72,
+          "probability": 0.987
+        },
+        {
+          "word": " survival",
+          "start": 184.72,
+          "end": 185.1,
+          "probability": 0.993
+        },
+        {
+          "word": " depended",
+          "start": 185.1,
+          "end": 185.5,
+          "probability": 0.988
+        },
+        {
+          "word": " on",
+          "start": 185.5,
+          "end": 185.72,
+          "probability": 0.999
+        },
+        {
+          "word": " their",
+          "start": 185.72,
+          "end": 185.86,
+          "probability": 0.998
+        },
+        {
+          "word": " ability",
+          "start": 185.86,
+          "end": 186.22,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 186.22,
+          "end": 186.48,
+          "probability": 0.998
+        },
+        {
+          "word": " run",
+          "start": 186.48,
+          "end": 186.68,
+          "probability": 0.95
+        },
+        {
+          "word": " down",
+          "start": 186.68,
+          "end": 186.96,
+          "probability": 0.994
+        },
+        {
+          "word": " prey",
+          "start": 186.96,
+          "end": 187.24,
+          "probability": 0.985
+        },
+        {
+          "word": " when",
+          "start": 187.24,
+          "end": 187.52,
+          "probability": 0.965
+        },
+        {
+          "word": " their",
+          "start": 187.52,
+          "end": 187.66,
+          "probability": 0.998
+        },
+        {
+          "word": " bodies",
+          "start": 187.66,
+          "end": 187.98,
+          "probability": 0.999
+        },
+        {
+          "word": " were",
+          "start": 187.98,
+          "end": 188.2,
+          "probability": 0.997
+        },
+        {
+          "word": " completely",
+          "start": 188.2,
+          "end": 188.64,
+          "probability": 0.995
+        },
+        {
+          "word": " spent.",
+          "start": 188.64,
+          "end": 189.02,
+          "probability": 0.97
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 189.56,
+      "end": 193.44,
+      "text": "The human brain evolved to deliver its maximum performance when desperate.",
+      "words": [
+        {
+          "word": " The",
+          "start": 189.56,
+          "end": 189.62,
+          "probability": 0.988
+        },
+        {
+          "word": " human",
+          "start": 189.62,
+          "end": 189.86,
+          "probability": 0.994
+        },
+        {
+          "word": " brain",
+          "start": 189.86,
+          "end": 190.16,
+          "probability": 0.999
+        },
+        {
+          "word": " evolved",
+          "start": 190.16,
+          "end": 190.52,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 190.52,
+          "end": 190.92,
+          "probability": 0.998
+        },
+        {
+          "word": " deliver",
+          "start": 190.92,
+          "end": 191.26,
+          "probability": 0.998
+        },
+        {
+          "word": " its",
+          "start": 191.26,
+          "end": 191.54,
+          "probability": 0.973
+        },
+        {
+          "word": " maximum",
+          "start": 191.54,
+          "end": 192.04,
+          "probability": 0.998
+        },
+        {
+          "word": " performance",
+          "start": 192.04,
+          "end": 192.6,
+          "probability": 0.99
+        },
+        {
+          "word": " when",
+          "start": 192.6,
+          "end": 192.94,
+          "probability": 0.982
+        },
+        {
+          "word": " desperate.",
+          "start": 192.94,
+          "end": 193.44,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 193.92,
+      "end": 197.78,
+      "text": "When you face a deadline or a crisis, your brain taps into this network.",
+      "words": [
+        {
+          "word": " When",
+          "start": 193.92,
+          "end": 194.14,
+          "probability": 0.995
+        },
+        {
+          "word": " you",
+          "start": 194.14,
+          "end": 194.26,
+          "probability": 0.999
+        },
+        {
+          "word": " face",
+          "start": 194.26,
+          "end": 194.46,
+          "probability": 0.936
+        },
+        {
+          "word": " a",
+          "start": 194.46,
+          "end": 194.62,
+          "probability": 0.998
+        },
+        {
+          "word": " deadline",
+          "start": 194.62,
+          "end": 194.96,
+          "probability": 0.95
+        },
+        {
+          "word": " or",
+          "start": 194.96,
+          "end": 195.44,
+          "probability": 0.828
+        },
+        {
+          "word": " a",
+          "start": 195.44,
+          "end": 195.56,
+          "probability": 0.949
+        },
+        {
+          "word": " crisis,",
+          "start": 195.56,
+          "end": 195.86,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 196.34,
+          "end": 196.4,
+          "probability": 0.995
+        },
+        {
+          "word": " brain",
+          "start": 196.4,
+          "end": 196.68,
+          "probability": 1.0
+        },
+        {
+          "word": " taps",
+          "start": 196.68,
+          "end": 196.98,
+          "probability": 0.993
+        },
+        {
+          "word": " into",
+          "start": 196.98,
+          "end": 197.28,
+          "probability": 0.998
+        },
+        {
+          "word": " this",
+          "start": 197.28,
+          "end": 197.48,
+          "probability": 0.994
+        },
+        {
+          "word": " network.",
+          "start": 197.48,
+          "end": 197.78,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 197.78,
+      "end": 201.42,
+      "text": "It is the reason you find focus when all hope seems lost.",
+      "words": [
+        {
+          "word": " It",
+          "start": 197.78,
+          "end": 198.38,
+          "probability": 0.747
+        },
+        {
+          "word": " is",
+          "start": 198.38,
+          "end": 198.5,
+          "probability": 0.979
+        },
+        {
+          "word": " the",
+          "start": 198.5,
+          "end": 198.62,
+          "probability": 0.996
+        },
+        {
+          "word": " reason",
+          "start": 198.62,
+          "end": 198.9,
+          "probability": 0.999
+        },
+        {
+          "word": " you",
+          "start": 198.9,
+          "end": 199.08,
+          "probability": 0.985
+        },
+        {
+          "word": " find",
+          "start": 199.08,
+          "end": 199.32,
+          "probability": 0.995
+        },
+        {
+          "word": " focus",
+          "start": 199.32,
+          "end": 199.72,
+          "probability": 0.973
+        },
+        {
+          "word": " when",
+          "start": 199.72,
+          "end": 200.06,
+          "probability": 0.969
+        },
+        {
+          "word": " all",
+          "start": 200.06,
+          "end": 200.36,
+          "probability": 0.973
+        },
+        {
+          "word": " hope",
+          "start": 200.36,
+          "end": 200.58,
+          "probability": 0.524
+        },
+        {
+          "word": " seems",
+          "start": 200.58,
+          "end": 200.98,
+          "probability": 0.989
+        },
+        {
+          "word": " lost.",
+          "start": 200.98,
+          "end": 201.42,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 201.8,
+      "end": 205.28,
+      "text": "Are we built to succeed only when failure is the only other option?",
+      "words": [
+        {
+          "word": " Are",
+          "start": 201.8,
+          "end": 202.0,
+          "probability": 0.786
+        },
+        {
+          "word": " we",
+          "start": 202.0,
+          "end": 202.16,
+          "probability": 0.996
+        },
+        {
+          "word": " built",
+          "start": 202.16,
+          "end": 202.42,
+          "probability": 0.976
+        },
+        {
+          "word": " to",
+          "start": 202.42,
+          "end": 202.58,
+          "probability": 0.998
+        },
+        {
+          "word": " succeed",
+          "start": 202.58,
+          "end": 202.86,
+          "probability": 0.999
+        },
+        {
+          "word": " only",
+          "start": 202.86,
+          "end": 203.28,
+          "probability": 0.982
+        },
+        {
+          "word": " when",
+          "start": 203.28,
+          "end": 203.56,
+          "probability": 0.992
+        },
+        {
+          "word": " failure",
+          "start": 203.56,
+          "end": 203.88,
+          "probability": 0.742
+        },
+        {
+          "word": " is",
+          "start": 203.88,
+          "end": 204.14,
+          "probability": 0.947
+        },
+        {
+          "word": " the",
+          "start": 204.14,
+          "end": 204.28,
+          "probability": 0.997
+        },
+        {
+          "word": " only",
+          "start": 204.28,
+          "end": 204.54,
+          "probability": 0.997
+        },
+        {
+          "word": " other",
+          "start": 204.54,
+          "end": 204.88,
+          "probability": 0.987
+        },
+        {
+          "word": " option?",
+          "start": 204.88,
+          "end": 205.28,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 205.82,
+      "end": 209.32,
+      "text": "So, when you watch Argentina defeat their rivals in the final seconds,",
+      "words": [
+        {
+          "word": " So,",
+          "start": 205.82,
+          "end": 206.1,
+          "probability": 0.987
+        },
+        {
+          "word": " when",
+          "start": 206.44,
+          "end": 206.6,
+          "probability": 0.983
+        },
+        {
+          "word": " you",
+          "start": 206.6,
+          "end": 206.72,
+          "probability": 0.999
+        },
+        {
+          "word": " watch",
+          "start": 206.72,
+          "end": 206.96,
+          "probability": 0.993
+        },
+        {
+          "word": " Argentina",
+          "start": 206.96,
+          "end": 207.4,
+          "probability": 0.988
+        },
+        {
+          "word": " defeat",
+          "start": 207.4,
+          "end": 207.82,
+          "probability": 0.995
+        },
+        {
+          "word": " their",
+          "start": 207.82,
+          "end": 208.08,
+          "probability": 0.996
+        },
+        {
+          "word": " rivals",
+          "start": 208.08,
+          "end": 208.34,
+          "probability": 0.959
+        },
+        {
+          "word": " in",
+          "start": 208.34,
+          "end": 208.54,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 208.54,
+          "end": 208.64,
+          "probability": 0.995
+        },
+        {
+          "word": " final",
+          "start": 208.64,
+          "end": 208.88,
+          "probability": 0.946
+        },
+        {
+          "word": " seconds,",
+          "start": 208.88,
+          "end": 209.32,
+          "probability": 0.975
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 209.76,
+      "end": 210.94,
+      "text": "you are not just watching a sport.",
+      "words": [
+        {
+          "word": " you",
+          "start": 209.76,
+          "end": 209.84,
+          "probability": 0.991
+        },
+        {
+          "word": " are",
+          "start": 209.84,
+          "end": 209.9,
+          "probability": 0.717
+        },
+        {
+          "word": " not",
+          "start": 209.9,
+          "end": 210.04,
+          "probability": 0.992
+        },
+        {
+          "word": " just",
+          "start": 210.04,
+          "end": 210.26,
+          "probability": 0.996
+        },
+        {
+          "word": " watching",
+          "start": 210.26,
+          "end": 210.6,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 210.6,
+          "end": 210.72,
+          "probability": 0.74
+        },
+        {
+          "word": " sport.",
+          "start": 210.72,
+          "end": 210.94,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 211.5,
+      "end": 214.0,
+      "text": "You are witnessing a deep evolutionary design.",
+      "words": [
+        {
+          "word": " You",
+          "start": 211.5,
+          "end": 211.62,
+          "probability": 0.991
+        },
+        {
+          "word": " are",
+          "start": 211.62,
+          "end": 211.72,
+          "probability": 0.991
+        },
+        {
+          "word": " witnessing",
+          "start": 211.72,
+          "end": 212.0,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 212.0,
+          "end": 212.4,
+          "probability": 0.996
+        },
+        {
+          "word": " deep",
+          "start": 212.4,
+          "end": 212.62,
+          "probability": 0.993
+        },
+        {
+          "word": " evolutionary",
+          "start": 212.62,
+          "end": 213.2,
+          "probability": 0.85
+        },
+        {
+          "word": " design.",
+          "start": 213.2,
+          "end": 214.0,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 214.5,
+      "end": 219.18,
+      "text": "The same brain that saved your ancestors from starvation is now winning a World Cup match.",
+      "words": [
+        {
+          "word": " The",
+          "start": 214.5,
+          "end": 214.64,
+          "probability": 0.99
+        },
+        {
+          "word": " same",
+          "start": 214.64,
+          "end": 214.9,
+          "probability": 0.999
+        },
+        {
+          "word": " brain",
+          "start": 214.9,
+          "end": 215.14,
+          "probability": 0.977
+        },
+        {
+          "word": " that",
+          "start": 215.14,
+          "end": 215.38,
+          "probability": 0.997
+        },
+        {
+          "word": " saved",
+          "start": 215.38,
+          "end": 215.68,
+          "probability": 0.995
+        },
+        {
+          "word": " your",
+          "start": 215.68,
+          "end": 215.9,
+          "probability": 0.977
+        },
+        {
+          "word": " ancestors",
+          "start": 215.9,
+          "end": 216.24,
+          "probability": 0.995
+        },
+        {
+          "word": " from",
+          "start": 216.24,
+          "end": 216.68,
+          "probability": 0.993
+        },
+        {
+          "word": " starvation",
+          "start": 216.68,
+          "end": 217.42,
+          "probability": 0.989
+        },
+        {
+          "word": " is",
+          "start": 217.42,
+          "end": 217.66,
+          "probability": 0.989
+        },
+        {
+          "word": " now",
+          "start": 217.66,
+          "end": 217.9,
+          "probability": 0.998
+        },
+        {
+          "word": " winning",
+          "start": 217.9,
+          "end": 218.18,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 218.18,
+          "end": 218.42,
+          "probability": 0.994
+        },
+        {
+          "word": " World",
+          "start": 218.42,
+          "end": 218.64,
+          "probability": 0.888
+        },
+        {
+          "word": " Cup",
+          "start": 218.64,
+          "end": 218.88,
+          "probability": 0.989
+        },
+        {
+          "word": " match.",
+          "start": 218.88,
+          "end": 219.18,
+          "probability": 0.969
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 219.82,
+      "end": 225.12,
+      "text": "In July, 2026, you watched Argentina defy all odds to reach the World Cup Final.",
+      "words": [
+        {
+          "word": " In",
+          "start": 219.82,
+          "end": 219.92,
+          "probability": 0.995
+        },
+        {
+          "word": " July,",
+          "start": 219.92,
+          "end": 220.16,
+          "probability": 0.998
+        },
+        {
+          "word": " 2026,",
+          "start": 220.28,
+          "end": 221.38,
+          "probability": 0.878
+        },
+        {
+          "word": " you",
+          "start": 221.76,
+          "end": 221.84,
+          "probability": 0.991
+        },
+        {
+          "word": " watched",
+          "start": 221.84,
+          "end": 222.12,
+          "probability": 0.936
+        },
+        {
+          "word": " Argentina",
+          "start": 222.12,
+          "end": 222.6,
+          "probability": 0.998
+        },
+        {
+          "word": " defy",
+          "start": 222.6,
+          "end": 223.08,
+          "probability": 0.89
+        },
+        {
+          "word": " all",
+          "start": 223.08,
+          "end": 223.38,
+          "probability": 0.983
+        },
+        {
+          "word": " odds",
+          "start": 223.38,
+          "end": 223.68,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 223.68,
+          "end": 223.84,
+          "probability": 0.996
+        },
+        {
+          "word": " reach",
+          "start": 223.84,
+          "end": 224.0,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 224.0,
+          "end": 224.22,
+          "probability": 0.99
+        },
+        {
+          "word": " World",
+          "start": 224.22,
+          "end": 224.44,
+          "probability": 0.981
+        },
+        {
+          "word": " Cup",
+          "start": 224.44,
+          "end": 224.72,
+          "probability": 0.997
+        },
+        {
+          "word": " Final.",
+          "start": 224.72,
+          "end": 225.12,
+          "probability": 0.762
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " In",
+      "start": 0.0,
+      "end": 0.08,
+      "probability": 0.885
+    },
+    {
+      "word": " July,",
+      "start": 0.08,
+      "end": 0.36,
+      "probability": 0.985
+    },
+    {
+      "word": " 2026,",
+      "start": 0.52,
+      "end": 1.68,
+      "probability": 0.89
+    },
+    {
+      "word": " you",
+      "start": 2.04,
+      "end": 2.1,
+      "probability": 0.982
+    },
+    {
+      "word": " watched",
+      "start": 2.1,
+      "end": 2.4,
+      "probability": 0.99
+    },
+    {
+      "word": " Argentina",
+      "start": 2.4,
+      "end": 2.9,
+      "probability": 0.97
+    },
+    {
+      "word": " defy",
+      "start": 2.9,
+      "end": 3.38,
+      "probability": 0.947
+    },
+    {
+      "word": " all",
+      "start": 3.38,
+      "end": 3.72,
+      "probability": 0.971
+    },
+    {
+      "word": " odds",
+      "start": 3.72,
+      "end": 4.06,
+      "probability": 0.995
+    },
+    {
+      "word": " to",
+      "start": 4.06,
+      "end": 4.2,
+      "probability": 0.99
+    },
+    {
+      "word": " reach",
+      "start": 4.2,
+      "end": 4.36,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 4.36,
+      "end": 4.58,
+      "probability": 0.985
+    },
+    {
+      "word": " World",
+      "start": 4.58,
+      "end": 4.8,
+      "probability": 0.95
+    },
+    {
+      "word": " Cup",
+      "start": 4.8,
+      "end": 5.02,
+      "probability": 0.992
+    },
+    {
+      "word": " final.",
+      "start": 5.02,
+      "end": 5.5,
+      "probability": 0.375
+    },
+    {
+      "word": " You",
+      "start": 5.92,
+      "end": 6.06,
+      "probability": 0.945
+    },
+    {
+      "word": " sat",
+      "start": 6.06,
+      "end": 6.3,
+      "probability": 0.989
+    },
+    {
+      "word": " on",
+      "start": 6.3,
+      "end": 6.48,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 6.48,
+      "end": 6.64,
+      "probability": 0.997
+    },
+    {
+      "word": " edge",
+      "start": 6.64,
+      "end": 6.8,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 6.8,
+      "end": 7.0,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 7.0,
+      "end": 7.08,
+      "probability": 0.773
+    },
+    {
+      "word": " seat.",
+      "start": 7.08,
+      "end": 7.42,
+      "probability": 0.998
+    },
+    {
+      "word": " You",
+      "start": 7.96,
+      "end": 8.06,
+      "probability": 0.996
+    },
+    {
+      "word": " screamed",
+      "start": 8.06,
+      "end": 8.4,
+      "probability": 0.958
+    },
+    {
+      "word": " as",
+      "start": 8.4,
+      "end": 8.68,
+      "probability": 0.985
+    },
+    {
+      "word": " they",
+      "start": 8.68,
+      "end": 8.82,
+      "probability": 0.997
+    },
+    {
+      "word": " defeated",
+      "start": 8.82,
+      "end": 9.16,
+      "probability": 0.989
+    },
+    {
+      "word": " Egypt",
+      "start": 9.16,
+      "end": 9.6,
+      "probability": 0.997
+    },
+    {
+      "word": " and",
+      "start": 9.6,
+      "end": 9.92,
+      "probability": 0.984
+    },
+    {
+      "word": " England",
+      "start": 9.92,
+      "end": 10.2,
+      "probability": 0.994
+    },
+    {
+      "word": " in",
+      "start": 10.2,
+      "end": 10.4,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 10.4,
+      "end": 10.48,
+      "probability": 0.997
+    },
+    {
+      "word": " final",
+      "start": 10.48,
+      "end": 10.76,
+      "probability": 0.974
+    },
+    {
+      "word": " seconds.",
+      "start": 10.76,
+      "end": 11.26,
+      "probability": 0.993
+    },
+    {
+      "word": " But",
+      "start": 11.76,
+      "end": 11.92,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 11.92,
+      "end": 12.04,
+      "probability": 0.975
+    },
+    {
+      "word": " real",
+      "start": 12.04,
+      "end": 12.24,
+      "probability": 0.994
+    },
+    {
+      "word": " reason",
+      "start": 12.24,
+      "end": 12.64,
+      "probability": 0.999
+    },
+    {
+      "word": " they",
+      "start": 12.64,
+      "end": 12.8,
+      "probability": 0.951
+    },
+    {
+      "word": " won",
+      "start": 12.8,
+      "end": 12.98,
+      "probability": 0.999
+    },
+    {
+      "word": " is",
+      "start": 12.98,
+      "end": 13.22,
+      "probability": 0.956
+    },
+    {
+      "word": " far",
+      "start": 13.22,
+      "end": 13.44,
+      "probability": 0.938
+    },
+    {
+      "word": " stranger",
+      "start": 13.44,
+      "end": 13.94,
+      "probability": 0.981
+    },
+    {
+      "word": " than",
+      "start": 13.94,
+      "end": 14.14,
+      "probability": 0.991
+    },
+    {
+      "word": " soccer",
+      "start": 14.14,
+      "end": 14.48,
+      "probability": 0.892
+    },
+    {
+      "word": " tactics.",
+      "start": 14.48,
+      "end": 14.94,
+      "probability": 0.996
+    },
+    {
+      "word": " It",
+      "start": 15.54,
+      "end": 15.7,
+      "probability": 0.995
+    },
+    {
+      "word": " was",
+      "start": 15.7,
+      "end": 15.8,
+      "probability": 0.995
+    },
+    {
+      "word": " not",
+      "start": 15.8,
+      "end": 16.0,
+      "probability": 0.996
+    },
+    {
+      "word": " just",
+      "start": 16.0,
+      "end": 16.2,
+      "probability": 0.998
+    },
+    {
+      "word": " skill",
+      "start": 16.2,
+      "end": 16.5,
+      "probability": 0.962
+    },
+    {
+      "word": " or",
+      "start": 16.5,
+      "end": 16.7,
+      "probability": 0.995
+    },
+    {
+      "word": " luck.",
+      "start": 16.7,
+      "end": 16.92,
+      "probability": 0.999
+    },
+    {
+      "word": " It",
+      "start": 17.46,
+      "end": 17.54,
+      "probability": 0.996
+    },
+    {
+      "word": " was",
+      "start": 17.54,
+      "end": 17.64,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 17.64,
+      "end": 17.78,
+      "probability": 0.991
+    },
+    {
+      "word": " biological",
+      "start": 17.78,
+      "end": 18.24,
+      "probability": 0.98
+    },
+    {
+      "word": " hijack",
+      "start": 18.24,
+      "end": 19.02,
+      "probability": 0.966
+    },
+    {
+      "word": " of",
+      "start": 19.02,
+      "end": 19.28,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 19.28,
+      "end": 19.38,
+      "probability": 0.966
+    },
+    {
+      "word": " human",
+      "start": 19.38,
+      "end": 19.64,
+      "probability": 0.919
+    },
+    {
+      "word": " brain.",
+      "start": 19.64,
+      "end": 19.98,
+      "probability": 0.998
+    },
+    {
+      "word": " Why",
+      "start": 20.5,
+      "end": 20.66,
+      "probability": 0.949
+    },
+    {
+      "word": " does",
+      "start": 20.66,
+      "end": 20.78,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 20.78,
+      "end": 20.96,
+      "probability": 0.997
+    },
+    {
+      "word": " human",
+      "start": 20.96,
+      "end": 21.18,
+      "probability": 0.992
+    },
+    {
+      "word": " mind",
+      "start": 21.18,
+      "end": 21.46,
+      "probability": 0.996
+    },
+    {
+      "word": " wait",
+      "start": 21.46,
+      "end": 21.8,
+      "probability": 0.972
+    },
+    {
+      "word": " until",
+      "start": 21.8,
+      "end": 22.24,
+      "probability": 0.987
+    },
+    {
+      "word": " the",
+      "start": 22.24,
+      "end": 22.42,
+      "probability": 0.997
+    },
+    {
+      "word": " brink",
+      "start": 22.42,
+      "end": 22.62,
+      "probability": 0.897
+    },
+    {
+      "word": " of",
+      "start": 22.62,
+      "end": 22.74,
+      "probability": 0.994
+    },
+    {
+      "word": " disaster",
+      "start": 22.74,
+      "end": 23.06,
+      "probability": 0.989
+    },
+    {
+      "word": " to",
+      "start": 23.06,
+      "end": 23.44,
+      "probability": 0.994
+    },
+    {
+      "word": " perform",
+      "start": 23.44,
+      "end": 23.8,
+      "probability": 0.996
+    },
+    {
+      "word": " its",
+      "start": 23.8,
+      "end": 24.0,
+      "probability": 0.992
+    },
+    {
+      "word": " greatest",
+      "start": 24.0,
+      "end": 24.36,
+      "probability": 0.994
+    },
+    {
+      "word": " miracles?",
+      "start": 24.36,
+      "end": 24.82,
+      "probability": 0.987
+    },
+    {
+      "word": " Consider",
+      "start": 25.48,
+      "end": 25.8,
+      "probability": 0.988
+    },
+    {
+      "word": " the",
+      "start": 25.8,
+      "end": 26.04,
+      "probability": 0.989
+    },
+    {
+      "word": " round",
+      "start": 26.04,
+      "end": 26.26,
+      "probability": 0.927
+    },
+    {
+      "word": " of",
+      "start": 26.26,
+      "end": 26.44,
+      "probability": 0.996
+    },
+    {
+      "word": " 16",
+      "start": 26.44,
+      "end": 26.92,
+      "probability": 0.86
+    },
+    {
+      "word": " against",
+      "start": 26.92,
+      "end": 27.32,
+      "probability": 0.999
+    },
+    {
+      "word": " Egypt.",
+      "start": 27.32,
+      "end": 27.84,
+      "probability": 0.999
+    },
+    {
+      "word": " Argentina",
+      "start": 27.84,
+      "end": 28.78,
+      "probability": 0.286
+    },
+    {
+      "word": " was",
+      "start": 28.78,
+      "end": 29.22,
+      "probability": 0.975
+    },
+    {
+      "word": " trailing",
+      "start": 29.22,
+      "end": 29.54,
+      "probability": 0.993
+    },
+    {
+      "word": " two",
+      "start": 29.54,
+      "end": 29.8,
+      "probability": 0.467
+    },
+    {
+      "word": " to",
+      "start": 29.8,
+      "end": 29.96,
+      "probability": 0.963
+    },
+    {
+      "word": " zero",
+      "start": 29.96,
+      "end": 30.26,
+      "probability": 0.927
+    },
+    {
+      "word": " in",
+      "start": 30.26,
+      "end": 30.46,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 30.46,
+      "end": 30.56,
+      "probability": 0.988
+    },
+    {
+      "word": " 78th",
+      "start": 30.56,
+      "end": 31.28,
+      "probability": 0.84
+    },
+    {
+      "word": " minute.",
+      "start": 31.28,
+      "end": 31.54,
+      "probability": 0.969
+    },
+    {
+      "word": " Their",
+      "start": 32.04,
+      "end": 32.12,
+      "probability": 0.988
+    },
+    {
+      "word": " legs",
+      "start": 32.12,
+      "end": 32.36,
+      "probability": 0.997
+    },
+    {
+      "word": " felt",
+      "start": 32.36,
+      "end": 32.64,
+      "probability": 0.966
+    },
+    {
+      "word": " like",
+      "start": 32.64,
+      "end": 33.0,
+      "probability": 0.989
+    },
+    {
+      "word": " lead.",
+      "start": 33.0,
+      "end": 33.28,
+      "probability": 0.958
+    },
+    {
+      "word": " Their",
+      "start": 33.82,
+      "end": 33.92,
+      "probability": 0.986
+    },
+    {
+      "word": " lungs",
+      "start": 33.92,
+      "end": 34.1,
+      "probability": 0.885
+    },
+    {
+      "word": " were",
+      "start": 34.1,
+      "end": 34.34,
+      "probability": 0.998
+    },
+    {
+      "word": " burning",
+      "start": 34.34,
+      "end": 34.58,
+      "probability": 0.998
+    },
+    {
+      "word": " for",
+      "start": 34.58,
+      "end": 34.8,
+      "probability": 0.999
+    },
+    {
+      "word": " oxygen.",
+      "start": 34.8,
+      "end": 35.28,
+      "probability": 0.998
+    },
+    {
+      "word": " Earlier,",
+      "start": 35.86,
+      "end": 36.12,
+      "probability": 0.986
+    },
+    {
+      "word": " the",
+      "start": 36.48,
+      "end": 36.54,
+      "probability": 0.993
+    },
+    {
+      "word": " Egyptian",
+      "start": 36.54,
+      "end": 36.96,
+      "probability": 0.997
+    },
+    {
+      "word": " goalkeeper",
+      "start": 36.96,
+      "end": 37.54,
+      "probability": 0.954
+    },
+    {
+      "word": " had",
+      "start": 37.54,
+      "end": 37.76,
+      "probability": 0.991
+    },
+    {
+      "word": " even",
+      "start": 37.76,
+      "end": 38.1,
+      "probability": 0.991
+    },
+    {
+      "word": " saved",
+      "start": 38.1,
+      "end": 38.46,
+      "probability": 0.951
+    },
+    {
+      "word": " the",
+      "start": 38.46,
+      "end": 38.6,
+      "probability": 0.797
+    },
+    {
+      "word": " penalty",
+      "start": 38.6,
+      "end": 38.84,
+      "probability": 0.995
+    },
+    {
+      "word": " from",
+      "start": 38.84,
+      "end": 39.24,
+      "probability": 0.993
+    },
+    {
+      "word": " Lionel",
+      "start": 39.24,
+      "end": 39.6,
+      "probability": 0.986
+    },
+    {
+      "word": " Messi.",
+      "start": 39.6,
+      "end": 39.88,
+      "probability": 0.975
+    },
+    {
+      "word": " Under",
+      "start": 40.46,
+      "end": 40.66,
+      "probability": 0.994
+    },
+    {
+      "word": " normal",
+      "start": 40.66,
+      "end": 41.0,
+      "probability": 0.997
+    },
+    {
+      "word": " circumstances,",
+      "start": 41.0,
+      "end": 41.76,
+      "probability": 0.999
+    },
+    {
+      "word": " their",
+      "start": 42.2,
+      "end": 42.28,
+      "probability": 0.997
+    },
+    {
+      "word": " bodies",
+      "start": 42.28,
+      "end": 42.6,
+      "probability": 0.985
+    },
+    {
+      "word": " should",
+      "start": 42.6,
+      "end": 42.86,
+      "probability": 0.99
+    },
+    {
+      "word": " have",
+      "start": 42.86,
+      "end": 42.98,
+      "probability": 0.845
+    },
+    {
+      "word": " shut",
+      "start": 42.98,
+      "end": 43.16,
+      "probability": 0.959
+    },
+    {
+      "word": " down.",
+      "start": 43.16,
+      "end": 43.5,
+      "probability": 0.997
+    },
+    {
+      "word": " But",
+      "start": 43.94,
+      "end": 44.06,
+      "probability": 0.991
+    },
+    {
+      "word": " then,",
+      "start": 44.06,
+      "end": 44.36,
+      "probability": 0.98
+    },
+    {
+      "word": " a",
+      "start": 44.62,
+      "end": 44.72,
+      "probability": 0.771
+    },
+    {
+      "word": " sudden",
+      "start": 44.72,
+      "end": 44.98,
+      "probability": 0.999
+    },
+    {
+      "word": " shift",
+      "start": 44.98,
+      "end": 45.26,
+      "probability": 0.996
+    },
+    {
+      "word": " occurred.",
+      "start": 45.26,
+      "end": 45.64,
+      "probability": 0.993
+    },
+    {
+      "word": " In",
+      "start": 46.2,
+      "end": 46.28,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 46.28,
+      "end": 46.4,
+      "probability": 0.995
+    },
+    {
+      "word": " 79th",
+      "start": 46.4,
+      "end": 47.12,
+      "probability": 0.977
+    },
+    {
+      "word": " minute,",
+      "start": 47.12,
+      "end": 47.36,
+      "probability": 0.985
+    },
+    {
+      "word": " Christian",
+      "start": 47.72,
+      "end": 48.0,
+      "probability": 0.959
+    },
+    {
+      "word": " Romero",
+      "start": 48.0,
+      "end": 48.48,
+      "probability": 0.897
+    },
+    {
+      "word": " scored.",
+      "start": 48.48,
+      "end": 48.82,
+      "probability": 0.995
+    },
+    {
+      "word": " Four",
+      "start": 49.38,
+      "end": 49.6,
+      "probability": 0.833
+    },
+    {
+      "word": " minutes",
+      "start": 49.6,
+      "end": 49.9,
+      "probability": 0.998
+    },
+    {
+      "word": " later,",
+      "start": 49.9,
+      "end": 50.38,
+      "probability": 0.992
+    },
+    {
+      "word": " Lionel",
+      "start": 50.78,
+      "end": 51.04,
+      "probability": 0.999
+    },
+    {
+      "word": " Messi",
+      "start": 51.04,
+      "end": 51.36,
+      "probability": 0.985
+    },
+    {
+      "word": " equalized.",
+      "start": 51.36,
+      "end": 52.24,
+      "probability": 0.954
+    },
+    {
+      "word": " In",
+      "start": 52.58,
+      "end": 52.76,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 52.76,
+      "end": 52.86,
+      "probability": 0.999
+    },
+    {
+      "word": " 92nd",
+      "start": 52.86,
+      "end": 53.54,
+      "probability": 0.884
+    },
+    {
+      "word": " minute,",
+      "start": 53.54,
+      "end": 53.78,
+      "probability": 0.994
+    },
+    {
+      "word": " Enzo",
+      "start": 54.08,
+      "end": 54.24,
+      "probability": 0.519
+    },
+    {
+      "word": " Fernandez",
+      "start": 54.24,
+      "end": 54.72,
+      "probability": 0.583
+    },
+    {
+      "word": " scored",
+      "start": 54.72,
+      "end": 55.02,
+      "probability": 0.98
+    },
+    {
+      "word": " the",
+      "start": 55.02,
+      "end": 55.24,
+      "probability": 0.988
+    },
+    {
+      "word": " winning",
+      "start": 55.24,
+      "end": 55.4,
+      "probability": 0.991
+    },
+    {
+      "word": " goal.",
+      "start": 55.4,
+      "end": 55.68,
+      "probability": 0.998
+    },
+    {
+      "word": " How",
+      "start": 55.68,
+      "end": 56.3,
+      "probability": 0.519
+    },
+    {
+      "word": " did",
+      "start": 56.3,
+      "end": 56.42,
+      "probability": 0.75
+    },
+    {
+      "word": " a",
+      "start": 56.42,
+      "end": 56.54,
+      "probability": 0.995
+    },
+    {
+      "word": " team",
+      "start": 56.54,
+      "end": 56.78,
+      "probability": 0.938
+    },
+    {
+      "word": " that",
+      "start": 56.78,
+      "end": 57.04,
+      "probability": 0.989
+    },
+    {
+      "word": " looked",
+      "start": 57.04,
+      "end": 57.26,
+      "probability": 0.978
+    },
+    {
+      "word": " completely",
+      "start": 57.26,
+      "end": 57.72,
+      "probability": 0.994
+    },
+    {
+      "word": " dead",
+      "start": 57.72,
+      "end": 57.98,
+      "probability": 0.979
+    },
+    {
+      "word": " score",
+      "start": 57.98,
+      "end": 58.32,
+      "probability": 0.939
+    },
+    {
+      "word": " three",
+      "start": 58.32,
+      "end": 58.64,
+      "probability": 0.858
+    },
+    {
+      "word": " times",
+      "start": 58.64,
+      "end": 58.94,
+      "probability": 0.994
+    },
+    {
+      "word": " in",
+      "start": 58.94,
+      "end": 59.18,
+      "probability": 0.96
+    },
+    {
+      "word": " 13",
+      "start": 59.18,
+      "end": 59.52,
+      "probability": 0.791
+    },
+    {
+      "word": " minutes?",
+      "start": 59.52,
+      "end": 60.0,
+      "probability": 0.99
+    },
+    {
+      "word": " The",
+      "start": 60.48,
+      "end": 60.56,
+      "probability": 0.713
+    },
+    {
+      "word": " answer",
+      "start": 60.56,
+      "end": 60.92,
+      "probability": 0.991
+    },
+    {
+      "word": " lies",
+      "start": 60.92,
+      "end": 61.24,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 61.24,
+      "end": 61.52,
+      "probability": 0.973
+    },
+    {
+      "word": " a",
+      "start": 61.52,
+      "end": 61.62,
+      "probability": 0.973
+    },
+    {
+      "word": " theory",
+      "start": 61.62,
+      "end": 61.9,
+      "probability": 0.996
+    },
+    {
+      "word": " proposed",
+      "start": 61.9,
+      "end": 62.34,
+      "probability": 0.991
+    },
+    {
+      "word": " by",
+      "start": 62.34,
+      "end": 62.64,
+      "probability": 0.999
+    },
+    {
+      "word": " Dr.",
+      "start": 62.64,
+      "end": 62.94,
+      "probability": 0.951
+    },
+    {
+      "word": " Samuel",
+      "start": 63.12,
+      "end": 63.38,
+      "probability": 0.97
+    },
+    {
+      "word": " Marcora.",
+      "start": 63.38,
+      "end": 63.92,
+      "probability": 0.625
+    },
+    {
+      "word": " He",
+      "start": 64.44,
+      "end": 64.52,
+      "probability": 0.963
+    },
+    {
+      "word": " developed",
+      "start": 64.52,
+      "end": 64.88,
+      "probability": 0.984
+    },
+    {
+      "word": " the",
+      "start": 64.88,
+      "end": 65.08,
+      "probability": 0.985
+    },
+    {
+      "word": " psychobiological",
+      "start": 65.08,
+      "end": 66.06,
+      "probability": 0.779
+    },
+    {
+      "word": " model",
+      "start": 66.06,
+      "end": 66.48,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 66.48,
+      "end": 66.72,
+      "probability": 0.996
+    },
+    {
+      "word": " exercise.",
+      "start": 66.72,
+      "end": 67.26,
+      "probability": 0.988
+    },
+    {
+      "word": " This",
+      "start": 67.74,
+      "end": 68.02,
+      "probability": 0.989
+    },
+    {
+      "word": " model",
+      "start": 68.02,
+      "end": 68.3,
+      "probability": 0.996
+    },
+    {
+      "word": " suggests",
+      "start": 68.3,
+      "end": 68.62,
+      "probability": 0.992
+    },
+    {
+      "word": " that",
+      "start": 68.62,
+      "end": 68.92,
+      "probability": 0.981
+    },
+    {
+      "word": " your",
+      "start": 68.92,
+      "end": 69.0,
+      "probability": 0.99
+    },
+    {
+      "word": " muscles",
+      "start": 69.0,
+      "end": 69.24,
+      "probability": 0.996
+    },
+    {
+      "word": " do",
+      "start": 69.24,
+      "end": 69.48,
+      "probability": 0.979
+    },
+    {
+      "word": " not",
+      "start": 69.48,
+      "end": 69.62,
+      "probability": 0.998
+    },
+    {
+      "word": " actually",
+      "start": 69.62,
+      "end": 70.08,
+      "probability": 0.987
+    },
+    {
+      "word": " stop",
+      "start": 70.08,
+      "end": 70.44,
+      "probability": 0.997
+    },
+    {
+      "word": " you",
+      "start": 70.44,
+      "end": 70.66,
+      "probability": 0.99
+    },
+    {
+      "word": " when",
+      "start": 70.66,
+      "end": 70.78,
+      "probability": 0.994
+    },
+    {
+      "word": " you",
+      "start": 70.78,
+      "end": 70.88,
+      "probability": 0.998
+    },
+    {
+      "word": " are",
+      "start": 70.88,
+      "end": 70.94,
+      "probability": 0.704
+    },
+    {
+      "word": " tired.",
+      "start": 70.94,
+      "end": 71.32,
+      "probability": 0.997
+    },
+    {
+      "word": " Instead,",
+      "start": 71.82,
+      "end": 72.28,
+      "probability": 0.993
+    },
+    {
+      "word": " your",
+      "start": 72.64,
+      "end": 72.72,
+      "probability": 0.996
+    },
+    {
+      "word": " brain",
+      "start": 72.72,
+      "end": 73.0,
+      "probability": 0.998
+    },
+    {
+      "word": " acts",
+      "start": 73.0,
+      "end": 73.42,
+      "probability": 0.997
+    },
+    {
+      "word": " as",
+      "start": 73.42,
+      "end": 73.68,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 73.68,
+      "end": 73.76,
+      "probability": 0.991
+    },
+    {
+      "word": " central",
+      "start": 73.76,
+      "end": 74.12,
+      "probability": 0.992
+    },
+    {
+      "word": " governor.",
+      "start": 74.12,
+      "end": 74.6,
+      "probability": 0.966
+    },
+    {
+      "word": " A",
+      "start": 75.02,
+      "end": 75.16,
+      "probability": 0.866
+    },
+    {
+      "word": " constantly",
+      "start": 75.16,
+      "end": 75.58,
+      "probability": 0.992
+    },
+    {
+      "word": " monitors",
+      "start": 75.58,
+      "end": 76.06,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 76.06,
+      "end": 76.3,
+      "probability": 0.996
+    },
+    {
+      "word": " effort",
+      "start": 76.3,
+      "end": 76.58,
+      "probability": 0.993
+    },
+    {
+      "word": " and",
+      "start": 76.58,
+      "end": 76.8,
+      "probability": 0.979
+    },
+    {
+      "word": " creates",
+      "start": 76.8,
+      "end": 77.16,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 77.16,
+      "end": 77.4,
+      "probability": 0.993
+    },
+    {
+      "word": " feeling",
+      "start": 77.4,
+      "end": 77.68,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 77.68,
+      "end": 77.9,
+      "probability": 0.989
+    },
+    {
+      "word": " fatigue",
+      "start": 77.9,
+      "end": 78.14,
+      "probability": 0.97
+    },
+    {
+      "word": " to",
+      "start": 78.14,
+      "end": 78.38,
+      "probability": 0.994
+    },
+    {
+      "word": " protect",
+      "start": 78.38,
+      "end": 78.64,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 78.64,
+      "end": 78.88,
+      "probability": 0.994
+    },
+    {
+      "word": " body",
+      "start": 78.88,
+      "end": 79.16,
+      "probability": 0.998
+    },
+    {
+      "word": " from",
+      "start": 79.16,
+      "end": 79.38,
+      "probability": 0.996
+    },
+    {
+      "word": " damage.",
+      "start": 79.38,
+      "end": 79.74,
+      "probability": 0.997
+    },
+    {
+      "word": " If",
+      "start": 80.28,
+      "end": 80.42,
+      "probability": 0.992
+    },
+    {
+      "word": " you",
+      "start": 80.42,
+      "end": 80.5,
+      "probability": 0.998
+    },
+    {
+      "word": " have",
+      "start": 80.5,
+      "end": 80.62,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 80.62,
+      "end": 80.7,
+      "probability": 0.994
+    },
+    {
+      "word": " powerful",
+      "start": 80.7,
+      "end": 81.08,
+      "probability": 0.993
+    },
+    {
+      "word": " reason",
+      "start": 81.08,
+      "end": 81.44,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 81.44,
+      "end": 81.64,
+      "probability": 0.998
+    },
+    {
+      "word": " keep",
+      "start": 81.64,
+      "end": 81.8,
+      "probability": 0.999
+    },
+    {
+      "word": " going,",
+      "start": 81.8,
+      "end": 82.16,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 82.52,
+      "end": 82.62,
+      "probability": 0.995
+    },
+    {
+      "word": " brain",
+      "start": 82.62,
+      "end": 82.9,
+      "probability": 0.999
+    },
+    {
+      "word": " recalculates",
+      "start": 82.9,
+      "end": 83.58,
+      "probability": 0.984
+    },
+    {
+      "word": " the",
+      "start": 83.58,
+      "end": 83.7,
+      "probability": 0.998
+    },
+    {
+      "word": " cost",
+      "start": 83.7,
+      "end": 83.94,
+      "probability": 0.991
+    },
+    {
+      "word": " of",
+      "start": 83.94,
+      "end": 84.14,
+      "probability": 0.997
+    },
+    {
+      "word": " energy.",
+      "start": 84.14,
+      "end": 84.48,
+      "probability": 0.999
+    },
+    {
+      "word": " It",
+      "start": 84.48,
+      "end": 85.06,
+      "probability": 0.511
+    },
+    {
+      "word": " releases",
+      "start": 85.06,
+      "end": 85.44,
+      "probability": 0.967
+    },
+    {
+      "word": " its",
+      "start": 85.44,
+      "end": 85.66,
+      "probability": 0.92
+    },
+    {
+      "word": " grip",
+      "start": 85.66,
+      "end": 85.9,
+      "probability": 0.503
+    },
+    {
+      "word": " on",
+      "start": 85.9,
+      "end": 86.1,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 86.1,
+      "end": 86.22,
+      "probability": 0.985
+    },
+    {
+      "word": " safety",
+      "start": 86.22,
+      "end": 86.6,
+      "probability": 0.994
+    },
+    {
+      "word": " reserves.",
+      "start": 86.6,
+      "end": 87.18,
+      "probability": 0.994
+    },
+    {
+      "word": " Did",
+      "start": 87.54,
+      "end": 87.72,
+      "probability": 0.914
+    },
+    {
+      "word": " the",
+      "start": 87.72,
+      "end": 87.88,
+      "probability": 0.972
+    },
+    {
+      "word": " fear",
+      "start": 87.88,
+      "end": 88.1,
+      "probability": 0.991
+    },
+    {
+      "word": " of",
+      "start": 88.1,
+      "end": 88.3,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 88.3,
+      "end": 88.4,
+      "probability": 0.982
+    },
+    {
+      "word": " World",
+      "start": 88.4,
+      "end": 88.64,
+      "probability": 0.775
+    },
+    {
+      "word": " Cup",
+      "start": 88.64,
+      "end": 88.9,
+      "probability": 0.972
+    },
+    {
+      "word": " exit",
+      "start": 88.9,
+      "end": 89.32,
+      "probability": 0.926
+    },
+    {
+      "word": " unlock",
+      "start": 89.32,
+      "end": 89.8,
+      "probability": 0.919
+    },
+    {
+      "word": " a",
+      "start": 89.8,
+      "end": 90.12,
+      "probability": 0.997
+    },
+    {
+      "word": " chemical",
+      "start": 90.12,
+      "end": 90.5,
+      "probability": 0.989
+    },
+    {
+      "word": " override",
+      "start": 90.5,
+      "end": 91.02,
+      "probability": 0.485
+    },
+    {
+      "word": " in",
+      "start": 91.02,
+      "end": 91.38,
+      "probability": 0.984
+    },
+    {
+      "word": " the",
+      "start": 91.38,
+      "end": 91.5,
+      "probability": 0.98
+    },
+    {
+      "word": " Argentine",
+      "start": 91.5,
+      "end": 92.04,
+      "probability": 0.979
+    },
+    {
+      "word": " players?",
+      "start": 92.04,
+      "end": 92.42,
+      "probability": 0.92
+    },
+    {
+      "word": " It",
+      "start": 93.02,
+      "end": 93.18,
+      "probability": 0.977
+    },
+    {
+      "word": " happened",
+      "start": 93.18,
+      "end": 93.46,
+      "probability": 0.995
+    },
+    {
+      "word": " again",
+      "start": 93.46,
+      "end": 93.8,
+      "probability": 0.956
+    },
+    {
+      "word": " in",
+      "start": 93.8,
+      "end": 94.12,
+      "probability": 0.894
+    },
+    {
+      "word": " the",
+      "start": 94.12,
+      "end": 94.22,
+      "probability": 0.969
+    },
+    {
+      "word": " semifinal",
+      "start": 94.22,
+      "end": 94.86,
+      "probability": 0.843
+    },
+    {
+      "word": " against",
+      "start": 94.86,
+      "end": 95.28,
+      "probability": 0.996
+    },
+    {
+      "word": " England.",
+      "start": 95.28,
+      "end": 95.62,
+      "probability": 0.995
+    },
+    {
+      "word": " Argentina",
+      "start": 96.16,
+      "end": 96.52,
+      "probability": 0.791
+    },
+    {
+      "word": " was",
+      "start": 96.52,
+      "end": 97.0,
+      "probability": 0.997
+    },
+    {
+      "word": " trailing",
+      "start": 97.0,
+      "end": 97.4,
+      "probability": 0.995
+    },
+    {
+      "word": " 1",
+      "start": 97.4,
+      "end": 97.58,
+      "probability": 0.56
+    },
+    {
+      "word": "-0",
+      "start": 97.58,
+      "end": 98.06,
+      "probability": 0.894
+    },
+    {
+      "word": " in",
+      "start": 98.06,
+      "end": 98.32,
+      "probability": 0.987
+    },
+    {
+      "word": " the",
+      "start": 98.32,
+      "end": 98.44,
+      "probability": 0.973
+    },
+    {
+      "word": " 85th",
+      "start": 98.44,
+      "end": 99.06,
+      "probability": 0.886
+    },
+    {
+      "word": " minute.",
+      "start": 99.06,
+      "end": 99.26,
+      "probability": 0.984
+    },
+    {
+      "word": " The",
+      "start": 99.78,
+      "end": 99.84,
+      "probability": 0.988
+    },
+    {
+      "word": " physical",
+      "start": 99.84,
+      "end": 100.2,
+      "probability": 0.982
+    },
+    {
+      "word": " fatigue",
+      "start": 100.2,
+      "end": 100.58,
+      "probability": 0.993
+    },
+    {
+      "word": " was",
+      "start": 100.58,
+      "end": 101.02,
+      "probability": 0.997
+    },
+    {
+      "word": " crushing.",
+      "start": 101.02,
+      "end": 101.38,
+      "probability": 0.993
+    },
+    {
+      "word": " Yet",
+      "start": 101.86,
+      "end": 102.1,
+      "probability": 0.991
+    },
+    {
+      "word": " Enzo",
+      "start": 102.1,
+      "end": 102.56,
+      "probability": 0.533
+    },
+    {
+      "word": " Fernandez",
+      "start": 102.56,
+      "end": 103.08,
+      "probability": 0.573
+    },
+    {
+      "word": " equalized.",
+      "start": 103.08,
+      "end": 103.84,
+      "probability": 0.935
+    },
+    {
+      "word": " In",
+      "start": 104.26,
+      "end": 104.34,
+      "probability": 0.981
+    },
+    {
+      "word": " the",
+      "start": 104.34,
+      "end": 104.44,
+      "probability": 0.996
+    },
+    {
+      "word": " 92nd",
+      "start": 104.44,
+      "end": 105.1,
+      "probability": 0.794
+    },
+    {
+      "word": " minute,",
+      "start": 105.1,
+      "end": 105.32,
+      "probability": 0.971
+    },
+    {
+      "word": " La",
+      "start": 105.78,
+      "end": 105.86,
+      "probability": 0.374
+    },
+    {
+      "word": " Tera",
+      "start": 105.86,
+      "end": 106.14,
+      "probability": 0.416
+    },
+    {
+      "word": " Martine",
+      "start": 106.14,
+      "end": 106.66,
+      "probability": 0.474
+    },
+    {
+      "word": " scored",
+      "start": 106.66,
+      "end": 106.96,
+      "probability": 0.444
+    },
+    {
+      "word": " the",
+      "start": 106.96,
+      "end": 107.22,
+      "probability": 0.988
+    },
+    {
+      "word": " winning",
+      "start": 107.22,
+      "end": 107.38,
+      "probability": 0.994
+    },
+    {
+      "word": " goal.",
+      "start": 107.38,
+      "end": 107.7,
+      "probability": 0.997
+    },
+    {
+      "word": " How",
+      "start": 108.26,
+      "end": 108.36,
+      "probability": 0.99
+    },
+    {
+      "word": " did",
+      "start": 108.36,
+      "end": 108.44,
+      "probability": 0.965
+    },
+    {
+      "word": " they",
+      "start": 108.44,
+      "end": 108.56,
+      "probability": 0.994
+    },
+    {
+      "word": " make",
+      "start": 108.56,
+      "end": 108.74,
+      "probability": 0.998
+    },
+    {
+      "word": " perfect",
+      "start": 108.74,
+      "end": 109.1,
+      "probability": 0.99
+    },
+    {
+      "word": " decisions",
+      "start": 109.1,
+      "end": 109.68,
+      "probability": 0.988
+    },
+    {
+      "word": " in",
+      "start": 109.68,
+      "end": 110.02,
+      "probability": 0.994
+    },
+    {
+      "word": " these",
+      "start": 110.02,
+      "end": 110.16,
+      "probability": 0.973
+    },
+    {
+      "word": " frantic",
+      "start": 110.16,
+      "end": 110.54,
+      "probability": 0.98
+    },
+    {
+      "word": " moments?",
+      "start": 110.54,
+      "end": 110.9,
+      "probability": 0.997
+    },
+    {
+      "word": " We",
+      "start": 111.46,
+      "end": 111.66,
+      "probability": 0.992
+    },
+    {
+      "word": " must",
+      "start": 111.66,
+      "end": 111.84,
+      "probability": 0.997
+    },
+    {
+      "word": " look",
+      "start": 111.84,
+      "end": 112.04,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 112.04,
+      "end": 112.22,
+      "probability": 0.984
+    },
+    {
+      "word": " the",
+      "start": 112.22,
+      "end": 112.32,
+      "probability": 0.993
+    },
+    {
+      "word": " research",
+      "start": 112.32,
+      "end": 112.64,
+      "probability": 0.959
+    },
+    {
+      "word": " of",
+      "start": 112.64,
+      "end": 112.88,
+      "probability": 0.984
+    },
+    {
+      "word": " Dr.",
+      "start": 112.88,
+      "end": 113.2,
+      "probability": 0.967
+    },
+    {
+      "word": " Jared",
+      "start": 113.38,
+      "end": 113.52,
+      "probability": 0.304
+    },
+    {
+      "word": " Jordan.",
+      "start": 113.52,
+      "end": 113.74,
+      "probability": 0.604
+    },
+    {
+      "word": " He",
+      "start": 113.74,
+      "end": 114.46,
+      "probability": 0.404
+    },
+    {
+      "word": " spent",
+      "start": 114.46,
+      "end": 114.68,
+      "probability": 0.962
+    },
+    {
+      "word": " years",
+      "start": 114.68,
+      "end": 114.94,
+      "probability": 0.968
+    },
+    {
+      "word": " studying",
+      "start": 114.94,
+      "end": 115.3,
+      "probability": 0.995
+    },
+    {
+      "word": " elite",
+      "start": 115.3,
+      "end": 115.7,
+      "probability": 0.465
+    },
+    {
+      "word": " soccer",
+      "start": 115.7,
+      "end": 116.06,
+      "probability": 0.998
+    },
+    {
+      "word": " players",
+      "start": 116.06,
+      "end": 116.44,
+      "probability": 0.932
+    },
+    {
+      "word": " under",
+      "start": 116.44,
+      "end": 116.78,
+      "probability": 0.954
+    },
+    {
+      "word": " pressure.",
+      "start": 116.78,
+      "end": 117.2,
+      "probability": 0.995
+    },
+    {
+      "word": " Jordan",
+      "start": 117.72,
+      "end": 117.98,
+      "probability": 0.52
+    },
+    {
+      "word": " discovered",
+      "start": 117.98,
+      "end": 118.58,
+      "probability": 0.984
+    },
+    {
+      "word": " that",
+      "start": 118.58,
+      "end": 118.9,
+      "probability": 0.986
+    },
+    {
+      "word": " under",
+      "start": 118.9,
+      "end": 119.24,
+      "probability": 0.845
+    },
+    {
+      "word": " extreme",
+      "start": 119.24,
+      "end": 119.66,
+      "probability": 0.966
+    },
+    {
+      "word": " stress,",
+      "start": 119.66,
+      "end": 120.26,
+      "probability": 0.999
+    },
+    {
+      "word": " most",
+      "start": 120.52,
+      "end": 120.7,
+      "probability": 0.974
+    },
+    {
+      "word": " players",
+      "start": 120.7,
+      "end": 121.06,
+      "probability": 0.97
+    },
+    {
+      "word": " experience",
+      "start": 121.06,
+      "end": 121.76,
+      "probability": 0.812
+    },
+    {
+      "word": " cognitive",
+      "start": 121.76,
+      "end": 122.22,
+      "probability": 0.896
+    },
+    {
+      "word": " tunnel",
+      "start": 122.22,
+      "end": 122.54,
+      "probability": 0.996
+    },
+    {
+      "word": " vision.",
+      "start": 122.54,
+      "end": 122.92,
+      "probability": 0.997
+    },
+    {
+      "word": " Their",
+      "start": 123.42,
+      "end": 123.58,
+      "probability": 0.942
+    },
+    {
+      "word": " eyes",
+      "start": 123.58,
+      "end": 123.88,
+      "probability": 0.996
+    },
+    {
+      "word": " freeze.",
+      "start": 123.88,
+      "end": 124.24,
+      "probability": 0.976
+    },
+    {
+      "word": " They",
+      "start": 124.86,
+      "end": 124.98,
+      "probability": 0.991
+    },
+    {
+      "word": " fail",
+      "start": 124.98,
+      "end": 125.2,
+      "probability": 0.898
+    },
+    {
+      "word": " to",
+      "start": 125.2,
+      "end": 125.4,
+      "probability": 0.999
+    },
+    {
+      "word": " scan",
+      "start": 125.4,
+      "end": 125.68,
+      "probability": 0.994
+    },
+    {
+      "word": " their",
+      "start": 125.68,
+      "end": 125.86,
+      "probability": 0.999
+    },
+    {
+      "word": " surroundings.",
+      "start": 125.86,
+      "end": 126.38,
+      "probability": 0.996
+    },
+    {
+      "word": " What",
+      "start": 127.02,
+      "end": 127.16,
+      "probability": 0.786
+    },
+    {
+      "word": " elite",
+      "start": 127.16,
+      "end": 127.46,
+      "probability": 0.981
+    },
+    {
+      "word": " performers",
+      "start": 127.46,
+      "end": 127.94,
+      "probability": 0.995
+    },
+    {
+      "word": " do",
+      "start": 127.94,
+      "end": 128.26,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 128.26,
+      "end": 128.46,
+      "probability": 0.664
+    },
+    {
+      "word": " opposite.",
+      "start": 128.46,
+      "end": 128.88,
+      "probability": 1.0
+    },
+    {
+      "word": " They",
+      "start": 129.42,
+      "end": 129.54,
+      "probability": 0.986
+    },
+    {
+      "word": " scan",
+      "start": 129.54,
+      "end": 129.82,
+      "probability": 0.993
+    },
+    {
+      "word": " a",
+      "start": 129.82,
+      "end": 129.92,
+      "probability": 0.963
+    },
+    {
+      "word": " field",
+      "start": 129.92,
+      "end": 130.08,
+      "probability": 0.982
+    },
+    {
+      "word": " more",
+      "start": 130.08,
+      "end": 130.38,
+      "probability": 0.903
+    },
+    {
+      "word": " frequently",
+      "start": 130.38,
+      "end": 130.76,
+      "probability": 0.969
+    },
+    {
+      "word": " in",
+      "start": 130.76,
+      "end": 131.1,
+      "probability": 0.983
+    },
+    {
+      "word": " the",
+      "start": 131.1,
+      "end": 131.18,
+      "probability": 0.997
+    },
+    {
+      "word": " finals",
+      "start": 131.18,
+      "end": 131.44,
+      "probability": 0.163
+    },
+    {
+      "word": " seconds",
+      "start": 131.44,
+      "end": 131.84,
+      "probability": 0.826
+    },
+    {
+      "word": " that",
+      "start": 131.84,
+      "end": 132.06,
+      "probability": 0.133
+    },
+    {
+      "word": " any",
+      "start": 132.06,
+      "end": 132.38,
+      "probability": 0.99
+    },
+    {
+      "word": " other",
+      "start": 132.38,
+      "end": 132.62,
+      "probability": 0.998
+    },
+    {
+      "word": " time.",
+      "start": 132.62,
+      "end": 132.96,
+      "probability": 0.995
+    },
+    {
+      "word": " How",
+      "start": 133.5,
+      "end": 133.6,
+      "probability": 0.964
+    },
+    {
+      "word": " does",
+      "start": 133.6,
+      "end": 133.74,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 133.74,
+      "end": 133.86,
+      "probability": 0.988
+    },
+    {
+      "word": " brain",
+      "start": 133.86,
+      "end": 134.04,
+      "probability": 0.965
+    },
+    {
+      "word": " maintain",
+      "start": 134.04,
+      "end": 134.48,
+      "probability": 0.996
+    },
+    {
+      "word": " this",
+      "start": 134.48,
+      "end": 134.78,
+      "probability": 0.995
+    },
+    {
+      "word": " intense",
+      "start": 134.78,
+      "end": 135.04,
+      "probability": 0.991
+    },
+    {
+      "word": " visual",
+      "start": 135.04,
+      "end": 135.46,
+      "probability": 0.986
+    },
+    {
+      "word": " control",
+      "start": 135.46,
+      "end": 135.98,
+      "probability": 0.997
+    },
+    {
+      "word": " when",
+      "start": 135.98,
+      "end": 136.28,
+      "probability": 0.867
+    },
+    {
+      "word": " every",
+      "start": 136.28,
+      "end": 136.66,
+      "probability": 0.994
+    },
+    {
+      "word": " instinct",
+      "start": 136.66,
+      "end": 137.14,
+      "probability": 0.955
+    },
+    {
+      "word": " is",
+      "start": 137.14,
+      "end": 137.4,
+      "probability": 0.986
+    },
+    {
+      "word": " screaming",
+      "start": 137.4,
+      "end": 137.74,
+      "probability": 0.992
+    },
+    {
+      "word": " to",
+      "start": 137.74,
+      "end": 138.0,
+      "probability": 0.973
+    },
+    {
+      "word": " panic?",
+      "start": 138.0,
+      "end": 138.28,
+      "probability": 0.986
+    },
+    {
+      "word": " This",
+      "start": 138.76,
+      "end": 138.96,
+      "probability": 0.989
+    },
+    {
+      "word": " brings",
+      "start": 138.96,
+      "end": 139.28,
+      "probability": 0.998
+    },
+    {
+      "word": " us",
+      "start": 139.28,
+      "end": 139.48,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 139.48,
+      "end": 139.68,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 139.68,
+      "end": 139.8,
+      "probability": 0.994
+    },
+    {
+      "word": " research",
+      "start": 139.8,
+      "end": 140.14,
+      "probability": 0.971
+    },
+    {
+      "word": " of",
+      "start": 140.14,
+      "end": 140.4,
+      "probability": 0.993
+    },
+    {
+      "word": " Dr.",
+      "start": 140.4,
+      "end": 140.74,
+      "probability": 0.931
+    },
+    {
+      "word": " Christian",
+      "start": 140.92,
+      "end": 141.12,
+      "probability": 0.743
+    },
+    {
+      "word": " Swan.",
+      "start": 141.12,
+      "end": 141.5,
+      "probability": 0.64
+    },
+    {
+      "word": " He",
+      "start": 141.5,
+      "end": 142.18,
+      "probability": 0.372
+    },
+    {
+      "word": " studied",
+      "start": 142.18,
+      "end": 142.48,
+      "probability": 0.785
+    },
+    {
+      "word": " the",
+      "start": 142.48,
+      "end": 142.7,
+      "probability": 0.992
+    },
+    {
+      "word": " difference",
+      "start": 142.7,
+      "end": 143.02,
+      "probability": 0.986
+    },
+    {
+      "word": " between",
+      "start": 143.02,
+      "end": 143.42,
+      "probability": 0.997
+    },
+    {
+      "word": " flow",
+      "start": 143.42,
+      "end": 143.7,
+      "probability": 0.793
+    },
+    {
+      "word": " states",
+      "start": 143.7,
+      "end": 144.04,
+      "probability": 0.956
+    },
+    {
+      "word": " and",
+      "start": 144.04,
+      "end": 144.46,
+      "probability": 0.977
+    },
+    {
+      "word": " clutch",
+      "start": 144.46,
+      "end": 144.66,
+      "probability": 0.987
+    },
+    {
+      "word": " states.",
+      "start": 144.66,
+      "end": 145.26,
+      "probability": 0.994
+    },
+    {
+      "word": " A",
+      "start": 145.56,
+      "end": 145.78,
+      "probability": 0.916
+    },
+    {
+      "word": " flow",
+      "start": 145.78,
+      "end": 146.04,
+      "probability": 0.953
+    },
+    {
+      "word": " state",
+      "start": 146.04,
+      "end": 146.4,
+      "probability": 0.996
+    },
+    {
+      "word": " is",
+      "start": 146.4,
+      "end": 146.68,
+      "probability": 0.996
+    },
+    {
+      "word": " effortless",
+      "start": 146.68,
+      "end": 147.18,
+      "probability": 0.964
+    },
+    {
+      "word": " and",
+      "start": 147.18,
+      "end": 147.48,
+      "probability": 0.989
+    },
+    {
+      "word": " automatic.",
+      "start": 147.48,
+      "end": 148.02,
+      "probability": 0.995
+    },
+    {
+      "word": " You",
+      "start": 148.58,
+      "end": 148.72,
+      "probability": 0.992
+    },
+    {
+      "word": " feel",
+      "start": 148.72,
+      "end": 148.88,
+      "probability": 0.997
+    },
+    {
+      "word": " it",
+      "start": 148.88,
+      "end": 149.02,
+      "probability": 0.965
+    },
+    {
+      "word": " when",
+      "start": 149.02,
+      "end": 149.14,
+      "probability": 0.99
+    },
+    {
+      "word": " everything",
+      "start": 149.14,
+      "end": 149.44,
+      "probability": 0.994
+    },
+    {
+      "word": " is",
+      "start": 149.44,
+      "end": 149.66,
+      "probability": 0.991
+    },
+    {
+      "word": " going",
+      "start": 149.66,
+      "end": 149.86,
+      "probability": 0.997
+    },
+    {
+      "word": " perfectly.",
+      "start": 149.86,
+      "end": 150.26,
+      "probability": 0.993
+    },
+    {
+      "word": " But",
+      "start": 150.84,
+      "end": 150.94,
+      "probability": 0.982
+    },
+    {
+      "word": " a",
+      "start": 150.94,
+      "end": 151.04,
+      "probability": 0.985
+    },
+    {
+      "word": " clutch",
+      "start": 151.04,
+      "end": 151.22,
+      "probability": 0.992
+    },
+    {
+      "word": " state",
+      "start": 151.22,
+      "end": 151.6,
+      "probability": 0.996
+    },
+    {
+      "word": " is",
+      "start": 151.6,
+      "end": 151.88,
+      "probability": 0.998
+    },
+    {
+      "word": " deliberate",
+      "start": 151.88,
+      "end": 152.3,
+      "probability": 0.999
+    },
+    {
+      "word": " and",
+      "start": 152.3,
+      "end": 152.66,
+      "probability": 0.978
+    },
+    {
+      "word": " intense.",
+      "start": 152.66,
+      "end": 153.0,
+      "probability": 0.995
+    },
+    {
+      "word": " It",
+      "start": 153.68,
+      "end": 153.82,
+      "probability": 0.991
+    },
+    {
+      "word": " occurs",
+      "start": 153.82,
+      "end": 154.1,
+      "probability": 0.997
+    },
+    {
+      "word": " when",
+      "start": 154.1,
+      "end": 154.36,
+      "probability": 0.992
+    },
+    {
+      "word": " you",
+      "start": 154.36,
+      "end": 154.48,
+      "probability": 0.998
+    },
+    {
+      "word": " realize",
+      "start": 154.48,
+      "end": 154.86,
+      "probability": 0.939
+    },
+    {
+      "word": " that",
+      "start": 154.86,
+      "end": 155.12,
+      "probability": 0.988
+    },
+    {
+      "word": " failure",
+      "start": 155.12,
+      "end": 155.48,
+      "probability": 0.998
+    },
+    {
+      "word": " is",
+      "start": 155.48,
+      "end": 155.74,
+      "probability": 0.997
+    },
+    {
+      "word": " imminent",
+      "start": 155.74,
+      "end": 155.94,
+      "probability": 0.995
+    },
+    {
+      "word": " and",
+      "start": 155.94,
+      "end": 156.24,
+      "probability": 0.767
+    },
+    {
+      "word": " you",
+      "start": 156.24,
+      "end": 156.36,
+      "probability": 0.997
+    },
+    {
+      "word": " must",
+      "start": 156.36,
+      "end": 156.6,
+      "probability": 0.996
+    },
+    {
+      "word": " act",
+      "start": 156.6,
+      "end": 156.8,
+      "probability": 0.999
+    },
+    {
+      "word": " now.",
+      "start": 156.8,
+      "end": 157.12,
+      "probability": 0.991
+    },
+    {
+      "word": " Your",
+      "start": 157.74,
+      "end": 157.84,
+      "probability": 0.932
+    },
+    {
+      "word": " brain",
+      "start": 157.84,
+      "end": 158.12,
+      "probability": 0.998
+    },
+    {
+      "word": " actively",
+      "start": 158.12,
+      "end": 158.64,
+      "probability": 0.993
+    },
+    {
+      "word": " pushes",
+      "start": 158.64,
+      "end": 159.1,
+      "probability": 0.998
+    },
+    {
+      "word": " through",
+      "start": 159.1,
+      "end": 159.48,
+      "probability": 0.992
+    },
+    {
+      "word": " the",
+      "start": 159.48,
+      "end": 159.6,
+      "probability": 0.983
+    },
+    {
+      "word": " physical",
+      "start": 159.6,
+      "end": 159.96,
+      "probability": 0.998
+    },
+    {
+      "word": " fatigue.",
+      "start": 159.96,
+      "end": 160.3,
+      "probability": 0.997
+    },
+    {
+      "word": " It",
+      "start": 160.92,
+      "end": 161.02,
+      "probability": 0.815
+    },
+    {
+      "word": " focuses",
+      "start": 161.02,
+      "end": 161.34,
+      "probability": 0.975
+    },
+    {
+      "word": " inherently",
+      "start": 161.34,
+      "end": 161.8,
+      "probability": 0.855
+    },
+    {
+      "word": " on",
+      "start": 161.8,
+      "end": 162.22,
+      "probability": 0.999
+    },
+    {
+      "word": " immediate",
+      "start": 162.22,
+      "end": 162.56,
+      "probability": 0.51
+    },
+    {
+      "word": " goal.",
+      "start": 162.56,
+      "end": 162.92,
+      "probability": 0.964
+    },
+    {
+      "word": " The",
+      "start": 163.46,
+      "end": 163.54,
+      "probability": 0.86
+    },
+    {
+      "word": " Argentine",
+      "start": 163.54,
+      "end": 164.1,
+      "probability": 0.973
+    },
+    {
+      "word": " team",
+      "start": 164.1,
+      "end": 164.46,
+      "probability": 0.979
+    },
+    {
+      "word": " did",
+      "start": 164.46,
+      "end": 164.62,
+      "probability": 0.992
+    },
+    {
+      "word": " not",
+      "start": 164.62,
+      "end": 164.8,
+      "probability": 0.998
+    },
+    {
+      "word": " win",
+      "start": 164.8,
+      "end": 165.04,
+      "probability": 0.999
+    },
+    {
+      "word": " by",
+      "start": 165.04,
+      "end": 165.34,
+      "probability": 0.996
+    },
+    {
+      "word": " accident.",
+      "start": 165.34,
+      "end": 165.74,
+      "probability": 0.999
+    },
+    {
+      "word": " They",
+      "start": 166.26,
+      "end": 166.44,
+      "probability": 0.994
+    },
+    {
+      "word": " entered",
+      "start": 166.44,
+      "end": 166.74,
+      "probability": 0.968
+    },
+    {
+      "word": " a",
+      "start": 166.74,
+      "end": 166.88,
+      "probability": 0.997
+    },
+    {
+      "word": " collective",
+      "start": 166.88,
+      "end": 167.24,
+      "probability": 0.984
+    },
+    {
+      "word": " clutch",
+      "start": 167.24,
+      "end": 167.46,
+      "probability": 0.993
+    },
+    {
+      "word": " state",
+      "start": 167.46,
+      "end": 167.8,
+      "probability": 0.998
+    },
+    {
+      "word": " where",
+      "start": 167.8,
+      "end": 168.02,
+      "probability": 0.971
+    },
+    {
+      "word": " the",
+      "start": 168.02,
+      "end": 168.14,
+      "probability": 0.997
+    },
+    {
+      "word": " pressure",
+      "start": 168.14,
+      "end": 168.46,
+      "probability": 0.999
+    },
+    {
+      "word": " became",
+      "start": 168.46,
+      "end": 168.82,
+      "probability": 0.996
+    },
+    {
+      "word": " fuel.",
+      "start": 168.82,
+      "end": 169.18,
+      "probability": 0.987
+    },
+    {
+      "word": " Why",
+      "start": 169.18,
+      "end": 169.82,
+      "probability": 0.382
+    },
+    {
+      "word": " do",
+      "start": 169.82,
+      "end": 169.92,
+      "probability": 0.591
+    },
+    {
+      "word": " some",
+      "start": 169.92,
+      "end": 170.14,
+      "probability": 0.993
+    },
+    {
+      "word": " teams",
+      "start": 170.14,
+      "end": 170.5,
+      "probability": 0.945
+    },
+    {
+      "word": " fold",
+      "start": 170.5,
+      "end": 170.78,
+      "probability": 0.969
+    },
+    {
+      "word": " under",
+      "start": 170.78,
+      "end": 171.06,
+      "probability": 0.594
+    },
+    {
+      "word": " this",
+      "start": 171.06,
+      "end": 171.26,
+      "probability": 0.985
+    },
+    {
+      "word": " pressure",
+      "start": 171.26,
+      "end": 171.6,
+      "probability": 0.997
+    },
+    {
+      "word": " while",
+      "start": 171.6,
+      "end": 171.96,
+      "probability": 0.745
+    },
+    {
+      "word": " others",
+      "start": 171.96,
+      "end": 172.26,
+      "probability": 0.998
+    },
+    {
+      "word": " thrive?",
+      "start": 172.26,
+      "end": 172.72,
+      "probability": 0.99
+    },
+    {
+      "word": " This",
+      "start": 173.28,
+      "end": 173.56,
+      "probability": 0.976
+    },
+    {
+      "word": " is",
+      "start": 173.56,
+      "end": 173.66,
+      "probability": 0.985
+    },
+    {
+      "word": " not",
+      "start": 173.66,
+      "end": 173.86,
+      "probability": 0.994
+    },
+    {
+      "word": " just",
+      "start": 173.86,
+      "end": 174.1,
+      "probability": 0.99
+    },
+    {
+      "word": " about",
+      "start": 174.1,
+      "end": 174.36,
+      "probability": 0.977
+    },
+    {
+      "word": " soccer.",
+      "start": 174.36,
+      "end": 174.74,
+      "probability": 0.959
+    },
+    {
+      "word": " It",
+      "start": 175.3,
+      "end": 175.38,
+      "probability": 0.98
+    },
+    {
+      "word": " is",
+      "start": 175.38,
+      "end": 175.5,
+      "probability": 0.989
+    },
+    {
+      "word": " a",
+      "start": 175.5,
+      "end": 175.6,
+      "probability": 0.988
+    },
+    {
+      "word": " mirror",
+      "start": 175.6,
+      "end": 175.82,
+      "probability": 0.994
+    },
+    {
+      "word": " of",
+      "start": 175.82,
+      "end": 176.1,
+      "probability": 0.995
+    },
+    {
+      "word": " your",
+      "start": 176.1,
+      "end": 176.2,
+      "probability": 0.994
+    },
+    {
+      "word": " own",
+      "start": 176.2,
+      "end": 176.44,
+      "probability": 0.996
+    },
+    {
+      "word": " evolutionary",
+      "start": 176.44,
+      "end": 177.06,
+      "probability": 0.993
+    },
+    {
+      "word": " history.",
+      "start": 177.06,
+      "end": 177.7,
+      "probability": 0.999
+    },
+    {
+      "word": " For",
+      "start": 178.16,
+      "end": 178.22,
+      "probability": 0.969
+    },
+    {
+      "word": " thousands",
+      "start": 178.22,
+      "end": 178.6,
+      "probability": 0.997
+    },
+    {
+      "word": " of",
+      "start": 178.6,
+      "end": 178.82,
+      "probability": 0.998
+    },
+    {
+      "word": " years,",
+      "start": 178.82,
+      "end": 179.14,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 179.52,
+      "end": 179.62,
+      "probability": 0.987
+    },
+    {
+      "word": " ancestors",
+      "start": 179.62,
+      "end": 180.14,
+      "probability": 0.995
+    },
+    {
+      "word": " did",
+      "start": 180.14,
+      "end": 180.48,
+      "probability": 0.986
+    },
+    {
+      "word": " not",
+      "start": 180.48,
+      "end": 180.66,
+      "probability": 1.0
+    },
+    {
+      "word": " hunt",
+      "start": 180.66,
+      "end": 180.86,
+      "probability": 0.997
+    },
+    {
+      "word": " when",
+      "start": 180.86,
+      "end": 181.08,
+      "probability": 0.999
+    },
+    {
+      "word": " they",
+      "start": 181.08,
+      "end": 181.22,
+      "probability": 0.998
+    },
+    {
+      "word": " were",
+      "start": 181.22,
+      "end": 181.36,
+      "probability": 0.998
+    },
+    {
+      "word": " fresh.",
+      "start": 181.36,
+      "end": 181.64,
+      "probability": 0.996
+    },
+    {
+      "word": " They",
+      "start": 182.22,
+      "end": 182.36,
+      "probability": 0.996
+    },
+    {
+      "word": " hunted",
+      "start": 182.36,
+      "end": 182.6,
+      "probability": 0.998
+    },
+    {
+      "word": " when",
+      "start": 182.6,
+      "end": 182.82,
+      "probability": 0.996
+    },
+    {
+      "word": " they",
+      "start": 182.82,
+      "end": 182.96,
+      "probability": 0.997
+    },
+    {
+      "word": " were",
+      "start": 182.96,
+      "end": 183.06,
+      "probability": 0.988
+    },
+    {
+      "word": " starving",
+      "start": 183.06,
+      "end": 183.44,
+      "probability": 0.996
+    },
+    {
+      "word": " and",
+      "start": 183.44,
+      "end": 183.66,
+      "probability": 0.84
+    },
+    {
+      "word": " desperate.",
+      "start": 183.66,
+      "end": 183.96,
+      "probability": 0.996
+    },
+    {
+      "word": " Their",
+      "start": 184.58,
+      "end": 184.72,
+      "probability": 0.987
+    },
+    {
+      "word": " survival",
+      "start": 184.72,
+      "end": 185.1,
+      "probability": 0.993
+    },
+    {
+      "word": " depended",
+      "start": 185.1,
+      "end": 185.5,
+      "probability": 0.988
+    },
+    {
+      "word": " on",
+      "start": 185.5,
+      "end": 185.72,
+      "probability": 0.999
+    },
+    {
+      "word": " their",
+      "start": 185.72,
+      "end": 185.86,
+      "probability": 0.998
+    },
+    {
+      "word": " ability",
+      "start": 185.86,
+      "end": 186.22,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 186.22,
+      "end": 186.48,
+      "probability": 0.998
+    },
+    {
+      "word": " run",
+      "start": 186.48,
+      "end": 186.68,
+      "probability": 0.95
+    },
+    {
+      "word": " down",
+      "start": 186.68,
+      "end": 186.96,
+      "probability": 0.994
+    },
+    {
+      "word": " prey",
+      "start": 186.96,
+      "end": 187.24,
+      "probability": 0.985
+    },
+    {
+      "word": " when",
+      "start": 187.24,
+      "end": 187.52,
+      "probability": 0.965
+    },
+    {
+      "word": " their",
+      "start": 187.52,
+      "end": 187.66,
+      "probability": 0.998
+    },
+    {
+      "word": " bodies",
+      "start": 187.66,
+      "end": 187.98,
+      "probability": 0.999
+    },
+    {
+      "word": " were",
+      "start": 187.98,
+      "end": 188.2,
+      "probability": 0.997
+    },
+    {
+      "word": " completely",
+      "start": 188.2,
+      "end": 188.64,
+      "probability": 0.995
+    },
+    {
+      "word": " spent.",
+      "start": 188.64,
+      "end": 189.02,
+      "probability": 0.97
+    },
+    {
+      "word": " The",
+      "start": 189.56,
+      "end": 189.62,
+      "probability": 0.988
+    },
+    {
+      "word": " human",
+      "start": 189.62,
+      "end": 189.86,
+      "probability": 0.994
+    },
+    {
+      "word": " brain",
+      "start": 189.86,
+      "end": 190.16,
+      "probability": 0.999
+    },
+    {
+      "word": " evolved",
+      "start": 190.16,
+      "end": 190.52,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 190.52,
+      "end": 190.92,
+      "probability": 0.998
+    },
+    {
+      "word": " deliver",
+      "start": 190.92,
+      "end": 191.26,
+      "probability": 0.998
+    },
+    {
+      "word": " its",
+      "start": 191.26,
+      "end": 191.54,
+      "probability": 0.973
+    },
+    {
+      "word": " maximum",
+      "start": 191.54,
+      "end": 192.04,
+      "probability": 0.998
+    },
+    {
+      "word": " performance",
+      "start": 192.04,
+      "end": 192.6,
+      "probability": 0.99
+    },
+    {
+      "word": " when",
+      "start": 192.6,
+      "end": 192.94,
+      "probability": 0.982
+    },
+    {
+      "word": " desperate.",
+      "start": 192.94,
+      "end": 193.44,
+      "probability": 0.999
+    },
+    {
+      "word": " When",
+      "start": 193.92,
+      "end": 194.14,
+      "probability": 0.995
+    },
+    {
+      "word": " you",
+      "start": 194.14,
+      "end": 194.26,
+      "probability": 0.999
+    },
+    {
+      "word": " face",
+      "start": 194.26,
+      "end": 194.46,
+      "probability": 0.936
+    },
+    {
+      "word": " a",
+      "start": 194.46,
+      "end": 194.62,
+      "probability": 0.998
+    },
+    {
+      "word": " deadline",
+      "start": 194.62,
+      "end": 194.96,
+      "probability": 0.95
+    },
+    {
+      "word": " or",
+      "start": 194.96,
+      "end": 195.44,
+      "probability": 0.828
+    },
+    {
+      "word": " a",
+      "start": 195.44,
+      "end": 195.56,
+      "probability": 0.949
+    },
+    {
+      "word": " crisis,",
+      "start": 195.56,
+      "end": 195.86,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 196.34,
+      "end": 196.4,
+      "probability": 0.995
+    },
+    {
+      "word": " brain",
+      "start": 196.4,
+      "end": 196.68,
+      "probability": 1.0
+    },
+    {
+      "word": " taps",
+      "start": 196.68,
+      "end": 196.98,
+      "probability": 0.993
+    },
+    {
+      "word": " into",
+      "start": 196.98,
+      "end": 197.28,
+      "probability": 0.998
+    },
+    {
+      "word": " this",
+      "start": 197.28,
+      "end": 197.48,
+      "probability": 0.994
+    },
+    {
+      "word": " network.",
+      "start": 197.48,
+      "end": 197.78,
+      "probability": 0.997
+    },
+    {
+      "word": " It",
+      "start": 197.78,
+      "end": 198.38,
+      "probability": 0.747
+    },
+    {
+      "word": " is",
+      "start": 198.38,
+      "end": 198.5,
+      "probability": 0.979
+    },
+    {
+      "word": " the",
+      "start": 198.5,
+      "end": 198.62,
+      "probability": 0.996
+    },
+    {
+      "word": " reason",
+      "start": 198.62,
+      "end": 198.9,
+      "probability": 0.999
+    },
+    {
+      "word": " you",
+      "start": 198.9,
+      "end": 199.08,
+      "probability": 0.985
+    },
+    {
+      "word": " find",
+      "start": 199.08,
+      "end": 199.32,
+      "probability": 0.995
+    },
+    {
+      "word": " focus",
+      "start": 199.32,
+      "end": 199.72,
+      "probability": 0.973
+    },
+    {
+      "word": " when",
+      "start": 199.72,
+      "end": 200.06,
+      "probability": 0.969
+    },
+    {
+      "word": " all",
+      "start": 200.06,
+      "end": 200.36,
+      "probability": 0.973
+    },
+    {
+      "word": " hope",
+      "start": 200.36,
+      "end": 200.58,
+      "probability": 0.524
+    },
+    {
+      "word": " seems",
+      "start": 200.58,
+      "end": 200.98,
+      "probability": 0.989
+    },
+    {
+      "word": " lost.",
+      "start": 200.98,
+      "end": 201.42,
+      "probability": 0.997
+    },
+    {
+      "word": " Are",
+      "start": 201.8,
+      "end": 202.0,
+      "probability": 0.786
+    },
+    {
+      "word": " we",
+      "start": 202.0,
+      "end": 202.16,
+      "probability": 0.996
+    },
+    {
+      "word": " built",
+      "start": 202.16,
+      "end": 202.42,
+      "probability": 0.976
+    },
+    {
+      "word": " to",
+      "start": 202.42,
+      "end": 202.58,
+      "probability": 0.998
+    },
+    {
+      "word": " succeed",
+      "start": 202.58,
+      "end": 202.86,
+      "probability": 0.999
+    },
+    {
+      "word": " only",
+      "start": 202.86,
+      "end": 203.28,
+      "probability": 0.982
+    },
+    {
+      "word": " when",
+      "start": 203.28,
+      "end": 203.56,
+      "probability": 0.992
+    },
+    {
+      "word": " failure",
+      "start": 203.56,
+      "end": 203.88,
+      "probability": 0.742
+    },
+    {
+      "word": " is",
+      "start": 203.88,
+      "end": 204.14,
+      "probability": 0.947
+    },
+    {
+      "word": " the",
+      "start": 204.14,
+      "end": 204.28,
+      "probability": 0.997
+    },
+    {
+      "word": " only",
+      "start": 204.28,
+      "end": 204.54,
+      "probability": 0.997
+    },
+    {
+      "word": " other",
+      "start": 204.54,
+      "end": 204.88,
+      "probability": 0.987
+    },
+    {
+      "word": " option?",
+      "start": 204.88,
+      "end": 205.28,
+      "probability": 0.995
+    },
+    {
+      "word": " So,",
+      "start": 205.82,
+      "end": 206.1,
+      "probability": 0.987
+    },
+    {
+      "word": " when",
+      "start": 206.44,
+      "end": 206.6,
+      "probability": 0.983
+    },
+    {
+      "word": " you",
+      "start": 206.6,
+      "end": 206.72,
+      "probability": 0.999
+    },
+    {
+      "word": " watch",
+      "start": 206.72,
+      "end": 206.96,
+      "probability": 0.993
+    },
+    {
+      "word": " Argentina",
+      "start": 206.96,
+      "end": 207.4,
+      "probability": 0.988
+    },
+    {
+      "word": " defeat",
+      "start": 207.4,
+      "end": 207.82,
+      "probability": 0.995
+    },
+    {
+      "word": " their",
+      "start": 207.82,
+      "end": 208.08,
+      "probability": 0.996
+    },
+    {
+      "word": " rivals",
+      "start": 208.08,
+      "end": 208.34,
+      "probability": 0.959
+    },
+    {
+      "word": " in",
+      "start": 208.34,
+      "end": 208.54,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 208.54,
+      "end": 208.64,
+      "probability": 0.995
+    },
+    {
+      "word": " final",
+      "start": 208.64,
+      "end": 208.88,
+      "probability": 0.946
+    },
+    {
+      "word": " seconds,",
+      "start": 208.88,
+      "end": 209.32,
+      "probability": 0.975
+    },
+    {
+      "word": " you",
+      "start": 209.76,
+      "end": 209.84,
+      "probability": 0.991
+    },
+    {
+      "word": " are",
+      "start": 209.84,
+      "end": 209.9,
+      "probability": 0.717
+    },
+    {
+      "word": " not",
+      "start": 209.9,
+      "end": 210.04,
+      "probability": 0.992
+    },
+    {
+      "word": " just",
+      "start": 210.04,
+      "end": 210.26,
+      "probability": 0.996
+    },
+    {
+      "word": " watching",
+      "start": 210.26,
+      "end": 210.6,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 210.6,
+      "end": 210.72,
+      "probability": 0.74
+    },
+    {
+      "word": " sport.",
+      "start": 210.72,
+      "end": 210.94,
+      "probability": 0.991
+    },
+    {
+      "word": " You",
+      "start": 211.5,
+      "end": 211.62,
+      "probability": 0.991
+    },
+    {
+      "word": " are",
+      "start": 211.62,
+      "end": 211.72,
+      "probability": 0.991
+    },
+    {
+      "word": " witnessing",
+      "start": 211.72,
+      "end": 212.0,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 212.0,
+      "end": 212.4,
+      "probability": 0.996
+    },
+    {
+      "word": " deep",
+      "start": 212.4,
+      "end": 212.62,
+      "probability": 0.993
+    },
+    {
+      "word": " evolutionary",
+      "start": 212.62,
+      "end": 213.2,
+      "probability": 0.85
+    },
+    {
+      "word": " design.",
+      "start": 213.2,
+      "end": 214.0,
+      "probability": 0.997
+    },
+    {
+      "word": " The",
+      "start": 214.5,
+      "end": 214.64,
+      "probability": 0.99
+    },
+    {
+      "word": " same",
+      "start": 214.64,
+      "end": 214.9,
+      "probability": 0.999
+    },
+    {
+      "word": " brain",
+      "start": 214.9,
+      "end": 215.14,
+      "probability": 0.977
+    },
+    {
+      "word": " that",
+      "start": 215.14,
+      "end": 215.38,
+      "probability": 0.997
+    },
+    {
+      "word": " saved",
+      "start": 215.38,
+      "end": 215.68,
+      "probability": 0.995
+    },
+    {
+      "word": " your",
+      "start": 215.68,
+      "end": 215.9,
+      "probability": 0.977
+    },
+    {
+      "word": " ancestors",
+      "start": 215.9,
+      "end": 216.24,
+      "probability": 0.995
+    },
+    {
+      "word": " from",
+      "start": 216.24,
+      "end": 216.68,
+      "probability": 0.993
+    },
+    {
+      "word": " starvation",
+      "start": 216.68,
+      "end": 217.42,
+      "probability": 0.989
+    },
+    {
+      "word": " is",
+      "start": 217.42,
+      "end": 217.66,
+      "probability": 0.989
+    },
+    {
+      "word": " now",
+      "start": 217.66,
+      "end": 217.9,
+      "probability": 0.998
+    },
+    {
+      "word": " winning",
+      "start": 217.9,
+      "end": 218.18,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 218.18,
+      "end": 218.42,
+      "probability": 0.994
+    },
+    {
+      "word": " World",
+      "start": 218.42,
+      "end": 218.64,
+      "probability": 0.888
+    },
+    {
+      "word": " Cup",
+      "start": 218.64,
+      "end": 218.88,
+      "probability": 0.989
+    },
+    {
+      "word": " match.",
+      "start": 218.88,
+      "end": 219.18,
+      "probability": 0.969
+    },
+    {
+      "word": " In",
+      "start": 219.82,
+      "end": 219.92,
+      "probability": 0.995
+    },
+    {
+      "word": " July,",
+      "start": 219.92,
+      "end": 220.16,
+      "probability": 0.998
+    },
+    {
+      "word": " 2026,",
+      "start": 220.28,
+      "end": 221.38,
+      "probability": 0.878
+    },
+    {
+      "word": " you",
+      "start": 221.76,
+      "end": 221.84,
+      "probability": 0.991
+    },
+    {
+      "word": " watched",
+      "start": 221.84,
+      "end": 222.12,
+      "probability": 0.936
+    },
+    {
+      "word": " Argentina",
+      "start": 222.12,
+      "end": 222.6,
+      "probability": 0.998
+    },
+    {
+      "word": " defy",
+      "start": 222.6,
+      "end": 223.08,
+      "probability": 0.89
+    },
+    {
+      "word": " all",
+      "start": 223.08,
+      "end": 223.38,
+      "probability": 0.983
+    },
+    {
+      "word": " odds",
+      "start": 223.38,
+      "end": 223.68,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 223.68,
+      "end": 223.84,
+      "probability": 0.996
+    },
+    {
+      "word": " reach",
+      "start": 223.84,
+      "end": 224.0,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 224.0,
+      "end": 224.22,
+      "probability": 0.99
+    },
+    {
+      "word": " World",
+      "start": 224.22,
+      "end": 224.44,
+      "probability": 0.981
+    },
+    {
+      "word": " Cup",
+      "start": 224.44,
+      "end": 224.72,
+      "probability": 0.997
+    },
+    {
+      "word": " Final.",
+      "start": 224.72,
+      "end": 225.12,
+      "probability": 0.762
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 225.159,
+  "model_size": "base",
+  "device": "cpu"
+}

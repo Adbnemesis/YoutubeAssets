@@ -1,0 +1,861 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#0F172A",
+    "primaryColor": "#7C3AED",
+    "accentColor": "#EC4899",
+    "surfaceColor": "#1E293B",
+    "textColor": "#F8FAFC",
+    "captionHighlightColor": "#22D3EE",
+    "captionBackgroundColor": "rgba(15, 23, 42, 0.75)",
+    "chartColors": [
+      "#7C3AED",
+      "#EC4899",
+      "#06B6D4",
+      "#F59E0B",
+      "#10B981",
+      "#EF4444"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/ancient_mating_project_4/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 0,
+      "out_seconds": 2,
+      "animation": "none",
+      "text": "Right now, you are probably thinking about love."
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/ancient_mating_project_4/images/[00-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 2,
+      "out_seconds": 5,
+      "animation": "none",
+      "text": "Or maybe you are thinking about compatibility."
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/ancient_mating_project_4/images/[00-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 5,
+      "out_seconds": 10,
+      "animation": "zoom-in",
+      "text": "You believe that your taste in partners is entirely your own, shaped by the culture you grew up in."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/ancient_mating_project_4/images/[00-10]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 10,
+      "out_seconds": 12,
+      "animation": "none",
+      "text": "But the real answer is far stranger."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/ancient_mating_project_4/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 12,
+      "out_seconds": 15,
+      "animation": "none",
+      "text": "Your modern choices are guided by ancient ghosts."
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/ancient_mating_project_4/images/[00-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 15,
+      "out_seconds": 17,
+      "animation": "none",
+      "text": "They whisper in your ear."
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/ancient_mating_project_4/images/[00-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 17,
+      "out_seconds": 23,
+      "animation": "zoom-out",
+      "text": "For most of human history, finding a partner was not about romance, it was about keeping the species alive."
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/ancient_mating_project_4/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 23,
+      "out_seconds": 25,
+      "animation": "none",
+      "text": "It was a high-stakes gamble."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/ancient_mating_project_4/images/[00-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 25,
+      "out_seconds": 27,
+      "animation": "none",
+      "text": "How did your ancestors survive it?"
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/ancient_mating_project_4/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 27,
+      "out_seconds": 28,
+      "animation": "none",
+      "text": "They started with a sniff."
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/ancient_mating_project_4/images/[00-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 28,
+      "out_seconds": 30,
+      "animation": "none",
+      "text": "It sounds bizarre."
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/ancient_mating_project_4/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 30,
+      "out_seconds": 35,
+      "animation": "ken-burns",
+      "text": "But your nose is actually a genetic scanner that can detect the strength of another person's immune system."
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/ancient_mating_project_4/images/[00-35]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 35,
+      "out_seconds": 37,
+      "animation": "none",
+      "text": "This is not a guess."
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/ancient_mating_project_4/images/[00-37]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 37,
+      "out_seconds": 41,
+      "animation": "parallax",
+      "text": "Doctor Claus Wedekind proved this in his sweaty t-shirt study."
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/ancient_mating_project_4/images/[00-41]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 41,
+      "out_seconds": 46,
+      "animation": "pan-left",
+      "text": "He discovered that women are drawn to the scent of men with immune genes that differ from their own."
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/ancient_mating_project_4/images/[00-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 46,
+      "out_seconds": 47,
+      "animation": "none",
+      "text": "Why does this happen?"
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/ancient_mating_project_4/images/[00-47]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 47,
+      "out_seconds": 49,
+      "animation": "none",
+      "text": "It prevents inbreeding."
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/ancient_mating_project_4/images/[00-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 49,
+      "out_seconds": 53,
+      "animation": "pan-right",
+      "text": "It also gives offspring a stronger shield against pathogens."
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/ancient_mating_project_4/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 53,
+      "out_seconds": 55,
+      "animation": "none",
+      "text": "You think you like their perfume."
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/ancient_mating_project_4/images/[00-55]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 55,
+      "out_seconds": 56,
+      "animation": "none",
+      "text": "But you actually like their chemistry."
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/ancient_mating_project_4/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 56,
+      "out_seconds": 58,
+      "animation": "none",
+      "text": "Are you sniffing out your match?"
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/ancient_mating_project_4/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 58,
+      "out_seconds": 61,
+      "animation": "none",
+      "text": "Modern science has introduced a strange twist."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/ancient_mating_project_4/images/[01-01]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 61,
+      "out_seconds": 64,
+      "animation": "none",
+      "text": "The contraceptive pill alters hormone levels."
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/ancient_mating_project_4/images/[01-04]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 64,
+      "out_seconds": 70,
+      "animation": "zoom-in",
+      "text": "When women take birth control, their scent preference flips to men with similar immune genes."
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/ancient_mating_project_4/images/[01-10]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 70,
+      "out_seconds": 71,
+      "animation": "none",
+      "text": "This mimics pregnancy."
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/ancient_mating_project_4/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 71,
+      "out_seconds": 76,
+      "animation": "zoom-out",
+      "text": "In nature, pregnant women seek the protection of close genetic relatives."
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/ancient_mating_project_4/images/[01-16]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 76,
+      "out_seconds": 80,
+      "animation": "ken-burns",
+      "text": "Some researchers worry this causes issues when couples stop taking the pill."
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/ancient_mating_project_4/images/[01-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 80,
+      "out_seconds": 82,
+      "animation": "none",
+      "text": "The chemistry is broken."
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/ancient_mating_project_4/images/[01-22]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 82,
+      "out_seconds": 85,
+      "animation": "none",
+      "text": "What happens when the biological illusion fades?"
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/ancient_mating_project_4/images/[01-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 85,
+      "out_seconds": 87,
+      "animation": "none",
+      "text": "Your eyes do the scanning."
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/ancient_mating_project_4/images/[01-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 87,
+      "out_seconds": 88,
+      "animation": "none",
+      "text": "They look for symmetry."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/ancient_mating_project_4/images/[01-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 88,
+      "out_seconds": 92,
+      "animation": "parallax",
+      "text": "We crave faces where the left side matches the right because it signals health."
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/ancient_mating_project_4/images/[01-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 92,
+      "out_seconds": 94,
+      "animation": "none",
+      "text": "It is a visual test."
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/ancient_mating_project_4/images/[01-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 94,
+      "out_seconds": 99,
+      "animation": "pan-left",
+      "text": "Doctor David Buss proved these preferences are identical across all cultures."
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/ancient_mating_project_4/images/[01-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 99,
+      "out_seconds": 101,
+      "animation": "none",
+      "text": "A glowing complexion is not cosmetic."
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/ancient_mating_project_4/images/[01-41]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 101,
+      "out_seconds": 104,
+      "animation": "none",
+      "text": "It is evidence of parasite resistance."
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/ancient_mating_project_4/images/[01-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 104,
+      "out_seconds": 106,
+      "animation": "none",
+      "text": "Our ancestors could not run tests."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/ancient_mating_project_4/images/[01-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 106,
+      "out_seconds": 108,
+      "animation": "none",
+      "text": "So they read skin."
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/ancient_mating_project_4/images/[01-48]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 108,
+      "out_seconds": 109,
+      "animation": "none",
+      "text": "What does a face tell you?"
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/ancient_mating_project_4/images/[01-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 109,
+      "out_seconds": 111,
+      "animation": "none",
+      "text": "Bodies were scanned too."
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/ancient_mating_project_4/images/[01-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 111,
+      "out_seconds": 113,
+      "animation": "none",
+      "text": "The brain processed proportions."
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/ancient_mating_project_4/images/[01-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 113,
+      "out_seconds": 120,
+      "animation": "pan-right",
+      "text": "Ancestral men preferred a waist-to-hip ratio of zero point seven because it signaled peak fertility."
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/ancient_mating_project_4/images/[02-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 120,
+      "out_seconds": 122,
+      "animation": "none",
+      "text": "Ancestral women preferred strong shoulders."
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/ancient_mating_project_4/images/[02-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 122,
+      "out_seconds": 127,
+      "animation": "zoom-in",
+      "text": "These traits promised protection and resource gathering in a dangerous world."
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/ancient_mating_project_4/images/[02-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 127,
+      "out_seconds": 128,
+      "animation": "none",
+      "text": "We call it beauty."
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/ancient_mating_project_4/images/[02-08]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 128,
+      "out_seconds": 131,
+      "animation": "none",
+      "text": "But back then, it was a resume."
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/ancient_mating_project_4/images/[02-11]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 131,
+      "out_seconds": 133,
+      "animation": "none",
+      "text": "Are you looking for health or aesthetics?"
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/ancient_mating_project_4/images/[02-13]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 133,
+      "out_seconds": 135,
+      "animation": "none",
+      "text": "But our ancestors went even further."
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/ancient_mating_project_4/images/[02-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 135,
+      "out_seconds": 138,
+      "animation": "none",
+      "text": "They crossed evolutionary boundaries."
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/ancient_mating_project_4/images/[02-18]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 138,
+      "out_seconds": 142,
+      "animation": "zoom-out",
+      "text": "Doctor Svante Paeaebo mapped the Neanderthal genome and made a startling discovery."
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/ancient_mating_project_4/images/[02-22]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 142,
+      "out_seconds": 144,
+      "animation": "none",
+      "text": "Our ancestors mated with them."
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/ancient_mating_project_4/images/[02-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 144,
+      "out_seconds": 148,
+      "animation": "ken-burns",
+      "text": "Almost everyone outside of Africa carries Neanderthal DNA today."
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/ancient_mating_project_4/images/[02-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 148,
+      "out_seconds": 150,
+      "animation": "none",
+      "text": "This was not an accident."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/ancient_mating_project_4/images/[02-30]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 150,
+      "out_seconds": 154,
+      "animation": "parallax",
+      "text": "It was a search for tools to survive cold climates and new diseases."
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/ancient_mating_project_4/images/[02-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 154,
+      "out_seconds": 156,
+      "animation": "none",
+      "text": "They chose diversity over comfort."
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/ancient_mating_project_4/images/[02-36]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 156,
+      "out_seconds": 158,
+      "animation": "none",
+      "text": "They chose survival over sameness."
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/ancient_mating_project_4/images/[02-38]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 158,
+      "out_seconds": 160,
+      "animation": "none",
+      "text": "Did they find love in the cold?"
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/ancient_mating_project_4/images/[02-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 160,
+      "out_seconds": 163,
+      "animation": "none",
+      "text": "This interbreeding happened in pockets of Eurasia."
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/ancient_mating_project_4/images/[02-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 163,
+      "out_seconds": 165,
+      "animation": "none",
+      "text": "Neanderthals lived there first."
+    },
+    {
+      "id": "scene_59",
+      "source": "projects/ancient_mating_project_4/images/[02-45]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 165,
+      "out_seconds": 170,
+      "animation": "pan-left",
+      "text": "Their immune systems were adapted to local viruses and harsh winters."
+    },
+    {
+      "id": "scene_60",
+      "source": "projects/ancient_mating_project_4/images/[02-50]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 170,
+      "out_seconds": 173,
+      "animation": "none",
+      "text": "By mating with them, Homo sapiens acquired these genes."
+    },
+    {
+      "id": "scene_61",
+      "source": "projects/ancient_mating_project_4/images/[02-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 173,
+      "out_seconds": 175,
+      "animation": "none",
+      "text": "It was a biological shortcut."
+    },
+    {
+      "id": "scene_62",
+      "source": "projects/ancient_mating_project_4/images/[02-55]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 175,
+      "out_seconds": 178,
+      "animation": "none",
+      "text": "You carry Neanderthal genes in your skin today."
+    },
+    {
+      "id": "scene_63",
+      "source": "projects/ancient_mating_project_4/images/[02-58]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 178,
+      "out_seconds": 180,
+      "animation": "none",
+      "text": "You have them to thank for your immune defense."
+    },
+    {
+      "id": "scene_64",
+      "source": "projects/ancient_mating_project_4/images/[03-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 180,
+      "out_seconds": 183,
+      "animation": "none",
+      "text": "Was it a swap of survival secrets?"
+    },
+    {
+      "id": "scene_65",
+      "source": "projects/ancient_mating_project_4/images/[03-03]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 183,
+      "out_seconds": 185,
+      "animation": "none",
+      "text": "Physical traits were only part of the equation."
+    },
+    {
+      "id": "scene_66",
+      "source": "projects/ancient_mating_project_4/images/[03-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 185,
+      "out_seconds": 188,
+      "animation": "none",
+      "text": "Social dynamics mattered just as much."
+    },
+    {
+      "id": "scene_67",
+      "source": "projects/ancient_mating_project_4/images/[03-08]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 188,
+      "out_seconds": 194,
+      "animation": "pan-right",
+      "text": "Survival in small hunter-gatherer bands required intense cooperation and social intelligence."
+    },
+    {
+      "id": "scene_68",
+      "source": "projects/ancient_mating_project_4/images/[03-14]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 194,
+      "out_seconds": 196,
+      "animation": "none",
+      "text": "No one survived alone."
+    },
+    {
+      "id": "scene_69",
+      "source": "projects/ancient_mating_project_4/images/[03-16]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 196,
+      "out_seconds": 201,
+      "animation": "zoom-in",
+      "text": "Evolutionary psychologists suggest that generosity and humor were key mating signals."
+    },
+    {
+      "id": "scene_70",
+      "source": "projects/ancient_mating_project_4/images/[03-21]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 201,
+      "out_seconds": 204,
+      "animation": "none",
+      "text": "A selfish partner was a dangerous liability."
+    },
+    {
+      "id": "scene_71",
+      "source": "projects/ancient_mating_project_4/images/[03-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 204,
+      "out_seconds": 209,
+      "animation": "zoom-out",
+      "text": "A funny partner signaled a creative brain capable of solving survival problems."
+    },
+    {
+      "id": "scene_72",
+      "source": "projects/ancient_mating_project_4/images/[03-29]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 209,
+      "out_seconds": 211,
+      "animation": "none",
+      "text": "The band was always watching."
+    },
+    {
+      "id": "scene_73",
+      "source": "projects/ancient_mating_project_4/images/[03-31]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 211,
+      "out_seconds": 213,
+      "animation": "none",
+      "text": "Mating choices were public business."
+    },
+    {
+      "id": "scene_74",
+      "source": "projects/ancient_mating_project_4/images/[03-33]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 213,
+      "out_seconds": 215,
+      "animation": "none",
+      "text": "How did your group influence your heart?"
+    },
+    {
+      "id": "scene_75",
+      "source": "projects/ancient_mating_project_4/images/[03-35]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 215,
+      "out_seconds": 217,
+      "animation": "none",
+      "text": "Status also dictated options."
+    },
+    {
+      "id": "scene_76",
+      "source": "projects/ancient_mating_project_4/images/[03-37]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 217,
+      "out_seconds": 218,
+      "animation": "none",
+      "text": "Hunters got first choice."
+    },
+    {
+      "id": "scene_77",
+      "source": "projects/ancient_mating_project_4/images/[03-38]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 218,
+      "out_seconds": 223,
+      "animation": "ken-burns",
+      "text": "A skilled hunter could feed a family and keep children alive through winter."
+    },
+    {
+      "id": "scene_78",
+      "source": "projects/ancient_mating_project_4/images/[03-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 223,
+      "out_seconds": 225,
+      "animation": "none",
+      "text": "A good gatherer knew safe plants."
+    },
+    {
+      "id": "scene_79",
+      "source": "projects/ancient_mating_project_4/images/[03-45]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 225,
+      "out_seconds": 230,
+      "animation": "parallax",
+      "text": "These roles created a market of survival values where skills were traded for commitment."
+    },
+    {
+      "id": "scene_80",
+      "source": "projects/ancient_mating_project_4/images/[03-50]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 230,
+      "out_seconds": 232,
+      "animation": "none",
+      "text": "We still seek ambitious partners."
+    },
+    {
+      "id": "scene_81",
+      "source": "projects/ancient_mating_project_4/images/[03-52]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 232,
+      "out_seconds": 234,
+      "animation": "none",
+      "text": "We still value safety."
+    },
+    {
+      "id": "scene_82",
+      "source": "projects/ancient_mating_project_4/images/[03-54]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 234,
+      "out_seconds": 237,
+      "animation": "none",
+      "text": "Has the definition of status really changed?"
+    },
+    {
+      "id": "scene_83",
+      "source": "projects/ancient_mating_project_4/images/[03-57]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 237,
+      "out_seconds": 239,
+      "animation": "none",
+      "text": "Now look at your modern life."
+    },
+    {
+      "id": "scene_84",
+      "source": "projects/ancient_mating_project_4/images/[03-59]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 239,
+      "out_seconds": 240,
+      "animation": "none",
+      "text": "You swipe on a cold screen."
+    },
+    {
+      "id": "scene_85",
+      "source": "projects/ancient_mating_project_4/images/[04-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 240,
+      "out_seconds": 246,
+      "animation": "pan-left",
+      "text": "You look at filtered pictures that hide the skin details your ancestors scanned for parasites."
+    },
+    {
+      "id": "scene_86",
+      "source": "projects/ancient_mating_project_4/images/[04-06]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 246,
+      "out_seconds": 247,
+      "animation": "none",
+      "text": "You spray synthetic perfumes."
+    },
+    {
+      "id": "scene_87",
+      "source": "projects/ancient_mating_project_4/images/[04-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 247,
+      "out_seconds": 252,
+      "animation": "pan-right",
+      "text": "These chemical scents mask the natural MHC signals that your nose is trying to read."
+    },
+    {
+      "id": "scene_88",
+      "source": "projects/ancient_mating_project_4/images/[04-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 252,
+      "out_seconds": 256,
+      "animation": "zoom-in",
+      "text": "We are trying to make ancient decisions in a modern vacuum."
+    },
+    {
+      "id": "scene_89",
+      "source": "projects/ancient_mating_project_4/images/[04-16]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 256,
+      "out_seconds": 258,
+      "animation": "none",
+      "text": "We are overriding our biological computers."
+    },
+    {
+      "id": "scene_90",
+      "source": "projects/ancient_mating_project_4/images/[04-18]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 258,
+      "out_seconds": 260,
+      "animation": "none",
+      "text": "Are we making better choices?"
+    },
+    {
+      "id": "scene_91",
+      "source": "projects/ancient_mating_project_4/images/[04-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 260,
+      "out_seconds": 262,
+      "animation": "none",
+      "text": "The results are confusing."
+    },
+    {
+      "id": "scene_92",
+      "source": "projects/ancient_mating_project_4/images/[04-22]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 262,
+      "out_seconds": 263,
+      "animation": "none",
+      "text": "We feel disconnected."
+    },
+    {
+      "id": "scene_93",
+      "source": "projects/ancient_mating_project_4/images/[04-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 263,
+      "out_seconds": 268,
+      "animation": "zoom-out",
+      "text": "We search for sparks that our modern lifestyle has snuffed out with chemicals and screens."
+    },
+    {
+      "id": "scene_94",
+      "source": "projects/ancient_mating_project_4/images/[04-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 268,
+      "out_seconds": 270,
+      "animation": "none",
+      "text": "We struggle to find bonds."
+    },
+    {
+      "id": "scene_95",
+      "source": "projects/ancient_mating_project_4/images/[04-30]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 270,
+      "out_seconds": 275,
+      "animation": "ken-burns",
+      "text": "The mismatch between our ancient brains and modern world grows wider every day."
+    },
+    {
+      "id": "scene_96",
+      "source": "projects/ancient_mating_project_4/images/[04-35]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 275,
+      "out_seconds": 276,
+      "animation": "none",
+      "text": "We must trust our hardware."
+    },
+    {
+      "id": "scene_97",
+      "source": "projects/ancient_mating_project_4/images/[04-36]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 276,
+      "out_seconds": 278,
+      "animation": "none",
+      "text": "We must listen."
+    },
+    {
+      "id": "scene_98",
+      "source": "projects/ancient_mating_project_4/images/[04-38]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 278,
+      "out_seconds": 280,
+      "animation": "none",
+      "text": "Can we heal the biological divide?"
+    },
+    {
+      "id": "scene_99",
+      "source": "projects/ancient_mating_project_4/images/[04-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 280,
+      "out_seconds": 282,
+      "animation": "none",
+      "text": "Your ancestors made those choices."
+    },
+    {
+      "id": "scene_100",
+      "source": "projects/ancient_mating_project_4/images/[04-42]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 282,
+      "out_seconds": 284,
+      "animation": "none",
+      "text": "They survived the ice."
+    },
+    {
+      "id": "scene_101",
+      "source": "projects/ancient_mating_project_4/images/[04-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 284,
+      "out_seconds": 289,
+      "animation": "parallax",
+      "text": "Every spark of attraction you feel today is just the echo of a decision made in a dark cave."
+    },
+    {
+      "id": "scene_102",
+      "source": "projects/ancient_mating_project_4/images/[04-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 289,
+      "out_seconds": 291,
+      "animation": "none",
+      "text": "You are the result of their search."
+    },
+    {
+      "id": "scene_103",
+      "source": "projects/ancient_mating_project_4/images/[04-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 291,
+      "out_seconds": 295.86,
+      "animation": "pan-left",
+      "text": "So the next time you think about love, remember that you are actually thinking about survival."
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/ancient_mating_project_4/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

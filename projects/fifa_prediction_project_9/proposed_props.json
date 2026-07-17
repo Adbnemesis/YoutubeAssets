@@ -1,0 +1,1861 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#2D5FBF",
+    "accentColor": "#F5820D",
+    "surfaceColor": "#FFFFFF",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "On July nineteenth, two thousand twenty-six, Spain and Argentina will play the World Cup final at MetLife Stadium.",
+      "in_seconds": 0.0,
+      "source": "projects/fifa_prediction_project_9/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 6.48,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "You are about to watch the ultimate football prediction.",
+      "in_seconds": 6.48,
+      "source": "projects/fifa_prediction_project_9/images/[00-06]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 9.42,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_2",
+      "text": "Spain enters the pitch with six clean sheets, conceding only one goal in the entire tournament.",
+      "in_seconds": 9.42,
+      "source": "projects/fifa_prediction_project_9/images/[00-09]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 14.42,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_3",
+      "text": "But Argentina arrives with the magic of late-game comebacks.",
+      "in_seconds": 14.42,
+      "source": "projects/fifa_prediction_project_9/images/[00-14]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 17.96,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "Which team will lift the trophy when the dust settles?",
+      "in_seconds": 17.96,
+      "source": "projects/fifa_prediction_project_9/images/[00-17]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 20.78,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_5",
+      "text": "The match will start with intense Spanish control.",
+      "in_seconds": 20.78,
+      "source": "projects/fifa_prediction_project_9/images/[00-20]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 23.58,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "They will dominate possession.",
+      "in_seconds": 23.58,
+      "source": "projects/fifa_prediction_project_9/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 25.22,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "Their young winger Lamine Yamal will break the deadlock in the thirty-fifth minute with a curling shot.",
+      "in_seconds": 25.22,
+      "source": "projects/fifa_prediction_project_9/images/[00-25]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 30.02,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "You will feel Spain's victory is inevitable.",
+      "in_seconds": 30.02,
+      "source": "projects/fifa_prediction_project_9/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 32.54,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "How will Argentina respond to this early pressure?",
+      "in_seconds": 32.54,
+      "source": "projects/fifa_prediction_project_9/images/[00-32]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 35.48,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "Argentina will strike back before halftime.",
+      "in_seconds": 35.48,
+      "source": "projects/fifa_prediction_project_9/images/[00-35]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 37.96,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_11",
+      "text": "Julian Alvarez will score the equalizer.",
+      "in_seconds": 37.96,
+      "source": "projects/fifa_prediction_project_9/images/[00-37]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 40.5,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "He will capitalize on a rare defensive mistake right before the whistle.",
+      "in_seconds": 40.5,
+      "source": "projects/fifa_prediction_project_9/images/[00-40]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 44.0,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "The second half will become a tactical war of nerves.",
+      "in_seconds": 44.0,
+      "source": "projects/fifa_prediction_project_9/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 47.08,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "In the seventieth minute, Dani Olmo will score a brilliant volley to put Spain ahead again.",
+      "in_seconds": 47.08,
+      "source": "projects/fifa_prediction_project_9/images/[00-47]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 52.14,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_15",
+      "text": "Can Argentina survive the final twenty minutes of the game?",
+      "in_seconds": 52.14,
+      "source": "projects/fifa_prediction_project_9/images/[00-52]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 55.14,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/clock-ticking.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_16",
+      "text": "You will witness another miracle.",
+      "in_seconds": 55.14,
+      "source": "projects/fifa_prediction_project_9/images/[00-55]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 56.74,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "The clock will run down.",
+      "in_seconds": 56.74,
+      "source": "projects/fifa_prediction_project_9/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 58.38,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/clock-ticking.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_18",
+      "text": "In the eighty-ninth minute, Lionel Messi will score a stunning free kick to make it two to two.",
+      "in_seconds": 58.38,
+      "source": "projects/fifa_prediction_project_9/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 63.12,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "The stadium will erupt into pure chaos.",
+      "in_seconds": 63.12,
+      "source": "projects/fifa_prediction_project_9/images/[01-03]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 65.74,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "Neither team will find a winner in extra time.",
+      "in_seconds": 65.74,
+      "source": "projects/fifa_prediction_project_9/images/[01-05]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 68.18,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "Will the greatest final in history be decided by a shootout?",
+      "in_seconds": 68.18,
+      "source": "projects/fifa_prediction_project_9/images/[01-08]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 71.46,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_22",
+      "text": "The World Cup will be decided by penalties.",
+      "in_seconds": 71.46,
+      "source": "projects/fifa_prediction_project_9/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 73.94,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_23",
+      "text": "Spain will step up first.",
+      "in_seconds": 73.94,
+      "source": "projects/fifa_prediction_project_9/images/[01-13]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 75.72,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_24",
+      "text": "Goalkeeper Emiliano Mart\u00ednez will use his famous mind games to save two crucial Spanish kicks.",
+      "in_seconds": 75.72,
+      "source": "projects/fifa_prediction_project_9/images/[01-15]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 81.06,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_25",
+      "text": "Lionel Messi will score the final penalty to defend their crown.",
+      "in_seconds": 81.06,
+      "source": "projects/fifa_prediction_project_9/images/[01-21]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 83.58,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "Will anyone ever forget this historic night?",
+      "in_seconds": 83.58,
+      "source": "projects/fifa_prediction_project_9/images/[01-23]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 86.46,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_27",
+      "text": "Argentina will win the World Cup.",
+      "in_seconds": 86.46,
+      "source": "projects/fifa_prediction_project_9/images/[01-26]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 88.56,
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_28",
+      "text": "On July nineteenth, two thousand twenty-six, Spain and Argentina will play the World Cup final at MetLife Stadium.",
+      "in_seconds": 88.56,
+      "source": "projects/fifa_prediction_project_9/images/[01-28]_Hand-drawn_2D_doo.jpg",
+      "out_seconds": 94.676,
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.8,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "captions": [
+    {
+      "word": "On",
+      "startMs": 0,
+      "endMs": 100
+    },
+    {
+      "word": "July",
+      "startMs": 100,
+      "endMs": 300
+    },
+    {
+      "word": "19,",
+      "startMs": 300,
+      "endMs": 700
+    },
+    {
+      "word": "2026,",
+      "startMs": 1040,
+      "endMs": 2080
+    },
+    {
+      "word": "Spain",
+      "startMs": 2400,
+      "endMs": 2580
+    },
+    {
+      "word": "and",
+      "startMs": 2580,
+      "endMs": 2940
+    },
+    {
+      "word": "Argentina",
+      "startMs": 2940,
+      "endMs": 3400
+    },
+    {
+      "word": "will",
+      "startMs": 3400,
+      "endMs": 3740
+    },
+    {
+      "word": "play",
+      "startMs": 3740,
+      "endMs": 3980
+    },
+    {
+      "word": "the",
+      "startMs": 3980,
+      "endMs": 4120
+    },
+    {
+      "word": "World",
+      "startMs": 4120,
+      "endMs": 4340
+    },
+    {
+      "word": "Cup",
+      "startMs": 4340,
+      "endMs": 4620
+    },
+    {
+      "word": "final",
+      "startMs": 4620,
+      "endMs": 5020
+    },
+    {
+      "word": "at",
+      "startMs": 5020,
+      "endMs": 5220
+    },
+    {
+      "word": "MetLife",
+      "startMs": 5220,
+      "endMs": 5620
+    },
+    {
+      "word": "Stadium.",
+      "startMs": 5620,
+      "endMs": 6080
+    },
+    {
+      "word": "You",
+      "startMs": 6480,
+      "endMs": 6720
+    },
+    {
+      "word": "are",
+      "startMs": 6720,
+      "endMs": 6840
+    },
+    {
+      "word": "about",
+      "startMs": 6840,
+      "endMs": 7020
+    },
+    {
+      "word": "to",
+      "startMs": 7020,
+      "endMs": 7200
+    },
+    {
+      "word": "watch",
+      "startMs": 7200,
+      "endMs": 7400
+    },
+    {
+      "word": "the",
+      "startMs": 7400,
+      "endMs": 7620
+    },
+    {
+      "word": "ultimate",
+      "startMs": 7620,
+      "endMs": 8000
+    },
+    {
+      "word": "football",
+      "startMs": 8000,
+      "endMs": 8300
+    },
+    {
+      "word": "prediction.",
+      "startMs": 8300,
+      "endMs": 8760
+    },
+    {
+      "word": "Spain",
+      "startMs": 9420,
+      "endMs": 9640
+    },
+    {
+      "word": "enters",
+      "startMs": 9640,
+      "endMs": 9980
+    },
+    {
+      "word": "the",
+      "startMs": 9980,
+      "endMs": 10220
+    },
+    {
+      "word": "pitch",
+      "startMs": 10220,
+      "endMs": 10400
+    },
+    {
+      "word": "with",
+      "startMs": 10400,
+      "endMs": 10580
+    },
+    {
+      "word": "six",
+      "startMs": 10580,
+      "endMs": 10820
+    },
+    {
+      "word": "clean",
+      "startMs": 10820,
+      "endMs": 11100
+    },
+    {
+      "word": "sheets,",
+      "startMs": 11100,
+      "endMs": 11500
+    },
+    {
+      "word": "conceding",
+      "startMs": 11740,
+      "endMs": 12080
+    },
+    {
+      "word": "only",
+      "startMs": 12080,
+      "endMs": 12440
+    },
+    {
+      "word": "one",
+      "startMs": 12440,
+      "endMs": 12720
+    },
+    {
+      "word": "goal",
+      "startMs": 12720,
+      "endMs": 12920
+    },
+    {
+      "word": "in",
+      "startMs": 12920,
+      "endMs": 13160
+    },
+    {
+      "word": "the",
+      "startMs": 13160,
+      "endMs": 13280
+    },
+    {
+      "word": "entire",
+      "startMs": 13280,
+      "endMs": 13660
+    },
+    {
+      "word": "tournament,",
+      "startMs": 13660,
+      "endMs": 14020
+    },
+    {
+      "word": "but",
+      "startMs": 14420,
+      "endMs": 14620
+    },
+    {
+      "word": "Argentina",
+      "startMs": 14620,
+      "endMs": 15080
+    },
+    {
+      "word": "arrives",
+      "startMs": 15080,
+      "endMs": 15740
+    },
+    {
+      "word": "with",
+      "startMs": 15740,
+      "endMs": 15940
+    },
+    {
+      "word": "the",
+      "startMs": 15940,
+      "endMs": 16040
+    },
+    {
+      "word": "magic",
+      "startMs": 16040,
+      "endMs": 16340
+    },
+    {
+      "word": "of",
+      "startMs": 16340,
+      "endMs": 16560
+    },
+    {
+      "word": "late",
+      "startMs": 16560,
+      "endMs": 16720
+    },
+    {
+      "word": "game",
+      "startMs": 16720,
+      "endMs": 17020
+    },
+    {
+      "word": "comebacks.",
+      "startMs": 17020,
+      "endMs": 17520
+    },
+    {
+      "word": "Which",
+      "startMs": 17960,
+      "endMs": 18200
+    },
+    {
+      "word": "team",
+      "startMs": 18200,
+      "endMs": 18460
+    },
+    {
+      "word": "will",
+      "startMs": 18460,
+      "endMs": 18640
+    },
+    {
+      "word": "lift",
+      "startMs": 18640,
+      "endMs": 18840
+    },
+    {
+      "word": "the",
+      "startMs": 18840,
+      "endMs": 19040
+    },
+    {
+      "word": "trophy",
+      "startMs": 19040,
+      "endMs": 19300
+    },
+    {
+      "word": "when",
+      "startMs": 19300,
+      "endMs": 19580
+    },
+    {
+      "word": "the",
+      "startMs": 19580,
+      "endMs": 19680
+    },
+    {
+      "word": "dust",
+      "startMs": 19680,
+      "endMs": 19860
+    },
+    {
+      "word": "settles?",
+      "startMs": 19860,
+      "endMs": 20280
+    },
+    {
+      "word": "The",
+      "startMs": 20780,
+      "endMs": 20860
+    },
+    {
+      "word": "match",
+      "startMs": 20860,
+      "endMs": 21080
+    },
+    {
+      "word": "will",
+      "startMs": 21080,
+      "endMs": 21280
+    },
+    {
+      "word": "start",
+      "startMs": 21280,
+      "endMs": 21540
+    },
+    {
+      "word": "with",
+      "startMs": 21540,
+      "endMs": 21800
+    },
+    {
+      "word": "intense",
+      "startMs": 21800,
+      "endMs": 22100
+    },
+    {
+      "word": "Spanish",
+      "startMs": 22100,
+      "endMs": 22640
+    },
+    {
+      "word": "control.",
+      "startMs": 22640,
+      "endMs": 23100
+    },
+    {
+      "word": "They",
+      "startMs": 23580,
+      "endMs": 23720
+    },
+    {
+      "word": "will",
+      "startMs": 23720,
+      "endMs": 23860
+    },
+    {
+      "word": "dominate",
+      "startMs": 23860,
+      "endMs": 24140
+    },
+    {
+      "word": "possession.",
+      "startMs": 24140,
+      "endMs": 24660
+    },
+    {
+      "word": "Their",
+      "startMs": 25220,
+      "endMs": 25300
+    },
+    {
+      "word": "young",
+      "startMs": 25300,
+      "endMs": 25560
+    },
+    {
+      "word": "winger",
+      "startMs": 25560,
+      "endMs": 25900
+    },
+    {
+      "word": "Lamine",
+      "startMs": 25900,
+      "endMs": 26320
+    },
+    {
+      "word": "Yama",
+      "startMs": 26320,
+      "endMs": 26580
+    },
+    {
+      "word": "will",
+      "startMs": 26580,
+      "endMs": 26780
+    },
+    {
+      "word": "break",
+      "startMs": 26780,
+      "endMs": 26980
+    },
+    {
+      "word": "the",
+      "startMs": 26980,
+      "endMs": 27160
+    },
+    {
+      "word": "deadlock",
+      "startMs": 27160,
+      "endMs": 27500
+    },
+    {
+      "word": "in",
+      "startMs": 27500,
+      "endMs": 27700
+    },
+    {
+      "word": "the",
+      "startMs": 27700,
+      "endMs": 27760
+    },
+    {
+      "word": "third",
+      "startMs": 27760,
+      "endMs": 27920
+    },
+    {
+      "word": "to",
+      "startMs": 27920,
+      "endMs": 28040
+    },
+    {
+      "word": "fifth",
+      "startMs": 28040,
+      "endMs": 28260
+    },
+    {
+      "word": "minute",
+      "startMs": 28260,
+      "endMs": 28500
+    },
+    {
+      "word": "with",
+      "startMs": 28500,
+      "endMs": 28680
+    },
+    {
+      "word": "the",
+      "startMs": 28680,
+      "endMs": 28760
+    },
+    {
+      "word": "curling",
+      "startMs": 28760,
+      "endMs": 29080
+    },
+    {
+      "word": "shot.",
+      "startMs": 29080,
+      "endMs": 29460
+    },
+    {
+      "word": "You",
+      "startMs": 30020,
+      "endMs": 30080
+    },
+    {
+      "word": "will",
+      "startMs": 30080,
+      "endMs": 30220
+    },
+    {
+      "word": "feel",
+      "startMs": 30220,
+      "endMs": 30460
+    },
+    {
+      "word": "Spain's",
+      "startMs": 30460,
+      "endMs": 30960
+    },
+    {
+      "word": "victory",
+      "startMs": 30960,
+      "endMs": 31220
+    },
+    {
+      "word": "is",
+      "startMs": 31220,
+      "endMs": 31520
+    },
+    {
+      "word": "inevitable.",
+      "startMs": 31520,
+      "endMs": 31860
+    },
+    {
+      "word": "How",
+      "startMs": 32540,
+      "endMs": 32600
+    },
+    {
+      "word": "will",
+      "startMs": 32600,
+      "endMs": 32800
+    },
+    {
+      "word": "Argentina",
+      "startMs": 32800,
+      "endMs": 33160
+    },
+    {
+      "word": "respond",
+      "startMs": 33160,
+      "endMs": 33720
+    },
+    {
+      "word": "to",
+      "startMs": 33720,
+      "endMs": 34100
+    },
+    {
+      "word": "this",
+      "startMs": 34100,
+      "endMs": 34300
+    },
+    {
+      "word": "early",
+      "startMs": 34300,
+      "endMs": 34560
+    },
+    {
+      "word": "pressure?",
+      "startMs": 34560,
+      "endMs": 34940
+    },
+    {
+      "word": "Argentina",
+      "startMs": 35480,
+      "endMs": 35760
+    },
+    {
+      "word": "will",
+      "startMs": 35760,
+      "endMs": 36060
+    },
+    {
+      "word": "strike",
+      "startMs": 36060,
+      "endMs": 36340
+    },
+    {
+      "word": "back",
+      "startMs": 36340,
+      "endMs": 36560
+    },
+    {
+      "word": "before",
+      "startMs": 36560,
+      "endMs": 36900
+    },
+    {
+      "word": "halftime.",
+      "startMs": 36900,
+      "endMs": 37480
+    },
+    {
+      "word": "Julian",
+      "startMs": 37960,
+      "endMs": 38240
+    },
+    {
+      "word": "Alvarez",
+      "startMs": 38240,
+      "endMs": 38680
+    },
+    {
+      "word": "will",
+      "startMs": 38680,
+      "endMs": 38920
+    },
+    {
+      "word": "score",
+      "startMs": 38920,
+      "endMs": 39180
+    },
+    {
+      "word": "the",
+      "startMs": 39180,
+      "endMs": 39360
+    },
+    {
+      "word": "equalizer.",
+      "startMs": 39360,
+      "endMs": 40040
+    },
+    {
+      "word": "He",
+      "startMs": 40500,
+      "endMs": 40620
+    },
+    {
+      "word": "will",
+      "startMs": 40620,
+      "endMs": 40720
+    },
+    {
+      "word": "capitalize",
+      "startMs": 40720,
+      "endMs": 41180
+    },
+    {
+      "word": "on",
+      "startMs": 41180,
+      "endMs": 41460
+    },
+    {
+      "word": "a",
+      "startMs": 41460,
+      "endMs": 41520
+    },
+    {
+      "word": "rare",
+      "startMs": 41520,
+      "endMs": 41680
+    },
+    {
+      "word": "defensive",
+      "startMs": 41680,
+      "endMs": 42140
+    },
+    {
+      "word": "mistake",
+      "startMs": 42140,
+      "endMs": 42480
+    },
+    {
+      "word": "right",
+      "startMs": 42480,
+      "endMs": 42740
+    },
+    {
+      "word": "before",
+      "startMs": 42740,
+      "endMs": 43040
+    },
+    {
+      "word": "the",
+      "startMs": 43040,
+      "endMs": 43260
+    },
+    {
+      "word": "whistle.",
+      "startMs": 43260,
+      "endMs": 43480
+    },
+    {
+      "word": "The",
+      "startMs": 44000,
+      "endMs": 44060
+    },
+    {
+      "word": "second",
+      "startMs": 44060,
+      "endMs": 44380
+    },
+    {
+      "word": "half",
+      "startMs": 44380,
+      "endMs": 44660
+    },
+    {
+      "word": "will",
+      "startMs": 44660,
+      "endMs": 44840
+    },
+    {
+      "word": "become",
+      "startMs": 44840,
+      "endMs": 45160
+    },
+    {
+      "word": "a",
+      "startMs": 45160,
+      "endMs": 45300
+    },
+    {
+      "word": "tactical",
+      "startMs": 45300,
+      "endMs": 45720
+    },
+    {
+      "word": "war",
+      "startMs": 45720,
+      "endMs": 46020
+    },
+    {
+      "word": "of",
+      "startMs": 46020,
+      "endMs": 46240
+    },
+    {
+      "word": "nerves.",
+      "startMs": 46240,
+      "endMs": 46440
+    },
+    {
+      "word": "In",
+      "startMs": 47080,
+      "endMs": 47160
+    },
+    {
+      "word": "the",
+      "startMs": 47160,
+      "endMs": 47260
+    },
+    {
+      "word": "70th",
+      "startMs": 47260,
+      "endMs": 47820
+    },
+    {
+      "word": "minute,",
+      "startMs": 47820,
+      "endMs": 48040
+    },
+    {
+      "word": "Danny",
+      "startMs": 48380,
+      "endMs": 48560
+    },
+    {
+      "word": "Alma",
+      "startMs": 48560,
+      "endMs": 48900
+    },
+    {
+      "word": "will",
+      "startMs": 48900,
+      "endMs": 49140
+    },
+    {
+      "word": "score",
+      "startMs": 49140,
+      "endMs": 49440
+    },
+    {
+      "word": "a",
+      "startMs": 49440,
+      "endMs": 49600
+    },
+    {
+      "word": "brilliant",
+      "startMs": 49600,
+      "endMs": 49960
+    },
+    {
+      "word": "volley",
+      "startMs": 49960,
+      "endMs": 50320
+    },
+    {
+      "word": "to",
+      "startMs": 50320,
+      "endMs": 50540
+    },
+    {
+      "word": "put",
+      "startMs": 50540,
+      "endMs": 50680
+    },
+    {
+      "word": "Spain",
+      "startMs": 50680,
+      "endMs": 50980
+    },
+    {
+      "word": "ahead",
+      "startMs": 50980,
+      "endMs": 51260
+    },
+    {
+      "word": "again.",
+      "startMs": 51260,
+      "endMs": 51600
+    },
+    {
+      "word": "Can",
+      "startMs": 52140,
+      "endMs": 52240
+    },
+    {
+      "word": "Argentina",
+      "startMs": 52240,
+      "endMs": 52720
+    },
+    {
+      "word": "survive",
+      "startMs": 52720,
+      "endMs": 53200
+    },
+    {
+      "word": "the",
+      "startMs": 53200,
+      "endMs": 53440
+    },
+    {
+      "word": "final",
+      "startMs": 53440,
+      "endMs": 53660
+    },
+    {
+      "word": "20",
+      "startMs": 53660,
+      "endMs": 53960
+    },
+    {
+      "word": "minutes",
+      "startMs": 53960,
+      "endMs": 54180
+    },
+    {
+      "word": "of",
+      "startMs": 54180,
+      "endMs": 54360
+    },
+    {
+      "word": "the",
+      "startMs": 54360,
+      "endMs": 54440
+    },
+    {
+      "word": "game?",
+      "startMs": 54440,
+      "endMs": 54600
+    },
+    {
+      "word": "You",
+      "startMs": 55140,
+      "endMs": 55260
+    },
+    {
+      "word": "will",
+      "startMs": 55260,
+      "endMs": 55360
+    },
+    {
+      "word": "witness",
+      "startMs": 55360,
+      "endMs": 55640
+    },
+    {
+      "word": "another",
+      "startMs": 55640,
+      "endMs": 55980
+    },
+    {
+      "word": "miracle.",
+      "startMs": 55980,
+      "endMs": 56400
+    },
+    {
+      "word": "The",
+      "startMs": 56740,
+      "endMs": 56980
+    },
+    {
+      "word": "clock",
+      "startMs": 56980,
+      "endMs": 57180
+    },
+    {
+      "word": "will",
+      "startMs": 57180,
+      "endMs": 57400
+    },
+    {
+      "word": "run",
+      "startMs": 57400,
+      "endMs": 57560
+    },
+    {
+      "word": "down.",
+      "startMs": 57560,
+      "endMs": 57920
+    },
+    {
+      "word": "In",
+      "startMs": 58380,
+      "endMs": 58500
+    },
+    {
+      "word": "the",
+      "startMs": 58500,
+      "endMs": 58620
+    },
+    {
+      "word": "89th",
+      "startMs": 58620,
+      "endMs": 59540
+    },
+    {
+      "word": "minute,",
+      "startMs": 59540,
+      "endMs": 59540
+    },
+    {
+      "word": "Lionel",
+      "startMs": 59720,
+      "endMs": 59940
+    },
+    {
+      "word": "Messi",
+      "startMs": 59940,
+      "endMs": 60200
+    },
+    {
+      "word": "will",
+      "startMs": 60200,
+      "endMs": 60500
+    },
+    {
+      "word": "score",
+      "startMs": 60500,
+      "endMs": 60800
+    },
+    {
+      "word": "a",
+      "startMs": 60800,
+      "endMs": 61000
+    },
+    {
+      "word": "stunning",
+      "startMs": 61000,
+      "endMs": 61220
+    },
+    {
+      "word": "free",
+      "startMs": 61220,
+      "endMs": 61560
+    },
+    {
+      "word": "kick",
+      "startMs": 61560,
+      "endMs": 61720
+    },
+    {
+      "word": "to",
+      "startMs": 61720,
+      "endMs": 61920
+    },
+    {
+      "word": "make",
+      "startMs": 61920,
+      "endMs": 62060
+    },
+    {
+      "word": "it",
+      "startMs": 62060,
+      "endMs": 62220
+    },
+    {
+      "word": "two",
+      "startMs": 62220,
+      "endMs": 62380
+    },
+    {
+      "word": "to",
+      "startMs": 62380,
+      "endMs": 62500
+    },
+    {
+      "word": "two.",
+      "startMs": 62500,
+      "endMs": 62760
+    },
+    {
+      "word": "The",
+      "startMs": 63120,
+      "endMs": 63320
+    },
+    {
+      "word": "stadium",
+      "startMs": 63320,
+      "endMs": 63680
+    },
+    {
+      "word": "will",
+      "startMs": 63680,
+      "endMs": 63900
+    },
+    {
+      "word": "erupt",
+      "startMs": 63900,
+      "endMs": 64220
+    },
+    {
+      "word": "into",
+      "startMs": 64220,
+      "endMs": 64480
+    },
+    {
+      "word": "pure",
+      "startMs": 64480,
+      "endMs": 64720
+    },
+    {
+      "word": "chaos.",
+      "startMs": 64720,
+      "endMs": 65099
+    },
+    {
+      "word": "Neither",
+      "startMs": 65740,
+      "endMs": 65900
+    },
+    {
+      "word": "team",
+      "startMs": 65900,
+      "endMs": 66140
+    },
+    {
+      "word": "will",
+      "startMs": 66140,
+      "endMs": 66320
+    },
+    {
+      "word": "find",
+      "startMs": 66320,
+      "endMs": 66560
+    },
+    {
+      "word": "a",
+      "startMs": 66560,
+      "endMs": 66700
+    },
+    {
+      "word": "winner",
+      "startMs": 66700,
+      "endMs": 66920
+    },
+    {
+      "word": "in",
+      "startMs": 66920,
+      "endMs": 67120
+    },
+    {
+      "word": "extra",
+      "startMs": 67120,
+      "endMs": 67420
+    },
+    {
+      "word": "time.",
+      "startMs": 67420,
+      "endMs": 67800
+    },
+    {
+      "word": "Will",
+      "startMs": 68180,
+      "endMs": 68300
+    },
+    {
+      "word": "the",
+      "startMs": 68300,
+      "endMs": 68420
+    },
+    {
+      "word": "greatest",
+      "startMs": 68420,
+      "endMs": 68740
+    },
+    {
+      "word": "final",
+      "startMs": 68740,
+      "endMs": 69100
+    },
+    {
+      "word": "in",
+      "startMs": 69100,
+      "endMs": 69300
+    },
+    {
+      "word": "history",
+      "startMs": 69300,
+      "endMs": 69540
+    },
+    {
+      "word": "be",
+      "startMs": 69540,
+      "endMs": 69820
+    },
+    {
+      "word": "decided",
+      "startMs": 69820,
+      "endMs": 70160
+    },
+    {
+      "word": "by",
+      "startMs": 70160,
+      "endMs": 70420
+    },
+    {
+      "word": "issues",
+      "startMs": 70420,
+      "endMs": 70620
+    },
+    {
+      "word": "out?",
+      "startMs": 70620,
+      "endMs": 70900
+    },
+    {
+      "word": "The",
+      "startMs": 71460,
+      "endMs": 71540
+    },
+    {
+      "word": "World",
+      "startMs": 71540,
+      "endMs": 71740
+    },
+    {
+      "word": "Cup",
+      "startMs": 71740,
+      "endMs": 72000
+    },
+    {
+      "word": "will",
+      "startMs": 72000,
+      "endMs": 72200
+    },
+    {
+      "word": "be",
+      "startMs": 72200,
+      "endMs": 72340
+    },
+    {
+      "word": "decided",
+      "startMs": 72340,
+      "endMs": 72700
+    },
+    {
+      "word": "by",
+      "startMs": 72700,
+      "endMs": 72940
+    },
+    {
+      "word": "penalties.",
+      "startMs": 72940,
+      "endMs": 73300
+    },
+    {
+      "word": "Spain",
+      "startMs": 73940,
+      "endMs": 74220
+    },
+    {
+      "word": "will",
+      "startMs": 74220,
+      "endMs": 74420
+    },
+    {
+      "word": "step",
+      "startMs": 74420,
+      "endMs": 74640
+    },
+    {
+      "word": "up",
+      "startMs": 74640,
+      "endMs": 74820
+    },
+    {
+      "word": "first.",
+      "startMs": 74820,
+      "endMs": 75100
+    },
+    {
+      "word": "Goalkeeper",
+      "startMs": 75720,
+      "endMs": 76140
+    },
+    {
+      "word": "and",
+      "startMs": 76140,
+      "endMs": 76360
+    },
+    {
+      "word": "Leonardo",
+      "startMs": 76360,
+      "endMs": 76620
+    },
+    {
+      "word": "Martinez",
+      "startMs": 76620,
+      "endMs": 77240
+    },
+    {
+      "word": "will",
+      "startMs": 77240,
+      "endMs": 77500
+    },
+    {
+      "word": "use",
+      "startMs": 77500,
+      "endMs": 77700
+    },
+    {
+      "word": "his",
+      "startMs": 77700,
+      "endMs": 77900
+    },
+    {
+      "word": "famous",
+      "startMs": 77900,
+      "endMs": 78220
+    },
+    {
+      "word": "mind",
+      "startMs": 78220,
+      "endMs": 78480
+    },
+    {
+      "word": "games",
+      "startMs": 78480,
+      "endMs": 78720
+    },
+    {
+      "word": "to",
+      "startMs": 78720,
+      "endMs": 78980
+    },
+    {
+      "word": "save",
+      "startMs": 78980,
+      "endMs": 79180
+    },
+    {
+      "word": "two",
+      "startMs": 79180,
+      "endMs": 79440
+    },
+    {
+      "word": "crucial",
+      "startMs": 79440,
+      "endMs": 79760
+    },
+    {
+      "word": "Spanish",
+      "startMs": 79760,
+      "endMs": 80120
+    },
+    {
+      "word": "kicks.",
+      "startMs": 80120,
+      "endMs": 80420
+    },
+    {
+      "word": "Lionel",
+      "startMs": 81060,
+      "endMs": 81320
+    },
+    {
+      "word": "Messi",
+      "startMs": 81320,
+      "endMs": 81500
+    },
+    {
+      "word": "will",
+      "startMs": 81500,
+      "endMs": 81720
+    },
+    {
+      "word": "score",
+      "startMs": 81720,
+      "endMs": 81980
+    },
+    {
+      "word": "the",
+      "startMs": 81980,
+      "endMs": 82140
+    },
+    {
+      "word": "final",
+      "startMs": 82140,
+      "endMs": 82380
+    },
+    {
+      "word": "penalty",
+      "startMs": 82380,
+      "endMs": 82720
+    },
+    {
+      "word": "to",
+      "startMs": 82720,
+      "endMs": 82880
+    },
+    {
+      "word": "defend",
+      "startMs": 82880,
+      "endMs": 83100
+    },
+    {
+      "word": "their",
+      "startMs": 83100,
+      "endMs": 83300
+    },
+    {
+      "word": "crown.",
+      "startMs": 83300,
+      "endMs": 83580
+    },
+    {
+      "word": "Will",
+      "startMs": 83580,
+      "endMs": 84160
+    },
+    {
+      "word": "anyone",
+      "startMs": 84160,
+      "endMs": 84480
+    },
+    {
+      "word": "ever",
+      "startMs": 84480,
+      "endMs": 84760
+    },
+    {
+      "word": "forget",
+      "startMs": 84760,
+      "endMs": 85040
+    },
+    {
+      "word": "this",
+      "startMs": 85040,
+      "endMs": 85280
+    },
+    {
+      "word": "historic",
+      "startMs": 85280,
+      "endMs": 85640
+    },
+    {
+      "word": "night?",
+      "startMs": 85640,
+      "endMs": 85960
+    },
+    {
+      "word": "Argentina",
+      "startMs": 86460,
+      "endMs": 86840
+    },
+    {
+      "word": "will",
+      "startMs": 86840,
+      "endMs": 87180
+    },
+    {
+      "word": "win",
+      "startMs": 87180,
+      "endMs": 87360
+    },
+    {
+      "word": "the",
+      "startMs": 87360,
+      "endMs": 87500
+    },
+    {
+      "word": "World",
+      "startMs": 87500,
+      "endMs": 87700
+    },
+    {
+      "word": "Cup.",
+      "startMs": 87700,
+      "endMs": 88020
+    },
+    {
+      "word": "On",
+      "startMs": 88560,
+      "endMs": 88640
+    },
+    {
+      "word": "July",
+      "startMs": 88640,
+      "endMs": 88820
+    },
+    {
+      "word": "19th,",
+      "startMs": 88820,
+      "endMs": 89540
+    },
+    {
+      "word": "2026,",
+      "startMs": 89640,
+      "endMs": 90600
+    },
+    {
+      "word": "Spain",
+      "startMs": 90920,
+      "endMs": 91140
+    },
+    {
+      "word": "and",
+      "startMs": 91140,
+      "endMs": 91480
+    },
+    {
+      "word": "Argentina",
+      "startMs": 91480,
+      "endMs": 92000
+    },
+    {
+      "word": "will",
+      "startMs": 92000,
+      "endMs": 92340
+    },
+    {
+      "word": "play",
+      "startMs": 92340,
+      "endMs": 92600
+    },
+    {
+      "word": "the",
+      "startMs": 92600,
+      "endMs": 92760
+    },
+    {
+      "word": "World",
+      "startMs": 92760,
+      "endMs": 92940
+    },
+    {
+      "word": "Cup",
+      "startMs": 92940,
+      "endMs": 93260
+    },
+    {
+      "word": "final",
+      "startMs": 93260,
+      "endMs": 93600
+    },
+    {
+      "word": "at",
+      "startMs": 93600,
+      "endMs": 93800
+    },
+    {
+      "word": "MetLife",
+      "startMs": 93800,
+      "endMs": 94120
+    },
+    {
+      "word": "Stadium.",
+      "startMs": 94120,
+      "endMs": 94540
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/fifa_prediction_project_9/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{"ts": "2026-07-15T05:55:51.517717+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/dartmouth_summer_project_7/voiceover.wav"}
+{"ts": "2026-07-15T05:56:17.864108+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/dartmouth_summer_project_7/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 26.35}
+{"ts": "2026-07-15T05:58:17.508827+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/dartmouth_summer_project_7/voiceover.wav"}
+{"ts": "2026-07-15T05:58:35.420652+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/dartmouth_summer_project_7/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 17.91}
+{"ts": "2026-07-15T06:00:12.297829+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-15T06:00:23.172944+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 10.87}

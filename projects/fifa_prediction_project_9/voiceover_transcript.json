@@ -1,0 +1,3750 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 6.08,
+      "text": "On July 19, 2026, Spain and Argentina will play the World Cup final at MetLife Stadium.",
+      "words": [
+        {
+          "word": " On",
+          "start": 0.0,
+          "end": 0.1,
+          "probability": 0.865
+        },
+        {
+          "word": " July",
+          "start": 0.1,
+          "end": 0.3,
+          "probability": 0.988
+        },
+        {
+          "word": " 19,",
+          "start": 0.3,
+          "end": 0.7,
+          "probability": 0.994
+        },
+        {
+          "word": " 2026,",
+          "start": 1.04,
+          "end": 2.08,
+          "probability": 0.88
+        },
+        {
+          "word": " Spain",
+          "start": 2.4,
+          "end": 2.58,
+          "probability": 0.99
+        },
+        {
+          "word": " and",
+          "start": 2.58,
+          "end": 2.94,
+          "probability": 0.789
+        },
+        {
+          "word": " Argentina",
+          "start": 2.94,
+          "end": 3.4,
+          "probability": 0.996
+        },
+        {
+          "word": " will",
+          "start": 3.4,
+          "end": 3.74,
+          "probability": 0.994
+        },
+        {
+          "word": " play",
+          "start": 3.74,
+          "end": 3.98,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 3.98,
+          "end": 4.12,
+          "probability": 0.993
+        },
+        {
+          "word": " World",
+          "start": 4.12,
+          "end": 4.34,
+          "probability": 0.843
+        },
+        {
+          "word": " Cup",
+          "start": 4.34,
+          "end": 4.62,
+          "probability": 0.996
+        },
+        {
+          "word": " final",
+          "start": 4.62,
+          "end": 5.02,
+          "probability": 0.802
+        },
+        {
+          "word": " at",
+          "start": 5.02,
+          "end": 5.22,
+          "probability": 0.992
+        },
+        {
+          "word": " MetLife",
+          "start": 5.22,
+          "end": 5.62,
+          "probability": 0.69
+        },
+        {
+          "word": " Stadium.",
+          "start": 5.62,
+          "end": 6.08,
+          "probability": 0.97
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 6.48,
+      "end": 8.76,
+      "text": "You are about to watch the ultimate football prediction.",
+      "words": [
+        {
+          "word": " You",
+          "start": 6.48,
+          "end": 6.72,
+          "probability": 0.99
+        },
+        {
+          "word": " are",
+          "start": 6.72,
+          "end": 6.84,
+          "probability": 0.979
+        },
+        {
+          "word": " about",
+          "start": 6.84,
+          "end": 7.02,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 7.02,
+          "end": 7.2,
+          "probability": 0.995
+        },
+        {
+          "word": " watch",
+          "start": 7.2,
+          "end": 7.4,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 7.4,
+          "end": 7.62,
+          "probability": 0.971
+        },
+        {
+          "word": " ultimate",
+          "start": 7.62,
+          "end": 8.0,
+          "probability": 0.842
+        },
+        {
+          "word": " football",
+          "start": 8.0,
+          "end": 8.3,
+          "probability": 0.981
+        },
+        {
+          "word": " prediction.",
+          "start": 8.3,
+          "end": 8.76,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 9.42,
+      "end": 14.02,
+      "text": "Spain enters the pitch with six clean sheets, conceding only one goal in the entire tournament,",
+      "words": [
+        {
+          "word": " Spain",
+          "start": 9.42,
+          "end": 9.64,
+          "probability": 0.99
+        },
+        {
+          "word": " enters",
+          "start": 9.64,
+          "end": 9.98,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 9.98,
+          "end": 10.22,
+          "probability": 0.998
+        },
+        {
+          "word": " pitch",
+          "start": 10.22,
+          "end": 10.4,
+          "probability": 0.998
+        },
+        {
+          "word": " with",
+          "start": 10.4,
+          "end": 10.58,
+          "probability": 0.998
+        },
+        {
+          "word": " six",
+          "start": 10.58,
+          "end": 10.82,
+          "probability": 0.866
+        },
+        {
+          "word": " clean",
+          "start": 10.82,
+          "end": 11.1,
+          "probability": 0.992
+        },
+        {
+          "word": " sheets,",
+          "start": 11.1,
+          "end": 11.5,
+          "probability": 0.977
+        },
+        {
+          "word": " conceding",
+          "start": 11.74,
+          "end": 12.08,
+          "probability": 0.954
+        },
+        {
+          "word": " only",
+          "start": 12.08,
+          "end": 12.44,
+          "probability": 0.993
+        },
+        {
+          "word": " one",
+          "start": 12.44,
+          "end": 12.72,
+          "probability": 0.975
+        },
+        {
+          "word": " goal",
+          "start": 12.72,
+          "end": 12.92,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 12.92,
+          "end": 13.16,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 13.16,
+          "end": 13.28,
+          "probability": 0.996
+        },
+        {
+          "word": " entire",
+          "start": 13.28,
+          "end": 13.66,
+          "probability": 0.93
+        },
+        {
+          "word": " tournament,",
+          "start": 13.66,
+          "end": 14.02,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 14.42,
+      "end": 17.52,
+      "text": "but Argentina arrives with the magic of late game comebacks.",
+      "words": [
+        {
+          "word": " but",
+          "start": 14.42,
+          "end": 14.62,
+          "probability": 0.989
+        },
+        {
+          "word": " Argentina",
+          "start": 14.62,
+          "end": 15.08,
+          "probability": 0.999
+        },
+        {
+          "word": " arrives",
+          "start": 15.08,
+          "end": 15.74,
+          "probability": 0.988
+        },
+        {
+          "word": " with",
+          "start": 15.74,
+          "end": 15.94,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 15.94,
+          "end": 16.04,
+          "probability": 0.952
+        },
+        {
+          "word": " magic",
+          "start": 16.04,
+          "end": 16.34,
+          "probability": 0.925
+        },
+        {
+          "word": " of",
+          "start": 16.34,
+          "end": 16.56,
+          "probability": 0.996
+        },
+        {
+          "word": " late",
+          "start": 16.56,
+          "end": 16.72,
+          "probability": 0.991
+        },
+        {
+          "word": " game",
+          "start": 16.72,
+          "end": 17.02,
+          "probability": 0.588
+        },
+        {
+          "word": " comebacks.",
+          "start": 17.02,
+          "end": 17.52,
+          "probability": 0.644
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 17.96,
+      "end": 20.28,
+      "text": "Which team will lift the trophy when the dust settles?",
+      "words": [
+        {
+          "word": " Which",
+          "start": 17.96,
+          "end": 18.2,
+          "probability": 0.985
+        },
+        {
+          "word": " team",
+          "start": 18.2,
+          "end": 18.46,
+          "probability": 0.997
+        },
+        {
+          "word": " will",
+          "start": 18.46,
+          "end": 18.64,
+          "probability": 0.999
+        },
+        {
+          "word": " lift",
+          "start": 18.64,
+          "end": 18.84,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 18.84,
+          "end": 19.04,
+          "probability": 0.996
+        },
+        {
+          "word": " trophy",
+          "start": 19.04,
+          "end": 19.3,
+          "probability": 0.982
+        },
+        {
+          "word": " when",
+          "start": 19.3,
+          "end": 19.58,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 19.58,
+          "end": 19.68,
+          "probability": 0.999
+        },
+        {
+          "word": " dust",
+          "start": 19.68,
+          "end": 19.86,
+          "probability": 0.948
+        },
+        {
+          "word": " settles?",
+          "start": 19.86,
+          "end": 20.28,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 20.78,
+      "end": 23.1,
+      "text": "The match will start with intense Spanish control.",
+      "words": [
+        {
+          "word": " The",
+          "start": 20.78,
+          "end": 20.86,
+          "probability": 0.986
+        },
+        {
+          "word": " match",
+          "start": 20.86,
+          "end": 21.08,
+          "probability": 0.996
+        },
+        {
+          "word": " will",
+          "start": 21.08,
+          "end": 21.28,
+          "probability": 0.998
+        },
+        {
+          "word": " start",
+          "start": 21.28,
+          "end": 21.54,
+          "probability": 0.999
+        },
+        {
+          "word": " with",
+          "start": 21.54,
+          "end": 21.8,
+          "probability": 0.996
+        },
+        {
+          "word": " intense",
+          "start": 21.8,
+          "end": 22.1,
+          "probability": 0.992
+        },
+        {
+          "word": " Spanish",
+          "start": 22.1,
+          "end": 22.64,
+          "probability": 0.919
+        },
+        {
+          "word": " control.",
+          "start": 22.64,
+          "end": 23.1,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 23.58,
+      "end": 24.66,
+      "text": "They will dominate possession.",
+      "words": [
+        {
+          "word": " They",
+          "start": 23.58,
+          "end": 23.72,
+          "probability": 0.995
+        },
+        {
+          "word": " will",
+          "start": 23.72,
+          "end": 23.86,
+          "probability": 0.995
+        },
+        {
+          "word": " dominate",
+          "start": 23.86,
+          "end": 24.14,
+          "probability": 0.996
+        },
+        {
+          "word": " possession.",
+          "start": 24.14,
+          "end": 24.66,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 25.22,
+      "end": 28.68,
+      "text": "Their young winger Lamine Yama will break the deadlock in the third to fifth minute with",
+      "words": [
+        {
+          "word": " Their",
+          "start": 25.22,
+          "end": 25.3,
+          "probability": 0.979
+        },
+        {
+          "word": " young",
+          "start": 25.3,
+          "end": 25.56,
+          "probability": 0.958
+        },
+        {
+          "word": " winger",
+          "start": 25.56,
+          "end": 25.9,
+          "probability": 0.788
+        },
+        {
+          "word": " Lamine",
+          "start": 25.9,
+          "end": 26.32,
+          "probability": 0.452
+        },
+        {
+          "word": " Yama",
+          "start": 26.32,
+          "end": 26.58,
+          "probability": 0.413
+        },
+        {
+          "word": " will",
+          "start": 26.58,
+          "end": 26.78,
+          "probability": 0.996
+        },
+        {
+          "word": " break",
+          "start": 26.78,
+          "end": 26.98,
+          "probability": 0.987
+        },
+        {
+          "word": " the",
+          "start": 26.98,
+          "end": 27.16,
+          "probability": 0.997
+        },
+        {
+          "word": " deadlock",
+          "start": 27.16,
+          "end": 27.5,
+          "probability": 0.943
+        },
+        {
+          "word": " in",
+          "start": 27.5,
+          "end": 27.7,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 27.7,
+          "end": 27.76,
+          "probability": 0.987
+        },
+        {
+          "word": " third",
+          "start": 27.76,
+          "end": 27.92,
+          "probability": 0.558
+        },
+        {
+          "word": " to",
+          "start": 27.92,
+          "end": 28.04,
+          "probability": 0.206
+        },
+        {
+          "word": " fifth",
+          "start": 28.04,
+          "end": 28.26,
+          "probability": 0.988
+        },
+        {
+          "word": " minute",
+          "start": 28.26,
+          "end": 28.5,
+          "probability": 0.991
+        },
+        {
+          "word": " with",
+          "start": 28.5,
+          "end": 28.68,
+          "probability": 0.969
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 28.68,
+      "end": 29.46,
+      "text": "the curling shot.",
+      "words": [
+        {
+          "word": " the",
+          "start": 28.68,
+          "end": 28.76,
+          "probability": 0.298
+        },
+        {
+          "word": " curling",
+          "start": 28.76,
+          "end": 29.08,
+          "probability": 0.839
+        },
+        {
+          "word": " shot.",
+          "start": 29.08,
+          "end": 29.46,
+          "probability": 0.971
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 30.02,
+      "end": 31.86,
+      "text": "You will feel Spain's victory is inevitable.",
+      "words": [
+        {
+          "word": " You",
+          "start": 30.02,
+          "end": 30.08,
+          "probability": 0.451
+        },
+        {
+          "word": " will",
+          "start": 30.08,
+          "end": 30.22,
+          "probability": 0.974
+        },
+        {
+          "word": " feel",
+          "start": 30.22,
+          "end": 30.46,
+          "probability": 0.988
+        },
+        {
+          "word": " Spain's",
+          "start": 30.46,
+          "end": 30.96,
+          "probability": 0.957
+        },
+        {
+          "word": " victory",
+          "start": 30.96,
+          "end": 31.22,
+          "probability": 0.996
+        },
+        {
+          "word": " is",
+          "start": 31.22,
+          "end": 31.52,
+          "probability": 0.987
+        },
+        {
+          "word": " inevitable.",
+          "start": 31.52,
+          "end": 31.86,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 32.54,
+      "end": 34.94,
+      "text": "How will Argentina respond to this early pressure?",
+      "words": [
+        {
+          "word": " How",
+          "start": 32.54,
+          "end": 32.6,
+          "probability": 0.819
+        },
+        {
+          "word": " will",
+          "start": 32.6,
+          "end": 32.8,
+          "probability": 0.994
+        },
+        {
+          "word": " Argentina",
+          "start": 32.8,
+          "end": 33.16,
+          "probability": 0.953
+        },
+        {
+          "word": " respond",
+          "start": 33.16,
+          "end": 33.72,
+          "probability": 0.994
+        },
+        {
+          "word": " to",
+          "start": 33.72,
+          "end": 34.1,
+          "probability": 0.982
+        },
+        {
+          "word": " this",
+          "start": 34.1,
+          "end": 34.3,
+          "probability": 0.991
+        },
+        {
+          "word": " early",
+          "start": 34.3,
+          "end": 34.56,
+          "probability": 0.992
+        },
+        {
+          "word": " pressure?",
+          "start": 34.56,
+          "end": 34.94,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 35.48,
+      "end": 37.48,
+      "text": "Argentina will strike back before halftime.",
+      "words": [
+        {
+          "word": " Argentina",
+          "start": 35.48,
+          "end": 35.76,
+          "probability": 0.978
+        },
+        {
+          "word": " will",
+          "start": 35.76,
+          "end": 36.06,
+          "probability": 0.997
+        },
+        {
+          "word": " strike",
+          "start": 36.06,
+          "end": 36.34,
+          "probability": 0.993
+        },
+        {
+          "word": " back",
+          "start": 36.34,
+          "end": 36.56,
+          "probability": 0.999
+        },
+        {
+          "word": " before",
+          "start": 36.56,
+          "end": 36.9,
+          "probability": 0.996
+        },
+        {
+          "word": " halftime.",
+          "start": 36.9,
+          "end": 37.48,
+          "probability": 0.845
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 37.96,
+      "end": 40.04,
+      "text": "Julian Alvarez will score the equalizer.",
+      "words": [
+        {
+          "word": " Julian",
+          "start": 37.96,
+          "end": 38.24,
+          "probability": 0.862
+        },
+        {
+          "word": " Alvarez",
+          "start": 38.24,
+          "end": 38.68,
+          "probability": 0.846
+        },
+        {
+          "word": " will",
+          "start": 38.68,
+          "end": 38.92,
+          "probability": 0.993
+        },
+        {
+          "word": " score",
+          "start": 38.92,
+          "end": 39.18,
+          "probability": 0.972
+        },
+        {
+          "word": " the",
+          "start": 39.18,
+          "end": 39.36,
+          "probability": 0.942
+        },
+        {
+          "word": " equalizer.",
+          "start": 39.36,
+          "end": 40.04,
+          "probability": 0.9
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 40.5,
+      "end": 43.48,
+      "text": "He will capitalize on a rare defensive mistake right before the whistle.",
+      "words": [
+        {
+          "word": " He",
+          "start": 40.5,
+          "end": 40.62,
+          "probability": 0.984
+        },
+        {
+          "word": " will",
+          "start": 40.62,
+          "end": 40.72,
+          "probability": 0.996
+        },
+        {
+          "word": " capitalize",
+          "start": 40.72,
+          "end": 41.18,
+          "probability": 0.971
+        },
+        {
+          "word": " on",
+          "start": 41.18,
+          "end": 41.46,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 41.46,
+          "end": 41.52,
+          "probability": 0.997
+        },
+        {
+          "word": " rare",
+          "start": 41.52,
+          "end": 41.68,
+          "probability": 0.989
+        },
+        {
+          "word": " defensive",
+          "start": 41.68,
+          "end": 42.14,
+          "probability": 0.989
+        },
+        {
+          "word": " mistake",
+          "start": 42.14,
+          "end": 42.48,
+          "probability": 0.991
+        },
+        {
+          "word": " right",
+          "start": 42.48,
+          "end": 42.74,
+          "probability": 0.979
+        },
+        {
+          "word": " before",
+          "start": 42.74,
+          "end": 43.04,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 43.04,
+          "end": 43.26,
+          "probability": 0.991
+        },
+        {
+          "word": " whistle.",
+          "start": 43.26,
+          "end": 43.48,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 44.0,
+      "end": 46.44,
+      "text": "The second half will become a tactical war of nerves.",
+      "words": [
+        {
+          "word": " The",
+          "start": 44.0,
+          "end": 44.06,
+          "probability": 0.983
+        },
+        {
+          "word": " second",
+          "start": 44.06,
+          "end": 44.38,
+          "probability": 0.99
+        },
+        {
+          "word": " half",
+          "start": 44.38,
+          "end": 44.66,
+          "probability": 0.994
+        },
+        {
+          "word": " will",
+          "start": 44.66,
+          "end": 44.84,
+          "probability": 0.997
+        },
+        {
+          "word": " become",
+          "start": 44.84,
+          "end": 45.16,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 45.16,
+          "end": 45.3,
+          "probability": 0.982
+        },
+        {
+          "word": " tactical",
+          "start": 45.3,
+          "end": 45.72,
+          "probability": 0.987
+        },
+        {
+          "word": " war",
+          "start": 45.72,
+          "end": 46.02,
+          "probability": 0.887
+        },
+        {
+          "word": " of",
+          "start": 46.02,
+          "end": 46.24,
+          "probability": 0.998
+        },
+        {
+          "word": " nerves.",
+          "start": 46.24,
+          "end": 46.44,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 47.08,
+      "end": 51.6,
+      "text": "In the 70th minute, Danny Alma will score a brilliant volley to put Spain ahead again.",
+      "words": [
+        {
+          "word": " In",
+          "start": 47.08,
+          "end": 47.16,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 47.16,
+          "end": 47.26,
+          "probability": 0.993
+        },
+        {
+          "word": " 70th",
+          "start": 47.26,
+          "end": 47.82,
+          "probability": 0.717
+        },
+        {
+          "word": " minute,",
+          "start": 47.82,
+          "end": 48.04,
+          "probability": 0.976
+        },
+        {
+          "word": " Danny",
+          "start": 48.38,
+          "end": 48.56,
+          "probability": 0.59
+        },
+        {
+          "word": " Alma",
+          "start": 48.56,
+          "end": 48.9,
+          "probability": 0.178
+        },
+        {
+          "word": " will",
+          "start": 48.9,
+          "end": 49.14,
+          "probability": 0.991
+        },
+        {
+          "word": " score",
+          "start": 49.14,
+          "end": 49.44,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 49.44,
+          "end": 49.6,
+          "probability": 0.942
+        },
+        {
+          "word": " brilliant",
+          "start": 49.6,
+          "end": 49.96,
+          "probability": 0.982
+        },
+        {
+          "word": " volley",
+          "start": 49.96,
+          "end": 50.32,
+          "probability": 0.939
+        },
+        {
+          "word": " to",
+          "start": 50.32,
+          "end": 50.54,
+          "probability": 0.996
+        },
+        {
+          "word": " put",
+          "start": 50.54,
+          "end": 50.68,
+          "probability": 0.997
+        },
+        {
+          "word": " Spain",
+          "start": 50.68,
+          "end": 50.98,
+          "probability": 0.994
+        },
+        {
+          "word": " ahead",
+          "start": 50.98,
+          "end": 51.26,
+          "probability": 0.999
+        },
+        {
+          "word": " again.",
+          "start": 51.26,
+          "end": 51.6,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 52.14,
+      "end": 54.6,
+      "text": "Can Argentina survive the final 20 minutes of the game?",
+      "words": [
+        {
+          "word": " Can",
+          "start": 52.14,
+          "end": 52.24,
+          "probability": 0.989
+        },
+        {
+          "word": " Argentina",
+          "start": 52.24,
+          "end": 52.72,
+          "probability": 0.972
+        },
+        {
+          "word": " survive",
+          "start": 52.72,
+          "end": 53.2,
+          "probability": 0.97
+        },
+        {
+          "word": " the",
+          "start": 53.2,
+          "end": 53.44,
+          "probability": 0.998
+        },
+        {
+          "word": " final",
+          "start": 53.44,
+          "end": 53.66,
+          "probability": 0.996
+        },
+        {
+          "word": " 20",
+          "start": 53.66,
+          "end": 53.96,
+          "probability": 0.924
+        },
+        {
+          "word": " minutes",
+          "start": 53.96,
+          "end": 54.18,
+          "probability": 0.994
+        },
+        {
+          "word": " of",
+          "start": 54.18,
+          "end": 54.36,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 54.36,
+          "end": 54.44,
+          "probability": 0.999
+        },
+        {
+          "word": " game?",
+          "start": 54.44,
+          "end": 54.6,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 55.14,
+      "end": 56.4,
+      "text": "You will witness another miracle.",
+      "words": [
+        {
+          "word": " You",
+          "start": 55.14,
+          "end": 55.26,
+          "probability": 0.988
+        },
+        {
+          "word": " will",
+          "start": 55.26,
+          "end": 55.36,
+          "probability": 0.99
+        },
+        {
+          "word": " witness",
+          "start": 55.36,
+          "end": 55.64,
+          "probability": 0.997
+        },
+        {
+          "word": " another",
+          "start": 55.64,
+          "end": 55.98,
+          "probability": 0.994
+        },
+        {
+          "word": " miracle.",
+          "start": 55.98,
+          "end": 56.4,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 56.74,
+      "end": 57.92,
+      "text": "The clock will run down.",
+      "words": [
+        {
+          "word": " The",
+          "start": 56.74,
+          "end": 56.98,
+          "probability": 0.699
+        },
+        {
+          "word": " clock",
+          "start": 56.98,
+          "end": 57.18,
+          "probability": 0.985
+        },
+        {
+          "word": " will",
+          "start": 57.18,
+          "end": 57.4,
+          "probability": 0.994
+        },
+        {
+          "word": " run",
+          "start": 57.4,
+          "end": 57.56,
+          "probability": 0.988
+        },
+        {
+          "word": " down.",
+          "start": 57.56,
+          "end": 57.92,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 58.38,
+      "end": 62.76,
+      "text": "In the 89th minute, Lionel Messi will score a stunning free kick to make it two to two.",
+      "words": [
+        {
+          "word": " In",
+          "start": 58.38,
+          "end": 58.5,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 58.5,
+          "end": 58.62,
+          "probability": 0.996
+        },
+        {
+          "word": " 89th",
+          "start": 58.62,
+          "end": 59.54,
+          "probability": 0.902
+        },
+        {
+          "word": " minute,",
+          "start": 59.54,
+          "end": 59.54,
+          "probability": 0.982
+        },
+        {
+          "word": " Lionel",
+          "start": 59.72,
+          "end": 59.94,
+          "probability": 0.989
+        },
+        {
+          "word": " Messi",
+          "start": 59.94,
+          "end": 60.2,
+          "probability": 0.973
+        },
+        {
+          "word": " will",
+          "start": 60.2,
+          "end": 60.5,
+          "probability": 0.994
+        },
+        {
+          "word": " score",
+          "start": 60.5,
+          "end": 60.8,
+          "probability": 0.99
+        },
+        {
+          "word": " a",
+          "start": 60.8,
+          "end": 61.0,
+          "probability": 0.911
+        },
+        {
+          "word": " stunning",
+          "start": 61.0,
+          "end": 61.22,
+          "probability": 0.993
+        },
+        {
+          "word": " free",
+          "start": 61.22,
+          "end": 61.56,
+          "probability": 0.897
+        },
+        {
+          "word": " kick",
+          "start": 61.56,
+          "end": 61.72,
+          "probability": 0.857
+        },
+        {
+          "word": " to",
+          "start": 61.72,
+          "end": 61.92,
+          "probability": 0.994
+        },
+        {
+          "word": " make",
+          "start": 61.92,
+          "end": 62.06,
+          "probability": 0.998
+        },
+        {
+          "word": " it",
+          "start": 62.06,
+          "end": 62.22,
+          "probability": 0.993
+        },
+        {
+          "word": " two",
+          "start": 62.22,
+          "end": 62.38,
+          "probability": 0.41
+        },
+        {
+          "word": " to",
+          "start": 62.38,
+          "end": 62.5,
+          "probability": 0.545
+        },
+        {
+          "word": " two.",
+          "start": 62.5,
+          "end": 62.76,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 63.12,
+      "end": 65.1,
+      "text": "The stadium will erupt into pure chaos.",
+      "words": [
+        {
+          "word": " The",
+          "start": 63.12,
+          "end": 63.32,
+          "probability": 0.985
+        },
+        {
+          "word": " stadium",
+          "start": 63.32,
+          "end": 63.68,
+          "probability": 0.978
+        },
+        {
+          "word": " will",
+          "start": 63.68,
+          "end": 63.9,
+          "probability": 0.998
+        },
+        {
+          "word": " erupt",
+          "start": 63.9,
+          "end": 64.22,
+          "probability": 0.996
+        },
+        {
+          "word": " into",
+          "start": 64.22,
+          "end": 64.48,
+          "probability": 0.983
+        },
+        {
+          "word": " pure",
+          "start": 64.48,
+          "end": 64.72,
+          "probability": 0.191
+        },
+        {
+          "word": " chaos.",
+          "start": 64.72,
+          "end": 65.1,
+          "probability": 0.972
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 65.74,
+      "end": 67.8,
+      "text": "Neither team will find a winner in extra time.",
+      "words": [
+        {
+          "word": " Neither",
+          "start": 65.74,
+          "end": 65.9,
+          "probability": 0.977
+        },
+        {
+          "word": " team",
+          "start": 65.9,
+          "end": 66.14,
+          "probability": 0.997
+        },
+        {
+          "word": " will",
+          "start": 66.14,
+          "end": 66.32,
+          "probability": 0.998
+        },
+        {
+          "word": " find",
+          "start": 66.32,
+          "end": 66.56,
+          "probability": 0.988
+        },
+        {
+          "word": " a",
+          "start": 66.56,
+          "end": 66.7,
+          "probability": 0.992
+        },
+        {
+          "word": " winner",
+          "start": 66.7,
+          "end": 66.92,
+          "probability": 0.995
+        },
+        {
+          "word": " in",
+          "start": 66.92,
+          "end": 67.12,
+          "probability": 0.949
+        },
+        {
+          "word": " extra",
+          "start": 67.12,
+          "end": 67.42,
+          "probability": 0.994
+        },
+        {
+          "word": " time.",
+          "start": 67.42,
+          "end": 67.8,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 68.18,
+      "end": 70.9,
+      "text": "Will the greatest final in history be decided by issues out?",
+      "words": [
+        {
+          "word": " Will",
+          "start": 68.18,
+          "end": 68.3,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 68.3,
+          "end": 68.42,
+          "probability": 0.919
+        },
+        {
+          "word": " greatest",
+          "start": 68.42,
+          "end": 68.74,
+          "probability": 0.98
+        },
+        {
+          "word": " final",
+          "start": 68.74,
+          "end": 69.1,
+          "probability": 0.939
+        },
+        {
+          "word": " in",
+          "start": 69.1,
+          "end": 69.3,
+          "probability": 0.986
+        },
+        {
+          "word": " history",
+          "start": 69.3,
+          "end": 69.54,
+          "probability": 0.996
+        },
+        {
+          "word": " be",
+          "start": 69.54,
+          "end": 69.82,
+          "probability": 0.998
+        },
+        {
+          "word": " decided",
+          "start": 69.82,
+          "end": 70.16,
+          "probability": 0.997
+        },
+        {
+          "word": " by",
+          "start": 70.16,
+          "end": 70.42,
+          "probability": 0.998
+        },
+        {
+          "word": " issues",
+          "start": 70.42,
+          "end": 70.62,
+          "probability": 0.359
+        },
+        {
+          "word": " out?",
+          "start": 70.62,
+          "end": 70.9,
+          "probability": 0.267
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 71.46,
+      "end": 73.3,
+      "text": "The World Cup will be decided by penalties.",
+      "words": [
+        {
+          "word": " The",
+          "start": 71.46,
+          "end": 71.54,
+          "probability": 0.991
+        },
+        {
+          "word": " World",
+          "start": 71.54,
+          "end": 71.74,
+          "probability": 0.731
+        },
+        {
+          "word": " Cup",
+          "start": 71.74,
+          "end": 72.0,
+          "probability": 0.988
+        },
+        {
+          "word": " will",
+          "start": 72.0,
+          "end": 72.2,
+          "probability": 0.996
+        },
+        {
+          "word": " be",
+          "start": 72.2,
+          "end": 72.34,
+          "probability": 0.999
+        },
+        {
+          "word": " decided",
+          "start": 72.34,
+          "end": 72.7,
+          "probability": 0.997
+        },
+        {
+          "word": " by",
+          "start": 72.7,
+          "end": 72.94,
+          "probability": 0.999
+        },
+        {
+          "word": " penalties.",
+          "start": 72.94,
+          "end": 73.3,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 73.94,
+      "end": 75.1,
+      "text": "Spain will step up first.",
+      "words": [
+        {
+          "word": " Spain",
+          "start": 73.94,
+          "end": 74.22,
+          "probability": 0.984
+        },
+        {
+          "word": " will",
+          "start": 74.22,
+          "end": 74.42,
+          "probability": 0.998
+        },
+        {
+          "word": " step",
+          "start": 74.42,
+          "end": 74.64,
+          "probability": 0.994
+        },
+        {
+          "word": " up",
+          "start": 74.64,
+          "end": 74.82,
+          "probability": 0.998
+        },
+        {
+          "word": " first.",
+          "start": 74.82,
+          "end": 75.1,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 75.72,
+      "end": 79.76,
+      "text": "Goalkeeper and Leonardo Martinez will use his famous mind games to save two crucial",
+      "words": [
+        {
+          "word": " Goalkeeper",
+          "start": 75.72,
+          "end": 76.14,
+          "probability": 0.687
+        },
+        {
+          "word": " and",
+          "start": 76.14,
+          "end": 76.36,
+          "probability": 0.314
+        },
+        {
+          "word": " Leonardo",
+          "start": 76.36,
+          "end": 76.62,
+          "probability": 0.248
+        },
+        {
+          "word": " Martinez",
+          "start": 76.62,
+          "end": 77.24,
+          "probability": 0.444
+        },
+        {
+          "word": " will",
+          "start": 77.24,
+          "end": 77.5,
+          "probability": 0.999
+        },
+        {
+          "word": " use",
+          "start": 77.5,
+          "end": 77.7,
+          "probability": 0.999
+        },
+        {
+          "word": " his",
+          "start": 77.7,
+          "end": 77.9,
+          "probability": 0.996
+        },
+        {
+          "word": " famous",
+          "start": 77.9,
+          "end": 78.22,
+          "probability": 0.994
+        },
+        {
+          "word": " mind",
+          "start": 78.22,
+          "end": 78.48,
+          "probability": 0.976
+        },
+        {
+          "word": " games",
+          "start": 78.48,
+          "end": 78.72,
+          "probability": 0.972
+        },
+        {
+          "word": " to",
+          "start": 78.72,
+          "end": 78.98,
+          "probability": 0.999
+        },
+        {
+          "word": " save",
+          "start": 78.98,
+          "end": 79.18,
+          "probability": 0.998
+        },
+        {
+          "word": " two",
+          "start": 79.18,
+          "end": 79.44,
+          "probability": 0.964
+        },
+        {
+          "word": " crucial",
+          "start": 79.44,
+          "end": 79.76,
+          "probability": 0.971
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 79.76,
+      "end": 80.42,
+      "text": "Spanish kicks.",
+      "words": [
+        {
+          "word": " Spanish",
+          "start": 79.76,
+          "end": 80.12,
+          "probability": 0.985
+        },
+        {
+          "word": " kicks.",
+          "start": 80.12,
+          "end": 80.42,
+          "probability": 0.909
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 81.06,
+      "end": 83.58,
+      "text": "Lionel Messi will score the final penalty to defend their crown.",
+      "words": [
+        {
+          "word": " Lionel",
+          "start": 81.06,
+          "end": 81.32,
+          "probability": 0.999
+        },
+        {
+          "word": " Messi",
+          "start": 81.32,
+          "end": 81.5,
+          "probability": 0.999
+        },
+        {
+          "word": " will",
+          "start": 81.5,
+          "end": 81.72,
+          "probability": 0.999
+        },
+        {
+          "word": " score",
+          "start": 81.72,
+          "end": 81.98,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 81.98,
+          "end": 82.14,
+          "probability": 0.996
+        },
+        {
+          "word": " final",
+          "start": 82.14,
+          "end": 82.38,
+          "probability": 0.959
+        },
+        {
+          "word": " penalty",
+          "start": 82.38,
+          "end": 82.72,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 82.72,
+          "end": 82.88,
+          "probability": 0.996
+        },
+        {
+          "word": " defend",
+          "start": 82.88,
+          "end": 83.1,
+          "probability": 0.999
+        },
+        {
+          "word": " their",
+          "start": 83.1,
+          "end": 83.3,
+          "probability": 0.999
+        },
+        {
+          "word": " crown.",
+          "start": 83.3,
+          "end": 83.58,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 83.58,
+      "end": 85.96,
+      "text": "Will anyone ever forget this historic night?",
+      "words": [
+        {
+          "word": " Will",
+          "start": 83.58,
+          "end": 84.16,
+          "probability": 0.476
+        },
+        {
+          "word": " anyone",
+          "start": 84.16,
+          "end": 84.48,
+          "probability": 0.991
+        },
+        {
+          "word": " ever",
+          "start": 84.48,
+          "end": 84.76,
+          "probability": 0.992
+        },
+        {
+          "word": " forget",
+          "start": 84.76,
+          "end": 85.04,
+          "probability": 0.995
+        },
+        {
+          "word": " this",
+          "start": 85.04,
+          "end": 85.28,
+          "probability": 0.981
+        },
+        {
+          "word": " historic",
+          "start": 85.28,
+          "end": 85.64,
+          "probability": 0.989
+        },
+        {
+          "word": " night?",
+          "start": 85.64,
+          "end": 85.96,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 86.46,
+      "end": 88.02,
+      "text": "Argentina will win the World Cup.",
+      "words": [
+        {
+          "word": " Argentina",
+          "start": 86.46,
+          "end": 86.84,
+          "probability": 0.983
+        },
+        {
+          "word": " will",
+          "start": 86.84,
+          "end": 87.18,
+          "probability": 0.989
+        },
+        {
+          "word": " win",
+          "start": 87.18,
+          "end": 87.36,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 87.36,
+          "end": 87.5,
+          "probability": 0.987
+        },
+        {
+          "word": " World",
+          "start": 87.5,
+          "end": 87.7,
+          "probability": 0.95
+        },
+        {
+          "word": " Cup.",
+          "start": 87.7,
+          "end": 88.02,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 88.56,
+      "end": 94.54,
+      "text": "On July 19th, 2026, Spain and Argentina will play the World Cup final at MetLife Stadium.",
+      "words": [
+        {
+          "word": " On",
+          "start": 88.56,
+          "end": 88.64,
+          "probability": 0.98
+        },
+        {
+          "word": " July",
+          "start": 88.64,
+          "end": 88.82,
+          "probability": 0.992
+        },
+        {
+          "word": " 19th,",
+          "start": 88.82,
+          "end": 89.54,
+          "probability": 0.765
+        },
+        {
+          "word": " 2026,",
+          "start": 89.64,
+          "end": 90.6,
+          "probability": 0.892
+        },
+        {
+          "word": " Spain",
+          "start": 90.92,
+          "end": 91.14,
+          "probability": 0.997
+        },
+        {
+          "word": " and",
+          "start": 91.14,
+          "end": 91.48,
+          "probability": 0.837
+        },
+        {
+          "word": " Argentina",
+          "start": 91.48,
+          "end": 92.0,
+          "probability": 0.999
+        },
+        {
+          "word": " will",
+          "start": 92.0,
+          "end": 92.34,
+          "probability": 0.991
+        },
+        {
+          "word": " play",
+          "start": 92.34,
+          "end": 92.6,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 92.6,
+          "end": 92.76,
+          "probability": 0.991
+        },
+        {
+          "word": " World",
+          "start": 92.76,
+          "end": 92.94,
+          "probability": 0.986
+        },
+        {
+          "word": " Cup",
+          "start": 92.94,
+          "end": 93.26,
+          "probability": 0.998
+        },
+        {
+          "word": " final",
+          "start": 93.26,
+          "end": 93.6,
+          "probability": 0.72
+        },
+        {
+          "word": " at",
+          "start": 93.6,
+          "end": 93.8,
+          "probability": 0.366
+        },
+        {
+          "word": " MetLife",
+          "start": 93.8,
+          "end": 94.12,
+          "probability": 0.7
+        },
+        {
+          "word": " Stadium.",
+          "start": 94.12,
+          "end": 94.54,
+          "probability": 0.975
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " On",
+      "start": 0.0,
+      "end": 0.1,
+      "probability": 0.865
+    },
+    {
+      "word": " July",
+      "start": 0.1,
+      "end": 0.3,
+      "probability": 0.988
+    },
+    {
+      "word": " 19,",
+      "start": 0.3,
+      "end": 0.7,
+      "probability": 0.994
+    },
+    {
+      "word": " 2026,",
+      "start": 1.04,
+      "end": 2.08,
+      "probability": 0.88
+    },
+    {
+      "word": " Spain",
+      "start": 2.4,
+      "end": 2.58,
+      "probability": 0.99
+    },
+    {
+      "word": " and",
+      "start": 2.58,
+      "end": 2.94,
+      "probability": 0.789
+    },
+    {
+      "word": " Argentina",
+      "start": 2.94,
+      "end": 3.4,
+      "probability": 0.996
+    },
+    {
+      "word": " will",
+      "start": 3.4,
+      "end": 3.74,
+      "probability": 0.994
+    },
+    {
+      "word": " play",
+      "start": 3.74,
+      "end": 3.98,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 3.98,
+      "end": 4.12,
+      "probability": 0.993
+    },
+    {
+      "word": " World",
+      "start": 4.12,
+      "end": 4.34,
+      "probability": 0.843
+    },
+    {
+      "word": " Cup",
+      "start": 4.34,
+      "end": 4.62,
+      "probability": 0.996
+    },
+    {
+      "word": " final",
+      "start": 4.62,
+      "end": 5.02,
+      "probability": 0.802
+    },
+    {
+      "word": " at",
+      "start": 5.02,
+      "end": 5.22,
+      "probability": 0.992
+    },
+    {
+      "word": " MetLife",
+      "start": 5.22,
+      "end": 5.62,
+      "probability": 0.69
+    },
+    {
+      "word": " Stadium.",
+      "start": 5.62,
+      "end": 6.08,
+      "probability": 0.97
+    },
+    {
+      "word": " You",
+      "start": 6.48,
+      "end": 6.72,
+      "probability": 0.99
+    },
+    {
+      "word": " are",
+      "start": 6.72,
+      "end": 6.84,
+      "probability": 0.979
+    },
+    {
+      "word": " about",
+      "start": 6.84,
+      "end": 7.02,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 7.02,
+      "end": 7.2,
+      "probability": 0.995
+    },
+    {
+      "word": " watch",
+      "start": 7.2,
+      "end": 7.4,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 7.4,
+      "end": 7.62,
+      "probability": 0.971
+    },
+    {
+      "word": " ultimate",
+      "start": 7.62,
+      "end": 8.0,
+      "probability": 0.842
+    },
+    {
+      "word": " football",
+      "start": 8.0,
+      "end": 8.3,
+      "probability": 0.981
+    },
+    {
+      "word": " prediction.",
+      "start": 8.3,
+      "end": 8.76,
+      "probability": 0.996
+    },
+    {
+      "word": " Spain",
+      "start": 9.42,
+      "end": 9.64,
+      "probability": 0.99
+    },
+    {
+      "word": " enters",
+      "start": 9.64,
+      "end": 9.98,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 9.98,
+      "end": 10.22,
+      "probability": 0.998
+    },
+    {
+      "word": " pitch",
+      "start": 10.22,
+      "end": 10.4,
+      "probability": 0.998
+    },
+    {
+      "word": " with",
+      "start": 10.4,
+      "end": 10.58,
+      "probability": 0.998
+    },
+    {
+      "word": " six",
+      "start": 10.58,
+      "end": 10.82,
+      "probability": 0.866
+    },
+    {
+      "word": " clean",
+      "start": 10.82,
+      "end": 11.1,
+      "probability": 0.992
+    },
+    {
+      "word": " sheets,",
+      "start": 11.1,
+      "end": 11.5,
+      "probability": 0.977
+    },
+    {
+      "word": " conceding",
+      "start": 11.74,
+      "end": 12.08,
+      "probability": 0.954
+    },
+    {
+      "word": " only",
+      "start": 12.08,
+      "end": 12.44,
+      "probability": 0.993
+    },
+    {
+      "word": " one",
+      "start": 12.44,
+      "end": 12.72,
+      "probability": 0.975
+    },
+    {
+      "word": " goal",
+      "start": 12.72,
+      "end": 12.92,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 12.92,
+      "end": 13.16,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 13.16,
+      "end": 13.28,
+      "probability": 0.996
+    },
+    {
+      "word": " entire",
+      "start": 13.28,
+      "end": 13.66,
+      "probability": 0.93
+    },
+    {
+      "word": " tournament,",
+      "start": 13.66,
+      "end": 14.02,
+      "probability": 0.997
+    },
+    {
+      "word": " but",
+      "start": 14.42,
+      "end": 14.62,
+      "probability": 0.989
+    },
+    {
+      "word": " Argentina",
+      "start": 14.62,
+      "end": 15.08,
+      "probability": 0.999
+    },
+    {
+      "word": " arrives",
+      "start": 15.08,
+      "end": 15.74,
+      "probability": 0.988
+    },
+    {
+      "word": " with",
+      "start": 15.74,
+      "end": 15.94,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 15.94,
+      "end": 16.04,
+      "probability": 0.952
+    },
+    {
+      "word": " magic",
+      "start": 16.04,
+      "end": 16.34,
+      "probability": 0.925
+    },
+    {
+      "word": " of",
+      "start": 16.34,
+      "end": 16.56,
+      "probability": 0.996
+    },
+    {
+      "word": " late",
+      "start": 16.56,
+      "end": 16.72,
+      "probability": 0.991
+    },
+    {
+      "word": " game",
+      "start": 16.72,
+      "end": 17.02,
+      "probability": 0.588
+    },
+    {
+      "word": " comebacks.",
+      "start": 17.02,
+      "end": 17.52,
+      "probability": 0.644
+    },
+    {
+      "word": " Which",
+      "start": 17.96,
+      "end": 18.2,
+      "probability": 0.985
+    },
+    {
+      "word": " team",
+      "start": 18.2,
+      "end": 18.46,
+      "probability": 0.997
+    },
+    {
+      "word": " will",
+      "start": 18.46,
+      "end": 18.64,
+      "probability": 0.999
+    },
+    {
+      "word": " lift",
+      "start": 18.64,
+      "end": 18.84,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 18.84,
+      "end": 19.04,
+      "probability": 0.996
+    },
+    {
+      "word": " trophy",
+      "start": 19.04,
+      "end": 19.3,
+      "probability": 0.982
+    },
+    {
+      "word": " when",
+      "start": 19.3,
+      "end": 19.58,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 19.58,
+      "end": 19.68,
+      "probability": 0.999
+    },
+    {
+      "word": " dust",
+      "start": 19.68,
+      "end": 19.86,
+      "probability": 0.948
+    },
+    {
+      "word": " settles?",
+      "start": 19.86,
+      "end": 20.28,
+      "probability": 0.993
+    },
+    {
+      "word": " The",
+      "start": 20.78,
+      "end": 20.86,
+      "probability": 0.986
+    },
+    {
+      "word": " match",
+      "start": 20.86,
+      "end": 21.08,
+      "probability": 0.996
+    },
+    {
+      "word": " will",
+      "start": 21.08,
+      "end": 21.28,
+      "probability": 0.998
+    },
+    {
+      "word": " start",
+      "start": 21.28,
+      "end": 21.54,
+      "probability": 0.999
+    },
+    {
+      "word": " with",
+      "start": 21.54,
+      "end": 21.8,
+      "probability": 0.996
+    },
+    {
+      "word": " intense",
+      "start": 21.8,
+      "end": 22.1,
+      "probability": 0.992
+    },
+    {
+      "word": " Spanish",
+      "start": 22.1,
+      "end": 22.64,
+      "probability": 0.919
+    },
+    {
+      "word": " control.",
+      "start": 22.64,
+      "end": 23.1,
+      "probability": 0.993
+    },
+    {
+      "word": " They",
+      "start": 23.58,
+      "end": 23.72,
+      "probability": 0.995
+    },
+    {
+      "word": " will",
+      "start": 23.72,
+      "end": 23.86,
+      "probability": 0.995
+    },
+    {
+      "word": " dominate",
+      "start": 23.86,
+      "end": 24.14,
+      "probability": 0.996
+    },
+    {
+      "word": " possession.",
+      "start": 24.14,
+      "end": 24.66,
+      "probability": 0.989
+    },
+    {
+      "word": " Their",
+      "start": 25.22,
+      "end": 25.3,
+      "probability": 0.979
+    },
+    {
+      "word": " young",
+      "start": 25.3,
+      "end": 25.56,
+      "probability": 0.958
+    },
+    {
+      "word": " winger",
+      "start": 25.56,
+      "end": 25.9,
+      "probability": 0.788
+    },
+    {
+      "word": " Lamine",
+      "start": 25.9,
+      "end": 26.32,
+      "probability": 0.452
+    },
+    {
+      "word": " Yama",
+      "start": 26.32,
+      "end": 26.58,
+      "probability": 0.413
+    },
+    {
+      "word": " will",
+      "start": 26.58,
+      "end": 26.78,
+      "probability": 0.996
+    },
+    {
+      "word": " break",
+      "start": 26.78,
+      "end": 26.98,
+      "probability": 0.987
+    },
+    {
+      "word": " the",
+      "start": 26.98,
+      "end": 27.16,
+      "probability": 0.997
+    },
+    {
+      "word": " deadlock",
+      "start": 27.16,
+      "end": 27.5,
+      "probability": 0.943
+    },
+    {
+      "word": " in",
+      "start": 27.5,
+      "end": 27.7,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 27.7,
+      "end": 27.76,
+      "probability": 0.987
+    },
+    {
+      "word": " third",
+      "start": 27.76,
+      "end": 27.92,
+      "probability": 0.558
+    },
+    {
+      "word": " to",
+      "start": 27.92,
+      "end": 28.04,
+      "probability": 0.206
+    },
+    {
+      "word": " fifth",
+      "start": 28.04,
+      "end": 28.26,
+      "probability": 0.988
+    },
+    {
+      "word": " minute",
+      "start": 28.26,
+      "end": 28.5,
+      "probability": 0.991
+    },
+    {
+      "word": " with",
+      "start": 28.5,
+      "end": 28.68,
+      "probability": 0.969
+    },
+    {
+      "word": " the",
+      "start": 28.68,
+      "end": 28.76,
+      "probability": 0.298
+    },
+    {
+      "word": " curling",
+      "start": 28.76,
+      "end": 29.08,
+      "probability": 0.839
+    },
+    {
+      "word": " shot.",
+      "start": 29.08,
+      "end": 29.46,
+      "probability": 0.971
+    },
+    {
+      "word": " You",
+      "start": 30.02,
+      "end": 30.08,
+      "probability": 0.451
+    },
+    {
+      "word": " will",
+      "start": 30.08,
+      "end": 30.22,
+      "probability": 0.974
+    },
+    {
+      "word": " feel",
+      "start": 30.22,
+      "end": 30.46,
+      "probability": 0.988
+    },
+    {
+      "word": " Spain's",
+      "start": 30.46,
+      "end": 30.96,
+      "probability": 0.957
+    },
+    {
+      "word": " victory",
+      "start": 30.96,
+      "end": 31.22,
+      "probability": 0.996
+    },
+    {
+      "word": " is",
+      "start": 31.22,
+      "end": 31.52,
+      "probability": 0.987
+    },
+    {
+      "word": " inevitable.",
+      "start": 31.52,
+      "end": 31.86,
+      "probability": 0.998
+    },
+    {
+      "word": " How",
+      "start": 32.54,
+      "end": 32.6,
+      "probability": 0.819
+    },
+    {
+      "word": " will",
+      "start": 32.6,
+      "end": 32.8,
+      "probability": 0.994
+    },
+    {
+      "word": " Argentina",
+      "start": 32.8,
+      "end": 33.16,
+      "probability": 0.953
+    },
+    {
+      "word": " respond",
+      "start": 33.16,
+      "end": 33.72,
+      "probability": 0.994
+    },
+    {
+      "word": " to",
+      "start": 33.72,
+      "end": 34.1,
+      "probability": 0.982
+    },
+    {
+      "word": " this",
+      "start": 34.1,
+      "end": 34.3,
+      "probability": 0.991
+    },
+    {
+      "word": " early",
+      "start": 34.3,
+      "end": 34.56,
+      "probability": 0.992
+    },
+    {
+      "word": " pressure?",
+      "start": 34.56,
+      "end": 34.94,
+      "probability": 0.99
+    },
+    {
+      "word": " Argentina",
+      "start": 35.48,
+      "end": 35.76,
+      "probability": 0.978
+    },
+    {
+      "word": " will",
+      "start": 35.76,
+      "end": 36.06,
+      "probability": 0.997
+    },
+    {
+      "word": " strike",
+      "start": 36.06,
+      "end": 36.34,
+      "probability": 0.993
+    },
+    {
+      "word": " back",
+      "start": 36.34,
+      "end": 36.56,
+      "probability": 0.999
+    },
+    {
+      "word": " before",
+      "start": 36.56,
+      "end": 36.9,
+      "probability": 0.996
+    },
+    {
+      "word": " halftime.",
+      "start": 36.9,
+      "end": 37.48,
+      "probability": 0.845
+    },
+    {
+      "word": " Julian",
+      "start": 37.96,
+      "end": 38.24,
+      "probability": 0.862
+    },
+    {
+      "word": " Alvarez",
+      "start": 38.24,
+      "end": 38.68,
+      "probability": 0.846
+    },
+    {
+      "word": " will",
+      "start": 38.68,
+      "end": 38.92,
+      "probability": 0.993
+    },
+    {
+      "word": " score",
+      "start": 38.92,
+      "end": 39.18,
+      "probability": 0.972
+    },
+    {
+      "word": " the",
+      "start": 39.18,
+      "end": 39.36,
+      "probability": 0.942
+    },
+    {
+      "word": " equalizer.",
+      "start": 39.36,
+      "end": 40.04,
+      "probability": 0.9
+    },
+    {
+      "word": " He",
+      "start": 40.5,
+      "end": 40.62,
+      "probability": 0.984
+    },
+    {
+      "word": " will",
+      "start": 40.62,
+      "end": 40.72,
+      "probability": 0.996
+    },
+    {
+      "word": " capitalize",
+      "start": 40.72,
+      "end": 41.18,
+      "probability": 0.971
+    },
+    {
+      "word": " on",
+      "start": 41.18,
+      "end": 41.46,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 41.46,
+      "end": 41.52,
+      "probability": 0.997
+    },
+    {
+      "word": " rare",
+      "start": 41.52,
+      "end": 41.68,
+      "probability": 0.989
+    },
+    {
+      "word": " defensive",
+      "start": 41.68,
+      "end": 42.14,
+      "probability": 0.989
+    },
+    {
+      "word": " mistake",
+      "start": 42.14,
+      "end": 42.48,
+      "probability": 0.991
+    },
+    {
+      "word": " right",
+      "start": 42.48,
+      "end": 42.74,
+      "probability": 0.979
+    },
+    {
+      "word": " before",
+      "start": 42.74,
+      "end": 43.04,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 43.04,
+      "end": 43.26,
+      "probability": 0.991
+    },
+    {
+      "word": " whistle.",
+      "start": 43.26,
+      "end": 43.48,
+      "probability": 0.993
+    },
+    {
+      "word": " The",
+      "start": 44.0,
+      "end": 44.06,
+      "probability": 0.983
+    },
+    {
+      "word": " second",
+      "start": 44.06,
+      "end": 44.38,
+      "probability": 0.99
+    },
+    {
+      "word": " half",
+      "start": 44.38,
+      "end": 44.66,
+      "probability": 0.994
+    },
+    {
+      "word": " will",
+      "start": 44.66,
+      "end": 44.84,
+      "probability": 0.997
+    },
+    {
+      "word": " become",
+      "start": 44.84,
+      "end": 45.16,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 45.16,
+      "end": 45.3,
+      "probability": 0.982
+    },
+    {
+      "word": " tactical",
+      "start": 45.3,
+      "end": 45.72,
+      "probability": 0.987
+    },
+    {
+      "word": " war",
+      "start": 45.72,
+      "end": 46.02,
+      "probability": 0.887
+    },
+    {
+      "word": " of",
+      "start": 46.02,
+      "end": 46.24,
+      "probability": 0.998
+    },
+    {
+      "word": " nerves.",
+      "start": 46.24,
+      "end": 46.44,
+      "probability": 0.996
+    },
+    {
+      "word": " In",
+      "start": 47.08,
+      "end": 47.16,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 47.16,
+      "end": 47.26,
+      "probability": 0.993
+    },
+    {
+      "word": " 70th",
+      "start": 47.26,
+      "end": 47.82,
+      "probability": 0.717
+    },
+    {
+      "word": " minute,",
+      "start": 47.82,
+      "end": 48.04,
+      "probability": 0.976
+    },
+    {
+      "word": " Danny",
+      "start": 48.38,
+      "end": 48.56,
+      "probability": 0.59
+    },
+    {
+      "word": " Alma",
+      "start": 48.56,
+      "end": 48.9,
+      "probability": 0.178
+    },
+    {
+      "word": " will",
+      "start": 48.9,
+      "end": 49.14,
+      "probability": 0.991
+    },
+    {
+      "word": " score",
+      "start": 49.14,
+      "end": 49.44,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 49.44,
+      "end": 49.6,
+      "probability": 0.942
+    },
+    {
+      "word": " brilliant",
+      "start": 49.6,
+      "end": 49.96,
+      "probability": 0.982
+    },
+    {
+      "word": " volley",
+      "start": 49.96,
+      "end": 50.32,
+      "probability": 0.939
+    },
+    {
+      "word": " to",
+      "start": 50.32,
+      "end": 50.54,
+      "probability": 0.996
+    },
+    {
+      "word": " put",
+      "start": 50.54,
+      "end": 50.68,
+      "probability": 0.997
+    },
+    {
+      "word": " Spain",
+      "start": 50.68,
+      "end": 50.98,
+      "probability": 0.994
+    },
+    {
+      "word": " ahead",
+      "start": 50.98,
+      "end": 51.26,
+      "probability": 0.999
+    },
+    {
+      "word": " again.",
+      "start": 51.26,
+      "end": 51.6,
+      "probability": 0.995
+    },
+    {
+      "word": " Can",
+      "start": 52.14,
+      "end": 52.24,
+      "probability": 0.989
+    },
+    {
+      "word": " Argentina",
+      "start": 52.24,
+      "end": 52.72,
+      "probability": 0.972
+    },
+    {
+      "word": " survive",
+      "start": 52.72,
+      "end": 53.2,
+      "probability": 0.97
+    },
+    {
+      "word": " the",
+      "start": 53.2,
+      "end": 53.44,
+      "probability": 0.998
+    },
+    {
+      "word": " final",
+      "start": 53.44,
+      "end": 53.66,
+      "probability": 0.996
+    },
+    {
+      "word": " 20",
+      "start": 53.66,
+      "end": 53.96,
+      "probability": 0.924
+    },
+    {
+      "word": " minutes",
+      "start": 53.96,
+      "end": 54.18,
+      "probability": 0.994
+    },
+    {
+      "word": " of",
+      "start": 54.18,
+      "end": 54.36,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 54.36,
+      "end": 54.44,
+      "probability": 0.999
+    },
+    {
+      "word": " game?",
+      "start": 54.44,
+      "end": 54.6,
+      "probability": 0.993
+    },
+    {
+      "word": " You",
+      "start": 55.14,
+      "end": 55.26,
+      "probability": 0.988
+    },
+    {
+      "word": " will",
+      "start": 55.26,
+      "end": 55.36,
+      "probability": 0.99
+    },
+    {
+      "word": " witness",
+      "start": 55.36,
+      "end": 55.64,
+      "probability": 0.997
+    },
+    {
+      "word": " another",
+      "start": 55.64,
+      "end": 55.98,
+      "probability": 0.994
+    },
+    {
+      "word": " miracle.",
+      "start": 55.98,
+      "end": 56.4,
+      "probability": 0.984
+    },
+    {
+      "word": " The",
+      "start": 56.74,
+      "end": 56.98,
+      "probability": 0.699
+    },
+    {
+      "word": " clock",
+      "start": 56.98,
+      "end": 57.18,
+      "probability": 0.985
+    },
+    {
+      "word": " will",
+      "start": 57.18,
+      "end": 57.4,
+      "probability": 0.994
+    },
+    {
+      "word": " run",
+      "start": 57.4,
+      "end": 57.56,
+      "probability": 0.988
+    },
+    {
+      "word": " down.",
+      "start": 57.56,
+      "end": 57.92,
+      "probability": 0.997
+    },
+    {
+      "word": " In",
+      "start": 58.38,
+      "end": 58.5,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 58.5,
+      "end": 58.62,
+      "probability": 0.996
+    },
+    {
+      "word": " 89th",
+      "start": 58.62,
+      "end": 59.54,
+      "probability": 0.902
+    },
+    {
+      "word": " minute,",
+      "start": 59.54,
+      "end": 59.54,
+      "probability": 0.982
+    },
+    {
+      "word": " Lionel",
+      "start": 59.72,
+      "end": 59.94,
+      "probability": 0.989
+    },
+    {
+      "word": " Messi",
+      "start": 59.94,
+      "end": 60.2,
+      "probability": 0.973
+    },
+    {
+      "word": " will",
+      "start": 60.2,
+      "end": 60.5,
+      "probability": 0.994
+    },
+    {
+      "word": " score",
+      "start": 60.5,
+      "end": 60.8,
+      "probability": 0.99
+    },
+    {
+      "word": " a",
+      "start": 60.8,
+      "end": 61.0,
+      "probability": 0.911
+    },
+    {
+      "word": " stunning",
+      "start": 61.0,
+      "end": 61.22,
+      "probability": 0.993
+    },
+    {
+      "word": " free",
+      "start": 61.22,
+      "end": 61.56,
+      "probability": 0.897
+    },
+    {
+      "word": " kick",
+      "start": 61.56,
+      "end": 61.72,
+      "probability": 0.857
+    },
+    {
+      "word": " to",
+      "start": 61.72,
+      "end": 61.92,
+      "probability": 0.994
+    },
+    {
+      "word": " make",
+      "start": 61.92,
+      "end": 62.06,
+      "probability": 0.998
+    },
+    {
+      "word": " it",
+      "start": 62.06,
+      "end": 62.22,
+      "probability": 0.993
+    },
+    {
+      "word": " two",
+      "start": 62.22,
+      "end": 62.38,
+      "probability": 0.41
+    },
+    {
+      "word": " to",
+      "start": 62.38,
+      "end": 62.5,
+      "probability": 0.545
+    },
+    {
+      "word": " two.",
+      "start": 62.5,
+      "end": 62.76,
+      "probability": 0.996
+    },
+    {
+      "word": " The",
+      "start": 63.12,
+      "end": 63.32,
+      "probability": 0.985
+    },
+    {
+      "word": " stadium",
+      "start": 63.32,
+      "end": 63.68,
+      "probability": 0.978
+    },
+    {
+      "word": " will",
+      "start": 63.68,
+      "end": 63.9,
+      "probability": 0.998
+    },
+    {
+      "word": " erupt",
+      "start": 63.9,
+      "end": 64.22,
+      "probability": 0.996
+    },
+    {
+      "word": " into",
+      "start": 64.22,
+      "end": 64.48,
+      "probability": 0.983
+    },
+    {
+      "word": " pure",
+      "start": 64.48,
+      "end": 64.72,
+      "probability": 0.191
+    },
+    {
+      "word": " chaos.",
+      "start": 64.72,
+      "end": 65.1,
+      "probability": 0.972
+    },
+    {
+      "word": " Neither",
+      "start": 65.74,
+      "end": 65.9,
+      "probability": 0.977
+    },
+    {
+      "word": " team",
+      "start": 65.9,
+      "end": 66.14,
+      "probability": 0.997
+    },
+    {
+      "word": " will",
+      "start": 66.14,
+      "end": 66.32,
+      "probability": 0.998
+    },
+    {
+      "word": " find",
+      "start": 66.32,
+      "end": 66.56,
+      "probability": 0.988
+    },
+    {
+      "word": " a",
+      "start": 66.56,
+      "end": 66.7,
+      "probability": 0.992
+    },
+    {
+      "word": " winner",
+      "start": 66.7,
+      "end": 66.92,
+      "probability": 0.995
+    },
+    {
+      "word": " in",
+      "start": 66.92,
+      "end": 67.12,
+      "probability": 0.949
+    },
+    {
+      "word": " extra",
+      "start": 67.12,
+      "end": 67.42,
+      "probability": 0.994
+    },
+    {
+      "word": " time.",
+      "start": 67.42,
+      "end": 67.8,
+      "probability": 0.993
+    },
+    {
+      "word": " Will",
+      "start": 68.18,
+      "end": 68.3,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 68.3,
+      "end": 68.42,
+      "probability": 0.919
+    },
+    {
+      "word": " greatest",
+      "start": 68.42,
+      "end": 68.74,
+      "probability": 0.98
+    },
+    {
+      "word": " final",
+      "start": 68.74,
+      "end": 69.1,
+      "probability": 0.939
+    },
+    {
+      "word": " in",
+      "start": 69.1,
+      "end": 69.3,
+      "probability": 0.986
+    },
+    {
+      "word": " history",
+      "start": 69.3,
+      "end": 69.54,
+      "probability": 0.996
+    },
+    {
+      "word": " be",
+      "start": 69.54,
+      "end": 69.82,
+      "probability": 0.998
+    },
+    {
+      "word": " decided",
+      "start": 69.82,
+      "end": 70.16,
+      "probability": 0.997
+    },
+    {
+      "word": " by",
+      "start": 70.16,
+      "end": 70.42,
+      "probability": 0.998
+    },
+    {
+      "word": " issues",
+      "start": 70.42,
+      "end": 70.62,
+      "probability": 0.359
+    },
+    {
+      "word": " out?",
+      "start": 70.62,
+      "end": 70.9,
+      "probability": 0.267
+    },
+    {
+      "word": " The",
+      "start": 71.46,
+      "end": 71.54,
+      "probability": 0.991
+    },
+    {
+      "word": " World",
+      "start": 71.54,
+      "end": 71.74,
+      "probability": 0.731
+    },
+    {
+      "word": " Cup",
+      "start": 71.74,
+      "end": 72.0,
+      "probability": 0.988
+    },
+    {
+      "word": " will",
+      "start": 72.0,
+      "end": 72.2,
+      "probability": 0.996
+    },
+    {
+      "word": " be",
+      "start": 72.2,
+      "end": 72.34,
+      "probability": 0.999
+    },
+    {
+      "word": " decided",
+      "start": 72.34,
+      "end": 72.7,
+      "probability": 0.997
+    },
+    {
+      "word": " by",
+      "start": 72.7,
+      "end": 72.94,
+      "probability": 0.999
+    },
+    {
+      "word": " penalties.",
+      "start": 72.94,
+      "end": 73.3,
+      "probability": 0.995
+    },
+    {
+      "word": " Spain",
+      "start": 73.94,
+      "end": 74.22,
+      "probability": 0.984
+    },
+    {
+      "word": " will",
+      "start": 74.22,
+      "end": 74.42,
+      "probability": 0.998
+    },
+    {
+      "word": " step",
+      "start": 74.42,
+      "end": 74.64,
+      "probability": 0.994
+    },
+    {
+      "word": " up",
+      "start": 74.64,
+      "end": 74.82,
+      "probability": 0.998
+    },
+    {
+      "word": " first.",
+      "start": 74.82,
+      "end": 75.1,
+      "probability": 0.991
+    },
+    {
+      "word": " Goalkeeper",
+      "start": 75.72,
+      "end": 76.14,
+      "probability": 0.687
+    },
+    {
+      "word": " and",
+      "start": 76.14,
+      "end": 76.36,
+      "probability": 0.314
+    },
+    {
+      "word": " Leonardo",
+      "start": 76.36,
+      "end": 76.62,
+      "probability": 0.248
+    },
+    {
+      "word": " Martinez",
+      "start": 76.62,
+      "end": 77.24,
+      "probability": 0.444
+    },
+    {
+      "word": " will",
+      "start": 77.24,
+      "end": 77.5,
+      "probability": 0.999
+    },
+    {
+      "word": " use",
+      "start": 77.5,
+      "end": 77.7,
+      "probability": 0.999
+    },
+    {
+      "word": " his",
+      "start": 77.7,
+      "end": 77.9,
+      "probability": 0.996
+    },
+    {
+      "word": " famous",
+      "start": 77.9,
+      "end": 78.22,
+      "probability": 0.994
+    },
+    {
+      "word": " mind",
+      "start": 78.22,
+      "end": 78.48,
+      "probability": 0.976
+    },
+    {
+      "word": " games",
+      "start": 78.48,
+      "end": 78.72,
+      "probability": 0.972
+    },
+    {
+      "word": " to",
+      "start": 78.72,
+      "end": 78.98,
+      "probability": 0.999
+    },
+    {
+      "word": " save",
+      "start": 78.98,
+      "end": 79.18,
+      "probability": 0.998
+    },
+    {
+      "word": " two",
+      "start": 79.18,
+      "end": 79.44,
+      "probability": 0.964
+    },
+    {
+      "word": " crucial",
+      "start": 79.44,
+      "end": 79.76,
+      "probability": 0.971
+    },
+    {
+      "word": " Spanish",
+      "start": 79.76,
+      "end": 80.12,
+      "probability": 0.985
+    },
+    {
+      "word": " kicks.",
+      "start": 80.12,
+      "end": 80.42,
+      "probability": 0.909
+    },
+    {
+      "word": " Lionel",
+      "start": 81.06,
+      "end": 81.32,
+      "probability": 0.999
+    },
+    {
+      "word": " Messi",
+      "start": 81.32,
+      "end": 81.5,
+      "probability": 0.999
+    },
+    {
+      "word": " will",
+      "start": 81.5,
+      "end": 81.72,
+      "probability": 0.999
+    },
+    {
+      "word": " score",
+      "start": 81.72,
+      "end": 81.98,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 81.98,
+      "end": 82.14,
+      "probability": 0.996
+    },
+    {
+      "word": " final",
+      "start": 82.14,
+      "end": 82.38,
+      "probability": 0.959
+    },
+    {
+      "word": " penalty",
+      "start": 82.38,
+      "end": 82.72,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 82.72,
+      "end": 82.88,
+      "probability": 0.996
+    },
+    {
+      "word": " defend",
+      "start": 82.88,
+      "end": 83.1,
+      "probability": 0.999
+    },
+    {
+      "word": " their",
+      "start": 83.1,
+      "end": 83.3,
+      "probability": 0.999
+    },
+    {
+      "word": " crown.",
+      "start": 83.3,
+      "end": 83.58,
+      "probability": 0.984
+    },
+    {
+      "word": " Will",
+      "start": 83.58,
+      "end": 84.16,
+      "probability": 0.476
+    },
+    {
+      "word": " anyone",
+      "start": 84.16,
+      "end": 84.48,
+      "probability": 0.991
+    },
+    {
+      "word": " ever",
+      "start": 84.48,
+      "end": 84.76,
+      "probability": 0.992
+    },
+    {
+      "word": " forget",
+      "start": 84.76,
+      "end": 85.04,
+      "probability": 0.995
+    },
+    {
+      "word": " this",
+      "start": 85.04,
+      "end": 85.28,
+      "probability": 0.981
+    },
+    {
+      "word": " historic",
+      "start": 85.28,
+      "end": 85.64,
+      "probability": 0.989
+    },
+    {
+      "word": " night?",
+      "start": 85.64,
+      "end": 85.96,
+      "probability": 0.986
+    },
+    {
+      "word": " Argentina",
+      "start": 86.46,
+      "end": 86.84,
+      "probability": 0.983
+    },
+    {
+      "word": " will",
+      "start": 86.84,
+      "end": 87.18,
+      "probability": 0.989
+    },
+    {
+      "word": " win",
+      "start": 87.18,
+      "end": 87.36,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 87.36,
+      "end": 87.5,
+      "probability": 0.987
+    },
+    {
+      "word": " World",
+      "start": 87.5,
+      "end": 87.7,
+      "probability": 0.95
+    },
+    {
+      "word": " Cup.",
+      "start": 87.7,
+      "end": 88.02,
+      "probability": 0.994
+    },
+    {
+      "word": " On",
+      "start": 88.56,
+      "end": 88.64,
+      "probability": 0.98
+    },
+    {
+      "word": " July",
+      "start": 88.64,
+      "end": 88.82,
+      "probability": 0.992
+    },
+    {
+      "word": " 19th,",
+      "start": 88.82,
+      "end": 89.54,
+      "probability": 0.765
+    },
+    {
+      "word": " 2026,",
+      "start": 89.64,
+      "end": 90.6,
+      "probability": 0.892
+    },
+    {
+      "word": " Spain",
+      "start": 90.92,
+      "end": 91.14,
+      "probability": 0.997
+    },
+    {
+      "word": " and",
+      "start": 91.14,
+      "end": 91.48,
+      "probability": 0.837
+    },
+    {
+      "word": " Argentina",
+      "start": 91.48,
+      "end": 92.0,
+      "probability": 0.999
+    },
+    {
+      "word": " will",
+      "start": 92.0,
+      "end": 92.34,
+      "probability": 0.991
+    },
+    {
+      "word": " play",
+      "start": 92.34,
+      "end": 92.6,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 92.6,
+      "end": 92.76,
+      "probability": 0.991
+    },
+    {
+      "word": " World",
+      "start": 92.76,
+      "end": 92.94,
+      "probability": 0.986
+    },
+    {
+      "word": " Cup",
+      "start": 92.94,
+      "end": 93.26,
+      "probability": 0.998
+    },
+    {
+      "word": " final",
+      "start": 93.26,
+      "end": 93.6,
+      "probability": 0.72
+    },
+    {
+      "word": " at",
+      "start": 93.6,
+      "end": 93.8,
+      "probability": 0.366
+    },
+    {
+      "word": " MetLife",
+      "start": 93.8,
+      "end": 94.12,
+      "probability": 0.7
+    },
+    {
+      "word": " Stadium.",
+      "start": 94.12,
+      "end": 94.54,
+      "probability": 0.975
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 94.676,
+  "model_size": "base",
+  "device": "cpu"
+}

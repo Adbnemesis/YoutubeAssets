@@ -1,0 +1,4 @@
+{"ts": "2026-07-11T07:44:01.669527+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_smoking_project_5/voiceover.wav"}
+{"ts": "2026-07-11T07:44:25.635792+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_smoking_project_5/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 23.97}
+{"ts": "2026-07-11T07:51:10.623577+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-11T07:51:24.701524+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 14.08}

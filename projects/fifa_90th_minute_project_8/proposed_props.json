@@ -1,0 +1,3801 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#2D5FBF",
+    "accentColor": "#F5820D",
+    "surfaceColor": "#FFFFFF",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 0,
+      "out_seconds": 5,
+      "animation": "ken-burns",
+      "text": "In July 2026, you watched Argentina defy all odds to reach the World Cup final."
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 5,
+      "out_seconds": 7,
+      "animation": "none",
+      "text": "You sat on the edge of your seat."
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 7,
+      "out_seconds": 11,
+      "animation": "ken-burns",
+      "text": "You screamed as they defeated Egypt and England in the final seconds."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-11]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 11,
+      "out_seconds": 15,
+      "animation": "ken-burns",
+      "text": "But the real reason they won is far stranger than soccer tactics."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 15,
+      "out_seconds": 17,
+      "animation": "none",
+      "text": "It was not just skill or luck."
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 17,
+      "out_seconds": 20,
+      "animation": "none",
+      "text": "It was a biological hijack of the human brain."
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 20,
+      "out_seconds": 25,
+      "animation": "ken-burns",
+      "text": "Why does the human mind wait until the brink of disaster to perform its greatest miracles?"
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 25,
+      "out_seconds": 27,
+      "animation": "none",
+      "text": "Consider the Round of sixteen against Egypt."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 27,
+      "out_seconds": 32,
+      "animation": "ken-burns",
+      "text": "Argentina was trailing two to zero in the seventy-eighth minute."
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 32,
+      "out_seconds": 33,
+      "animation": "none",
+      "text": "Their legs felt like lead."
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-33]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 33,
+      "out_seconds": 35,
+      "animation": "none",
+      "text": "Their lungs were burning for oxygen."
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-35]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 35,
+      "out_seconds": 40,
+      "animation": "ken-burns",
+      "text": "Earlier, the Egyptian goalkeeper had even saved a penalty from Lionel Messi."
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 40,
+      "out_seconds": 43,
+      "animation": "none",
+      "text": "Under normal circumstances, their bodies should have shut down."
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 43,
+      "out_seconds": 46,
+      "animation": "none",
+      "text": "But then, a sudden shift occurred."
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 46,
+      "out_seconds": 49,
+      "animation": "none",
+      "text": "In the seventy-ninth minute, Cristian Romero scored."
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 49,
+      "out_seconds": 52,
+      "animation": "none",
+      "text": "Four minutes later, Lionel Messi equalized."
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-52]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 52,
+      "out_seconds": 55,
+      "animation": "none",
+      "text": "In the ninety-second minute, Enzo Fern\u00e1ndez scored the winning goal."
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/fifa_90th_minute_project_8/images/[00-55]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 55,
+      "out_seconds": 60,
+      "animation": "ken-burns",
+      "text": "How did a team that looked completely dead score three times in thirteen minutes?"
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 60,
+      "out_seconds": 64,
+      "animation": "ken-burns",
+      "text": "The answer lies in a theory proposed by Doctor Samuele Marcora."
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-04]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 64,
+      "out_seconds": 67,
+      "animation": "none",
+      "text": "He developed the psychobiological model of exercise."
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 67,
+      "out_seconds": 71,
+      "animation": "ken-burns",
+      "text": "This model suggests that your muscles do not actually stop you when you are tired."
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 71,
+      "out_seconds": 75,
+      "animation": "ken-burns",
+      "text": "Instead, your brain acts as a central governor."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 75,
+      "out_seconds": 80,
+      "animation": "ken-burns",
+      "text": "It constantly monitors your effort and creates the feeling of fatigue to protect your body from damage."
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 80,
+      "out_seconds": 84,
+      "animation": "ken-burns",
+      "text": "If you have a powerful reason to keep going, your brain recalculates the cost of energy."
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 84,
+      "out_seconds": 87,
+      "animation": "none",
+      "text": "It releases its grip on your safety reserves."
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 87,
+      "out_seconds": 93,
+      "animation": "ken-burns",
+      "text": "Did the fear of a World Cup exit unlock a chemical override in the Argentine players?"
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-33]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 93,
+      "out_seconds": 96,
+      "animation": "none",
+      "text": "It happened again in the semi-final against England."
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-36]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 96,
+      "out_seconds": 99,
+      "animation": "none",
+      "text": "Argentina was trailing one to zero in the eighty-fifth minute."
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 99,
+      "out_seconds": 101,
+      "animation": "none",
+      "text": "The physical fatigue was crushing."
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-41]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 101,
+      "out_seconds": 104,
+      "animation": "none",
+      "text": "Yet, Enzo Fern\u00e1ndez equalized."
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 104,
+      "out_seconds": 108,
+      "animation": "ken-burns",
+      "text": "In the ninety-second minute, Lautaro Mart\u00ednez scored the winning goal."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-48]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 108,
+      "out_seconds": 111,
+      "animation": "none",
+      "text": "How did they make perfect decisions in these frantic moments?"
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 111,
+      "out_seconds": 113,
+      "animation": "none",
+      "text": "We must look to the research of Doctor Geir Jordet."
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 113,
+      "out_seconds": 117,
+      "animation": "ken-burns",
+      "text": "He spent years studying elite soccer players under pressure."
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/fifa_90th_minute_project_8/images/[01-57]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 117,
+      "out_seconds": 123,
+      "animation": "ken-burns",
+      "text": "Jordet discovered that under extreme stress, most players experience cognitive tunnel vision."
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-03]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 123,
+      "out_seconds": 124,
+      "animation": "none",
+      "text": "Their eyes freeze."
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-04]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 124,
+      "out_seconds": 127,
+      "animation": "none",
+      "text": "They fail to scan their surroundings."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 127,
+      "out_seconds": 129,
+      "animation": "none",
+      "text": "But elite performers do the opposite."
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 129,
+      "out_seconds": 133,
+      "animation": "ken-burns",
+      "text": "They scan the field more frequently in the final seconds than at any other time."
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-13]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 133,
+      "out_seconds": 138,
+      "animation": "ken-burns",
+      "text": "How does the brain maintain this intense visual control when every instinct is screaming to panic?"
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-18]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 138,
+      "out_seconds": 141,
+      "animation": "none",
+      "text": "This brings us to the research of Doctor Christian Swann."
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-21]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 141,
+      "out_seconds": 145,
+      "animation": "ken-burns",
+      "text": "He studied the difference between flow states and clutch states."
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 145,
+      "out_seconds": 148,
+      "animation": "none",
+      "text": "A flow state is effortless and automatic."
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 148,
+      "out_seconds": 150,
+      "animation": "none",
+      "text": "You feel it when everything is going perfectly."
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-30]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 150,
+      "out_seconds": 153,
+      "animation": "none",
+      "text": "But a clutch state is deliberate and intense."
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-33]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 153,
+      "out_seconds": 157,
+      "animation": "ken-burns",
+      "text": "It occurs when you realize that failure is imminent and you must act now."
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-37]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 157,
+      "out_seconds": 160,
+      "animation": "none",
+      "text": "Your brain actively pushes through the physical fatigue."
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 160,
+      "out_seconds": 163,
+      "animation": "none",
+      "text": "It focuses entirely on the immediate goal."
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 163,
+      "out_seconds": 166,
+      "animation": "none",
+      "text": "The Argentine team did not win by accident."
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 166,
+      "out_seconds": 169,
+      "animation": "none",
+      "text": "They entered a collective clutch state where the pressure became fuel."
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 169,
+      "out_seconds": 173,
+      "animation": "ken-burns",
+      "text": "Why do some teams fold under this pressure while others thrive?"
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 173,
+      "out_seconds": 175,
+      "animation": "none",
+      "text": "This is not just about soccer."
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-55]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 175,
+      "out_seconds": 178,
+      "animation": "none",
+      "text": "It is a mirror of your own evolutionary history."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/fifa_90th_minute_project_8/images/[02-58]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 178,
+      "out_seconds": 182,
+      "animation": "ken-burns",
+      "text": "For thousands of years, your ancestors did not hunt when they were fresh."
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 182,
+      "out_seconds": 184,
+      "animation": "none",
+      "text": "They hunted when they were starving and desperate."
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-04]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 184,
+      "out_seconds": 189,
+      "animation": "ken-burns",
+      "text": "Their survival depended on their ability to run down prey when their bodies were completely spent."
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 189,
+      "out_seconds": 193,
+      "animation": "ken-burns",
+      "text": "The human brain evolved to deliver its maximum performance when desperate."
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-13]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 193,
+      "out_seconds": 197,
+      "animation": "ken-burns",
+      "text": "When you face a deadline or a crisis, your brain taps into this network."
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 197,
+      "out_seconds": 201,
+      "animation": "ken-burns",
+      "text": "It is the reason you find focus when all hope seems lost."
+    },
+    {
+      "id": "scene_59",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-21]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 201,
+      "out_seconds": 205,
+      "animation": "ken-burns",
+      "text": "Are we built to succeed only when failure is the only other option?"
+    },
+    {
+      "id": "scene_60",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 205,
+      "out_seconds": 211,
+      "animation": "ken-burns",
+      "text": "So, when you watch Argentina defeat their rivals in the final seconds, you are not just watching a sport."
+    },
+    {
+      "id": "scene_61",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-31]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 211,
+      "out_seconds": 214,
+      "animation": "none",
+      "text": "You are witnessing a deep evolutionary design."
+    },
+    {
+      "id": "scene_62",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 214,
+      "out_seconds": 219,
+      "animation": "ken-burns",
+      "text": "The same brain that saved your ancestors from starvation is now winning a World Cup match."
+    },
+    {
+      "id": "scene_63",
+      "source": "projects/fifa_90th_minute_project_8/images/[03-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 219,
+      "out_seconds": 225.15863945578232,
+      "animation": "ken-burns",
+      "text": "In July 2026, you watched Argentina defy all odds to reach the World Cup final."
+    }
+  ],
+  "captions": [
+    {
+      "word": "In",
+      "startMs": 0,
+      "endMs": 80
+    },
+    {
+      "word": "July,",
+      "startMs": 80,
+      "endMs": 360
+    },
+    {
+      "word": "2026,",
+      "startMs": 520,
+      "endMs": 1680
+    },
+    {
+      "word": "you",
+      "startMs": 2040,
+      "endMs": 2100
+    },
+    {
+      "word": "watched",
+      "startMs": 2100,
+      "endMs": 2400
+    },
+    {
+      "word": "Argentina",
+      "startMs": 2400,
+      "endMs": 2900
+    },
+    {
+      "word": "defy",
+      "startMs": 2900,
+      "endMs": 3380
+    },
+    {
+      "word": "all",
+      "startMs": 3380,
+      "endMs": 3720
+    },
+    {
+      "word": "odds",
+      "startMs": 3720,
+      "endMs": 4059
+    },
+    {
+      "word": "to",
+      "startMs": 4059,
+      "endMs": 4200
+    },
+    {
+      "word": "reach",
+      "startMs": 4200,
+      "endMs": 4360
+    },
+    {
+      "word": "the",
+      "startMs": 4360,
+      "endMs": 4580
+    },
+    {
+      "word": "World",
+      "startMs": 4580,
+      "endMs": 4800
+    },
+    {
+      "word": "Cup",
+      "startMs": 4800,
+      "endMs": 5020
+    },
+    {
+      "word": "final.",
+      "startMs": 5020,
+      "endMs": 5500
+    },
+    {
+      "word": "You",
+      "startMs": 5920,
+      "endMs": 6060
+    },
+    {
+      "word": "sat",
+      "startMs": 6060,
+      "endMs": 6300
+    },
+    {
+      "word": "on",
+      "startMs": 6300,
+      "endMs": 6480
+    },
+    {
+      "word": "the",
+      "startMs": 6480,
+      "endMs": 6640
+    },
+    {
+      "word": "edge",
+      "startMs": 6640,
+      "endMs": 6800
+    },
+    {
+      "word": "of",
+      "startMs": 6800,
+      "endMs": 7000
+    },
+    {
+      "word": "your",
+      "startMs": 7000,
+      "endMs": 7080
+    },
+    {
+      "word": "seat.",
+      "startMs": 7080,
+      "endMs": 7420
+    },
+    {
+      "word": "You",
+      "startMs": 7960,
+      "endMs": 8060
+    },
+    {
+      "word": "screamed",
+      "startMs": 8060,
+      "endMs": 8400
+    },
+    {
+      "word": "as",
+      "startMs": 8400,
+      "endMs": 8680
+    },
+    {
+      "word": "they",
+      "startMs": 8680,
+      "endMs": 8820
+    },
+    {
+      "word": "defeated",
+      "startMs": 8820,
+      "endMs": 9160
+    },
+    {
+      "word": "Egypt",
+      "startMs": 9160,
+      "endMs": 9600
+    },
+    {
+      "word": "and",
+      "startMs": 9600,
+      "endMs": 9920
+    },
+    {
+      "word": "England",
+      "startMs": 9920,
+      "endMs": 10200
+    },
+    {
+      "word": "in",
+      "startMs": 10200,
+      "endMs": 10400
+    },
+    {
+      "word": "the",
+      "startMs": 10400,
+      "endMs": 10480
+    },
+    {
+      "word": "final",
+      "startMs": 10480,
+      "endMs": 10760
+    },
+    {
+      "word": "seconds.",
+      "startMs": 10760,
+      "endMs": 11260
+    },
+    {
+      "word": "But",
+      "startMs": 11760,
+      "endMs": 11920
+    },
+    {
+      "word": "the",
+      "startMs": 11920,
+      "endMs": 12040
+    },
+    {
+      "word": "real",
+      "startMs": 12040,
+      "endMs": 12240
+    },
+    {
+      "word": "reason",
+      "startMs": 12240,
+      "endMs": 12640
+    },
+    {
+      "word": "they",
+      "startMs": 12640,
+      "endMs": 12800
+    },
+    {
+      "word": "won",
+      "startMs": 12800,
+      "endMs": 12980
+    },
+    {
+      "word": "is",
+      "startMs": 12980,
+      "endMs": 13220
+    },
+    {
+      "word": "far",
+      "startMs": 13220,
+      "endMs": 13440
+    },
+    {
+      "word": "stranger",
+      "startMs": 13440,
+      "endMs": 13940
+    },
+    {
+      "word": "than",
+      "startMs": 13940,
+      "endMs": 14140
+    },
+    {
+      "word": "soccer",
+      "startMs": 14140,
+      "endMs": 14480
+    },
+    {
+      "word": "tactics.",
+      "startMs": 14480,
+      "endMs": 14940
+    },
+    {
+      "word": "It",
+      "startMs": 15540,
+      "endMs": 15700
+    },
+    {
+      "word": "was",
+      "startMs": 15700,
+      "endMs": 15800
+    },
+    {
+      "word": "not",
+      "startMs": 15800,
+      "endMs": 16000
+    },
+    {
+      "word": "just",
+      "startMs": 16000,
+      "endMs": 16200
+    },
+    {
+      "word": "skill",
+      "startMs": 16200,
+      "endMs": 16500
+    },
+    {
+      "word": "or",
+      "startMs": 16500,
+      "endMs": 16700
+    },
+    {
+      "word": "luck.",
+      "startMs": 16700,
+      "endMs": 16920
+    },
+    {
+      "word": "It",
+      "startMs": 17460,
+      "endMs": 17540
+    },
+    {
+      "word": "was",
+      "startMs": 17540,
+      "endMs": 17640
+    },
+    {
+      "word": "a",
+      "startMs": 17640,
+      "endMs": 17780
+    },
+    {
+      "word": "biological",
+      "startMs": 17780,
+      "endMs": 18240
+    },
+    {
+      "word": "hijack",
+      "startMs": 18240,
+      "endMs": 19020
+    },
+    {
+      "word": "of",
+      "startMs": 19020,
+      "endMs": 19280
+    },
+    {
+      "word": "the",
+      "startMs": 19280,
+      "endMs": 19380
+    },
+    {
+      "word": "human",
+      "startMs": 19380,
+      "endMs": 19640
+    },
+    {
+      "word": "brain.",
+      "startMs": 19640,
+      "endMs": 19980
+    },
+    {
+      "word": "Why",
+      "startMs": 20500,
+      "endMs": 20660
+    },
+    {
+      "word": "does",
+      "startMs": 20660,
+      "endMs": 20780
+    },
+    {
+      "word": "the",
+      "startMs": 20780,
+      "endMs": 20960
+    },
+    {
+      "word": "human",
+      "startMs": 20960,
+      "endMs": 21180
+    },
+    {
+      "word": "mind",
+      "startMs": 21180,
+      "endMs": 21460
+    },
+    {
+      "word": "wait",
+      "startMs": 21460,
+      "endMs": 21800
+    },
+    {
+      "word": "until",
+      "startMs": 21800,
+      "endMs": 22240
+    },
+    {
+      "word": "the",
+      "startMs": 22240,
+      "endMs": 22420
+    },
+    {
+      "word": "brink",
+      "startMs": 22420,
+      "endMs": 22620
+    },
+    {
+      "word": "of",
+      "startMs": 22620,
+      "endMs": 22740
+    },
+    {
+      "word": "disaster",
+      "startMs": 22740,
+      "endMs": 23060
+    },
+    {
+      "word": "to",
+      "startMs": 23060,
+      "endMs": 23440
+    },
+    {
+      "word": "perform",
+      "startMs": 23440,
+      "endMs": 23800
+    },
+    {
+      "word": "its",
+      "startMs": 23800,
+      "endMs": 24000
+    },
+    {
+      "word": "greatest",
+      "startMs": 24000,
+      "endMs": 24360
+    },
+    {
+      "word": "miracles?",
+      "startMs": 24360,
+      "endMs": 24820
+    },
+    {
+      "word": "Consider",
+      "startMs": 25480,
+      "endMs": 25800
+    },
+    {
+      "word": "the",
+      "startMs": 25800,
+      "endMs": 26040
+    },
+    {
+      "word": "round",
+      "startMs": 26040,
+      "endMs": 26260
+    },
+    {
+      "word": "of",
+      "startMs": 26260,
+      "endMs": 26440
+    },
+    {
+      "word": "16",
+      "startMs": 26440,
+      "endMs": 26920
+    },
+    {
+      "word": "against",
+      "startMs": 26920,
+      "endMs": 27320
+    },
+    {
+      "word": "Egypt.",
+      "startMs": 27320,
+      "endMs": 27840
+    },
+    {
+      "word": "Argentina",
+      "startMs": 27840,
+      "endMs": 28780
+    },
+    {
+      "word": "was",
+      "startMs": 28780,
+      "endMs": 29220
+    },
+    {
+      "word": "trailing",
+      "startMs": 29220,
+      "endMs": 29540
+    },
+    {
+      "word": "two",
+      "startMs": 29540,
+      "endMs": 29800
+    },
+    {
+      "word": "to",
+      "startMs": 29800,
+      "endMs": 29960
+    },
+    {
+      "word": "zero",
+      "startMs": 29960,
+      "endMs": 30260
+    },
+    {
+      "word": "in",
+      "startMs": 30260,
+      "endMs": 30460
+    },
+    {
+      "word": "the",
+      "startMs": 30460,
+      "endMs": 30560
+    },
+    {
+      "word": "78th",
+      "startMs": 30560,
+      "endMs": 31280
+    },
+    {
+      "word": "minute.",
+      "startMs": 31280,
+      "endMs": 31540
+    },
+    {
+      "word": "Their",
+      "startMs": 32040,
+      "endMs": 32119
+    },
+    {
+      "word": "legs",
+      "startMs": 32119,
+      "endMs": 32360
+    },
+    {
+      "word": "felt",
+      "startMs": 32360,
+      "endMs": 32640
+    },
+    {
+      "word": "like",
+      "startMs": 32640,
+      "endMs": 33000
+    },
+    {
+      "word": "lead.",
+      "startMs": 33000,
+      "endMs": 33280
+    },
+    {
+      "word": "Their",
+      "startMs": 33820,
+      "endMs": 33920
+    },
+    {
+      "word": "lungs",
+      "startMs": 33920,
+      "endMs": 34100
+    },
+    {
+      "word": "were",
+      "startMs": 34100,
+      "endMs": 34340
+    },
+    {
+      "word": "burning",
+      "startMs": 34340,
+      "endMs": 34580
+    },
+    {
+      "word": "for",
+      "startMs": 34580,
+      "endMs": 34800
+    },
+    {
+      "word": "oxygen.",
+      "startMs": 34800,
+      "endMs": 35280
+    },
+    {
+      "word": "Earlier,",
+      "startMs": 35860,
+      "endMs": 36120
+    },
+    {
+      "word": "the",
+      "startMs": 36480,
+      "endMs": 36540
+    },
+    {
+      "word": "Egyptian",
+      "startMs": 36540,
+      "endMs": 36960
+    },
+    {
+      "word": "goalkeeper",
+      "startMs": 36960,
+      "endMs": 37540
+    },
+    {
+      "word": "had",
+      "startMs": 37540,
+      "endMs": 37760
+    },
+    {
+      "word": "even",
+      "startMs": 37760,
+      "endMs": 38100
+    },
+    {
+      "word": "saved",
+      "startMs": 38100,
+      "endMs": 38460
+    },
+    {
+      "word": "the",
+      "startMs": 38460,
+      "endMs": 38600
+    },
+    {
+      "word": "penalty",
+      "startMs": 38600,
+      "endMs": 38840
+    },
+    {
+      "word": "from",
+      "startMs": 38840,
+      "endMs": 39240
+    },
+    {
+      "word": "Lionel",
+      "startMs": 39240,
+      "endMs": 39600
+    },
+    {
+      "word": "Messi.",
+      "startMs": 39600,
+      "endMs": 39880
+    },
+    {
+      "word": "Under",
+      "startMs": 40460,
+      "endMs": 40660
+    },
+    {
+      "word": "normal",
+      "startMs": 40660,
+      "endMs": 41000
+    },
+    {
+      "word": "circumstances,",
+      "startMs": 41000,
+      "endMs": 41760
+    },
+    {
+      "word": "their",
+      "startMs": 42200,
+      "endMs": 42280
+    },
+    {
+      "word": "bodies",
+      "startMs": 42280,
+      "endMs": 42600
+    },
+    {
+      "word": "should",
+      "startMs": 42600,
+      "endMs": 42860
+    },
+    {
+      "word": "have",
+      "startMs": 42860,
+      "endMs": 42980
+    },
+    {
+      "word": "shut",
+      "startMs": 42980,
+      "endMs": 43160
+    },
+    {
+      "word": "down.",
+      "startMs": 43160,
+      "endMs": 43500
+    },
+    {
+      "word": "But",
+      "startMs": 43940,
+      "endMs": 44060
+    },
+    {
+      "word": "then,",
+      "startMs": 44060,
+      "endMs": 44360
+    },
+    {
+      "word": "a",
+      "startMs": 44620,
+      "endMs": 44720
+    },
+    {
+      "word": "sudden",
+      "startMs": 44720,
+      "endMs": 44980
+    },
+    {
+      "word": "shift",
+      "startMs": 44980,
+      "endMs": 45260
+    },
+    {
+      "word": "occurred.",
+      "startMs": 45260,
+      "endMs": 45640
+    },
+    {
+      "word": "In",
+      "startMs": 46200,
+      "endMs": 46280
+    },
+    {
+      "word": "the",
+      "startMs": 46280,
+      "endMs": 46400
+    },
+    {
+      "word": "79th",
+      "startMs": 46400,
+      "endMs": 47120
+    },
+    {
+      "word": "minute,",
+      "startMs": 47120,
+      "endMs": 47360
+    },
+    {
+      "word": "Christian",
+      "startMs": 47720,
+      "endMs": 48000
+    },
+    {
+      "word": "Romero",
+      "startMs": 48000,
+      "endMs": 48480
+    },
+    {
+      "word": "scored.",
+      "startMs": 48480,
+      "endMs": 48820
+    },
+    {
+      "word": "Four",
+      "startMs": 49380,
+      "endMs": 49600
+    },
+    {
+      "word": "minutes",
+      "startMs": 49600,
+      "endMs": 49900
+    },
+    {
+      "word": "later,",
+      "startMs": 49900,
+      "endMs": 50380
+    },
+    {
+      "word": "Lionel",
+      "startMs": 50780,
+      "endMs": 51040
+    },
+    {
+      "word": "Messi",
+      "startMs": 51040,
+      "endMs": 51360
+    },
+    {
+      "word": "equalized.",
+      "startMs": 51360,
+      "endMs": 52240
+    },
+    {
+      "word": "In",
+      "startMs": 52580,
+      "endMs": 52760
+    },
+    {
+      "word": "the",
+      "startMs": 52760,
+      "endMs": 52860
+    },
+    {
+      "word": "92nd",
+      "startMs": 52860,
+      "endMs": 53540
+    },
+    {
+      "word": "minute,",
+      "startMs": 53540,
+      "endMs": 53780
+    },
+    {
+      "word": "Enzo",
+      "startMs": 54080,
+      "endMs": 54240
+    },
+    {
+      "word": "Fernandez",
+      "startMs": 54240,
+      "endMs": 54720
+    },
+    {
+      "word": "scored",
+      "startMs": 54720,
+      "endMs": 55020
+    },
+    {
+      "word": "the",
+      "startMs": 55020,
+      "endMs": 55240
+    },
+    {
+      "word": "winning",
+      "startMs": 55240,
+      "endMs": 55400
+    },
+    {
+      "word": "goal.",
+      "startMs": 55400,
+      "endMs": 55680
+    },
+    {
+      "word": "How",
+      "startMs": 55680,
+      "endMs": 56300
+    },
+    {
+      "word": "did",
+      "startMs": 56300,
+      "endMs": 56420
+    },
+    {
+      "word": "a",
+      "startMs": 56420,
+      "endMs": 56540
+    },
+    {
+      "word": "team",
+      "startMs": 56540,
+      "endMs": 56780
+    },
+    {
+      "word": "that",
+      "startMs": 56780,
+      "endMs": 57040
+    },
+    {
+      "word": "looked",
+      "startMs": 57040,
+      "endMs": 57260
+    },
+    {
+      "word": "completely",
+      "startMs": 57260,
+      "endMs": 57720
+    },
+    {
+      "word": "dead",
+      "startMs": 57720,
+      "endMs": 57980
+    },
+    {
+      "word": "score",
+      "startMs": 57980,
+      "endMs": 58320
+    },
+    {
+      "word": "three",
+      "startMs": 58320,
+      "endMs": 58640
+    },
+    {
+      "word": "times",
+      "startMs": 58640,
+      "endMs": 58940
+    },
+    {
+      "word": "in",
+      "startMs": 58940,
+      "endMs": 59180
+    },
+    {
+      "word": "13",
+      "startMs": 59180,
+      "endMs": 59520
+    },
+    {
+      "word": "minutes?",
+      "startMs": 59520,
+      "endMs": 60000
+    },
+    {
+      "word": "The",
+      "startMs": 60480,
+      "endMs": 60560
+    },
+    {
+      "word": "answer",
+      "startMs": 60560,
+      "endMs": 60920
+    },
+    {
+      "word": "lies",
+      "startMs": 60920,
+      "endMs": 61240
+    },
+    {
+      "word": "in",
+      "startMs": 61240,
+      "endMs": 61520
+    },
+    {
+      "word": "a",
+      "startMs": 61520,
+      "endMs": 61620
+    },
+    {
+      "word": "theory",
+      "startMs": 61620,
+      "endMs": 61900
+    },
+    {
+      "word": "proposed",
+      "startMs": 61900,
+      "endMs": 62340
+    },
+    {
+      "word": "by",
+      "startMs": 62340,
+      "endMs": 62640
+    },
+    {
+      "word": "Dr.",
+      "startMs": 62640,
+      "endMs": 62940
+    },
+    {
+      "word": "Samuel",
+      "startMs": 63120,
+      "endMs": 63380
+    },
+    {
+      "word": "Marcora.",
+      "startMs": 63380,
+      "endMs": 63920
+    },
+    {
+      "word": "He",
+      "startMs": 64440,
+      "endMs": 64519
+    },
+    {
+      "word": "developed",
+      "startMs": 64519,
+      "endMs": 64879
+    },
+    {
+      "word": "the",
+      "startMs": 64879,
+      "endMs": 65080
+    },
+    {
+      "word": "psychobiological",
+      "startMs": 65080,
+      "endMs": 66060
+    },
+    {
+      "word": "model",
+      "startMs": 66060,
+      "endMs": 66480
+    },
+    {
+      "word": "of",
+      "startMs": 66480,
+      "endMs": 66720
+    },
+    {
+      "word": "exercise.",
+      "startMs": 66720,
+      "endMs": 67260
+    },
+    {
+      "word": "This",
+      "startMs": 67740,
+      "endMs": 68020
+    },
+    {
+      "word": "model",
+      "startMs": 68020,
+      "endMs": 68300
+    },
+    {
+      "word": "suggests",
+      "startMs": 68300,
+      "endMs": 68620
+    },
+    {
+      "word": "that",
+      "startMs": 68620,
+      "endMs": 68920
+    },
+    {
+      "word": "your",
+      "startMs": 68920,
+      "endMs": 69000
+    },
+    {
+      "word": "muscles",
+      "startMs": 69000,
+      "endMs": 69240
+    },
+    {
+      "word": "do",
+      "startMs": 69240,
+      "endMs": 69480
+    },
+    {
+      "word": "not",
+      "startMs": 69480,
+      "endMs": 69620
+    },
+    {
+      "word": "actually",
+      "startMs": 69620,
+      "endMs": 70080
+    },
+    {
+      "word": "stop",
+      "startMs": 70080,
+      "endMs": 70440
+    },
+    {
+      "word": "you",
+      "startMs": 70440,
+      "endMs": 70660
+    },
+    {
+      "word": "when",
+      "startMs": 70660,
+      "endMs": 70780
+    },
+    {
+      "word": "you",
+      "startMs": 70780,
+      "endMs": 70880
+    },
+    {
+      "word": "are",
+      "startMs": 70880,
+      "endMs": 70940
+    },
+    {
+      "word": "tired.",
+      "startMs": 70940,
+      "endMs": 71320
+    },
+    {
+      "word": "Instead,",
+      "startMs": 71820,
+      "endMs": 72280
+    },
+    {
+      "word": "your",
+      "startMs": 72640,
+      "endMs": 72720
+    },
+    {
+      "word": "brain",
+      "startMs": 72720,
+      "endMs": 73000
+    },
+    {
+      "word": "acts",
+      "startMs": 73000,
+      "endMs": 73420
+    },
+    {
+      "word": "as",
+      "startMs": 73420,
+      "endMs": 73680
+    },
+    {
+      "word": "a",
+      "startMs": 73680,
+      "endMs": 73760
+    },
+    {
+      "word": "central",
+      "startMs": 73760,
+      "endMs": 74120
+    },
+    {
+      "word": "governor.",
+      "startMs": 74120,
+      "endMs": 74600
+    },
+    {
+      "word": "A",
+      "startMs": 75020,
+      "endMs": 75160
+    },
+    {
+      "word": "constantly",
+      "startMs": 75160,
+      "endMs": 75580
+    },
+    {
+      "word": "monitors",
+      "startMs": 75580,
+      "endMs": 76060
+    },
+    {
+      "word": "your",
+      "startMs": 76060,
+      "endMs": 76300
+    },
+    {
+      "word": "effort",
+      "startMs": 76300,
+      "endMs": 76580
+    },
+    {
+      "word": "and",
+      "startMs": 76580,
+      "endMs": 76800
+    },
+    {
+      "word": "creates",
+      "startMs": 76800,
+      "endMs": 77160
+    },
+    {
+      "word": "the",
+      "startMs": 77160,
+      "endMs": 77400
+    },
+    {
+      "word": "feeling",
+      "startMs": 77400,
+      "endMs": 77680
+    },
+    {
+      "word": "of",
+      "startMs": 77680,
+      "endMs": 77900
+    },
+    {
+      "word": "fatigue",
+      "startMs": 77900,
+      "endMs": 78140
+    },
+    {
+      "word": "to",
+      "startMs": 78140,
+      "endMs": 78380
+    },
+    {
+      "word": "protect",
+      "startMs": 78380,
+      "endMs": 78640
+    },
+    {
+      "word": "your",
+      "startMs": 78640,
+      "endMs": 78880
+    },
+    {
+      "word": "body",
+      "startMs": 78880,
+      "endMs": 79160
+    },
+    {
+      "word": "from",
+      "startMs": 79160,
+      "endMs": 79380
+    },
+    {
+      "word": "damage.",
+      "startMs": 79380,
+      "endMs": 79740
+    },
+    {
+      "word": "If",
+      "startMs": 80280,
+      "endMs": 80420
+    },
+    {
+      "word": "you",
+      "startMs": 80420,
+      "endMs": 80500
+    },
+    {
+      "word": "have",
+      "startMs": 80500,
+      "endMs": 80620
+    },
+    {
+      "word": "a",
+      "startMs": 80620,
+      "endMs": 80700
+    },
+    {
+      "word": "powerful",
+      "startMs": 80700,
+      "endMs": 81080
+    },
+    {
+      "word": "reason",
+      "startMs": 81080,
+      "endMs": 81440
+    },
+    {
+      "word": "to",
+      "startMs": 81440,
+      "endMs": 81640
+    },
+    {
+      "word": "keep",
+      "startMs": 81640,
+      "endMs": 81800
+    },
+    {
+      "word": "going,",
+      "startMs": 81800,
+      "endMs": 82160
+    },
+    {
+      "word": "your",
+      "startMs": 82520,
+      "endMs": 82620
+    },
+    {
+      "word": "brain",
+      "startMs": 82620,
+      "endMs": 82900
+    },
+    {
+      "word": "recalculates",
+      "startMs": 82900,
+      "endMs": 83580
+    },
+    {
+      "word": "the",
+      "startMs": 83580,
+      "endMs": 83700
+    },
+    {
+      "word": "cost",
+      "startMs": 83700,
+      "endMs": 83940
+    },
+    {
+      "word": "of",
+      "startMs": 83940,
+      "endMs": 84140
+    },
+    {
+      "word": "energy.",
+      "startMs": 84140,
+      "endMs": 84480
+    },
+    {
+      "word": "It",
+      "startMs": 84480,
+      "endMs": 85060
+    },
+    {
+      "word": "releases",
+      "startMs": 85060,
+      "endMs": 85440
+    },
+    {
+      "word": "its",
+      "startMs": 85440,
+      "endMs": 85660
+    },
+    {
+      "word": "grip",
+      "startMs": 85660,
+      "endMs": 85900
+    },
+    {
+      "word": "on",
+      "startMs": 85900,
+      "endMs": 86100
+    },
+    {
+      "word": "your",
+      "startMs": 86100,
+      "endMs": 86220
+    },
+    {
+      "word": "safety",
+      "startMs": 86220,
+      "endMs": 86600
+    },
+    {
+      "word": "reserves.",
+      "startMs": 86600,
+      "endMs": 87180
+    },
+    {
+      "word": "Did",
+      "startMs": 87540,
+      "endMs": 87720
+    },
+    {
+      "word": "the",
+      "startMs": 87720,
+      "endMs": 87880
+    },
+    {
+      "word": "fear",
+      "startMs": 87880,
+      "endMs": 88100
+    },
+    {
+      "word": "of",
+      "startMs": 88100,
+      "endMs": 88300
+    },
+    {
+      "word": "a",
+      "startMs": 88300,
+      "endMs": 88400
+    },
+    {
+      "word": "World",
+      "startMs": 88400,
+      "endMs": 88640
+    },
+    {
+      "word": "Cup",
+      "startMs": 88640,
+      "endMs": 88900
+    },
+    {
+      "word": "exit",
+      "startMs": 88900,
+      "endMs": 89320
+    },
+    {
+      "word": "unlock",
+      "startMs": 89320,
+      "endMs": 89800
+    },
+    {
+      "word": "a",
+      "startMs": 89800,
+      "endMs": 90120
+    },
+    {
+      "word": "chemical",
+      "startMs": 90120,
+      "endMs": 90500
+    },
+    {
+      "word": "override",
+      "startMs": 90500,
+      "endMs": 91020
+    },
+    {
+      "word": "in",
+      "startMs": 91020,
+      "endMs": 91380
+    },
+    {
+      "word": "the",
+      "startMs": 91380,
+      "endMs": 91500
+    },
+    {
+      "word": "Argentine",
+      "startMs": 91500,
+      "endMs": 92040
+    },
+    {
+      "word": "players?",
+      "startMs": 92040,
+      "endMs": 92420
+    },
+    {
+      "word": "It",
+      "startMs": 93020,
+      "endMs": 93180
+    },
+    {
+      "word": "happened",
+      "startMs": 93180,
+      "endMs": 93460
+    },
+    {
+      "word": "again",
+      "startMs": 93460,
+      "endMs": 93800
+    },
+    {
+      "word": "in",
+      "startMs": 93800,
+      "endMs": 94120
+    },
+    {
+      "word": "the",
+      "startMs": 94120,
+      "endMs": 94220
+    },
+    {
+      "word": "semifinal",
+      "startMs": 94220,
+      "endMs": 94860
+    },
+    {
+      "word": "against",
+      "startMs": 94860,
+      "endMs": 95280
+    },
+    {
+      "word": "England.",
+      "startMs": 95280,
+      "endMs": 95620
+    },
+    {
+      "word": "Argentina",
+      "startMs": 96160,
+      "endMs": 96520
+    },
+    {
+      "word": "was",
+      "startMs": 96520,
+      "endMs": 97000
+    },
+    {
+      "word": "trailing",
+      "startMs": 97000,
+      "endMs": 97400
+    },
+    {
+      "word": "1",
+      "startMs": 97400,
+      "endMs": 97580
+    },
+    {
+      "word": "-0",
+      "startMs": 97580,
+      "endMs": 98060
+    },
+    {
+      "word": "in",
+      "startMs": 98060,
+      "endMs": 98320
+    },
+    {
+      "word": "the",
+      "startMs": 98320,
+      "endMs": 98440
+    },
+    {
+      "word": "85th",
+      "startMs": 98440,
+      "endMs": 99060
+    },
+    {
+      "word": "minute.",
+      "startMs": 99060,
+      "endMs": 99260
+    },
+    {
+      "word": "The",
+      "startMs": 99780,
+      "endMs": 99840
+    },
+    {
+      "word": "physical",
+      "startMs": 99840,
+      "endMs": 100200
+    },
+    {
+      "word": "fatigue",
+      "startMs": 100200,
+      "endMs": 100580
+    },
+    {
+      "word": "was",
+      "startMs": 100580,
+      "endMs": 101020
+    },
+    {
+      "word": "crushing.",
+      "startMs": 101020,
+      "endMs": 101380
+    },
+    {
+      "word": "Yet",
+      "startMs": 101860,
+      "endMs": 102100
+    },
+    {
+      "word": "Enzo",
+      "startMs": 102100,
+      "endMs": 102560
+    },
+    {
+      "word": "Fernandez",
+      "startMs": 102560,
+      "endMs": 103080
+    },
+    {
+      "word": "equalized.",
+      "startMs": 103080,
+      "endMs": 103840
+    },
+    {
+      "word": "In",
+      "startMs": 104260,
+      "endMs": 104340
+    },
+    {
+      "word": "the",
+      "startMs": 104340,
+      "endMs": 104440
+    },
+    {
+      "word": "92nd",
+      "startMs": 104440,
+      "endMs": 105100
+    },
+    {
+      "word": "minute,",
+      "startMs": 105100,
+      "endMs": 105320
+    },
+    {
+      "word": "La",
+      "startMs": 105780,
+      "endMs": 105860
+    },
+    {
+      "word": "Tera",
+      "startMs": 105860,
+      "endMs": 106140
+    },
+    {
+      "word": "Martine",
+      "startMs": 106140,
+      "endMs": 106660
+    },
+    {
+      "word": "scored",
+      "startMs": 106660,
+      "endMs": 106960
+    },
+    {
+      "word": "the",
+      "startMs": 106960,
+      "endMs": 107220
+    },
+    {
+      "word": "winning",
+      "startMs": 107220,
+      "endMs": 107380
+    },
+    {
+      "word": "goal.",
+      "startMs": 107380,
+      "endMs": 107700
+    },
+    {
+      "word": "How",
+      "startMs": 108260,
+      "endMs": 108360
+    },
+    {
+      "word": "did",
+      "startMs": 108360,
+      "endMs": 108440
+    },
+    {
+      "word": "they",
+      "startMs": 108440,
+      "endMs": 108560
+    },
+    {
+      "word": "make",
+      "startMs": 108560,
+      "endMs": 108740
+    },
+    {
+      "word": "perfect",
+      "startMs": 108740,
+      "endMs": 109100
+    },
+    {
+      "word": "decisions",
+      "startMs": 109100,
+      "endMs": 109680
+    },
+    {
+      "word": "in",
+      "startMs": 109680,
+      "endMs": 110020
+    },
+    {
+      "word": "these",
+      "startMs": 110020,
+      "endMs": 110160
+    },
+    {
+      "word": "frantic",
+      "startMs": 110160,
+      "endMs": 110540
+    },
+    {
+      "word": "moments?",
+      "startMs": 110540,
+      "endMs": 110900
+    },
+    {
+      "word": "We",
+      "startMs": 111460,
+      "endMs": 111660
+    },
+    {
+      "word": "must",
+      "startMs": 111660,
+      "endMs": 111840
+    },
+    {
+      "word": "look",
+      "startMs": 111840,
+      "endMs": 112040
+    },
+    {
+      "word": "to",
+      "startMs": 112040,
+      "endMs": 112220
+    },
+    {
+      "word": "the",
+      "startMs": 112220,
+      "endMs": 112320
+    },
+    {
+      "word": "research",
+      "startMs": 112320,
+      "endMs": 112640
+    },
+    {
+      "word": "of",
+      "startMs": 112640,
+      "endMs": 112880
+    },
+    {
+      "word": "Dr.",
+      "startMs": 112880,
+      "endMs": 113200
+    },
+    {
+      "word": "Jared",
+      "startMs": 113380,
+      "endMs": 113520
+    },
+    {
+      "word": "Jordan.",
+      "startMs": 113520,
+      "endMs": 113740
+    },
+    {
+      "word": "He",
+      "startMs": 113740,
+      "endMs": 114460
+    },
+    {
+      "word": "spent",
+      "startMs": 114460,
+      "endMs": 114680
+    },
+    {
+      "word": "years",
+      "startMs": 114680,
+      "endMs": 114940
+    },
+    {
+      "word": "studying",
+      "startMs": 114940,
+      "endMs": 115300
+    },
+    {
+      "word": "elite",
+      "startMs": 115300,
+      "endMs": 115700
+    },
+    {
+      "word": "soccer",
+      "startMs": 115700,
+      "endMs": 116060
+    },
+    {
+      "word": "players",
+      "startMs": 116060,
+      "endMs": 116440
+    },
+    {
+      "word": "under",
+      "startMs": 116440,
+      "endMs": 116780
+    },
+    {
+      "word": "pressure.",
+      "startMs": 116780,
+      "endMs": 117200
+    },
+    {
+      "word": "Jordan",
+      "startMs": 117720,
+      "endMs": 117980
+    },
+    {
+      "word": "discovered",
+      "startMs": 117980,
+      "endMs": 118580
+    },
+    {
+      "word": "that",
+      "startMs": 118580,
+      "endMs": 118900
+    },
+    {
+      "word": "under",
+      "startMs": 118900,
+      "endMs": 119240
+    },
+    {
+      "word": "extreme",
+      "startMs": 119240,
+      "endMs": 119660
+    },
+    {
+      "word": "stress,",
+      "startMs": 119660,
+      "endMs": 120260
+    },
+    {
+      "word": "most",
+      "startMs": 120520,
+      "endMs": 120700
+    },
+    {
+      "word": "players",
+      "startMs": 120700,
+      "endMs": 121060
+    },
+    {
+      "word": "experience",
+      "startMs": 121060,
+      "endMs": 121760
+    },
+    {
+      "word": "cognitive",
+      "startMs": 121760,
+      "endMs": 122220
+    },
+    {
+      "word": "tunnel",
+      "startMs": 122220,
+      "endMs": 122540
+    },
+    {
+      "word": "vision.",
+      "startMs": 122540,
+      "endMs": 122920
+    },
+    {
+      "word": "Their",
+      "startMs": 123420,
+      "endMs": 123580
+    },
+    {
+      "word": "eyes",
+      "startMs": 123580,
+      "endMs": 123880
+    },
+    {
+      "word": "freeze.",
+      "startMs": 123880,
+      "endMs": 124240
+    },
+    {
+      "word": "They",
+      "startMs": 124860,
+      "endMs": 124980
+    },
+    {
+      "word": "fail",
+      "startMs": 124980,
+      "endMs": 125200
+    },
+    {
+      "word": "to",
+      "startMs": 125200,
+      "endMs": 125400
+    },
+    {
+      "word": "scan",
+      "startMs": 125400,
+      "endMs": 125680
+    },
+    {
+      "word": "their",
+      "startMs": 125680,
+      "endMs": 125860
+    },
+    {
+      "word": "surroundings.",
+      "startMs": 125860,
+      "endMs": 126380
+    },
+    {
+      "word": "What",
+      "startMs": 127020,
+      "endMs": 127160
+    },
+    {
+      "word": "elite",
+      "startMs": 127160,
+      "endMs": 127460
+    },
+    {
+      "word": "performers",
+      "startMs": 127460,
+      "endMs": 127940
+    },
+    {
+      "word": "do",
+      "startMs": 127940,
+      "endMs": 128259
+    },
+    {
+      "word": "the",
+      "startMs": 128259,
+      "endMs": 128460
+    },
+    {
+      "word": "opposite.",
+      "startMs": 128460,
+      "endMs": 128880
+    },
+    {
+      "word": "They",
+      "startMs": 129419,
+      "endMs": 129539
+    },
+    {
+      "word": "scan",
+      "startMs": 129539,
+      "endMs": 129820
+    },
+    {
+      "word": "a",
+      "startMs": 129820,
+      "endMs": 129919
+    },
+    {
+      "word": "field",
+      "startMs": 129919,
+      "endMs": 130080
+    },
+    {
+      "word": "more",
+      "startMs": 130080,
+      "endMs": 130380
+    },
+    {
+      "word": "frequently",
+      "startMs": 130380,
+      "endMs": 130759
+    },
+    {
+      "word": "in",
+      "startMs": 130759,
+      "endMs": 131100
+    },
+    {
+      "word": "the",
+      "startMs": 131100,
+      "endMs": 131180
+    },
+    {
+      "word": "finals",
+      "startMs": 131180,
+      "endMs": 131440
+    },
+    {
+      "word": "seconds",
+      "startMs": 131440,
+      "endMs": 131840
+    },
+    {
+      "word": "that",
+      "startMs": 131840,
+      "endMs": 132060
+    },
+    {
+      "word": "any",
+      "startMs": 132060,
+      "endMs": 132380
+    },
+    {
+      "word": "other",
+      "startMs": 132380,
+      "endMs": 132620
+    },
+    {
+      "word": "time.",
+      "startMs": 132620,
+      "endMs": 132960
+    },
+    {
+      "word": "How",
+      "startMs": 133500,
+      "endMs": 133600
+    },
+    {
+      "word": "does",
+      "startMs": 133600,
+      "endMs": 133740
+    },
+    {
+      "word": "the",
+      "startMs": 133740,
+      "endMs": 133860
+    },
+    {
+      "word": "brain",
+      "startMs": 133860,
+      "endMs": 134040
+    },
+    {
+      "word": "maintain",
+      "startMs": 134040,
+      "endMs": 134480
+    },
+    {
+      "word": "this",
+      "startMs": 134480,
+      "endMs": 134780
+    },
+    {
+      "word": "intense",
+      "startMs": 134780,
+      "endMs": 135040
+    },
+    {
+      "word": "visual",
+      "startMs": 135040,
+      "endMs": 135460
+    },
+    {
+      "word": "control",
+      "startMs": 135460,
+      "endMs": 135980
+    },
+    {
+      "word": "when",
+      "startMs": 135980,
+      "endMs": 136280
+    },
+    {
+      "word": "every",
+      "startMs": 136280,
+      "endMs": 136660
+    },
+    {
+      "word": "instinct",
+      "startMs": 136660,
+      "endMs": 137140
+    },
+    {
+      "word": "is",
+      "startMs": 137140,
+      "endMs": 137400
+    },
+    {
+      "word": "screaming",
+      "startMs": 137400,
+      "endMs": 137740
+    },
+    {
+      "word": "to",
+      "startMs": 137740,
+      "endMs": 138000
+    },
+    {
+      "word": "panic?",
+      "startMs": 138000,
+      "endMs": 138280
+    },
+    {
+      "word": "This",
+      "startMs": 138760,
+      "endMs": 138960
+    },
+    {
+      "word": "brings",
+      "startMs": 138960,
+      "endMs": 139280
+    },
+    {
+      "word": "us",
+      "startMs": 139280,
+      "endMs": 139480
+    },
+    {
+      "word": "to",
+      "startMs": 139480,
+      "endMs": 139680
+    },
+    {
+      "word": "the",
+      "startMs": 139680,
+      "endMs": 139800
+    },
+    {
+      "word": "research",
+      "startMs": 139800,
+      "endMs": 140140
+    },
+    {
+      "word": "of",
+      "startMs": 140140,
+      "endMs": 140400
+    },
+    {
+      "word": "Dr.",
+      "startMs": 140400,
+      "endMs": 140740
+    },
+    {
+      "word": "Christian",
+      "startMs": 140920,
+      "endMs": 141120
+    },
+    {
+      "word": "Swan.",
+      "startMs": 141120,
+      "endMs": 141500
+    },
+    {
+      "word": "He",
+      "startMs": 141500,
+      "endMs": 142180
+    },
+    {
+      "word": "studied",
+      "startMs": 142180,
+      "endMs": 142480
+    },
+    {
+      "word": "the",
+      "startMs": 142480,
+      "endMs": 142700
+    },
+    {
+      "word": "difference",
+      "startMs": 142700,
+      "endMs": 143020
+    },
+    {
+      "word": "between",
+      "startMs": 143020,
+      "endMs": 143420
+    },
+    {
+      "word": "flow",
+      "startMs": 143420,
+      "endMs": 143700
+    },
+    {
+      "word": "states",
+      "startMs": 143700,
+      "endMs": 144040
+    },
+    {
+      "word": "and",
+      "startMs": 144040,
+      "endMs": 144460
+    },
+    {
+      "word": "clutch",
+      "startMs": 144460,
+      "endMs": 144660
+    },
+    {
+      "word": "states.",
+      "startMs": 144660,
+      "endMs": 145260
+    },
+    {
+      "word": "A",
+      "startMs": 145560,
+      "endMs": 145780
+    },
+    {
+      "word": "flow",
+      "startMs": 145780,
+      "endMs": 146040
+    },
+    {
+      "word": "state",
+      "startMs": 146040,
+      "endMs": 146400
+    },
+    {
+      "word": "is",
+      "startMs": 146400,
+      "endMs": 146680
+    },
+    {
+      "word": "effortless",
+      "startMs": 146680,
+      "endMs": 147180
+    },
+    {
+      "word": "and",
+      "startMs": 147180,
+      "endMs": 147480
+    },
+    {
+      "word": "automatic.",
+      "startMs": 147480,
+      "endMs": 148020
+    },
+    {
+      "word": "You",
+      "startMs": 148580,
+      "endMs": 148720
+    },
+    {
+      "word": "feel",
+      "startMs": 148720,
+      "endMs": 148880
+    },
+    {
+      "word": "it",
+      "startMs": 148880,
+      "endMs": 149020
+    },
+    {
+      "word": "when",
+      "startMs": 149020,
+      "endMs": 149140
+    },
+    {
+      "word": "everything",
+      "startMs": 149140,
+      "endMs": 149440
+    },
+    {
+      "word": "is",
+      "startMs": 149440,
+      "endMs": 149660
+    },
+    {
+      "word": "going",
+      "startMs": 149660,
+      "endMs": 149860
+    },
+    {
+      "word": "perfectly.",
+      "startMs": 149860,
+      "endMs": 150260
+    },
+    {
+      "word": "But",
+      "startMs": 150840,
+      "endMs": 150940
+    },
+    {
+      "word": "a",
+      "startMs": 150940,
+      "endMs": 151040
+    },
+    {
+      "word": "clutch",
+      "startMs": 151040,
+      "endMs": 151220
+    },
+    {
+      "word": "state",
+      "startMs": 151220,
+      "endMs": 151600
+    },
+    {
+      "word": "is",
+      "startMs": 151600,
+      "endMs": 151880
+    },
+    {
+      "word": "deliberate",
+      "startMs": 151880,
+      "endMs": 152300
+    },
+    {
+      "word": "and",
+      "startMs": 152300,
+      "endMs": 152660
+    },
+    {
+      "word": "intense.",
+      "startMs": 152660,
+      "endMs": 153000
+    },
+    {
+      "word": "It",
+      "startMs": 153680,
+      "endMs": 153820
+    },
+    {
+      "word": "occurs",
+      "startMs": 153820,
+      "endMs": 154100
+    },
+    {
+      "word": "when",
+      "startMs": 154100,
+      "endMs": 154360
+    },
+    {
+      "word": "you",
+      "startMs": 154360,
+      "endMs": 154480
+    },
+    {
+      "word": "realize",
+      "startMs": 154480,
+      "endMs": 154860
+    },
+    {
+      "word": "that",
+      "startMs": 154860,
+      "endMs": 155120
+    },
+    {
+      "word": "failure",
+      "startMs": 155120,
+      "endMs": 155480
+    },
+    {
+      "word": "is",
+      "startMs": 155480,
+      "endMs": 155740
+    },
+    {
+      "word": "imminent",
+      "startMs": 155740,
+      "endMs": 155940
+    },
+    {
+      "word": "and",
+      "startMs": 155940,
+      "endMs": 156240
+    },
+    {
+      "word": "you",
+      "startMs": 156240,
+      "endMs": 156360
+    },
+    {
+      "word": "must",
+      "startMs": 156360,
+      "endMs": 156600
+    },
+    {
+      "word": "act",
+      "startMs": 156600,
+      "endMs": 156800
+    },
+    {
+      "word": "now.",
+      "startMs": 156800,
+      "endMs": 157120
+    },
+    {
+      "word": "Your",
+      "startMs": 157740,
+      "endMs": 157840
+    },
+    {
+      "word": "brain",
+      "startMs": 157840,
+      "endMs": 158120
+    },
+    {
+      "word": "actively",
+      "startMs": 158120,
+      "endMs": 158640
+    },
+    {
+      "word": "pushes",
+      "startMs": 158640,
+      "endMs": 159100
+    },
+    {
+      "word": "through",
+      "startMs": 159100,
+      "endMs": 159480
+    },
+    {
+      "word": "the",
+      "startMs": 159480,
+      "endMs": 159600
+    },
+    {
+      "word": "physical",
+      "startMs": 159600,
+      "endMs": 159960
+    },
+    {
+      "word": "fatigue.",
+      "startMs": 159960,
+      "endMs": 160300
+    },
+    {
+      "word": "It",
+      "startMs": 160920,
+      "endMs": 161020
+    },
+    {
+      "word": "focuses",
+      "startMs": 161020,
+      "endMs": 161340
+    },
+    {
+      "word": "inherently",
+      "startMs": 161340,
+      "endMs": 161800
+    },
+    {
+      "word": "on",
+      "startMs": 161800,
+      "endMs": 162220
+    },
+    {
+      "word": "immediate",
+      "startMs": 162220,
+      "endMs": 162560
+    },
+    {
+      "word": "goal.",
+      "startMs": 162560,
+      "endMs": 162920
+    },
+    {
+      "word": "The",
+      "startMs": 163460,
+      "endMs": 163540
+    },
+    {
+      "word": "Argentine",
+      "startMs": 163540,
+      "endMs": 164100
+    },
+    {
+      "word": "team",
+      "startMs": 164100,
+      "endMs": 164460
+    },
+    {
+      "word": "did",
+      "startMs": 164460,
+      "endMs": 164620
+    },
+    {
+      "word": "not",
+      "startMs": 164620,
+      "endMs": 164800
+    },
+    {
+      "word": "win",
+      "startMs": 164800,
+      "endMs": 165040
+    },
+    {
+      "word": "by",
+      "startMs": 165040,
+      "endMs": 165340
+    },
+    {
+      "word": "accident.",
+      "startMs": 165340,
+      "endMs": 165740
+    },
+    {
+      "word": "They",
+      "startMs": 166260,
+      "endMs": 166440
+    },
+    {
+      "word": "entered",
+      "startMs": 166440,
+      "endMs": 166740
+    },
+    {
+      "word": "a",
+      "startMs": 166740,
+      "endMs": 166880
+    },
+    {
+      "word": "collective",
+      "startMs": 166880,
+      "endMs": 167240
+    },
+    {
+      "word": "clutch",
+      "startMs": 167240,
+      "endMs": 167460
+    },
+    {
+      "word": "state",
+      "startMs": 167460,
+      "endMs": 167800
+    },
+    {
+      "word": "where",
+      "startMs": 167800,
+      "endMs": 168020
+    },
+    {
+      "word": "the",
+      "startMs": 168020,
+      "endMs": 168140
+    },
+    {
+      "word": "pressure",
+      "startMs": 168140,
+      "endMs": 168460
+    },
+    {
+      "word": "became",
+      "startMs": 168460,
+      "endMs": 168820
+    },
+    {
+      "word": "fuel.",
+      "startMs": 168820,
+      "endMs": 169180
+    },
+    {
+      "word": "Why",
+      "startMs": 169180,
+      "endMs": 169820
+    },
+    {
+      "word": "do",
+      "startMs": 169820,
+      "endMs": 169920
+    },
+    {
+      "word": "some",
+      "startMs": 169920,
+      "endMs": 170140
+    },
+    {
+      "word": "teams",
+      "startMs": 170140,
+      "endMs": 170500
+    },
+    {
+      "word": "fold",
+      "startMs": 170500,
+      "endMs": 170780
+    },
+    {
+      "word": "under",
+      "startMs": 170780,
+      "endMs": 171060
+    },
+    {
+      "word": "this",
+      "startMs": 171060,
+      "endMs": 171260
+    },
+    {
+      "word": "pressure",
+      "startMs": 171260,
+      "endMs": 171600
+    },
+    {
+      "word": "while",
+      "startMs": 171600,
+      "endMs": 171960
+    },
+    {
+      "word": "others",
+      "startMs": 171960,
+      "endMs": 172260
+    },
+    {
+      "word": "thrive?",
+      "startMs": 172260,
+      "endMs": 172720
+    },
+    {
+      "word": "This",
+      "startMs": 173280,
+      "endMs": 173560
+    },
+    {
+      "word": "is",
+      "startMs": 173560,
+      "endMs": 173660
+    },
+    {
+      "word": "not",
+      "startMs": 173660,
+      "endMs": 173860
+    },
+    {
+      "word": "just",
+      "startMs": 173860,
+      "endMs": 174100
+    },
+    {
+      "word": "about",
+      "startMs": 174100,
+      "endMs": 174360
+    },
+    {
+      "word": "soccer.",
+      "startMs": 174360,
+      "endMs": 174740
+    },
+    {
+      "word": "It",
+      "startMs": 175300,
+      "endMs": 175380
+    },
+    {
+      "word": "is",
+      "startMs": 175380,
+      "endMs": 175500
+    },
+    {
+      "word": "a",
+      "startMs": 175500,
+      "endMs": 175600
+    },
+    {
+      "word": "mirror",
+      "startMs": 175600,
+      "endMs": 175820
+    },
+    {
+      "word": "of",
+      "startMs": 175820,
+      "endMs": 176100
+    },
+    {
+      "word": "your",
+      "startMs": 176100,
+      "endMs": 176200
+    },
+    {
+      "word": "own",
+      "startMs": 176200,
+      "endMs": 176440
+    },
+    {
+      "word": "evolutionary",
+      "startMs": 176440,
+      "endMs": 177060
+    },
+    {
+      "word": "history.",
+      "startMs": 177060,
+      "endMs": 177700
+    },
+    {
+      "word": "For",
+      "startMs": 178160,
+      "endMs": 178220
+    },
+    {
+      "word": "thousands",
+      "startMs": 178220,
+      "endMs": 178600
+    },
+    {
+      "word": "of",
+      "startMs": 178600,
+      "endMs": 178820
+    },
+    {
+      "word": "years,",
+      "startMs": 178820,
+      "endMs": 179140
+    },
+    {
+      "word": "your",
+      "startMs": 179520,
+      "endMs": 179620
+    },
+    {
+      "word": "ancestors",
+      "startMs": 179620,
+      "endMs": 180140
+    },
+    {
+      "word": "did",
+      "startMs": 180140,
+      "endMs": 180480
+    },
+    {
+      "word": "not",
+      "startMs": 180480,
+      "endMs": 180660
+    },
+    {
+      "word": "hunt",
+      "startMs": 180660,
+      "endMs": 180860
+    },
+    {
+      "word": "when",
+      "startMs": 180860,
+      "endMs": 181080
+    },
+    {
+      "word": "they",
+      "startMs": 181080,
+      "endMs": 181220
+    },
+    {
+      "word": "were",
+      "startMs": 181220,
+      "endMs": 181360
+    },
+    {
+      "word": "fresh.",
+      "startMs": 181360,
+      "endMs": 181640
+    },
+    {
+      "word": "They",
+      "startMs": 182220,
+      "endMs": 182360
+    },
+    {
+      "word": "hunted",
+      "startMs": 182360,
+      "endMs": 182600
+    },
+    {
+      "word": "when",
+      "startMs": 182600,
+      "endMs": 182820
+    },
+    {
+      "word": "they",
+      "startMs": 182820,
+      "endMs": 182960
+    },
+    {
+      "word": "were",
+      "startMs": 182960,
+      "endMs": 183060
+    },
+    {
+      "word": "starving",
+      "startMs": 183060,
+      "endMs": 183440
+    },
+    {
+      "word": "and",
+      "startMs": 183440,
+      "endMs": 183660
+    },
+    {
+      "word": "desperate.",
+      "startMs": 183660,
+      "endMs": 183960
+    },
+    {
+      "word": "Their",
+      "startMs": 184580,
+      "endMs": 184720
+    },
+    {
+      "word": "survival",
+      "startMs": 184720,
+      "endMs": 185100
+    },
+    {
+      "word": "depended",
+      "startMs": 185100,
+      "endMs": 185500
+    },
+    {
+      "word": "on",
+      "startMs": 185500,
+      "endMs": 185720
+    },
+    {
+      "word": "their",
+      "startMs": 185720,
+      "endMs": 185860
+    },
+    {
+      "word": "ability",
+      "startMs": 185860,
+      "endMs": 186220
+    },
+    {
+      "word": "to",
+      "startMs": 186220,
+      "endMs": 186480
+    },
+    {
+      "word": "run",
+      "startMs": 186480,
+      "endMs": 186680
+    },
+    {
+      "word": "down",
+      "startMs": 186680,
+      "endMs": 186960
+    },
+    {
+      "word": "prey",
+      "startMs": 186960,
+      "endMs": 187240
+    },
+    {
+      "word": "when",
+      "startMs": 187240,
+      "endMs": 187520
+    },
+    {
+      "word": "their",
+      "startMs": 187520,
+      "endMs": 187660
+    },
+    {
+      "word": "bodies",
+      "startMs": 187660,
+      "endMs": 187980
+    },
+    {
+      "word": "were",
+      "startMs": 187980,
+      "endMs": 188200
+    },
+    {
+      "word": "completely",
+      "startMs": 188200,
+      "endMs": 188640
+    },
+    {
+      "word": "spent.",
+      "startMs": 188640,
+      "endMs": 189020
+    },
+    {
+      "word": "The",
+      "startMs": 189560,
+      "endMs": 189620
+    },
+    {
+      "word": "human",
+      "startMs": 189620,
+      "endMs": 189860
+    },
+    {
+      "word": "brain",
+      "startMs": 189860,
+      "endMs": 190160
+    },
+    {
+      "word": "evolved",
+      "startMs": 190160,
+      "endMs": 190520
+    },
+    {
+      "word": "to",
+      "startMs": 190520,
+      "endMs": 190920
+    },
+    {
+      "word": "deliver",
+      "startMs": 190920,
+      "endMs": 191260
+    },
+    {
+      "word": "its",
+      "startMs": 191260,
+      "endMs": 191540
+    },
+    {
+      "word": "maximum",
+      "startMs": 191540,
+      "endMs": 192040
+    },
+    {
+      "word": "performance",
+      "startMs": 192040,
+      "endMs": 192600
+    },
+    {
+      "word": "when",
+      "startMs": 192600,
+      "endMs": 192940
+    },
+    {
+      "word": "desperate.",
+      "startMs": 192940,
+      "endMs": 193440
+    },
+    {
+      "word": "When",
+      "startMs": 193920,
+      "endMs": 194140
+    },
+    {
+      "word": "you",
+      "startMs": 194140,
+      "endMs": 194260
+    },
+    {
+      "word": "face",
+      "startMs": 194260,
+      "endMs": 194460
+    },
+    {
+      "word": "a",
+      "startMs": 194460,
+      "endMs": 194620
+    },
+    {
+      "word": "deadline",
+      "startMs": 194620,
+      "endMs": 194960
+    },
+    {
+      "word": "or",
+      "startMs": 194960,
+      "endMs": 195440
+    },
+    {
+      "word": "a",
+      "startMs": 195440,
+      "endMs": 195560
+    },
+    {
+      "word": "crisis,",
+      "startMs": 195560,
+      "endMs": 195860
+    },
+    {
+      "word": "your",
+      "startMs": 196340,
+      "endMs": 196400
+    },
+    {
+      "word": "brain",
+      "startMs": 196400,
+      "endMs": 196680
+    },
+    {
+      "word": "taps",
+      "startMs": 196680,
+      "endMs": 196980
+    },
+    {
+      "word": "into",
+      "startMs": 196980,
+      "endMs": 197280
+    },
+    {
+      "word": "this",
+      "startMs": 197280,
+      "endMs": 197480
+    },
+    {
+      "word": "network.",
+      "startMs": 197480,
+      "endMs": 197780
+    },
+    {
+      "word": "It",
+      "startMs": 197780,
+      "endMs": 198380
+    },
+    {
+      "word": "is",
+      "startMs": 198380,
+      "endMs": 198500
+    },
+    {
+      "word": "the",
+      "startMs": 198500,
+      "endMs": 198620
+    },
+    {
+      "word": "reason",
+      "startMs": 198620,
+      "endMs": 198900
+    },
+    {
+      "word": "you",
+      "startMs": 198900,
+      "endMs": 199080
+    },
+    {
+      "word": "find",
+      "startMs": 199080,
+      "endMs": 199320
+    },
+    {
+      "word": "focus",
+      "startMs": 199320,
+      "endMs": 199720
+    },
+    {
+      "word": "when",
+      "startMs": 199720,
+      "endMs": 200060
+    },
+    {
+      "word": "all",
+      "startMs": 200060,
+      "endMs": 200360
+    },
+    {
+      "word": "hope",
+      "startMs": 200360,
+      "endMs": 200580
+    },
+    {
+      "word": "seems",
+      "startMs": 200580,
+      "endMs": 200980
+    },
+    {
+      "word": "lost.",
+      "startMs": 200980,
+      "endMs": 201420
+    },
+    {
+      "word": "Are",
+      "startMs": 201800,
+      "endMs": 202000
+    },
+    {
+      "word": "we",
+      "startMs": 202000,
+      "endMs": 202160
+    },
+    {
+      "word": "built",
+      "startMs": 202160,
+      "endMs": 202420
+    },
+    {
+      "word": "to",
+      "startMs": 202420,
+      "endMs": 202580
+    },
+    {
+      "word": "succeed",
+      "startMs": 202580,
+      "endMs": 202860
+    },
+    {
+      "word": "only",
+      "startMs": 202860,
+      "endMs": 203280
+    },
+    {
+      "word": "when",
+      "startMs": 203280,
+      "endMs": 203560
+    },
+    {
+      "word": "failure",
+      "startMs": 203560,
+      "endMs": 203880
+    },
+    {
+      "word": "is",
+      "startMs": 203880,
+      "endMs": 204140
+    },
+    {
+      "word": "the",
+      "startMs": 204140,
+      "endMs": 204280
+    },
+    {
+      "word": "only",
+      "startMs": 204280,
+      "endMs": 204540
+    },
+    {
+      "word": "other",
+      "startMs": 204540,
+      "endMs": 204880
+    },
+    {
+      "word": "option?",
+      "startMs": 204880,
+      "endMs": 205280
+    },
+    {
+      "word": "So,",
+      "startMs": 205820,
+      "endMs": 206100
+    },
+    {
+      "word": "when",
+      "startMs": 206440,
+      "endMs": 206600
+    },
+    {
+      "word": "you",
+      "startMs": 206600,
+      "endMs": 206720
+    },
+    {
+      "word": "watch",
+      "startMs": 206720,
+      "endMs": 206960
+    },
+    {
+      "word": "Argentina",
+      "startMs": 206960,
+      "endMs": 207400
+    },
+    {
+      "word": "defeat",
+      "startMs": 207400,
+      "endMs": 207820
+    },
+    {
+      "word": "their",
+      "startMs": 207820,
+      "endMs": 208080
+    },
+    {
+      "word": "rivals",
+      "startMs": 208080,
+      "endMs": 208340
+    },
+    {
+      "word": "in",
+      "startMs": 208340,
+      "endMs": 208540
+    },
+    {
+      "word": "the",
+      "startMs": 208540,
+      "endMs": 208640
+    },
+    {
+      "word": "final",
+      "startMs": 208640,
+      "endMs": 208880
+    },
+    {
+      "word": "seconds,",
+      "startMs": 208880,
+      "endMs": 209320
+    },
+    {
+      "word": "you",
+      "startMs": 209760,
+      "endMs": 209840
+    },
+    {
+      "word": "are",
+      "startMs": 209840,
+      "endMs": 209900
+    },
+    {
+      "word": "not",
+      "startMs": 209900,
+      "endMs": 210040
+    },
+    {
+      "word": "just",
+      "startMs": 210040,
+      "endMs": 210260
+    },
+    {
+      "word": "watching",
+      "startMs": 210260,
+      "endMs": 210600
+    },
+    {
+      "word": "a",
+      "startMs": 210600,
+      "endMs": 210720
+    },
+    {
+      "word": "sport.",
+      "startMs": 210720,
+      "endMs": 210940
+    },
+    {
+      "word": "You",
+      "startMs": 211500,
+      "endMs": 211620
+    },
+    {
+      "word": "are",
+      "startMs": 211620,
+      "endMs": 211720
+    },
+    {
+      "word": "witnessing",
+      "startMs": 211720,
+      "endMs": 212000
+    },
+    {
+      "word": "a",
+      "startMs": 212000,
+      "endMs": 212400
+    },
+    {
+      "word": "deep",
+      "startMs": 212400,
+      "endMs": 212620
+    },
+    {
+      "word": "evolutionary",
+      "startMs": 212620,
+      "endMs": 213200
+    },
+    {
+      "word": "design.",
+      "startMs": 213200,
+      "endMs": 214000
+    },
+    {
+      "word": "The",
+      "startMs": 214500,
+      "endMs": 214640
+    },
+    {
+      "word": "same",
+      "startMs": 214640,
+      "endMs": 214900
+    },
+    {
+      "word": "brain",
+      "startMs": 214900,
+      "endMs": 215140
+    },
+    {
+      "word": "that",
+      "startMs": 215140,
+      "endMs": 215380
+    },
+    {
+      "word": "saved",
+      "startMs": 215380,
+      "endMs": 215680
+    },
+    {
+      "word": "your",
+      "startMs": 215680,
+      "endMs": 215900
+    },
+    {
+      "word": "ancestors",
+      "startMs": 215900,
+      "endMs": 216240
+    },
+    {
+      "word": "from",
+      "startMs": 216240,
+      "endMs": 216680
+    },
+    {
+      "word": "starvation",
+      "startMs": 216680,
+      "endMs": 217420
+    },
+    {
+      "word": "is",
+      "startMs": 217420,
+      "endMs": 217660
+    },
+    {
+      "word": "now",
+      "startMs": 217660,
+      "endMs": 217900
+    },
+    {
+      "word": "winning",
+      "startMs": 217900,
+      "endMs": 218180
+    },
+    {
+      "word": "a",
+      "startMs": 218180,
+      "endMs": 218420
+    },
+    {
+      "word": "World",
+      "startMs": 218420,
+      "endMs": 218640
+    },
+    {
+      "word": "Cup",
+      "startMs": 218640,
+      "endMs": 218880
+    },
+    {
+      "word": "match.",
+      "startMs": 218880,
+      "endMs": 219180
+    },
+    {
+      "word": "In",
+      "startMs": 219820,
+      "endMs": 219920
+    },
+    {
+      "word": "July,",
+      "startMs": 219920,
+      "endMs": 220160
+    },
+    {
+      "word": "2026,",
+      "startMs": 220280,
+      "endMs": 221380
+    },
+    {
+      "word": "you",
+      "startMs": 221760,
+      "endMs": 221840
+    },
+    {
+      "word": "watched",
+      "startMs": 221840,
+      "endMs": 222120
+    },
+    {
+      "word": "Argentina",
+      "startMs": 222120,
+      "endMs": 222600
+    },
+    {
+      "word": "defy",
+      "startMs": 222600,
+      "endMs": 223080
+    },
+    {
+      "word": "all",
+      "startMs": 223080,
+      "endMs": 223380
+    },
+    {
+      "word": "odds",
+      "startMs": 223380,
+      "endMs": 223680
+    },
+    {
+      "word": "to",
+      "startMs": 223680,
+      "endMs": 223840
+    },
+    {
+      "word": "reach",
+      "startMs": 223840,
+      "endMs": 224000
+    },
+    {
+      "word": "the",
+      "startMs": 224000,
+      "endMs": 224220
+    },
+    {
+      "word": "World",
+      "startMs": 224220,
+      "endMs": 224440
+    },
+    {
+      "word": "Cup",
+      "startMs": 224440,
+      "endMs": 224720
+    },
+    {
+      "word": "Final.",
+      "startMs": 224720,
+      "endMs": 225120
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/fifa_90th_minute_project_8/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

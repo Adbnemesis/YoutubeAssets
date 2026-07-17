@@ -1,0 +1,676 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#2D5FBF",
+    "accentColor": "#F5820D",
+    "surfaceColor": "#FFFFFF",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/silent_room_project_1/images/[00:00]_image_1.png",
+      "in_seconds": 0,
+      "out_seconds": 5,
+      "animation": "ken-burns",
+      "text": "Right now, you are surrounded by constant noise, the hum of your computer, the distant rumble"
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/silent_room_project_1/images/[00:05]_image_1.png",
+      "in_seconds": 5,
+      "out_seconds": 9,
+      "animation": "zoom-in",
+      "text": "of traffic merges with the soft vibration of a phone in your pocket to create a constant"
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/silent_room_project_1/images/[00:09]_image_1.png",
+      "in_seconds": 9,
+      "out_seconds": 11,
+      "animation": "none",
+      "text": "digital wall."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/silent_room_project_1/images/[00:11]_image_1.png",
+      "in_seconds": 11,
+      "out_seconds": 13,
+      "animation": "none",
+      "text": "You probably think you crave absolute peace."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/silent_room_project_1/images/[00:13]_image_1.png",
+      "in_seconds": 13,
+      "out_seconds": 17,
+      "animation": "zoom-out",
+      "text": "But what if silence is the one thing your brain cannot handle?"
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/silent_room_project_1/images/[00:17]_image_1.png",
+      "in_seconds": 17,
+      "out_seconds": 21,
+      "animation": "parallax",
+      "text": "If you were placed in a perfectly quiet room, you wouldn't feel relaxed."
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/silent_room_project_1/images/[00:21]_image_1.png",
+      "in_seconds": 21,
+      "out_seconds": 22,
+      "animation": "none",
+      "text": "You would feel terrified."
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/silent_room_project_1/images/[00:22]_image_1.png",
+      "in_seconds": 22,
+      "out_seconds": 25,
+      "animation": "none",
+      "text": "Your own mind would quickly turn against you."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/silent_room_project_1/images/[00:25]_image_1.png",
+      "in_seconds": 25,
+      "out_seconds": 27,
+      "animation": "none",
+      "text": "Why is silence so deeply unsettling?"
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/silent_room_project_1/images/[00:27]_image_1.png",
+      "in_seconds": 27,
+      "out_seconds": 29,
+      "animation": "none",
+      "text": "You think you want to escape the chaos."
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/silent_room_project_1/images/[00:29]_image_1.png",
+      "in_seconds": 29,
+      "out_seconds": 32,
+      "animation": "none",
+      "text": "You dream of a quiet cabin into woods."
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/silent_room_project_1/images/[00:32]_image_1.png",
+      "in_seconds": 32,
+      "out_seconds": 37,
+      "animation": "pan-right",
+      "text": "But when the noise actually stops, the silence does not feel like a warm hug, but rather"
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/silent_room_project_1/images/[00:37]_image_1.png",
+      "in_seconds": 37,
+      "out_seconds": 38,
+      "animation": "none",
+      "text": "like a sudden threat."
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/silent_room_project_1/images/[00:38]_image_1.png",
+      "in_seconds": 38,
+      "out_seconds": 43,
+      "animation": "ken-burns",
+      "text": "Without external input, your ears begin to amplify the internal sounds of your body."
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/silent_room_project_1/images/[00:43]_image_1.png",
+      "in_seconds": 43,
+      "out_seconds": 45,
+      "animation": "none",
+      "text": "You hear the pulsing of your blood."
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/silent_room_project_1/images/[00:45]_image_1.png",
+      "in_seconds": 45,
+      "out_seconds": 47,
+      "animation": "none",
+      "text": "You hear the high-pitched ring of your own nervous system."
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/silent_room_project_1/images/[00:47]_image_1.png",
+      "in_seconds": 47,
+      "out_seconds": 51,
+      "animation": "zoom-in",
+      "text": "You realize that true silence is never actually quiet."
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/silent_room_project_1/images/[00:51]_image_1.png",
+      "in_seconds": 51,
+      "out_seconds": 53,
+      "animation": "none",
+      "text": "Why does the lack of sound feel so loud?"
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/silent_room_project_1/images/[00:53]_image_1.png",
+      "in_seconds": 53,
+      "out_seconds": 58,
+      "animation": "zoom-out",
+      "text": "To find the answer, you must look at a famous experiment at the University of Virginia."
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/silent_room_project_1/images/[00:58]_image_1.png",
+      "in_seconds": 58,
+      "out_seconds": 61,
+      "animation": "none",
+      "text": "Timothy Wilson designed a deceptively simple test."
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/silent_room_project_1/images/[01:01]_image_1.png",
+      "in_seconds": 61,
+      "out_seconds": 67,
+      "animation": "parallax",
+      "text": "He placed volunteers in an empty room for 15 minutes with absolutely no distractions or"
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/silent_room_project_1/images/[01:07]_image_1.png",
+      "in_seconds": 67,
+      "out_seconds": 69,
+      "animation": "none",
+      "text": "devices to occupy them."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/silent_room_project_1/images/[01:09]_image_1.png",
+      "in_seconds": 69,
+      "out_seconds": 72,
+      "animation": "none",
+      "text": "The only object in the room was a small button connected to a battery."
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/silent_room_project_1/images/[01:12]_image_1.png",
+      "in_seconds": 72,
+      "out_seconds": 76,
+      "animation": "pan-right",
+      "text": "If they pressed it, they would receive a painful electric shock."
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/silent_room_project_1/images/[01:16]_image_1.png",
+      "in_seconds": 76,
+      "out_seconds": 77,
+      "animation": "none",
+      "text": "Avoid the isolation."
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/silent_room_project_1/images/[01:17]_image_1.png",
+      "in_seconds": 77,
+      "out_seconds": 81,
+      "animation": "ken-burns",
+      "text": "The volunteers had stated they would pay money to avoid being shocked."
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/silent_room_project_1/images/[01:21]_image_1.png",
+      "in_seconds": 81,
+      "out_seconds": 84,
+      "animation": "none",
+      "text": "Would you choose physical pain over your own thoughts?"
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/silent_room_project_1/images/[01:24]_image_1.png",
+      "in_seconds": 84,
+      "out_seconds": 86,
+      "animation": "none",
+      "text": "The results shocked the scientific community."
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/silent_room_project_1/images/[01:26]_image_1.png",
+      "in_seconds": 86,
+      "out_seconds": 91,
+      "animation": "zoom-in",
+      "text": "67% of the men chose to shock themselves rather than sit in silence."
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/silent_room_project_1/images/[01:31]_image_1.png",
+      "in_seconds": 91,
+      "out_seconds": 97,
+      "animation": "zoom-out",
+      "text": "One participant even pressed the button 190 times during his 15 minutes of isolation."
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/silent_room_project_1/images/[01:37]_image_1.png",
+      "in_seconds": 97,
+      "out_seconds": 101,
+      "animation": "parallax",
+      "text": "They preferred physical torture to the quiet of their own minds."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/silent_room_project_1/images/[01:41]_image_1.png",
+      "in_seconds": 101,
+      "out_seconds": 104,
+      "animation": "none",
+      "text": "Your brain is desperately afraid of being left alone."
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/silent_room_project_1/images/[01:44]_image_1.png",
+      "in_seconds": 104,
+      "out_seconds": 107,
+      "animation": "none",
+      "text": "Why does your brain fear its own company so much?"
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/silent_room_project_1/images/[01:47]_image_1.png",
+      "in_seconds": 107,
+      "out_seconds": 110,
+      "animation": "none",
+      "text": "To understand this fear, you must look inside your head."
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/silent_room_project_1/images/[01:50]_image_1.png",
+      "in_seconds": 110,
+      "out_seconds": 113,
+      "animation": "none",
+      "text": "When you stop doing tasks, your brain does not turn off."
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/silent_room_project_1/images/[01:53]_image_1.png",
+      "in_seconds": 113,
+      "out_seconds": 120,
+      "animation": "pan-right",
+      "text": "Instead, a massive hidden network of neurons immediately fires up to take control of your consciousness."
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/silent_room_project_1/images/[02:00]_image_1.png",
+      "in_seconds": 120,
+      "out_seconds": 124,
+      "animation": "ken-burns",
+      "text": "Marcus Racial discovered this system and named it the default mode network."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/silent_room_project_1/images/[02:04]_image_1.png",
+      "in_seconds": 124,
+      "out_seconds": 128,
+      "animation": "zoom-in",
+      "text": "He called its constant activity the dark energy of the brain."
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/silent_room_project_1/images/[02:08]_image_1.png",
+      "in_seconds": 128,
+      "out_seconds": 131,
+      "animation": "none",
+      "text": "It is the neurological stage for your inner monologue."
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/silent_room_project_1/images/[02:11]_image_1.png",
+      "in_seconds": 131,
+      "out_seconds": 133,
+      "animation": "none",
+      "text": "It replays your past mistakes,"
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/silent_room_project_1/images/[02:13]_image_1.png",
+      "in_seconds": 133,
+      "out_seconds": 136,
+      "animation": "none",
+      "text": "rehearses your future anxieties and constructs your sense of self."
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/silent_room_project_1/images/[02:16]_image_1.png",
+      "in_seconds": 136,
+      "out_seconds": 139,
+      "animation": "none",
+      "text": "How do you escape a theater when you are the only actor?"
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/silent_room_project_1/images/[02:19]_image_1.png",
+      "in_seconds": 139,
+      "out_seconds": 142,
+      "animation": "none",
+      "text": "This network is incredibly power-hungry."
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/silent_room_project_1/images/[02:22]_image_1.png",
+      "in_seconds": 142,
+      "out_seconds": 146,
+      "animation": "zoom-out",
+      "text": "Even when you are resting, your brain consumes 20% of your body's energy."
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/silent_room_project_1/images/[02:26]_image_1.png",
+      "in_seconds": 146,
+      "out_seconds": 153,
+      "animation": "parallax",
+      "text": "Most of that energy is used to keep the default mode network running as it spins stories to make sense of the world."
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/silent_room_project_1/images/[02:33]_image_1.png",
+      "in_seconds": 153,
+      "out_seconds": 156,
+      "animation": "none",
+      "text": "In a silent room, these stories become overwhelming."
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/silent_room_project_1/images/[02:36]_image_1.png",
+      "in_seconds": 156,
+      "out_seconds": 159,
+      "animation": "none",
+      "text": "Your brain starts searching for threats in the silence."
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/silent_room_project_1/images/[02:39]_image_1.png",
+      "in_seconds": 159,
+      "out_seconds": 160,
+      "animation": "none",
+      "text": "What is it trying to protect you from?"
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/silent_room_project_1/images/[02:40]_image_1.png",
+      "in_seconds": 160,
+      "out_seconds": 164,
+      "animation": "pan-right",
+      "text": "This restlessness is a relic of your evolutionary survival."
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/silent_room_project_1/images/[02:44]_image_1.png",
+      "in_seconds": 164,
+      "out_seconds": 167,
+      "animation": "none",
+      "text": "For your ancestors, silence was never a luxury."
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/silent_room_project_1/images/[02:47]_image_1.png",
+      "in_seconds": 167,
+      "out_seconds": 173,
+      "animation": "ken-burns",
+      "text": "In the ancient African savannah, a quiet forest meant a predator was lurking in the shadows."
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/silent_room_project_1/images/[02:53]_image_1.png",
+      "in_seconds": 173,
+      "out_seconds": 177,
+      "animation": "zoom-in",
+      "text": "Your ancestors had to constantly scan their surroundings to stay alive."
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/silent_room_project_1/images/[02:57]_image_1.png",
+      "in_seconds": 177,
+      "out_seconds": 182,
+      "animation": "zoom-out",
+      "text": "A brain that sat quietly and a cave did not survive to pass on its genes."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/silent_room_project_1/images/[03:02]_image_1.png",
+      "in_seconds": 182,
+      "out_seconds": 184,
+      "animation": "none",
+      "text": "You are the descendant of the paranoid."
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/silent_room_project_1/images/[03:04]_image_1.png",
+      "in_seconds": 184,
+      "out_seconds": 188,
+      "animation": "parallax",
+      "text": "Can you really blame your brain for keeping you on edge in the modern world?"
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/silent_room_project_1/images/[03:08]_image_1.png",
+      "in_seconds": 188,
+      "out_seconds": 191,
+      "animation": "none",
+      "text": "You have found a way to escape this default mode network."
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/silent_room_project_1/images/[03:11]_image_1.png",
+      "in_seconds": 191,
+      "out_seconds": 192,
+      "animation": "none",
+      "text": "You use your phone."
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/silent_room_project_1/images/[03:12]_image_1.png",
+      "in_seconds": 192,
+      "out_seconds": 194,
+      "animation": "none",
+      "text": "You check social media."
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/silent_room_project_1/images/[03:14]_image_1.png",
+      "in_seconds": 194,
+      "out_seconds": 199,
+      "animation": "pan-right",
+      "text": "John Eastwood of York University has studied how this constant escape affects your mind."
+    },
+    {
+      "id": "scene_59",
+      "source": "projects/silent_room_project_1/images/[03:19]_image_1.png",
+      "in_seconds": 199,
+      "out_seconds": 203,
+      "animation": "ken-burns",
+      "text": "He discovered that when you constantly feed your brain digital stimulation,"
+    },
+    {
+      "id": "scene_60",
+      "source": "projects/silent_room_project_1/images/[03:23]_image_1.png",
+      "in_seconds": 203,
+      "out_seconds": 205,
+      "animation": "none",
+      "text": "you lose the ability to tolerate boredom."
+    },
+    {
+      "id": "scene_61",
+      "source": "projects/silent_room_project_1/images/[03:25]_image_1.png",
+      "in_seconds": 205,
+      "out_seconds": 208,
+      "animation": "none",
+      "text": "Your threshold for stimulation rises."
+    },
+    {
+      "id": "scene_62",
+      "source": "projects/silent_room_project_1/images/[03:28]_image_1.png",
+      "in_seconds": 208,
+      "out_seconds": 209,
+      "animation": "none",
+      "text": "You become addicted to the noise."
+    },
+    {
+      "id": "scene_63",
+      "source": "projects/silent_room_project_1/images/[03:29]_image_1.png",
+      "in_seconds": 209,
+      "out_seconds": 212,
+      "animation": "none",
+      "text": "Why are you so eager to escape your own mind?"
+    },
+    {
+      "id": "scene_64",
+      "source": "projects/silent_room_project_1/images/[03:32]_image_1.png",
+      "in_seconds": 212,
+      "out_seconds": 214,
+      "animation": "none",
+      "text": "But there is a twist to this ancient curse."
+    },
+    {
+      "id": "scene_65",
+      "source": "projects/silent_room_project_1/images/[03:34]_image_1.png",
+      "in_seconds": 214,
+      "out_seconds": 218,
+      "animation": "zoom-in",
+      "text": "Boredom researcher Sandy Mann discovered something surprising."
+    },
+    {
+      "id": "scene_66",
+      "source": "projects/silent_room_project_1/images/[03:38]_image_1.png",
+      "in_seconds": 218,
+      "out_seconds": 219,
+      "animation": "none",
+      "text": "When your brain is forced to wander,"
+    },
+    {
+      "id": "scene_67",
+      "source": "projects/silent_room_project_1/images/[03:39]_image_1.png",
+      "in_seconds": 219,
+      "out_seconds": 224,
+      "animation": "zoom-out",
+      "text": "it begins to make unexpected connections across different memories."
+    },
+    {
+      "id": "scene_68",
+      "source": "projects/silent_room_project_1/images/[03:44]_image_1.png",
+      "in_seconds": 224,
+      "out_seconds": 227,
+      "animation": "none",
+      "text": "Silence is the soil where original thought grows."
+    },
+    {
+      "id": "scene_69",
+      "source": "projects/silent_room_project_1/images/[03:47]_image_1.png",
+      "in_seconds": 227,
+      "out_seconds": 229,
+      "animation": "none",
+      "text": "But you must be willing to let the soil settle."
+    },
+    {
+      "id": "scene_70",
+      "source": "projects/silent_room_project_1/images/[03:49]_image_1.png",
+      "in_seconds": 229,
+      "out_seconds": 232,
+      "animation": "none",
+      "text": "Are you willing to face the silence centuries ago?"
+    },
+    {
+      "id": "scene_71",
+      "source": "projects/silent_room_project_1/images/[03:52]_image_1.png",
+      "in_seconds": 232,
+      "out_seconds": 234,
+      "animation": "none",
+      "text": "Blaise Pascal saw this truth."
+    },
+    {
+      "id": "scene_72",
+      "source": "projects/silent_room_project_1/images/[03:54]_image_1.png",
+      "in_seconds": 234,
+      "out_seconds": 238,
+      "animation": "parallax",
+      "text": "He wrote about humanity's inability to sit quietly in a room alone."
+    },
+    {
+      "id": "scene_73",
+      "source": "projects/silent_room_project_1/images/[03:58]_image_1.png",
+      "in_seconds": 238,
+      "out_seconds": 244,
+      "animation": "pan-right",
+      "text": "Today, you have more ways to avoid yourself than any other generation in human history."
+    },
+    {
+      "id": "scene_74",
+      "source": "projects/silent_room_project_1/images/[04:04]_image_1.png",
+      "in_seconds": 244,
+      "out_seconds": 246,
+      "animation": "none",
+      "text": "But you cannot escape yourself forever."
+    },
+    {
+      "id": "scene_75",
+      "source": "projects/silent_room_project_1/images/[04:06]_image_1.png",
+      "in_seconds": 246,
+      "out_seconds": 250,
+      "animation": "ken-burns",
+      "text": "The next time you reach for your phone to kill a quiet second, stop."
+    },
+    {
+      "id": "scene_76",
+      "source": "projects/silent_room_project_1/images/[04:10]_image_1.png",
+      "in_seconds": 250,
+      "out_seconds": 251,
+      "animation": "none",
+      "text": "Look at the black screen."
+    },
+    {
+      "id": "scene_77",
+      "source": "projects/silent_room_project_1/images/[04:11]_image_1.png",
+      "in_seconds": 251,
+      "out_seconds": 256,
+      "animation": "zoom-in",
+      "text": "You are running away from the most complex machine in the known universe because you fear the dark."
+    },
+    {
+      "id": "scene_78",
+      "source": "projects/silent_room_project_1/images/[04:16]_image_1.png",
+      "in_seconds": 256,
+      "out_seconds": 259,
+      "animation": "none",
+      "text": "You are choosing a digital shadow over your own depth."
+    },
+    {
+      "id": "scene_79",
+      "source": "projects/silent_room_project_1/images/[04:19]_image_1.png",
+      "in_seconds": 259,
+      "out_seconds": 262,
+      "animation": "none",
+      "text": "Right now, you are surrounded by constant noise."
+    },
+    {
+      "id": "scene_80",
+      "source": "projects/silent_room_project_1/images/[04:22]_image_1.png",
+      "in_seconds": 262,
+      "out_seconds": 265.643,
+      "animation": "none",
+      "text": "But perhaps, you are finally ready to sit in a silent room."
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/silent_room_project_1/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

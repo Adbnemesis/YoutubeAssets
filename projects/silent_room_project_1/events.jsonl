@@ -1,0 +1,25 @@
+{"ts": "2026-07-06T12:19:39.624477+00:00", "tool": "piper_tts", "event": "start", "output_path": "./projects/silent_room_project_1/voiceover.wav"}
+{"ts": "2026-07-06T12:19:50.981864+00:00", "tool": "piper_tts", "event": "finish", "output_path": "./projects/silent_room_project_1/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 11.36}
+{"ts": "2026-07-06T12:19:53.933378+00:00", "tool": "audio_probe", "event": "start"}
+{"ts": "2026-07-06T12:19:53.984083+00:00", "tool": "audio_probe", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.05}
+{"ts": "2026-07-06T12:20:59.072355+00:00", "tool": "piper_tts", "event": "start", "output_path": "./projects/silent_room_project_1/voiceover.wav"}
+{"ts": "2026-07-06T12:21:13.562965+00:00", "tool": "audio_probe", "event": "start"}
+{"ts": "2026-07-06T12:21:13.618722+00:00", "tool": "audio_probe", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.06}
+{"ts": "2026-07-06T12:21:18.968156+00:00", "tool": "piper_tts", "event": "start", "output_path": "./projects/silent_room_project_1/voiceover.wav"}
+{"ts": "2026-07-06T12:21:24.660473+00:00", "tool": "piper_tts", "event": "finish", "output_path": "./projects/silent_room_project_1/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 25.59}
+{"ts": "2026-07-06T12:21:31.232089+00:00", "tool": "audio_probe", "event": "start"}
+{"ts": "2026-07-06T12:21:31.591465+00:00", "tool": "audio_probe", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.36}
+{"ts": "2026-07-06T12:21:49.404105+00:00", "tool": "piper_tts", "event": "finish", "output_path": "./projects/silent_room_project_1/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 30.44}
+{"ts": "2026-07-06T12:21:53.238918+00:00", "tool": "audio_probe", "event": "start"}
+{"ts": "2026-07-06T12:21:53.265773+00:00", "tool": "audio_probe", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.03}
+{"ts": "2026-07-06T12:21:56.074051+00:00", "tool": "piper_tts", "event": "start", "output_path": "./projects/silent_room_project_1/voiceover.wav"}
+{"ts": "2026-07-06T12:22:22.667741+00:00", "tool": "piper_tts", "event": "finish", "output_path": "./projects/silent_room_project_1/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 26.59}
+{"ts": "2026-07-06T12:22:25.435327+00:00", "tool": "audio_probe", "event": "start"}
+{"ts": "2026-07-06T12:22:25.464459+00:00", "tool": "audio_probe", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.03}
+{"ts": "2026-07-06T12:23:13.961599+00:00", "tool": "piper_tts", "event": "start", "output_path": "./projects/silent_room_project_1/voiceover.wav"}
+{"ts": "2026-07-06T12:23:37.498554+00:00", "tool": "piper_tts", "event": "finish", "output_path": "./projects/silent_room_project_1/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 23.54}
+{"ts": "2026-07-06T12:23:39.358697+00:00", "tool": "audio_probe", "event": "start"}
+{"ts": "2026-07-06T12:23:39.387280+00:00", "tool": "audio_probe", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 0.03}
+{"ts": "2026-07-06T12:25:03.375975+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-06T12:25:16.319093+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 12.94}
+{"ts": "2026-07-07T15:52:30.759635+00:00", "tool": "pollinations_image", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/silent_room_project_1/images/[03:28]_image_1.png"}

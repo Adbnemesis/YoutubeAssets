@@ -1,0 +1,43 @@
+# YouTube Video Metadata: The 6-Week Summer That Accidentally Invented AI
+
+## Title Options
+1. The 6-Week Summer That Accidentally Invented AI
+2. How a Casual Summer Project Created Artificial Intelligence
+3. The Secret 1956 Meeting That Shaped the Future of AI
+
+## Video Description
+Right now, you live in a world shaped by machines. They write code, diagnose diseases, and drive cars. It feels like an unstoppable force that appeared out of nowhere—but the real answer is far stranger. Why did this world-altering technology start as a casual summer project?
+
+In this video, you will discover the hidden history of the 1956 Dartmouth Summer Research Project, where a small group of ambitious scientists set out to solve the human mind in just two months. Meet the legendary figures like John McCarthy, Marvin Minsky, and Claude Shannon, and learn how their dangerous overconfidence birthed the term "Artificial Intelligence." Explore the triumphs of the Logic Theorist and the crushing crash of the first AI Winter, reflecting on whether we are still repeating their 70-year-old mistakes today.
+
+🔔 Subscribe to OpenMontage for more deep dives into the hidden systems shaping our future!
+
+#ai #artificialintelligence #historyofai #technology #computerhistory #dartmouth1956 #johnmccarthy #marvinminsky #claudeshannon #evolution #remotion #doodle #history #science #education #openmontage
+
+---
+
+## Timestamps / Chapters
+00:00 - The Summer Project That Started It All
+00:34 - John McCarthy and Coining "AI"
+01:03 - Minsky, Shannon, and the Naivete of Giants
+01:26 - The Moravec Paradox: Why Logic is Easy
+01:53 - Newell, Simon, and the Logic Theorist
+02:23 - The Crash of the First AI Winter
+03:01 - Lessons from 1956 for Today
+
+---
+
+## Keywords & Tags
+history of ai, Dartmouth summer workshop 1956, John McCarthy artificial intelligence, Marvin Minsky neural networks, Claude Shannon information theory, Logic Theorist Newell Simon, AI winter, Moravec paradox, how AI was invented, history of artificial intelligence, artificial intelligence document, openmontage, doodle animation, tech history
+
+---
+
+## Thumbnail Prompts
+
+### Option 1: Brain Crash "THE AI ACCIDENT STORY"
+Hand-drawn 2D doodle cartoon illustration, flat colors, bold black outlines, slightly imperfect sketchy marker lines. A stick figure character is sitting cross-legged in a thinking pose, scratching his chin with a large question mark "?" in a cloud thought bubble above his head. Behind him, a giant computer monitor shows a comical cartoon brain and a robot head colliding with each other, causing small yellow sparks and cartoon stars to fly. Vibrant bright yellow background. At the top of the frame, there is massive text saying "THE AI ACCIDENT STORY" in a bold, rounded, blocky sans-serif font. The letters are filled with a light cream-yellow color and outlined with a thick, prominent black border. Flat style, no gradients, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style.
+
+### Option 2: The Frankenstein Machine "THE AI ACCIDENT STORY"
+Hand-drawn 2D doodle cartoon illustration, flat colors, bold black outlines, slightly imperfect sketchy marker lines. A stick figure character is standing on the left in a shocked pose with hands on his cheeks, looking at a cartoon whiteboard labeled "1956 PROJECT". On the board is a drawing of a giant, goofy stick-figure robot wearing a diaper, holding a baby bottle of yellow electricity, and having a question mark in a thought bubble. Vibrant bright orange background. At the top of the frame, there is massive text saying "THE AI ACCIDENT STORY" in a bold, rounded, blocky sans-serif font. The letters are filled with a light cream-yellow color and outlined with a thick, prominent black border. Flat style, no gradients, no photorealism, no 3D, 16:9 aspect ratio, educational YouTube explainer doodle style.
+
+

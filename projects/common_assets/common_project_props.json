@@ -1,0 +1,94 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#0F172A",
+    "primaryColor": "#7C3AED",
+    "accentColor": "#EC4899",
+    "surfaceColor": "#1E293B",
+    "textColor": "#F8FAFC",
+    "captionHighlightColor": "#22D3EE",
+    "captionBackgroundColor": "rgba(15, 23, 42, 0.75)",
+    "chartColors": [
+      "#7C3AED",
+      "#EC4899",
+      "#06B6D4",
+      "#F59E0B",
+      "#10B981",
+      "#EF4444"
+    ]
+  },
+  "motionRules": {
+    "thresholdSeconds": 4.0,
+    "longClipAnimations": [
+      "zoom-in",
+      "zoom-out",
+      "ken-burns",
+      "parallax",
+      "pan-left",
+      "pan-right"
+    ],
+    "shortClipAnimation": "none"
+  },
+  "sfxCatalog": {
+    "whoosh-short": {
+      "src": "projects/common_assets/sfx/whoosh-short.mp3",
+      "description": "Subtle, short whoosh. Ideal for fast movements, slide transitions, or quick character actions.",
+      "defaultVolume": 0.6
+    },
+    "whoosh-cinematic": {
+      "src": "projects/common_assets/sfx/whoosh-cinematic.mp3",
+      "description": "Deeper, more sweeping whoosh. Ideal for cinematic camera moves, shifts in tone, or abstract transitions.",
+      "defaultVolume": 0.6
+    },
+    "riser": {
+      "src": "projects/common_assets/sfx/riser.mp3",
+      "description": "Gradual tension riser. Perfect for building drama, anxiety, or leading up to a major reveal.",
+      "defaultVolume": 0.5
+    },
+    "impact-bass-1": {
+      "src": "projects/common_assets/sfx/impact-bass-1.mp3",
+      "description": "Heavy bass hit. Best for sudden shocking statements, dark warnings, or scientific graph spikes.",
+      "defaultVolume": 0.7
+    },
+    "impact-bass-2": {
+      "src": "projects/common_assets/sfx/impact-bass-2.mp3",
+      "description": "Deep resonance bass impact. Used for locking in core discoveries, psychologist name reveals, or closing arguments.",
+      "defaultVolume": 0.7
+    },
+    "glitch-1": {
+      "src": "projects/common_assets/sfx/glitch-1.mp3",
+      "description": "Disruption or record-scratch analog effect. Great for ironic turns, rude waiter scenarios, or mental blockages.",
+      "defaultVolume": 0.6
+    },
+    "notification": {
+      "src": "projects/common_assets/sfx/notification.mp3",
+      "description": "Modern phone ping swarm. Best for representing digital distraction, emails, or social media notifications.",
+      "defaultVolume": 0.5
+    },
+    "chime": {
+      "src": "projects/common_assets/sfx/chime.mp3",
+      "description": "Bright crystal chime. Excellent for positive realizations, 'superpower' claims, or happy brain structures.",
+      "defaultVolume": 0.7
+    },
+    "sparkle": {
+      "src": "projects/common_assets/sfx/sparkle.mp3",
+      "description": "Shimmering, hopeful finish sound. Ideal for concluding slides, calls to action, or end screens.",
+      "defaultVolume": 0.7
+    },
+    "cash-register": {
+      "src": "projects/common_assets/sfx/cash-register.mp3",
+      "description": "Classic register ring and cha-ching sound. Ideal for money, grants, funding, or transactional moments.",
+      "defaultVolume": 0.5
+    },
+    "clock-ticking": {
+      "src": "projects/common_assets/sfx/clock-ticking.mp3",
+      "description": "Close-up analog clock ticking. Ideal for build-up, passing of time, deadlines, or historical pacing.",
+      "defaultVolume": 0.4
+    },
+    "anime-wow": {
+      "src": "projects/common_assets/sfx/anime-wow.mp3",
+      "description": "Meme high-pitched vocal wow expression. Ideal for surprises, highlights, or comedic realizations.",
+      "defaultVolume": 0.4
+    }
+  }
+}

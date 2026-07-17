@@ -1,0 +1,72 @@
+# Project 2: Storyboard Prompts Reference
+
+This file contains the exact timestamps and image generation prompts for Project 2.
+
+## 00:00 - 00:50 (Completed)
+- `[00:00]_image_1.png` - Modern stick figure talking, sound wave lines coming out
+- `[00:03]_image_1.png` - Vocal cords dancing diagram with musical notes, throat cross-section
+- `[00:06]_image_1.png` - Split screen: modern figure confused vs caveman shouting, "99% OF HISTORY" text
+- `[00:13]_image_1.png` - Caveman speaking a chaotic cloud of scribbles and abstract shapes
+- `[00:16]_image_1.png` - Concept frame: giant question mark in a circle of four ancient skulls, "FIRST SOUNDS?" text
+- `[00:21]_image_1.png` - Neanderthal scratching head, thought bubble saying "GRUNT!"
+- `[00:23]_image_1.png` - Ape-like ancestor screaming on tree branch, yellow arrow labeled "SCREECH"
+- `[00:25]_image_1.png` - Underground layers diagram showing fossilized skull and throat bones, magnifying glass
+- `[00:33]_image_1.png` - Scientist pointing to sound wave waveform on computer screen
+- `[00:36]_image_1.png` - Hourglass in center, skull dissolving into sand, "100,000 YEARS" text
+- `[00:40]_image_1.png` - Stick figure pointing to its highlighted neck/throat area
+- `[00:44]_image_1.png` - Close-up of U-shaped bone, yellow arrow labeled "HYOID BONE"
+- `[00:46]_image_1.png` - Mouth jaw diagram, red tongue anchored by U-shaped hyoid bone
+- `[00:50]_image_1.png` - Gloved hand holding tiny hyoid fossil, calendar showing year 1989
+
+### 00:56 - 03:42 (Completed)
+- `[00:56]_image_1.png` - Split comparison: Neanderthal speech bubble "?" vs modern figure "HELLO?"
+- `[00:57]_image_1.jpg` - Elderly male scientist stick figure with glasses shaking head, red bubble saying "NO!"
+- `[01:01]_image_1.png` - Throat comparison diagram: Neanderthal (SHORT) vs modern human (LONG)
+- `[01:04]_image_1.png` - Cross-section showing long flat Neanderthal tongue in mouth cavity
+- `[01:11]_image_1.png` - Neanderthal looking frustrated, giant letters A, I, U crossed out in red no-symbols
+- `[01:14]_image_1.png` - Modern figure trying to speak, speech bubble containing "PL_S_ H_LP M_!"
+- `[01:18]_image_1.png` - Scientist Dr. Robert McCarthy pointing at speaker box emitting sound waves
+- `[01:22]_image_1.png` - Computer monitor showing 3D wireframe of Neanderthal throat/skull
+- `[01:25]_image_1.png` - Typing hands, code screen showing giant letter "E" in quotes
+- `[01:32]_image_1.png` - Giant speaker box, sound waves labeled "BOOM" crossed out in red no-symbol
+- `[01:34]_image_1.png` - Modern stick figure cupping hand to ear, giant question mark "?"
+- `[01:36]_image_1.png` - Neanderthal speaking, tiny squeaking mouse holding microphone floats out of mouth
+- `[01:38]_image_1.png` - Modern figure shouting loudly, red sound waves saying "E!!!"
+- `[01:41]_image_1.png` - Throat diagram: modern human (orange glow, musical notes) vs Neanderthal (crossed out)
+- `[01:46]_image_1.png` - Neanderthal speaking, modern figures laughing hysterically, tears flying
+- `[01:48]_image_1.png` - Face-to-face comparison: modern figure has thought bubble with laughing face and "?"
+- `[01:51]_image_1.png` - Black horizontal arrow pointing left, representing journey back in time
+- `[01:53]_image_1.png` - Early hominid figure with giant bulging neck/throat air sac
+- `[01:56]_image_1.png` - Scientist Dr. Bart de Boer pointing at ape throat diagram with large blue "AIR SAC"
+- `[02:06]_image_1.png` - Chimpanzee sitting on tree branch, neck air sac inflated, screaming loud calls
+- `[02:09]_image_1.png` - Large question mark "?", cartoon air sac shown as fading dashed outline shrinking
+- `[02:11]_image_1.png` - Ape shouting, sound waves magnified through yellow megaphone labeled "SUBWOOFER"
+- `[02:13]_image_1.png` - Ape with throat sac shaped like subwoofer speaker, bass lines vibrating
+- `[02:16]_image_1.png` - Hominid shouting warning from cliff, group at distance alert, predator shadow labeled "DANGER"
+- `[02:22]_image_1.jpg` - Speech bubble showing words RUN, LION, FIRE overlapping into a messy blurry blob
+- `[02:24]_image_1.jpg` - Stick figure looking frustrated, speech bubble showing words tangled like a ball of yarn
+- `[02:27]_image_1.jpg` - Giant key labeled "PRECISION" inserting into locked chest labeled "LANGUAGE"
+- `[02:29]_image_1.jpg` - Split screen: hand holding crossed-out "POWER" vs hand holding glowing "CLARITY" speaker
+- `[02:31]_image_1.jpg` - Hominid turned down giant volume dial, mouth zoomed in pronouncing "B, K, T"
+- `[02:37]_image_1.jpg` - Throat diagram showing padlock locking blue air sac shut, voice box active
+- `[02:39]_image_1.jpg` - Matchstick striking against box, spark shaped like speech bubble saying "HELLO"
+- `[02:41]_image_1.jpg` - Caveman sitting by campfire, empty blank thought bubble, quiet orange background
+- `[02:44]_image_1.jpg` - Two cavemen communicating using hand gestures and signals on green ground
+- `[02:47]_image_1.jpg` - Two cavemen on hunt patrol creeping in tall grass, pointing stealthily at mammoth outline
+- `[02:53]_image_1.jpg` - Caveman making signs hitting a giant black wall labeled "LIMITS"
+- `[02:55]_image_1.jpg` - Cartoon sun with sad face sinking, caveman looking lost in darkness
+- `[02:58]_image_1.jpg` - Caveman waving arms in pitch-black darkness, giant white question mark "?"
+- `[03:01]_image_1.jpg` - Hominid sitting down, hands busy chipping a grey hand axe with stone hammer
+- `[03:03]_image_1.jpg` - Caveman cupping hand to ear, listening to wind wave labeled "WHOOSH" and mimicking it
+- `[03:10]_image_1.jpg` - Hominid next to splashing blue river, speech bubble showing wind lines and water waves
+- `[03:12]_image_1.jpg` - Modern figure holding large sea shell to ear, caveman outline float inside
+- `[03:14]_image_1.jpg` - Throat diagram of modern human showing a glowing red gear system inside
+- `[03:16]_image_1.jpg` - Modern figure gasping in shock, faint grey caveman outline behind in same pose
+- `[03:18]_image_1.jpg` - Brain diagram: red arrow "PAIN" bypassing "LANGUAGE" and going directly into "EMOTION" core
+- `[03:26]_image_1.jpg` - Modern figure standing on wild savanna with single acacia tree and large red setting sun
+- `[03:28]_image_1.jpg` - Split screen: modern figure speaking into mic vs caveman shouting, question mark in center
+- `[03:30]_image_1.jpg` - Modern figure talking, throat cross-section showing vocal cords connected to backwards time dial
+- `[03:32]_image_1.jpg` - Modern figure on green ground holding phone, wire stretching to caveman holding other end
+- `[03:34]_image_1.jpg` - Chain of four ancestors holding hands, throat boxes highlighted with glowing yellow circle
+- `[03:40]_image_1.jpg` - Museum pedestals displaying stone hand axe labeled "STONE AXE" and speech bubble labeled "VOICE"
+- `[03:42]_image_1.jpg` - Modern stick figure talking, looking happy and relaxed, mirroring opening frame

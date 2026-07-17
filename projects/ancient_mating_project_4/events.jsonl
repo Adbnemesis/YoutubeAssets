@@ -1,0 +1,8 @@
+{"ts": "2026-07-10T12:25:35.359195+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_mating_project_4/voiceover.wav"}
+{"ts": "2026-07-10T12:26:00.670968+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_mating_project_4/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 25.31}
+{"ts": "2026-07-10T12:38:26.791055+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_mating_project_4/voiceover.wav"}
+{"ts": "2026-07-10T12:38:51.542254+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_mating_project_4/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 24.75}
+{"ts": "2026-07-10T12:39:22.841277+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-10T12:39:37.025538+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 14.18}
+{"ts": "2026-07-10T12:39:50.435874+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-10T12:40:04.476306+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 14.04}

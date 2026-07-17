@@ -1,0 +1,5446 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.42,
+      "text": "Tonight, when your eyes close, you will enter a private cinema.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 0.0,
+          "end": 0.32,
+          "probability": 0.6
+        },
+        {
+          "word": " when",
+          "start": 0.66,
+          "end": 0.76,
+          "probability": 0.992
+        },
+        {
+          "word": " your",
+          "start": 0.76,
+          "end": 0.9,
+          "probability": 0.968
+        },
+        {
+          "word": " eyes",
+          "start": 0.9,
+          "end": 1.14,
+          "probability": 0.978
+        },
+        {
+          "word": " close,",
+          "start": 1.14,
+          "end": 1.48,
+          "probability": 0.996
+        },
+        {
+          "word": " you",
+          "start": 1.98,
+          "end": 2.1,
+          "probability": 0.986
+        },
+        {
+          "word": " will",
+          "start": 2.1,
+          "end": 2.26,
+          "probability": 0.984
+        },
+        {
+          "word": " enter",
+          "start": 2.26,
+          "end": 2.52,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 2.52,
+          "end": 2.7,
+          "probability": 0.997
+        },
+        {
+          "word": " private",
+          "start": 2.7,
+          "end": 3.06,
+          "probability": 0.987
+        },
+        {
+          "word": " cinema.",
+          "start": 3.06,
+          "end": 3.42,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 4.04,
+      "end": 5.94,
+      "text": "Your brain will paint worlds from nothing.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 4.04,
+          "end": 4.24,
+          "probability": 0.99
+        },
+        {
+          "word": " brain",
+          "start": 4.24,
+          "end": 4.5,
+          "probability": 0.999
+        },
+        {
+          "word": " will",
+          "start": 4.5,
+          "end": 4.72,
+          "probability": 0.997
+        },
+        {
+          "word": " paint",
+          "start": 4.72,
+          "end": 5.02,
+          "probability": 0.998
+        },
+        {
+          "word": " worlds",
+          "start": 5.02,
+          "end": 5.34,
+          "probability": 0.979
+        },
+        {
+          "word": " from",
+          "start": 5.34,
+          "end": 5.58,
+          "probability": 0.997
+        },
+        {
+          "word": " nothing.",
+          "start": 5.58,
+          "end": 5.94,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 6.58,
+      "end": 11.82,
+      "text": "This nightly hallucination feels entirely personal, a secret theater built just for you.",
+      "words": [
+        {
+          "word": " This",
+          "start": 6.58,
+          "end": 6.88,
+          "probability": 0.992
+        },
+        {
+          "word": " nightly",
+          "start": 6.88,
+          "end": 7.3,
+          "probability": 0.943
+        },
+        {
+          "word": " hallucination",
+          "start": 7.3,
+          "end": 8.12,
+          "probability": 0.966
+        },
+        {
+          "word": " feels",
+          "start": 8.12,
+          "end": 8.4,
+          "probability": 0.996
+        },
+        {
+          "word": " entirely",
+          "start": 8.4,
+          "end": 8.98,
+          "probability": 0.999
+        },
+        {
+          "word": " personal,",
+          "start": 8.98,
+          "end": 9.58,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 9.92,
+          "end": 10.0,
+          "probability": 0.523
+        },
+        {
+          "word": " secret",
+          "start": 10.0,
+          "end": 10.36,
+          "probability": 0.997
+        },
+        {
+          "word": " theater",
+          "start": 10.36,
+          "end": 10.74,
+          "probability": 0.731
+        },
+        {
+          "word": " built",
+          "start": 10.74,
+          "end": 11.0,
+          "probability": 0.956
+        },
+        {
+          "word": " just",
+          "start": 11.0,
+          "end": 11.34,
+          "probability": 0.993
+        },
+        {
+          "word": " for",
+          "start": 11.34,
+          "end": 11.64,
+          "probability": 0.998
+        },
+        {
+          "word": " you.",
+          "start": 11.64,
+          "end": 11.82,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 12.28,
+      "end": 15.6,
+      "text": "But wife your dreams are actually a message from a time before language.",
+      "words": [
+        {
+          "word": " But",
+          "start": 12.28,
+          "end": 12.44,
+          "probability": 0.976
+        },
+        {
+          "word": " wife",
+          "start": 12.44,
+          "end": 12.62,
+          "probability": 0.441
+        },
+        {
+          "word": " your",
+          "start": 12.62,
+          "end": 12.8,
+          "probability": 0.363
+        },
+        {
+          "word": " dreams",
+          "start": 12.8,
+          "end": 13.14,
+          "probability": 0.999
+        },
+        {
+          "word": " are",
+          "start": 13.14,
+          "end": 13.36,
+          "probability": 0.997
+        },
+        {
+          "word": " actually",
+          "start": 13.36,
+          "end": 13.8,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 13.8,
+          "end": 13.98,
+          "probability": 0.984
+        },
+        {
+          "word": " message",
+          "start": 13.98,
+          "end": 14.28,
+          "probability": 0.995
+        },
+        {
+          "word": " from",
+          "start": 14.28,
+          "end": 14.5,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 14.5,
+          "end": 14.6,
+          "probability": 0.972
+        },
+        {
+          "word": " time",
+          "start": 14.6,
+          "end": 14.82,
+          "probability": 0.999
+        },
+        {
+          "word": " before",
+          "start": 14.82,
+          "end": 15.18,
+          "probability": 0.971
+        },
+        {
+          "word": " language.",
+          "start": 15.18,
+          "end": 15.6,
+          "probability": 0.716
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.34,
+      "end": 18.26,
+      "text": "Close your eyes and travel back.",
+      "words": [
+        {
+          "word": " Close",
+          "start": 16.34,
+          "end": 16.52,
+          "probability": 0.986
+        },
+        {
+          "word": " your",
+          "start": 16.52,
+          "end": 16.74,
+          "probability": 0.998
+        },
+        {
+          "word": " eyes",
+          "start": 16.74,
+          "end": 17.06,
+          "probability": 0.998
+        },
+        {
+          "word": " and",
+          "start": 17.06,
+          "end": 17.44,
+          "probability": 0.878
+        },
+        {
+          "word": " travel",
+          "start": 17.44,
+          "end": 17.84,
+          "probability": 0.98
+        },
+        {
+          "word": " back.",
+          "start": 17.84,
+          "end": 18.26,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 18.84,
+      "end": 21.04,
+      "text": "Imagine sleeping in the dark savannah.",
+      "words": [
+        {
+          "word": " Imagine",
+          "start": 18.84,
+          "end": 19.24,
+          "probability": 0.995
+        },
+        {
+          "word": " sleeping",
+          "start": 19.24,
+          "end": 19.72,
+          "probability": 0.99
+        },
+        {
+          "word": " in",
+          "start": 19.72,
+          "end": 20.04,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 20.04,
+          "end": 20.18,
+          "probability": 0.992
+        },
+        {
+          "word": " dark",
+          "start": 20.18,
+          "end": 20.46,
+          "probability": 0.986
+        },
+        {
+          "word": " savannah.",
+          "start": 20.46,
+          "end": 21.04,
+          "probability": 0.722
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 21.68,
+      "end": 25.72,
+      "text": "Around you, the shadows hide predators that could end your life in a single heartbeat.",
+      "words": [
+        {
+          "word": " Around",
+          "start": 21.68,
+          "end": 21.96,
+          "probability": 0.96
+        },
+        {
+          "word": " you,",
+          "start": 21.96,
+          "end": 22.26,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 22.52,
+          "end": 22.62,
+          "probability": 0.993
+        },
+        {
+          "word": " shadows",
+          "start": 22.62,
+          "end": 22.94,
+          "probability": 0.944
+        },
+        {
+          "word": " hide",
+          "start": 22.94,
+          "end": 23.3,
+          "probability": 0.942
+        },
+        {
+          "word": " predators",
+          "start": 23.3,
+          "end": 23.66,
+          "probability": 0.995
+        },
+        {
+          "word": " that",
+          "start": 23.66,
+          "end": 23.96,
+          "probability": 0.993
+        },
+        {
+          "word": " could",
+          "start": 23.96,
+          "end": 24.12,
+          "probability": 0.991
+        },
+        {
+          "word": " end",
+          "start": 24.12,
+          "end": 24.3,
+          "probability": 0.985
+        },
+        {
+          "word": " your",
+          "start": 24.3,
+          "end": 24.46,
+          "probability": 0.996
+        },
+        {
+          "word": " life",
+          "start": 24.46,
+          "end": 24.7,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 24.7,
+          "end": 24.9,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 24.9,
+          "end": 25.0,
+          "probability": 0.993
+        },
+        {
+          "word": " single",
+          "start": 25.0,
+          "end": 25.28,
+          "probability": 0.999
+        },
+        {
+          "word": " heartbeat.",
+          "start": 25.28,
+          "end": 25.72,
+          "probability": 0.98
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 26.44,
+      "end": 28.24,
+      "text": "You cannot afford to let your guard down.",
+      "words": [
+        {
+          "word": " You",
+          "start": 26.44,
+          "end": 26.62,
+          "probability": 0.993
+        },
+        {
+          "word": " cannot",
+          "start": 26.62,
+          "end": 26.92,
+          "probability": 0.79
+        },
+        {
+          "word": " afford",
+          "start": 26.92,
+          "end": 27.26,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 27.26,
+          "end": 27.46,
+          "probability": 0.998
+        },
+        {
+          "word": " let",
+          "start": 27.46,
+          "end": 27.6,
+          "probability": 0.993
+        },
+        {
+          "word": " your",
+          "start": 27.6,
+          "end": 27.76,
+          "probability": 0.995
+        },
+        {
+          "word": " guard",
+          "start": 27.76,
+          "end": 27.9,
+          "probability": 0.998
+        },
+        {
+          "word": " down.",
+          "start": 27.9,
+          "end": 28.24,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 28.62,
+      "end": 31.26,
+      "text": "How did your ancestors survive these deadly nights?",
+      "words": [
+        {
+          "word": " How",
+          "start": 28.62,
+          "end": 28.94,
+          "probability": 0.406
+        },
+        {
+          "word": " did",
+          "start": 28.94,
+          "end": 29.04,
+          "probability": 0.979
+        },
+        {
+          "word": " your",
+          "start": 29.04,
+          "end": 29.22,
+          "probability": 0.963
+        },
+        {
+          "word": " ancestors",
+          "start": 29.22,
+          "end": 29.62,
+          "probability": 0.854
+        },
+        {
+          "word": " survive",
+          "start": 29.62,
+          "end": 30.26,
+          "probability": 0.926
+        },
+        {
+          "word": " these",
+          "start": 30.26,
+          "end": 30.58,
+          "probability": 0.984
+        },
+        {
+          "word": " deadly",
+          "start": 30.58,
+          "end": 30.88,
+          "probability": 0.887
+        },
+        {
+          "word": " nights?",
+          "start": 30.88,
+          "end": 31.26,
+          "probability": 0.898
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 31.88,
+      "end": 33.28,
+      "text": "The answer lies in your sleep.",
+      "words": [
+        {
+          "word": " The",
+          "start": 31.88,
+          "end": 32.02,
+          "probability": 0.929
+        },
+        {
+          "word": " answer",
+          "start": 32.02,
+          "end": 32.3,
+          "probability": 0.853
+        },
+        {
+          "word": " lies",
+          "start": 32.3,
+          "end": 32.54,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 32.54,
+          "end": 32.78,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 32.78,
+          "end": 32.9,
+          "probability": 0.982
+        },
+        {
+          "word": " sleep.",
+          "start": 32.9,
+          "end": 33.28,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 33.98,
+      "end": 37.18,
+      "text": "Dr. Anti-Rovance, who proposed a fascinating idea.",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 33.98,
+          "end": 34.24,
+          "probability": 0.749
+        },
+        {
+          "word": " Anti",
+          "start": 34.44,
+          "end": 34.66,
+          "probability": 0.194
+        },
+        {
+          "word": "-Rovance,",
+          "start": 34.66,
+          "end": 35.16,
+          "probability": 0.669
+        },
+        {
+          "word": " who",
+          "start": 35.2,
+          "end": 35.32,
+          "probability": 0.933
+        },
+        {
+          "word": " proposed",
+          "start": 35.32,
+          "end": 35.78,
+          "probability": 0.355
+        },
+        {
+          "word": " a",
+          "start": 35.78,
+          "end": 36.06,
+          "probability": 0.997
+        },
+        {
+          "word": " fascinating",
+          "start": 36.06,
+          "end": 36.6,
+          "probability": 0.984
+        },
+        {
+          "word": " idea.",
+          "start": 36.6,
+          "end": 37.18,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 37.78,
+      "end": 44.42,
+      "text": "He called it the threat simulation theory, suggesting that dreams are a virtual reality training ground for survival.",
+      "words": [
+        {
+          "word": " He",
+          "start": 37.78,
+          "end": 37.96,
+          "probability": 0.981
+        },
+        {
+          "word": " called",
+          "start": 37.96,
+          "end": 38.24,
+          "probability": 0.996
+        },
+        {
+          "word": " it",
+          "start": 38.24,
+          "end": 38.4,
+          "probability": 0.935
+        },
+        {
+          "word": " the",
+          "start": 38.4,
+          "end": 38.52,
+          "probability": 0.931
+        },
+        {
+          "word": " threat",
+          "start": 38.52,
+          "end": 38.76,
+          "probability": 0.462
+        },
+        {
+          "word": " simulation",
+          "start": 38.76,
+          "end": 39.4,
+          "probability": 0.941
+        },
+        {
+          "word": " theory,",
+          "start": 39.4,
+          "end": 39.92,
+          "probability": 0.997
+        },
+        {
+          "word": " suggesting",
+          "start": 40.18,
+          "end": 40.44,
+          "probability": 0.994
+        },
+        {
+          "word": " that",
+          "start": 40.44,
+          "end": 40.88,
+          "probability": 0.996
+        },
+        {
+          "word": " dreams",
+          "start": 40.88,
+          "end": 41.24,
+          "probability": 0.955
+        },
+        {
+          "word": " are",
+          "start": 41.24,
+          "end": 41.66,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 41.66,
+          "end": 41.82,
+          "probability": 0.958
+        },
+        {
+          "word": " virtual",
+          "start": 41.82,
+          "end": 42.22,
+          "probability": 0.982
+        },
+        {
+          "word": " reality",
+          "start": 42.22,
+          "end": 42.92,
+          "probability": 0.997
+        },
+        {
+          "word": " training",
+          "start": 42.92,
+          "end": 43.28,
+          "probability": 0.797
+        },
+        {
+          "word": " ground",
+          "start": 43.28,
+          "end": 43.66,
+          "probability": 0.997
+        },
+        {
+          "word": " for",
+          "start": 43.66,
+          "end": 43.9,
+          "probability": 0.995
+        },
+        {
+          "word": " survival.",
+          "start": 43.9,
+          "end": 44.42,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 45.06,
+      "end": 47.38,
+      "text": "In dreams, you rehearse dangerous encounters.",
+      "words": [
+        {
+          "word": " In",
+          "start": 45.06,
+          "end": 45.16,
+          "probability": 0.868
+        },
+        {
+          "word": " dreams,",
+          "start": 45.16,
+          "end": 45.48,
+          "probability": 0.979
+        },
+        {
+          "word": " you",
+          "start": 45.94,
+          "end": 46.0,
+          "probability": 0.998
+        },
+        {
+          "word": " rehearse",
+          "start": 46.0,
+          "end": 46.42,
+          "probability": 0.94
+        },
+        {
+          "word": " dangerous",
+          "start": 46.42,
+          "end": 46.82,
+          "probability": 0.998
+        },
+        {
+          "word": " encounters.",
+          "start": 46.82,
+          "end": 47.38,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 48.1,
+      "end": 49.84,
+      "text": "Do you often dream of being chased?",
+      "words": [
+        {
+          "word": " Do",
+          "start": 48.1,
+          "end": 48.22,
+          "probability": 0.981
+        },
+        {
+          "word": " you",
+          "start": 48.22,
+          "end": 48.38,
+          "probability": 0.997
+        },
+        {
+          "word": " often",
+          "start": 48.38,
+          "end": 48.64,
+          "probability": 0.998
+        },
+        {
+          "word": " dream",
+          "start": 48.64,
+          "end": 48.96,
+          "probability": 0.991
+        },
+        {
+          "word": " of",
+          "start": 48.96,
+          "end": 49.2,
+          "probability": 0.998
+        },
+        {
+          "word": " being",
+          "start": 49.2,
+          "end": 49.46,
+          "probability": 0.998
+        },
+        {
+          "word": " chased?",
+          "start": 49.46,
+          "end": 49.84,
+          "probability": 0.79
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 50.6,
+      "end": 51.74,
+      "text": "This is not an accident.",
+      "words": [
+        {
+          "word": " This",
+          "start": 50.6,
+          "end": 50.76,
+          "probability": 0.992
+        },
+        {
+          "word": " is",
+          "start": 50.76,
+          "end": 50.88,
+          "probability": 0.989
+        },
+        {
+          "word": " not",
+          "start": 50.88,
+          "end": 51.12,
+          "probability": 0.999
+        },
+        {
+          "word": " an",
+          "start": 51.12,
+          "end": 51.3,
+          "probability": 0.996
+        },
+        {
+          "word": " accident.",
+          "start": 51.3,
+          "end": 51.74,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 52.44,
+      "end": 54.56,
+      "text": "Your brain is running an ancient script.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 52.44,
+          "end": 52.62,
+          "probability": 0.992
+        },
+        {
+          "word": " brain",
+          "start": 52.62,
+          "end": 52.92,
+          "probability": 0.997
+        },
+        {
+          "word": " is",
+          "start": 52.92,
+          "end": 53.24,
+          "probability": 0.997
+        },
+        {
+          "word": " running",
+          "start": 53.24,
+          "end": 53.52,
+          "probability": 0.998
+        },
+        {
+          "word": " an",
+          "start": 53.52,
+          "end": 53.74,
+          "probability": 0.647
+        },
+        {
+          "word": " ancient",
+          "start": 53.74,
+          "end": 54.08,
+          "probability": 0.976
+        },
+        {
+          "word": " script.",
+          "start": 54.08,
+          "end": 54.56,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 55.04,
+      "end": 62.04,
+      "text": "When Dr. Ketchivali analyzed thousands of dream reports, she discovered that the majority of dream emotions are negative,",
+      "words": [
+        {
+          "word": " When",
+          "start": 55.04,
+          "end": 55.36,
+          "probability": 0.404
+        },
+        {
+          "word": " Dr.",
+          "start": 55.36,
+          "end": 55.7,
+          "probability": 0.843
+        },
+        {
+          "word": " Ketchivali",
+          "start": 55.88,
+          "end": 56.5,
+          "probability": 0.561
+        },
+        {
+          "word": " analyzed",
+          "start": 56.5,
+          "end": 57.0,
+          "probability": 0.205
+        },
+        {
+          "word": " thousands",
+          "start": 57.0,
+          "end": 57.44,
+          "probability": 0.982
+        },
+        {
+          "word": " of",
+          "start": 57.44,
+          "end": 57.7,
+          "probability": 0.998
+        },
+        {
+          "word": " dream",
+          "start": 57.7,
+          "end": 57.9,
+          "probability": 0.887
+        },
+        {
+          "word": " reports,",
+          "start": 57.9,
+          "end": 58.28,
+          "probability": 0.998
+        },
+        {
+          "word": " she",
+          "start": 58.76,
+          "end": 58.84,
+          "probability": 0.985
+        },
+        {
+          "word": " discovered",
+          "start": 58.84,
+          "end": 59.3,
+          "probability": 0.993
+        },
+        {
+          "word": " that",
+          "start": 59.3,
+          "end": 59.56,
+          "probability": 0.973
+        },
+        {
+          "word": " the",
+          "start": 59.56,
+          "end": 59.66,
+          "probability": 0.98
+        },
+        {
+          "word": " majority",
+          "start": 59.66,
+          "end": 60.04,
+          "probability": 0.983
+        },
+        {
+          "word": " of",
+          "start": 60.04,
+          "end": 60.32,
+          "probability": 0.998
+        },
+        {
+          "word": " dream",
+          "start": 60.32,
+          "end": 60.64,
+          "probability": 0.9
+        },
+        {
+          "word": " emotions",
+          "start": 60.64,
+          "end": 61.12,
+          "probability": 0.979
+        },
+        {
+          "word": " are",
+          "start": 61.12,
+          "end": 61.56,
+          "probability": 0.836
+        },
+        {
+          "word": " negative,",
+          "start": 61.56,
+          "end": 62.04,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 62.48,
+      "end": 64.34,
+      "text": "dominated by fear and anxiety.",
+      "words": [
+        {
+          "word": " dominated",
+          "start": 62.48,
+          "end": 62.92,
+          "probability": 0.992
+        },
+        {
+          "word": " by",
+          "start": 62.92,
+          "end": 63.18,
+          "probability": 0.999
+        },
+        {
+          "word": " fear",
+          "start": 63.18,
+          "end": 63.54,
+          "probability": 0.998
+        },
+        {
+          "word": " and",
+          "start": 63.54,
+          "end": 63.84,
+          "probability": 0.993
+        },
+        {
+          "word": " anxiety.",
+          "start": 63.84,
+          "end": 64.34,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 64.98,
+      "end": 67.08,
+      "text": "Your mind simulates worst-case scenarios.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 64.98,
+          "end": 65.12,
+          "probability": 0.963
+        },
+        {
+          "word": " mind",
+          "start": 65.12,
+          "end": 65.38,
+          "probability": 0.992
+        },
+        {
+          "word": " simulates",
+          "start": 65.38,
+          "end": 65.86,
+          "probability": 0.977
+        },
+        {
+          "word": " worst",
+          "start": 65.86,
+          "end": 66.26,
+          "probability": 0.805
+        },
+        {
+          "word": "-case",
+          "start": 66.26,
+          "end": 66.5,
+          "probability": 0.791
+        },
+        {
+          "word": " scenarios.",
+          "start": 66.5,
+          "end": 67.08,
+          "probability": 0.954
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 67.9,
+      "end": 70.38,
+      "text": "Why would nature design such a stressful system?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 67.9,
+          "end": 68.08,
+          "probability": 0.984
+        },
+        {
+          "word": " would",
+          "start": 68.08,
+          "end": 68.24,
+          "probability": 0.998
+        },
+        {
+          "word": " nature",
+          "start": 68.24,
+          "end": 68.48,
+          "probability": 0.952
+        },
+        {
+          "word": " design",
+          "start": 68.48,
+          "end": 68.94,
+          "probability": 0.984
+        },
+        {
+          "word": " such",
+          "start": 68.94,
+          "end": 69.38,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 69.38,
+          "end": 69.46,
+          "probability": 0.977
+        },
+        {
+          "word": " stressful",
+          "start": 69.46,
+          "end": 69.88,
+          "probability": 0.996
+        },
+        {
+          "word": " system?",
+          "start": 69.88,
+          "end": 70.38,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 70.98,
+      "end": 72.22,
+      "text": "To keep you alive tomorrow?",
+      "words": [
+        {
+          "word": " To",
+          "start": 70.98,
+          "end": 71.08,
+          "probability": 0.976
+        },
+        {
+          "word": " keep",
+          "start": 71.08,
+          "end": 71.26,
+          "probability": 0.999
+        },
+        {
+          "word": " you",
+          "start": 71.26,
+          "end": 71.46,
+          "probability": 0.997
+        },
+        {
+          "word": " alive",
+          "start": 71.46,
+          "end": 71.74,
+          "probability": 0.998
+        },
+        {
+          "word": " tomorrow?",
+          "start": 71.74,
+          "end": 72.22,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 72.84,
+      "end": 76.06,
+      "text": "A simulated escape increases your waking survival rate.",
+      "words": [
+        {
+          "word": " A",
+          "start": 72.84,
+          "end": 72.92,
+          "probability": 0.968
+        },
+        {
+          "word": " simulated",
+          "start": 72.92,
+          "end": 73.44,
+          "probability": 0.992
+        },
+        {
+          "word": " escape",
+          "start": 73.44,
+          "end": 73.86,
+          "probability": 0.994
+        },
+        {
+          "word": " increases",
+          "start": 73.86,
+          "end": 74.54,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 74.54,
+          "end": 74.78,
+          "probability": 0.997
+        },
+        {
+          "word": " waking",
+          "start": 74.78,
+          "end": 75.06,
+          "probability": 0.948
+        },
+        {
+          "word": " survival",
+          "start": 75.06,
+          "end": 75.56,
+          "probability": 0.903
+        },
+        {
+          "word": " rate.",
+          "start": 75.56,
+          "end": 76.06,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 76.54,
+      "end": 82.82,
+      "text": "If you practice dodging a saber-tooth tiger in your sleep, you will run faster when the real bee sleeps from the grass.",
+      "words": [
+        {
+          "word": " If",
+          "start": 76.54,
+          "end": 76.8,
+          "probability": 0.995
+        },
+        {
+          "word": " you",
+          "start": 76.8,
+          "end": 76.9,
+          "probability": 0.999
+        },
+        {
+          "word": " practice",
+          "start": 76.9,
+          "end": 77.32,
+          "probability": 0.978
+        },
+        {
+          "word": " dodging",
+          "start": 77.32,
+          "end": 77.74,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 77.74,
+          "end": 77.88,
+          "probability": 0.99
+        },
+        {
+          "word": " saber",
+          "start": 77.88,
+          "end": 78.14,
+          "probability": 0.842
+        },
+        {
+          "word": "-tooth",
+          "start": 78.14,
+          "end": 78.54,
+          "probability": 0.832
+        },
+        {
+          "word": " tiger",
+          "start": 78.54,
+          "end": 78.86,
+          "probability": 0.464
+        },
+        {
+          "word": " in",
+          "start": 78.86,
+          "end": 79.14,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 79.14,
+          "end": 79.28,
+          "probability": 0.996
+        },
+        {
+          "word": " sleep,",
+          "start": 79.28,
+          "end": 79.6,
+          "probability": 0.992
+        },
+        {
+          "word": " you",
+          "start": 80.0,
+          "end": 80.14,
+          "probability": 0.997
+        },
+        {
+          "word": " will",
+          "start": 80.14,
+          "end": 80.28,
+          "probability": 0.99
+        },
+        {
+          "word": " run",
+          "start": 80.28,
+          "end": 80.48,
+          "probability": 0.999
+        },
+        {
+          "word": " faster",
+          "start": 80.48,
+          "end": 80.98,
+          "probability": 0.996
+        },
+        {
+          "word": " when",
+          "start": 80.98,
+          "end": 81.2,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 81.2,
+          "end": 81.32,
+          "probability": 0.994
+        },
+        {
+          "word": " real",
+          "start": 81.32,
+          "end": 81.54,
+          "probability": 0.98
+        },
+        {
+          "word": " bee",
+          "start": 81.54,
+          "end": 81.76,
+          "probability": 0.594
+        },
+        {
+          "word": " sleeps",
+          "start": 81.76,
+          "end": 82.14,
+          "probability": 0.913
+        },
+        {
+          "word": " from",
+          "start": 82.14,
+          "end": 82.46,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 82.46,
+          "end": 82.6,
+          "probability": 0.998
+        },
+        {
+          "word": " grass.",
+          "start": 82.6,
+          "end": 82.82,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 83.42,
+      "end": 85.58,
+      "text": "You are the descendant of the best dreamers.",
+      "words": [
+        {
+          "word": " You",
+          "start": 83.42,
+          "end": 83.72,
+          "probability": 0.103
+        },
+        {
+          "word": " are",
+          "start": 83.72,
+          "end": 83.84,
+          "probability": 0.899
+        },
+        {
+          "word": " the",
+          "start": 83.84,
+          "end": 83.96,
+          "probability": 0.984
+        },
+        {
+          "word": " descendant",
+          "start": 83.96,
+          "end": 84.48,
+          "probability": 0.932
+        },
+        {
+          "word": " of",
+          "start": 84.48,
+          "end": 84.62,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 84.62,
+          "end": 84.74,
+          "probability": 0.958
+        },
+        {
+          "word": " best",
+          "start": 84.74,
+          "end": 85.0,
+          "probability": 0.963
+        },
+        {
+          "word": " dreamers.",
+          "start": 85.0,
+          "end": 85.58,
+          "probability": 0.931
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 85.88,
+      "end": 88.02,
+      "text": "Did the bad dreamers simply not survive?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 85.88,
+          "end": 86.18,
+          "probability": 0.95
+        },
+        {
+          "word": " the",
+          "start": 86.18,
+          "end": 86.32,
+          "probability": 0.986
+        },
+        {
+          "word": " bad",
+          "start": 86.32,
+          "end": 86.54,
+          "probability": 0.993
+        },
+        {
+          "word": " dreamers",
+          "start": 86.54,
+          "end": 87.08,
+          "probability": 0.992
+        },
+        {
+          "word": " simply",
+          "start": 87.08,
+          "end": 87.42,
+          "probability": 0.962
+        },
+        {
+          "word": " not",
+          "start": 87.42,
+          "end": 87.66,
+          "probability": 0.99
+        },
+        {
+          "word": " survive?",
+          "start": 87.66,
+          "end": 88.02,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 88.66,
+      "end": 90.06,
+      "text": "The science says yes.",
+      "words": [
+        {
+          "word": " The",
+          "start": 88.66,
+          "end": 88.8,
+          "probability": 0.974
+        },
+        {
+          "word": " science",
+          "start": 88.8,
+          "end": 89.18,
+          "probability": 0.967
+        },
+        {
+          "word": " says",
+          "start": 89.18,
+          "end": 89.66,
+          "probability": 0.838
+        },
+        {
+          "word": " yes.",
+          "start": 89.66,
+          "end": 90.06,
+          "probability": 0.879
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 90.84,
+      "end": 92.88,
+      "text": "But ancient dreams were not just about fear.",
+      "words": [
+        {
+          "word": " But",
+          "start": 90.84,
+          "end": 90.92,
+          "probability": 0.939
+        },
+        {
+          "word": " ancient",
+          "start": 90.92,
+          "end": 91.2,
+          "probability": 0.981
+        },
+        {
+          "word": " dreams",
+          "start": 91.2,
+          "end": 91.54,
+          "probability": 0.993
+        },
+        {
+          "word": " were",
+          "start": 91.54,
+          "end": 91.86,
+          "probability": 0.994
+        },
+        {
+          "word": " not",
+          "start": 91.86,
+          "end": 92.04,
+          "probability": 0.986
+        },
+        {
+          "word": " just",
+          "start": 92.04,
+          "end": 92.26,
+          "probability": 0.995
+        },
+        {
+          "word": " about",
+          "start": 92.26,
+          "end": 92.5,
+          "probability": 0.921
+        },
+        {
+          "word": " fear.",
+          "start": 92.5,
+          "end": 92.88,
+          "probability": 0.875
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 93.6,
+      "end": 100.08,
+      "text": "Dr. David Sanson studied the sleep of the heads of people, one of the last remaining hunter gatherer tribes in Tanzania.",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 93.6,
+          "end": 93.88,
+          "probability": 0.878
+        },
+        {
+          "word": " David",
+          "start": 94.06,
+          "end": 94.24,
+          "probability": 0.987
+        },
+        {
+          "word": " Sanson",
+          "start": 94.24,
+          "end": 94.56,
+          "probability": 0.681
+        },
+        {
+          "word": " studied",
+          "start": 94.56,
+          "end": 95.12,
+          "probability": 0.987
+        },
+        {
+          "word": " the",
+          "start": 95.12,
+          "end": 95.32,
+          "probability": 0.978
+        },
+        {
+          "word": " sleep",
+          "start": 95.32,
+          "end": 95.6,
+          "probability": 0.98
+        },
+        {
+          "word": " of",
+          "start": 95.6,
+          "end": 95.8,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 95.8,
+          "end": 95.9,
+          "probability": 0.878
+        },
+        {
+          "word": " heads",
+          "start": 95.9,
+          "end": 96.16,
+          "probability": 0.645
+        },
+        {
+          "word": " of",
+          "start": 96.16,
+          "end": 96.28,
+          "probability": 0.998
+        },
+        {
+          "word": " people,",
+          "start": 96.28,
+          "end": 96.58,
+          "probability": 0.995
+        },
+        {
+          "word": " one",
+          "start": 96.94,
+          "end": 97.08,
+          "probability": 0.987
+        },
+        {
+          "word": " of",
+          "start": 97.08,
+          "end": 97.2,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 97.2,
+          "end": 97.32,
+          "probability": 0.998
+        },
+        {
+          "word": " last",
+          "start": 97.32,
+          "end": 97.58,
+          "probability": 0.994
+        },
+        {
+          "word": " remaining",
+          "start": 97.58,
+          "end": 98.02,
+          "probability": 0.996
+        },
+        {
+          "word": " hunter",
+          "start": 98.02,
+          "end": 98.34,
+          "probability": 0.967
+        },
+        {
+          "word": " gatherer",
+          "start": 98.34,
+          "end": 98.84,
+          "probability": 0.796
+        },
+        {
+          "word": " tribes",
+          "start": 98.84,
+          "end": 99.18,
+          "probability": 0.976
+        },
+        {
+          "word": " in",
+          "start": 99.18,
+          "end": 99.48,
+          "probability": 0.994
+        },
+        {
+          "word": " Tanzania.",
+          "start": 99.48,
+          "end": 100.08,
+          "probability": 0.974
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 100.64,
+      "end": 103.12,
+      "text": "He found their dreams focused heavily on community.",
+      "words": [
+        {
+          "word": " He",
+          "start": 100.64,
+          "end": 100.82,
+          "probability": 0.99
+        },
+        {
+          "word": " found",
+          "start": 100.82,
+          "end": 101.06,
+          "probability": 0.993
+        },
+        {
+          "word": " their",
+          "start": 101.06,
+          "end": 101.2,
+          "probability": 0.813
+        },
+        {
+          "word": " dreams",
+          "start": 101.2,
+          "end": 101.54,
+          "probability": 0.977
+        },
+        {
+          "word": " focused",
+          "start": 101.54,
+          "end": 101.92,
+          "probability": 0.934
+        },
+        {
+          "word": " heavily",
+          "start": 101.92,
+          "end": 102.42,
+          "probability": 0.987
+        },
+        {
+          "word": " on",
+          "start": 102.42,
+          "end": 102.72,
+          "probability": 0.999
+        },
+        {
+          "word": " community.",
+          "start": 102.72,
+          "end": 103.12,
+          "probability": 0.754
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 103.82,
+      "end": 106.12,
+      "text": "Did you know they frequently dream of sharing food?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 103.82,
+          "end": 103.9,
+          "probability": 0.981
+        },
+        {
+          "word": " you",
+          "start": 103.9,
+          "end": 104.02,
+          "probability": 0.995
+        },
+        {
+          "word": " know",
+          "start": 104.02,
+          "end": 104.14,
+          "probability": 0.996
+        },
+        {
+          "word": " they",
+          "start": 104.14,
+          "end": 104.3,
+          "probability": 0.951
+        },
+        {
+          "word": " frequently",
+          "start": 104.3,
+          "end": 104.68,
+          "probability": 0.991
+        },
+        {
+          "word": " dream",
+          "start": 104.68,
+          "end": 105.14,
+          "probability": 0.648
+        },
+        {
+          "word": " of",
+          "start": 105.14,
+          "end": 105.4,
+          "probability": 0.994
+        },
+        {
+          "word": " sharing",
+          "start": 105.4,
+          "end": 105.72,
+          "probability": 0.99
+        },
+        {
+          "word": " food?",
+          "start": 105.72,
+          "end": 106.12,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 106.84,
+      "end": 108.82,
+      "text": "Cooperation was their greatest weapon.",
+      "words": [
+        {
+          "word": " Cooperation",
+          "start": 106.84,
+          "end": 107.44,
+          "probability": 0.933
+        },
+        {
+          "word": " was",
+          "start": 107.44,
+          "end": 107.8,
+          "probability": 0.996
+        },
+        {
+          "word": " their",
+          "start": 107.8,
+          "end": 107.94,
+          "probability": 0.957
+        },
+        {
+          "word": " greatest",
+          "start": 107.94,
+          "end": 108.3,
+          "probability": 0.991
+        },
+        {
+          "word": " weapon.",
+          "start": 108.3,
+          "end": 108.82,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 109.52,
+      "end": 111.4,
+      "text": "Their nightly minds rehearsed social bonds.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 109.52,
+          "end": 109.62,
+          "probability": 0.905
+        },
+        {
+          "word": " nightly",
+          "start": 109.62,
+          "end": 109.94,
+          "probability": 0.896
+        },
+        {
+          "word": " minds",
+          "start": 109.94,
+          "end": 110.16,
+          "probability": 0.856
+        },
+        {
+          "word": " rehearsed",
+          "start": 110.16,
+          "end": 110.72,
+          "probability": 0.986
+        },
+        {
+          "word": " social",
+          "start": 110.72,
+          "end": 111.02,
+          "probability": 0.989
+        },
+        {
+          "word": " bonds.",
+          "start": 111.02,
+          "end": 111.4,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 111.78,
+      "end": 118.58,
+      "text": "They dreamt of cooperative hunts, a warmth around campfires, and of resolving tense conflicts with members of their tribe.",
+      "words": [
+        {
+          "word": " They",
+          "start": 111.78,
+          "end": 112.1,
+          "probability": 0.381
+        },
+        {
+          "word": " dreamt",
+          "start": 112.1,
+          "end": 112.44,
+          "probability": 0.937
+        },
+        {
+          "word": " of",
+          "start": 112.44,
+          "end": 112.52,
+          "probability": 0.995
+        },
+        {
+          "word": " cooperative",
+          "start": 112.52,
+          "end": 113.02,
+          "probability": 0.971
+        },
+        {
+          "word": " hunts,",
+          "start": 113.02,
+          "end": 113.6,
+          "probability": 0.989
+        },
+        {
+          "word": " a",
+          "start": 113.72,
+          "end": 113.8,
+          "probability": 0.915
+        },
+        {
+          "word": " warmth",
+          "start": 113.8,
+          "end": 114.16,
+          "probability": 0.966
+        },
+        {
+          "word": " around",
+          "start": 114.16,
+          "end": 114.58,
+          "probability": 0.979
+        },
+        {
+          "word": " campfires,",
+          "start": 114.58,
+          "end": 115.32,
+          "probability": 0.913
+        },
+        {
+          "word": " and",
+          "start": 115.64,
+          "end": 115.74,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 115.74,
+          "end": 115.88,
+          "probability": 0.788
+        },
+        {
+          "word": " resolving",
+          "start": 115.88,
+          "end": 116.28,
+          "probability": 0.99
+        },
+        {
+          "word": " tense",
+          "start": 116.28,
+          "end": 116.62,
+          "probability": 0.986
+        },
+        {
+          "word": " conflicts",
+          "start": 116.62,
+          "end": 117.18,
+          "probability": 0.995
+        },
+        {
+          "word": " with",
+          "start": 117.18,
+          "end": 117.52,
+          "probability": 0.997
+        },
+        {
+          "word": " members",
+          "start": 117.52,
+          "end": 117.82,
+          "probability": 0.968
+        },
+        {
+          "word": " of",
+          "start": 117.82,
+          "end": 118.06,
+          "probability": 0.998
+        },
+        {
+          "word": " their",
+          "start": 118.06,
+          "end": 118.2,
+          "probability": 0.998
+        },
+        {
+          "word": " tribe.",
+          "start": 118.2,
+          "end": 118.58,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 119.18,
+      "end": 120.98,
+      "text": "Dream sharing was a morning ritual.",
+      "words": [
+        {
+          "word": " Dream",
+          "start": 119.18,
+          "end": 119.38,
+          "probability": 0.928
+        },
+        {
+          "word": " sharing",
+          "start": 119.38,
+          "end": 119.8,
+          "probability": 0.609
+        },
+        {
+          "word": " was",
+          "start": 119.8,
+          "end": 120.06,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 120.06,
+          "end": 120.22,
+          "probability": 0.988
+        },
+        {
+          "word": " morning",
+          "start": 120.22,
+          "end": 120.56,
+          "probability": 0.797
+        },
+        {
+          "word": " ritual.",
+          "start": 120.56,
+          "end": 120.98,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 121.62,
+      "end": 123.78,
+      "text": "Did this ritual build the trust needed to survive?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 121.62,
+          "end": 121.72,
+          "probability": 0.966
+        },
+        {
+          "word": " this",
+          "start": 121.72,
+          "end": 121.9,
+          "probability": 0.992
+        },
+        {
+          "word": " ritual",
+          "start": 121.9,
+          "end": 122.3,
+          "probability": 0.998
+        },
+        {
+          "word": " build",
+          "start": 122.3,
+          "end": 122.64,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 122.64,
+          "end": 122.78,
+          "probability": 0.994
+        },
+        {
+          "word": " trust",
+          "start": 122.78,
+          "end": 122.94,
+          "probability": 0.871
+        },
+        {
+          "word": " needed",
+          "start": 122.94,
+          "end": 123.22,
+          "probability": 0.987
+        },
+        {
+          "word": " to",
+          "start": 123.22,
+          "end": 123.44,
+          "probability": 0.998
+        },
+        {
+          "word": " survive?",
+          "start": 123.44,
+          "end": 123.78,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 124.54,
+      "end": 126.34,
+      "text": "Modern life has changed everything.",
+      "words": [
+        {
+          "word": " Modern",
+          "start": 124.54,
+          "end": 124.78,
+          "probability": 0.976
+        },
+        {
+          "word": " life",
+          "start": 124.78,
+          "end": 125.1,
+          "probability": 0.981
+        },
+        {
+          "word": " has",
+          "start": 125.1,
+          "end": 125.34,
+          "probability": 0.996
+        },
+        {
+          "word": " changed",
+          "start": 125.34,
+          "end": 125.8,
+          "probability": 0.995
+        },
+        {
+          "word": " everything.",
+          "start": 125.8,
+          "end": 126.34,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 127.04,
+      "end": 128.32,
+      "text": "You sleep in a locked room.",
+      "words": [
+        {
+          "word": " You",
+          "start": 127.04,
+          "end": 127.16,
+          "probability": 0.976
+        },
+        {
+          "word": " sleep",
+          "start": 127.16,
+          "end": 127.4,
+          "probability": 0.997
+        },
+        {
+          "word": " in",
+          "start": 127.4,
+          "end": 127.6,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 127.6,
+          "end": 127.7,
+          "probability": 0.996
+        },
+        {
+          "word": " locked",
+          "start": 127.7,
+          "end": 127.96,
+          "probability": 0.991
+        },
+        {
+          "word": " room.",
+          "start": 127.96,
+          "end": 128.32,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 128.92,
+      "end": 135.44,
+      "text": "The wild beasts are gone, replaced by work deadlines, social anxieties, and strange digital notifications.",
+      "words": [
+        {
+          "word": " The",
+          "start": 128.92,
+          "end": 129.0,
+          "probability": 0.995
+        },
+        {
+          "word": " wild",
+          "start": 129.0,
+          "end": 129.32,
+          "probability": 0.974
+        },
+        {
+          "word": " beasts",
+          "start": 129.32,
+          "end": 129.7,
+          "probability": 0.976
+        },
+        {
+          "word": " are",
+          "start": 129.7,
+          "end": 130.02,
+          "probability": 0.997
+        },
+        {
+          "word": " gone,",
+          "start": 130.02,
+          "end": 130.36,
+          "probability": 0.994
+        },
+        {
+          "word": " replaced",
+          "start": 130.66,
+          "end": 130.9,
+          "probability": 0.997
+        },
+        {
+          "word": " by",
+          "start": 130.9,
+          "end": 131.16,
+          "probability": 0.999
+        },
+        {
+          "word": " work",
+          "start": 131.16,
+          "end": 131.4,
+          "probability": 0.946
+        },
+        {
+          "word": " deadlines,",
+          "start": 131.4,
+          "end": 131.84,
+          "probability": 0.937
+        },
+        {
+          "word": " social",
+          "start": 132.4,
+          "end": 132.72,
+          "probability": 0.997
+        },
+        {
+          "word": " anxieties,",
+          "start": 132.72,
+          "end": 133.3,
+          "probability": 0.995
+        },
+        {
+          "word": " and",
+          "start": 133.6,
+          "end": 133.68,
+          "probability": 0.999
+        },
+        {
+          "word": " strange",
+          "start": 133.68,
+          "end": 134.1,
+          "probability": 0.987
+        },
+        {
+          "word": " digital",
+          "start": 134.1,
+          "end": 134.72,
+          "probability": 0.982
+        },
+        {
+          "word": " notifications.",
+          "start": 134.72,
+          "end": 135.44,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 136.08,
+      "end": 138.42,
+      "text": "That your brain still runs the old program.",
+      "words": [
+        {
+          "word": " That",
+          "start": 136.08,
+          "end": 136.38,
+          "probability": 0.122
+        },
+        {
+          "word": " your",
+          "start": 136.38,
+          "end": 136.58,
+          "probability": 0.905
+        },
+        {
+          "word": " brain",
+          "start": 136.58,
+          "end": 136.82,
+          "probability": 0.996
+        },
+        {
+          "word": " still",
+          "start": 136.82,
+          "end": 137.18,
+          "probability": 0.977
+        },
+        {
+          "word": " runs",
+          "start": 137.18,
+          "end": 137.44,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 137.44,
+          "end": 137.72,
+          "probability": 0.983
+        },
+        {
+          "word": " old",
+          "start": 137.72,
+          "end": 137.9,
+          "probability": 0.968
+        },
+        {
+          "word": " program.",
+          "start": 137.9,
+          "end": 138.42,
+          "probability": 0.955
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 138.98,
+      "end": 141.18,
+      "text": "Why does it still try to protect you from the dark?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 138.98,
+          "end": 139.2,
+          "probability": 0.926
+        },
+        {
+          "word": " does",
+          "start": 139.2,
+          "end": 139.32,
+          "probability": 0.991
+        },
+        {
+          "word": " it",
+          "start": 139.32,
+          "end": 139.48,
+          "probability": 0.973
+        },
+        {
+          "word": " still",
+          "start": 139.48,
+          "end": 139.72,
+          "probability": 0.982
+        },
+        {
+          "word": " try",
+          "start": 139.72,
+          "end": 139.96,
+          "probability": 0.987
+        },
+        {
+          "word": " to",
+          "start": 139.96,
+          "end": 140.08,
+          "probability": 0.995
+        },
+        {
+          "word": " protect",
+          "start": 140.08,
+          "end": 140.36,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 140.36,
+          "end": 140.64,
+          "probability": 0.996
+        },
+        {
+          "word": " from",
+          "start": 140.64,
+          "end": 140.8,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 140.8,
+          "end": 140.94,
+          "probability": 0.994
+        },
+        {
+          "word": " dark?",
+          "start": 140.94,
+          "end": 141.18,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 141.86,
+      "end": 143.66,
+      "text": "Your nightmares are prehistoric echoes.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 141.86,
+          "end": 141.96,
+          "probability": 0.986
+        },
+        {
+          "word": " nightmares",
+          "start": 141.96,
+          "end": 142.32,
+          "probability": 0.996
+        },
+        {
+          "word": " are",
+          "start": 142.32,
+          "end": 142.66,
+          "probability": 0.988
+        },
+        {
+          "word": " prehistoric",
+          "start": 142.66,
+          "end": 143.32,
+          "probability": 0.951
+        },
+        {
+          "word": " echoes.",
+          "start": 143.32,
+          "end": 143.66,
+          "probability": 0.915
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 144.38,
+      "end": 146.5,
+      "text": "Your falling dreams are memories of trees.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 144.38,
+          "end": 144.56,
+          "probability": 0.979
+        },
+        {
+          "word": " falling",
+          "start": 144.56,
+          "end": 144.94,
+          "probability": 0.976
+        },
+        {
+          "word": " dreams",
+          "start": 144.94,
+          "end": 145.26,
+          "probability": 0.995
+        },
+        {
+          "word": " are",
+          "start": 145.26,
+          "end": 145.6,
+          "probability": 0.992
+        },
+        {
+          "word": " memories",
+          "start": 145.6,
+          "end": 145.92,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 145.92,
+          "end": 146.2,
+          "probability": 0.999
+        },
+        {
+          "word": " trees.",
+          "start": 146.2,
+          "end": 146.5,
+          "probability": 0.97
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 147.24,
+      "end": 153.32,
+      "text": "Every time you wake up sweating, you are experiencing the legacy of ancestors who slept under the open stars.",
+      "words": [
+        {
+          "word": " Every",
+          "start": 147.24,
+          "end": 147.44,
+          "probability": 0.972
+        },
+        {
+          "word": " time",
+          "start": 147.44,
+          "end": 147.66,
+          "probability": 0.959
+        },
+        {
+          "word": " you",
+          "start": 147.66,
+          "end": 147.96,
+          "probability": 0.986
+        },
+        {
+          "word": " wake",
+          "start": 147.96,
+          "end": 148.12,
+          "probability": 0.971
+        },
+        {
+          "word": " up",
+          "start": 148.12,
+          "end": 148.28,
+          "probability": 0.992
+        },
+        {
+          "word": " sweating,",
+          "start": 148.28,
+          "end": 148.7,
+          "probability": 0.943
+        },
+        {
+          "word": " you",
+          "start": 148.9,
+          "end": 149.1,
+          "probability": 0.964
+        },
+        {
+          "word": " are",
+          "start": 149.1,
+          "end": 149.26,
+          "probability": 0.341
+        },
+        {
+          "word": " experiencing",
+          "start": 149.26,
+          "end": 149.6,
+          "probability": 0.956
+        },
+        {
+          "word": " the",
+          "start": 149.6,
+          "end": 150.24,
+          "probability": 0.99
+        },
+        {
+          "word": " legacy",
+          "start": 150.24,
+          "end": 150.54,
+          "probability": 0.992
+        },
+        {
+          "word": " of",
+          "start": 150.54,
+          "end": 150.9,
+          "probability": 0.999
+        },
+        {
+          "word": " ancestors",
+          "start": 150.9,
+          "end": 151.3,
+          "probability": 0.967
+        },
+        {
+          "word": " who",
+          "start": 151.3,
+          "end": 151.78,
+          "probability": 0.918
+        },
+        {
+          "word": " slept",
+          "start": 151.78,
+          "end": 152.14,
+          "probability": 0.397
+        },
+        {
+          "word": " under",
+          "start": 152.14,
+          "end": 152.48,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 152.48,
+          "end": 152.66,
+          "probability": 0.988
+        },
+        {
+          "word": " open",
+          "start": 152.66,
+          "end": 152.92,
+          "probability": 0.961
+        },
+        {
+          "word": " stars.",
+          "start": 152.92,
+          "end": 153.32,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 154.04,
+      "end": 156.76,
+      "text": "Their survival is written in your sleeping mind.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 154.04,
+          "end": 154.28,
+          "probability": 0.973
+        },
+        {
+          "word": " survival",
+          "start": 154.28,
+          "end": 154.88,
+          "probability": 0.995
+        },
+        {
+          "word": " is",
+          "start": 154.88,
+          "end": 155.2,
+          "probability": 0.998
+        },
+        {
+          "word": " written",
+          "start": 155.2,
+          "end": 155.46,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 155.46,
+          "end": 155.66,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 155.66,
+          "end": 155.84,
+          "probability": 0.992
+        },
+        {
+          "word": " sleeping",
+          "start": 155.84,
+          "end": 156.24,
+          "probability": 0.986
+        },
+        {
+          "word": " mind.",
+          "start": 156.24,
+          "end": 156.76,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 157.28,
+      "end": 161.0,
+      "text": "Tonight, when your eyes close, you will enter that same ancient cinema.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 157.28,
+          "end": 157.6,
+          "probability": 0.977
+        },
+        {
+          "word": " when",
+          "start": 157.92,
+          "end": 158.04,
+          "probability": 0.995
+        },
+        {
+          "word": " your",
+          "start": 158.04,
+          "end": 158.22,
+          "probability": 0.981
+        },
+        {
+          "word": " eyes",
+          "start": 158.22,
+          "end": 158.46,
+          "probability": 0.992
+        },
+        {
+          "word": " close,",
+          "start": 158.46,
+          "end": 158.8,
+          "probability": 0.987
+        },
+        {
+          "word": " you",
+          "start": 159.2,
+          "end": 159.3,
+          "probability": 0.996
+        },
+        {
+          "word": " will",
+          "start": 159.3,
+          "end": 159.44,
+          "probability": 0.984
+        },
+        {
+          "word": " enter",
+          "start": 159.44,
+          "end": 159.74,
+          "probability": 0.977
+        },
+        {
+          "word": " that",
+          "start": 159.74,
+          "end": 159.94,
+          "probability": 0.957
+        },
+        {
+          "word": " same",
+          "start": 159.94,
+          "end": 160.3,
+          "probability": 0.996
+        },
+        {
+          "word": " ancient",
+          "start": 160.3,
+          "end": 160.66,
+          "probability": 0.985
+        },
+        {
+          "word": " cinema.",
+          "start": 160.66,
+          "end": 161.0,
+          "probability": 0.978
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Tonight,",
+      "start": 0.0,
+      "end": 0.32,
+      "probability": 0.6
+    },
+    {
+      "word": " when",
+      "start": 0.66,
+      "end": 0.76,
+      "probability": 0.992
+    },
+    {
+      "word": " your",
+      "start": 0.76,
+      "end": 0.9,
+      "probability": 0.968
+    },
+    {
+      "word": " eyes",
+      "start": 0.9,
+      "end": 1.14,
+      "probability": 0.978
+    },
+    {
+      "word": " close,",
+      "start": 1.14,
+      "end": 1.48,
+      "probability": 0.996
+    },
+    {
+      "word": " you",
+      "start": 1.98,
+      "end": 2.1,
+      "probability": 0.986
+    },
+    {
+      "word": " will",
+      "start": 2.1,
+      "end": 2.26,
+      "probability": 0.984
+    },
+    {
+      "word": " enter",
+      "start": 2.26,
+      "end": 2.52,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 2.52,
+      "end": 2.7,
+      "probability": 0.997
+    },
+    {
+      "word": " private",
+      "start": 2.7,
+      "end": 3.06,
+      "probability": 0.987
+    },
+    {
+      "word": " cinema.",
+      "start": 3.06,
+      "end": 3.42,
+      "probability": 0.992
+    },
+    {
+      "word": " Your",
+      "start": 4.04,
+      "end": 4.24,
+      "probability": 0.99
+    },
+    {
+      "word": " brain",
+      "start": 4.24,
+      "end": 4.5,
+      "probability": 0.999
+    },
+    {
+      "word": " will",
+      "start": 4.5,
+      "end": 4.72,
+      "probability": 0.997
+    },
+    {
+      "word": " paint",
+      "start": 4.72,
+      "end": 5.02,
+      "probability": 0.998
+    },
+    {
+      "word": " worlds",
+      "start": 5.02,
+      "end": 5.34,
+      "probability": 0.979
+    },
+    {
+      "word": " from",
+      "start": 5.34,
+      "end": 5.58,
+      "probability": 0.997
+    },
+    {
+      "word": " nothing.",
+      "start": 5.58,
+      "end": 5.94,
+      "probability": 0.997
+    },
+    {
+      "word": " This",
+      "start": 6.58,
+      "end": 6.88,
+      "probability": 0.992
+    },
+    {
+      "word": " nightly",
+      "start": 6.88,
+      "end": 7.3,
+      "probability": 0.943
+    },
+    {
+      "word": " hallucination",
+      "start": 7.3,
+      "end": 8.12,
+      "probability": 0.966
+    },
+    {
+      "word": " feels",
+      "start": 8.12,
+      "end": 8.4,
+      "probability": 0.996
+    },
+    {
+      "word": " entirely",
+      "start": 8.4,
+      "end": 8.98,
+      "probability": 0.999
+    },
+    {
+      "word": " personal,",
+      "start": 8.98,
+      "end": 9.58,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 9.92,
+      "end": 10.0,
+      "probability": 0.523
+    },
+    {
+      "word": " secret",
+      "start": 10.0,
+      "end": 10.36,
+      "probability": 0.997
+    },
+    {
+      "word": " theater",
+      "start": 10.36,
+      "end": 10.74,
+      "probability": 0.731
+    },
+    {
+      "word": " built",
+      "start": 10.74,
+      "end": 11.0,
+      "probability": 0.956
+    },
+    {
+      "word": " just",
+      "start": 11.0,
+      "end": 11.34,
+      "probability": 0.993
+    },
+    {
+      "word": " for",
+      "start": 11.34,
+      "end": 11.64,
+      "probability": 0.998
+    },
+    {
+      "word": " you.",
+      "start": 11.64,
+      "end": 11.82,
+      "probability": 0.999
+    },
+    {
+      "word": " But",
+      "start": 12.28,
+      "end": 12.44,
+      "probability": 0.976
+    },
+    {
+      "word": " wife",
+      "start": 12.44,
+      "end": 12.62,
+      "probability": 0.441
+    },
+    {
+      "word": " your",
+      "start": 12.62,
+      "end": 12.8,
+      "probability": 0.363
+    },
+    {
+      "word": " dreams",
+      "start": 12.8,
+      "end": 13.14,
+      "probability": 0.999
+    },
+    {
+      "word": " are",
+      "start": 13.14,
+      "end": 13.36,
+      "probability": 0.997
+    },
+    {
+      "word": " actually",
+      "start": 13.36,
+      "end": 13.8,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 13.8,
+      "end": 13.98,
+      "probability": 0.984
+    },
+    {
+      "word": " message",
+      "start": 13.98,
+      "end": 14.28,
+      "probability": 0.995
+    },
+    {
+      "word": " from",
+      "start": 14.28,
+      "end": 14.5,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 14.5,
+      "end": 14.6,
+      "probability": 0.972
+    },
+    {
+      "word": " time",
+      "start": 14.6,
+      "end": 14.82,
+      "probability": 0.999
+    },
+    {
+      "word": " before",
+      "start": 14.82,
+      "end": 15.18,
+      "probability": 0.971
+    },
+    {
+      "word": " language.",
+      "start": 15.18,
+      "end": 15.6,
+      "probability": 0.716
+    },
+    {
+      "word": " Close",
+      "start": 16.34,
+      "end": 16.52,
+      "probability": 0.986
+    },
+    {
+      "word": " your",
+      "start": 16.52,
+      "end": 16.74,
+      "probability": 0.998
+    },
+    {
+      "word": " eyes",
+      "start": 16.74,
+      "end": 17.06,
+      "probability": 0.998
+    },
+    {
+      "word": " and",
+      "start": 17.06,
+      "end": 17.44,
+      "probability": 0.878
+    },
+    {
+      "word": " travel",
+      "start": 17.44,
+      "end": 17.84,
+      "probability": 0.98
+    },
+    {
+      "word": " back.",
+      "start": 17.84,
+      "end": 18.26,
+      "probability": 0.999
+    },
+    {
+      "word": " Imagine",
+      "start": 18.84,
+      "end": 19.24,
+      "probability": 0.995
+    },
+    {
+      "word": " sleeping",
+      "start": 19.24,
+      "end": 19.72,
+      "probability": 0.99
+    },
+    {
+      "word": " in",
+      "start": 19.72,
+      "end": 20.04,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 20.04,
+      "end": 20.18,
+      "probability": 0.992
+    },
+    {
+      "word": " dark",
+      "start": 20.18,
+      "end": 20.46,
+      "probability": 0.986
+    },
+    {
+      "word": " savannah.",
+      "start": 20.46,
+      "end": 21.04,
+      "probability": 0.722
+    },
+    {
+      "word": " Around",
+      "start": 21.68,
+      "end": 21.96,
+      "probability": 0.96
+    },
+    {
+      "word": " you,",
+      "start": 21.96,
+      "end": 22.26,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 22.52,
+      "end": 22.62,
+      "probability": 0.993
+    },
+    {
+      "word": " shadows",
+      "start": 22.62,
+      "end": 22.94,
+      "probability": 0.944
+    },
+    {
+      "word": " hide",
+      "start": 22.94,
+      "end": 23.3,
+      "probability": 0.942
+    },
+    {
+      "word": " predators",
+      "start": 23.3,
+      "end": 23.66,
+      "probability": 0.995
+    },
+    {
+      "word": " that",
+      "start": 23.66,
+      "end": 23.96,
+      "probability": 0.993
+    },
+    {
+      "word": " could",
+      "start": 23.96,
+      "end": 24.12,
+      "probability": 0.991
+    },
+    {
+      "word": " end",
+      "start": 24.12,
+      "end": 24.3,
+      "probability": 0.985
+    },
+    {
+      "word": " your",
+      "start": 24.3,
+      "end": 24.46,
+      "probability": 0.996
+    },
+    {
+      "word": " life",
+      "start": 24.46,
+      "end": 24.7,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 24.7,
+      "end": 24.9,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 24.9,
+      "end": 25.0,
+      "probability": 0.993
+    },
+    {
+      "word": " single",
+      "start": 25.0,
+      "end": 25.28,
+      "probability": 0.999
+    },
+    {
+      "word": " heartbeat.",
+      "start": 25.28,
+      "end": 25.72,
+      "probability": 0.98
+    },
+    {
+      "word": " You",
+      "start": 26.44,
+      "end": 26.62,
+      "probability": 0.993
+    },
+    {
+      "word": " cannot",
+      "start": 26.62,
+      "end": 26.92,
+      "probability": 0.79
+    },
+    {
+      "word": " afford",
+      "start": 26.92,
+      "end": 27.26,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 27.26,
+      "end": 27.46,
+      "probability": 0.998
+    },
+    {
+      "word": " let",
+      "start": 27.46,
+      "end": 27.6,
+      "probability": 0.993
+    },
+    {
+      "word": " your",
+      "start": 27.6,
+      "end": 27.76,
+      "probability": 0.995
+    },
+    {
+      "word": " guard",
+      "start": 27.76,
+      "end": 27.9,
+      "probability": 0.998
+    },
+    {
+      "word": " down.",
+      "start": 27.9,
+      "end": 28.24,
+      "probability": 1.0
+    },
+    {
+      "word": " How",
+      "start": 28.62,
+      "end": 28.94,
+      "probability": 0.406
+    },
+    {
+      "word": " did",
+      "start": 28.94,
+      "end": 29.04,
+      "probability": 0.979
+    },
+    {
+      "word": " your",
+      "start": 29.04,
+      "end": 29.22,
+      "probability": 0.963
+    },
+    {
+      "word": " ancestors",
+      "start": 29.22,
+      "end": 29.62,
+      "probability": 0.854
+    },
+    {
+      "word": " survive",
+      "start": 29.62,
+      "end": 30.26,
+      "probability": 0.926
+    },
+    {
+      "word": " these",
+      "start": 30.26,
+      "end": 30.58,
+      "probability": 0.984
+    },
+    {
+      "word": " deadly",
+      "start": 30.58,
+      "end": 30.88,
+      "probability": 0.887
+    },
+    {
+      "word": " nights?",
+      "start": 30.88,
+      "end": 31.26,
+      "probability": 0.898
+    },
+    {
+      "word": " The",
+      "start": 31.88,
+      "end": 32.02,
+      "probability": 0.929
+    },
+    {
+      "word": " answer",
+      "start": 32.02,
+      "end": 32.3,
+      "probability": 0.853
+    },
+    {
+      "word": " lies",
+      "start": 32.3,
+      "end": 32.54,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 32.54,
+      "end": 32.78,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 32.78,
+      "end": 32.9,
+      "probability": 0.982
+    },
+    {
+      "word": " sleep.",
+      "start": 32.9,
+      "end": 33.28,
+      "probability": 0.989
+    },
+    {
+      "word": " Dr.",
+      "start": 33.98,
+      "end": 34.24,
+      "probability": 0.749
+    },
+    {
+      "word": " Anti",
+      "start": 34.44,
+      "end": 34.66,
+      "probability": 0.194
+    },
+    {
+      "word": "-Rovance,",
+      "start": 34.66,
+      "end": 35.16,
+      "probability": 0.669
+    },
+    {
+      "word": " who",
+      "start": 35.2,
+      "end": 35.32,
+      "probability": 0.933
+    },
+    {
+      "word": " proposed",
+      "start": 35.32,
+      "end": 35.78,
+      "probability": 0.355
+    },
+    {
+      "word": " a",
+      "start": 35.78,
+      "end": 36.06,
+      "probability": 0.997
+    },
+    {
+      "word": " fascinating",
+      "start": 36.06,
+      "end": 36.6,
+      "probability": 0.984
+    },
+    {
+      "word": " idea.",
+      "start": 36.6,
+      "end": 37.18,
+      "probability": 0.999
+    },
+    {
+      "word": " He",
+      "start": 37.78,
+      "end": 37.96,
+      "probability": 0.981
+    },
+    {
+      "word": " called",
+      "start": 37.96,
+      "end": 38.24,
+      "probability": 0.996
+    },
+    {
+      "word": " it",
+      "start": 38.24,
+      "end": 38.4,
+      "probability": 0.935
+    },
+    {
+      "word": " the",
+      "start": 38.4,
+      "end": 38.52,
+      "probability": 0.931
+    },
+    {
+      "word": " threat",
+      "start": 38.52,
+      "end": 38.76,
+      "probability": 0.462
+    },
+    {
+      "word": " simulation",
+      "start": 38.76,
+      "end": 39.4,
+      "probability": 0.941
+    },
+    {
+      "word": " theory,",
+      "start": 39.4,
+      "end": 39.92,
+      "probability": 0.997
+    },
+    {
+      "word": " suggesting",
+      "start": 40.18,
+      "end": 40.44,
+      "probability": 0.994
+    },
+    {
+      "word": " that",
+      "start": 40.44,
+      "end": 40.88,
+      "probability": 0.996
+    },
+    {
+      "word": " dreams",
+      "start": 40.88,
+      "end": 41.24,
+      "probability": 0.955
+    },
+    {
+      "word": " are",
+      "start": 41.24,
+      "end": 41.66,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 41.66,
+      "end": 41.82,
+      "probability": 0.958
+    },
+    {
+      "word": " virtual",
+      "start": 41.82,
+      "end": 42.22,
+      "probability": 0.982
+    },
+    {
+      "word": " reality",
+      "start": 42.22,
+      "end": 42.92,
+      "probability": 0.997
+    },
+    {
+      "word": " training",
+      "start": 42.92,
+      "end": 43.28,
+      "probability": 0.797
+    },
+    {
+      "word": " ground",
+      "start": 43.28,
+      "end": 43.66,
+      "probability": 0.997
+    },
+    {
+      "word": " for",
+      "start": 43.66,
+      "end": 43.9,
+      "probability": 0.995
+    },
+    {
+      "word": " survival.",
+      "start": 43.9,
+      "end": 44.42,
+      "probability": 0.999
+    },
+    {
+      "word": " In",
+      "start": 45.06,
+      "end": 45.16,
+      "probability": 0.868
+    },
+    {
+      "word": " dreams,",
+      "start": 45.16,
+      "end": 45.48,
+      "probability": 0.979
+    },
+    {
+      "word": " you",
+      "start": 45.94,
+      "end": 46.0,
+      "probability": 0.998
+    },
+    {
+      "word": " rehearse",
+      "start": 46.0,
+      "end": 46.42,
+      "probability": 0.94
+    },
+    {
+      "word": " dangerous",
+      "start": 46.42,
+      "end": 46.82,
+      "probability": 0.998
+    },
+    {
+      "word": " encounters.",
+      "start": 46.82,
+      "end": 47.38,
+      "probability": 0.998
+    },
+    {
+      "word": " Do",
+      "start": 48.1,
+      "end": 48.22,
+      "probability": 0.981
+    },
+    {
+      "word": " you",
+      "start": 48.22,
+      "end": 48.38,
+      "probability": 0.997
+    },
+    {
+      "word": " often",
+      "start": 48.38,
+      "end": 48.64,
+      "probability": 0.998
+    },
+    {
+      "word": " dream",
+      "start": 48.64,
+      "end": 48.96,
+      "probability": 0.991
+    },
+    {
+      "word": " of",
+      "start": 48.96,
+      "end": 49.2,
+      "probability": 0.998
+    },
+    {
+      "word": " being",
+      "start": 49.2,
+      "end": 49.46,
+      "probability": 0.998
+    },
+    {
+      "word": " chased?",
+      "start": 49.46,
+      "end": 49.84,
+      "probability": 0.79
+    },
+    {
+      "word": " This",
+      "start": 50.6,
+      "end": 50.76,
+      "probability": 0.992
+    },
+    {
+      "word": " is",
+      "start": 50.76,
+      "end": 50.88,
+      "probability": 0.989
+    },
+    {
+      "word": " not",
+      "start": 50.88,
+      "end": 51.12,
+      "probability": 0.999
+    },
+    {
+      "word": " an",
+      "start": 51.12,
+      "end": 51.3,
+      "probability": 0.996
+    },
+    {
+      "word": " accident.",
+      "start": 51.3,
+      "end": 51.74,
+      "probability": 0.997
+    },
+    {
+      "word": " Your",
+      "start": 52.44,
+      "end": 52.62,
+      "probability": 0.992
+    },
+    {
+      "word": " brain",
+      "start": 52.62,
+      "end": 52.92,
+      "probability": 0.997
+    },
+    {
+      "word": " is",
+      "start": 52.92,
+      "end": 53.24,
+      "probability": 0.997
+    },
+    {
+      "word": " running",
+      "start": 53.24,
+      "end": 53.52,
+      "probability": 0.998
+    },
+    {
+      "word": " an",
+      "start": 53.52,
+      "end": 53.74,
+      "probability": 0.647
+    },
+    {
+      "word": " ancient",
+      "start": 53.74,
+      "end": 54.08,
+      "probability": 0.976
+    },
+    {
+      "word": " script.",
+      "start": 54.08,
+      "end": 54.56,
+      "probability": 0.997
+    },
+    {
+      "word": " When",
+      "start": 55.04,
+      "end": 55.36,
+      "probability": 0.404
+    },
+    {
+      "word": " Dr.",
+      "start": 55.36,
+      "end": 55.7,
+      "probability": 0.843
+    },
+    {
+      "word": " Ketchivali",
+      "start": 55.88,
+      "end": 56.5,
+      "probability": 0.561
+    },
+    {
+      "word": " analyzed",
+      "start": 56.5,
+      "end": 57.0,
+      "probability": 0.205
+    },
+    {
+      "word": " thousands",
+      "start": 57.0,
+      "end": 57.44,
+      "probability": 0.982
+    },
+    {
+      "word": " of",
+      "start": 57.44,
+      "end": 57.7,
+      "probability": 0.998
+    },
+    {
+      "word": " dream",
+      "start": 57.7,
+      "end": 57.9,
+      "probability": 0.887
+    },
+    {
+      "word": " reports,",
+      "start": 57.9,
+      "end": 58.28,
+      "probability": 0.998
+    },
+    {
+      "word": " she",
+      "start": 58.76,
+      "end": 58.84,
+      "probability": 0.985
+    },
+    {
+      "word": " discovered",
+      "start": 58.84,
+      "end": 59.3,
+      "probability": 0.993
+    },
+    {
+      "word": " that",
+      "start": 59.3,
+      "end": 59.56,
+      "probability": 0.973
+    },
+    {
+      "word": " the",
+      "start": 59.56,
+      "end": 59.66,
+      "probability": 0.98
+    },
+    {
+      "word": " majority",
+      "start": 59.66,
+      "end": 60.04,
+      "probability": 0.983
+    },
+    {
+      "word": " of",
+      "start": 60.04,
+      "end": 60.32,
+      "probability": 0.998
+    },
+    {
+      "word": " dream",
+      "start": 60.32,
+      "end": 60.64,
+      "probability": 0.9
+    },
+    {
+      "word": " emotions",
+      "start": 60.64,
+      "end": 61.12,
+      "probability": 0.979
+    },
+    {
+      "word": " are",
+      "start": 61.12,
+      "end": 61.56,
+      "probability": 0.836
+    },
+    {
+      "word": " negative,",
+      "start": 61.56,
+      "end": 62.04,
+      "probability": 0.985
+    },
+    {
+      "word": " dominated",
+      "start": 62.48,
+      "end": 62.92,
+      "probability": 0.992
+    },
+    {
+      "word": " by",
+      "start": 62.92,
+      "end": 63.18,
+      "probability": 0.999
+    },
+    {
+      "word": " fear",
+      "start": 63.18,
+      "end": 63.54,
+      "probability": 0.998
+    },
+    {
+      "word": " and",
+      "start": 63.54,
+      "end": 63.84,
+      "probability": 0.993
+    },
+    {
+      "word": " anxiety.",
+      "start": 63.84,
+      "end": 64.34,
+      "probability": 0.999
+    },
+    {
+      "word": " Your",
+      "start": 64.98,
+      "end": 65.12,
+      "probability": 0.963
+    },
+    {
+      "word": " mind",
+      "start": 65.12,
+      "end": 65.38,
+      "probability": 0.992
+    },
+    {
+      "word": " simulates",
+      "start": 65.38,
+      "end": 65.86,
+      "probability": 0.977
+    },
+    {
+      "word": " worst",
+      "start": 65.86,
+      "end": 66.26,
+      "probability": 0.805
+    },
+    {
+      "word": "-case",
+      "start": 66.26,
+      "end": 66.5,
+      "probability": 0.791
+    },
+    {
+      "word": " scenarios.",
+      "start": 66.5,
+      "end": 67.08,
+      "probability": 0.954
+    },
+    {
+      "word": " Why",
+      "start": 67.9,
+      "end": 68.08,
+      "probability": 0.984
+    },
+    {
+      "word": " would",
+      "start": 68.08,
+      "end": 68.24,
+      "probability": 0.998
+    },
+    {
+      "word": " nature",
+      "start": 68.24,
+      "end": 68.48,
+      "probability": 0.952
+    },
+    {
+      "word": " design",
+      "start": 68.48,
+      "end": 68.94,
+      "probability": 0.984
+    },
+    {
+      "word": " such",
+      "start": 68.94,
+      "end": 69.38,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 69.38,
+      "end": 69.46,
+      "probability": 0.977
+    },
+    {
+      "word": " stressful",
+      "start": 69.46,
+      "end": 69.88,
+      "probability": 0.996
+    },
+    {
+      "word": " system?",
+      "start": 69.88,
+      "end": 70.38,
+      "probability": 1.0
+    },
+    {
+      "word": " To",
+      "start": 70.98,
+      "end": 71.08,
+      "probability": 0.976
+    },
+    {
+      "word": " keep",
+      "start": 71.08,
+      "end": 71.26,
+      "probability": 0.999
+    },
+    {
+      "word": " you",
+      "start": 71.26,
+      "end": 71.46,
+      "probability": 0.997
+    },
+    {
+      "word": " alive",
+      "start": 71.46,
+      "end": 71.74,
+      "probability": 0.998
+    },
+    {
+      "word": " tomorrow?",
+      "start": 71.74,
+      "end": 72.22,
+      "probability": 0.988
+    },
+    {
+      "word": " A",
+      "start": 72.84,
+      "end": 72.92,
+      "probability": 0.968
+    },
+    {
+      "word": " simulated",
+      "start": 72.92,
+      "end": 73.44,
+      "probability": 0.992
+    },
+    {
+      "word": " escape",
+      "start": 73.44,
+      "end": 73.86,
+      "probability": 0.994
+    },
+    {
+      "word": " increases",
+      "start": 73.86,
+      "end": 74.54,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 74.54,
+      "end": 74.78,
+      "probability": 0.997
+    },
+    {
+      "word": " waking",
+      "start": 74.78,
+      "end": 75.06,
+      "probability": 0.948
+    },
+    {
+      "word": " survival",
+      "start": 75.06,
+      "end": 75.56,
+      "probability": 0.903
+    },
+    {
+      "word": " rate.",
+      "start": 75.56,
+      "end": 76.06,
+      "probability": 0.996
+    },
+    {
+      "word": " If",
+      "start": 76.54,
+      "end": 76.8,
+      "probability": 0.995
+    },
+    {
+      "word": " you",
+      "start": 76.8,
+      "end": 76.9,
+      "probability": 0.999
+    },
+    {
+      "word": " practice",
+      "start": 76.9,
+      "end": 77.32,
+      "probability": 0.978
+    },
+    {
+      "word": " dodging",
+      "start": 77.32,
+      "end": 77.74,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 77.74,
+      "end": 77.88,
+      "probability": 0.99
+    },
+    {
+      "word": " saber",
+      "start": 77.88,
+      "end": 78.14,
+      "probability": 0.842
+    },
+    {
+      "word": "-tooth",
+      "start": 78.14,
+      "end": 78.54,
+      "probability": 0.832
+    },
+    {
+      "word": " tiger",
+      "start": 78.54,
+      "end": 78.86,
+      "probability": 0.464
+    },
+    {
+      "word": " in",
+      "start": 78.86,
+      "end": 79.14,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 79.14,
+      "end": 79.28,
+      "probability": 0.996
+    },
+    {
+      "word": " sleep,",
+      "start": 79.28,
+      "end": 79.6,
+      "probability": 0.992
+    },
+    {
+      "word": " you",
+      "start": 80.0,
+      "end": 80.14,
+      "probability": 0.997
+    },
+    {
+      "word": " will",
+      "start": 80.14,
+      "end": 80.28,
+      "probability": 0.99
+    },
+    {
+      "word": " run",
+      "start": 80.28,
+      "end": 80.48,
+      "probability": 0.999
+    },
+    {
+      "word": " faster",
+      "start": 80.48,
+      "end": 80.98,
+      "probability": 0.996
+    },
+    {
+      "word": " when",
+      "start": 80.98,
+      "end": 81.2,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 81.2,
+      "end": 81.32,
+      "probability": 0.994
+    },
+    {
+      "word": " real",
+      "start": 81.32,
+      "end": 81.54,
+      "probability": 0.98
+    },
+    {
+      "word": " bee",
+      "start": 81.54,
+      "end": 81.76,
+      "probability": 0.594
+    },
+    {
+      "word": " sleeps",
+      "start": 81.76,
+      "end": 82.14,
+      "probability": 0.913
+    },
+    {
+      "word": " from",
+      "start": 82.14,
+      "end": 82.46,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 82.46,
+      "end": 82.6,
+      "probability": 0.998
+    },
+    {
+      "word": " grass.",
+      "start": 82.6,
+      "end": 82.82,
+      "probability": 0.993
+    },
+    {
+      "word": " You",
+      "start": 83.42,
+      "end": 83.72,
+      "probability": 0.103
+    },
+    {
+      "word": " are",
+      "start": 83.72,
+      "end": 83.84,
+      "probability": 0.899
+    },
+    {
+      "word": " the",
+      "start": 83.84,
+      "end": 83.96,
+      "probability": 0.984
+    },
+    {
+      "word": " descendant",
+      "start": 83.96,
+      "end": 84.48,
+      "probability": 0.932
+    },
+    {
+      "word": " of",
+      "start": 84.48,
+      "end": 84.62,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 84.62,
+      "end": 84.74,
+      "probability": 0.958
+    },
+    {
+      "word": " best",
+      "start": 84.74,
+      "end": 85.0,
+      "probability": 0.963
+    },
+    {
+      "word": " dreamers.",
+      "start": 85.0,
+      "end": 85.58,
+      "probability": 0.931
+    },
+    {
+      "word": " Did",
+      "start": 85.88,
+      "end": 86.18,
+      "probability": 0.95
+    },
+    {
+      "word": " the",
+      "start": 86.18,
+      "end": 86.32,
+      "probability": 0.986
+    },
+    {
+      "word": " bad",
+      "start": 86.32,
+      "end": 86.54,
+      "probability": 0.993
+    },
+    {
+      "word": " dreamers",
+      "start": 86.54,
+      "end": 87.08,
+      "probability": 0.992
+    },
+    {
+      "word": " simply",
+      "start": 87.08,
+      "end": 87.42,
+      "probability": 0.962
+    },
+    {
+      "word": " not",
+      "start": 87.42,
+      "end": 87.66,
+      "probability": 0.99
+    },
+    {
+      "word": " survive?",
+      "start": 87.66,
+      "end": 88.02,
+      "probability": 0.996
+    },
+    {
+      "word": " The",
+      "start": 88.66,
+      "end": 88.8,
+      "probability": 0.974
+    },
+    {
+      "word": " science",
+      "start": 88.8,
+      "end": 89.18,
+      "probability": 0.967
+    },
+    {
+      "word": " says",
+      "start": 89.18,
+      "end": 89.66,
+      "probability": 0.838
+    },
+    {
+      "word": " yes.",
+      "start": 89.66,
+      "end": 90.06,
+      "probability": 0.879
+    },
+    {
+      "word": " But",
+      "start": 90.84,
+      "end": 90.92,
+      "probability": 0.939
+    },
+    {
+      "word": " ancient",
+      "start": 90.92,
+      "end": 91.2,
+      "probability": 0.981
+    },
+    {
+      "word": " dreams",
+      "start": 91.2,
+      "end": 91.54,
+      "probability": 0.993
+    },
+    {
+      "word": " were",
+      "start": 91.54,
+      "end": 91.86,
+      "probability": 0.994
+    },
+    {
+      "word": " not",
+      "start": 91.86,
+      "end": 92.04,
+      "probability": 0.986
+    },
+    {
+      "word": " just",
+      "start": 92.04,
+      "end": 92.26,
+      "probability": 0.995
+    },
+    {
+      "word": " about",
+      "start": 92.26,
+      "end": 92.5,
+      "probability": 0.921
+    },
+    {
+      "word": " fear.",
+      "start": 92.5,
+      "end": 92.88,
+      "probability": 0.875
+    },
+    {
+      "word": " Dr.",
+      "start": 93.6,
+      "end": 93.88,
+      "probability": 0.878
+    },
+    {
+      "word": " David",
+      "start": 94.06,
+      "end": 94.24,
+      "probability": 0.987
+    },
+    {
+      "word": " Sanson",
+      "start": 94.24,
+      "end": 94.56,
+      "probability": 0.681
+    },
+    {
+      "word": " studied",
+      "start": 94.56,
+      "end": 95.12,
+      "probability": 0.987
+    },
+    {
+      "word": " the",
+      "start": 95.12,
+      "end": 95.32,
+      "probability": 0.978
+    },
+    {
+      "word": " sleep",
+      "start": 95.32,
+      "end": 95.6,
+      "probability": 0.98
+    },
+    {
+      "word": " of",
+      "start": 95.6,
+      "end": 95.8,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 95.8,
+      "end": 95.9,
+      "probability": 0.878
+    },
+    {
+      "word": " heads",
+      "start": 95.9,
+      "end": 96.16,
+      "probability": 0.645
+    },
+    {
+      "word": " of",
+      "start": 96.16,
+      "end": 96.28,
+      "probability": 0.998
+    },
+    {
+      "word": " people,",
+      "start": 96.28,
+      "end": 96.58,
+      "probability": 0.995
+    },
+    {
+      "word": " one",
+      "start": 96.94,
+      "end": 97.08,
+      "probability": 0.987
+    },
+    {
+      "word": " of",
+      "start": 97.08,
+      "end": 97.2,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 97.2,
+      "end": 97.32,
+      "probability": 0.998
+    },
+    {
+      "word": " last",
+      "start": 97.32,
+      "end": 97.58,
+      "probability": 0.994
+    },
+    {
+      "word": " remaining",
+      "start": 97.58,
+      "end": 98.02,
+      "probability": 0.996
+    },
+    {
+      "word": " hunter",
+      "start": 98.02,
+      "end": 98.34,
+      "probability": 0.967
+    },
+    {
+      "word": " gatherer",
+      "start": 98.34,
+      "end": 98.84,
+      "probability": 0.796
+    },
+    {
+      "word": " tribes",
+      "start": 98.84,
+      "end": 99.18,
+      "probability": 0.976
+    },
+    {
+      "word": " in",
+      "start": 99.18,
+      "end": 99.48,
+      "probability": 0.994
+    },
+    {
+      "word": " Tanzania.",
+      "start": 99.48,
+      "end": 100.08,
+      "probability": 0.974
+    },
+    {
+      "word": " He",
+      "start": 100.64,
+      "end": 100.82,
+      "probability": 0.99
+    },
+    {
+      "word": " found",
+      "start": 100.82,
+      "end": 101.06,
+      "probability": 0.993
+    },
+    {
+      "word": " their",
+      "start": 101.06,
+      "end": 101.2,
+      "probability": 0.813
+    },
+    {
+      "word": " dreams",
+      "start": 101.2,
+      "end": 101.54,
+      "probability": 0.977
+    },
+    {
+      "word": " focused",
+      "start": 101.54,
+      "end": 101.92,
+      "probability": 0.934
+    },
+    {
+      "word": " heavily",
+      "start": 101.92,
+      "end": 102.42,
+      "probability": 0.987
+    },
+    {
+      "word": " on",
+      "start": 102.42,
+      "end": 102.72,
+      "probability": 0.999
+    },
+    {
+      "word": " community.",
+      "start": 102.72,
+      "end": 103.12,
+      "probability": 0.754
+    },
+    {
+      "word": " Did",
+      "start": 103.82,
+      "end": 103.9,
+      "probability": 0.981
+    },
+    {
+      "word": " you",
+      "start": 103.9,
+      "end": 104.02,
+      "probability": 0.995
+    },
+    {
+      "word": " know",
+      "start": 104.02,
+      "end": 104.14,
+      "probability": 0.996
+    },
+    {
+      "word": " they",
+      "start": 104.14,
+      "end": 104.3,
+      "probability": 0.951
+    },
+    {
+      "word": " frequently",
+      "start": 104.3,
+      "end": 104.68,
+      "probability": 0.991
+    },
+    {
+      "word": " dream",
+      "start": 104.68,
+      "end": 105.14,
+      "probability": 0.648
+    },
+    {
+      "word": " of",
+      "start": 105.14,
+      "end": 105.4,
+      "probability": 0.994
+    },
+    {
+      "word": " sharing",
+      "start": 105.4,
+      "end": 105.72,
+      "probability": 0.99
+    },
+    {
+      "word": " food?",
+      "start": 105.72,
+      "end": 106.12,
+      "probability": 0.998
+    },
+    {
+      "word": " Cooperation",
+      "start": 106.84,
+      "end": 107.44,
+      "probability": 0.933
+    },
+    {
+      "word": " was",
+      "start": 107.44,
+      "end": 107.8,
+      "probability": 0.996
+    },
+    {
+      "word": " their",
+      "start": 107.8,
+      "end": 107.94,
+      "probability": 0.957
+    },
+    {
+      "word": " greatest",
+      "start": 107.94,
+      "end": 108.3,
+      "probability": 0.991
+    },
+    {
+      "word": " weapon.",
+      "start": 108.3,
+      "end": 108.82,
+      "probability": 0.999
+    },
+    {
+      "word": " Their",
+      "start": 109.52,
+      "end": 109.62,
+      "probability": 0.905
+    },
+    {
+      "word": " nightly",
+      "start": 109.62,
+      "end": 109.94,
+      "probability": 0.896
+    },
+    {
+      "word": " minds",
+      "start": 109.94,
+      "end": 110.16,
+      "probability": 0.856
+    },
+    {
+      "word": " rehearsed",
+      "start": 110.16,
+      "end": 110.72,
+      "probability": 0.986
+    },
+    {
+      "word": " social",
+      "start": 110.72,
+      "end": 111.02,
+      "probability": 0.989
+    },
+    {
+      "word": " bonds.",
+      "start": 111.02,
+      "end": 111.4,
+      "probability": 0.993
+    },
+    {
+      "word": " They",
+      "start": 111.78,
+      "end": 112.1,
+      "probability": 0.381
+    },
+    {
+      "word": " dreamt",
+      "start": 112.1,
+      "end": 112.44,
+      "probability": 0.937
+    },
+    {
+      "word": " of",
+      "start": 112.44,
+      "end": 112.52,
+      "probability": 0.995
+    },
+    {
+      "word": " cooperative",
+      "start": 112.52,
+      "end": 113.02,
+      "probability": 0.971
+    },
+    {
+      "word": " hunts,",
+      "start": 113.02,
+      "end": 113.6,
+      "probability": 0.989
+    },
+    {
+      "word": " a",
+      "start": 113.72,
+      "end": 113.8,
+      "probability": 0.915
+    },
+    {
+      "word": " warmth",
+      "start": 113.8,
+      "end": 114.16,
+      "probability": 0.966
+    },
+    {
+      "word": " around",
+      "start": 114.16,
+      "end": 114.58,
+      "probability": 0.979
+    },
+    {
+      "word": " campfires,",
+      "start": 114.58,
+      "end": 115.32,
+      "probability": 0.913
+    },
+    {
+      "word": " and",
+      "start": 115.64,
+      "end": 115.74,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 115.74,
+      "end": 115.88,
+      "probability": 0.788
+    },
+    {
+      "word": " resolving",
+      "start": 115.88,
+      "end": 116.28,
+      "probability": 0.99
+    },
+    {
+      "word": " tense",
+      "start": 116.28,
+      "end": 116.62,
+      "probability": 0.986
+    },
+    {
+      "word": " conflicts",
+      "start": 116.62,
+      "end": 117.18,
+      "probability": 0.995
+    },
+    {
+      "word": " with",
+      "start": 117.18,
+      "end": 117.52,
+      "probability": 0.997
+    },
+    {
+      "word": " members",
+      "start": 117.52,
+      "end": 117.82,
+      "probability": 0.968
+    },
+    {
+      "word": " of",
+      "start": 117.82,
+      "end": 118.06,
+      "probability": 0.998
+    },
+    {
+      "word": " their",
+      "start": 118.06,
+      "end": 118.2,
+      "probability": 0.998
+    },
+    {
+      "word": " tribe.",
+      "start": 118.2,
+      "end": 118.58,
+      "probability": 0.999
+    },
+    {
+      "word": " Dream",
+      "start": 119.18,
+      "end": 119.38,
+      "probability": 0.928
+    },
+    {
+      "word": " sharing",
+      "start": 119.38,
+      "end": 119.8,
+      "probability": 0.609
+    },
+    {
+      "word": " was",
+      "start": 119.8,
+      "end": 120.06,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 120.06,
+      "end": 120.22,
+      "probability": 0.988
+    },
+    {
+      "word": " morning",
+      "start": 120.22,
+      "end": 120.56,
+      "probability": 0.797
+    },
+    {
+      "word": " ritual.",
+      "start": 120.56,
+      "end": 120.98,
+      "probability": 0.997
+    },
+    {
+      "word": " Did",
+      "start": 121.62,
+      "end": 121.72,
+      "probability": 0.966
+    },
+    {
+      "word": " this",
+      "start": 121.72,
+      "end": 121.9,
+      "probability": 0.992
+    },
+    {
+      "word": " ritual",
+      "start": 121.9,
+      "end": 122.3,
+      "probability": 0.998
+    },
+    {
+      "word": " build",
+      "start": 122.3,
+      "end": 122.64,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 122.64,
+      "end": 122.78,
+      "probability": 0.994
+    },
+    {
+      "word": " trust",
+      "start": 122.78,
+      "end": 122.94,
+      "probability": 0.871
+    },
+    {
+      "word": " needed",
+      "start": 122.94,
+      "end": 123.22,
+      "probability": 0.987
+    },
+    {
+      "word": " to",
+      "start": 123.22,
+      "end": 123.44,
+      "probability": 0.998
+    },
+    {
+      "word": " survive?",
+      "start": 123.44,
+      "end": 123.78,
+      "probability": 0.998
+    },
+    {
+      "word": " Modern",
+      "start": 124.54,
+      "end": 124.78,
+      "probability": 0.976
+    },
+    {
+      "word": " life",
+      "start": 124.78,
+      "end": 125.1,
+      "probability": 0.981
+    },
+    {
+      "word": " has",
+      "start": 125.1,
+      "end": 125.34,
+      "probability": 0.996
+    },
+    {
+      "word": " changed",
+      "start": 125.34,
+      "end": 125.8,
+      "probability": 0.995
+    },
+    {
+      "word": " everything.",
+      "start": 125.8,
+      "end": 126.34,
+      "probability": 0.997
+    },
+    {
+      "word": " You",
+      "start": 127.04,
+      "end": 127.16,
+      "probability": 0.976
+    },
+    {
+      "word": " sleep",
+      "start": 127.16,
+      "end": 127.4,
+      "probability": 0.997
+    },
+    {
+      "word": " in",
+      "start": 127.4,
+      "end": 127.6,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 127.6,
+      "end": 127.7,
+      "probability": 0.996
+    },
+    {
+      "word": " locked",
+      "start": 127.7,
+      "end": 127.96,
+      "probability": 0.991
+    },
+    {
+      "word": " room.",
+      "start": 127.96,
+      "end": 128.32,
+      "probability": 0.998
+    },
+    {
+      "word": " The",
+      "start": 128.92,
+      "end": 129.0,
+      "probability": 0.995
+    },
+    {
+      "word": " wild",
+      "start": 129.0,
+      "end": 129.32,
+      "probability": 0.974
+    },
+    {
+      "word": " beasts",
+      "start": 129.32,
+      "end": 129.7,
+      "probability": 0.976
+    },
+    {
+      "word": " are",
+      "start": 129.7,
+      "end": 130.02,
+      "probability": 0.997
+    },
+    {
+      "word": " gone,",
+      "start": 130.02,
+      "end": 130.36,
+      "probability": 0.994
+    },
+    {
+      "word": " replaced",
+      "start": 130.66,
+      "end": 130.9,
+      "probability": 0.997
+    },
+    {
+      "word": " by",
+      "start": 130.9,
+      "end": 131.16,
+      "probability": 0.999
+    },
+    {
+      "word": " work",
+      "start": 131.16,
+      "end": 131.4,
+      "probability": 0.946
+    },
+    {
+      "word": " deadlines,",
+      "start": 131.4,
+      "end": 131.84,
+      "probability": 0.937
+    },
+    {
+      "word": " social",
+      "start": 132.4,
+      "end": 132.72,
+      "probability": 0.997
+    },
+    {
+      "word": " anxieties,",
+      "start": 132.72,
+      "end": 133.3,
+      "probability": 0.995
+    },
+    {
+      "word": " and",
+      "start": 133.6,
+      "end": 133.68,
+      "probability": 0.999
+    },
+    {
+      "word": " strange",
+      "start": 133.68,
+      "end": 134.1,
+      "probability": 0.987
+    },
+    {
+      "word": " digital",
+      "start": 134.1,
+      "end": 134.72,
+      "probability": 0.982
+    },
+    {
+      "word": " notifications.",
+      "start": 134.72,
+      "end": 135.44,
+      "probability": 0.99
+    },
+    {
+      "word": " That",
+      "start": 136.08,
+      "end": 136.38,
+      "probability": 0.122
+    },
+    {
+      "word": " your",
+      "start": 136.38,
+      "end": 136.58,
+      "probability": 0.905
+    },
+    {
+      "word": " brain",
+      "start": 136.58,
+      "end": 136.82,
+      "probability": 0.996
+    },
+    {
+      "word": " still",
+      "start": 136.82,
+      "end": 137.18,
+      "probability": 0.977
+    },
+    {
+      "word": " runs",
+      "start": 137.18,
+      "end": 137.44,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 137.44,
+      "end": 137.72,
+      "probability": 0.983
+    },
+    {
+      "word": " old",
+      "start": 137.72,
+      "end": 137.9,
+      "probability": 0.968
+    },
+    {
+      "word": " program.",
+      "start": 137.9,
+      "end": 138.42,
+      "probability": 0.955
+    },
+    {
+      "word": " Why",
+      "start": 138.98,
+      "end": 139.2,
+      "probability": 0.926
+    },
+    {
+      "word": " does",
+      "start": 139.2,
+      "end": 139.32,
+      "probability": 0.991
+    },
+    {
+      "word": " it",
+      "start": 139.32,
+      "end": 139.48,
+      "probability": 0.973
+    },
+    {
+      "word": " still",
+      "start": 139.48,
+      "end": 139.72,
+      "probability": 0.982
+    },
+    {
+      "word": " try",
+      "start": 139.72,
+      "end": 139.96,
+      "probability": 0.987
+    },
+    {
+      "word": " to",
+      "start": 139.96,
+      "end": 140.08,
+      "probability": 0.995
+    },
+    {
+      "word": " protect",
+      "start": 140.08,
+      "end": 140.36,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 140.36,
+      "end": 140.64,
+      "probability": 0.996
+    },
+    {
+      "word": " from",
+      "start": 140.64,
+      "end": 140.8,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 140.8,
+      "end": 140.94,
+      "probability": 0.994
+    },
+    {
+      "word": " dark?",
+      "start": 140.94,
+      "end": 141.18,
+      "probability": 0.992
+    },
+    {
+      "word": " Your",
+      "start": 141.86,
+      "end": 141.96,
+      "probability": 0.986
+    },
+    {
+      "word": " nightmares",
+      "start": 141.96,
+      "end": 142.32,
+      "probability": 0.996
+    },
+    {
+      "word": " are",
+      "start": 142.32,
+      "end": 142.66,
+      "probability": 0.988
+    },
+    {
+      "word": " prehistoric",
+      "start": 142.66,
+      "end": 143.32,
+      "probability": 0.951
+    },
+    {
+      "word": " echoes.",
+      "start": 143.32,
+      "end": 143.66,
+      "probability": 0.915
+    },
+    {
+      "word": " Your",
+      "start": 144.38,
+      "end": 144.56,
+      "probability": 0.979
+    },
+    {
+      "word": " falling",
+      "start": 144.56,
+      "end": 144.94,
+      "probability": 0.976
+    },
+    {
+      "word": " dreams",
+      "start": 144.94,
+      "end": 145.26,
+      "probability": 0.995
+    },
+    {
+      "word": " are",
+      "start": 145.26,
+      "end": 145.6,
+      "probability": 0.992
+    },
+    {
+      "word": " memories",
+      "start": 145.6,
+      "end": 145.92,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 145.92,
+      "end": 146.2,
+      "probability": 0.999
+    },
+    {
+      "word": " trees.",
+      "start": 146.2,
+      "end": 146.5,
+      "probability": 0.97
+    },
+    {
+      "word": " Every",
+      "start": 147.24,
+      "end": 147.44,
+      "probability": 0.972
+    },
+    {
+      "word": " time",
+      "start": 147.44,
+      "end": 147.66,
+      "probability": 0.959
+    },
+    {
+      "word": " you",
+      "start": 147.66,
+      "end": 147.96,
+      "probability": 0.986
+    },
+    {
+      "word": " wake",
+      "start": 147.96,
+      "end": 148.12,
+      "probability": 0.971
+    },
+    {
+      "word": " up",
+      "start": 148.12,
+      "end": 148.28,
+      "probability": 0.992
+    },
+    {
+      "word": " sweating,",
+      "start": 148.28,
+      "end": 148.7,
+      "probability": 0.943
+    },
+    {
+      "word": " you",
+      "start": 148.9,
+      "end": 149.1,
+      "probability": 0.964
+    },
+    {
+      "word": " are",
+      "start": 149.1,
+      "end": 149.26,
+      "probability": 0.341
+    },
+    {
+      "word": " experiencing",
+      "start": 149.26,
+      "end": 149.6,
+      "probability": 0.956
+    },
+    {
+      "word": " the",
+      "start": 149.6,
+      "end": 150.24,
+      "probability": 0.99
+    },
+    {
+      "word": " legacy",
+      "start": 150.24,
+      "end": 150.54,
+      "probability": 0.992
+    },
+    {
+      "word": " of",
+      "start": 150.54,
+      "end": 150.9,
+      "probability": 0.999
+    },
+    {
+      "word": " ancestors",
+      "start": 150.9,
+      "end": 151.3,
+      "probability": 0.967
+    },
+    {
+      "word": " who",
+      "start": 151.3,
+      "end": 151.78,
+      "probability": 0.918
+    },
+    {
+      "word": " slept",
+      "start": 151.78,
+      "end": 152.14,
+      "probability": 0.397
+    },
+    {
+      "word": " under",
+      "start": 152.14,
+      "end": 152.48,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 152.48,
+      "end": 152.66,
+      "probability": 0.988
+    },
+    {
+      "word": " open",
+      "start": 152.66,
+      "end": 152.92,
+      "probability": 0.961
+    },
+    {
+      "word": " stars.",
+      "start": 152.92,
+      "end": 153.32,
+      "probability": 0.985
+    },
+    {
+      "word": " Their",
+      "start": 154.04,
+      "end": 154.28,
+      "probability": 0.973
+    },
+    {
+      "word": " survival",
+      "start": 154.28,
+      "end": 154.88,
+      "probability": 0.995
+    },
+    {
+      "word": " is",
+      "start": 154.88,
+      "end": 155.2,
+      "probability": 0.998
+    },
+    {
+      "word": " written",
+      "start": 155.2,
+      "end": 155.46,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 155.46,
+      "end": 155.66,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 155.66,
+      "end": 155.84,
+      "probability": 0.992
+    },
+    {
+      "word": " sleeping",
+      "start": 155.84,
+      "end": 156.24,
+      "probability": 0.986
+    },
+    {
+      "word": " mind.",
+      "start": 156.24,
+      "end": 156.76,
+      "probability": 0.998
+    },
+    {
+      "word": " Tonight,",
+      "start": 157.28,
+      "end": 157.6,
+      "probability": 0.977
+    },
+    {
+      "word": " when",
+      "start": 157.92,
+      "end": 158.04,
+      "probability": 0.995
+    },
+    {
+      "word": " your",
+      "start": 158.04,
+      "end": 158.22,
+      "probability": 0.981
+    },
+    {
+      "word": " eyes",
+      "start": 158.22,
+      "end": 158.46,
+      "probability": 0.992
+    },
+    {
+      "word": " close,",
+      "start": 158.46,
+      "end": 158.8,
+      "probability": 0.987
+    },
+    {
+      "word": " you",
+      "start": 159.2,
+      "end": 159.3,
+      "probability": 0.996
+    },
+    {
+      "word": " will",
+      "start": 159.3,
+      "end": 159.44,
+      "probability": 0.984
+    },
+    {
+      "word": " enter",
+      "start": 159.44,
+      "end": 159.74,
+      "probability": 0.977
+    },
+    {
+      "word": " that",
+      "start": 159.74,
+      "end": 159.94,
+      "probability": 0.957
+    },
+    {
+      "word": " same",
+      "start": 159.94,
+      "end": 160.3,
+      "probability": 0.996
+    },
+    {
+      "word": " ancient",
+      "start": 160.3,
+      "end": 160.66,
+      "probability": 0.985
+    },
+    {
+      "word": " cinema.",
+      "start": 160.66,
+      "end": 161.0,
+      "probability": 0.978
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 161.203,
+  "model_size": "base",
+  "device": "cpu"
+}

@@ -1,0 +1,7818 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.62,
+      "text": "Tonight, when you speak, you won't think twice.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 0.0,
+          "end": 0.3,
+          "probability": 0.39
+        },
+        {
+          "word": " when",
+          "start": 0.7,
+          "end": 0.8,
+          "probability": 0.987
+        },
+        {
+          "word": " you",
+          "start": 0.8,
+          "end": 0.92,
+          "probability": 0.998
+        },
+        {
+          "word": " speak,",
+          "start": 0.92,
+          "end": 1.18,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 1.6,
+          "end": 1.7,
+          "probability": 0.995
+        },
+        {
+          "word": " won't",
+          "start": 1.7,
+          "end": 1.94,
+          "probability": 0.948
+        },
+        {
+          "word": " think",
+          "start": 1.94,
+          "end": 2.16,
+          "probability": 0.994
+        },
+        {
+          "word": " twice.",
+          "start": 2.16,
+          "end": 2.62,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 3.18,
+      "end": 8.82,
+      "text": "Your vocal cords dance in perfect harmony, but for 99 percent of human history, the sounds",
+      "words": [
+        {
+          "word": " Your",
+          "start": 3.18,
+          "end": 3.34,
+          "probability": 0.962
+        },
+        {
+          "word": " vocal",
+          "start": 3.34,
+          "end": 3.66,
+          "probability": 0.966
+        },
+        {
+          "word": " cords",
+          "start": 3.66,
+          "end": 4.14,
+          "probability": 0.639
+        },
+        {
+          "word": " dance",
+          "start": 4.14,
+          "end": 4.44,
+          "probability": 0.984
+        },
+        {
+          "word": " in",
+          "start": 4.44,
+          "end": 4.76,
+          "probability": 0.996
+        },
+        {
+          "word": " perfect",
+          "start": 4.76,
+          "end": 5.08,
+          "probability": 0.95
+        },
+        {
+          "word": " harmony,",
+          "start": 5.08,
+          "end": 5.56,
+          "probability": 0.999
+        },
+        {
+          "word": " but",
+          "start": 6.02,
+          "end": 6.24,
+          "probability": 0.988
+        },
+        {
+          "word": " for",
+          "start": 6.24,
+          "end": 6.44,
+          "probability": 0.987
+        },
+        {
+          "word": " 99",
+          "start": 6.44,
+          "end": 6.92,
+          "probability": 0.968
+        },
+        {
+          "word": " percent",
+          "start": 6.92,
+          "end": 7.36,
+          "probability": 0.136
+        },
+        {
+          "word": " of",
+          "start": 7.36,
+          "end": 7.6,
+          "probability": 0.994
+        },
+        {
+          "word": " human",
+          "start": 7.6,
+          "end": 7.78,
+          "probability": 0.991
+        },
+        {
+          "word": " history,",
+          "start": 7.78,
+          "end": 8.26,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 8.52,
+          "end": 8.6,
+          "probability": 0.949
+        },
+        {
+          "word": " sounds",
+          "start": 8.6,
+          "end": 8.82,
+          "probability": 0.921
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 8.82,
+      "end": 12.86,
+      "text": "your ancestors made would have been completely unrecognizable to your modern ears.",
+      "words": [
+        {
+          "word": " your",
+          "start": 8.82,
+          "end": 9.06,
+          "probability": 0.988
+        },
+        {
+          "word": " ancestors",
+          "start": 9.06,
+          "end": 9.46,
+          "probability": 0.988
+        },
+        {
+          "word": " made",
+          "start": 9.46,
+          "end": 9.92,
+          "probability": 0.993
+        },
+        {
+          "word": " would",
+          "start": 9.92,
+          "end": 10.12,
+          "probability": 0.967
+        },
+        {
+          "word": " have",
+          "start": 10.12,
+          "end": 10.22,
+          "probability": 0.788
+        },
+        {
+          "word": " been",
+          "start": 10.22,
+          "end": 10.34,
+          "probability": 0.998
+        },
+        {
+          "word": " completely",
+          "start": 10.34,
+          "end": 10.86,
+          "probability": 0.996
+        },
+        {
+          "word": " unrecognizable",
+          "start": 10.86,
+          "end": 11.84,
+          "probability": 0.982
+        },
+        {
+          "word": " to",
+          "start": 11.84,
+          "end": 12.06,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 12.06,
+          "end": 12.22,
+          "probability": 0.994
+        },
+        {
+          "word": " modern",
+          "start": 12.22,
+          "end": 12.54,
+          "probability": 0.991
+        },
+        {
+          "word": " ears.",
+          "start": 12.54,
+          "end": 12.86,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 13.42,
+      "end": 15.76,
+      "text": "They did not speak in neat, orderly words.",
+      "words": [
+        {
+          "word": " They",
+          "start": 13.42,
+          "end": 13.6,
+          "probability": 0.992
+        },
+        {
+          "word": " did",
+          "start": 13.6,
+          "end": 13.74,
+          "probability": 0.988
+        },
+        {
+          "word": " not",
+          "start": 13.74,
+          "end": 13.88,
+          "probability": 0.999
+        },
+        {
+          "word": " speak",
+          "start": 13.88,
+          "end": 14.18,
+          "probability": 0.998
+        },
+        {
+          "word": " in",
+          "start": 14.18,
+          "end": 14.4,
+          "probability": 0.938
+        },
+        {
+          "word": " neat,",
+          "start": 14.4,
+          "end": 14.62,
+          "probability": 0.958
+        },
+        {
+          "word": " orderly",
+          "start": 15.06,
+          "end": 15.44,
+          "probability": 0.985
+        },
+        {
+          "word": " words.",
+          "start": 15.44,
+          "end": 15.76,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.4,
+      "end": 20.76,
+      "text": "So what did human ancestors actually sound like before language was born?",
+      "words": [
+        {
+          "word": " So",
+          "start": 16.4,
+          "end": 16.74,
+          "probability": 0.987
+        },
+        {
+          "word": " what",
+          "start": 16.74,
+          "end": 17.28,
+          "probability": 0.312
+        },
+        {
+          "word": " did",
+          "start": 17.28,
+          "end": 17.42,
+          "probability": 0.998
+        },
+        {
+          "word": " human",
+          "start": 17.42,
+          "end": 17.82,
+          "probability": 0.971
+        },
+        {
+          "word": " ancestors",
+          "start": 17.82,
+          "end": 18.42,
+          "probability": 0.995
+        },
+        {
+          "word": " actually",
+          "start": 18.42,
+          "end": 18.98,
+          "probability": 0.997
+        },
+        {
+          "word": " sound",
+          "start": 18.98,
+          "end": 19.34,
+          "probability": 0.998
+        },
+        {
+          "word": " like",
+          "start": 19.34,
+          "end": 19.5,
+          "probability": 1.0
+        },
+        {
+          "word": " before",
+          "start": 19.5,
+          "end": 19.82,
+          "probability": 0.996
+        },
+        {
+          "word": " language",
+          "start": 19.82,
+          "end": 20.24,
+          "probability": 0.94
+        },
+        {
+          "word": " was",
+          "start": 20.24,
+          "end": 20.48,
+          "probability": 0.998
+        },
+        {
+          "word": " born?",
+          "start": 20.48,
+          "end": 20.76,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 21.34,
+      "end": 22.92,
+      "text": "You might picture primitive grunting.",
+      "words": [
+        {
+          "word": " You",
+          "start": 21.34,
+          "end": 21.48,
+          "probability": 0.982
+        },
+        {
+          "word": " might",
+          "start": 21.48,
+          "end": 21.64,
+          "probability": 0.983
+        },
+        {
+          "word": " picture",
+          "start": 21.64,
+          "end": 22.0,
+          "probability": 0.966
+        },
+        {
+          "word": " primitive",
+          "start": 22.0,
+          "end": 22.42,
+          "probability": 0.963
+        },
+        {
+          "word": " grunting.",
+          "start": 22.42,
+          "end": 22.92,
+          "probability": 0.967
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 23.5,
+      "end": 25.82,
+      "text": "You might picture wild, animal noises.",
+      "words": [
+        {
+          "word": " You",
+          "start": 23.5,
+          "end": 23.7,
+          "probability": 0.995
+        },
+        {
+          "word": " might",
+          "start": 23.7,
+          "end": 23.9,
+          "probability": 0.995
+        },
+        {
+          "word": " picture",
+          "start": 23.9,
+          "end": 24.26,
+          "probability": 0.997
+        },
+        {
+          "word": " wild,",
+          "start": 24.26,
+          "end": 24.7,
+          "probability": 0.993
+        },
+        {
+          "word": " animal",
+          "start": 25.02,
+          "end": 25.3,
+          "probability": 0.997
+        },
+        {
+          "word": " noises.",
+          "start": 25.3,
+          "end": 25.82,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 25.82,
+      "end": 30.86,
+      "text": "But the real answer is far stranger, buried in the shape of ancient bones and the",
+      "words": [
+        {
+          "word": " But",
+          "start": 25.82,
+          "end": 26.62,
+          "probability": 0.486
+        },
+        {
+          "word": " the",
+          "start": 26.62,
+          "end": 26.76,
+          "probability": 0.945
+        },
+        {
+          "word": " real",
+          "start": 26.76,
+          "end": 26.98,
+          "probability": 0.988
+        },
+        {
+          "word": " answer",
+          "start": 26.98,
+          "end": 27.4,
+          "probability": 0.867
+        },
+        {
+          "word": " is",
+          "start": 27.4,
+          "end": 27.62,
+          "probability": 0.987
+        },
+        {
+          "word": " far",
+          "start": 27.62,
+          "end": 27.84,
+          "probability": 0.882
+        },
+        {
+          "word": " stranger,",
+          "start": 27.84,
+          "end": 28.42,
+          "probability": 0.981
+        },
+        {
+          "word": " buried",
+          "start": 28.8,
+          "end": 29.0,
+          "probability": 0.994
+        },
+        {
+          "word": " in",
+          "start": 29.0,
+          "end": 29.2,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 29.2,
+          "end": 29.3,
+          "probability": 0.989
+        },
+        {
+          "word": " shape",
+          "start": 29.3,
+          "end": 29.5,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 29.5,
+          "end": 29.74,
+          "probability": 0.998
+        },
+        {
+          "word": " ancient",
+          "start": 29.74,
+          "end": 30.04,
+          "probability": 0.985
+        },
+        {
+          "word": " bones",
+          "start": 30.04,
+          "end": 30.36,
+          "probability": 0.983
+        },
+        {
+          "word": " and",
+          "start": 30.36,
+          "end": 30.72,
+          "probability": 0.554
+        },
+        {
+          "word": " the",
+          "start": 30.72,
+          "end": 30.86,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 30.86,
+      "end": 32.84,
+      "text": "wet tissue that rotted away long ago.",
+      "words": [
+        {
+          "word": " wet",
+          "start": 30.86,
+          "end": 31.04,
+          "probability": 0.994
+        },
+        {
+          "word": " tissue",
+          "start": 31.04,
+          "end": 31.38,
+          "probability": 0.997
+        },
+        {
+          "word": " that",
+          "start": 31.38,
+          "end": 31.62,
+          "probability": 0.994
+        },
+        {
+          "word": " rotted",
+          "start": 31.62,
+          "end": 31.92,
+          "probability": 0.846
+        },
+        {
+          "word": " away",
+          "start": 31.92,
+          "end": 32.2,
+          "probability": 0.992
+        },
+        {
+          "word": " long",
+          "start": 32.2,
+          "end": 32.52,
+          "probability": 0.82
+        },
+        {
+          "word": " ago.",
+          "start": 32.52,
+          "end": 32.84,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 33.56,
+      "end": 35.76,
+      "text": "Science is now bringing those voices back.",
+      "words": [
+        {
+          "word": " Science",
+          "start": 33.56,
+          "end": 33.84,
+          "probability": 0.972
+        },
+        {
+          "word": " is",
+          "start": 33.84,
+          "end": 34.12,
+          "probability": 0.978
+        },
+        {
+          "word": " now",
+          "start": 34.12,
+          "end": 34.32,
+          "probability": 0.951
+        },
+        {
+          "word": " bringing",
+          "start": 34.32,
+          "end": 34.7,
+          "probability": 0.938
+        },
+        {
+          "word": " those",
+          "start": 34.7,
+          "end": 35.0,
+          "probability": 0.967
+        },
+        {
+          "word": " voices",
+          "start": 35.0,
+          "end": 35.38,
+          "probability": 0.983
+        },
+        {
+          "word": " back.",
+          "start": 35.38,
+          "end": 35.76,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 36.42,
+      "end": 40.06,
+      "text": "How do you reconstruct a sound that has been silent for 100,000 years?",
+      "words": [
+        {
+          "word": " How",
+          "start": 36.42,
+          "end": 36.56,
+          "probability": 0.989
+        },
+        {
+          "word": " do",
+          "start": 36.56,
+          "end": 36.66,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 36.66,
+          "end": 36.76,
+          "probability": 0.665
+        },
+        {
+          "word": " reconstruct",
+          "start": 36.76,
+          "end": 37.1,
+          "probability": 0.961
+        },
+        {
+          "word": " a",
+          "start": 37.1,
+          "end": 37.5,
+          "probability": 0.986
+        },
+        {
+          "word": " sound",
+          "start": 37.5,
+          "end": 37.72,
+          "probability": 0.991
+        },
+        {
+          "word": " that",
+          "start": 37.72,
+          "end": 37.88,
+          "probability": 0.995
+        },
+        {
+          "word": " has",
+          "start": 37.88,
+          "end": 38.02,
+          "probability": 0.989
+        },
+        {
+          "word": " been",
+          "start": 38.02,
+          "end": 38.26,
+          "probability": 0.997
+        },
+        {
+          "word": " silent",
+          "start": 38.26,
+          "end": 38.76,
+          "probability": 0.991
+        },
+        {
+          "word": " for",
+          "start": 38.76,
+          "end": 39.0,
+          "probability": 0.997
+        },
+        {
+          "word": " 100",
+          "start": 39.0,
+          "end": 39.32,
+          "probability": 0.554
+        },
+        {
+          "word": ",000",
+          "start": 39.32,
+          "end": 39.78,
+          "probability": 0.943
+        },
+        {
+          "word": " years?",
+          "start": 39.78,
+          "end": 40.06,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 40.72,
+      "end": 42.82,
+      "text": "To find the origin, look at the throat.",
+      "words": [
+        {
+          "word": " To",
+          "start": 40.72,
+          "end": 40.84,
+          "probability": 0.992
+        },
+        {
+          "word": " find",
+          "start": 40.84,
+          "end": 41.14,
+          "probability": 0.987
+        },
+        {
+          "word": " the",
+          "start": 41.14,
+          "end": 41.38,
+          "probability": 0.995
+        },
+        {
+          "word": " origin,",
+          "start": 41.38,
+          "end": 41.72,
+          "probability": 0.99
+        },
+        {
+          "word": " look",
+          "start": 42.1,
+          "end": 42.24,
+          "probability": 0.994
+        },
+        {
+          "word": " at",
+          "start": 42.24,
+          "end": 42.38,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 42.38,
+          "end": 42.52,
+          "probability": 0.99
+        },
+        {
+          "word": " throat.",
+          "start": 42.52,
+          "end": 42.82,
+          "probability": 0.949
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 43.64,
+      "end": 46.02,
+      "text": "Specifically, look at the tiny hyoid bone.",
+      "words": [
+        {
+          "word": " Specifically,",
+          "start": 43.64,
+          "end": 44.2,
+          "probability": 0.992
+        },
+        {
+          "word": " look",
+          "start": 44.54,
+          "end": 44.68,
+          "probability": 0.994
+        },
+        {
+          "word": " at",
+          "start": 44.68,
+          "end": 44.86,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 44.86,
+          "end": 45.02,
+          "probability": 0.996
+        },
+        {
+          "word": " tiny",
+          "start": 45.02,
+          "end": 45.3,
+          "probability": 0.775
+        },
+        {
+          "word": " hyoid",
+          "start": 45.3,
+          "end": 45.64,
+          "probability": 0.66
+        },
+        {
+          "word": " bone.",
+          "start": 45.64,
+          "end": 46.02,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 46.58,
+      "end": 50.86,
+      "text": "This u-shaped bone sits just below your jaw, acting as the anchor for your tongue.",
+      "words": [
+        {
+          "word": " This",
+          "start": 46.58,
+          "end": 46.8,
+          "probability": 0.995
+        },
+        {
+          "word": " u",
+          "start": 46.8,
+          "end": 47.0,
+          "probability": 0.457
+        },
+        {
+          "word": "-shaped",
+          "start": 47.0,
+          "end": 47.18,
+          "probability": 0.983
+        },
+        {
+          "word": " bone",
+          "start": 47.18,
+          "end": 47.56,
+          "probability": 0.975
+        },
+        {
+          "word": " sits",
+          "start": 47.56,
+          "end": 47.82,
+          "probability": 0.985
+        },
+        {
+          "word": " just",
+          "start": 47.82,
+          "end": 48.16,
+          "probability": 0.991
+        },
+        {
+          "word": " below",
+          "start": 48.16,
+          "end": 48.46,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 48.46,
+          "end": 48.76,
+          "probability": 0.994
+        },
+        {
+          "word": " jaw,",
+          "start": 48.76,
+          "end": 49.04,
+          "probability": 0.999
+        },
+        {
+          "word": " acting",
+          "start": 49.3,
+          "end": 49.54,
+          "probability": 0.995
+        },
+        {
+          "word": " as",
+          "start": 49.54,
+          "end": 49.8,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 49.8,
+          "end": 49.96,
+          "probability": 0.986
+        },
+        {
+          "word": " anchor",
+          "start": 49.96,
+          "end": 50.16,
+          "probability": 0.993
+        },
+        {
+          "word": " for",
+          "start": 50.16,
+          "end": 50.42,
+          "probability": 0.988
+        },
+        {
+          "word": " your",
+          "start": 50.42,
+          "end": 50.6,
+          "probability": 0.993
+        },
+        {
+          "word": " tongue.",
+          "start": 50.6,
+          "end": 50.86,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 50.86,
+      "end": 55.52,
+      "text": "In 1989, scientists discovered a knee-and-of-hell hyoid.",
+      "words": [
+        {
+          "word": " In",
+          "start": 50.86,
+          "end": 51.56,
+          "probability": 0.328
+        },
+        {
+          "word": " 1989,",
+          "start": 51.56,
+          "end": 52.7,
+          "probability": 0.929
+        },
+        {
+          "word": " scientists",
+          "start": 53.24,
+          "end": 53.48,
+          "probability": 0.882
+        },
+        {
+          "word": " discovered",
+          "start": 53.48,
+          "end": 54.1,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 54.1,
+          "end": 54.34,
+          "probability": 0.826
+        },
+        {
+          "word": " knee",
+          "start": 54.34,
+          "end": 54.48,
+          "probability": 0.484
+        },
+        {
+          "word": "-and",
+          "start": 54.48,
+          "end": 54.66,
+          "probability": 0.779
+        },
+        {
+          "word": "-of",
+          "start": 54.66,
+          "end": 54.8,
+          "probability": 0.716
+        },
+        {
+          "word": "-hell",
+          "start": 54.8,
+          "end": 55.04,
+          "probability": 0.766
+        },
+        {
+          "word": " hyoid.",
+          "start": 55.04,
+          "end": 55.52,
+          "probability": 0.371
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 56.16,
+      "end": 57.26,
+      "text": "Did they speak just like you?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 56.16,
+          "end": 56.22,
+          "probability": 0.835
+        },
+        {
+          "word": " they",
+          "start": 56.22,
+          "end": 56.36,
+          "probability": 0.987
+        },
+        {
+          "word": " speak",
+          "start": 56.36,
+          "end": 56.6,
+          "probability": 0.998
+        },
+        {
+          "word": " just",
+          "start": 56.6,
+          "end": 56.86,
+          "probability": 0.971
+        },
+        {
+          "word": " like",
+          "start": 56.86,
+          "end": 57.08,
+          "probability": 0.995
+        },
+        {
+          "word": " you?",
+          "start": 57.08,
+          "end": 57.26,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 57.86,
+      "end": 61.42,
+      "text": "Cognitive scientists, doctor Philip Lieberman says no.",
+      "words": [
+        {
+          "word": " Cognitive",
+          "start": 57.86,
+          "end": 58.26,
+          "probability": 0.735
+        },
+        {
+          "word": " scientists,",
+          "start": 58.26,
+          "end": 58.74,
+          "probability": 0.591
+        },
+        {
+          "word": " doctor",
+          "start": 59.04,
+          "end": 59.36,
+          "probability": 0.406
+        },
+        {
+          "word": " Philip",
+          "start": 59.36,
+          "end": 60.22,
+          "probability": 0.327
+        },
+        {
+          "word": " Lieberman",
+          "start": 60.22,
+          "end": 60.7,
+          "probability": 0.948
+        },
+        {
+          "word": " says",
+          "start": 60.7,
+          "end": 61.0,
+          "probability": 0.773
+        },
+        {
+          "word": " no.",
+          "start": 61.0,
+          "end": 61.42,
+          "probability": 0.814
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 61.94,
+      "end": 63.58,
+      "text": "Their throat cavity was very short.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 61.94,
+          "end": 62.02,
+          "probability": 0.84
+        },
+        {
+          "word": " throat",
+          "start": 62.02,
+          "end": 62.28,
+          "probability": 0.999
+        },
+        {
+          "word": " cavity",
+          "start": 62.28,
+          "end": 62.7,
+          "probability": 0.997
+        },
+        {
+          "word": " was",
+          "start": 62.7,
+          "end": 62.92,
+          "probability": 0.998
+        },
+        {
+          "word": " very",
+          "start": 62.92,
+          "end": 63.2,
+          "probability": 0.997
+        },
+        {
+          "word": " short.",
+          "start": 63.2,
+          "end": 63.58,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 64.16,
+      "end": 68.52,
+      "text": "Their tongue was positioned flat inside their mouth rather than bending down into the throat,",
+      "words": [
+        {
+          "word": " Their",
+          "start": 64.16,
+          "end": 64.38,
+          "probability": 0.992
+        },
+        {
+          "word": " tongue",
+          "start": 64.38,
+          "end": 64.56,
+          "probability": 0.501
+        },
+        {
+          "word": " was",
+          "start": 64.56,
+          "end": 64.74,
+          "probability": 0.997
+        },
+        {
+          "word": " positioned",
+          "start": 64.74,
+          "end": 65.16,
+          "probability": 0.989
+        },
+        {
+          "word": " flat",
+          "start": 65.16,
+          "end": 65.56,
+          "probability": 0.998
+        },
+        {
+          "word": " inside",
+          "start": 65.56,
+          "end": 65.76,
+          "probability": 0.995
+        },
+        {
+          "word": " their",
+          "start": 65.76,
+          "end": 66.26,
+          "probability": 0.997
+        },
+        {
+          "word": " mouth",
+          "start": 66.26,
+          "end": 66.48,
+          "probability": 0.995
+        },
+        {
+          "word": " rather",
+          "start": 66.48,
+          "end": 66.88,
+          "probability": 0.972
+        },
+        {
+          "word": " than",
+          "start": 66.88,
+          "end": 67.14,
+          "probability": 0.997
+        },
+        {
+          "word": " bending",
+          "start": 67.14,
+          "end": 67.4,
+          "probability": 0.969
+        },
+        {
+          "word": " down",
+          "start": 67.4,
+          "end": 67.7,
+          "probability": 0.996
+        },
+        {
+          "word": " into",
+          "start": 67.7,
+          "end": 68.08,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 68.08,
+          "end": 68.24,
+          "probability": 0.931
+        },
+        {
+          "word": " throat,",
+          "start": 68.24,
+          "end": 68.52,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 68.8,
+      "end": 71.04,
+      "text": "which changed their acoustic range completely.",
+      "words": [
+        {
+          "word": " which",
+          "start": 68.8,
+          "end": 69.02,
+          "probability": 0.997
+        },
+        {
+          "word": " changed",
+          "start": 69.02,
+          "end": 69.46,
+          "probability": 0.989
+        },
+        {
+          "word": " their",
+          "start": 69.46,
+          "end": 69.74,
+          "probability": 0.997
+        },
+        {
+          "word": " acoustic",
+          "start": 69.74,
+          "end": 70.16,
+          "probability": 0.947
+        },
+        {
+          "word": " range",
+          "start": 70.16,
+          "end": 70.52,
+          "probability": 0.998
+        },
+        {
+          "word": " completely.",
+          "start": 70.52,
+          "end": 71.04,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 71.56,
+      "end": 73.7,
+      "text": "They could not produce clear vowel sounds.",
+      "words": [
+        {
+          "word": " They",
+          "start": 71.56,
+          "end": 71.78,
+          "probability": 0.989
+        },
+        {
+          "word": " could",
+          "start": 71.78,
+          "end": 71.94,
+          "probability": 0.992
+        },
+        {
+          "word": " not",
+          "start": 71.94,
+          "end": 72.12,
+          "probability": 0.997
+        },
+        {
+          "word": " produce",
+          "start": 72.12,
+          "end": 72.56,
+          "probability": 0.998
+        },
+        {
+          "word": " clear",
+          "start": 72.56,
+          "end": 72.88,
+          "probability": 0.995
+        },
+        {
+          "word": " vowel",
+          "start": 72.88,
+          "end": 73.16,
+          "probability": 0.999
+        },
+        {
+          "word": " sounds.",
+          "start": 73.16,
+          "end": 73.7,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 74.3,
+      "end": 77.54,
+      "text": "Can you imagine speaking without the letters A, I or you?",
+      "words": [
+        {
+          "word": " Can",
+          "start": 74.3,
+          "end": 74.4,
+          "probability": 0.968
+        },
+        {
+          "word": " you",
+          "start": 74.4,
+          "end": 74.52,
+          "probability": 0.999
+        },
+        {
+          "word": " imagine",
+          "start": 74.52,
+          "end": 74.88,
+          "probability": 0.998
+        },
+        {
+          "word": " speaking",
+          "start": 74.88,
+          "end": 75.32,
+          "probability": 0.99
+        },
+        {
+          "word": " without",
+          "start": 75.32,
+          "end": 75.64,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 75.64,
+          "end": 75.84,
+          "probability": 0.992
+        },
+        {
+          "word": " letters",
+          "start": 75.84,
+          "end": 76.08,
+          "probability": 0.943
+        },
+        {
+          "word": " A,",
+          "start": 76.08,
+          "end": 76.4,
+          "probability": 0.725
+        },
+        {
+          "word": " I",
+          "start": 76.82,
+          "end": 76.96,
+          "probability": 0.695
+        },
+        {
+          "word": " or",
+          "start": 76.96,
+          "end": 77.28,
+          "probability": 0.73
+        },
+        {
+          "word": " you?",
+          "start": 77.28,
+          "end": 77.54,
+          "probability": 0.592
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 78.16,
+      "end": 79.4,
+      "text": "Anthropologist, doctor.",
+      "words": [
+        {
+          "word": " Anthropologist,",
+          "start": 78.16,
+          "end": 78.76,
+          "probability": 0.791
+        },
+        {
+          "word": " doctor.",
+          "start": 79.0,
+          "end": 79.4,
+          "probability": 0.934
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 79.4,
+      "end": 81.96,
+      "text": "Roderard McCarthy synthesized the sound.",
+      "words": [
+        {
+          "word": " Roderard",
+          "start": 79.4,
+          "end": 80.36,
+          "probability": 0.327
+        },
+        {
+          "word": " McCarthy",
+          "start": 80.36,
+          "end": 80.68,
+          "probability": 0.461
+        },
+        {
+          "word": " synthesized",
+          "start": 80.68,
+          "end": 81.5,
+          "probability": 0.938
+        },
+        {
+          "word": " the",
+          "start": 81.5,
+          "end": 81.66,
+          "probability": 0.979
+        },
+        {
+          "word": " sound.",
+          "start": 81.66,
+          "end": 81.96,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 82.46,
+      "end": 84.7,
+      "text": "He rebuilt their vocal tract on computers.",
+      "words": [
+        {
+          "word": " He",
+          "start": 82.46,
+          "end": 82.68,
+          "probability": 0.985
+        },
+        {
+          "word": " rebuilt",
+          "start": 82.68,
+          "end": 83.04,
+          "probability": 0.975
+        },
+        {
+          "word": " their",
+          "start": 83.04,
+          "end": 83.3,
+          "probability": 0.994
+        },
+        {
+          "word": " vocal",
+          "start": 83.3,
+          "end": 83.62,
+          "probability": 0.983
+        },
+        {
+          "word": " tract",
+          "start": 83.62,
+          "end": 83.9,
+          "probability": 0.849
+        },
+        {
+          "word": " on",
+          "start": 83.9,
+          "end": 84.24,
+          "probability": 0.996
+        },
+        {
+          "word": " computers.",
+          "start": 84.24,
+          "end": 84.7,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 85.38,
+      "end": 90.04,
+      "text": "He programmed the software to replicate their anatomy and speak a simple vowel sound",
+      "words": [
+        {
+          "word": " He",
+          "start": 85.38,
+          "end": 85.6,
+          "probability": 0.986
+        },
+        {
+          "word": " programmed",
+          "start": 85.6,
+          "end": 86.1,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 86.1,
+          "end": 86.44,
+          "probability": 0.989
+        },
+        {
+          "word": " software",
+          "start": 86.44,
+          "end": 86.92,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 86.92,
+          "end": 87.18,
+          "probability": 0.999
+        },
+        {
+          "word": " replicate",
+          "start": 87.18,
+          "end": 87.62,
+          "probability": 0.998
+        },
+        {
+          "word": " their",
+          "start": 87.62,
+          "end": 87.84,
+          "probability": 0.993
+        },
+        {
+          "word": " anatomy",
+          "start": 87.84,
+          "end": 88.12,
+          "probability": 0.99
+        },
+        {
+          "word": " and",
+          "start": 88.12,
+          "end": 88.5,
+          "probability": 0.983
+        },
+        {
+          "word": " speak",
+          "start": 88.5,
+          "end": 88.8,
+          "probability": 0.987
+        },
+        {
+          "word": " a",
+          "start": 88.8,
+          "end": 89.06,
+          "probability": 0.981
+        },
+        {
+          "word": " simple",
+          "start": 89.06,
+          "end": 89.38,
+          "probability": 0.996
+        },
+        {
+          "word": " vowel",
+          "start": 89.38,
+          "end": 89.66,
+          "probability": 0.998
+        },
+        {
+          "word": " sound",
+          "start": 89.66,
+          "end": 90.04,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 90.04,
+      "end": 91.54,
+      "text": "based on those ancient measurements.",
+      "words": [
+        {
+          "word": " based",
+          "start": 90.04,
+          "end": 90.32,
+          "probability": 0.989
+        },
+        {
+          "word": " on",
+          "start": 90.32,
+          "end": 90.54,
+          "probability": 0.996
+        },
+        {
+          "word": " those",
+          "start": 90.54,
+          "end": 90.76,
+          "probability": 0.984
+        },
+        {
+          "word": " ancient",
+          "start": 90.76,
+          "end": 91.06,
+          "probability": 0.986
+        },
+        {
+          "word": " measurements.",
+          "start": 91.06,
+          "end": 91.54,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 92.2,
+      "end": 93.94,
+      "text": "The app was not a deep grant.",
+      "words": [
+        {
+          "word": " The",
+          "start": 92.2,
+          "end": 92.42,
+          "probability": 0.936
+        },
+        {
+          "word": " app",
+          "start": 92.42,
+          "end": 92.62,
+          "probability": 0.326
+        },
+        {
+          "word": " was",
+          "start": 92.62,
+          "end": 92.94,
+          "probability": 0.995
+        },
+        {
+          "word": " not",
+          "start": 92.94,
+          "end": 93.12,
+          "probability": 0.911
+        },
+        {
+          "word": " a",
+          "start": 93.12,
+          "end": 93.28,
+          "probability": 0.984
+        },
+        {
+          "word": " deep",
+          "start": 93.28,
+          "end": 93.56,
+          "probability": 0.978
+        },
+        {
+          "word": " grant.",
+          "start": 93.56,
+          "end": 93.94,
+          "probability": 0.897
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 94.64,
+      "end": 95.66,
+      "text": "What did it sound like?",
+      "words": [
+        {
+          "word": " What",
+          "start": 94.64,
+          "end": 94.76,
+          "probability": 0.927
+        },
+        {
+          "word": " did",
+          "start": 94.76,
+          "end": 94.92,
+          "probability": 0.998
+        },
+        {
+          "word": " it",
+          "start": 94.92,
+          "end": 95.04,
+          "probability": 0.882
+        },
+        {
+          "word": " sound",
+          "start": 95.04,
+          "end": 95.34,
+          "probability": 0.999
+        },
+        {
+          "word": " like?",
+          "start": 95.34,
+          "end": 95.66,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 96.28,
+      "end": 98.42,
+      "text": "It was a high-pitched nasal squeak.",
+      "words": [
+        {
+          "word": " It",
+          "start": 96.28,
+          "end": 96.44,
+          "probability": 0.99
+        },
+        {
+          "word": " was",
+          "start": 96.44,
+          "end": 96.56,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 96.56,
+          "end": 96.68,
+          "probability": 0.988
+        },
+        {
+          "word": " high",
+          "start": 96.68,
+          "end": 96.86,
+          "probability": 0.957
+        },
+        {
+          "word": "-pitched",
+          "start": 96.86,
+          "end": 97.26,
+          "probability": 0.939
+        },
+        {
+          "word": " nasal",
+          "start": 97.26,
+          "end": 97.8,
+          "probability": 0.955
+        },
+        {
+          "word": " squeak.",
+          "start": 97.8,
+          "end": 98.42,
+          "probability": 0.968
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 98.92,
+      "end": 100.76,
+      "text": "It sounded like a modern human shouting.",
+      "words": [
+        {
+          "word": " It",
+          "start": 98.92,
+          "end": 99.0,
+          "probability": 0.995
+        },
+        {
+          "word": " sounded",
+          "start": 99.0,
+          "end": 99.3,
+          "probability": 0.998
+        },
+        {
+          "word": " like",
+          "start": 99.3,
+          "end": 99.52,
+          "probability": 1.0
+        },
+        {
+          "word": " a",
+          "start": 99.52,
+          "end": 99.68,
+          "probability": 0.996
+        },
+        {
+          "word": " modern",
+          "start": 99.68,
+          "end": 100.0,
+          "probability": 0.989
+        },
+        {
+          "word": " human",
+          "start": 100.0,
+          "end": 100.34,
+          "probability": 0.99
+        },
+        {
+          "word": " shouting.",
+          "start": 100.34,
+          "end": 100.76,
+          "probability": 0.961
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 101.4,
+      "end": 105.58,
+      "text": "It lacked the resonance and warmth that your long throat cavity provides to normal human",
+      "words": [
+        {
+          "word": " It",
+          "start": 101.4,
+          "end": 101.48,
+          "probability": 0.94
+        },
+        {
+          "word": " lacked",
+          "start": 101.48,
+          "end": 101.68,
+          "probability": 0.984
+        },
+        {
+          "word": " the",
+          "start": 101.68,
+          "end": 101.9,
+          "probability": 0.998
+        },
+        {
+          "word": " resonance",
+          "start": 101.9,
+          "end": 102.26,
+          "probability": 0.983
+        },
+        {
+          "word": " and",
+          "start": 102.26,
+          "end": 102.56,
+          "probability": 0.99
+        },
+        {
+          "word": " warmth",
+          "start": 102.56,
+          "end": 102.86,
+          "probability": 0.984
+        },
+        {
+          "word": " that",
+          "start": 102.86,
+          "end": 103.06,
+          "probability": 0.989
+        },
+        {
+          "word": " your",
+          "start": 103.06,
+          "end": 103.16,
+          "probability": 0.981
+        },
+        {
+          "word": " long",
+          "start": 103.16,
+          "end": 103.42,
+          "probability": 0.968
+        },
+        {
+          "word": " throat",
+          "start": 103.42,
+          "end": 103.72,
+          "probability": 0.832
+        },
+        {
+          "word": " cavity",
+          "start": 103.72,
+          "end": 104.18,
+          "probability": 0.997
+        },
+        {
+          "word": " provides",
+          "start": 104.18,
+          "end": 104.56,
+          "probability": 0.994
+        },
+        {
+          "word": " to",
+          "start": 104.56,
+          "end": 104.94,
+          "probability": 0.991
+        },
+        {
+          "word": " normal",
+          "start": 104.94,
+          "end": 105.24,
+          "probability": 0.992
+        },
+        {
+          "word": " human",
+          "start": 105.24,
+          "end": 105.58,
+          "probability": 0.978
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 105.58,
+      "end": 106.04,
+      "text": "speech.",
+      "words": [
+        {
+          "word": " speech.",
+          "start": 105.58,
+          "end": 106.04,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 106.46,
+      "end": 108.48,
+      "text": "Their voice was actually quite comical.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 106.46,
+          "end": 106.78,
+          "probability": 0.566
+        },
+        {
+          "word": " voice",
+          "start": 106.78,
+          "end": 107.08,
+          "probability": 0.994
+        },
+        {
+          "word": " was",
+          "start": 107.08,
+          "end": 107.36,
+          "probability": 0.994
+        },
+        {
+          "word": " actually",
+          "start": 107.36,
+          "end": 107.76,
+          "probability": 0.987
+        },
+        {
+          "word": " quite",
+          "start": 107.76,
+          "end": 108.02,
+          "probability": 0.996
+        },
+        {
+          "word": " comical.",
+          "start": 108.02,
+          "end": 108.48,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 108.96,
+      "end": 110.92,
+      "text": "Would you laugh if any Andrew Thal spoke to you?",
+      "words": [
+        {
+          "word": " Would",
+          "start": 108.96,
+          "end": 109.16,
+          "probability": 0.9
+        },
+        {
+          "word": " you",
+          "start": 109.16,
+          "end": 109.26,
+          "probability": 0.976
+        },
+        {
+          "word": " laugh",
+          "start": 109.26,
+          "end": 109.48,
+          "probability": 0.967
+        },
+        {
+          "word": " if",
+          "start": 109.48,
+          "end": 109.68,
+          "probability": 0.983
+        },
+        {
+          "word": " any",
+          "start": 109.68,
+          "end": 109.86,
+          "probability": 0.954
+        },
+        {
+          "word": " Andrew",
+          "start": 109.86,
+          "end": 110.02,
+          "probability": 0.237
+        },
+        {
+          "word": " Thal",
+          "start": 110.02,
+          "end": 110.22,
+          "probability": 0.527
+        },
+        {
+          "word": " spoke",
+          "start": 110.22,
+          "end": 110.52,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 110.52,
+          "end": 110.78,
+          "probability": 0.998
+        },
+        {
+          "word": " you?",
+          "start": 110.78,
+          "end": 110.92,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 111.5,
+      "end": 113.28,
+      "text": "The vocal design goes further back.",
+      "words": [
+        {
+          "word": " The",
+          "start": 111.5,
+          "end": 111.6,
+          "probability": 0.951
+        },
+        {
+          "word": " vocal",
+          "start": 111.6,
+          "end": 111.84,
+          "probability": 0.976
+        },
+        {
+          "word": " design",
+          "start": 111.84,
+          "end": 112.24,
+          "probability": 0.993
+        },
+        {
+          "word": " goes",
+          "start": 112.24,
+          "end": 112.54,
+          "probability": 0.993
+        },
+        {
+          "word": " further",
+          "start": 112.54,
+          "end": 112.92,
+          "probability": 0.996
+        },
+        {
+          "word": " back.",
+          "start": 112.92,
+          "end": 113.28,
+          "probability": 0.974
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 113.8,
+      "end": 116.16,
+      "text": "Earlier ancestors had even stranger anatomy.",
+      "words": [
+        {
+          "word": " Earlier",
+          "start": 113.8,
+          "end": 114.06,
+          "probability": 0.936
+        },
+        {
+          "word": " ancestors",
+          "start": 114.06,
+          "end": 114.62,
+          "probability": 0.807
+        },
+        {
+          "word": " had",
+          "start": 114.62,
+          "end": 114.92,
+          "probability": 0.991
+        },
+        {
+          "word": " even",
+          "start": 114.92,
+          "end": 115.24,
+          "probability": 0.994
+        },
+        {
+          "word": " stranger",
+          "start": 115.24,
+          "end": 115.74,
+          "probability": 0.92
+        },
+        {
+          "word": " anatomy.",
+          "start": 115.74,
+          "end": 116.16,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 116.86,
+      "end": 122.48,
+      "text": "Vocal researcher, doctor, are to bore focused studies on the evolution of vocal air sacks,",
+      "words": [
+        {
+          "word": " Vocal",
+          "start": 116.86,
+          "end": 117.16,
+          "probability": 0.98
+        },
+        {
+          "word": " researcher,",
+          "start": 117.16,
+          "end": 117.6,
+          "probability": 0.888
+        },
+        {
+          "word": " doctor,",
+          "start": 117.6,
+          "end": 118.18,
+          "probability": 0.299
+        },
+        {
+          "word": " are",
+          "start": 118.72,
+          "end": 118.82,
+          "probability": 0.403
+        },
+        {
+          "word": " to",
+          "start": 118.82,
+          "end": 118.96,
+          "probability": 0.811
+        },
+        {
+          "word": " bore",
+          "start": 118.96,
+          "end": 119.2,
+          "probability": 0.248
+        },
+        {
+          "word": " focused",
+          "start": 119.2,
+          "end": 119.7,
+          "probability": 0.75
+        },
+        {
+          "word": " studies",
+          "start": 119.7,
+          "end": 120.12,
+          "probability": 0.737
+        },
+        {
+          "word": " on",
+          "start": 120.12,
+          "end": 120.46,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 120.46,
+          "end": 120.62,
+          "probability": 0.991
+        },
+        {
+          "word": " evolution",
+          "start": 120.62,
+          "end": 121.18,
+          "probability": 0.996
+        },
+        {
+          "word": " of",
+          "start": 121.18,
+          "end": 121.5,
+          "probability": 0.993
+        },
+        {
+          "word": " vocal",
+          "start": 121.5,
+          "end": 121.84,
+          "probability": 0.984
+        },
+        {
+          "word": " air",
+          "start": 121.84,
+          "end": 122.08,
+          "probability": 0.956
+        },
+        {
+          "word": " sacks,",
+          "start": 122.08,
+          "end": 122.48,
+          "probability": 0.684
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 122.94,
+      "end": 125.44,
+      "text": "which are large cavities attached to the voice box.",
+      "words": [
+        {
+          "word": " which",
+          "start": 122.94,
+          "end": 123.16,
+          "probability": 0.998
+        },
+        {
+          "word": " are",
+          "start": 123.16,
+          "end": 123.34,
+          "probability": 0.98
+        },
+        {
+          "word": " large",
+          "start": 123.34,
+          "end": 123.72,
+          "probability": 0.877
+        },
+        {
+          "word": " cavities",
+          "start": 123.72,
+          "end": 124.2,
+          "probability": 0.962
+        },
+        {
+          "word": " attached",
+          "start": 124.2,
+          "end": 124.46,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 124.46,
+          "end": 124.76,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 124.76,
+          "end": 124.84,
+          "probability": 0.98
+        },
+        {
+          "word": " voice",
+          "start": 124.84,
+          "end": 125.04,
+          "probability": 0.979
+        },
+        {
+          "word": " box.",
+          "start": 125.04,
+          "end": 125.44,
+          "probability": 0.933
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 126.26,
+      "end": 128.14,
+      "text": "Schimpansies used them to make loud calls.",
+      "words": [
+        {
+          "word": " Schimpansies",
+          "start": 126.26,
+          "end": 126.66,
+          "probability": 0.533
+        },
+        {
+          "word": " used",
+          "start": 126.66,
+          "end": 126.98,
+          "probability": 0.34
+        },
+        {
+          "word": " them",
+          "start": 126.98,
+          "end": 127.22,
+          "probability": 0.985
+        },
+        {
+          "word": " to",
+          "start": 127.22,
+          "end": 127.42,
+          "probability": 0.994
+        },
+        {
+          "word": " make",
+          "start": 127.42,
+          "end": 127.6,
+          "probability": 0.999
+        },
+        {
+          "word": " loud",
+          "start": 127.6,
+          "end": 127.82,
+          "probability": 0.992
+        },
+        {
+          "word": " calls.",
+          "start": 127.82,
+          "end": 128.14,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 128.88,
+      "end": 130.44,
+      "text": "Why did these sacks disappear?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 128.88,
+          "end": 129.14,
+          "probability": 0.919
+        },
+        {
+          "word": " did",
+          "start": 129.14,
+          "end": 129.28,
+          "probability": 0.99
+        },
+        {
+          "word": " these",
+          "start": 129.28,
+          "end": 129.48,
+          "probability": 0.973
+        },
+        {
+          "word": " sacks",
+          "start": 129.48,
+          "end": 129.92,
+          "probability": 0.981
+        },
+        {
+          "word": " disappear?",
+          "start": 129.92,
+          "end": 130.44,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 131.14,
+      "end": 132.68,
+      "text": "The sacks made sounds louder.",
+      "words": [
+        {
+          "word": " The",
+          "start": 131.14,
+          "end": 131.32,
+          "probability": 0.987
+        },
+        {
+          "word": " sacks",
+          "start": 131.32,
+          "end": 131.66,
+          "probability": 0.983
+        },
+        {
+          "word": " made",
+          "start": 131.66,
+          "end": 131.92,
+          "probability": 0.985
+        },
+        {
+          "word": " sounds",
+          "start": 131.92,
+          "end": 132.3,
+          "probability": 0.928
+        },
+        {
+          "word": " louder.",
+          "start": 132.3,
+          "end": 132.68,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 132.68,
+      "end": 135.5,
+      "text": "They acted like organic subwoofers.",
+      "words": [
+        {
+          "word": " They",
+          "start": 132.68,
+          "end": 133.42,
+          "probability": 0.219
+        },
+        {
+          "word": " acted",
+          "start": 133.42,
+          "end": 133.74,
+          "probability": 0.93
+        },
+        {
+          "word": " like",
+          "start": 133.74,
+          "end": 134.0,
+          "probability": 0.997
+        },
+        {
+          "word": " organic",
+          "start": 134.0,
+          "end": 134.66,
+          "probability": 0.879
+        },
+        {
+          "word": " subwoofers.",
+          "start": 134.66,
+          "end": 135.5,
+          "probability": 0.908
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 135.9,
+      "end": 140.54,
+      "text": "They helped your ancestors warn the tribe of danger across fast distances, but they came",
+      "words": [
+        {
+          "word": " They",
+          "start": 135.9,
+          "end": 136.12,
+          "probability": 0.986
+        },
+        {
+          "word": " helped",
+          "start": 136.12,
+          "end": 136.32,
+          "probability": 0.987
+        },
+        {
+          "word": " your",
+          "start": 136.32,
+          "end": 136.52,
+          "probability": 0.975
+        },
+        {
+          "word": " ancestors",
+          "start": 136.52,
+          "end": 136.94,
+          "probability": 0.986
+        },
+        {
+          "word": " warn",
+          "start": 136.94,
+          "end": 137.4,
+          "probability": 0.935
+        },
+        {
+          "word": " the",
+          "start": 137.4,
+          "end": 137.58,
+          "probability": 0.996
+        },
+        {
+          "word": " tribe",
+          "start": 137.58,
+          "end": 137.84,
+          "probability": 0.993
+        },
+        {
+          "word": " of",
+          "start": 137.84,
+          "end": 138.02,
+          "probability": 0.997
+        },
+        {
+          "word": " danger",
+          "start": 138.02,
+          "end": 138.34,
+          "probability": 0.989
+        },
+        {
+          "word": " across",
+          "start": 138.34,
+          "end": 138.7,
+          "probability": 0.992
+        },
+        {
+          "word": " fast",
+          "start": 138.7,
+          "end": 139.12,
+          "probability": 0.905
+        },
+        {
+          "word": " distances,",
+          "start": 139.12,
+          "end": 139.68,
+          "probability": 0.987
+        },
+        {
+          "word": " but",
+          "start": 140.1,
+          "end": 140.18,
+          "probability": 0.987
+        },
+        {
+          "word": " they",
+          "start": 140.18,
+          "end": 140.32,
+          "probability": 0.997
+        },
+        {
+          "word": " came",
+          "start": 140.32,
+          "end": 140.54,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 140.54,
+      "end": 141.62,
+      "text": "with a massive drawback.",
+      "words": [
+        {
+          "word": " with",
+          "start": 140.54,
+          "end": 140.8,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 140.8,
+          "end": 140.86,
+          "probability": 0.961
+        },
+        {
+          "word": " massive",
+          "start": 140.86,
+          "end": 141.18,
+          "probability": 0.992
+        },
+        {
+          "word": " drawback.",
+          "start": 141.18,
+          "end": 141.62,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 142.2,
+      "end": 143.84,
+      "text": "They caused different sounds to blur.",
+      "words": [
+        {
+          "word": " They",
+          "start": 142.2,
+          "end": 142.36,
+          "probability": 0.974
+        },
+        {
+          "word": " caused",
+          "start": 142.36,
+          "end": 142.68,
+          "probability": 0.991
+        },
+        {
+          "word": " different",
+          "start": 142.68,
+          "end": 143.08,
+          "probability": 0.994
+        },
+        {
+          "word": " sounds",
+          "start": 143.08,
+          "end": 143.38,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 143.38,
+          "end": 143.64,
+          "probability": 0.998
+        },
+        {
+          "word": " blur.",
+          "start": 143.64,
+          "end": 143.84,
+          "probability": 0.942
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 144.54,
+      "end": 145.94,
+      "text": "How do you speak when your words merge?",
+      "words": [
+        {
+          "word": " How",
+          "start": 144.54,
+          "end": 144.6,
+          "probability": 0.858
+        },
+        {
+          "word": " do",
+          "start": 144.6,
+          "end": 144.7,
+          "probability": 0.995
+        },
+        {
+          "word": " you",
+          "start": 144.7,
+          "end": 144.78,
+          "probability": 0.998
+        },
+        {
+          "word": " speak",
+          "start": 144.78,
+          "end": 145.06,
+          "probability": 0.996
+        },
+        {
+          "word": " when",
+          "start": 145.06,
+          "end": 145.28,
+          "probability": 0.982
+        },
+        {
+          "word": " your",
+          "start": 145.28,
+          "end": 145.4,
+          "probability": 0.986
+        },
+        {
+          "word": " words",
+          "start": 145.4,
+          "end": 145.62,
+          "probability": 0.989
+        },
+        {
+          "word": " merge?",
+          "start": 145.62,
+          "end": 145.94,
+          "probability": 0.98
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 146.68,
+      "end": 148.14,
+      "text": "Precision is key to language.",
+      "words": [
+        {
+          "word": " Precision",
+          "start": 146.68,
+          "end": 147.04,
+          "probability": 0.969
+        },
+        {
+          "word": " is",
+          "start": 147.04,
+          "end": 147.4,
+          "probability": 0.996
+        },
+        {
+          "word": " key",
+          "start": 147.4,
+          "end": 147.62,
+          "probability": 0.992
+        },
+        {
+          "word": " to",
+          "start": 147.62,
+          "end": 147.78,
+          "probability": 0.997
+        },
+        {
+          "word": " language.",
+          "start": 147.78,
+          "end": 148.14,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 148.94,
+      "end": 150.62,
+      "text": "Humans traded power for clarity.",
+      "words": [
+        {
+          "word": " Humans",
+          "start": 148.94,
+          "end": 149.16,
+          "probability": 0.899
+        },
+        {
+          "word": " traded",
+          "start": 149.16,
+          "end": 149.5,
+          "probability": 0.983
+        },
+        {
+          "word": " power",
+          "start": 149.5,
+          "end": 149.92,
+          "probability": 0.998
+        },
+        {
+          "word": " for",
+          "start": 149.92,
+          "end": 150.16,
+          "probability": 0.999
+        },
+        {
+          "word": " clarity.",
+          "start": 150.16,
+          "end": 150.62,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 151.28,
+      "end": 155.64,
+      "text": "Your ancestors sacrificed their booming animal volume to gain the refined control needed",
+      "words": [
+        {
+          "word": " Your",
+          "start": 151.28,
+          "end": 151.38,
+          "probability": 0.991
+        },
+        {
+          "word": " ancestors",
+          "start": 151.38,
+          "end": 151.92,
+          "probability": 0.944
+        },
+        {
+          "word": " sacrificed",
+          "start": 151.92,
+          "end": 152.54,
+          "probability": 0.962
+        },
+        {
+          "word": " their",
+          "start": 152.54,
+          "end": 152.86,
+          "probability": 0.996
+        },
+        {
+          "word": " booming",
+          "start": 152.86,
+          "end": 153.12,
+          "probability": 0.992
+        },
+        {
+          "word": " animal",
+          "start": 153.12,
+          "end": 153.5,
+          "probability": 0.994
+        },
+        {
+          "word": " volume",
+          "start": 153.5,
+          "end": 153.98,
+          "probability": 0.986
+        },
+        {
+          "word": " to",
+          "start": 153.98,
+          "end": 154.22,
+          "probability": 0.993
+        },
+        {
+          "word": " gain",
+          "start": 154.22,
+          "end": 154.42,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 154.42,
+          "end": 154.56,
+          "probability": 0.993
+        },
+        {
+          "word": " refined",
+          "start": 154.56,
+          "end": 154.84,
+          "probability": 0.828
+        },
+        {
+          "word": " control",
+          "start": 154.84,
+          "end": 155.34,
+          "probability": 0.996
+        },
+        {
+          "word": " needed",
+          "start": 155.34,
+          "end": 155.64,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 155.64,
+      "end": 156.86,
+      "text": "for complex syllables.",
+      "words": [
+        {
+          "word": " for",
+          "start": 155.64,
+          "end": 155.9,
+          "probability": 0.999
+        },
+        {
+          "word": " complex",
+          "start": 155.9,
+          "end": 156.38,
+          "probability": 0.999
+        },
+        {
+          "word": " syllables.",
+          "start": 156.38,
+          "end": 156.86,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 157.52,
+      "end": 159.22,
+      "text": "They silenced the sacks for speech.",
+      "words": [
+        {
+          "word": " They",
+          "start": 157.52,
+          "end": 157.7,
+          "probability": 0.971
+        },
+        {
+          "word": " silenced",
+          "start": 157.7,
+          "end": 158.2,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 158.2,
+          "end": 158.36,
+          "probability": 0.998
+        },
+        {
+          "word": " sacks",
+          "start": 158.36,
+          "end": 158.6,
+          "probability": 0.746
+        },
+        {
+          "word": " for",
+          "start": 158.6,
+          "end": 158.8,
+          "probability": 0.992
+        },
+        {
+          "word": " speech.",
+          "start": 158.8,
+          "end": 159.22,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 159.66,
+      "end": 161.02,
+      "text": "Was this the spark of language?",
+      "words": [
+        {
+          "word": " Was",
+          "start": 159.66,
+          "end": 159.88,
+          "probability": 0.986
+        },
+        {
+          "word": " this",
+          "start": 159.88,
+          "end": 160.04,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 160.04,
+          "end": 160.24,
+          "probability": 0.995
+        },
+        {
+          "word": " spark",
+          "start": 160.24,
+          "end": 160.52,
+          "probability": 0.972
+        },
+        {
+          "word": " of",
+          "start": 160.52,
+          "end": 160.72,
+          "probability": 0.999
+        },
+        {
+          "word": " language?",
+          "start": 160.72,
+          "end": 161.02,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 161.64,
+      "end": 163.5,
+      "text": "Perhaps the first words were silent.",
+      "words": [
+        {
+          "word": " Perhaps",
+          "start": 161.64,
+          "end": 161.96,
+          "probability": 0.071
+        },
+        {
+          "word": " the",
+          "start": 161.96,
+          "end": 162.3,
+          "probability": 0.975
+        },
+        {
+          "word": " first",
+          "start": 162.3,
+          "end": 162.52,
+          "probability": 0.983
+        },
+        {
+          "word": " words",
+          "start": 162.52,
+          "end": 162.86,
+          "probability": 0.989
+        },
+        {
+          "word": " were",
+          "start": 162.86,
+          "end": 163.08,
+          "probability": 0.996
+        },
+        {
+          "word": " silent.",
+          "start": 163.08,
+          "end": 163.5,
+          "probability": 0.946
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 164.22,
+      "end": 166.68,
+      "text": "Many researchers believe gestures came first.",
+      "words": [
+        {
+          "word": " Many",
+          "start": 164.22,
+          "end": 164.42,
+          "probability": 0.959
+        },
+        {
+          "word": " researchers",
+          "start": 164.42,
+          "end": 164.98,
+          "probability": 0.994
+        },
+        {
+          "word": " believe",
+          "start": 164.98,
+          "end": 165.4,
+          "probability": 0.947
+        },
+        {
+          "word": " gestures",
+          "start": 165.4,
+          "end": 165.84,
+          "probability": 0.916
+        },
+        {
+          "word": " came",
+          "start": 165.84,
+          "end": 166.28,
+          "probability": 0.986
+        },
+        {
+          "word": " first.",
+          "start": 166.28,
+          "end": 166.68,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 167.42,
+      "end": 171.88,
+      "text": "Your ancestors likely pointed and signed with their hands to communicate during hunt patrols",
+      "words": [
+        {
+          "word": " Your",
+          "start": 167.42,
+          "end": 167.5,
+          "probability": 0.947
+        },
+        {
+          "word": " ancestors",
+          "start": 167.5,
+          "end": 167.88,
+          "probability": 0.989
+        },
+        {
+          "word": " likely",
+          "start": 167.88,
+          "end": 168.34,
+          "probability": 0.914
+        },
+        {
+          "word": " pointed",
+          "start": 168.34,
+          "end": 168.88,
+          "probability": 0.974
+        },
+        {
+          "word": " and",
+          "start": 168.88,
+          "end": 169.12,
+          "probability": 0.881
+        },
+        {
+          "word": " signed",
+          "start": 169.12,
+          "end": 169.4,
+          "probability": 0.938
+        },
+        {
+          "word": " with",
+          "start": 169.4,
+          "end": 169.66,
+          "probability": 0.996
+        },
+        {
+          "word": " their",
+          "start": 169.66,
+          "end": 169.82,
+          "probability": 0.993
+        },
+        {
+          "word": " hands",
+          "start": 169.82,
+          "end": 170.08,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 170.08,
+          "end": 170.32,
+          "probability": 0.997
+        },
+        {
+          "word": " communicate",
+          "start": 170.32,
+          "end": 170.76,
+          "probability": 0.999
+        },
+        {
+          "word": " during",
+          "start": 170.76,
+          "end": 171.08,
+          "probability": 0.994
+        },
+        {
+          "word": " hunt",
+          "start": 171.08,
+          "end": 171.38,
+          "probability": 0.985
+        },
+        {
+          "word": " patrols",
+          "start": 171.38,
+          "end": 171.88,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 171.88,
+      "end": 174.82,
+      "text": "before they ever spoke, but hand signs have limits.",
+      "words": [
+        {
+          "word": " before",
+          "start": 171.88,
+          "end": 172.18,
+          "probability": 0.996
+        },
+        {
+          "word": " they",
+          "start": 172.18,
+          "end": 172.36,
+          "probability": 0.993
+        },
+        {
+          "word": " ever",
+          "start": 172.36,
+          "end": 172.56,
+          "probability": 0.991
+        },
+        {
+          "word": " spoke,",
+          "start": 172.56,
+          "end": 172.82,
+          "probability": 0.998
+        },
+        {
+          "word": " but",
+          "start": 173.36,
+          "end": 173.56,
+          "probability": 0.977
+        },
+        {
+          "word": " hand",
+          "start": 173.56,
+          "end": 173.8,
+          "probability": 0.659
+        },
+        {
+          "word": " signs",
+          "start": 173.8,
+          "end": 174.24,
+          "probability": 0.893
+        },
+        {
+          "word": " have",
+          "start": 174.24,
+          "end": 174.5,
+          "probability": 0.998
+        },
+        {
+          "word": " limits.",
+          "start": 174.5,
+          "end": 174.82,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 175.66,
+      "end": 177.28,
+      "text": "What happens when the sun goes down?",
+      "words": [
+        {
+          "word": " What",
+          "start": 175.66,
+          "end": 175.78,
+          "probability": 0.968
+        },
+        {
+          "word": " happens",
+          "start": 175.78,
+          "end": 176.1,
+          "probability": 0.996
+        },
+        {
+          "word": " when",
+          "start": 176.1,
+          "end": 176.38,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 176.38,
+          "end": 176.5,
+          "probability": 0.952
+        },
+        {
+          "word": " sun",
+          "start": 176.5,
+          "end": 176.72,
+          "probability": 0.951
+        },
+        {
+          "word": " goes",
+          "start": 176.72,
+          "end": 176.96,
+          "probability": 0.998
+        },
+        {
+          "word": " down?",
+          "start": 176.96,
+          "end": 177.28,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 177.92,
+      "end": 180.12,
+      "text": "Darkness makes gestures completely useless.",
+      "words": [
+        {
+          "word": " Darkness",
+          "start": 177.92,
+          "end": 178.16,
+          "probability": 0.989
+        },
+        {
+          "word": " makes",
+          "start": 178.16,
+          "end": 178.58,
+          "probability": 0.997
+        },
+        {
+          "word": " gestures",
+          "start": 178.58,
+          "end": 179.0,
+          "probability": 0.998
+        },
+        {
+          "word": " completely",
+          "start": 179.0,
+          "end": 179.58,
+          "probability": 0.997
+        },
+        {
+          "word": " useless.",
+          "start": 179.58,
+          "end": 180.12,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 180.78,
+      "end": 183.18,
+      "text": "Working with tools also busy their hands.",
+      "words": [
+        {
+          "word": " Working",
+          "start": 180.78,
+          "end": 181.06,
+          "probability": 0.993
+        },
+        {
+          "word": " with",
+          "start": 181.06,
+          "end": 181.32,
+          "probability": 0.999
+        },
+        {
+          "word": " tools",
+          "start": 181.32,
+          "end": 181.6,
+          "probability": 0.996
+        },
+        {
+          "word": " also",
+          "start": 181.6,
+          "end": 182.14,
+          "probability": 0.973
+        },
+        {
+          "word": " busy",
+          "start": 182.14,
+          "end": 182.42,
+          "probability": 0.967
+        },
+        {
+          "word": " their",
+          "start": 182.42,
+          "end": 182.68,
+          "probability": 0.961
+        },
+        {
+          "word": " hands.",
+          "start": 182.68,
+          "end": 183.18,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 183.74,
+      "end": 188.68,
+      "text": "So your ancestors began using their vocal tracks to copy the natural soundscapes of the",
+      "words": [
+        {
+          "word": " So",
+          "start": 183.74,
+          "end": 183.98,
+          "probability": 0.985
+        },
+        {
+          "word": " your",
+          "start": 183.98,
+          "end": 184.16,
+          "probability": 0.937
+        },
+        {
+          "word": " ancestors",
+          "start": 184.16,
+          "end": 184.66,
+          "probability": 0.997
+        },
+        {
+          "word": " began",
+          "start": 184.66,
+          "end": 185.1,
+          "probability": 0.993
+        },
+        {
+          "word": " using",
+          "start": 185.1,
+          "end": 185.46,
+          "probability": 0.999
+        },
+        {
+          "word": " their",
+          "start": 185.46,
+          "end": 185.66,
+          "probability": 0.993
+        },
+        {
+          "word": " vocal",
+          "start": 185.66,
+          "end": 185.96,
+          "probability": 0.996
+        },
+        {
+          "word": " tracks",
+          "start": 185.96,
+          "end": 186.32,
+          "probability": 0.952
+        },
+        {
+          "word": " to",
+          "start": 186.32,
+          "end": 186.64,
+          "probability": 0.997
+        },
+        {
+          "word": " copy",
+          "start": 186.64,
+          "end": 187.0,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 187.0,
+          "end": 187.18,
+          "probability": 0.994
+        },
+        {
+          "word": " natural",
+          "start": 187.18,
+          "end": 187.62,
+          "probability": 0.996
+        },
+        {
+          "word": " soundscapes",
+          "start": 187.62,
+          "end": 188.46,
+          "probability": 0.814
+        },
+        {
+          "word": " of",
+          "start": 188.46,
+          "end": 188.56,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 188.56,
+          "end": 188.68,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 188.68,
+      "end": 190.16,
+      "text": "wild savanna around them.",
+      "words": [
+        {
+          "word": " wild",
+          "start": 188.68,
+          "end": 188.98,
+          "probability": 0.98
+        },
+        {
+          "word": " savanna",
+          "start": 188.98,
+          "end": 189.5,
+          "probability": 0.679
+        },
+        {
+          "word": " around",
+          "start": 189.5,
+          "end": 189.84,
+          "probability": 0.998
+        },
+        {
+          "word": " them.",
+          "start": 189.84,
+          "end": 190.16,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 190.52,
+      "end": 192.22,
+      "text": "They imitated wind and water.",
+      "words": [
+        {
+          "word": " They",
+          "start": 190.52,
+          "end": 190.8,
+          "probability": 0.234
+        },
+        {
+          "word": " imitated",
+          "start": 190.8,
+          "end": 191.28,
+          "probability": 0.873
+        },
+        {
+          "word": " wind",
+          "start": 191.28,
+          "end": 191.58,
+          "probability": 0.974
+        },
+        {
+          "word": " and",
+          "start": 191.58,
+          "end": 191.88,
+          "probability": 0.989
+        },
+        {
+          "word": " water.",
+          "start": 191.88,
+          "end": 192.22,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 192.5,
+      "end": 193.8,
+      "text": "Can you hear the echo today?",
+      "words": [
+        {
+          "word": " Can",
+          "start": 192.5,
+          "end": 192.88,
+          "probability": 0.941
+        },
+        {
+          "word": " you",
+          "start": 192.88,
+          "end": 193.0,
+          "probability": 0.996
+        },
+        {
+          "word": " hear",
+          "start": 193.0,
+          "end": 193.16,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 193.16,
+          "end": 193.36,
+          "probability": 0.997
+        },
+        {
+          "word": " echo",
+          "start": 193.36,
+          "end": 193.54,
+          "probability": 0.941
+        },
+        {
+          "word": " today?",
+          "start": 193.54,
+          "end": 193.8,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 194.5,
+      "end": 195.82,
+      "text": "You carry this ancient system.",
+      "words": [
+        {
+          "word": " You",
+          "start": 194.5,
+          "end": 194.58,
+          "probability": 0.887
+        },
+        {
+          "word": " carry",
+          "start": 194.58,
+          "end": 194.86,
+          "probability": 0.984
+        },
+        {
+          "word": " this",
+          "start": 194.86,
+          "end": 195.14,
+          "probability": 0.989
+        },
+        {
+          "word": " ancient",
+          "start": 195.14,
+          "end": 195.38,
+          "probability": 0.962
+        },
+        {
+          "word": " system.",
+          "start": 195.38,
+          "end": 195.82,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 196.32,
+      "end": 198.34,
+      "text": "When you gasp, you were a peat history.",
+      "words": [
+        {
+          "word": " When",
+          "start": 196.32,
+          "end": 196.54,
+          "probability": 0.976
+        },
+        {
+          "word": " you",
+          "start": 196.54,
+          "end": 196.7,
+          "probability": 0.999
+        },
+        {
+          "word": " gasp,",
+          "start": 196.7,
+          "end": 197.28,
+          "probability": 0.989
+        },
+        {
+          "word": " you",
+          "start": 197.44,
+          "end": 197.54,
+          "probability": 0.991
+        },
+        {
+          "word": " were",
+          "start": 197.54,
+          "end": 197.64,
+          "probability": 0.54
+        },
+        {
+          "word": " a",
+          "start": 197.64,
+          "end": 197.74,
+          "probability": 0.943
+        },
+        {
+          "word": " peat",
+          "start": 197.74,
+          "end": 198.0,
+          "probability": 0.627
+        },
+        {
+          "word": " history.",
+          "start": 198.0,
+          "end": 198.34,
+          "probability": 0.945
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "start": 198.96,
+      "end": 204.16,
+      "text": "When you scream in sudden pain, your brain bypasses your modern language center and fires",
+      "words": [
+        {
+          "word": " When",
+          "start": 198.96,
+          "end": 199.1,
+          "probability": 0.983
+        },
+        {
+          "word": " you",
+          "start": 199.1,
+          "end": 199.24,
+          "probability": 0.999
+        },
+        {
+          "word": " scream",
+          "start": 199.24,
+          "end": 199.56,
+          "probability": 0.986
+        },
+        {
+          "word": " in",
+          "start": 199.56,
+          "end": 199.9,
+          "probability": 0.92
+        },
+        {
+          "word": " sudden",
+          "start": 199.9,
+          "end": 200.22,
+          "probability": 0.974
+        },
+        {
+          "word": " pain,",
+          "start": 200.22,
+          "end": 200.52,
+          "probability": 0.994
+        },
+        {
+          "word": " your",
+          "start": 200.96,
+          "end": 201.04,
+          "probability": 0.96
+        },
+        {
+          "word": " brain",
+          "start": 201.04,
+          "end": 201.32,
+          "probability": 0.995
+        },
+        {
+          "word": " bypasses",
+          "start": 201.32,
+          "end": 202.06,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 202.06,
+          "end": 202.22,
+          "probability": 0.983
+        },
+        {
+          "word": " modern",
+          "start": 202.22,
+          "end": 202.58,
+          "probability": 0.976
+        },
+        {
+          "word": " language",
+          "start": 202.58,
+          "end": 203.02,
+          "probability": 0.989
+        },
+        {
+          "word": " center",
+          "start": 203.02,
+          "end": 203.44,
+          "probability": 0.931
+        },
+        {
+          "word": " and",
+          "start": 203.44,
+          "end": 203.8,
+          "probability": 0.88
+        },
+        {
+          "word": " fires",
+          "start": 203.8,
+          "end": 204.16,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "start": 204.16,
+      "end": 205.82,
+      "text": "the ancient emotional system.",
+      "words": [
+        {
+          "word": " the",
+          "start": 204.16,
+          "end": 204.44,
+          "probability": 0.989
+        },
+        {
+          "word": " ancient",
+          "start": 204.44,
+          "end": 204.8,
+          "probability": 0.98
+        },
+        {
+          "word": " emotional",
+          "start": 204.8,
+          "end": 205.26,
+          "probability": 0.981
+        },
+        {
+          "word": " system.",
+          "start": 205.26,
+          "end": 205.82,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "start": 206.36,
+      "end": 207.64,
+      "text": "You return to the savanna.",
+      "words": [
+        {
+          "word": " You",
+          "start": 206.36,
+          "end": 206.54,
+          "probability": 0.884
+        },
+        {
+          "word": " return",
+          "start": 206.54,
+          "end": 206.82,
+          "probability": 0.901
+        },
+        {
+          "word": " to",
+          "start": 206.82,
+          "end": 207.06,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 207.06,
+          "end": 207.2,
+          "probability": 0.96
+        },
+        {
+          "word": " savanna.",
+          "start": 207.2,
+          "end": 207.64,
+          "probability": 0.713
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "start": 208.24,
+      "end": 209.9,
+      "text": "Are you really speaking or grunting?",
+      "words": [
+        {
+          "word": " Are",
+          "start": 208.24,
+          "end": 208.34,
+          "probability": 0.992
+        },
+        {
+          "word": " you",
+          "start": 208.34,
+          "end": 208.44,
+          "probability": 0.994
+        },
+        {
+          "word": " really",
+          "start": 208.44,
+          "end": 208.7,
+          "probability": 0.995
+        },
+        {
+          "word": " speaking",
+          "start": 208.7,
+          "end": 209.1,
+          "probability": 0.998
+        },
+        {
+          "word": " or",
+          "start": 209.1,
+          "end": 209.56,
+          "probability": 0.851
+        },
+        {
+          "word": " grunting?",
+          "start": 209.56,
+          "end": 209.9,
+          "probability": 0.946
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "start": 210.54,
+      "end": 212.18,
+      "text": "Your voice is a time machine.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 210.54,
+          "end": 210.74,
+          "probability": 0.985
+        },
+        {
+          "word": " voice",
+          "start": 210.74,
+          "end": 211.14,
+          "probability": 0.997
+        },
+        {
+          "word": " is",
+          "start": 211.14,
+          "end": 211.38,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 211.38,
+          "end": 211.48,
+          "probability": 0.997
+        },
+        {
+          "word": " time",
+          "start": 211.48,
+          "end": 211.74,
+          "probability": 0.877
+        },
+        {
+          "word": " machine.",
+          "start": 211.74,
+          "end": 212.18,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "start": 212.88,
+      "end": 214.16,
+      "text": "It connects you to the past.",
+      "words": [
+        {
+          "word": " It",
+          "start": 212.88,
+          "end": 212.98,
+          "probability": 0.994
+        },
+        {
+          "word": " connects",
+          "start": 212.98,
+          "end": 213.26,
+          "probability": 0.992
+        },
+        {
+          "word": " you",
+          "start": 213.26,
+          "end": 213.56,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 213.56,
+          "end": 213.72,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 213.72,
+          "end": 213.84,
+          "probability": 0.999
+        },
+        {
+          "word": " past.",
+          "start": 213.84,
+          "end": 214.16,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "start": 214.86,
+      "end": 219.26,
+      "text": "Every syllable you speak has been shaped by millions of years of physical sacrifices made",
+      "words": [
+        {
+          "word": " Every",
+          "start": 214.86,
+          "end": 215.1,
+          "probability": 0.986
+        },
+        {
+          "word": " syllable",
+          "start": 215.1,
+          "end": 215.38,
+          "probability": 0.976
+        },
+        {
+          "word": " you",
+          "start": 215.38,
+          "end": 215.62,
+          "probability": 0.996
+        },
+        {
+          "word": " speak",
+          "start": 215.62,
+          "end": 215.9,
+          "probability": 0.999
+        },
+        {
+          "word": " has",
+          "start": 215.9,
+          "end": 216.14,
+          "probability": 0.998
+        },
+        {
+          "word": " been",
+          "start": 216.14,
+          "end": 216.34,
+          "probability": 0.999
+        },
+        {
+          "word": " shaped",
+          "start": 216.34,
+          "end": 216.64,
+          "probability": 0.992
+        },
+        {
+          "word": " by",
+          "start": 216.64,
+          "end": 216.88,
+          "probability": 0.999
+        },
+        {
+          "word": " millions",
+          "start": 216.88,
+          "end": 217.24,
+          "probability": 0.996
+        },
+        {
+          "word": " of",
+          "start": 217.24,
+          "end": 217.52,
+          "probability": 0.993
+        },
+        {
+          "word": " years",
+          "start": 217.52,
+          "end": 217.7,
+          "probability": 0.997
+        },
+        {
+          "word": " of",
+          "start": 217.7,
+          "end": 217.86,
+          "probability": 0.981
+        },
+        {
+          "word": " physical",
+          "start": 217.86,
+          "end": 218.22,
+          "probability": 0.997
+        },
+        {
+          "word": " sacrifices",
+          "start": 218.22,
+          "end": 218.96,
+          "probability": 0.723
+        },
+        {
+          "word": " made",
+          "start": 218.96,
+          "end": 219.26,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "start": 219.26,
+      "end": 220.18,
+      "text": "by your ancestors.",
+      "words": [
+        {
+          "word": " by",
+          "start": 219.26,
+          "end": 219.48,
+          "probability": 0.828
+        },
+        {
+          "word": " your",
+          "start": 219.48,
+          "end": 219.64,
+          "probability": 0.978
+        },
+        {
+          "word": " ancestors.",
+          "start": 219.64,
+          "end": 220.18,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "start": 220.86,
+      "end": 222.18,
+      "text": "It is your oldest tool.",
+      "words": [
+        {
+          "word": " It",
+          "start": 220.86,
+          "end": 221.04,
+          "probability": 0.977
+        },
+        {
+          "word": " is",
+          "start": 221.04,
+          "end": 221.1,
+          "probability": 0.935
+        },
+        {
+          "word": " your",
+          "start": 221.1,
+          "end": 221.28,
+          "probability": 0.994
+        },
+        {
+          "word": " oldest",
+          "start": 221.28,
+          "end": 221.62,
+          "probability": 0.99
+        },
+        {
+          "word": " tool.",
+          "start": 221.62,
+          "end": 222.18,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "start": 222.84,
+      "end": 225.16,
+      "text": "Tonight, when you speak, you won't think twice.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 222.84,
+          "end": 223.12,
+          "probability": 0.862
+        },
+        {
+          "word": " when",
+          "start": 223.54,
+          "end": 223.62,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 223.62,
+          "end": 223.74,
+          "probability": 0.998
+        },
+        {
+          "word": " speak,",
+          "start": 223.74,
+          "end": 223.98,
+          "probability": 0.999
+        },
+        {
+          "word": " you",
+          "start": 224.32,
+          "end": 224.42,
+          "probability": 0.996
+        },
+        {
+          "word": " won't",
+          "start": 224.42,
+          "end": 224.64,
+          "probability": 0.986
+        },
+        {
+          "word": " think",
+          "start": 224.64,
+          "end": 224.82,
+          "probability": 0.871
+        },
+        {
+          "word": " twice.",
+          "start": 224.82,
+          "end": 225.16,
+          "probability": 0.999
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Tonight,",
+      "start": 0.0,
+      "end": 0.3,
+      "probability": 0.39
+    },
+    {
+      "word": " when",
+      "start": 0.7,
+      "end": 0.8,
+      "probability": 0.987
+    },
+    {
+      "word": " you",
+      "start": 0.8,
+      "end": 0.92,
+      "probability": 0.998
+    },
+    {
+      "word": " speak,",
+      "start": 0.92,
+      "end": 1.18,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 1.6,
+      "end": 1.7,
+      "probability": 0.995
+    },
+    {
+      "word": " won't",
+      "start": 1.7,
+      "end": 1.94,
+      "probability": 0.948
+    },
+    {
+      "word": " think",
+      "start": 1.94,
+      "end": 2.16,
+      "probability": 0.994
+    },
+    {
+      "word": " twice.",
+      "start": 2.16,
+      "end": 2.62,
+      "probability": 0.999
+    },
+    {
+      "word": " Your",
+      "start": 3.18,
+      "end": 3.34,
+      "probability": 0.962
+    },
+    {
+      "word": " vocal",
+      "start": 3.34,
+      "end": 3.66,
+      "probability": 0.966
+    },
+    {
+      "word": " cords",
+      "start": 3.66,
+      "end": 4.14,
+      "probability": 0.639
+    },
+    {
+      "word": " dance",
+      "start": 4.14,
+      "end": 4.44,
+      "probability": 0.984
+    },
+    {
+      "word": " in",
+      "start": 4.44,
+      "end": 4.76,
+      "probability": 0.996
+    },
+    {
+      "word": " perfect",
+      "start": 4.76,
+      "end": 5.08,
+      "probability": 0.95
+    },
+    {
+      "word": " harmony,",
+      "start": 5.08,
+      "end": 5.56,
+      "probability": 0.999
+    },
+    {
+      "word": " but",
+      "start": 6.02,
+      "end": 6.24,
+      "probability": 0.988
+    },
+    {
+      "word": " for",
+      "start": 6.24,
+      "end": 6.44,
+      "probability": 0.987
+    },
+    {
+      "word": " 99",
+      "start": 6.44,
+      "end": 6.92,
+      "probability": 0.968
+    },
+    {
+      "word": " percent",
+      "start": 6.92,
+      "end": 7.36,
+      "probability": 0.136
+    },
+    {
+      "word": " of",
+      "start": 7.36,
+      "end": 7.6,
+      "probability": 0.994
+    },
+    {
+      "word": " human",
+      "start": 7.6,
+      "end": 7.78,
+      "probability": 0.991
+    },
+    {
+      "word": " history,",
+      "start": 7.78,
+      "end": 8.26,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 8.52,
+      "end": 8.6,
+      "probability": 0.949
+    },
+    {
+      "word": " sounds",
+      "start": 8.6,
+      "end": 8.82,
+      "probability": 0.921
+    },
+    {
+      "word": " your",
+      "start": 8.82,
+      "end": 9.06,
+      "probability": 0.988
+    },
+    {
+      "word": " ancestors",
+      "start": 9.06,
+      "end": 9.46,
+      "probability": 0.988
+    },
+    {
+      "word": " made",
+      "start": 9.46,
+      "end": 9.92,
+      "probability": 0.993
+    },
+    {
+      "word": " would",
+      "start": 9.92,
+      "end": 10.12,
+      "probability": 0.967
+    },
+    {
+      "word": " have",
+      "start": 10.12,
+      "end": 10.22,
+      "probability": 0.788
+    },
+    {
+      "word": " been",
+      "start": 10.22,
+      "end": 10.34,
+      "probability": 0.998
+    },
+    {
+      "word": " completely",
+      "start": 10.34,
+      "end": 10.86,
+      "probability": 0.996
+    },
+    {
+      "word": " unrecognizable",
+      "start": 10.86,
+      "end": 11.84,
+      "probability": 0.982
+    },
+    {
+      "word": " to",
+      "start": 11.84,
+      "end": 12.06,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 12.06,
+      "end": 12.22,
+      "probability": 0.994
+    },
+    {
+      "word": " modern",
+      "start": 12.22,
+      "end": 12.54,
+      "probability": 0.991
+    },
+    {
+      "word": " ears.",
+      "start": 12.54,
+      "end": 12.86,
+      "probability": 0.996
+    },
+    {
+      "word": " They",
+      "start": 13.42,
+      "end": 13.6,
+      "probability": 0.992
+    },
+    {
+      "word": " did",
+      "start": 13.6,
+      "end": 13.74,
+      "probability": 0.988
+    },
+    {
+      "word": " not",
+      "start": 13.74,
+      "end": 13.88,
+      "probability": 0.999
+    },
+    {
+      "word": " speak",
+      "start": 13.88,
+      "end": 14.18,
+      "probability": 0.998
+    },
+    {
+      "word": " in",
+      "start": 14.18,
+      "end": 14.4,
+      "probability": 0.938
+    },
+    {
+      "word": " neat,",
+      "start": 14.4,
+      "end": 14.62,
+      "probability": 0.958
+    },
+    {
+      "word": " orderly",
+      "start": 15.06,
+      "end": 15.44,
+      "probability": 0.985
+    },
+    {
+      "word": " words.",
+      "start": 15.44,
+      "end": 15.76,
+      "probability": 0.998
+    },
+    {
+      "word": " So",
+      "start": 16.4,
+      "end": 16.74,
+      "probability": 0.987
+    },
+    {
+      "word": " what",
+      "start": 16.74,
+      "end": 17.28,
+      "probability": 0.312
+    },
+    {
+      "word": " did",
+      "start": 17.28,
+      "end": 17.42,
+      "probability": 0.998
+    },
+    {
+      "word": " human",
+      "start": 17.42,
+      "end": 17.82,
+      "probability": 0.971
+    },
+    {
+      "word": " ancestors",
+      "start": 17.82,
+      "end": 18.42,
+      "probability": 0.995
+    },
+    {
+      "word": " actually",
+      "start": 18.42,
+      "end": 18.98,
+      "probability": 0.997
+    },
+    {
+      "word": " sound",
+      "start": 18.98,
+      "end": 19.34,
+      "probability": 0.998
+    },
+    {
+      "word": " like",
+      "start": 19.34,
+      "end": 19.5,
+      "probability": 1.0
+    },
+    {
+      "word": " before",
+      "start": 19.5,
+      "end": 19.82,
+      "probability": 0.996
+    },
+    {
+      "word": " language",
+      "start": 19.82,
+      "end": 20.24,
+      "probability": 0.94
+    },
+    {
+      "word": " was",
+      "start": 20.24,
+      "end": 20.48,
+      "probability": 0.998
+    },
+    {
+      "word": " born?",
+      "start": 20.48,
+      "end": 20.76,
+      "probability": 0.992
+    },
+    {
+      "word": " You",
+      "start": 21.34,
+      "end": 21.48,
+      "probability": 0.982
+    },
+    {
+      "word": " might",
+      "start": 21.48,
+      "end": 21.64,
+      "probability": 0.983
+    },
+    {
+      "word": " picture",
+      "start": 21.64,
+      "end": 22.0,
+      "probability": 0.966
+    },
+    {
+      "word": " primitive",
+      "start": 22.0,
+      "end": 22.42,
+      "probability": 0.963
+    },
+    {
+      "word": " grunting.",
+      "start": 22.42,
+      "end": 22.92,
+      "probability": 0.967
+    },
+    {
+      "word": " You",
+      "start": 23.5,
+      "end": 23.7,
+      "probability": 0.995
+    },
+    {
+      "word": " might",
+      "start": 23.7,
+      "end": 23.9,
+      "probability": 0.995
+    },
+    {
+      "word": " picture",
+      "start": 23.9,
+      "end": 24.26,
+      "probability": 0.997
+    },
+    {
+      "word": " wild,",
+      "start": 24.26,
+      "end": 24.7,
+      "probability": 0.993
+    },
+    {
+      "word": " animal",
+      "start": 25.02,
+      "end": 25.3,
+      "probability": 0.997
+    },
+    {
+      "word": " noises.",
+      "start": 25.3,
+      "end": 25.82,
+      "probability": 0.99
+    },
+    {
+      "word": " But",
+      "start": 25.82,
+      "end": 26.62,
+      "probability": 0.486
+    },
+    {
+      "word": " the",
+      "start": 26.62,
+      "end": 26.76,
+      "probability": 0.945
+    },
+    {
+      "word": " real",
+      "start": 26.76,
+      "end": 26.98,
+      "probability": 0.988
+    },
+    {
+      "word": " answer",
+      "start": 26.98,
+      "end": 27.4,
+      "probability": 0.867
+    },
+    {
+      "word": " is",
+      "start": 27.4,
+      "end": 27.62,
+      "probability": 0.987
+    },
+    {
+      "word": " far",
+      "start": 27.62,
+      "end": 27.84,
+      "probability": 0.882
+    },
+    {
+      "word": " stranger,",
+      "start": 27.84,
+      "end": 28.42,
+      "probability": 0.981
+    },
+    {
+      "word": " buried",
+      "start": 28.8,
+      "end": 29.0,
+      "probability": 0.994
+    },
+    {
+      "word": " in",
+      "start": 29.0,
+      "end": 29.2,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 29.2,
+      "end": 29.3,
+      "probability": 0.989
+    },
+    {
+      "word": " shape",
+      "start": 29.3,
+      "end": 29.5,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 29.5,
+      "end": 29.74,
+      "probability": 0.998
+    },
+    {
+      "word": " ancient",
+      "start": 29.74,
+      "end": 30.04,
+      "probability": 0.985
+    },
+    {
+      "word": " bones",
+      "start": 30.04,
+      "end": 30.36,
+      "probability": 0.983
+    },
+    {
+      "word": " and",
+      "start": 30.36,
+      "end": 30.72,
+      "probability": 0.554
+    },
+    {
+      "word": " the",
+      "start": 30.72,
+      "end": 30.86,
+      "probability": 0.989
+    },
+    {
+      "word": " wet",
+      "start": 30.86,
+      "end": 31.04,
+      "probability": 0.994
+    },
+    {
+      "word": " tissue",
+      "start": 31.04,
+      "end": 31.38,
+      "probability": 0.997
+    },
+    {
+      "word": " that",
+      "start": 31.38,
+      "end": 31.62,
+      "probability": 0.994
+    },
+    {
+      "word": " rotted",
+      "start": 31.62,
+      "end": 31.92,
+      "probability": 0.846
+    },
+    {
+      "word": " away",
+      "start": 31.92,
+      "end": 32.2,
+      "probability": 0.992
+    },
+    {
+      "word": " long",
+      "start": 32.2,
+      "end": 32.52,
+      "probability": 0.82
+    },
+    {
+      "word": " ago.",
+      "start": 32.52,
+      "end": 32.84,
+      "probability": 0.999
+    },
+    {
+      "word": " Science",
+      "start": 33.56,
+      "end": 33.84,
+      "probability": 0.972
+    },
+    {
+      "word": " is",
+      "start": 33.84,
+      "end": 34.12,
+      "probability": 0.978
+    },
+    {
+      "word": " now",
+      "start": 34.12,
+      "end": 34.32,
+      "probability": 0.951
+    },
+    {
+      "word": " bringing",
+      "start": 34.32,
+      "end": 34.7,
+      "probability": 0.938
+    },
+    {
+      "word": " those",
+      "start": 34.7,
+      "end": 35.0,
+      "probability": 0.967
+    },
+    {
+      "word": " voices",
+      "start": 35.0,
+      "end": 35.38,
+      "probability": 0.983
+    },
+    {
+      "word": " back.",
+      "start": 35.38,
+      "end": 35.76,
+      "probability": 0.999
+    },
+    {
+      "word": " How",
+      "start": 36.42,
+      "end": 36.56,
+      "probability": 0.989
+    },
+    {
+      "word": " do",
+      "start": 36.56,
+      "end": 36.66,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 36.66,
+      "end": 36.76,
+      "probability": 0.665
+    },
+    {
+      "word": " reconstruct",
+      "start": 36.76,
+      "end": 37.1,
+      "probability": 0.961
+    },
+    {
+      "word": " a",
+      "start": 37.1,
+      "end": 37.5,
+      "probability": 0.986
+    },
+    {
+      "word": " sound",
+      "start": 37.5,
+      "end": 37.72,
+      "probability": 0.991
+    },
+    {
+      "word": " that",
+      "start": 37.72,
+      "end": 37.88,
+      "probability": 0.995
+    },
+    {
+      "word": " has",
+      "start": 37.88,
+      "end": 38.02,
+      "probability": 0.989
+    },
+    {
+      "word": " been",
+      "start": 38.02,
+      "end": 38.26,
+      "probability": 0.997
+    },
+    {
+      "word": " silent",
+      "start": 38.26,
+      "end": 38.76,
+      "probability": 0.991
+    },
+    {
+      "word": " for",
+      "start": 38.76,
+      "end": 39.0,
+      "probability": 0.997
+    },
+    {
+      "word": " 100",
+      "start": 39.0,
+      "end": 39.32,
+      "probability": 0.554
+    },
+    {
+      "word": ",000",
+      "start": 39.32,
+      "end": 39.78,
+      "probability": 0.943
+    },
+    {
+      "word": " years?",
+      "start": 39.78,
+      "end": 40.06,
+      "probability": 0.998
+    },
+    {
+      "word": " To",
+      "start": 40.72,
+      "end": 40.84,
+      "probability": 0.992
+    },
+    {
+      "word": " find",
+      "start": 40.84,
+      "end": 41.14,
+      "probability": 0.987
+    },
+    {
+      "word": " the",
+      "start": 41.14,
+      "end": 41.38,
+      "probability": 0.995
+    },
+    {
+      "word": " origin,",
+      "start": 41.38,
+      "end": 41.72,
+      "probability": 0.99
+    },
+    {
+      "word": " look",
+      "start": 42.1,
+      "end": 42.24,
+      "probability": 0.994
+    },
+    {
+      "word": " at",
+      "start": 42.24,
+      "end": 42.38,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 42.38,
+      "end": 42.52,
+      "probability": 0.99
+    },
+    {
+      "word": " throat.",
+      "start": 42.52,
+      "end": 42.82,
+      "probability": 0.949
+    },
+    {
+      "word": " Specifically,",
+      "start": 43.64,
+      "end": 44.2,
+      "probability": 0.992
+    },
+    {
+      "word": " look",
+      "start": 44.54,
+      "end": 44.68,
+      "probability": 0.994
+    },
+    {
+      "word": " at",
+      "start": 44.68,
+      "end": 44.86,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 44.86,
+      "end": 45.02,
+      "probability": 0.996
+    },
+    {
+      "word": " tiny",
+      "start": 45.02,
+      "end": 45.3,
+      "probability": 0.775
+    },
+    {
+      "word": " hyoid",
+      "start": 45.3,
+      "end": 45.64,
+      "probability": 0.66
+    },
+    {
+      "word": " bone.",
+      "start": 45.64,
+      "end": 46.02,
+      "probability": 0.989
+    },
+    {
+      "word": " This",
+      "start": 46.58,
+      "end": 46.8,
+      "probability": 0.995
+    },
+    {
+      "word": " u",
+      "start": 46.8,
+      "end": 47.0,
+      "probability": 0.457
+    },
+    {
+      "word": "-shaped",
+      "start": 47.0,
+      "end": 47.18,
+      "probability": 0.983
+    },
+    {
+      "word": " bone",
+      "start": 47.18,
+      "end": 47.56,
+      "probability": 0.975
+    },
+    {
+      "word": " sits",
+      "start": 47.56,
+      "end": 47.82,
+      "probability": 0.985
+    },
+    {
+      "word": " just",
+      "start": 47.82,
+      "end": 48.16,
+      "probability": 0.991
+    },
+    {
+      "word": " below",
+      "start": 48.16,
+      "end": 48.46,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 48.46,
+      "end": 48.76,
+      "probability": 0.994
+    },
+    {
+      "word": " jaw,",
+      "start": 48.76,
+      "end": 49.04,
+      "probability": 0.999
+    },
+    {
+      "word": " acting",
+      "start": 49.3,
+      "end": 49.54,
+      "probability": 0.995
+    },
+    {
+      "word": " as",
+      "start": 49.54,
+      "end": 49.8,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 49.8,
+      "end": 49.96,
+      "probability": 0.986
+    },
+    {
+      "word": " anchor",
+      "start": 49.96,
+      "end": 50.16,
+      "probability": 0.993
+    },
+    {
+      "word": " for",
+      "start": 50.16,
+      "end": 50.42,
+      "probability": 0.988
+    },
+    {
+      "word": " your",
+      "start": 50.42,
+      "end": 50.6,
+      "probability": 0.993
+    },
+    {
+      "word": " tongue.",
+      "start": 50.6,
+      "end": 50.86,
+      "probability": 0.999
+    },
+    {
+      "word": " In",
+      "start": 50.86,
+      "end": 51.56,
+      "probability": 0.328
+    },
+    {
+      "word": " 1989,",
+      "start": 51.56,
+      "end": 52.7,
+      "probability": 0.929
+    },
+    {
+      "word": " scientists",
+      "start": 53.24,
+      "end": 53.48,
+      "probability": 0.882
+    },
+    {
+      "word": " discovered",
+      "start": 53.48,
+      "end": 54.1,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 54.1,
+      "end": 54.34,
+      "probability": 0.826
+    },
+    {
+      "word": " knee",
+      "start": 54.34,
+      "end": 54.48,
+      "probability": 0.484
+    },
+    {
+      "word": "-and",
+      "start": 54.48,
+      "end": 54.66,
+      "probability": 0.779
+    },
+    {
+      "word": "-of",
+      "start": 54.66,
+      "end": 54.8,
+      "probability": 0.716
+    },
+    {
+      "word": "-hell",
+      "start": 54.8,
+      "end": 55.04,
+      "probability": 0.766
+    },
+    {
+      "word": " hyoid.",
+      "start": 55.04,
+      "end": 55.52,
+      "probability": 0.371
+    },
+    {
+      "word": " Did",
+      "start": 56.16,
+      "end": 56.22,
+      "probability": 0.835
+    },
+    {
+      "word": " they",
+      "start": 56.22,
+      "end": 56.36,
+      "probability": 0.987
+    },
+    {
+      "word": " speak",
+      "start": 56.36,
+      "end": 56.6,
+      "probability": 0.998
+    },
+    {
+      "word": " just",
+      "start": 56.6,
+      "end": 56.86,
+      "probability": 0.971
+    },
+    {
+      "word": " like",
+      "start": 56.86,
+      "end": 57.08,
+      "probability": 0.995
+    },
+    {
+      "word": " you?",
+      "start": 57.08,
+      "end": 57.26,
+      "probability": 0.993
+    },
+    {
+      "word": " Cognitive",
+      "start": 57.86,
+      "end": 58.26,
+      "probability": 0.735
+    },
+    {
+      "word": " scientists,",
+      "start": 58.26,
+      "end": 58.74,
+      "probability": 0.591
+    },
+    {
+      "word": " doctor",
+      "start": 59.04,
+      "end": 59.36,
+      "probability": 0.406
+    },
+    {
+      "word": " Philip",
+      "start": 59.36,
+      "end": 60.22,
+      "probability": 0.327
+    },
+    {
+      "word": " Lieberman",
+      "start": 60.22,
+      "end": 60.7,
+      "probability": 0.948
+    },
+    {
+      "word": " says",
+      "start": 60.7,
+      "end": 61.0,
+      "probability": 0.773
+    },
+    {
+      "word": " no.",
+      "start": 61.0,
+      "end": 61.42,
+      "probability": 0.814
+    },
+    {
+      "word": " Their",
+      "start": 61.94,
+      "end": 62.02,
+      "probability": 0.84
+    },
+    {
+      "word": " throat",
+      "start": 62.02,
+      "end": 62.28,
+      "probability": 0.999
+    },
+    {
+      "word": " cavity",
+      "start": 62.28,
+      "end": 62.7,
+      "probability": 0.997
+    },
+    {
+      "word": " was",
+      "start": 62.7,
+      "end": 62.92,
+      "probability": 0.998
+    },
+    {
+      "word": " very",
+      "start": 62.92,
+      "end": 63.2,
+      "probability": 0.997
+    },
+    {
+      "word": " short.",
+      "start": 63.2,
+      "end": 63.58,
+      "probability": 0.996
+    },
+    {
+      "word": " Their",
+      "start": 64.16,
+      "end": 64.38,
+      "probability": 0.992
+    },
+    {
+      "word": " tongue",
+      "start": 64.38,
+      "end": 64.56,
+      "probability": 0.501
+    },
+    {
+      "word": " was",
+      "start": 64.56,
+      "end": 64.74,
+      "probability": 0.997
+    },
+    {
+      "word": " positioned",
+      "start": 64.74,
+      "end": 65.16,
+      "probability": 0.989
+    },
+    {
+      "word": " flat",
+      "start": 65.16,
+      "end": 65.56,
+      "probability": 0.998
+    },
+    {
+      "word": " inside",
+      "start": 65.56,
+      "end": 65.76,
+      "probability": 0.995
+    },
+    {
+      "word": " their",
+      "start": 65.76,
+      "end": 66.26,
+      "probability": 0.997
+    },
+    {
+      "word": " mouth",
+      "start": 66.26,
+      "end": 66.48,
+      "probability": 0.995
+    },
+    {
+      "word": " rather",
+      "start": 66.48,
+      "end": 66.88,
+      "probability": 0.972
+    },
+    {
+      "word": " than",
+      "start": 66.88,
+      "end": 67.14,
+      "probability": 0.997
+    },
+    {
+      "word": " bending",
+      "start": 67.14,
+      "end": 67.4,
+      "probability": 0.969
+    },
+    {
+      "word": " down",
+      "start": 67.4,
+      "end": 67.7,
+      "probability": 0.996
+    },
+    {
+      "word": " into",
+      "start": 67.7,
+      "end": 68.08,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 68.08,
+      "end": 68.24,
+      "probability": 0.931
+    },
+    {
+      "word": " throat,",
+      "start": 68.24,
+      "end": 68.52,
+      "probability": 0.997
+    },
+    {
+      "word": " which",
+      "start": 68.8,
+      "end": 69.02,
+      "probability": 0.997
+    },
+    {
+      "word": " changed",
+      "start": 69.02,
+      "end": 69.46,
+      "probability": 0.989
+    },
+    {
+      "word": " their",
+      "start": 69.46,
+      "end": 69.74,
+      "probability": 0.997
+    },
+    {
+      "word": " acoustic",
+      "start": 69.74,
+      "end": 70.16,
+      "probability": 0.947
+    },
+    {
+      "word": " range",
+      "start": 70.16,
+      "end": 70.52,
+      "probability": 0.998
+    },
+    {
+      "word": " completely.",
+      "start": 70.52,
+      "end": 71.04,
+      "probability": 0.996
+    },
+    {
+      "word": " They",
+      "start": 71.56,
+      "end": 71.78,
+      "probability": 0.989
+    },
+    {
+      "word": " could",
+      "start": 71.78,
+      "end": 71.94,
+      "probability": 0.992
+    },
+    {
+      "word": " not",
+      "start": 71.94,
+      "end": 72.12,
+      "probability": 0.997
+    },
+    {
+      "word": " produce",
+      "start": 72.12,
+      "end": 72.56,
+      "probability": 0.998
+    },
+    {
+      "word": " clear",
+      "start": 72.56,
+      "end": 72.88,
+      "probability": 0.995
+    },
+    {
+      "word": " vowel",
+      "start": 72.88,
+      "end": 73.16,
+      "probability": 0.999
+    },
+    {
+      "word": " sounds.",
+      "start": 73.16,
+      "end": 73.7,
+      "probability": 0.995
+    },
+    {
+      "word": " Can",
+      "start": 74.3,
+      "end": 74.4,
+      "probability": 0.968
+    },
+    {
+      "word": " you",
+      "start": 74.4,
+      "end": 74.52,
+      "probability": 0.999
+    },
+    {
+      "word": " imagine",
+      "start": 74.52,
+      "end": 74.88,
+      "probability": 0.998
+    },
+    {
+      "word": " speaking",
+      "start": 74.88,
+      "end": 75.32,
+      "probability": 0.99
+    },
+    {
+      "word": " without",
+      "start": 75.32,
+      "end": 75.64,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 75.64,
+      "end": 75.84,
+      "probability": 0.992
+    },
+    {
+      "word": " letters",
+      "start": 75.84,
+      "end": 76.08,
+      "probability": 0.943
+    },
+    {
+      "word": " A,",
+      "start": 76.08,
+      "end": 76.4,
+      "probability": 0.725
+    },
+    {
+      "word": " I",
+      "start": 76.82,
+      "end": 76.96,
+      "probability": 0.695
+    },
+    {
+      "word": " or",
+      "start": 76.96,
+      "end": 77.28,
+      "probability": 0.73
+    },
+    {
+      "word": " you?",
+      "start": 77.28,
+      "end": 77.54,
+      "probability": 0.592
+    },
+    {
+      "word": " Anthropologist,",
+      "start": 78.16,
+      "end": 78.76,
+      "probability": 0.791
+    },
+    {
+      "word": " doctor.",
+      "start": 79.0,
+      "end": 79.4,
+      "probability": 0.934
+    },
+    {
+      "word": " Roderard",
+      "start": 79.4,
+      "end": 80.36,
+      "probability": 0.327
+    },
+    {
+      "word": " McCarthy",
+      "start": 80.36,
+      "end": 80.68,
+      "probability": 0.461
+    },
+    {
+      "word": " synthesized",
+      "start": 80.68,
+      "end": 81.5,
+      "probability": 0.938
+    },
+    {
+      "word": " the",
+      "start": 81.5,
+      "end": 81.66,
+      "probability": 0.979
+    },
+    {
+      "word": " sound.",
+      "start": 81.66,
+      "end": 81.96,
+      "probability": 0.984
+    },
+    {
+      "word": " He",
+      "start": 82.46,
+      "end": 82.68,
+      "probability": 0.985
+    },
+    {
+      "word": " rebuilt",
+      "start": 82.68,
+      "end": 83.04,
+      "probability": 0.975
+    },
+    {
+      "word": " their",
+      "start": 83.04,
+      "end": 83.3,
+      "probability": 0.994
+    },
+    {
+      "word": " vocal",
+      "start": 83.3,
+      "end": 83.62,
+      "probability": 0.983
+    },
+    {
+      "word": " tract",
+      "start": 83.62,
+      "end": 83.9,
+      "probability": 0.849
+    },
+    {
+      "word": " on",
+      "start": 83.9,
+      "end": 84.24,
+      "probability": 0.996
+    },
+    {
+      "word": " computers.",
+      "start": 84.24,
+      "end": 84.7,
+      "probability": 0.984
+    },
+    {
+      "word": " He",
+      "start": 85.38,
+      "end": 85.6,
+      "probability": 0.986
+    },
+    {
+      "word": " programmed",
+      "start": 85.6,
+      "end": 86.1,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 86.1,
+      "end": 86.44,
+      "probability": 0.989
+    },
+    {
+      "word": " software",
+      "start": 86.44,
+      "end": 86.92,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 86.92,
+      "end": 87.18,
+      "probability": 0.999
+    },
+    {
+      "word": " replicate",
+      "start": 87.18,
+      "end": 87.62,
+      "probability": 0.998
+    },
+    {
+      "word": " their",
+      "start": 87.62,
+      "end": 87.84,
+      "probability": 0.993
+    },
+    {
+      "word": " anatomy",
+      "start": 87.84,
+      "end": 88.12,
+      "probability": 0.99
+    },
+    {
+      "word": " and",
+      "start": 88.12,
+      "end": 88.5,
+      "probability": 0.983
+    },
+    {
+      "word": " speak",
+      "start": 88.5,
+      "end": 88.8,
+      "probability": 0.987
+    },
+    {
+      "word": " a",
+      "start": 88.8,
+      "end": 89.06,
+      "probability": 0.981
+    },
+    {
+      "word": " simple",
+      "start": 89.06,
+      "end": 89.38,
+      "probability": 0.996
+    },
+    {
+      "word": " vowel",
+      "start": 89.38,
+      "end": 89.66,
+      "probability": 0.998
+    },
+    {
+      "word": " sound",
+      "start": 89.66,
+      "end": 90.04,
+      "probability": 0.997
+    },
+    {
+      "word": " based",
+      "start": 90.04,
+      "end": 90.32,
+      "probability": 0.989
+    },
+    {
+      "word": " on",
+      "start": 90.32,
+      "end": 90.54,
+      "probability": 0.996
+    },
+    {
+      "word": " those",
+      "start": 90.54,
+      "end": 90.76,
+      "probability": 0.984
+    },
+    {
+      "word": " ancient",
+      "start": 90.76,
+      "end": 91.06,
+      "probability": 0.986
+    },
+    {
+      "word": " measurements.",
+      "start": 91.06,
+      "end": 91.54,
+      "probability": 0.998
+    },
+    {
+      "word": " The",
+      "start": 92.2,
+      "end": 92.42,
+      "probability": 0.936
+    },
+    {
+      "word": " app",
+      "start": 92.42,
+      "end": 92.62,
+      "probability": 0.326
+    },
+    {
+      "word": " was",
+      "start": 92.62,
+      "end": 92.94,
+      "probability": 0.995
+    },
+    {
+      "word": " not",
+      "start": 92.94,
+      "end": 93.12,
+      "probability": 0.911
+    },
+    {
+      "word": " a",
+      "start": 93.12,
+      "end": 93.28,
+      "probability": 0.984
+    },
+    {
+      "word": " deep",
+      "start": 93.28,
+      "end": 93.56,
+      "probability": 0.978
+    },
+    {
+      "word": " grant.",
+      "start": 93.56,
+      "end": 93.94,
+      "probability": 0.897
+    },
+    {
+      "word": " What",
+      "start": 94.64,
+      "end": 94.76,
+      "probability": 0.927
+    },
+    {
+      "word": " did",
+      "start": 94.76,
+      "end": 94.92,
+      "probability": 0.998
+    },
+    {
+      "word": " it",
+      "start": 94.92,
+      "end": 95.04,
+      "probability": 0.882
+    },
+    {
+      "word": " sound",
+      "start": 95.04,
+      "end": 95.34,
+      "probability": 0.999
+    },
+    {
+      "word": " like?",
+      "start": 95.34,
+      "end": 95.66,
+      "probability": 0.999
+    },
+    {
+      "word": " It",
+      "start": 96.28,
+      "end": 96.44,
+      "probability": 0.99
+    },
+    {
+      "word": " was",
+      "start": 96.44,
+      "end": 96.56,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 96.56,
+      "end": 96.68,
+      "probability": 0.988
+    },
+    {
+      "word": " high",
+      "start": 96.68,
+      "end": 96.86,
+      "probability": 0.957
+    },
+    {
+      "word": "-pitched",
+      "start": 96.86,
+      "end": 97.26,
+      "probability": 0.939
+    },
+    {
+      "word": " nasal",
+      "start": 97.26,
+      "end": 97.8,
+      "probability": 0.955
+    },
+    {
+      "word": " squeak.",
+      "start": 97.8,
+      "end": 98.42,
+      "probability": 0.968
+    },
+    {
+      "word": " It",
+      "start": 98.92,
+      "end": 99.0,
+      "probability": 0.995
+    },
+    {
+      "word": " sounded",
+      "start": 99.0,
+      "end": 99.3,
+      "probability": 0.998
+    },
+    {
+      "word": " like",
+      "start": 99.3,
+      "end": 99.52,
+      "probability": 1.0
+    },
+    {
+      "word": " a",
+      "start": 99.52,
+      "end": 99.68,
+      "probability": 0.996
+    },
+    {
+      "word": " modern",
+      "start": 99.68,
+      "end": 100.0,
+      "probability": 0.989
+    },
+    {
+      "word": " human",
+      "start": 100.0,
+      "end": 100.34,
+      "probability": 0.99
+    },
+    {
+      "word": " shouting.",
+      "start": 100.34,
+      "end": 100.76,
+      "probability": 0.961
+    },
+    {
+      "word": " It",
+      "start": 101.4,
+      "end": 101.48,
+      "probability": 0.94
+    },
+    {
+      "word": " lacked",
+      "start": 101.48,
+      "end": 101.68,
+      "probability": 0.984
+    },
+    {
+      "word": " the",
+      "start": 101.68,
+      "end": 101.9,
+      "probability": 0.998
+    },
+    {
+      "word": " resonance",
+      "start": 101.9,
+      "end": 102.26,
+      "probability": 0.983
+    },
+    {
+      "word": " and",
+      "start": 102.26,
+      "end": 102.56,
+      "probability": 0.99
+    },
+    {
+      "word": " warmth",
+      "start": 102.56,
+      "end": 102.86,
+      "probability": 0.984
+    },
+    {
+      "word": " that",
+      "start": 102.86,
+      "end": 103.06,
+      "probability": 0.989
+    },
+    {
+      "word": " your",
+      "start": 103.06,
+      "end": 103.16,
+      "probability": 0.981
+    },
+    {
+      "word": " long",
+      "start": 103.16,
+      "end": 103.42,
+      "probability": 0.968
+    },
+    {
+      "word": " throat",
+      "start": 103.42,
+      "end": 103.72,
+      "probability": 0.832
+    },
+    {
+      "word": " cavity",
+      "start": 103.72,
+      "end": 104.18,
+      "probability": 0.997
+    },
+    {
+      "word": " provides",
+      "start": 104.18,
+      "end": 104.56,
+      "probability": 0.994
+    },
+    {
+      "word": " to",
+      "start": 104.56,
+      "end": 104.94,
+      "probability": 0.991
+    },
+    {
+      "word": " normal",
+      "start": 104.94,
+      "end": 105.24,
+      "probability": 0.992
+    },
+    {
+      "word": " human",
+      "start": 105.24,
+      "end": 105.58,
+      "probability": 0.978
+    },
+    {
+      "word": " speech.",
+      "start": 105.58,
+      "end": 106.04,
+      "probability": 0.993
+    },
+    {
+      "word": " Their",
+      "start": 106.46,
+      "end": 106.78,
+      "probability": 0.566
+    },
+    {
+      "word": " voice",
+      "start": 106.78,
+      "end": 107.08,
+      "probability": 0.994
+    },
+    {
+      "word": " was",
+      "start": 107.08,
+      "end": 107.36,
+      "probability": 0.994
+    },
+    {
+      "word": " actually",
+      "start": 107.36,
+      "end": 107.76,
+      "probability": 0.987
+    },
+    {
+      "word": " quite",
+      "start": 107.76,
+      "end": 108.02,
+      "probability": 0.996
+    },
+    {
+      "word": " comical.",
+      "start": 108.02,
+      "end": 108.48,
+      "probability": 0.992
+    },
+    {
+      "word": " Would",
+      "start": 108.96,
+      "end": 109.16,
+      "probability": 0.9
+    },
+    {
+      "word": " you",
+      "start": 109.16,
+      "end": 109.26,
+      "probability": 0.976
+    },
+    {
+      "word": " laugh",
+      "start": 109.26,
+      "end": 109.48,
+      "probability": 0.967
+    },
+    {
+      "word": " if",
+      "start": 109.48,
+      "end": 109.68,
+      "probability": 0.983
+    },
+    {
+      "word": " any",
+      "start": 109.68,
+      "end": 109.86,
+      "probability": 0.954
+    },
+    {
+      "word": " Andrew",
+      "start": 109.86,
+      "end": 110.02,
+      "probability": 0.237
+    },
+    {
+      "word": " Thal",
+      "start": 110.02,
+      "end": 110.22,
+      "probability": 0.527
+    },
+    {
+      "word": " spoke",
+      "start": 110.22,
+      "end": 110.52,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 110.52,
+      "end": 110.78,
+      "probability": 0.998
+    },
+    {
+      "word": " you?",
+      "start": 110.78,
+      "end": 110.92,
+      "probability": 0.997
+    },
+    {
+      "word": " The",
+      "start": 111.5,
+      "end": 111.6,
+      "probability": 0.951
+    },
+    {
+      "word": " vocal",
+      "start": 111.6,
+      "end": 111.84,
+      "probability": 0.976
+    },
+    {
+      "word": " design",
+      "start": 111.84,
+      "end": 112.24,
+      "probability": 0.993
+    },
+    {
+      "word": " goes",
+      "start": 112.24,
+      "end": 112.54,
+      "probability": 0.993
+    },
+    {
+      "word": " further",
+      "start": 112.54,
+      "end": 112.92,
+      "probability": 0.996
+    },
+    {
+      "word": " back.",
+      "start": 112.92,
+      "end": 113.28,
+      "probability": 0.974
+    },
+    {
+      "word": " Earlier",
+      "start": 113.8,
+      "end": 114.06,
+      "probability": 0.936
+    },
+    {
+      "word": " ancestors",
+      "start": 114.06,
+      "end": 114.62,
+      "probability": 0.807
+    },
+    {
+      "word": " had",
+      "start": 114.62,
+      "end": 114.92,
+      "probability": 0.991
+    },
+    {
+      "word": " even",
+      "start": 114.92,
+      "end": 115.24,
+      "probability": 0.994
+    },
+    {
+      "word": " stranger",
+      "start": 115.24,
+      "end": 115.74,
+      "probability": 0.92
+    },
+    {
+      "word": " anatomy.",
+      "start": 115.74,
+      "end": 116.16,
+      "probability": 0.999
+    },
+    {
+      "word": " Vocal",
+      "start": 116.86,
+      "end": 117.16,
+      "probability": 0.98
+    },
+    {
+      "word": " researcher,",
+      "start": 117.16,
+      "end": 117.6,
+      "probability": 0.888
+    },
+    {
+      "word": " doctor,",
+      "start": 117.6,
+      "end": 118.18,
+      "probability": 0.299
+    },
+    {
+      "word": " are",
+      "start": 118.72,
+      "end": 118.82,
+      "probability": 0.403
+    },
+    {
+      "word": " to",
+      "start": 118.82,
+      "end": 118.96,
+      "probability": 0.811
+    },
+    {
+      "word": " bore",
+      "start": 118.96,
+      "end": 119.2,
+      "probability": 0.248
+    },
+    {
+      "word": " focused",
+      "start": 119.2,
+      "end": 119.7,
+      "probability": 0.75
+    },
+    {
+      "word": " studies",
+      "start": 119.7,
+      "end": 120.12,
+      "probability": 0.737
+    },
+    {
+      "word": " on",
+      "start": 120.12,
+      "end": 120.46,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 120.46,
+      "end": 120.62,
+      "probability": 0.991
+    },
+    {
+      "word": " evolution",
+      "start": 120.62,
+      "end": 121.18,
+      "probability": 0.996
+    },
+    {
+      "word": " of",
+      "start": 121.18,
+      "end": 121.5,
+      "probability": 0.993
+    },
+    {
+      "word": " vocal",
+      "start": 121.5,
+      "end": 121.84,
+      "probability": 0.984
+    },
+    {
+      "word": " air",
+      "start": 121.84,
+      "end": 122.08,
+      "probability": 0.956
+    },
+    {
+      "word": " sacks,",
+      "start": 122.08,
+      "end": 122.48,
+      "probability": 0.684
+    },
+    {
+      "word": " which",
+      "start": 122.94,
+      "end": 123.16,
+      "probability": 0.998
+    },
+    {
+      "word": " are",
+      "start": 123.16,
+      "end": 123.34,
+      "probability": 0.98
+    },
+    {
+      "word": " large",
+      "start": 123.34,
+      "end": 123.72,
+      "probability": 0.877
+    },
+    {
+      "word": " cavities",
+      "start": 123.72,
+      "end": 124.2,
+      "probability": 0.962
+    },
+    {
+      "word": " attached",
+      "start": 124.2,
+      "end": 124.46,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 124.46,
+      "end": 124.76,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 124.76,
+      "end": 124.84,
+      "probability": 0.98
+    },
+    {
+      "word": " voice",
+      "start": 124.84,
+      "end": 125.04,
+      "probability": 0.979
+    },
+    {
+      "word": " box.",
+      "start": 125.04,
+      "end": 125.44,
+      "probability": 0.933
+    },
+    {
+      "word": " Schimpansies",
+      "start": 126.26,
+      "end": 126.66,
+      "probability": 0.533
+    },
+    {
+      "word": " used",
+      "start": 126.66,
+      "end": 126.98,
+      "probability": 0.34
+    },
+    {
+      "word": " them",
+      "start": 126.98,
+      "end": 127.22,
+      "probability": 0.985
+    },
+    {
+      "word": " to",
+      "start": 127.22,
+      "end": 127.42,
+      "probability": 0.994
+    },
+    {
+      "word": " make",
+      "start": 127.42,
+      "end": 127.6,
+      "probability": 0.999
+    },
+    {
+      "word": " loud",
+      "start": 127.6,
+      "end": 127.82,
+      "probability": 0.992
+    },
+    {
+      "word": " calls.",
+      "start": 127.82,
+      "end": 128.14,
+      "probability": 0.989
+    },
+    {
+      "word": " Why",
+      "start": 128.88,
+      "end": 129.14,
+      "probability": 0.919
+    },
+    {
+      "word": " did",
+      "start": 129.14,
+      "end": 129.28,
+      "probability": 0.99
+    },
+    {
+      "word": " these",
+      "start": 129.28,
+      "end": 129.48,
+      "probability": 0.973
+    },
+    {
+      "word": " sacks",
+      "start": 129.48,
+      "end": 129.92,
+      "probability": 0.981
+    },
+    {
+      "word": " disappear?",
+      "start": 129.92,
+      "end": 130.44,
+      "probability": 0.997
+    },
+    {
+      "word": " The",
+      "start": 131.14,
+      "end": 131.32,
+      "probability": 0.987
+    },
+    {
+      "word": " sacks",
+      "start": 131.32,
+      "end": 131.66,
+      "probability": 0.983
+    },
+    {
+      "word": " made",
+      "start": 131.66,
+      "end": 131.92,
+      "probability": 0.985
+    },
+    {
+      "word": " sounds",
+      "start": 131.92,
+      "end": 132.3,
+      "probability": 0.928
+    },
+    {
+      "word": " louder.",
+      "start": 132.3,
+      "end": 132.68,
+      "probability": 0.998
+    },
+    {
+      "word": " They",
+      "start": 132.68,
+      "end": 133.42,
+      "probability": 0.219
+    },
+    {
+      "word": " acted",
+      "start": 133.42,
+      "end": 133.74,
+      "probability": 0.93
+    },
+    {
+      "word": " like",
+      "start": 133.74,
+      "end": 134.0,
+      "probability": 0.997
+    },
+    {
+      "word": " organic",
+      "start": 134.0,
+      "end": 134.66,
+      "probability": 0.879
+    },
+    {
+      "word": " subwoofers.",
+      "start": 134.66,
+      "end": 135.5,
+      "probability": 0.908
+    },
+    {
+      "word": " They",
+      "start": 135.9,
+      "end": 136.12,
+      "probability": 0.986
+    },
+    {
+      "word": " helped",
+      "start": 136.12,
+      "end": 136.32,
+      "probability": 0.987
+    },
+    {
+      "word": " your",
+      "start": 136.32,
+      "end": 136.52,
+      "probability": 0.975
+    },
+    {
+      "word": " ancestors",
+      "start": 136.52,
+      "end": 136.94,
+      "probability": 0.986
+    },
+    {
+      "word": " warn",
+      "start": 136.94,
+      "end": 137.4,
+      "probability": 0.935
+    },
+    {
+      "word": " the",
+      "start": 137.4,
+      "end": 137.58,
+      "probability": 0.996
+    },
+    {
+      "word": " tribe",
+      "start": 137.58,
+      "end": 137.84,
+      "probability": 0.993
+    },
+    {
+      "word": " of",
+      "start": 137.84,
+      "end": 138.02,
+      "probability": 0.997
+    },
+    {
+      "word": " danger",
+      "start": 138.02,
+      "end": 138.34,
+      "probability": 0.989
+    },
+    {
+      "word": " across",
+      "start": 138.34,
+      "end": 138.7,
+      "probability": 0.992
+    },
+    {
+      "word": " fast",
+      "start": 138.7,
+      "end": 139.12,
+      "probability": 0.905
+    },
+    {
+      "word": " distances,",
+      "start": 139.12,
+      "end": 139.68,
+      "probability": 0.987
+    },
+    {
+      "word": " but",
+      "start": 140.1,
+      "end": 140.18,
+      "probability": 0.987
+    },
+    {
+      "word": " they",
+      "start": 140.18,
+      "end": 140.32,
+      "probability": 0.997
+    },
+    {
+      "word": " came",
+      "start": 140.32,
+      "end": 140.54,
+      "probability": 0.997
+    },
+    {
+      "word": " with",
+      "start": 140.54,
+      "end": 140.8,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 140.8,
+      "end": 140.86,
+      "probability": 0.961
+    },
+    {
+      "word": " massive",
+      "start": 140.86,
+      "end": 141.18,
+      "probability": 0.992
+    },
+    {
+      "word": " drawback.",
+      "start": 141.18,
+      "end": 141.62,
+      "probability": 0.987
+    },
+    {
+      "word": " They",
+      "start": 142.2,
+      "end": 142.36,
+      "probability": 0.974
+    },
+    {
+      "word": " caused",
+      "start": 142.36,
+      "end": 142.68,
+      "probability": 0.991
+    },
+    {
+      "word": " different",
+      "start": 142.68,
+      "end": 143.08,
+      "probability": 0.994
+    },
+    {
+      "word": " sounds",
+      "start": 143.08,
+      "end": 143.38,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 143.38,
+      "end": 143.64,
+      "probability": 0.998
+    },
+    {
+      "word": " blur.",
+      "start": 143.64,
+      "end": 143.84,
+      "probability": 0.942
+    },
+    {
+      "word": " How",
+      "start": 144.54,
+      "end": 144.6,
+      "probability": 0.858
+    },
+    {
+      "word": " do",
+      "start": 144.6,
+      "end": 144.7,
+      "probability": 0.995
+    },
+    {
+      "word": " you",
+      "start": 144.7,
+      "end": 144.78,
+      "probability": 0.998
+    },
+    {
+      "word": " speak",
+      "start": 144.78,
+      "end": 145.06,
+      "probability": 0.996
+    },
+    {
+      "word": " when",
+      "start": 145.06,
+      "end": 145.28,
+      "probability": 0.982
+    },
+    {
+      "word": " your",
+      "start": 145.28,
+      "end": 145.4,
+      "probability": 0.986
+    },
+    {
+      "word": " words",
+      "start": 145.4,
+      "end": 145.62,
+      "probability": 0.989
+    },
+    {
+      "word": " merge?",
+      "start": 145.62,
+      "end": 145.94,
+      "probability": 0.98
+    },
+    {
+      "word": " Precision",
+      "start": 146.68,
+      "end": 147.04,
+      "probability": 0.969
+    },
+    {
+      "word": " is",
+      "start": 147.04,
+      "end": 147.4,
+      "probability": 0.996
+    },
+    {
+      "word": " key",
+      "start": 147.4,
+      "end": 147.62,
+      "probability": 0.992
+    },
+    {
+      "word": " to",
+      "start": 147.62,
+      "end": 147.78,
+      "probability": 0.997
+    },
+    {
+      "word": " language.",
+      "start": 147.78,
+      "end": 148.14,
+      "probability": 0.998
+    },
+    {
+      "word": " Humans",
+      "start": 148.94,
+      "end": 149.16,
+      "probability": 0.899
+    },
+    {
+      "word": " traded",
+      "start": 149.16,
+      "end": 149.5,
+      "probability": 0.983
+    },
+    {
+      "word": " power",
+      "start": 149.5,
+      "end": 149.92,
+      "probability": 0.998
+    },
+    {
+      "word": " for",
+      "start": 149.92,
+      "end": 150.16,
+      "probability": 0.999
+    },
+    {
+      "word": " clarity.",
+      "start": 150.16,
+      "end": 150.62,
+      "probability": 0.998
+    },
+    {
+      "word": " Your",
+      "start": 151.28,
+      "end": 151.38,
+      "probability": 0.991
+    },
+    {
+      "word": " ancestors",
+      "start": 151.38,
+      "end": 151.92,
+      "probability": 0.944
+    },
+    {
+      "word": " sacrificed",
+      "start": 151.92,
+      "end": 152.54,
+      "probability": 0.962
+    },
+    {
+      "word": " their",
+      "start": 152.54,
+      "end": 152.86,
+      "probability": 0.996
+    },
+    {
+      "word": " booming",
+      "start": 152.86,
+      "end": 153.12,
+      "probability": 0.992
+    },
+    {
+      "word": " animal",
+      "start": 153.12,
+      "end": 153.5,
+      "probability": 0.994
+    },
+    {
+      "word": " volume",
+      "start": 153.5,
+      "end": 153.98,
+      "probability": 0.986
+    },
+    {
+      "word": " to",
+      "start": 153.98,
+      "end": 154.22,
+      "probability": 0.993
+    },
+    {
+      "word": " gain",
+      "start": 154.22,
+      "end": 154.42,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 154.42,
+      "end": 154.56,
+      "probability": 0.993
+    },
+    {
+      "word": " refined",
+      "start": 154.56,
+      "end": 154.84,
+      "probability": 0.828
+    },
+    {
+      "word": " control",
+      "start": 154.84,
+      "end": 155.34,
+      "probability": 0.996
+    },
+    {
+      "word": " needed",
+      "start": 155.34,
+      "end": 155.64,
+      "probability": 0.994
+    },
+    {
+      "word": " for",
+      "start": 155.64,
+      "end": 155.9,
+      "probability": 0.999
+    },
+    {
+      "word": " complex",
+      "start": 155.9,
+      "end": 156.38,
+      "probability": 0.999
+    },
+    {
+      "word": " syllables.",
+      "start": 156.38,
+      "end": 156.86,
+      "probability": 0.993
+    },
+    {
+      "word": " They",
+      "start": 157.52,
+      "end": 157.7,
+      "probability": 0.971
+    },
+    {
+      "word": " silenced",
+      "start": 157.7,
+      "end": 158.2,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 158.2,
+      "end": 158.36,
+      "probability": 0.998
+    },
+    {
+      "word": " sacks",
+      "start": 158.36,
+      "end": 158.6,
+      "probability": 0.746
+    },
+    {
+      "word": " for",
+      "start": 158.6,
+      "end": 158.8,
+      "probability": 0.992
+    },
+    {
+      "word": " speech.",
+      "start": 158.8,
+      "end": 159.22,
+      "probability": 0.996
+    },
+    {
+      "word": " Was",
+      "start": 159.66,
+      "end": 159.88,
+      "probability": 0.986
+    },
+    {
+      "word": " this",
+      "start": 159.88,
+      "end": 160.04,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 160.04,
+      "end": 160.24,
+      "probability": 0.995
+    },
+    {
+      "word": " spark",
+      "start": 160.24,
+      "end": 160.52,
+      "probability": 0.972
+    },
+    {
+      "word": " of",
+      "start": 160.52,
+      "end": 160.72,
+      "probability": 0.999
+    },
+    {
+      "word": " language?",
+      "start": 160.72,
+      "end": 161.02,
+      "probability": 0.998
+    },
+    {
+      "word": " Perhaps",
+      "start": 161.64,
+      "end": 161.96,
+      "probability": 0.071
+    },
+    {
+      "word": " the",
+      "start": 161.96,
+      "end": 162.3,
+      "probability": 0.975
+    },
+    {
+      "word": " first",
+      "start": 162.3,
+      "end": 162.52,
+      "probability": 0.983
+    },
+    {
+      "word": " words",
+      "start": 162.52,
+      "end": 162.86,
+      "probability": 0.989
+    },
+    {
+      "word": " were",
+      "start": 162.86,
+      "end": 163.08,
+      "probability": 0.996
+    },
+    {
+      "word": " silent.",
+      "start": 163.08,
+      "end": 163.5,
+      "probability": 0.946
+    },
+    {
+      "word": " Many",
+      "start": 164.22,
+      "end": 164.42,
+      "probability": 0.959
+    },
+    {
+      "word": " researchers",
+      "start": 164.42,
+      "end": 164.98,
+      "probability": 0.994
+    },
+    {
+      "word": " believe",
+      "start": 164.98,
+      "end": 165.4,
+      "probability": 0.947
+    },
+    {
+      "word": " gestures",
+      "start": 165.4,
+      "end": 165.84,
+      "probability": 0.916
+    },
+    {
+      "word": " came",
+      "start": 165.84,
+      "end": 166.28,
+      "probability": 0.986
+    },
+    {
+      "word": " first.",
+      "start": 166.28,
+      "end": 166.68,
+      "probability": 0.996
+    },
+    {
+      "word": " Your",
+      "start": 167.42,
+      "end": 167.5,
+      "probability": 0.947
+    },
+    {
+      "word": " ancestors",
+      "start": 167.5,
+      "end": 167.88,
+      "probability": 0.989
+    },
+    {
+      "word": " likely",
+      "start": 167.88,
+      "end": 168.34,
+      "probability": 0.914
+    },
+    {
+      "word": " pointed",
+      "start": 168.34,
+      "end": 168.88,
+      "probability": 0.974
+    },
+    {
+      "word": " and",
+      "start": 168.88,
+      "end": 169.12,
+      "probability": 0.881
+    },
+    {
+      "word": " signed",
+      "start": 169.12,
+      "end": 169.4,
+      "probability": 0.938
+    },
+    {
+      "word": " with",
+      "start": 169.4,
+      "end": 169.66,
+      "probability": 0.996
+    },
+    {
+      "word": " their",
+      "start": 169.66,
+      "end": 169.82,
+      "probability": 0.993
+    },
+    {
+      "word": " hands",
+      "start": 169.82,
+      "end": 170.08,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 170.08,
+      "end": 170.32,
+      "probability": 0.997
+    },
+    {
+      "word": " communicate",
+      "start": 170.32,
+      "end": 170.76,
+      "probability": 0.999
+    },
+    {
+      "word": " during",
+      "start": 170.76,
+      "end": 171.08,
+      "probability": 0.994
+    },
+    {
+      "word": " hunt",
+      "start": 171.08,
+      "end": 171.38,
+      "probability": 0.985
+    },
+    {
+      "word": " patrols",
+      "start": 171.38,
+      "end": 171.88,
+      "probability": 0.99
+    },
+    {
+      "word": " before",
+      "start": 171.88,
+      "end": 172.18,
+      "probability": 0.996
+    },
+    {
+      "word": " they",
+      "start": 172.18,
+      "end": 172.36,
+      "probability": 0.993
+    },
+    {
+      "word": " ever",
+      "start": 172.36,
+      "end": 172.56,
+      "probability": 0.991
+    },
+    {
+      "word": " spoke,",
+      "start": 172.56,
+      "end": 172.82,
+      "probability": 0.998
+    },
+    {
+      "word": " but",
+      "start": 173.36,
+      "end": 173.56,
+      "probability": 0.977
+    },
+    {
+      "word": " hand",
+      "start": 173.56,
+      "end": 173.8,
+      "probability": 0.659
+    },
+    {
+      "word": " signs",
+      "start": 173.8,
+      "end": 174.24,
+      "probability": 0.893
+    },
+    {
+      "word": " have",
+      "start": 174.24,
+      "end": 174.5,
+      "probability": 0.998
+    },
+    {
+      "word": " limits.",
+      "start": 174.5,
+      "end": 174.82,
+      "probability": 0.996
+    },
+    {
+      "word": " What",
+      "start": 175.66,
+      "end": 175.78,
+      "probability": 0.968
+    },
+    {
+      "word": " happens",
+      "start": 175.78,
+      "end": 176.1,
+      "probability": 0.996
+    },
+    {
+      "word": " when",
+      "start": 176.1,
+      "end": 176.38,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 176.38,
+      "end": 176.5,
+      "probability": 0.952
+    },
+    {
+      "word": " sun",
+      "start": 176.5,
+      "end": 176.72,
+      "probability": 0.951
+    },
+    {
+      "word": " goes",
+      "start": 176.72,
+      "end": 176.96,
+      "probability": 0.998
+    },
+    {
+      "word": " down?",
+      "start": 176.96,
+      "end": 177.28,
+      "probability": 1.0
+    },
+    {
+      "word": " Darkness",
+      "start": 177.92,
+      "end": 178.16,
+      "probability": 0.989
+    },
+    {
+      "word": " makes",
+      "start": 178.16,
+      "end": 178.58,
+      "probability": 0.997
+    },
+    {
+      "word": " gestures",
+      "start": 178.58,
+      "end": 179.0,
+      "probability": 0.998
+    },
+    {
+      "word": " completely",
+      "start": 179.0,
+      "end": 179.58,
+      "probability": 0.997
+    },
+    {
+      "word": " useless.",
+      "start": 179.58,
+      "end": 180.12,
+      "probability": 0.999
+    },
+    {
+      "word": " Working",
+      "start": 180.78,
+      "end": 181.06,
+      "probability": 0.993
+    },
+    {
+      "word": " with",
+      "start": 181.06,
+      "end": 181.32,
+      "probability": 0.999
+    },
+    {
+      "word": " tools",
+      "start": 181.32,
+      "end": 181.6,
+      "probability": 0.996
+    },
+    {
+      "word": " also",
+      "start": 181.6,
+      "end": 182.14,
+      "probability": 0.973
+    },
+    {
+      "word": " busy",
+      "start": 182.14,
+      "end": 182.42,
+      "probability": 0.967
+    },
+    {
+      "word": " their",
+      "start": 182.42,
+      "end": 182.68,
+      "probability": 0.961
+    },
+    {
+      "word": " hands.",
+      "start": 182.68,
+      "end": 183.18,
+      "probability": 0.997
+    },
+    {
+      "word": " So",
+      "start": 183.74,
+      "end": 183.98,
+      "probability": 0.985
+    },
+    {
+      "word": " your",
+      "start": 183.98,
+      "end": 184.16,
+      "probability": 0.937
+    },
+    {
+      "word": " ancestors",
+      "start": 184.16,
+      "end": 184.66,
+      "probability": 0.997
+    },
+    {
+      "word": " began",
+      "start": 184.66,
+      "end": 185.1,
+      "probability": 0.993
+    },
+    {
+      "word": " using",
+      "start": 185.1,
+      "end": 185.46,
+      "probability": 0.999
+    },
+    {
+      "word": " their",
+      "start": 185.46,
+      "end": 185.66,
+      "probability": 0.993
+    },
+    {
+      "word": " vocal",
+      "start": 185.66,
+      "end": 185.96,
+      "probability": 0.996
+    },
+    {
+      "word": " tracks",
+      "start": 185.96,
+      "end": 186.32,
+      "probability": 0.952
+    },
+    {
+      "word": " to",
+      "start": 186.32,
+      "end": 186.64,
+      "probability": 0.997
+    },
+    {
+      "word": " copy",
+      "start": 186.64,
+      "end": 187.0,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 187.0,
+      "end": 187.18,
+      "probability": 0.994
+    },
+    {
+      "word": " natural",
+      "start": 187.18,
+      "end": 187.62,
+      "probability": 0.996
+    },
+    {
+      "word": " soundscapes",
+      "start": 187.62,
+      "end": 188.46,
+      "probability": 0.814
+    },
+    {
+      "word": " of",
+      "start": 188.46,
+      "end": 188.56,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 188.56,
+      "end": 188.68,
+      "probability": 0.977
+    },
+    {
+      "word": " wild",
+      "start": 188.68,
+      "end": 188.98,
+      "probability": 0.98
+    },
+    {
+      "word": " savanna",
+      "start": 188.98,
+      "end": 189.5,
+      "probability": 0.679
+    },
+    {
+      "word": " around",
+      "start": 189.5,
+      "end": 189.84,
+      "probability": 0.998
+    },
+    {
+      "word": " them.",
+      "start": 189.84,
+      "end": 190.16,
+      "probability": 0.999
+    },
+    {
+      "word": " They",
+      "start": 190.52,
+      "end": 190.8,
+      "probability": 0.234
+    },
+    {
+      "word": " imitated",
+      "start": 190.8,
+      "end": 191.28,
+      "probability": 0.873
+    },
+    {
+      "word": " wind",
+      "start": 191.28,
+      "end": 191.58,
+      "probability": 0.974
+    },
+    {
+      "word": " and",
+      "start": 191.58,
+      "end": 191.88,
+      "probability": 0.989
+    },
+    {
+      "word": " water.",
+      "start": 191.88,
+      "end": 192.22,
+      "probability": 0.999
+    },
+    {
+      "word": " Can",
+      "start": 192.5,
+      "end": 192.88,
+      "probability": 0.941
+    },
+    {
+      "word": " you",
+      "start": 192.88,
+      "end": 193.0,
+      "probability": 0.996
+    },
+    {
+      "word": " hear",
+      "start": 193.0,
+      "end": 193.16,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 193.16,
+      "end": 193.36,
+      "probability": 0.997
+    },
+    {
+      "word": " echo",
+      "start": 193.36,
+      "end": 193.54,
+      "probability": 0.941
+    },
+    {
+      "word": " today?",
+      "start": 193.54,
+      "end": 193.8,
+      "probability": 0.992
+    },
+    {
+      "word": " You",
+      "start": 194.5,
+      "end": 194.58,
+      "probability": 0.887
+    },
+    {
+      "word": " carry",
+      "start": 194.58,
+      "end": 194.86,
+      "probability": 0.984
+    },
+    {
+      "word": " this",
+      "start": 194.86,
+      "end": 195.14,
+      "probability": 0.989
+    },
+    {
+      "word": " ancient",
+      "start": 195.14,
+      "end": 195.38,
+      "probability": 0.962
+    },
+    {
+      "word": " system.",
+      "start": 195.38,
+      "end": 195.82,
+      "probability": 0.998
+    },
+    {
+      "word": " When",
+      "start": 196.32,
+      "end": 196.54,
+      "probability": 0.976
+    },
+    {
+      "word": " you",
+      "start": 196.54,
+      "end": 196.7,
+      "probability": 0.999
+    },
+    {
+      "word": " gasp,",
+      "start": 196.7,
+      "end": 197.28,
+      "probability": 0.989
+    },
+    {
+      "word": " you",
+      "start": 197.44,
+      "end": 197.54,
+      "probability": 0.991
+    },
+    {
+      "word": " were",
+      "start": 197.54,
+      "end": 197.64,
+      "probability": 0.54
+    },
+    {
+      "word": " a",
+      "start": 197.64,
+      "end": 197.74,
+      "probability": 0.943
+    },
+    {
+      "word": " peat",
+      "start": 197.74,
+      "end": 198.0,
+      "probability": 0.627
+    },
+    {
+      "word": " history.",
+      "start": 198.0,
+      "end": 198.34,
+      "probability": 0.945
+    },
+    {
+      "word": " When",
+      "start": 198.96,
+      "end": 199.1,
+      "probability": 0.983
+    },
+    {
+      "word": " you",
+      "start": 199.1,
+      "end": 199.24,
+      "probability": 0.999
+    },
+    {
+      "word": " scream",
+      "start": 199.24,
+      "end": 199.56,
+      "probability": 0.986
+    },
+    {
+      "word": " in",
+      "start": 199.56,
+      "end": 199.9,
+      "probability": 0.92
+    },
+    {
+      "word": " sudden",
+      "start": 199.9,
+      "end": 200.22,
+      "probability": 0.974
+    },
+    {
+      "word": " pain,",
+      "start": 200.22,
+      "end": 200.52,
+      "probability": 0.994
+    },
+    {
+      "word": " your",
+      "start": 200.96,
+      "end": 201.04,
+      "probability": 0.96
+    },
+    {
+      "word": " brain",
+      "start": 201.04,
+      "end": 201.32,
+      "probability": 0.995
+    },
+    {
+      "word": " bypasses",
+      "start": 201.32,
+      "end": 202.06,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 202.06,
+      "end": 202.22,
+      "probability": 0.983
+    },
+    {
+      "word": " modern",
+      "start": 202.22,
+      "end": 202.58,
+      "probability": 0.976
+    },
+    {
+      "word": " language",
+      "start": 202.58,
+      "end": 203.02,
+      "probability": 0.989
+    },
+    {
+      "word": " center",
+      "start": 203.02,
+      "end": 203.44,
+      "probability": 0.931
+    },
+    {
+      "word": " and",
+      "start": 203.44,
+      "end": 203.8,
+      "probability": 0.88
+    },
+    {
+      "word": " fires",
+      "start": 203.8,
+      "end": 204.16,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 204.16,
+      "end": 204.44,
+      "probability": 0.989
+    },
+    {
+      "word": " ancient",
+      "start": 204.44,
+      "end": 204.8,
+      "probability": 0.98
+    },
+    {
+      "word": " emotional",
+      "start": 204.8,
+      "end": 205.26,
+      "probability": 0.981
+    },
+    {
+      "word": " system.",
+      "start": 205.26,
+      "end": 205.82,
+      "probability": 0.999
+    },
+    {
+      "word": " You",
+      "start": 206.36,
+      "end": 206.54,
+      "probability": 0.884
+    },
+    {
+      "word": " return",
+      "start": 206.54,
+      "end": 206.82,
+      "probability": 0.901
+    },
+    {
+      "word": " to",
+      "start": 206.82,
+      "end": 207.06,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 207.06,
+      "end": 207.2,
+      "probability": 0.96
+    },
+    {
+      "word": " savanna.",
+      "start": 207.2,
+      "end": 207.64,
+      "probability": 0.713
+    },
+    {
+      "word": " Are",
+      "start": 208.24,
+      "end": 208.34,
+      "probability": 0.992
+    },
+    {
+      "word": " you",
+      "start": 208.34,
+      "end": 208.44,
+      "probability": 0.994
+    },
+    {
+      "word": " really",
+      "start": 208.44,
+      "end": 208.7,
+      "probability": 0.995
+    },
+    {
+      "word": " speaking",
+      "start": 208.7,
+      "end": 209.1,
+      "probability": 0.998
+    },
+    {
+      "word": " or",
+      "start": 209.1,
+      "end": 209.56,
+      "probability": 0.851
+    },
+    {
+      "word": " grunting?",
+      "start": 209.56,
+      "end": 209.9,
+      "probability": 0.946
+    },
+    {
+      "word": " Your",
+      "start": 210.54,
+      "end": 210.74,
+      "probability": 0.985
+    },
+    {
+      "word": " voice",
+      "start": 210.74,
+      "end": 211.14,
+      "probability": 0.997
+    },
+    {
+      "word": " is",
+      "start": 211.14,
+      "end": 211.38,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 211.38,
+      "end": 211.48,
+      "probability": 0.997
+    },
+    {
+      "word": " time",
+      "start": 211.48,
+      "end": 211.74,
+      "probability": 0.877
+    },
+    {
+      "word": " machine.",
+      "start": 211.74,
+      "end": 212.18,
+      "probability": 0.996
+    },
+    {
+      "word": " It",
+      "start": 212.88,
+      "end": 212.98,
+      "probability": 0.994
+    },
+    {
+      "word": " connects",
+      "start": 212.98,
+      "end": 213.26,
+      "probability": 0.992
+    },
+    {
+      "word": " you",
+      "start": 213.26,
+      "end": 213.56,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 213.56,
+      "end": 213.72,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 213.72,
+      "end": 213.84,
+      "probability": 0.999
+    },
+    {
+      "word": " past.",
+      "start": 213.84,
+      "end": 214.16,
+      "probability": 0.999
+    },
+    {
+      "word": " Every",
+      "start": 214.86,
+      "end": 215.1,
+      "probability": 0.986
+    },
+    {
+      "word": " syllable",
+      "start": 215.1,
+      "end": 215.38,
+      "probability": 0.976
+    },
+    {
+      "word": " you",
+      "start": 215.38,
+      "end": 215.62,
+      "probability": 0.996
+    },
+    {
+      "word": " speak",
+      "start": 215.62,
+      "end": 215.9,
+      "probability": 0.999
+    },
+    {
+      "word": " has",
+      "start": 215.9,
+      "end": 216.14,
+      "probability": 0.998
+    },
+    {
+      "word": " been",
+      "start": 216.14,
+      "end": 216.34,
+      "probability": 0.999
+    },
+    {
+      "word": " shaped",
+      "start": 216.34,
+      "end": 216.64,
+      "probability": 0.992
+    },
+    {
+      "word": " by",
+      "start": 216.64,
+      "end": 216.88,
+      "probability": 0.999
+    },
+    {
+      "word": " millions",
+      "start": 216.88,
+      "end": 217.24,
+      "probability": 0.996
+    },
+    {
+      "word": " of",
+      "start": 217.24,
+      "end": 217.52,
+      "probability": 0.993
+    },
+    {
+      "word": " years",
+      "start": 217.52,
+      "end": 217.7,
+      "probability": 0.997
+    },
+    {
+      "word": " of",
+      "start": 217.7,
+      "end": 217.86,
+      "probability": 0.981
+    },
+    {
+      "word": " physical",
+      "start": 217.86,
+      "end": 218.22,
+      "probability": 0.997
+    },
+    {
+      "word": " sacrifices",
+      "start": 218.22,
+      "end": 218.96,
+      "probability": 0.723
+    },
+    {
+      "word": " made",
+      "start": 218.96,
+      "end": 219.26,
+      "probability": 0.993
+    },
+    {
+      "word": " by",
+      "start": 219.26,
+      "end": 219.48,
+      "probability": 0.828
+    },
+    {
+      "word": " your",
+      "start": 219.48,
+      "end": 219.64,
+      "probability": 0.978
+    },
+    {
+      "word": " ancestors.",
+      "start": 219.64,
+      "end": 220.18,
+      "probability": 0.996
+    },
+    {
+      "word": " It",
+      "start": 220.86,
+      "end": 221.04,
+      "probability": 0.977
+    },
+    {
+      "word": " is",
+      "start": 221.04,
+      "end": 221.1,
+      "probability": 0.935
+    },
+    {
+      "word": " your",
+      "start": 221.1,
+      "end": 221.28,
+      "probability": 0.994
+    },
+    {
+      "word": " oldest",
+      "start": 221.28,
+      "end": 221.62,
+      "probability": 0.99
+    },
+    {
+      "word": " tool.",
+      "start": 221.62,
+      "end": 222.18,
+      "probability": 0.985
+    },
+    {
+      "word": " Tonight,",
+      "start": 222.84,
+      "end": 223.12,
+      "probability": 0.862
+    },
+    {
+      "word": " when",
+      "start": 223.54,
+      "end": 223.62,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 223.62,
+      "end": 223.74,
+      "probability": 0.998
+    },
+    {
+      "word": " speak,",
+      "start": 223.74,
+      "end": 223.98,
+      "probability": 0.999
+    },
+    {
+      "word": " you",
+      "start": 224.32,
+      "end": 224.42,
+      "probability": 0.996
+    },
+    {
+      "word": " won't",
+      "start": 224.42,
+      "end": 224.64,
+      "probability": 0.986
+    },
+    {
+      "word": " think",
+      "start": 224.64,
+      "end": 224.82,
+      "probability": 0.871
+    },
+    {
+      "word": " twice.",
+      "start": 224.82,
+      "end": 225.16,
+      "probability": 0.999
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 225.401,
+  "model_size": "base",
+  "device": "cpu"
+}

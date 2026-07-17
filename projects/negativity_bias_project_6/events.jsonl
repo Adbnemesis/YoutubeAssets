@@ -1,0 +1,4 @@
+{"ts": "2026-07-12T12:07:31.265839+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/negativity_bias_project_6/voiceover.wav"}
+{"ts": "2026-07-12T12:07:52.228280+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/negativity_bias_project_6/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 20.96}
+{"ts": "2026-07-12T12:10:01.321937+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-12T12:10:12.839135+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 11.52}

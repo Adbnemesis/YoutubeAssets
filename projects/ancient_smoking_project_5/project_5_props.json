@@ -1,0 +1,629 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#0F172A",
+    "primaryColor": "#7C3AED",
+    "accentColor": "#EC4899",
+    "surfaceColor": "#1E293B",
+    "textColor": "#F8FAFC",
+    "captionHighlightColor": "#22D3EE",
+    "captionBackgroundColor": "rgba(15, 23, 42, 0.75)",
+    "chartColors": [
+      "#7C3AED",
+      "#EC4899",
+      "#06B6D4",
+      "#F59E0B",
+      "#10B981",
+      "#EF4444"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/ancient_smoking_project_5/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 0.0,
+      "out_seconds": 2.58,
+      "animation": "none",
+      "text": "Tonight, you sit by a crackling campfire."
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/ancient_smoking_project_5/images/[00-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 2.58,
+      "out_seconds": 5.56,
+      "animation": "none",
+      "text": "You watch a thin wisp of smoke rise into the night sky."
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/ancient_smoking_project_5/images/[00-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 5.56,
+      "out_seconds": 9.0,
+      "animation": "none",
+      "text": "You instinctively turn your head away to avoid the sting in your eyes."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/ancient_smoking_project_5/images/[00-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 9.0,
+      "out_seconds": 12.78,
+      "animation": "none",
+      "text": "But thousands of years ago, your ancestors did the exact opposite."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/ancient_smoking_project_5/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 12.78,
+      "out_seconds": 17.32,
+      "animation": "zoom-in",
+      "text": "They leaned in, opened their mouths, and breathed the burning air directly into their lungs."
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/ancient_smoking_project_5/images/[00-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 17.32,
+      "out_seconds": 21.02,
+      "animation": "none",
+      "text": "Why would anyone willingly inhale toxic, burning gas?"
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/ancient_smoking_project_5/images/[00-21]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 21.02,
+      "out_seconds": 25.5,
+      "animation": "zoom-out",
+      "text": "For ninety-nine percent of human history, smoke was not a hazard to be avoided."
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/ancient_smoking_project_5/images/[00-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 25.5,
+      "out_seconds": 27.64,
+      "animation": "none",
+      "text": "It was a bridge to another world."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/ancient_smoking_project_5/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 27.64,
+      "out_seconds": 29.68,
+      "animation": "none",
+      "text": "It was a medicine and a weapon."
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/ancient_smoking_project_5/images/[00-29]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 29.68,
+      "out_seconds": 34.56,
+      "animation": "ken-burns",
+      "text": "Long before the first cigarette was rolled, humans were breathing in the fumes of the earth."
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/ancient_smoking_project_5/images/[00-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 34.56,
+      "out_seconds": 36.44,
+      "animation": "none",
+      "text": "But what were they actually smoking?"
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/ancient_smoking_project_5/images/[00-36]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 36.44,
+      "out_seconds": 38.9,
+      "animation": "none",
+      "text": "It all began with the campfire itself."
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/ancient_smoking_project_5/images/[00-38]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 38.9,
+      "out_seconds": 40.76,
+      "animation": "none",
+      "text": "They slept around the embers."
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/ancient_smoking_project_5/images/[00-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 40.76,
+      "out_seconds": 44.78,
+      "animation": "parallax",
+      "text": "They breathed in whatever wood or dried leaves they threw onto the coals."
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/ancient_smoking_project_5/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 44.78,
+      "out_seconds": 49.84,
+      "animation": "pan-left",
+      "text": "If they threw in wild sage, the air smelled sweet and kept insects away."
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/ancient_smoking_project_5/images/[00-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 49.84,
+      "out_seconds": 53.48,
+      "animation": "none",
+      "text": "If they threw in something else, their minds began to change."
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/ancient_smoking_project_5/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 53.48,
+      "out_seconds": 56.86,
+      "animation": "none",
+      "text": "How did they realize that certain plants could alter their reality?"
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/ancient_smoking_project_5/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 56.86,
+      "out_seconds": 59.48,
+      "animation": "none",
+      "text": "They learned by observing the world around them."
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/ancient_smoking_project_5/images/[00-59]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 59.48,
+      "out_seconds": 62.04,
+      "animation": "none",
+      "text": "They watched animals eating strange berries."
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/ancient_smoking_project_5/images/[01-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 62.04,
+      "out_seconds": 65.2,
+      "animation": "none",
+      "text": "They watched them behave oddly after chewing on bark."
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/ancient_smoking_project_5/images/[01-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 65.2,
+      "out_seconds": 67.24,
+      "animation": "none",
+      "text": "Eventually, they experimented."
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/ancient_smoking_project_5/images/[01-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 67.24,
+      "out_seconds": 71.48,
+      "animation": "pan-right",
+      "text": "They threw these same plants onto the fire, inhaling the smoke that billowed out."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/ancient_smoking_project_5/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 71.48,
+      "out_seconds": 73.56,
+      "animation": "none",
+      "text": "Was this the birth of human medicine?"
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/ancient_smoking_project_5/images/[01-13]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 73.56,
+      "out_seconds": 79.16,
+      "animation": "zoom-in",
+      "text": "It was a primitive form of chemistry, conducted in the dark corners of prehistoric caves."
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/ancient_smoking_project_5/images/[01-19]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 79.16,
+      "out_seconds": 80.08,
+      "animation": "none",
+      "text": "Pipes are older than you think."
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/ancient_smoking_project_5/images/[01-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 80.08,
+      "out_seconds": 85.1,
+      "animation": "zoom-out",
+      "text": "Archaeologist Shannon Tushingham has spent years investigating what was inside them."
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/ancient_smoking_project_5/images/[01-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 85.1,
+      "out_seconds": 93.58,
+      "animation": "ken-burns",
+      "text": "By analyzing chemical residues on stone pipes from Western North America, her team at Washington State University made a surprising discovery."
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/ancient_smoking_project_5/images/[01-33]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 93.58,
+      "out_seconds": 97.38,
+      "animation": "none",
+      "text": "Ancient people were smoking long before agriculture existed."
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/ancient_smoking_project_5/images/[01-37]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 97.38,
+      "out_seconds": 101.94,
+      "animation": "parallax",
+      "text": "They were not just smoking tobacco, but also wild plants like smooth sumac."
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/ancient_smoking_project_5/images/[01-41]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 101.94,
+      "out_seconds": 104.56,
+      "animation": "none",
+      "text": "Why did humans crave these toxic chemicals?"
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/ancient_smoking_project_5/images/[01-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 104.56,
+      "out_seconds": 106.54,
+      "animation": "none",
+      "text": "The answer might lie in your gut."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/ancient_smoking_project_5/images/[01-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 106.54,
+      "out_seconds": 111.28,
+      "animation": "pan-left",
+      "text": "Anthropologist Ed Hagen suggests a fascinating evolutionary explanation."
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/ancient_smoking_project_5/images/[01-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 111.28,
+      "out_seconds": 114.5,
+      "animation": "none",
+      "text": "He argues that your ancestors did not smoke just to get high."
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/ancient_smoking_project_5/images/[01-54]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 114.5,
+      "out_seconds": 116.48,
+      "animation": "none",
+      "text": "They smoked to survive."
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/ancient_smoking_project_5/images/[01-56]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 116.48,
+      "out_seconds": 121.18,
+      "animation": "pan-right",
+      "text": "In the ancient world, human bodies were crawling with deadly parasites and worms."
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/ancient_smoking_project_5/images/[02-01]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 121.18,
+      "out_seconds": 125.76,
+      "animation": "zoom-in",
+      "text": "Is it possible that your modern cravings are just a lingering evolutionary defense?"
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/ancient_smoking_project_5/images/[02-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 125.76,
+      "out_seconds": 132.12,
+      "animation": "zoom-out",
+      "text": "Plants like tobacco and cannabis produce nicotine and tetrahydrocannabinol as natural defense mechanisms."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/ancient_smoking_project_5/images/[02-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 132.12,
+      "out_seconds": 134.22,
+      "animation": "none",
+      "text": "These chemicals kill insects."
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/ancient_smoking_project_5/images/[02-14]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 134.22,
+      "out_seconds": 139.2,
+      "animation": "ken-burns",
+      "text": "When humans inhaled these mild toxins, they may have been fumigating their own bodies."
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/ancient_smoking_project_5/images/[02-19]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 139.2,
+      "out_seconds": 143.14,
+      "animation": "none",
+      "text": "The smoke was a shield against the tiny monsters eating them from the inside."
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/ancient_smoking_project_5/images/[02-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 143.14,
+      "out_seconds": 146.18,
+      "animation": "none",
+      "text": "Who would have thought that poison could be a lifesaver?"
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/ancient_smoking_project_5/images/[02-26]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 146.18,
+      "out_seconds": 149.6,
+      "animation": "none",
+      "text": "Smoke also served a deeper, more spiritual purpose."
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/ancient_smoking_project_5/images/[02-29]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 149.6,
+      "out_seconds": 152.06,
+      "animation": "none",
+      "text": "It was a portal to the unseen world."
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/ancient_smoking_project_5/images/[02-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 152.06,
+      "out_seconds": 159.9,
+      "animation": "parallax",
+      "text": "In the high altitudes of western China, archaeologist Meng Ren discovered wooden braziers dating back two thousand five hundred years."
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/ancient_smoking_project_5/images/[02-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 159.9,
+      "out_seconds": 165.1,
+      "animation": "pan-left",
+      "text": "Inside these burners, at the Jirzankal Cemetery, they found the chemical signature of cannabis."
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/ancient_smoking_project_5/images/[02-45]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 165.1,
+      "out_seconds": 169.64,
+      "animation": "pan-right",
+      "text": "This cannabis contained exceptionally high levels of tetrahydrocannabinol."
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/ancient_smoking_project_5/images/[02-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 169.64,
+      "out_seconds": 172.2,
+      "animation": "none",
+      "text": "How did this ancient weed compare to what exists today?"
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/ancient_smoking_project_5/images/[02-52]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 172.2,
+      "out_seconds": 177.18,
+      "animation": "zoom-in",
+      "text": "The ancient people of the Pamir Mountains did not roll joints or smoke pipes."
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/ancient_smoking_project_5/images/[02-57]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 177.18,
+      "out_seconds": 182.1,
+      "animation": "zoom-out",
+      "text": "Instead, they placed the green plants on hot stones inside enclosed leather tents."
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/ancient_smoking_project_5/images/[03-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 182.1,
+      "out_seconds": 184.5,
+      "animation": "none",
+      "text": "This let the thick vapor fill the space."
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/ancient_smoking_project_5/images/[03-04]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 184.5,
+      "out_seconds": 189.34,
+      "animation": "ken-burns",
+      "text": "They breathed the heavy air together, listening to the beat of drums as their minds drifted away."
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/ancient_smoking_project_5/images/[03-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 189.34,
+      "out_seconds": 192.18,
+      "animation": "none",
+      "text": "How did this shared trance shape human culture?"
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/ancient_smoking_project_5/images/[03-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 192.18,
+      "out_seconds": 195.5,
+      "animation": "none",
+      "text": "It bound communities together in a way nothing else could."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/ancient_smoking_project_5/images/[03-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 195.5,
+      "out_seconds": 199.22,
+      "animation": "none",
+      "text": "In many cultures, sharing a pipe became a sacred contract."
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/ancient_smoking_project_5/images/[03-19]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 199.22,
+      "out_seconds": 200.64,
+      "animation": "none",
+      "text": "The smoke carried prayers to the sky."
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/ancient_smoking_project_5/images/[03-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 200.64,
+      "out_seconds": 204.76,
+      "animation": "parallax",
+      "text": "The rising cloud was seen as breath made visible."
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/ancient_smoking_project_5/images/[03-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 204.76,
+      "out_seconds": 208.98,
+      "animation": "pan-left",
+      "text": "It was a physical connection between the human lung and the infinite cosmos."
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/ancient_smoking_project_5/images/[03-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 208.98,
+      "out_seconds": 212.8,
+      "animation": "none",
+      "text": "Does that explain why smoking remains a social activity today?"
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/ancient_smoking_project_5/images/[03-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 212.8,
+      "out_seconds": 217.34,
+      "animation": "pan-right",
+      "text": "As agriculture spread, humans began to domesticate these wild weeds."
+    },
+    {
+      "id": "scene_59",
+      "source": "projects/ancient_smoking_project_5/images/[03-37]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 217.34,
+      "out_seconds": 220.22,
+      "animation": "none",
+      "text": "They selected the plants that gave the strongest buzz."
+    },
+    {
+      "id": "scene_60",
+      "source": "projects/ancient_smoking_project_5/images/[03-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 220.22,
+      "out_seconds": 223.62,
+      "animation": "none",
+      "text": "They wanted the deepest relaxation, or the sharpest focus."
+    },
+    {
+      "id": "scene_61",
+      "source": "projects/ancient_smoking_project_5/images/[03-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 223.62,
+      "out_seconds": 226.44,
+      "animation": "none",
+      "text": "But in doing so, they changed the relationship."
+    },
+    {
+      "id": "scene_62",
+      "source": "projects/ancient_smoking_project_5/images/[03-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 226.44,
+      "out_seconds": 231.98,
+      "animation": "zoom-in",
+      "text": "What was once a rare, sacred ritual or a survival mechanism became an everyday habit."
+    },
+    {
+      "id": "scene_63",
+      "source": "projects/ancient_smoking_project_5/images/[03-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 231.98,
+      "out_seconds": 234.82,
+      "animation": "none",
+      "text": "How did a sacred tool become a dangerous addiction?"
+    },
+    {
+      "id": "scene_64",
+      "source": "projects/ancient_smoking_project_5/images/[03-54]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 234.82,
+      "out_seconds": 236.86,
+      "animation": "none",
+      "text": "The medicine became a poison."
+    },
+    {
+      "id": "scene_65",
+      "source": "projects/ancient_smoking_project_5/images/[03-56]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 236.86,
+      "out_seconds": 241.5,
+      "animation": "zoom-out",
+      "text": "Today, you might see smoke as a hazard, a habit, or a modern vice."
+    },
+    {
+      "id": "scene_66",
+      "source": "projects/ancient_smoking_project_5/images/[04-01]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 241.5,
+      "out_seconds": 245.82,
+      "animation": "ken-burns",
+      "text": "You buy it in neat packages or vaporize it in sleek devices."
+    },
+    {
+      "id": "scene_67",
+      "source": "projects/ancient_smoking_project_5/images/[04-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 245.82,
+      "out_seconds": 248.56,
+      "animation": "none",
+      "text": "This is far removed from the dirt and the fire."
+    },
+    {
+      "id": "scene_68",
+      "source": "projects/ancient_smoking_project_5/images/[04-08]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 248.56,
+      "out_seconds": 250.56,
+      "animation": "none",
+      "text": "Yet, the urge remains."
+    },
+    {
+      "id": "scene_69",
+      "source": "projects/ancient_smoking_project_5/images/[04-10]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 250.56,
+      "out_seconds": 253.78,
+      "animation": "none",
+      "text": "Why does a modern brain still crave prehistoric fire?"
+    },
+    {
+      "id": "scene_70",
+      "source": "projects/ancient_smoking_project_5/images/[04-13]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 253.78,
+      "out_seconds": 260.14,
+      "animation": "parallax",
+      "text": "Your brain still responds to the ancient chemistry discovered by ancestors huddled around a prehistoric flame."
+    },
+    {
+      "id": "scene_71",
+      "source": "projects/ancient_smoking_project_5/images/[04-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 260.14,
+      "out_seconds": 263.1,
+      "animation": "none",
+      "text": "So, tonight, you sit by a crackling campfire."
+    },
+    {
+      "id": "scene_72",
+      "source": "projects/ancient_smoking_project_5/images/[04-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 263.1,
+      "out_seconds": 266.06,
+      "animation": "none",
+      "text": "You watch a thin wisp of smoke rise into the night sky."
+    },
+    {
+      "id": "scene_73",
+      "source": "projects/ancient_smoking_project_5/images/[04-26]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 266.06,
+      "out_seconds": 268.48,
+      "animation": "none",
+      "text": "You might turn your head to avoid the sting."
+    },
+    {
+      "id": "scene_74",
+      "source": "projects/ancient_smoking_project_5/images/[04-28]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 268.48,
+      "out_seconds": 275.546,
+      "animation": "pan-left",
+      "text": "But somewhere deep in your DNA, you still feel the pull of the fire, remembering when that rising cloud was the only thing keeping the darkness at bay."
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/ancient_smoking_project_5/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

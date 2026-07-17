@@ -1,0 +1,18 @@
+{"ts": "2026-07-09T16:41:48.547618+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav"}
+{"ts": "2026-07-09T16:42:02.369876+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 13.82}
+{"ts": "2026-07-09T16:45:49.110614+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav"}
+{"ts": "2026-07-09T16:46:02.487029+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 13.38}
+{"ts": "2026-07-09T16:53:19.741176+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav"}
+{"ts": "2026-07-09T16:53:33.443073+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 13.7}
+{"ts": "2026-07-09T17:07:03.474307+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav"}
+{"ts": "2026-07-09T17:07:16.611200+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 13.14}
+{"ts": "2026-07-09T17:07:30.837549+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-09T17:07:38.875415+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 8.04}
+{"ts": "2026-07-09T17:12:01.023877+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav"}
+{"ts": "2026-07-09T17:12:14.506578+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 13.48}
+{"ts": "2026-07-09T17:12:19.455266+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-09T17:12:27.203642+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 7.75}
+{"ts": "2026-07-09T17:15:20.749621+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav"}
+{"ts": "2026-07-09T17:15:34.343893+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/ancient_dreams_project_3/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 13.59}
+{"ts": "2026-07-09T17:15:39.626337+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-09T17:15:47.233271+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 7.61}

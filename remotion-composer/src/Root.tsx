@@ -16,6 +16,7 @@ import { ProductReveal, ProductRevealProps } from "./components/ProductReveal";
 import { CaptionOverlay, WordCaption } from "./components/CaptionOverlay";
 import { CollageBurst, CollageBurstProps } from "./CollageBurst";
 import { LyricOverlay, LyricOverlayProps } from "./LyricOverlay";
+import projectProps from "./project_2_props.json";
 
 // ---------------------------------------------------------------------------
 // Theme System — prevents every video from looking like dark fintech
@@ -142,12 +143,7 @@ export const Root: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
-        defaultProps={{
-          cuts: [],
-          overlays: [],
-          captions: [],
-          audio: {},
-        }}
+        defaultProps={projectProps as any}
         calculateMetadata={calculateMetadata}
       />
       <Composition

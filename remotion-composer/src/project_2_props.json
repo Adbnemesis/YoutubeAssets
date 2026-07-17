@@ -1,0 +1,548 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#2D5FBF",
+    "accentColor": "#F5820D",
+    "surfaceColor": "#FFFFFF",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/ancient_sound_project_2/images/[00:00]_image_1.png",
+      "in_seconds": 0,
+      "out_seconds": 3,
+      "animation": "none",
+      "text": "Tonight, when you speak, you won't think twice."
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/ancient_sound_project_2/images/[00:03]_image_1.png",
+      "in_seconds": 3,
+      "out_seconds": 6,
+      "animation": "none",
+      "text": "Your vocal cords dance in perfect harmony."
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/ancient_sound_project_2/images/[00:06]_image_1.png",
+      "in_seconds": 6,
+      "out_seconds": 13,
+      "animation": "ken-burns",
+      "text": "But for ninety-nine percent of human history, the sounds your ancestors made would have been completely unrecognizable to your modern ears."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/ancient_sound_project_2/images/[00:13]_image_1.png",
+      "in_seconds": 13,
+      "out_seconds": 16,
+      "animation": "none",
+      "text": "They did not speak in neat, orderly words."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/ancient_sound_project_2/images/[00:16]_image_1.png",
+      "in_seconds": 16,
+      "out_seconds": 21,
+      "animation": "zoom-in",
+      "text": "So, what did human ancestors actually sound like before language was born?"
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/ancient_sound_project_2/images/[00:21]_image_1.png",
+      "in_seconds": 21,
+      "out_seconds": 23,
+      "animation": "none",
+      "text": "You might picture primitive grunting."
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/ancient_sound_project_2/images/[00:23]_image_1.png",
+      "in_seconds": 23,
+      "out_seconds": 25,
+      "animation": "none",
+      "text": "You might picture wild, animal noises."
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/ancient_sound_project_2/images/[00:25]_image_1.png",
+      "in_seconds": 25,
+      "out_seconds": 33,
+      "animation": "zoom-out",
+      "text": "But the real answer is far stranger, buried in the shape of ancient bones and the wet tissue that rotted away long ago."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/ancient_sound_project_2/images/[00:33]_image_1.png",
+      "in_seconds": 33,
+      "out_seconds": 36,
+      "animation": "none",
+      "text": "Science is now bringing those voices back."
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/ancient_sound_project_2/images/[00:36]_image_1.png",
+      "in_seconds": 36,
+      "out_seconds": 40,
+      "animation": "pan-left",
+      "text": "How do you reconstruct a sound that has been silent for a hundred thousand years?"
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/ancient_sound_project_2/images/[00:40]_image_1.png",
+      "in_seconds": 40,
+      "out_seconds": 44,
+      "animation": "pan-right",
+      "text": "To find the origin, look at the throat."
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/ancient_sound_project_2/images/[00:44]_image_1.png",
+      "in_seconds": 44,
+      "out_seconds": 46,
+      "animation": "none",
+      "text": "Specifically, look at the tiny hyoid bone."
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/ancient_sound_project_2/images/[00:46]_image_1.png",
+      "in_seconds": 46,
+      "out_seconds": 50,
+      "animation": "parallax",
+      "text": "This U-shaped bone sits just below your jaw, acting as the anchor for your tongue."
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/ancient_sound_project_2/images/[00:50]_image_1.png",
+      "in_seconds": 50,
+      "out_seconds": 56,
+      "animation": "ken-burns",
+      "text": "In 1989, scientists discovered a Neanderthal hyoid."
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/ancient_sound_project_2/images/[00:56]_image_1.png",
+      "in_seconds": 56,
+      "out_seconds": 57,
+      "animation": "none",
+      "text": "Did they speak just like you?"
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/ancient_sound_project_2/images/[00:57]_image_1.jpg",
+      "in_seconds": 57,
+      "out_seconds": 61,
+      "animation": "zoom-in",
+      "text": "Cognitive scientist Dr. Philip Lieberman says no."
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/ancient_sound_project_2/images/[01:01]_image_1.png",
+      "in_seconds": 61,
+      "out_seconds": 64,
+      "animation": "none",
+      "text": "Their throat cavity was very short."
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/ancient_sound_project_2/images/[01:04]_image_1.png",
+      "in_seconds": 64,
+      "out_seconds": 71,
+      "animation": "zoom-out",
+      "text": "Their tongue was positioned flat inside their mouth rather than bending down into the throat, which changed their acoustic range completely."
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/ancient_sound_project_2/images/[01:11]_image_1.png",
+      "in_seconds": 71,
+      "out_seconds": 74,
+      "animation": "none",
+      "text": "They could not produce clear vowel sounds."
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/ancient_sound_project_2/images/[01:14]_image_1.png",
+      "in_seconds": 74,
+      "out_seconds": 78,
+      "animation": "pan-left",
+      "text": "Can you imagine speaking without the letters A, I, or U?"
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/ancient_sound_project_2/images/[01:18]_image_1.png",
+      "in_seconds": 78,
+      "out_seconds": 82,
+      "animation": "pan-right",
+      "text": "Anthropologist Dr. Robert McCarthy synthesized the sound."
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/ancient_sound_project_2/images/[01:22]_image_1.png",
+      "in_seconds": 82,
+      "out_seconds": 85,
+      "animation": "none",
+      "text": "He rebuilt their vocal tract on computers."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/ancient_sound_project_2/images/[01:25]_image_1.png",
+      "in_seconds": 85,
+      "out_seconds": 92,
+      "animation": "parallax",
+      "text": "He programmed the software to replicate their anatomy and speak a simple vowel sound based on those ancient measurements."
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/ancient_sound_project_2/images/[01:32]_image_1.png",
+      "in_seconds": 92,
+      "out_seconds": 94,
+      "animation": "none",
+      "text": "The output was not a deep grunt."
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/ancient_sound_project_2/images/[01:34]_image_1.png",
+      "in_seconds": 94,
+      "out_seconds": 96,
+      "animation": "none",
+      "text": "What did it sound like?"
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/ancient_sound_project_2/images/[01:36]_image_1.png",
+      "in_seconds": 96,
+      "out_seconds": 98,
+      "animation": "none",
+      "text": "It was a high-pitched, nasal squeak."
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/ancient_sound_project_2/images/[01:38]_image_1.png",
+      "in_seconds": 98,
+      "out_seconds": 101,
+      "animation": "none",
+      "text": "It sounded like a modern human shouting."
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/ancient_sound_project_2/images/[01:41]_image_1.png",
+      "in_seconds": 101,
+      "out_seconds": 106,
+      "animation": "ken-burns",
+      "text": "It lacked the resonance and warmth that your long throat cavity provides to normal human speech."
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/ancient_sound_project_2/images/[01:46]_image_1.png",
+      "in_seconds": 106,
+      "out_seconds": 108,
+      "animation": "none",
+      "text": "Their voice was actually quite comical."
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/ancient_sound_project_2/images/[01:48]_image_1.png",
+      "in_seconds": 108,
+      "out_seconds": 111,
+      "animation": "none",
+      "text": "Would you laugh if a Neanderthal spoke to you?"
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/ancient_sound_project_2/images/[01:51]_image_1.png",
+      "in_seconds": 111,
+      "out_seconds": 113,
+      "animation": "none",
+      "text": "The vocal design goes further back."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/ancient_sound_project_2/images/[01:53]_image_1.png",
+      "in_seconds": 113,
+      "out_seconds": 116,
+      "animation": "none",
+      "text": "Earlier ancestors had even stranger anatomy."
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/ancient_sound_project_2/images/[01:56]_image_1.png",
+      "in_seconds": 116,
+      "out_seconds": 126,
+      "animation": "zoom-in",
+      "text": "Vocal researcher Dr. Bart de Boer focused his studies on the evolution of vocal air sacs, which are large cavities attached to the voice box."
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/ancient_sound_project_2/images/[02:06]_image_1.png",
+      "in_seconds": 126,
+      "out_seconds": 129,
+      "animation": "none",
+      "text": "Chimpanzees use them to make loud calls."
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/ancient_sound_project_2/images/[02:09]_image_1.png",
+      "in_seconds": 129,
+      "out_seconds": 131,
+      "animation": "none",
+      "text": "Why did these sacs disappear?"
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/ancient_sound_project_2/images/[02:11]_image_1.png",
+      "in_seconds": 131,
+      "out_seconds": 133,
+      "animation": "none",
+      "text": "The sacs made sounds louder."
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/ancient_sound_project_2/images/[02:13]_image_1.png",
+      "in_seconds": 133,
+      "out_seconds": 136,
+      "animation": "none",
+      "text": "They acted like organic subwoofers."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/ancient_sound_project_2/images/[02:16]_image_1.png",
+      "in_seconds": 136,
+      "out_seconds": 142,
+      "animation": "zoom-out",
+      "text": "They helped your ancestors warn the tribe of danger across vast distances, but they came with a massive drawback."
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/ancient_sound_project_2/images/[02:22]_image_1.jpg",
+      "in_seconds": 142,
+      "out_seconds": 144,
+      "animation": "none",
+      "text": "They caused different sounds to blur."
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/ancient_sound_project_2/images/[02:24]_image_1.jpg",
+      "in_seconds": 144,
+      "out_seconds": 147,
+      "animation": "none",
+      "text": "How do you speak when your words merge?"
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/ancient_sound_project_2/images/[02:27]_image_1.jpg",
+      "in_seconds": 147,
+      "out_seconds": 149,
+      "animation": "none",
+      "text": "Precision is key to language."
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/ancient_sound_project_2/images/[02:29]_image_1.jpg",
+      "in_seconds": 149,
+      "out_seconds": 151,
+      "animation": "none",
+      "text": "Humans traded power for clarity."
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/ancient_sound_project_2/images/[02:31]_image_1.jpg",
+      "in_seconds": 151,
+      "out_seconds": 157,
+      "animation": "pan-left",
+      "text": "Your ancestors sacrificed their booming animal volume to gain the refined control needed for complex syllables."
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/ancient_sound_project_2/images/[02:37]_image_1.jpg",
+      "in_seconds": 157,
+      "out_seconds": 159,
+      "animation": "none",
+      "text": "They silenced the sacs for speech."
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/ancient_sound_project_2/images/[02:39]_image_1.jpg",
+      "in_seconds": 159,
+      "out_seconds": 161,
+      "animation": "none",
+      "text": "Was this the spark of language?"
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/ancient_sound_project_2/images/[02:41]_image_1.jpg",
+      "in_seconds": 161,
+      "out_seconds": 164,
+      "animation": "none",
+      "text": "Perhaps the first words were silent."
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/ancient_sound_project_2/images/[02:44]_image_1.jpg",
+      "in_seconds": 164,
+      "out_seconds": 167,
+      "animation": "none",
+      "text": "Many researchers believe gestures came first."
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/ancient_sound_project_2/images/[02:47]_image_1.jpg",
+      "in_seconds": 167,
+      "out_seconds": 173,
+      "animation": "pan-right",
+      "text": "Your ancestors likely pointed and signed with their hands to communicate during hunt patrols before they ever spoke."
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/ancient_sound_project_2/images/[02:53]_image_1.jpg",
+      "in_seconds": 173,
+      "out_seconds": 175,
+      "animation": "none",
+      "text": "But hand signs have limits."
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/ancient_sound_project_2/images/[02:55]_image_1.jpg",
+      "in_seconds": 175,
+      "out_seconds": 178,
+      "animation": "none",
+      "text": "What happens when the sun goes down?"
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/ancient_sound_project_2/images/[02:58]_image_1.jpg",
+      "in_seconds": 178,
+      "out_seconds": 181,
+      "animation": "none",
+      "text": "Darkness makes gestures completely useless."
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/ancient_sound_project_2/images/[03:01]_image_1.jpg",
+      "in_seconds": 181,
+      "out_seconds": 183,
+      "animation": "none",
+      "text": "Working with tools also busied their hands."
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/ancient_sound_project_2/images/[03:03]_image_1.jpg",
+      "in_seconds": 183,
+      "out_seconds": 190,
+      "animation": "parallax",
+      "text": "So your ancestors began using their vocal tracts to copy the natural soundscapes of the wild savanna around them."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/ancient_sound_project_2/images/[03:10]_image_1.jpg",
+      "in_seconds": 190,
+      "out_seconds": 192,
+      "animation": "none",
+      "text": "They imitated wind and water."
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/ancient_sound_project_2/images/[03:12]_image_1.jpg",
+      "in_seconds": 192,
+      "out_seconds": 194,
+      "animation": "none",
+      "text": "Can you hear the echo today?"
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/ancient_sound_project_2/images/[03:14]_image_1.jpg",
+      "in_seconds": 194,
+      "out_seconds": 196,
+      "animation": "none",
+      "text": "You carry this ancient system."
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/ancient_sound_project_2/images/[03:16]_image_1.jpg",
+      "in_seconds": 196,
+      "out_seconds": 198,
+      "animation": "none",
+      "text": "When you gasp, you repeat history."
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/ancient_sound_project_2/images/[03:18]_image_1.jpg",
+      "in_seconds": 198,
+      "out_seconds": 206,
+      "animation": "ken-burns",
+      "text": "When you scream in sudden pain, your brain bypasses your modern language center and fires the ancient emotional system."
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/ancient_sound_project_2/images/[03:26]_image_1.jpg",
+      "in_seconds": 206,
+      "out_seconds": 208,
+      "animation": "none",
+      "text": "You return to the savanna."
+    },
+    {
+      "id": "scene_59",
+      "source": "projects/ancient_sound_project_2/images/[03:28]_image_1.jpg",
+      "in_seconds": 208,
+      "out_seconds": 210,
+      "animation": "none",
+      "text": "Are you really speaking, or grunting?"
+    },
+    {
+      "id": "scene_60",
+      "source": "projects/ancient_sound_project_2/images/[03:30]_image_1.jpg",
+      "in_seconds": 210,
+      "out_seconds": 212,
+      "animation": "none",
+      "text": "Your voice is a time machine."
+    },
+    {
+      "id": "scene_61",
+      "source": "projects/ancient_sound_project_2/images/[03:32]_image_1.jpg",
+      "in_seconds": 212,
+      "out_seconds": 214,
+      "animation": "none",
+      "text": "It connects you to the past."
+    },
+    {
+      "id": "scene_62",
+      "source": "projects/ancient_sound_project_2/images/[03:34]_image_1.jpg",
+      "in_seconds": 214,
+      "out_seconds": 220,
+      "animation": "zoom-in",
+      "text": "Every syllable you speak has been shaped by millions of years of physical sacrifices made by your ancestors."
+    },
+    {
+      "id": "scene_63",
+      "source": "projects/ancient_sound_project_2/images/[03:40]_image_1.jpg",
+      "in_seconds": 220,
+      "out_seconds": 222,
+      "animation": "none",
+      "text": "It is your oldest tool."
+    },
+    {
+      "id": "scene_64",
+      "source": "projects/ancient_sound_project_2/images/[03:42]_image_1.jpg",
+      "in_seconds": 222,
+      "out_seconds": 226.4,
+      "animation": "zoom-out",
+      "text": "Tonight, when you speak, you won't think twice."
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/ancient_sound_project_2/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

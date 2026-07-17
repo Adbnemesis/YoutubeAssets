@@ -1,0 +1,15 @@
+{
+  "voice_model": "en_US-ryan-high.onnx",
+  "provider": "piper",
+  "length_scale": 0.9,
+  "sentence_silence": 0.4,
+  "noise_scale": 0.4,
+  "noise_w": 0.6,
+  "voice_style": "Calm, intelligent, measured, 2nd-person explainer style",
+  "description": "Voice configuration representing the doodle channel signature sound. Note: Input text must have lines joined with spaces for sentence_silence to apply correctly, which is handled automatically by the piper_tts tool.",
+  "script_guidelines": {
+    "sentence_pauses": "The piper_tts tool automatically normalizes newlines to spaces so that sentence_silence is properly applied by the engine.",
+    "emotional_expression": "Use dramatic punctuation (..., !, ?, —) to guide natural pauses and human-like voice inflections.",
+    "emphasis_capitalization": "ALL CAPS words longer than 3 characters are automatically converted to lowercase by piper_tts during generation to prevent letter-by-letter spelling, while keeping visual emphasis in on-screen captions."
+  }
+}

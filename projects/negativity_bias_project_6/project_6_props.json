@@ -1,0 +1,549 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#0F172A",
+    "primaryColor": "#7C3AED",
+    "accentColor": "#EC4899",
+    "surfaceColor": "#1E293B",
+    "textColor": "#F8FAFC",
+    "captionHighlightColor": "#22D3EE",
+    "captionBackgroundColor": "rgba(15, 23, 42, 0.75)",
+    "chartColors": [
+      "#7C3AED",
+      "#EC4899",
+      "#06B6D4",
+      "#F59E0B",
+      "#10B981",
+      "#EF4444"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/negativity_bias_project_6/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 0.0,
+      "out_seconds": 4.12,
+      "animation": "zoom-in",
+      "text": "Tonight, when you lie in bed, your mind will start to play a dangerous game."
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/negativity_bias_project_6/images/[00-04]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 4.12,
+      "out_seconds": 6.12,
+      "animation": "none",
+      "text": "The room is perfectly safe."
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/negativity_bias_project_6/images/[00-06]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 6.12,
+      "out_seconds": 9.66,
+      "animation": "none",
+      "text": "Yet, your mind is racing with every awkward moment from your day."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/negativity_bias_project_6/images/[00-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 9.66,
+      "out_seconds": 12.44,
+      "animation": "none",
+      "text": "You replay a slight frown from a coworker."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/negativity_bias_project_6/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 12.44,
+      "out_seconds": 15.12,
+      "animation": "none",
+      "text": "You worry about a bill that is not even due."
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/negativity_bias_project_6/images/[00-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 15.12,
+      "out_seconds": 16.88,
+      "animation": "none",
+      "text": "Why does your brain do this?"
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/negativity_bias_project_6/images/[00-16]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 16.88,
+      "out_seconds": 21.6,
+      "animation": "zoom-out",
+      "text": "Why is it so easy to spiral into worry, but so hard to hold onto a compliment?",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.5
+      }
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/negativity_bias_project_6/images/[00-21]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 21.6,
+      "out_seconds": 24.74,
+      "animation": "none",
+      "text": "The answer lies deep in your evolutionary past."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/negativity_bias_project_6/images/[00-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 24.74,
+      "out_seconds": 27.5,
+      "animation": "none",
+      "text": "Your ancestors did not live in comfortable houses."
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/negativity_bias_project_6/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 27.5,
+      "out_seconds": 29.14,
+      "animation": "none",
+      "text": "They faced constant danger."
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/negativity_bias_project_6/images/[00-29]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 29.14,
+      "out_seconds": 34.76,
+      "animation": "ken-burns",
+      "text": "They slept under the open stars, surrounded by predators, disease, and rival tribes."
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/negativity_bias_project_6/images/[00-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 34.76,
+      "out_seconds": 39.22,
+      "animation": "parallax",
+      "text": "If they assumed a rustling bush was just the wind, and they were wrong, they died.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-1.mp3",
+        "volume": 0.7
+      }
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/negativity_bias_project_6/images/[00-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 39.22,
+      "out_seconds": 42.6,
+      "animation": "none",
+      "text": "If they assumed it was a tiger, they lived to see another day.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh-short.mp3",
+        "volume": 0.6
+      }
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/negativity_bias_project_6/images/[00-42]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 42.6,
+      "out_seconds": 45.3,
+      "animation": "none",
+      "text": "Did evolution design your brain to make you happy?"
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/negativity_bias_project_6/images/[00-45]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 45.3,
+      "out_seconds": 48.54,
+      "animation": "none",
+      "text": "No, it designed your brain simply to keep you alive."
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/negativity_bias_project_6/images/[00-48]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 48.54,
+      "out_seconds": 53.9,
+      "animation": "pan-left",
+      "text": "A psychologist at the University of Pennsylvania coined a term for this phenomenon."
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/negativity_bias_project_6/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 53.9,
+      "out_seconds": 58.34,
+      "animation": "pan-right",
+      "text": "Doctor Paul Rozin studied how humans react to positive and negative stimuli."
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/negativity_bias_project_6/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 58.34,
+      "out_seconds": 63.96,
+      "animation": "zoom-in",
+      "text": "He discovered that negative events have a far greater impact on your mind than positive ones.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-2.mp3",
+        "volume": 0.7
+      }
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/negativity_bias_project_6/images/[01-03]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 63.96,
+      "out_seconds": 69.36,
+      "animation": "zoom-out",
+      "text": "A single insult can ruin your entire day, even if you received ten compliments earlier."
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/negativity_bias_project_6/images/[01-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 69.36,
+      "out_seconds": 72.6,
+      "animation": "none",
+      "text": "Have you ever wondered why bad news travels so fast?"
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/negativity_bias_project_6/images/[01-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 72.6,
+      "out_seconds": 75.76,
+      "animation": "none",
+      "text": "Your brain is simply tuned to pay attention to threat."
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/negativity_bias_project_6/images/[01-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 75.76,
+      "out_seconds": 79.6,
+      "animation": "none",
+      "text": "This tuning is visible in your actual brain activity."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/negativity_bias_project_6/images/[01-19]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 79.6,
+      "out_seconds": 87.14,
+      "animation": "ken-burns",
+      "text": "Doctor John Cacioppo, a pioneer in social neuroscience, conducted experiments tracking the electrical signals in the human brain."
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/negativity_bias_project_6/images/[01-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 87.14,
+      "out_seconds": 92.06,
+      "animation": "parallax",
+      "text": "He showed participants pictures of positive, neutral, and negative things."
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/negativity_bias_project_6/images/[01-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 92.06,
+      "out_seconds": 94.06,
+      "animation": "none",
+      "text": "He recorded their brain waves."
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/negativity_bias_project_6/images/[01-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 94.06,
+      "out_seconds": 95.7,
+      "animation": "none",
+      "text": "The results were startling."
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/negativity_bias_project_6/images/[01-35]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 95.7,
+      "out_seconds": 100.76,
+      "animation": "pan-left",
+      "text": "The brain showed a much larger spike in electrical activity when viewing negative images.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-1.mp3",
+        "volume": 0.7
+      }
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/negativity_bias_project_6/images/[01-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 100.76,
+      "out_seconds": 103.96,
+      "animation": "none",
+      "text": "Why does your brain react so strongly to what you dislike?"
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/negativity_bias_project_6/images/[01-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 103.96,
+      "out_seconds": 109.14,
+      "animation": "pan-right",
+      "text": "It is an automatic, subconscious response that happens before you even have a conscious thought.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh-cinematic.mp3",
+        "volume": 0.6
+      }
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/negativity_bias_project_6/images/[01-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 109.14,
+      "out_seconds": 111.32,
+      "animation": "none",
+      "text": "Think about how this shapes your daily life."
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/negativity_bias_project_6/images/[01-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 111.32,
+      "out_seconds": 113.16,
+      "animation": "none",
+      "text": "You might have a wonderful dinner with friends."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/negativity_bias_project_6/images/[01-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 113.16,
+      "out_seconds": 118.16,
+      "animation": "zoom-in",
+      "text": "You enjoy great conversation, delicious food, and a beautiful walk home."
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/negativity_bias_project_6/images/[01-58]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 118.16,
+      "out_seconds": 124.5,
+      "animation": "zoom-out",
+      "text": "But if the waiter is slightly rude at the very end, that is the only thing you will talk about.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/glitch-1.mp3",
+        "volume": 0.6
+      }
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/negativity_bias_project_6/images/[02-03]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 124.5,
+      "out_seconds": 128.36,
+      "animation": "none",
+      "text": "Neuropsychologist Doctor Rick Hanson has a famous way of explaining this quirk of biology."
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/negativity_bias_project_6/images/[02-08]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 128.36,
+      "out_seconds": 134.16,
+      "animation": "ken-burns",
+      "text": "He says your brain is like Velcro for negative experiences, but like Teflon for positive ones."
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/negativity_bias_project_6/images/[02-14]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 134.16,
+      "out_seconds": 138.22,
+      "animation": "parallax",
+      "text": "Does it feel like you are fighting a losing battle against your own mind?"
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/negativity_bias_project_6/images/[02-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 138.22,
+      "out_seconds": 141.63,
+      "animation": "none",
+      "text": "The bad stuff sticks immediately, while the good stuff slides right off."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/negativity_bias_project_6/images/[02-21]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 141.63,
+      "out_seconds": 145.96,
+      "animation": "pan-left",
+      "text": "The key is understanding that your brain is lying to you for your own protection."
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/negativity_bias_project_6/images/[02-25]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 145.96,
+      "out_seconds": 151.98,
+      "animation": "pan-right",
+      "text": "It is constantly scanning the horizon for danger, magnifying minor problems into major threats."
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/negativity_bias_project_6/images/[02-31]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 151.98,
+      "out_seconds": 156.48,
+      "animation": "zoom-in",
+      "text": "In the ancient world, this hyper-vigilance was a superpower that saved your life."
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/negativity_bias_project_6/images/[02-36]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 156.48,
+      "out_seconds": 162.78,
+      "animation": "zoom-out",
+      "text": "Today, in a world of constant notifications and twenty-four hour news cycles, it is an exhausting trap.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.5
+      }
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/negativity_bias_project_6/images/[02-42]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 162.78,
+      "out_seconds": 168.67,
+      "animation": "ken-burns",
+      "text": "Your brain treats a critical email from your boss with the same physiological panic as a lunging predator.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.5
+      }
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/negativity_bias_project_6/images/[02-48]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 168.67,
+      "out_seconds": 171.94,
+      "animation": "none",
+      "text": "Do you feel the rush of adrenaline for no real reason?"
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/negativity_bias_project_6/images/[02-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 171.94,
+      "out_seconds": 177.62,
+      "animation": "parallax",
+      "text": "You feel the same rush of adrenaline and cortisol, even though you are sitting safely at a desk."
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/negativity_bias_project_6/images/[02-57]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 177.62,
+      "out_seconds": 182.3,
+      "animation": "pan-left",
+      "text": "Doctor Roy Baumeister, a social psychologist, reviewed hundreds of studies on this topic."
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/negativity_bias_project_6/images/[03-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 182.3,
+      "out_seconds": 186.74,
+      "animation": "pan-right",
+      "text": "He concluded that bad is simply stronger than good across almost every domain.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-2.mp3",
+        "volume": 0.7
+      }
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/negativity_bias_project_6/images/[03-06]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 186.74,
+      "out_seconds": 189.5,
+      "animation": "none",
+      "text": "You remember bad experiences more vividly."
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/negativity_bias_project_6/images/[03-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 189.5,
+      "out_seconds": 195.22,
+      "animation": "zoom-in",
+      "text": "You learn from bad feedback more quickly and avoid bad reputations more intensely than you seek good ones."
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/negativity_bias_project_6/images/[03-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 195.22,
+      "out_seconds": 197.72,
+      "animation": "none",
+      "text": "How does this bias affect your daily choices?"
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/negativity_bias_project_6/images/[03-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 197.72,
+      "out_seconds": 202.58,
+      "animation": "zoom-out",
+      "text": "It shapes your relationships, your career, and your self-esteem without you ever realizing it."
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/negativity_bias_project_6/images/[03-22]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 202.58,
+      "out_seconds": 204.72,
+      "animation": "none",
+      "text": "But knowing this is your superpower.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.7
+      }
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/negativity_bias_project_6/images/[03-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 204.72,
+      "out_seconds": 206.28,
+      "animation": "none",
+      "text": "You can balance the scale."
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/negativity_bias_project_6/images/[03-26]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 206.28,
+      "out_seconds": 212.38,
+      "animation": "ken-burns",
+      "text": "You can choose to linger on a positive moment for twenty seconds, focusing on the feeling of warmth or pride."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/negativity_bias_project_6/images/[03-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 212.38,
+      "out_seconds": 219.8,
+      "animation": "parallax",
+      "text": "This gives your brain time to build a lasting neural connection, turning temporary experiences into permanent brain structure."
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/negativity_bias_project_6/images/[03-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 219.8,
+      "out_seconds": 224.0,
+      "animation": "pan-left",
+      "text": "You can remind yourself that the rustling in the bushes is usually just the wind."
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/negativity_bias_project_6/images/[03-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 224.0,
+      "out_seconds": 226.5,
+      "animation": "none",
+      "text": "Will you let ancient survival programming run your life?"
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/negativity_bias_project_6/images/[03-46]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 226.5,
+      "out_seconds": 231.66,
+      "animation": "pan-right",
+      "text": "Tonight, when you lie in bed, your mind will try to start its usual list of worries."
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/negativity_bias_project_6/images/[03-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 231.66,
+      "out_seconds": 233.36,
+      "animation": "none",
+      "text": "But now you know the truth."
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/negativity_bias_project_6/images/[03-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 233.36,
+      "out_seconds": 238.58,
+      "animation": "zoom-in",
+      "text": "Tonight, when you lie in bed, your mind will start to play a dangerous game, but you will finally know how to win it.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/sparkle.mp3",
+        "volume": 0.7
+      }
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/negativity_bias_project_6/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

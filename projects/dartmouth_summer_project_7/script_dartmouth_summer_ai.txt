@@ -1,0 +1,62 @@
+Right now, you live in a world shaped by machines.
+They write code, diagnose diseases, and drive cars.
+It feels like an unstoppable force that appeared out of nowhere.
+But the real answer is far stranger.
+Why did this world-altering technology start as a casual summer project?
+The year was nineteen fifty-six.
+Ten young scientists gathered on a quiet campus in New Hampshire.
+They did not have supercomputers, internet databases, or massive funding.
+They had only a bold, almost ridiculous belief.
+Do you want to see how their overconfidence shaped your modern life?
+Doctor John McCarthy was a young mathematics professor.
+He worked at Dartmouth College.
+He wanted to bring together the brightest minds in computing, mathematics, and psychology.
+He wrote a proposal asking for a small grant.
+What name did he choose to capture their wild ambition?
+He wrote two words on the grant application.
+Those words were artificial intelligence.
+It was a clever marketing trick to distinguish their work from cybernetics.
+Many of his colleagues hated the term.
+Why did a simple marketing phrase capture the imagination of the world?
+Doctor Marvin Minsky stood beside him.
+He was a young researcher obsessed with neural networks.
+They were joined by Doctor Claude Shannon, the legendary founder of information theory.
+They believed they could solve the mind in just two months.
+Why were these giants of science so incredibly naive?
+They had just witnessed the rapid rise of digital computers.
+In less than a decade, machines had gone from basic calculators to complex systems.
+The scientists made a critical mistake.
+Did they assume that logical reasoning was the hardest part of intelligence?
+Human vision is effortless for us.
+Walking is a simple task.
+We spent millions of years evolving to see, balance, and move, but only a few thousand years learning formal logic.
+Computers could solve math, but they could not recognize a cat.
+Is it possible that we completely misunderstood what makes us smart?
+Two researchers arrived from Pittsburgh.
+Their names were Doctor Allen Newell and Doctor Herbert Simon.
+They brought a program called the Logic Theorist that proved thirty-eight complex mathematical theorems.
+Simon told his students they had built a thinking machine.
+Why did this single success fuel such dangerous optimism?
+Funding flowed into the universities.
+Researchers made wild predictions.
+They claimed that fully conscious machines would exist within a single generation.
+But by the late nineteen sixties, the cracks began to show.
+What happens when huge promises fail to deliver results?
+The machines could play simple games.
+They could not translate languages.
+Translation software famously turned the spirit is willing into the vodka is good.
+The software lacked real-world experience.
+Why did early AI systems struggle so much with basic human communication?
+The government cut off the funding.
+The scientists returned to their homes.
+Their overconfidence led to a sudden crash known as the artificial intelligence winter.
+Yet, the core ideas developed during that summer never truly died.
+How did a failed summer project lay the foundation for the modern world?
+We face the same challenges today.
+The technology is much faster.
+But we are still trying to teach machines how to form abstract concepts.
+The neural networks on your phone are descendants of their math.
+Are we still making the same mistakes they made seventy years ago?
+Tonight, you will interact with a machine.
+You will not just use a tool.
+You will participate in a casual summer project that never ended.

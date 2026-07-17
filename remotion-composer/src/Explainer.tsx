@@ -258,6 +258,11 @@ interface Cut {
   particleCount?: number;
   particleIntensity?: number;
   vignette?: boolean;
+  sfx?: {
+    src: string;
+    volume?: number;
+    startOffsetSeconds?: number;
+  };
   lightingFrom?: string;
   lightingTo?: string;
   // Terminal scene props (type: "terminal_scene")
@@ -403,7 +408,7 @@ const ImageScene: React.FC<{ src: string; animation?: string }> = ({
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          opacity: fadeIn * fadeOut,
+          opacity: anim === "none" ? 1 : fadeIn * fadeOut,
           transform: `scale(${scale}) translate(${translateX}px, ${translateY}px)`,
           willChange: "transform, opacity",
         }}
@@ -791,6 +796,13 @@ export const Explainer: React.FC<ExplainerProps> = (props) => {
         return (
           <Sequence key={cut.id} from={from} durationInFrames={duration}>
             <SceneRenderer cut={cut} theme={theme} />
+            {cut.sfx?.src && (
+              <Audio
+                src={resolveAsset(cut.sfx.src)}
+                volume={cut.sfx.volume ?? 0.8}
+                startFrom={Math.round((cut.sfx.startOffsetSeconds ?? 0) * fps)}
+              />
+            )}
           </Sequence>
         );
       })}

@@ -1,0 +1,597 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#0F172A",
+    "primaryColor": "#7C3AED",
+    "accentColor": "#EC4899",
+    "surfaceColor": "#1E293B",
+    "textColor": "#F8FAFC",
+    "captionHighlightColor": "#22D3EE",
+    "captionBackgroundColor": "rgba(15, 23, 42, 0.75)",
+    "chartColors": [
+      "#7C3AED",
+      "#EC4899",
+      "#06B6D4",
+      "#F59E0B",
+      "#10B981",
+      "#EF4444"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "source": "projects/dartmouth_summer_project_7/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 0.0,
+      "out_seconds": 3.02,
+      "animation": "none",
+      "text": "Right now, you live in a world shaped by machines."
+    },
+    {
+      "id": "scene_1",
+      "source": "projects/dartmouth_summer_project_7/images/[00-03]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 3.02,
+      "out_seconds": 6.82,
+      "animation": "none",
+      "text": "They write code, diagnose diseases, and drive cars.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click-soft.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_2",
+      "source": "projects/dartmouth_summer_project_7/images/[00-06]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 6.82,
+      "out_seconds": 10.42,
+      "animation": "none",
+      "text": "It feels like an unstoppable force that appeared out of nowhere."
+    },
+    {
+      "id": "scene_3",
+      "source": "projects/dartmouth_summer_project_7/images/[00-10]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 10.42,
+      "out_seconds": 13.04,
+      "animation": "none",
+      "text": "But the real answer is far stranger."
+    },
+    {
+      "id": "scene_4",
+      "source": "projects/dartmouth_summer_project_7/images/[00-13]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 13.04,
+      "out_seconds": 17.5,
+      "animation": "zoom-in",
+      "text": "Why did this world-altering technology start as a casual summer project?"
+    },
+    {
+      "id": "scene_5",
+      "source": "projects/dartmouth_summer_project_7/images/[00-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 17.5,
+      "out_seconds": 19.98,
+      "animation": "none",
+      "text": "The year was nineteen fifty-six.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh-short.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_6",
+      "source": "projects/dartmouth_summer_project_7/images/[00-19]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 19.98,
+      "out_seconds": 23.48,
+      "animation": "none",
+      "text": "Ten young scientists gathered on a quiet campus in New Hampshire."
+    },
+    {
+      "id": "scene_7",
+      "source": "projects/dartmouth_summer_project_7/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 23.48,
+      "out_seconds": 27.36,
+      "animation": "none",
+      "text": "They did not have supercomputers, internet databases, or massive funding."
+    },
+    {
+      "id": "scene_8",
+      "source": "projects/dartmouth_summer_project_7/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 27.36,
+      "out_seconds": 30.92,
+      "animation": "none",
+      "text": "They had only a bold, almost ridiculous belief."
+    },
+    {
+      "id": "scene_9",
+      "source": "projects/dartmouth_summer_project_7/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 30.92,
+      "out_seconds": 34.28,
+      "animation": "none",
+      "text": "Do you want to see how their overconfidence shaped your modern life?",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-1.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_10",
+      "source": "projects/dartmouth_summer_project_7/images/[00-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 34.28,
+      "out_seconds": 37.5,
+      "animation": "none",
+      "text": "Doctor John McCarthy was a young mathematics professor."
+    },
+    {
+      "id": "scene_11",
+      "source": "projects/dartmouth_summer_project_7/images/[00-37]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 37.5,
+      "out_seconds": 39.48,
+      "animation": "none",
+      "text": "He worked at Dartmouth College."
+    },
+    {
+      "id": "scene_12",
+      "source": "projects/dartmouth_summer_project_7/images/[00-39]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 39.48,
+      "out_seconds": 44.88,
+      "animation": "zoom-out",
+      "text": "He wanted to bring together the brightest minds in computing, mathematics, and psychology."
+    },
+    {
+      "id": "scene_13",
+      "source": "projects/dartmouth_summer_project_7/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 44.88,
+      "out_seconds": 48.08,
+      "animation": "none",
+      "text": "He wrote a proposal asking for a small grant.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_14",
+      "source": "projects/dartmouth_summer_project_7/images/[00-48]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 48.08,
+      "out_seconds": 51.18,
+      "animation": "none",
+      "text": "What name did he choose to capture their wild ambition?"
+    },
+    {
+      "id": "scene_15",
+      "source": "projects/dartmouth_summer_project_7/images/[00-51]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 51.18,
+      "out_seconds": 54.2,
+      "animation": "none",
+      "text": "He wrote two words on the grant application."
+    },
+    {
+      "id": "scene_16",
+      "source": "projects/dartmouth_summer_project_7/images/[00-54]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 54.2,
+      "out_seconds": 56.56,
+      "animation": "none",
+      "text": "Those words were artificial intelligence.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-2.mp3",
+        "volume": 0.45
+      }
+    },
+    {
+      "id": "scene_17",
+      "source": "projects/dartmouth_summer_project_7/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 56.56,
+      "out_seconds": 60.76,
+      "animation": "ken-burns",
+      "text": "It was a clever marketing trick to distinguish their work from cybernetics.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh-short.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_18",
+      "source": "projects/dartmouth_summer_project_7/images/[01-00]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 60.76,
+      "out_seconds": 63.0,
+      "animation": "none",
+      "text": "Many of his colleagues hated the term.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/glitch-1.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_19",
+      "source": "projects/dartmouth_summer_project_7/images/[01-03]_Hand-drawn_2D_doo (2).jpg",
+      "in_seconds": 63.0,
+      "out_seconds": 63.1,
+      "animation": "none",
+      "text": "Why did a simple marketing phrase capture the imagination of the world?"
+    },
+    {
+      "id": "scene_20",
+      "source": "projects/dartmouth_summer_project_7/images/[01-03]_Hand-drawn_2D_doo (2).jpg",
+      "in_seconds": 63.1,
+      "out_seconds": 69.84,
+      "animation": "parallax",
+      "text": "Doctor Marvin Minsky stood beside him."
+    },
+    {
+      "id": "scene_21",
+      "source": "projects/dartmouth_summer_project_7/images/[01-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 69.84,
+      "out_seconds": 72.96,
+      "animation": "none",
+      "text": "He was a young researcher obsessed with neural networks."
+    },
+    {
+      "id": "scene_22",
+      "source": "projects/dartmouth_summer_project_7/images/[01-12]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 72.96,
+      "out_seconds": 77.74,
+      "animation": "pan-left",
+      "text": "They were joined by Doctor Claude Shannon, the legendary founder of information theory."
+    },
+    {
+      "id": "scene_23",
+      "source": "projects/dartmouth_summer_project_7/images/[01-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 77.74,
+      "out_seconds": 80.74,
+      "animation": "none",
+      "text": "They believed they could solve the mind in just two months.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_24",
+      "source": "projects/dartmouth_summer_project_7/images/[01-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 80.74,
+      "out_seconds": 83.22,
+      "animation": "none",
+      "text": "Why were these giants of science so incredibly naive?"
+    },
+    {
+      "id": "scene_25",
+      "source": "projects/dartmouth_summer_project_7/images/[01-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 83.22,
+      "out_seconds": 86.92,
+      "animation": "none",
+      "text": "They had just witnessed the rapid rise of digital computers."
+    },
+    {
+      "id": "scene_26",
+      "source": "projects/dartmouth_summer_project_7/images/[01-26]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 86.92,
+      "out_seconds": 92.32,
+      "animation": "pan-right",
+      "text": "In less than a decade, machines had gone from basic calculators to complex systems."
+    },
+    {
+      "id": "scene_27",
+      "source": "projects/dartmouth_summer_project_7/images/[01-32]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 92.32,
+      "out_seconds": 94.66,
+      "animation": "none",
+      "text": "The scientists made a critical mistake."
+    },
+    {
+      "id": "scene_28",
+      "source": "projects/dartmouth_summer_project_7/images/[01-34]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 94.66,
+      "out_seconds": 98.74,
+      "animation": "zoom-in",
+      "text": "Did they assume that logical reasoning was the hardest part of intelligence?"
+    },
+    {
+      "id": "scene_29",
+      "source": "projects/dartmouth_summer_project_7/images/[01-38]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 98.74,
+      "out_seconds": 101.0,
+      "animation": "none",
+      "text": "Human vision is effortless for us."
+    },
+    {
+      "id": "scene_30",
+      "source": "projects/dartmouth_summer_project_7/images/[01-41]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 101.0,
+      "out_seconds": 102.92,
+      "animation": "none",
+      "text": "Walking is a simple task."
+    },
+    {
+      "id": "scene_31",
+      "source": "projects/dartmouth_summer_project_7/images/[01-42]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 102.92,
+      "out_seconds": 109.74,
+      "animation": "zoom-out",
+      "text": "We spent millions of years evolving to see, balance, and move, but only a few thousand years learning formal logic.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh-cinematic.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_32",
+      "source": "projects/dartmouth_summer_project_7/images/[01-49]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 109.74,
+      "out_seconds": 113.32,
+      "animation": "none",
+      "text": "Computers could solve math, but they could not recognize a cat.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_33",
+      "source": "projects/dartmouth_summer_project_7/images/[01-53]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 113.32,
+      "out_seconds": 116.82,
+      "animation": "none",
+      "text": "Is it possible that we completely misunderstood what makes us smart?"
+    },
+    {
+      "id": "scene_34",
+      "source": "projects/dartmouth_summer_project_7/images/[01-56]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 116.82,
+      "out_seconds": 119.22,
+      "animation": "none",
+      "text": "Two researchers arrived from Pittsburgh."
+    },
+    {
+      "id": "scene_35",
+      "source": "projects/dartmouth_summer_project_7/images/[01-59]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 119.22,
+      "out_seconds": 122.68,
+      "animation": "none",
+      "text": "Their names were Doctor Allen Newell and Doctor Herbert Simon."
+    },
+    {
+      "id": "scene_36",
+      "source": "projects/dartmouth_summer_project_7/images/[02-02]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 122.68,
+      "out_seconds": 128.46,
+      "animation": "ken-burns",
+      "text": "They brought a program called the Logic Theorist that proved thirty-eight complex mathematical theorems."
+    },
+    {
+      "id": "scene_37",
+      "source": "projects/dartmouth_summer_project_7/images/[02-08]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 128.46,
+      "out_seconds": 131.58,
+      "animation": "none",
+      "text": "Simon told his students they had built a thinking machine.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_38",
+      "source": "projects/dartmouth_summer_project_7/images/[02-11]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 131.58,
+      "out_seconds": 135.26,
+      "animation": "none",
+      "text": "Why did this single success fuel such dangerous optimism?"
+    },
+    {
+      "id": "scene_39",
+      "source": "projects/dartmouth_summer_project_7/images/[02-15]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 135.26,
+      "out_seconds": 137.62,
+      "animation": "none",
+      "text": "Funding flowed into the universities.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/cash-register.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_40",
+      "source": "projects/dartmouth_summer_project_7/images/[02-17]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 137.62,
+      "out_seconds": 139.34,
+      "animation": "none",
+      "text": "Researchers made wild predictions."
+    },
+    {
+      "id": "scene_41",
+      "source": "projects/dartmouth_summer_project_7/images/[02-19]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 139.34,
+      "out_seconds": 143.98,
+      "animation": "parallax",
+      "text": "They claimed that fully conscious machines would exist within a single generation."
+    },
+    {
+      "id": "scene_42",
+      "source": "projects/dartmouth_summer_project_7/images/[02-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 143.98,
+      "out_seconds": 147.72,
+      "animation": "none",
+      "text": "But by the late nineteen sixties, the cracks began to show.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/glitch-1.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_43",
+      "source": "projects/dartmouth_summer_project_7/images/[02-27]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 147.72,
+      "out_seconds": 151.14,
+      "animation": "none",
+      "text": "What happens when huge promises fail to deliver results?"
+    },
+    {
+      "id": "scene_44",
+      "source": "projects/dartmouth_summer_project_7/images/[02-31]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 151.14,
+      "out_seconds": 153.3,
+      "animation": "none",
+      "text": "The machines could play simple games."
+    },
+    {
+      "id": "scene_45",
+      "source": "projects/dartmouth_summer_project_7/images/[02-33]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 153.3,
+      "out_seconds": 155.38,
+      "animation": "none",
+      "text": "They could not translate languages."
+    },
+    {
+      "id": "scene_46",
+      "source": "projects/dartmouth_summer_project_7/images/[02-35]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 155.38,
+      "out_seconds": 160.56,
+      "animation": "pan-left",
+      "text": "Translation software famously turned the spirit is willing into the vodka is good.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_47",
+      "source": "projects/dartmouth_summer_project_7/images/[02-40]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 160.56,
+      "out_seconds": 163.56,
+      "animation": "none",
+      "text": "The software lacked real-world experience."
+    },
+    {
+      "id": "scene_48",
+      "source": "projects/dartmouth_summer_project_7/images/[02-43]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 163.56,
+      "out_seconds": 167.52,
+      "animation": "none",
+      "text": "Why did early AI systems struggle so much with basic human communication?"
+    },
+    {
+      "id": "scene_49",
+      "source": "projects/dartmouth_summer_project_7/images/[02-47]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 167.52,
+      "out_seconds": 170.04,
+      "animation": "none",
+      "text": "The government cut off the funding.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_50",
+      "source": "projects/dartmouth_summer_project_7/images/[02-50]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 170.04,
+      "out_seconds": 172.36,
+      "animation": "none",
+      "text": "The scientists returned to their homes."
+    },
+    {
+      "id": "scene_51",
+      "source": "projects/dartmouth_summer_project_7/images/[02-52]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 172.36,
+      "out_seconds": 177.26,
+      "animation": "pan-right",
+      "text": "Their overconfidence led to a sudden crash known as the artificial intelligence winter.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/impact-bass-1.mp3",
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "scene_52",
+      "source": "projects/dartmouth_summer_project_7/images/[02-57]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 177.26,
+      "out_seconds": 181.32,
+      "animation": "zoom-in",
+      "text": "Yet, the core ideas developed during that summer never truly died."
+    },
+    {
+      "id": "scene_53",
+      "source": "projects/dartmouth_summer_project_7/images/[03-01]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 181.32,
+      "out_seconds": 185.34,
+      "animation": "zoom-out",
+      "text": "How did a failed summer project lay the foundation for the modern world?"
+    },
+    {
+      "id": "scene_54",
+      "source": "projects/dartmouth_summer_project_7/images/[03-05]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 185.34,
+      "out_seconds": 187.48,
+      "animation": "none",
+      "text": "We face the same challenges today."
+    },
+    {
+      "id": "scene_55",
+      "source": "projects/dartmouth_summer_project_7/images/[03-07]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 187.48,
+      "out_seconds": 189.6,
+      "animation": "none",
+      "text": "The technology is much faster."
+    },
+    {
+      "id": "scene_56",
+      "source": "projects/dartmouth_summer_project_7/images/[03-09]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 189.6,
+      "out_seconds": 194.14,
+      "animation": "ken-burns",
+      "text": "But we are still trying to teach machines how to form abstract concepts."
+    },
+    {
+      "id": "scene_57",
+      "source": "projects/dartmouth_summer_project_7/images/[03-14]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 194.14,
+      "out_seconds": 196.86,
+      "animation": "none",
+      "text": "The neural networks on your phone are descendants of their math.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.35
+      }
+    },
+    {
+      "id": "scene_58",
+      "source": "projects/dartmouth_summer_project_7/images/[03-16]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 196.86,
+      "out_seconds": 200.7,
+      "animation": "none",
+      "text": "Are we still making the same mistakes they made seventy years ago?"
+    },
+    {
+      "id": "scene_59",
+      "source": "projects/dartmouth_summer_project_7/images/[03-20]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 200.7,
+      "out_seconds": 203.14,
+      "animation": "none",
+      "text": "Tonight, you will interact with a machine."
+    },
+    {
+      "id": "scene_60",
+      "source": "projects/dartmouth_summer_project_7/images/[03-23]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 203.14,
+      "out_seconds": 204.96,
+      "animation": "none",
+      "text": "You will not just use a tool."
+    },
+    {
+      "id": "scene_61",
+      "source": "projects/dartmouth_summer_project_7/images/[03-24]_Hand-drawn_2D_doo.jpg",
+      "in_seconds": 204.96,
+      "out_seconds": 208.38,
+      "animation": "none",
+      "text": "You will participate in a casual summer project that never ended.",
+      "sfx": {
+        "src": "projects/common_assets/sfx/sparkle.mp3",
+        "volume": 0.45
+      }
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/dartmouth_summer_project_7/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

@@ -1,0 +1,7638 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.5,
+      "text": "Right now, you live in a world shaped by machines.",
+      "words": [
+        {
+          "word": " Right",
+          "start": 0.0,
+          "end": 0.12,
+          "probability": 0.59
+        },
+        {
+          "word": " now,",
+          "start": 0.12,
+          "end": 0.4,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 0.8,
+          "end": 0.86,
+          "probability": 0.994
+        },
+        {
+          "word": " live",
+          "start": 0.86,
+          "end": 1.04,
+          "probability": 0.998
+        },
+        {
+          "word": " in",
+          "start": 1.04,
+          "end": 1.14,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 1.14,
+          "end": 1.22,
+          "probability": 0.998
+        },
+        {
+          "word": " world",
+          "start": 1.22,
+          "end": 1.38,
+          "probability": 0.966
+        },
+        {
+          "word": " shaped",
+          "start": 1.38,
+          "end": 1.68,
+          "probability": 0.818
+        },
+        {
+          "word": " by",
+          "start": 1.68,
+          "end": 1.94,
+          "probability": 0.991
+        },
+        {
+          "word": " machines.",
+          "start": 1.94,
+          "end": 2.5,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 3.02,
+      "end": 6.34,
+      "text": "They ride code, diagnose diseases, and drive cars.",
+      "words": [
+        {
+          "word": " They",
+          "start": 3.02,
+          "end": 3.14,
+          "probability": 0.965
+        },
+        {
+          "word": " ride",
+          "start": 3.14,
+          "end": 3.34,
+          "probability": 0.946
+        },
+        {
+          "word": " code,",
+          "start": 3.34,
+          "end": 3.8,
+          "probability": 0.977
+        },
+        {
+          "word": " diagnose",
+          "start": 4.16,
+          "end": 4.48,
+          "probability": 0.977
+        },
+        {
+          "word": " diseases,",
+          "start": 4.48,
+          "end": 5.16,
+          "probability": 0.994
+        },
+        {
+          "word": " and",
+          "start": 5.48,
+          "end": 5.56,
+          "probability": 0.993
+        },
+        {
+          "word": " drive",
+          "start": 5.56,
+          "end": 5.82,
+          "probability": 0.998
+        },
+        {
+          "word": " cars.",
+          "start": 5.82,
+          "end": 6.34,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 6.82,
+      "end": 8.68,
+      "text": "It feels like an unstoppable force",
+      "words": [
+        {
+          "word": " It",
+          "start": 6.82,
+          "end": 7.04,
+          "probability": 0.993
+        },
+        {
+          "word": " feels",
+          "start": 7.04,
+          "end": 7.28,
+          "probability": 0.999
+        },
+        {
+          "word": " like",
+          "start": 7.28,
+          "end": 7.56,
+          "probability": 0.998
+        },
+        {
+          "word": " an",
+          "start": 7.56,
+          "end": 7.72,
+          "probability": 0.986
+        },
+        {
+          "word": " unstoppable",
+          "start": 7.72,
+          "end": 8.24,
+          "probability": 0.988
+        },
+        {
+          "word": " force",
+          "start": 8.24,
+          "end": 8.68,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 8.68,
+      "end": 9.9,
+      "text": "that appeared out of nowhere.",
+      "words": [
+        {
+          "word": " that",
+          "start": 8.68,
+          "end": 8.94,
+          "probability": 0.992
+        },
+        {
+          "word": " appeared",
+          "start": 8.94,
+          "end": 9.22,
+          "probability": 0.996
+        },
+        {
+          "word": " out",
+          "start": 9.22,
+          "end": 9.46,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 9.46,
+          "end": 9.58,
+          "probability": 0.997
+        },
+        {
+          "word": " nowhere.",
+          "start": 9.58,
+          "end": 9.9,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 10.42,
+      "end": 12.44,
+      "text": "But the real answer is far stranger.",
+      "words": [
+        {
+          "word": " But",
+          "start": 10.42,
+          "end": 10.54,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 10.54,
+          "end": 10.7,
+          "probability": 0.983
+        },
+        {
+          "word": " real",
+          "start": 10.7,
+          "end": 10.94,
+          "probability": 0.998
+        },
+        {
+          "word": " answer",
+          "start": 10.94,
+          "end": 11.36,
+          "probability": 0.999
+        },
+        {
+          "word": " is",
+          "start": 11.36,
+          "end": 11.62,
+          "probability": 0.993
+        },
+        {
+          "word": " far",
+          "start": 11.62,
+          "end": 11.88,
+          "probability": 0.926
+        },
+        {
+          "word": " stranger.",
+          "start": 11.88,
+          "end": 12.44,
+          "probability": 0.971
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 13.04,
+      "end": 15.26,
+      "text": "Why did this world-altering technology start",
+      "words": [
+        {
+          "word": " Why",
+          "start": 13.04,
+          "end": 13.18,
+          "probability": 0.962
+        },
+        {
+          "word": " did",
+          "start": 13.18,
+          "end": 13.3,
+          "probability": 0.993
+        },
+        {
+          "word": " this",
+          "start": 13.3,
+          "end": 13.48,
+          "probability": 0.992
+        },
+        {
+          "word": " world",
+          "start": 13.48,
+          "end": 13.72,
+          "probability": 0.989
+        },
+        {
+          "word": "-altering",
+          "start": 13.72,
+          "end": 14.14,
+          "probability": 0.766
+        },
+        {
+          "word": " technology",
+          "start": 14.14,
+          "end": 14.8,
+          "probability": 0.824
+        },
+        {
+          "word": " start",
+          "start": 14.8,
+          "end": 15.26,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 15.26,
+      "end": 16.94,
+      "text": "as a casual summer project?",
+      "words": [
+        {
+          "word": " as",
+          "start": 15.26,
+          "end": 15.6,
+          "probability": 0.981
+        },
+        {
+          "word": " a",
+          "start": 15.6,
+          "end": 15.72,
+          "probability": 0.998
+        },
+        {
+          "word": " casual",
+          "start": 15.72,
+          "end": 16.14,
+          "probability": 0.943
+        },
+        {
+          "word": " summer",
+          "start": 16.14,
+          "end": 16.46,
+          "probability": 0.991
+        },
+        {
+          "word": " project?",
+          "start": 16.46,
+          "end": 16.94,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 17.5,
+      "end": 19.0,
+      "text": "The year was 1956.",
+      "words": [
+        {
+          "word": " The",
+          "start": 17.5,
+          "end": 17.64,
+          "probability": 0.986
+        },
+        {
+          "word": " year",
+          "start": 17.64,
+          "end": 17.82,
+          "probability": 0.999
+        },
+        {
+          "word": " was",
+          "start": 17.82,
+          "end": 18.04,
+          "probability": 0.998
+        },
+        {
+          "word": " 1956.",
+          "start": 18.04,
+          "end": 19.0,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 19.84,
+      "end": 22.2,
+      "text": "Ten young scientists gathered on a quiet campus",
+      "words": [
+        {
+          "word": " Ten",
+          "start": 19.84,
+          "end": 19.98,
+          "probability": 0.728
+        },
+        {
+          "word": " young",
+          "start": 19.98,
+          "end": 20.14,
+          "probability": 0.852
+        },
+        {
+          "word": " scientists",
+          "start": 20.14,
+          "end": 20.76,
+          "probability": 0.996
+        },
+        {
+          "word": " gathered",
+          "start": 20.76,
+          "end": 21.22,
+          "probability": 0.999
+        },
+        {
+          "word": " on",
+          "start": 21.22,
+          "end": 21.44,
+          "probability": 0.997
+        },
+        {
+          "word": " a",
+          "start": 21.44,
+          "end": 21.5,
+          "probability": 0.996
+        },
+        {
+          "word": " quiet",
+          "start": 21.5,
+          "end": 21.78,
+          "probability": 0.906
+        },
+        {
+          "word": " campus",
+          "start": 21.78,
+          "end": 22.2,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 22.2,
+      "end": 22.98,
+      "text": "in New Hampshire.",
+      "words": [
+        {
+          "word": " in",
+          "start": 22.2,
+          "end": 22.46,
+          "probability": 0.929
+        },
+        {
+          "word": " New",
+          "start": 22.46,
+          "end": 22.6,
+          "probability": 0.984
+        },
+        {
+          "word": " Hampshire.",
+          "start": 22.6,
+          "end": 22.98,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 23.48,
+      "end": 24.98,
+      "text": "They did not have supercomputers,",
+      "words": [
+        {
+          "word": " They",
+          "start": 23.48,
+          "end": 23.58,
+          "probability": 0.955
+        },
+        {
+          "word": " did",
+          "start": 23.58,
+          "end": 23.7,
+          "probability": 0.993
+        },
+        {
+          "word": " not",
+          "start": 23.7,
+          "end": 23.86,
+          "probability": 1.0
+        },
+        {
+          "word": " have",
+          "start": 23.86,
+          "end": 24.02,
+          "probability": 0.999
+        },
+        {
+          "word": " supercomputers,",
+          "start": 24.02,
+          "end": 24.98,
+          "probability": 0.928
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 25.2,
+      "end": 27.36,
+      "text": "internet databases, or massive funding.",
+      "words": [
+        {
+          "word": " internet",
+          "start": 25.2,
+          "end": 25.42,
+          "probability": 0.711
+        },
+        {
+          "word": " databases,",
+          "start": 25.42,
+          "end": 26.02,
+          "probability": 0.995
+        },
+        {
+          "word": " or",
+          "start": 26.52,
+          "end": 26.64,
+          "probability": 0.998
+        },
+        {
+          "word": " massive",
+          "start": 26.64,
+          "end": 27.02,
+          "probability": 0.994
+        },
+        {
+          "word": " funding.",
+          "start": 27.02,
+          "end": 27.36,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 27.36,
+      "end": 30.56,
+      "text": "They had only a bold, almost ridiculous belief.",
+      "words": [
+        {
+          "word": " They",
+          "start": 27.36,
+          "end": 27.98,
+          "probability": 0.456
+        },
+        {
+          "word": " had",
+          "start": 27.98,
+          "end": 28.12,
+          "probability": 0.959
+        },
+        {
+          "word": " only",
+          "start": 28.12,
+          "end": 28.44,
+          "probability": 0.99
+        },
+        {
+          "word": " a",
+          "start": 28.44,
+          "end": 28.64,
+          "probability": 0.785
+        },
+        {
+          "word": " bold,",
+          "start": 28.64,
+          "end": 28.9,
+          "probability": 0.993
+        },
+        {
+          "word": " almost",
+          "start": 29.26,
+          "end": 29.54,
+          "probability": 0.95
+        },
+        {
+          "word": " ridiculous",
+          "start": 29.54,
+          "end": 29.96,
+          "probability": 0.976
+        },
+        {
+          "word": " belief.",
+          "start": 29.96,
+          "end": 30.56,
+          "probability": 0.946
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 30.92,
+      "end": 32.66,
+      "text": "Do you want to see how their overconfidence",
+      "words": [
+        {
+          "word": " Do",
+          "start": 30.92,
+          "end": 31.1,
+          "probability": 0.812
+        },
+        {
+          "word": " you",
+          "start": 31.1,
+          "end": 31.2,
+          "probability": 0.997
+        },
+        {
+          "word": " want",
+          "start": 31.2,
+          "end": 31.34,
+          "probability": 0.958
+        },
+        {
+          "word": " to",
+          "start": 31.34,
+          "end": 31.48,
+          "probability": 0.848
+        },
+        {
+          "word": " see",
+          "start": 31.48,
+          "end": 31.6,
+          "probability": 0.997
+        },
+        {
+          "word": " how",
+          "start": 31.6,
+          "end": 31.78,
+          "probability": 0.985
+        },
+        {
+          "word": " their",
+          "start": 31.78,
+          "end": 31.94,
+          "probability": 0.961
+        },
+        {
+          "word": " overconfidence",
+          "start": 31.94,
+          "end": 32.66,
+          "probability": 0.866
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 32.66,
+      "end": 33.84,
+      "text": "shaped your modern life?",
+      "words": [
+        {
+          "word": " shaped",
+          "start": 32.66,
+          "end": 32.98,
+          "probability": 0.979
+        },
+        {
+          "word": " your",
+          "start": 32.98,
+          "end": 33.16,
+          "probability": 0.981
+        },
+        {
+          "word": " modern",
+          "start": 33.16,
+          "end": 33.44,
+          "probability": 0.987
+        },
+        {
+          "word": " life?",
+          "start": 33.44,
+          "end": 33.84,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 34.28,
+      "end": 37.04,
+      "text": "Dr. John McCarthy was a young mathematics professor.",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 34.28,
+          "end": 34.54,
+          "probability": 0.877
+        },
+        {
+          "word": " John",
+          "start": 34.8,
+          "end": 34.9,
+          "probability": 0.93
+        },
+        {
+          "word": " McCarthy",
+          "start": 34.9,
+          "end": 35.32,
+          "probability": 0.885
+        },
+        {
+          "word": " was",
+          "start": 35.32,
+          "end": 35.6,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 35.6,
+          "end": 35.7,
+          "probability": 0.995
+        },
+        {
+          "word": " young",
+          "start": 35.7,
+          "end": 35.86,
+          "probability": 0.991
+        },
+        {
+          "word": " mathematics",
+          "start": 35.86,
+          "end": 36.4,
+          "probability": 0.965
+        },
+        {
+          "word": " professor.",
+          "start": 36.4,
+          "end": 37.04,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 37.5,
+      "end": 38.94,
+      "text": "He worked at Dartmouth College.",
+      "words": [
+        {
+          "word": " He",
+          "start": 37.5,
+          "end": 37.7,
+          "probability": 0.994
+        },
+        {
+          "word": " worked",
+          "start": 37.7,
+          "end": 37.94,
+          "probability": 0.999
+        },
+        {
+          "word": " at",
+          "start": 37.94,
+          "end": 38.18,
+          "probability": 0.995
+        },
+        {
+          "word": " Dartmouth",
+          "start": 38.18,
+          "end": 38.48,
+          "probability": 0.998
+        },
+        {
+          "word": " College.",
+          "start": 38.48,
+          "end": 38.94,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 39.48,
+      "end": 42.26,
+      "text": "He wanted to bring together the brightest minds in computing,",
+      "words": [
+        {
+          "word": " He",
+          "start": 39.48,
+          "end": 39.66,
+          "probability": 0.993
+        },
+        {
+          "word": " wanted",
+          "start": 39.66,
+          "end": 39.96,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 39.96,
+          "end": 40.1,
+          "probability": 0.999
+        },
+        {
+          "word": " bring",
+          "start": 40.1,
+          "end": 40.28,
+          "probability": 0.995
+        },
+        {
+          "word": " together",
+          "start": 40.28,
+          "end": 40.68,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 40.68,
+          "end": 40.86,
+          "probability": 0.983
+        },
+        {
+          "word": " brightest",
+          "start": 40.86,
+          "end": 41.14,
+          "probability": 0.995
+        },
+        {
+          "word": " minds",
+          "start": 41.14,
+          "end": 41.44,
+          "probability": 0.99
+        },
+        {
+          "word": " in",
+          "start": 41.44,
+          "end": 41.78,
+          "probability": 0.998
+        },
+        {
+          "word": " computing,",
+          "start": 41.78,
+          "end": 42.26,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 42.74,
+      "end": 44.36,
+      "text": "mathematics, and psychology.",
+      "words": [
+        {
+          "word": " mathematics,",
+          "start": 42.74,
+          "end": 43.22,
+          "probability": 0.993
+        },
+        {
+          "word": " and",
+          "start": 43.7,
+          "end": 43.78,
+          "probability": 0.996
+        },
+        {
+          "word": " psychology.",
+          "start": 43.78,
+          "end": 44.36,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 44.88,
+      "end": 47.52,
+      "text": "He wrote a proposal asking for a small grant.",
+      "words": [
+        {
+          "word": " He",
+          "start": 44.88,
+          "end": 45.12,
+          "probability": 0.988
+        },
+        {
+          "word": " wrote",
+          "start": 45.12,
+          "end": 45.32,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 45.32,
+          "end": 45.56,
+          "probability": 0.985
+        },
+        {
+          "word": " proposal",
+          "start": 45.56,
+          "end": 45.92,
+          "probability": 0.994
+        },
+        {
+          "word": " asking",
+          "start": 45.92,
+          "end": 46.54,
+          "probability": 0.979
+        },
+        {
+          "word": " for",
+          "start": 46.54,
+          "end": 46.78,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 46.78,
+          "end": 46.9,
+          "probability": 0.992
+        },
+        {
+          "word": " small",
+          "start": 46.9,
+          "end": 47.2,
+          "probability": 0.987
+        },
+        {
+          "word": " grant.",
+          "start": 47.2,
+          "end": 47.52,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 48.08,
+      "end": 50.54,
+      "text": "What name did he choose to capture their wild ambition?",
+      "words": [
+        {
+          "word": " What",
+          "start": 48.08,
+          "end": 48.2,
+          "probability": 0.991
+        },
+        {
+          "word": " name",
+          "start": 48.2,
+          "end": 48.42,
+          "probability": 0.989
+        },
+        {
+          "word": " did",
+          "start": 48.42,
+          "end": 48.64,
+          "probability": 0.999
+        },
+        {
+          "word": " he",
+          "start": 48.64,
+          "end": 48.8,
+          "probability": 0.998
+        },
+        {
+          "word": " choose",
+          "start": 48.8,
+          "end": 49.08,
+          "probability": 0.991
+        },
+        {
+          "word": " to",
+          "start": 49.08,
+          "end": 49.22,
+          "probability": 0.998
+        },
+        {
+          "word": " capture",
+          "start": 49.22,
+          "end": 49.6,
+          "probability": 0.998
+        },
+        {
+          "word": " their",
+          "start": 49.6,
+          "end": 49.82,
+          "probability": 0.979
+        },
+        {
+          "word": " wild",
+          "start": 49.82,
+          "end": 50.18,
+          "probability": 0.961
+        },
+        {
+          "word": " ambition?",
+          "start": 50.18,
+          "end": 50.54,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 51.18,
+      "end": 53.64,
+      "text": "He wrote two words on the grant application.",
+      "words": [
+        {
+          "word": " He",
+          "start": 51.18,
+          "end": 51.32,
+          "probability": 0.983
+        },
+        {
+          "word": " wrote",
+          "start": 51.32,
+          "end": 51.5,
+          "probability": 0.999
+        },
+        {
+          "word": " two",
+          "start": 51.5,
+          "end": 51.82,
+          "probability": 0.984
+        },
+        {
+          "word": " words",
+          "start": 51.82,
+          "end": 52.16,
+          "probability": 0.997
+        },
+        {
+          "word": " on",
+          "start": 52.16,
+          "end": 52.42,
+          "probability": 0.996
+        },
+        {
+          "word": " the",
+          "start": 52.42,
+          "end": 52.54,
+          "probability": 0.995
+        },
+        {
+          "word": " grant",
+          "start": 52.54,
+          "end": 52.82,
+          "probability": 0.946
+        },
+        {
+          "word": " application.",
+          "start": 52.82,
+          "end": 53.64,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 54.2,
+      "end": 56.08,
+      "text": "Those words were artificial intelligence.",
+      "words": [
+        {
+          "word": " Those",
+          "start": 54.2,
+          "end": 54.36,
+          "probability": 0.78
+        },
+        {
+          "word": " words",
+          "start": 54.36,
+          "end": 54.72,
+          "probability": 0.996
+        },
+        {
+          "word": " were",
+          "start": 54.72,
+          "end": 54.94,
+          "probability": 0.997
+        },
+        {
+          "word": " artificial",
+          "start": 54.94,
+          "end": 55.44,
+          "probability": 0.97
+        },
+        {
+          "word": " intelligence.",
+          "start": 55.44,
+          "end": 56.08,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 56.56,
+      "end": 59.2,
+      "text": "It was a clever marketing trick to distinguish their work",
+      "words": [
+        {
+          "word": " It",
+          "start": 56.56,
+          "end": 56.84,
+          "probability": 0.213
+        },
+        {
+          "word": " was",
+          "start": 56.84,
+          "end": 56.94,
+          "probability": 0.988
+        },
+        {
+          "word": " a",
+          "start": 56.94,
+          "end": 57.06,
+          "probability": 0.977
+        },
+        {
+          "word": " clever",
+          "start": 57.06,
+          "end": 57.32,
+          "probability": 0.997
+        },
+        {
+          "word": " marketing",
+          "start": 57.32,
+          "end": 57.74,
+          "probability": 0.991
+        },
+        {
+          "word": " trick",
+          "start": 57.74,
+          "end": 58.1,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 58.1,
+          "end": 58.28,
+          "probability": 0.996
+        },
+        {
+          "word": " distinguish",
+          "start": 58.28,
+          "end": 58.68,
+          "probability": 0.991
+        },
+        {
+          "word": " their",
+          "start": 58.68,
+          "end": 58.98,
+          "probability": 0.992
+        },
+        {
+          "word": " work",
+          "start": 58.98,
+          "end": 59.2,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 59.2,
+      "end": 60.36,
+      "text": "from cybernetics.",
+      "words": [
+        {
+          "word": " from",
+          "start": 59.2,
+          "end": 59.48,
+          "probability": 0.994
+        },
+        {
+          "word": " cybernetics.",
+          "start": 59.48,
+          "end": 60.36,
+          "probability": 0.934
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 60.76,
+      "end": 62.46,
+      "text": "Many of his colleagues hated the term.",
+      "words": [
+        {
+          "word": " Many",
+          "start": 60.76,
+          "end": 61.0,
+          "probability": 0.984
+        },
+        {
+          "word": " of",
+          "start": 61.0,
+          "end": 61.16,
+          "probability": 0.996
+        },
+        {
+          "word": " his",
+          "start": 61.16,
+          "end": 61.3,
+          "probability": 0.991
+        },
+        {
+          "word": " colleagues",
+          "start": 61.3,
+          "end": 61.58,
+          "probability": 0.141
+        },
+        {
+          "word": " hated",
+          "start": 61.58,
+          "end": 62.0,
+          "probability": 0.988
+        },
+        {
+          "word": " the",
+          "start": 62.0,
+          "end": 62.18,
+          "probability": 0.971
+        },
+        {
+          "word": " term.",
+          "start": 62.18,
+          "end": 62.46,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 63.0,
+      "end": 64.62,
+      "text": "Why did his simple marketing phrase",
+      "words": [
+        {
+          "word": " Why",
+          "start": 63.0,
+          "end": 63.12,
+          "probability": 0.85
+        },
+        {
+          "word": " did",
+          "start": 63.12,
+          "end": 63.28,
+          "probability": 0.936
+        },
+        {
+          "word": " his",
+          "start": 63.28,
+          "end": 63.5,
+          "probability": 0.913
+        },
+        {
+          "word": " simple",
+          "start": 63.5,
+          "end": 63.82,
+          "probability": 0.988
+        },
+        {
+          "word": " marketing",
+          "start": 63.82,
+          "end": 64.22,
+          "probability": 0.99
+        },
+        {
+          "word": " phrase",
+          "start": 64.22,
+          "end": 64.62,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 64.62,
+      "end": 66.96,
+      "text": "capture the imagination of the world?",
+      "words": [
+        {
+          "word": " capture",
+          "start": 64.62,
+          "end": 65.1,
+          "probability": 0.965
+        },
+        {
+          "word": " the",
+          "start": 65.1,
+          "end": 65.32,
+          "probability": 0.993
+        },
+        {
+          "word": " imagination",
+          "start": 65.32,
+          "end": 65.94,
+          "probability": 0.951
+        },
+        {
+          "word": " of",
+          "start": 65.94,
+          "end": 66.46,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 66.46,
+          "end": 66.6,
+          "probability": 0.991
+        },
+        {
+          "word": " world?",
+          "start": 66.6,
+          "end": 66.96,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 67.44,
+      "end": 69.4,
+      "text": "Dr. Marvin Minsky stood beside him.",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 67.44,
+          "end": 67.66,
+          "probability": 0.82
+        },
+        {
+          "word": " Marvin",
+          "start": 67.78,
+          "end": 68.04,
+          "probability": 0.917
+        },
+        {
+          "word": " Minsky",
+          "start": 68.04,
+          "end": 68.4,
+          "probability": 0.799
+        },
+        {
+          "word": " stood",
+          "start": 68.4,
+          "end": 68.72,
+          "probability": 0.899
+        },
+        {
+          "word": " beside",
+          "start": 68.72,
+          "end": 69.08,
+          "probability": 0.998
+        },
+        {
+          "word": " him.",
+          "start": 69.08,
+          "end": 69.4,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 69.84,
+      "end": 72.58,
+      "text": "He was a young researcher obsessed with neural networks.",
+      "words": [
+        {
+          "word": " He",
+          "start": 69.84,
+          "end": 69.96,
+          "probability": 0.992
+        },
+        {
+          "word": " was",
+          "start": 69.96,
+          "end": 70.1,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 70.1,
+          "end": 70.2,
+          "probability": 0.996
+        },
+        {
+          "word": " young",
+          "start": 70.2,
+          "end": 70.4,
+          "probability": 0.994
+        },
+        {
+          "word": " researcher",
+          "start": 70.4,
+          "end": 70.9,
+          "probability": 0.997
+        },
+        {
+          "word": " obsessed",
+          "start": 70.9,
+          "end": 71.38,
+          "probability": 0.988
+        },
+        {
+          "word": " with",
+          "start": 71.38,
+          "end": 71.8,
+          "probability": 0.999
+        },
+        {
+          "word": " neural",
+          "start": 71.8,
+          "end": 72.0,
+          "probability": 0.99
+        },
+        {
+          "word": " networks.",
+          "start": 72.0,
+          "end": 72.58,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 72.96,
+      "end": 74.98,
+      "text": "They were joined by Dr. Claude Shannon,",
+      "words": [
+        {
+          "word": " They",
+          "start": 72.96,
+          "end": 73.22,
+          "probability": 0.994
+        },
+        {
+          "word": " were",
+          "start": 73.22,
+          "end": 73.32,
+          "probability": 0.999
+        },
+        {
+          "word": " joined",
+          "start": 73.32,
+          "end": 73.64,
+          "probability": 0.995
+        },
+        {
+          "word": " by",
+          "start": 73.64,
+          "end": 73.84,
+          "probability": 0.999
+        },
+        {
+          "word": " Dr.",
+          "start": 73.84,
+          "end": 74.2,
+          "probability": 0.955
+        },
+        {
+          "word": " Claude",
+          "start": 74.42,
+          "end": 74.7,
+          "probability": 0.916
+        },
+        {
+          "word": " Shannon,",
+          "start": 74.7,
+          "end": 74.98,
+          "probability": 0.955
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 75.32,
+      "end": 77.32,
+      "text": "the legendary founder of Information Theory.",
+      "words": [
+        {
+          "word": " the",
+          "start": 75.32,
+          "end": 75.4,
+          "probability": 0.982
+        },
+        {
+          "word": " legendary",
+          "start": 75.4,
+          "end": 75.84,
+          "probability": 0.988
+        },
+        {
+          "word": " founder",
+          "start": 75.84,
+          "end": 76.24,
+          "probability": 0.973
+        },
+        {
+          "word": " of",
+          "start": 76.24,
+          "end": 76.48,
+          "probability": 0.998
+        },
+        {
+          "word": " Information",
+          "start": 76.48,
+          "end": 76.92,
+          "probability": 0.423
+        },
+        {
+          "word": " Theory.",
+          "start": 76.92,
+          "end": 77.32,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 77.74,
+      "end": 80.18,
+      "text": "They believed they could solve the mind in just two months.",
+      "words": [
+        {
+          "word": " They",
+          "start": 77.74,
+          "end": 77.94,
+          "probability": 0.995
+        },
+        {
+          "word": " believed",
+          "start": 77.94,
+          "end": 78.18,
+          "probability": 0.734
+        },
+        {
+          "word": " they",
+          "start": 78.18,
+          "end": 78.42,
+          "probability": 0.992
+        },
+        {
+          "word": " could",
+          "start": 78.42,
+          "end": 78.58,
+          "probability": 0.996
+        },
+        {
+          "word": " solve",
+          "start": 78.58,
+          "end": 78.86,
+          "probability": 0.982
+        },
+        {
+          "word": " the",
+          "start": 78.86,
+          "end": 79.04,
+          "probability": 0.997
+        },
+        {
+          "word": " mind",
+          "start": 79.04,
+          "end": 79.32,
+          "probability": 0.994
+        },
+        {
+          "word": " in",
+          "start": 79.32,
+          "end": 79.48,
+          "probability": 0.995
+        },
+        {
+          "word": " just",
+          "start": 79.48,
+          "end": 79.64,
+          "probability": 0.997
+        },
+        {
+          "word": " two",
+          "start": 79.64,
+          "end": 79.96,
+          "probability": 0.929
+        },
+        {
+          "word": " months.",
+          "start": 79.96,
+          "end": 80.18,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 80.74,
+      "end": 83.22,
+      "text": "Why were these giants of science so incredibly naive?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 80.74,
+          "end": 80.96,
+          "probability": 0.987
+        },
+        {
+          "word": " were",
+          "start": 80.96,
+          "end": 81.08,
+          "probability": 0.961
+        },
+        {
+          "word": " these",
+          "start": 81.08,
+          "end": 81.28,
+          "probability": 0.989
+        },
+        {
+          "word": " giants",
+          "start": 81.28,
+          "end": 81.54,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 81.54,
+          "end": 81.78,
+          "probability": 0.997
+        },
+        {
+          "word": " science",
+          "start": 81.78,
+          "end": 82.14,
+          "probability": 0.999
+        },
+        {
+          "word": " so",
+          "start": 82.14,
+          "end": 82.42,
+          "probability": 0.999
+        },
+        {
+          "word": " incredibly",
+          "start": 82.42,
+          "end": 82.92,
+          "probability": 0.992
+        },
+        {
+          "word": " naive?",
+          "start": 82.92,
+          "end": 83.22,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 83.22,
+      "end": 86.54,
+      "text": "They had just witnessed the rapid rise of digital computers.",
+      "words": [
+        {
+          "word": " They",
+          "start": 83.22,
+          "end": 83.86,
+          "probability": 0.695
+        },
+        {
+          "word": " had",
+          "start": 83.86,
+          "end": 84.0,
+          "probability": 0.992
+        },
+        {
+          "word": " just",
+          "start": 84.0,
+          "end": 84.18,
+          "probability": 0.997
+        },
+        {
+          "word": " witnessed",
+          "start": 84.18,
+          "end": 84.54,
+          "probability": 0.991
+        },
+        {
+          "word": " the",
+          "start": 84.54,
+          "end": 84.8,
+          "probability": 0.985
+        },
+        {
+          "word": " rapid",
+          "start": 84.8,
+          "end": 85.0,
+          "probability": 0.999
+        },
+        {
+          "word": " rise",
+          "start": 85.0,
+          "end": 85.28,
+          "probability": 0.999
+        },
+        {
+          "word": " of",
+          "start": 85.28,
+          "end": 85.52,
+          "probability": 0.996
+        },
+        {
+          "word": " digital",
+          "start": 85.52,
+          "end": 85.82,
+          "probability": 0.993
+        },
+        {
+          "word": " computers.",
+          "start": 85.82,
+          "end": 86.54,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 86.92,
+      "end": 90.46,
+      "text": "In less than a decade, machines had gone from basic calculators",
+      "words": [
+        {
+          "word": " In",
+          "start": 86.92,
+          "end": 87.14,
+          "probability": 0.974
+        },
+        {
+          "word": " less",
+          "start": 87.14,
+          "end": 87.34,
+          "probability": 0.999
+        },
+        {
+          "word": " than",
+          "start": 87.34,
+          "end": 87.56,
+          "probability": 0.997
+        },
+        {
+          "word": " a",
+          "start": 87.56,
+          "end": 87.64,
+          "probability": 0.998
+        },
+        {
+          "word": " decade,",
+          "start": 87.64,
+          "end": 88.06,
+          "probability": 1.0
+        },
+        {
+          "word": " machines",
+          "start": 88.38,
+          "end": 88.54,
+          "probability": 0.99
+        },
+        {
+          "word": " had",
+          "start": 88.54,
+          "end": 88.92,
+          "probability": 0.997
+        },
+        {
+          "word": " gone",
+          "start": 88.92,
+          "end": 89.14,
+          "probability": 0.995
+        },
+        {
+          "word": " from",
+          "start": 89.14,
+          "end": 89.4,
+          "probability": 0.997
+        },
+        {
+          "word": " basic",
+          "start": 89.4,
+          "end": 89.76,
+          "probability": 0.997
+        },
+        {
+          "word": " calculators",
+          "start": 89.76,
+          "end": 90.46,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 90.46,
+      "end": 91.68,
+      "text": "to complex systems.",
+      "words": [
+        {
+          "word": " to",
+          "start": 90.46,
+          "end": 90.64,
+          "probability": 0.997
+        },
+        {
+          "word": " complex",
+          "start": 90.64,
+          "end": 91.04,
+          "probability": 0.998
+        },
+        {
+          "word": " systems.",
+          "start": 91.04,
+          "end": 91.68,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 92.32,
+      "end": 94.14,
+      "text": "The scientists made a critical mistake.",
+      "words": [
+        {
+          "word": " The",
+          "start": 92.32,
+          "end": 92.42,
+          "probability": 0.994
+        },
+        {
+          "word": " scientists",
+          "start": 92.42,
+          "end": 92.9,
+          "probability": 0.99
+        },
+        {
+          "word": " made",
+          "start": 92.9,
+          "end": 93.3,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 93.3,
+          "end": 93.4,
+          "probability": 0.999
+        },
+        {
+          "word": " critical",
+          "start": 93.4,
+          "end": 93.7,
+          "probability": 0.997
+        },
+        {
+          "word": " mistake.",
+          "start": 93.7,
+          "end": 94.14,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 94.66,
+      "end": 96.34,
+      "text": "Did they assume that logical reasoning",
+      "words": [
+        {
+          "word": " Did",
+          "start": 94.66,
+          "end": 94.74,
+          "probability": 0.982
+        },
+        {
+          "word": " they",
+          "start": 94.74,
+          "end": 94.88,
+          "probability": 0.999
+        },
+        {
+          "word": " assume",
+          "start": 94.88,
+          "end": 95.24,
+          "probability": 0.996
+        },
+        {
+          "word": " that",
+          "start": 95.24,
+          "end": 95.42,
+          "probability": 0.99
+        },
+        {
+          "word": " logical",
+          "start": 95.42,
+          "end": 95.82,
+          "probability": 0.982
+        },
+        {
+          "word": " reasoning",
+          "start": 95.82,
+          "end": 96.34,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 96.34,
+      "end": 98.04,
+      "text": "was the hardest part of intelligence?",
+      "words": [
+        {
+          "word": " was",
+          "start": 96.34,
+          "end": 96.62,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 96.62,
+          "end": 96.78,
+          "probability": 0.998
+        },
+        {
+          "word": " hardest",
+          "start": 96.78,
+          "end": 97.1,
+          "probability": 0.991
+        },
+        {
+          "word": " part",
+          "start": 97.1,
+          "end": 97.38,
+          "probability": 0.999
+        },
+        {
+          "word": " of",
+          "start": 97.38,
+          "end": 97.56,
+          "probability": 0.997
+        },
+        {
+          "word": " intelligence?",
+          "start": 97.56,
+          "end": 98.04,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 98.74,
+      "end": 100.5,
+      "text": "Human vision is effortless for us.",
+      "words": [
+        {
+          "word": " Human",
+          "start": 98.74,
+          "end": 98.94,
+          "probability": 0.947
+        },
+        {
+          "word": " vision",
+          "start": 98.94,
+          "end": 99.32,
+          "probability": 0.984
+        },
+        {
+          "word": " is",
+          "start": 99.32,
+          "end": 99.56,
+          "probability": 0.998
+        },
+        {
+          "word": " effortless",
+          "start": 99.56,
+          "end": 99.9,
+          "probability": 0.957
+        },
+        {
+          "word": " for",
+          "start": 99.9,
+          "end": 100.16,
+          "probability": 0.999
+        },
+        {
+          "word": " us.",
+          "start": 100.16,
+          "end": 100.5,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 101.0,
+      "end": 102.26,
+      "text": "Walking is a simple task.",
+      "words": [
+        {
+          "word": " Walking",
+          "start": 101.0,
+          "end": 101.28,
+          "probability": 0.957
+        },
+        {
+          "word": " is",
+          "start": 101.28,
+          "end": 101.52,
+          "probability": 0.997
+        },
+        {
+          "word": " a",
+          "start": 101.52,
+          "end": 101.62,
+          "probability": 0.999
+        },
+        {
+          "word": " simple",
+          "start": 101.62,
+          "end": 101.94,
+          "probability": 0.997
+        },
+        {
+          "word": " task.",
+          "start": 101.94,
+          "end": 102.26,
+          "probability": 0.957
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 102.92,
+      "end": 104.96,
+      "text": "We spent millions of years evolving to see,",
+      "words": [
+        {
+          "word": " We",
+          "start": 102.92,
+          "end": 103.02,
+          "probability": 0.996
+        },
+        {
+          "word": " spent",
+          "start": 103.02,
+          "end": 103.32,
+          "probability": 0.98
+        },
+        {
+          "word": " millions",
+          "start": 103.32,
+          "end": 103.64,
+          "probability": 0.997
+        },
+        {
+          "word": " of",
+          "start": 103.64,
+          "end": 103.9,
+          "probability": 0.999
+        },
+        {
+          "word": " years",
+          "start": 103.9,
+          "end": 104.08,
+          "probability": 0.999
+        },
+        {
+          "word": " evolving",
+          "start": 104.08,
+          "end": 104.5,
+          "probability": 0.985
+        },
+        {
+          "word": " to",
+          "start": 104.5,
+          "end": 104.74,
+          "probability": 0.991
+        },
+        {
+          "word": " see,",
+          "start": 104.74,
+          "end": 104.96,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 105.32,
+      "end": 106.28,
+      "text": "balance, and move,",
+      "words": [
+        {
+          "word": " balance,",
+          "start": 105.32,
+          "end": 105.62,
+          "probability": 0.993
+        },
+        {
+          "word": " and",
+          "start": 105.96,
+          "end": 105.98,
+          "probability": 0.997
+        },
+        {
+          "word": " move,",
+          "start": 105.98,
+          "end": 106.28,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 106.6,
+      "end": 109.22,
+      "text": "but only a few thousand years learning formal logic.",
+      "words": [
+        {
+          "word": " but",
+          "start": 106.6,
+          "end": 106.72,
+          "probability": 0.992
+        },
+        {
+          "word": " only",
+          "start": 106.72,
+          "end": 107.06,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 107.06,
+          "end": 107.2,
+          "probability": 0.996
+        },
+        {
+          "word": " few",
+          "start": 107.2,
+          "end": 107.38,
+          "probability": 0.995
+        },
+        {
+          "word": " thousand",
+          "start": 107.38,
+          "end": 107.84,
+          "probability": 0.98
+        },
+        {
+          "word": " years",
+          "start": 107.84,
+          "end": 108.08,
+          "probability": 0.993
+        },
+        {
+          "word": " learning",
+          "start": 108.08,
+          "end": 108.44,
+          "probability": 0.935
+        },
+        {
+          "word": " formal",
+          "start": 108.44,
+          "end": 108.82,
+          "probability": 0.951
+        },
+        {
+          "word": " logic.",
+          "start": 108.82,
+          "end": 109.22,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 109.74,
+      "end": 110.94,
+      "text": "Computers could solve math,",
+      "words": [
+        {
+          "word": " Computers",
+          "start": 109.74,
+          "end": 110.18,
+          "probability": 0.996
+        },
+        {
+          "word": " could",
+          "start": 110.18,
+          "end": 110.34,
+          "probability": 0.997
+        },
+        {
+          "word": " solve",
+          "start": 110.34,
+          "end": 110.58,
+          "probability": 0.99
+        },
+        {
+          "word": " math,",
+          "start": 110.58,
+          "end": 110.94,
+          "probability": 0.982
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 110.94,
+      "end": 112.8,
+      "text": "but they could not recognize a cat.",
+      "words": [
+        {
+          "word": " but",
+          "start": 110.94,
+          "end": 111.48,
+          "probability": 0.145
+        },
+        {
+          "word": " they",
+          "start": 111.48,
+          "end": 111.62,
+          "probability": 0.964
+        },
+        {
+          "word": " could",
+          "start": 111.62,
+          "end": 111.74,
+          "probability": 0.984
+        },
+        {
+          "word": " not",
+          "start": 111.74,
+          "end": 111.92,
+          "probability": 0.995
+        },
+        {
+          "word": " recognize",
+          "start": 111.92,
+          "end": 112.4,
+          "probability": 0.97
+        },
+        {
+          "word": " a",
+          "start": 112.4,
+          "end": 112.6,
+          "probability": 0.976
+        },
+        {
+          "word": " cat.",
+          "start": 112.6,
+          "end": 112.8,
+          "probability": 0.938
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 113.32,
+      "end": 115.16,
+      "text": "Is it possible that we completely misunderstood",
+      "words": [
+        {
+          "word": " Is",
+          "start": 113.32,
+          "end": 113.42,
+          "probability": 0.881
+        },
+        {
+          "word": " it",
+          "start": 113.42,
+          "end": 113.52,
+          "probability": 0.998
+        },
+        {
+          "word": " possible",
+          "start": 113.52,
+          "end": 113.96,
+          "probability": 0.999
+        },
+        {
+          "word": " that",
+          "start": 113.96,
+          "end": 114.22,
+          "probability": 0.983
+        },
+        {
+          "word": " we",
+          "start": 114.22,
+          "end": 114.36,
+          "probability": 0.992
+        },
+        {
+          "word": " completely",
+          "start": 114.36,
+          "end": 114.74,
+          "probability": 0.992
+        },
+        {
+          "word": " misunderstood",
+          "start": 114.74,
+          "end": 115.16,
+          "probability": 0.748
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 115.16,
+      "end": 116.3,
+      "text": "what makes us smart?",
+      "words": [
+        {
+          "word": " what",
+          "start": 115.16,
+          "end": 115.66,
+          "probability": 0.986
+        },
+        {
+          "word": " makes",
+          "start": 115.66,
+          "end": 115.86,
+          "probability": 0.997
+        },
+        {
+          "word": " us",
+          "start": 115.86,
+          "end": 116.02,
+          "probability": 0.788
+        },
+        {
+          "word": " smart?",
+          "start": 116.02,
+          "end": 116.3,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 116.82,
+      "end": 118.68,
+      "text": "Two researchers arrived from Pittsburgh.",
+      "words": [
+        {
+          "word": " Two",
+          "start": 116.82,
+          "end": 116.92,
+          "probability": 0.742
+        },
+        {
+          "word": " researchers",
+          "start": 116.92,
+          "end": 117.46,
+          "probability": 0.996
+        },
+        {
+          "word": " arrived",
+          "start": 117.46,
+          "end": 117.98,
+          "probability": 0.948
+        },
+        {
+          "word": " from",
+          "start": 117.98,
+          "end": 118.28,
+          "probability": 0.995
+        },
+        {
+          "word": " Pittsburgh.",
+          "start": 118.28,
+          "end": 118.68,
+          "probability": 0.963
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 119.22,
+      "end": 122.18,
+      "text": "Their names were Dr. Allen Nuel and Dr. Herbert Simon.",
+      "words": [
+        {
+          "word": " Their",
+          "start": 119.22,
+          "end": 119.32,
+          "probability": 0.987
+        },
+        {
+          "word": " names",
+          "start": 119.32,
+          "end": 119.54,
+          "probability": 0.993
+        },
+        {
+          "word": " were",
+          "start": 119.54,
+          "end": 119.76,
+          "probability": 0.997
+        },
+        {
+          "word": " Dr.",
+          "start": 119.76,
+          "end": 120.06,
+          "probability": 0.924
+        },
+        {
+          "word": " Allen",
+          "start": 120.24,
+          "end": 120.4,
+          "probability": 0.467
+        },
+        {
+          "word": " Nuel",
+          "start": 120.4,
+          "end": 120.76,
+          "probability": 0.552
+        },
+        {
+          "word": " and",
+          "start": 120.76,
+          "end": 121.14,
+          "probability": 0.879
+        },
+        {
+          "word": " Dr.",
+          "start": 121.14,
+          "end": 121.48,
+          "probability": 0.979
+        },
+        {
+          "word": " Herbert",
+          "start": 121.62,
+          "end": 121.8,
+          "probability": 0.978
+        },
+        {
+          "word": " Simon.",
+          "start": 121.8,
+          "end": 122.18,
+          "probability": 0.956
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 122.68,
+      "end": 125.1,
+      "text": "They brought a program called the logic theorist",
+      "words": [
+        {
+          "word": " They",
+          "start": 122.68,
+          "end": 122.88,
+          "probability": 0.994
+        },
+        {
+          "word": " brought",
+          "start": 122.88,
+          "end": 123.12,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 123.12,
+          "end": 123.28,
+          "probability": 0.999
+        },
+        {
+          "word": " program",
+          "start": 123.28,
+          "end": 123.74,
+          "probability": 0.992
+        },
+        {
+          "word": " called",
+          "start": 123.74,
+          "end": 124.1,
+          "probability": 0.978
+        },
+        {
+          "word": " the",
+          "start": 124.1,
+          "end": 124.28,
+          "probability": 0.706
+        },
+        {
+          "word": " logic",
+          "start": 124.28,
+          "end": 124.56,
+          "probability": 0.258
+        },
+        {
+          "word": " theorist",
+          "start": 124.56,
+          "end": 125.1,
+          "probability": 0.977
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 125.1,
+      "end": 127.92,
+      "text": "that proved 38 complex mathematical theorems.",
+      "words": [
+        {
+          "word": " that",
+          "start": 125.1,
+          "end": 125.24,
+          "probability": 0.984
+        },
+        {
+          "word": " proved",
+          "start": 125.24,
+          "end": 125.56,
+          "probability": 0.934
+        },
+        {
+          "word": " 38",
+          "start": 125.56,
+          "end": 126.04,
+          "probability": 0.948
+        },
+        {
+          "word": " complex",
+          "start": 126.04,
+          "end": 126.62,
+          "probability": 0.947
+        },
+        {
+          "word": " mathematical",
+          "start": 126.62,
+          "end": 127.16,
+          "probability": 0.995
+        },
+        {
+          "word": " theorems.",
+          "start": 127.16,
+          "end": 127.92,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 128.46,
+      "end": 130.96,
+      "text": "Simon told his students they had built a thinking machine.",
+      "words": [
+        {
+          "word": " Simon",
+          "start": 128.46,
+          "end": 128.7,
+          "probability": 0.998
+        },
+        {
+          "word": " told",
+          "start": 128.7,
+          "end": 128.96,
+          "probability": 0.997
+        },
+        {
+          "word": " his",
+          "start": 128.96,
+          "end": 129.18,
+          "probability": 0.999
+        },
+        {
+          "word": " students",
+          "start": 129.18,
+          "end": 129.56,
+          "probability": 0.999
+        },
+        {
+          "word": " they",
+          "start": 129.56,
+          "end": 129.84,
+          "probability": 0.98
+        },
+        {
+          "word": " had",
+          "start": 129.84,
+          "end": 129.98,
+          "probability": 0.998
+        },
+        {
+          "word": " built",
+          "start": 129.98,
+          "end": 130.18,
+          "probability": 0.983
+        },
+        {
+          "word": " a",
+          "start": 130.18,
+          "end": 130.32,
+          "probability": 0.995
+        },
+        {
+          "word": " thinking",
+          "start": 130.32,
+          "end": 130.52,
+          "probability": 0.996
+        },
+        {
+          "word": " machine.",
+          "start": 130.52,
+          "end": 130.96,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 131.58,
+      "end": 134.66,
+      "text": "Why did this single success fuel such dangerous optimism?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 131.58,
+          "end": 131.72,
+          "probability": 0.908
+        },
+        {
+          "word": " did",
+          "start": 131.72,
+          "end": 131.84,
+          "probability": 0.998
+        },
+        {
+          "word": " this",
+          "start": 131.84,
+          "end": 132.02,
+          "probability": 0.987
+        },
+        {
+          "word": " single",
+          "start": 132.02,
+          "end": 132.34,
+          "probability": 0.999
+        },
+        {
+          "word": " success",
+          "start": 132.34,
+          "end": 132.8,
+          "probability": 0.956
+        },
+        {
+          "word": " fuel",
+          "start": 132.8,
+          "end": 133.16,
+          "probability": 0.836
+        },
+        {
+          "word": " such",
+          "start": 133.16,
+          "end": 133.54,
+          "probability": 0.996
+        },
+        {
+          "word": " dangerous",
+          "start": 133.54,
+          "end": 134.0,
+          "probability": 0.992
+        },
+        {
+          "word": " optimism?",
+          "start": 134.0,
+          "end": 134.66,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 135.26,
+      "end": 136.98,
+      "text": "Funding flowed into the universities.",
+      "words": [
+        {
+          "word": " Funding",
+          "start": 135.26,
+          "end": 135.62,
+          "probability": 0.949
+        },
+        {
+          "word": " flowed",
+          "start": 135.62,
+          "end": 136.08,
+          "probability": 0.946
+        },
+        {
+          "word": " into",
+          "start": 136.08,
+          "end": 136.24,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 136.24,
+          "end": 136.4,
+          "probability": 0.993
+        },
+        {
+          "word": " universities.",
+          "start": 136.4,
+          "end": 136.98,
+          "probability": 0.916
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 137.62,
+      "end": 139.34,
+      "text": "Researchers made wild predictions.",
+      "words": [
+        {
+          "word": " Researchers",
+          "start": 137.62,
+          "end": 138.04,
+          "probability": 0.964
+        },
+        {
+          "word": " made",
+          "start": 138.04,
+          "end": 138.42,
+          "probability": 0.998
+        },
+        {
+          "word": " wild",
+          "start": 138.42,
+          "end": 138.82,
+          "probability": 0.974
+        },
+        {
+          "word": " predictions.",
+          "start": 138.82,
+          "end": 139.34,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 139.34,
+      "end": 141.6,
+      "text": "They claimed that fully conscious machines",
+      "words": [
+        {
+          "word": " They",
+          "start": 139.34,
+          "end": 140.14,
+          "probability": 0.212
+        },
+        {
+          "word": " claimed",
+          "start": 140.14,
+          "end": 140.42,
+          "probability": 0.519
+        },
+        {
+          "word": " that",
+          "start": 140.42,
+          "end": 140.62,
+          "probability": 0.992
+        },
+        {
+          "word": " fully",
+          "start": 140.62,
+          "end": 140.8,
+          "probability": 0.863
+        },
+        {
+          "word": " conscious",
+          "start": 140.8,
+          "end": 141.22,
+          "probability": 0.813
+        },
+        {
+          "word": " machines",
+          "start": 141.22,
+          "end": 141.6,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 141.6,
+      "end": 143.6,
+      "text": "would exist within a single generation,",
+      "words": [
+        {
+          "word": " would",
+          "start": 141.6,
+          "end": 141.94,
+          "probability": 0.99
+        },
+        {
+          "word": " exist",
+          "start": 141.94,
+          "end": 142.2,
+          "probability": 0.986
+        },
+        {
+          "word": " within",
+          "start": 142.2,
+          "end": 142.52,
+          "probability": 0.969
+        },
+        {
+          "word": " a",
+          "start": 142.52,
+          "end": 142.66,
+          "probability": 0.996
+        },
+        {
+          "word": " single",
+          "start": 142.66,
+          "end": 142.94,
+          "probability": 0.997
+        },
+        {
+          "word": " generation,",
+          "start": 142.94,
+          "end": 143.6,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 143.98,
+      "end": 147.06,
+      "text": "but by the late 1960s, the cracks began to show.",
+      "words": [
+        {
+          "word": " but",
+          "start": 143.98,
+          "end": 144.2,
+          "probability": 0.979
+        },
+        {
+          "word": " by",
+          "start": 144.2,
+          "end": 144.4,
+          "probability": 0.98
+        },
+        {
+          "word": " the",
+          "start": 144.4,
+          "end": 144.54,
+          "probability": 0.991
+        },
+        {
+          "word": " late",
+          "start": 144.54,
+          "end": 144.7,
+          "probability": 0.997
+        },
+        {
+          "word": " 1960s,",
+          "start": 144.7,
+          "end": 145.76,
+          "probability": 0.905
+        },
+        {
+          "word": " the",
+          "start": 145.86,
+          "end": 145.94,
+          "probability": 0.96
+        },
+        {
+          "word": " cracks",
+          "start": 145.94,
+          "end": 146.18,
+          "probability": 0.915
+        },
+        {
+          "word": " began",
+          "start": 146.18,
+          "end": 146.66,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 146.66,
+          "end": 146.86,
+          "probability": 0.999
+        },
+        {
+          "word": " show.",
+          "start": 146.86,
+          "end": 147.06,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 147.62,
+      "end": 150.46,
+      "text": "What happens when huge promises fail to deliver results?",
+      "words": [
+        {
+          "word": " What",
+          "start": 147.62,
+          "end": 147.72,
+          "probability": 0.882
+        },
+        {
+          "word": " happens",
+          "start": 147.72,
+          "end": 148.04,
+          "probability": 0.983
+        },
+        {
+          "word": " when",
+          "start": 148.04,
+          "end": 148.28,
+          "probability": 0.997
+        },
+        {
+          "word": " huge",
+          "start": 148.28,
+          "end": 148.56,
+          "probability": 0.996
+        },
+        {
+          "word": " promises",
+          "start": 148.56,
+          "end": 149.08,
+          "probability": 0.995
+        },
+        {
+          "word": " fail",
+          "start": 149.08,
+          "end": 149.42,
+          "probability": 0.956
+        },
+        {
+          "word": " to",
+          "start": 149.42,
+          "end": 149.66,
+          "probability": 0.997
+        },
+        {
+          "word": " deliver",
+          "start": 149.66,
+          "end": 149.98,
+          "probability": 0.998
+        },
+        {
+          "word": " results?",
+          "start": 149.98,
+          "end": 150.46,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 151.14,
+      "end": 152.66,
+      "text": "The machines could play simple games.",
+      "words": [
+        {
+          "word": " The",
+          "start": 151.14,
+          "end": 151.26,
+          "probability": 0.984
+        },
+        {
+          "word": " machines",
+          "start": 151.26,
+          "end": 151.56,
+          "probability": 0.997
+        },
+        {
+          "word": " could",
+          "start": 151.56,
+          "end": 151.84,
+          "probability": 0.987
+        },
+        {
+          "word": " play",
+          "start": 151.84,
+          "end": 152.06,
+          "probability": 0.997
+        },
+        {
+          "word": " simple",
+          "start": 152.06,
+          "end": 152.36,
+          "probability": 0.997
+        },
+        {
+          "word": " games.",
+          "start": 152.36,
+          "end": 152.66,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 153.3,
+      "end": 154.76,
+      "text": "They could not translate languages.",
+      "words": [
+        {
+          "word": " They",
+          "start": 153.3,
+          "end": 153.44,
+          "probability": 0.989
+        },
+        {
+          "word": " could",
+          "start": 153.44,
+          "end": 153.62,
+          "probability": 0.994
+        },
+        {
+          "word": " not",
+          "start": 153.62,
+          "end": 153.8,
+          "probability": 0.998
+        },
+        {
+          "word": " translate",
+          "start": 153.8,
+          "end": 154.24,
+          "probability": 0.999
+        },
+        {
+          "word": " languages.",
+          "start": 154.24,
+          "end": 154.76,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 155.38,
+      "end": 157.92,
+      "text": "Translation software famously turned the spirit",
+      "words": [
+        {
+          "word": " Translation",
+          "start": 155.38,
+          "end": 155.98,
+          "probability": 0.967
+        },
+        {
+          "word": " software",
+          "start": 155.98,
+          "end": 156.5,
+          "probability": 0.924
+        },
+        {
+          "word": " famously",
+          "start": 156.5,
+          "end": 157.08,
+          "probability": 0.987
+        },
+        {
+          "word": " turned",
+          "start": 157.08,
+          "end": 157.4,
+          "probability": 0.981
+        },
+        {
+          "word": " the",
+          "start": 157.4,
+          "end": 157.62,
+          "probability": 0.942
+        },
+        {
+          "word": " spirit",
+          "start": 157.62,
+          "end": 157.92,
+          "probability": 0.878
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 157.92,
+      "end": 159.98,
+      "text": "is willing into the vodka is good.",
+      "words": [
+        {
+          "word": " is",
+          "start": 157.92,
+          "end": 158.24,
+          "probability": 0.651
+        },
+        {
+          "word": " willing",
+          "start": 158.24,
+          "end": 158.5,
+          "probability": 0.986
+        },
+        {
+          "word": " into",
+          "start": 158.5,
+          "end": 158.88,
+          "probability": 0.952
+        },
+        {
+          "word": " the",
+          "start": 158.88,
+          "end": 159.02,
+          "probability": 0.846
+        },
+        {
+          "word": " vodka",
+          "start": 159.02,
+          "end": 159.4,
+          "probability": 0.588
+        },
+        {
+          "word": " is",
+          "start": 159.4,
+          "end": 159.76,
+          "probability": 0.697
+        },
+        {
+          "word": " good.",
+          "start": 159.76,
+          "end": 159.98,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 160.56,
+      "end": 162.9,
+      "text": "The software lacked real-world experience.",
+      "words": [
+        {
+          "word": " The",
+          "start": 160.56,
+          "end": 160.62,
+          "probability": 0.905
+        },
+        {
+          "word": " software",
+          "start": 160.62,
+          "end": 161.1,
+          "probability": 0.98
+        },
+        {
+          "word": " lacked",
+          "start": 161.1,
+          "end": 161.72,
+          "probability": 0.977
+        },
+        {
+          "word": " real",
+          "start": 161.72,
+          "end": 161.96,
+          "probability": 0.983
+        },
+        {
+          "word": "-world",
+          "start": 161.96,
+          "end": 162.24,
+          "probability": 0.81
+        },
+        {
+          "word": " experience.",
+          "start": 162.24,
+          "end": 162.9,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "start": 163.56,
+      "end": 165.94,
+      "text": "Why did early AI systems struggle so much",
+      "words": [
+        {
+          "word": " Why",
+          "start": 163.56,
+          "end": 163.82,
+          "probability": 0.885
+        },
+        {
+          "word": " did",
+          "start": 163.82,
+          "end": 163.94,
+          "probability": 0.995
+        },
+        {
+          "word": " early",
+          "start": 163.94,
+          "end": 164.3,
+          "probability": 0.979
+        },
+        {
+          "word": " AI",
+          "start": 164.3,
+          "end": 164.56,
+          "probability": 0.925
+        },
+        {
+          "word": " systems",
+          "start": 164.56,
+          "end": 165.0,
+          "probability": 0.986
+        },
+        {
+          "word": " struggle",
+          "start": 165.0,
+          "end": 165.46,
+          "probability": 0.995
+        },
+        {
+          "word": " so",
+          "start": 165.46,
+          "end": 165.72,
+          "probability": 0.998
+        },
+        {
+          "word": " much",
+          "start": 165.72,
+          "end": 165.94,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "start": 165.94,
+      "end": 167.52,
+      "text": "with basic human communication?",
+      "words": [
+        {
+          "word": " with",
+          "start": 165.94,
+          "end": 166.1,
+          "probability": 0.995
+        },
+        {
+          "word": " basic",
+          "start": 166.1,
+          "end": 166.4,
+          "probability": 0.996
+        },
+        {
+          "word": " human",
+          "start": 166.4,
+          "end": 166.8,
+          "probability": 0.996
+        },
+        {
+          "word": " communication?",
+          "start": 166.8,
+          "end": 167.52,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "start": 167.52,
+      "end": 169.58,
+      "text": "The government cut off the funding.",
+      "words": [
+        {
+          "word": " The",
+          "start": 167.52,
+          "end": 168.18,
+          "probability": 0.303
+        },
+        {
+          "word": " government",
+          "start": 168.18,
+          "end": 168.48,
+          "probability": 0.773
+        },
+        {
+          "word": " cut",
+          "start": 168.48,
+          "end": 168.86,
+          "probability": 0.989
+        },
+        {
+          "word": " off",
+          "start": 168.86,
+          "end": 169.04,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 169.04,
+          "end": 169.22,
+          "probability": 0.99
+        },
+        {
+          "word": " funding.",
+          "start": 169.22,
+          "end": 169.58,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "start": 170.04,
+      "end": 171.74,
+      "text": "The scientists returned to their homes.",
+      "words": [
+        {
+          "word": " The",
+          "start": 170.04,
+          "end": 170.12,
+          "probability": 0.982
+        },
+        {
+          "word": " scientists",
+          "start": 170.12,
+          "end": 170.54,
+          "probability": 0.958
+        },
+        {
+          "word": " returned",
+          "start": 170.54,
+          "end": 171.06,
+          "probability": 0.912
+        },
+        {
+          "word": " to",
+          "start": 171.06,
+          "end": 171.32,
+          "probability": 0.817
+        },
+        {
+          "word": " their",
+          "start": 171.32,
+          "end": 171.4,
+          "probability": 0.997
+        },
+        {
+          "word": " homes.",
+          "start": 171.4,
+          "end": 171.74,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "start": 172.36,
+      "end": 174.52,
+      "text": "Their overconfidence led to a sudden crash",
+      "words": [
+        {
+          "word": " Their",
+          "start": 172.36,
+          "end": 172.5,
+          "probability": 0.986
+        },
+        {
+          "word": " overconfidence",
+          "start": 172.5,
+          "end": 173.24,
+          "probability": 0.942
+        },
+        {
+          "word": " led",
+          "start": 173.24,
+          "end": 173.6,
+          "probability": 0.952
+        },
+        {
+          "word": " to",
+          "start": 173.6,
+          "end": 173.82,
+          "probability": 0.997
+        },
+        {
+          "word": " a",
+          "start": 173.82,
+          "end": 173.94,
+          "probability": 0.976
+        },
+        {
+          "word": " sudden",
+          "start": 173.94,
+          "end": 174.18,
+          "probability": 0.999
+        },
+        {
+          "word": " crash",
+          "start": 174.18,
+          "end": 174.52,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "start": 174.52,
+      "end": 176.8,
+      "text": "known as the artificial intelligence winter.",
+      "words": [
+        {
+          "word": " known",
+          "start": 174.52,
+          "end": 174.92,
+          "probability": 0.96
+        },
+        {
+          "word": " as",
+          "start": 174.92,
+          "end": 175.18,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 175.18,
+          "end": 175.32,
+          "probability": 0.96
+        },
+        {
+          "word": " artificial",
+          "start": 175.32,
+          "end": 175.72,
+          "probability": 0.355
+        },
+        {
+          "word": " intelligence",
+          "start": 175.72,
+          "end": 176.46,
+          "probability": 0.969
+        },
+        {
+          "word": " winter.",
+          "start": 176.46,
+          "end": 176.8,
+          "probability": 0.946
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "start": 177.26,
+      "end": 178.94,
+      "text": "Yet, the core idea is developed",
+      "words": [
+        {
+          "word": " Yet,",
+          "start": 177.26,
+          "end": 177.48,
+          "probability": 0.976
+        },
+        {
+          "word": " the",
+          "start": 177.82,
+          "end": 177.9,
+          "probability": 0.987
+        },
+        {
+          "word": " core",
+          "start": 177.9,
+          "end": 178.1,
+          "probability": 0.887
+        },
+        {
+          "word": " idea",
+          "start": 178.1,
+          "end": 178.38,
+          "probability": 0.43
+        },
+        {
+          "word": " is",
+          "start": 178.38,
+          "end": 178.6,
+          "probability": 0.9
+        },
+        {
+          "word": " developed",
+          "start": 178.6,
+          "end": 178.94,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "start": 178.94,
+      "end": 180.82,
+      "text": "during that summer never truly died.",
+      "words": [
+        {
+          "word": " during",
+          "start": 178.94,
+          "end": 179.32,
+          "probability": 0.983
+        },
+        {
+          "word": " that",
+          "start": 179.32,
+          "end": 179.5,
+          "probability": 0.921
+        },
+        {
+          "word": " summer",
+          "start": 179.5,
+          "end": 179.78,
+          "probability": 0.978
+        },
+        {
+          "word": " never",
+          "start": 179.78,
+          "end": 180.02,
+          "probability": 0.988
+        },
+        {
+          "word": " truly",
+          "start": 180.02,
+          "end": 180.44,
+          "probability": 0.99
+        },
+        {
+          "word": " died.",
+          "start": 180.44,
+          "end": 180.82,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "start": 181.32,
+      "end": 182.86,
+      "text": "How did a failed summer project",
+      "words": [
+        {
+          "word": " How",
+          "start": 181.32,
+          "end": 181.42,
+          "probability": 0.983
+        },
+        {
+          "word": " did",
+          "start": 181.42,
+          "end": 181.52,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 181.52,
+          "end": 181.64,
+          "probability": 0.808
+        },
+        {
+          "word": " failed",
+          "start": 181.64,
+          "end": 181.9,
+          "probability": 0.997
+        },
+        {
+          "word": " summer",
+          "start": 181.9,
+          "end": 182.24,
+          "probability": 0.963
+        },
+        {
+          "word": " project",
+          "start": 182.24,
+          "end": 182.86,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "start": 182.86,
+      "end": 184.92,
+      "text": "lay the foundation for the modern world?",
+      "words": [
+        {
+          "word": " lay",
+          "start": 182.86,
+          "end": 183.18,
+          "probability": 0.978
+        },
+        {
+          "word": " the",
+          "start": 183.18,
+          "end": 183.32,
+          "probability": 0.993
+        },
+        {
+          "word": " foundation",
+          "start": 183.32,
+          "end": 183.92,
+          "probability": 0.99
+        },
+        {
+          "word": " for",
+          "start": 183.92,
+          "end": 184.2,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 184.2,
+          "end": 184.32,
+          "probability": 0.991
+        },
+        {
+          "word": " modern",
+          "start": 184.32,
+          "end": 184.58,
+          "probability": 0.997
+        },
+        {
+          "word": " world?",
+          "start": 184.58,
+          "end": 184.92,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "start": 185.34,
+      "end": 186.98,
+      "text": "We face the same challenges today.",
+      "words": [
+        {
+          "word": " We",
+          "start": 185.34,
+          "end": 185.54,
+          "probability": 0.987
+        },
+        {
+          "word": " face",
+          "start": 185.54,
+          "end": 185.68,
+          "probability": 0.729
+        },
+        {
+          "word": " the",
+          "start": 185.68,
+          "end": 185.92,
+          "probability": 0.997
+        },
+        {
+          "word": " same",
+          "start": 185.92,
+          "end": 186.16,
+          "probability": 1.0
+        },
+        {
+          "word": " challenges",
+          "start": 186.16,
+          "end": 186.6,
+          "probability": 0.998
+        },
+        {
+          "word": " today.",
+          "start": 186.6,
+          "end": 186.98,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "start": 187.48,
+      "end": 189.26,
+      "text": "The technology is much faster,",
+      "words": [
+        {
+          "word": " The",
+          "start": 187.48,
+          "end": 187.6,
+          "probability": 0.994
+        },
+        {
+          "word": " technology",
+          "start": 187.6,
+          "end": 188.18,
+          "probability": 0.998
+        },
+        {
+          "word": " is",
+          "start": 188.18,
+          "end": 188.52,
+          "probability": 0.999
+        },
+        {
+          "word": " much",
+          "start": 188.52,
+          "end": 188.7,
+          "probability": 0.999
+        },
+        {
+          "word": " faster,",
+          "start": 188.7,
+          "end": 189.26,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "start": 189.6,
+      "end": 191.58,
+      "text": "but we are still trying to teach machines",
+      "words": [
+        {
+          "word": " but",
+          "start": 189.6,
+          "end": 189.84,
+          "probability": 0.992
+        },
+        {
+          "word": " we",
+          "start": 189.84,
+          "end": 190.0,
+          "probability": 0.998
+        },
+        {
+          "word": " are",
+          "start": 190.0,
+          "end": 190.14,
+          "probability": 0.991
+        },
+        {
+          "word": " still",
+          "start": 190.14,
+          "end": 190.36,
+          "probability": 0.995
+        },
+        {
+          "word": " trying",
+          "start": 190.36,
+          "end": 190.78,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 190.78,
+          "end": 190.94,
+          "probability": 0.999
+        },
+        {
+          "word": " teach",
+          "start": 190.94,
+          "end": 191.18,
+          "probability": 0.998
+        },
+        {
+          "word": " machines",
+          "start": 191.18,
+          "end": 191.58,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "start": 191.58,
+      "end": 193.66,
+      "text": "how to form abstract concepts.",
+      "words": [
+        {
+          "word": " how",
+          "start": 191.58,
+          "end": 191.9,
+          "probability": 0.994
+        },
+        {
+          "word": " to",
+          "start": 191.9,
+          "end": 192.04,
+          "probability": 0.999
+        },
+        {
+          "word": " form",
+          "start": 192.04,
+          "end": 192.34,
+          "probability": 0.997
+        },
+        {
+          "word": " abstract",
+          "start": 192.34,
+          "end": 192.8,
+          "probability": 0.99
+        },
+        {
+          "word": " concepts.",
+          "start": 192.8,
+          "end": 193.66,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "start": 194.14,
+      "end": 195.62,
+      "text": "The neural networks on your phone",
+      "words": [
+        {
+          "word": " The",
+          "start": 194.14,
+          "end": 194.28,
+          "probability": 0.995
+        },
+        {
+          "word": " neural",
+          "start": 194.28,
+          "end": 194.52,
+          "probability": 0.986
+        },
+        {
+          "word": " networks",
+          "start": 194.52,
+          "end": 194.88,
+          "probability": 0.993
+        },
+        {
+          "word": " on",
+          "start": 194.88,
+          "end": 195.2,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 195.2,
+          "end": 195.32,
+          "probability": 0.994
+        },
+        {
+          "word": " phone",
+          "start": 195.32,
+          "end": 195.62,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "start": 195.62,
+      "end": 196.86,
+      "text": "are descendants of their math.",
+      "words": [
+        {
+          "word": " are",
+          "start": 195.62,
+          "end": 195.76,
+          "probability": 0.984
+        },
+        {
+          "word": " descendants",
+          "start": 195.76,
+          "end": 196.18,
+          "probability": 0.986
+        },
+        {
+          "word": " of",
+          "start": 196.18,
+          "end": 196.46,
+          "probability": 0.999
+        },
+        {
+          "word": " their",
+          "start": 196.46,
+          "end": 196.62,
+          "probability": 0.996
+        },
+        {
+          "word": " math.",
+          "start": 196.62,
+          "end": 196.86,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "start": 196.86,
+      "end": 198.82,
+      "text": "Are we still making the same mistakes",
+      "words": [
+        {
+          "word": " Are",
+          "start": 196.86,
+          "end": 197.46,
+          "probability": 0.784
+        },
+        {
+          "word": " we",
+          "start": 197.46,
+          "end": 197.58,
+          "probability": 0.998
+        },
+        {
+          "word": " still",
+          "start": 197.58,
+          "end": 197.78,
+          "probability": 0.997
+        },
+        {
+          "word": " making",
+          "start": 197.78,
+          "end": 198.04,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 198.04,
+          "end": 198.24,
+          "probability": 0.992
+        },
+        {
+          "word": " same",
+          "start": 198.24,
+          "end": 198.48,
+          "probability": 0.999
+        },
+        {
+          "word": " mistakes",
+          "start": 198.48,
+          "end": 198.82,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "start": 198.82,
+      "end": 200.16,
+      "text": "they made 70 years ago?",
+      "words": [
+        {
+          "word": " they",
+          "start": 198.82,
+          "end": 199.08,
+          "probability": 0.98
+        },
+        {
+          "word": " made",
+          "start": 199.08,
+          "end": 199.26,
+          "probability": 0.995
+        },
+        {
+          "word": " 70",
+          "start": 199.26,
+          "end": 199.66,
+          "probability": 0.868
+        },
+        {
+          "word": " years",
+          "start": 199.66,
+          "end": 199.88,
+          "probability": 0.993
+        },
+        {
+          "word": " ago?",
+          "start": 199.88,
+          "end": 200.16,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "start": 200.7,
+      "end": 202.64,
+      "text": "Tonight, you will interact with the machine.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 200.7,
+          "end": 201.0,
+          "probability": 0.947
+        },
+        {
+          "word": " you",
+          "start": 201.34,
+          "end": 201.42,
+          "probability": 0.991
+        },
+        {
+          "word": " will",
+          "start": 201.42,
+          "end": 201.54,
+          "probability": 0.94
+        },
+        {
+          "word": " interact",
+          "start": 201.54,
+          "end": 201.96,
+          "probability": 0.997
+        },
+        {
+          "word": " with",
+          "start": 201.96,
+          "end": 202.24,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 202.24,
+          "end": 202.34,
+          "probability": 0.731
+        },
+        {
+          "word": " machine.",
+          "start": 202.34,
+          "end": 202.64,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "start": 203.14,
+      "end": 204.52,
+      "text": "You will not just use a tool.",
+      "words": [
+        {
+          "word": " You",
+          "start": 203.14,
+          "end": 203.32,
+          "probability": 0.993
+        },
+        {
+          "word": " will",
+          "start": 203.32,
+          "end": 203.44,
+          "probability": 0.981
+        },
+        {
+          "word": " not",
+          "start": 203.44,
+          "end": 203.62,
+          "probability": 0.996
+        },
+        {
+          "word": " just",
+          "start": 203.62,
+          "end": 203.86,
+          "probability": 0.99
+        },
+        {
+          "word": " use",
+          "start": 203.86,
+          "end": 204.1,
+          "probability": 0.997
+        },
+        {
+          "word": " a",
+          "start": 204.1,
+          "end": 204.24,
+          "probability": 0.982
+        },
+        {
+          "word": " tool.",
+          "start": 204.24,
+          "end": 204.52,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "start": 204.96,
+      "end": 207.4,
+      "text": "You will participate in a casual summer project",
+      "words": [
+        {
+          "word": " You",
+          "start": 204.96,
+          "end": 205.12,
+          "probability": 0.993
+        },
+        {
+          "word": " will",
+          "start": 205.12,
+          "end": 205.22,
+          "probability": 0.982
+        },
+        {
+          "word": " participate",
+          "start": 205.22,
+          "end": 205.86,
+          "probability": 0.992
+        },
+        {
+          "word": " in",
+          "start": 205.86,
+          "end": 206.18,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 206.18,
+          "end": 206.28,
+          "probability": 0.979
+        },
+        {
+          "word": " casual",
+          "start": 206.28,
+          "end": 206.62,
+          "probability": 0.977
+        },
+        {
+          "word": " summer",
+          "start": 206.62,
+          "end": 206.96,
+          "probability": 0.971
+        },
+        {
+          "word": " project",
+          "start": 206.96,
+          "end": 207.4,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "start": 207.4,
+      "end": 208.38,
+      "text": "that never ended.",
+      "words": [
+        {
+          "word": " that",
+          "start": 207.4,
+          "end": 207.72,
+          "probability": 0.99
+        },
+        {
+          "word": " never",
+          "start": 207.72,
+          "end": 208.04,
+          "probability": 0.993
+        },
+        {
+          "word": " ended.",
+          "start": 208.04,
+          "end": 208.38,
+          "probability": 0.992
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Right",
+      "start": 0.0,
+      "end": 0.12,
+      "probability": 0.59
+    },
+    {
+      "word": " now,",
+      "start": 0.12,
+      "end": 0.4,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 0.8,
+      "end": 0.86,
+      "probability": 0.994
+    },
+    {
+      "word": " live",
+      "start": 0.86,
+      "end": 1.04,
+      "probability": 0.998
+    },
+    {
+      "word": " in",
+      "start": 1.04,
+      "end": 1.14,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 1.14,
+      "end": 1.22,
+      "probability": 0.998
+    },
+    {
+      "word": " world",
+      "start": 1.22,
+      "end": 1.38,
+      "probability": 0.966
+    },
+    {
+      "word": " shaped",
+      "start": 1.38,
+      "end": 1.68,
+      "probability": 0.818
+    },
+    {
+      "word": " by",
+      "start": 1.68,
+      "end": 1.94,
+      "probability": 0.991
+    },
+    {
+      "word": " machines.",
+      "start": 1.94,
+      "end": 2.5,
+      "probability": 0.998
+    },
+    {
+      "word": " They",
+      "start": 3.02,
+      "end": 3.14,
+      "probability": 0.965
+    },
+    {
+      "word": " ride",
+      "start": 3.14,
+      "end": 3.34,
+      "probability": 0.946
+    },
+    {
+      "word": " code,",
+      "start": 3.34,
+      "end": 3.8,
+      "probability": 0.977
+    },
+    {
+      "word": " diagnose",
+      "start": 4.16,
+      "end": 4.48,
+      "probability": 0.977
+    },
+    {
+      "word": " diseases,",
+      "start": 4.48,
+      "end": 5.16,
+      "probability": 0.994
+    },
+    {
+      "word": " and",
+      "start": 5.48,
+      "end": 5.56,
+      "probability": 0.993
+    },
+    {
+      "word": " drive",
+      "start": 5.56,
+      "end": 5.82,
+      "probability": 0.998
+    },
+    {
+      "word": " cars.",
+      "start": 5.82,
+      "end": 6.34,
+      "probability": 0.996
+    },
+    {
+      "word": " It",
+      "start": 6.82,
+      "end": 7.04,
+      "probability": 0.993
+    },
+    {
+      "word": " feels",
+      "start": 7.04,
+      "end": 7.28,
+      "probability": 0.999
+    },
+    {
+      "word": " like",
+      "start": 7.28,
+      "end": 7.56,
+      "probability": 0.998
+    },
+    {
+      "word": " an",
+      "start": 7.56,
+      "end": 7.72,
+      "probability": 0.986
+    },
+    {
+      "word": " unstoppable",
+      "start": 7.72,
+      "end": 8.24,
+      "probability": 0.988
+    },
+    {
+      "word": " force",
+      "start": 8.24,
+      "end": 8.68,
+      "probability": 0.997
+    },
+    {
+      "word": " that",
+      "start": 8.68,
+      "end": 8.94,
+      "probability": 0.992
+    },
+    {
+      "word": " appeared",
+      "start": 8.94,
+      "end": 9.22,
+      "probability": 0.996
+    },
+    {
+      "word": " out",
+      "start": 9.22,
+      "end": 9.46,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 9.46,
+      "end": 9.58,
+      "probability": 0.997
+    },
+    {
+      "word": " nowhere.",
+      "start": 9.58,
+      "end": 9.9,
+      "probability": 0.997
+    },
+    {
+      "word": " But",
+      "start": 10.42,
+      "end": 10.54,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 10.54,
+      "end": 10.7,
+      "probability": 0.983
+    },
+    {
+      "word": " real",
+      "start": 10.7,
+      "end": 10.94,
+      "probability": 0.998
+    },
+    {
+      "word": " answer",
+      "start": 10.94,
+      "end": 11.36,
+      "probability": 0.999
+    },
+    {
+      "word": " is",
+      "start": 11.36,
+      "end": 11.62,
+      "probability": 0.993
+    },
+    {
+      "word": " far",
+      "start": 11.62,
+      "end": 11.88,
+      "probability": 0.926
+    },
+    {
+      "word": " stranger.",
+      "start": 11.88,
+      "end": 12.44,
+      "probability": 0.971
+    },
+    {
+      "word": " Why",
+      "start": 13.04,
+      "end": 13.18,
+      "probability": 0.962
+    },
+    {
+      "word": " did",
+      "start": 13.18,
+      "end": 13.3,
+      "probability": 0.993
+    },
+    {
+      "word": " this",
+      "start": 13.3,
+      "end": 13.48,
+      "probability": 0.992
+    },
+    {
+      "word": " world",
+      "start": 13.48,
+      "end": 13.72,
+      "probability": 0.989
+    },
+    {
+      "word": "-altering",
+      "start": 13.72,
+      "end": 14.14,
+      "probability": 0.766
+    },
+    {
+      "word": " technology",
+      "start": 14.14,
+      "end": 14.8,
+      "probability": 0.824
+    },
+    {
+      "word": " start",
+      "start": 14.8,
+      "end": 15.26,
+      "probability": 0.994
+    },
+    {
+      "word": " as",
+      "start": 15.26,
+      "end": 15.6,
+      "probability": 0.981
+    },
+    {
+      "word": " a",
+      "start": 15.6,
+      "end": 15.72,
+      "probability": 0.998
+    },
+    {
+      "word": " casual",
+      "start": 15.72,
+      "end": 16.14,
+      "probability": 0.943
+    },
+    {
+      "word": " summer",
+      "start": 16.14,
+      "end": 16.46,
+      "probability": 0.991
+    },
+    {
+      "word": " project?",
+      "start": 16.46,
+      "end": 16.94,
+      "probability": 0.998
+    },
+    {
+      "word": " The",
+      "start": 17.5,
+      "end": 17.64,
+      "probability": 0.986
+    },
+    {
+      "word": " year",
+      "start": 17.64,
+      "end": 17.82,
+      "probability": 0.999
+    },
+    {
+      "word": " was",
+      "start": 17.82,
+      "end": 18.04,
+      "probability": 0.998
+    },
+    {
+      "word": " 1956.",
+      "start": 18.04,
+      "end": 19.0,
+      "probability": 0.986
+    },
+    {
+      "word": " Ten",
+      "start": 19.84,
+      "end": 19.98,
+      "probability": 0.728
+    },
+    {
+      "word": " young",
+      "start": 19.98,
+      "end": 20.14,
+      "probability": 0.852
+    },
+    {
+      "word": " scientists",
+      "start": 20.14,
+      "end": 20.76,
+      "probability": 0.996
+    },
+    {
+      "word": " gathered",
+      "start": 20.76,
+      "end": 21.22,
+      "probability": 0.999
+    },
+    {
+      "word": " on",
+      "start": 21.22,
+      "end": 21.44,
+      "probability": 0.997
+    },
+    {
+      "word": " a",
+      "start": 21.44,
+      "end": 21.5,
+      "probability": 0.996
+    },
+    {
+      "word": " quiet",
+      "start": 21.5,
+      "end": 21.78,
+      "probability": 0.906
+    },
+    {
+      "word": " campus",
+      "start": 21.78,
+      "end": 22.2,
+      "probability": 0.998
+    },
+    {
+      "word": " in",
+      "start": 22.2,
+      "end": 22.46,
+      "probability": 0.929
+    },
+    {
+      "word": " New",
+      "start": 22.46,
+      "end": 22.6,
+      "probability": 0.984
+    },
+    {
+      "word": " Hampshire.",
+      "start": 22.6,
+      "end": 22.98,
+      "probability": 0.999
+    },
+    {
+      "word": " They",
+      "start": 23.48,
+      "end": 23.58,
+      "probability": 0.955
+    },
+    {
+      "word": " did",
+      "start": 23.58,
+      "end": 23.7,
+      "probability": 0.993
+    },
+    {
+      "word": " not",
+      "start": 23.7,
+      "end": 23.86,
+      "probability": 1.0
+    },
+    {
+      "word": " have",
+      "start": 23.86,
+      "end": 24.02,
+      "probability": 0.999
+    },
+    {
+      "word": " supercomputers,",
+      "start": 24.02,
+      "end": 24.98,
+      "probability": 0.928
+    },
+    {
+      "word": " internet",
+      "start": 25.2,
+      "end": 25.42,
+      "probability": 0.711
+    },
+    {
+      "word": " databases,",
+      "start": 25.42,
+      "end": 26.02,
+      "probability": 0.995
+    },
+    {
+      "word": " or",
+      "start": 26.52,
+      "end": 26.64,
+      "probability": 0.998
+    },
+    {
+      "word": " massive",
+      "start": 26.64,
+      "end": 27.02,
+      "probability": 0.994
+    },
+    {
+      "word": " funding.",
+      "start": 27.02,
+      "end": 27.36,
+      "probability": 0.997
+    },
+    {
+      "word": " They",
+      "start": 27.36,
+      "end": 27.98,
+      "probability": 0.456
+    },
+    {
+      "word": " had",
+      "start": 27.98,
+      "end": 28.12,
+      "probability": 0.959
+    },
+    {
+      "word": " only",
+      "start": 28.12,
+      "end": 28.44,
+      "probability": 0.99
+    },
+    {
+      "word": " a",
+      "start": 28.44,
+      "end": 28.64,
+      "probability": 0.785
+    },
+    {
+      "word": " bold,",
+      "start": 28.64,
+      "end": 28.9,
+      "probability": 0.993
+    },
+    {
+      "word": " almost",
+      "start": 29.26,
+      "end": 29.54,
+      "probability": 0.95
+    },
+    {
+      "word": " ridiculous",
+      "start": 29.54,
+      "end": 29.96,
+      "probability": 0.976
+    },
+    {
+      "word": " belief.",
+      "start": 29.96,
+      "end": 30.56,
+      "probability": 0.946
+    },
+    {
+      "word": " Do",
+      "start": 30.92,
+      "end": 31.1,
+      "probability": 0.812
+    },
+    {
+      "word": " you",
+      "start": 31.1,
+      "end": 31.2,
+      "probability": 0.997
+    },
+    {
+      "word": " want",
+      "start": 31.2,
+      "end": 31.34,
+      "probability": 0.958
+    },
+    {
+      "word": " to",
+      "start": 31.34,
+      "end": 31.48,
+      "probability": 0.848
+    },
+    {
+      "word": " see",
+      "start": 31.48,
+      "end": 31.6,
+      "probability": 0.997
+    },
+    {
+      "word": " how",
+      "start": 31.6,
+      "end": 31.78,
+      "probability": 0.985
+    },
+    {
+      "word": " their",
+      "start": 31.78,
+      "end": 31.94,
+      "probability": 0.961
+    },
+    {
+      "word": " overconfidence",
+      "start": 31.94,
+      "end": 32.66,
+      "probability": 0.866
+    },
+    {
+      "word": " shaped",
+      "start": 32.66,
+      "end": 32.98,
+      "probability": 0.979
+    },
+    {
+      "word": " your",
+      "start": 32.98,
+      "end": 33.16,
+      "probability": 0.981
+    },
+    {
+      "word": " modern",
+      "start": 33.16,
+      "end": 33.44,
+      "probability": 0.987
+    },
+    {
+      "word": " life?",
+      "start": 33.44,
+      "end": 33.84,
+      "probability": 0.999
+    },
+    {
+      "word": " Dr.",
+      "start": 34.28,
+      "end": 34.54,
+      "probability": 0.877
+    },
+    {
+      "word": " John",
+      "start": 34.8,
+      "end": 34.9,
+      "probability": 0.93
+    },
+    {
+      "word": " McCarthy",
+      "start": 34.9,
+      "end": 35.32,
+      "probability": 0.885
+    },
+    {
+      "word": " was",
+      "start": 35.32,
+      "end": 35.6,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 35.6,
+      "end": 35.7,
+      "probability": 0.995
+    },
+    {
+      "word": " young",
+      "start": 35.7,
+      "end": 35.86,
+      "probability": 0.991
+    },
+    {
+      "word": " mathematics",
+      "start": 35.86,
+      "end": 36.4,
+      "probability": 0.965
+    },
+    {
+      "word": " professor.",
+      "start": 36.4,
+      "end": 37.04,
+      "probability": 0.989
+    },
+    {
+      "word": " He",
+      "start": 37.5,
+      "end": 37.7,
+      "probability": 0.994
+    },
+    {
+      "word": " worked",
+      "start": 37.7,
+      "end": 37.94,
+      "probability": 0.999
+    },
+    {
+      "word": " at",
+      "start": 37.94,
+      "end": 38.18,
+      "probability": 0.995
+    },
+    {
+      "word": " Dartmouth",
+      "start": 38.18,
+      "end": 38.48,
+      "probability": 0.998
+    },
+    {
+      "word": " College.",
+      "start": 38.48,
+      "end": 38.94,
+      "probability": 0.983
+    },
+    {
+      "word": " He",
+      "start": 39.48,
+      "end": 39.66,
+      "probability": 0.993
+    },
+    {
+      "word": " wanted",
+      "start": 39.66,
+      "end": 39.96,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 39.96,
+      "end": 40.1,
+      "probability": 0.999
+    },
+    {
+      "word": " bring",
+      "start": 40.1,
+      "end": 40.28,
+      "probability": 0.995
+    },
+    {
+      "word": " together",
+      "start": 40.28,
+      "end": 40.68,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 40.68,
+      "end": 40.86,
+      "probability": 0.983
+    },
+    {
+      "word": " brightest",
+      "start": 40.86,
+      "end": 41.14,
+      "probability": 0.995
+    },
+    {
+      "word": " minds",
+      "start": 41.14,
+      "end": 41.44,
+      "probability": 0.99
+    },
+    {
+      "word": " in",
+      "start": 41.44,
+      "end": 41.78,
+      "probability": 0.998
+    },
+    {
+      "word": " computing,",
+      "start": 41.78,
+      "end": 42.26,
+      "probability": 0.996
+    },
+    {
+      "word": " mathematics,",
+      "start": 42.74,
+      "end": 43.22,
+      "probability": 0.993
+    },
+    {
+      "word": " and",
+      "start": 43.7,
+      "end": 43.78,
+      "probability": 0.996
+    },
+    {
+      "word": " psychology.",
+      "start": 43.78,
+      "end": 44.36,
+      "probability": 0.996
+    },
+    {
+      "word": " He",
+      "start": 44.88,
+      "end": 45.12,
+      "probability": 0.988
+    },
+    {
+      "word": " wrote",
+      "start": 45.12,
+      "end": 45.32,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 45.32,
+      "end": 45.56,
+      "probability": 0.985
+    },
+    {
+      "word": " proposal",
+      "start": 45.56,
+      "end": 45.92,
+      "probability": 0.994
+    },
+    {
+      "word": " asking",
+      "start": 45.92,
+      "end": 46.54,
+      "probability": 0.979
+    },
+    {
+      "word": " for",
+      "start": 46.54,
+      "end": 46.78,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 46.78,
+      "end": 46.9,
+      "probability": 0.992
+    },
+    {
+      "word": " small",
+      "start": 46.9,
+      "end": 47.2,
+      "probability": 0.987
+    },
+    {
+      "word": " grant.",
+      "start": 47.2,
+      "end": 47.52,
+      "probability": 0.991
+    },
+    {
+      "word": " What",
+      "start": 48.08,
+      "end": 48.2,
+      "probability": 0.991
+    },
+    {
+      "word": " name",
+      "start": 48.2,
+      "end": 48.42,
+      "probability": 0.989
+    },
+    {
+      "word": " did",
+      "start": 48.42,
+      "end": 48.64,
+      "probability": 0.999
+    },
+    {
+      "word": " he",
+      "start": 48.64,
+      "end": 48.8,
+      "probability": 0.998
+    },
+    {
+      "word": " choose",
+      "start": 48.8,
+      "end": 49.08,
+      "probability": 0.991
+    },
+    {
+      "word": " to",
+      "start": 49.08,
+      "end": 49.22,
+      "probability": 0.998
+    },
+    {
+      "word": " capture",
+      "start": 49.22,
+      "end": 49.6,
+      "probability": 0.998
+    },
+    {
+      "word": " their",
+      "start": 49.6,
+      "end": 49.82,
+      "probability": 0.979
+    },
+    {
+      "word": " wild",
+      "start": 49.82,
+      "end": 50.18,
+      "probability": 0.961
+    },
+    {
+      "word": " ambition?",
+      "start": 50.18,
+      "end": 50.54,
+      "probability": 0.998
+    },
+    {
+      "word": " He",
+      "start": 51.18,
+      "end": 51.32,
+      "probability": 0.983
+    },
+    {
+      "word": " wrote",
+      "start": 51.32,
+      "end": 51.5,
+      "probability": 0.999
+    },
+    {
+      "word": " two",
+      "start": 51.5,
+      "end": 51.82,
+      "probability": 0.984
+    },
+    {
+      "word": " words",
+      "start": 51.82,
+      "end": 52.16,
+      "probability": 0.997
+    },
+    {
+      "word": " on",
+      "start": 52.16,
+      "end": 52.42,
+      "probability": 0.996
+    },
+    {
+      "word": " the",
+      "start": 52.42,
+      "end": 52.54,
+      "probability": 0.995
+    },
+    {
+      "word": " grant",
+      "start": 52.54,
+      "end": 52.82,
+      "probability": 0.946
+    },
+    {
+      "word": " application.",
+      "start": 52.82,
+      "end": 53.64,
+      "probability": 0.993
+    },
+    {
+      "word": " Those",
+      "start": 54.2,
+      "end": 54.36,
+      "probability": 0.78
+    },
+    {
+      "word": " words",
+      "start": 54.36,
+      "end": 54.72,
+      "probability": 0.996
+    },
+    {
+      "word": " were",
+      "start": 54.72,
+      "end": 54.94,
+      "probability": 0.997
+    },
+    {
+      "word": " artificial",
+      "start": 54.94,
+      "end": 55.44,
+      "probability": 0.97
+    },
+    {
+      "word": " intelligence.",
+      "start": 55.44,
+      "end": 56.08,
+      "probability": 0.999
+    },
+    {
+      "word": " It",
+      "start": 56.56,
+      "end": 56.84,
+      "probability": 0.213
+    },
+    {
+      "word": " was",
+      "start": 56.84,
+      "end": 56.94,
+      "probability": 0.988
+    },
+    {
+      "word": " a",
+      "start": 56.94,
+      "end": 57.06,
+      "probability": 0.977
+    },
+    {
+      "word": " clever",
+      "start": 57.06,
+      "end": 57.32,
+      "probability": 0.997
+    },
+    {
+      "word": " marketing",
+      "start": 57.32,
+      "end": 57.74,
+      "probability": 0.991
+    },
+    {
+      "word": " trick",
+      "start": 57.74,
+      "end": 58.1,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 58.1,
+      "end": 58.28,
+      "probability": 0.996
+    },
+    {
+      "word": " distinguish",
+      "start": 58.28,
+      "end": 58.68,
+      "probability": 0.991
+    },
+    {
+      "word": " their",
+      "start": 58.68,
+      "end": 58.98,
+      "probability": 0.992
+    },
+    {
+      "word": " work",
+      "start": 58.98,
+      "end": 59.2,
+      "probability": 0.993
+    },
+    {
+      "word": " from",
+      "start": 59.2,
+      "end": 59.48,
+      "probability": 0.994
+    },
+    {
+      "word": " cybernetics.",
+      "start": 59.48,
+      "end": 60.36,
+      "probability": 0.934
+    },
+    {
+      "word": " Many",
+      "start": 60.76,
+      "end": 61.0,
+      "probability": 0.984
+    },
+    {
+      "word": " of",
+      "start": 61.0,
+      "end": 61.16,
+      "probability": 0.996
+    },
+    {
+      "word": " his",
+      "start": 61.16,
+      "end": 61.3,
+      "probability": 0.991
+    },
+    {
+      "word": " colleagues",
+      "start": 61.3,
+      "end": 61.58,
+      "probability": 0.141
+    },
+    {
+      "word": " hated",
+      "start": 61.58,
+      "end": 62.0,
+      "probability": 0.988
+    },
+    {
+      "word": " the",
+      "start": 62.0,
+      "end": 62.18,
+      "probability": 0.971
+    },
+    {
+      "word": " term.",
+      "start": 62.18,
+      "end": 62.46,
+      "probability": 0.995
+    },
+    {
+      "word": " Why",
+      "start": 63.0,
+      "end": 63.12,
+      "probability": 0.85
+    },
+    {
+      "word": " did",
+      "start": 63.12,
+      "end": 63.28,
+      "probability": 0.936
+    },
+    {
+      "word": " his",
+      "start": 63.28,
+      "end": 63.5,
+      "probability": 0.913
+    },
+    {
+      "word": " simple",
+      "start": 63.5,
+      "end": 63.82,
+      "probability": 0.988
+    },
+    {
+      "word": " marketing",
+      "start": 63.82,
+      "end": 64.22,
+      "probability": 0.99
+    },
+    {
+      "word": " phrase",
+      "start": 64.22,
+      "end": 64.62,
+      "probability": 0.985
+    },
+    {
+      "word": " capture",
+      "start": 64.62,
+      "end": 65.1,
+      "probability": 0.965
+    },
+    {
+      "word": " the",
+      "start": 65.1,
+      "end": 65.32,
+      "probability": 0.993
+    },
+    {
+      "word": " imagination",
+      "start": 65.32,
+      "end": 65.94,
+      "probability": 0.951
+    },
+    {
+      "word": " of",
+      "start": 65.94,
+      "end": 66.46,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 66.46,
+      "end": 66.6,
+      "probability": 0.991
+    },
+    {
+      "word": " world?",
+      "start": 66.6,
+      "end": 66.96,
+      "probability": 0.995
+    },
+    {
+      "word": " Dr.",
+      "start": 67.44,
+      "end": 67.66,
+      "probability": 0.82
+    },
+    {
+      "word": " Marvin",
+      "start": 67.78,
+      "end": 68.04,
+      "probability": 0.917
+    },
+    {
+      "word": " Minsky",
+      "start": 68.04,
+      "end": 68.4,
+      "probability": 0.799
+    },
+    {
+      "word": " stood",
+      "start": 68.4,
+      "end": 68.72,
+      "probability": 0.899
+    },
+    {
+      "word": " beside",
+      "start": 68.72,
+      "end": 69.08,
+      "probability": 0.998
+    },
+    {
+      "word": " him.",
+      "start": 69.08,
+      "end": 69.4,
+      "probability": 0.998
+    },
+    {
+      "word": " He",
+      "start": 69.84,
+      "end": 69.96,
+      "probability": 0.992
+    },
+    {
+      "word": " was",
+      "start": 69.96,
+      "end": 70.1,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 70.1,
+      "end": 70.2,
+      "probability": 0.996
+    },
+    {
+      "word": " young",
+      "start": 70.2,
+      "end": 70.4,
+      "probability": 0.994
+    },
+    {
+      "word": " researcher",
+      "start": 70.4,
+      "end": 70.9,
+      "probability": 0.997
+    },
+    {
+      "word": " obsessed",
+      "start": 70.9,
+      "end": 71.38,
+      "probability": 0.988
+    },
+    {
+      "word": " with",
+      "start": 71.38,
+      "end": 71.8,
+      "probability": 0.999
+    },
+    {
+      "word": " neural",
+      "start": 71.8,
+      "end": 72.0,
+      "probability": 0.99
+    },
+    {
+      "word": " networks.",
+      "start": 72.0,
+      "end": 72.58,
+      "probability": 0.999
+    },
+    {
+      "word": " They",
+      "start": 72.96,
+      "end": 73.22,
+      "probability": 0.994
+    },
+    {
+      "word": " were",
+      "start": 73.22,
+      "end": 73.32,
+      "probability": 0.999
+    },
+    {
+      "word": " joined",
+      "start": 73.32,
+      "end": 73.64,
+      "probability": 0.995
+    },
+    {
+      "word": " by",
+      "start": 73.64,
+      "end": 73.84,
+      "probability": 0.999
+    },
+    {
+      "word": " Dr.",
+      "start": 73.84,
+      "end": 74.2,
+      "probability": 0.955
+    },
+    {
+      "word": " Claude",
+      "start": 74.42,
+      "end": 74.7,
+      "probability": 0.916
+    },
+    {
+      "word": " Shannon,",
+      "start": 74.7,
+      "end": 74.98,
+      "probability": 0.955
+    },
+    {
+      "word": " the",
+      "start": 75.32,
+      "end": 75.4,
+      "probability": 0.982
+    },
+    {
+      "word": " legendary",
+      "start": 75.4,
+      "end": 75.84,
+      "probability": 0.988
+    },
+    {
+      "word": " founder",
+      "start": 75.84,
+      "end": 76.24,
+      "probability": 0.973
+    },
+    {
+      "word": " of",
+      "start": 76.24,
+      "end": 76.48,
+      "probability": 0.998
+    },
+    {
+      "word": " Information",
+      "start": 76.48,
+      "end": 76.92,
+      "probability": 0.423
+    },
+    {
+      "word": " Theory.",
+      "start": 76.92,
+      "end": 77.32,
+      "probability": 0.983
+    },
+    {
+      "word": " They",
+      "start": 77.74,
+      "end": 77.94,
+      "probability": 0.995
+    },
+    {
+      "word": " believed",
+      "start": 77.94,
+      "end": 78.18,
+      "probability": 0.734
+    },
+    {
+      "word": " they",
+      "start": 78.18,
+      "end": 78.42,
+      "probability": 0.992
+    },
+    {
+      "word": " could",
+      "start": 78.42,
+      "end": 78.58,
+      "probability": 0.996
+    },
+    {
+      "word": " solve",
+      "start": 78.58,
+      "end": 78.86,
+      "probability": 0.982
+    },
+    {
+      "word": " the",
+      "start": 78.86,
+      "end": 79.04,
+      "probability": 0.997
+    },
+    {
+      "word": " mind",
+      "start": 79.04,
+      "end": 79.32,
+      "probability": 0.994
+    },
+    {
+      "word": " in",
+      "start": 79.32,
+      "end": 79.48,
+      "probability": 0.995
+    },
+    {
+      "word": " just",
+      "start": 79.48,
+      "end": 79.64,
+      "probability": 0.997
+    },
+    {
+      "word": " two",
+      "start": 79.64,
+      "end": 79.96,
+      "probability": 0.929
+    },
+    {
+      "word": " months.",
+      "start": 79.96,
+      "end": 80.18,
+      "probability": 0.998
+    },
+    {
+      "word": " Why",
+      "start": 80.74,
+      "end": 80.96,
+      "probability": 0.987
+    },
+    {
+      "word": " were",
+      "start": 80.96,
+      "end": 81.08,
+      "probability": 0.961
+    },
+    {
+      "word": " these",
+      "start": 81.08,
+      "end": 81.28,
+      "probability": 0.989
+    },
+    {
+      "word": " giants",
+      "start": 81.28,
+      "end": 81.54,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 81.54,
+      "end": 81.78,
+      "probability": 0.997
+    },
+    {
+      "word": " science",
+      "start": 81.78,
+      "end": 82.14,
+      "probability": 0.999
+    },
+    {
+      "word": " so",
+      "start": 82.14,
+      "end": 82.42,
+      "probability": 0.999
+    },
+    {
+      "word": " incredibly",
+      "start": 82.42,
+      "end": 82.92,
+      "probability": 0.992
+    },
+    {
+      "word": " naive?",
+      "start": 82.92,
+      "end": 83.22,
+      "probability": 0.991
+    },
+    {
+      "word": " They",
+      "start": 83.22,
+      "end": 83.86,
+      "probability": 0.695
+    },
+    {
+      "word": " had",
+      "start": 83.86,
+      "end": 84.0,
+      "probability": 0.992
+    },
+    {
+      "word": " just",
+      "start": 84.0,
+      "end": 84.18,
+      "probability": 0.997
+    },
+    {
+      "word": " witnessed",
+      "start": 84.18,
+      "end": 84.54,
+      "probability": 0.991
+    },
+    {
+      "word": " the",
+      "start": 84.54,
+      "end": 84.8,
+      "probability": 0.985
+    },
+    {
+      "word": " rapid",
+      "start": 84.8,
+      "end": 85.0,
+      "probability": 0.999
+    },
+    {
+      "word": " rise",
+      "start": 85.0,
+      "end": 85.28,
+      "probability": 0.999
+    },
+    {
+      "word": " of",
+      "start": 85.28,
+      "end": 85.52,
+      "probability": 0.996
+    },
+    {
+      "word": " digital",
+      "start": 85.52,
+      "end": 85.82,
+      "probability": 0.993
+    },
+    {
+      "word": " computers.",
+      "start": 85.82,
+      "end": 86.54,
+      "probability": 0.998
+    },
+    {
+      "word": " In",
+      "start": 86.92,
+      "end": 87.14,
+      "probability": 0.974
+    },
+    {
+      "word": " less",
+      "start": 87.14,
+      "end": 87.34,
+      "probability": 0.999
+    },
+    {
+      "word": " than",
+      "start": 87.34,
+      "end": 87.56,
+      "probability": 0.997
+    },
+    {
+      "word": " a",
+      "start": 87.56,
+      "end": 87.64,
+      "probability": 0.998
+    },
+    {
+      "word": " decade,",
+      "start": 87.64,
+      "end": 88.06,
+      "probability": 1.0
+    },
+    {
+      "word": " machines",
+      "start": 88.38,
+      "end": 88.54,
+      "probability": 0.99
+    },
+    {
+      "word": " had",
+      "start": 88.54,
+      "end": 88.92,
+      "probability": 0.997
+    },
+    {
+      "word": " gone",
+      "start": 88.92,
+      "end": 89.14,
+      "probability": 0.995
+    },
+    {
+      "word": " from",
+      "start": 89.14,
+      "end": 89.4,
+      "probability": 0.997
+    },
+    {
+      "word": " basic",
+      "start": 89.4,
+      "end": 89.76,
+      "probability": 0.997
+    },
+    {
+      "word": " calculators",
+      "start": 89.76,
+      "end": 90.46,
+      "probability": 0.995
+    },
+    {
+      "word": " to",
+      "start": 90.46,
+      "end": 90.64,
+      "probability": 0.997
+    },
+    {
+      "word": " complex",
+      "start": 90.64,
+      "end": 91.04,
+      "probability": 0.998
+    },
+    {
+      "word": " systems.",
+      "start": 91.04,
+      "end": 91.68,
+      "probability": 0.997
+    },
+    {
+      "word": " The",
+      "start": 92.32,
+      "end": 92.42,
+      "probability": 0.994
+    },
+    {
+      "word": " scientists",
+      "start": 92.42,
+      "end": 92.9,
+      "probability": 0.99
+    },
+    {
+      "word": " made",
+      "start": 92.9,
+      "end": 93.3,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 93.3,
+      "end": 93.4,
+      "probability": 0.999
+    },
+    {
+      "word": " critical",
+      "start": 93.4,
+      "end": 93.7,
+      "probability": 0.997
+    },
+    {
+      "word": " mistake.",
+      "start": 93.7,
+      "end": 94.14,
+      "probability": 0.999
+    },
+    {
+      "word": " Did",
+      "start": 94.66,
+      "end": 94.74,
+      "probability": 0.982
+    },
+    {
+      "word": " they",
+      "start": 94.74,
+      "end": 94.88,
+      "probability": 0.999
+    },
+    {
+      "word": " assume",
+      "start": 94.88,
+      "end": 95.24,
+      "probability": 0.996
+    },
+    {
+      "word": " that",
+      "start": 95.24,
+      "end": 95.42,
+      "probability": 0.99
+    },
+    {
+      "word": " logical",
+      "start": 95.42,
+      "end": 95.82,
+      "probability": 0.982
+    },
+    {
+      "word": " reasoning",
+      "start": 95.82,
+      "end": 96.34,
+      "probability": 0.997
+    },
+    {
+      "word": " was",
+      "start": 96.34,
+      "end": 96.62,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 96.62,
+      "end": 96.78,
+      "probability": 0.998
+    },
+    {
+      "word": " hardest",
+      "start": 96.78,
+      "end": 97.1,
+      "probability": 0.991
+    },
+    {
+      "word": " part",
+      "start": 97.1,
+      "end": 97.38,
+      "probability": 0.999
+    },
+    {
+      "word": " of",
+      "start": 97.38,
+      "end": 97.56,
+      "probability": 0.997
+    },
+    {
+      "word": " intelligence?",
+      "start": 97.56,
+      "end": 98.04,
+      "probability": 0.996
+    },
+    {
+      "word": " Human",
+      "start": 98.74,
+      "end": 98.94,
+      "probability": 0.947
+    },
+    {
+      "word": " vision",
+      "start": 98.94,
+      "end": 99.32,
+      "probability": 0.984
+    },
+    {
+      "word": " is",
+      "start": 99.32,
+      "end": 99.56,
+      "probability": 0.998
+    },
+    {
+      "word": " effortless",
+      "start": 99.56,
+      "end": 99.9,
+      "probability": 0.957
+    },
+    {
+      "word": " for",
+      "start": 99.9,
+      "end": 100.16,
+      "probability": 0.999
+    },
+    {
+      "word": " us.",
+      "start": 100.16,
+      "end": 100.5,
+      "probability": 1.0
+    },
+    {
+      "word": " Walking",
+      "start": 101.0,
+      "end": 101.28,
+      "probability": 0.957
+    },
+    {
+      "word": " is",
+      "start": 101.28,
+      "end": 101.52,
+      "probability": 0.997
+    },
+    {
+      "word": " a",
+      "start": 101.52,
+      "end": 101.62,
+      "probability": 0.999
+    },
+    {
+      "word": " simple",
+      "start": 101.62,
+      "end": 101.94,
+      "probability": 0.997
+    },
+    {
+      "word": " task.",
+      "start": 101.94,
+      "end": 102.26,
+      "probability": 0.957
+    },
+    {
+      "word": " We",
+      "start": 102.92,
+      "end": 103.02,
+      "probability": 0.996
+    },
+    {
+      "word": " spent",
+      "start": 103.02,
+      "end": 103.32,
+      "probability": 0.98
+    },
+    {
+      "word": " millions",
+      "start": 103.32,
+      "end": 103.64,
+      "probability": 0.997
+    },
+    {
+      "word": " of",
+      "start": 103.64,
+      "end": 103.9,
+      "probability": 0.999
+    },
+    {
+      "word": " years",
+      "start": 103.9,
+      "end": 104.08,
+      "probability": 0.999
+    },
+    {
+      "word": " evolving",
+      "start": 104.08,
+      "end": 104.5,
+      "probability": 0.985
+    },
+    {
+      "word": " to",
+      "start": 104.5,
+      "end": 104.74,
+      "probability": 0.991
+    },
+    {
+      "word": " see,",
+      "start": 104.74,
+      "end": 104.96,
+      "probability": 0.994
+    },
+    {
+      "word": " balance,",
+      "start": 105.32,
+      "end": 105.62,
+      "probability": 0.993
+    },
+    {
+      "word": " and",
+      "start": 105.96,
+      "end": 105.98,
+      "probability": 0.997
+    },
+    {
+      "word": " move,",
+      "start": 105.98,
+      "end": 106.28,
+      "probability": 0.997
+    },
+    {
+      "word": " but",
+      "start": 106.6,
+      "end": 106.72,
+      "probability": 0.992
+    },
+    {
+      "word": " only",
+      "start": 106.72,
+      "end": 107.06,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 107.06,
+      "end": 107.2,
+      "probability": 0.996
+    },
+    {
+      "word": " few",
+      "start": 107.2,
+      "end": 107.38,
+      "probability": 0.995
+    },
+    {
+      "word": " thousand",
+      "start": 107.38,
+      "end": 107.84,
+      "probability": 0.98
+    },
+    {
+      "word": " years",
+      "start": 107.84,
+      "end": 108.08,
+      "probability": 0.993
+    },
+    {
+      "word": " learning",
+      "start": 108.08,
+      "end": 108.44,
+      "probability": 0.935
+    },
+    {
+      "word": " formal",
+      "start": 108.44,
+      "end": 108.82,
+      "probability": 0.951
+    },
+    {
+      "word": " logic.",
+      "start": 108.82,
+      "end": 109.22,
+      "probability": 0.998
+    },
+    {
+      "word": " Computers",
+      "start": 109.74,
+      "end": 110.18,
+      "probability": 0.996
+    },
+    {
+      "word": " could",
+      "start": 110.18,
+      "end": 110.34,
+      "probability": 0.997
+    },
+    {
+      "word": " solve",
+      "start": 110.34,
+      "end": 110.58,
+      "probability": 0.99
+    },
+    {
+      "word": " math,",
+      "start": 110.58,
+      "end": 110.94,
+      "probability": 0.982
+    },
+    {
+      "word": " but",
+      "start": 110.94,
+      "end": 111.48,
+      "probability": 0.145
+    },
+    {
+      "word": " they",
+      "start": 111.48,
+      "end": 111.62,
+      "probability": 0.964
+    },
+    {
+      "word": " could",
+      "start": 111.62,
+      "end": 111.74,
+      "probability": 0.984
+    },
+    {
+      "word": " not",
+      "start": 111.74,
+      "end": 111.92,
+      "probability": 0.995
+    },
+    {
+      "word": " recognize",
+      "start": 111.92,
+      "end": 112.4,
+      "probability": 0.97
+    },
+    {
+      "word": " a",
+      "start": 112.4,
+      "end": 112.6,
+      "probability": 0.976
+    },
+    {
+      "word": " cat.",
+      "start": 112.6,
+      "end": 112.8,
+      "probability": 0.938
+    },
+    {
+      "word": " Is",
+      "start": 113.32,
+      "end": 113.42,
+      "probability": 0.881
+    },
+    {
+      "word": " it",
+      "start": 113.42,
+      "end": 113.52,
+      "probability": 0.998
+    },
+    {
+      "word": " possible",
+      "start": 113.52,
+      "end": 113.96,
+      "probability": 0.999
+    },
+    {
+      "word": " that",
+      "start": 113.96,
+      "end": 114.22,
+      "probability": 0.983
+    },
+    {
+      "word": " we",
+      "start": 114.22,
+      "end": 114.36,
+      "probability": 0.992
+    },
+    {
+      "word": " completely",
+      "start": 114.36,
+      "end": 114.74,
+      "probability": 0.992
+    },
+    {
+      "word": " misunderstood",
+      "start": 114.74,
+      "end": 115.16,
+      "probability": 0.748
+    },
+    {
+      "word": " what",
+      "start": 115.16,
+      "end": 115.66,
+      "probability": 0.986
+    },
+    {
+      "word": " makes",
+      "start": 115.66,
+      "end": 115.86,
+      "probability": 0.997
+    },
+    {
+      "word": " us",
+      "start": 115.86,
+      "end": 116.02,
+      "probability": 0.788
+    },
+    {
+      "word": " smart?",
+      "start": 116.02,
+      "end": 116.3,
+      "probability": 0.994
+    },
+    {
+      "word": " Two",
+      "start": 116.82,
+      "end": 116.92,
+      "probability": 0.742
+    },
+    {
+      "word": " researchers",
+      "start": 116.92,
+      "end": 117.46,
+      "probability": 0.996
+    },
+    {
+      "word": " arrived",
+      "start": 117.46,
+      "end": 117.98,
+      "probability": 0.948
+    },
+    {
+      "word": " from",
+      "start": 117.98,
+      "end": 118.28,
+      "probability": 0.995
+    },
+    {
+      "word": " Pittsburgh.",
+      "start": 118.28,
+      "end": 118.68,
+      "probability": 0.963
+    },
+    {
+      "word": " Their",
+      "start": 119.22,
+      "end": 119.32,
+      "probability": 0.987
+    },
+    {
+      "word": " names",
+      "start": 119.32,
+      "end": 119.54,
+      "probability": 0.993
+    },
+    {
+      "word": " were",
+      "start": 119.54,
+      "end": 119.76,
+      "probability": 0.997
+    },
+    {
+      "word": " Dr.",
+      "start": 119.76,
+      "end": 120.06,
+      "probability": 0.924
+    },
+    {
+      "word": " Allen",
+      "start": 120.24,
+      "end": 120.4,
+      "probability": 0.467
+    },
+    {
+      "word": " Nuel",
+      "start": 120.4,
+      "end": 120.76,
+      "probability": 0.552
+    },
+    {
+      "word": " and",
+      "start": 120.76,
+      "end": 121.14,
+      "probability": 0.879
+    },
+    {
+      "word": " Dr.",
+      "start": 121.14,
+      "end": 121.48,
+      "probability": 0.979
+    },
+    {
+      "word": " Herbert",
+      "start": 121.62,
+      "end": 121.8,
+      "probability": 0.978
+    },
+    {
+      "word": " Simon.",
+      "start": 121.8,
+      "end": 122.18,
+      "probability": 0.956
+    },
+    {
+      "word": " They",
+      "start": 122.68,
+      "end": 122.88,
+      "probability": 0.994
+    },
+    {
+      "word": " brought",
+      "start": 122.88,
+      "end": 123.12,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 123.12,
+      "end": 123.28,
+      "probability": 0.999
+    },
+    {
+      "word": " program",
+      "start": 123.28,
+      "end": 123.74,
+      "probability": 0.992
+    },
+    {
+      "word": " called",
+      "start": 123.74,
+      "end": 124.1,
+      "probability": 0.978
+    },
+    {
+      "word": " the",
+      "start": 124.1,
+      "end": 124.28,
+      "probability": 0.706
+    },
+    {
+      "word": " logic",
+      "start": 124.28,
+      "end": 124.56,
+      "probability": 0.258
+    },
+    {
+      "word": " theorist",
+      "start": 124.56,
+      "end": 125.1,
+      "probability": 0.977
+    },
+    {
+      "word": " that",
+      "start": 125.1,
+      "end": 125.24,
+      "probability": 0.984
+    },
+    {
+      "word": " proved",
+      "start": 125.24,
+      "end": 125.56,
+      "probability": 0.934
+    },
+    {
+      "word": " 38",
+      "start": 125.56,
+      "end": 126.04,
+      "probability": 0.948
+    },
+    {
+      "word": " complex",
+      "start": 126.04,
+      "end": 126.62,
+      "probability": 0.947
+    },
+    {
+      "word": " mathematical",
+      "start": 126.62,
+      "end": 127.16,
+      "probability": 0.995
+    },
+    {
+      "word": " theorems.",
+      "start": 127.16,
+      "end": 127.92,
+      "probability": 0.995
+    },
+    {
+      "word": " Simon",
+      "start": 128.46,
+      "end": 128.7,
+      "probability": 0.998
+    },
+    {
+      "word": " told",
+      "start": 128.7,
+      "end": 128.96,
+      "probability": 0.997
+    },
+    {
+      "word": " his",
+      "start": 128.96,
+      "end": 129.18,
+      "probability": 0.999
+    },
+    {
+      "word": " students",
+      "start": 129.18,
+      "end": 129.56,
+      "probability": 0.999
+    },
+    {
+      "word": " they",
+      "start": 129.56,
+      "end": 129.84,
+      "probability": 0.98
+    },
+    {
+      "word": " had",
+      "start": 129.84,
+      "end": 129.98,
+      "probability": 0.998
+    },
+    {
+      "word": " built",
+      "start": 129.98,
+      "end": 130.18,
+      "probability": 0.983
+    },
+    {
+      "word": " a",
+      "start": 130.18,
+      "end": 130.32,
+      "probability": 0.995
+    },
+    {
+      "word": " thinking",
+      "start": 130.32,
+      "end": 130.52,
+      "probability": 0.996
+    },
+    {
+      "word": " machine.",
+      "start": 130.52,
+      "end": 130.96,
+      "probability": 0.999
+    },
+    {
+      "word": " Why",
+      "start": 131.58,
+      "end": 131.72,
+      "probability": 0.908
+    },
+    {
+      "word": " did",
+      "start": 131.72,
+      "end": 131.84,
+      "probability": 0.998
+    },
+    {
+      "word": " this",
+      "start": 131.84,
+      "end": 132.02,
+      "probability": 0.987
+    },
+    {
+      "word": " single",
+      "start": 132.02,
+      "end": 132.34,
+      "probability": 0.999
+    },
+    {
+      "word": " success",
+      "start": 132.34,
+      "end": 132.8,
+      "probability": 0.956
+    },
+    {
+      "word": " fuel",
+      "start": 132.8,
+      "end": 133.16,
+      "probability": 0.836
+    },
+    {
+      "word": " such",
+      "start": 133.16,
+      "end": 133.54,
+      "probability": 0.996
+    },
+    {
+      "word": " dangerous",
+      "start": 133.54,
+      "end": 134.0,
+      "probability": 0.992
+    },
+    {
+      "word": " optimism?",
+      "start": 134.0,
+      "end": 134.66,
+      "probability": 0.997
+    },
+    {
+      "word": " Funding",
+      "start": 135.26,
+      "end": 135.62,
+      "probability": 0.949
+    },
+    {
+      "word": " flowed",
+      "start": 135.62,
+      "end": 136.08,
+      "probability": 0.946
+    },
+    {
+      "word": " into",
+      "start": 136.08,
+      "end": 136.24,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 136.24,
+      "end": 136.4,
+      "probability": 0.993
+    },
+    {
+      "word": " universities.",
+      "start": 136.4,
+      "end": 136.98,
+      "probability": 0.916
+    },
+    {
+      "word": " Researchers",
+      "start": 137.62,
+      "end": 138.04,
+      "probability": 0.964
+    },
+    {
+      "word": " made",
+      "start": 138.04,
+      "end": 138.42,
+      "probability": 0.998
+    },
+    {
+      "word": " wild",
+      "start": 138.42,
+      "end": 138.82,
+      "probability": 0.974
+    },
+    {
+      "word": " predictions.",
+      "start": 138.82,
+      "end": 139.34,
+      "probability": 0.996
+    },
+    {
+      "word": " They",
+      "start": 139.34,
+      "end": 140.14,
+      "probability": 0.212
+    },
+    {
+      "word": " claimed",
+      "start": 140.14,
+      "end": 140.42,
+      "probability": 0.519
+    },
+    {
+      "word": " that",
+      "start": 140.42,
+      "end": 140.62,
+      "probability": 0.992
+    },
+    {
+      "word": " fully",
+      "start": 140.62,
+      "end": 140.8,
+      "probability": 0.863
+    },
+    {
+      "word": " conscious",
+      "start": 140.8,
+      "end": 141.22,
+      "probability": 0.813
+    },
+    {
+      "word": " machines",
+      "start": 141.22,
+      "end": 141.6,
+      "probability": 0.992
+    },
+    {
+      "word": " would",
+      "start": 141.6,
+      "end": 141.94,
+      "probability": 0.99
+    },
+    {
+      "word": " exist",
+      "start": 141.94,
+      "end": 142.2,
+      "probability": 0.986
+    },
+    {
+      "word": " within",
+      "start": 142.2,
+      "end": 142.52,
+      "probability": 0.969
+    },
+    {
+      "word": " a",
+      "start": 142.52,
+      "end": 142.66,
+      "probability": 0.996
+    },
+    {
+      "word": " single",
+      "start": 142.66,
+      "end": 142.94,
+      "probability": 0.997
+    },
+    {
+      "word": " generation,",
+      "start": 142.94,
+      "end": 143.6,
+      "probability": 0.987
+    },
+    {
+      "word": " but",
+      "start": 143.98,
+      "end": 144.2,
+      "probability": 0.979
+    },
+    {
+      "word": " by",
+      "start": 144.2,
+      "end": 144.4,
+      "probability": 0.98
+    },
+    {
+      "word": " the",
+      "start": 144.4,
+      "end": 144.54,
+      "probability": 0.991
+    },
+    {
+      "word": " late",
+      "start": 144.54,
+      "end": 144.7,
+      "probability": 0.997
+    },
+    {
+      "word": " 1960s,",
+      "start": 144.7,
+      "end": 145.76,
+      "probability": 0.905
+    },
+    {
+      "word": " the",
+      "start": 145.86,
+      "end": 145.94,
+      "probability": 0.96
+    },
+    {
+      "word": " cracks",
+      "start": 145.94,
+      "end": 146.18,
+      "probability": 0.915
+    },
+    {
+      "word": " began",
+      "start": 146.18,
+      "end": 146.66,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 146.66,
+      "end": 146.86,
+      "probability": 0.999
+    },
+    {
+      "word": " show.",
+      "start": 146.86,
+      "end": 147.06,
+      "probability": 0.999
+    },
+    {
+      "word": " What",
+      "start": 147.62,
+      "end": 147.72,
+      "probability": 0.882
+    },
+    {
+      "word": " happens",
+      "start": 147.72,
+      "end": 148.04,
+      "probability": 0.983
+    },
+    {
+      "word": " when",
+      "start": 148.04,
+      "end": 148.28,
+      "probability": 0.997
+    },
+    {
+      "word": " huge",
+      "start": 148.28,
+      "end": 148.56,
+      "probability": 0.996
+    },
+    {
+      "word": " promises",
+      "start": 148.56,
+      "end": 149.08,
+      "probability": 0.995
+    },
+    {
+      "word": " fail",
+      "start": 149.08,
+      "end": 149.42,
+      "probability": 0.956
+    },
+    {
+      "word": " to",
+      "start": 149.42,
+      "end": 149.66,
+      "probability": 0.997
+    },
+    {
+      "word": " deliver",
+      "start": 149.66,
+      "end": 149.98,
+      "probability": 0.998
+    },
+    {
+      "word": " results?",
+      "start": 149.98,
+      "end": 150.46,
+      "probability": 0.995
+    },
+    {
+      "word": " The",
+      "start": 151.14,
+      "end": 151.26,
+      "probability": 0.984
+    },
+    {
+      "word": " machines",
+      "start": 151.26,
+      "end": 151.56,
+      "probability": 0.997
+    },
+    {
+      "word": " could",
+      "start": 151.56,
+      "end": 151.84,
+      "probability": 0.987
+    },
+    {
+      "word": " play",
+      "start": 151.84,
+      "end": 152.06,
+      "probability": 0.997
+    },
+    {
+      "word": " simple",
+      "start": 152.06,
+      "end": 152.36,
+      "probability": 0.997
+    },
+    {
+      "word": " games.",
+      "start": 152.36,
+      "end": 152.66,
+      "probability": 0.998
+    },
+    {
+      "word": " They",
+      "start": 153.3,
+      "end": 153.44,
+      "probability": 0.989
+    },
+    {
+      "word": " could",
+      "start": 153.44,
+      "end": 153.62,
+      "probability": 0.994
+    },
+    {
+      "word": " not",
+      "start": 153.62,
+      "end": 153.8,
+      "probability": 0.998
+    },
+    {
+      "word": " translate",
+      "start": 153.8,
+      "end": 154.24,
+      "probability": 0.999
+    },
+    {
+      "word": " languages.",
+      "start": 154.24,
+      "end": 154.76,
+      "probability": 0.998
+    },
+    {
+      "word": " Translation",
+      "start": 155.38,
+      "end": 155.98,
+      "probability": 0.967
+    },
+    {
+      "word": " software",
+      "start": 155.98,
+      "end": 156.5,
+      "probability": 0.924
+    },
+    {
+      "word": " famously",
+      "start": 156.5,
+      "end": 157.08,
+      "probability": 0.987
+    },
+    {
+      "word": " turned",
+      "start": 157.08,
+      "end": 157.4,
+      "probability": 0.981
+    },
+    {
+      "word": " the",
+      "start": 157.4,
+      "end": 157.62,
+      "probability": 0.942
+    },
+    {
+      "word": " spirit",
+      "start": 157.62,
+      "end": 157.92,
+      "probability": 0.878
+    },
+    {
+      "word": " is",
+      "start": 157.92,
+      "end": 158.24,
+      "probability": 0.651
+    },
+    {
+      "word": " willing",
+      "start": 158.24,
+      "end": 158.5,
+      "probability": 0.986
+    },
+    {
+      "word": " into",
+      "start": 158.5,
+      "end": 158.88,
+      "probability": 0.952
+    },
+    {
+      "word": " the",
+      "start": 158.88,
+      "end": 159.02,
+      "probability": 0.846
+    },
+    {
+      "word": " vodka",
+      "start": 159.02,
+      "end": 159.4,
+      "probability": 0.588
+    },
+    {
+      "word": " is",
+      "start": 159.4,
+      "end": 159.76,
+      "probability": 0.697
+    },
+    {
+      "word": " good.",
+      "start": 159.76,
+      "end": 159.98,
+      "probability": 0.998
+    },
+    {
+      "word": " The",
+      "start": 160.56,
+      "end": 160.62,
+      "probability": 0.905
+    },
+    {
+      "word": " software",
+      "start": 160.62,
+      "end": 161.1,
+      "probability": 0.98
+    },
+    {
+      "word": " lacked",
+      "start": 161.1,
+      "end": 161.72,
+      "probability": 0.977
+    },
+    {
+      "word": " real",
+      "start": 161.72,
+      "end": 161.96,
+      "probability": 0.983
+    },
+    {
+      "word": "-world",
+      "start": 161.96,
+      "end": 162.24,
+      "probability": 0.81
+    },
+    {
+      "word": " experience.",
+      "start": 162.24,
+      "end": 162.9,
+      "probability": 0.995
+    },
+    {
+      "word": " Why",
+      "start": 163.56,
+      "end": 163.82,
+      "probability": 0.885
+    },
+    {
+      "word": " did",
+      "start": 163.82,
+      "end": 163.94,
+      "probability": 0.995
+    },
+    {
+      "word": " early",
+      "start": 163.94,
+      "end": 164.3,
+      "probability": 0.979
+    },
+    {
+      "word": " AI",
+      "start": 164.3,
+      "end": 164.56,
+      "probability": 0.925
+    },
+    {
+      "word": " systems",
+      "start": 164.56,
+      "end": 165.0,
+      "probability": 0.986
+    },
+    {
+      "word": " struggle",
+      "start": 165.0,
+      "end": 165.46,
+      "probability": 0.995
+    },
+    {
+      "word": " so",
+      "start": 165.46,
+      "end": 165.72,
+      "probability": 0.998
+    },
+    {
+      "word": " much",
+      "start": 165.72,
+      "end": 165.94,
+      "probability": 0.999
+    },
+    {
+      "word": " with",
+      "start": 165.94,
+      "end": 166.1,
+      "probability": 0.995
+    },
+    {
+      "word": " basic",
+      "start": 166.1,
+      "end": 166.4,
+      "probability": 0.996
+    },
+    {
+      "word": " human",
+      "start": 166.4,
+      "end": 166.8,
+      "probability": 0.996
+    },
+    {
+      "word": " communication?",
+      "start": 166.8,
+      "end": 167.52,
+      "probability": 0.996
+    },
+    {
+      "word": " The",
+      "start": 167.52,
+      "end": 168.18,
+      "probability": 0.303
+    },
+    {
+      "word": " government",
+      "start": 168.18,
+      "end": 168.48,
+      "probability": 0.773
+    },
+    {
+      "word": " cut",
+      "start": 168.48,
+      "end": 168.86,
+      "probability": 0.989
+    },
+    {
+      "word": " off",
+      "start": 168.86,
+      "end": 169.04,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 169.04,
+      "end": 169.22,
+      "probability": 0.99
+    },
+    {
+      "word": " funding.",
+      "start": 169.22,
+      "end": 169.58,
+      "probability": 0.997
+    },
+    {
+      "word": " The",
+      "start": 170.04,
+      "end": 170.12,
+      "probability": 0.982
+    },
+    {
+      "word": " scientists",
+      "start": 170.12,
+      "end": 170.54,
+      "probability": 0.958
+    },
+    {
+      "word": " returned",
+      "start": 170.54,
+      "end": 171.06,
+      "probability": 0.912
+    },
+    {
+      "word": " to",
+      "start": 171.06,
+      "end": 171.32,
+      "probability": 0.817
+    },
+    {
+      "word": " their",
+      "start": 171.32,
+      "end": 171.4,
+      "probability": 0.997
+    },
+    {
+      "word": " homes.",
+      "start": 171.4,
+      "end": 171.74,
+      "probability": 0.998
+    },
+    {
+      "word": " Their",
+      "start": 172.36,
+      "end": 172.5,
+      "probability": 0.986
+    },
+    {
+      "word": " overconfidence",
+      "start": 172.5,
+      "end": 173.24,
+      "probability": 0.942
+    },
+    {
+      "word": " led",
+      "start": 173.24,
+      "end": 173.6,
+      "probability": 0.952
+    },
+    {
+      "word": " to",
+      "start": 173.6,
+      "end": 173.82,
+      "probability": 0.997
+    },
+    {
+      "word": " a",
+      "start": 173.82,
+      "end": 173.94,
+      "probability": 0.976
+    },
+    {
+      "word": " sudden",
+      "start": 173.94,
+      "end": 174.18,
+      "probability": 0.999
+    },
+    {
+      "word": " crash",
+      "start": 174.18,
+      "end": 174.52,
+      "probability": 0.998
+    },
+    {
+      "word": " known",
+      "start": 174.52,
+      "end": 174.92,
+      "probability": 0.96
+    },
+    {
+      "word": " as",
+      "start": 174.92,
+      "end": 175.18,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 175.18,
+      "end": 175.32,
+      "probability": 0.96
+    },
+    {
+      "word": " artificial",
+      "start": 175.32,
+      "end": 175.72,
+      "probability": 0.355
+    },
+    {
+      "word": " intelligence",
+      "start": 175.72,
+      "end": 176.46,
+      "probability": 0.969
+    },
+    {
+      "word": " winter.",
+      "start": 176.46,
+      "end": 176.8,
+      "probability": 0.946
+    },
+    {
+      "word": " Yet,",
+      "start": 177.26,
+      "end": 177.48,
+      "probability": 0.976
+    },
+    {
+      "word": " the",
+      "start": 177.82,
+      "end": 177.9,
+      "probability": 0.987
+    },
+    {
+      "word": " core",
+      "start": 177.9,
+      "end": 178.1,
+      "probability": 0.887
+    },
+    {
+      "word": " idea",
+      "start": 178.1,
+      "end": 178.38,
+      "probability": 0.43
+    },
+    {
+      "word": " is",
+      "start": 178.38,
+      "end": 178.6,
+      "probability": 0.9
+    },
+    {
+      "word": " developed",
+      "start": 178.6,
+      "end": 178.94,
+      "probability": 0.993
+    },
+    {
+      "word": " during",
+      "start": 178.94,
+      "end": 179.32,
+      "probability": 0.983
+    },
+    {
+      "word": " that",
+      "start": 179.32,
+      "end": 179.5,
+      "probability": 0.921
+    },
+    {
+      "word": " summer",
+      "start": 179.5,
+      "end": 179.78,
+      "probability": 0.978
+    },
+    {
+      "word": " never",
+      "start": 179.78,
+      "end": 180.02,
+      "probability": 0.988
+    },
+    {
+      "word": " truly",
+      "start": 180.02,
+      "end": 180.44,
+      "probability": 0.99
+    },
+    {
+      "word": " died.",
+      "start": 180.44,
+      "end": 180.82,
+      "probability": 0.992
+    },
+    {
+      "word": " How",
+      "start": 181.32,
+      "end": 181.42,
+      "probability": 0.983
+    },
+    {
+      "word": " did",
+      "start": 181.42,
+      "end": 181.52,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 181.52,
+      "end": 181.64,
+      "probability": 0.808
+    },
+    {
+      "word": " failed",
+      "start": 181.64,
+      "end": 181.9,
+      "probability": 0.997
+    },
+    {
+      "word": " summer",
+      "start": 181.9,
+      "end": 182.24,
+      "probability": 0.963
+    },
+    {
+      "word": " project",
+      "start": 182.24,
+      "end": 182.86,
+      "probability": 0.997
+    },
+    {
+      "word": " lay",
+      "start": 182.86,
+      "end": 183.18,
+      "probability": 0.978
+    },
+    {
+      "word": " the",
+      "start": 183.18,
+      "end": 183.32,
+      "probability": 0.993
+    },
+    {
+      "word": " foundation",
+      "start": 183.32,
+      "end": 183.92,
+      "probability": 0.99
+    },
+    {
+      "word": " for",
+      "start": 183.92,
+      "end": 184.2,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 184.2,
+      "end": 184.32,
+      "probability": 0.991
+    },
+    {
+      "word": " modern",
+      "start": 184.32,
+      "end": 184.58,
+      "probability": 0.997
+    },
+    {
+      "word": " world?",
+      "start": 184.58,
+      "end": 184.92,
+      "probability": 0.998
+    },
+    {
+      "word": " We",
+      "start": 185.34,
+      "end": 185.54,
+      "probability": 0.987
+    },
+    {
+      "word": " face",
+      "start": 185.54,
+      "end": 185.68,
+      "probability": 0.729
+    },
+    {
+      "word": " the",
+      "start": 185.68,
+      "end": 185.92,
+      "probability": 0.997
+    },
+    {
+      "word": " same",
+      "start": 185.92,
+      "end": 186.16,
+      "probability": 1.0
+    },
+    {
+      "word": " challenges",
+      "start": 186.16,
+      "end": 186.6,
+      "probability": 0.998
+    },
+    {
+      "word": " today.",
+      "start": 186.6,
+      "end": 186.98,
+      "probability": 0.997
+    },
+    {
+      "word": " The",
+      "start": 187.48,
+      "end": 187.6,
+      "probability": 0.994
+    },
+    {
+      "word": " technology",
+      "start": 187.6,
+      "end": 188.18,
+      "probability": 0.998
+    },
+    {
+      "word": " is",
+      "start": 188.18,
+      "end": 188.52,
+      "probability": 0.999
+    },
+    {
+      "word": " much",
+      "start": 188.52,
+      "end": 188.7,
+      "probability": 0.999
+    },
+    {
+      "word": " faster,",
+      "start": 188.7,
+      "end": 189.26,
+      "probability": 0.996
+    },
+    {
+      "word": " but",
+      "start": 189.6,
+      "end": 189.84,
+      "probability": 0.992
+    },
+    {
+      "word": " we",
+      "start": 189.84,
+      "end": 190.0,
+      "probability": 0.998
+    },
+    {
+      "word": " are",
+      "start": 190.0,
+      "end": 190.14,
+      "probability": 0.991
+    },
+    {
+      "word": " still",
+      "start": 190.14,
+      "end": 190.36,
+      "probability": 0.995
+    },
+    {
+      "word": " trying",
+      "start": 190.36,
+      "end": 190.78,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 190.78,
+      "end": 190.94,
+      "probability": 0.999
+    },
+    {
+      "word": " teach",
+      "start": 190.94,
+      "end": 191.18,
+      "probability": 0.998
+    },
+    {
+      "word": " machines",
+      "start": 191.18,
+      "end": 191.58,
+      "probability": 0.995
+    },
+    {
+      "word": " how",
+      "start": 191.58,
+      "end": 191.9,
+      "probability": 0.994
+    },
+    {
+      "word": " to",
+      "start": 191.9,
+      "end": 192.04,
+      "probability": 0.999
+    },
+    {
+      "word": " form",
+      "start": 192.04,
+      "end": 192.34,
+      "probability": 0.997
+    },
+    {
+      "word": " abstract",
+      "start": 192.34,
+      "end": 192.8,
+      "probability": 0.99
+    },
+    {
+      "word": " concepts.",
+      "start": 192.8,
+      "end": 193.66,
+      "probability": 0.998
+    },
+    {
+      "word": " The",
+      "start": 194.14,
+      "end": 194.28,
+      "probability": 0.995
+    },
+    {
+      "word": " neural",
+      "start": 194.28,
+      "end": 194.52,
+      "probability": 0.986
+    },
+    {
+      "word": " networks",
+      "start": 194.52,
+      "end": 194.88,
+      "probability": 0.993
+    },
+    {
+      "word": " on",
+      "start": 194.88,
+      "end": 195.2,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 195.2,
+      "end": 195.32,
+      "probability": 0.994
+    },
+    {
+      "word": " phone",
+      "start": 195.32,
+      "end": 195.62,
+      "probability": 0.991
+    },
+    {
+      "word": " are",
+      "start": 195.62,
+      "end": 195.76,
+      "probability": 0.984
+    },
+    {
+      "word": " descendants",
+      "start": 195.76,
+      "end": 196.18,
+      "probability": 0.986
+    },
+    {
+      "word": " of",
+      "start": 196.18,
+      "end": 196.46,
+      "probability": 0.999
+    },
+    {
+      "word": " their",
+      "start": 196.46,
+      "end": 196.62,
+      "probability": 0.996
+    },
+    {
+      "word": " math.",
+      "start": 196.62,
+      "end": 196.86,
+      "probability": 0.983
+    },
+    {
+      "word": " Are",
+      "start": 196.86,
+      "end": 197.46,
+      "probability": 0.784
+    },
+    {
+      "word": " we",
+      "start": 197.46,
+      "end": 197.58,
+      "probability": 0.998
+    },
+    {
+      "word": " still",
+      "start": 197.58,
+      "end": 197.78,
+      "probability": 0.997
+    },
+    {
+      "word": " making",
+      "start": 197.78,
+      "end": 198.04,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 198.04,
+      "end": 198.24,
+      "probability": 0.992
+    },
+    {
+      "word": " same",
+      "start": 198.24,
+      "end": 198.48,
+      "probability": 0.999
+    },
+    {
+      "word": " mistakes",
+      "start": 198.48,
+      "end": 198.82,
+      "probability": 0.995
+    },
+    {
+      "word": " they",
+      "start": 198.82,
+      "end": 199.08,
+      "probability": 0.98
+    },
+    {
+      "word": " made",
+      "start": 199.08,
+      "end": 199.26,
+      "probability": 0.995
+    },
+    {
+      "word": " 70",
+      "start": 199.26,
+      "end": 199.66,
+      "probability": 0.868
+    },
+    {
+      "word": " years",
+      "start": 199.66,
+      "end": 199.88,
+      "probability": 0.993
+    },
+    {
+      "word": " ago?",
+      "start": 199.88,
+      "end": 200.16,
+      "probability": 0.999
+    },
+    {
+      "word": " Tonight,",
+      "start": 200.7,
+      "end": 201.0,
+      "probability": 0.947
+    },
+    {
+      "word": " you",
+      "start": 201.34,
+      "end": 201.42,
+      "probability": 0.991
+    },
+    {
+      "word": " will",
+      "start": 201.42,
+      "end": 201.54,
+      "probability": 0.94
+    },
+    {
+      "word": " interact",
+      "start": 201.54,
+      "end": 201.96,
+      "probability": 0.997
+    },
+    {
+      "word": " with",
+      "start": 201.96,
+      "end": 202.24,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 202.24,
+      "end": 202.34,
+      "probability": 0.731
+    },
+    {
+      "word": " machine.",
+      "start": 202.34,
+      "end": 202.64,
+      "probability": 0.995
+    },
+    {
+      "word": " You",
+      "start": 203.14,
+      "end": 203.32,
+      "probability": 0.993
+    },
+    {
+      "word": " will",
+      "start": 203.32,
+      "end": 203.44,
+      "probability": 0.981
+    },
+    {
+      "word": " not",
+      "start": 203.44,
+      "end": 203.62,
+      "probability": 0.996
+    },
+    {
+      "word": " just",
+      "start": 203.62,
+      "end": 203.86,
+      "probability": 0.99
+    },
+    {
+      "word": " use",
+      "start": 203.86,
+      "end": 204.1,
+      "probability": 0.997
+    },
+    {
+      "word": " a",
+      "start": 204.1,
+      "end": 204.24,
+      "probability": 0.982
+    },
+    {
+      "word": " tool.",
+      "start": 204.24,
+      "end": 204.52,
+      "probability": 0.998
+    },
+    {
+      "word": " You",
+      "start": 204.96,
+      "end": 205.12,
+      "probability": 0.993
+    },
+    {
+      "word": " will",
+      "start": 205.12,
+      "end": 205.22,
+      "probability": 0.982
+    },
+    {
+      "word": " participate",
+      "start": 205.22,
+      "end": 205.86,
+      "probability": 0.992
+    },
+    {
+      "word": " in",
+      "start": 205.86,
+      "end": 206.18,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 206.18,
+      "end": 206.28,
+      "probability": 0.979
+    },
+    {
+      "word": " casual",
+      "start": 206.28,
+      "end": 206.62,
+      "probability": 0.977
+    },
+    {
+      "word": " summer",
+      "start": 206.62,
+      "end": 206.96,
+      "probability": 0.971
+    },
+    {
+      "word": " project",
+      "start": 206.96,
+      "end": 207.4,
+      "probability": 0.997
+    },
+    {
+      "word": " that",
+      "start": 207.4,
+      "end": 207.72,
+      "probability": 0.99
+    },
+    {
+      "word": " never",
+      "start": 207.72,
+      "end": 208.04,
+      "probability": 0.993
+    },
+    {
+      "word": " ended.",
+      "start": 208.04,
+      "end": 208.38,
+      "probability": 0.992
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 208.476,
+  "model_size": "base",
+  "device": "cpu"
+}

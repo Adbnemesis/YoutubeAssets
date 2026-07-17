@@ -1,0 +1,9242 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.66,
+      "text": "Tonight, when you lie in bed, your mind will start to play a dangerous game.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 0.0,
+          "end": 0.28,
+          "probability": 0.364
+        },
+        {
+          "word": " when",
+          "start": 0.64,
+          "end": 0.74,
+          "probability": 0.991
+        },
+        {
+          "word": " you",
+          "start": 0.74,
+          "end": 0.86,
+          "probability": 0.997
+        },
+        {
+          "word": " lie",
+          "start": 0.86,
+          "end": 1.0,
+          "probability": 0.997
+        },
+        {
+          "word": " in",
+          "start": 1.0,
+          "end": 1.18,
+          "probability": 0.998
+        },
+        {
+          "word": " bed,",
+          "start": 1.18,
+          "end": 1.4,
+          "probability": 1.0
+        },
+        {
+          "word": " your",
+          "start": 1.54,
+          "end": 1.64,
+          "probability": 0.992
+        },
+        {
+          "word": " mind",
+          "start": 1.64,
+          "end": 1.9,
+          "probability": 0.994
+        },
+        {
+          "word": " will",
+          "start": 1.9,
+          "end": 2.06,
+          "probability": 0.998
+        },
+        {
+          "word": " start",
+          "start": 2.06,
+          "end": 2.34,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 2.34,
+          "end": 2.52,
+          "probability": 0.998
+        },
+        {
+          "word": " play",
+          "start": 2.52,
+          "end": 2.74,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 2.74,
+          "end": 2.88,
+          "probability": 0.997
+        },
+        {
+          "word": " dangerous",
+          "start": 2.88,
+          "end": 3.24,
+          "probability": 0.995
+        },
+        {
+          "word": " game.",
+          "start": 3.24,
+          "end": 3.66,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 4.12,
+      "end": 5.76,
+      "text": "The room is perfectly safe.",
+      "words": [
+        {
+          "word": " The",
+          "start": 4.12,
+          "end": 4.3,
+          "probability": 0.967
+        },
+        {
+          "word": " room",
+          "start": 4.3,
+          "end": 4.54,
+          "probability": 0.995
+        },
+        {
+          "word": " is",
+          "start": 4.54,
+          "end": 4.78,
+          "probability": 0.997
+        },
+        {
+          "word": " perfectly",
+          "start": 4.78,
+          "end": 5.2,
+          "probability": 0.993
+        },
+        {
+          "word": " safe.",
+          "start": 5.2,
+          "end": 5.76,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 6.12,
+      "end": 9.12,
+      "text": "Yet, your mind is racing with every awkward moment from your day.",
+      "words": [
+        {
+          "word": " Yet,",
+          "start": 6.12,
+          "end": 6.34,
+          "probability": 0.962
+        },
+        {
+          "word": " your",
+          "start": 6.58,
+          "end": 6.64,
+          "probability": 0.993
+        },
+        {
+          "word": " mind",
+          "start": 6.64,
+          "end": 6.86,
+          "probability": 0.999
+        },
+        {
+          "word": " is",
+          "start": 6.86,
+          "end": 7.06,
+          "probability": 0.999
+        },
+        {
+          "word": " racing",
+          "start": 7.06,
+          "end": 7.38,
+          "probability": 0.992
+        },
+        {
+          "word": " with",
+          "start": 7.38,
+          "end": 7.62,
+          "probability": 0.985
+        },
+        {
+          "word": " every",
+          "start": 7.62,
+          "end": 7.96,
+          "probability": 0.993
+        },
+        {
+          "word": " awkward",
+          "start": 7.96,
+          "end": 8.22,
+          "probability": 0.995
+        },
+        {
+          "word": " moment",
+          "start": 8.22,
+          "end": 8.56,
+          "probability": 0.999
+        },
+        {
+          "word": " from",
+          "start": 8.56,
+          "end": 8.74,
+          "probability": 0.992
+        },
+        {
+          "word": " your",
+          "start": 8.74,
+          "end": 8.9,
+          "probability": 0.99
+        },
+        {
+          "word": " day.",
+          "start": 8.9,
+          "end": 9.12,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 9.66,
+      "end": 12.04,
+      "text": "You replay a slight frown from a coworker.",
+      "words": [
+        {
+          "word": " You",
+          "start": 9.66,
+          "end": 9.74,
+          "probability": 0.958
+        },
+        {
+          "word": " replay",
+          "start": 9.74,
+          "end": 10.1,
+          "probability": 0.862
+        },
+        {
+          "word": " a",
+          "start": 10.1,
+          "end": 10.3,
+          "probability": 0.992
+        },
+        {
+          "word": " slight",
+          "start": 10.3,
+          "end": 10.62,
+          "probability": 0.994
+        },
+        {
+          "word": " frown",
+          "start": 10.62,
+          "end": 11.04,
+          "probability": 0.954
+        },
+        {
+          "word": " from",
+          "start": 11.04,
+          "end": 11.28,
+          "probability": 0.992
+        },
+        {
+          "word": " a",
+          "start": 11.28,
+          "end": 11.42,
+          "probability": 0.98
+        },
+        {
+          "word": " coworker.",
+          "start": 11.42,
+          "end": 12.04,
+          "probability": 0.937
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 12.44,
+      "end": 14.64,
+      "text": "You worry about a bill that is not even due.",
+      "words": [
+        {
+          "word": " You",
+          "start": 12.44,
+          "end": 12.56,
+          "probability": 0.984
+        },
+        {
+          "word": " worry",
+          "start": 12.56,
+          "end": 12.78,
+          "probability": 0.998
+        },
+        {
+          "word": " about",
+          "start": 12.78,
+          "end": 13.14,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 13.14,
+          "end": 13.32,
+          "probability": 0.997
+        },
+        {
+          "word": " bill",
+          "start": 13.32,
+          "end": 13.48,
+          "probability": 0.97
+        },
+        {
+          "word": " that",
+          "start": 13.48,
+          "end": 13.74,
+          "probability": 0.996
+        },
+        {
+          "word": " is",
+          "start": 13.74,
+          "end": 13.92,
+          "probability": 0.954
+        },
+        {
+          "word": " not",
+          "start": 13.92,
+          "end": 14.06,
+          "probability": 0.997
+        },
+        {
+          "word": " even",
+          "start": 14.06,
+          "end": 14.4,
+          "probability": 0.999
+        },
+        {
+          "word": " due.",
+          "start": 14.4,
+          "end": 14.64,
+          "probability": 0.975
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 15.12,
+      "end": 16.34,
+      "text": "Why does your brain do this?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 15.12,
+          "end": 15.28,
+          "probability": 0.986
+        },
+        {
+          "word": " does",
+          "start": 15.28,
+          "end": 15.38,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 15.38,
+          "end": 15.56,
+          "probability": 0.999
+        },
+        {
+          "word": " brain",
+          "start": 15.56,
+          "end": 15.84,
+          "probability": 0.996
+        },
+        {
+          "word": " do",
+          "start": 15.84,
+          "end": 16.1,
+          "probability": 0.998
+        },
+        {
+          "word": " this?",
+          "start": 16.1,
+          "end": 16.34,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 16.88,
+      "end": 19.0,
+      "text": "Why is it so easy to spiral in to worry,",
+      "words": [
+        {
+          "word": " Why",
+          "start": 16.88,
+          "end": 17.06,
+          "probability": 0.995
+        },
+        {
+          "word": " is",
+          "start": 17.06,
+          "end": 17.18,
+          "probability": 0.988
+        },
+        {
+          "word": " it",
+          "start": 17.18,
+          "end": 17.3,
+          "probability": 0.997
+        },
+        {
+          "word": " so",
+          "start": 17.3,
+          "end": 17.46,
+          "probability": 0.998
+        },
+        {
+          "word": " easy",
+          "start": 17.46,
+          "end": 17.76,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 17.76,
+          "end": 17.96,
+          "probability": 0.993
+        },
+        {
+          "word": " spiral",
+          "start": 17.96,
+          "end": 18.3,
+          "probability": 0.972
+        },
+        {
+          "word": " in",
+          "start": 18.3,
+          "end": 18.54,
+          "probability": 0.427
+        },
+        {
+          "word": " to",
+          "start": 18.54,
+          "end": 18.72,
+          "probability": 0.969
+        },
+        {
+          "word": " worry,",
+          "start": 18.72,
+          "end": 19.0,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 19.34,
+      "end": 21.06,
+      "text": "but so hard to hold onto a compliment?",
+      "words": [
+        {
+          "word": " but",
+          "start": 19.34,
+          "end": 19.46,
+          "probability": 0.996
+        },
+        {
+          "word": " so",
+          "start": 19.46,
+          "end": 19.64,
+          "probability": 0.981
+        },
+        {
+          "word": " hard",
+          "start": 19.64,
+          "end": 19.86,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 19.86,
+          "end": 20.0,
+          "probability": 0.999
+        },
+        {
+          "word": " hold",
+          "start": 20.0,
+          "end": 20.2,
+          "probability": 0.999
+        },
+        {
+          "word": " onto",
+          "start": 20.2,
+          "end": 20.56,
+          "probability": 0.75
+        },
+        {
+          "word": " a",
+          "start": 20.56,
+          "end": 20.72,
+          "probability": 0.992
+        },
+        {
+          "word": " compliment?",
+          "start": 20.72,
+          "end": 21.06,
+          "probability": 0.723
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 21.6,
+      "end": 24.04,
+      "text": "The answer lies deep in your evolutionary past.",
+      "words": [
+        {
+          "word": " The",
+          "start": 21.6,
+          "end": 21.7,
+          "probability": 0.979
+        },
+        {
+          "word": " answer",
+          "start": 21.7,
+          "end": 21.98,
+          "probability": 0.993
+        },
+        {
+          "word": " lies",
+          "start": 21.98,
+          "end": 22.26,
+          "probability": 0.999
+        },
+        {
+          "word": " deep",
+          "start": 22.26,
+          "end": 22.54,
+          "probability": 0.997
+        },
+        {
+          "word": " in",
+          "start": 22.54,
+          "end": 22.82,
+          "probability": 0.946
+        },
+        {
+          "word": " your",
+          "start": 22.82,
+          "end": 23.0,
+          "probability": 0.997
+        },
+        {
+          "word": " evolutionary",
+          "start": 23.0,
+          "end": 23.56,
+          "probability": 0.992
+        },
+        {
+          "word": " past.",
+          "start": 23.56,
+          "end": 24.04,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 24.74,
+      "end": 26.96,
+      "text": "Your ancestors did not live in comfortable houses.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 24.74,
+          "end": 24.88,
+          "probability": 0.977
+        },
+        {
+          "word": " ancestors",
+          "start": 24.88,
+          "end": 25.4,
+          "probability": 0.994
+        },
+        {
+          "word": " did",
+          "start": 25.4,
+          "end": 25.7,
+          "probability": 0.984
+        },
+        {
+          "word": " not",
+          "start": 25.7,
+          "end": 25.86,
+          "probability": 1.0
+        },
+        {
+          "word": " live",
+          "start": 25.86,
+          "end": 26.02,
+          "probability": 0.998
+        },
+        {
+          "word": " in",
+          "start": 26.02,
+          "end": 26.2,
+          "probability": 0.989
+        },
+        {
+          "word": " comfortable",
+          "start": 26.2,
+          "end": 26.52,
+          "probability": 0.995
+        },
+        {
+          "word": " houses.",
+          "start": 26.52,
+          "end": 26.96,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 27.5,
+      "end": 28.76,
+      "text": "They faced constant danger.",
+      "words": [
+        {
+          "word": " They",
+          "start": 27.5,
+          "end": 27.68,
+          "probability": 0.996
+        },
+        {
+          "word": " faced",
+          "start": 27.68,
+          "end": 27.96,
+          "probability": 0.966
+        },
+        {
+          "word": " constant",
+          "start": 27.96,
+          "end": 28.38,
+          "probability": 0.983
+        },
+        {
+          "word": " danger.",
+          "start": 28.38,
+          "end": 28.76,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 29.14,
+      "end": 30.9,
+      "text": "They slept under the open stars,",
+      "words": [
+        {
+          "word": " They",
+          "start": 29.14,
+          "end": 29.4,
+          "probability": 0.337
+        },
+        {
+          "word": " slept",
+          "start": 29.4,
+          "end": 29.68,
+          "probability": 0.975
+        },
+        {
+          "word": " under",
+          "start": 29.68,
+          "end": 30.04,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 30.04,
+          "end": 30.22,
+          "probability": 0.981
+        },
+        {
+          "word": " open",
+          "start": 30.22,
+          "end": 30.46,
+          "probability": 0.953
+        },
+        {
+          "word": " stars,",
+          "start": 30.46,
+          "end": 30.9,
+          "probability": 0.973
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 31.32,
+      "end": 34.0,
+      "text": "surrounded by predators, disease, and rival tribes.",
+      "words": [
+        {
+          "word": " surrounded",
+          "start": 31.32,
+          "end": 31.66,
+          "probability": 0.982
+        },
+        {
+          "word": " by",
+          "start": 31.66,
+          "end": 31.86,
+          "probability": 1.0
+        },
+        {
+          "word": " predators,",
+          "start": 31.86,
+          "end": 32.22,
+          "probability": 0.993
+        },
+        {
+          "word": " disease,",
+          "start": 32.48,
+          "end": 32.72,
+          "probability": 0.963
+        },
+        {
+          "word": " and",
+          "start": 33.1,
+          "end": 33.18,
+          "probability": 0.995
+        },
+        {
+          "word": " rival",
+          "start": 33.18,
+          "end": 33.52,
+          "probability": 0.984
+        },
+        {
+          "word": " tribes.",
+          "start": 33.52,
+          "end": 34.0,
+          "probability": 0.92
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 34.52,
+      "end": 37.02,
+      "text": "If they assumed a rustling bush was just the wind,",
+      "words": [
+        {
+          "word": " If",
+          "start": 34.52,
+          "end": 34.62,
+          "probability": 0.95
+        },
+        {
+          "word": " they",
+          "start": 34.62,
+          "end": 34.76,
+          "probability": 0.995
+        },
+        {
+          "word": " assumed",
+          "start": 34.76,
+          "end": 35.1,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 35.1,
+          "end": 35.24,
+          "probability": 0.991
+        },
+        {
+          "word": " rustling",
+          "start": 35.24,
+          "end": 35.68,
+          "probability": 0.911
+        },
+        {
+          "word": " bush",
+          "start": 35.68,
+          "end": 36.04,
+          "probability": 0.984
+        },
+        {
+          "word": " was",
+          "start": 36.04,
+          "end": 36.24,
+          "probability": 0.987
+        },
+        {
+          "word": " just",
+          "start": 36.24,
+          "end": 36.48,
+          "probability": 0.982
+        },
+        {
+          "word": " the",
+          "start": 36.48,
+          "end": 36.74,
+          "probability": 0.99
+        },
+        {
+          "word": " wind,",
+          "start": 36.74,
+          "end": 37.02,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 37.34,
+      "end": 38.64,
+      "text": "and they were wrong, they died.",
+      "words": [
+        {
+          "word": " and",
+          "start": 37.34,
+          "end": 37.42,
+          "probability": 0.985
+        },
+        {
+          "word": " they",
+          "start": 37.42,
+          "end": 37.54,
+          "probability": 0.988
+        },
+        {
+          "word": " were",
+          "start": 37.54,
+          "end": 37.68,
+          "probability": 0.985
+        },
+        {
+          "word": " wrong,",
+          "start": 37.68,
+          "end": 38.04,
+          "probability": 0.994
+        },
+        {
+          "word": " they",
+          "start": 38.3,
+          "end": 38.38,
+          "probability": 0.99
+        },
+        {
+          "word": " died.",
+          "start": 38.38,
+          "end": 38.64,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 39.22,
+      "end": 40.5,
+      "text": "If they assumed it was a tiger,",
+      "words": [
+        {
+          "word": " If",
+          "start": 39.22,
+          "end": 39.34,
+          "probability": 0.983
+        },
+        {
+          "word": " they",
+          "start": 39.34,
+          "end": 39.48,
+          "probability": 0.996
+        },
+        {
+          "word": " assumed",
+          "start": 39.48,
+          "end": 39.88,
+          "probability": 0.996
+        },
+        {
+          "word": " it",
+          "start": 39.88,
+          "end": 39.98,
+          "probability": 0.993
+        },
+        {
+          "word": " was",
+          "start": 39.98,
+          "end": 40.12,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 40.12,
+          "end": 40.2,
+          "probability": 0.998
+        },
+        {
+          "word": " tiger,",
+          "start": 40.2,
+          "end": 40.5,
+          "probability": 0.955
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 40.9,
+      "end": 42.1,
+      "text": "they lived to see another day.",
+      "words": [
+        {
+          "word": " they",
+          "start": 40.9,
+          "end": 41.0,
+          "probability": 0.992
+        },
+        {
+          "word": " lived",
+          "start": 41.0,
+          "end": 41.18,
+          "probability": 0.976
+        },
+        {
+          "word": " to",
+          "start": 41.18,
+          "end": 41.36,
+          "probability": 0.995
+        },
+        {
+          "word": " see",
+          "start": 41.36,
+          "end": 41.54,
+          "probability": 0.99
+        },
+        {
+          "word": " another",
+          "start": 41.54,
+          "end": 41.74,
+          "probability": 0.978
+        },
+        {
+          "word": " day.",
+          "start": 41.74,
+          "end": 42.1,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 42.6,
+      "end": 44.82,
+      "text": "Did evolution design your brain to make you happy?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 42.6,
+          "end": 42.68,
+          "probability": 0.551
+        },
+        {
+          "word": " evolution",
+          "start": 42.68,
+          "end": 43.06,
+          "probability": 0.967
+        },
+        {
+          "word": " design",
+          "start": 43.06,
+          "end": 43.58,
+          "probability": 0.986
+        },
+        {
+          "word": " your",
+          "start": 43.58,
+          "end": 43.86,
+          "probability": 0.997
+        },
+        {
+          "word": " brain",
+          "start": 43.86,
+          "end": 44.08,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 44.08,
+          "end": 44.3,
+          "probability": 0.996
+        },
+        {
+          "word": " make",
+          "start": 44.3,
+          "end": 44.44,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 44.44,
+          "end": 44.58,
+          "probability": 0.999
+        },
+        {
+          "word": " happy?",
+          "start": 44.58,
+          "end": 44.82,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 45.3,
+      "end": 47.9,
+      "text": "No, it designed your brain simply to keep you alive.",
+      "words": [
+        {
+          "word": " No,",
+          "start": 45.3,
+          "end": 45.56,
+          "probability": 0.984
+        },
+        {
+          "word": " it",
+          "start": 45.84,
+          "end": 45.92,
+          "probability": 0.98
+        },
+        {
+          "word": " designed",
+          "start": 45.92,
+          "end": 46.16,
+          "probability": 0.839
+        },
+        {
+          "word": " your",
+          "start": 46.16,
+          "end": 46.38,
+          "probability": 0.994
+        },
+        {
+          "word": " brain",
+          "start": 46.38,
+          "end": 46.62,
+          "probability": 0.984
+        },
+        {
+          "word": " simply",
+          "start": 46.62,
+          "end": 46.94,
+          "probability": 0.964
+        },
+        {
+          "word": " to",
+          "start": 46.94,
+          "end": 47.18,
+          "probability": 0.968
+        },
+        {
+          "word": " keep",
+          "start": 47.18,
+          "end": 47.34,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 47.34,
+          "end": 47.54,
+          "probability": 0.999
+        },
+        {
+          "word": " alive.",
+          "start": 47.54,
+          "end": 47.9,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 48.38,
+      "end": 53.0,
+      "text": "A psychologist at the University of Pennsylvania coined a term for this phenomenon.",
+      "words": [
+        {
+          "word": " A",
+          "start": 48.38,
+          "end": 48.54,
+          "probability": 0.987
+        },
+        {
+          "word": " psychologist",
+          "start": 48.54,
+          "end": 49.18,
+          "probability": 0.983
+        },
+        {
+          "word": " at",
+          "start": 49.18,
+          "end": 49.58,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 49.58,
+          "end": 49.7,
+          "probability": 0.983
+        },
+        {
+          "word": " University",
+          "start": 49.7,
+          "end": 50.26,
+          "probability": 0.982
+        },
+        {
+          "word": " of",
+          "start": 50.26,
+          "end": 50.6,
+          "probability": 0.998
+        },
+        {
+          "word": " Pennsylvania",
+          "start": 50.6,
+          "end": 51.16,
+          "probability": 0.999
+        },
+        {
+          "word": " coined",
+          "start": 51.16,
+          "end": 51.66,
+          "probability": 0.989
+        },
+        {
+          "word": " a",
+          "start": 51.66,
+          "end": 51.86,
+          "probability": 0.998
+        },
+        {
+          "word": " term",
+          "start": 51.86,
+          "end": 52.14,
+          "probability": 0.999
+        },
+        {
+          "word": " for",
+          "start": 52.14,
+          "end": 52.38,
+          "probability": 0.997
+        },
+        {
+          "word": " this",
+          "start": 52.38,
+          "end": 52.56,
+          "probability": 0.993
+        },
+        {
+          "word": " phenomenon.",
+          "start": 52.56,
+          "end": 53.0,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 53.6,
+      "end": 57.98,
+      "text": "Dr. Paul Rosen studied how humans react to positive and negative stimuli.",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 53.6,
+          "end": 53.84,
+          "probability": 0.949
+        },
+        {
+          "word": " Paul",
+          "start": 53.9,
+          "end": 54.12,
+          "probability": 0.989
+        },
+        {
+          "word": " Rosen",
+          "start": 54.12,
+          "end": 54.48,
+          "probability": 0.465
+        },
+        {
+          "word": " studied",
+          "start": 54.48,
+          "end": 55.0,
+          "probability": 0.982
+        },
+        {
+          "word": " how",
+          "start": 55.0,
+          "end": 55.24,
+          "probability": 0.978
+        },
+        {
+          "word": " humans",
+          "start": 55.24,
+          "end": 55.62,
+          "probability": 0.996
+        },
+        {
+          "word": " react",
+          "start": 55.62,
+          "end": 56.06,
+          "probability": 0.983
+        },
+        {
+          "word": " to",
+          "start": 56.06,
+          "end": 56.36,
+          "probability": 0.997
+        },
+        {
+          "word": " positive",
+          "start": 56.36,
+          "end": 56.84,
+          "probability": 0.996
+        },
+        {
+          "word": " and",
+          "start": 56.84,
+          "end": 57.14,
+          "probability": 0.982
+        },
+        {
+          "word": " negative",
+          "start": 57.14,
+          "end": 57.5,
+          "probability": 0.996
+        },
+        {
+          "word": " stimuli.",
+          "start": 57.5,
+          "end": 57.98,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 58.34,
+      "end": 63.54,
+      "text": "He discovered that negative events have a far greater impact on your mind and positive ones.",
+      "words": [
+        {
+          "word": " He",
+          "start": 58.34,
+          "end": 58.66,
+          "probability": 0.298
+        },
+        {
+          "word": " discovered",
+          "start": 58.66,
+          "end": 59.04,
+          "probability": 0.97
+        },
+        {
+          "word": " that",
+          "start": 59.04,
+          "end": 59.36,
+          "probability": 0.973
+        },
+        {
+          "word": " negative",
+          "start": 59.36,
+          "end": 59.74,
+          "probability": 0.989
+        },
+        {
+          "word": " events",
+          "start": 59.74,
+          "end": 60.2,
+          "probability": 0.996
+        },
+        {
+          "word": " have",
+          "start": 60.2,
+          "end": 60.48,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 60.48,
+          "end": 60.62,
+          "probability": 0.991
+        },
+        {
+          "word": " far",
+          "start": 60.62,
+          "end": 60.82,
+          "probability": 0.991
+        },
+        {
+          "word": " greater",
+          "start": 60.82,
+          "end": 61.14,
+          "probability": 0.981
+        },
+        {
+          "word": " impact",
+          "start": 61.14,
+          "end": 61.62,
+          "probability": 0.998
+        },
+        {
+          "word": " on",
+          "start": 61.62,
+          "end": 62.0,
+          "probability": 0.994
+        },
+        {
+          "word": " your",
+          "start": 62.0,
+          "end": 62.12,
+          "probability": 0.989
+        },
+        {
+          "word": " mind",
+          "start": 62.12,
+          "end": 62.44,
+          "probability": 0.993
+        },
+        {
+          "word": " and",
+          "start": 62.44,
+          "end": 62.58,
+          "probability": 0.398
+        },
+        {
+          "word": " positive",
+          "start": 62.58,
+          "end": 63.04,
+          "probability": 0.992
+        },
+        {
+          "word": " ones.",
+          "start": 63.04,
+          "end": 63.54,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 63.96,
+      "end": 66.34,
+      "text": "A single insult can ruin your entire day,",
+      "words": [
+        {
+          "word": " A",
+          "start": 63.96,
+          "end": 64.14,
+          "probability": 0.921
+        },
+        {
+          "word": " single",
+          "start": 64.14,
+          "end": 64.46,
+          "probability": 0.999
+        },
+        {
+          "word": " insult",
+          "start": 64.46,
+          "end": 64.9,
+          "probability": 0.908
+        },
+        {
+          "word": " can",
+          "start": 64.9,
+          "end": 65.16,
+          "probability": 0.996
+        },
+        {
+          "word": " ruin",
+          "start": 65.16,
+          "end": 65.38,
+          "probability": 0.995
+        },
+        {
+          "word": " your",
+          "start": 65.38,
+          "end": 65.56,
+          "probability": 0.995
+        },
+        {
+          "word": " entire",
+          "start": 65.56,
+          "end": 65.96,
+          "probability": 0.999
+        },
+        {
+          "word": " day,",
+          "start": 65.96,
+          "end": 66.34,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 66.6,
+      "end": 68.8,
+      "text": "even if you received 10 compliments earlier.",
+      "words": [
+        {
+          "word": " even",
+          "start": 66.6,
+          "end": 66.84,
+          "probability": 0.998
+        },
+        {
+          "word": " if",
+          "start": 66.84,
+          "end": 67.0,
+          "probability": 0.997
+        },
+        {
+          "word": " you",
+          "start": 67.0,
+          "end": 67.12,
+          "probability": 0.996
+        },
+        {
+          "word": " received",
+          "start": 67.12,
+          "end": 67.5,
+          "probability": 0.989
+        },
+        {
+          "word": " 10",
+          "start": 67.5,
+          "end": 67.78,
+          "probability": 0.557
+        },
+        {
+          "word": " compliments",
+          "start": 67.78,
+          "end": 68.3,
+          "probability": 0.967
+        },
+        {
+          "word": " earlier.",
+          "start": 68.3,
+          "end": 68.8,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 69.36,
+      "end": 72.12,
+      "text": "Have you ever wondered why bad news travels so fast?",
+      "words": [
+        {
+          "word": " Have",
+          "start": 69.36,
+          "end": 69.44,
+          "probability": 0.894
+        },
+        {
+          "word": " you",
+          "start": 69.44,
+          "end": 69.56,
+          "probability": 0.998
+        },
+        {
+          "word": " ever",
+          "start": 69.56,
+          "end": 69.76,
+          "probability": 0.919
+        },
+        {
+          "word": " wondered",
+          "start": 69.76,
+          "end": 70.08,
+          "probability": 0.996
+        },
+        {
+          "word": " why",
+          "start": 70.08,
+          "end": 70.42,
+          "probability": 0.921
+        },
+        {
+          "word": " bad",
+          "start": 70.42,
+          "end": 70.68,
+          "probability": 0.987
+        },
+        {
+          "word": " news",
+          "start": 70.68,
+          "end": 70.94,
+          "probability": 0.998
+        },
+        {
+          "word": " travels",
+          "start": 70.94,
+          "end": 71.34,
+          "probability": 0.989
+        },
+        {
+          "word": " so",
+          "start": 71.34,
+          "end": 71.66,
+          "probability": 0.999
+        },
+        {
+          "word": " fast?",
+          "start": 71.66,
+          "end": 72.12,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 72.6,
+      "end": 75.18,
+      "text": "Your brain is simply tuned to pay attention to threat.",
+      "words": [
+        {
+          "word": " Your",
+          "start": 72.6,
+          "end": 72.76,
+          "probability": 0.988
+        },
+        {
+          "word": " brain",
+          "start": 72.76,
+          "end": 73.04,
+          "probability": 0.999
+        },
+        {
+          "word": " is",
+          "start": 73.04,
+          "end": 73.32,
+          "probability": 0.993
+        },
+        {
+          "word": " simply",
+          "start": 73.32,
+          "end": 73.64,
+          "probability": 0.997
+        },
+        {
+          "word": " tuned",
+          "start": 73.64,
+          "end": 73.94,
+          "probability": 0.993
+        },
+        {
+          "word": " to",
+          "start": 73.94,
+          "end": 74.14,
+          "probability": 0.998
+        },
+        {
+          "word": " pay",
+          "start": 74.14,
+          "end": 74.26,
+          "probability": 0.997
+        },
+        {
+          "word": " attention",
+          "start": 74.26,
+          "end": 74.6,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 74.6,
+          "end": 74.88,
+          "probability": 0.999
+        },
+        {
+          "word": " threat.",
+          "start": 74.88,
+          "end": 75.18,
+          "probability": 0.952
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 75.76,
+      "end": 78.48,
+      "text": "This tuning is visible in your actual brain activity.",
+      "words": [
+        {
+          "word": " This",
+          "start": 75.76,
+          "end": 75.92,
+          "probability": 0.994
+        },
+        {
+          "word": " tuning",
+          "start": 75.92,
+          "end": 76.26,
+          "probability": 0.985
+        },
+        {
+          "word": " is",
+          "start": 76.26,
+          "end": 76.58,
+          "probability": 0.998
+        },
+        {
+          "word": " visible",
+          "start": 76.58,
+          "end": 76.94,
+          "probability": 0.991
+        },
+        {
+          "word": " in",
+          "start": 76.94,
+          "end": 77.18,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 77.18,
+          "end": 77.3,
+          "probability": 0.995
+        },
+        {
+          "word": " actual",
+          "start": 77.3,
+          "end": 77.64,
+          "probability": 0.981
+        },
+        {
+          "word": " brain",
+          "start": 77.64,
+          "end": 77.9,
+          "probability": 0.994
+        },
+        {
+          "word": " activity.",
+          "start": 77.9,
+          "end": 78.48,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 79.06,
+      "end": 82.76,
+      "text": "Dr. John Kessiapo, a pioneer in social neuroscience,",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 79.06,
+          "end": 79.34,
+          "probability": 0.952
+        },
+        {
+          "word": " John",
+          "start": 79.6,
+          "end": 79.68,
+          "probability": 0.942
+        },
+        {
+          "word": " Kessiapo,",
+          "start": 79.68,
+          "end": 80.44,
+          "probability": 0.646
+        },
+        {
+          "word": " a",
+          "start": 80.72,
+          "end": 80.78,
+          "probability": 0.978
+        },
+        {
+          "word": " pioneer",
+          "start": 80.78,
+          "end": 81.3,
+          "probability": 0.993
+        },
+        {
+          "word": " in",
+          "start": 81.3,
+          "end": 81.68,
+          "probability": 0.999
+        },
+        {
+          "word": " social",
+          "start": 81.68,
+          "end": 82.08,
+          "probability": 0.965
+        },
+        {
+          "word": " neuroscience,",
+          "start": 82.08,
+          "end": 82.76,
+          "probability": 0.964
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 83.14,
+      "end": 86.8,
+      "text": "conducted experiments tracking the electrical signals in the human brain.",
+      "words": [
+        {
+          "word": " conducted",
+          "start": 83.14,
+          "end": 83.38,
+          "probability": 0.992
+        },
+        {
+          "word": " experiments",
+          "start": 83.38,
+          "end": 84.02,
+          "probability": 0.995
+        },
+        {
+          "word": " tracking",
+          "start": 84.02,
+          "end": 84.62,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 84.62,
+          "end": 84.84,
+          "probability": 0.996
+        },
+        {
+          "word": " electrical",
+          "start": 84.84,
+          "end": 85.22,
+          "probability": 0.998
+        },
+        {
+          "word": " signals",
+          "start": 85.22,
+          "end": 85.76,
+          "probability": 0.998
+        },
+        {
+          "word": " in",
+          "start": 85.76,
+          "end": 86.06,
+          "probability": 0.806
+        },
+        {
+          "word": " the",
+          "start": 86.06,
+          "end": 86.18,
+          "probability": 0.988
+        },
+        {
+          "word": " human",
+          "start": 86.18,
+          "end": 86.42,
+          "probability": 0.997
+        },
+        {
+          "word": " brain.",
+          "start": 86.42,
+          "end": 86.8,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 87.14,
+      "end": 91.68,
+      "text": "He showed participants pictures of positive, neutral, and negative things.",
+      "words": [
+        {
+          "word": " He",
+          "start": 87.14,
+          "end": 87.44,
+          "probability": 0.521
+        },
+        {
+          "word": " showed",
+          "start": 87.44,
+          "end": 87.64,
+          "probability": 0.916
+        },
+        {
+          "word": " participants",
+          "start": 87.64,
+          "end": 88.28,
+          "probability": 0.941
+        },
+        {
+          "word": " pictures",
+          "start": 88.28,
+          "end": 88.78,
+          "probability": 0.58
+        },
+        {
+          "word": " of",
+          "start": 88.78,
+          "end": 89.08,
+          "probability": 0.991
+        },
+        {
+          "word": " positive,",
+          "start": 89.08,
+          "end": 89.58,
+          "probability": 0.994
+        },
+        {
+          "word": " neutral,",
+          "start": 90.02,
+          "end": 90.28,
+          "probability": 0.994
+        },
+        {
+          "word": " and",
+          "start": 90.52,
+          "end": 90.76,
+          "probability": 0.967
+        },
+        {
+          "word": " negative",
+          "start": 90.76,
+          "end": 91.08,
+          "probability": 0.998
+        },
+        {
+          "word": " things.",
+          "start": 91.08,
+          "end": 91.68,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 92.06,
+      "end": 93.42,
+      "text": "He recorded their brain waves.",
+      "words": [
+        {
+          "word": " He",
+          "start": 92.06,
+          "end": 92.2,
+          "probability": 0.885
+        },
+        {
+          "word": " recorded",
+          "start": 92.2,
+          "end": 92.6,
+          "probability": 0.991
+        },
+        {
+          "word": " their",
+          "start": 92.6,
+          "end": 92.82,
+          "probability": 0.995
+        },
+        {
+          "word": " brain",
+          "start": 92.82,
+          "end": 93.1,
+          "probability": 0.986
+        },
+        {
+          "word": " waves.",
+          "start": 93.1,
+          "end": 93.42,
+          "probability": 0.945
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 94.06,
+      "end": 95.16,
+      "text": "The results were startling.",
+      "words": [
+        {
+          "word": " The",
+          "start": 94.06,
+          "end": 94.16,
+          "probability": 0.986
+        },
+        {
+          "word": " results",
+          "start": 94.16,
+          "end": 94.42,
+          "probability": 0.999
+        },
+        {
+          "word": " were",
+          "start": 94.42,
+          "end": 94.7,
+          "probability": 0.994
+        },
+        {
+          "word": " startling.",
+          "start": 94.7,
+          "end": 95.16,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 95.7,
+      "end": 98.64,
+      "text": "The brain showed a much larger spike in electrical activity",
+      "words": [
+        {
+          "word": " The",
+          "start": 95.7,
+          "end": 95.76,
+          "probability": 0.97
+        },
+        {
+          "word": " brain",
+          "start": 95.76,
+          "end": 96.02,
+          "probability": 0.993
+        },
+        {
+          "word": " showed",
+          "start": 96.02,
+          "end": 96.32,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 96.32,
+          "end": 96.46,
+          "probability": 0.994
+        },
+        {
+          "word": " much",
+          "start": 96.46,
+          "end": 96.64,
+          "probability": 0.996
+        },
+        {
+          "word": " larger",
+          "start": 96.64,
+          "end": 96.98,
+          "probability": 0.99
+        },
+        {
+          "word": " spike",
+          "start": 96.98,
+          "end": 97.34,
+          "probability": 0.997
+        },
+        {
+          "word": " in",
+          "start": 97.34,
+          "end": 97.58,
+          "probability": 0.999
+        },
+        {
+          "word": " electrical",
+          "start": 97.58,
+          "end": 97.98,
+          "probability": 0.995
+        },
+        {
+          "word": " activity",
+          "start": 97.98,
+          "end": 98.64,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 98.64,
+      "end": 100.12,
+      "text": "when viewing negative images.",
+      "words": [
+        {
+          "word": " when",
+          "start": 98.64,
+          "end": 98.98,
+          "probability": 0.879
+        },
+        {
+          "word": " viewing",
+          "start": 98.98,
+          "end": 99.26,
+          "probability": 0.999
+        },
+        {
+          "word": " negative",
+          "start": 99.26,
+          "end": 99.68,
+          "probability": 0.999
+        },
+        {
+          "word": " images.",
+          "start": 99.68,
+          "end": 100.12,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 100.76,
+      "end": 103.4,
+      "text": "Why does your brain react so strongly to what you dislike?",
+      "words": [
+        {
+          "word": " Why",
+          "start": 100.76,
+          "end": 100.88,
+          "probability": 0.769
+        },
+        {
+          "word": " does",
+          "start": 100.88,
+          "end": 101.02,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 101.02,
+          "end": 101.16,
+          "probability": 0.997
+        },
+        {
+          "word": " brain",
+          "start": 101.16,
+          "end": 101.42,
+          "probability": 1.0
+        },
+        {
+          "word": " react",
+          "start": 101.42,
+          "end": 101.8,
+          "probability": 0.989
+        },
+        {
+          "word": " so",
+          "start": 101.8,
+          "end": 102.22,
+          "probability": 0.997
+        },
+        {
+          "word": " strongly",
+          "start": 102.22,
+          "end": 102.64,
+          "probability": 0.993
+        },
+        {
+          "word": " to",
+          "start": 102.64,
+          "end": 102.82,
+          "probability": 0.997
+        },
+        {
+          "word": " what",
+          "start": 102.82,
+          "end": 102.94,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 102.94,
+          "end": 103.04,
+          "probability": 0.998
+        },
+        {
+          "word": " dislike?",
+          "start": 103.04,
+          "end": 103.4,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 103.96,
+      "end": 108.64,
+      "text": "It is an automatic subconscious response that happens before you even have a conscious thought.",
+      "words": [
+        {
+          "word": " It",
+          "start": 103.96,
+          "end": 104.1,
+          "probability": 0.934
+        },
+        {
+          "word": " is",
+          "start": 104.1,
+          "end": 104.22,
+          "probability": 0.974
+        },
+        {
+          "word": " an",
+          "start": 104.22,
+          "end": 104.34,
+          "probability": 0.99
+        },
+        {
+          "word": " automatic",
+          "start": 104.34,
+          "end": 104.86,
+          "probability": 0.982
+        },
+        {
+          "word": " subconscious",
+          "start": 104.86,
+          "end": 105.66,
+          "probability": 0.504
+        },
+        {
+          "word": " response",
+          "start": 105.66,
+          "end": 106.1,
+          "probability": 0.999
+        },
+        {
+          "word": " that",
+          "start": 106.1,
+          "end": 106.42,
+          "probability": 0.99
+        },
+        {
+          "word": " happens",
+          "start": 106.42,
+          "end": 106.74,
+          "probability": 0.998
+        },
+        {
+          "word": " before",
+          "start": 106.74,
+          "end": 107.1,
+          "probability": 0.997
+        },
+        {
+          "word": " you",
+          "start": 107.1,
+          "end": 107.26,
+          "probability": 0.998
+        },
+        {
+          "word": " even",
+          "start": 107.26,
+          "end": 107.54,
+          "probability": 0.996
+        },
+        {
+          "word": " have",
+          "start": 107.54,
+          "end": 107.72,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 107.72,
+          "end": 107.82,
+          "probability": 0.955
+        },
+        {
+          "word": " conscious",
+          "start": 107.82,
+          "end": 108.16,
+          "probability": 0.995
+        },
+        {
+          "word": " thought.",
+          "start": 108.16,
+          "end": 108.64,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 109.14,
+      "end": 111.02,
+      "text": "Think about how this shapes your daily life.",
+      "words": [
+        {
+          "word": " Think",
+          "start": 109.14,
+          "end": 109.32,
+          "probability": 0.983
+        },
+        {
+          "word": " about",
+          "start": 109.32,
+          "end": 109.52,
+          "probability": 0.997
+        },
+        {
+          "word": " how",
+          "start": 109.52,
+          "end": 109.7,
+          "probability": 0.995
+        },
+        {
+          "word": " this",
+          "start": 109.7,
+          "end": 109.92,
+          "probability": 0.902
+        },
+        {
+          "word": " shapes",
+          "start": 109.92,
+          "end": 110.16,
+          "probability": 0.96
+        },
+        {
+          "word": " your",
+          "start": 110.16,
+          "end": 110.36,
+          "probability": 0.987
+        },
+        {
+          "word": " daily",
+          "start": 110.36,
+          "end": 110.58,
+          "probability": 0.999
+        },
+        {
+          "word": " life.",
+          "start": 110.58,
+          "end": 111.02,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 111.32,
+      "end": 113.16,
+      "text": "You might have a wonderful dinner with friends.",
+      "words": [
+        {
+          "word": " You",
+          "start": 111.32,
+          "end": 111.56,
+          "probability": 0.993
+        },
+        {
+          "word": " might",
+          "start": 111.56,
+          "end": 111.68,
+          "probability": 0.996
+        },
+        {
+          "word": " have",
+          "start": 111.68,
+          "end": 111.8,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 111.8,
+          "end": 111.88,
+          "probability": 0.975
+        },
+        {
+          "word": " wonderful",
+          "start": 111.88,
+          "end": 112.18,
+          "probability": 0.999
+        },
+        {
+          "word": " dinner",
+          "start": 112.18,
+          "end": 112.54,
+          "probability": 0.998
+        },
+        {
+          "word": " with",
+          "start": 112.54,
+          "end": 112.76,
+          "probability": 0.998
+        },
+        {
+          "word": " friends.",
+          "start": 112.76,
+          "end": 113.16,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 113.16,
+      "end": 117.86,
+      "text": "You enjoy great conversation, delicious food, and a beautiful walk home.",
+      "words": [
+        {
+          "word": " You",
+          "start": 113.16,
+          "end": 113.78,
+          "probability": 0.178
+        },
+        {
+          "word": " enjoy",
+          "start": 113.78,
+          "end": 114.04,
+          "probability": 0.965
+        },
+        {
+          "word": " great",
+          "start": 114.04,
+          "end": 114.44,
+          "probability": 0.603
+        },
+        {
+          "word": " conversation,",
+          "start": 114.44,
+          "end": 115.12,
+          "probability": 0.966
+        },
+        {
+          "word": " delicious",
+          "start": 115.58,
+          "end": 115.84,
+          "probability": 0.991
+        },
+        {
+          "word": " food,",
+          "start": 115.84,
+          "end": 116.32,
+          "probability": 0.991
+        },
+        {
+          "word": " and",
+          "start": 116.6,
+          "end": 116.7,
+          "probability": 0.993
+        },
+        {
+          "word": " a",
+          "start": 116.7,
+          "end": 116.76,
+          "probability": 0.981
+        },
+        {
+          "word": " beautiful",
+          "start": 116.76,
+          "end": 117.14,
+          "probability": 0.996
+        },
+        {
+          "word": " walk",
+          "start": 117.14,
+          "end": 117.48,
+          "probability": 0.971
+        },
+        {
+          "word": " home.",
+          "start": 117.48,
+          "end": 117.86,
+          "probability": 0.914
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 118.16,
+      "end": 120.4,
+      "text": "But if the waiter is slightly rude at the very end,",
+      "words": [
+        {
+          "word": " But",
+          "start": 118.16,
+          "end": 118.3,
+          "probability": 0.856
+        },
+        {
+          "word": " if",
+          "start": 118.3,
+          "end": 118.44,
+          "probability": 0.908
+        },
+        {
+          "word": " the",
+          "start": 118.44,
+          "end": 118.54,
+          "probability": 0.986
+        },
+        {
+          "word": " waiter",
+          "start": 118.54,
+          "end": 118.74,
+          "probability": 0.994
+        },
+        {
+          "word": " is",
+          "start": 118.74,
+          "end": 118.92,
+          "probability": 0.993
+        },
+        {
+          "word": " slightly",
+          "start": 118.92,
+          "end": 119.22,
+          "probability": 0.98
+        },
+        {
+          "word": " rude",
+          "start": 119.22,
+          "end": 119.58,
+          "probability": 0.989
+        },
+        {
+          "word": " at",
+          "start": 119.58,
+          "end": 119.7,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 119.7,
+          "end": 119.82,
+          "probability": 0.996
+        },
+        {
+          "word": " very",
+          "start": 119.82,
+          "end": 120.06,
+          "probability": 0.998
+        },
+        {
+          "word": " end,",
+          "start": 120.06,
+          "end": 120.4,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 120.54,
+      "end": 122.46,
+      "text": "that is the only thing you will talk about.",
+      "words": [
+        {
+          "word": " that",
+          "start": 120.54,
+          "end": 120.64,
+          "probability": 0.986
+        },
+        {
+          "word": " is",
+          "start": 120.64,
+          "end": 120.76,
+          "probability": 0.97
+        },
+        {
+          "word": " the",
+          "start": 120.76,
+          "end": 120.92,
+          "probability": 0.982
+        },
+        {
+          "word": " only",
+          "start": 120.92,
+          "end": 121.2,
+          "probability": 0.997
+        },
+        {
+          "word": " thing",
+          "start": 121.2,
+          "end": 121.44,
+          "probability": 0.996
+        },
+        {
+          "word": " you",
+          "start": 121.44,
+          "end": 121.66,
+          "probability": 0.987
+        },
+        {
+          "word": " will",
+          "start": 121.66,
+          "end": 121.8,
+          "probability": 0.951
+        },
+        {
+          "word": " talk",
+          "start": 121.8,
+          "end": 122.04,
+          "probability": 0.996
+        },
+        {
+          "word": " about.",
+          "start": 122.04,
+          "end": 122.46,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 123.32,
+      "end": 127.74,
+      "text": "Neurocycologist Dr. Rick Hansen has a famous way of explaining this quirk of biology.",
+      "words": [
+        {
+          "word": " Neurocycologist",
+          "start": 123.32,
+          "end": 123.84,
+          "probability": 0.758
+        },
+        {
+          "word": " Dr.",
+          "start": 123.84,
+          "end": 124.28,
+          "probability": 0.865
+        },
+        {
+          "word": " Rick",
+          "start": 124.5,
+          "end": 124.56,
+          "probability": 0.972
+        },
+        {
+          "word": " Hansen",
+          "start": 124.56,
+          "end": 125.0,
+          "probability": 0.758
+        },
+        {
+          "word": " has",
+          "start": 125.0,
+          "end": 125.2,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 125.2,
+          "end": 125.32,
+          "probability": 0.994
+        },
+        {
+          "word": " famous",
+          "start": 125.32,
+          "end": 125.62,
+          "probability": 0.986
+        },
+        {
+          "word": " way",
+          "start": 125.62,
+          "end": 125.94,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 125.94,
+          "end": 126.08,
+          "probability": 0.991
+        },
+        {
+          "word": " explaining",
+          "start": 126.08,
+          "end": 126.5,
+          "probability": 0.999
+        },
+        {
+          "word": " this",
+          "start": 126.5,
+          "end": 126.78,
+          "probability": 0.991
+        },
+        {
+          "word": " quirk",
+          "start": 126.78,
+          "end": 127.04,
+          "probability": 0.92
+        },
+        {
+          "word": " of",
+          "start": 127.04,
+          "end": 127.24,
+          "probability": 0.98
+        },
+        {
+          "word": " biology.",
+          "start": 127.24,
+          "end": 127.74,
+          "probability": 0.925
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 128.36,
+      "end": 131.48,
+      "text": "He says your brain is like Velcro for negative experiences,",
+      "words": [
+        {
+          "word": " He",
+          "start": 128.36,
+          "end": 128.44,
+          "probability": 0.913
+        },
+        {
+          "word": " says",
+          "start": 128.44,
+          "end": 128.64,
+          "probability": 0.991
+        },
+        {
+          "word": " your",
+          "start": 128.64,
+          "end": 128.86,
+          "probability": 0.903
+        },
+        {
+          "word": " brain",
+          "start": 128.86,
+          "end": 129.18,
+          "probability": 0.998
+        },
+        {
+          "word": " is",
+          "start": 129.18,
+          "end": 129.46,
+          "probability": 0.997
+        },
+        {
+          "word": " like",
+          "start": 129.46,
+          "end": 129.66,
+          "probability": 0.908
+        },
+        {
+          "word": " Velcro",
+          "start": 129.66,
+          "end": 130.08,
+          "probability": 0.814
+        },
+        {
+          "word": " for",
+          "start": 130.08,
+          "end": 130.32,
+          "probability": 0.977
+        },
+        {
+          "word": " negative",
+          "start": 130.32,
+          "end": 130.66,
+          "probability": 0.988
+        },
+        {
+          "word": " experiences,",
+          "start": 130.66,
+          "end": 131.48,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 131.9,
+      "end": 133.68,
+      "text": "but like Teflon for positive ones.",
+      "words": [
+        {
+          "word": " but",
+          "start": 131.9,
+          "end": 132.0,
+          "probability": 0.994
+        },
+        {
+          "word": " like",
+          "start": 132.0,
+          "end": 132.22,
+          "probability": 0.99
+        },
+        {
+          "word": " Teflon",
+          "start": 132.22,
+          "end": 132.68,
+          "probability": 0.919
+        },
+        {
+          "word": " for",
+          "start": 132.68,
+          "end": 132.86,
+          "probability": 0.994
+        },
+        {
+          "word": " positive",
+          "start": 132.86,
+          "end": 133.24,
+          "probability": 0.996
+        },
+        {
+          "word": " ones.",
+          "start": 133.24,
+          "end": 133.68,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 134.16,
+      "end": 137.18,
+      "text": "Does it feel like you are fighting a losing battle against your own mind?",
+      "words": [
+        {
+          "word": " Does",
+          "start": 134.16,
+          "end": 134.34,
+          "probability": 0.981
+        },
+        {
+          "word": " it",
+          "start": 134.34,
+          "end": 134.46,
+          "probability": 0.996
+        },
+        {
+          "word": " feel",
+          "start": 134.46,
+          "end": 134.64,
+          "probability": 0.998
+        },
+        {
+          "word": " like",
+          "start": 134.64,
+          "end": 134.84,
+          "probability": 0.999
+        },
+        {
+          "word": " you",
+          "start": 134.84,
+          "end": 135.0,
+          "probability": 0.994
+        },
+        {
+          "word": " are",
+          "start": 135.0,
+          "end": 135.06,
+          "probability": 0.792
+        },
+        {
+          "word": " fighting",
+          "start": 135.06,
+          "end": 135.36,
+          "probability": 0.993
+        },
+        {
+          "word": " a",
+          "start": 135.36,
+          "end": 135.56,
+          "probability": 0.991
+        },
+        {
+          "word": " losing",
+          "start": 135.56,
+          "end": 135.82,
+          "probability": 0.978
+        },
+        {
+          "word": " battle",
+          "start": 135.82,
+          "end": 136.16,
+          "probability": 0.991
+        },
+        {
+          "word": " against",
+          "start": 136.16,
+          "end": 136.56,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 136.56,
+          "end": 136.8,
+          "probability": 0.997
+        },
+        {
+          "word": " own",
+          "start": 136.8,
+          "end": 136.94,
+          "probability": 0.997
+        },
+        {
+          "word": " mind?",
+          "start": 136.94,
+          "end": 137.18,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 137.6,
+      "end": 141.3,
+      "text": "The bad stuff sticks immediately while the good stuff slides right off.",
+      "words": [
+        {
+          "word": " The",
+          "start": 137.6,
+          "end": 137.72,
+          "probability": 0.993
+        },
+        {
+          "word": " bad",
+          "start": 137.72,
+          "end": 137.9,
+          "probability": 0.991
+        },
+        {
+          "word": " stuff",
+          "start": 137.9,
+          "end": 138.22,
+          "probability": 0.978
+        },
+        {
+          "word": " sticks",
+          "start": 138.22,
+          "end": 138.5,
+          "probability": 0.99
+        },
+        {
+          "word": " immediately",
+          "start": 138.5,
+          "end": 139.12,
+          "probability": 0.962
+        },
+        {
+          "word": " while",
+          "start": 139.12,
+          "end": 139.64,
+          "probability": 0.757
+        },
+        {
+          "word": " the",
+          "start": 139.64,
+          "end": 139.88,
+          "probability": 0.994
+        },
+        {
+          "word": " good",
+          "start": 139.88,
+          "end": 140.04,
+          "probability": 0.996
+        },
+        {
+          "word": " stuff",
+          "start": 140.04,
+          "end": 140.38,
+          "probability": 0.995
+        },
+        {
+          "word": " slides",
+          "start": 140.38,
+          "end": 140.8,
+          "probability": 0.993
+        },
+        {
+          "word": " right",
+          "start": 140.8,
+          "end": 141.0,
+          "probability": 0.997
+        },
+        {
+          "word": " off.",
+          "start": 141.0,
+          "end": 141.3,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 141.63,
+      "end": 145.4,
+      "text": "The key is understanding that your brain is lying to you for your own protection.",
+      "words": [
+        {
+          "word": " The",
+          "start": 141.63,
+          "end": 141.94,
+          "probability": 0.512
+        },
+        {
+          "word": " key",
+          "start": 141.94,
+          "end": 142.18,
+          "probability": 0.988
+        },
+        {
+          "word": " is",
+          "start": 142.18,
+          "end": 142.38,
+          "probability": 0.989
+        },
+        {
+          "word": " understanding",
+          "start": 142.38,
+          "end": 142.9,
+          "probability": 0.966
+        },
+        {
+          "word": " that",
+          "start": 142.9,
+          "end": 143.14,
+          "probability": 0.957
+        },
+        {
+          "word": " your",
+          "start": 143.14,
+          "end": 143.3,
+          "probability": 0.991
+        },
+        {
+          "word": " brain",
+          "start": 143.3,
+          "end": 143.52,
+          "probability": 0.998
+        },
+        {
+          "word": " is",
+          "start": 143.52,
+          "end": 143.84,
+          "probability": 0.995
+        },
+        {
+          "word": " lying",
+          "start": 143.84,
+          "end": 144.04,
+          "probability": 0.989
+        },
+        {
+          "word": " to",
+          "start": 144.04,
+          "end": 144.26,
+          "probability": 0.997
+        },
+        {
+          "word": " you",
+          "start": 144.26,
+          "end": 144.4,
+          "probability": 0.998
+        },
+        {
+          "word": " for",
+          "start": 144.4,
+          "end": 144.54,
+          "probability": 0.995
+        },
+        {
+          "word": " your",
+          "start": 144.54,
+          "end": 144.7,
+          "probability": 0.991
+        },
+        {
+          "word": " own",
+          "start": 144.7,
+          "end": 144.9,
+          "probability": 0.992
+        },
+        {
+          "word": " protection.",
+          "start": 144.9,
+          "end": 145.4,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 145.96,
+      "end": 148.44,
+      "text": "It is constantly scanning the horizon for danger,",
+      "words": [
+        {
+          "word": " It",
+          "start": 145.96,
+          "end": 146.06,
+          "probability": 0.976
+        },
+        {
+          "word": " is",
+          "start": 146.06,
+          "end": 146.16,
+          "probability": 0.985
+        },
+        {
+          "word": " constantly",
+          "start": 146.16,
+          "end": 146.74,
+          "probability": 0.998
+        },
+        {
+          "word": " scanning",
+          "start": 146.74,
+          "end": 147.14,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 147.14,
+          "end": 147.38,
+          "probability": 0.998
+        },
+        {
+          "word": " horizon",
+          "start": 147.38,
+          "end": 147.78,
+          "probability": 0.993
+        },
+        {
+          "word": " for",
+          "start": 147.78,
+          "end": 148.02,
+          "probability": 0.999
+        },
+        {
+          "word": " danger,",
+          "start": 148.02,
+          "end": 148.44,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 148.96,
+      "end": 151.42,
+      "text": "magnifying minor problems into major threats.",
+      "words": [
+        {
+          "word": " magnifying",
+          "start": 148.96,
+          "end": 149.48,
+          "probability": 0.997
+        },
+        {
+          "word": " minor",
+          "start": 149.48,
+          "end": 149.9,
+          "probability": 0.987
+        },
+        {
+          "word": " problems",
+          "start": 149.9,
+          "end": 150.32,
+          "probability": 0.999
+        },
+        {
+          "word": " into",
+          "start": 150.32,
+          "end": 150.66,
+          "probability": 0.932
+        },
+        {
+          "word": " major",
+          "start": 150.66,
+          "end": 151.0,
+          "probability": 0.997
+        },
+        {
+          "word": " threats.",
+          "start": 151.0,
+          "end": 151.42,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 151.98,
+      "end": 156.06,
+      "text": "In the ancient world, this hypervigilance was a superpower that saved your life.",
+      "words": [
+        {
+          "word": " In",
+          "start": 151.98,
+          "end": 152.08,
+          "probability": 0.983
+        },
+        {
+          "word": " the",
+          "start": 152.08,
+          "end": 152.2,
+          "probability": 0.985
+        },
+        {
+          "word": " ancient",
+          "start": 152.2,
+          "end": 152.52,
+          "probability": 0.905
+        },
+        {
+          "word": " world,",
+          "start": 152.52,
+          "end": 152.96,
+          "probability": 0.992
+        },
+        {
+          "word": " this",
+          "start": 153.26,
+          "end": 153.4,
+          "probability": 0.991
+        },
+        {
+          "word": " hypervigilance",
+          "start": 153.4,
+          "end": 154.16,
+          "probability": 0.844
+        },
+        {
+          "word": " was",
+          "start": 154.16,
+          "end": 154.3,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 154.3,
+          "end": 154.44,
+          "probability": 0.98
+        },
+        {
+          "word": " superpower",
+          "start": 154.44,
+          "end": 154.94,
+          "probability": 0.889
+        },
+        {
+          "word": " that",
+          "start": 154.94,
+          "end": 155.26,
+          "probability": 0.994
+        },
+        {
+          "word": " saved",
+          "start": 155.26,
+          "end": 155.54,
+          "probability": 0.982
+        },
+        {
+          "word": " your",
+          "start": 155.54,
+          "end": 155.72,
+          "probability": 0.968
+        },
+        {
+          "word": " life.",
+          "start": 155.72,
+          "end": 156.06,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 156.48,
+      "end": 160.68,
+      "text": "Today, in a world of constant notifications and 24 hour news cycles,",
+      "words": [
+        {
+          "word": " Today,",
+          "start": 156.48,
+          "end": 156.78,
+          "probability": 0.98
+        },
+        {
+          "word": " in",
+          "start": 157.06,
+          "end": 157.12,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 157.12,
+          "end": 157.18,
+          "probability": 0.979
+        },
+        {
+          "word": " world",
+          "start": 157.18,
+          "end": 157.38,
+          "probability": 0.991
+        },
+        {
+          "word": " of",
+          "start": 157.38,
+          "end": 157.58,
+          "probability": 0.998
+        },
+        {
+          "word": " constant",
+          "start": 157.58,
+          "end": 157.96,
+          "probability": 0.942
+        },
+        {
+          "word": " notifications",
+          "start": 157.96,
+          "end": 158.52,
+          "probability": 0.989
+        },
+        {
+          "word": " and",
+          "start": 158.52,
+          "end": 159.16,
+          "probability": 0.822
+        },
+        {
+          "word": " 24",
+          "start": 159.16,
+          "end": 159.66,
+          "probability": 0.958
+        },
+        {
+          "word": " hour",
+          "start": 159.66,
+          "end": 160.0,
+          "probability": 0.664
+        },
+        {
+          "word": " news",
+          "start": 160.0,
+          "end": 160.28,
+          "probability": 0.987
+        },
+        {
+          "word": " cycles,",
+          "start": 160.28,
+          "end": 160.68,
+          "probability": 0.907
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 161.04,
+      "end": 162.14,
+      "text": "it is an exhausting trap.",
+      "words": [
+        {
+          "word": " it",
+          "start": 161.04,
+          "end": 161.12,
+          "probability": 0.992
+        },
+        {
+          "word": " is",
+          "start": 161.12,
+          "end": 161.22,
+          "probability": 0.979
+        },
+        {
+          "word": " an",
+          "start": 161.22,
+          "end": 161.34,
+          "probability": 0.994
+        },
+        {
+          "word": " exhausting",
+          "start": 161.34,
+          "end": 161.8,
+          "probability": 0.994
+        },
+        {
+          "word": " trap.",
+          "start": 161.8,
+          "end": 162.14,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 162.7,
+      "end": 165.3,
+      "text": "Your brain treats a critical email from your boss",
+      "words": [
+        {
+          "word": " Your",
+          "start": 162.7,
+          "end": 162.78,
+          "probability": 0.974
+        },
+        {
+          "word": " brain",
+          "start": 162.78,
+          "end": 163.14,
+          "probability": 0.997
+        },
+        {
+          "word": " treats",
+          "start": 163.14,
+          "end": 163.52,
+          "probability": 0.993
+        },
+        {
+          "word": " a",
+          "start": 163.52,
+          "end": 163.8,
+          "probability": 0.993
+        },
+        {
+          "word": " critical",
+          "start": 163.8,
+          "end": 164.18,
+          "probability": 0.992
+        },
+        {
+          "word": " email",
+          "start": 164.18,
+          "end": 164.6,
+          "probability": 0.952
+        },
+        {
+          "word": " from",
+          "start": 164.6,
+          "end": 164.88,
+          "probability": 0.994
+        },
+        {
+          "word": " your",
+          "start": 164.88,
+          "end": 165.06,
+          "probability": 0.99
+        },
+        {
+          "word": " boss",
+          "start": 165.06,
+          "end": 165.3,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 165.3,
+      "end": 168.32,
+      "text": "with the same physiological panic as a lunging predator.",
+      "words": [
+        {
+          "word": " with",
+          "start": 165.3,
+          "end": 165.54,
+          "probability": 0.972
+        },
+        {
+          "word": " the",
+          "start": 165.54,
+          "end": 165.64,
+          "probability": 0.988
+        },
+        {
+          "word": " same",
+          "start": 165.64,
+          "end": 165.92,
+          "probability": 0.998
+        },
+        {
+          "word": " physiological",
+          "start": 165.92,
+          "end": 166.48,
+          "probability": 0.983
+        },
+        {
+          "word": " panic",
+          "start": 166.48,
+          "end": 167.1,
+          "probability": 0.985
+        },
+        {
+          "word": " as",
+          "start": 167.1,
+          "end": 167.36,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 167.36,
+          "end": 167.5,
+          "probability": 0.989
+        },
+        {
+          "word": " lunging",
+          "start": 167.5,
+          "end": 167.94,
+          "probability": 0.967
+        },
+        {
+          "word": " predator.",
+          "start": 167.94,
+          "end": 168.32,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 168.67,
+      "end": 171.3,
+      "text": "Do you feel the rush of adrenaline for no real reason?",
+      "words": [
+        {
+          "word": " Do",
+          "start": 168.67,
+          "end": 168.94,
+          "probability": 0.411
+        },
+        {
+          "word": " you",
+          "start": 168.94,
+          "end": 169.04,
+          "probability": 0.987
+        },
+        {
+          "word": " feel",
+          "start": 169.04,
+          "end": 169.26,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 169.26,
+          "end": 169.42,
+          "probability": 0.971
+        },
+        {
+          "word": " rush",
+          "start": 169.42,
+          "end": 169.58,
+          "probability": 0.958
+        },
+        {
+          "word": " of",
+          "start": 169.58,
+          "end": 169.76,
+          "probability": 0.997
+        },
+        {
+          "word": " adrenaline",
+          "start": 169.76,
+          "end": 170.06,
+          "probability": 0.985
+        },
+        {
+          "word": " for",
+          "start": 170.06,
+          "end": 170.4,
+          "probability": 0.984
+        },
+        {
+          "word": " no",
+          "start": 170.4,
+          "end": 170.58,
+          "probability": 0.976
+        },
+        {
+          "word": " real",
+          "start": 170.58,
+          "end": 170.9,
+          "probability": 0.986
+        },
+        {
+          "word": " reason?",
+          "start": 170.9,
+          "end": 171.3,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 171.8,
+      "end": 174.12,
+      "text": "You feel the same rush of adrenaline and cortisol,",
+      "words": [
+        {
+          "word": " You",
+          "start": 171.8,
+          "end": 171.94,
+          "probability": 0.953
+        },
+        {
+          "word": " feel",
+          "start": 171.94,
+          "end": 172.1,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 172.1,
+          "end": 172.32,
+          "probability": 0.992
+        },
+        {
+          "word": " same",
+          "start": 172.32,
+          "end": 172.56,
+          "probability": 0.995
+        },
+        {
+          "word": " rush",
+          "start": 172.56,
+          "end": 172.82,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 172.82,
+          "end": 173.0,
+          "probability": 0.996
+        },
+        {
+          "word": " adrenaline",
+          "start": 173.0,
+          "end": 173.38,
+          "probability": 0.997
+        },
+        {
+          "word": " and",
+          "start": 173.38,
+          "end": 173.66,
+          "probability": 0.584
+        },
+        {
+          "word": " cortisol,",
+          "start": 173.66,
+          "end": 174.12,
+          "probability": 0.98
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 174.48,
+      "end": 176.72,
+      "text": "even though you are sitting safely at a desk.",
+      "words": [
+        {
+          "word": " even",
+          "start": 174.48,
+          "end": 174.76,
+          "probability": 0.992
+        },
+        {
+          "word": " though",
+          "start": 174.76,
+          "end": 174.96,
+          "probability": 0.994
+        },
+        {
+          "word": " you",
+          "start": 174.96,
+          "end": 175.12,
+          "probability": 0.997
+        },
+        {
+          "word": " are",
+          "start": 175.12,
+          "end": 175.24,
+          "probability": 0.974
+        },
+        {
+          "word": " sitting",
+          "start": 175.24,
+          "end": 175.44,
+          "probability": 0.99
+        },
+        {
+          "word": " safely",
+          "start": 175.44,
+          "end": 176.0,
+          "probability": 0.972
+        },
+        {
+          "word": " at",
+          "start": 176.0,
+          "end": 176.26,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 176.26,
+          "end": 176.36,
+          "probability": 0.992
+        },
+        {
+          "word": " desk.",
+          "start": 176.36,
+          "end": 176.72,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 177.2,
+      "end": 179.62,
+      "text": "Dr. Roy Balmeister, a social psychologist,",
+      "words": [
+        {
+          "word": " Dr.",
+          "start": 177.2,
+          "end": 177.42,
+          "probability": 0.887
+        },
+        {
+          "word": " Roy",
+          "start": 177.62,
+          "end": 177.68,
+          "probability": 0.973
+        },
+        {
+          "word": " Balmeister,",
+          "start": 177.68,
+          "end": 178.26,
+          "probability": 0.74
+        },
+        {
+          "word": " a",
+          "start": 178.56,
+          "end": 178.6,
+          "probability": 0.97
+        },
+        {
+          "word": " social",
+          "start": 178.6,
+          "end": 178.92,
+          "probability": 0.946
+        },
+        {
+          "word": " psychologist,",
+          "start": 178.92,
+          "end": 179.62,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 180.06,
+      "end": 181.86,
+      "text": "reviewed hundreds of studies on this topic.",
+      "words": [
+        {
+          "word": " reviewed",
+          "start": 180.06,
+          "end": 180.24,
+          "probability": 0.992
+        },
+        {
+          "word": " hundreds",
+          "start": 180.24,
+          "end": 180.64,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 180.64,
+          "end": 180.8,
+          "probability": 0.998
+        },
+        {
+          "word": " studies",
+          "start": 180.8,
+          "end": 181.12,
+          "probability": 0.998
+        },
+        {
+          "word": " on",
+          "start": 181.12,
+          "end": 181.36,
+          "probability": 0.998
+        },
+        {
+          "word": " this",
+          "start": 181.36,
+          "end": 181.5,
+          "probability": 0.996
+        },
+        {
+          "word": " topic.",
+          "start": 181.5,
+          "end": 181.86,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 182.3,
+      "end": 186.1,
+      "text": "He concluded that bad is simply stronger than good across almost every domain.",
+      "words": [
+        {
+          "word": " He",
+          "start": 182.3,
+          "end": 182.48,
+          "probability": 0.987
+        },
+        {
+          "word": " concluded",
+          "start": 182.48,
+          "end": 182.84,
+          "probability": 0.999
+        },
+        {
+          "word": " that",
+          "start": 182.84,
+          "end": 183.04,
+          "probability": 0.989
+        },
+        {
+          "word": " bad",
+          "start": 183.04,
+          "end": 183.24,
+          "probability": 0.525
+        },
+        {
+          "word": " is",
+          "start": 183.24,
+          "end": 183.4,
+          "probability": 0.99
+        },
+        {
+          "word": " simply",
+          "start": 183.4,
+          "end": 183.7,
+          "probability": 0.967
+        },
+        {
+          "word": " stronger",
+          "start": 183.7,
+          "end": 184.14,
+          "probability": 0.987
+        },
+        {
+          "word": " than",
+          "start": 184.14,
+          "end": 184.34,
+          "probability": 0.995
+        },
+        {
+          "word": " good",
+          "start": 184.34,
+          "end": 184.52,
+          "probability": 0.976
+        },
+        {
+          "word": " across",
+          "start": 184.52,
+          "end": 184.82,
+          "probability": 0.953
+        },
+        {
+          "word": " almost",
+          "start": 184.82,
+          "end": 185.36,
+          "probability": 0.967
+        },
+        {
+          "word": " every",
+          "start": 185.36,
+          "end": 185.76,
+          "probability": 0.995
+        },
+        {
+          "word": " domain.",
+          "start": 185.76,
+          "end": 186.1,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 186.74,
+      "end": 188.94,
+      "text": "You remember bad experiences more vividly.",
+      "words": [
+        {
+          "word": " You",
+          "start": 186.74,
+          "end": 186.84,
+          "probability": 0.888
+        },
+        {
+          "word": " remember",
+          "start": 186.84,
+          "end": 187.06,
+          "probability": 0.981
+        },
+        {
+          "word": " bad",
+          "start": 187.06,
+          "end": 187.44,
+          "probability": 0.974
+        },
+        {
+          "word": " experiences",
+          "start": 187.44,
+          "end": 188.12,
+          "probability": 0.923
+        },
+        {
+          "word": " more",
+          "start": 188.12,
+          "end": 188.42,
+          "probability": 0.991
+        },
+        {
+          "word": " vividly.",
+          "start": 188.42,
+          "end": 188.94,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 189.32,
+      "end": 191.16,
+      "text": "You learn from bad feedback more quickly",
+      "words": [
+        {
+          "word": " You",
+          "start": 189.32,
+          "end": 189.5,
+          "probability": 0.994
+        },
+        {
+          "word": " learn",
+          "start": 189.5,
+          "end": 189.66,
+          "probability": 0.88
+        },
+        {
+          "word": " from",
+          "start": 189.66,
+          "end": 189.84,
+          "probability": 0.998
+        },
+        {
+          "word": " bad",
+          "start": 189.84,
+          "end": 190.08,
+          "probability": 0.998
+        },
+        {
+          "word": " feedback",
+          "start": 190.08,
+          "end": 190.42,
+          "probability": 0.996
+        },
+        {
+          "word": " more",
+          "start": 190.42,
+          "end": 190.8,
+          "probability": 0.995
+        },
+        {
+          "word": " quickly",
+          "start": 190.8,
+          "end": 191.16,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 191.16,
+      "end": 194.8,
+      "text": "and avoid bad reputations more intensely than you seek good ones.",
+      "words": [
+        {
+          "word": " and",
+          "start": 191.16,
+          "end": 191.5,
+          "probability": 0.907
+        },
+        {
+          "word": " avoid",
+          "start": 191.5,
+          "end": 191.72,
+          "probability": 0.999
+        },
+        {
+          "word": " bad",
+          "start": 191.72,
+          "end": 192.0,
+          "probability": 0.999
+        },
+        {
+          "word": " reputations",
+          "start": 192.0,
+          "end": 192.7,
+          "probability": 0.932
+        },
+        {
+          "word": " more",
+          "start": 192.7,
+          "end": 193.0,
+          "probability": 0.99
+        },
+        {
+          "word": " intensely",
+          "start": 193.0,
+          "end": 193.5,
+          "probability": 0.975
+        },
+        {
+          "word": " than",
+          "start": 193.5,
+          "end": 193.76,
+          "probability": 0.97
+        },
+        {
+          "word": " you",
+          "start": 193.76,
+          "end": 193.9,
+          "probability": 0.994
+        },
+        {
+          "word": " seek",
+          "start": 193.9,
+          "end": 194.16,
+          "probability": 0.991
+        },
+        {
+          "word": " good",
+          "start": 194.16,
+          "end": 194.42,
+          "probability": 0.996
+        },
+        {
+          "word": " ones.",
+          "start": 194.42,
+          "end": 194.8,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 195.22,
+      "end": 197.28,
+      "text": "How does this bias affect your daily choices?",
+      "words": [
+        {
+          "word": " How",
+          "start": 195.22,
+          "end": 195.42,
+          "probability": 0.986
+        },
+        {
+          "word": " does",
+          "start": 195.42,
+          "end": 195.56,
+          "probability": 0.996
+        },
+        {
+          "word": " this",
+          "start": 195.56,
+          "end": 195.74,
+          "probability": 0.994
+        },
+        {
+          "word": " bias",
+          "start": 195.74,
+          "end": 196.0,
+          "probability": 0.476
+        },
+        {
+          "word": " affect",
+          "start": 196.0,
+          "end": 196.3,
+          "probability": 0.94
+        },
+        {
+          "word": " your",
+          "start": 196.3,
+          "end": 196.54,
+          "probability": 0.995
+        },
+        {
+          "word": " daily",
+          "start": 196.54,
+          "end": 196.8,
+          "probability": 0.998
+        },
+        {
+          "word": " choices?",
+          "start": 196.8,
+          "end": 197.28,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 197.72,
+      "end": 199.82,
+      "text": "It shapes your relationships, your career,",
+      "words": [
+        {
+          "word": " It",
+          "start": 197.72,
+          "end": 197.98,
+          "probability": 0.157
+        },
+        {
+          "word": " shapes",
+          "start": 197.98,
+          "end": 198.26,
+          "probability": 0.799
+        },
+        {
+          "word": " your",
+          "start": 198.26,
+          "end": 198.4,
+          "probability": 0.873
+        },
+        {
+          "word": " relationships,",
+          "start": 198.4,
+          "end": 198.96,
+          "probability": 0.964
+        },
+        {
+          "word": " your",
+          "start": 199.4,
+          "end": 199.46,
+          "probability": 0.989
+        },
+        {
+          "word": " career,",
+          "start": 199.46,
+          "end": 199.82,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 200.08,
+      "end": 202.28,
+      "text": "and your self-esteem without you ever realizing it.",
+      "words": [
+        {
+          "word": " and",
+          "start": 200.08,
+          "end": 200.1,
+          "probability": 0.988
+        },
+        {
+          "word": " your",
+          "start": 200.1,
+          "end": 200.2,
+          "probability": 0.917
+        },
+        {
+          "word": " self",
+          "start": 200.2,
+          "end": 200.52,
+          "probability": 0.985
+        },
+        {
+          "word": "-esteem",
+          "start": 200.52,
+          "end": 200.76,
+          "probability": 0.936
+        },
+        {
+          "word": " without",
+          "start": 200.76,
+          "end": 201.08,
+          "probability": 0.944
+        },
+        {
+          "word": " you",
+          "start": 201.08,
+          "end": 201.3,
+          "probability": 0.955
+        },
+        {
+          "word": " ever",
+          "start": 201.3,
+          "end": 201.48,
+          "probability": 0.989
+        },
+        {
+          "word": " realizing",
+          "start": 201.48,
+          "end": 201.92,
+          "probability": 0.935
+        },
+        {
+          "word": " it.",
+          "start": 201.92,
+          "end": 202.28,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "start": 202.58,
+      "end": 205.8,
+      "text": "But knowing this is your superpower, you can balance the scale.",
+      "words": [
+        {
+          "word": " But",
+          "start": 202.58,
+          "end": 202.76,
+          "probability": 0.984
+        },
+        {
+          "word": " knowing",
+          "start": 202.76,
+          "end": 203.02,
+          "probability": 0.986
+        },
+        {
+          "word": " this",
+          "start": 203.02,
+          "end": 203.26,
+          "probability": 0.993
+        },
+        {
+          "word": " is",
+          "start": 203.26,
+          "end": 203.42,
+          "probability": 0.874
+        },
+        {
+          "word": " your",
+          "start": 203.42,
+          "end": 203.6,
+          "probability": 0.988
+        },
+        {
+          "word": " superpower,",
+          "start": 203.6,
+          "end": 204.12,
+          "probability": 0.888
+        },
+        {
+          "word": " you",
+          "start": 204.72,
+          "end": 204.88,
+          "probability": 0.974
+        },
+        {
+          "word": " can",
+          "start": 204.88,
+          "end": 205.0,
+          "probability": 0.997
+        },
+        {
+          "word": " balance",
+          "start": 205.0,
+          "end": 205.3,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 205.3,
+          "end": 205.54,
+          "probability": 0.994
+        },
+        {
+          "word": " scale.",
+          "start": 205.54,
+          "end": 205.8,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "start": 206.28,
+      "end": 209.4,
+      "text": "You can choose to linger on a positive moment for 20 seconds,",
+      "words": [
+        {
+          "word": " You",
+          "start": 206.28,
+          "end": 206.46,
+          "probability": 0.992
+        },
+        {
+          "word": " can",
+          "start": 206.46,
+          "end": 206.58,
+          "probability": 0.997
+        },
+        {
+          "word": " choose",
+          "start": 206.58,
+          "end": 206.84,
+          "probability": 0.984
+        },
+        {
+          "word": " to",
+          "start": 206.84,
+          "end": 207.04,
+          "probability": 0.998
+        },
+        {
+          "word": " linger",
+          "start": 207.04,
+          "end": 207.28,
+          "probability": 0.996
+        },
+        {
+          "word": " on",
+          "start": 207.28,
+          "end": 207.52,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 207.52,
+          "end": 207.62,
+          "probability": 0.997
+        },
+        {
+          "word": " positive",
+          "start": 207.62,
+          "end": 208.02,
+          "probability": 0.994
+        },
+        {
+          "word": " moment",
+          "start": 208.02,
+          "end": 208.38,
+          "probability": 0.999
+        },
+        {
+          "word": " for",
+          "start": 208.38,
+          "end": 208.6,
+          "probability": 0.996
+        },
+        {
+          "word": " 20",
+          "start": 208.6,
+          "end": 208.86,
+          "probability": 0.727
+        },
+        {
+          "word": " seconds,",
+          "start": 208.86,
+          "end": 209.4,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "start": 209.74,
+      "end": 211.92,
+      "text": "focusing on the feeling of warmth or pride.",
+      "words": [
+        {
+          "word": " focusing",
+          "start": 209.74,
+          "end": 209.98,
+          "probability": 0.985
+        },
+        {
+          "word": " on",
+          "start": 209.98,
+          "end": 210.28,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 210.28,
+          "end": 210.38,
+          "probability": 0.987
+        },
+        {
+          "word": " feeling",
+          "start": 210.38,
+          "end": 210.64,
+          "probability": 0.995
+        },
+        {
+          "word": " of",
+          "start": 210.64,
+          "end": 210.9,
+          "probability": 0.998
+        },
+        {
+          "word": " warmth",
+          "start": 210.9,
+          "end": 211.18,
+          "probability": 0.998
+        },
+        {
+          "word": " or",
+          "start": 211.18,
+          "end": 211.54,
+          "probability": 0.973
+        },
+        {
+          "word": " pride.",
+          "start": 211.54,
+          "end": 211.92,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "start": 212.38,
+      "end": 215.58,
+      "text": "This gives your brain time to build a lasting neural connection,",
+      "words": [
+        {
+          "word": " This",
+          "start": 212.38,
+          "end": 212.56,
+          "probability": 0.994
+        },
+        {
+          "word": " gives",
+          "start": 212.56,
+          "end": 212.76,
+          "probability": 0.993
+        },
+        {
+          "word": " your",
+          "start": 212.76,
+          "end": 213.02,
+          "probability": 0.972
+        },
+        {
+          "word": " brain",
+          "start": 213.02,
+          "end": 213.26,
+          "probability": 0.997
+        },
+        {
+          "word": " time",
+          "start": 213.26,
+          "end": 213.62,
+          "probability": 0.993
+        },
+        {
+          "word": " to",
+          "start": 213.62,
+          "end": 213.84,
+          "probability": 0.999
+        },
+        {
+          "word": " build",
+          "start": 213.84,
+          "end": 214.08,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 214.08,
+          "end": 214.26,
+          "probability": 0.88
+        },
+        {
+          "word": " lasting",
+          "start": 214.26,
+          "end": 214.72,
+          "probability": 0.995
+        },
+        {
+          "word": " neural",
+          "start": 214.72,
+          "end": 215.04,
+          "probability": 0.936
+        },
+        {
+          "word": " connection,",
+          "start": 215.04,
+          "end": 215.58,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "start": 215.98,
+      "end": 219.4,
+      "text": "turning temporary experiences into permanent brain structure.",
+      "words": [
+        {
+          "word": " turning",
+          "start": 215.98,
+          "end": 216.2,
+          "probability": 0.995
+        },
+        {
+          "word": " temporary",
+          "start": 216.2,
+          "end": 216.72,
+          "probability": 0.994
+        },
+        {
+          "word": " experiences",
+          "start": 216.72,
+          "end": 217.68,
+          "probability": 0.996
+        },
+        {
+          "word": " into",
+          "start": 217.68,
+          "end": 218.16,
+          "probability": 0.986
+        },
+        {
+          "word": " permanent",
+          "start": 218.16,
+          "end": 218.58,
+          "probability": 0.997
+        },
+        {
+          "word": " brain",
+          "start": 218.58,
+          "end": 218.88,
+          "probability": 0.992
+        },
+        {
+          "word": " structure.",
+          "start": 218.88,
+          "end": 219.4,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "start": 219.8,
+      "end": 223.54,
+      "text": "You can remind yourself that the rustling into bushes is usually just the wind.",
+      "words": [
+        {
+          "word": " You",
+          "start": 219.8,
+          "end": 220.06,
+          "probability": 0.996
+        },
+        {
+          "word": " can",
+          "start": 220.06,
+          "end": 220.22,
+          "probability": 0.997
+        },
+        {
+          "word": " remind",
+          "start": 220.22,
+          "end": 220.4,
+          "probability": 0.983
+        },
+        {
+          "word": " yourself",
+          "start": 220.4,
+          "end": 220.92,
+          "probability": 0.998
+        },
+        {
+          "word": " that",
+          "start": 220.92,
+          "end": 221.2,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 221.2,
+          "end": 221.32,
+          "probability": 0.995
+        },
+        {
+          "word": " rustling",
+          "start": 221.32,
+          "end": 221.72,
+          "probability": 0.938
+        },
+        {
+          "word": " into",
+          "start": 221.72,
+          "end": 221.92,
+          "probability": 0.875
+        },
+        {
+          "word": " bushes",
+          "start": 221.92,
+          "end": 222.18,
+          "probability": 0.981
+        },
+        {
+          "word": " is",
+          "start": 222.18,
+          "end": 222.42,
+          "probability": 0.998
+        },
+        {
+          "word": " usually",
+          "start": 222.42,
+          "end": 222.84,
+          "probability": 0.997
+        },
+        {
+          "word": " just",
+          "start": 222.84,
+          "end": 223.08,
+          "probability": 0.992
+        },
+        {
+          "word": " the",
+          "start": 223.08,
+          "end": 223.28,
+          "probability": 0.988
+        },
+        {
+          "word": " wind.",
+          "start": 223.28,
+          "end": 223.54,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "start": 224.0,
+      "end": 226.5,
+      "text": "Will you let ancient survival programming run your life?",
+      "words": [
+        {
+          "word": " Will",
+          "start": 224.0,
+          "end": 224.14,
+          "probability": 0.99
+        },
+        {
+          "word": " you",
+          "start": 224.14,
+          "end": 224.26,
+          "probability": 0.996
+        },
+        {
+          "word": " let",
+          "start": 224.26,
+          "end": 224.44,
+          "probability": 0.997
+        },
+        {
+          "word": " ancient",
+          "start": 224.44,
+          "end": 224.74,
+          "probability": 0.965
+        },
+        {
+          "word": " survival",
+          "start": 224.74,
+          "end": 225.2,
+          "probability": 0.996
+        },
+        {
+          "word": " programming",
+          "start": 225.2,
+          "end": 225.86,
+          "probability": 0.952
+        },
+        {
+          "word": " run",
+          "start": 225.86,
+          "end": 226.1,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 226.1,
+          "end": 226.24,
+          "probability": 0.994
+        },
+        {
+          "word": " life?",
+          "start": 226.24,
+          "end": 226.5,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "start": 226.5,
+      "end": 231.2,
+      "text": "Tonight, when you lie in bed, your mind will try to start its usual list of worries.",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 226.5,
+          "end": 227.24,
+          "probability": 0.773
+        },
+        {
+          "word": " when",
+          "start": 227.68,
+          "end": 227.76,
+          "probability": 0.991
+        },
+        {
+          "word": " you",
+          "start": 227.76,
+          "end": 227.9,
+          "probability": 0.998
+        },
+        {
+          "word": " lie",
+          "start": 227.9,
+          "end": 228.06,
+          "probability": 0.996
+        },
+        {
+          "word": " in",
+          "start": 228.06,
+          "end": 228.26,
+          "probability": 0.998
+        },
+        {
+          "word": " bed,",
+          "start": 228.26,
+          "end": 228.46,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 228.8,
+          "end": 228.88,
+          "probability": 0.989
+        },
+        {
+          "word": " mind",
+          "start": 228.88,
+          "end": 229.1,
+          "probability": 0.995
+        },
+        {
+          "word": " will",
+          "start": 229.1,
+          "end": 229.3,
+          "probability": 0.997
+        },
+        {
+          "word": " try",
+          "start": 229.3,
+          "end": 229.54,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 229.54,
+          "end": 229.7,
+          "probability": 0.996
+        },
+        {
+          "word": " start",
+          "start": 229.7,
+          "end": 229.92,
+          "probability": 0.994
+        },
+        {
+          "word": " its",
+          "start": 229.92,
+          "end": 230.16,
+          "probability": 0.946
+        },
+        {
+          "word": " usual",
+          "start": 230.16,
+          "end": 230.48,
+          "probability": 0.994
+        },
+        {
+          "word": " list",
+          "start": 230.48,
+          "end": 230.76,
+          "probability": 0.996
+        },
+        {
+          "word": " of",
+          "start": 230.76,
+          "end": 230.92,
+          "probability": 0.998
+        },
+        {
+          "word": " worries.",
+          "start": 230.92,
+          "end": 231.2,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "start": 231.66,
+      "end": 232.76,
+      "text": "But now you know the truth.",
+      "words": [
+        {
+          "word": " But",
+          "start": 231.66,
+          "end": 231.84,
+          "probability": 0.991
+        },
+        {
+          "word": " now",
+          "start": 231.84,
+          "end": 232.02,
+          "probability": 0.96
+        },
+        {
+          "word": " you",
+          "start": 232.02,
+          "end": 232.2,
+          "probability": 0.967
+        },
+        {
+          "word": " know",
+          "start": 232.2,
+          "end": 232.36,
+          "probability": 0.997
+        },
+        {
+          "word": " the",
+          "start": 232.36,
+          "end": 232.52,
+          "probability": 0.997
+        },
+        {
+          "word": " truth.",
+          "start": 232.52,
+          "end": 232.76,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "start": 233.36,
+      "end": 236.78,
+      "text": "Tonight, when you lie in bed, your mind will start to play a dangerous game,",
+      "words": [
+        {
+          "word": " Tonight,",
+          "start": 233.36,
+          "end": 233.64,
+          "probability": 0.987
+        },
+        {
+          "word": " when",
+          "start": 233.9,
+          "end": 233.96,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 233.96,
+          "end": 234.08,
+          "probability": 0.999
+        },
+        {
+          "word": " lie",
+          "start": 234.08,
+          "end": 234.26,
+          "probability": 0.998
+        },
+        {
+          "word": " in",
+          "start": 234.26,
+          "end": 234.42,
+          "probability": 0.999
+        },
+        {
+          "word": " bed,",
+          "start": 234.42,
+          "end": 234.7,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 234.82,
+          "end": 234.9,
+          "probability": 0.994
+        },
+        {
+          "word": " mind",
+          "start": 234.9,
+          "end": 235.2,
+          "probability": 0.998
+        },
+        {
+          "word": " will",
+          "start": 235.2,
+          "end": 235.4,
+          "probability": 0.998
+        },
+        {
+          "word": " start",
+          "start": 235.4,
+          "end": 235.6,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 235.6,
+          "end": 235.78,
+          "probability": 0.999
+        },
+        {
+          "word": " play",
+          "start": 235.78,
+          "end": 235.98,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 235.98,
+          "end": 236.08,
+          "probability": 0.999
+        },
+        {
+          "word": " dangerous",
+          "start": 236.08,
+          "end": 236.4,
+          "probability": 0.997
+        },
+        {
+          "word": " game,",
+          "start": 236.4,
+          "end": 236.78,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "start": 237.02,
+      "end": 238.58,
+      "text": "but you will finally know how to win it.",
+      "words": [
+        {
+          "word": " but",
+          "start": 237.02,
+          "end": 237.12,
+          "probability": 0.994
+        },
+        {
+          "word": " you",
+          "start": 237.12,
+          "end": 237.24,
+          "probability": 0.995
+        },
+        {
+          "word": " will",
+          "start": 237.24,
+          "end": 237.36,
+          "probability": 0.981
+        },
+        {
+          "word": " finally",
+          "start": 237.36,
+          "end": 237.7,
+          "probability": 0.988
+        },
+        {
+          "word": " know",
+          "start": 237.7,
+          "end": 237.94,
+          "probability": 0.998
+        },
+        {
+          "word": " how",
+          "start": 237.94,
+          "end": 238.14,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 238.14,
+          "end": 238.3,
+          "probability": 1.0
+        },
+        {
+          "word": " win",
+          "start": 238.3,
+          "end": 238.46,
+          "probability": 0.998
+        },
+        {
+          "word": " it.",
+          "start": 238.46,
+          "end": 238.58,
+          "probability": 0.997
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Tonight,",
+      "start": 0.0,
+      "end": 0.28,
+      "probability": 0.364
+    },
+    {
+      "word": " when",
+      "start": 0.64,
+      "end": 0.74,
+      "probability": 0.991
+    },
+    {
+      "word": " you",
+      "start": 0.74,
+      "end": 0.86,
+      "probability": 0.997
+    },
+    {
+      "word": " lie",
+      "start": 0.86,
+      "end": 1.0,
+      "probability": 0.997
+    },
+    {
+      "word": " in",
+      "start": 1.0,
+      "end": 1.18,
+      "probability": 0.998
+    },
+    {
+      "word": " bed,",
+      "start": 1.18,
+      "end": 1.4,
+      "probability": 1.0
+    },
+    {
+      "word": " your",
+      "start": 1.54,
+      "end": 1.64,
+      "probability": 0.992
+    },
+    {
+      "word": " mind",
+      "start": 1.64,
+      "end": 1.9,
+      "probability": 0.994
+    },
+    {
+      "word": " will",
+      "start": 1.9,
+      "end": 2.06,
+      "probability": 0.998
+    },
+    {
+      "word": " start",
+      "start": 2.06,
+      "end": 2.34,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 2.34,
+      "end": 2.52,
+      "probability": 0.998
+    },
+    {
+      "word": " play",
+      "start": 2.52,
+      "end": 2.74,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 2.74,
+      "end": 2.88,
+      "probability": 0.997
+    },
+    {
+      "word": " dangerous",
+      "start": 2.88,
+      "end": 3.24,
+      "probability": 0.995
+    },
+    {
+      "word": " game.",
+      "start": 3.24,
+      "end": 3.66,
+      "probability": 0.999
+    },
+    {
+      "word": " The",
+      "start": 4.12,
+      "end": 4.3,
+      "probability": 0.967
+    },
+    {
+      "word": " room",
+      "start": 4.3,
+      "end": 4.54,
+      "probability": 0.995
+    },
+    {
+      "word": " is",
+      "start": 4.54,
+      "end": 4.78,
+      "probability": 0.997
+    },
+    {
+      "word": " perfectly",
+      "start": 4.78,
+      "end": 5.2,
+      "probability": 0.993
+    },
+    {
+      "word": " safe.",
+      "start": 5.2,
+      "end": 5.76,
+      "probability": 0.996
+    },
+    {
+      "word": " Yet,",
+      "start": 6.12,
+      "end": 6.34,
+      "probability": 0.962
+    },
+    {
+      "word": " your",
+      "start": 6.58,
+      "end": 6.64,
+      "probability": 0.993
+    },
+    {
+      "word": " mind",
+      "start": 6.64,
+      "end": 6.86,
+      "probability": 0.999
+    },
+    {
+      "word": " is",
+      "start": 6.86,
+      "end": 7.06,
+      "probability": 0.999
+    },
+    {
+      "word": " racing",
+      "start": 7.06,
+      "end": 7.38,
+      "probability": 0.992
+    },
+    {
+      "word": " with",
+      "start": 7.38,
+      "end": 7.62,
+      "probability": 0.985
+    },
+    {
+      "word": " every",
+      "start": 7.62,
+      "end": 7.96,
+      "probability": 0.993
+    },
+    {
+      "word": " awkward",
+      "start": 7.96,
+      "end": 8.22,
+      "probability": 0.995
+    },
+    {
+      "word": " moment",
+      "start": 8.22,
+      "end": 8.56,
+      "probability": 0.999
+    },
+    {
+      "word": " from",
+      "start": 8.56,
+      "end": 8.74,
+      "probability": 0.992
+    },
+    {
+      "word": " your",
+      "start": 8.74,
+      "end": 8.9,
+      "probability": 0.99
+    },
+    {
+      "word": " day.",
+      "start": 8.9,
+      "end": 9.12,
+      "probability": 0.999
+    },
+    {
+      "word": " You",
+      "start": 9.66,
+      "end": 9.74,
+      "probability": 0.958
+    },
+    {
+      "word": " replay",
+      "start": 9.74,
+      "end": 10.1,
+      "probability": 0.862
+    },
+    {
+      "word": " a",
+      "start": 10.1,
+      "end": 10.3,
+      "probability": 0.992
+    },
+    {
+      "word": " slight",
+      "start": 10.3,
+      "end": 10.62,
+      "probability": 0.994
+    },
+    {
+      "word": " frown",
+      "start": 10.62,
+      "end": 11.04,
+      "probability": 0.954
+    },
+    {
+      "word": " from",
+      "start": 11.04,
+      "end": 11.28,
+      "probability": 0.992
+    },
+    {
+      "word": " a",
+      "start": 11.28,
+      "end": 11.42,
+      "probability": 0.98
+    },
+    {
+      "word": " coworker.",
+      "start": 11.42,
+      "end": 12.04,
+      "probability": 0.937
+    },
+    {
+      "word": " You",
+      "start": 12.44,
+      "end": 12.56,
+      "probability": 0.984
+    },
+    {
+      "word": " worry",
+      "start": 12.56,
+      "end": 12.78,
+      "probability": 0.998
+    },
+    {
+      "word": " about",
+      "start": 12.78,
+      "end": 13.14,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 13.14,
+      "end": 13.32,
+      "probability": 0.997
+    },
+    {
+      "word": " bill",
+      "start": 13.32,
+      "end": 13.48,
+      "probability": 0.97
+    },
+    {
+      "word": " that",
+      "start": 13.48,
+      "end": 13.74,
+      "probability": 0.996
+    },
+    {
+      "word": " is",
+      "start": 13.74,
+      "end": 13.92,
+      "probability": 0.954
+    },
+    {
+      "word": " not",
+      "start": 13.92,
+      "end": 14.06,
+      "probability": 0.997
+    },
+    {
+      "word": " even",
+      "start": 14.06,
+      "end": 14.4,
+      "probability": 0.999
+    },
+    {
+      "word": " due.",
+      "start": 14.4,
+      "end": 14.64,
+      "probability": 0.975
+    },
+    {
+      "word": " Why",
+      "start": 15.12,
+      "end": 15.28,
+      "probability": 0.986
+    },
+    {
+      "word": " does",
+      "start": 15.28,
+      "end": 15.38,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 15.38,
+      "end": 15.56,
+      "probability": 0.999
+    },
+    {
+      "word": " brain",
+      "start": 15.56,
+      "end": 15.84,
+      "probability": 0.996
+    },
+    {
+      "word": " do",
+      "start": 15.84,
+      "end": 16.1,
+      "probability": 0.998
+    },
+    {
+      "word": " this?",
+      "start": 16.1,
+      "end": 16.34,
+      "probability": 0.998
+    },
+    {
+      "word": " Why",
+      "start": 16.88,
+      "end": 17.06,
+      "probability": 0.995
+    },
+    {
+      "word": " is",
+      "start": 17.06,
+      "end": 17.18,
+      "probability": 0.988
+    },
+    {
+      "word": " it",
+      "start": 17.18,
+      "end": 17.3,
+      "probability": 0.997
+    },
+    {
+      "word": " so",
+      "start": 17.3,
+      "end": 17.46,
+      "probability": 0.998
+    },
+    {
+      "word": " easy",
+      "start": 17.46,
+      "end": 17.76,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 17.76,
+      "end": 17.96,
+      "probability": 0.993
+    },
+    {
+      "word": " spiral",
+      "start": 17.96,
+      "end": 18.3,
+      "probability": 0.972
+    },
+    {
+      "word": " in",
+      "start": 18.3,
+      "end": 18.54,
+      "probability": 0.427
+    },
+    {
+      "word": " to",
+      "start": 18.54,
+      "end": 18.72,
+      "probability": 0.969
+    },
+    {
+      "word": " worry,",
+      "start": 18.72,
+      "end": 19.0,
+      "probability": 0.998
+    },
+    {
+      "word": " but",
+      "start": 19.34,
+      "end": 19.46,
+      "probability": 0.996
+    },
+    {
+      "word": " so",
+      "start": 19.46,
+      "end": 19.64,
+      "probability": 0.981
+    },
+    {
+      "word": " hard",
+      "start": 19.64,
+      "end": 19.86,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 19.86,
+      "end": 20.0,
+      "probability": 0.999
+    },
+    {
+      "word": " hold",
+      "start": 20.0,
+      "end": 20.2,
+      "probability": 0.999
+    },
+    {
+      "word": " onto",
+      "start": 20.2,
+      "end": 20.56,
+      "probability": 0.75
+    },
+    {
+      "word": " a",
+      "start": 20.56,
+      "end": 20.72,
+      "probability": 0.992
+    },
+    {
+      "word": " compliment?",
+      "start": 20.72,
+      "end": 21.06,
+      "probability": 0.723
+    },
+    {
+      "word": " The",
+      "start": 21.6,
+      "end": 21.7,
+      "probability": 0.979
+    },
+    {
+      "word": " answer",
+      "start": 21.7,
+      "end": 21.98,
+      "probability": 0.993
+    },
+    {
+      "word": " lies",
+      "start": 21.98,
+      "end": 22.26,
+      "probability": 0.999
+    },
+    {
+      "word": " deep",
+      "start": 22.26,
+      "end": 22.54,
+      "probability": 0.997
+    },
+    {
+      "word": " in",
+      "start": 22.54,
+      "end": 22.82,
+      "probability": 0.946
+    },
+    {
+      "word": " your",
+      "start": 22.82,
+      "end": 23.0,
+      "probability": 0.997
+    },
+    {
+      "word": " evolutionary",
+      "start": 23.0,
+      "end": 23.56,
+      "probability": 0.992
+    },
+    {
+      "word": " past.",
+      "start": 23.56,
+      "end": 24.04,
+      "probability": 0.996
+    },
+    {
+      "word": " Your",
+      "start": 24.74,
+      "end": 24.88,
+      "probability": 0.977
+    },
+    {
+      "word": " ancestors",
+      "start": 24.88,
+      "end": 25.4,
+      "probability": 0.994
+    },
+    {
+      "word": " did",
+      "start": 25.4,
+      "end": 25.7,
+      "probability": 0.984
+    },
+    {
+      "word": " not",
+      "start": 25.7,
+      "end": 25.86,
+      "probability": 1.0
+    },
+    {
+      "word": " live",
+      "start": 25.86,
+      "end": 26.02,
+      "probability": 0.998
+    },
+    {
+      "word": " in",
+      "start": 26.02,
+      "end": 26.2,
+      "probability": 0.989
+    },
+    {
+      "word": " comfortable",
+      "start": 26.2,
+      "end": 26.52,
+      "probability": 0.995
+    },
+    {
+      "word": " houses.",
+      "start": 26.52,
+      "end": 26.96,
+      "probability": 0.997
+    },
+    {
+      "word": " They",
+      "start": 27.5,
+      "end": 27.68,
+      "probability": 0.996
+    },
+    {
+      "word": " faced",
+      "start": 27.68,
+      "end": 27.96,
+      "probability": 0.966
+    },
+    {
+      "word": " constant",
+      "start": 27.96,
+      "end": 28.38,
+      "probability": 0.983
+    },
+    {
+      "word": " danger.",
+      "start": 28.38,
+      "end": 28.76,
+      "probability": 0.999
+    },
+    {
+      "word": " They",
+      "start": 29.14,
+      "end": 29.4,
+      "probability": 0.337
+    },
+    {
+      "word": " slept",
+      "start": 29.4,
+      "end": 29.68,
+      "probability": 0.975
+    },
+    {
+      "word": " under",
+      "start": 29.68,
+      "end": 30.04,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 30.04,
+      "end": 30.22,
+      "probability": 0.981
+    },
+    {
+      "word": " open",
+      "start": 30.22,
+      "end": 30.46,
+      "probability": 0.953
+    },
+    {
+      "word": " stars,",
+      "start": 30.46,
+      "end": 30.9,
+      "probability": 0.973
+    },
+    {
+      "word": " surrounded",
+      "start": 31.32,
+      "end": 31.66,
+      "probability": 0.982
+    },
+    {
+      "word": " by",
+      "start": 31.66,
+      "end": 31.86,
+      "probability": 1.0
+    },
+    {
+      "word": " predators,",
+      "start": 31.86,
+      "end": 32.22,
+      "probability": 0.993
+    },
+    {
+      "word": " disease,",
+      "start": 32.48,
+      "end": 32.72,
+      "probability": 0.963
+    },
+    {
+      "word": " and",
+      "start": 33.1,
+      "end": 33.18,
+      "probability": 0.995
+    },
+    {
+      "word": " rival",
+      "start": 33.18,
+      "end": 33.52,
+      "probability": 0.984
+    },
+    {
+      "word": " tribes.",
+      "start": 33.52,
+      "end": 34.0,
+      "probability": 0.92
+    },
+    {
+      "word": " If",
+      "start": 34.52,
+      "end": 34.62,
+      "probability": 0.95
+    },
+    {
+      "word": " they",
+      "start": 34.62,
+      "end": 34.76,
+      "probability": 0.995
+    },
+    {
+      "word": " assumed",
+      "start": 34.76,
+      "end": 35.1,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 35.1,
+      "end": 35.24,
+      "probability": 0.991
+    },
+    {
+      "word": " rustling",
+      "start": 35.24,
+      "end": 35.68,
+      "probability": 0.911
+    },
+    {
+      "word": " bush",
+      "start": 35.68,
+      "end": 36.04,
+      "probability": 0.984
+    },
+    {
+      "word": " was",
+      "start": 36.04,
+      "end": 36.24,
+      "probability": 0.987
+    },
+    {
+      "word": " just",
+      "start": 36.24,
+      "end": 36.48,
+      "probability": 0.982
+    },
+    {
+      "word": " the",
+      "start": 36.48,
+      "end": 36.74,
+      "probability": 0.99
+    },
+    {
+      "word": " wind,",
+      "start": 36.74,
+      "end": 37.02,
+      "probability": 0.995
+    },
+    {
+      "word": " and",
+      "start": 37.34,
+      "end": 37.42,
+      "probability": 0.985
+    },
+    {
+      "word": " they",
+      "start": 37.42,
+      "end": 37.54,
+      "probability": 0.988
+    },
+    {
+      "word": " were",
+      "start": 37.54,
+      "end": 37.68,
+      "probability": 0.985
+    },
+    {
+      "word": " wrong,",
+      "start": 37.68,
+      "end": 38.04,
+      "probability": 0.994
+    },
+    {
+      "word": " they",
+      "start": 38.3,
+      "end": 38.38,
+      "probability": 0.99
+    },
+    {
+      "word": " died.",
+      "start": 38.38,
+      "end": 38.64,
+      "probability": 0.992
+    },
+    {
+      "word": " If",
+      "start": 39.22,
+      "end": 39.34,
+      "probability": 0.983
+    },
+    {
+      "word": " they",
+      "start": 39.34,
+      "end": 39.48,
+      "probability": 0.996
+    },
+    {
+      "word": " assumed",
+      "start": 39.48,
+      "end": 39.88,
+      "probability": 0.996
+    },
+    {
+      "word": " it",
+      "start": 39.88,
+      "end": 39.98,
+      "probability": 0.993
+    },
+    {
+      "word": " was",
+      "start": 39.98,
+      "end": 40.12,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 40.12,
+      "end": 40.2,
+      "probability": 0.998
+    },
+    {
+      "word": " tiger,",
+      "start": 40.2,
+      "end": 40.5,
+      "probability": 0.955
+    },
+    {
+      "word": " they",
+      "start": 40.9,
+      "end": 41.0,
+      "probability": 0.992
+    },
+    {
+      "word": " lived",
+      "start": 41.0,
+      "end": 41.18,
+      "probability": 0.976
+    },
+    {
+      "word": " to",
+      "start": 41.18,
+      "end": 41.36,
+      "probability": 0.995
+    },
+    {
+      "word": " see",
+      "start": 41.36,
+      "end": 41.54,
+      "probability": 0.99
+    },
+    {
+      "word": " another",
+      "start": 41.54,
+      "end": 41.74,
+      "probability": 0.978
+    },
+    {
+      "word": " day.",
+      "start": 41.74,
+      "end": 42.1,
+      "probability": 0.998
+    },
+    {
+      "word": " Did",
+      "start": 42.6,
+      "end": 42.68,
+      "probability": 0.551
+    },
+    {
+      "word": " evolution",
+      "start": 42.68,
+      "end": 43.06,
+      "probability": 0.967
+    },
+    {
+      "word": " design",
+      "start": 43.06,
+      "end": 43.58,
+      "probability": 0.986
+    },
+    {
+      "word": " your",
+      "start": 43.58,
+      "end": 43.86,
+      "probability": 0.997
+    },
+    {
+      "word": " brain",
+      "start": 43.86,
+      "end": 44.08,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 44.08,
+      "end": 44.3,
+      "probability": 0.996
+    },
+    {
+      "word": " make",
+      "start": 44.3,
+      "end": 44.44,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 44.44,
+      "end": 44.58,
+      "probability": 0.999
+    },
+    {
+      "word": " happy?",
+      "start": 44.58,
+      "end": 44.82,
+      "probability": 0.999
+    },
+    {
+      "word": " No,",
+      "start": 45.3,
+      "end": 45.56,
+      "probability": 0.984
+    },
+    {
+      "word": " it",
+      "start": 45.84,
+      "end": 45.92,
+      "probability": 0.98
+    },
+    {
+      "word": " designed",
+      "start": 45.92,
+      "end": 46.16,
+      "probability": 0.839
+    },
+    {
+      "word": " your",
+      "start": 46.16,
+      "end": 46.38,
+      "probability": 0.994
+    },
+    {
+      "word": " brain",
+      "start": 46.38,
+      "end": 46.62,
+      "probability": 0.984
+    },
+    {
+      "word": " simply",
+      "start": 46.62,
+      "end": 46.94,
+      "probability": 0.964
+    },
+    {
+      "word": " to",
+      "start": 46.94,
+      "end": 47.18,
+      "probability": 0.968
+    },
+    {
+      "word": " keep",
+      "start": 47.18,
+      "end": 47.34,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 47.34,
+      "end": 47.54,
+      "probability": 0.999
+    },
+    {
+      "word": " alive.",
+      "start": 47.54,
+      "end": 47.9,
+      "probability": 0.999
+    },
+    {
+      "word": " A",
+      "start": 48.38,
+      "end": 48.54,
+      "probability": 0.987
+    },
+    {
+      "word": " psychologist",
+      "start": 48.54,
+      "end": 49.18,
+      "probability": 0.983
+    },
+    {
+      "word": " at",
+      "start": 49.18,
+      "end": 49.58,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 49.58,
+      "end": 49.7,
+      "probability": 0.983
+    },
+    {
+      "word": " University",
+      "start": 49.7,
+      "end": 50.26,
+      "probability": 0.982
+    },
+    {
+      "word": " of",
+      "start": 50.26,
+      "end": 50.6,
+      "probability": 0.998
+    },
+    {
+      "word": " Pennsylvania",
+      "start": 50.6,
+      "end": 51.16,
+      "probability": 0.999
+    },
+    {
+      "word": " coined",
+      "start": 51.16,
+      "end": 51.66,
+      "probability": 0.989
+    },
+    {
+      "word": " a",
+      "start": 51.66,
+      "end": 51.86,
+      "probability": 0.998
+    },
+    {
+      "word": " term",
+      "start": 51.86,
+      "end": 52.14,
+      "probability": 0.999
+    },
+    {
+      "word": " for",
+      "start": 52.14,
+      "end": 52.38,
+      "probability": 0.997
+    },
+    {
+      "word": " this",
+      "start": 52.38,
+      "end": 52.56,
+      "probability": 0.993
+    },
+    {
+      "word": " phenomenon.",
+      "start": 52.56,
+      "end": 53.0,
+      "probability": 0.996
+    },
+    {
+      "word": " Dr.",
+      "start": 53.6,
+      "end": 53.84,
+      "probability": 0.949
+    },
+    {
+      "word": " Paul",
+      "start": 53.9,
+      "end": 54.12,
+      "probability": 0.989
+    },
+    {
+      "word": " Rosen",
+      "start": 54.12,
+      "end": 54.48,
+      "probability": 0.465
+    },
+    {
+      "word": " studied",
+      "start": 54.48,
+      "end": 55.0,
+      "probability": 0.982
+    },
+    {
+      "word": " how",
+      "start": 55.0,
+      "end": 55.24,
+      "probability": 0.978
+    },
+    {
+      "word": " humans",
+      "start": 55.24,
+      "end": 55.62,
+      "probability": 0.996
+    },
+    {
+      "word": " react",
+      "start": 55.62,
+      "end": 56.06,
+      "probability": 0.983
+    },
+    {
+      "word": " to",
+      "start": 56.06,
+      "end": 56.36,
+      "probability": 0.997
+    },
+    {
+      "word": " positive",
+      "start": 56.36,
+      "end": 56.84,
+      "probability": 0.996
+    },
+    {
+      "word": " and",
+      "start": 56.84,
+      "end": 57.14,
+      "probability": 0.982
+    },
+    {
+      "word": " negative",
+      "start": 57.14,
+      "end": 57.5,
+      "probability": 0.996
+    },
+    {
+      "word": " stimuli.",
+      "start": 57.5,
+      "end": 57.98,
+      "probability": 0.991
+    },
+    {
+      "word": " He",
+      "start": 58.34,
+      "end": 58.66,
+      "probability": 0.298
+    },
+    {
+      "word": " discovered",
+      "start": 58.66,
+      "end": 59.04,
+      "probability": 0.97
+    },
+    {
+      "word": " that",
+      "start": 59.04,
+      "end": 59.36,
+      "probability": 0.973
+    },
+    {
+      "word": " negative",
+      "start": 59.36,
+      "end": 59.74,
+      "probability": 0.989
+    },
+    {
+      "word": " events",
+      "start": 59.74,
+      "end": 60.2,
+      "probability": 0.996
+    },
+    {
+      "word": " have",
+      "start": 60.2,
+      "end": 60.48,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 60.48,
+      "end": 60.62,
+      "probability": 0.991
+    },
+    {
+      "word": " far",
+      "start": 60.62,
+      "end": 60.82,
+      "probability": 0.991
+    },
+    {
+      "word": " greater",
+      "start": 60.82,
+      "end": 61.14,
+      "probability": 0.981
+    },
+    {
+      "word": " impact",
+      "start": 61.14,
+      "end": 61.62,
+      "probability": 0.998
+    },
+    {
+      "word": " on",
+      "start": 61.62,
+      "end": 62.0,
+      "probability": 0.994
+    },
+    {
+      "word": " your",
+      "start": 62.0,
+      "end": 62.12,
+      "probability": 0.989
+    },
+    {
+      "word": " mind",
+      "start": 62.12,
+      "end": 62.44,
+      "probability": 0.993
+    },
+    {
+      "word": " and",
+      "start": 62.44,
+      "end": 62.58,
+      "probability": 0.398
+    },
+    {
+      "word": " positive",
+      "start": 62.58,
+      "end": 63.04,
+      "probability": 0.992
+    },
+    {
+      "word": " ones.",
+      "start": 63.04,
+      "end": 63.54,
+      "probability": 0.986
+    },
+    {
+      "word": " A",
+      "start": 63.96,
+      "end": 64.14,
+      "probability": 0.921
+    },
+    {
+      "word": " single",
+      "start": 64.14,
+      "end": 64.46,
+      "probability": 0.999
+    },
+    {
+      "word": " insult",
+      "start": 64.46,
+      "end": 64.9,
+      "probability": 0.908
+    },
+    {
+      "word": " can",
+      "start": 64.9,
+      "end": 65.16,
+      "probability": 0.996
+    },
+    {
+      "word": " ruin",
+      "start": 65.16,
+      "end": 65.38,
+      "probability": 0.995
+    },
+    {
+      "word": " your",
+      "start": 65.38,
+      "end": 65.56,
+      "probability": 0.995
+    },
+    {
+      "word": " entire",
+      "start": 65.56,
+      "end": 65.96,
+      "probability": 0.999
+    },
+    {
+      "word": " day,",
+      "start": 65.96,
+      "end": 66.34,
+      "probability": 0.999
+    },
+    {
+      "word": " even",
+      "start": 66.6,
+      "end": 66.84,
+      "probability": 0.998
+    },
+    {
+      "word": " if",
+      "start": 66.84,
+      "end": 67.0,
+      "probability": 0.997
+    },
+    {
+      "word": " you",
+      "start": 67.0,
+      "end": 67.12,
+      "probability": 0.996
+    },
+    {
+      "word": " received",
+      "start": 67.12,
+      "end": 67.5,
+      "probability": 0.989
+    },
+    {
+      "word": " 10",
+      "start": 67.5,
+      "end": 67.78,
+      "probability": 0.557
+    },
+    {
+      "word": " compliments",
+      "start": 67.78,
+      "end": 68.3,
+      "probability": 0.967
+    },
+    {
+      "word": " earlier.",
+      "start": 68.3,
+      "end": 68.8,
+      "probability": 0.993
+    },
+    {
+      "word": " Have",
+      "start": 69.36,
+      "end": 69.44,
+      "probability": 0.894
+    },
+    {
+      "word": " you",
+      "start": 69.44,
+      "end": 69.56,
+      "probability": 0.998
+    },
+    {
+      "word": " ever",
+      "start": 69.56,
+      "end": 69.76,
+      "probability": 0.919
+    },
+    {
+      "word": " wondered",
+      "start": 69.76,
+      "end": 70.08,
+      "probability": 0.996
+    },
+    {
+      "word": " why",
+      "start": 70.08,
+      "end": 70.42,
+      "probability": 0.921
+    },
+    {
+      "word": " bad",
+      "start": 70.42,
+      "end": 70.68,
+      "probability": 0.987
+    },
+    {
+      "word": " news",
+      "start": 70.68,
+      "end": 70.94,
+      "probability": 0.998
+    },
+    {
+      "word": " travels",
+      "start": 70.94,
+      "end": 71.34,
+      "probability": 0.989
+    },
+    {
+      "word": " so",
+      "start": 71.34,
+      "end": 71.66,
+      "probability": 0.999
+    },
+    {
+      "word": " fast?",
+      "start": 71.66,
+      "end": 72.12,
+      "probability": 0.998
+    },
+    {
+      "word": " Your",
+      "start": 72.6,
+      "end": 72.76,
+      "probability": 0.988
+    },
+    {
+      "word": " brain",
+      "start": 72.76,
+      "end": 73.04,
+      "probability": 0.999
+    },
+    {
+      "word": " is",
+      "start": 73.04,
+      "end": 73.32,
+      "probability": 0.993
+    },
+    {
+      "word": " simply",
+      "start": 73.32,
+      "end": 73.64,
+      "probability": 0.997
+    },
+    {
+      "word": " tuned",
+      "start": 73.64,
+      "end": 73.94,
+      "probability": 0.993
+    },
+    {
+      "word": " to",
+      "start": 73.94,
+      "end": 74.14,
+      "probability": 0.998
+    },
+    {
+      "word": " pay",
+      "start": 74.14,
+      "end": 74.26,
+      "probability": 0.997
+    },
+    {
+      "word": " attention",
+      "start": 74.26,
+      "end": 74.6,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 74.6,
+      "end": 74.88,
+      "probability": 0.999
+    },
+    {
+      "word": " threat.",
+      "start": 74.88,
+      "end": 75.18,
+      "probability": 0.952
+    },
+    {
+      "word": " This",
+      "start": 75.76,
+      "end": 75.92,
+      "probability": 0.994
+    },
+    {
+      "word": " tuning",
+      "start": 75.92,
+      "end": 76.26,
+      "probability": 0.985
+    },
+    {
+      "word": " is",
+      "start": 76.26,
+      "end": 76.58,
+      "probability": 0.998
+    },
+    {
+      "word": " visible",
+      "start": 76.58,
+      "end": 76.94,
+      "probability": 0.991
+    },
+    {
+      "word": " in",
+      "start": 76.94,
+      "end": 77.18,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 77.18,
+      "end": 77.3,
+      "probability": 0.995
+    },
+    {
+      "word": " actual",
+      "start": 77.3,
+      "end": 77.64,
+      "probability": 0.981
+    },
+    {
+      "word": " brain",
+      "start": 77.64,
+      "end": 77.9,
+      "probability": 0.994
+    },
+    {
+      "word": " activity.",
+      "start": 77.9,
+      "end": 78.48,
+      "probability": 0.998
+    },
+    {
+      "word": " Dr.",
+      "start": 79.06,
+      "end": 79.34,
+      "probability": 0.952
+    },
+    {
+      "word": " John",
+      "start": 79.6,
+      "end": 79.68,
+      "probability": 0.942
+    },
+    {
+      "word": " Kessiapo,",
+      "start": 79.68,
+      "end": 80.44,
+      "probability": 0.646
+    },
+    {
+      "word": " a",
+      "start": 80.72,
+      "end": 80.78,
+      "probability": 0.978
+    },
+    {
+      "word": " pioneer",
+      "start": 80.78,
+      "end": 81.3,
+      "probability": 0.993
+    },
+    {
+      "word": " in",
+      "start": 81.3,
+      "end": 81.68,
+      "probability": 0.999
+    },
+    {
+      "word": " social",
+      "start": 81.68,
+      "end": 82.08,
+      "probability": 0.965
+    },
+    {
+      "word": " neuroscience,",
+      "start": 82.08,
+      "end": 82.76,
+      "probability": 0.964
+    },
+    {
+      "word": " conducted",
+      "start": 83.14,
+      "end": 83.38,
+      "probability": 0.992
+    },
+    {
+      "word": " experiments",
+      "start": 83.38,
+      "end": 84.02,
+      "probability": 0.995
+    },
+    {
+      "word": " tracking",
+      "start": 84.02,
+      "end": 84.62,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 84.62,
+      "end": 84.84,
+      "probability": 0.996
+    },
+    {
+      "word": " electrical",
+      "start": 84.84,
+      "end": 85.22,
+      "probability": 0.998
+    },
+    {
+      "word": " signals",
+      "start": 85.22,
+      "end": 85.76,
+      "probability": 0.998
+    },
+    {
+      "word": " in",
+      "start": 85.76,
+      "end": 86.06,
+      "probability": 0.806
+    },
+    {
+      "word": " the",
+      "start": 86.06,
+      "end": 86.18,
+      "probability": 0.988
+    },
+    {
+      "word": " human",
+      "start": 86.18,
+      "end": 86.42,
+      "probability": 0.997
+    },
+    {
+      "word": " brain.",
+      "start": 86.42,
+      "end": 86.8,
+      "probability": 0.999
+    },
+    {
+      "word": " He",
+      "start": 87.14,
+      "end": 87.44,
+      "probability": 0.521
+    },
+    {
+      "word": " showed",
+      "start": 87.44,
+      "end": 87.64,
+      "probability": 0.916
+    },
+    {
+      "word": " participants",
+      "start": 87.64,
+      "end": 88.28,
+      "probability": 0.941
+    },
+    {
+      "word": " pictures",
+      "start": 88.28,
+      "end": 88.78,
+      "probability": 0.58
+    },
+    {
+      "word": " of",
+      "start": 88.78,
+      "end": 89.08,
+      "probability": 0.991
+    },
+    {
+      "word": " positive,",
+      "start": 89.08,
+      "end": 89.58,
+      "probability": 0.994
+    },
+    {
+      "word": " neutral,",
+      "start": 90.02,
+      "end": 90.28,
+      "probability": 0.994
+    },
+    {
+      "word": " and",
+      "start": 90.52,
+      "end": 90.76,
+      "probability": 0.967
+    },
+    {
+      "word": " negative",
+      "start": 90.76,
+      "end": 91.08,
+      "probability": 0.998
+    },
+    {
+      "word": " things.",
+      "start": 91.08,
+      "end": 91.68,
+      "probability": 0.994
+    },
+    {
+      "word": " He",
+      "start": 92.06,
+      "end": 92.2,
+      "probability": 0.885
+    },
+    {
+      "word": " recorded",
+      "start": 92.2,
+      "end": 92.6,
+      "probability": 0.991
+    },
+    {
+      "word": " their",
+      "start": 92.6,
+      "end": 92.82,
+      "probability": 0.995
+    },
+    {
+      "word": " brain",
+      "start": 92.82,
+      "end": 93.1,
+      "probability": 0.986
+    },
+    {
+      "word": " waves.",
+      "start": 93.1,
+      "end": 93.42,
+      "probability": 0.945
+    },
+    {
+      "word": " The",
+      "start": 94.06,
+      "end": 94.16,
+      "probability": 0.986
+    },
+    {
+      "word": " results",
+      "start": 94.16,
+      "end": 94.42,
+      "probability": 0.999
+    },
+    {
+      "word": " were",
+      "start": 94.42,
+      "end": 94.7,
+      "probability": 0.994
+    },
+    {
+      "word": " startling.",
+      "start": 94.7,
+      "end": 95.16,
+      "probability": 0.985
+    },
+    {
+      "word": " The",
+      "start": 95.7,
+      "end": 95.76,
+      "probability": 0.97
+    },
+    {
+      "word": " brain",
+      "start": 95.76,
+      "end": 96.02,
+      "probability": 0.993
+    },
+    {
+      "word": " showed",
+      "start": 96.02,
+      "end": 96.32,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 96.32,
+      "end": 96.46,
+      "probability": 0.994
+    },
+    {
+      "word": " much",
+      "start": 96.46,
+      "end": 96.64,
+      "probability": 0.996
+    },
+    {
+      "word": " larger",
+      "start": 96.64,
+      "end": 96.98,
+      "probability": 0.99
+    },
+    {
+      "word": " spike",
+      "start": 96.98,
+      "end": 97.34,
+      "probability": 0.997
+    },
+    {
+      "word": " in",
+      "start": 97.34,
+      "end": 97.58,
+      "probability": 0.999
+    },
+    {
+      "word": " electrical",
+      "start": 97.58,
+      "end": 97.98,
+      "probability": 0.995
+    },
+    {
+      "word": " activity",
+      "start": 97.98,
+      "end": 98.64,
+      "probability": 0.999
+    },
+    {
+      "word": " when",
+      "start": 98.64,
+      "end": 98.98,
+      "probability": 0.879
+    },
+    {
+      "word": " viewing",
+      "start": 98.98,
+      "end": 99.26,
+      "probability": 0.999
+    },
+    {
+      "word": " negative",
+      "start": 99.26,
+      "end": 99.68,
+      "probability": 0.999
+    },
+    {
+      "word": " images.",
+      "start": 99.68,
+      "end": 100.12,
+      "probability": 0.999
+    },
+    {
+      "word": " Why",
+      "start": 100.76,
+      "end": 100.88,
+      "probability": 0.769
+    },
+    {
+      "word": " does",
+      "start": 100.88,
+      "end": 101.02,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 101.02,
+      "end": 101.16,
+      "probability": 0.997
+    },
+    {
+      "word": " brain",
+      "start": 101.16,
+      "end": 101.42,
+      "probability": 1.0
+    },
+    {
+      "word": " react",
+      "start": 101.42,
+      "end": 101.8,
+      "probability": 0.989
+    },
+    {
+      "word": " so",
+      "start": 101.8,
+      "end": 102.22,
+      "probability": 0.997
+    },
+    {
+      "word": " strongly",
+      "start": 102.22,
+      "end": 102.64,
+      "probability": 0.993
+    },
+    {
+      "word": " to",
+      "start": 102.64,
+      "end": 102.82,
+      "probability": 0.997
+    },
+    {
+      "word": " what",
+      "start": 102.82,
+      "end": 102.94,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 102.94,
+      "end": 103.04,
+      "probability": 0.998
+    },
+    {
+      "word": " dislike?",
+      "start": 103.04,
+      "end": 103.4,
+      "probability": 0.991
+    },
+    {
+      "word": " It",
+      "start": 103.96,
+      "end": 104.1,
+      "probability": 0.934
+    },
+    {
+      "word": " is",
+      "start": 104.1,
+      "end": 104.22,
+      "probability": 0.974
+    },
+    {
+      "word": " an",
+      "start": 104.22,
+      "end": 104.34,
+      "probability": 0.99
+    },
+    {
+      "word": " automatic",
+      "start": 104.34,
+      "end": 104.86,
+      "probability": 0.982
+    },
+    {
+      "word": " subconscious",
+      "start": 104.86,
+      "end": 105.66,
+      "probability": 0.504
+    },
+    {
+      "word": " response",
+      "start": 105.66,
+      "end": 106.1,
+      "probability": 0.999
+    },
+    {
+      "word": " that",
+      "start": 106.1,
+      "end": 106.42,
+      "probability": 0.99
+    },
+    {
+      "word": " happens",
+      "start": 106.42,
+      "end": 106.74,
+      "probability": 0.998
+    },
+    {
+      "word": " before",
+      "start": 106.74,
+      "end": 107.1,
+      "probability": 0.997
+    },
+    {
+      "word": " you",
+      "start": 107.1,
+      "end": 107.26,
+      "probability": 0.998
+    },
+    {
+      "word": " even",
+      "start": 107.26,
+      "end": 107.54,
+      "probability": 0.996
+    },
+    {
+      "word": " have",
+      "start": 107.54,
+      "end": 107.72,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 107.72,
+      "end": 107.82,
+      "probability": 0.955
+    },
+    {
+      "word": " conscious",
+      "start": 107.82,
+      "end": 108.16,
+      "probability": 0.995
+    },
+    {
+      "word": " thought.",
+      "start": 108.16,
+      "end": 108.64,
+      "probability": 0.993
+    },
+    {
+      "word": " Think",
+      "start": 109.14,
+      "end": 109.32,
+      "probability": 0.983
+    },
+    {
+      "word": " about",
+      "start": 109.32,
+      "end": 109.52,
+      "probability": 0.997
+    },
+    {
+      "word": " how",
+      "start": 109.52,
+      "end": 109.7,
+      "probability": 0.995
+    },
+    {
+      "word": " this",
+      "start": 109.7,
+      "end": 109.92,
+      "probability": 0.902
+    },
+    {
+      "word": " shapes",
+      "start": 109.92,
+      "end": 110.16,
+      "probability": 0.96
+    },
+    {
+      "word": " your",
+      "start": 110.16,
+      "end": 110.36,
+      "probability": 0.987
+    },
+    {
+      "word": " daily",
+      "start": 110.36,
+      "end": 110.58,
+      "probability": 0.999
+    },
+    {
+      "word": " life.",
+      "start": 110.58,
+      "end": 111.02,
+      "probability": 0.999
+    },
+    {
+      "word": " You",
+      "start": 111.32,
+      "end": 111.56,
+      "probability": 0.993
+    },
+    {
+      "word": " might",
+      "start": 111.56,
+      "end": 111.68,
+      "probability": 0.996
+    },
+    {
+      "word": " have",
+      "start": 111.68,
+      "end": 111.8,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 111.8,
+      "end": 111.88,
+      "probability": 0.975
+    },
+    {
+      "word": " wonderful",
+      "start": 111.88,
+      "end": 112.18,
+      "probability": 0.999
+    },
+    {
+      "word": " dinner",
+      "start": 112.18,
+      "end": 112.54,
+      "probability": 0.998
+    },
+    {
+      "word": " with",
+      "start": 112.54,
+      "end": 112.76,
+      "probability": 0.998
+    },
+    {
+      "word": " friends.",
+      "start": 112.76,
+      "end": 113.16,
+      "probability": 0.998
+    },
+    {
+      "word": " You",
+      "start": 113.16,
+      "end": 113.78,
+      "probability": 0.178
+    },
+    {
+      "word": " enjoy",
+      "start": 113.78,
+      "end": 114.04,
+      "probability": 0.965
+    },
+    {
+      "word": " great",
+      "start": 114.04,
+      "end": 114.44,
+      "probability": 0.603
+    },
+    {
+      "word": " conversation,",
+      "start": 114.44,
+      "end": 115.12,
+      "probability": 0.966
+    },
+    {
+      "word": " delicious",
+      "start": 115.58,
+      "end": 115.84,
+      "probability": 0.991
+    },
+    {
+      "word": " food,",
+      "start": 115.84,
+      "end": 116.32,
+      "probability": 0.991
+    },
+    {
+      "word": " and",
+      "start": 116.6,
+      "end": 116.7,
+      "probability": 0.993
+    },
+    {
+      "word": " a",
+      "start": 116.7,
+      "end": 116.76,
+      "probability": 0.981
+    },
+    {
+      "word": " beautiful",
+      "start": 116.76,
+      "end": 117.14,
+      "probability": 0.996
+    },
+    {
+      "word": " walk",
+      "start": 117.14,
+      "end": 117.48,
+      "probability": 0.971
+    },
+    {
+      "word": " home.",
+      "start": 117.48,
+      "end": 117.86,
+      "probability": 0.914
+    },
+    {
+      "word": " But",
+      "start": 118.16,
+      "end": 118.3,
+      "probability": 0.856
+    },
+    {
+      "word": " if",
+      "start": 118.3,
+      "end": 118.44,
+      "probability": 0.908
+    },
+    {
+      "word": " the",
+      "start": 118.44,
+      "end": 118.54,
+      "probability": 0.986
+    },
+    {
+      "word": " waiter",
+      "start": 118.54,
+      "end": 118.74,
+      "probability": 0.994
+    },
+    {
+      "word": " is",
+      "start": 118.74,
+      "end": 118.92,
+      "probability": 0.993
+    },
+    {
+      "word": " slightly",
+      "start": 118.92,
+      "end": 119.22,
+      "probability": 0.98
+    },
+    {
+      "word": " rude",
+      "start": 119.22,
+      "end": 119.58,
+      "probability": 0.989
+    },
+    {
+      "word": " at",
+      "start": 119.58,
+      "end": 119.7,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 119.7,
+      "end": 119.82,
+      "probability": 0.996
+    },
+    {
+      "word": " very",
+      "start": 119.82,
+      "end": 120.06,
+      "probability": 0.998
+    },
+    {
+      "word": " end,",
+      "start": 120.06,
+      "end": 120.4,
+      "probability": 0.999
+    },
+    {
+      "word": " that",
+      "start": 120.54,
+      "end": 120.64,
+      "probability": 0.986
+    },
+    {
+      "word": " is",
+      "start": 120.64,
+      "end": 120.76,
+      "probability": 0.97
+    },
+    {
+      "word": " the",
+      "start": 120.76,
+      "end": 120.92,
+      "probability": 0.982
+    },
+    {
+      "word": " only",
+      "start": 120.92,
+      "end": 121.2,
+      "probability": 0.997
+    },
+    {
+      "word": " thing",
+      "start": 121.2,
+      "end": 121.44,
+      "probability": 0.996
+    },
+    {
+      "word": " you",
+      "start": 121.44,
+      "end": 121.66,
+      "probability": 0.987
+    },
+    {
+      "word": " will",
+      "start": 121.66,
+      "end": 121.8,
+      "probability": 0.951
+    },
+    {
+      "word": " talk",
+      "start": 121.8,
+      "end": 122.04,
+      "probability": 0.996
+    },
+    {
+      "word": " about.",
+      "start": 122.04,
+      "end": 122.46,
+      "probability": 0.998
+    },
+    {
+      "word": " Neurocycologist",
+      "start": 123.32,
+      "end": 123.84,
+      "probability": 0.758
+    },
+    {
+      "word": " Dr.",
+      "start": 123.84,
+      "end": 124.28,
+      "probability": 0.865
+    },
+    {
+      "word": " Rick",
+      "start": 124.5,
+      "end": 124.56,
+      "probability": 0.972
+    },
+    {
+      "word": " Hansen",
+      "start": 124.56,
+      "end": 125.0,
+      "probability": 0.758
+    },
+    {
+      "word": " has",
+      "start": 125.0,
+      "end": 125.2,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 125.2,
+      "end": 125.32,
+      "probability": 0.994
+    },
+    {
+      "word": " famous",
+      "start": 125.32,
+      "end": 125.62,
+      "probability": 0.986
+    },
+    {
+      "word": " way",
+      "start": 125.62,
+      "end": 125.94,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 125.94,
+      "end": 126.08,
+      "probability": 0.991
+    },
+    {
+      "word": " explaining",
+      "start": 126.08,
+      "end": 126.5,
+      "probability": 0.999
+    },
+    {
+      "word": " this",
+      "start": 126.5,
+      "end": 126.78,
+      "probability": 0.991
+    },
+    {
+      "word": " quirk",
+      "start": 126.78,
+      "end": 127.04,
+      "probability": 0.92
+    },
+    {
+      "word": " of",
+      "start": 127.04,
+      "end": 127.24,
+      "probability": 0.98
+    },
+    {
+      "word": " biology.",
+      "start": 127.24,
+      "end": 127.74,
+      "probability": 0.925
+    },
+    {
+      "word": " He",
+      "start": 128.36,
+      "end": 128.44,
+      "probability": 0.913
+    },
+    {
+      "word": " says",
+      "start": 128.44,
+      "end": 128.64,
+      "probability": 0.991
+    },
+    {
+      "word": " your",
+      "start": 128.64,
+      "end": 128.86,
+      "probability": 0.903
+    },
+    {
+      "word": " brain",
+      "start": 128.86,
+      "end": 129.18,
+      "probability": 0.998
+    },
+    {
+      "word": " is",
+      "start": 129.18,
+      "end": 129.46,
+      "probability": 0.997
+    },
+    {
+      "word": " like",
+      "start": 129.46,
+      "end": 129.66,
+      "probability": 0.908
+    },
+    {
+      "word": " Velcro",
+      "start": 129.66,
+      "end": 130.08,
+      "probability": 0.814
+    },
+    {
+      "word": " for",
+      "start": 130.08,
+      "end": 130.32,
+      "probability": 0.977
+    },
+    {
+      "word": " negative",
+      "start": 130.32,
+      "end": 130.66,
+      "probability": 0.988
+    },
+    {
+      "word": " experiences,",
+      "start": 130.66,
+      "end": 131.48,
+      "probability": 0.984
+    },
+    {
+      "word": " but",
+      "start": 131.9,
+      "end": 132.0,
+      "probability": 0.994
+    },
+    {
+      "word": " like",
+      "start": 132.0,
+      "end": 132.22,
+      "probability": 0.99
+    },
+    {
+      "word": " Teflon",
+      "start": 132.22,
+      "end": 132.68,
+      "probability": 0.919
+    },
+    {
+      "word": " for",
+      "start": 132.68,
+      "end": 132.86,
+      "probability": 0.994
+    },
+    {
+      "word": " positive",
+      "start": 132.86,
+      "end": 133.24,
+      "probability": 0.996
+    },
+    {
+      "word": " ones.",
+      "start": 133.24,
+      "end": 133.68,
+      "probability": 0.995
+    },
+    {
+      "word": " Does",
+      "start": 134.16,
+      "end": 134.34,
+      "probability": 0.981
+    },
+    {
+      "word": " it",
+      "start": 134.34,
+      "end": 134.46,
+      "probability": 0.996
+    },
+    {
+      "word": " feel",
+      "start": 134.46,
+      "end": 134.64,
+      "probability": 0.998
+    },
+    {
+      "word": " like",
+      "start": 134.64,
+      "end": 134.84,
+      "probability": 0.999
+    },
+    {
+      "word": " you",
+      "start": 134.84,
+      "end": 135.0,
+      "probability": 0.994
+    },
+    {
+      "word": " are",
+      "start": 135.0,
+      "end": 135.06,
+      "probability": 0.792
+    },
+    {
+      "word": " fighting",
+      "start": 135.06,
+      "end": 135.36,
+      "probability": 0.993
+    },
+    {
+      "word": " a",
+      "start": 135.36,
+      "end": 135.56,
+      "probability": 0.991
+    },
+    {
+      "word": " losing",
+      "start": 135.56,
+      "end": 135.82,
+      "probability": 0.978
+    },
+    {
+      "word": " battle",
+      "start": 135.82,
+      "end": 136.16,
+      "probability": 0.991
+    },
+    {
+      "word": " against",
+      "start": 136.16,
+      "end": 136.56,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 136.56,
+      "end": 136.8,
+      "probability": 0.997
+    },
+    {
+      "word": " own",
+      "start": 136.8,
+      "end": 136.94,
+      "probability": 0.997
+    },
+    {
+      "word": " mind?",
+      "start": 136.94,
+      "end": 137.18,
+      "probability": 0.993
+    },
+    {
+      "word": " The",
+      "start": 137.6,
+      "end": 137.72,
+      "probability": 0.993
+    },
+    {
+      "word": " bad",
+      "start": 137.72,
+      "end": 137.9,
+      "probability": 0.991
+    },
+    {
+      "word": " stuff",
+      "start": 137.9,
+      "end": 138.22,
+      "probability": 0.978
+    },
+    {
+      "word": " sticks",
+      "start": 138.22,
+      "end": 138.5,
+      "probability": 0.99
+    },
+    {
+      "word": " immediately",
+      "start": 138.5,
+      "end": 139.12,
+      "probability": 0.962
+    },
+    {
+      "word": " while",
+      "start": 139.12,
+      "end": 139.64,
+      "probability": 0.757
+    },
+    {
+      "word": " the",
+      "start": 139.64,
+      "end": 139.88,
+      "probability": 0.994
+    },
+    {
+      "word": " good",
+      "start": 139.88,
+      "end": 140.04,
+      "probability": 0.996
+    },
+    {
+      "word": " stuff",
+      "start": 140.04,
+      "end": 140.38,
+      "probability": 0.995
+    },
+    {
+      "word": " slides",
+      "start": 140.38,
+      "end": 140.8,
+      "probability": 0.993
+    },
+    {
+      "word": " right",
+      "start": 140.8,
+      "end": 141.0,
+      "probability": 0.997
+    },
+    {
+      "word": " off.",
+      "start": 141.0,
+      "end": 141.3,
+      "probability": 0.989
+    },
+    {
+      "word": " The",
+      "start": 141.63,
+      "end": 141.94,
+      "probability": 0.512
+    },
+    {
+      "word": " key",
+      "start": 141.94,
+      "end": 142.18,
+      "probability": 0.988
+    },
+    {
+      "word": " is",
+      "start": 142.18,
+      "end": 142.38,
+      "probability": 0.989
+    },
+    {
+      "word": " understanding",
+      "start": 142.38,
+      "end": 142.9,
+      "probability": 0.966
+    },
+    {
+      "word": " that",
+      "start": 142.9,
+      "end": 143.14,
+      "probability": 0.957
+    },
+    {
+      "word": " your",
+      "start": 143.14,
+      "end": 143.3,
+      "probability": 0.991
+    },
+    {
+      "word": " brain",
+      "start": 143.3,
+      "end": 143.52,
+      "probability": 0.998
+    },
+    {
+      "word": " is",
+      "start": 143.52,
+      "end": 143.84,
+      "probability": 0.995
+    },
+    {
+      "word": " lying",
+      "start": 143.84,
+      "end": 144.04,
+      "probability": 0.989
+    },
+    {
+      "word": " to",
+      "start": 144.04,
+      "end": 144.26,
+      "probability": 0.997
+    },
+    {
+      "word": " you",
+      "start": 144.26,
+      "end": 144.4,
+      "probability": 0.998
+    },
+    {
+      "word": " for",
+      "start": 144.4,
+      "end": 144.54,
+      "probability": 0.995
+    },
+    {
+      "word": " your",
+      "start": 144.54,
+      "end": 144.7,
+      "probability": 0.991
+    },
+    {
+      "word": " own",
+      "start": 144.7,
+      "end": 144.9,
+      "probability": 0.992
+    },
+    {
+      "word": " protection.",
+      "start": 144.9,
+      "end": 145.4,
+      "probability": 0.995
+    },
+    {
+      "word": " It",
+      "start": 145.96,
+      "end": 146.06,
+      "probability": 0.976
+    },
+    {
+      "word": " is",
+      "start": 146.06,
+      "end": 146.16,
+      "probability": 0.985
+    },
+    {
+      "word": " constantly",
+      "start": 146.16,
+      "end": 146.74,
+      "probability": 0.998
+    },
+    {
+      "word": " scanning",
+      "start": 146.74,
+      "end": 147.14,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 147.14,
+      "end": 147.38,
+      "probability": 0.998
+    },
+    {
+      "word": " horizon",
+      "start": 147.38,
+      "end": 147.78,
+      "probability": 0.993
+    },
+    {
+      "word": " for",
+      "start": 147.78,
+      "end": 148.02,
+      "probability": 0.999
+    },
+    {
+      "word": " danger,",
+      "start": 148.02,
+      "end": 148.44,
+      "probability": 0.995
+    },
+    {
+      "word": " magnifying",
+      "start": 148.96,
+      "end": 149.48,
+      "probability": 0.997
+    },
+    {
+      "word": " minor",
+      "start": 149.48,
+      "end": 149.9,
+      "probability": 0.987
+    },
+    {
+      "word": " problems",
+      "start": 149.9,
+      "end": 150.32,
+      "probability": 0.999
+    },
+    {
+      "word": " into",
+      "start": 150.32,
+      "end": 150.66,
+      "probability": 0.932
+    },
+    {
+      "word": " major",
+      "start": 150.66,
+      "end": 151.0,
+      "probability": 0.997
+    },
+    {
+      "word": " threats.",
+      "start": 151.0,
+      "end": 151.42,
+      "probability": 1.0
+    },
+    {
+      "word": " In",
+      "start": 151.98,
+      "end": 152.08,
+      "probability": 0.983
+    },
+    {
+      "word": " the",
+      "start": 152.08,
+      "end": 152.2,
+      "probability": 0.985
+    },
+    {
+      "word": " ancient",
+      "start": 152.2,
+      "end": 152.52,
+      "probability": 0.905
+    },
+    {
+      "word": " world,",
+      "start": 152.52,
+      "end": 152.96,
+      "probability": 0.992
+    },
+    {
+      "word": " this",
+      "start": 153.26,
+      "end": 153.4,
+      "probability": 0.991
+    },
+    {
+      "word": " hypervigilance",
+      "start": 153.4,
+      "end": 154.16,
+      "probability": 0.844
+    },
+    {
+      "word": " was",
+      "start": 154.16,
+      "end": 154.3,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 154.3,
+      "end": 154.44,
+      "probability": 0.98
+    },
+    {
+      "word": " superpower",
+      "start": 154.44,
+      "end": 154.94,
+      "probability": 0.889
+    },
+    {
+      "word": " that",
+      "start": 154.94,
+      "end": 155.26,
+      "probability": 0.994
+    },
+    {
+      "word": " saved",
+      "start": 155.26,
+      "end": 155.54,
+      "probability": 0.982
+    },
+    {
+      "word": " your",
+      "start": 155.54,
+      "end": 155.72,
+      "probability": 0.968
+    },
+    {
+      "word": " life.",
+      "start": 155.72,
+      "end": 156.06,
+      "probability": 0.999
+    },
+    {
+      "word": " Today,",
+      "start": 156.48,
+      "end": 156.78,
+      "probability": 0.98
+    },
+    {
+      "word": " in",
+      "start": 157.06,
+      "end": 157.12,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 157.12,
+      "end": 157.18,
+      "probability": 0.979
+    },
+    {
+      "word": " world",
+      "start": 157.18,
+      "end": 157.38,
+      "probability": 0.991
+    },
+    {
+      "word": " of",
+      "start": 157.38,
+      "end": 157.58,
+      "probability": 0.998
+    },
+    {
+      "word": " constant",
+      "start": 157.58,
+      "end": 157.96,
+      "probability": 0.942
+    },
+    {
+      "word": " notifications",
+      "start": 157.96,
+      "end": 158.52,
+      "probability": 0.989
+    },
+    {
+      "word": " and",
+      "start": 158.52,
+      "end": 159.16,
+      "probability": 0.822
+    },
+    {
+      "word": " 24",
+      "start": 159.16,
+      "end": 159.66,
+      "probability": 0.958
+    },
+    {
+      "word": " hour",
+      "start": 159.66,
+      "end": 160.0,
+      "probability": 0.664
+    },
+    {
+      "word": " news",
+      "start": 160.0,
+      "end": 160.28,
+      "probability": 0.987
+    },
+    {
+      "word": " cycles,",
+      "start": 160.28,
+      "end": 160.68,
+      "probability": 0.907
+    },
+    {
+      "word": " it",
+      "start": 161.04,
+      "end": 161.12,
+      "probability": 0.992
+    },
+    {
+      "word": " is",
+      "start": 161.12,
+      "end": 161.22,
+      "probability": 0.979
+    },
+    {
+      "word": " an",
+      "start": 161.22,
+      "end": 161.34,
+      "probability": 0.994
+    },
+    {
+      "word": " exhausting",
+      "start": 161.34,
+      "end": 161.8,
+      "probability": 0.994
+    },
+    {
+      "word": " trap.",
+      "start": 161.8,
+      "end": 162.14,
+      "probability": 0.985
+    },
+    {
+      "word": " Your",
+      "start": 162.7,
+      "end": 162.78,
+      "probability": 0.974
+    },
+    {
+      "word": " brain",
+      "start": 162.78,
+      "end": 163.14,
+      "probability": 0.997
+    },
+    {
+      "word": " treats",
+      "start": 163.14,
+      "end": 163.52,
+      "probability": 0.993
+    },
+    {
+      "word": " a",
+      "start": 163.52,
+      "end": 163.8,
+      "probability": 0.993
+    },
+    {
+      "word": " critical",
+      "start": 163.8,
+      "end": 164.18,
+      "probability": 0.992
+    },
+    {
+      "word": " email",
+      "start": 164.18,
+      "end": 164.6,
+      "probability": 0.952
+    },
+    {
+      "word": " from",
+      "start": 164.6,
+      "end": 164.88,
+      "probability": 0.994
+    },
+    {
+      "word": " your",
+      "start": 164.88,
+      "end": 165.06,
+      "probability": 0.99
+    },
+    {
+      "word": " boss",
+      "start": 165.06,
+      "end": 165.3,
+      "probability": 0.995
+    },
+    {
+      "word": " with",
+      "start": 165.3,
+      "end": 165.54,
+      "probability": 0.972
+    },
+    {
+      "word": " the",
+      "start": 165.54,
+      "end": 165.64,
+      "probability": 0.988
+    },
+    {
+      "word": " same",
+      "start": 165.64,
+      "end": 165.92,
+      "probability": 0.998
+    },
+    {
+      "word": " physiological",
+      "start": 165.92,
+      "end": 166.48,
+      "probability": 0.983
+    },
+    {
+      "word": " panic",
+      "start": 166.48,
+      "end": 167.1,
+      "probability": 0.985
+    },
+    {
+      "word": " as",
+      "start": 167.1,
+      "end": 167.36,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 167.36,
+      "end": 167.5,
+      "probability": 0.989
+    },
+    {
+      "word": " lunging",
+      "start": 167.5,
+      "end": 167.94,
+      "probability": 0.967
+    },
+    {
+      "word": " predator.",
+      "start": 167.94,
+      "end": 168.32,
+      "probability": 0.995
+    },
+    {
+      "word": " Do",
+      "start": 168.67,
+      "end": 168.94,
+      "probability": 0.411
+    },
+    {
+      "word": " you",
+      "start": 168.94,
+      "end": 169.04,
+      "probability": 0.987
+    },
+    {
+      "word": " feel",
+      "start": 169.04,
+      "end": 169.26,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 169.26,
+      "end": 169.42,
+      "probability": 0.971
+    },
+    {
+      "word": " rush",
+      "start": 169.42,
+      "end": 169.58,
+      "probability": 0.958
+    },
+    {
+      "word": " of",
+      "start": 169.58,
+      "end": 169.76,
+      "probability": 0.997
+    },
+    {
+      "word": " adrenaline",
+      "start": 169.76,
+      "end": 170.06,
+      "probability": 0.985
+    },
+    {
+      "word": " for",
+      "start": 170.06,
+      "end": 170.4,
+      "probability": 0.984
+    },
+    {
+      "word": " no",
+      "start": 170.4,
+      "end": 170.58,
+      "probability": 0.976
+    },
+    {
+      "word": " real",
+      "start": 170.58,
+      "end": 170.9,
+      "probability": 0.986
+    },
+    {
+      "word": " reason?",
+      "start": 170.9,
+      "end": 171.3,
+      "probability": 0.998
+    },
+    {
+      "word": " You",
+      "start": 171.8,
+      "end": 171.94,
+      "probability": 0.953
+    },
+    {
+      "word": " feel",
+      "start": 171.94,
+      "end": 172.1,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 172.1,
+      "end": 172.32,
+      "probability": 0.992
+    },
+    {
+      "word": " same",
+      "start": 172.32,
+      "end": 172.56,
+      "probability": 0.995
+    },
+    {
+      "word": " rush",
+      "start": 172.56,
+      "end": 172.82,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 172.82,
+      "end": 173.0,
+      "probability": 0.996
+    },
+    {
+      "word": " adrenaline",
+      "start": 173.0,
+      "end": 173.38,
+      "probability": 0.997
+    },
+    {
+      "word": " and",
+      "start": 173.38,
+      "end": 173.66,
+      "probability": 0.584
+    },
+    {
+      "word": " cortisol,",
+      "start": 173.66,
+      "end": 174.12,
+      "probability": 0.98
+    },
+    {
+      "word": " even",
+      "start": 174.48,
+      "end": 174.76,
+      "probability": 0.992
+    },
+    {
+      "word": " though",
+      "start": 174.76,
+      "end": 174.96,
+      "probability": 0.994
+    },
+    {
+      "word": " you",
+      "start": 174.96,
+      "end": 175.12,
+      "probability": 0.997
+    },
+    {
+      "word": " are",
+      "start": 175.12,
+      "end": 175.24,
+      "probability": 0.974
+    },
+    {
+      "word": " sitting",
+      "start": 175.24,
+      "end": 175.44,
+      "probability": 0.99
+    },
+    {
+      "word": " safely",
+      "start": 175.44,
+      "end": 176.0,
+      "probability": 0.972
+    },
+    {
+      "word": " at",
+      "start": 176.0,
+      "end": 176.26,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 176.26,
+      "end": 176.36,
+      "probability": 0.992
+    },
+    {
+      "word": " desk.",
+      "start": 176.36,
+      "end": 176.72,
+      "probability": 0.998
+    },
+    {
+      "word": " Dr.",
+      "start": 177.2,
+      "end": 177.42,
+      "probability": 0.887
+    },
+    {
+      "word": " Roy",
+      "start": 177.62,
+      "end": 177.68,
+      "probability": 0.973
+    },
+    {
+      "word": " Balmeister,",
+      "start": 177.68,
+      "end": 178.26,
+      "probability": 0.74
+    },
+    {
+      "word": " a",
+      "start": 178.56,
+      "end": 178.6,
+      "probability": 0.97
+    },
+    {
+      "word": " social",
+      "start": 178.6,
+      "end": 178.92,
+      "probability": 0.946
+    },
+    {
+      "word": " psychologist,",
+      "start": 178.92,
+      "end": 179.62,
+      "probability": 0.996
+    },
+    {
+      "word": " reviewed",
+      "start": 180.06,
+      "end": 180.24,
+      "probability": 0.992
+    },
+    {
+      "word": " hundreds",
+      "start": 180.24,
+      "end": 180.64,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 180.64,
+      "end": 180.8,
+      "probability": 0.998
+    },
+    {
+      "word": " studies",
+      "start": 180.8,
+      "end": 181.12,
+      "probability": 0.998
+    },
+    {
+      "word": " on",
+      "start": 181.12,
+      "end": 181.36,
+      "probability": 0.998
+    },
+    {
+      "word": " this",
+      "start": 181.36,
+      "end": 181.5,
+      "probability": 0.996
+    },
+    {
+      "word": " topic.",
+      "start": 181.5,
+      "end": 181.86,
+      "probability": 0.999
+    },
+    {
+      "word": " He",
+      "start": 182.3,
+      "end": 182.48,
+      "probability": 0.987
+    },
+    {
+      "word": " concluded",
+      "start": 182.48,
+      "end": 182.84,
+      "probability": 0.999
+    },
+    {
+      "word": " that",
+      "start": 182.84,
+      "end": 183.04,
+      "probability": 0.989
+    },
+    {
+      "word": " bad",
+      "start": 183.04,
+      "end": 183.24,
+      "probability": 0.525
+    },
+    {
+      "word": " is",
+      "start": 183.24,
+      "end": 183.4,
+      "probability": 0.99
+    },
+    {
+      "word": " simply",
+      "start": 183.4,
+      "end": 183.7,
+      "probability": 0.967
+    },
+    {
+      "word": " stronger",
+      "start": 183.7,
+      "end": 184.14,
+      "probability": 0.987
+    },
+    {
+      "word": " than",
+      "start": 184.14,
+      "end": 184.34,
+      "probability": 0.995
+    },
+    {
+      "word": " good",
+      "start": 184.34,
+      "end": 184.52,
+      "probability": 0.976
+    },
+    {
+      "word": " across",
+      "start": 184.52,
+      "end": 184.82,
+      "probability": 0.953
+    },
+    {
+      "word": " almost",
+      "start": 184.82,
+      "end": 185.36,
+      "probability": 0.967
+    },
+    {
+      "word": " every",
+      "start": 185.36,
+      "end": 185.76,
+      "probability": 0.995
+    },
+    {
+      "word": " domain.",
+      "start": 185.76,
+      "end": 186.1,
+      "probability": 0.989
+    },
+    {
+      "word": " You",
+      "start": 186.74,
+      "end": 186.84,
+      "probability": 0.888
+    },
+    {
+      "word": " remember",
+      "start": 186.84,
+      "end": 187.06,
+      "probability": 0.981
+    },
+    {
+      "word": " bad",
+      "start": 187.06,
+      "end": 187.44,
+      "probability": 0.974
+    },
+    {
+      "word": " experiences",
+      "start": 187.44,
+      "end": 188.12,
+      "probability": 0.923
+    },
+    {
+      "word": " more",
+      "start": 188.12,
+      "end": 188.42,
+      "probability": 0.991
+    },
+    {
+      "word": " vividly.",
+      "start": 188.42,
+      "end": 188.94,
+      "probability": 1.0
+    },
+    {
+      "word": " You",
+      "start": 189.32,
+      "end": 189.5,
+      "probability": 0.994
+    },
+    {
+      "word": " learn",
+      "start": 189.5,
+      "end": 189.66,
+      "probability": 0.88
+    },
+    {
+      "word": " from",
+      "start": 189.66,
+      "end": 189.84,
+      "probability": 0.998
+    },
+    {
+      "word": " bad",
+      "start": 189.84,
+      "end": 190.08,
+      "probability": 0.998
+    },
+    {
+      "word": " feedback",
+      "start": 190.08,
+      "end": 190.42,
+      "probability": 0.996
+    },
+    {
+      "word": " more",
+      "start": 190.42,
+      "end": 190.8,
+      "probability": 0.995
+    },
+    {
+      "word": " quickly",
+      "start": 190.8,
+      "end": 191.16,
+      "probability": 0.998
+    },
+    {
+      "word": " and",
+      "start": 191.16,
+      "end": 191.5,
+      "probability": 0.907
+    },
+    {
+      "word": " avoid",
+      "start": 191.5,
+      "end": 191.72,
+      "probability": 0.999
+    },
+    {
+      "word": " bad",
+      "start": 191.72,
+      "end": 192.0,
+      "probability": 0.999
+    },
+    {
+      "word": " reputations",
+      "start": 192.0,
+      "end": 192.7,
+      "probability": 0.932
+    },
+    {
+      "word": " more",
+      "start": 192.7,
+      "end": 193.0,
+      "probability": 0.99
+    },
+    {
+      "word": " intensely",
+      "start": 193.0,
+      "end": 193.5,
+      "probability": 0.975
+    },
+    {
+      "word": " than",
+      "start": 193.5,
+      "end": 193.76,
+      "probability": 0.97
+    },
+    {
+      "word": " you",
+      "start": 193.76,
+      "end": 193.9,
+      "probability": 0.994
+    },
+    {
+      "word": " seek",
+      "start": 193.9,
+      "end": 194.16,
+      "probability": 0.991
+    },
+    {
+      "word": " good",
+      "start": 194.16,
+      "end": 194.42,
+      "probability": 0.996
+    },
+    {
+      "word": " ones.",
+      "start": 194.42,
+      "end": 194.8,
+      "probability": 0.998
+    },
+    {
+      "word": " How",
+      "start": 195.22,
+      "end": 195.42,
+      "probability": 0.986
+    },
+    {
+      "word": " does",
+      "start": 195.42,
+      "end": 195.56,
+      "probability": 0.996
+    },
+    {
+      "word": " this",
+      "start": 195.56,
+      "end": 195.74,
+      "probability": 0.994
+    },
+    {
+      "word": " bias",
+      "start": 195.74,
+      "end": 196.0,
+      "probability": 0.476
+    },
+    {
+      "word": " affect",
+      "start": 196.0,
+      "end": 196.3,
+      "probability": 0.94
+    },
+    {
+      "word": " your",
+      "start": 196.3,
+      "end": 196.54,
+      "probability": 0.995
+    },
+    {
+      "word": " daily",
+      "start": 196.54,
+      "end": 196.8,
+      "probability": 0.998
+    },
+    {
+      "word": " choices?",
+      "start": 196.8,
+      "end": 197.28,
+      "probability": 0.998
+    },
+    {
+      "word": " It",
+      "start": 197.72,
+      "end": 197.98,
+      "probability": 0.157
+    },
+    {
+      "word": " shapes",
+      "start": 197.98,
+      "end": 198.26,
+      "probability": 0.799
+    },
+    {
+      "word": " your",
+      "start": 198.26,
+      "end": 198.4,
+      "probability": 0.873
+    },
+    {
+      "word": " relationships,",
+      "start": 198.4,
+      "end": 198.96,
+      "probability": 0.964
+    },
+    {
+      "word": " your",
+      "start": 199.4,
+      "end": 199.46,
+      "probability": 0.989
+    },
+    {
+      "word": " career,",
+      "start": 199.46,
+      "end": 199.82,
+      "probability": 0.998
+    },
+    {
+      "word": " and",
+      "start": 200.08,
+      "end": 200.1,
+      "probability": 0.988
+    },
+    {
+      "word": " your",
+      "start": 200.1,
+      "end": 200.2,
+      "probability": 0.917
+    },
+    {
+      "word": " self",
+      "start": 200.2,
+      "end": 200.52,
+      "probability": 0.985
+    },
+    {
+      "word": "-esteem",
+      "start": 200.52,
+      "end": 200.76,
+      "probability": 0.936
+    },
+    {
+      "word": " without",
+      "start": 200.76,
+      "end": 201.08,
+      "probability": 0.944
+    },
+    {
+      "word": " you",
+      "start": 201.08,
+      "end": 201.3,
+      "probability": 0.955
+    },
+    {
+      "word": " ever",
+      "start": 201.3,
+      "end": 201.48,
+      "probability": 0.989
+    },
+    {
+      "word": " realizing",
+      "start": 201.48,
+      "end": 201.92,
+      "probability": 0.935
+    },
+    {
+      "word": " it.",
+      "start": 201.92,
+      "end": 202.28,
+      "probability": 0.997
+    },
+    {
+      "word": " But",
+      "start": 202.58,
+      "end": 202.76,
+      "probability": 0.984
+    },
+    {
+      "word": " knowing",
+      "start": 202.76,
+      "end": 203.02,
+      "probability": 0.986
+    },
+    {
+      "word": " this",
+      "start": 203.02,
+      "end": 203.26,
+      "probability": 0.993
+    },
+    {
+      "word": " is",
+      "start": 203.26,
+      "end": 203.42,
+      "probability": 0.874
+    },
+    {
+      "word": " your",
+      "start": 203.42,
+      "end": 203.6,
+      "probability": 0.988
+    },
+    {
+      "word": " superpower,",
+      "start": 203.6,
+      "end": 204.12,
+      "probability": 0.888
+    },
+    {
+      "word": " you",
+      "start": 204.72,
+      "end": 204.88,
+      "probability": 0.974
+    },
+    {
+      "word": " can",
+      "start": 204.88,
+      "end": 205.0,
+      "probability": 0.997
+    },
+    {
+      "word": " balance",
+      "start": 205.0,
+      "end": 205.3,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 205.3,
+      "end": 205.54,
+      "probability": 0.994
+    },
+    {
+      "word": " scale.",
+      "start": 205.54,
+      "end": 205.8,
+      "probability": 0.993
+    },
+    {
+      "word": " You",
+      "start": 206.28,
+      "end": 206.46,
+      "probability": 0.992
+    },
+    {
+      "word": " can",
+      "start": 206.46,
+      "end": 206.58,
+      "probability": 0.997
+    },
+    {
+      "word": " choose",
+      "start": 206.58,
+      "end": 206.84,
+      "probability": 0.984
+    },
+    {
+      "word": " to",
+      "start": 206.84,
+      "end": 207.04,
+      "probability": 0.998
+    },
+    {
+      "word": " linger",
+      "start": 207.04,
+      "end": 207.28,
+      "probability": 0.996
+    },
+    {
+      "word": " on",
+      "start": 207.28,
+      "end": 207.52,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 207.52,
+      "end": 207.62,
+      "probability": 0.997
+    },
+    {
+      "word": " positive",
+      "start": 207.62,
+      "end": 208.02,
+      "probability": 0.994
+    },
+    {
+      "word": " moment",
+      "start": 208.02,
+      "end": 208.38,
+      "probability": 0.999
+    },
+    {
+      "word": " for",
+      "start": 208.38,
+      "end": 208.6,
+      "probability": 0.996
+    },
+    {
+      "word": " 20",
+      "start": 208.6,
+      "end": 208.86,
+      "probability": 0.727
+    },
+    {
+      "word": " seconds,",
+      "start": 208.86,
+      "end": 209.4,
+      "probability": 0.995
+    },
+    {
+      "word": " focusing",
+      "start": 209.74,
+      "end": 209.98,
+      "probability": 0.985
+    },
+    {
+      "word": " on",
+      "start": 209.98,
+      "end": 210.28,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 210.28,
+      "end": 210.38,
+      "probability": 0.987
+    },
+    {
+      "word": " feeling",
+      "start": 210.38,
+      "end": 210.64,
+      "probability": 0.995
+    },
+    {
+      "word": " of",
+      "start": 210.64,
+      "end": 210.9,
+      "probability": 0.998
+    },
+    {
+      "word": " warmth",
+      "start": 210.9,
+      "end": 211.18,
+      "probability": 0.998
+    },
+    {
+      "word": " or",
+      "start": 211.18,
+      "end": 211.54,
+      "probability": 0.973
+    },
+    {
+      "word": " pride.",
+      "start": 211.54,
+      "end": 211.92,
+      "probability": 0.997
+    },
+    {
+      "word": " This",
+      "start": 212.38,
+      "end": 212.56,
+      "probability": 0.994
+    },
+    {
+      "word": " gives",
+      "start": 212.56,
+      "end": 212.76,
+      "probability": 0.993
+    },
+    {
+      "word": " your",
+      "start": 212.76,
+      "end": 213.02,
+      "probability": 0.972
+    },
+    {
+      "word": " brain",
+      "start": 213.02,
+      "end": 213.26,
+      "probability": 0.997
+    },
+    {
+      "word": " time",
+      "start": 213.26,
+      "end": 213.62,
+      "probability": 0.993
+    },
+    {
+      "word": " to",
+      "start": 213.62,
+      "end": 213.84,
+      "probability": 0.999
+    },
+    {
+      "word": " build",
+      "start": 213.84,
+      "end": 214.08,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 214.08,
+      "end": 214.26,
+      "probability": 0.88
+    },
+    {
+      "word": " lasting",
+      "start": 214.26,
+      "end": 214.72,
+      "probability": 0.995
+    },
+    {
+      "word": " neural",
+      "start": 214.72,
+      "end": 215.04,
+      "probability": 0.936
+    },
+    {
+      "word": " connection,",
+      "start": 215.04,
+      "end": 215.58,
+      "probability": 0.995
+    },
+    {
+      "word": " turning",
+      "start": 215.98,
+      "end": 216.2,
+      "probability": 0.995
+    },
+    {
+      "word": " temporary",
+      "start": 216.2,
+      "end": 216.72,
+      "probability": 0.994
+    },
+    {
+      "word": " experiences",
+      "start": 216.72,
+      "end": 217.68,
+      "probability": 0.996
+    },
+    {
+      "word": " into",
+      "start": 217.68,
+      "end": 218.16,
+      "probability": 0.986
+    },
+    {
+      "word": " permanent",
+      "start": 218.16,
+      "end": 218.58,
+      "probability": 0.997
+    },
+    {
+      "word": " brain",
+      "start": 218.58,
+      "end": 218.88,
+      "probability": 0.992
+    },
+    {
+      "word": " structure.",
+      "start": 218.88,
+      "end": 219.4,
+      "probability": 0.993
+    },
+    {
+      "word": " You",
+      "start": 219.8,
+      "end": 220.06,
+      "probability": 0.996
+    },
+    {
+      "word": " can",
+      "start": 220.06,
+      "end": 220.22,
+      "probability": 0.997
+    },
+    {
+      "word": " remind",
+      "start": 220.22,
+      "end": 220.4,
+      "probability": 0.983
+    },
+    {
+      "word": " yourself",
+      "start": 220.4,
+      "end": 220.92,
+      "probability": 0.998
+    },
+    {
+      "word": " that",
+      "start": 220.92,
+      "end": 221.2,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 221.2,
+      "end": 221.32,
+      "probability": 0.995
+    },
+    {
+      "word": " rustling",
+      "start": 221.32,
+      "end": 221.72,
+      "probability": 0.938
+    },
+    {
+      "word": " into",
+      "start": 221.72,
+      "end": 221.92,
+      "probability": 0.875
+    },
+    {
+      "word": " bushes",
+      "start": 221.92,
+      "end": 222.18,
+      "probability": 0.981
+    },
+    {
+      "word": " is",
+      "start": 222.18,
+      "end": 222.42,
+      "probability": 0.998
+    },
+    {
+      "word": " usually",
+      "start": 222.42,
+      "end": 222.84,
+      "probability": 0.997
+    },
+    {
+      "word": " just",
+      "start": 222.84,
+      "end": 223.08,
+      "probability": 0.992
+    },
+    {
+      "word": " the",
+      "start": 223.08,
+      "end": 223.28,
+      "probability": 0.988
+    },
+    {
+      "word": " wind.",
+      "start": 223.28,
+      "end": 223.54,
+      "probability": 0.996
+    },
+    {
+      "word": " Will",
+      "start": 224.0,
+      "end": 224.14,
+      "probability": 0.99
+    },
+    {
+      "word": " you",
+      "start": 224.14,
+      "end": 224.26,
+      "probability": 0.996
+    },
+    {
+      "word": " let",
+      "start": 224.26,
+      "end": 224.44,
+      "probability": 0.997
+    },
+    {
+      "word": " ancient",
+      "start": 224.44,
+      "end": 224.74,
+      "probability": 0.965
+    },
+    {
+      "word": " survival",
+      "start": 224.74,
+      "end": 225.2,
+      "probability": 0.996
+    },
+    {
+      "word": " programming",
+      "start": 225.2,
+      "end": 225.86,
+      "probability": 0.952
+    },
+    {
+      "word": " run",
+      "start": 225.86,
+      "end": 226.1,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 226.1,
+      "end": 226.24,
+      "probability": 0.994
+    },
+    {
+      "word": " life?",
+      "start": 226.24,
+      "end": 226.5,
+      "probability": 0.999
+    },
+    {
+      "word": " Tonight,",
+      "start": 226.5,
+      "end": 227.24,
+      "probability": 0.773
+    },
+    {
+      "word": " when",
+      "start": 227.68,
+      "end": 227.76,
+      "probability": 0.991
+    },
+    {
+      "word": " you",
+      "start": 227.76,
+      "end": 227.9,
+      "probability": 0.998
+    },
+    {
+      "word": " lie",
+      "start": 227.9,
+      "end": 228.06,
+      "probability": 0.996
+    },
+    {
+      "word": " in",
+      "start": 228.06,
+      "end": 228.26,
+      "probability": 0.998
+    },
+    {
+      "word": " bed,",
+      "start": 228.26,
+      "end": 228.46,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 228.8,
+      "end": 228.88,
+      "probability": 0.989
+    },
+    {
+      "word": " mind",
+      "start": 228.88,
+      "end": 229.1,
+      "probability": 0.995
+    },
+    {
+      "word": " will",
+      "start": 229.1,
+      "end": 229.3,
+      "probability": 0.997
+    },
+    {
+      "word": " try",
+      "start": 229.3,
+      "end": 229.54,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 229.54,
+      "end": 229.7,
+      "probability": 0.996
+    },
+    {
+      "word": " start",
+      "start": 229.7,
+      "end": 229.92,
+      "probability": 0.994
+    },
+    {
+      "word": " its",
+      "start": 229.92,
+      "end": 230.16,
+      "probability": 0.946
+    },
+    {
+      "word": " usual",
+      "start": 230.16,
+      "end": 230.48,
+      "probability": 0.994
+    },
+    {
+      "word": " list",
+      "start": 230.48,
+      "end": 230.76,
+      "probability": 0.996
+    },
+    {
+      "word": " of",
+      "start": 230.76,
+      "end": 230.92,
+      "probability": 0.998
+    },
+    {
+      "word": " worries.",
+      "start": 230.92,
+      "end": 231.2,
+      "probability": 0.994
+    },
+    {
+      "word": " But",
+      "start": 231.66,
+      "end": 231.84,
+      "probability": 0.991
+    },
+    {
+      "word": " now",
+      "start": 231.84,
+      "end": 232.02,
+      "probability": 0.96
+    },
+    {
+      "word": " you",
+      "start": 232.02,
+      "end": 232.2,
+      "probability": 0.967
+    },
+    {
+      "word": " know",
+      "start": 232.2,
+      "end": 232.36,
+      "probability": 0.997
+    },
+    {
+      "word": " the",
+      "start": 232.36,
+      "end": 232.52,
+      "probability": 0.997
+    },
+    {
+      "word": " truth.",
+      "start": 232.52,
+      "end": 232.76,
+      "probability": 0.997
+    },
+    {
+      "word": " Tonight,",
+      "start": 233.36,
+      "end": 233.64,
+      "probability": 0.987
+    },
+    {
+      "word": " when",
+      "start": 233.9,
+      "end": 233.96,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 233.96,
+      "end": 234.08,
+      "probability": 0.999
+    },
+    {
+      "word": " lie",
+      "start": 234.08,
+      "end": 234.26,
+      "probability": 0.998
+    },
+    {
+      "word": " in",
+      "start": 234.26,
+      "end": 234.42,
+      "probability": 0.999
+    },
+    {
+      "word": " bed,",
+      "start": 234.42,
+      "end": 234.7,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 234.82,
+      "end": 234.9,
+      "probability": 0.994
+    },
+    {
+      "word": " mind",
+      "start": 234.9,
+      "end": 235.2,
+      "probability": 0.998
+    },
+    {
+      "word": " will",
+      "start": 235.2,
+      "end": 235.4,
+      "probability": 0.998
+    },
+    {
+      "word": " start",
+      "start": 235.4,
+      "end": 235.6,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 235.6,
+      "end": 235.78,
+      "probability": 0.999
+    },
+    {
+      "word": " play",
+      "start": 235.78,
+      "end": 235.98,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 235.98,
+      "end": 236.08,
+      "probability": 0.999
+    },
+    {
+      "word": " dangerous",
+      "start": 236.08,
+      "end": 236.4,
+      "probability": 0.997
+    },
+    {
+      "word": " game,",
+      "start": 236.4,
+      "end": 236.78,
+      "probability": 1.0
+    },
+    {
+      "word": " but",
+      "start": 237.02,
+      "end": 237.12,
+      "probability": 0.994
+    },
+    {
+      "word": " you",
+      "start": 237.12,
+      "end": 237.24,
+      "probability": 0.995
+    },
+    {
+      "word": " will",
+      "start": 237.24,
+      "end": 237.36,
+      "probability": 0.981
+    },
+    {
+      "word": " finally",
+      "start": 237.36,
+      "end": 237.7,
+      "probability": 0.988
+    },
+    {
+      "word": " know",
+      "start": 237.7,
+      "end": 237.94,
+      "probability": 0.998
+    },
+    {
+      "word": " how",
+      "start": 237.94,
+      "end": 238.14,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 238.14,
+      "end": 238.3,
+      "probability": 1.0
+    },
+    {
+      "word": " win",
+      "start": 238.3,
+      "end": 238.46,
+      "probability": 0.998
+    },
+    {
+      "word": " it.",
+      "start": 238.46,
+      "end": 238.58,
+      "probability": 0.997
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 238.67,
+  "model_size": "base",
+  "device": "cpu"
+}

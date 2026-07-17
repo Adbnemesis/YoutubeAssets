@@ -1,0 +1,8 @@
+{"ts": "2026-07-17T06:03:13.262831+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_prediction_project_9/voiceover.wav"}
+{"ts": "2026-07-17T06:03:13.263386+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_prediction_project_9/voiceover.wav", "success": false, "cost_usd": 0.0, "duration_s": 0.0}
+{"ts": "2026-07-17T06:03:23.211595+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_prediction_project_9/voiceover.wav"}
+{"ts": "2026-07-17T06:03:23.211909+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_prediction_project_9/voiceover.wav", "success": false, "cost_usd": 0.0, "duration_s": 0.0}
+{"ts": "2026-07-17T06:03:41.955024+00:00", "tool": "piper_tts", "event": "start", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_prediction_project_9/voiceover.wav"}
+{"ts": "2026-07-17T06:03:50.613530+00:00", "tool": "piper_tts", "event": "finish", "output_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/projects/fifa_prediction_project_9/voiceover.wav", "success": true, "cost_usd": 0.0, "duration_s": 8.66}
+{"ts": "2026-07-17T06:08:04.334414+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-17T06:08:11.178576+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 6.84}

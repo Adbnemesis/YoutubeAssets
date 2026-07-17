@@ -83,6 +83,14 @@ class PiperTTS(BaseTool):
                 "type": "number",
                 "default": 0.3,
             },
+            "noise_scale": {
+                "type": "number",
+                "description": "Phoneme pronunciation noise (default: 0.667). Lower values make speech clearer.",
+            },
+            "noise_w": {
+                "type": "number",
+                "description": "Phoneme length noise (default: 0.8). Controls length variability.",
+            },
             "output_path": {"type": "string"},
         },
     }
@@ -120,20 +128,40 @@ class PiperTTS(BaseTool):
         output_path = Path(inputs.get("output_path", "tts_output.wav"))
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
+        # Normalize newlines to spaces so sentence_silence is applied by the engine
+        text_cleaned = " ".join(line.strip() for line in inputs["text"].splitlines() if line.strip())
+
+        # Lowercase words in ALL CAPS longer than 3 characters to prevent Piper from spelling them out letter-by-letter
+        words = []
+        for word in text_cleaned.split():
+            clean_word = "".join(c for c in word if c.isalpha())
+            if clean_word.isupper() and len(clean_word) > 3:
+                words.append(word.lower())
+            else:
+                words.append(word)
+        text_cleaned = " ".join(words)
+
+        cmd = [
+            "piper",
+            "--model", inputs.get("model", "en_US-lessac-medium"),
+            "--speaker", str(inputs.get("speaker_id", 0)),
+            "--length-scale", str(inputs.get("length_scale", 1.0)),
+            "--sentence-silence", str(inputs.get("sentence_silence", 0.3)),
+            "--output_file", str(output_path),
+        ]
+        if "noise_scale" in inputs:
+            cmd.extend(["--noise-scale", str(inputs["noise_scale"])])
+        if "noise_w" in inputs:
+            cmd.extend(["--noise-w", str(inputs["noise_w"])])
+
         proc = subprocess.run(
-            [
-                "piper",
-                "--model", inputs.get("model", "en_US-lessac-medium"),
-                "--speaker", str(inputs.get("speaker_id", 0)),
-                "--length-scale", str(inputs.get("length_scale", 1.0)),
-                "--sentence-silence", str(inputs.get("sentence_silence", 0.3)),
-                "--output_file", str(output_path),
-            ],
-            input=inputs["text"],
+            cmd,
+            input=text_cleaned,
             capture_output=True,
             text=True,
             timeout=300,
         )
+
 
         if proc.returncode != 0:
             return ToolResult(success=False, error=f"Piper failed (exit {proc.returncode}): {proc.stderr}")
