@@ -187,9 +187,11 @@ After generating the image prompts file, create the `images` folder in the proje
 >
 > > Once the user has transferred the generated images, compare the images folder with the transcript/prompts, create and update `doc_references/storyboard_reference.md` with completion status, identify any missing images, and once all images are present:
 >
-> 1. Propose your video generation and editing plan first, and wait for user approval before executing the video generation.
-> 2. Generate the final video using REMOTION, syncing the voiceover narration audio with the images.
-> 3. Apply motion/animation effects (like Ken Burns pan/zoom) ONLY on images that are displayed for 4–5 seconds or longer. Images shown for less than 4 seconds must remain completely still (static) and transition directly to the next image.
+> 1. Propose your video generation and editing plan first (listing all scenes, camera motions, transitions, specific sound effects, and native overlays), and wait for user approval before executing the video generation.
+2. Generate the final video using REMOTION, syncing the voiceover narration audio with the images.
+3. Apply motion/animation effects (like Ken Burns pan/zoom, zoom-in, zoom-out, pan-left/right) ONLY on images that are displayed for 4–5 seconds or longer. Images shown for less than 4 seconds must remain completely still (static) and transition directly to the next image.
+4. Integrate project-relevant, Remotion-native animated overlays (such as `section_title` for new sections or key concepts and `stat_reveal` to highlight metrics, percentages, or values) to make the visual presentation dynamic.
+5. Implement a rich sound design layer by placing appropriate sound effects (whoosh, pop, error, riser, chime, anime-wow, notification, clock-ticking, etc.) from the common assets sfx library to punctuate transition points, reveals, mistakes, and conclusions. Ensure the sound effects do not overpower the narration.
 >
 > **Do you also want the final metadata for this video?** Reply **"yes"** and I'll generate a viral video title, an optimized video description, and viral SEO tags ready to paste straight into YouTube.
 
@@ -228,7 +230,7 @@ The `metadata.txt` file must be a beautifully formatted Markdown file with the f
 6. **Thumbnail Prompts**:
    - Provide 2 detailed text-to-image prompts for high-CTR thumbnails.
    - Structure: `### Option N: [Short Name] "[HOOK TEXT]"`
-   - Prompt format must match the 2D whiteboard doodle style with high-contrast background (yellow/orange) and a bold, rounded sans-serif hook text in all caps spelling a curiosity question (like "WILL I FAIL?").
+   - Prompt format must match the 2D whiteboard doodle style with high-contrast background (related to the project scene) and a bold, rounded sans-serif hook text in all caps spelling a curiosity question (like "WILL I FAIL?").
 
 **OUTPUT FORMAT:**
 
