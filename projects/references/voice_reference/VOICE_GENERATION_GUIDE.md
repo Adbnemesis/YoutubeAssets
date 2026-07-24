@@ -95,4 +95,24 @@ To generate voiceover for any new script using the configured voice properties:
 * **Main Generator Script**: [generate_voice.py](file:///Users/talus/Downloads/youtube_ai/OpenMontage/projects/common_assets/generate_voice.py)
 * **Voice Configuration Profile**: [voice_profile.json](file:///Users/talus/Downloads/youtube_ai/OpenMontage/projects/common_assets/voice_profile.json)
 * **Reference Audio Track**: [Inflation Explained with Bananas.mp3](file:///Users/talus/Downloads/youtube_ai/OpenMontage/projects/references/audio_reference/Inflation%20Explained%20with%20Bananas.mp3)
-* **Sample AI Tech Voiceover**: [sample_ai_tech_voiceover_10pct_faster.mp3](file:///Users/talus/Downloads/youtube_ai/OpenMontage/projects/common_assets/sample_ai_tech_voiceover_10pct_faster.mp3)
+* **Voice Engine Requirements**: [requirements.txt](file:///Users/talus/Downloads/youtube_ai/OpenMontage/projects/common_assets/requirements.txt)
+
+---
+
+## 6. Multi-Device Setup & Hugging Face Portability
+
+The voice generation system is 100% portable across machines (macOS Apple Silicon, Linux GPU, or Windows):
+
+### How Model Weights Work:
+* **Automatic Download**: `generate_voice.py` uses `ChatterboxTTS.from_pretrained(device=device)`. On any new computer, running `generate_voice.py` will automatically download the 82M parameter diffusion model weights from Hugging Face (`ResembleAI/chatterbox`) on its first execution.
+* **Cache Storage**: Model weights (~2.5 GB) are cached locally at `~/.cache/huggingface/` so they stay out of the Git repository while remaining instantly accessible.
+
+### Setup on a New Device:
+```bash
+# 1. Install voice engine dependencies
+pip install -r projects/common_assets/requirements.txt
+
+# 2. Generate voice (auto-fetches Hugging Face model weights on 1st run)
+python3 projects/common_assets/generate_voice.py <script.txt> <output.mp3>
+```
+

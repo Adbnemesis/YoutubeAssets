@@ -1,0 +1,8 @@
+# Expressive Voice Generator (Chatterbox Neural TTS) Dependencies
+chatterbox-tts>=0.1.7
+torch>=2.0.0
+torchaudio>=2.0.0
+librosa>=0.10.0
+safetensors>=0.4.0
+huggingface-hub>=0.20.0
+openai-whisper>=20231117
