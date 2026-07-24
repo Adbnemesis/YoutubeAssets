@@ -30,6 +30,12 @@ projects/**/*.mp4
 projects/**/*.wav
 projects/**/*.mp3
 projects/**/images/
+!projects/common_assets/sfx/
+!projects/common_assets/sfx/**
+!projects/common_assets/brawl_stars_sfx/
+!projects/common_assets/brawl_stars_sfx/**
+!projects/common_assets/bgm/
+!projects/common_assets/bgm/**
 
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even

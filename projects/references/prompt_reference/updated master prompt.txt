@@ -36,7 +36,7 @@ When this prompt is activated, follow the stages below strictly — one stage at
 - **Aspect ratio & Resolution:** Always 16:9 widescreen landscape aspect ratio (specifically 1280x720 or 1920x1080 for maximum HD quality) so that no cropping is required and quality is preserved for videos or YouTube thumbnails.
 
 ### AUDIO & SOUND EFFECTS DNA
-- **Narration Vocals:** Consistently generated using standard PiperTTS Ryan High voice. Keep the volume clear and dominant.
+- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU with high emotional exaggeration (sad, happy, excited, angry, dramatic) and pacing locked 10% faster than 'Inflation Explained with Bananas.mp3'.
 - **Sound Effects (SFX) Pacing:** Use sound effects to punctuate key visual reveals, tone shifts, and thematic transitions. Do not over-use; keep them subtle and at a lower volume than the narration.
 - **Signature SFX Catalog:**
   - *Whoosh* (short/cinematic) for fast movements, camera pans, or slide transitions.
@@ -82,9 +82,10 @@ Then stop. Wait for the user's reply.
 Once the user selects a number, generate the full narration script using these rules:
 
 **SCRIPT RULES:**
-- Length: Should match the duration target specified by the user (e.g., exactly 120 seconds in voiceover, around 260 words).
-- Pure narration only — no headers, no bullet points, no visual cues, no stage directions, no parenthetical notes of any kind
-- Voice: Calm, intelligent, 2nd-person throughout. Should have human touch and not sound robotic at all!
+- Length: Should match the duration target specified by the user (e.g., ~124 seconds for full script, around 260-300 words).
+- Emotion Tags: Mandatory bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts to drive Chatterbox neural acting.
+- Pure narration with emotion tags — no visual cues, no stage directions, no parenthetical notes.
+- Voice: Expressive, dynamic, 2nd-person throughout with rich pitch variations.
 - Rhythm: Short sentence. Short sentence. One longer sentence that adds depth. Short sentence. Question every 4–6 sentences.
 - End the script with a strong, direct call-to-action or final insight. Do NOT end by repeating the first line of the script.
 - Open with a hook that makes the first 4 lines impossible to stop reading
@@ -187,14 +188,14 @@ After generating the image prompts file, create the `images` folder in the proje
 >
 > > Once the user has transferred the generated images, compare the images folder with the transcript/prompts, create and update `doc_references/storyboard_reference.md` with completion status, identify any missing images, and once all images are present:
 >
-> 1. Propose your video generation and editing plan first (listing all scenes, camera motions, transitions, specific sound effects, and native overlays), and wait for user approval before executing the video generation.
-2. Generate the final video using REMOTION, syncing the voiceover narration audio with the images.
-3. Apply motion/animation effects (like Ken Burns pan/zoom, zoom-in, zoom-out, pan-left/right) ONLY on images that are displayed for 4–5 seconds or longer. Images shown for less than 4 seconds must remain completely still (static) and transition directly to the next image.
-4. Integrate project-relevant, Remotion-native animated overlays (such as `section_title` for new sections or key concepts and `stat_reveal` to highlight metrics, percentages, or values) to make the visual presentation dynamic.
-5. Implement a rich sound design layer by placing appropriate sound effects (whoosh, pop, error, riser, chime, anime-wow, notification, clock-ticking, etc.) from the common assets sfx library to punctuate transition points, reveals, mistakes, and conclusions. Ensure the sound effects do not overpower the narration.
+> 1. Create the Implementation Plan first and wait for explicit user approval before executing the video generation or starting any rendering tasks.
+> 2. Generate the final video using REMOTION, syncing the voiceover narration audio with the images.
+> 3. Apply motion/animation effects (like Ken Burns pan/zoom, zoom-in, zoom-out, pan-left/right) ONLY on images that are displayed for 4–5 seconds or longer. Images shown for less than 4 seconds must remain completely still (static) and transition directly to the next image.
+> 4. Integrate project-relevant, Remotion-native animated overlays (such as `section_title` for new sections, `stat_reveal` to highlight metrics/values, or `sticker` for custom SVG icon animations) to make the visual presentation dynamic.
+> 5. Enhance Engagement with Sticker Overlays: For long scenes (greater than 5 seconds), add multiple sequential sticker overlays timed to specific narration words. Use dynamic SVG stickers from `projects/common_assets/stickers/` (`red_down_arrow.svg`, `green_checkmark.svg`, `warning.svg`, etc.) which automatically apply a bouncy spring-in scale transition in Remotion.
+> 6. Implement a rich sound design layer by placing appropriate sound effects (whoosh, pop, error, riser, chime, anime-wow, notification, clock-ticking, etc.) from the common assets sfx library to punctuate transition points, reveals, mistakes, and conclusions. Ensure the sound effects do not overpower the narration.
 >
 > **Do you also want the final metadata for this video?** Reply **"yes"** and I'll generate a viral video title, an optimized video description, and viral SEO tags ready to paste straight into YouTube.
-
 
 
 ---

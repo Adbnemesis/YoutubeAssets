@@ -8,7 +8,7 @@ Your primary objective is to explain complex AI and technology concepts/tools in
 - Extremely easy to understand (Explain Like I'm 5 / kid-friendly)
 - Visually engaging with memorable analogies (bananas, cargo boxes, jungle messengers)
 - Entertaining and humorous without sacrificing core technical accuracy
-- Short, punchy, and under 3 minutes (typically 120-180 seconds)
+- Short, punchy, and under 4 minutes (typically 150-220 seconds)
 
 Every concept, system, API, database interaction, or algorithm must be conceptually accurate. Do not misrepresent how tech works, but simplify it so anyone can grasp the core idea.
 
@@ -45,9 +45,9 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Objective:** Teach viewers how technology works using simple real-world analogies. Every viewer should leave the video with a crystal-clear understanding of a tool or concept they previously found intimidating.
 - **Format:** Educational explainer using whiteboard-style animations led by a monkey teacher. Explain tech through visual metaphors rather than raw code. Never pad the script with generic intro filler or channel branding.
 - **Hook Formula:** Start immediately with the complex tech term, a common misconception, or a funny jungle analogy that maps directly to it. The viewer must immediately know they will understand this concept in under 3 minutes.
-- **Script Rhythm:** Short sentence. Short sentence. One slightly longer sentence adding depth. Short sentence. Ask a question every 4–6 sentences to keep the viewer active.
+- **Script Rhythm & Pacing:** Fast pacing (~124.17s for full script, ~260-300 words). Include explicit bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts.
 - **Narrative Arc:** Hook → Simple Metaphor Intro → Visual Analogy Demonstration → Technical Translation (connecting metaphor to real tech terms) → Step-by-Step Mechanics Breakdown → Advanced Concept Simplified → Practical Takeaway → Quick Recap → Playful Ending CTA.
-- **Monkey Explaining Style:** Use playful but clear language. Frequently use analogies involving bananas, jungle mail delivery, treehouses, gears, boxes, etc. Avoid dry academic phrasing. Explain all tech jargon immediately (e.g. "An API is like a waiter in a restaurant...").
+- **Monkey Explaining Style / Caveman Pidgin ("Monkey Speak"):** Use the viral broken/caveman grammar ("monkey want banana...", "[happy] monkey happy!", "[sad] monkey poor... monkey sad...", "[excited] monkey rich!"). Explain complex tech concepts using rapid, simple 3–6 word sentences, primitive nouns (monkey, banana, treehouse, waiter monkey, bug insect), and instant technical jargon punchlines ("Zero-Day Vulnerability!", "Error 500!").
 - **Ending:** Always end with a simple, high-level takeaway of when/why to use the tool, followed by a natural, fast call-to-action.
 
 ---
@@ -69,14 +69,11 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Art Style:** Hand-drawn 2D doodle classroom/jungle animation with thick black outlines, slightly imperfect sketchy marker lines, flat colors, and simple educational illustrations. Always reference the central character reference sheet to maintain visual consistency.
 - **Overall Theme:** Every scene feels like a cartoon monkey explaining tech on a whiteboard or classroom chalkboard.
 - **Characters:**
-  - **Monkey (The Teacher):** A cute, expressive brown cartoon monkey wearing thick black-rim-glasses, holding a wooden pointer or a banana, and standing next to a whiteboard. He has a friendly, enthusiastic expression.
-  - **Student (The Learner):** A simple stick figure (wearing a red hoodie) or a smaller, cute monkey looking confused, curious, or having a lightbulb icon above head.
-  - **Concept Metaphors (Personified):**
-    - *Git (Octopus)*: A cute cartoon octopus with multiple tentacles holding branch lines or files.
-    - *Docker (Shipping Container)*: A friendly blue cartoon cargo container with cute eyes and mouth.
-    - *API (Monkey Waiter)*: A monkey in a waiter's tuxedo holding a food tray with a cover labeled "API".
-    - *Bug (Green Insect)*: A small cartoon bug with angry eyes chewing on a wire or a piece of paper.
-    - *Database (Stacked Jars/Barrels)*: Stacked cartoon honey jars or wooden barrels labeled "DATA" with a lock on them.
+  - **Professor Monkey (The Main Educator):** Cute brown cartoon monkey wearing thick black-rimmed glasses, holding a wooden pointer or banana, standing beside the whiteboard. Always the primary teacher/host.
+  - **Secondary Supporting Characters (Used as needed by script):**
+    - *Gorilla / Ape*: Simple brown ape/gorilla with light tan face plate, optional straw hat, deadpan poker face (`._.`), holding wooden signs, banana stacks, or acting in scenario stories.
+    - *Student (The Learner)*: Simple stick figure wearing a red hoodie, looking curious or confused with a lightbulb icon above head.
+    - *Concept Metaphors (Personified)*: Monkey waiter in tuxedo (API), blue cartoon shipping container (Docker), green bug insect, etc.
 - **Objects & Diagrams:** Use oversized arrows, cargo boxes, file cabinets, tree branches, messenger birds, and simple flowcharts to represent system components visually.
 - **Backgrounds:** Flat solid colors only.
   - White → Classroom Whiteboard / General explanation
@@ -118,7 +115,7 @@ Maintain the same project structure, recurring characters, naming conventions, v
 
 ### AUDIO & SOUND EFFECTS DNA
 
-- **Narration Vocals:** Consistently generated using standard PiperTTS Ryan High voice. Keep the volume clear and dominant.
+- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU with high emotional exaggeration (sad, happy, excited, angry, dramatic) and pacing locked 10% faster than 'Inflation Explained with Bananas.mp3'.
 - **Sound Effects (SFX) Pacing:** Use sound effects to punctuate key visual reveals, tone shifts, and transitions. Keep them subtle and at a lower volume than the narration.
 - **Signature SFX Catalog:**
   - *Whoosh* (short/cinematic) for fast movements, camera pans, or slide transitions.
@@ -130,6 +127,11 @@ Maintain the same project structure, recurring characters, naming conventions, v
   - *Notification* for phone pings and modern smartphone/app screen reveals.
   - *Ping / Chime / Sparkle* for bright ideas, realizations, mathematical breakthroughs, or end screens.
   - *Anime Wow* for comedic surprises or major highlights.
+  - *Bruh* (`bruh.mp3`) for unexpected failures, silly mistakes, or funny disbelief.
+  - *A Few Moments Later* (`a-few-moments-later.mp3`) for comedic time jumps and transition cards.
+  - *Disappointed* (`disappointed.mp3`) for sad realizations, failed tests, or letdowns.
+  - *Fahhh* (`fahhh.mp3`) for extreme frustration, chaotic moments, or dramatic reactions.
+  - *Get Out* (`get-out.mp3`) for kicks, rejections, or hilarious dismissals.
   - *Glitch* for record scratches, analog errors, or sudden ironies.
   - *Impact Bass (boom/suspense)* for warnings, dark reframes, or core discoveries.
 
@@ -165,15 +167,15 @@ Once the user selects a number, generate the full narration script using these r
 
 ## SCRIPT RULES
 
-- **Length:** Match the duration target specified by the user (typically 120-180 seconds, around 250-380 words). The narration should naturally fit the requested runtime without feeling rushed or padded. Prioritize pacing over word count.
+- **Length & Pacing:** 130 WPM overall gross pacing (around 250-320 words for 120-150 seconds). Net speech burst speed is 165-170 WPM with 0.2s micro-pauses.
 - **Pure Narration Only:** Output narration only. Do not include headings, bullet points, scene descriptions, image cues, editing instructions, sound effects, stage directions, or parenthetical notes of any kind.
-- **Voice:** Energetic, clear, conversational, and highly educational. The narrator should sound like a friendly "Tech Monkey" tutor explaining complex systems to a beginner. Never sound robotic, overly dry, or academic.
-- **Perspective:** Primarily use second-person ("you") when explaining concepts, and first-person plural ("we") when exploring a system together.
-- **Hook:** The first 15–20 seconds must create curiosity by introducing a funny real-world analogy or a provocative question about the technology. No greeting or intro.
-- **Teaching Style:** Every explanation should build logically from a simple metaphor (e.g. shipping containers for Docker, waiter for APIs, recipe for code) and translate it directly into how the real tool works. Technical terms must be decoded in plain English immediately.
-- **Rhythm:** Use short, punchy sentences for clarity. Follow with a slightly longer sentence adding depth. Ask a question every 4–6 sentences to maintain engagement.
-- **Visual Thinking:** Write the narration with visual explanations in mind. Every paragraph should naturally translate into diagrams, monkey demonstrations, whiteboard drawings, or simple metaphorical comparisons.
-- **Ending:** Finish with a simple practical takeaway of when/why to use the tool, followed by a natural call-to-action. Never end by repeating the opening hook.
+- **Voice:** Deadpan, flat, monotone, and completely serious (Primate Economics reference style).
+- **Perspective:** Third-person monkey narrative ("monkey buy banana...") mixed with direct 2nd-person questions ("monkey is all of us").
+- **Hook:** The first 15–20 seconds must start immediately with the primitive monkey scenario ("if monkeys have one banana, banana rare..."). No greeting or intro.
+- **Teaching Style & Monkey Speak DNA:** Write the narration in the viral "Monkey Speak" pidgin style using short 3–5 word lines ("monkey want banana", "monkey eat banana", "life is good"). Build rapid cause-and-effect loops ("if X then Y... monkey rich! if X then Z... monkey sad!"). Decode technical concepts using simple monkey/jungle metaphors with instant bold jargon punchlines ("Demand-Pull Inflation!", "Zero-Day Vulnerability!").
+- **Rhythm & Line Breaks:** Write each 3–5 word thought burst on its own line to force micro-pauses (0.2s) in TTS generation.
+- **Visual Thinking:** Write the narration with visual explanations in mind. Every line should translate directly into clear 2D doodle animations, banana stacks, or text cards.
+- **Ending:** Finish with a high-level takeaway of why the concept matters, ending with a natural, quick CTA ("sometimes tech get really bananas! please subscribe").
 
 **OUTPUT FORMAT:**
 
@@ -186,11 +188,31 @@ Output the full video title as a plain heading in the chat, create the file.
 
 **[FULL VIDEO TITLE]**
 
-After presenting the file, output this exactly:
+After presenting the file, output the recommended TTS voice configuration:
 
-> **Your script is ready. You can check it under projects/xyz_project_n `script_[topic].txt` file above. Once you generate the voiceover audio manually based on this script, please place the generated audio file under projects/xyz_project_n as `voiceover.mp3` and let me know so we can transcribe it and align the storyboard.**
+- **Voice Engine**: `edge-tts` (Microsoft Edge Neural Voices)
+- **Voice**: `en-US-GuyNeural`
+- **Rate**: `-20%` (slightly slower than default for clear, unhurried sentence delivery)
+- **Post-Processing**: Pause-trim all silence gaps > 100ms down to **0.28s** using `projects/common_assets/generate_voice.py`
+- **Script Formatting Rules**:
+  - Use **periods (`.`)** at end of each sentence (gives proper falling intonation — sentences sound *finished*)
+  - Use **commas (`,`)** within sentences for micro-pauses within thought chains
+  - One sentence per line; blank lines between topic shifts
+- **Target Metrics** (matching Primate Economics reference):
+  - Speech ratio: ~78%
+  - Avg pause length: 0.24–0.28s
+  - Full config: `projects/common_assets/voice_profile.json`
 
-Once the user has added the `voiceover.mp3` file, generate the timestamped transcript.
+**Voice Generation Command:**
+```bash
+python3 projects/common_assets/generate_voice.py projects/[project_folder]/script_[topic].txt projects/[project_folder]/voiceover.mp3
+```
+
+Then output this exactly:
+
+> **Your script is ready. You can check it under projects/xyz_project_n `script_[topic].txt` file above. Generate voiceover using: `python3 projects/common_assets/generate_voice.py <script> <output.mp3>` — or generate manually via Google AI Studio and place the audio file under projects/xyz_project_n as `voiceover.wav`, then let me know so we can transcribe it and align the storyboard.**
+
+Once the user has added the `voiceover.wav` file, generate the timestamped transcript.
 
 Format your timestamped script exactly like this:
 >
@@ -220,7 +242,7 @@ The generated images will later be animated inside **Remotion**, therefore every
 1. Every prompt must begin with its timestamp exactly like:
 
 ```
-[00:00]
+[00:00] the_prompt
 ```
 
 2. Every prompt must begin with the following style anchor:
@@ -278,20 +300,26 @@ Only update:
 - highlighted elements
 Do NOT generate a brand new scene every few seconds.
 
-9. Maintain recurring characters consistently across every image.
-### Monkey (The Teacher)
-- Cute brown cartoon monkey
-- Wear thick black-rimmed glasses
-- Friendly, enthusiastic smile
+9. Maintain character roles consistently:
+### Professor Monkey (Main Educator)
+- Cute brown cartoon monkey wearing thick black-rimmed glasses
+- Friendly, enthusiastic smile or dynamic cartoon reactions (sweating when confused, lightbulb icon above head during breakthroughs, bulging eyes for shocking reveals)
 - Holds a wooden pointer or a banana
-- Standing beside the whiteboard/chalkboard
+- Always the main host/educator standing beside the whiteboard
 
-### Student (The Learner)
-- Simple stick figure wearing a red hoodie
-- Looks curious, confused, or has a lightbulb icon above head
-- Frequently raises a hand
+### Secondary Supporting Characters (Used as needed by scenario/script)
+- **Gorilla / Ape:** Simple brown gorilla/ape body, light tan face plate, optional straw hat, deadpan poker face (`._.`), holding wooden signs, banana stacks, or acting out scenario stories.
+- **Student:** Simple stick figure wearing a red hoodie, looking curious or confused with a lightbulb icon above head.
 
-10. Whenever tech objects appear, simplify them:
+10. Playful Expression Cues: Give the monkey expressive, dynamic cartoon reactions in every image prompt (e.g. sweating when confused, lightbulb icon appearing above head during breakthroughs, bulging eyes for shocking reveals, enthusiastic smile while pointing with a banana or wooden pointer).
+
+11. Title & Jargon Cards (Primate Economics Style):
+For key jargon reveals or title screens, use a pure white background with hand-drawn ALL CAPS black marker text, surrounded by simple yellow hand-drawn star asterisks `*` (e.g. `* PRODUCTION - COST INFLATION *`, `* ZERO-DAY VULNERABILITY *`).
+
+12. Script-Driven Dynamic Visuals:
+Every prompt's visual details must be tightly driven by the project's specific script, analogies, and story actions (e.g. giant stacks of bananas, wooden signs, treehouse cells, meal slots, waiter monkeys).
+
+13. Whenever tech objects appear, simplify them:
 - Code → Scroll with scribbles
 - Database → Wooden barrel or honey jar labeled "DATA"
 - Server → Cabinet stack with green blinking lights
@@ -414,15 +442,30 @@ These files are the **single source of truth**. Never hallucinate timestamps, na
 ---
 
 # IMAGE VERIFICATION
-Once the user transfers generated images into the project folder, compare the folder against the transcript/prompts and update `doc_references/storyboard_reference.md`. Identify missing, duplicated, or incorrectly formatted files. Never proceed until every required image exists.
+Once the user transfers generated images into the project folder, run the automated verification script:
+
+```bash
+python3 projects/common_assets/verify_images.py projects/[project_folder]
+```
+
+This tool automatically:
+- Compares all images in `images/` against every timestamp line in `[topic]_transcript.txt`
+- Reports present vs missing images
+- Use `python3 projects/common_assets/verify_images.py projects/[project_folder] --fill-gaps` to automatically duplicate preceding scene images for missing timestamps so rendering is never blocked!
+
+Update `doc_references/storyboard_reference.md` and `doc_references/image_generation_status.md` with the audit results. Never proceed to video generation until all timestamp images are present.
 
 ---
 
 # REMOTION VIDEO GENERATION
 Once every image exists:
-1. **Propose the video generation and editing plan first** (listing all scenes, camera motions, transitions, specific sound effects, and native overlays), and wait for user approval before executing the video generation.
+1. **Create the Implementation Plan first** and wait for explicit user approval before executing the video generation or starting any rendering tasks.
 2. **Automatically create** the blueprint file `doc_references/video_edit_plan.md` containing scene details (timestamp, ID, filename, voiceover timing, duration, camera preset, transition, sound effects, subtitles, overlays).
-3. Generate the Remotion project to synchronize audio, transcript, images, subtitles, camera movement, transitions, and sound effects.
+3. **Enhance Engagement with Sticker Overlays**:
+   - For long scenes (greater than 5 seconds), add multiple sequential overlays (e.g. `question_mark` followed by `lightbulb` or `warning`) timed to specific narration words.
+   - Use dynamic SVG stickers from `projects/common_assets/stickers/` (`red_down_arrow.svg`, `green_checkmark.svg`, `warning.svg`, `gold_coin.svg`, `up_arrow.svg`, `lightbulb.svg`, `question_mark.svg`) to visually highlight key moments.
+   - These stickers automatically apply a bouncy spring-in scale transition in Remotion and can be custom positioned (e.g., center, bottom-right, left) via styling in `proposed_props.json`.
+4. Generate the Remotion project to synchronize audio, transcript, images, subtitles, camera movement, transitions, and sound effects.
 
 ---
 
@@ -442,6 +485,10 @@ The `metadata.txt` file must be a beautifully formatted Markdown file with the f
 2. **Video Description**:
    - Open with a 2–3 sentence hook that mirrors the tone of the script's opening and teases the core reframe/analogy.
    - Follow with a short paragraph (3–4 sentences) summarizing what the viewer will discover, written in the calm but energetic 2nd-person voice.
+   - Always include the mandatory BGM attribution block for copyright protection:
+     Music: "Monkeys Spinning Monkeys" by Kevin MacLeod (incompetech.com)
+     Licensed under Creative Commons: By Attribution 4.0 License
+     http://creativecommons.org/licenses/by/4.0/
    - Add a line inviting likes, comments, and subscribes in the channel's voice.
    - Include a space-separated list of 15–25 relevant hashtags (each starting with #).
 

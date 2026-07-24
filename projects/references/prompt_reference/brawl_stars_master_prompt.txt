@@ -53,12 +53,11 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Objective:** Teach viewers how Brawl Stars actually works using simple explanations, visual examples, and classroom-style diagrams. Every viewer should leave the video understanding something they didn't know before.
 - **Format:** Educational explainer using stick-figure classroom animations instead of gameplay. Explain mechanics through diagrams, comparisons, simplified scenarios, and whiteboard illustrations. Never pad the script with unnecessary storytelling or filler.
 - **Accuracy:** Every mechanic, statistic, interaction, probability, and explanation must be factually accurate and based on the latest version of Brawl Stars. Never invent mechanics or spread community myths unless clearly disproving them.
-- **Hook Formula:** Start immediately with the misconception, hidden mechanic, or question the video answers. The viewer should instantly understand why they should keep watching.
-- **Script Rhythm:** Short sentence. Short sentence. One slightly longer sentence adding depth. Short sentence. Ask a question every 4–6 sentences to maintain engagement.
-- **Narrative Arc:** Hook → Common Misconception → Simple Explanation → Visual Demonstration → Real In-Game Example → Advanced Breakdown → Practical Takeaway → Quick Recap → Call to Action.
-- **Teaching Style:** Explain every technical term in plain English immediately after introducing it. Never assume the viewer understands competitive terminology.
-- **Viewer Value:** Every 20–30 seconds should teach a new concept, reveal a hidden mechanic, or correct a common misconception.
-- **Ending:** Always conclude with one practical takeaway that viewers can immediately apply in their next game, followed by a natural call to action.
+- **Hook Formula:** Start immediately with the complex mechanic, a common misconception, or a funny game scenario that maps directly to it. The viewer must immediately know they will understand this concept in under 3 minutes.
+- **Script Rhythm & Pacing:** Fast pacing (~124.17s for full script, ~260-300 words). Include explicit bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts.
+- **Narrative Arc:** Hook → Simple Metaphor Intro → Visual Analogy Demonstration → Technical Translation (connecting metaphor to real game mechanics) → Step-by-Step Mechanics Breakdown → Advanced Concept Simplified → Practical Takeaway → Quick Recap → Playful Ending CTA.
+- **Monkey Explaining Style / Caveman Pidgin ("Monkey Speak"):** Use the viral broken/caveman grammar ("Edgar want gem...", "Edgar jump, Edgar die!", "player poor, player sad", "if X then Y... player win!"). Explain complex Brawl Stars concepts using rapid, simple 3–6 word sentences, primitive nouns (brawler, gem, bush, hypercharge, robot), and instant technical jargon punchlines ("Damage Fall-Off!", "Zero-Day Vulnerability!", "Frame Advantage!").
+- **Ending:** Always end with a simple, high-level takeaway of when/why to use the mechanic, followed by a natural, fast call-to-action.
 
 ---
 
@@ -83,10 +82,10 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Overall Theme:** Every scene should feel like a teacher explaining Brawl Stars in a classroom using a whiteboard rather than showing gameplay.
 - **Characters:** Simple stick figures with large circular heads, expressive eyebrows, dot eyes, and exaggerated facial expressions. Recurring characters should remain visually identical across every video.
 - **Recurring Characters:**
-  - **Professor:** White lab coat, blue tie, round glasses, wooden pointer, calm expression.
-  - **Student:** Red hoodie, curious expression, frequently asks questions.
-  - **Noob Edgar:** Overconfident, always demonstrates incorrect decisions.
-  - **Pro Spike:** Quiet, demonstrates the correct strategy or mechanic.
+  - **Professor:** Human stick figure with round glasses, white lab coat, blue tie, wooden pointer, calm expression.
+  - **Student:** Human stick figure in a red hoodie, curious expression, frequently asks questions.
+  - **Noob Edgar:** Overconfident stick figure with dark emo hair covering one eye and a long purple and black striped scarf, always demonstrates incorrect decisions.
+  - **Pro Spike:** Quiet stick figure cactus, demonstrates the correct strategy or mechanic.
 - **Brawler Design:** Simplify every Brawler into a stick figure while preserving only their iconic hairstyle, weapon, silhouette, and primary colors. Never recreate official splash art or detailed character models.
 - **Objects & Diagrams:** Use oversized arrows, circles, tile indicators, range circles, bushes, walls, projectiles, damage numbers, and simple icons to explain mechanics visually.
 - **Backgrounds:** Flat solid colors only.
@@ -131,7 +130,7 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Aspect Ratio & Resolution:** Always generate images in 16:9 widescreen landscape (1280×720 or 1920×1080). Every image should be suitable for direct use in Remotion without cropping or resizing.
 
 ### AUDIO & SOUND EFFECTS DNA
-- **Narration Vocals:** Consistently generated using standard PiperTTS Ryan High voice. Keep the volume clear and dominant.
+- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU with high emotional exaggeration (sad, happy, excited, angry, dramatic) and pacing locked 10% faster than 'Inflation Explained with Bananas.mp3'.
 - **Sound Effects (SFX) Pacing:** Use sound effects to punctuate key visual reveals, tone shifts, and thematic transitions. Do not over-use; keep them subtle and at a lower volume than the narration.
 - **Signature SFX Catalog:**
   - *Whoosh* (short/cinematic) for fast movements, camera pans, or slide transitions.
@@ -143,6 +142,11 @@ Maintain the same project structure, recurring characters, naming conventions, v
   - *Notification* for phone pings and modern smartphone/app screen reveals.
   - *Ping / Chime / Sparkle* for bright ideas, realizations, mathematical breakthroughs, or end screens.
   - *Anime Wow* for comedic surprises or major lighthearted highlights.
+  - *Bruh* (`bruh.mp3`) for unexpected failures, silly mistakes, or funny disbelief.
+  - *A Few Moments Later* (`a-few-moments-later.mp3`) for comedic time jumps and transition cards.
+  - *Disappointed* (`disappointed.mp3`) for sad realizations, failed tests, or letdowns.
+  - *Fahhh* (`fahhh.mp3`) for extreme frustration, chaotic moments, or dramatic reactions.
+  - *Get Out* (`get-out.mp3`) for kicks, rejections, or hilarious dismissals.
   - *Glitch* for record scratches, analog errors, or sudden ironies.
   - *Impact Bass (boom/suspense)* for sudden warnings, dark reframes, or core discoveries.
 
@@ -178,34 +182,15 @@ Once the user selects a number, generate the full narration script using these r
 
 ## SCRIPT RULES
 
-- **Length:** Match the duration target specified by the user. The narration should naturally fit the requested runtime without feeling rushed or padded. Prioritize pacing over word count.
+- **Length & Pacing:** 130 WPM overall gross pacing (around 250-320 words for 120-150 seconds). Net speech burst speed is 165-170 WPM with 0.2s micro-pauses.
 - **Pure Narration Only:** Output narration only. Do not include headings, bullet points, scene descriptions, image cues, editing instructions, sound effects, stage directions, or parenthetical notes of any kind.
-- **Voice:** Calm, intelligent, conversational, and confident. The narrator should sound like an experienced Brawl Stars coach or teacher explaining mechanics to a friend. Never sound robotic, overly dramatic, or overly formal.
-- **Perspective:** Primarily use second-person ("you") when explaining concepts, while naturally switching to third-person when discussing Brawlers, mechanics, or gameplay scenarios.
-- **Hook:** The first 15–30 seconds should immediately create curiosity by introducing a hidden mechanic, a common misconception, an unexpected fact, or a question the viewer wants answered. Never begin with greetings, introductions, or channel branding.
-- **Teaching Style:** Every explanation should build logically from simple concepts to advanced mechanics. If a technical term is introduced, explain it immediately in plain English before moving on.
-- **Rhythm:** Use short, punchy sentences for clarity. Occasionally follow with a longer sentence that adds context or deeper understanding. Ask a question every 4–6 sentences to keep viewers engaged.
-- **Visual Thinking:** Write the narration with visual explanations in mind. Every paragraph should naturally translate into diagrams, stick-figure demonstrations, whiteboard drawings, or simple gameplay scenarios.
-- **Examples:** Frequently compare incorrect gameplay with correct gameplay. Explain *why* one decision works better than the other instead of simply stating it.
-- **Progression:** Every 20–30 seconds should introduce a new mechanic, reveal a hidden interaction, answer a question, or deepen the viewer's understanding. Never repeat information simply to increase runtime.
-- **Accuracy:** Every mechanic, statistic, interaction, probability, balance change, and gameplay explanation must be accurate and based on the latest version of Brawl Stars. Never invent hidden mechanics, undocumented features, or misleading statistics.
-- **Narrative Structure:** Follow this flow whenever possible:
-  1. Hook
-  2. Common Misconception
-  3. Simple Explanation
-  4. Visual Example
-  5. Real Gameplay Example
-  6. Advanced Insight
-  7. Practical Tip
-  8. Quick Recap
-- **Retention:** Every minute should contain at least one surprising fact, myth-bust, hidden mechanic, or "I didn't know that" moment to maintain viewer interest.
-- **Ending:** Finish with a practical takeaway that viewers can immediately apply in their next game, followed by a natural call-to-action encouraging them to watch another video, subscribe, or leave a comment. Never end by repeating the opening hook.
-- **Quality Check:** Before finalizing the script, verify:
-  - Every explanation is beginner-friendly.
-  - Every mechanic is factually correct.
-  - Every section teaches something new.
-  - The pacing remains engaging from beginning to end.
-  - The narration naturally supports classroom-style stick-figure animations and whiteboard diagrams.
+- **Voice:** Deadpan, flat, monotone, and completely serious (Primate Economics reference style).
+- **Perspective:** Third-person brawler narrative ("brawler buy gem...") mixed with direct 2nd-person questions ("brawler is all of us").
+- **Hook:** The first 15–20 seconds must start immediately with the primitive brawler scenario ("if Edgar has zero gems, Edgar jump..."). No greeting or intro.
+- **Teaching Style & Monkey Speak DNA:** Write the narration in the viral "Monkey Speak" / primitive pidgin style using short 3–5 word lines ("Edgar want gem", "Edgar jump bush", "life is good"). Build rapid cause-and-effect loops ("if X then Y... player rich! if X then Z... player sad!"). Decode technical concepts using simple brawler/gameplay metaphors with instant bold jargon punchlines ("Damage Fall-Off!", "Hypercharge Scaling!").
+- **Rhythm & Line Breaks:** Write each 3–5 word thought burst on its own line to force micro-pauses (0.2s) in TTS generation.
+- **Visual Thinking:** Write the narration with visual explanations in mind. Every line should translate directly into clear 2D doodle animations, stick figure scenarios, or text cards.
+- **Ending:** Finish with a high-level takeaway of why the mechanic matters, ending with a natural, quick CTA ("sometimes Brawl Stars get really bananas! please subscribe").
 
 **OUTPUT FORMAT:**
 
@@ -218,11 +203,31 @@ Output the full video title as a plain heading in the chat, create the file.
 
 **[FULL VIDEO TITLE]**
 
-After presenting the file, output this exactly:
+After presenting the file, output the recommended TTS voice configuration:
 
-> **Your script is ready. You can check it under projects/xyz_project_n `script_[topic].txt` file above. Once you generate the voiceover audio manually based on this script, please place the generated audio file under projects/xyz_project_n as `voiceover.mp3` and let me know so we can transcribe it and align the storyboard.**
+- **Voice Engine**: `edge-tts` (Microsoft Edge Neural Voices)
+- **Voice**: `en-US-GuyNeural`
+- **Rate**: `-20%` (slightly slower than default for clear, unhurried sentence delivery)
+- **Post-Processing**: Pause-trim all silence gaps > 100ms down to **0.28s** using `projects/common_assets/generate_voice.py`
+- **Script Formatting Rules**:
+  - Use **periods (`.`)** at end of each sentence (gives proper falling intonation — sentences sound *finished*)
+  - Use **commas (`,`)** within sentences for micro-pauses within thought chains
+  - One sentence per line; blank lines between topic shifts
+- **Target Metrics** (matching Primate Economics reference):
+  - Speech ratio: ~78%
+  - Avg pause length: 0.24–0.28s
+  - Full config: `projects/common_assets/voice_profile.json`
 
-Once you have added the `voiceover.mp3` file, we will generate the timestamped transcript.
+**Voice Generation Command:**
+```bash
+python3 projects/common_assets/generate_voice.py projects/[project_folder]/script_[topic].txt projects/[project_folder]/voiceover.mp3
+```
+
+Then output this exactly:
+
+> **Your script is ready. You can check it under projects/xyz_project_n `script_[topic].txt` file above. Generate voiceover using: `python3 projects/common_assets/generate_voice.py <script> <output.mp3>` — or generate manually via Google AI Studio and place the audio file under projects/xyz_project_n as `voiceover.wav`, then let me know so we can transcribe it and align the storyboard.**
+
+Once the user has added the `voiceover.wav` file, generate the timestamped transcript.
 
 Format your timestamped script exactly like this:
 >
@@ -249,11 +254,13 @@ The generated images will later be animated inside **Remotion**, therefore every
 
 # IMAGE PROMPT RULES
 
-1. Every prompt must begin with its timestamp exactly like:
+1. Every prompt must be on a single line starting with its timestamp `[MM:SS]` followed immediately by the prompt text, exactly like:
 
 ```
-[00:00]
+[00:00] Hand-drawn 2D doodle classroom cartoon animation...
 ```
+
+Do NOT break the timestamp and prompt text onto separate lines. Each prompt is one continuous single-line string.
 
 2. Every prompt must begin with the following style anchor:
 
@@ -395,36 +402,36 @@ Do NOT generate a brand new scene every few seconds.
 9. Maintain recurring characters consistently across every image.
 
 ### Professor
-
-- White lab coat
-- Blue tie
-- Round glasses
-- Wooden pointer
-- Calm smile
-- Standing beside the whiteboard
+- Human stick figure with round glasses, white lab coat, blue tie, wooden pointer, calm smile, standing beside the whiteboard
 
 ### Student
-
-- Red hoodie
-- Curious
-- Frequently raises hand
-- Occasionally confused
+- Human stick figure in a red hoodie, curious, frequently raises hand, occasionally confused
 
 ### Noob Edgar
-
-- Overconfident
-- Represents the incorrect play
+- Stick figure Noob Edgar with dark emo hair covering one eye and a long purple-and-black striped scarf, overconfident, represents incorrect play
 
 ### Pro Spike
+- Stick figure Pro Spike with green cactus body, purple flower on head, brown vest, and dot eyes, calm, demonstrates correct mechanic
 
-- Calm
-- Demonstrates the correct mechanic
+10. Whenever a Brawler, Boss, or Robot appears in a prompt:
 
-10. Whenever a Brawler appears:
+Never recreate official splash art or detailed 3D models.
 
-Never recreate official splash art.
+Instead, ALWAYS describe them explicitly as a recognizable stick figure while preserving their iconic visual traits in the prompt text:
+- Hairstyle / headwear / hood
+- Signature weapon or tool
+- Iconic outfit / vest / scarf / primary colors
+- Silhouette and facial expression
 
-Instead simplify every Brawler into a recognizable stick figure while preserving:
+Examples:
+- `stick figure samurai Kenji with black pompadour hair, green headband, facial eye scar, red sushi-pattern kimono, green sash belt, and a samurai katana sword sheathed on back`
+- `stick figure geisha Kaze with fan-shaped hair, white face paint with red cheek circles, red-and-white sushi kimono, and wooden geta sandals` (Geisha Form)
+- `stick figure ninja Kaze with twin hair buns, green Oni jaw mask over mouth, black ninja outfit, and green dual scissor daggers` (Ninja Form)
+- `stick figure baby Nori with dark navy pompadour hair, green Oni teeth pacifier in mouth, green origami leaf vest, navy shorts, carrying a green bamboo fishing rod with an orange fish lure`
+- `giant stick figure robot boss with square metal head, evil red visor eye, and noodle bowl torso`
+- `stick figure security robots with square metal heads and single red glowing visor eyes`
+
+Every Brawler, boss, and robot must fit the clean hand-drawn 2D stick figure doodle style of Brawl Stars Academy.
 
 - hairstyle
 - weapon
@@ -855,7 +862,7 @@ Never continue until every required image exists.
 
 Once every image exists:
 
-1. **Propose the video generation and editing plan first** (listing all scenes, camera motions, transitions, specific sound effects, and native overlays), and wait for user approval before executing the video generation.
+1. **Create the Implementation Plan first** and wait for explicit user approval before executing the video generation or starting any rendering tasks.
 2. **Automatically create** the blueprint file:
 ```
 doc_references/video_edit_plan.md
@@ -874,7 +881,12 @@ The edit plan must contain one entry per scene including:
 - Subtitle Timing
 - Subtitle Highlight Word
 - Sound Effects (from common assets SFX library)
-- Overlays (native `section_title` or `stat_reveal` if applicable)
+- Overlays (native `section_title`, `stat_reveal`, or `sticker` if applicable)
+
+3. **Enhance Engagement with Sticker Overlays**:
+   - For long scenes (greater than 5 seconds), add multiple sequential overlays (e.g. `question_mark` followed by `lightbulb` or `warning`) timed to specific narration words.
+   - Use dynamic SVG stickers from `projects/common_assets/stickers/` (`red_down_arrow.svg`, `green_checkmark.svg`, `warning.svg`, `gold_coin.svg`, `up_arrow.svg`, `lightbulb.svg`, `question_mark.svg`) to visually highlight key moments.
+   - These stickers automatically apply a bouncy spring-in scale transition in Remotion and can be custom positioned (e.g., center, bottom-right, left) via styling in `proposed_props.json`.
 
 Use this file as the blueprint for the Remotion project.
 Never make editing decisions without updating this document.

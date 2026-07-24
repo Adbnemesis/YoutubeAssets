@@ -1,0 +1,19 @@
+Imagine a monkey running a busy jungle marketplace.
+
+Thousands of monkeys are ordering bananas every single second.
+
+The database monkey... is slow.
+
+It takes him five whole minutes to search a giant wooden file cabinet for one banana recipe!
+
+System crash... database overloaded!
+
+Then... Redis Cache arrives.
+
+A fast RAM memory monkey sitting right at the front counter.
+
+No file cabinets... no disk reads... zero latency!
+
+Query time drops from five hundred milliseconds... to zero point five milliseconds!
+
+Monkey rich!

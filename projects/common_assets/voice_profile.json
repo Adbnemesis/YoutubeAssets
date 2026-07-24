@@ -1,15 +1,44 @@
 {
-  "voice_model": "en_US-ryan-high.onnx",
-  "provider": "piper",
-  "length_scale": 0.9,
-  "sentence_silence": 0.4,
-  "noise_scale": 0.4,
-  "noise_w": 0.6,
-  "voice_style": "Calm, intelligent, measured, 2nd-person explainer style",
-  "description": "Voice configuration representing the doodle channel signature sound. Note: Input text must have lines joined with spaces for sentence_silence to apply correctly, which is handled automatically by the piper_tts tool.",
+  "provider": "chatterbox-tts",
+  "engine_description": "Chatterbox Neural Expressive Engine — Local M4 GPU Accelerated via PyTorch MPS",
+  "reference_audio": "projects/references/audio_reference/Inflation Explained with Bananas.mp3",
+  "reference_duration_seconds": 150.25,
+  "speed_factor": 1.21,
+  "target_duration_seconds": 124.17,
+  "exaggeration_map": {
+    "normal": 0.50,
+    "sad": 0.85,
+    "cheerful": 0.85,
+    "happy": 0.85,
+    "excited": 0.95,
+    "angry": 0.85,
+    "whisper": 0.30,
+    "dramatic": 0.85
+  },
+  "post_processing": {
+    "pause_trimming": {
+      "enabled": true,
+      "target_pause_seconds": 0.35,
+      "dramatic_pause_seconds": 0.55,
+      "min_silence_to_trim_ms": 100,
+      "silence_detection_chunk_ms": 10,
+      "silence_threshold_ratio": 0.06,
+      "description": "Trim standard silence gaps to 0.35s and dramatic pauses to 0.55s, maintaining natural breath pacing."
+    },
+    "pacing": {
+      "pitch_preserved_tempo_scaling": true,
+      "atempo_filter": true,
+      "target_speed": "1.21x faster than Inflation Explained with Bananas reference audio (124.17s target duration for full script)"
+    },
+    "output_format": {
+      "mp3_bitrate": "192k",
+      "wav_sample_rate": 24000,
+      "wav_channels": 1
+    }
+  },
   "script_guidelines": {
-    "sentence_pauses": "The piper_tts tool automatically normalizes newlines to spaces so that sentence_silence is properly applied by the engine.",
-    "emotional_expression": "Use dramatic punctuation (..., !, ?, —) to guide natural pauses and human-like voice inflections.",
-    "emphasis_capitalization": "ALL CAPS words longer than 3 characters are automatically converted to lowercase by piper_tts during generation to prevent letter-by-letter spelling, while keeping visual emphasis in on-screen captions."
+    "emotion_tags": "Use bracketed tags at line start: [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal].",
+    "punctuation": "Use periods (.) for falling intonation, ellipses (...) for dramatic anticipation, exclamation marks (!) for high-energy punchlines.",
+    "structure": "One thought or emotion segment per block."
   }
 }

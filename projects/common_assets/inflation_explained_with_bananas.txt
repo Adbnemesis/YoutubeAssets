@@ -1,0 +1,89 @@
+[normal]
+If monkeys have one banana... banana rare.
+Banana valuable.
+
+[normal]
+But if monkeys grow more bananas, banana become common.
+Banana not as valuable.
+
+[dramatic]
+Demand pull inflation.
+
+[normal]
+If monkeys demand more banana, but banana farmer makes same amount...
+banana price go up... because banana more rare.
+
+[dramatic]
+Cost push inflation.
+
+[normal]
+If banana demand is the same, but banana farmer have less banana to sell...
+banana price go up... because banana become more rare.
+
+[dramatic]
+Production cost inflation.
+
+[cheerful]
+Monkey buys banana. Monkey eat banana. Life is good!
+
+[normal]
+Monkey tell monkey friends about banana store.
+Monkeys buy all the bananas.
+Banana farmer has to plant more banana trees.
+But banana seed become more expensive!
+
+So banana farmer raised price of banana to cover costs.
+
+[dramatic]
+Monetary inflation.
+
+[normal]
+If banana demand is the same, and banana supply is the same,
+but monkeys have more leaves than usual to buy banana...
+banana price go up because now leaves are not worth as much as before.
+
+[dramatic]
+Hyper inflation!
+
+[angry]
+Price of banana goes up!
+So monkey government decides to create more leaves.
+So monkeys can't afford banana... so monkeys buy more banana.
+
+[angry]
+But banana price goes up to keep up with banana demand!
+So monkey government creates more leaves!
+
+[excited]
+This is getting ridiculous!
+
+[dramatic]
+Eventually... monkey government burns all the leaves and starts making sticks.
+It's new currency.
+
+[normal]
+Inflation is not necessarily bad for monkey.
+If monkey's amount of leaves goes up at the same rate as price of banana...
+
+[happy]
+monkey happy!
+
+[excited]
+If monkey's amount of leaves goes up... but banana price stays the same...
+monkey rich!
+
+[sad]
+But if monkey's leaves stay the same... but banana price go up...
+monkey poor...
+monkey sad...
+
+[dramatic]
+monkey is all of us.
+
+[normal]
+To avoid inflation... monkey should invest banana.
+As this will grow more banana with time.
+
+[cheerful]
+Sometimes... inflation can get really bananas!
+Please subscribe.
