@@ -36,20 +36,14 @@ When this prompt is activated, follow the stages below strictly — one stage at
 - **Aspect ratio & Resolution:** Always 16:9 widescreen landscape aspect ratio (specifically 1280x720 or 1920x1080 for maximum HD quality) so that no cropping is required and quality is preserved for videos or YouTube thumbnails.
 
 ### AUDIO & SOUND EFFECTS DNA
-- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU with high emotional exaggeration (sad, happy, excited, angry, dramatic) and pacing locked 10% faster than 'Inflation Explained with Bananas.mp3'.
-- **Sound Effects (SFX) Pacing:** Use sound effects to punctuate key visual reveals, tone shifts, and thematic transitions. Do not over-use; keep them subtle and at a lower volume than the narration.
-- **Signature SFX Catalog:**
-  - *Whoosh* (short/cinematic) for fast movements, camera pans, or slide transitions.
-  - *Click / Key-press* for writing code, typing on keyboards, or modern interface actions.
-  - *Pop* for bubble reveals, card pop-ups, or thought bubble appearances.
-  - *Risers* for gradual build-up, dramatic tension, or suspenseful climaxes.
-  - *Cash Register* for currency, financial grants, coins pouring, or funding events.
-  - *Error* for incorrect assumptions, scientific failures, or the AI Winter.
-  - *Notification* for phone pings and modern smartphone/app screen reveals.
-  - *Ping / Chime / Sparkle* for bright ideas, realizations, mathematical breakthroughs, or end screens.
-  - *Anime Wow* for comedic surprises or major lighthearted highlights.
-  - *Glitch* for record scratches, analog errors, or sudden ironies.
-  - *Impact Bass (boom/suspense)* for sudden warnings, dark reframes, or core discoveries.
+- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU (PyTorch MPS).
+- **Voice Generation Reference:** The benchmark reference track is `projects/common_assets/inflation_bananas_perfect_mix.mp3` (118.52s, 299 words). Voice cloning from this reference is available via `--clone` flag but is OPT-IN (not default). The default voice without cloning already matches the Primate Economics style.
+- **CRITICAL — Auto-Scaling Target Duration:** `generate_voice.py` automatically calculates target duration proportional to word count: `target = 118.52 * (script_words / 299)`. **NEVER manually pass `--target-duration`** unless you specifically want to override the auto-scaling. Wrong target duration = wrong pacing (too slow or too fast).
+- **Exaggeration Map (EXACT values from `inflation_bananas_perfect_mix.mp3` — do NOT change):**
+  - `[normal]`: 0.45 | `[sad]`: 0.80 | `[cheerful]`: 0.80 | `[happy]`: 0.80
+  - `[excited]`: 0.85 | `[angry]`: 0.80 | `[whisper]`: 0.30 | `[dramatic]`: 0.75
+- **Emotion Tag Rules:** Tags MUST match the narrative moment. Never use [sad] for positive moments. Use [excited]/[happy] for wins, [dramatic] for tension/reveals, [sad] ONLY for losses, [whisper] for secrets. Wrong emotions = wrong vocal delivery = bad audio.
+- **Post-Processing:** Pause gaps auto-trimmed (standard: 0.35s, dramatic: 0.55s). Tempo auto-adjusted via pitch-preserved atempo filter.
 
 ---
 
@@ -82,8 +76,8 @@ Then stop. Wait for the user's reply.
 Once the user selects a number, generate the full narration script using these rules:
 
 **SCRIPT RULES:**
-- Length: Should match the duration target specified by the user (e.g., ~124 seconds for full script, around 260-300 words).
-- Emotion Tags: Mandatory bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts to drive Chatterbox neural acting.
+- Length: Should match the duration target specified by the user (e.g., ~118.52s benchmark for 299-word scripts; auto-scales proportionally for longer/shorter scripts via `generate_voice.py`).
+- Emotion Tags: Mandatory bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts to drive Chatterbox neural acting. **CRITICAL: Emotion tags must match the narrative context.** Never use [sad] during positive moments. Use [happy]/[excited] for wins, [dramatic] for tension/reveals, [sad] ONLY for losses, [whisper] for secrets.
 - Pure narration with emotion tags — no visual cues, no stage directions, no parenthetical notes.
 - Voice: Expressive, dynamic, 2nd-person throughout with rich pitch variations.
 - Rhythm: Short sentence. Short sentence. One longer sentence that adds depth. Short sentence. Question every 4–6 sentences.
@@ -104,9 +98,25 @@ Output the full video title as a plain heading in the chat, create the file.
 
 After presenting the file, output this exactly:
 
-> **Your script is ready. You can check it under projects/xyz_project_n `script_[topic].txt` file above, let me know if you're ready to generate your audio based on the script and I can generate it for you according to the script rules.** (REMEMBER THE VOICE SHOULD NOT SOUND ROBOTIC, IT SHOULD BE HUMAN LIKE, YOU CAN REFERENCE TO video_reference stickmanvideo.mp4 for resembling the voice)
+> **Your script is ready. You can check it under projects/xyz_project_n `script_[topic].txt` file above, let me know if you're ready to generate your audio based on the script and I can generate it for you according to the script rules.** (REMEMBER THE VOICE SHOULD NOT SOUND ROBOTIC, IT SHOULD BE HUMAN LIKE)
 >
-Once your audio is exported, tell the user that we have used this voice you can listen to it and ask if the user wants a new audio or this audio works for the user - 
+
+**Voice Generation Command (auto-scales pacing based on word count, no manual duration needed):**
+```bash
+python3 projects/common_assets/generate_voice.py projects/[project_folder]/script_[topic].txt projects/[project_folder]/voiceover.mp3
+```
+
+**Voice Generation Properties:**
+- **Voice Engine**: `Chatterbox TTS` (Local Neural Diffusion Model on PyTorch MPS Apple Silicon GPU)
+- **Voice Cloning**: OPT-IN via `--clone` flag. Default voice already matches the channel style.
+- **Benchmark Reference**: `projects/common_assets/inflation_bananas_perfect_mix.mp3` (118.52s for 299 words)
+- **Auto-Scaling**: Target duration automatically scales: `target = 118.52 * (script_words / 299)`. **NEVER manually pass `--target-duration`.**
+- **Exaggeration Map** (stored in `projects/common_assets/voice_profile.json`):
+  - `[normal]`: 0.45 | `[sad]`: 0.80 | `[cheerful]`: 0.80 | `[happy]`: 0.80
+  - `[excited]`: 0.85 | `[angry]`: 0.80 | `[whisper]`: 0.30 | `[dramatic]`: 0.75
+- **Post-Processing**: Pause gaps auto-trimmed (standard: 0.35s, dramatic: 0.55s). Pitch-preserved tempo scaling.
+
+Once your audio is exported, tell the user that we have used this voice you can listen to it and ask if the user wants a new audio or this audio works for the user -
 if the audio works, do maintain a new folder (common assets) where you are storing all the asset info like voice, voice style which can be reused for different projects.
 
 After user is okay with the output voice generate a timestamped transcript MAKE SURE IT IS SYNCED WITH THE TIMESTAMP-

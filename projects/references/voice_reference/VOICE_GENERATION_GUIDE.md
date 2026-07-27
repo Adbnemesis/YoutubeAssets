@@ -1,6 +1,6 @@
 # Expressive Voice Generation & Pacing Guide
 
-This guide documents the complete technical setup, script syntax, voice properties, and execution steps for producing studio-quality expressive narration matching the **Primate Economics** style.
+This guide documents the complete technical setup, script syntax, voice properties, and execution steps for producing studio-quality expressive narration matching the **benchmark reference style** style.
 
 ---
 
@@ -8,7 +8,7 @@ This guide documents the complete technical setup, script syntax, voice properti
 
 * **TTS Engine**: `Chatterbox TTS` (Local Neural Diffusion Model running on PyTorch MPS Apple Silicon GPU).
 * **Reference Track**: `projects/references/audio_reference/Inflation Explained with Bananas.mp3` (Base Duration: `150.25s`).
-* **Target Pacing**: **1.21x Speed Factor** (`124.17s` target duration for a full script).
+* **Target Pacing**: **1.267x Speed Factor** (`118.52s` target duration for a full benchmark script).
 * **Voice Expressions**: Full pitch and dynamic range acting using explicit script emotion tags (`[sad]`, `[cheerful]`, `[happy]`, `[excited]`, `[angry]`, `[whisper]`, `[dramatic]`).
 
 ---
@@ -19,14 +19,16 @@ The exact exaggeration parameters configured in `projects/common_assets/voice_pr
 
 | Emotion Tag | Exaggeration Value | Delivery Tone & Vocal Character |
 | :--- | :--- | :--- |
-| `[normal]` | `0.50` | Clear, deadpan baseline narrator. |
-| `[sad]` | `0.85` | Melancholic, low-pitch, somber acting (*"monkey poor... monkey sad..."*). |
-| `[cheerful]` | `0.85` | High-energy, upbeat intonation (*"Life is good!"*). |
-| `[happy]` | `0.85` | Warm, bright, playful tone (*"monkey happy!"*). |
-| `[excited]` | `0.95` | Maximum energy, fast peak intonation (*"monkey rich!"* / *"This is getting ridiculous!"*). |
-| `[angry]` | `0.85` | Aggressive, emphatic pitch & volume (*"Price of banana goes up!"*). |
+| `[normal]` | `0.45` | Clear, deadpan baseline narrator. |
+| `[sad]` | `0.80` | Melancholic, low-pitch, somber acting (*"monkey poor... monkey sad..."*). **Use ONLY for actual losses/failures.** |
+| `[cheerful]` | `0.80` | High-energy, upbeat intonation (*"Life is good!"*). |
+| `[happy]` | `0.80` | Warm, bright, playful tone (*"monkey happy!"* / *"Monkey wallet happy!"*). |
+| `[excited]` | `0.85` | Maximum energy, fast peak intonation (*"monkey rich!"* / *"Number one!"*). |
+| `[angry]` | `0.80` | Aggressive, emphatic pitch & volume (*"Price of banana goes up!"*). |
 | `[whisper]` | `0.30` | Low volume, secretive breathy cadence. |
-| `[dramatic]` | `0.85` | Deep, serious pauses (*"Hyper inflation!"* / *"monkey is all of us."*). |
+| `[dramatic]` | `0.75` | Deep, serious pauses (*"Hyper inflation!"* / *"monkey is all of us."*). |
+
+> **CRITICAL — Emotion Tag Context Rule:** Emotion tags MUST match the narrative moment. Never use `[sad]` during positive events (hiring, achievements, wins). Use `[happy]`/`[excited]` for wins, `[dramatic]` for reveals/tension, `[sad]` ONLY for actual losses/failures, `[whisper]` for secrets. Wrong emotions produce wrong vocal delivery and ruin the audio quality.
 
 ---
 
@@ -85,8 +87,15 @@ To generate voiceover for any new script using the configured voice properties:
 1. **Parses Emotion Tags**: Extracts `[sad]`, `[excited]`, etc., and matches each block to its exact exaggeration profile.
 2. **Local M4 GPU Synthesis**: Generates neural diffusion audio for each segment via PyTorch MPS.
 3. **Pause Trimming & Spacing**: Trims standard silence gaps to `0.35s` and dramatic beats to `0.55s`.
-4. **Pacing Scaling**: Automatically scales the audio duration so the total voiceover matches **1.21x speed factor** (`124.17s` target duration for full script).
-5. **MP3 Export**: Exports a crisp `192kbps` stereo MP3 ready for timeline editing.
+4. **Auto-Scaling Target Duration**: Automatically calculates target duration proportional to script word count: `target = 118.52 * (script_words / 299)`. The benchmark is the 299-word Inflation Explained with Bananas script at 118.52s. **NEVER manually pass `--target-duration`** unless you specifically want to override this auto-scaling. Wrong target duration = wrong pacing.
+5. **Pitch-Preserved Tempo Scaling**: Uses ffmpeg `atempo` filter to adjust playback speed without changing pitch.
+6. **MP3 Export**: Exports a crisp `192kbps` mono MP3 ready for timeline editing.
+
+### Voice Cloning (Optional)
+Voice cloning from `inflation_bananas_perfect_mix.mp3` is available via the `--clone` flag but is **OPT-IN** (not default). The default Chatterbox voice without cloning already matches the benchmark reference style style. To enable cloning:
+```bash
+python3 projects/common_assets/generate_voice.py <script.txt> <output.mp3> --clone
+```
 
 ---
 

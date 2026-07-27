@@ -1,0 +1,13 @@
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#1E1B4B" />
+  <circle cx="400" cy="225" r="380" fill="#312E81" opacity="0.4" />
+  <!-- Floral SpongeBob Pattern -->
+  <g fill="#818CF8" opacity="0.25">
+    <path d="M 100 80 C 120 40, 180 40, 180 80 C 220 100, 220 160, 180 180 C 180 220, 120 220, 100 180 C 60 160, 60 100, 100 80 Z" />
+    <path d="M 650 300 C 670 260, 730 260, 730 300 C 770 320, 770 380, 730 400 C 730 440, 670 440, 650 400 C 610 380, 610 320, 650 300 Z" />
+  </g>
+  <!-- Card Box -->
+  <rect x="80" y="90" width="640" height="270" rx="24" fill="#FDE047" stroke="#000000" stroke-width="10" />
+  <text x="400" y="200" text-anchor="middle" fill="#B45309" font-family="Impact, sans-serif" font-size="52" font-weight="900" letter-spacing="2">A FEW MOMENTS</text>
+  <text x="400" y="280" text-anchor="middle" fill="#B45309" font-family="Impact, sans-serif" font-size="64" font-weight="900" letter-spacing="3">LATER...</text>
+</svg>

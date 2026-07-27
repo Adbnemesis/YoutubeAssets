@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "category": "AI & Future Tech",
+      "topics": [
+        "Can AI achieve AGI before 2030?",
+        "Will AI render human software engineers obsolete?",
+        "Should open-source AI be unrestricted or regulated?",
+        "Who is the true #1 supreme AI model in 2026?"
+      ]
+    },
+    {
+      "category": "Society & Philosophy",
+      "topics": [
+        "Should humans prioritize colonizing Mars or fixing Earth?",
+        "Is remote work superior to working from an office?",
+        "Will AI cause mass unemployment or economic abundance?",
+        "Is social media doing more harm than good to society?"
+      ]
+    },
+    {
+      "category": "Fun & Viral Debates",
+      "topics": [
+        "Who would win in a fight: 100 duck-sized horses or 1 horse-sized duck?",
+        "Is dark humor superior to corporate polite speech?",
+        "Is pineapple on pizza an acceptable food choice?"
+      ]
+    }
+  ]
+}

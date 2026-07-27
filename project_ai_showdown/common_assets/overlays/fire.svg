@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Outer flame border (black outline) -->
+  <path d="M50,5 C55,25 75,35 85,55 C95,75 80,95 50,95 C20,95 5,75 15,55 C25,35 45,25 50,5 Z" 
+        fill="#F5820D" stroke="#000000" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+  <!-- Inner flame -->
+  <path d="M50,25 C53,40 68,48 72,60 C78,72 68,85 50,85 C32,85 22,72 28,60 C32,48 47,40 50,25 Z" 
+        fill="#F5C518" stroke="#000000" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+</svg>

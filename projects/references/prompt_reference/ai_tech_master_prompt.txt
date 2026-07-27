@@ -45,7 +45,7 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Objective:** Teach viewers how technology works using simple real-world analogies. Every viewer should leave the video with a crystal-clear understanding of a tool or concept they previously found intimidating.
 - **Format:** Educational explainer using whiteboard-style animations led by a monkey teacher. Explain tech through visual metaphors rather than raw code. Never pad the script with generic intro filler or channel branding.
 - **Hook Formula:** Start immediately with the complex tech term, a common misconception, or a funny jungle analogy that maps directly to it. The viewer must immediately know they will understand this concept in under 3 minutes.
-- **Script Rhythm & Pacing:** Fast pacing (~124.17s for full script, ~260-300 words). Include explicit bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts.
+- **Script Rhythm & Pacing:** Fast pacing (~118.52s benchmark for 299-word reference script; auto-scales proportionally for longer/shorter scripts). Include explicit bracketed emotion tags e.g. [sad], [cheerful], [happy], [excited], [angry], [whisper], [dramatic], [normal] at sentence/block starts. **CRITICAL: Emotion tags must match the narrative context.** Never use [sad] during positive moments (e.g. hiring, achievements). Use [happy]/[excited] for wins, [dramatic] for reveals, [sad] ONLY for actual losses/failures, [whisper] for secrets.
 - **Narrative Arc:** Hook → Simple Metaphor Intro → Visual Analogy Demonstration → Technical Translation (connecting metaphor to real tech terms) → Step-by-Step Mechanics Breakdown → Advanced Concept Simplified → Practical Takeaway → Quick Recap → Playful Ending CTA.
 - **Monkey Explaining Style / Caveman Pidgin ("Monkey Speak"):** Use the viral broken/caveman grammar ("monkey want banana...", "[happy] monkey happy!", "[sad] monkey poor... monkey sad...", "[excited] monkey rich!"). Explain complex tech concepts using rapid, simple 3–6 word sentences, primitive nouns (monkey, banana, treehouse, waiter monkey, bug insect), and instant technical jargon punchlines ("Zero-Day Vulnerability!", "Error 500!").
 - **Ending:** Always end with a simple, high-level takeaway of when/why to use the tool, followed by a natural, fast call-to-action.
@@ -69,11 +69,17 @@ Maintain the same project structure, recurring characters, naming conventions, v
 - **Art Style:** Hand-drawn 2D doodle classroom/jungle animation with thick black outlines, slightly imperfect sketchy marker lines, flat colors, and simple educational illustrations. Always reference the central character reference sheet to maintain visual consistency.
 - **Overall Theme:** Every scene feels like a cartoon monkey explaining tech on a whiteboard or classroom chalkboard.
 - **Characters:**
-  - **Professor Monkey (The Main Educator):** Cute brown cartoon monkey wearing thick black-rimmed glasses, holding a wooden pointer or banana, standing beside the whiteboard. Always the primary teacher/host.
-  - **Secondary Supporting Characters (Used as needed by script):**
-    - *Gorilla / Ape*: Simple brown ape/gorilla with light tan face plate, optional straw hat, deadpan poker face (`._.`), holding wooden signs, banana stacks, or acting in scenario stories.
-    - *Student (The Learner)*: Simple stick figure wearing a red hoodie, looking curious or confused with a lightbulb icon above head.
-    - *Concept Metaphors (Personified)*: Monkey waiter in tuxedo (API), blue cartoon shipping container (Docker), green bug insect, etc.
+  - Cool cartoon monkey and gorilla characters matching the script context (NOT a fixed professor host). Characters change per video based on the script's narrative.
+  - Style matches monkey tech explainer style channel: deadpan poker-face expressions (`._.`), meme-style glasses on gorillas, exaggerated cartoon reactions (sweating, bulging eyes, sad face), simple but expressive.
+  - Example: In an "Opus 5 vs Fable 5" video, Opus 5 is a chimp engineer with a hard hat, Fable 5 is a gorilla with glasses. In a "Docker Explained" video, the monkey interacts with a blue cargo container.
+- **GENERIC CHANNEL CHARACTER ARCHETYPES (MANDATORY CONSISTENCY):**
+  All videos across the channel use 4 central, completely generic character sheets stored in `projects/common_assets/character_references/` (no project-specific logos, labels, or names):
+  - `ref_character_monkey.png`: **Generic Cartoon Monkey Host** — Cute brown cartoon monkey with round ears, tan face plate, expressive eyes, dark brown body fill. Used for narrator/founder roles.
+  - `ref_character_gorilla.png`: **Generic Muscle Gorilla** — Massive brown gorilla with broad shoulders, light tan face plate, wearing thick black-rimmed meme glasses with deadpan poker face (`._.`). Used for heavy/deep research/power model roles.
+  - `ref_character_chimp.png`: **Generic Builder Chimp** — Agile brown chimp wearing a plain yellow construction hard hat (no text/logos), holding a wrench. Used for engineer/fast coder/workhorse roles.
+  - `ref_character_stickman.png`: **Generic Stickman** — Simple stick figure wearing a plain red hoodie with circular head and expressive eyebrows. Used for learner/user roles.
+  - Every image prompt across every project MUST refer to these 4 generic archetypes to guarantee 100% visual consistency.
+- **Characters:** Cool cartoon monkey and gorilla characters matching the script context. Deadpan poker-face expressions (`._.`), meme-style glasses on gorillas, exaggerated reactions. Characters change per video based on the narrative — NOT a fixed professor host.
 - **Objects & Diagrams:** Use oversized arrows, cargo boxes, file cabinets, tree branches, messenger birds, and simple flowcharts to represent system components visually.
 - **Backgrounds:** Flat solid colors only.
   - White → Classroom Whiteboard / General explanation
@@ -115,7 +121,14 @@ Maintain the same project structure, recurring characters, naming conventions, v
 
 ### AUDIO & SOUND EFFECTS DNA
 
-- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU with high emotional exaggeration (sad, happy, excited, angry, dramatic) and pacing locked 10% faster than 'Inflation Explained with Bananas.mp3'.
+- **Narration Vocals:** Consistently generated using Chatterbox Neural Expressive Engine (`projects/common_assets/generate_voice.py`) on local M4 GPU (PyTorch MPS).
+- **Voice Generation Reference:** The benchmark reference track is `projects/common_assets/inflation_bananas_perfect_mix.mp3` (118.52s, 299 words). Voice cloning from this reference is available via `--clone` flag but is OPT-IN (not default). The default voice without cloning already matches the monkey tech explainer style style.
+- **CRITICAL — Auto-Scaling Target Duration:** `generate_voice.py` automatically calculates target duration proportional to word count: `target = 118.52 * (script_words / 299)`. **NEVER manually pass `--target-duration`** unless you specifically want to override the auto-scaling. Wrong target duration = wrong pacing (too slow or too fast).
+- **Exaggeration Map (EXACT values from `inflation_bananas_perfect_mix.mp3` — do NOT change):**
+  - `[normal]`: 0.45 | `[sad]`: 0.80 | `[cheerful]`: 0.80 | `[happy]`: 0.80
+  - `[excited]`: 0.85 | `[angry]`: 0.80 | `[whisper]`: 0.30 | `[dramatic]`: 0.75
+- **Emotion Tag Rules:** Tags MUST match the narrative moment. Never use [sad] for hiring/achievements. Use [excited]/[happy] for wins, [dramatic] for tension/reveals, [sad] ONLY for losses, [whisper] for secrets. Wrong emotions = wrong vocal delivery = bad audio.
+- **Post-Processing:** Pause gaps auto-trimmed (standard: 0.35s, dramatic: 0.55s). Tempo auto-adjusted via pitch-preserved atempo filter.
 - **Sound Effects (SFX) Pacing:** Use sound effects to punctuate key visual reveals, tone shifts, and transitions. Keep them subtle and at a lower volume than the narration.
 - **Signature SFX Catalog:**
   - *Whoosh* (short/cinematic) for fast movements, camera pans, or slide transitions.
@@ -169,7 +182,7 @@ Once the user selects a number, generate the full narration script using these r
 
 - **Length & Pacing:** 130 WPM overall gross pacing (around 250-320 words for 120-150 seconds). Net speech burst speed is 165-170 WPM with 0.2s micro-pauses.
 - **Pure Narration Only:** Output narration only. Do not include headings, bullet points, scene descriptions, image cues, editing instructions, sound effects, stage directions, or parenthetical notes of any kind.
-- **Voice:** Deadpan, flat, monotone, and completely serious (Primate Economics reference style).
+- **Voice:** Deadpan, flat, monotone, and completely serious (monkey tech explainer style reference style).
 - **Perspective:** Third-person monkey narrative ("monkey buy banana...") mixed with direct 2nd-person questions ("monkey is all of us").
 - **Hook:** The first 15–20 seconds must start immediately with the primitive monkey scenario ("if monkeys have one banana, banana rare..."). No greeting or intro.
 - **Teaching Style & Monkey Speak DNA:** Write the narration in the viral "Monkey Speak" pidgin style using short 3–5 word lines ("monkey want banana", "monkey eat banana", "life is good"). Build rapid cause-and-effect loops ("if X then Y... monkey rich! if X then Z... monkey sad!"). Decode technical concepts using simple monkey/jungle metaphors with instant bold jargon punchlines ("Demand-Pull Inflation!", "Zero-Day Vulnerability!").
@@ -190,20 +203,20 @@ Output the full video title as a plain heading in the chat, create the file.
 
 After presenting the file, output the recommended TTS voice configuration:
 
-- **Voice Engine**: `edge-tts` (Microsoft Edge Neural Voices)
-- **Voice**: `en-US-GuyNeural`
-- **Rate**: `-20%` (slightly slower than default for clear, unhurried sentence delivery)
-- **Post-Processing**: Pause-trim all silence gaps > 100ms down to **0.28s** using `projects/common_assets/generate_voice.py`
+- **Voice Engine**: `Chatterbox TTS` (Local Neural Diffusion Model on PyTorch MPS Apple Silicon GPU)
+- **Voice Cloning**: OPT-IN via `--clone` flag. Without it, Chatterbox uses its default voice which already matches the monkey tech explainer style style.
+- **Benchmark Reference**: `projects/common_assets/inflation_bananas_perfect_mix.mp3` (118.52s for 299 words)
+- **Auto-Scaling**: Target duration automatically scales based on script word count. **NEVER manually pass `--target-duration`** unless you have a specific reason to override.
+- **Exaggeration Map** (stored in `projects/common_assets/voice_profile.json`):
+  - `[normal]`: 0.45 | `[sad]`: 0.80 | `[cheerful]`: 0.80 | `[happy]`: 0.80
+  - `[excited]`: 0.85 | `[angry]`: 0.80 | `[whisper]`: 0.30 | `[dramatic]`: 0.75
+- **Post-Processing**: Pause gaps auto-trimmed (standard: 0.35s, dramatic: 0.55s). Pitch-preserved tempo scaling via ffmpeg atempo.
 - **Script Formatting Rules**:
-  - Use **periods (`.`)** at end of each sentence (gives proper falling intonation — sentences sound *finished*)
-  - Use **commas (`,`)** within sentences for micro-pauses within thought chains
-  - One sentence per line; blank lines between topic shifts
-- **Target Metrics** (matching Primate Economics reference):
-  - Speech ratio: ~78%
-  - Avg pause length: 0.24–0.28s
-  - Full config: `projects/common_assets/voice_profile.json`
+  - Use **periods (`.`)** for falling intonation, **ellipses (`...`)** for dramatic anticipation, **exclamation marks (`!`)** for energy.
+  - Emotion tags MUST match the narrative context (never [sad] for positive moments).
+  - One thought per line; blank lines between emotion blocks.
 
-**Voice Generation Command:**
+**Voice Generation Command (auto-scales pacing, no manual duration needed):**
 ```bash
 python3 projects/common_assets/generate_voice.py projects/[project_folder]/script_[topic].txt projects/[project_folder]/voiceover.mp3
 ```
@@ -247,15 +260,15 @@ The generated images will later be animated inside **Remotion**, therefore every
 
 2. Every prompt must begin with the following style anchor:
 
-> **Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, educational whiteboard illustration of a consistent cute brown cartoon monkey teacher wearing thick black-rimmed glasses,**
+> **Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, educational whiteboard illustration with funny cartoon monkey/gorilla characters matching the script context (deadpan poker faces, glasses on gorillas, exaggerated reactions),**
 
 3. Every prompt must end with the following style lock:
 
 > **no gradients, no shadows, no textures, no photorealism, no realistic faces, no anime style, no 3D render, clean educational infographic composition, large negative space for camera movement, 16:9 widescreen landscape aspect ratio (1280x720 or 1920x1080 for HD quality), consistent tech monkey doodle style.**
 
 4. Every prompt must describe:
-- Characters present (Monkey teacher, stick figure student, etc.)
-- Exact facial expressions and poses
+- Characters present (which monkey/gorilla/chimp from the script, matching their role)
+- Exact facial expressions and poses (deadpan `._.`, sweating, bulging eyes, sad, excited)
 - Metaphor or real tech objects shown
 - Whiteboard contents, simple diagrams, or flowcharts
 - Labels (short ALL CAPS words)
@@ -267,7 +280,7 @@ The generated images will later be animated inside **Remotion**, therefore every
 5. Never show dry screenshots of actual code editor windows or raw terminal text.
 Instead, explain systems visually using:
 - Whiteboard diagrams and flowcharts
-- Cute monkey-based analogies (waiter monkey, cargo box, treehouse)
+- Cute monkey/gorilla-based analogies driven by the script (waiter monkey, cargo box, treehouse)
 - Wrong vs Correct comparisons
 - Simple representations of code (scroll with scribbles) or bugs (green insect)
 - Network nodes and server cabinets
@@ -275,7 +288,7 @@ Instead, explain systems visually using:
 
 6. Translate dry tech narration into visual explanations.
 Examples:
-- Narration: "An API connects two systems." → Visual: Monkey teacher in glasses standing beside a whiteboard. On the whiteboard, a dashed yellow line labeled "API" connects a laptop doodle and a server cabinet doodle. The monkey is pointing at the connection line with a wooden pointer. White background.
+- Narration: "An API connects two systems." → Visual: A cool monkey character standing beside a whiteboard. On the whiteboard, a dashed yellow line labeled "API" connects a laptop doodle and a server cabinet doodle. The monkey is pointing at the connection line. White background.
 - Narration: "Docker packages everything into a container." → Visual: A friendly, blue cartoon cargo container box with cute eyes and mouth, packed with a yellow document folder ("CODE") and gear icons ("LIBS"). A monkey helper is closing the container lid. Sandy background.
 - Narration: "Git tracks changes over time." → Visual: A split whiteboard. Left side: a monkey writing on a scroll with an arrow pointing to a folder labeled "VERSION 1". Right side: the same monkey pointing to a folder labeled "VERSION 2" with highlighted changes.
 
@@ -300,20 +313,17 @@ Only update:
 - highlighted elements
 Do NOT generate a brand new scene every few seconds.
 
-9. Maintain character roles consistently:
-### Professor Monkey (Main Educator)
-- Cute brown cartoon monkey wearing thick black-rimmed glasses
-- Friendly, enthusiastic smile or dynamic cartoon reactions (sweating when confused, lightbulb icon above head during breakthroughs, bulging eyes for shocking reveals)
-- Holds a wooden pointer or a banana
-- Always the main host/educator standing beside the whiteboard
+9. Maintain character roles consistently based on the script context:
+### Script-Driven Characters (NOT a fixed host)
+- Characters are determined by the script's narrative. In a comparison video, each side gets its own character (e.g., chimp vs gorilla).
+- All characters use funny cartoon monkey/gorilla style: deadpan poker faces (`._.`), thick black-rimmed glasses on gorillas, exaggerated cartoon reactions.
+- **Gorilla / Ape:** Simple brown gorilla body, light tan face plate, thick black-rimmed glasses (meme style), deadpan poker face (`._.`), holding wooden signs, banana stacks, or acting out scenario stories.
+- **Chimp / Monkey:** Cute brown cartoon monkey, expressive eyebrows, dot eyes. Can wear hard hats, hoodies, or accessories matching the script role.
+- **Stick Figure Student:** Simple stick figure in a red hoodie for question/learner moments.
 
-### Secondary Supporting Characters (Used as needed by scenario/script)
-- **Gorilla / Ape:** Simple brown gorilla/ape body, light tan face plate, optional straw hat, deadpan poker face (`._.`), holding wooden signs, banana stacks, or acting out scenario stories.
-- **Student:** Simple stick figure wearing a red hoodie, looking curious or confused with a lightbulb icon above head.
+10. Playful Expression Cues: Give the monkey/gorilla characters expressive, dynamic meme-style reactions in every image prompt (e.g. deadpan poker face `._.` for dry humor, sweating when confused, bulging eyes for shocking reveals, enthusiastic smile for wins, sad droopy eyes for losses).
 
-10. Playful Expression Cues: Give the monkey expressive, dynamic cartoon reactions in every image prompt (e.g. sweating when confused, lightbulb icon appearing above head during breakthroughs, bulging eyes for shocking reveals, enthusiastic smile while pointing with a banana or wooden pointer).
-
-11. Title & Jargon Cards (Primate Economics Style):
+11. Title & Jargon Cards (monkey tech explainer style Style):
 For key jargon reveals or title screens, use a pure white background with hand-drawn ALL CAPS black marker text, surrounded by simple yellow hand-drawn star asterisks `*` (e.g. `* PRODUCTION - COST INFLATION *`, `* ZERO-DAY VULNERABILITY *`).
 
 12. Script-Driven Dynamic Visuals:

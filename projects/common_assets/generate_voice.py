@@ -162,6 +162,22 @@ def trim_pauses(samples, framerate, config):
     return output
 
 
+def count_script_words(text):
+    """Count words in script text, excluding emotion tags and blank lines."""
+    words = 0
+    for line in text.split("\n"):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if re.match(r"^\[[a-zA-Z0-9_\-]+\]\s*$", stripped):
+            continue
+        match = re.match(r"^\[[a-zA-Z0-9_\-]+\]\s+(.*)", stripped)
+        if match:
+            stripped = match.group(1)
+        words += len(stripped.split())
+    return words
+
+
 def main():
     if len(sys.argv) < 3:
         print(f"Usage: {sys.argv[0]} <script_file> <output_mp3> [--clone] [--target-duration SECONDS]")
@@ -179,24 +195,35 @@ def main():
 
     config = load_config()
     exaggeration_map = config.get("exaggeration_map", {
-        "normal": 0.50,
-        "sad": 0.85,
-        "cheerful": 0.85,
-        "happy": 0.85,
-        "excited": 0.95,
-        "angry": 0.85,
+        "normal": 0.45,
+        "sad": 0.80,
+        "cheerful": 0.80,
+        "happy": 0.80,
+        "excited": 0.85,
+        "angry": 0.80,
         "whisper": 0.30,
-        "dramatic": 0.85,
+        "dramatic": 0.75,
     })
 
-    target_ref_duration = config.get("target_duration_seconds", 124.17)
+    benchmark_target = config.get("target_duration_seconds", 118.52)
+    benchmark_words = config.get("benchmark_word_count", 299)
     device = "mps" if torch.backends.mps.is_available() else "cpu"
+
+    # Read script early so we can calculate auto-scaled target duration
+    with open(script_file, "r") as f:
+        text = f.read().strip()
+
+    script_words = count_script_words(text)
+    auto_target = benchmark_target * (script_words / benchmark_words)
 
     print(f"🎙  Voice Generation Pipeline (Primate Economics Style)")
     print(f"   Engine: Chatterbox Neural Expressive Engine")
     print(f"   Device: {device.upper()} (Local M4 GPU)")
-    print(f"   Voice Pacing: 10% faster than 'Inflation Explained with Bananas' reference track")
-    print(f"   Script: {script_file}")
+    print(f"   Script: {script_file} ({script_words} words)")
+    print(f"   Benchmark: {benchmark_words} words -> {benchmark_target}s")
+    print(f"   Auto-Scaled Target: {auto_target:.2f}s")
+    if target_override:
+        print(f"   Manual Override Target: {target_override}s")
     print(f"   Output: {output_mp3}")
     print()
 
@@ -207,19 +234,16 @@ def main():
 
     # Prepare reference voice prompt if cloning requested
     audio_prompt_path = None
-    ref_file_path = os.path.join(PROJECT_ROOT, config.get("reference_audio", "projects/references/audio_reference/Inflation Explained with Bananas.mp3"))
+    ref_file_path = os.path.join(PROJECT_ROOT, config.get("reference_audio", "projects/common_assets/inflation_bananas_perfect_mix.mp3"))
     if use_cloning and os.path.exists(ref_file_path):
-        ref_wav = output_mp3 + ".ref.wav"
+        ref_wav = os.path.join(PROJECT_ROOT, "projects", "common_assets", "ref_prompt.wav")
         try:
-            mp3_to_wav(ref_file_path, ref_wav, sample_rate=sr, duration=10)
+            if not os.path.exists(ref_wav):
+                mp3_to_wav(ref_file_path, ref_wav, sample_rate=sr, duration=10)
             audio_prompt_path = ref_wav
-            print(f"  ✓ Reference voice prompt loaded (10s clip): {ref_file_path}")
+            print(f"  ✓ Reference voice prompt loaded from {ref_file_path}")
         except Exception as e:
             print(f"  ⚠️ Could not prepare reference audio prompt: {e}")
-
-    # Read script
-    with open(script_file, "r") as f:
-        text = f.read().strip()
 
     segments = parse_script_segments(text)
     print(f"\nParsed {len(segments)} script emotion segment(s):")
@@ -281,15 +305,15 @@ def main():
             wf.writeframes(struct.pack(f"<{len(trimmed_samples)}h", *trimmed_samples))
 
         raw_duration = len(trimmed_samples) / framerate
-        target_duration = target_override if target_override else target_ref_duration
+        target_duration = target_override if target_override else auto_target
         
-        # Calculate tempo factor to hit target length (10% faster than reference audio)
+        # Calculate tempo factor to hit target length (auto-scaled from benchmark)
         tempo_factor = raw_duration / target_duration
         tempo_factor = max(0.65, min(1.35, tempo_factor))
 
         print(f"\nPacing Optimization:")
         print(f"   Raw Synthesized Duration: {raw_duration:.2f}s")
-        print(f"   Target Duration (10% faster than ref): {target_duration:.2f}s")
+        print(f"   Target Duration (auto-scaled): {target_duration:.2f}s")
         print(f"   Applied Pitch-Preserved Tempo Adjustment: {tempo_factor:.4f}x")
 
         # Convert to final MP3 with tempo adjustment

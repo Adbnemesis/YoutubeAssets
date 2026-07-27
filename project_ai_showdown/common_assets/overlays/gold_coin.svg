@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100%" height="100%" fill="none">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#F5C518" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <circle cx="12" cy="12" r="9" fill="#F5C518" stroke="#D9A300" stroke-width="2" filter="url(#glow)"/>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="12" fill="#FFFFFF">$</text>
+</svg>

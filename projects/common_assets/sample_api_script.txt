@@ -1,0 +1,51 @@
+[normal]
+Imagine a hungry monkey sitting at a jungle restaurant.
+Monkey wants a delicious banana smoothie!
+
+[normal]
+Monkey doesn't know how to enter the kitchen.
+Kitchen is full of dangerous blender machines and secret recipes!
+
+[dramatic]
+API! Application Programming Interface!
+
+[normal]
+Enter Waiter Monkey!
+You give Waiter Monkey your order: one banana smoothie.
+
+[cheerful]
+Waiter monkey runs to the kitchen! Waiter monkey takes order!
+
+[dramatic]
+Request and Response!
+
+[normal]
+The kitchen prepares the banana smoothie.
+Waiter monkey brings it back directly to your table!
+
+[happy]
+monkey happy! monkey drink smoothie!
+
+[normal]
+What if kitchen runs out of bananas?
+Waiter monkey brings back a note!
+
+[angry]
+Error 404! Banana Not Found!
+
+[sad]
+monkey poor... monkey sad...
+
+[dramatic]
+End-To-End Communication!
+
+[normal]
+Without Waiter Monkey, you would have to build your own kitchen every time!
+APIs let app monkeys talk to server monkeys instantly.
+
+[excited]
+Monkey rich! Code works!
+
+[cheerful]
+And that is why APIs make the jungle run smoothly!
+Subscribe for more banana code!

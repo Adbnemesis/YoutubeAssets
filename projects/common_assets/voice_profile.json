@@ -1,19 +1,21 @@
 {
   "provider": "chatterbox-tts",
   "engine_description": "Chatterbox Neural Expressive Engine — Local M4 GPU Accelerated via PyTorch MPS",
-  "reference_audio": "projects/references/audio_reference/Inflation Explained with Bananas.mp3",
+  "reference_audio": "projects/common_assets/inflation_bananas_perfect_mix.mp3",
+  "benchmark_script": "projects/common_assets/inflation_explained_with_bananas.txt",
+  "benchmark_word_count": 299,
   "reference_duration_seconds": 150.25,
-  "speed_factor": 1.21,
-  "target_duration_seconds": 124.17,
+  "speed_factor": 1.267,
+  "target_duration_seconds": 118.52,
   "exaggeration_map": {
-    "normal": 0.50,
-    "sad": 0.85,
-    "cheerful": 0.85,
-    "happy": 0.85,
-    "excited": 0.95,
-    "angry": 0.85,
+    "normal": 0.45,
+    "sad": 0.80,
+    "cheerful": 0.80,
+    "happy": 0.80,
+    "excited": 0.85,
+    "angry": 0.80,
     "whisper": 0.30,
-    "dramatic": 0.85
+    "dramatic": 0.75
   },
   "post_processing": {
     "pause_trimming": {
@@ -28,7 +30,7 @@
     "pacing": {
       "pitch_preserved_tempo_scaling": true,
       "atempo_filter": true,
-      "target_speed": "1.21x faster than Inflation Explained with Bananas reference audio (124.17s target duration for full script)"
+      "target_speed": "1.267x speed factor (118.52s target duration for full 299-word benchmark script)"
     },
     "output_format": {
       "mp3_bitrate": "192k",
