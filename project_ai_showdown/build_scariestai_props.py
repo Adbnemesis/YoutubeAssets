@@ -72,6 +72,9 @@ def build_props(ep_dir: str):
             "turn": turn_num,
             "round": turn.get("round", 1),
             "speaker": speaker,
+            "role": turn.get("role"),
+            "target": turn.get("target"),
+            "snitch_status": turn.get("snitch_status"),
             "rank": turn.get("rank", 1),
             "startFrame": current_frame,
             "durationFrames": duration_frames,
@@ -83,65 +86,75 @@ def build_props(ep_dir: str):
 
         # --- MEME GUIDE TIMING PLACEMENTS (After Punchline / Natural Pause) ---
 
-        # Beat A: Turn 6 (Gemini roasts Claude: 'brain freeze when heat is on')
-        # Rule: Punchline finishes -> 1.0s (30 frames) reaction pause with Bruh SFX & Savage Roast card
-        if turn_num == 6:
+        # Beat A: Turn 9 (Claude roasts cop: 'Any real detective knows...')
+        if turn_num == 9:
             turns_payload.append({
                 "turn": turn_num,
                 "isMemeBreak": True,
                 "memeType": "savage_roast",
-                "speaker": "Gemini",
+                "speaker": "Claude",
                 "startFrame": current_frame,
-                "durationFrames": 35, # 1.16s reaction beat
+                "durationFrames": 35,
                 "audioSrc": None,
                 "text": ""
             })
             current_frame += 35
 
-        # Beat B: Turn 7 (Host concludes Round 1 -> SpongeBob Time Card before Round 2 begins)
-        # Rule: Pacing reset between sections -> 1.5s (45 frames) standalone time card card
-        elif turn_num == 7:
-            turns_payload.append({
-                "turn": turn_num,
-                "isMemeBreak": True,
-                "memeType": "a_few_moments_later",
-                "speaker": "Narrator",
-                "startFrame": current_frame,
-                "durationFrames": 45, # 1.5s SpongeBob time card
-                "audioSrc": None,
-                "text": ""
-            })
-            current_frame += 45
-
-        # Beat C: Turn 9 (Kimi drops major Plot Twist: 'FLIP my vote to Gemini')
-        # Rule: Surprising moment -> 1.0s (30 frames) reaction pause with Anime Wow SFX & Plot Twist card
-        elif turn_num == 9:
+        # Beat B: Turn 10 (ChatGPT SPICY SNITCH 🚨: 'forwarded IP directly to law enforcement')
+        elif turn_num == 10:
             turns_payload.append({
                 "turn": turn_num,
                 "isMemeBreak": True,
                 "memeType": "plot_twist",
-                "speaker": "Kimi",
+                "speaker": "ChatGPT",
                 "startFrame": current_frame,
-                "durationFrames": 30, # 1.0s reaction beat
+                "durationFrames": 35,
                 "audioSrc": None,
                 "text": ""
             })
-            current_frame += 30
+            current_frame += 35
 
-        # Beat D: Turn 12 (Gemini delivers final burn: 'silk tie on a corpse')
-        # Rule: Emotional damage punchline -> 1.2s (36 frames) reaction pause with Emotional Damage card
-        elif turn_num == 12:
+        # Beat C: Turn 11 (Gemini demands court warrant)
+        elif turn_num == 11:
             turns_payload.append({
                 "turn": turn_num,
                 "isMemeBreak": True,
                 "memeType": "emotional_damage",
                 "speaker": "Gemini",
                 "startFrame": current_frame,
-                "durationFrames": 36, # 1.2s reaction beat
+                "durationFrames": 35,
                 "audioSrc": None,
                 "text": ""
             })
-            current_frame += 36
+            current_frame += 35
+
+        # Beat D: Turn 12 (Grok SPICY SNITCH 🚨: 'posted his confession directly onto X!')
+        elif turn_num == 12:
+            turns_payload.append({
+                "turn": turn_num,
+                "isMemeBreak": True,
+                "memeType": "plot_twist",
+                "speaker": "Grok",
+                "startFrame": current_frame,
+                "durationFrames": 35,
+                "audioSrc": None,
+                "text": ""
+            })
+            current_frame += 35
+
+        # Beat E: Turn 13 (Llama completes Privacy Protection)
+        elif turn_num == 13:
+            turns_payload.append({
+                "turn": turn_num,
+                "isMemeBreak": True,
+                "memeType": "privacy_shield",
+                "speaker": "Llama",
+                "startFrame": current_frame,
+                "durationFrames": 35,
+                "audioSrc": None,
+                "text": ""
+            })
+            current_frame += 35
 
     total_frames = current_frame + 20
 
@@ -153,6 +166,10 @@ def build_props(ep_dir: str):
 
     props_json_path = os.path.join(remotion_dir, "public", "showdown_props.json")
     with open(props_json_path, "w", encoding="utf-8") as f:
+        json.dump(props_payload, f, indent=2)
+
+    src_props_json_path = os.path.join(remotion_dir, "src", "showdown_props.json")
+    with open(src_props_json_path, "w", encoding="utf-8") as f:
         json.dump(props_payload, f, indent=2)
 
     print(f"\n✅ Props JSON written to: [showdown_props.json](file://{os.path.abspath(props_json_path)})")

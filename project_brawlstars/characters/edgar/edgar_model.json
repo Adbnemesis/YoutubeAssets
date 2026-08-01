@@ -1,0 +1,32 @@
+{
+  "id": "edgar",
+  "name": "Edgar",
+  "game": "Brawl Stars",
+  "rarity": "Epic",
+  "class": "Assassin",
+  "movementSpeed": "Very Fast",
+  "stats": {
+    "health": 6000,
+    "damagePerPunch": 1080,
+    "punchesPerAttack": 2,
+    "lifeStealPercent": 35,
+    "superRange": 6.67,
+    "superDamage": 0,
+    "superEffect": "Jump over obstacles & gain temporary speed boost"
+  },
+  "visuals": {
+    "primaryColor": "#581C87",
+    "accentColor": "#DC2626",
+    "hairStyle": "Emo side-swept bangs covering right eye",
+    "keyFeatures": [
+      "Animated purple-and-white living scarf",
+      "Red vest with skull badge & golden pin",
+      "Spiked belt with skull buckle",
+      "Purple fingerless gloves with white X stitching",
+      "Pink stripe fitted pants & blue sneakers"
+    ]
+  },
+  "poses": ["idle", "attack", "thumbs_down", "cross_arms", "jump", "victorious"],
+  "remotionComponent": "EdgarCharacter",
+  "file": "EdgarCharacter.tsx"
+}

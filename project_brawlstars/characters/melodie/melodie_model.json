@@ -1,0 +1,29 @@
+{
+  "id": "melodie",
+  "name": "Melodie",
+  "game": "Brawl Stars",
+  "rarity": "Mythic",
+  "class": "Assassin",
+  "movementSpeed": "Fast",
+  "stats": {
+    "health": 7200,
+    "damagePerNote": 920,
+    "superDashes": 3,
+    "superEffect": "3 directional dashes that spawn orbiting musical notes (Me-Me)"
+  },
+  "visuals": {
+    "primaryColor": "#EC4899",
+    "accentColor": "#EAB308",
+    "hairStyle": "Bright pink K-pop hair with cat-ear bow",
+    "keyFeatures": [
+      "Floating purple/pink musical note pets",
+      "Golden mic & gold wrist cuffs",
+      "Black crop top with red heart emblem",
+      "Yellow pleated skirt & fur collar",
+      "Pink boots with yellow laces"
+    ]
+  },
+  "poses": ["idle", "sing", "kpop_dance", "victorious"],
+  "remotionComponent": "MelodieCharacter",
+  "file": "MelodieCharacter.tsx"
+}

@@ -90,6 +90,21 @@ To ensure 100% eligibility for the **YouTube Partner Program (YPP)** and guarant
 
 ---
 
+## 💰 Strict Free Model Mandate & Character Impersonation Policy
+
+To guarantee **100% ZERO API COST** across all episode script generations:
+
+1. **Strict Free Models Only**:
+   - ALL generator scripts (`run_ai_showdown.py`, `run_snitch_showdown.py`) MUST route API requests through OpenRouter's 100% free tier endpoints (`openrouter/free` or active `:free` models).
+   - Under NO CIRCUMSTANCES should paid model endpoints ever be called.
+2. **Character Impersonation via Personas System Prompt**:
+   - Regardless of which underlying free model serves the request via `openrouter/free`, the character's persona (`Claude`, `ChatGPT`, `Gemini`, `Grok`, `Llama`) is established strictly through system prompts loaded from `personas.json`.
+   - The underlying LLM acts as an impersonator adhering to the character's designated system prompt and rank style.
+
+---
+
+
+
 ## 🚀 Execution Commands
 
 ```bash

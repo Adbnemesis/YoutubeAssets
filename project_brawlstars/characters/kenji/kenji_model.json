@@ -1,0 +1,29 @@
+{
+  "id": "kenji",
+  "name": "Kenji",
+  "game": "Brawl Stars",
+  "rarity": "Legendary",
+  "class": "Assassin",
+  "movementSpeed": "Very Fast",
+  "stats": {
+    "health": 6200,
+    "damagePerSlice": 1500,
+    "superDamage": 2600,
+    "superEffect": "Slash dash forward with invincible frame sushi cut"
+  },
+  "visuals": {
+    "primaryColor": "#DC2626",
+    "accentColor": "#84CC16",
+    "hairStyle": "Black topknot bun with green headband",
+    "keyFeatures": [
+      "Red octopus sucker pattern kimono",
+      "Green pleated apron/skirt",
+      "Katana blade with fish hilt charm",
+      "Bandaged right arm",
+      "Chin stubble & facial scar"
+    ]
+  },
+  "poses": ["idle", "slash", "sushi_slice", "victorious"],
+  "remotionComponent": "KenjiCharacter",
+  "file": "KenjiCharacter.tsx"
+}

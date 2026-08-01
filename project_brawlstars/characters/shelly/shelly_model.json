@@ -1,0 +1,32 @@
+{
+  "id": "shelly",
+  "name": "Shelly",
+  "game": "Brawl Stars",
+  "rarity": "Starting Brawler",
+  "class": "Damage Dealer",
+  "movementSpeed": "Normal",
+  "stats": {
+    "health": 7400,
+    "damagePerShell": 600,
+    "shellsPerAttack": 5,
+    "superDamagePerShell": 640,
+    "superShells": 9,
+    "superEffect": "Knocks back enemies & destroys cover"
+  },
+  "visuals": {
+    "primaryColor": "#C084FC",
+    "accentColor": "#F59E0B",
+    "hairStyle": "Bright spiky purple ponytail with starburst bangs",
+    "keyFeatures": [
+      "Yellow patterned neck bandanna",
+      "Double-barrel shotgun with orange heat shield",
+      "Cheek band-aid plaster",
+      "Light purple button-up shirt with rolled sleeves",
+      "White bandage wrist wrap",
+      "Dark jeans with yellow side stripes"
+    ]
+  },
+  "poses": ["idle", "aim", "super_blast", "victorious", "cross_arms"],
+  "remotionComponent": "ShellyCharacter",
+  "file": "ShellyCharacter.tsx"
+}

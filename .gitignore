@@ -58,8 +58,18 @@ gcp-*.json
 service-account*.json
 service_account*.json
 
-# Stray media downloads (test/scratch clips left in repo root)
+# Stray media downloads & Video files (never commit large video files)
 pexels_video_*.mp4
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.flv
+*.wmv
+*.m4v
+*.ogv
+
 
 # Scratch/debug scripts
 scratch/

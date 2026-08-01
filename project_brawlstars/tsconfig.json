@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["../remotion-composer/node_modules/*"]
+    },
+    "strict": true,
+    "skipLibCheck": true,
+    "typeRoots": ["../remotion-composer/node_modules/@types"]
+  },
+  "include": ["./**/*.ts", "./**/*.tsx"]
+}

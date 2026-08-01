@@ -1,0 +1,29 @@
+{
+  "id": "frank",
+  "name": "Frank",
+  "game": "Brawl Stars",
+  "rarity": "Epic",
+  "class": "Tank",
+  "movementSpeed": "Fast",
+  "stats": {
+    "health": 14000,
+    "damagePerSmash": 2400,
+    "superDamage": 2400,
+    "superEffect": "Area shockwave slam that stuns enemies for 2.0s and breaks walls"
+  },
+  "visuals": {
+    "primaryColor": "#C4B5FD",
+    "accentColor": "#EC4899",
+    "hairStyle": "Flat Frankenstein stitched purple hair with DJ headphones",
+    "keyFeatures": [
+      "Tombstone skull hammer carried over shoulder",
+      "Purple giant skin with flat rectangular head",
+      "Yellow glowy eyes with heavy brow",
+      "Torn dark blue vest & pink necktie",
+      "Bare giant monster feet"
+    ]
+  },
+  "poses": ["idle", "smash", "super_stun", "victorious"],
+  "remotionComponent": "FrankCharacter",
+  "file": "FrankCharacter.tsx"
+}

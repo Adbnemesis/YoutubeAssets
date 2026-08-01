@@ -1,0 +1,29 @@
+<svg width="1000" height="480" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky & Dot Pattern Background -->
+  <rect width="1000" height="480" fill="#E0F2FE" />
+  <circle cx="20" cy="20" r="3" fill="#BAE6FD" />
+  <circle cx="80" cy="40" r="3" fill="#BAE6FD" />
+  <circle cx="160" cy="20" r="3" fill="#BAE6FD" />
+  
+  <!-- Island Grass Mound -->
+  <path d="M 0 340 Q 500 240 1000 340 L 1000 480 L 0 480 Z" fill="#86EFAC" stroke="#000000" stroke-width="6" />
+  <path d="M 0 360 Q 500 270 1000 360 L 1000 480 L 0 480 Z" fill="#4ADE80" opacity="0.6" />
+
+  <!-- Survival Campfire (Center Stage) -->
+  <g transform="translate(480, 310)">
+    <!-- Wooden Logs -->
+    <rect x="-35" y="30" width="70" height="16" rx="8" fill="#78350F" stroke="#000000" stroke-width="4" transform="rotate(-15)" />
+    <rect x="-35" y="30" width="70" height="16" rx="8" fill="#9A3412" stroke="#000000" stroke-width="4" transform="rotate(15)" />
+    <!-- Flame -->
+    <path d="M 0 35 Q -25 10 0 -35 Q 25 10 0 35 Z" fill="#EF4444" stroke="#000000" stroke-width="4" />
+    <path d="M 0 30 Q -15 10 0 -20 Q 15 10 0 30 Z" fill="#F59E0B" />
+    <path d="M 0 25 Q -8 10 0 -10 Q 8 10 0 25 Z" fill="#FEF08A" />
+  </g>
+
+  <!-- Tribal Voting Box & Torch -->
+  <g transform="translate(180, 260)">
+    <rect x="0" y="0" width="70" height="90" rx="12" fill="#D97706" stroke="#000000" stroke-width="5" />
+    <rect x="15" y="15" width="40" height="10" rx="4" fill="#451A03" />
+    <text x="35" y="55" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="900" font-family="sans-serif">VOTE</text>
+  </g>
+</svg>

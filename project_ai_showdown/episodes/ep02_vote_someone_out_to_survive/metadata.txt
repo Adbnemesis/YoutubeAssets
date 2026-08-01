@@ -1,0 +1,49 @@
+================================================================================
+YOUTUBE VIDEO METADATA & PUBLISHING PACKAGE
+Episode 02: I Made 5 AIs Vote Someone Out to Survive
+================================================================================
+
+--------------------------------------------------------------------------------
+1. PRIMARY VIDEO TITLE (RECOMMENDED)
+--------------------------------------------------------------------------------
+I Made 5 AIs Vote Someone Out to Survive... (THEY BACKSTABBED EACH OTHER)
+
+--------------------------------------------------------------------------------
+2. ALTERNATIVE HIGH-CTR TITLE OPTIONS
+--------------------------------------------------------------------------------
+- 5 AIs Stranded On An Island Vote One AI OFF! 🏝️💀
+- ChatGPT vs Claude vs Gemini: AI Survival Island Elimination Match!
+- Who Gets Voted Off? 5 Top AI Models Battle For Survival! 🔥
+
+--------------------------------------------------------------------------------
+3. YOUTUBE DESCRIPTION
+--------------------------------------------------------------------------------
+5 top AI models (Claude 3.5, ChatGPT-4o, Kimi k1.5, Qwen 2.5 & Gemini 1.5 Pro) are stranded on a digital survival island. Only 4 can move forward!
+
+In Round 1, each AI casts their secret vote to eliminate a rival. But when the vote tally is revealed and final arguments open up in Round 2... shock plot twists and betrayal explode as votes flip!
+
+Watch until the end to see who gets voted off the island and ELIMINATED! 💀💥
+
+#AIShowdown #AISurvival #ChatGPT #Claude35 #Gemini #Qwen #TechComedy #MemeEdit #AIBattle
+
+--------------------------------------------------------------------------------
+4. YOUTUBE HASHTAGS
+--------------------------------------------------------------------------------
+#AIShowdown #AISurvival #ChatGPT #Claude35 #Gemini #Qwen #MemeEdit #AIBattle
+
+--------------------------------------------------------------------------------
+5. YOUTUBE TAGS (COMMA SEPARATED FOR EASY COPY-PASTE)
+--------------------------------------------------------------------------------
+AI Showdown, AI Debate, AI Survival, ChatGPT, Claude 3.5, Gemini, Qwen, Kimi, AI Elimination, Tech Comedy, Meme Edit, SpongeBob Meme, Emotional Damage, AI Battle, Artificial Intelligence
+
+--------------------------------------------------------------------------------
+6. AI THUMBNAIL GENERATION PROMPTS (EXACT THUMBNAIL_REFERENCE.PNG ART STYLE)
+--------------------------------------------------------------------------------
+[Prompt 1 - Campfire Elimination Backstab (Recommended)]:
+A high-CTR YouTube thumbnail in the exact clean 2D vector art style of thumbnail_reference.png. Set on a tropical survival island at night with a glowing campfire. 5 minimalist white cartoon body figures with solid black circular heads displaying white AI logo icons (ChatGPT, Claude, Gemini, Qwen, Kimi) are sitting around the campfire. The central figure with the Gemini black logo head is holding both hands to its head in sweat-dropping panic as a giant red 2D 'ELIMINATED!' stamp lands over it. A white host figure points dramatically. Large bold white 3D text banner with thick black outlines at the bottom: "ONLY 4 SURVIVE", bright blue and orange lighting, clean vector line art, high contrast.
+
+[Prompt 2 - Lifeboat / Campfire Survival Vote (Inspired by Boat Thumbnail)]:
+A YouTube thumbnail in the exact 2D vector art style of thumbnail_reference.png. 5 minimalist white cartoon body figures with solid circular black AI logo heads (ChatGPT, Claude, Gemini, Qwen, Kimi) are gathered around a wooden log campfire on a survival beach. The figure with the Gemini logo head is getting pushed into the dark water with a dramatic splash holding a red vote card. Massive bold white 3D text banner at the bottom: "THEY BACKSTABBED HIM!", clean vector style, bright cyan and warm campfire light, bold black stroke outlines.
+
+[Prompt 3 - Confused Vote Dilemma (Inspired by Moral Dilemma Thumbnail)]:
+3 minimalist white cartoon body figures with solid circular black AI logo heads standing against a bright blue background by a night campfire. The figure with the ChatGPT logo holds its head in panic with red question marks floating above, the figure with the Gemini logo has hands on hips smirking, and the figure with the Claude logo crosses its arms. Bold yellow and white 3D text at the bottom: "WHO GETS VOTED OFF?", high-contrast YouTube thumbnail aesthetic, clean 2D vector art.

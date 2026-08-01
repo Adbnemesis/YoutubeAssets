@@ -15,6 +15,8 @@ import edge_tts
 NEURAL_VOICE_CONFIGS = {
     "host": {"voice": "en-US-ChristopherNeural", "rate": "+2%", "pitch": "+0Hz"},
     "narrator": {"voice": "en-US-ChristopherNeural", "rate": "+2%", "pitch": "+0Hz"},
+    "police": {"voice": "en-US-AndrewNeural", "rate": "+3%", "pitch": "-2Hz"},
+    "police detective": {"voice": "en-US-AndrewNeural", "rate": "+3%", "pitch": "-2Hz"},
     "claude": {"voice": "en-GB-RyanNeural", "rate": "-3%", "pitch": "-2Hz"},
     "kimi": {"voice": "en-US-AvaNeural", "rate": "+3%", "pitch": "+4Hz"},
     "chatgpt": {"voice": "en-US-GuyNeural", "rate": "+0%", "pitch": "-1Hz"},
