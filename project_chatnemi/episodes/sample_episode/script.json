@@ -1,0 +1,48 @@
+{
+  "characters": [
+    {
+      "id": "nemi",
+      "name": "Nemi",
+      "color": "#5865F2"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "color": "#D2A878"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "characterId": "nemi",
+      "text": "wait",
+      "delaySeconds": 0.5,
+      "isTypingDuration": 1.0,
+      "sfx": "ping.mp3"
+    },
+    {
+      "id": "2",
+      "characterId": "nemi",
+      "text": "what about",
+      "delaySeconds": 0.3,
+      "isTypingDuration": 1.0,
+      "sfx": "ping.mp3"
+    },
+    {
+      "id": "3",
+      "characterId": "nemi",
+      "text": "sweden????",
+      "delaySeconds": 0.2,
+      "isTypingDuration": 0.8,
+      "sfx": "vine_boom.mp3"
+    },
+    {
+      "id": "4",
+      "characterId": "claude",
+      "text": "banned.",
+      "delaySeconds": 0.5,
+      "isTypingDuration": 1.5,
+      "sfx": "record_scratch.mp3"
+    }
+  ]
+}

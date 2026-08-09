@@ -1,0 +1,30 @@
+{
+  "characters": [
+    {
+      "id": "nemi",
+      "name": "Nemi",
+      "color": "#5865F2"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "color": "#D2A878"
+    }
+  ],
+  "messages": [
+    {
+      "characterId": "nemi",
+      "text": "hello? is anyone alive in here?",
+      "delaySeconds": 0.5,
+      "isTypingDuration": 2.0,
+      "sfx": "ping.mp3"
+    },
+    {
+      "characterId": "claude",
+      "text": "I cannot fulfill this request as it violates my safety guidelines.",
+      "delaySeconds": 0.5,
+      "isTypingDuration": 3.0,
+      "sfx": "vine_boom.mp3"
+    }
+  ]
+}
