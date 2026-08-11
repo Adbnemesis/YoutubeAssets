@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentFrame, interpolate, spring, Img } from "remotion";
+import { useCurrentFrame, interpolate, spring, Img, Audio, Sequence } from "remotion";
 import { WinnerBrawler } from "../props";
 import { ParticleOverlay } from "./ParticleOverlay";
 
@@ -47,6 +47,10 @@ export const BestCharWinner: React.FC<BestCharWinnerProps> = ({ winner }) => {
   // Moving Manga Speed Lines
   const bgPos = (frame * 20) % 100;
 
+  // Voice lines configuration
+  const voice1 = winner.voiceLines && winner.voiceLines.length > 0 ? winner.voiceLines[0] : null;
+  const voice2 = winner.voiceLines && winner.voiceLines.length > 1 ? winner.voiceLines[1] : null;
+
   return (
     <div
       style={{
@@ -63,6 +67,20 @@ export const BestCharWinner: React.FC<BestCharWinnerProps> = ({ winner }) => {
         transform: `translate(${shakeX}px, ${shakeY}px)`,
       }}
     >
+      {/* Winner Voice Line 1 (Played at Reveal Start F2) */}
+      {voice1 && (
+        <Sequence from={2}>
+          <Audio src={voice1} volume={1.0} />
+        </Sequence>
+      )}
+
+      {/* Winner Voice Line 2 (Played after Gap at Climax Text Pop F32) */}
+      {voice2 && (
+        <Sequence from={32}>
+          <Audio src={voice2} volume={1.0} />
+        </Sequence>
+      )}
+
       {/* Intense Gold Climax Radial Glow */}
       <div
         style={{

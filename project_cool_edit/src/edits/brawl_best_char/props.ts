@@ -6,6 +6,7 @@ export interface BrawlerContender {
   questionText: string;
   image: string;
   secondaryImage?: string; // Optional 2nd image cut (e.g. Leon has 2 images at F263)
+  voiceLine?: string; // Optional character voice line on entrance
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -17,6 +18,7 @@ export interface WinnerBrawler {
   announcementText: string;
   image: string;
   winnerPanels: string[]; // Exactly 7 images displayed at ~9 frame equal intervals
+  voiceLines?: string[]; // Multiple voice lines played during reveal sequence with gaps
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -102,6 +104,7 @@ export const defaultBestCharProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       secondaryImage: staticFile("images/leon/leon_panel_4.png"),
+      voiceLine: staticFile("brawler_voices/leon/leon_ulti_vo_01.ogg"), // Leon voice line during fake-out presentation
       accentColor: "#10b981",
       startFrame: 222,
       endFrame: 313,
@@ -112,7 +115,6 @@ export const defaultBestCharProps: BestCharEditProps = {
     name: "Kenji",
     announcementText: "OFC IT'S KENJI 👑",
     image: staticFile("images/kenji/kenji_panel_15.png"),
-    // Exactly 7 images of Kenji used at equal ~9 frame intervals from F313 to F377
     winnerPanels: [
       staticFile("images/kenji/kenji_panel_1.png"),  // Image 1 (F313 -> F322)
       staticFile("images/kenji/kenji_panel_4.png"),  // Image 2 (F322 -> F331)
@@ -121,6 +123,10 @@ export const defaultBestCharProps: BestCharEditProps = {
       staticFile("images/kenji/kenji_panel_11.png"), // Image 5 (F349 -> F358)
       staticFile("images/kenji/kenji_panel_13.png"), // Image 6 (F358 -> F367)
       staticFile("images/kenji/kenji_panel_15.png"), // Image 7 (F367 -> F377 final victory stance)
+    ],
+    voiceLines: [
+      staticFile("brawler_voices/kenji/super.ogg"),  // Voice 1 at reveal start (F315)
+      staticFile("brawler_voices/kenji/attack.ogg"), // Voice 2 at climax text pop (F345)
     ],
     accentColor: "#f59e0b",
     startFrame: 313,

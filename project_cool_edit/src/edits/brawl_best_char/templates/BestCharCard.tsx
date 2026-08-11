@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentFrame, interpolate, spring, Img } from "remotion";
+import { useCurrentFrame, interpolate, spring, Img, Audio } from "remotion";
 import { BrawlerContender } from "../props";
 import { ParticleOverlay } from "./ParticleOverlay";
 
@@ -72,6 +72,9 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         transform: `translate(${shakeX}px, ${shakeY}px)`,
       }}
     >
+      {/* Contender Voice Line Playback */}
+      {contender.voiceLine && <Audio src={contender.voiceLine} volume={1.0} />}
+
       {/* Dynamic Animated Accent Background Radial Glow */}
       <div
         style={{
