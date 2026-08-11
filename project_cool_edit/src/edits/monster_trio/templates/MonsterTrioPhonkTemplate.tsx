@@ -3,6 +3,7 @@ import { AbsoluteFill, Audio, Sequence } from "remotion";
 import { MonsterTrioEditProps } from "../props";
 import { TrioBrawlerCard } from "./TrioBrawlerCard";
 import { TrioClimaxFinale } from "./TrioClimaxFinale";
+import { PhonkTransition } from "./PhonkTransition";
 
 export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) => {
   const { watermarkText, brawlers, climax } = props;
@@ -59,19 +60,25 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
       {/* 1a. Intro Image Shake (F000 - F044) */}
       {brawlers[0] && (
         <Sequence from={0} durationInFrames={44}>
-          <TrioBrawlerCard brawler={brawlers[0]} mode="image_shake" />
+          <PhonkTransition accentColor={brawlers[0].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[0]} mode="image_shake" />
+          </PhonkTransition>
         </Sequence>
       )}
       {/* 1b. Text Card Pop "MORTIS" (F044 - F076) */}
       {brawlers[0] && (
         <Sequence from={44} durationInFrames={32}>
-          <TrioBrawlerCard brawler={brawlers[0]} mode="text_card" />
+          <PhonkTransition accentColor={brawlers[0].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[0]} mode="text_card" />
+          </PhonkTransition>
         </Sequence>
       )}
       {/* 1c. Action Pose 2 (F076 - F139) */}
       {brawlers[0] && (
         <Sequence from={76} durationInFrames={63}>
-          <TrioBrawlerCard brawler={brawlers[0]} mode="action_pose" />
+          <PhonkTransition accentColor={brawlers[0].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[0]} mode="action_pose" />
+          </PhonkTransition>
         </Sequence>
       )}
 
@@ -79,19 +86,25 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
       {/* 2a. Intro Image Shake (F139 - F171) */}
       {brawlers[1] && (
         <Sequence from={139} durationInFrames={32}>
-          <TrioBrawlerCard brawler={brawlers[1]} mode="image_shake" />
+          <PhonkTransition accentColor={brawlers[1].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[1]} mode="image_shake" />
+          </PhonkTransition>
         </Sequence>
       )}
       {/* 2b. Text Card Pop "EDGAR" (F171 - F204) */}
       {brawlers[1] && (
         <Sequence from={171} durationInFrames={33}>
-          <TrioBrawlerCard brawler={brawlers[1]} mode="text_card" />
+          <PhonkTransition accentColor={brawlers[1].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[1]} mode="text_card" />
+          </PhonkTransition>
         </Sequence>
       )}
       {/* 2c. Action Pose 2 (F204 - F267) */}
       {brawlers[1] && (
         <Sequence from={204} durationInFrames={63}>
-          <TrioBrawlerCard brawler={brawlers[1]} mode="action_pose" />
+          <PhonkTransition accentColor={brawlers[1].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[1]} mode="action_pose" />
+          </PhonkTransition>
         </Sequence>
       )}
 
@@ -99,30 +112,38 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
       {/* 3a. Intro Image Shake (F267 - F299) */}
       {brawlers[2] && (
         <Sequence from={267} durationInFrames={32}>
-          <TrioBrawlerCard brawler={brawlers[2]} mode="image_shake" />
+          <PhonkTransition accentColor={brawlers[2].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[2]} mode="image_shake" />
+          </PhonkTransition>
         </Sequence>
       )}
       {/* 3b. Text Card Pop "CROW" (F299 - F332) */}
       {brawlers[2] && (
         <Sequence from={299} durationInFrames={33}>
-          <TrioBrawlerCard brawler={brawlers[2]} mode="text_card" />
+          <PhonkTransition accentColor={brawlers[2].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[2]} mode="text_card" />
+          </PhonkTransition>
         </Sequence>
       )}
       {/* 3c. Action Pose 2 (F332 - F444) */}
       {brawlers[2] && (
         <Sequence from={332} durationInFrames={112}>
-          <TrioBrawlerCard brawler={brawlers[2]} mode="action_pose" />
+          <PhonkTransition accentColor={brawlers[2].accentColor}>
+            <TrioBrawlerCard brawler={brawlers[2]} mode="action_pose" />
+          </PhonkTransition>
         </Sequence>
       )}
 
       {/* Trio Climax Finale & Rapid Panel Sequence: F444 - F525 */}
       <Sequence from={444} durationInFrames={81}>
-        <TrioClimaxFinale
-          titleText={climax.titleText}
-          accentColor={climax.accentColor}
-          rapidPanels={climax.rapidPanels}
-          victoryStance={climax.victoryStance}
-        />
+        <PhonkTransition accentColor={climax.accentColor}>
+          <TrioClimaxFinale
+            titleText={climax.titleText}
+            accentColor={climax.accentColor}
+            rapidPanels={climax.rapidPanels}
+            victoryStance={climax.victoryStance}
+          />
+        </PhonkTransition>
       </Sequence>
     </AbsoluteFill>
   );
