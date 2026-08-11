@@ -5,6 +5,7 @@ export interface BrawlerContender {
   name: string;
   questionText: string;
   image: string;
+  secondaryImage?: string; // Optional 2nd image cut (e.g. Leon has 2 images at F263)
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -15,7 +16,7 @@ export interface WinnerBrawler {
   name: string;
   announcementText: string;
   image: string;
-  winnerPanels: string[];
+  winnerPanels: string[]; // Exactly 7 images displayed at ~9 frame equal intervals
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -100,6 +101,7 @@ export const defaultBestCharProps: BestCharEditProps = {
       name: "Leon",
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
+      secondaryImage: staticFile("images/leon/leon_panel_4.png"), // 2nd image cut at F263 (matching Mikey in reference)
       accentColor: "#10b981",
       startFrame: 222,
       endFrame: 313,
@@ -110,23 +112,15 @@ export const defaultBestCharProps: BestCharEditProps = {
     name: "Kenji",
     announcementText: "OFC IT'S KENJI 👑",
     image: staticFile("images/kenji/kenji_panel_15.png"),
+    // Exactly 7 images of Kenji used at equal ~9 frame intervals from F313 to F377
     winnerPanels: [
-      staticFile("images/kenji/kenji_panel_1.png"),
-      staticFile("images/kenji/kenji_panel_2.png"),
-      staticFile("images/kenji/kenji_panel_3.png"),
-      staticFile("images/kenji/kenji_panel_4.png"),
-      staticFile("images/kenji/kenji_panel_5.png"),
-      staticFile("images/kenji/kenji_panel_6.png"),
-      staticFile("images/kenji/kenji_panel_7.png"),
-      staticFile("images/kenji/kenji_panel_8.png"),
-      staticFile("images/kenji/kenji_panel_9.png"),
-      staticFile("images/kenji/kenji_panel_10.png"),
-      staticFile("images/kenji/kenji_panel_11.png"),
-      staticFile("images/kenji/kenji_panel_12.png"),
-      staticFile("images/kenji/kenji_panel_13.png"),
-      staticFile("images/kenji/kenji_panel_14.png"),
-      staticFile("images/kenji/kenji_panel_15.png"),
-      staticFile("images/kenji/kenji_panel_16.png"),
+      staticFile("images/kenji/kenji_panel_1.png"),  // Image 1 (F313 -> F322)
+      staticFile("images/kenji/kenji_panel_4.png"),  // Image 2 (F322 -> F331)
+      staticFile("images/kenji/kenji_panel_6.png"),  // Image 3 (F331 -> F340)
+      staticFile("images/kenji/kenji_panel_8.png"),  // Image 4 (F340 -> F349)
+      staticFile("images/kenji/kenji_panel_11.png"), // Image 5 (F349 -> F358)
+      staticFile("images/kenji/kenji_panel_13.png"), // Image 6 (F358 -> F367)
+      staticFile("images/kenji/kenji_panel_15.png"), // Image 7 (F367 -> F377 final victory stance)
     ],
     accentColor: "#f59e0b",
     startFrame: 313,

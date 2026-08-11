@@ -10,33 +10,36 @@ interface BestCharWinnerProps {
 export const BestCharWinner: React.FC<BestCharWinnerProps> = ({ winner }) => {
   const frame = useCurrentFrame();
 
-  // Rapid Multi-Image Panel Cycle Index (Switch panel image every 1-2 frames during entrance F0 -> F20)
-  const isRapidMontagePhase = frame < 20;
-  const panelIndex = Math.floor(frame / 1.5) % (winner.winnerPanels.length || 1);
-  const activeImage = isRapidMontagePhase && winner.winnerPanels.length > 0
-    ? winner.winnerPanels[panelIndex]
-    : winner.image;
+  // Exactly 7 images of Kenji displayed at equal ~9 frame intervals across the 64-frame climax
+  const panelsCount = winner.winnerPanels.length || 1;
+  const panelIndex = Math.min(panelsCount - 1, Math.floor(frame / 9));
+  const activeImage = winner.winnerPanels[panelIndex] || winner.image;
+
+  // Detect cut frame on every 9-frame panel switch for entrance flash & shake boost
+  const isPanelSwitchFrame = frame > 0 && frame % 9 === 0 && frame <= 54;
+  const panelSwitchFlash = isPanelSwitchFrame ? 0.6 : 0.0;
 
   // Climax entrance shockwave scale
   const scale = spring({
-    frame,
+    frame: frame % 9,
     fps: 30,
-    config: { damping: 9, stiffness: 200 },
+    config: { damping: 10, stiffness: 220 },
   });
 
-  // Sustained high-intensity camera shake at climax transition (F0 -> F22)
-  const shakeX = frame < 22 ? (Math.random() - 0.5) * (26 - frame) * 2.8 : 0;
-  const shakeY = frame < 22 ? (Math.random() - 0.5) * (26 - frame) * 2.8 : 0;
+  // Camera shake at climax start & panel switches
+  const isShaking = frame < 15 || isPanelSwitchFrame;
+  const shakeX = isShaking ? (Math.random() - 0.5) * 14 : 0;
+  const shakeY = isShaking ? (Math.random() - 0.5) * 14 : 0;
 
-  // Flash white/gold burst on frame 0 & frame 20 text entrance
-  const flashOpacity = interpolate(frame, [0, 4, 12, 19, 21, 28], [0.95, 0.4, 0.0, 0.9, 0.3, 0.0], {
+  // Flash white/gold burst on frame 0 & panel switches
+  const flashOpacity = interpolate(frame, [0, 3, 9], [0.95, 0.4, 0.0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
-  });
+  }) + panelSwitchFlash;
 
-  // Winner text pop scale (Appears at frame 19 / reference F332)
+  // Winner text pop scale (Appears at frame 17 / reference F330)
   const textScale = spring({
-    frame: Math.max(0, frame - 19),
+    frame: Math.max(0, frame - 17),
     fps: 30,
     config: { damping: 11, stiffness: 230 },
   });
@@ -93,13 +96,13 @@ export const BestCharWinner: React.FC<BestCharWinnerProps> = ({ winner }) => {
           position: "absolute",
           inset: 0,
           backgroundColor: "#ffffff",
-          opacity: flashOpacity,
+          opacity: Math.min(1.0, flashOpacity),
           pointerEvents: "none",
           zIndex: 30,
         }}
       />
 
-      {/* Winner Rapid Panel Artwork Montage */}
+      {/* Winner 7-Panel Artwork Montage */}
       <div
         style={{
           width: "94%",
@@ -124,8 +127,8 @@ export const BestCharWinner: React.FC<BestCharWinnerProps> = ({ winner }) => {
         />
       </div>
 
-      {/* Climax Announcement Text (e.g. "OFC IT'S KENJI 👑") at F19 / F332 */}
-      {frame >= 18 && (
+      {/* Climax Announcement Text (e.g. "OFC IT'S KENJI 👑") at F17 / F330 */}
+      {frame >= 17 && (
         <div
           style={{
             position: "absolute",

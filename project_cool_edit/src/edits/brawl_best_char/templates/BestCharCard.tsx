@@ -11,14 +11,22 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
   const frame = useCurrentFrame();
   const cardDuration = contender.endFrame - contender.startFrame;
 
-  // 1. Entrance White/RGB Flash (Frames 0-3)
-  const flashOpacity = interpolate(frame, [0, 2, 5], [0.9, 0.4, 0.0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  // Check if secondary image cut should trigger (e.g. Leon 2nd image cut at F263 -> local frame 41)
+  const hasSecondaryCut = Boolean(contender.secondaryImage);
+  const isSecondaryActive = hasSecondaryCut && frame >= 41;
+  const currentImage = isSecondaryActive ? contender.secondaryImage! : contender.image;
 
-  // 2. Chromatic Glitch RGB Shift (Frames 0-4)
-  const isGlitchFrame = frame < 4;
+  // 1. Entrance White/RGB Flash (Frames 0-3 AND local frame 41 for secondary cut)
+  const isSecondaryCutFrame = hasSecondaryCut && Math.abs(frame - 41) <= 2;
+  const flashOpacity = interpolate(
+    frame,
+    [0, 2, 5],
+    [0.9, 0.4, 0.0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  ) + (isSecondaryCutFrame ? 0.7 : 0.0);
+
+  // 2. Chromatic Glitch RGB Shift (Frames 0-4 and local 41-44)
+  const isGlitchFrame = frame < 4 || (hasSecondaryCut && frame >= 41 && frame < 45);
   const glitchOffsetX = isGlitchFrame ? (frame % 2 === 0 ? 8 : -8) : 0;
 
   // 3. Moving Manga Speed Lines
@@ -43,9 +51,10 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
     config: { damping: 10, stiffness: 240 },
   });
 
-  // 8. Impact Camera Shake (Frames 0-8)
-  const shakeX = frame < 8 ? Math.sin(frame * 3.0) * (8 - frame) * 4.0 : 0;
-  const shakeY = frame < 8 ? Math.cos(frame * 3.0) * (8 - frame) * 4.0 : 0;
+  // 8. Impact Camera Shake (Frames 0-8 and 41-48)
+  const shakeFrame = isSecondaryActive ? frame - 41 : frame;
+  const shakeX = shakeFrame < 8 ? Math.sin(shakeFrame * 3.0) * (8 - shakeFrame) * 4.0 : 0;
+  const shakeY = shakeFrame < 8 ? Math.cos(shakeFrame * 3.0) * (8 - shakeFrame) * 4.0 : 0;
 
   return (
     <div
@@ -99,7 +108,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
           position: "absolute",
           inset: 0,
           backgroundColor: "#ffffff",
-          opacity: flashOpacity,
+          opacity: Math.min(1.0, flashOpacity),
           pointerEvents: "none",
           zIndex: 25,
         }}
@@ -121,7 +130,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         {/* Cyan Chromatic Glitch Layer */}
         {isGlitchFrame && (
           <Img
-            src={contender.image}
+            src={currentImage}
             style={{
               position: "absolute",
               width: "100%",
@@ -137,7 +146,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         {/* Red Chromatic Glitch Layer */}
         {isGlitchFrame && (
           <Img
-            src={contender.image}
+            src={currentImage}
             style={{
               position: "absolute",
               width: "100%",
@@ -152,7 +161,8 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
 
         {/* Primary Artwork */}
         <Img
-          src={contender.image}
+          key={currentImage}
+          src={currentImage}
           style={{
             width: "100%",
             height: "100%",
