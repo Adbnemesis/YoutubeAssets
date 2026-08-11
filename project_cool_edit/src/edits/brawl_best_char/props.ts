@@ -1,5 +1,4 @@
 import { staticFile } from "remotion";
-import editAnalysis from "../../../../analysis/best_character/edit_analysis.json";
 
 export interface BrawlerContender {
   id: string;
@@ -16,6 +15,7 @@ export interface WinnerBrawler {
   name: string;
   announcementText: string;
   image: string;
+  winnerPanels: string[];
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -37,7 +37,6 @@ export interface BestCharEditProps {
   winner: WinnerBrawler;
 }
 
-// Default props pre-configured with exact analyzed timings from best_character.mp4
 export const defaultBestCharProps: BestCharEditProps = {
   fps: 30,
   durationInFrames: 377,
@@ -111,6 +110,15 @@ export const defaultBestCharProps: BestCharEditProps = {
     name: "Kenji",
     announcementText: "OFC IT'S KENJI 👑",
     image: staticFile("images/kenji/kenji_panel_15.png"),
+    winnerPanels: [
+      staticFile("images/kenji/kenji_panel_1.png"),
+      staticFile("images/kenji/kenji_panel_3.png"),
+      staticFile("images/kenji/kenji_panel_5.png"),
+      staticFile("images/kenji/kenji_panel_7.png"),
+      staticFile("images/kenji/kenji_panel_9.png"),
+      staticFile("images/kenji/kenji_panel_12.png"),
+      staticFile("images/kenji/kenji_panel_15.png"),
+    ],
     accentColor: "#f59e0b",
     startFrame: 313,
     endFrame: 377,
