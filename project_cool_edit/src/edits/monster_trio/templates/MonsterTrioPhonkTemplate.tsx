@@ -1,33 +1,32 @@
 import React from "react";
 import { AbsoluteFill, Audio, Sequence } from "remotion";
 import { MonsterTrioEditProps } from "../props";
-import { TrioIntroHook } from "./TrioIntroHook";
 import { TrioBrawlerCard } from "./TrioBrawlerCard";
 import { TrioClimaxFinale } from "./TrioClimaxFinale";
 
 export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) => {
-  const { intro, brawlers, climax } = props;
+  const { watermarkText, brawlers, climax } = props;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#080c14" }}>
       {/* Background Audio Phonk Track */}
       {props.audioTrack && <Audio src={props.audioTrack} />}
 
-      {/* Timestamped Brawler Voice Lines */}
+      {/* Brawler Voice Lines */}
       {brawlers[0]?.voiceLine && (
-        <Sequence from={76}>
+        <Sequence from={44}>
           <Audio src={brawlers[0].voiceLine} volume={0.85} />
         </Sequence>
       )}
 
       {brawlers[1]?.voiceLine && (
-        <Sequence from={204}>
+        <Sequence from={171}>
           <Audio src={brawlers[1].voiceLine} volume={0.85} />
         </Sequence>
       )}
 
       {brawlers[2]?.voiceLine && (
-        <Sequence from={332}>
+        <Sequence from={299}>
           <Audio src={brawlers[2].voiceLine} volume={0.85} />
         </Sequence>
       )}
@@ -38,102 +37,85 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
         </Sequence>
       )}
 
-      {/* Scene 1: F000 - F043 (44f) -> Intro Hook */}
-      <Sequence from={0} durationInFrames={44}>
-        <TrioIntroHook logoText={intro.logoText} watermarkText={intro.watermarkText} />
-      </Sequence>
+      {/* Watermark Tag (Top Corner) */}
+      <div
+        style={{
+          position: "absolute",
+          top: 24,
+          right: 24,
+          zIndex: 100,
+          color: "rgba(255,255,255,0.7)",
+          fontSize: 16,
+          fontWeight: 700,
+          letterSpacing: 2,
+          fontFamily: "sans-serif",
+          textShadow: "0 0 10px rgba(0,0,0,0.8)",
+        }}
+      >
+        {watermarkText}
+      </div>
 
-      {/* Scene 2 & 3: F044 - F075 (32f) -> Brawler 1 Dark Strobe Transition */}
-      <Sequence from={44} durationInFrames={32}>
-        <AbsoluteFill style={{ backgroundColor: "#04060a" }}>
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              background: "radial-gradient(circle, rgba(168,85,247,0.3) 0%, rgba(4,6,10,0.95) 75%)",
-            }}
-          />
-        </AbsoluteFill>
-      </Sequence>
-
-      {/* Scene 4: F076 - F138 (63f) -> Brawler 1 Main Card (Mortis) */}
+      {/* Brawler 1 (Mortis): F000 - F139 */}
+      {/* 1a. Intro Image Shake (F000 - F044) */}
+      {brawlers[0] && (
+        <Sequence from={0} durationInFrames={44}>
+          <TrioBrawlerCard brawler={brawlers[0]} mode="image_shake" />
+        </Sequence>
+      )}
+      {/* 1b. Text Card Pop "MORTIS" (F044 - F076) */}
+      {brawlers[0] && (
+        <Sequence from={44} durationInFrames={32}>
+          <TrioBrawlerCard brawler={brawlers[0]} mode="text_card" />
+        </Sequence>
+      )}
+      {/* 1c. Action Pose 2 (F076 - F139) */}
       {brawlers[0] && (
         <Sequence from={76} durationInFrames={63}>
-          <TrioBrawlerCard brawler={brawlers[0]} startFrame={76} />
+          <TrioBrawlerCard brawler={brawlers[0]} mode="action_pose" />
         </Sequence>
       )}
 
-      {/* Scene 5: F139 - F170 (32f) -> Brawler 1 Secondary Action Pose */}
-      {brawlers[0]?.secondaryPose && (
-        <Sequence from={139} durationInFrames={32}>
-          <TrioBrawlerCard
-            brawler={{ ...brawlers[0], image: brawlers[0].secondaryPose }}
-            startFrame={139}
-          />
-        </Sequence>
-      )}
-
-      {/* Scene 6 & 7: F171 - F203 (33f) -> Brawler 2 Dark Strobe Transition */}
-      <Sequence from={171} durationInFrames={33}>
-        <AbsoluteFill style={{ backgroundColor: "#04060a" }}>
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              background: "radial-gradient(circle, rgba(239,68,68,0.3) 0%, rgba(4,6,10,0.95) 75%)",
-            }}
-          />
-        </AbsoluteFill>
-      </Sequence>
-
-      {/* Scene 8: F204 - F264 (61f) -> Brawler 2 Main Card (Edgar) */}
+      {/* Brawler 2 (Edgar Overlaps Brawler 1): F139 - F267 */}
+      {/* 2a. Intro Image Shake (F139 - F171) */}
       {brawlers[1] && (
-        <Sequence from={204} durationInFrames={61}>
-          <TrioBrawlerCard brawler={brawlers[1]} startFrame={204} />
+        <Sequence from={139} durationInFrames={32}>
+          <TrioBrawlerCard brawler={brawlers[1]} mode="image_shake" />
+        </Sequence>
+      )}
+      {/* 2b. Text Card Pop "EDGAR" (F171 - F204) */}
+      {brawlers[1] && (
+        <Sequence from={171} durationInFrames={33}>
+          <TrioBrawlerCard brawler={brawlers[1]} mode="text_card" />
+        </Sequence>
+      )}
+      {/* 2c. Action Pose 2 (F204 - F267) */}
+      {brawlers[1] && (
+        <Sequence from={204} durationInFrames={63}>
+          <TrioBrawlerCard brawler={brawlers[1]} mode="action_pose" />
         </Sequence>
       )}
 
-      {/* Scene 9: F265 - F298 (34f) -> Brawler 2 Secondary Action Pose */}
-      {brawlers[1]?.secondaryPose && (
-        <Sequence from={265} durationInFrames={34}>
-          <TrioBrawlerCard
-            brawler={{ ...brawlers[1], image: brawlers[1].secondaryPose }}
-            startFrame={265}
-          />
-        </Sequence>
-      )}
-
-      {/* Scene 10 & 11: F299 - F331 (33f) -> Brawler 3 Dark Strobe Transition */}
-      <Sequence from={299} durationInFrames={33}>
-        <AbsoluteFill style={{ backgroundColor: "#04060a" }}>
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              background: "radial-gradient(circle, rgba(59,130,246,0.3) 0%, rgba(4,6,10,0.95) 75%)",
-            }}
-          />
-        </AbsoluteFill>
-      </Sequence>
-
-      {/* Scene 12 & 13: F332 - F411 (80f) -> Brawler 3 Main Card (Crow) */}
+      {/* Brawler 3 (Crow Overlaps Brawler 2): F267 - F444 */}
+      {/* 3a. Intro Image Shake (F267 - F299) */}
       {brawlers[2] && (
-        <Sequence from={332} durationInFrames={80}>
-          <TrioBrawlerCard brawler={brawlers[2]} startFrame={332} />
+        <Sequence from={267} durationInFrames={32}>
+          <TrioBrawlerCard brawler={brawlers[2]} mode="image_shake" />
+        </Sequence>
+      )}
+      {/* 3b. Text Card Pop "CROW" (F299 - F332) */}
+      {brawlers[2] && (
+        <Sequence from={299} durationInFrames={33}>
+          <TrioBrawlerCard brawler={brawlers[2]} mode="text_card" />
+        </Sequence>
+      )}
+      {/* 3c. Action Pose 2 (F332 - F444) */}
+      {brawlers[2] && (
+        <Sequence from={332} durationInFrames={112}>
+          <TrioBrawlerCard brawler={brawlers[2]} mode="action_pose" />
         </Sequence>
       )}
 
-      {/* Scene 14 & 15: F412 - F443 (32f) -> Brawler 3 Secondary Action Pose */}
-      {brawlers[2]?.secondaryPose && (
-        <Sequence from={412} durationInFrames={32}>
-          <TrioBrawlerCard
-            brawler={{ ...brawlers[2], image: brawlers[2].secondaryPose }}
-            startFrame={412}
-          />
-        </Sequence>
-      )}
-
-      {/* Scene 16, 17, 18, 19: F444 - F524 (81f) -> Climax 15-Frame Rapid Cuts & Victory Stance */}
+      {/* Trio Climax Finale & Rapid Panel Sequence: F444 - F525 */}
       <Sequence from={444} durationInFrames={81}>
         <TrioClimaxFinale
           titleText={climax.titleText}

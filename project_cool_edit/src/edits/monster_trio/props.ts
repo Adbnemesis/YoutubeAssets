@@ -5,12 +5,12 @@ export interface BrawlerCardProps {
   name: string;
   text: string;
   image: string;
-  secondaryPose?: string;
+  secondaryPose: string;
   voiceLine?: string;
   accentColor: string;
-  flashStartFrame: number;
-  mainStartFrame: number;
-  secondaryStartFrame: number;
+  introImageStartFrame: number;
+  textCardStartFrame: number;
+  secondaryPoseStartFrame: number;
   endFrame: number;
 }
 
@@ -20,12 +20,7 @@ export interface MonsterTrioEditProps {
   width: number;
   height: number;
   audioTrack: string;
-  intro: {
-    titleText: string;
-    subText: string;
-    startFrame: number;
-    endFrame: number;
-  };
+  watermarkText: string;
   brawlers: BrawlerCardProps[];
   climax: {
     titleText: string;
@@ -44,12 +39,7 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
   width: 1080,
   height: 1080,
   audioTrack: staticFile("audio/monster_trio_audio.wav"),
-  intro: {
-    titleText: "MONSTER TRIO",
-    subText: "WHO ARE THE KINGS?",
-    startFrame: 0,
-    endFrame: 44,
-  },
+  watermarkText: "BRAWL TRIO",
   brawlers: [
     {
       id: "mortis",
@@ -59,10 +49,10 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       secondaryPose: staticFile("images/mortis/mortis_panel_4.png"),
       voiceLine: staticFile("brawler_voices/mortis/super.ogg"),
       accentColor: "#a855f7",
-      flashStartFrame: 44,
-      mainStartFrame: 76,
-      secondaryStartFrame: 139,
-      endFrame: 171,
+      introImageStartFrame: 0,
+      textCardStartFrame: 44,
+      secondaryPoseStartFrame: 76,
+      endFrame: 139,
     },
     {
       id: "edgar",
@@ -72,10 +62,10 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       secondaryPose: staticFile("images/edgar/edgar_panel_4.png"),
       voiceLine: staticFile("brawler_voices/edgar/super.ogg"),
       accentColor: "#ef4444",
-      flashStartFrame: 171,
-      mainStartFrame: 204,
-      secondaryStartFrame: 267,
-      endFrame: 299,
+      introImageStartFrame: 139,
+      textCardStartFrame: 171,
+      secondaryPoseStartFrame: 204,
+      endFrame: 267,
     },
     {
       id: "crow",
@@ -85,15 +75,15 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       secondaryPose: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/super.ogg"),
       accentColor: "#3b82f6",
-      flashStartFrame: 299,
-      mainStartFrame: 332,
-      secondaryStartFrame: 412,
+      introImageStartFrame: 267,
+      textCardStartFrame: 299,
+      secondaryPoseStartFrame: 332,
       endFrame: 444,
     },
   ],
   climax: {
-    titleText: "BRAWL MONSTER TRIO 👑",
-    accentColor: "#f59e0b",
+    titleText: "MONSTER TRIO 👑",
+    accentColor: "#fbbf24",
     rapidPanels: [
       staticFile("images/mortis/mortis_panel_1.png"),
       staticFile("images/edgar/edgar_panel_1.png"),
