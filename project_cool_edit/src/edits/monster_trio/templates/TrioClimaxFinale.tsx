@@ -14,39 +14,41 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
   rapidPanels,
   victoryStance,
 }) => {
-  const frame = useCurrentFrame(); // frame 0 is frame 444 in master timeline
+  const frame = useCurrentFrame(); // frame 0 is frame 395 (6.58s) in master timeline
   const { fps } = useVideoConfig();
 
-  // 7 Panels rapidly cutting every ~11.5 frames: F444 to F525 (81 frames total)
-  // Panel index from 0 to 6
-  const panelDuration = 11.5;
+  // 7 Panels spanning F395 (6.58s) to F525 (8.82s)
+  // 6 sliding panels (16 frames each = 96 frames), plus 7th victory stance panel (frame 96 to 130)
+  const panelDuration = 16;
   const rawIdx = Math.floor(frame / panelDuration);
   const panelIdx = Math.min(rapidPanels.length - 1, Math.max(0, rawIdx));
   const isVictoryStance = frame >= panelDuration * (rapidPanels.length - 1);
 
   const currentImage = isVictoryStance ? victoryStance : rapidPanels[panelIdx];
 
-  // Alternating Slide Motion: Even indices slide Left -> Right, Odd indices slide Right -> Left
+  // Alternating Slide Motion: Even indices (0, 2, 4) slide Left -> Right, Odd indices (1, 3, 5) slide Right -> Left
   const relativeFrame = frame % panelDuration;
   const isEvenPanel = panelIdx % 2 === 0;
 
-  // Slide translation: -100% to 0% for even (Left -> Right), +100% to 0% for odd (Right -> Left)
-  const slideX = interpolate(
-    relativeFrame,
-    [0, 3],
-    [isEvenPanel ? -100 : 100, 0],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
-  );
-
-  // Text Entrance spring
-  const textSpring = spring({
-    frame: Math.max(0, frame - 15),
+  // Snappy spring slide transition
+  const slideProgress = spring({
+    frame: relativeFrame,
     fps,
-    config: { damping: 10, stiffness: 240 },
+    config: { damping: 10, stiffness: 280 },
   });
 
-  // White flash burst on panel transition cut
-  const isFlashCut = relativeFrame <= 2;
+  const initialOffsetX = isEvenPanel ? -100 : 100;
+  const slideX = interpolate(slideProgress, [0, 1], [initialOffsetX, 0]);
+
+  // Dynamic Text Entrance & Bounce on panel cuts
+  const textBounce = spring({
+    frame: relativeFrame,
+    fps,
+    config: { damping: 8, stiffness: 300 },
+  });
+
+  // White flash burst cut on every panel entrance
+  const showFlash = relativeFrame <= 2;
 
   return (
     <AbsoluteFill
@@ -57,14 +59,14 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
         justifyContent: "center",
       }}
     >
-      {/* Golden Climax Aura Radial Glow */}
+      {/* Dynamic Golden Climax Sunburst Radial Aura */}
       <div
         style={{
           position: "absolute",
           width: "140%",
           height: "140%",
-          background: `radial-gradient(circle, ${accentColor}66 0%, rgba(8,12,20,0.95) 75%)`,
-          transform: `rotate(${frame * 0.8}deg)`,
+          background: `radial-gradient(circle, ${accentColor}77 0%, rgba(8,12,20,0.95) 75%)`,
+          transform: `rotate(${frame * 0.9}deg)`,
         }}
       />
 
@@ -85,7 +87,7 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
             maxWidth: "100%",
             maxHeight: "100%",
             objectFit: "contain",
-            filter: `drop-shadow(0 0 45px ${accentColor})`,
+            filter: `drop-shadow(0 0 50px ${accentColor})`,
           }}
         />
       </div>
@@ -96,19 +98,19 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
           position: "absolute",
           bottom: 80,
           textAlign: "center",
-          transform: `scale(${textSpring})`,
+          transform: `scale(${textBounce})`,
           zIndex: 50,
         }}
       >
         <h1
           style={{
-            fontSize: 68,
+            fontSize: 72,
             fontWeight: 900,
             color: "#fbbf24",
             margin: 0,
             letterSpacing: 3,
-            textShadow: "0 0 35px #f59e0b, 0 0 70px #d97706, -4px 4px 0 #000",
-            fontFamily: "sans-serif",
+            textShadow: "0 0 40px #f59e0b, 0 0 80px #d97706, -4px 4px 0 #000",
+            fontFamily: "Impact, Arial Black, sans-serif",
           }}
         >
           {titleText}
@@ -116,7 +118,7 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
       </div>
 
       {/* Flash Cut Overlay on Panel Cuts */}
-      {isFlashCut && (
+      {showFlash && (
         <AbsoluteFill
           style={{
             backgroundColor: "#ffffff",

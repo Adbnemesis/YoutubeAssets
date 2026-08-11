@@ -78,7 +78,7 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       introImageStartFrame: 267,
       textCardStartFrame: 299,
       secondaryPoseStartFrame: 332,
-      endFrame: 444,
+      endFrame: 395,
     },
   ],
   climax: {
@@ -98,7 +98,7 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       staticFile("brawler_voices/mortis/attack.ogg"),
       staticFile("brawler_voices/edgar/attack.ogg"),
     ],
-    startFrame: 444,
-    endFrame: 525,
+    startFrame: 395, // 6.58s matching reference video optical flow
+    endFrame: 525,   // 8.82s
   },
 };

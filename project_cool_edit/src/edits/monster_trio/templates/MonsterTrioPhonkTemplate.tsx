@@ -33,7 +33,7 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
       )}
 
       {climax.voiceLines?.[0] && (
-        <Sequence from={444}>
+        <Sequence from={395}>
           <Audio src={climax.voiceLines[0]} volume={0.9} />
         </Sequence>
       )}
@@ -108,7 +108,7 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
         </Sequence>
       )}
 
-      {/* Brawler 3 (Crow Overlaps Brawler 2): F267 - F444 */}
+      {/* Brawler 3 (Crow Overlaps Brawler 2): F267 - F395 */}
       {/* 3a. Intro Image Shake (F267 - F299) */}
       {brawlers[2] && (
         <Sequence from={267} durationInFrames={32}>
@@ -125,17 +125,17 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
           </PhonkTransition>
         </Sequence>
       )}
-      {/* 3c. Action Pose 2 (F332 - F444) */}
+      {/* 3c. Action Pose 2 (F332 - F395) */}
       {brawlers[2] && (
-        <Sequence from={332} durationInFrames={112}>
+        <Sequence from={332} durationInFrames={63}>
           <PhonkTransition accentColor={brawlers[2].accentColor}>
             <TrioBrawlerCard brawler={brawlers[2]} mode="action_pose" />
           </PhonkTransition>
         </Sequence>
       )}
 
-      {/* Trio Climax Finale & Rapid Panel Sequence: F444 - F525 */}
-      <Sequence from={444} durationInFrames={81}>
+      {/* Trio Climax Finale & 7-Panel Rapid Alternating Slide Sequence: F395 - F525 (6.58s - 8.82s) */}
+      <Sequence from={395} durationInFrames={130}>
         <PhonkTransition accentColor={climax.accentColor}>
           <TrioClimaxFinale
             titleText={climax.titleText}
