@@ -138,12 +138,27 @@ class LocalOCRDetector:
         avg_w = int(np.mean([c["boundingBox"]["width"] for c in cluster]))
         avg_h = int(np.mean([c["boundingBox"]["height"] for c in cluster]))
 
+        # Detect animation type based on initial bounding box scale/position changes
+        animation = "unknown"
+        if len(cluster) >= 2:
+            first_area = cluster[0]["boundingBox"]["width"] * cluster[0]["boundingBox"]["height"]
+            last_area = cluster[-1]["boundingBox"]["width"] * cluster[-1]["boundingBox"]["height"]
+            if first_area > 0 and last_area / float(first_area) > 1.25:
+                animation = "scale_up"
+            elif first_area > 0 and last_area / float(first_area) < 0.8:
+                animation = "pop_in"
+            elif abs(cluster[-1]["boundingBox"]["y"] - cluster[0]["boundingBox"]["y"]) > 30:
+                animation = "slide_in"
+            else:
+                animation = "pop_in"
+
         return {
             "text": cluster[0]["text"], # preserve original case
             "startFrame": start_f,
             "endFrame": end_f + self.sample_interval,
             "startTime": round(start_f / self.fps, 6),
             "endTime": round((end_f + self.sample_interval) / self.fps, 6),
+            "animation": animation,
             "boundingBox": {
                 "x": avg_x,
                 "y": avg_y,

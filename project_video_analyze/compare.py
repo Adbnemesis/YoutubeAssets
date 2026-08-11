@@ -2,8 +2,8 @@ import sys
 import os
 import argparse
 import json
+import numpy as np
 
-# Ensure project directory is in python path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(current_dir)
 if parent_dir not in sys.path:
@@ -13,7 +13,7 @@ from project_video_analyze.cli import run_analysis
 
 def compare_videos(reference_path: str, rendered_path: str):
     print("\n==========================================")
-    print(" REFERENCE VS OUTPUT COMPARATOR")
+    print(" REFERENCE VS OUTPUT COMPARATOR (QA SYSTEM)")
     print(f" Reference: {reference_path}")
     print(f" Rendered:  {rendered_path}")
     print("==========================================\n")
@@ -54,22 +54,22 @@ def compare_videos(reference_path: str, rendered_path: str):
     print("------------------------------------------")
     print(" 2. CUT TIMING COMPARISON")
     print("------------------------------------------")
-    ref_cuts = ref_analysis.get("cuts", [])
-    rnd_cuts = rnd_analysis.get("cuts", [])
+    ref_cuts = ref_analysis.get("scenes", [])
+    rnd_cuts = rnd_analysis.get("scenes", [])
     
     print(f" Cuts Count: Ref={len(ref_cuts)} | Rnd={len(rnd_cuts)}")
+    cut_errors = []
     for idx, ref_cut in enumerate(ref_cuts):
         ref_f = ref_cut["startFrame"]
         if idx < len(rnd_cuts):
             rnd_f = rnd_cuts[idx]["startFrame"]
             diff = rnd_f - ref_f
-            status = "MATCH" if diff == 0 else f"ERROR: {diff:+} frames"
-            print(f" Cut #{idx+1}")
-            print(f"   Reference: frame {ref_f}")
-            print(f"   Output:    frame {rnd_f}")
-            print(f"   Status:    {status}")
+            cut_errors.append(abs(diff))
+            status = "MATCH ✓" if diff == 0 else f"ERROR: {diff:+} frames ❌"
+            print(f" Cut #{idx+1:02d} | Ref F{ref_f:03d} -> Rnd F{rnd_f:03d} | {status}")
         else:
-            print(f" Cut #{idx+1}: Missing in output (Ref frame {ref_f})")
+            print(f" Cut #{idx+1:02d}: Missing in output (Ref frame {ref_f})")
+            cut_errors.append(30)
     print("")
 
     print("------------------------------------------")
@@ -77,35 +77,30 @@ def compare_videos(reference_path: str, rendered_path: str):
     print("------------------------------------------")
     ref_beats = ref_analysis.get("strongBeats", [])[:10]
     rnd_beats = rnd_analysis.get("strongBeats", [])[:10]
+    beat_errors = []
     for idx, ref_b in enumerate(ref_beats):
         ref_f = ref_b["frame"]
         if idx < len(rnd_beats):
             rnd_f = rnd_beats[idx]["frame"]
             diff = rnd_f - ref_f
-            status = "MATCH" if diff == 0 else f"ERROR: {diff:+} frames"
-            print(f" Beat #{idx+1}")
-            print(f"   Reference: frame {ref_f}")
-            print(f"   Output:    frame {rnd_f}")
-            print(f"   Status:    {status}")
-    print("")
+            beat_errors.append(abs(diff))
+            status = "MATCH ✓" if diff == 0 else f"ERROR: {diff:+} frames ❌"
+            print(f" Beat #{idx+1:02d} | Ref F{ref_f:03d} -> Rnd F{rnd_f:03d} | {status}")
 
+    print("\n------------------------------------------")
+    print(" 4. OVERALL REMOTION RECREATION QA SCORES")
     print("------------------------------------------")
-    print(" 4. ZOOM TIMING COMPARISON")
-    print("------------------------------------------")
-    ref_zooms = ref_analysis.get("zooms", [])
-    rnd_zooms = rnd_analysis.get("zooms", [])
-    for idx, ref_z in enumerate(ref_zooms):
-        ref_sf, ref_ef = ref_z["startFrame"], ref_z["endFrame"]
-        if idx < len(rnd_zooms):
-            rnd_sf, rnd_ef = rnd_zooms[idx]["startFrame"], rnd_zooms[idx]["endFrame"]
-            s_diff = rnd_sf - ref_sf
-            e_diff = rnd_ef - ref_ef
-            print(f" Zoom #{idx+1}")
-            print(f"   Reference: {ref_sf} → {ref_ef}")
-            print(f"   Output:    {rnd_sf} → {rnd_ef}")
-            print(f"   START ERROR: {s_diff:+} frames | END ERROR: {e_diff:+} frames")
-        else:
-            print(f" Zoom #{idx+1}: Missing in output ({ref_sf} → {ref_ef})")
+    
+    avg_cut_err = float(np.mean(cut_errors)) if cut_errors else 0.0
+    avg_beat_err = float(np.mean(beat_errors)) if beat_errors else 0.0
+
+    timing_accuracy = max(0.0, min(100.0, 100.0 - avg_cut_err * 2.5))
+    audio_sync = max(0.0, min(100.0, 100.0 - avg_beat_err * 3.0))
+    visual_accuracy = max(0.0, min(100.0, 100.0 - (abs(len(ref_cuts) - len(rnd_cuts))) * 5.0))
+
+    print(f" TIMING ACCURACY:       {timing_accuracy:.1f}%")
+    print(f" VISUAL EVENT ACCURACY: {visual_accuracy:.1f}%")
+    print(f" AUDIO SYNC:            {audio_sync:.1f}%")
     print("==========================================\n")
 
 def main():
