@@ -14,32 +14,27 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
   rapidPanels,
   victoryStance,
 }) => {
-  const frame = useCurrentFrame();
+  const frame = useCurrentFrame(); // frame 0 is frame 444 in timeline
   const { fps } = useVideoConfig();
 
-  // F225 to F335: Climax Title Entrance & Impact Shake
-  const isPhase3 = frame >= 225 && frame < 335;
-  
-  // F335+: Rapid 15-frame multi-panel cut sequence
-  const isRapidPhase = frame >= 335 && frame < 444;
-  const rapidIdx = isRapidPhase ? Math.min(rapidPanels.length - 1, Math.floor((frame - 335) / 15)) : 0;
+  // Rapid cuts every 15 frames: 0-15 (Cut 1), 15-30 (Cut 2), 30-45 (Cut 3), 45+ (Victory Stance)
+  const isRapidPhase = frame < 45;
+  const rapidIdx = isRapidPhase ? Math.min(rapidPanels.length - 1, Math.floor(frame / 15)) : 0;
+  const isVictoryStance = frame >= 45;
 
-  // F444+: Final Victory Stance
-  const isVictoryStance = frame >= 444;
+  // Impact Shake at first 15 frames
+  const shakeX = frame < 15 ? (Math.sin(frame * 4.5) * 14) : 0;
+  const shakeY = frame < 15 ? (Math.cos(frame * 4.5) * 12) : 0;
 
-  // Impact Shake at F225-F250
-  const shakeX = frame >= 225 && frame < 255 ? (Math.sin(frame * 4.5) * 14) : 0;
-  const shakeY = frame >= 225 && frame < 255 ? (Math.cos(frame * 4.5) * 12) : 0;
-
-  // Text Entrance at F270
+  // Text Entrance spring
   const textSpring = spring({
-    frame: Math.max(0, frame - 270),
+    frame: Math.max(0, frame),
     fps,
     config: { damping: 10, stiffness: 240 },
   });
 
-  // Flash cut burst on every 15-frame cut transition
-  const isFlashCut = isRapidPhase && (frame - 335) % 15 <= 2;
+  // Flash cut overlay on every 15-frame cut transition
+  const isFlashCut = isRapidPhase && frame % 15 <= 2;
 
   const currentImage = isVictoryStance
     ? victoryStance
@@ -89,31 +84,29 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
         />
       </div>
 
-      {/* Climax Text Overlay (F270+) */}
-      {frame >= 270 && (
-        <div
+      {/* Climax Text Overlay */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 80,
+          textAlign: "center",
+          transform: `scale(${textSpring})`,
+        }}
+      >
+        <h1
           style={{
-            position: "absolute",
-            bottom: 80,
-            textAlign: "center",
-            transform: `scale(${textSpring})`,
+            fontSize: 68,
+            fontWeight: 900,
+            color: "#fbbf24",
+            margin: 0,
+            letterSpacing: 3,
+            textShadow: "0 0 35px #f59e0b, 0 0 70px #d97706, -4px 4px 0 #000",
+            fontFamily: "sans-serif",
           }}
         >
-          <h1
-            style={{
-              fontSize: 68,
-              fontWeight: 900,
-              color: "#fbbf24",
-              margin: 0,
-              letterSpacing: 3,
-              textShadow: "0 0 35px #f59e0b, 0 0 70px #d97706, -4px 4px 0 #000",
-              fontFamily: "sans-serif",
-            }}
-          >
-            {titleText}
-          </h1>
-        </div>
-      )}
+          {titleText}
+        </h1>
+      </div>
 
       {/* Flash Cut Overlay on 15-frame Rapid Cuts */}
       {isFlashCut && (

@@ -2,25 +2,26 @@ import React from "react";
 import { AbsoluteFill, Img, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { BrawlerCardProps } from "../props";
 
-export const TrioBrawlerCard: React.FC<{ brawler: BrawlerCardProps }> = ({ brawler }) => {
+export const TrioBrawlerCard: React.FC<{ brawler: BrawlerCardProps; startFrame?: number }> = ({
+  brawler,
+  startFrame = 0,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const relFrame = Math.max(0, frame - brawler.startFrame);
-
   // Entrance spring scale
   const scale = spring({
-    frame: relFrame,
+    frame: Math.max(0, frame),
     fps,
     config: { damping: 14, stiffness: 220 },
   });
 
   // Micro camera shake on entrance
-  const shakeX = relFrame < 8 ? (Math.sin(relFrame * 4) * 8) : 0;
-  const shakeY = relFrame < 8 ? (Math.cos(relFrame * 4) * 6) : 0;
+  const shakeX = frame < 8 ? (Math.sin(frame * 4) * 8) : 0;
+  const shakeY = frame < 8 ? (Math.cos(frame * 4) * 6) : 0;
 
   // Flash burst overlay on first 2 frames
-  const showFlash = relFrame <= 2;
+  const showFlash = frame <= 2;
 
   return (
     <AbsoluteFill

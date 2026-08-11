@@ -8,7 +8,9 @@ export interface BrawlerCardProps {
   secondaryPose?: string;
   voiceLine?: string;
   accentColor: string;
-  startFrame: number;
+  flashStartFrame: number;
+  mainStartFrame: number;
+  secondaryStartFrame: number;
   endFrame: number;
 }
 
@@ -54,10 +56,13 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       name: "Mortis",
       text: "MORTIS",
       image: staticFile("images/mortis/mortis_panel_1.png"),
+      secondaryPose: staticFile("images/mortis/mortis_panel_4.png"),
       voiceLine: staticFile("brawler_voices/mortis/super.ogg"),
       accentColor: "#a855f7",
-      startFrame: 44,
-      endFrame: 89,
+      flashStartFrame: 44,
+      mainStartFrame: 76,
+      secondaryStartFrame: 139,
+      endFrame: 171,
     },
     {
       id: "edgar",
@@ -67,18 +72,23 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       secondaryPose: staticFile("images/edgar/edgar_panel_4.png"),
       voiceLine: staticFile("brawler_voices/edgar/super.ogg"),
       accentColor: "#ef4444",
-      startFrame: 89,
-      endFrame: 139,
+      flashStartFrame: 171,
+      mainStartFrame: 204,
+      secondaryStartFrame: 267,
+      endFrame: 299,
     },
     {
       id: "crow",
       name: "Crow",
       text: "CROW",
       image: staticFile("images/crow/crow_panel_1.png"),
+      secondaryPose: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/super.ogg"),
       accentColor: "#3b82f6",
-      startFrame: 139,
-      endFrame: 189,
+      flashStartFrame: 299,
+      mainStartFrame: 332,
+      secondaryStartFrame: 412,
+      endFrame: 444,
     },
   ],
   climax: {
@@ -88,9 +98,6 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       staticFile("images/mortis/mortis_panel_1.png"),
       staticFile("images/edgar/edgar_panel_1.png"),
       staticFile("images/crow/crow_panel_1.png"),
-      staticFile("images/mortis/mortis_panel_4.png"),
-      staticFile("images/edgar/edgar_panel_4.png"),
-      staticFile("images/crow/crow_panel_4.png"),
       staticFile("images/kenji/kenji_panel_15.png"),
     ],
     victoryStance: staticFile("images/kenji/kenji_panel_15.png"),
@@ -98,7 +105,7 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
       staticFile("brawler_voices/kenji/super.ogg"),
       staticFile("brawler_voices/kenji/attack.ogg"),
     ],
-    startFrame: 225,
+    startFrame: 444,
     endFrame: 525,
   },
 };
