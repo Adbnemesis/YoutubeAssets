@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Img, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 
 interface TrioClimaxFinaleProps {
   titleText: string;
@@ -14,45 +14,50 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
   rapidPanels,
   victoryStance,
 }) => {
-  const frame = useCurrentFrame(); // frame 0 is frame 444 in timeline
+  const frame = useCurrentFrame(); // frame 0 is frame 444 in master timeline
   const { fps } = useVideoConfig();
 
-  // Rapid cuts every 15 frames: 0-15 (Cut 1), 15-30 (Cut 2), 30-45 (Cut 3), 45+ (Victory Stance)
-  const isRapidPhase = frame < 45;
-  const rapidIdx = isRapidPhase ? Math.min(rapidPanels.length - 1, Math.floor(frame / 15)) : 0;
-  const isVictoryStance = frame >= 45;
+  // 7 Panels rapidly cutting every ~11.5 frames: F444 to F525 (81 frames total)
+  // Panel index from 0 to 6
+  const panelDuration = 11.5;
+  const rawIdx = Math.floor(frame / panelDuration);
+  const panelIdx = Math.min(rapidPanels.length - 1, Math.max(0, rawIdx));
+  const isVictoryStance = frame >= panelDuration * (rapidPanels.length - 1);
 
-  // Impact Shake at first 15 frames
-  const shakeX = frame < 15 ? (Math.sin(frame * 4.5) * 14) : 0;
-  const shakeY = frame < 15 ? (Math.cos(frame * 4.5) * 12) : 0;
+  const currentImage = isVictoryStance ? victoryStance : rapidPanels[panelIdx];
+
+  // Alternating Slide Motion: Even indices slide Left -> Right, Odd indices slide Right -> Left
+  const relativeFrame = frame % panelDuration;
+  const isEvenPanel = panelIdx % 2 === 0;
+
+  // Slide translation: -100% to 0% for even (Left -> Right), +100% to 0% for odd (Right -> Left)
+  const slideX = interpolate(
+    relativeFrame,
+    [0, 3],
+    [isEvenPanel ? -100 : 100, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
 
   // Text Entrance spring
   const textSpring = spring({
-    frame: Math.max(0, frame),
+    frame: Math.max(0, frame - 15),
     fps,
     config: { damping: 10, stiffness: 240 },
   });
 
-  // Flash cut overlay on every 15-frame cut transition
-  const isFlashCut = isRapidPhase && frame % 15 <= 2;
-
-  const currentImage = isVictoryStance
-    ? victoryStance
-    : isRapidPhase
-    ? rapidPanels[rapidIdx]
-    : rapidPanels[0];
+  // White flash burst on panel transition cut
+  const isFlashCut = relativeFrame <= 2;
 
   return (
     <AbsoluteFill
       style={{
         backgroundColor: "#080c14",
-        transform: `translate(${shakeX}px, ${shakeY}px)`,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      {/* Golden Climax Aura Background */}
+      {/* Golden Climax Aura Radial Glow */}
       <div
         style={{
           position: "absolute",
@@ -63,7 +68,7 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
         }}
       />
 
-      {/* Main Image Display */}
+      {/* 7 Alternating Sliding Panels Container */}
       <div
         style={{
           width: "85%",
@@ -71,6 +76,7 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          transform: `translateX(${slideX}%)`,
         }}
       >
         <Img
@@ -79,18 +85,19 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
             maxWidth: "100%",
             maxHeight: "100%",
             objectFit: "contain",
-            filter: `drop-shadow(0 0 40px ${accentColor})`,
+            filter: `drop-shadow(0 0 45px ${accentColor})`,
           }}
         />
       </div>
 
-      {/* Climax Text Overlay */}
+      {/* Climax Header Text Overlay */}
       <div
         style={{
           position: "absolute",
           bottom: 80,
           textAlign: "center",
           transform: `scale(${textSpring})`,
+          zIndex: 50,
         }}
       >
         <h1
@@ -108,12 +115,13 @@ export const TrioClimaxFinale: React.FC<TrioClimaxFinaleProps> = ({
         </h1>
       </div>
 
-      {/* Flash Cut Overlay on 15-frame Rapid Cuts */}
+      {/* Flash Cut Overlay on Panel Cuts */}
       {isFlashCut && (
         <AbsoluteFill
           style={{
             backgroundColor: "#ffffff",
             opacity: 0.9,
+            zIndex: 60,
           }}
         />
       )}

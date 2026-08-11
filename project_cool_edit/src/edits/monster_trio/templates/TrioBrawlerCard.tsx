@@ -7,18 +7,27 @@ interface TrioBrawlerCardProps {
   mode: "image_shake" | "text_card" | "action_pose";
 }
 
+const PHONK_FONTS = [
+  "Impact",
+  "Arial Black",
+  "Trebuchet MS",
+  "Courier New",
+  "Franklin Gothic Medium",
+  "sans-serif",
+];
+
 export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Mode 1: Image Shake (Camera Shake + Zoom Punch)
+  // Mode 1: Image Shake Entrance
   if (mode === "image_shake") {
-    const scale = interpolate(frame, [0, 9, 20], [1.0, 1.12, 1.0], {
+    const scale = interpolate(frame, [0, 9, 20], [1.0, 1.14, 1.0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
-    const shakeX = frame < 12 ? Math.sin(frame * 3.8) * 14 : 0;
-    const shakeY = frame < 12 ? Math.cos(frame * 3.8) * 10 : 0;
+    const shakeX = frame < 14 ? Math.sin(frame * 4.2) * 16 : 0;
+    const shakeY = frame < 14 ? Math.cos(frame * 4.2) * 12 : 0;
 
     return (
       <AbsoluteFill
@@ -30,26 +39,26 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
           justifyContent: "center",
         }}
       >
-        {/* Sunburst & Radial Aura */}
+        {/* Sunburst & Radial Aura Backdrop */}
         <div
           style={{
             position: "absolute",
-            width: "130%",
-            height: "130%",
+            width: "140%",
+            height: "140%",
             background: `radial-gradient(circle, ${brawler.accentColor}66 0%, rgba(9,13,22,0.95) 75%)`,
-            transform: `rotate(${frame * 0.5}deg)`,
+            transform: `rotate(${frame * 0.6}deg)`,
           }}
         />
 
         {/* Character Artwork 1 */}
-        <div style={{ width: "80%", height: "80%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ width: "85%", height: "85%", display: "flex", alignItems: "center", justifyContent: "center" }}>
           <Img
             src={brawler.image}
             style={{
               maxWidth: "100%",
               maxHeight: "100%",
               objectFit: "contain",
-              filter: `drop-shadow(0 0 40px ${brawler.accentColor})`,
+              filter: `drop-shadow(0 0 45px ${brawler.accentColor})`,
             }}
           />
         </div>
@@ -57,51 +66,41 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
     );
   }
 
-  // Mode 2: Text Card Pop
+  // Mode 2: Text Card Pop (PURE BLACK BACKGROUND + RAPID FONT SHIFTS)
   if (mode === "text_card") {
+    const fontIdx = Math.floor(frame / 3) % PHONK_FONTS.length;
+    const currentFont = PHONK_FONTS[fontIdx];
+
     const textSpring = spring({
       frame,
       fps,
-      config: { damping: 11, stiffness: 220 },
+      config: { damping: 9, stiffness: 260 },
     });
     const showFlash = frame <= 2;
 
     return (
       <AbsoluteFill
         style={{
-          backgroundColor: "#090d16",
+          backgroundColor: "#000000", // PURE BLACK BACKGROUND AS DISCOVERED
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        {/* Background Radial Aura */}
+        {/* Pure Black Background with Subtle Radial Color Tint */}
         <div
           style={{
             position: "absolute",
-            width: "120%",
-            height: "120%",
-            background: `radial-gradient(circle, ${brawler.accentColor}55 0%, rgba(9,13,22,0.95) 70%)`,
+            width: "100%",
+            height: "100%",
+            background: `radial-gradient(circle, ${brawler.accentColor}33 0%, #000000 70%)`,
           }}
         />
 
-        {/* Character Artwork 1 Background */}
-        <div style={{ width: "80%", height: "80%", display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.75 }}>
-          <Img
-            src={brawler.image}
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              objectFit: "contain",
-              filter: `drop-shadow(0 0 30px ${brawler.accentColor})`,
-            }}
-          />
-        </div>
-
-        {/* Text Pop Header */}
+        {/* Rapid Font Cycling Animated Text Pop */}
         <div
           style={{
-            position: "absolute",
+            position: "relative",
             textAlign: "center",
             transform: `scale(${textSpring})`,
             zIndex: 20,
@@ -109,25 +108,25 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
         >
           <h1
             style={{
-              fontSize: 88,
+              fontSize: 92,
               fontWeight: 900,
               color: "#ffffff",
               margin: 0,
-              letterSpacing: 4,
-              textShadow: `0 0 35px ${brawler.accentColor}, 0 0 70px ${brawler.accentColor}, -4px 4px 0 #000`,
-              fontFamily: "sans-serif",
+              letterSpacing: 6,
+              textShadow: `0 0 40px ${brawler.accentColor}, 0 0 80px ${brawler.accentColor}, -5px 5px 0 #000`,
+              fontFamily: currentFont,
             }}
           >
             {brawler.text}
           </h1>
         </div>
 
-        {/* White Flash Burst on Cut */}
+        {/* White Flash Burst Cut */}
         {showFlash && (
           <AbsoluteFill
             style={{
               backgroundColor: "#ffffff",
-              opacity: 0.85,
+              opacity: 0.9,
             }}
           />
         )}
@@ -164,7 +163,7 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
             maxWidth: "100%",
             maxHeight: "100%",
             objectFit: "contain",
-            filter: `drop-shadow(0 0 40px ${brawler.accentColor})`,
+            filter: `drop-shadow(0 0 45px ${brawler.accentColor})`,
           }}
         />
       </div>
