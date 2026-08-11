@@ -19,25 +19,33 @@ With this exact specification, any future trio or multi-character edit (e.g. Bra
   - **Fastest Cut Burst**: `15 frames` (0.25s rapid cut sequence)
   - **Beat-Synced Cut Ratio**: `44.4%`
   - **Average Camera Shake Intensity**: `0.81`
-  - **Rapid Cut Sequences**: `4` distinct multi-panel rapid cut montages
+  - **Total Scene Transitions**: `19` distinct scene boundaries
 
 ---
 
-## ⏱ Complete Frame-by-Frame & Timestamp Breakdown
+## ⏱ Complete 19-Scene Frame-by-Frame & Timestamp Breakdown
 
-| Frame Range | Timestamp Range | Phase / Segment | Visual / FX Details | Audio / Beat Event | Text / Typography Overlay | Image Asset / Character | Remotion Props Mapping |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `F000 → F015` | `0.000s → 0.250s` | Intro Hook | Zoom Punch `[scale: 1.0 → 1.11 → 1.0]`, camera shake `[intensity: 0.92]`, black aura vignette | **Beat / Onset Hit (F00)** | None | Intro Character Panel 1 (Zoro) | `intro.card1` |
-| `F015 → F044` | `0.250s → 0.733s` | Intro Text Entrance | Scale bounce entrance, ambient aura glow, speed line background | **Strong Beat (F14)** | `"KAGE"` (White, dark aura glow, stroke 3px) | Intro Character Panel 1 | `intro.textCard` |
-| `F044 → F089` | `0.733s → 1.483s` | Character 1: Luffy | Hard Cut (F44), black flash burst (F44-F46), red/black aura outline, text pop at F45 | **Cut #1 / Beat Hit (F44)** | `"LUFFY"` (Bright red `#ef4444`, dark outline) | `luffy_panel_1.png` | `characters[0]` |
-| `F089 → F139` | `1.483s → 2.316s` | Character 2: Zoro | Hard Cut (F89), green particle burst, chromatic glitch offset, camera shake (F89-F105) | **Cut #2 / Beat Hit (F89)** | `"ZORO"` (Emerald green `#10b981`, dark glow) | `zoro_panel_1.png` | `characters[1]` |
-| `F139 → F189` | `2.316s → 3.150s` | Character 3: Sanji | Hard Cut (F139), blue particle aura, camera impact micro-shake | **Cut #3 / Beat Hit (F139)** | `"SANJI"` (Electric blue `#3b82f6`, neon glow) | `sanji_panel_1.png` | `characters[2]` |
-| `F189 → F225` | `3.150s → 3.750s` | Trio Focus: Zoro Dual | Hard Cut (F189), secondary action stance, camera shake `[intensity: 0.87]` | **Cut #4 / Beat Hit (F189)** | `"ZORO"` (Emerald green `#10b981`) | `zoro_panel_2.png` | `characters[1].secondaryPose` |
-| `F225 → F270` | `3.750s → 4.500s` | Impact Shake Climax | High-intensity impact shake (F225), golden aura burst, text pop at F270 | **Impact Beat Hit (F225)** | `"MONSTER TRIO"` (Gold `#fbbf24`, gold aura) | `trio_panel_1.png` | `climax.titleText` |
-| `F270 → F335` | `4.500s → 5.583s` | Climax Title Hold | Text pop hold, zoom punch `[scale: 1.0 → 1.15 → 1.0]`, background speed lines | **Strong Beat (F270)** | `"MONSTER TRIO 👑"` (Gold `#fbbf24`, stroke 4px) | `trio_panel_2.png` | `climax.titleHold` |
-| `F335 → F395` | `5.583s → 6.583s` | Multi-Panel Rush 1 | Rapid 15-frame cut sequence (F335, F350, F365, F380), white flash on each cut | **Rapid Cuts (F335, F350, F365)** | None | Rapid Trio Panels (Luffy/Zoro/Sanji) | `rapidClimaxPanels[0..3]` |
-| `F395 → F444` | `6.583s → 7.400s` | Multi-Panel Rush 2 | Rapid 15-frame cut sequence (F395, F410, F425), high-contrast speed lines | **Rapid Cuts (F395, F410, F425)** | None | Rapid Trio Panels (Luffy/Zoro/Sanji) | `rapidClimaxPanels[4..6]` |
-| `F444 → F525` | `7.400s → 8.824s` | Final Climax Victory Stance | Hard Cut (F444), final victory pose, max gold aura glow, black fade out (F520-F525) | **Final Climax Beat (F444)** | `"MONSTER TRIO 👑"` | Final Trio Stance (`trio_victory.png`) | `climax.victoryStance` |
+| Scene # | Frame Range | Timestamp Range | Duration | Phase / Segment | Visual / FX Details | Audio / Beat Event | Text / Typography Overlay | Image Asset / Character | Remotion Props Mapping |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `Scene 1` | `F000 → F043` | `0.000s → 0.717s` | `44f` | Intro Hook | Zoom Punch `[scale: 1.0 → 1.11 → 1.0]`, camera shake `[intensity: 0.92]`, radial sunburst | **Beat / Onset Hit (F00)** | `"KAGE"` (White/Purple glow logo) | Intro Sunburst Backdrop | `intro.logoText` |
+| `Scene 2` | `F044 → F059` | `0.733s → 0.983s` | `16f` | Brawler 1 Dark Strobe 1a | High-contrast dark radial strobe, purple aura tint | **Bass Impact Hit (F44)** | None | Dark Strobe Layer | `brawlers[0].darkGap` |
+| `Scene 3` | `F060 → F075` | `1.000s → 1.250s` | `16f` | Brawler 1 Dark Strobe 1b | High-contrast dark radial strobe, purple aura tint | Pre-Beat Build | None | Dark Strobe Layer | `brawlers[0].darkGap` |
+| `Scene 4` | `F076 → F138` | `1.267s → 2.300s` | `63f` | Brawler 1: Main Spotlight | Main Card Spotlight, purple particle burst (`#a855f7`), spring scale entrance | **Cut #2 / Beat Hit (F76)** | `"MORTIS"` (White, purple glow, stroke 3.5px) | `mortis_panel_1.png` | `brawlers[0]` |
+| `Scene 5` | `F139 → F170` | `2.317s → 2.833s` | `32f` | Brawler 1: Action Stance 2 | Secondary action pose cut, camera impact micro-shake | **Audio RMS Spike (F141)** | `"MORTIS"` | `mortis_panel_4.png` | `brawlers[0].secondaryPose` |
+| `Scene 6` | `F171 → F186` | `2.850s → 3.100s` | `16f` | Brawler 2 Dark Strobe 2a | High-contrast dark radial strobe, red aura tint | **Bass Impact Hit (F171)** | None | Dark Strobe Layer | `brawlers[1].darkGap` |
+| `Scene 7` | `F187 → F203` | `3.117s → 3.383s` | `17f` | Brawler 2 Dark Strobe 2b | High-contrast dark radial strobe, red aura tint | Pre-Beat Build | None | Dark Strobe Layer | `brawlers[1].darkGap` |
+| `Scene 8` | `F204 → F264` | `3.400s → 4.400s` | `61f` | Brawler 2: Main Spotlight | Main Card Spotlight, red particle burst (`#ef4444`), spring scale entrance | **Cut #4 / Beat Hit (F204)** | `"EDGAR"` (White, red glow, stroke 3.5px) | `edgar_panel_1.png` | `brawlers[1]` |
+| `Scene 9` | `F265 → F298` | `4.417s → 4.967s` | `34f` | Brawler 2: Action Stance 2 | Secondary action pose cut, red aura pulse | **Glitch Onset (F267)** | `"EDGAR"` | `edgar_panel_4.png` | `brawlers[1].secondaryPose` |
+| `Scene 10` | `F299 → F314` | `4.983s → 5.233s` | `16f` | Brawler 3 Dark Strobe 3a | High-contrast dark radial strobe, blue aura tint | **Bass Impact Hit (F299)** | None | Dark Strobe Layer | `brawlers[2].darkGap` |
+| `Scene 11` | `F315 → F331` | `5.250s → 5.517s` | `17f` | Brawler 3 Dark Strobe 3b | High-contrast dark radial strobe, blue aura tint | Pre-Beat Build | None | Dark Strobe Layer | `brawlers[2].darkGap` |
+| `Scene 12` | `F332 → F394` | `5.533s → 6.567s` | `63f` | Brawler 3: Main Spotlight | Main Card Spotlight, blue particle aura (`#3b82f6`), spring scale entrance | **Cut #6 / Beat Hit (F332)** | `"CROW"` (White, blue glow, stroke 3.5px) | `crow_panel_1.png` | `brawlers[2]` |
+| `Scene 13` | `F395 → F411` | `6.583s → 6.850s` | `17f` | Brawler 3: Action Stance 2a | Secondary action pose variant, blue particle aura | **Beat Hit (F395)** | `"CROW"` | `crow_panel_4.png` | `brawlers[2].secondaryPose` |
+| `Scene 14` | `F412 → F427` | `6.867s → 7.117s` | `16f` | Brawler 3: Action Stance 2b | Secondary action pose cut, speed lines motion | **Beat Hit (F412)** | `"CROW"` | `crow_panel_4.png` | `brawlers[2].secondaryPose` |
+| `Scene 15` | `F428 → F443` | `7.133s → 7.383s` | `16f` | Climax Transition | High-contrast speed lines, gold aura build-up | **Pre-Climax Beat (F428)** | None | Climax Transition Layer | `climax.transition` |
+| `Scene 16` | `F444 → F459` | `7.400s → 7.650s` | `16f` | Climax Rapid Cut 1 | Rapid 16-frame cut, gold text pop `"MONSTER TRIO 👑"`, white flash | **Climax Beat Hit #1 (F444)** | `"MONSTER TRIO 👑"` (Gold `#fbbf24`) | Rapid Panel 1 | `climax.rapidPanels[0]` |
+| `Scene 17` | `F460 → F474` | `7.667s → 7.900s` | `15f` | Climax Rapid Cut 2 | Rapid 15-frame cut, gold text pop, white flash transition | **Climax Beat Hit #2 (F460)** | `"MONSTER TRIO 👑"` | Rapid Panel 2 | `climax.rapidPanels[1]` |
+| `Scene 18` | `F475 → F490` | `7.916s → 8.167s` | `16f` | Climax Rapid Cut 3 | Rapid 16-frame cut, gold text pop, white flash transition | **Climax Beat Hit #3 (F475)** | `"MONSTER TRIO 👑"` | Rapid Panel 3 | `climax.rapidPanels[2]` |
+| `Scene 19` | `F491 → F524` | `8.183s → 8.733s` | `34f` | Final Victory Stance | Final victory pose, max gold crown aura glow, black flash out at F520 | **Final Climax Beat (F491)** | `"MONSTER TRIO 👑"` | Victory Stance Panel | `climax.victoryStance` |
 
 ---
 
@@ -51,10 +59,15 @@ export interface CharacterCardProps {
   name: string;
   text: string;
   image: string;
-  secondaryPose?: string;
+  secondaryPose: string;
+  voiceLine?: string;
   accentColor: string;
-  startFrame: number;
-  endFrame: number;
+  darkGapStartFrame: number;
+  darkGapEndFrame: number;
+  mainStartFrame: number;
+  mainEndFrame: number;
+  secondaryStartFrame: number;
+  secondaryEndFrame: number;
 }
 
 export interface MonsterTrioEditProps {
@@ -64,16 +77,19 @@ export interface MonsterTrioEditProps {
   height: number;
   audioTrack: string;
   intro: {
-    text: string;
+    logoText: string;
+    watermarkText: string;
     startFrame: number;
     endFrame: number;
   };
-  characters: CharacterCardProps[];
+  brawlers: CharacterCardProps[];
   climax: {
     titleText: string;
     accentColor: string;
-    trioPanels: string[];
+    rapidPanels: string[];
     victoryStance: string;
+    voiceLines?: string[];
+    rapidCutFrames: number[];
     startFrame: number;
     endFrame: number;
   };

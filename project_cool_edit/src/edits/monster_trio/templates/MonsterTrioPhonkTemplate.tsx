@@ -13,7 +13,7 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
       {/* Background Audio Phonk Track */}
       {props.audioTrack && <Audio src={props.audioTrack} />}
 
-      {/* Brawler Voice Lines */}
+      {/* Timestamped Brawler Voice Lines */}
       {brawlers[0]?.voiceLine && (
         <Sequence from={76}>
           <Audio src={brawlers[0].voiceLine} volume={0.85} />
@@ -38,31 +38,32 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
         </Sequence>
       )}
 
-      {/* Phase 1: Intro Hook & Title Entrance (F000 - F044) */}
+      {/* Scene 1: F000 - F043 (44f) -> Intro Hook */}
       <Sequence from={0} durationInFrames={44}>
-        <TrioIntroHook titleText={intro.titleText} subText={intro.subText} />
+        <TrioIntroHook logoText={intro.logoText} watermarkText={intro.watermarkText} />
       </Sequence>
 
-      {/* Phase 2 — Character 1 (Mortis): F044 - F171 */}
-      {/* F044 - F076: Dark Strobe Flash */}
+      {/* Scene 2 & 3: F044 - F075 (32f) -> Brawler 1 Dark Strobe Transition */}
       <Sequence from={44} durationInFrames={32}>
         <AbsoluteFill style={{ backgroundColor: "#04060a" }}>
           <div
             style={{
               position: "absolute",
               inset: 0,
-              background: "radial-gradient(circle, rgba(168,85,247,0.25) 0%, rgba(4,6,10,0.95) 75%)",
+              background: "radial-gradient(circle, rgba(168,85,247,0.3) 0%, rgba(4,6,10,0.95) 75%)",
             }}
           />
         </AbsoluteFill>
       </Sequence>
-      {/* F076 - F139: Main Card Spotlight */}
+
+      {/* Scene 4: F076 - F138 (63f) -> Brawler 1 Main Card (Mortis) */}
       {brawlers[0] && (
         <Sequence from={76} durationInFrames={63}>
           <TrioBrawlerCard brawler={brawlers[0]} startFrame={76} />
         </Sequence>
       )}
-      {/* F139 - F171: Secondary Action Stance */}
+
+      {/* Scene 5: F139 - F170 (32f) -> Brawler 1 Secondary Action Pose */}
       {brawlers[0]?.secondaryPose && (
         <Sequence from={139} durationInFrames={32}>
           <TrioBrawlerCard
@@ -72,55 +73,57 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
         </Sequence>
       )}
 
-      {/* Phase 2 — Character 2 (Edgar): F171 - F299 */}
-      {/* F171 - F204: Dark Strobe Flash */}
+      {/* Scene 6 & 7: F171 - F203 (33f) -> Brawler 2 Dark Strobe Transition */}
       <Sequence from={171} durationInFrames={33}>
         <AbsoluteFill style={{ backgroundColor: "#04060a" }}>
           <div
             style={{
               position: "absolute",
               inset: 0,
-              background: "radial-gradient(circle, rgba(239,68,68,0.25) 0%, rgba(4,6,10,0.95) 75%)",
+              background: "radial-gradient(circle, rgba(239,68,68,0.3) 0%, rgba(4,6,10,0.95) 75%)",
             }}
           />
         </AbsoluteFill>
       </Sequence>
-      {/* F204 - F267: Main Card Spotlight */}
+
+      {/* Scene 8: F204 - F264 (61f) -> Brawler 2 Main Card (Edgar) */}
       {brawlers[1] && (
-        <Sequence from={204} durationInFrames={63}>
+        <Sequence from={204} durationInFrames={61}>
           <TrioBrawlerCard brawler={brawlers[1]} startFrame={204} />
         </Sequence>
       )}
-      {/* F267 - F299: Secondary Action Stance */}
+
+      {/* Scene 9: F265 - F298 (34f) -> Brawler 2 Secondary Action Pose */}
       {brawlers[1]?.secondaryPose && (
-        <Sequence from={267} durationInFrames={32}>
+        <Sequence from={265} durationInFrames={34}>
           <TrioBrawlerCard
             brawler={{ ...brawlers[1], image: brawlers[1].secondaryPose }}
-            startFrame={267}
+            startFrame={265}
           />
         </Sequence>
       )}
 
-      {/* Phase 2 — Character 3 (Crow): F299 - F444 */}
-      {/* F299 - F332: Dark Strobe Flash */}
+      {/* Scene 10 & 11: F299 - F331 (33f) -> Brawler 3 Dark Strobe Transition */}
       <Sequence from={299} durationInFrames={33}>
         <AbsoluteFill style={{ backgroundColor: "#04060a" }}>
           <div
             style={{
               position: "absolute",
               inset: 0,
-              background: "radial-gradient(circle, rgba(59,130,246,0.25) 0%, rgba(4,6,10,0.95) 75%)",
+              background: "radial-gradient(circle, rgba(59,130,246,0.3) 0%, rgba(4,6,10,0.95) 75%)",
             }}
           />
         </AbsoluteFill>
       </Sequence>
-      {/* F332 - F412: Main Card Spotlight */}
+
+      {/* Scene 12 & 13: F332 - F411 (80f) -> Brawler 3 Main Card (Crow) */}
       {brawlers[2] && (
         <Sequence from={332} durationInFrames={80}>
           <TrioBrawlerCard brawler={brawlers[2]} startFrame={332} />
         </Sequence>
       )}
-      {/* F412 - F444: Secondary Action Stance */}
+
+      {/* Scene 14 & 15: F412 - F443 (32f) -> Brawler 3 Secondary Action Pose */}
       {brawlers[2]?.secondaryPose && (
         <Sequence from={412} durationInFrames={32}>
           <TrioBrawlerCard
@@ -130,7 +133,7 @@ export const MonsterTrioPhonkTemplate: React.FC<MonsterTrioEditProps> = (props) 
         </Sequence>
       )}
 
-      {/* Phase 3 & 4: Climax 15-Frame Rapid Cuts & Victory Stance (F444 - F525) */}
+      {/* Scene 16, 17, 18, 19: F444 - F524 (81f) -> Climax 15-Frame Rapid Cuts & Victory Stance */}
       <Sequence from={444} durationInFrames={81}>
         <TrioClimaxFinale
           titleText={climax.titleText}
