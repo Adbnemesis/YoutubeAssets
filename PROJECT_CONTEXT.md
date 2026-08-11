@@ -21,6 +21,7 @@ Agent reads pipeline manifest (YAML) → reads stage director skill (MD)
 ## Source of Truth
 
 - **Agent guide & contract:** `AGENT_GUIDE.md` (tool inventory, pipeline selection, stage agents, protocols)
+- **Video Analysis Source of Truth:** Frame-by-frame data from `project_video_analyze/` (`edit_analysis.json`). Never guess timing.
 - **Skill index:** `skills/INDEX.md`
 - **Tool registry:** `tools/tool_registry.py`
 - **Pipeline manifests:** `pipeline_defs/`

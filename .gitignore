@@ -24,6 +24,7 @@ htmlcov/
 output/
 pipeline/
 tests/qa/output/
+analysis/
 
 # Project workspaces (track configuration, scripts, references, and metadata; ignore large media)
 projects/**/*.mp4

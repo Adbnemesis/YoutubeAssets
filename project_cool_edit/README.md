@@ -35,14 +35,29 @@ npm run build
 
 - **`src/`**: Contains all React and Remotion code.
   - `index.tsx`: The main entrypoint that registers the root composition.
-  - `Root.tsx`: Defines the `PhonkPrototype` composition and its props (including exact sync timings, colors, and cuts).
-  - `templates/`: Contains the modular components (`MasterPhonkTemplate`, `DynamicGridReveal`, `DynamicPhonkClip`, etc.) that make up the video.
-- **`public/`**: Contains static assets like `extracted_audio.wav` that are bundled directly into the video.
-- **`assets/`**: Contains source video references and working assets (like the original `cool_edit.mp4` reference video).
-- **`docs/`**: Documentation and analysis notes (e.g., `brawl_stars_edit_blueprint.md`).
+  - `Root.tsx`: Aggregates every edit type's compositions into the Remotion root.
+  - `edits/`: One folder per **edit type** (each can have its own templates & compositions).
+    - `edits/brawl_forms/`: The "cool_edit.mp4" style phonk edit family (`PhonkPrototype`, `MangaPhonkEdit`, `MidnightTrio`).
+      - `templates/`: The modular components (`MasterPhonkTemplate`, `DynamicGridReveal`, `DynamicPhonkClip`, etc.) that make up the edit.
+      - `props.ts`: The default props (timings, colors, asset paths) for each composition in this edit type.
+      - `index.tsx`: Registers this edit type's `<Composition>`s.
+      - `docs/`: Blueprint + plan docs specific to this edit type.
+      - `reference/`: The reference video (`cool_edit.mp4`) this edit replicates.
+      - `data/`: Beat/timing data (`beats.json`) for this edit.
+  - `legacy/`: Old prototype components no longer used by any composition.
+- **`public/`**: The public dir is remapped to `assets/` in `remotion.config.ts`, so all asset paths in the code are relative to `assets/`. **`assets/` is shared across every edit type**.
+- **`assets/`**: The shared asset pool (brawler sheets, extracted panels, emotes, VO, SFX, audio). Used by every edit type.
+- **`docs/`**: Index of per-edit-type documentation.
 - **`out/`**: The destination folder where the rendered `.mp4` files are saved.
 
-## 🛠️ Modifying the Edit
-If you want to change the timing of the drops, the colors, or the slide offset gaps, you can do so directly in `src/Root.tsx` inside the `defaultProps` passed to the `Composition`.
+## ➕ Adding a New Edit Type
 
-The slide-in animations (Left, Top, Bottom, Right) for the 4-panel grid are handled inside `src/templates/DynamicGridReveal.tsx`.
+1. Create `src/edits/<edit-name>/` with its own `templates/`, `props.ts`, `index.tsx`, `docs/`, `reference/`, and `data/` (copy the pattern from `src/edits/brawl_forms/`).
+2. Register the new edit's compositions in `src/Root.tsx`.
+3. Document it in `docs/README.md`.
+4. All assets resolve relative to the shared `assets/` folder — no duplication needed.
+
+## 🛠️ Modifying the Edit
+If you want to change the timing of the drops, the colors, or the slide offset gaps, you can do so in each edit type's `props.ts` (see `src/edits/brawl_forms/props.ts` for the phonk edit family).
+
+The slide-in animations (Left, Top, Bottom, Right) for the 4-panel grid are handled inside `src/edits/brawl_forms/templates/DynamicGridReveal.tsx`.

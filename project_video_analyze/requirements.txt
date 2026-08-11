@@ -1,0 +1,16 @@
+# Requirements for Professional Local Video Edit Analyzer
+scenedetect[opencv]>=0.7.1
+librosa>=0.11.0
+opencv-python>=4.8.0
+faster-whisper>=1.0.0
+easyocr>=1.7.0
+pytesseract>=0.3.10
+torch>=2.0.0
+torchaudio>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+pillow>=10.0.0
+matplotlib>=3.7.0
+numpy>=1.24.0
+scipy>=1.10.0
+tqdm>=4.65.0

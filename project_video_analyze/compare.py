@@ -1,0 +1,120 @@
+import sys
+import os
+import argparse
+import json
+
+# Ensure project directory is in python path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
+
+from project_video_analyze.cli import run_analysis
+
+def compare_videos(reference_path: str, rendered_path: str):
+    print("\n==========================================")
+    print(" REFERENCE VS OUTPUT COMPARATOR")
+    print(f" Reference: {reference_path}")
+    print(f" Rendered:  {rendered_path}")
+    print("==========================================\n")
+
+    # Run or load analysis for reference
+    ref_name = os.path.splitext(os.path.basename(reference_path))[0]
+    ref_dir = os.path.join(parent_dir, "analysis", ref_name)
+    ref_json_path = os.path.join(ref_dir, "edit_analysis.json")
+    if not os.path.exists(ref_json_path):
+        print("[Comparator] Running analysis on reference video...")
+        run_analysis(reference_path, ref_dir)
+
+    with open(ref_json_path, 'r', encoding='utf-8') as f:
+        ref_analysis = json.load(f)
+
+    # Run or load analysis for rendered
+    rnd_name = os.path.splitext(os.path.basename(rendered_path))[0]
+    rnd_dir = os.path.join(parent_dir, "analysis", rnd_name)
+    rnd_json_path = os.path.join(rnd_dir, "edit_analysis.json")
+    if not os.path.exists(rnd_json_path):
+        print("[Comparator] Running analysis on rendered video...")
+        run_analysis(rendered_path, rnd_dir)
+
+    with open(rnd_json_path, 'r', encoding='utf-8') as f:
+        rnd_analysis = json.load(f)
+
+    ref_meta = ref_analysis.get("metadata", {})
+    rnd_meta = rnd_analysis.get("metadata", {})
+
+    print("------------------------------------------")
+    print(" 1. METADATA COMPARISON")
+    print("------------------------------------------")
+    print(f" FPS:         Ref={ref_meta.get('fps')} | Rnd={rnd_meta.get('fps')}")
+    print(f" Duration:    Ref={ref_meta.get('durationSeconds')}s | Rnd={rnd_meta.get('durationSeconds')}s")
+    dur_diff = round(rnd_meta.get('durationSeconds', 0) - ref_meta.get('durationSeconds', 0), 3)
+    print(f" Duration Delta: {dur_diff:+} seconds\n")
+
+    print("------------------------------------------")
+    print(" 2. CUT TIMING COMPARISON")
+    print("------------------------------------------")
+    ref_cuts = ref_analysis.get("cuts", [])
+    rnd_cuts = rnd_analysis.get("cuts", [])
+    
+    print(f" Cuts Count: Ref={len(ref_cuts)} | Rnd={len(rnd_cuts)}")
+    for idx, ref_cut in enumerate(ref_cuts):
+        ref_f = ref_cut["startFrame"]
+        if idx < len(rnd_cuts):
+            rnd_f = rnd_cuts[idx]["startFrame"]
+            diff = rnd_f - ref_f
+            status = "MATCH" if diff == 0 else f"ERROR: {diff:+} frames"
+            print(f" Cut #{idx+1}")
+            print(f"   Reference: frame {ref_f}")
+            print(f"   Output:    frame {rnd_f}")
+            print(f"   Status:    {status}")
+        else:
+            print(f" Cut #{idx+1}: Missing in output (Ref frame {ref_f})")
+    print("")
+
+    print("------------------------------------------")
+    print(" 3. BEAT ALIGNMENT COMPARISON")
+    print("------------------------------------------")
+    ref_beats = ref_analysis.get("strongBeats", [])[:10]
+    rnd_beats = rnd_analysis.get("strongBeats", [])[:10]
+    for idx, ref_b in enumerate(ref_beats):
+        ref_f = ref_b["frame"]
+        if idx < len(rnd_beats):
+            rnd_f = rnd_beats[idx]["frame"]
+            diff = rnd_f - ref_f
+            status = "MATCH" if diff == 0 else f"ERROR: {diff:+} frames"
+            print(f" Beat #{idx+1}")
+            print(f"   Reference: frame {ref_f}")
+            print(f"   Output:    frame {rnd_f}")
+            print(f"   Status:    {status}")
+    print("")
+
+    print("------------------------------------------")
+    print(" 4. ZOOM TIMING COMPARISON")
+    print("------------------------------------------")
+    ref_zooms = ref_analysis.get("zooms", [])
+    rnd_zooms = rnd_analysis.get("zooms", [])
+    for idx, ref_z in enumerate(ref_zooms):
+        ref_sf, ref_ef = ref_z["startFrame"], ref_z["endFrame"]
+        if idx < len(rnd_zooms):
+            rnd_sf, rnd_ef = rnd_zooms[idx]["startFrame"], rnd_zooms[idx]["endFrame"]
+            s_diff = rnd_sf - ref_sf
+            e_diff = rnd_ef - ref_ef
+            print(f" Zoom #{idx+1}")
+            print(f"   Reference: {ref_sf} → {ref_ef}")
+            print(f"   Output:    {rnd_sf} → {rnd_ef}")
+            print(f"   START ERROR: {s_diff:+} frames | END ERROR: {e_diff:+} frames")
+        else:
+            print(f" Zoom #{idx+1}: Missing in output ({ref_sf} → {ref_ef})")
+    print("==========================================\n")
+
+def main():
+    parser = argparse.ArgumentParser(description="Reference vs Output Video Comparator")
+    parser.add_argument("reference_video", type=str, help="Path to reference .mp4")
+    parser.add_argument("rendered_video", type=str, help="Path to rendered Remotion .mp4")
+    args = parser.parse_args()
+
+    compare_videos(args.reference_video, args.rendered_video)
+
+if __name__ == "__main__":
+    main()
