@@ -1,6 +1,7 @@
 import React from "react";
 import { useCurrentFrame, interpolate, spring, Img } from "remotion";
 import { BrawlerContender } from "../props";
+import { ParticleOverlay } from "./ParticleOverlay";
 
 interface BestCharCardProps {
   contender: BrawlerContender;
@@ -11,36 +12,40 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
   const cardDuration = contender.endFrame - contender.startFrame;
 
   // 1. Entrance White/RGB Flash (Frames 0-3)
-  const flashOpacity = interpolate(frame, [0, 2, 6], [0.85, 0.4, 0.0], {
+  const flashOpacity = interpolate(frame, [0, 2, 5], [0.9, 0.4, 0.0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // 2. Animated Speed Lines Position
-  const bgPos = (frame * 12) % 100;
+  // 2. Chromatic Glitch RGB Shift (Frames 0-4)
+  const isGlitchFrame = frame < 4;
+  const glitchOffsetX = isGlitchFrame ? (frame % 2 === 0 ? 8 : -8) : 0;
 
-  // 3. Pulsating Radial Light Glow Scale
-  const auraScale = 1.0 + Math.sin(frame * 0.25) * 0.08;
+  // 3. Moving Manga Speed Lines
+  const bgPos = (frame * 16) % 100;
 
-  // 4. Subtle Floating Artwork Motion
-  const floatY = Math.sin(frame * 0.18) * 12;
+  // 4. Pulsating Radial Light Glow Scale
+  const auraScale = 1.0 + Math.sin(frame * 0.3) * 0.12;
 
-  // 5. Scale Zoom & Spring Entry
-  const scale = interpolate(frame, [0, 5, cardDuration], [0.92, 1.06, 1.15], {
+  // 5. Subtle Floating Artwork Motion
+  const floatY = Math.sin(frame * 0.2) * 14;
+
+  // 6. Scale Zoom & Spring Entry
+  const scale = interpolate(frame, [0, 5, cardDuration], [0.90, 1.06, 1.18], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  // 6. Text Pop Spring Animation
+  // 7. Text Pop Spring Animation
   const textScale = spring({
-    frame: Math.max(0, frame - 3),
+    frame: Math.max(0, frame - 2),
     fps: 30,
-    config: { damping: 11, stiffness: 220 },
+    config: { damping: 10, stiffness: 240 },
   });
 
-  // 7. Impact Camera Shake (Frames 0-7)
-  const shakeX = frame < 8 ? Math.sin(frame * 2.8) * (8 - frame) * 3.5 : 0;
-  const shakeY = frame < 8 ? Math.cos(frame * 2.8) * (8 - frame) * 3.5 : 0;
+  // 8. Impact Camera Shake (Frames 0-8)
+  const shakeX = frame < 8 ? Math.sin(frame * 3.0) * (8 - frame) * 4.0 : 0;
+  const shakeY = frame < 8 ? Math.cos(frame * 3.0) * (8 - frame) * 4.0 : 0;
 
   return (
     <div
@@ -48,7 +53,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         flex: 1,
         width: "100%",
         height: "100%",
-        backgroundColor: "#05070c",
+        backgroundColor: "#04050a",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -62,15 +67,15 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
       <div
         style={{
           position: "absolute",
-          width: 850,
-          height: 850,
+          width: 880,
+          height: 880,
           borderRadius: "50%",
-          background: `radial-gradient(circle, ${contender.accentColor} 0%, transparent 70%)`,
-          opacity: 0.45,
+          background: `radial-gradient(circle, ${contender.accentColor} 0%, transparent 72%)`,
+          opacity: 0.55,
           top: "50%",
           left: "50%",
           transform: `translate(-50%, -50%) scale(${auraScale})`,
-          filter: "blur(65px)",
+          filter: "blur(70px)",
         }}
       />
 
@@ -80,10 +85,13 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
           position: "absolute",
           inset: 0,
           backgroundImage:
-            "repeating-linear-gradient(45deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 3px, transparent 3px, transparent 16px)",
+            "repeating-linear-gradient(45deg, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.08) 4px, transparent 4px, transparent 18px)",
           backgroundPosition: `${bgPos}px ${bgPos}px`,
         }}
       />
+
+      {/* Ambient Floating Glow Particles */}
+      <ParticleOverlay color={contender.accentColor} count={22} />
 
       {/* Entrance Flash Burst */}
       <div
@@ -97,26 +105,59 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         }}
       />
 
-      {/* Main Character Artwork Container with Float Motion */}
+      {/* Main Character Artwork Container with Chromatic Glitch Offset */}
       <div
         style={{
-          width: "88%",
-          height: "62%",
+          width: "90%",
+          height: "64%",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           transform: `scale(${scale}) translateY(${floatY}px)`,
           position: "relative",
-          zIndex: 2,
+          zIndex: 5,
         }}
       >
+        {/* Cyan Chromatic Glitch Layer */}
+        {isGlitchFrame && (
+          <Img
+            src={contender.image}
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              transform: `translateX(${-glitchOffsetX}px)`,
+              opacity: 0.7,
+              filter: "drop-shadow(0 0 20px #06b6d4)",
+            }}
+          />
+        )}
+
+        {/* Red Chromatic Glitch Layer */}
+        {isGlitchFrame && (
+          <Img
+            src={contender.image}
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              objectFit: "contain",
+              transform: `translateX(${glitchOffsetX}px)`,
+              opacity: 0.7,
+              filter: "drop-shadow(0 0 20px #ef4444)",
+            }}
+          />
+        )}
+
+        {/* Primary Artwork */}
         <Img
           src={contender.image}
           style={{
             width: "100%",
             height: "100%",
             objectFit: "contain",
-            filter: `drop-shadow(0 25px 50px ${contender.accentColor}dd)`,
+            filter: `drop-shadow(0 30px 60px ${contender.accentColor}ff)`,
           }}
         />
       </div>
@@ -125,22 +166,24 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
       <div
         style={{
           position: "absolute",
-          bottom: 120,
-          zIndex: 10,
+          bottom: 110,
+          zIndex: 15,
           transform: `scale(${textScale})`,
+          textAlign: "center",
         }}
       >
         <h2
           style={{
             fontFamily: "'Outfit', 'Impact', sans-serif",
-            fontSize: 82,
+            fontSize: 88,
             fontWeight: 900,
             color: "#ffffff",
             textTransform: "uppercase",
-            letterSpacing: 4,
-            textShadow: `0 0 25px ${contender.accentColor}, 0 0 50px ${contender.accentColor}, 0 0 75px #000000`,
-            WebkitTextStroke: "3px #000000",
+            letterSpacing: 5,
+            textShadow: `0 0 30px ${contender.accentColor}, 0 0 60px ${contender.accentColor}, 0 0 90px #000000, 0 0 120px #000000`,
+            WebkitTextStroke: "3.5px #000000",
             margin: 0,
+            lineHeight: 1,
           }}
         >
           {contender.questionText}

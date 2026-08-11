@@ -10,19 +10,24 @@ class ContactSheetGenerator:
         self.total_frames = total_frames
         self.output_dir = output_dir
 
-    def generate(self, grid_cols: int = 5, num_samples: int = 25) -> str:
+    def generate(self, grid_cols: int = 10, num_samples: int = None) -> str:
         """
-        Generates a master contact sheet grid overview (contact_sheet.jpg) with burnt-in timestamps & frame numbers.
+        Generates a high-density master contact sheet grid overview (contact_sheet.jpg)
+        sampling every ~0.1s (every 3 frames) with burnt-in timestamps & frame numbers.
         """
         cap = cv2.VideoCapture(self.video_path)
         if not cap.isOpened():
             return ""
 
+        if num_samples is None:
+            # Sample every 3 frames (~0.1s) for high resolution forensics
+            num_samples = max(60, self.total_frames // 3)
+
         step = max(1, self.total_frames // num_samples)
         sample_indices = list(range(0, self.total_frames, step))[:num_samples]
 
         thumbs = []
-        thumb_w, thumb_h = 240, 360
+        thumb_w, thumb_h = 160, 240 # Compact high-density grid tiles
 
         for frame_num in sample_indices:
             cap.set(cv2.CAP_PROP_POS_FRAMES, frame_num)
@@ -35,11 +40,11 @@ class ContactSheetGenerator:
             timestamp_sec = frame_num / self.fps
             mins = int(timestamp_sec // 60)
             secs = timestamp_sec % 60
-            time_str = f"{mins:02d}:{secs:06.3f} | F{frame_num}"
+            time_str = f"{mins:02d}:{secs:05.2f}|F{frame_num}"
 
             # Draw dark banner for text readability
-            cv2.rectangle(img, (0, thumb_h - 35), (thumb_w, thumb_h), (0, 0, 0), -1)
-            cv2.putText(img, time_str, (8, thumb_h - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 255, 255), 1, cv2.LINE_AA)
+            cv2.rectangle(img, (0, thumb_h - 26), (thumb_w, thumb_h), (0, 0, 0), -1)
+            cv2.putText(img, time_str, (4, thumb_h - 8), cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 255, 255), 1, cv2.LINE_AA)
 
             thumbs.append(img)
 
