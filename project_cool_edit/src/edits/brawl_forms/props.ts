@@ -207,7 +207,7 @@ export const superheroTrioProps = {
   audioSrc: staticFile("audio/extracted_audio.wav"),
   introForms: [
     { 
-      iconSrc: "images/spray_crossx.png", auraColor: "#facc15", startTime: 0, endTime: 3.60,
+      iconSrc: "expressions/surge/surge_happy_pin.png", auraColor: "#ef4444", startTime: 0, endTime: 3.60,
       panels: [
         { quadrant: 1, startOffsetSeconds: 0.1, color: "#fef08a", imageSrc: "images/surge/surge_panel_1.png" },
         { quadrant: 2, startOffsetSeconds: 1.45, color: "#fde047", imageSrc: "images/max/max_panel_1.png" },
@@ -216,7 +216,7 @@ export const superheroTrioProps = {
       ]
     },
     { 
-      iconSrc: "expressions/shelly/angry.png", auraColor: "#ef4444", startTime: 3.60, endTime: 5.95,
+      iconSrc: "expressions/surge/surge_paladin_sad_pin.png", auraColor: "#ef4444", startTime: 3.60, endTime: 5.95, sfxSrc: "brawler_voices/surge_atk_vo_04.ogg",
       panels: [
         { quadrant: 4, startOffsetSeconds: 0.1, color: "#991b1b", imageSrc: "images/surge/surge_panel_4.png" },
         { quadrant: 1, startOffsetSeconds: 0.8, color: "#b91c1c", imageSrc: "images/surge/surge_panel_5.png" },
@@ -225,7 +225,7 @@ export const superheroTrioProps = {
       ]
     },
     { 
-      iconSrc: "expressions/melodie/happy.png", auraColor: "#eab308", startTime: 5.95, endTime: 8.33,
+      iconSrc: "expressions/max/max_angry_pin.png", auraColor: "#eab308", startTime: 5.95, endTime: 8.33, sfxSrc: "brawler_voices/max_lead_vo_02.ogg",
       panels: [
         { quadrant: 2, startOffsetSeconds: 0.05, color: "#854d0e", imageSrc: "images/max/max_panel_3.png" },
         { quadrant: 3, startOffsetSeconds: 0.85, color: "#a16207", imageSrc: "images/max/max_panel_4.png" },
@@ -234,7 +234,7 @@ export const superheroTrioProps = {
       ]
     },
     { 
-      iconSrc: "expressions/frank/shocked.png", auraColor: "#a855f7", startTime: 8.33, endTime: 11.083,
+      iconSrc: "expressions/meg/meg_thanks_pin.png", auraColor: "#a855f7", startTime: 8.33, endTime: 11.083, sfxSrc: "brawler_voices/meg_lead_vo_01.ogg",
       panels: [
         { quadrant: 1, startOffsetSeconds: 0.07, color: "#581c87", imageSrc: "images/meg/meg_panel_3.png" },
         { quadrant: 4, startOffsetSeconds: 0.87, color: "#7e22ce", imageSrc: "images/meg/meg_panel_4.png" },
@@ -245,25 +245,25 @@ export const superheroTrioProps = {
   ],
   dropClips: [
     // SURGE
+    { src: "brawler_gifs/surge_win.gif", isSilhouette: true, silhouetteColor: "#ef4444" },
+    { src: "brawler_gifs/surge_win.gif", isSilhouette: false, videoStartFrame: 0 },
     { src: "images/surge/surge_panel_8.png", isSilhouette: false },
     { src: "images/surge/surge_panel_9.png", isSilhouette: false },
     { src: "images/surge/surge_panel_10.png", isSilhouette: false },
-    { src: "images/surge/surge_panel_11.png", isSilhouette: false },
-    { src: "images/surge/surge_panel_12.png", isSilhouette: false },
     
     // MAX
+    { src: "brawler_gifs/max_win.gif", isSilhouette: true, silhouetteColor: "#eab308" },
+    { src: "brawler_gifs/max_win.gif", isSilhouette: false, videoStartFrame: 0 },
     { src: "images/max/max_panel_8.png", isSilhouette: false },
     { src: "images/max/max_panel_9.png", isSilhouette: false },
     { src: "images/max/max_panel_10.png", isSilhouette: false },
-    { src: "images/max/max_panel_11.png", isSilhouette: false },
-    { src: "images/max/max_panel_12.png", isSilhouette: false },
     
     // MEG
+    { src: "brawler_gifs/meg_win.gif", isSilhouette: true, silhouetteColor: "#a855f7" },
+    { src: "brawler_gifs/meg_win.gif", isSilhouette: false, videoStartFrame: 0 },
     { src: "images/meg/meg_panel_8.png", isSilhouette: false },
     { src: "images/meg/meg_panel_9.png", isSilhouette: false },
     { src: "images/meg/meg_panel_10.png", isSilhouette: false },
-    { src: "images/meg/meg_panel_11.png", isSilhouette: false },
-    { src: "images/meg/meg_panel_12.png", isSilhouette: false },
     
     // Final Impact
     { src: "images/surge/surge_panel_13.png", isSilhouette: false },
