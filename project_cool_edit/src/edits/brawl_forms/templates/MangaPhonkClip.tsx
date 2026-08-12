@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Img, Video, staticFile } from "remotion";
-import { GifFrames } from "../../monster_trio/templates/GifFrames";
+import { GifFrames } from "../../../legacy/GifFrames";
 
 interface BrawlerGifMetadata {
   base: string;
