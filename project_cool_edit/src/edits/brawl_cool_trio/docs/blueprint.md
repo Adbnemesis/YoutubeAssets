@@ -175,12 +175,36 @@ Shared assets (via `assets/` public dir):
 
 > [!WARNING]
 > **The extracted `trio_edit.wav` contains the anime characters' voices baked into the mix (~54% voice-band content). Do NOT use it as the final audio track.** It exists only so we can measure the exact cut/onset timestamps against the video. For the Brawl Stars render:
-> - **Music/BGM:** play the phonk track directly (e.g. `sound_effects/ranking_1_phonk_bgm.mp3`) synced to the same timeline — no anime voices.
+> - **Music/BGM:** use the reference edit's own music — `src/edits/brawl_cool_trio/data/trio_edit.wav` with the anime vocals stripped via demucs (`--two-stems=vocals`, take the `no_vocals.wav` stem). That IS the base for the brawl edit — same timeline, same cuts, no anime voices. `assets/audio/sample_audio.wav` is the prior baked example of this exact process (Kenji/Edgar/Mortis VO mixed into the same base).
 > - **Voices:** use each brawler's own VO from `assets/brawler_voices/<brawler>/<file>.ogg` (e.g. `crow/attack.ogg`, `leon/leon_ulti_vo_01.ogg`, `tara/tara_kill_vo_04.ogg`) layered at the same spots the anime VO energy appears (check the voice-band chart in the analysis).
 > - **SFX:** layer `sound_effects/*` hits on the cuts as in `brawl_forms`.
 
 > [!NOTE]
-> **`sample_audio.wav`** is the reference edit's own music (anime vocals stripped via demucs) with Edgar/Mortis/Kenji VO layered at the decided placements (~7.5s / ~9.5s / ~11.5s, no intro VO) — demonstrating what the brawl audio should sound like. The Remotion template should still layer the music, per-form `sfxSrc` VO, and SFX separately (like `brawl_forms`) so volumes are tweakable live.
+> **`sample_audio.wav` is a baked, render-ready mix** — the reference edit's music (anime vocals stripped via demucs) with **Edgar/Mortis/Kenji VO mixed in** at the exact placements (7.40s / 9.30s / 11.74s, no intro VO). This is the established pattern: **each trio gets its own dedicated mixed audio file** that has the BGM + the three brawlers' VO baked in, referenced once via `audioSrc`. The Remotion template does **not** layer VO per-card.
+
+### 🎛️ Audio Mixing Process (per new trio)
+1. **Base = the reference edit's music** — `src/edits/brawl_cool_trio/data/trio_edit.wav` (this is the correct base, NOT any `sound_effects/*` track). Strip the anime vocals via demucs first: `demucs --two-stems=vocals` and use the `no_vocals.wav` stem.
+2. **Place exactly 3 brawler VO lines** at the strict timestamps below (see IMPORTANT note), one per silhouette→reveal section.
+3. **Mix & bake** into a new wav in `assets/audio/` (referenced via `staticFile("audio/<name>_audio.wav")`), e.g. `assets/audio/tara_leon_crow_audio.wav`.
+4. **Levels** (match `sample_audio.wav`'s mix): keep VO at roughly the music level — music mean ≈ −8 dB, VO windows peaking to 0 dB. VO gain ≈ 0.5–0.7 relative to the BGM, then a final limiter to avoid clipping.
+
+Example ffmpeg mix (Tara/Leon/Crow on the demucs-stripped `trio_edit.wav` base, VO at 7.40s / 9.30s / 11.74s):
+```bash
+# 1) Strip anime vocals from the base once (trio_edit.wav -> no_vocals.wav):
+demucs --two-stems=vocals -o /tmp/demucs_out project_cool_edit/src/edits/brawl_cool_trio/data/trio_edit.wav
+
+# 2) Mix the clean music base + the 3 brawler VO lines into the baked wav:
+ffmpeg -y -i /tmp/demucs_out/htdemucs/trio_edit/no_vocals.wav \
+  -i brawler_voices/tara/tara_kill_vo_04.ogg \
+  -i brawler_voices/leon/leon_ulti_vo_01.ogg \
+  -i brawler_voices/crow/super.ogg \
+  -filter_complex "[0:a]aformat=sample_rates=44100:channel_layouts=stereo,volume=1.23[bgm];\
+[1:a]aformat=sample_rates=44100:channel_layouts=stereo,adelay=7400:all=1,volume=1.78[tara];\
+[2:a]aformat=sample_rates=44100:channel_layouts=stereo,adelay=9300:all=1,volume=1.58[leon];\
+[3:a]aformat=sample_rates=44100:channel_layouts=stereo,adelay=11740:all=1,volume=3.16[crow];\
+[bgm][tara][leon][crow]amix=inputs=4:duration=longest:normalize=0,alimiter=limit=0.95,atrim=0:14.48[a]" \
+  -map "[a]" -c:a pcm_s16le audio/tara_leon_crow_audio.wav
+```
 
 ### 🎙️ Where the Anime VO Appeared (→ place Brawler VO here)
 Voice-band analysis of `trio_edit.wav` (300–3000 Hz energy ratio). The dense voice windows map to the reference's dialogue/grunt moments — these are where brawler VO should land:

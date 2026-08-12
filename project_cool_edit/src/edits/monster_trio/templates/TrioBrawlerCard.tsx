@@ -1,6 +1,8 @@
 import React from "react";
-import { AbsoluteFill, Img, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Easing, Img, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { BrawlerCardProps } from "../props";
+import { PhonkBackdrop } from "./PhonkBackdrop";
+import { GifFrames } from "./GifFrames";
 
 interface TrioBrawlerCardProps {
   brawler: BrawlerCardProps;
@@ -16,52 +18,121 @@ const PHONK_FONTS = [
   "sans-serif",
 ];
 
+const CharacterCenter: React.FC<{ src: string; accentColor: string; heightPct: string }> = ({
+  src,
+  accentColor,
+  heightPct,
+}) => (
+  <div
+    style={{
+      width: "100%",
+      height: "100%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    }}
+  >
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Img
+        src={src}
+        style={{
+          height: heightPct,
+          width: "auto",
+          objectFit: "contain",
+          filter: `drop-shadow(0 0 45px ${accentColor}) drop-shadow(0 0 110px ${accentColor}66)`,
+        }}
+      />
+    </div>
+  </div>
+);
+
 export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Mode 1: Image Shake Entrance
+  // Mode 1: Image Shake Entrance (with full background artwork)
   if (mode === "image_shake") {
-    const scale = interpolate(frame, [0, 9, 20], [1.0, 1.14, 1.0], {
+    const entrance = brawler.entrance ?? "rise";
+
+    // First character (Luffy-style): slams up from the bottom with a violent shake
+    if (entrance === "rise") {
+      const slideY = interpolate(frame, [0, 13], [100, 0], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+        easing: Easing.out(Easing.cubic),
+      });
+      const shaking = frame < 26;
+      const shakeX = shaking ? Math.sin(frame * 5.5) * 32 + Math.sin(frame * 11.3) * 7 : 0;
+      const shakeY = shaking ? Math.cos(frame * 5.1) * 27 + Math.cos(frame * 9.7) * 5 : 0;
+      const shakeRot = shaking ? Math.sin(frame * 7.3) * 1.6 : 0;
+      const scale = interpolate(frame, [0, 10, 24], [1.0, 1.16, 1.0], {
+        extrapolateLeft: "clamp",
+        extrapolateRight: "clamp",
+      });
+
+      return (
+        <AbsoluteFill style={{ transform: `translateY(${slideY}%)` }}>
+          <AbsoluteFill
+            style={{
+              transform: `translate(${shakeX}px, ${shakeY}px) scale(${scale}) rotate(${shakeRot}deg)`,
+            }}
+          >
+            <PhonkBackdrop
+              backgroundImage={brawler.backgroundImage}
+              accentColor={brawler.accentColor}
+              boost={brawler.backgroundBoost ?? 1.35}
+            >
+              <CharacterCenter src={brawler.image} accentColor={brawler.accentColor} heightPct="82%" />
+            </PhonkBackdrop>
+          </AbsoluteFill>
+        </AbsoluteFill>
+      );
+    }
+
+    // Second/third characters — reference overlap: the new character + background
+    // GROWS from the bottom-center over the previous character + background (which stays
+    // visible around it for ~20f like the reference). Growth is slowed so the overlap
+    // transition is clearly visible to the naked eye.
+    const growScale = interpolate(frame, [0, 34], [0.55, 1.0], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+      easing: Easing.out(Easing.cubic),
+    });
+    const fade = interpolate(frame, [0, 26], [0.4, 1.0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
-    const shakeX = frame < 14 ? Math.sin(frame * 4.2) * 16 : 0;
-    const shakeY = frame < 14 ? Math.cos(frame * 4.2) * 12 : 0;
+
+    // Damped vertical shake matching the reference's slam: starts after the grow has
+    // visibly begun, slower and longer so the settle into place reads clearly.
+    const shakeT = frame - 10;
+    const shakeY = shakeT >= 0 ? Math.sin(shakeT * 0.55 + 0.3) * 22 * Math.exp(-shakeT / 18) : 0;
+    const shakeRot = shakeT >= 0 ? Math.sin(shakeT * 0.4) * 1.0 * Math.exp(-shakeT / 20) : 0;
 
     return (
-      <AbsoluteFill
-        style={{
-          backgroundColor: "#090d16",
-          transform: `translate(${shakeX}px, ${shakeY}px) scale(${scale})`,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        {/* Sunburst & Radial Aura Backdrop */}
-        <div
+      <AbsoluteFill style={{ opacity: fade }}>
+        <AbsoluteFill
           style={{
-            position: "absolute",
-            width: "140%",
-            height: "140%",
-            background: `radial-gradient(circle, ${brawler.accentColor}66 0%, rgba(9,13,22,0.95) 75%)`,
-            transform: `rotate(${frame * 0.6}deg)`,
+            transform: `translateY(${shakeY}px) scale(${growScale}) rotate(${shakeRot}deg)`,
+            transformOrigin: "center bottom",
           }}
-        />
-
-        {/* Character Artwork 1 */}
-        <div style={{ width: "85%", height: "85%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Img
-            src={brawler.image}
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              objectFit: "contain",
-              filter: `drop-shadow(0 0 45px ${brawler.accentColor})`,
-            }}
-          />
-        </div>
+        >
+          <PhonkBackdrop
+            backgroundImage={brawler.backgroundImage}
+            accentColor={brawler.accentColor}
+            boost={brawler.backgroundBoost ?? 1.35}
+          >
+            <CharacterCenter src={brawler.image} accentColor={brawler.accentColor} heightPct="82%" />
+          </PhonkBackdrop>
+        </AbsoluteFill>
       </AbsoluteFill>
     );
   }
@@ -76,7 +147,6 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
       fps,
       config: { damping: 9, stiffness: 260 },
     });
-    const showFlash = frame <= 2;
 
     return (
       <AbsoluteFill
@@ -108,7 +178,7 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
         >
           <h1
             style={{
-              fontSize: 92,
+              fontSize: 100,
               fontWeight: 900,
               color: "#ffffff",
               margin: 0,
@@ -120,63 +190,67 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
             {brawler.text}
           </h1>
         </div>
-
-        {/* White Flash Burst Cut */}
-        {showFlash && (
-          <AbsoluteFill
-            style={{
-              backgroundColor: "#ffffff",
-              opacity: 0.9,
-            }}
-          />
-        )}
       </AbsoluteFill>
     );
   }
 
-  // Mode 3: Action Pose 2
-  const showFlash = frame <= 2;
+  // Mode 3: Action Pose 2 (with full background artwork + life motion)
+  // Smooth "alive" treatment — soft fade-in, slow directional drift, gentle float and
+  // slow zoom. No trembling: the sway is a low-frequency float, not a fast oscillation.
+  const fadeIn = interpolate(frame, [0, 10], [0.5, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const driftDirection = brawler.entrance === "slideLeft" ? 1 : -1;
+  const driftX = interpolate(frame, [0, 63], [driftDirection * 34, driftDirection * -18], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.inOut(Easing.quad),
+  });
+  const floatY = Math.sin(frame * 0.07) * 5;
+  const slowZoom = interpolate(frame, [0, 63], [1.0, 1.09], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: "#090d16",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        opacity: fadeIn,
       }}
     >
-      {/* Dynamic Background Aura */}
-      <div
-        style={{
-          position: "absolute",
-          width: "120%",
-          height: "120%",
-          background: `radial-gradient(circle, ${brawler.accentColor}55 0%, rgba(9,13,22,0.95) 70%)`,
-        }}
-      />
-
-      {/* Character Secondary Pose Artwork */}
-      <div style={{ width: "85%", height: "85%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <Img
-          src={brawler.secondaryPose}
+      <PhonkBackdrop
+        backgroundImage={brawler.backgroundImage}
+        accentColor={brawler.accentColor}
+        boost={brawler.backgroundBoost ?? 1.45}
+      >
+        {/* Character Secondary Pose — animated GIF frames playing at original speed */}
+        <div
           style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-            objectFit: "contain",
-            filter: `drop-shadow(0 0 45px ${brawler.accentColor})`,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            transform: `translate(${driftX}px, ${floatY}px) scale(${slowZoom})`,
           }}
-        />
-      </div>
-
-      {/* Flash Burst Cut Overlay */}
-      {showFlash && (
-        <AbsoluteFill
-          style={{
-            backgroundColor: "#ffffff",
-            opacity: 0.85,
-          }}
-        />
-      )}
+        >
+          <GifFrames
+            base={brawler.secondaryPoseGif.base}
+            frameCount={brawler.secondaryPoseGif.frameCount}
+            gifFps={100 / 3}
+            style={{
+              height: "88%",
+              width: "auto",
+              objectFit: "contain",
+              filter: `drop-shadow(0 0 45px ${brawler.accentColor}) drop-shadow(0 0 110px ${brawler.accentColor}66)`,
+            }}
+          />
+        </div>
+      </PhonkBackdrop>
     </AbsoluteFill>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
-import { defaultMonsterTrioProps } from "./props";
+import { defaultMonsterTrioProps, defaultKenjiLeonTaraProps } from "./props";
 import { MonsterTrioPhonkTemplate } from "./templates/MonsterTrioPhonkTemplate";
 
 export const MonsterTrioCompositions: React.FC = () => {
@@ -14,6 +14,16 @@ export const MonsterTrioCompositions: React.FC = () => {
         width={defaultMonsterTrioProps.width}
         height={defaultMonsterTrioProps.height}
         defaultProps={defaultMonsterTrioProps}
+      />
+
+      <Composition
+        id="KenjiLeonTara"
+        component={MonsterTrioPhonkTemplate}
+        durationInFrames={defaultKenjiLeonTaraProps.durationInFrames}
+        fps={defaultKenjiLeonTaraProps.fps}
+        width={defaultKenjiLeonTaraProps.width}
+        height={defaultKenjiLeonTaraProps.height}
+        defaultProps={defaultKenjiLeonTaraProps}
       />
     </>
   );
