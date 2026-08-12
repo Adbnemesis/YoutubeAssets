@@ -1,5 +1,24 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, spring, interpolate, Img, Video, staticFile } from "remotion";
+import { GifFrames } from "../../monster_trio/templates/GifFrames";
+
+interface BrawlerGifMetadata {
+  base: string;
+  frameCount: number;
+  gifFps: number;
+}
+
+const BRAWLER_GIF_MAP: Record<string, BrawlerGifMetadata> = {
+  "brawler_gifs/surge_win.gif": { base: "brawler_gif_frames/surge", frameCount: 97, gifFps: 24 },
+  "brawler_gifs/max_win.gif": { base: "brawler_gif_frames/max", frameCount: 143, gifFps: 24 },
+  "brawler_gifs/meg_win.gif": { base: "brawler_gif_frames/meg", frameCount: 149, gifFps: 24 },
+  "brawler_gifs/edgar_win.gif": { base: "brawler_gif_frames/edgar", frameCount: 123, gifFps: 24 },
+  "brawler_gifs/mortis_win.gif": { base: "brawler_gif_frames/mortis", frameCount: 78, gifFps: 24 },
+  "brawler_gifs/kenji_win.gif": { base: "brawler_gif_frames/kenji", frameCount: 362, gifFps: 24 },
+  "brawler_gifs/crow_win.gif": { base: "brawler_gif_frames/crow", frameCount: 119, gifFps: 24 },
+  "brawler_gifs/leon_win.gif": { base: "brawler_gif_frames/leon", frameCount: 76, gifFps: 24 },
+  "brawler_gifs/tara_win.gif": { base: "brawler_gif_frames/tara", frameCount: 66, gifFps: 24 },
+};
 
 export const MangaPhonkClip: React.FC<{
   imageSrc: string;
@@ -43,17 +62,48 @@ export const MangaPhonkClip: React.FC<{
   // Aggressive Zoom: Starts at 1.2 and snaps to 1.05
   const scale = interpolate(shakeIntensity, [0, 1], [1.3, 1.05]) + interpolate(frame, [0, 30], [0, 0.05]);
 
-  // Smooth Zoom for Videos
+  // Check if clip is a video or frame sequence GIF
   const isVideo = imageSrc.endsWith('.mp4') || imageSrc.endsWith('.webm');
+  const gifMeta = BRAWLER_GIF_MAP[imageSrc];
+  const isGifSequence = !!gifMeta;
+
   const smoothZoom = interpolate(frame, [0, 30], [1.1, 1.25]);
 
-  // Apply conditional transform based on whether it's a static image or a moving Video
-  const transform = isVideo
+  // Apply conditional transform based on whether it's a static image, video, or GIF
+  const transform = (isVideo || isGifSequence)
     ? `scale(${smoothZoom}) translate(${slowPanX}px, ${slowPanY}px)`
     : `translate(${shakeX + slowPanX}px, ${shakeY + slowPanY}px) rotate(${rotation}deg) scale(${scale})`;
 
   // Exposure flash on cut
   const exposure = interpolate(frame, [0, 6], [1, 0], { extrapolateRight: "clamp" });
+
+  const renderMedia = (extraStyle?: React.CSSProperties) => {
+    if (isVideo) {
+      return (
+        <Video
+          src={staticFile(imageSrc)}
+          startFrom={videoStartFrame || 0}
+          style={{ width: "100%", height: "100%", objectFit: "cover", ...extraStyle }}
+        />
+      );
+    }
+    if (isGifSequence) {
+      return (
+        <GifFrames
+          base={gifMeta.base}
+          frameCount={gifMeta.frameCount}
+          gifFps={gifMeta.gifFps}
+          style={{ width: "100%", height: "100%", objectFit: "contain", ...extraStyle }}
+        />
+      );
+    }
+    return (
+      <Img
+        src={staticFile(imageSrc)}
+        style={{ width: "100%", height: "100%", objectFit: "contain", ...extraStyle }}
+      />
+    );
+  };
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
@@ -70,26 +120,11 @@ export const MangaPhonkClip: React.FC<{
           // Solid Silhouette Hack using massive drop-shadow and negative translation
           <div style={{ width: "100%", height: "100%", overflow: "hidden", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div style={{ width: "100%", height: "100%", transform: `translateY(${slideY}px)`, display: "flex", justifyContent: "center", alignItems: "center" }}>
-              {isVideo ? (
-                <Video 
-                  src={staticFile(imageSrc)} 
-                  startFrom={videoStartFrame || 0}
-                  style={{ width: "100%", height: "100%", objectFit: "cover", transform: "translateX(-5000px)", filter: `drop-shadow(5000px 0 0 ${silhouetteColor})` }} 
-                />
-              ) : (
-                <Img 
-                  src={staticFile(imageSrc)} 
-                  style={{ width: "100%", height: "100%", objectFit: "contain", transform: "translateX(-5000px)", filter: `drop-shadow(5000px 0 0 ${silhouetteColor})` }} 
-                />
-              )}
+              {renderMedia({ transform: "translateX(-5000px)", filter: `drop-shadow(5000px 0 0 ${silhouetteColor})` })}
             </div>
           </div>
-        ) : isVideo ? (
-          <Video 
-            src={staticFile(imageSrc)} 
-            startFrom={videoStartFrame || 0}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }} 
-          />
+        ) : isVideo || isGifSequence ? (
+          renderMedia()
         ) : (
           <>
             {/* Layer 1: Blurred Background */}
@@ -98,10 +133,7 @@ export const MangaPhonkClip: React.FC<{
               style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", filter: "blur(40px) brightness(0.6)", transform: "scale(1.2)" }} 
             />
             {/* Layer 2: Crisp Foreground */}
-            <Img 
-              src={staticFile(imageSrc)} 
-              style={{ position: "absolute", width: "100%", height: "100%", objectFit: "contain", filter: "drop-shadow(0px 0px 40px rgba(0,0,0,0.8))" }} 
-            />
+            {renderMedia({ position: "absolute", filter: "drop-shadow(0px 0px 40px rgba(0,0,0,0.8))" })}
           </>
         )}
       </AbsoluteFill>
