@@ -98,13 +98,24 @@ export const PhonkFormsMasterTemplate: React.FC<PhonkMasterProps> = ({
       // Cycle through provided drop clips
       const clipInfo = dropClips[index % dropClips.length];
 
+      // Calculate smooth frame offset if this clip is a full-color reveal following a silhouette of the SAME src
+      let videoStartFrame = clipInfo.videoStartFrame;
+      if (videoStartFrame === undefined && index > 0) {
+        const prevClipInfo = dropClips[(index - 1) % dropClips.length];
+        if (prevClipInfo.isSilhouette && !clipInfo.isSilhouette && prevClipInfo.src === clipInfo.src) {
+          const prevCutTime = dropCuts[index - 1];
+          const elapsedTimeSeconds = cutTime - prevCutTime;
+          videoStartFrame = Math.round(elapsedTimeSeconds * 24);
+        }
+      }
+
       return {
         startFrame,
         durationInFrames,
         imageSrc: clipInfo.src,
         isSilhouette: clipInfo.isSilhouette,
         silhouetteColor: clipInfo.silhouetteColor,
-        videoStartFrame: clipInfo.videoStartFrame,
+        videoStartFrame,
         index
       };
     });

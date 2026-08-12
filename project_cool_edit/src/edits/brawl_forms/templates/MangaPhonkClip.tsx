@@ -93,6 +93,7 @@ export const MangaPhonkClip: React.FC<{
           base={gifMeta.base}
           frameCount={gifMeta.frameCount}
           gifFps={gifMeta.gifFps}
+          startFrom={videoStartFrame || 0}
           style={{ width: "100%", height: "100%", objectFit: "contain", ...extraStyle }}
         />
       );
