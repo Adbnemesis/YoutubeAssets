@@ -217,7 +217,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
-      startFrame: 159, // Leon: F159 -> F222 (63 frames)
+      startFrame: 191, // Leon: F159 -> F222 (63 frames)
       endFrame: 222,
     },
     {
@@ -230,7 +230,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
-      startFrame: 222,
+      startFrame: 223,
       endFrame: 313,
     },
   ],
