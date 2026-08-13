@@ -6,7 +6,7 @@ export interface BrawlerContender {
   questionText: string;
   image: string;
   secondaryImage?: string; // Optional 2nd image cut for the 2nd last dummy winner at F263
-  voiceLine?: string; // Character voice line (STRICT RULE: Only for 2nd last dummy winner)
+  voiceLine?: string; // Character voice line (STRICT RULE: Only for 2nd last dummy winner at F222)
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -127,7 +127,7 @@ export const defaultBestCharProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       secondaryImage: staticFile("images/leon/leon_panel_4.png"),
-      voiceLine: staticFile("brawler_voices/leon/leon_ulti_vo_01.ogg"), // 2nd Last Dummy Winner Voice Line
+      voiceLine: staticFile("brawler_voices/leon/leon_ulti_vo_01.ogg"), // 2nd Last Dummy Winner Voice Line at F222
       accentColor: "#10b981",
       startFrame: 222,
       endFrame: 313,
@@ -219,19 +219,19 @@ export const bestLegendaryProps: BestCharEditProps = {
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
       startFrame: 159,
-      endFrame: 189, // Leon comes earlier at F159 -> F189!
+      endFrame: 222,
     },
     {
       id: "crow",
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      // Crow is the 2nd last dummy winner starting at F189 -> F313!
-      // Has 2 images (pose cut at F263) & Crow voice line at F189!
+      // STRICT RULE: CROW IS THE 2ND LAST DUMMY WINNER (F222 -> F313)
+      // Has entrance & voice line at F222, and pose cut to crow_panel_4 at F263 (local frame 41)!
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
-      startFrame: 189,
+      startFrame: 222,
       endFrame: 313,
     },
   ],
@@ -249,6 +249,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       staticFile("images/surge/surge_panel_11.png"),
       staticFile("images/surge/surge_panel_13.png"),
     ],
+    // STRICT RULE: SURGE IS THE TRUE WINNER (F313 -> F377)!
     voiceLines: [
       staticFile("brawler_voices/surge_atk_vo_04.ogg"),
       staticFile("brawler_voices/surge_hurt_vo_05.ogg"),
