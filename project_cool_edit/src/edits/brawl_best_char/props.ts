@@ -212,13 +212,22 @@ export const bestLegendaryProps: BestCharEditProps = {
       endFrame: 159,
     },
     {
+      id: "kenji",
+      name: "Kenji",
+      questionText: "KENJI?",
+      image: staticFile("images/kenji/kenji_panel_1.png"),
+      accentColor: "#f59e0b",
+      startFrame: 159, // Kenji added in between Sandy and Leon (F159 -> F189)!
+      endFrame: 189,
+    },
+    {
       id: "leon",
       name: "Leon",
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
-      startFrame: 159,
-      endFrame: 222, // Continuous transition from Sandy (F159) to Crow (F222)
+      startFrame: 189, // Leon: F189 -> F222!
+      endFrame: 222,
     },
     {
       id: "crow",
@@ -226,7 +235,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
       // Crow is 2nd last dummy winner at F222 -> F313!
-      // Enters at F222 with Crow voice line, pose cut to crow_panel_4 at F263!
+      // Crow voice line at F222 entrance + secondary pose cut at F263!
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
