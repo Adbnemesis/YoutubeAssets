@@ -210,7 +210,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       image: staticFile("images/sandy/sandy_panel_1.png"),
       accentColor: "#a855f7",
       startFrame: 127,
-      endFrame: 159,
+      endFrame: 189,
     },
     {
       id: "leon",
@@ -218,7 +218,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
-      startFrame: 159,
+      startFrame: 189, // Leon (3rd last character) is at F189 -> F222! Single image, no voice.
       endFrame: 222,
     },
     {
@@ -226,8 +226,8 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      // STRICT RULE: CROW IS THE 2ND LAST DUMMY WINNER (F222 -> F313)
-      // Has entrance & voice line at F222, and pose cut to crow_panel_4 at F263 (local frame 41)!
+      // Crow is the 2nd last dummy winner at F222 -> F313!
+      // Enters at F222 with Crow voice line, pose cut to crow_panel_4 at F263!
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
@@ -249,7 +249,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       staticFile("images/surge/surge_panel_11.png"),
       staticFile("images/surge/surge_panel_13.png"),
     ],
-    // STRICT RULE: SURGE IS THE TRUE WINNER (F313 -> F377)!
     voiceLines: [
       staticFile("brawler_voices/surge_atk_vo_04.ogg"),
       staticFile("brawler_voices/surge_hurt_vo_05.ogg"),
