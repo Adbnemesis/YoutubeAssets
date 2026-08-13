@@ -6,7 +6,7 @@ export interface BrawlerContender {
   questionText: string;
   image: string;
   secondaryImage?: string; // Optional 2nd image cut (e.g. Leon has 2 images at F263)
-  voiceLine?: string; // Optional character voice line on entrance
+  voiceLine?: string; // Character voice line (STRICT RULE: Only for 2nd last brawler)
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -18,10 +18,18 @@ export interface WinnerBrawler {
   announcementText: string;
   image: string;
   winnerPanels: string[]; // Exactly 7 images displayed at ~9 frame equal intervals
-  voiceLines?: string[]; // Multiple voice lines played during reveal sequence with gaps
+  voiceLines?: string[]; // Voice lines played during winner reveal sequence
   accentColor: string;
   startFrame: number;
   endFrame: number;
+}
+
+export interface BestCharTheme {
+  fontFamily?: string;       // Custom font family for edit theme
+  bgGradient?: string;       // Custom background gradient or color for edit theme
+  headerGradient?: string;   // Custom text fill or gradient
+  textShadow?: string;       // Custom text glow / drop shadow
+  textStroke?: string;       // Custom stroke width & color
 }
 
 export interface BestCharEditProps {
@@ -30,6 +38,7 @@ export interface BestCharEditProps {
   width: number;
   height: number;
   audioTrack: string;
+  theme?: BestCharTheme;
   intro: {
     headerText: string;
     subText: string;
@@ -46,6 +55,11 @@ export const defaultBestCharProps: BestCharEditProps = {
   width: 720,
   height: 1280,
   audioTrack: staticFile("audio/best_character_audio.wav"),
+  theme: {
+    fontFamily: "'Outfit', 'Impact', sans-serif",
+    bgGradient: "radial-gradient(circle at center, #1e1b4b 0%, #04050a 100%)",
+    textShadow: "0 0 30px #7c3aed, 0 0 60px #ec4899, 0 0 90px #000000",
+  },
   intro: {
     headerText: "THE BEST BRAWLER",
     subText: "WHO IS THE #1?",
@@ -72,22 +86,13 @@ export const defaultBestCharProps: BestCharEditProps = {
       endFrame: 127,
     },
     {
-      id: "crow",
-      name: "Crow",
-      questionText: "CROW?",
-      image: staticFile("images/crow/crow_panel_1.png"),
-      accentColor: "#3b82f6",
-      startFrame: 127,
-      endFrame: 159,
-    },
-    {
       id: "rt",
       name: "R-T",
       questionText: "R-T?",
       image: staticFile("images/rt/rt_panel_1.png"),
       accentColor: "#38bdf8",
-      startFrame: 159,
-      endFrame: 189,
+      startFrame: 127,
+      endFrame: 159,
     },
     {
       id: "tara",
@@ -95,6 +100,16 @@ export const defaultBestCharProps: BestCharEditProps = {
       questionText: "TARA?",
       image: staticFile("images/tara/tara_panel_1.png"),
       accentColor: "#ec4899",
+      startFrame: 159,
+      endFrame: 189,
+    },
+    {
+      id: "crow",
+      name: "Crow",
+      questionText: "CROW?",
+      image: staticFile("images/crow/crow_panel_1.png"),
+      voiceLine: staticFile("brawler_voices/crow/attack.ogg"), // 2nd Last Brawler Voice Line
+      accentColor: "#3b82f6",
       startFrame: 189,
       endFrame: 222,
     },
@@ -104,7 +119,6 @@ export const defaultBestCharProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       secondaryImage: staticFile("images/leon/leon_panel_4.png"),
-      voiceLine: staticFile("brawler_voices/leon/leon_ulti_vo_01.ogg"), // Leon voice line during fake-out presentation
       accentColor: "#10b981",
       startFrame: 222,
       endFrame: 313,
@@ -116,17 +130,17 @@ export const defaultBestCharProps: BestCharEditProps = {
     announcementText: "OFC IT'S KENJI 👑",
     image: staticFile("images/kenji/kenji_panel_15.png"),
     winnerPanels: [
-      staticFile("images/kenji/kenji_panel_1.png"),  // Image 1 (F313 -> F322)
-      staticFile("images/kenji/kenji_panel_4.png"),  // Image 2 (F322 -> F331)
-      staticFile("images/kenji/kenji_panel_6.png"),  // Image 3 (F331 -> F340)
-      staticFile("images/kenji/kenji_panel_8.png"),  // Image 4 (F340 -> F349)
-      staticFile("images/kenji/kenji_panel_11.png"), // Image 5 (F349 -> F358)
-      staticFile("images/kenji/kenji_panel_13.png"), // Image 6 (F358 -> F367)
-      staticFile("images/kenji/kenji_panel_15.png"), // Image 7 (F367 -> F377 final victory stance)
+      staticFile("images/kenji/kenji_panel_1.png"),
+      staticFile("images/kenji/kenji_panel_4.png"),
+      staticFile("images/kenji/kenji_panel_6.png"),
+      staticFile("images/kenji/kenji_panel_8.png"),
+      staticFile("images/kenji/kenji_panel_11.png"),
+      staticFile("images/kenji/kenji_panel_13.png"),
+      staticFile("images/kenji/kenji_panel_15.png"),
     ],
     voiceLines: [
-      staticFile("brawler_voices/kenji/super.ogg"),  // Voice 1 at reveal start (F315)
-      staticFile("brawler_voices/kenji/attack.ogg"), // Voice 2 at climax text pop (F345)
+      staticFile("brawler_voices/kenji/super.ogg"),
+      staticFile("brawler_voices/kenji/attack.ogg"),
     ],
     accentColor: "#f59e0b",
     startFrame: 313,
@@ -140,6 +154,12 @@ export const bestLegendaryProps: BestCharEditProps = {
   width: 720,
   height: 1280,
   audioTrack: staticFile("audio/best_character_audio.wav"),
+  theme: {
+    fontFamily: "'Outfit', 'Impact', sans-serif",
+    bgGradient: "radial-gradient(circle at center, #2e1065 0%, #030208 100%)", // Rich Legendary Gold & Deep Violet Theme
+    textShadow: "0 0 35px #f59e0b, 0 0 70px #7c3aed, 0 0 100px #000000",
+    textStroke: "4px #000000",
+  },
   intro: {
     headerText: "THE BEST LEGENDARY",
     subText: "WHO IS THE #1?",
@@ -152,38 +172,30 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Meg",
       questionText: "MEG?",
       image: staticFile("images/meg/meg_panel_1.png"),
-      voiceLine: staticFile("brawler_voices/meg_start_vo_02.ogg"),
+      // NO VOICE LINE FOR MEG
       accentColor: "#ec4899",
       startFrame: 64,
       endFrame: 96,
-    },
-    {
-      id: "crow",
-      name: "Crow",
-      questionText: "CROW?",
-      image: staticFile("images/crow/crow_panel_1.png"),
-      voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
-      accentColor: "#3b82f6",
-      startFrame: 96,
-      endFrame: 127,
     },
     {
       id: "spike",
       name: "Spike",
       questionText: "SPIKE?",
       image: staticFile("images/spike/spike_panel_1.png"),
+      // NO VOICE LINE FOR SPIKE
       accentColor: "#22c55e",
-      startFrame: 127,
-      endFrame: 159,
+      startFrame: 96,
+      endFrame: 127,
     },
     {
       id: "sandy",
       name: "Sandy",
       questionText: "SANDY?",
       image: staticFile("images/sandy/sandy_panel_1.png"),
+      // NO VOICE LINE FOR SANDY
       accentColor: "#a855f7",
-      startFrame: 159,
-      endFrame: 189,
+      startFrame: 127,
+      endFrame: 159,
     },
     {
       id: "leon",
@@ -191,9 +203,20 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       secondaryImage: staticFile("images/leon/leon_panel_4.png"),
-      voiceLine: staticFile("brawler_voices/leon/leon_ulti_vo_01.ogg"),
-      accentColor: "#10b981",
-      startFrame: 189,
+      // NO VOICE LINE FOR LEON
+      accentColor: "#06b6d4",
+      startFrame: 159,
+      endFrame: 222,
+    },
+    {
+      id: "crow",
+      name: "Crow",
+      questionText: "CROW?",
+      image: staticFile("images/crow/crow_panel_1.png"),
+      // STRICT RULE: ONLY 2ND LAST BRAWLER HAS VOICE LINE!
+      voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
+      accentColor: "#3b82f6",
+      startFrame: 222,
       endFrame: 313,
     },
   ],
@@ -211,6 +234,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       staticFile("images/surge/surge_panel_11.png"),
       staticFile("images/surge/surge_panel_13.png"),
     ],
+    // STRICT RULE: WINNER HAS VOICE LINES!
     voiceLines: [
       staticFile("brawler_voices/surge_atk_vo_04.ogg"),
       staticFile("brawler_voices/surge_hurt_vo_05.ogg"),

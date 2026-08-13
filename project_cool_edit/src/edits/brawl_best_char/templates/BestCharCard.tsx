@@ -1,22 +1,23 @@
 import React from "react";
 import { useCurrentFrame, interpolate, spring, Img, Audio } from "remotion";
-import { BrawlerContender } from "../props";
+import { BrawlerContender, BestCharTheme } from "../props";
 import { ParticleOverlay } from "./ParticleOverlay";
 
 interface BestCharCardProps {
   contender: BrawlerContender;
+  theme?: BestCharTheme;
 }
 
-export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
+export const BestCharCard: React.FC<BestCharCardProps> = ({ contender, theme }) => {
   const frame = useCurrentFrame();
   const cardDuration = contender.endFrame - contender.startFrame;
 
-  // Check if secondary image cut should trigger (e.g. Leon 2nd image cut at F263 -> local frame 41)
+  // Check if secondary image cut should trigger
   const hasSecondaryCut = Boolean(contender.secondaryImage);
   const isSecondaryActive = hasSecondaryCut && frame >= 41;
   const currentImage = isSecondaryActive ? contender.secondaryImage! : contender.image;
 
-  // 1. Entrance White/RGB Flash (Frames 0-3 AND local frame 41 for secondary cut)
+  // 1. Entrance White/RGB Flash
   const isSecondaryCutFrame = hasSecondaryCut && Math.abs(frame - 41) <= 2;
   const flashOpacity = interpolate(
     frame,
@@ -25,7 +26,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   ) + (isSecondaryCutFrame ? 0.7 : 0.0);
 
-  // 2. Chromatic Glitch RGB Shift (Frames 0-4 and local 41-44)
+  // 2. Chromatic Glitch RGB Shift
   const isGlitchFrame = frame < 4 || (hasSecondaryCut && frame >= 41 && frame < 45);
   const glitchOffsetX = isGlitchFrame ? (frame % 2 === 0 ? 8 : -8) : 0;
 
@@ -51,10 +52,13 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
     config: { damping: 10, stiffness: 240 },
   });
 
-  // 8. Impact Camera Shake (Frames 0-8 and 41-48)
+  // 8. Impact Camera Shake
   const shakeFrame = isSecondaryActive ? frame - 41 : frame;
   const shakeX = shakeFrame < 8 ? Math.sin(shakeFrame * 3.0) * (8 - shakeFrame) * 4.0 : 0;
   const shakeY = shakeFrame < 8 ? Math.cos(shakeFrame * 3.0) * (8 - shakeFrame) * 4.0 : 0;
+
+  const fontFamily = theme?.fontFamily || "'Outfit', 'Impact', sans-serif";
+  const textStroke = theme?.textStroke || "3.5px #000000";
 
   return (
     <div
@@ -63,6 +67,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         width: "100%",
         height: "100%",
         backgroundColor: "#04050a",
+        background: theme?.bgGradient || undefined,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -72,7 +77,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         transform: `translate(${shakeX}px, ${shakeY}px)`,
       }}
     >
-      {/* Contender Voice Line Playback */}
+      {/* Contender Voice Line Playback (STRICT RULE: Only plays if specified, e.g., 2nd last brawler) */}
       {contender.voiceLine && <Audio src={contender.voiceLine} volume={1.0} />}
 
       {/* Dynamic Animated Accent Background Radial Glow */}
@@ -117,7 +122,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         }}
       />
 
-      {/* Main Character Artwork Container with Chromatic Glitch Offset */}
+      {/* Main Character Artwork Container */}
       <div
         style={{
           width: "90%",
@@ -175,7 +180,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
         />
       </div>
 
-      {/* Question Text Pop Header (e.g. "MORTIS?") */}
+      {/* Question Text Pop Header (e.g. "CROW?") */}
       <div
         style={{
           position: "absolute",
@@ -187,14 +192,14 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender }) => {
       >
         <h2
           style={{
-            fontFamily: "'Outfit', 'Impact', sans-serif",
+            fontFamily,
             fontSize: 88,
             fontWeight: 900,
             color: "#ffffff",
             textTransform: "uppercase",
             letterSpacing: 5,
             textShadow: `0 0 30px ${contender.accentColor}, 0 0 60px ${contender.accentColor}, 0 0 90px #000000, 0 0 120px #000000`,
-            WebkitTextStroke: "3.5px #000000",
+            WebkitTextStroke: textStroke,
             margin: 0,
             lineHeight: 1,
           }}

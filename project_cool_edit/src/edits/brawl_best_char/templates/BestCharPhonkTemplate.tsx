@@ -1,6 +1,6 @@
 import React from "react";
 import { Sequence, Audio, useCurrentFrame, spring } from "remotion";
-import { BestCharEditProps } from "../props";
+import { BestCharEditProps, BestCharTheme } from "../props";
 import { BestCharCard } from "./BestCharCard";
 import { BestCharWinner } from "./BestCharWinner";
 import { IntroBackground } from "./IntroBackground";
@@ -22,7 +22,7 @@ export const BestCharPhonkTemplate: React.FC<BestCharEditProps> = (props) => {
 
       {/* 1. Intro Hook Phase (Frames 0 -> 64) */}
       <Sequence from={props.intro.startFrame} durationInFrames={props.intro.endFrame - props.intro.startFrame}>
-        <IntroSequence intro={props.intro} />
+        <IntroSequence intro={props.intro} theme={props.theme} />
       </Sequence>
 
       {/* 2. Contender Cards Phase */}
@@ -30,7 +30,7 @@ export const BestCharPhonkTemplate: React.FC<BestCharEditProps> = (props) => {
         const duration = contender.endFrame - contender.startFrame;
         return (
           <Sequence key={contender.id} from={contender.startFrame} durationInFrames={duration}>
-            <BestCharCard contender={contender} />
+            <BestCharCard contender={contender} theme={props.theme} />
           </Sequence>
         );
       })}
@@ -40,13 +40,13 @@ export const BestCharPhonkTemplate: React.FC<BestCharEditProps> = (props) => {
         from={props.winner.startFrame}
         durationInFrames={props.winner.endFrame - props.winner.startFrame}
       >
-        <BestCharWinner winner={props.winner} />
+        <BestCharWinner winner={props.winner} theme={props.theme} />
       </Sequence>
     </div>
   );
 };
 
-const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"] }> = ({ intro }) => {
+const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"]; theme?: BestCharTheme }> = ({ intro, theme }) => {
   const frame = useCurrentFrame();
 
   const titleScale = spring({
@@ -64,6 +64,10 @@ const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"] }> = ({ intro 
   const shakeX = frame >= 33 && frame < 40 ? Math.sin(frame * 3) * 7 : 0;
   const shakeY = frame >= 33 && frame < 40 ? Math.cos(frame * 3) * 7 : 0;
 
+  const fontFamily = theme?.fontFamily || "'Outfit', 'Impact', sans-serif";
+  const textShadow = theme?.textShadow || "0 0 30px #7c3aed, 0 0 60px #ec4899, 0 0 90px #000000";
+  const textStroke = theme?.textStroke || "3.5px #000000";
+
   return (
     <div
       style={{
@@ -77,6 +81,7 @@ const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"] }> = ({ intro 
         position: "relative",
         overflow: "hidden",
         transform: `translate(${shakeX}px, ${shakeY}px)`,
+        background: theme?.bgGradient || undefined,
       }}
     >
       {/* High-Energy Anime Sunburst & Blurred Collage Background */}
@@ -96,14 +101,14 @@ const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"] }> = ({ intro 
         <div style={{ transform: `scale(${titleScale})` }}>
           <h1
             style={{
-              fontFamily: "'Outfit', 'Impact', sans-serif",
-              fontSize: 80,
+              fontFamily,
+              fontSize: 76,
               fontWeight: 900,
               color: "#ffffff",
               textTransform: "uppercase",
               letterSpacing: 4,
-              textShadow: "0 0 30px #7c3aed, 0 0 60px #ec4899, 0 0 90px #000000",
-              WebkitTextStroke: "3.5px #000000",
+              textShadow,
+              WebkitTextStroke: textStroke,
               margin: 0,
               lineHeight: 1.05,
             }}
@@ -116,14 +121,14 @@ const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"] }> = ({ intro 
           <div style={{ transform: `scale(${subTextScale})` }}>
             <p
               style={{
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily,
                 fontSize: 52,
                 fontWeight: 900,
                 color: "#fbbf24",
                 marginTop: 25,
                 letterSpacing: 3,
                 textShadow: "0 0 20px #f59e0b, 0 0 40px #d97706, 0 0 60px #000000",
-                WebkitTextStroke: "2.5px #000000",
+                WebkitTextStroke: textStroke,
               }}
             >
               {intro.subText}
