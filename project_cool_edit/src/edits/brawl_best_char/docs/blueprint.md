@@ -90,7 +90,7 @@ export const newEditProps: BestCharEditProps = {
     { id: "spike", name: "Spike", questionText: "SPIKE?", image: staticFile("images/spike/spike_panel_1.png"), accentColor: "#22c55e", startFrame: 96, endFrame: 127 },
     { id: "sandy", name: "Sandy", questionText: "SANDY?", image: staticFile("images/sandy/sandy_panel_1.png"), accentColor: "#a855f7", startFrame: 127, endFrame: 159 },
     { id: "leon", name: "Leon", questionText: "LEON?", image: staticFile("images/leon/leon_panel_1.png"), accentColor: "#06b6d4", startFrame: 159, endFrame: 222 },
-    // STRICT RULE: 2ND LAST DUMMY WINNER STARTS AT F222 WITH SECONDARY IMAGE CUT AT F263 & VOICE LINE AT F222!
+    // STRICT RULE: ONLY 2ND LAST DUMMY WINNER STARTS AT F222 WITH SECONDARY IMAGE CUT AT F263 & VOICE LINE AT F222!
     { id: "crow", name: "Crow", questionText: "CROW?", image: staticFile("images/crow/crow_panel_1.png"), secondaryImage: staticFile("images/crow/crow_panel_4.png"), voiceLine: staticFile("brawler_voices/crow/attack.ogg"), accentColor: "#3b82f6", startFrame: 222, endFrame: 313 },
   ],
   winner: {

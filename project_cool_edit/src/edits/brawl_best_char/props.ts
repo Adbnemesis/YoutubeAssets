@@ -176,7 +176,6 @@ export const bestLegendaryProps: BestCharEditProps = {
     subText: "WHO IS THE #1?",
     startFrame: 0,
     endFrame: 64,
-    // Dynamic intro background collage featuring legendary brawlers!
     bgImages: [
       staticFile("images/surge/surge_panel_13.png"),
       staticFile("images/spike/spike_panel_1.png"),
@@ -210,7 +209,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       image: staticFile("images/sandy/sandy_panel_1.png"),
       accentColor: "#a855f7",
       startFrame: 127,
-      endFrame: 189,
+      endFrame: 159, // Sandy: F127 -> F159 (32 frames)
     },
     {
       id: "leon",
@@ -218,7 +217,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
-      startFrame: 189, // Leon (3rd last character) is at F189 -> F222! Single image, no voice.
+      startFrame: 159, // Leon: F159 -> F222 (63 frames)
       endFrame: 222,
     },
     {
@@ -226,8 +225,8 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      // Crow is the 2nd last dummy winner at F222 -> F313!
-      // Enters at F222 with Crow voice line, pose cut to crow_panel_4 at F263!
+      // Crow is 2nd last dummy winner at F222 -> F313 (91 frames)!
+      // Crow voice line at F222 entrance + secondary pose cut at F263!
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
