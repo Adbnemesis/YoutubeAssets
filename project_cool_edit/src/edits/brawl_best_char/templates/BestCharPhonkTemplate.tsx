@@ -85,7 +85,7 @@ const IntroSequence: React.FC<{ intro: BestCharEditProps["intro"]; theme?: BestC
       }}
     >
       {/* High-Energy Anime Sunburst & Blurred Collage Background */}
-      <IntroBackground />
+      <IntroBackground images={intro.bgImages} theme={theme} />
 
       {/* Ambient Particle Burst */}
       <ParticleOverlay color="#a855f7" count={25} />

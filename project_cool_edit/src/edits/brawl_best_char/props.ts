@@ -5,8 +5,8 @@ export interface BrawlerContender {
   name: string;
   questionText: string;
   image: string;
-  secondaryImage?: string; // Optional 2nd image cut (e.g. Leon has 2 images at F263)
-  voiceLine?: string; // Character voice line (STRICT RULE: Only for 2nd last brawler)
+  secondaryImage?: string; // Optional 2nd image cut for the 2nd last dummy winner at F263
+  voiceLine?: string; // Character voice line (STRICT RULE: Only for 2nd last dummy winner)
   accentColor: string;
   startFrame: number;
   endFrame: number;
@@ -30,6 +30,8 @@ export interface BestCharTheme {
   headerGradient?: string;   // Custom text fill or gradient
   textShadow?: string;       // Custom text glow / drop shadow
   textStroke?: string;       // Custom stroke width & color
+  sunburstColors?: string;   // Custom conic-gradient sunburst beam colors
+  centerGlowColor?: string;  // Custom central radial glow color
 }
 
 export interface BestCharEditProps {
@@ -44,6 +46,7 @@ export interface BestCharEditProps {
     subText: string;
     startFrame: number;
     endFrame: number;
+    bgImages?: string[];     // Dynamic 4-image collage background for the intro
   };
   contenders: BrawlerContender[];
   winner: WinnerBrawler;
@@ -65,6 +68,12 @@ export const defaultBestCharProps: BestCharEditProps = {
     subText: "WHO IS THE #1?",
     startFrame: 0,
     endFrame: 64,
+    bgImages: [
+      staticFile("images/mortis/mortis_panel_1.png"),
+      staticFile("images/edgar/edgar_panel_1.png"),
+      staticFile("images/crow/crow_panel_1.png"),
+      staticFile("images/kenji/kenji_panel_15.png"),
+    ]
   },
   contenders: [
     {
@@ -108,7 +117,6 @@ export const defaultBestCharProps: BestCharEditProps = {
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      voiceLine: staticFile("brawler_voices/crow/attack.ogg"), // 2nd Last Brawler Voice Line
       accentColor: "#3b82f6",
       startFrame: 189,
       endFrame: 222,
@@ -119,6 +127,7 @@ export const defaultBestCharProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       secondaryImage: staticFile("images/leon/leon_panel_4.png"),
+      voiceLine: staticFile("brawler_voices/leon/leon_ulti_vo_01.ogg"), // 2nd Last Dummy Winner Voice Line
       accentColor: "#10b981",
       startFrame: 222,
       endFrame: 313,
@@ -156,15 +165,24 @@ export const bestLegendaryProps: BestCharEditProps = {
   audioTrack: staticFile("audio/best_character_audio.wav"),
   theme: {
     fontFamily: "'Outfit', 'Impact', sans-serif",
-    bgGradient: "radial-gradient(circle at center, #2e1065 0%, #030208 100%)", // Rich Legendary Gold & Deep Violet Theme
-    textShadow: "0 0 35px #f59e0b, 0 0 70px #7c3aed, 0 0 100px #000000",
+    bgGradient: "radial-gradient(circle at center, #3b0764 0%, #030208 100%)", // Rich Legendary Violet Theme
+    textShadow: "0 0 35px #f59e0b, 0 0 70px #ef4444, 0 0 100px #000000",
     textStroke: "4px #000000",
+    sunburstColors: "conic-gradient(from 0deg, rgba(245, 158, 11, 0.3) 0deg 15deg, transparent 15deg 30deg, rgba(239, 68, 68, 0.3) 30deg 45deg, transparent 45deg 60deg)",
+    centerGlowColor: "radial-gradient(circle, rgba(245, 158, 11, 0.6) 0%, rgba(239, 68, 68, 0.35) 45%, transparent 75%)",
   },
   intro: {
     headerText: "THE BEST LEGENDARY",
     subText: "WHO IS THE #1?",
     startFrame: 0,
     endFrame: 64,
+    // Dynamic intro background collage featuring legendary brawlers!
+    bgImages: [
+      staticFile("images/surge/surge_panel_13.png"),
+      staticFile("images/spike/spike_panel_1.png"),
+      staticFile("images/sandy/sandy_panel_1.png"),
+      staticFile("images/meg/meg_panel_1.png"),
+    ],
   },
   contenders: [
     {
@@ -172,7 +190,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Meg",
       questionText: "MEG?",
       image: staticFile("images/meg/meg_panel_1.png"),
-      // NO VOICE LINE FOR MEG
       accentColor: "#ec4899",
       startFrame: 64,
       endFrame: 96,
@@ -182,7 +199,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Spike",
       questionText: "SPIKE?",
       image: staticFile("images/spike/spike_panel_1.png"),
-      // NO VOICE LINE FOR SPIKE
       accentColor: "#22c55e",
       startFrame: 96,
       endFrame: 127,
@@ -192,7 +208,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Sandy",
       questionText: "SANDY?",
       image: staticFile("images/sandy/sandy_panel_1.png"),
-      // NO VOICE LINE FOR SANDY
       accentColor: "#a855f7",
       startFrame: 127,
       endFrame: 159,
@@ -202,8 +217,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Leon",
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
-      secondaryImage: staticFile("images/leon/leon_panel_4.png"),
-      // NO VOICE LINE FOR LEON
       accentColor: "#06b6d4",
       startFrame: 159,
       endFrame: 222,
@@ -213,7 +226,8 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      // STRICT RULE: ONLY 2ND LAST BRAWLER HAS VOICE LINE!
+      // STRICT RULE: CROW IS THE 2ND LAST DUMMY WINNER -> HAS 2 IMAGES (secondaryImage cut at F263) & VOICE LINE!
+      secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
       startFrame: 222,
@@ -234,7 +248,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       staticFile("images/surge/surge_panel_11.png"),
       staticFile("images/surge/surge_panel_13.png"),
     ],
-    // STRICT RULE: WINNER HAS VOICE LINES!
+    // STRICT RULE: SURGE IS THE TRUE WINNER -> HAS VOICE LINES & 7-PANEL CLIMAX!
     voiceLines: [
       staticFile("brawler_voices/surge_atk_vo_04.ogg"),
       staticFile("brawler_voices/surge_hurt_vo_05.ogg"),
