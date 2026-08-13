@@ -219,18 +219,19 @@ export const bestLegendaryProps: BestCharEditProps = {
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
       startFrame: 159,
-      endFrame: 222,
+      endFrame: 189, // Leon comes earlier at F159 -> F189!
     },
     {
       id: "crow",
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      // STRICT RULE: CROW IS THE 2ND LAST DUMMY WINNER -> HAS 2 IMAGES (secondaryImage cut at F263) & VOICE LINE!
+      // Crow is the 2nd last dummy winner starting at F189 -> F313!
+      // Has 2 images (pose cut at F263) & Crow voice line at F189!
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
-      startFrame: 222,
+      startFrame: 189,
       endFrame: 313,
     },
   ],
@@ -248,7 +249,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       staticFile("images/surge/surge_panel_11.png"),
       staticFile("images/surge/surge_panel_13.png"),
     ],
-    // STRICT RULE: SURGE IS THE TRUE WINNER -> HAS VOICE LINES & 7-PANEL CLIMAX!
     voiceLines: [
       staticFile("brawler_voices/surge_atk_vo_04.ogg"),
       staticFile("brawler_voices/surge_hurt_vo_05.ogg"),

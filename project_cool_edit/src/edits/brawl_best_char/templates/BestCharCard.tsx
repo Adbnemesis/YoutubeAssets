@@ -12,13 +12,14 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender, theme }) 
   const frame = useCurrentFrame();
   const cardDuration = contender.endFrame - contender.startFrame;
 
-  // Check if secondary image cut should trigger
+  // Check if secondary image cut should trigger (F263 cut)
   const hasSecondaryCut = Boolean(contender.secondaryImage);
-  const isSecondaryActive = hasSecondaryCut && frame >= 41;
+  const secondaryCutLocalFrame = Math.max(0, 263 - contender.startFrame);
+  const isSecondaryActive = hasSecondaryCut && frame >= secondaryCutLocalFrame;
   const currentImage = isSecondaryActive ? contender.secondaryImage! : contender.image;
 
   // 1. Entrance White/RGB Flash
-  const isSecondaryCutFrame = hasSecondaryCut && Math.abs(frame - 41) <= 2;
+  const isSecondaryCutFrame = hasSecondaryCut && Math.abs(frame - secondaryCutLocalFrame) <= 2;
   const flashOpacity = interpolate(
     frame,
     [0, 2, 5],
@@ -27,7 +28,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender, theme }) 
   ) + (isSecondaryCutFrame ? 0.7 : 0.0);
 
   // 2. Chromatic Glitch RGB Shift
-  const isGlitchFrame = frame < 4 || (hasSecondaryCut && frame >= 41 && frame < 45);
+  const isGlitchFrame = frame < 4 || (hasSecondaryCut && frame >= secondaryCutLocalFrame && frame < secondaryCutLocalFrame + 4);
   const glitchOffsetX = isGlitchFrame ? (frame % 2 === 0 ? 8 : -8) : 0;
 
   // 3. Moving Manga Speed Lines
@@ -53,7 +54,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender, theme }) 
   });
 
   // 8. Impact Camera Shake
-  const shakeFrame = isSecondaryActive ? frame - 41 : frame;
+  const shakeFrame = isSecondaryActive ? frame - secondaryCutLocalFrame : frame;
   const shakeX = shakeFrame < 8 ? Math.sin(shakeFrame * 3.0) * (8 - shakeFrame) * 4.0 : 0;
   const shakeY = shakeFrame < 8 ? Math.cos(shakeFrame * 3.0) * (8 - shakeFrame) * 4.0 : 0;
 
@@ -77,7 +78,7 @@ export const BestCharCard: React.FC<BestCharCardProps> = ({ contender, theme }) 
         transform: `translate(${shakeX}px, ${shakeY}px)`,
       }}
     >
-      {/* Contender Voice Line Playback (STRICT RULE: Only plays if specified, e.g., 2nd last brawler) */}
+      {/* Contender Voice Line Playback (STRICT RULE: Only plays if specified, e.g., 2nd last dummy winner) */}
       {contender.voiceLine && <Audio src={contender.voiceLine} volume={1.0} />}
 
       {/* Dynamic Animated Accent Background Radial Glow */}
