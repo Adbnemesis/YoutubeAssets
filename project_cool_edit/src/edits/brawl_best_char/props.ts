@@ -217,7 +217,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "KENJI?",
       image: staticFile("images/kenji/kenji_panel_1.png"),
       accentColor: "#f59e0b",
-      startFrame: 159, // Kenji added in between Sandy and Leon (F159 -> F189)!
+      startFrame: 159,
       endFrame: 189,
     },
     {
@@ -226,7 +226,7 @@ export const bestLegendaryProps: BestCharEditProps = {
       questionText: "LEON?",
       image: staticFile("images/leon/leon_panel_1.png"),
       accentColor: "#06b6d4",
-      startFrame: 189, // Leon: F189 -> F222!
+      startFrame: 189,
       endFrame: 222,
     },
     {
@@ -234,8 +234,6 @@ export const bestLegendaryProps: BestCharEditProps = {
       name: "Crow",
       questionText: "CROW?",
       image: staticFile("images/crow/crow_panel_1.png"),
-      // Crow is 2nd last dummy winner at F222 -> F313!
-      // Crow voice line at F222 entrance + secondary pose cut at F263!
       secondaryImage: staticFile("images/crow/crow_panel_4.png"),
       voiceLine: staticFile("brawler_voices/crow/attack.ogg"),
       accentColor: "#3b82f6",
@@ -262,6 +260,115 @@ export const bestLegendaryProps: BestCharEditProps = {
       staticFile("brawler_voices/surge_hurt_vo_05.ogg"),
     ],
     accentColor: "#ef4444",
+    startFrame: 313,
+    endFrame: 377,
+  },
+};
+
+export const bestRangedProps: BestCharEditProps = {
+  fps: 30,
+  durationInFrames: 377,
+  width: 720,
+  height: 1280,
+  audioTrack: staticFile("audio/best_character_audio.wav"),
+  theme: {
+    fontFamily: "'Outfit', 'Impact', sans-serif",
+    bgGradient: "radial-gradient(circle at center, #4c0519 0%, #030206 100%)", // Mystic Magenta / Rose theme
+    textShadow: "0 0 35px #ec4899, 0 0 70px #f43f5e, 0 0 100px #000000",
+    textStroke: "4px #000000",
+    sunburstColors: "conic-gradient(from 0deg, rgba(236, 72, 153, 0.3) 0deg 15deg, transparent 15deg 30deg, rgba(244, 63, 94, 0.3) 30deg 45deg, transparent 45deg 60deg)",
+    centerGlowColor: "radial-gradient(circle, rgba(236, 72, 153, 0.6) 0%, rgba(244, 63, 94, 0.35) 45%, transparent 75%)",
+  },
+  intro: {
+    headerText: "THE BEST RANGED",
+    subText: "WHO IS THE #1?",
+    startFrame: 0,
+    endFrame: 64,
+    bgImages: [
+      staticFile("images/tara/tara_panel_15.png"),
+      staticFile("images/edgar/edgar_panel_1.png"),
+      staticFile("images/max/max_panel_1.png"),
+      staticFile("images/surge/surge_panel_1.png"),
+    ],
+  },
+  contenders: [
+    {
+      id: "leon",
+      name: "Leon",
+      questionText: "LEON?",
+      image: staticFile("images/leon/leon_panel_1.png"),
+      accentColor: "#06b6d4",
+      startFrame: 64,
+      endFrame: 96,
+    },
+    {
+      id: "meg",
+      name: "Meg",
+      questionText: "MEG?",
+      image: staticFile("images/meg/meg_panel_1.png"),
+      accentColor: "#ec4899",
+      startFrame: 96,
+      endFrame: 127,
+    },
+    {
+      id: "surge",
+      name: "Surge",
+      questionText: "SURGE?",
+      image: staticFile("images/surge/surge_panel_1.png"),
+      accentColor: "#ef4444",
+      startFrame: 127,
+      endFrame: 159,
+    },
+    {
+      id: "crow",
+      name: "Crow",
+      questionText: "CROW?",
+      image: staticFile("images/crow/crow_panel_1.png"),
+      accentColor: "#3b82f6",
+      startFrame: 159,
+      endFrame: 189,
+    },
+    {
+      id: "max",
+      name: "Max",
+      questionText: "MAX?",
+      image: staticFile("images/max/max_panel_1.png"),
+      accentColor: "#eab308",
+      startFrame: 189,
+      endFrame: 222,
+    },
+    {
+      id: "edgar",
+      name: "Edgar",
+      questionText: "EDGAR?",
+      image: staticFile("images/edgar/edgar_panel_1.png"),
+      // 2ND LAST DUMMY WINNER: Edgar at F222 -> F313
+      // Enters at F222 with voice line + pose cut at F263!
+      secondaryImage: staticFile("images/edgar/edgar_panel_4.png"),
+      voiceLine: staticFile("brawler_voices/edgar/attack.ogg"),
+      accentColor: "#ef4444",
+      startFrame: 222,
+      endFrame: 313,
+    },
+  ],
+  winner: {
+    id: "tara",
+    name: "Tara",
+    announcementText: "OFC IT'S TARA 👑",
+    image: staticFile("images/tara/tara_panel_15.png"),
+    winnerPanels: [
+      staticFile("images/tara/tara_panel_1.png"),
+      staticFile("images/tara/tara_panel_3.png"),
+      staticFile("images/tara/tara_panel_5.png"),
+      staticFile("images/tara/tara_panel_7.png"),
+      staticFile("images/tara/tara_panel_9.png"),
+      staticFile("images/tara/tara_panel_12.png"),
+      staticFile("images/tara/tara_panel_15.png"),
+    ],
+    voiceLines: [
+      staticFile("brawler_voices/tara/tara_kill_vo_04.ogg"),
+    ],
+    accentColor: "#ec4899",
     startFrame: 313,
     endFrame: 377,
   },
