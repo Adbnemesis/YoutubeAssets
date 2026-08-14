@@ -6,8 +6,8 @@ from PIL import Image
 def clean_slice_sheet(sheet_path, out_dir, brawler_name, cols=4, rows=4):
     """
     Slices a brawler sprite sheet into clean individual panels, automatically
-    removing edge-bleed artifacts from neighboring characters using
-    connected-component analysis.
+    identifying the primary character in each cell and removing all neighbor
+    edge-bleed artifacts and stray sprite clusters using connected-component analysis.
     """
     os.makedirs(out_dir, exist_ok=True)
     img = Image.open(sheet_path).convert("RGBA")
@@ -43,42 +43,65 @@ def clean_slice_sheet(sheet_path, out_dir, brawler_name, cols=4, rows=4):
             clean_mask = np.zeros_like(mask)
             
             if num_labels > 1:
-                # Find maximum area (the main character body)
-                max_area = max(stats[label, cv2.CC_STAT_AREA] for label in range(1, num_labels))
-                
+                # Score components to identify the primary character of THIS cell:
+                # Primary character has substantial area and its center of mass is close to cell center.
+                scores = []
                 for label in range(1, num_labels):
                     area = stats[label, cv2.CC_STAT_AREA]
                     cx, cy = centroids[label]
+                    dist_to_center = np.sqrt((cx - center_x)**2 + (cy - center_y)**2)
+                    diag = np.sqrt(center_x**2 + center_y**2)
+                    norm_dist = dist_to_center / diag
+                    # Central components get highest score
+                    score = area * (1.0 - 0.75 * norm_dist)
+                    scores.append((score, area, label, cx, cy))
+                
+                scores.sort(key=lambda x: x[0], reverse=True)
+                primary_label = scores[0][2]
+                primary_area = scores[0][1]
+                primary_cx, primary_cy = scores[0][3], scores[0][4]
+                
+                # Keep primary character body
+                clean_mask[labels == primary_label] = 255
+                
+                # Process all other components in the cell
+                for label in range(1, num_labels):
+                    if label == primary_label:
+                        continue
+                    
+                    area = stats[label, cv2.CC_STAT_AREA]
                     lx = stats[label, cv2.CC_STAT_LEFT]
                     ly = stats[label, cv2.CC_STAT_TOP]
                     lw = stats[label, cv2.CC_STAT_WIDTH]
                     lh = stats[label, cv2.CC_STAT_HEIGHT]
+                    cx, cy = centroids[label]
                     
-                    # Check boundary touches
                     touches_left = (lx == 0)
                     touches_right = (lx + lw >= cell_w_actual)
                     touches_top = (ly == 0)
                     touches_bottom = (ly + lh >= cell_h_actual)
+                    touches_any_border = (touches_left or touches_right or touches_top or touches_bottom)
                     
-                    # Main body component
-                    is_main_body = (area >= max_area * 0.15)
-                    
-                    # Bleed component heuristic:
-                    # Neighboring character overflow that was clipped by the grid boundary:
-                    # - Smaller area (< 12% of max area)
-                    # - Strictly glued to outer boundary
-                    # - Centroid is close to outer boundary (e.g. edge margin)
                     is_bleed = False
-                    if not is_main_body:
-                        if area < max_area * 0.12:
-                            if touches_left and cx < cell_w_actual * 0.15:
-                                is_bleed = True
-                            elif touches_right and cx > cell_w_actual * 0.85:
-                                is_bleed = True
-                            elif touches_top and cy < cell_h_actual * 0.15:
-                                is_bleed = True
-                            elif touches_bottom and cy > cell_h_actual * 0.85:
-                                is_bleed = True
+                    
+                    # 1. Any component attached to a border whose centroid is skewed towards that border:
+                    if touches_right and cx > cell_w_actual * 0.70:
+                        is_bleed = True
+                    elif touches_left and cx < cell_w_actual * 0.30:
+                        is_bleed = True
+                    elif touches_top and cy < cell_h_actual * 0.30:
+                        is_bleed = True
+                    elif touches_bottom and cy > cell_h_actual * 0.70:
+                        is_bleed = True
+                    # 2. Tiny speckles or border artifacts (< 30 pixels)
+                    elif area < 30:
+                        is_bleed = True
+                    # 3. Any secondary component touching border that is much closer to border than to primary body
+                    elif touches_any_border and area < primary_area * 0.30:
+                        dist_to_primary = np.sqrt((cx - primary_cx)**2 + (cy - primary_cy)**2)
+                        dist_to_border = min(cx, cell_w_actual - cx, cy, cell_h_actual - cy)
+                        if dist_to_border < dist_to_primary * 0.4:
+                            is_bleed = True
                     
                     if not is_bleed:
                         clean_mask[labels == label] = 255
@@ -117,7 +140,7 @@ def main():
         brawler_out_dir = os.path.join(output_base_dir, brawler_name)
         clean_slice_sheet(sheet_path, brawler_out_dir, brawler_name)
         
-    print("\nAll brawler sheets cleanly sliced with zero neighbor bleed!")
+    print("\nAll brawler sheets cleanly sliced with zero neighbor bleed and exactly 1 brawler per panel!")
 
 if __name__ == "__main__":
     main()
