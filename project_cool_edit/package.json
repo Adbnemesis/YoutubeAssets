@@ -4,7 +4,8 @@
   "description": "Brawl Stars Phonk Edit Remotion Project",
   "scripts": {
     "start": "npx remotion studio",
-    "build": "npx remotion render src/index.tsx PhonkPrototype out/PhonkPrototype.mp4"
+    "build": "npx remotion render src/index.tsx PhonkPrototype out/PhonkPrototype.mp4",
+    "slice": "python3 scripts/slice_brawler_sheets.py"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.484",
