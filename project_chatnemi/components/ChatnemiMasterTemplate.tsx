@@ -16,6 +16,54 @@ import { DiscordMessage } from "./DiscordMessage";
 import { TypingIndicator } from "./TypingIndicator";
 import { DiscordCall } from "./DiscordCall";
 
+const getEventTimeString = (eventIndex: number, script: ChatScript): string => {
+  const evt = script.events[eventIndex] as any;
+  if (evt && evt.timeString) return evt.timeString;
+  if (evt && evt.time) return `Today at ${evt.time}`;
+
+  // Base starting time: use script.startTime if provided, or derive a natural start time
+  let baseHour = 4;
+  let baseMinute = 18;
+  let isPm = true;
+
+  if (script.startTime) {
+    const match = script.startTime.match(/(\d+):(\d+)\s*(AM|PM)?/i);
+    if (match) {
+      baseHour = parseInt(match[1], 10);
+      baseMinute = parseInt(match[2], 10);
+      if (match[3]) {
+        isPm = match[3].toUpperCase() === "PM";
+      }
+    }
+  } else {
+    // Seed from character names and count so each episode has a unique natural start time
+    const seed = script.characters.reduce((acc, c) => acc + c.name.charCodeAt(0), 0);
+    baseHour = (seed % 9) + 1; // 1 to 9
+    baseMinute = (seed * 7) % 50 + 10; // 10 to 59
+    isPm = (seed % 2 === 0);
+  }
+
+  // Count how many message events have occurred up to this index
+  let messageCount = 0;
+  for (let i = 0; i <= eventIndex; i++) {
+    if (script.events[i].type === "message") {
+      messageCount++;
+    }
+  }
+
+  // Advance time by 1 minute after every 4 messages
+  const minutesToAdd = Math.floor(messageCount / 4);
+  
+  let totalMinutes = baseHour * 60 + baseMinute + minutesToAdd;
+  let currentHour = Math.floor(totalMinutes / 60) % 12;
+  if (currentHour === 0) currentHour = 12;
+  let currentMinute = totalMinutes % 60;
+  const minutePadded = currentMinute < 10 ? `0${currentMinute}` : `${currentMinute}`;
+  const ampm = isPm ? "PM" : "AM";
+
+  return `Today at ${currentHour}:${minutePadded} ${ampm}`;
+};
+
 const calculateScale = (activeEvents: any[], script: ChatScript) => {
   if (activeEvents.length === 0) return 1;
 
@@ -285,11 +333,13 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
             }
 
             if (event.type === "message") {
+              const timeString = getEventTimeString(event.eventIndex, script);
               return (
                 <DiscordMessage
                   key={`ui-msg-${i}`}
                   character={character}
                   text={scriptEvent.text}
+                  timeString={timeString}
                   isFirstMessageInGroup={isFirst}
                 />
               );

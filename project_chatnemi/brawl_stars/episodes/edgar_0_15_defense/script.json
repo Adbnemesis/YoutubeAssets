@@ -5,6 +5,7 @@
     { "id": "mortis", "name": "Mortis", "color": "#9C27B0", "avatarUrl": "mortis.png" },
     { "id": "starr_park_bot", "name": "Starr Park Moderator", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
   ],
+  "startTime": "5:42 PM",
   "bgm": "sneaky_snitch.mp3",
   "events": [
     { "type": "message", "characterId": "edgar", "text": "gg guys. close bounty game", "delaySeconds": 0.5, "sfx": "ping.mp3" },

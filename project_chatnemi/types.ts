@@ -7,12 +7,13 @@ export interface Character {
 
 export interface ChatMessage {
   type: "message";
-  id: string;
+  id?: string;
   characterId: string;
   text: string;
   delaySeconds: number; // Delay before this message appears (since previous message)
   isTypingDuration?: number; // How long to show "typing..." before message appears
   sfx?: string; // e.g. 'ping.mp3', 'vine_boom.mp3'
+  timeString?: string; // Optional custom timestamp (e.g. "Today at 5:42 PM")
 }
 
 export interface CutawayEvent {
@@ -30,4 +31,5 @@ export interface ChatScript {
   characters: Character[];
   events: ScriptEvent[];
   bgm?: string;
+  startTime?: string; // e.g. "5:24 PM" or "8:15 AM" (defaults dynamically)
 }
