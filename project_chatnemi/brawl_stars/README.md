@@ -12,20 +12,23 @@ Unlike standard game clips, these videos treat Brawlers as members of a chaotic 
 
 | Brawler | Role / Archetype | Discord Behavior & Tropes | Signature Color |
 | :--- | :--- | :--- | :--- |
+| **Chester** | Chaos Prankster & Server Troll | Fakes update leaks, changes server nicknames, posts inspect-element patch notes, trolls Mandy. | `#FF7043` (Vibrant Orange) |
+| **Mandy** | Exasperated Candy Queen | Server moderator trying to keep order; exposes Chester's pranks; threatens sugar ray supers. | `#EC407A` (Candy Pink) |
 | **Edgar** | Toxic Thumbs-Down Spammer | Constantly spams 👎, claims he carried with 0-12 K/D, jumps straight into Shellys with Super, blames lag. | `#E91E63` (Hot Pink/Red) |
 | **Mortis** | Failed Trickshot Artist | Refuses to walk the ball into an open goal, tries 5-bounce trickshots and hits the wall, blames Wi-Fi. | `#9C27B0` (Purple) |
 | **Shelly** | Bush-Camping Menace | Sits silently in the center bush for 90% of the match, charges Hypercharge, one-shots anyone walking by. | `#29B6F6` (Sky Blue) |
+| **Bibi** | The Homerun Enforcer | Drops into voice calls with shaking screen & Hypercharge glow; launches toxic randoms into orbit. | `#FF4081` (Bubblegum) |
+| **Kit** | Head-Clinging Carry Wannabe | Sits on teammates' heads, blames them for walking into poison, tries to unfriend people mid-air. | `#AB47BC` (Lilac Purple) |
+| **Colt** | Narcissistic Sharpshooter | Boasts about 500 fan requests; gets exposed for missing 84 silver bullet shots in a row. | `#42A5F5` (Bright Blue) |
+| **Colette** | Obsessive Scrapbook Stalker | Makes 500 alt accounts to track everyone's match histories, misses, and embarrassing deaths. | `#F48FB1` (Pastel Pink) |
+| **Piper** | Polite Off-Screen Sniper | Sweet and courteous in chat; drops devastating polite roasts before 4,500 damage off-screen snipes. | `#BA68C8` (Lavender) |
 | **Crow** | Annoying Poison Poker | Fast-talking pest who pecks from maximum range, screams "CAW CAW", jumps away the instant he gets hit. | `#FFC107` (Gold/Amber) |
 | **Frank** | The Interrupted Tank | Tries to type long logical essays, always gets stunned or cancelled 0.01s before his super lands. | `#78909C` (Steel Blue) |
-| **Kenji** | Pretentious Sushi Chef | Narcissistic master swordsman, complains about low-grade sashimi, treats Brawl Ball like culinary art. | `#FF5722` (Deep Orange) |
-| **Melodie** | K-Pop Drama Queen | Demands everyone stream her new song, types in ALL CAPS, initiates dramatic voice calls when insulted. | `#F06292` (Pastel Pink) |
 | **Hank** | "I WAS PRAWN READY! 🦐" | Military veteran who screams in army jargon, blows giant bubbles at the worst possible moments. | `#4CAF50` (Green) |
-| **Gale** | Grumpy Janitor | The exhausted elder who wants everyone off his lawn, blows toxic assassins away with blizzard gale. | `#81D4FA` (Ice Blue) |
 | **Leon** | Invisible Lurker | Lurks in chat without typing, suddenly posts humiliating screenshots from stealth. | `#4CAF50` (Emerald) |
-| **Surge** | Hyperactive Party Bot | Drinks energy drinks, screams "SURGE PROTECTOR!", levels up his chat permissions mid-argument. | `#E53935` (Bright Red) |
 | **Starr Park Bot** | Creepy Server Moderator | The automated admin. Enforces creepy corporate rules, deducts -150 Ranked Elo, and drops eerie lore disclaimers. | `#FFD700` (Gold) |
 
-*(See `brawler_roster.json` for full character configurations ready to import into scripts!)*
+*(Inspired by the comedy style of top creators like **@CelevanBS** and **@GemzoBS**, blended with Beluga's rapid-fire algorithm! See `brawler_roster.json` for full character configurations).*
 
 ---
 
@@ -180,11 +183,7 @@ project_chatnemi/
 │   │   └── brawl_discord_tropes.md              # Trope guide, banter dynamics & meme maps
 │   └── episodes/
 │       ├── bs_ep01_trickshot_disaster/          # Episode 1: Ranked Brawl Ball throw
-│       │   ├── script.json
-│       │   └── metadata.txt
 │       └── bs_ep02_bushcamp_confession/         # Episode 2: Solo Showdown mystery
-│           ├── script.json
-│           └── metadata.txt
 │
 ├── assets/                                      # Shared assets for all Chatnemi editions
 │   ├── profile_pic/                             # Brawler & AI avatar PNGs

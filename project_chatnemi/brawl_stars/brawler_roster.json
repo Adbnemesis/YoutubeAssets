@@ -34,6 +34,28 @@
       "defaultSfx": "shelly_super.mp3"
     },
     {
+      "id": "chester",
+      "name": "Chester",
+      "color": "#FF7043",
+      "avatarUrl": "chester.png",
+      "rarity": "Legendary",
+      "role": "Damage Dealer",
+      "archetype": "Chaos Prankster & Server Troll",
+      "catchphrase": "Watch this prank! It's just a joke bro! 🃏",
+      "defaultSfx": "anime-wow.mp3"
+    },
+    {
+      "id": "mandy",
+      "name": "Mandy",
+      "color": "#EC407A",
+      "avatarUrl": "mandy.png",
+      "rarity": "Epic",
+      "role": "Marksman",
+      "archetype": "Exasperated Candy Queen",
+      "catchphrase": "CHESTER STOP TOUCHING MY SERVER SETTINGS!",
+      "defaultSfx": "error.mp3"
+    },
+    {
       "id": "crow",
       "name": "Crow",
       "color": "#FFC107",
@@ -54,6 +76,61 @@
       "archetype": "Perpetually Interrupted Super",
       "catchphrase": "GRRRR- *gets stunned 0.01s before super*",
       "defaultSfx": "error.mp3"
+    },
+    {
+      "id": "kit",
+      "name": "Kit",
+      "color": "#AB47BC",
+      "avatarUrl": "kit.png",
+      "rarity": "Legendary",
+      "role": "Support",
+      "archetype": "Head-Clinging Annoyance",
+      "catchphrase": "MEOW! I'm carrying you bro, don't walk into the poison!",
+      "defaultSfx": "pop.mp3"
+    },
+    {
+      "id": "colt",
+      "name": "Colt",
+      "color": "#42A5F5",
+      "avatarUrl": "colt.png",
+      "rarity": "Rare",
+      "role": "Damage Dealer",
+      "archetype": "Vanity Obsessed Sharpshooter",
+      "catchphrase": "Too pretty for pain! Check out my silver bullet!",
+      "defaultSfx": "ping.mp3"
+    },
+    {
+      "id": "buzz",
+      "name": "Buzz",
+      "color": "#66BB6A",
+      "avatarUrl": "buzz.png",
+      "rarity": "Mythic",
+      "role": "Assassin",
+      "archetype": "Aggressive Lifeguard Whistle Blower",
+      "catchphrase": "NO RUNNING BY THE POOL! *hooks into 10 power cube Shelly*",
+      "defaultSfx": "fahhh.mp3"
+    },
+    {
+      "id": "piper",
+      "name": "Piper",
+      "color": "#BA68C8",
+      "avatarUrl": "piper.png",
+      "rarity": "Epic",
+      "role": "Marksman",
+      "archetype": "Polite Sniper Sweetheart",
+      "catchphrase": "Oh honey, you're 20 tiles away... *BANG 4500 damage*",
+      "defaultSfx": "anime-wow.mp3"
+    },
+    {
+      "id": "colette",
+      "name": "Colette",
+      "color": "#F48FB1",
+      "avatarUrl": "colette.png",
+      "rarity": "Epic",
+      "role": "Damage Dealer",
+      "archetype": "Obsessive Fan Scrapbooker",
+      "catchphrase": "I HAVE YOUR FULL SCRAPBOOK AND BATTLE LOG!",
+      "defaultSfx": "record_scratch.mp3"
     },
     {
       "id": "kenji",
