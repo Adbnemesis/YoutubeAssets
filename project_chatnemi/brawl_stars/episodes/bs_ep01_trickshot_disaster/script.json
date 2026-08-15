@@ -1,0 +1,57 @@
+{
+  "characters": [
+    { "id": "mortis", "name": "Mortis", "color": "#9C27B0", "avatarUrl": "mortis.png" },
+    { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
+    { "id": "shelly", "name": "Shelly", "color": "#29B6F6", "avatarUrl": "shelly.png" },
+    { "id": "frank", "name": "Frank", "color": "#78909C", "avatarUrl": "frank.png" },
+    { "id": "starr_park_bot", "name": "Starr Park Moderator", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
+  ],
+  "bgm": "sneaky_snitch.mp3",
+  "events": [
+    { "type": "message", "characterId": "mortis", "text": "hey guys why did everyone leave the team lobby?", "delaySeconds": 0.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "...", "delaySeconds": 1.5, "isTypingDuration": 1.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "mortis.", "delaySeconds": 1.5, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "you trickshotted into our OWN goal with 3 seconds left", "delaySeconds": 2.0, "isTypingDuration": 1.2, "sfx": "vine_boom.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "thumbs_down.png", "durationSeconds": 2.0, "delaySeconds": 1.0, "fadeIn": true, "sfx": "bruh.mp3" },
+    
+    { "type": "message", "characterId": "mortis", "text": "IT WAS A TACTICAL RICOCHET", "delaySeconds": 1.5, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "i was calculating the 45-degree angle off the right wall", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "my wi-fi lagged for 0.2ms", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_mortis", "durationSeconds": 2.8, "delaySeconds": 1.0, "fadeIn": true, "sfx": "discord_call.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "pick up the phone edgar i have whiteboard proof", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "im not joining your call bro", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "Mortis.", "delaySeconds": 2.0, "isTypingDuration": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "The enemy team was literally wiped.", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "The goal was completely empty.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You spun 3 times and dashed backwards.", "delaySeconds": 2.2, "isTypingDuration": 1.0, "sfx": "vine_boom.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "clown_pin.png", "durationSeconds": 2.5, "delaySeconds": 1.0, "fadeIn": true, "sfx": "pin_surrender.mp3" },
+    
+    { "type": "message", "characterId": "mortis", "text": "shelly you literally stood in the center bush the entire round", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "you did 0 damage", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "I was charging my Hypercharge.", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Patiently.", "delaySeconds": 1.5, "sfx": "shelly_super.mp3" },
+    
+    { "type": "message", "characterId": "frank", "text": "Guys, if we look at the mathematical telemetry of Brawl Ball physics-", "delaySeconds": 2.5, "isTypingDuration": 2.0, "sfx": "discord_join.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "frank shut up", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "frank mute yourself", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "frank no one asked", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "frank", "text": "...", "delaySeconds": 1.0, "sfx": "fahhh.mp3" },
+    
+    { "type": "message", "characterId": "starr_park_bot", "text": "⚠️ RANKED MATCH REPORT COMPLETE ⚠️", "delaySeconds": 2.0, "sfx": "supercell_jingle.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Match Outcome: DEFEAT. Reason: Critical Skill Issue.", "delaySeconds": 2.2, "isTypingDuration": 1.0, "sfx": "brawl_match_lose.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "All participants deducted -180 Elo. Mortis suspended for 72 hours.", "delaySeconds": 2.5, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "mortis", "text": "NOOOOO MY MASTERY POINTS", "delaySeconds": 1.5, "sfx": "discord_leave.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "thumbs_down.png", "durationSeconds": 3.0, "delaySeconds": 0.8, "fadeIn": true, "sfx": "edgar_punch.mp3" }
+  ]
+}

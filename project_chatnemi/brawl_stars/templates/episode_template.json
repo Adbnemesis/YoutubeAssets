@@ -1,0 +1,76 @@
+{
+  "characters": [
+    {
+      "id": "edgar",
+      "name": "Edgar",
+      "color": "#E91E63",
+      "avatarUrl": "edgar.png"
+    },
+    {
+      "id": "mortis",
+      "name": "Mortis",
+      "color": "#9C27B0",
+      "avatarUrl": "mortis.png"
+    },
+    {
+      "id": "shelly",
+      "name": "Shelly",
+      "color": "#29B6F6",
+      "avatarUrl": "shelly.png"
+    },
+    {
+      "id": "starr_park_bot",
+      "name": "Starr Park Moderator",
+      "color": "#FFD700",
+      "avatarUrl": "starr_park_bot.png"
+    }
+  ],
+  "bgm": "sneaky_snitch.mp3",
+  "events": [
+    {
+      "type": "message",
+      "characterId": "mortis",
+      "text": "[Insert opening hook message here]",
+      "delaySeconds": 0.5,
+      "sfx": "ping.mp3"
+    },
+    {
+      "type": "message",
+      "characterId": "edgar",
+      "text": "[Insert response / accusation]",
+      "delaySeconds": 1.5,
+      "isTypingDuration": 1.2,
+      "sfx": "ping.mp3"
+    },
+    {
+      "type": "cutaway",
+      "mediaUrl": "thumbs_down.png",
+      "durationSeconds": 2.5,
+      "delaySeconds": 1.0,
+      "fadeIn": true,
+      "sfx": "vine_boom.mp3"
+    },
+    {
+      "type": "cutaway",
+      "mediaUrl": "DISCORD_CALL_mortis",
+      "durationSeconds": 3.0,
+      "delaySeconds": 1.5,
+      "fadeIn": true,
+      "sfx": "discord_call.mp3"
+    },
+    {
+      "type": "message",
+      "characterId": "shelly",
+      "text": "[Insert devastating receipt / punchline]",
+      "delaySeconds": 1.5,
+      "sfx": "shelly_super.mp3"
+    },
+    {
+      "type": "message",
+      "characterId": "starr_park_bot",
+      "text": "[Insert server ban / trophy deduction]",
+      "delaySeconds": 2.0,
+      "sfx": "supercell_jingle.mp3"
+    }
+  ]
+}

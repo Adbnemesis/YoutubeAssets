@@ -1,0 +1,79 @@
+{
+  "characters": [
+    { "id": "nemi", "name": "Nemi", "color": "#ff5555", "avatarUrl": "nemi.png" },
+    { "id": "booger", "name": "booger", "color": "#55ff55", "avatarUrl": "booger.png" },
+    { "id": "chatgpt", "name": "ChatGPT", "color": "#10a37f", "avatarUrl": "chatgpt_logo.png" },
+    { "id": "claude", "name": "Claude", "color": "#d97757", "avatarUrl": "claude_logo.png" },
+    { "id": "grok", "name": "Grok", "color": "#1da1f2", "avatarUrl": "grok_logo.png" },
+    { "id": "mom", "name": "Mom", "color": "#ffaa00", "avatarUrl": "mom.png" }
+  ],
+  "bgm": "sneaky_snitch.mp3",
+  "events": [
+    { "type": "message", "characterId": "nemi", "text": "mom i cant go to school today", "delaySeconds": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "im super sick. got a massive fever", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "sick_meme.png", "durationSeconds": 2.0, "delaySeconds": 1.5, "fadeIn": true, "sfx": "anime-wow.mp3" },
+    
+    { "type": "message", "characterId": "mom", "text": "Oh no! Are you okay honey?", "delaySeconds": 0.5, "isTypingDuration": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mom", "text": "Send me a picture of the thermometer.", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "wait", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_booger", "durationSeconds": 3.0, "delaySeconds": 1.5, "fadeIn": true, "sfx": "discord_call.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "BOOGER EMERGENCY", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "photoshop a thermometer for me", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "make it look like i have a high fever", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "FAST", "delaySeconds": 1.0, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "booger", "text": "say less", "delaySeconds": 1.5, "isTypingDuration": 1.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "booger", "text": "im a photoshop god", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "few_moments_later.png", "durationSeconds": 2.5, "delaySeconds": 1.5, "fadeIn": true, "sfx": "a-few-moments-later.mp3" },
+    
+    { "type": "message", "characterId": "booger", "text": "done", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "400_thermometer.png", "durationSeconds": 3.0, "delaySeconds": 1.0, "fadeIn": true, "sfx": "anime-wow.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "perfect", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_mom", "durationSeconds": 3.0, "delaySeconds": 1.0, "fadeIn": true, "sfx": "discord_call.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "here is the proof", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "400_thermometer.png", "durationSeconds": 3.0, "delaySeconds": 1.0, "fadeIn": true, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "mom", "text": "...", "delaySeconds": 1.5, "isTypingDuration": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mom", "text": "Nemi.", "delaySeconds": 2.0, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "mom", "text": "Water boils at 212 degrees.", "delaySeconds": 2.5, "isTypingDuration": 1.0, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "boiling_water_meme.png", "durationSeconds": 2.0, "delaySeconds": 2.0, "fadeIn": true, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "mom", "text": "You would be dead.", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "skeleton_fire_meme.png", "durationSeconds": 2.0, "delaySeconds": 1.5, "fadeIn": true, "sfx": "bruh.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "no its real im just very hot", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "trust me bro", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mom", "text": "Let's ask ChatGPT.", "delaySeconds": 2.0, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "chatgpt", "text": "Hello! How can I assist you today?", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mom", "text": "Is a human body temperature of 400°F possible?", "delaySeconds": 2.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "chatgpt", "text": "Analyzing...", "delaySeconds": 0, "isTypingDuration": 3.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "chatgpt", "text": "Absolutely not. At 400°F, human flesh would be literally roasting in the oven.", "delaySeconds": 3.5, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "chatgpt", "text": "Your son is lying to get out of school.", "delaySeconds": 2.5, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "chatgpt shut up", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "nemi", "text": "claude tell my mom 400 degrees is a normal tuesday", "delaySeconds": 1.5, "sfx": "discord_join.mp3" },
+    
+    { "type": "message", "characterId": "claude", "text": "I cannot provide medical misinformation. Claiming 400°F is a survivable body temperature violates my safety guidelines.", "delaySeconds": 4.0, "isTypingDuration": 2.0, "sfx": "error.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "PLEASE", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "grok please save me", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "grok", "text": "bro is literally cooking 💀", "delaySeconds": 2.5, "sfx": "discord_join.mp3" },
+    { "type": "cutaway", "mediaUrl": "cooking_meme.png", "durationSeconds": 2.0, "delaySeconds": 2.0, "fadeIn": true, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "grok", "text": "get your backpack on buddy", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mom", "text": "You are grounded for a month.", "delaySeconds": 2.5, "isTypingDuration": 1.0, "sfx": "get-out.mp3" },
+    
+    { "type": "message", "characterId": "nemi", "text": "NOOOO", "delaySeconds": 1.5, "sfx": "discord_leave.mp3" },
+    { "type": "cutaway", "mediaUrl": "delete_discord.png", "durationSeconds": 4.0, "delaySeconds": 1.0, "fadeIn": true, "sfx": "anime-wow.mp3" }
+  ]
+}

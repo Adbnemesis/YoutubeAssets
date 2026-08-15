@@ -1,0 +1,50 @@
+{
+  "characters": [
+    { "id": "crow", "name": "Crow", "color": "#FFC107", "avatarUrl": "crow.png" },
+    { "id": "leon", "name": "Leon", "color": "#4CAF50", "avatarUrl": "leon.png" },
+    { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
+    { "id": "shelly", "name": "Shelly", "color": "#29B6F6", "avatarUrl": "shelly.png" },
+    { "id": "starr_park_bot", "name": "Starr Park Moderator", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
+  ],
+  "bgm": "monkeys_spinning_monkeys.mp3",
+  "events": [
+    { "type": "message", "characterId": "crow", "text": "yo is anyone alive in solo showdown?", "delaySeconds": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "crow", "text": "6 brawlers vanished in literally 15 seconds", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "bro it was crazy", "delaySeconds": 1.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i jumped across the center river and got blasted into another dimension", "delaySeconds": 2.0, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "there is a ghost hacker on cavern churn", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "thumbs_down.png", "durationSeconds": 2.0, "delaySeconds": 1.0, "fadeIn": true, "sfx": "bruh.mp3" },
+    
+    { "type": "message", "characterId": "crow", "text": "wait i checked the match replay logs", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "crow", "text": "leon weren't you in that lobby?", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "leon", "text": "...", "delaySeconds": 1.2, "isTypingDuration": 1.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "leon", "text": "i was using my super the entire match", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "leon", "text": "i saw the whole thing from the bushes", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_crow", "durationSeconds": 2.5, "delaySeconds": 1.0, "fadeIn": true, "sfx": "discord_call.mp3" },
+    
+    { "type": "message", "characterId": "crow", "text": "LEON WHO WAS IT", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "leon", "text": "it was Shelly.", "delaySeconds": 2.0, "isTypingDuration": 1.5, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "leon", "text": "she had 14 power cubes and Band-Aid charged", "delaySeconds": 2.2, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "leon", "text": "she hasn't left the center 2x2 tile bush since 8:00 AM", "delaySeconds": 2.5, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "clown_pin.png", "durationSeconds": 2.5, "delaySeconds": 1.0, "fadeIn": true, "sfx": "pin_surrender.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "Hello boys.", "delaySeconds": 2.0, "isTypingDuration": 1.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Rent in the center bush is free.", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "And my Super recharges in 1 shot.", "delaySeconds": 2.0, "sfx": "shelly_super.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "IM REPORTING YOU TO SUPERCELL", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "starr_park_bot", "text": "📢 STARR PARK NOTICE: Bush camping is a certified tactical feature.", "delaySeconds": 2.2, "sfx": "supercell_jingle.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Shelly awarded +100 Trophies. Edgar awarded 10th Place (-9 Trophies).", "delaySeconds": 2.5, "isTypingDuration": 1.0, "sfx": "brawl_match_lose.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "I HATE THIS GAME", "delaySeconds": 1.2, "sfx": "discord_leave.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "thumbs_down.png", "durationSeconds": 3.0, "delaySeconds": 0.8, "fadeIn": true, "sfx": "fahhh.mp3" }
+  ]
+}

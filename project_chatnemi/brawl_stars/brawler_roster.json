@@ -1,0 +1,147 @@
+{
+  "brawlers": [
+    {
+      "id": "edgar",
+      "name": "Edgar",
+      "color": "#E91E63",
+      "avatarUrl": "edgar.png",
+      "rarity": "Epic",
+      "role": "Assassin",
+      "archetype": "Toxic Thumbs-Down Spammer",
+      "catchphrase": "Whatever... 👎",
+      "defaultSfx": "edgar_super_jump.mp3"
+    },
+    {
+      "id": "mortis",
+      "name": "Mortis",
+      "color": "#9C27B0",
+      "avatarUrl": "mortis.png",
+      "rarity": "Mythic",
+      "role": "Assassin",
+      "archetype": "Failed Trickshot Artist",
+      "catchphrase": "I bring you the gift of darkness! (and own goals)",
+      "defaultSfx": "vine_boom.mp3"
+    },
+    {
+      "id": "shelly",
+      "name": "Shelly",
+      "color": "#29B6F6",
+      "avatarUrl": "shelly.png",
+      "rarity": "Common",
+      "role": "Damage Dealer",
+      "archetype": "Hypercharge Bush Camper",
+      "catchphrase": "BOOM! Welcome to my bush.",
+      "defaultSfx": "shelly_super.mp3"
+    },
+    {
+      "id": "crow",
+      "name": "Crow",
+      "color": "#FFC107",
+      "avatarUrl": "crow.png",
+      "rarity": "Legendary",
+      "role": "Assassin",
+      "archetype": "Annoying Poison Poker",
+      "catchphrase": "Don't mess with my crew! CAW CAW",
+      "defaultSfx": "whoosh.mp3"
+    },
+    {
+      "id": "frank",
+      "name": "Frank",
+      "color": "#78909C",
+      "avatarUrl": "frank.png",
+      "rarity": "Epic",
+      "role": "Tank",
+      "archetype": "Perpetually Interrupted Super",
+      "catchphrase": "GRRRR- *gets stunned 0.01s before super*",
+      "defaultSfx": "error.mp3"
+    },
+    {
+      "id": "kenji",
+      "name": "Kenji",
+      "color": "#FF5722",
+      "avatarUrl": "kenji.png",
+      "rarity": "Legendary",
+      "role": "Assassin",
+      "archetype": "Pretentious Sushi Chef",
+      "catchphrase": "Precision slicing, fresh ingredients.",
+      "defaultSfx": "sushi_wink.mp3"
+    },
+    {
+      "id": "melodie",
+      "name": "Melodie",
+      "color": "#F06292",
+      "avatarUrl": "melodie.png",
+      "rarity": "Mythic",
+      "role": "Assassin",
+      "archetype": "K-Pop Drama Queen",
+      "catchphrase": "Did you stream my comeback single yet??",
+      "defaultSfx": "anime-wow.mp3"
+    },
+    {
+      "id": "hank",
+      "name": "Hank",
+      "color": "#4CAF50",
+      "avatarUrl": "hank.png",
+      "rarity": "Epic",
+      "role": "Tank",
+      "archetype": "I WAS PRAWN READY! 🦐",
+      "catchphrase": "I WAS PRAWN READY! ATTACK FORMATION!",
+      "defaultSfx": "fahhh.mp3"
+    },
+    {
+      "id": "gale",
+      "name": "Gale",
+      "color": "#81D4FA",
+      "avatarUrl": "gale.png",
+      "rarity": "Epic",
+      "role": "Controller",
+      "archetype": "Grumpy Janitor",
+      "catchphrase": "Hold on to your hats, kids...",
+      "defaultSfx": "record_scratch.mp3"
+    },
+    {
+      "id": "leon",
+      "name": "Leon",
+      "color": "#4CAF50",
+      "avatarUrl": "leon.png",
+      "rarity": "Legendary",
+      "role": "Assassin",
+      "archetype": "Invisible Lurker",
+      "catchphrase": "Sneaky time... you never saw me.",
+      "defaultSfx": "pop.mp3"
+    },
+    {
+      "id": "surge",
+      "name": "Surge",
+      "color": "#E53935",
+      "avatarUrl": "surge.png",
+      "rarity": "Epic",
+      "role": "Damage Dealer",
+      "archetype": "Hyperactive Party Robot",
+      "catchphrase": "SURGE PROTECTOR! SOMEBODY CALL FOR SURGE?!",
+      "defaultSfx": "brawl_hypercharge.mp3"
+    },
+    {
+      "id": "tara",
+      "name": "Tara",
+      "color": "#8E24AA",
+      "avatarUrl": "tara.png",
+      "rarity": "Mythic",
+      "role": "Controller",
+      "archetype": "Cryptic Fortune Teller",
+      "catchphrase": "Mmmhmm... *throws shadow black hole*",
+      "defaultSfx": "riser.mp3"
+    },
+    {
+      "id": "starr_park_bot",
+      "name": "Starr Park Moderator",
+      "color": "#FFD700",
+      "avatarUrl": "starr_park_bot.png",
+      "rarity": "System",
+      "role": "Bot",
+      "archetype": "Creepy Server Admin",
+      "catchphrase": "Smile! Everything is normal at Starr Park. (-150 Elo applied)",
+      "defaultSfx": "supercell_jingle.mp3"
+    }
+  ]
+}

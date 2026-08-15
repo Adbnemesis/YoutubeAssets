@@ -19,6 +19,7 @@ export interface CutawayEvent {
   type: "cutaway";
   mediaUrl: string; // Filename of the meme/image in assets
   durationSeconds: number; // How long it stays on screen
+  delaySeconds?: number; // Delay before the cutaway starts
   fadeIn?: boolean; // Whether it fades in
   sfx?: string; // e.g. 'vine_boom.mp3'
 }

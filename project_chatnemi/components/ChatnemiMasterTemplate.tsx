@@ -98,6 +98,9 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
 
     script.events.forEach((evt, index) => {
       if (evt.type === "cutaway") {
+        if (evt.delaySeconds) {
+          currentFrame += Math.round(evt.delaySeconds * fps);
+        }
         const cutawayDurationFrames = Math.round(evt.durationSeconds * fps);
         items.push({
           type: "cutaway",
@@ -203,6 +206,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
               key={`audio-sfx-${i}`}
               from={event.startFrame}
               layout="none"
+              durationInFrames={event.durationFrames}
             >
               <Audio
                 src={staticFile(`project_chatnemi_assets/sounds/${event.sfx}`)}
@@ -217,6 +221,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
       {/* DISCORD UI LAYER */}
       <AbsoluteFill style={{
           justifyContent: "center", // Center vertically
+          opacity: events.filter(e => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame).length > 0 ? 1 : 0
       }}>
         {/* Scaled Grey Band Container */}
         <div style={{
