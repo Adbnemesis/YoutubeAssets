@@ -39,40 +39,47 @@ Every video follows the high-retention Beluga pacing algorithm designed for YouT
 ```
 ┌─────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐      ┌────────────────────┐
 │ 1. THE HOOK     │ ───> │ 2. THE ESCALATION       │ ───> │ 3. THE CLIMAX / CALL    │ ───> │ 4. THE PUNCHLINE   │
-### ⏱️ Viral Pacing & Retention Engineering Standards
+## ⏱️ Long-Form Pacing & Comedy Engineering Standards
 
-To achieve **>85% Average View Duration (AVD)** and trigger the YouTube recommendation algorithm:
+> [!IMPORTANT]
+> **FORMAT DIRECTIVE**: This edition is strictly for **YouTube Long-Form Landscape Videos (16:9, 1920x1080)**.
+> **TARGET DURATION**: **2:00 to 3:30 Minutes** (approx. 3,600 to 6,300 frames @ 30 FPS).
+> **NEVER** format as 9:16 Shorts or compress episodes to under 60 seconds!
 
-1. **Target Video Length:** Keep high-energy single-sketch episodes between **45s – 55s** (under 1,650 frames @ 30 FPS).
-2. **The 0.8-Second Rule:** No text bubble or screen state should remain static for longer than 0.9s.
-3. **Dialogue Pacing:**
-   - Standard exchanges: `delaySeconds` = **0.6s – 0.9s**.
-   - Rapid-fire spam runs ("no", "wait", "look"): `delaySeconds` = **0.2s – 0.4s**.
-   - Suspense typing: `isTypingDuration` = **0.5s – 0.8s** (never exceed 1.0s to avoid drop-offs).
-4. **Kinetic Cutaways:** Keep meme receipts and 3D graphics on screen for **2.0s – 2.8s** with automatic spring slam and pan-zoom.
-5. **Dynamic Timestamps:** Time progresses by **+1 minute every 4 messages** automatically (`startTime` customizable).
+To achieve maximum audience retention across a 2+ minute long-form comedic narrative:
+
+1. **Dialogue Pacing:**
+   - Standard reading time: `delaySeconds` = **1.4s – 2.0s** per text bubble.
+   - Rapid-fire spam runs ("no", "wait", "look"): `delaySeconds` = **0.3s – 0.6s**.
+   - Suspense typing: `isTypingDuration` = **0.8s – 1.2s** before major punchlines and roasts.
+2. **Graphic Cutaways:** Keep 3D meme cards, stat logs, and receipts on screen for **2.8s – 3.5s** with kinetic spring slam and slow pan-zoom.
+3. **Dynamic Timestamps:** Time advances by **+1 minute every 4 messages** automatically (`startTime` customizable).
 
 ---
 
-## 🎭 The 3-Act Viral Comedy Formula
+## 🎭 The 4-Act Long-Form Narrative Formula
 
-Every top-performing CelevanBS / GemzoBS style episode follows this 3-act escalation:
+Every 2–3 minute episode follows a 4-act escalating storyline:
 
 ```
-[ ACT 1: THE HOOK & CALLOUT ] (0:00 - 0:10)
-➔ Brawler enters claiming a win or defending a loss
-➔ Teammate typing (0.7s) drops the brutal cold-hard score ("The score was 0 to 40")
-➔ Rapid slam cutaway (Edgar raging / crying)
+[ ACT 1: THE MATCH DEFEAT & GASLIGHTING ] (0:00 - 0:35)
+➔ Brawler enters claiming a close match or defending their loss
+➔ Teammate drops the brutal cold-hard score ("The score was 0 to 40")
+➔ First reaction cutaway (Edgar rage / crying)
 
-[ ACT 2: THE 3D RECEIPT REVEAL ] (0:10 - 0:25)
+[ ACT 2: THE 3D RECEIPTS & SERVER TROLLING ] (0:35 - 1:15)
 ➔ Brawler makes an absurd defense ("Psychological warfare / lag spike")
-➔ Squad drops the high-resolution 3D in-game match stat card / replay proof
-➔ Clown roast / facepalm meme cutaway
+➔ Teammates drop 3D in-game match stat card & clown meme
+➔ Server trolls (Chester, Mandy, Colette) join with fake patch notes & inspect element roasts
 
-[ ACT 3: THE ABSURD SECONDARY TWIST & CLIMAX ] (0:25 - 0:48)
-➔ A server troll (Chester, Mandy, Colette, or the Turret) hijacks the chat
+[ ACT 3: THE VOICE CALL TRAP & POINT-BLANK SUPER ] (1:15 - 1:45)
 ➔ Panic incoming Discord voice call overlay (ringing + camera shake)
-➔ Starr Park Bot drops official disciplinary verdict & demotion stamp
+➔ Accuser asks where they are sitting ➔ Plays point-blank Super SFX through the mic
+
+[ ACT 4: THE STARR PARK AUDIT & DEMOTION CLIMAX ] (1:45 - 2:15+)
+➔ Starr Park Bot drops official disciplinary verdict & Elo penalty
+➔ Ridiculous promotion (e.g. Jessie's stationary turret promoted to Server Moderator)
+➔ Closing ragequit cutaway & suspension stamp
 ```
 
 ---
