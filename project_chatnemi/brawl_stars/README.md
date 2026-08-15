@@ -199,9 +199,25 @@ npx remotion render src/index.tsx Chatnemi \
   --output=../project_chatnemi/brawl_stars/episodes/edgar_0_15_defense/edgar_0_15_defense.mp4
 ```
 
-### 4. Upload Metadata with Supercell Disclaimer
-Every YouTube Shorts/TikTok upload must include the fan content disclaimer in `metadata.txt`:
+### 4. YouTube Metadata & High-CTR Thumbnail Rules
+Every episode directory must contain a `metadata.txt` with Title, Description, Tags, Thumbnail Prompts, and the official Supercell Fan Content disclaimer.
 
+#### 🖼️ Thumbnail Prompt Design Rules (Human-Edited 2D Discord Style):
+> [!IMPORTANT]
+> **AVOID AI 3D UNCANNY LOOK**: Do **not** generate glossy 3D Pixar/CGI renders for thumbnails that look obviously AI-generated.
+> Top-converting Discord parody thumbnails (Beluga style) look like **authentic, clean 2D screenshot edits** created by human editors.
+
+1. **Canvas**: Standard **16:9 Widescreen (1280x720 / 1920x1080)** with dark theme Discord UI (`#313338`).
+2. **Characters**: Flat 2D official Brawl Stars game portraits/pins beside clean Discord chat bubbles.
+3. **The Joke / Curiosity Gap**: 
+   - Speaker A (Accuser): *"Edgar you literally dealt 0 damage."*
+   - Speaker B (Edgar / Target): *"it was aura warfare 💀👎"*
+4. **Click Triggers**: 
+   - A bright hand-drawn **red circle** or **red arrow** pointing to the ridiculous claim or 0-15 stats box.
+   - High-contrast, bold yellow and white 2D text at the top (e.g. `"BRO IS COOKED 💀"` or `"HE GOT BANNED 😭"`).
+5. **Zero Clutter**: High readability on mobile YouTube feeds.
+
+#### ⚖️ Mandatory Supercell Disclaimer:
 > *"This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy."*
 
 ---
