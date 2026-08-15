@@ -17,6 +17,8 @@ import { CaptionOverlay, WordCaption } from "./components/CaptionOverlay";
 import { CollageBurst, CollageBurstProps } from "./CollageBurst";
 import { LyricOverlay, LyricOverlayProps } from "./LyricOverlay";
 import projectProps from "./project_2_props.json";
+import { ChatnemiMasterTemplate } from "../../project_chatnemi/components/ChatnemiMasterTemplate";
+import { ChatScript } from "../../project_chatnemi/types";
 
 // ---------------------------------------------------------------------------
 // Theme System — prevents every video from looking like dark fintech
@@ -133,9 +135,43 @@ const calculateMetadata: CalculateMetadataFunction<ExplainerProps> = async ({
   return { durationInFrames: Math.ceil((lastEnd + 1) * 30) };
 };
 
+const calculateChatnemiMetadata: CalculateMetadataFunction<any> = async ({ props }) => {
+  let frames = 0;
+  const script = props.events ? props : props.script;
+  if (script && script.events) {
+    script.events.forEach((evt: any) => {
+      if (evt.type === 'cutaway') {
+        frames += (evt.delaySeconds || 0) * 30;
+        frames += evt.durationSeconds * 30;
+      } else {
+        frames += (evt.delaySeconds || 0) * 30;
+        frames += (evt.isTypingDuration || 0) * 30;
+      }
+    });
+  }
+  // Add 2 seconds of padding
+  frames += 60;
+  return { durationInFrames: Math.max(30, Math.ceil(frames)) };
+};
+
+const ChatnemiWrapper: React.FC<any> = (props) => {
+  const script = props.events ? props : props.script;
+  return <ChatnemiMasterTemplate script={script} />;
+};
+
 export const Root: React.FC = () => {
   return (
     <>
+      <Composition
+        id="Chatnemi"
+        component={ChatnemiWrapper}
+        durationInFrames={30 * 60}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ characters: [], events: [] }}
+        calculateMetadata={calculateChatnemiMetadata}
+      />
       <Composition
         id="Explainer"
         component={Explainer}
