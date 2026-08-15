@@ -16,7 +16,7 @@
     { "type": "message", "characterId": "shelly", "text": "You died 15 times.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "shelly", "text": "And dealt ZERO damage.", "delaySeconds": 2.0, "isTypingDuration": 1.2, "sfx": "vine_boom.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "thumbs_down.png", "durationSeconds": 2.0, "delaySeconds": 0.8, "fadeIn": true, "sfx": "bruh.mp3" },
+    { "type": "cutaway", "mediaUrl": "edgar_rage_crying.png", "durationSeconds": 2.2, "delaySeconds": 0.8, "fadeIn": true, "sfx": "bruh.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "IT WAS PSYCHOLOGICAL WARFARE", "delaySeconds": 1.5, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "edgar", "text": "i was draining their mental stamina with my presence", "delaySeconds": 2.0, "sfx": "ping.mp3" },
@@ -32,7 +32,7 @@
     { "type": "message", "characterId": "shelly", "text": "You supered into a stationary Jessie turret 15 times in a row.", "delaySeconds": 2.2, "isTypingDuration": 1.0, "sfx": "vine_boom.mp3" },
     { "type": "message", "characterId": "shelly", "text": "The turret didn't even move.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "clown_pin.png", "durationSeconds": 2.5, "delaySeconds": 0.8, "fadeIn": true, "sfx": "pin_surrender.mp3" },
+    { "type": "cutaway", "mediaUrl": "mortis_clown_facepalm.png", "durationSeconds": 2.5, "delaySeconds": 0.8, "fadeIn": true, "sfx": "pin_surrender.mp3" },
     
     { "type": "cutaway", "mediaUrl": "DISCORD_CALL_edgar", "durationSeconds": 2.8, "delaySeconds": 1.0, "fadeIn": true, "sfx": "discord_call.mp3" },
     
@@ -47,6 +47,6 @@
     
     { "type": "message", "characterId": "edgar", "text": "IM UNINSTALLING THIS GAME", "delaySeconds": 1.2, "sfx": "discord_leave.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "thumbs_down.png", "durationSeconds": 3.0, "delaySeconds": 0.8, "fadeIn": true, "sfx": "edgar_punch.mp3" }
+    { "type": "cutaway", "mediaUrl": "starr_park_banned.png", "durationSeconds": 3.0, "delaySeconds": 0.8, "fadeIn": true, "sfx": "edgar_punch.mp3" }
   ]
 }

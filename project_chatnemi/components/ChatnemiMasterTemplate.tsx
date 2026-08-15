@@ -70,13 +70,23 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
     estimatedMessageWidth = 56 + contentWidth;
   }
   
-  // We scale from X=80 (center of avatar).
-  // Distance from origin to end of text is approx estimatedMessageWidth.
-  // We want this distance, after scaling, to reach near the right edge (1800 - 80 = 1720).
-  const finalScale = 1720 / estimatedMessageWidth;
+  // Estimate total unscaled height of active messages in this block
+  let estimatedHeight = 68; // Base height of first message with header & margins
+  const activeCount = activeEvents.filter(e => e.type === "message" || e.type === "typing").length;
+  if (activeCount > 1) {
+    estimatedHeight += (activeCount - 1) * 28;
+  }
+
+  // Bound scale horizontally (1720px max safe width from X=80 origin)
+  const scaleByWidth = 1720 / estimatedMessageWidth;
+
+  // Bound scale vertically so stacked messages never overflow the 1080px screen (840px max safe height)
+  const maxVerticalScale = 840 / estimatedHeight;
+
+  const finalScale = Math.min(scaleByWidth, maxVerticalScale);
   
-  // Allow massive zoom-ins for short text like Beluga (e.g. 10x-15x for "hi")
-  return Math.max(1.5, Math.min(finalScale, 15));
+  // Allow massive zoom-ins for short text like Beluga (e.g. 10x-12x for short text)
+  return Math.max(1.2, Math.min(finalScale, 12));
 };
 
 export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
