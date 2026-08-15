@@ -149,8 +149,6 @@ const calculateChatnemiMetadata: CalculateMetadataFunction<any> = async ({ props
       }
     });
   }
-  // Add 2 seconds of padding
-  frames += 60;
   return { durationInFrames: Math.max(30, Math.ceil(frames)) };
 };
 
