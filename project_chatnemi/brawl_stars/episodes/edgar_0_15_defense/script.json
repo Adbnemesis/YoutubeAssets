@@ -3,51 +3,52 @@
     { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
     { "id": "shelly", "name": "Shelly", "color": "#29B6F6", "avatarUrl": "shelly.png" },
     { "id": "mortis", "name": "Mortis", "color": "#9C27B0", "avatarUrl": "mortis.png" },
+    { "id": "chester", "name": "Chester", "color": "#FF7043", "avatarUrl": "chester.png" },
     { "id": "starr_park_bot", "name": "Starr Park Moderator", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
   ],
   "startTime": "5:42 PM",
   "bgm": "sneaky_snitch.mp3",
   "events": [
-    { "type": "message", "characterId": "edgar", "text": "gg guys. close bounty game", "delaySeconds": 0.5, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "we almost had them", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "gg team. close bounty match", "delaySeconds": 0.3, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "we almost had that comeback", "delaySeconds": 0.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "...", "delaySeconds": 1.5, "isTypingDuration": 1.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "Edgar.", "delaySeconds": 1.8, "sfx": "record_scratch.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "The score was 0 to 40.", "delaySeconds": 2.0, "isTypingDuration": 1.0, "sfx": "vine_boom.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "You died 15 times.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "And dealt ZERO damage.", "delaySeconds": 2.0, "isTypingDuration": 1.2, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "...", "delaySeconds": 0.8, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Edgar.", "delaySeconds": 1.0, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "The score was 0 to 40.", "delaySeconds": 1.1, "isTypingDuration": 0.6, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You died 15 times with ZERO damage.", "delaySeconds": 1.2, "isTypingDuration": 0.6, "sfx": "vine_boom.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "edgar_rage_crying.png", "durationSeconds": 2.2, "delaySeconds": 0.8, "fadeIn": true, "sfx": "bruh.mp3" },
+    { "type": "cutaway", "mediaUrl": "edgar_rage_crying.png", "durationSeconds": 2.0, "delaySeconds": 0.5, "fadeIn": true, "sfx": "bruh.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "IT WAS PSYCHOLOGICAL WARFARE", "delaySeconds": 1.5, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "i was draining their mental stamina with my presence", "delaySeconds": 2.0, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "you don't understand high elo macro strategy", "delaySeconds": 2.0, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "IT WAS PSYCHOLOGICAL WARFARE", "delaySeconds": 0.9, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i was draining their mental focus with my aura", "delaySeconds": 1.2, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "mortis", "text": "bro even i dashed into a wall and dealt 120 damage", "delaySeconds": 2.2, "isTypingDuration": 1.5, "sfx": "discord_join.mp3" },
-    { "type": "message", "characterId": "mortis", "text": "how do you physically do ZERO damage with a scarf", "delaySeconds": 2.2, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "bro even i dashed into a wall and did 120 damage", "delaySeconds": 1.2, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "how do you physically do ZERO damage", "delaySeconds": 1.1, "sfx": "fahhh.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "Look at the battle log.", "delaySeconds": 1.8, "isTypingDuration": 1.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Look at the battle log receipts.", "delaySeconds": 1.0, "isTypingDuration": 0.6, "sfx": "ping.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "edgar_0_15_stats.png", "durationSeconds": 3.5, "delaySeconds": 1.0, "fadeIn": true, "sfx": "anime-wow.mp3" },
+    { "type": "cutaway", "mediaUrl": "edgar_0_15_stats.png", "durationSeconds": 2.8, "delaySeconds": 0.5, "fadeIn": true, "sfx": "anime-wow.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "You supered into a stationary Jessie turret 15 times in a row.", "delaySeconds": 2.2, "isTypingDuration": 1.0, "sfx": "vine_boom.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "The turret didn't even move.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You jumped into a stationary Jessie turret 15 times.", "delaySeconds": 1.2, "isTypingDuration": 0.6, "sfx": "vine_boom.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "mortis_clown_facepalm.png", "durationSeconds": 2.5, "delaySeconds": 0.8, "fadeIn": true, "sfx": "pin_surrender.mp3" },
+    { "type": "cutaway", "mediaUrl": "mortis_clown_facepalm.png", "durationSeconds": 2.0, "delaySeconds": 0.5, "fadeIn": true, "sfx": "pin_surrender.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_edgar", "durationSeconds": 2.8, "delaySeconds": 1.0, "fadeIn": true, "sfx": "discord_call.mp3" },
+    { "type": "message", "characterId": "chester", "text": "guys stop bullying Edgar 😭", "delaySeconds": 1.1, "isTypingDuration": 0.7, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "chester", "text": "he was just donating free super charge to the dog", "delaySeconds": 1.2, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "PICK UP SHELLY I CAN EXPLAIN THE TURRET HITBOX", "delaySeconds": 1.5, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_edgar", "durationSeconds": 2.5, "delaySeconds": 0.6, "fadeIn": true, "sfx": "discord_call.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "No.", "delaySeconds": 1.5, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "BOOM. 💥", "delaySeconds": 1.2, "sfx": "shelly_super.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "PICK UP SHELLY I CAN EXPLAIN THE HITBOX", "delaySeconds": 0.9, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "starr_park_bot", "text": "⚠️ POST-MATCH AUDIT COMPLETE ⚠️", "delaySeconds": 2.2, "sfx": "supercell_jingle.mp3" },
-    { "type": "message", "characterId": "starr_park_bot", "text": "Edgar awarded 'Emotional Support Random' title. (-250 Elo).", "delaySeconds": 2.5, "isTypingDuration": 1.0, "sfx": "brawl_match_lose.mp3" },
-    { "type": "message", "characterId": "starr_park_bot", "text": "Jessie's Turret promoted to Masters III.", "delaySeconds": 2.2, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "No.", "delaySeconds": 0.9, "isTypingDuration": 0.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "BOOM. 💥", "delaySeconds": 0.8, "sfx": "shelly_super.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "IM UNINSTALLING THIS GAME", "delaySeconds": 1.2, "sfx": "discord_leave.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "⚠️ POST-MATCH AUDIT COMPLETE ⚠️", "delaySeconds": 1.2, "sfx": "supercell_jingle.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Edgar awarded 'Emotional Support Random' title (-250 Elo).", "delaySeconds": 1.5, "isTypingDuration": 0.7, "sfx": "brawl_match_lose.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Jessie's Turret promoted to Server Moderator.", "delaySeconds": 1.3, "sfx": "vine_boom.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "starr_park_banned.png", "durationSeconds": 3.0, "delaySeconds": 0.8, "fadeIn": true, "sfx": "edgar_punch.mp3" }
+    { "type": "message", "characterId": "edgar", "text": "IM UNINSTALLING THIS GAME", "delaySeconds": 0.9, "sfx": "discord_leave.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "starr_park_banned.png", "durationSeconds": 2.5, "delaySeconds": 0.5, "fadeIn": true, "sfx": "edgar_punch.mp3" }
   ]
 }

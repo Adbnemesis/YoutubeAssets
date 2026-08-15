@@ -383,6 +383,24 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
           );
         }
 
+        const elapsed = frame - event.startFrame;
+        const duration = event.durationFrames || 60;
+        
+        // Spring punch-in entrance
+        const slam = spring({
+          frame: elapsed,
+          fps,
+          config: { damping: 14, mass: 0.5, stiffness: 220 },
+        });
+        const entryScale = interpolate(slam, [0, 1], [1.1, 1.0], { extrapolateRight: "clamp" });
+
+        // Continuous subtle cinematic zoom-in over the cutaway duration
+        const panZoom = interpolate(elapsed, [0, duration], [1.0, 1.05], {
+          extrapolateRight: "clamp",
+        });
+
+        const combinedScale = entryScale * panZoom;
+
         return (
           <AbsoluteFill
             key={`cutaway-${i}`}
@@ -393,11 +411,17 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
               justifyContent: "center",
               alignItems: "center",
               zIndex: 100, // Always on top
+              overflow: "hidden",
             }}
           >
              <Img 
                 src={staticFile(`project_chatnemi_assets/images/${scriptEvent.mediaUrl}`)} 
-                style={{ width: "100%", height: "100%", objectFit: "contain" }} 
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                  transform: `scale(${combinedScale})`,
+                }} 
              />
           </AbsoluteFill>
         );

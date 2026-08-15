@@ -39,18 +39,41 @@ Every video follows the high-retention Beluga pacing algorithm designed for YouT
 ```
 ┌─────────────────┐      ┌─────────────────────────┐      ┌─────────────────────────┐      ┌────────────────────┐
 │ 1. THE HOOK     │ ───> │ 2. THE ESCALATION       │ ───> │ 3. THE CLIMAX / CALL    │ ───> │ 4. THE PUNCHLINE   │
-│ (0s - 10s)      │      │ (10s - 45s)             │      │ (45s - 75s)             │      │ (Last 5s - 10s)    │
-│ Ping + Absurd   │      │ Rapid texts, pin spams, │      │ Discord voice call,     │      │ Abrupt cut, boom,  │
-│ match screenshot│      │ receipts, bad Wi-Fi     │      │ Starr Park Bot enters   │      │ trophy deduction   │
-└─────────────────┘      └─────────────────────────┘      └─────────────────────────┘      └────────────────────┘
-```
+### ⏱️ Viral Pacing & Retention Engineering Standards
 
-### Pacing Rules:
-1. **Message Bubble Duration:** Standard texts should display for **1.5s – 2.2s** to give viewers comfortable reading time.
-2. **Rapid Spam Runs:** When characters spam quick one-liners ("no", "wait", "look"), set `delaySeconds` to **0.2s – 0.5s**.
-3. **Suspense Typing:** Set `isTypingDuration` to **1.0s – 1.8s** before huge punchlines, confessions, or roasts.
-4. **Graphic Cutaways:** Display meme cards and match screens for **2.5s – 3.5s**.
-5. **No Dead Air:** Every single visual transition must have an accompanying sound effect.
+To achieve **>85% Average View Duration (AVD)** and trigger the YouTube recommendation algorithm:
+
+1. **Target Video Length:** Keep high-energy single-sketch episodes between **45s – 55s** (under 1,650 frames @ 30 FPS).
+2. **The 0.8-Second Rule:** No text bubble or screen state should remain static for longer than 0.9s.
+3. **Dialogue Pacing:**
+   - Standard exchanges: `delaySeconds` = **0.6s – 0.9s**.
+   - Rapid-fire spam runs ("no", "wait", "look"): `delaySeconds` = **0.2s – 0.4s**.
+   - Suspense typing: `isTypingDuration` = **0.5s – 0.8s** (never exceed 1.0s to avoid drop-offs).
+4. **Kinetic Cutaways:** Keep meme receipts and 3D graphics on screen for **2.0s – 2.8s** with automatic spring slam and pan-zoom.
+5. **Dynamic Timestamps:** Time progresses by **+1 minute every 4 messages** automatically (`startTime` customizable).
+
+---
+
+## 🎭 The 3-Act Viral Comedy Formula
+
+Every top-performing CelevanBS / GemzoBS style episode follows this 3-act escalation:
+
+```
+[ ACT 1: THE HOOK & CALLOUT ] (0:00 - 0:10)
+➔ Brawler enters claiming a win or defending a loss
+➔ Teammate typing (0.7s) drops the brutal cold-hard score ("The score was 0 to 40")
+➔ Rapid slam cutaway (Edgar raging / crying)
+
+[ ACT 2: THE 3D RECEIPT REVEAL ] (0:10 - 0:25)
+➔ Brawler makes an absurd defense ("Psychological warfare / lag spike")
+➔ Squad drops the high-resolution 3D in-game match stat card / replay proof
+➔ Clown roast / facepalm meme cutaway
+
+[ ACT 3: THE ABSURD SECONDARY TWIST & CLIMAX ] (0:25 - 0:48)
+➔ A server troll (Chester, Mandy, Colette, or the Turret) hijacks the chat
+➔ Panic incoming Discord voice call overlay (ringing + camera shake)
+➔ Starr Park Bot drops official disciplinary verdict & demotion stamp
+```
 
 ---
 
