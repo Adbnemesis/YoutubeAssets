@@ -13,9 +13,9 @@ export const GifFrames: React.FC<GifFramesProps> = ({ base, frameCount, gifFps, 
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Advance at the GIF's original speed plus optional startFrom frame offset
+  // Advance at the GIF's original speed plus optional startFrom frame offset (loops cleanly with modulo)
   const frameOffset = Math.floor((frame / fps) * gifFps) + startFrom;
-  const index = Math.min(frameCount - 1, frameOffset);
+  const index = frameCount > 0 ? (frameOffset % frameCount) : 0;
   const src = staticFile(`${base}/${String(index + 1).padStart(4, "0")}.png`);
 
   return <Img src={src} style={style} />;

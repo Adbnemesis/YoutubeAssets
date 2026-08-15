@@ -160,8 +160,7 @@ export const defaultMonsterTrioProps: MonsterTrioEditProps = {
   },
 };
 
-// Kenji / Leon / Tara — new trio reusing the same analyzed pacing & phonk track.
-// Same 19-scene sync (intro 0/44/76/139 · overlap 125/171/204/267 · overlap 253/299/332/395 · climax 395–525).
+// Kenji / Leon / Tara trio
 export const defaultKenjiLeonTaraProps: MonsterTrioEditProps = {
   fps: 60,
   durationInFrames: 525,
@@ -270,8 +269,122 @@ export const defaultKenjiLeonTaraProps: MonsterTrioEditProps = {
       staticFile("brawler_voices/kenji/attack.ogg"),
       staticFile("brawler_voices/tara/tara_kill_vo_04.ogg"),
     ],
-    startFrame: 395, // 6.58s — same climax onset as analyzed reference
+    startFrame: 395, // 6.58s
     endFrame: 525,   // 8.82s
   },
 };
 
+// Bibi / Frank / Hank trio
+export const defaultBibiFrankHankProps: MonsterTrioEditProps = {
+  fps: 60,
+  durationInFrames: 525,
+  width: 1080,
+  height: 1080,
+  audioTrack: staticFile("audio/monster_trio_audio.wav"),
+  brawlers: [
+    {
+      id: "bibi",
+      name: "Bibi",
+      text: "BIBI",
+      image: staticFile("images/bibi/bibi_panel_1.png"),
+      secondaryPoseGif: { base: "brawler_gif_frames/bibi", frameCount: 153 },
+      backgroundImage: staticFile("brawl_backgrounds/background_graffiti.png"),
+      backgroundBoost: 1.25,
+      entrance: "rise",
+      voiceLine: staticFile("brawler_voices/bibi/super.ogg"),
+      accentColor: "#ec4899",
+      introImageStartFrame: 0,
+      textCardStartFrame: 44,
+      secondaryPoseStartFrame: 76,
+      endFrame: 139,
+    },
+    {
+      id: "frank",
+      name: "Frank",
+      text: "FRANK",
+      image: staticFile("images/frank/frank_panel_1.png"),
+      secondaryPoseGif: { base: "brawler_gif_frames/frank", frameCount: 12 },
+      backgroundImage: staticFile("brawl_backgrounds/BrawlStars_OdditiesShop_BG_01.png"),
+      backgroundBoost: 1.4,
+      entrance: "slideLeft",
+      voiceLine: staticFile("brawler_voices/frank/super.ogg"),
+      accentColor: "#a855f7",
+      introImageStartFrame: 139,
+      textCardStartFrame: 171,
+      secondaryPoseStartFrame: 204,
+      endFrame: 267,
+    },
+    {
+      id: "hank",
+      name: "Hank",
+      text: "HANK",
+      image: staticFile("images/hank/hank_panel_1.png"),
+      secondaryPoseGif: { base: "brawler_gif_frames/hank", frameCount: 249 },
+      backgroundImage: staticFile("brawl_backgrounds/background_windstock_1.png"),
+      backgroundBoost: 1.35,
+      entrance: "slideRight",
+      voiceLine: staticFile("brawler_voices/hank/super.ogg"),
+      accentColor: "#06b6d4",
+      introImageStartFrame: 267,
+      textCardStartFrame: 299,
+      secondaryPoseStartFrame: 332,
+      endFrame: 395,
+    },
+  ],
+  climax: {
+    accentColor: "#fbbf24",
+    backgroundImage: staticFile("brawl_backgrounds/background_anime.png"),
+    rapidPanels: [
+      {
+        image: staticFile("images/bibi/bibi_panel_1.png"),
+        backgroundImage: staticFile("brawl_backgrounds/background_graffiti.png"),
+        backgroundBoost: 1.25,
+        accentColor: "#ec4899",
+      },
+      {
+        image: staticFile("images/frank/frank_panel_1.png"),
+        backgroundImage: staticFile("brawl_backgrounds/BrawlStars_OdditiesShop_BG_01.png"),
+        backgroundBoost: 1.4,
+        accentColor: "#a855f7",
+      },
+      {
+        image: staticFile("images/hank/hank_panel_1.png"),
+        backgroundImage: staticFile("brawl_backgrounds/background_windstock_1.png"),
+        backgroundBoost: 1.35,
+        accentColor: "#06b6d4",
+      },
+      {
+        image: staticFile("images/bibi/bibi_panel_4.png"),
+        backgroundImage: staticFile("brawl_backgrounds/background_graffiti.png"),
+        backgroundBoost: 1.25,
+        accentColor: "#ec4899",
+      },
+      {
+        image: staticFile("images/frank/frank_panel_4.png"),
+        backgroundImage: staticFile("brawl_backgrounds/BrawlStars_OdditiesShop_BG_01.png"),
+        backgroundBoost: 1.4,
+        accentColor: "#a855f7",
+      },
+      {
+        image: staticFile("images/hank/hank_panel_4.png"),
+        backgroundImage: staticFile("brawl_backgrounds/background_windstock_1.png"),
+        backgroundBoost: 1.35,
+        accentColor: "#06b6d4",
+      },
+      {
+        image: staticFile("images/hank/hank_panel_5.png"),
+        backgroundImage: staticFile("brawl_backgrounds/background_anime.png"),
+        backgroundBoost: 1.2,
+        accentColor: "#fbbf24",
+      },
+    ],
+    victoryStance: staticFile("images/hank/hank_panel_5.png"),
+    voiceLines: [
+      staticFile("brawler_voices/bibi/attack.ogg"),
+      staticFile("brawler_voices/frank/attack.ogg"),
+      staticFile("brawler_voices/hank/attack.ogg"),
+    ],
+    startFrame: 395,
+    endFrame: 525,
+  },
+};
