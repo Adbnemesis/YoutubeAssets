@@ -158,8 +158,8 @@ npm run dev
 
 # Or render directly to the episode folder:
 npx remotion render src/index.tsx Chatnemi \
-  --props=../project_chatnemi/brawl_stars/episodes/bs_ep01_trickshot_disaster/script.json \
-  --output=../project_chatnemi/brawl_stars/episodes/bs_ep01_trickshot_disaster/bs_ep01_trickshot_disaster.mp4
+  --props=../project_chatnemi/brawl_stars/episodes/edgar_0_15_defense/script.json \
+  --output=../project_chatnemi/brawl_stars/episodes/edgar_0_15_defense/edgar_0_15_defense.mp4
 ```
 
 ### 4. Upload Metadata with Supercell Disclaimer
@@ -182,8 +182,9 @@ project_chatnemi/
 │   ├── references/
 │   │   └── brawl_discord_tropes.md              # Trope guide, banter dynamics & meme maps
 │   └── episodes/
-│       ├── bs_ep01_trickshot_disaster/          # Episode 1: Ranked Brawl Ball throw
-│       └── bs_ep02_bushcamp_confession/         # Episode 2: Solo Showdown mystery
+│       └── edgar_0_15_defense/                  # Episode: Edgar's 0-15 Damage Defense
+│           ├── script.json
+│           └── metadata.txt
 │
 ├── assets/                                      # Shared assets for all Chatnemi editions
 │   ├── profile_pic/                             # Brawler & AI avatar PNGs
