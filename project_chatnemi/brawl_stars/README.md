@@ -46,14 +46,21 @@ Every video follows the high-retention Beluga pacing algorithm designed for YouT
 > **TARGET DURATION**: **2:00 to 3:30 Minutes** (approx. 3,600 to 6,300 frames @ 30 FPS).
 > **NEVER** format as 9:16 Shorts or compress episodes to under 60 seconds!
 
-To achieve maximum audience retention across a 2+ minute long-form comedic narrative:
-
-1. **Dialogue Pacing:**
-   - Standard reading time: `delaySeconds` = **1.4s – 2.0s** per text bubble.
-   - Rapid-fire spam runs ("no", "wait", "look"): `delaySeconds` = **0.3s – 0.6s**.
-   - Suspense typing: `isTypingDuration` = **0.8s – 1.2s** before major punchlines and roasts.
-2. **Graphic Cutaways:** Keep 3D meme cards, stat logs, and receipts on screen for **2.8s – 3.5s** with kinetic spring slam and slow pan-zoom.
-3. **Dynamic Timestamps:** Time advances by **+1 minute every 4 messages** automatically (`startTime` customizable).
+### 📐 Reading Duration & Buffer Rules (Length-Based):
+1. **Same-Speaker Consecutive Texts:**
+   - `delaySeconds` = **0.4s – 1.4s** based on sentence length (`0.4s + text.length * 0.02s`).
+2. **Speaker Switch / Cutaway Transitions (Crucial Reading Window):**
+   - When a text is followed by a **cutaway** or a **different brawler**, the text must remain on screen proportionally to its length:
+   - Formula: `delaySeconds = 0.7s + (text.length * 0.035)s` (~25–30 chars per second).
+   - Short text ("Edgar.", "BOOM. 💥"): `0.8s – 1.0s`.
+   - Medium text (20–40 chars): `1.4s – 1.8s`.
+   - Long text (60–80 chars): `2.6s – 3.2s`.
+3. **Suspense Typing:** `isTypingDuration` = **0.6s – 0.9s** before major punchlines and roasts.
+4. **Meme Photo Duration:** All meme cutaways must last **1.0 second maximum** (`durationSeconds: 1.0`) so the video stays punchy without lagging.
+5. **Meme Transition Effects:**
+   - `"effect": "fade"`: Smooth cross-fade in (6 frames) and out (6 frames) with steady 1.0x scale (clean default).
+   - `"effect": "zoom"` / `"slam"`: Spring slam punch-in entrance.
+6. **Dynamic Timestamps:** Time advances by **+1 minute every 4 messages** automatically (`startTime` customizable).
 
 ---
 

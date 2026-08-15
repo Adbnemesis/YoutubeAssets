@@ -19,9 +19,10 @@ export interface ChatMessage {
 export interface CutawayEvent {
   type: "cutaway";
   mediaUrl: string; // Filename of the meme/image in assets
-  durationSeconds: number; // How long it stays on screen
-  delaySeconds?: number; // Delay before the cutaway starts
+  durationSeconds: number; // How long it stays on screen (max 1.0s for memes)
+  delaySeconds?: number; // Delay before the cutaway starts (reading buffer for preceding text)
   fadeIn?: boolean; // Whether it fades in
+  effect?: "fade" | "zoom" | "slam" | "flash"; // Transition visual style (defaults to smooth fade)
   sfx?: string; // e.g. 'vine_boom.mp3'
 }
 

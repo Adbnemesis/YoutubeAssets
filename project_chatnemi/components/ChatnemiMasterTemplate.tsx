@@ -359,15 +359,6 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
         const scriptEvent = script.events[event.eventIndex];
         if (scriptEvent.type !== "cutaway") return null;
 
-        const opacity = scriptEvent.fadeIn
-          ? interpolate(
-              frame - event.startFrame,
-              [0, 15], // Fade in over 15 frames (~0.5s)
-              [0, 1],
-              { extrapolateRight: "clamp", extrapolateLeft: "clamp" }
-            )
-          : 1;
-
         if (scriptEvent.mediaUrl && scriptEvent.mediaUrl.startsWith("DISCORD_CALL")) {
           const parts = scriptEvent.mediaUrl.split("_");
           const callerId = parts.length > 2 ? parts[2] : "Unknown";
@@ -384,22 +375,35 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
         }
 
         const elapsed = frame - event.startFrame;
-        const duration = event.durationFrames || 60;
-        
-        // Spring punch-in entrance
-        const slam = spring({
-          frame: elapsed,
-          fps,
-          config: { damping: 14, mass: 0.5, stiffness: 220 },
-        });
-        const entryScale = interpolate(slam, [0, 1], [1.1, 1.0], { extrapolateRight: "clamp" });
+        const duration = event.durationFrames || 30;
+        const effect = (scriptEvent as any).effect || (scriptEvent.fadeIn ? "fade" : "fade");
 
-        // Continuous subtle cinematic zoom-in over the cutaway duration
-        const panZoom = interpolate(elapsed, [0, duration], [1.0, 1.05], {
-          extrapolateRight: "clamp",
-        });
+        // Fade in and out cleanly
+        let opacity = 1;
+        if (effect === "fade" || scriptEvent.fadeIn) {
+          const fadeInOpacity = interpolate(elapsed, [0, 6], [0, 1], {
+            extrapolateRight: "clamp",
+            extrapolateLeft: "clamp",
+          });
+          const fadeOutOpacity = interpolate(elapsed, [Math.max(0, duration - 6), duration], [1, 0], {
+            extrapolateRight: "clamp",
+            extrapolateLeft: "clamp",
+          });
+          opacity = Math.min(fadeInOpacity, fadeOutOpacity);
+        }
 
-        const combinedScale = entryScale * panZoom;
+        // Scale animation based on effect
+        let imageScale = 1.0;
+        if (effect === "zoom" || effect === "slam") {
+          const slam = spring({
+            frame: elapsed,
+            fps,
+            config: { damping: 14, mass: 0.5, stiffness: 220 },
+          });
+          const entryScale = interpolate(slam, [0, 1], [1.1, 1.0], { extrapolateRight: "clamp" });
+          const panZoom = interpolate(elapsed, [0, duration], [1.0, 1.04], { extrapolateRight: "clamp" });
+          imageScale = entryScale * panZoom;
+        }
 
         return (
           <AbsoluteFill
@@ -420,7 +424,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
                   width: "100%",
                   height: "100%",
                   objectFit: "contain",
-                  transform: `scale(${combinedScale})`,
+                  transform: `scale(${imageScale})`,
                 }} 
              />
           </AbsoluteFill>
