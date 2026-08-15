@@ -241,7 +241,7 @@ export const TrioBrawlerCard: React.FC<TrioBrawlerCardProps> = ({ brawler, mode 
           <GifFrames
             base={brawler.secondaryPoseGif.base}
             frameCount={brawler.secondaryPoseGif.frameCount}
-            gifFps={100 / 3}
+            gifFps={brawler.secondaryPoseGif.gifFps ?? (100 / 3)}
             style={{
               height: "88%",
               width: "auto",

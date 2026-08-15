@@ -10,6 +10,7 @@ export interface BrawlerCardProps {
   secondaryPoseGif: {
     base: string;
     frameCount: number;
+    gifFps?: number;
   };
   backgroundImage: string;
   backgroundBoost?: number;
@@ -303,7 +304,7 @@ export const defaultBibiFrankHankProps: MonsterTrioEditProps = {
       name: "Frank",
       text: "FRANK",
       image: staticFile("images/frank/frank_panel_1.png"),
-      secondaryPoseGif: { base: "brawler_gif_frames/frank", frameCount: 12 },
+      secondaryPoseGif: { base: "brawler_gif_frames/frank", frameCount: 12, gifFps: 10 },
       backgroundImage: staticFile("brawl_backgrounds/BrawlStars_OdditiesShop_BG_01.png"),
       backgroundBoost: 1.4,
       entrance: "slideLeft",
