@@ -1,0 +1,56 @@
+{
+  "characters": [
+    { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
+    { "id": "crow", "name": "Crow", "color": "#3F51B5", "avatarUrl": "crow.png" },
+    { "id": "leon", "name": "Leon", "color": "#4CAF50", "avatarUrl": "leon.png" },
+    { "id": "chester", "name": "Chester", "color": "#FF7043", "avatarUrl": "chester.png" },
+    { "id": "starr_park_bot", "name": "Starr Park Moderator", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
+  ],
+  "startTime": "8:15 PM",
+  "bgm": "sneaky_snitch.mp3",
+  "events": [
+    { "type": "message", "characterId": "edgar", "text": "SUPERCELL FIX YOUR SERVERS RIGHT NOW 🤬", "delaySeconds": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i literally had a 9999ms red wifi lag spike in knockout", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "my screen froze and my super didn't register", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "brawl_red_wifi_rage.png", "durationSeconds": 1.5, "delaySeconds": 2.4, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
+    
+    { "type": "message", "characterId": "crow", "text": "...", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "crow", "text": "bro you walked in a straight line into 3 poison daggers.", "delaySeconds": 1.6, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "crow", "text": "You didn't even try to jump.", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "BECAUSE MY THUMBS WERE FROZEN IN TIME", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i was spamming super at 500 actions per minute", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "leon", "text": "Edgar.", "delaySeconds": 2.8, "isTypingDuration": 0.9, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "leon", "text": "I was standing invisibly right behind you the entire match.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "leon", "text": "I pulled your real-time network telemetry receipts.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "edgar_ping_telemetry.png", "durationSeconds": 1.5, "delaySeconds": 2.6, "fadeIn": true, "effect": "fade", "sfx": "anime-wow.mp3" },
+    
+    { "type": "message", "characterId": "leon", "text": "Your ping was 12ms on Ultra 5G Optical Fiber.", "delaySeconds": 1.6, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "leon", "text": "0.0% packet loss. 120 FPS constant.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "leon", "text": "You weren't lagging, you were playing Subway Surfers on split screen.", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "mortis_clown_facepalm.png", "durationSeconds": 1.5, "delaySeconds": 2.4, "fadeIn": true, "effect": "fade", "sfx": "pin_surrender.mp3" },
+    
+    { "type": "message", "characterId": "chester", "text": "HAHHAHAHAHAHA EDGAR GOT CAUGHT IN 4K 📸", "delaySeconds": 1.4, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "chester", "text": "bro was doing Subway Surfers coin runs during 1v1", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "MY SCREEN RECORDER WAS GLITCHING OKAY", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "MY THUMB SLIPPED ON DORITO GREASE", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_crow", "durationSeconds": 2.8, "delaySeconds": 3.2, "fadeIn": true, "sfx": "discord_call.mp3" },
+    
+    { "type": "message", "characterId": "crow", "text": "Answer the call Edgar let's hear the lag excuses live", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "WHY DOES YOUR MICROPHONE SMELL LIKE POISON DAGGER", "delaySeconds": 1.6, "sfx": "error.mp3" },
+    
+    { "type": "message", "characterId": "starr_park_bot", "text": "⚠️ STARR PARK NETWORK DIAGNOSTIC COMPLETE ⚠️", "delaySeconds": 2.0, "sfx": "supercell_jingle.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Diagnosis: Severe Terminal Skill Issue (Level 100).", "delaySeconds": 1.7, "isTypingDuration": 0.9, "sfx": "brawl_match_lose.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Punishment: -300 Ranked Elo & Forced 1-week Nokia 3310 usage.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "MY ROUTER IS GOING OUT THE WINDOW RIGHT NOW", "delaySeconds": 2.6, "sfx": "discord_leave.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "starr_park_banned.png", "durationSeconds": 1.5, "delaySeconds": 2.2, "fadeIn": true, "effect": "fade", "sfx": "edgar_punch.mp3" }
+  ]
+}
