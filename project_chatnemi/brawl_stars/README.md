@@ -55,8 +55,8 @@ Every video follows the high-retention Beluga pacing algorithm designed for YouT
    - Short text ("Edgar.", "BOOM. 💥"): `0.8s – 1.0s`.
    - Medium text (20–40 chars): `1.4s – 1.8s`.
    - Long text (60–80 chars): `2.6s – 3.2s`.
-3. **Suspense Typing:** `isTypingDuration` = **0.6s – 0.9s** before major punchlines and roasts.
-4. **Meme Photo Duration:** All meme cutaways must last **1.0 second maximum** (`durationSeconds: 1.0`) so the video stays punchy without lagging.
+3. **Suspense Typing:** `isTypingDuration` = **0.7s – 1.0s** before major punchlines and roasts.
+4. **Meme Photo Duration:** All meme cutaways stay on screen for **1.5 seconds** (`durationSeconds: 1.5`) for optimal comedic absorption without stalling the video.
 5. **Meme Transition Effects:**
    - `"effect": "fade"`: Smooth cross-fade in (6 frames) and out (6 frames) with steady 1.0x scale (clean default).
    - `"effect": "zoom"` / `"slam"`: Spring slam punch-in entrance.
