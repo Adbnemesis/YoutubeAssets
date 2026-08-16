@@ -114,11 +114,39 @@ def clean_slice_sheet(sheet_path, out_dir, brawler_name, cols=4, rows=4):
             clean_cell = cell.copy()
             clean_cell[:, :, 3] = np.where(clean_mask > 0, clean_cell[:, :, 3], 0)
             
-            out_img = Image.fromarray(clean_cell, "RGBA")
+            # Center alignment logic:
+            # Detect tight non-transparent bounding box of the isolated character
+            nonzero = np.argwhere(clean_cell[:, :, 3] > 10)
+            if len(nonzero) > 0:
+                ymin, xmin = nonzero.min(axis=0)
+                ymax, xmax = nonzero.max(axis=0)
+                char_crop = Image.fromarray(clean_cell[ymin:ymax+1, xmin:xmax+1], "RGBA")
+                crop_w, crop_h = char_crop.size
+                
+                # If character exceeds 90% of target cell dimensions, scale proportionally to fit safely
+                target_cw = int(cw)
+                target_ch = int(ch)
+                max_w = int(target_cw * 0.90)
+                max_h = int(target_ch * 0.90)
+                scale_ratio = min(1.0, max_w / float(crop_w), max_h / float(crop_h))
+                if scale_ratio < 1.0:
+                    new_w = max(1, int(crop_w * scale_ratio))
+                    new_h = max(1, int(crop_h * scale_ratio))
+                    char_crop = char_crop.resize((new_w, new_h), Image.Resampling.LANCZOS)
+                    crop_w, crop_h = new_w, new_h
+                
+                # Create clean transparent canvas and paste character dead center
+                out_img = Image.new("RGBA", (target_cw, target_ch), (0, 0, 0, 0))
+                paste_x = (target_cw - crop_w) // 2
+                paste_y = (target_ch - crop_h) // 2
+                out_img.paste(char_crop, (paste_x, paste_y), char_crop)
+            else:
+                out_img = Image.fromarray(clean_cell, "RGBA")
+            
             out_path = os.path.join(out_dir, f"{brawler_name}_panel_{panel_idx}.png")
             out_img.save(out_path, "PNG")
 
-    print(f"  ✓ {brawler_name:10s} -> 16 panels sliced ({int(cw)}x{int(ch)}px), filtered {filtered_artifacts_count} neighbor bleed artifacts")
+    print(f"  ✓ {brawler_name:10s} -> 16 panels sliced ({int(cw)}x{int(ch)}px, center-aligned), filtered {filtered_artifacts_count} bleed artifacts")
 
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
