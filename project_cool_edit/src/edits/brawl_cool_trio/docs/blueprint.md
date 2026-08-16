@@ -134,13 +134,15 @@ Two-part finale. First a **forest-green glitch storm** (~9.9–11.0s), then the 
 
 1. **The "1+3" Finale Pattern (CRITICAL):** When a brawler's main section plays (e.g. at 7.5s, 9.5s, 11.5s), you MUST follow this exact "1+3" rhythm pattern to ensure maximum impact and beat alignment:
    - **(1) Silhouette Phase (~0.50s):** The brawler's win `.webm` rendered as a solid color silhouette slides up from the bottom.
-   - **(1b) Seamless Reveal Phase (~0.37s to ~0.64s):** The same `.webm` snaps to full color. To prevent the GIF from repeating or jumping backwards, the reveal's `videoStartFrame` MUST perfectly match the silhouette's frame duration (e.g. `videoStartFrame: 15`).
+   - **(1b) Seamless Reveal Phase (~0.37s to ~0.64s):** The same GIF/video snaps to full color. To prevent the animation from repeating or jumping backwards from frame 0, `TrioCard` renders GIF frame sequences using `GifFrames` and passes `startFrom = Math.round(silhouetteDurationSeconds * gifFps)`.
+     - Standard 24 FPS brawlers (0.50s silhouette duration) → `videoStartFrame: 12` (`0.50s * 24fps = 12`).
+     - Frank (10 FPS brawler, 0.50s silhouette duration) → `videoStartFrame: 5` (`0.50s * 10fps = 5`).
    - **(+3) Action Clips (The "+3" Rule):** Exactly 3 fast-cut static action panels of the brawler must follow the Reveal. These must be perfectly synchronized to the dominant musical beats (aiming for ~0.35s to ~0.58s per clip).
    
 2. **Exact "1+3" Sync Timings (Per Brawler):** Use these exact timings for the 1+3 pattern so that the rhythm feels perfectly synced and readable:
-   - **~7.5s Edgar VO →** `edgar_win.webm` Silhouette (7.40-7.90) → Reveal (7.90-8.27, `videoStartFrame: 15`) → 3 Action Clips (8.27-8.62, 8.62-8.97, 8.97-9.30) using panels 1, 4, 7.
-   - **~9.5s Mortis VO →** `mortis_win.webm` Silhouette (9.30-9.80) → Reveal (9.80-10.23, `videoStartFrame: 15`) → 3 Action Clips (10.23-10.59, 10.59-11.16, 11.16-11.74) using panels 3, 6, 9.
-   - **~11.5s Kenji VO →** `kenji_win.webm` Silhouette (11.74-12.24) → Reveal (12.24-12.88, `videoStartFrame: 15`) → 3 Action Clips (12.88-13.46, 13.46-14.04, 14.04-14.48) using panels 2, 5, 8.
+   - **Bibi (~7.5s VO) →** `bibi_win.gif` Silhouette (7.40-7.90) → Reveal (7.90-8.27, `videoStartFrame: 12`) → 3 Action Clips (8.27-8.62, 8.62-8.97, 8.97-9.30) using panels 1, 4, 7.
+   - **Edgar (~9.5s VO) →** `edgar_win.gif` Silhouette (9.30-9.80) → Reveal (9.80-10.23, `videoStartFrame: 12`) → 3 Action Clips (10.23-10.59, 10.59-11.16, 11.16-11.74) using panels 3, 6, 9.
+   - **Frank (~11.5s VO) →** `frank_win.gif` Silhouette (11.74-12.24) → Reveal (12.24-12.88, `videoStartFrame: 5`) → 3 Action Clips (12.88-13.46, 13.46-14.04, 14.04-14.48) using panels 2, 5, 8.
 
 3. **Retention Glitch Effects (Intro):** The first 2.8s (Trio intro) must inject `heavy_glitch`, `rgb_shift`, and `flash` effects heavily into the `effects` array. Because the initial cards are mostly static, these intense visual effects are CRITICAL to artificially create high energy and drive viewer retention right from frame 1.
 

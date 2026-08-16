@@ -246,21 +246,21 @@ export const superheroTrioProps = {
   dropClips: [
     // SURGE
     { src: "brawler_gifs/surge_win.gif", isSilhouette: true, silhouetteColor: "#ef4444" },
-    { src: "brawler_gifs/surge_win.gif", isSilhouette: false, videoStartFrame: 0 },
+    { src: "brawler_gifs/surge_win.gif", isSilhouette: false },
     { src: "images/surge/surge_panel_8.png", isSilhouette: false },
     { src: "images/surge/surge_panel_9.png", isSilhouette: false },
     { src: "images/surge/surge_panel_10.png", isSilhouette: false },
 
     // MAX
     { src: "brawler_gifs/max_win.gif", isSilhouette: true, silhouetteColor: "#eab308" },
-    { src: "brawler_gifs/max_win.gif", isSilhouette: false, videoStartFrame: 0 },
+    { src: "brawler_gifs/max_win.gif", isSilhouette: false },
     { src: "images/max/max_panel_8.png", isSilhouette: false },
     { src: "images/max/max_panel_9.png", isSilhouette: false },
     { src: "images/max/max_panel_10.png", isSilhouette: false },
 
     // MEG
     { src: "brawler_gifs/meg_win.gif", isSilhouette: true, silhouetteColor: "#a855f7" },
-    { src: "brawler_gifs/meg_win.gif", isSilhouette: false, videoStartFrame: 0 },
+    { src: "brawler_gifs/meg_win.gif", isSilhouette: false },
     { src: "images/meg/meg_panel_8.png", isSilhouette: false },
     { src: "images/meg/meg_panel_9.png", isSilhouette: false },
     { src: "images/meg/meg_panel_10.png", isSilhouette: false },
@@ -320,21 +320,21 @@ export const bibiEdgarFrankProps = {
   dropClips: [
     // BIBI
     { src: "brawler_gifs/bibi_win.gif", isSilhouette: true, silhouetteColor: "#ec4899" },
-    { src: "brawler_gifs/bibi_win.gif", isSilhouette: false, videoStartFrame: 0 },
+    { src: "brawler_gifs/bibi_win.gif", isSilhouette: false },
     { src: "images/bibi/bibi_panel_8.png", isSilhouette: false },
     { src: "images/bibi/bibi_panel_9.png", isSilhouette: false },
     { src: "images/bibi/bibi_panel_10.png", isSilhouette: false },
 
     // EDGAR
     { src: "brawler_gifs/edgar_win.gif", isSilhouette: true, silhouetteColor: "#ef4444" },
-    { src: "brawler_gifs/edgar_win.gif", isSilhouette: false, videoStartFrame: 0 },
+    { src: "brawler_gifs/edgar_win.gif", isSilhouette: false },
     { src: "images/edgar/edgar_panel_8.png", isSilhouette: false },
     { src: "images/edgar/edgar_panel_9.png", isSilhouette: false },
     { src: "images/edgar/edgar_panel_10.png", isSilhouette: false },
 
     // FRANK
     { src: "brawler_gifs/frank_win.gif", isSilhouette: true, silhouetteColor: "#a855f7" },
-    { src: "brawler_gifs/frank_win.gif", isSilhouette: false, videoStartFrame: 0 },
+    { src: "brawler_gifs/frank_win.gif", isSilhouette: false },
     { src: "images/frank/frank_panel_8.png", isSilhouette: false },
     { src: "images/frank/frank_panel_9.png", isSilhouette: false },
     { src: "images/frank/frank_panel_10.png", isSilhouette: false },

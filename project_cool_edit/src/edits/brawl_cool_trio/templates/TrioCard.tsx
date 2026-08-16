@@ -1,5 +1,27 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, Img, OffthreadVideo as Video, staticFile, random } from "remotion";
+import { GifFrames } from "../../../legacy/GifFrames";
+
+interface BrawlerGifMetadata {
+  base: string;
+  frameCount: number;
+  gifFps: number;
+}
+
+const BRAWLER_GIF_MAP: Record<string, BrawlerGifMetadata> = {
+  "brawler_gifs/surge_win.gif": { base: "brawler_gif_frames/surge", frameCount: 97, gifFps: 24 },
+  "brawler_gifs/max_win.gif": { base: "brawler_gif_frames/max", frameCount: 143, gifFps: 24 },
+  "brawler_gifs/meg_win.gif": { base: "brawler_gif_frames/meg", frameCount: 149, gifFps: 24 },
+  "brawler_gifs/edgar_win.gif": { base: "brawler_gif_frames/edgar", frameCount: 121, gifFps: 24 },
+  "brawler_gifs/mortis_win.gif": { base: "brawler_gif_frames/mortis", frameCount: 76, gifFps: 24 },
+  "brawler_gifs/kenji_win.gif": { base: "brawler_gif_frames/kenji", frameCount: 360, gifFps: 24 },
+  "brawler_gifs/crow_win.gif": { base: "brawler_gif_frames/crow", frameCount: 117, gifFps: 24 },
+  "brawler_gifs/leon_win.gif": { base: "brawler_gif_frames/leon", frameCount: 74, gifFps: 24 },
+  "brawler_gifs/tara_win.gif": { base: "brawler_gif_frames/tara", frameCount: 64, gifFps: 24 },
+  "brawler_gifs/bibi_win.gif": { base: "brawler_gif_frames/bibi", frameCount: 153, gifFps: 24 },
+  "brawler_gifs/frank_win.gif": { base: "brawler_gif_frames/frank", frameCount: 12, gifFps: 10 },
+  "brawler_gifs/hank_win.gif": { base: "brawler_gif_frames/hank", frameCount: 249, gifFps: 24 },
+};
 
 export interface TrioImage {
   src: string;
@@ -36,6 +58,9 @@ const SilhouetteImg: React.FC<{
 }> = ({ src, color, videoStartFrame, durationFrames, style }) => {
   const frame = useCurrentFrame();
   const isVideo = src.endsWith(".mp4") || src.endsWith(".webm");
+  const gifMeta = BRAWLER_GIF_MAP[src];
+  const isGifSequence = !!gifMeta;
+
   // Deterministic slide: bottom (1080) -> top (0) across the whole card
   const slideY = interpolate(frame, [0, durationFrames], [1080, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const mediaStyle: React.CSSProperties = {
@@ -49,6 +74,14 @@ const SilhouetteImg: React.FC<{
     <div style={{ width: "100%", height: "100%", overflow: "hidden", ...style, transform: `translateY(${slideY}px)` }}>
       {isVideo ? (
         <Video src={staticFile(src)} startFrom={videoStartFrame || 0} style={{ ...mediaStyle, filter: `drop-shadow(5000px 0 0 ${color}) contrast(1.15) saturate(1.2)` }} />
+      ) : isGifSequence ? (
+        <GifFrames
+          base={gifMeta.base}
+          frameCount={gifMeta.frameCount}
+          gifFps={gifMeta.gifFps}
+          startFrom={videoStartFrame || 0}
+          style={{ ...mediaStyle, filter: `drop-shadow(5000px 0 0 ${color}) contrast(1.15) saturate(1.2)` }}
+        />
       ) : (
         <Img src={staticFile(src)} style={{ ...mediaStyle, filter: `drop-shadow(5000px 0 0 ${color}) contrast(1.15) saturate(1.2)` }} />
       )}
@@ -65,6 +98,8 @@ const MediaImg: React.FC<{ src: string; auraColor?: string; videoStartFrame?: nu
 }) => {
   const frame = useCurrentFrame();
   const isVideo = src.endsWith(".mp4") || src.endsWith(".webm");
+  const gifMeta = BRAWLER_GIF_MAP[src];
+  const isGifSequence = !!gifMeta;
 
   const panX = interpolate(frame, [0, 30], [0, 8], { extrapolateRight: "clamp" });
   const panY = interpolate(frame, [0, 30], [0, 5], { extrapolateRight: "clamp" });
@@ -73,29 +108,58 @@ const MediaImg: React.FC<{ src: string; auraColor?: string; videoStartFrame?: nu
     : interpolate(frame, [0, 10], [1.1, 1.0], { extrapolateRight: "clamp" });
   const exposure = interpolate(frame, [0, 6], [1, 0], { extrapolateRight: "clamp" });
 
+  const renderMedia = (extraStyle?: React.CSSProperties) => {
+    if (isVideo) {
+      return (
+        <Video
+          src={staticFile(src)}
+          startFrom={videoStartFrame || 0}
+          style={{ width: "100%", height: "100%", objectFit: "cover", ...extraStyle }}
+        />
+      );
+    }
+    if (isGifSequence) {
+      return (
+        <GifFrames
+          base={gifMeta.base}
+          frameCount={gifMeta.frameCount}
+          gifFps={gifMeta.gifFps}
+          startFrom={videoStartFrame || 0}
+          style={{ width: "100%", height: "100%", objectFit: "contain", ...extraStyle }}
+        />
+      );
+    }
+    return (
+      <Img
+        src={staticFile(src)}
+        style={{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          objectFit: contain ? "contain" : "cover",
+          filter: auraColor
+            ? `drop-shadow(0 0 30px ${auraColor}) drop-shadow(0 10px 25px rgba(0,0,0,0.8))`
+            : "drop-shadow(0 10px 25px rgba(0,0,0,0.8))",
+          ...extraStyle,
+        }}
+      />
+    );
+  };
+
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ transform: `translate(${panX}px, ${panY}px) scale(${scale})` }}>
         {isVideo ? (
           <Video src={staticFile(src)} startFrom={videoStartFrame || 0} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "contrast(1.2) saturate(1.25) drop-shadow(0 0 10px rgba(0,0,0,0.5))" }} />
+        ) : isGifSequence ? (
+          renderMedia({ filter: auraColor ? `drop-shadow(0 0 30px ${auraColor}) drop-shadow(0 10px 25px rgba(0,0,0,0.8))` : "drop-shadow(0 10px 25px rgba(0,0,0,0.8))" })
         ) : (
           <>
             <Img
               src={staticFile(src)}
               style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", filter: "blur(40px) brightness(0.55)", transform: "scale(1.2)" }}
             />
-            <Img
-              src={staticFile(src)}
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                objectFit: contain ? "contain" : "cover",
-                filter: auraColor
-                  ? `drop-shadow(0 0 30px ${auraColor}) drop-shadow(0 10px 25px rgba(0,0,0,0.8))`
-                  : "drop-shadow(0 10px 25px rgba(0,0,0,0.8))",
-              }}
-            />
+            {renderMedia()}
           </>
         )}
       </AbsoluteFill>

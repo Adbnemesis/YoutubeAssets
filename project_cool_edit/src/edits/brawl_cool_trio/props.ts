@@ -733,7 +733,7 @@ export const bibiEdgarFrankTrioProps = {
       endTime: 8.27,
       layout: "single",
       effects: ["glitch"],
-      images: [{ src: "brawler_gifs/bibi_win.gif", auraColor: "#ec4899", videoStartFrame: 15 }],
+      images: [{ src: "brawler_gifs/bibi_win.gif", auraColor: "#ec4899", videoStartFrame: 12 }], // 0.5s * 24fps = 12
     },
     // Image 1: Action Clip 1
     {
@@ -778,7 +778,7 @@ export const bibiEdgarFrankTrioProps = {
       endTime: 10.23,
       layout: "single",
       effects: ["glitch"],
-      images: [{ src: "brawler_gifs/edgar_win.gif", auraColor: "#ef4444", videoStartFrame: 15 }],
+      images: [{ src: "brawler_gifs/edgar_win.gif", auraColor: "#ef4444", videoStartFrame: 12 }], // 0.5s * 24fps = 12
     },
     // Image 1: Action Clip 1
     {
@@ -823,7 +823,7 @@ export const bibiEdgarFrankTrioProps = {
       endTime: 12.88,
       layout: "single",
       effects: ["glitch", "rgb_shift"],
-      images: [{ src: "brawler_gifs/frank_win.gif", auraColor: "#a855f7", videoStartFrame: 15 }],
+      images: [{ src: "brawler_gifs/frank_win.gif", auraColor: "#a855f7", videoStartFrame: 5 }], // 0.5s * 10fps = 5
     },
     // Image 1: Action Clip 1
     {

@@ -96,8 +96,10 @@ Each form transitions by presenting a central Icon, and then rapidly pulling in 
 - **Silhouette Mechanic:** 
   - Instead of trying to use `brightness(0) invert(1)`, use `drop-shadow(5000px 0 0 ${color})` and offset the image by `-5000px` to create a perfect solid colored silhouette.
   - Animate the silhouette to spring/slide up from the bottom of the screen.
-- **Seamless Video Reveal:** 
-  - When cutting from the silhouette sequence to the reveal sequence, pass the `startFrom` frame to the Reveal's `<Video>` component based on the duration of the silhouette sequence. This ensures the 3D character animation plays seamlessly without repeating.
+- **Seamless Video & GIF Reveal (Continuous Playback Rule):** 
+  - When cutting from the silhouette sequence to the full-color reveal sequence, the animation MUST continue seamlessly without repeating or restarting from frame 0.
+  - `PhonkFormsMasterTemplate` automatically calculates the continuous `videoStartFrame` using `Math.round(elapsedTimeSeconds * gifFps)` based on the brawler's specific GIF FPS (e.g. 24 FPS for standard brawlers, 10 FPS for Frank).
+  - **Rule for `props.ts`**: Do NOT hardcode `videoStartFrame: 0` on full-color reveal clips. Omit `videoStartFrame` on reveal clips so the template automatically synchronizes continuous frame progression from the silhouette phase into the full-color reveal.
 - **Action Shots:** After the character reveal, quick-cut 3 consecutive panels to match the 3 fast bass kicks.
 
 ### Phase 4: Final Impact

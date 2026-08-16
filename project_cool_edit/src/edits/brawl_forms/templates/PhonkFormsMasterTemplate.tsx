@@ -32,6 +32,21 @@ export interface PhonkMasterProps {
   dropCuts: number[];   // Exact timestamps of scene cuts in seconds
 }
 
+const BRAWLER_GIF_FPS_MAP: Record<string, number> = {
+  "brawler_gifs/surge_win.gif": 24,
+  "brawler_gifs/max_win.gif": 24,
+  "brawler_gifs/meg_win.gif": 24,
+  "brawler_gifs/edgar_win.gif": 24,
+  "brawler_gifs/mortis_win.gif": 24,
+  "brawler_gifs/kenji_win.gif": 24,
+  "brawler_gifs/crow_win.gif": 24,
+  "brawler_gifs/leon_win.gif": 24,
+  "brawler_gifs/tara_win.gif": 24,
+  "brawler_gifs/bibi_win.gif": 24,
+  "brawler_gifs/frank_win.gif": 10,
+  "brawler_gifs/hank_win.gif": 24,
+};
+
 export const PhonkFormsMasterTemplate: React.FC<PhonkMasterProps> = ({
   titleText = "PHONK",
   subTitleText,
@@ -105,7 +120,8 @@ export const PhonkFormsMasterTemplate: React.FC<PhonkMasterProps> = ({
         if (prevClipInfo.isSilhouette && !clipInfo.isSilhouette && prevClipInfo.src === clipInfo.src) {
           const prevCutTime = dropCuts[index - 1];
           const elapsedTimeSeconds = cutTime - prevCutTime;
-          videoStartFrame = Math.round(elapsedTimeSeconds * 24);
+          const gifFps = BRAWLER_GIF_FPS_MAP[clipInfo.src] ?? 24;
+          videoStartFrame = Math.round(elapsedTimeSeconds * gifFps);
         }
       }
 
