@@ -3,7 +3,7 @@ import { Composition } from "remotion";
 import { MasterPhonkTemplate } from "./templates/MasterPhonkTemplate";
 import { MangaPhonkTemplate } from "./templates/MangaPhonkTemplate";
 import { MidnightTrioTemplate } from "./templates/MidnightTrioTemplate";
-import { phonkPrototypeProps, mangaPhonkProps, midnightTrioProps, superheroTrioProps } from "./props";
+import { phonkPrototypeProps, mangaPhonkProps, midnightTrioProps, superheroTrioProps, bibiEdgarFrankProps } from "./props";
 
 export const PhonkCompositions: React.FC = () => {
   return (
@@ -46,6 +46,16 @@ export const PhonkCompositions: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={superheroTrioProps}
+      />
+
+      <Composition
+        id="BrawlForms-BibiEdgarFrank"
+        component={MidnightTrioTemplate}
+        durationInFrames={585}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={bibiEdgarFrankProps}
       />
     </>
   );

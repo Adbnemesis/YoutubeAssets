@@ -12,12 +12,15 @@ const BRAWLER_GIF_MAP: Record<string, BrawlerGifMetadata> = {
   "brawler_gifs/surge_win.gif": { base: "brawler_gif_frames/surge", frameCount: 97, gifFps: 24 },
   "brawler_gifs/max_win.gif": { base: "brawler_gif_frames/max", frameCount: 143, gifFps: 24 },
   "brawler_gifs/meg_win.gif": { base: "brawler_gif_frames/meg", frameCount: 149, gifFps: 24 },
-  "brawler_gifs/edgar_win.gif": { base: "brawler_gif_frames/edgar", frameCount: 123, gifFps: 24 },
-  "brawler_gifs/mortis_win.gif": { base: "brawler_gif_frames/mortis", frameCount: 78, gifFps: 24 },
-  "brawler_gifs/kenji_win.gif": { base: "brawler_gif_frames/kenji", frameCount: 362, gifFps: 24 },
-  "brawler_gifs/crow_win.gif": { base: "brawler_gif_frames/crow", frameCount: 119, gifFps: 24 },
-  "brawler_gifs/leon_win.gif": { base: "brawler_gif_frames/leon", frameCount: 76, gifFps: 24 },
-  "brawler_gifs/tara_win.gif": { base: "brawler_gif_frames/tara", frameCount: 66, gifFps: 24 },
+  "brawler_gifs/edgar_win.gif": { base: "brawler_gif_frames/edgar", frameCount: 121, gifFps: 24 },
+  "brawler_gifs/mortis_win.gif": { base: "brawler_gif_frames/mortis", frameCount: 76, gifFps: 24 },
+  "brawler_gifs/kenji_win.gif": { base: "brawler_gif_frames/kenji", frameCount: 360, gifFps: 24 },
+  "brawler_gifs/crow_win.gif": { base: "brawler_gif_frames/crow", frameCount: 117, gifFps: 24 },
+  "brawler_gifs/leon_win.gif": { base: "brawler_gif_frames/leon", frameCount: 74, gifFps: 24 },
+  "brawler_gifs/tara_win.gif": { base: "brawler_gif_frames/tara", frameCount: 64, gifFps: 24 },
+  "brawler_gifs/bibi_win.gif": { base: "brawler_gif_frames/bibi", frameCount: 153, gifFps: 24 },
+  "brawler_gifs/frank_win.gif": { base: "brawler_gif_frames/frank", frameCount: 12, gifFps: 10 },
+  "brawler_gifs/hank_win.gif": { base: "brawler_gif_frames/hank", frameCount: 249, gifFps: 24 },
 };
 
 export const MangaPhonkClip: React.FC<{
