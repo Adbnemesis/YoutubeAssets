@@ -380,7 +380,7 @@ export const kenjiKazeNoriProps = {
       ]
     },
     {
-      iconSrc: "images/kaze/kaze_panel_1.png",
+      iconSrc: "expressions/kaze/emoji_kaze_geisha_happy.png",
       auraColor: "#ec4899",
       startTime: 5.95,
       endTime: 8.33,
