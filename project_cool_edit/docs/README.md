@@ -29,5 +29,6 @@ Composition: `BrawlCoolTrio` (Kenji/Edgar/Mortis, 1080x1080 @60fps, 14.48s)
 - **Per-edit docs** live in `src/edits/<edit-type>/docs/`.
 - **Per-edit reference video** lives in `src/edits/<edit-type>/reference/`.
 - **Per-edit beat/timing data** lives in `src/edits/<edit-type>/data/`.
+- **Render Output Naming**: All renders saved to `out/` MUST follow the format `out/<TemplateName>_<BrawlersOrTheme>_YYYY-MM-DD.mp4` (e.g. `out/BrawlMonsterTrio_SushiFamily_2026-08-16.mp4`).
 
 To add a new edit type, create `src/edits/<edit-type>/` with its own `docs/`, `reference/`, `data/`, `templates/`, `props.ts`, and `index.tsx`, then register it in `src/Root.tsx`.

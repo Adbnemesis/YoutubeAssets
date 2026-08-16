@@ -212,10 +212,7 @@ Every episode directory must contain a `metadata.txt` with Title, Description, T
 3. **The Joke / Curiosity Gap**: 
    - Speaker A (Accuser): *"Edgar you literally dealt 0 damage."*
    - Speaker B (Edgar / Target): *"it was aura warfare 💀👎"*
-4. **Click Triggers**: 
-   - A bright hand-drawn **red circle** or **red arrow** pointing to the ridiculous claim or 0-15 stats box.
-   - High-contrast, bold yellow and white 2D text at the top (e.g. `"BRO IS COOKED 💀"` or `"HE GOT BANNED 😭"`).
-5. **Zero Clutter**: High readability on mobile YouTube feeds.
+4. **Zero Clutter**: High readability on mobile YouTube feeds.
 
 #### ⚖️ Mandatory Supercell Disclaimer:
 > *"This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy."*

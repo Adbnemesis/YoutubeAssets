@@ -25,11 +25,23 @@ npm start
 This will launch a local server (typically at `http://localhost:3000`).
 
 ### Rendering the Video
-To render the final `PhonkPrototype.mp4` video directly to the `out/` folder, run:
+To render a video, use the Remotion CLI with the mandatory output naming convention:
 
 ```bash
-npm run build
+npx remotion render <CompositionId> out/<TemplateName>_<BrawlersOrTheme>_YYYY-MM-DD.mp4
 ```
+
+### 🏷️ Output File Naming Convention (Mandatory)
+All rendered video files in the `out/` directory MUST include the **Template Name**, **Brawlers / Theme**, and the **Date (`YYYY-MM-DD`)** to ensure version tracking and clear differentiation between renders.
+
+**Standard Format:**
+`out/<TemplateName>_<BrawlersOrTheme>_YYYY-MM-DD.mp4`
+
+**Examples:**
+- `out/BrawlMonsterTrio_SushiFamily_2026-08-16.mp4`
+- `out/BrawlForms_BestFamily_2026-08-16.mp4`
+- `out/BrawlCoolTrio_BibiEdgarFrank_2026-08-16.mp4`
+- `out/BrawlBestChar_TaraEdgarCrow_2026-08-16.mp4`
 
 ## 📂 Project Structure
 
