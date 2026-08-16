@@ -350,7 +350,6 @@ export const bibiEdgarFrankProps = {
 
 export const kenjiKazeNoriProps = {
   titleText: "THE SUSHI FAMILY",
-  subTitleText: "KENJI • KAZE • NORI",
   titleColor: "#0ea5e9",
   titleAccentColor: "#22c55e",
   audioSrc: staticFile("audio/extracted_audio.wav"),
@@ -385,7 +384,7 @@ export const kenjiKazeNoriProps = {
       auraColor: "#ec4899",
       startTime: 5.95,
       endTime: 8.33,
-      sfxSrc: "sound_effects/sushi_wink.mp3",
+      sfxSrc: "brawler_voices/kaze/kaze_kill_vo_06.ogg",
       panels: [
         { quadrant: 2, startOffsetSeconds: 0.05, color: "#831843", imageSrc: "images/kaze/kaze_panel_3.png" },
         { quadrant: 3, startOffsetSeconds: 0.85, color: "#9d174d", imageSrc: "images/kaze/kaze_panel_4.png" },
@@ -416,8 +415,8 @@ export const kenjiKazeNoriProps = {
     { src: "images/kenji/kenji_panel_10.png", isSilhouette: false },
 
     // KAZE
-    { src: "images/kaze/kaze_panel_11.png", isSilhouette: true, silhouetteColor: "#ec4899" },
-    { src: "images/kaze/kaze_panel_11.png", isSilhouette: false },
+    { src: "brawler_gifs/kaze_win.gif", isSilhouette: true, silhouetteColor: "#ec4899" },
+    { src: "brawler_gifs/kaze_win.gif", isSilhouette: false },
     { src: "images/kaze/kaze_panel_8.png", isSilhouette: false },
     { src: "images/kaze/kaze_panel_9.png", isSilhouette: false },
     { src: "images/kaze/kaze_panel_10.png", isSilhouette: false },

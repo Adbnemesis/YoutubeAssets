@@ -45,6 +45,7 @@ const BRAWLER_GIF_FPS_MAP: Record<string, number> = {
   "brawler_gifs/bibi_win.gif": 24,
   "brawler_gifs/frank_win.gif": 10,
   "brawler_gifs/hank_win.gif": 24,
+  "brawler_gifs/kaze_win.gif": 24,
 };
 
 export const PhonkFormsMasterTemplate: React.FC<PhonkMasterProps> = ({
