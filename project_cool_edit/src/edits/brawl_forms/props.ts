@@ -347,3 +347,93 @@ export const bibiEdgarFrankProps = {
     15.117, 15.683, 16.250, 16.833, 17.383, 17.967, 18.533, 19.100, 19.683
   ]
 };
+
+export const kenjiKazeNoriProps = {
+  titleText: "THE SUSHI FAMILY",
+  subTitleText: "KENJI • KAZE • NORI",
+  titleColor: "#0ea5e9",
+  titleAccentColor: "#22c55e",
+  audioSrc: staticFile("audio/extracted_audio.wav"),
+  introForms: [
+    {
+      iconSrc: "images/spray_feudaljapan_sushi.png",
+      auraColor: "#f59e0b",
+      startTime: 0,
+      endTime: 3.60,
+      panels: [
+        { quadrant: 1, startOffsetSeconds: 0.1, color: "#fef08a", imageSrc: "images/kenji/kenji_panel_1.png" },
+        { quadrant: 2, startOffsetSeconds: 1.45, color: "#fde047", imageSrc: "images/kaze/kaze_panel_1.png" },
+        { quadrant: 3, startOffsetSeconds: 1.85, color: "#eab308", imageSrc: "images/nori/nori_panel_1.png" },
+        { quadrant: 4, startOffsetSeconds: 2.22, color: "#ca8a04", imageSrc: "images/kenji/kenji_panel_2.png" },
+      ]
+    },
+    {
+      iconSrc: "expressions/kenji/normal.png",
+      auraColor: "#0ea5e9",
+      startTime: 3.60,
+      endTime: 5.95,
+      sfxSrc: "brawler_voices/kenji/attack.ogg",
+      panels: [
+        { quadrant: 4, startOffsetSeconds: 0.1, color: "#0369a1", imageSrc: "images/kenji/kenji_panel_4.png" },
+        { quadrant: 1, startOffsetSeconds: 0.8, color: "#0284c7", imageSrc: "images/kenji/kenji_panel_5.png" },
+        { quadrant: 3, startOffsetSeconds: 1.45, color: "#0ea5e9", imageSrc: "images/kenji/kenji_panel_6.png" },
+        { quadrant: 2, startOffsetSeconds: 1.85, color: "#38bdf8", imageSrc: "images/kenji/kenji_panel_7.png" },
+      ]
+    },
+    {
+      iconSrc: "images/kaze/kaze_panel_1.png",
+      auraColor: "#ec4899",
+      startTime: 5.95,
+      endTime: 8.33,
+      sfxSrc: "sound_effects/sushi_wink.mp3",
+      panels: [
+        { quadrant: 2, startOffsetSeconds: 0.05, color: "#831843", imageSrc: "images/kaze/kaze_panel_3.png" },
+        { quadrant: 3, startOffsetSeconds: 0.85, color: "#9d174d", imageSrc: "images/kaze/kaze_panel_4.png" },
+        { quadrant: 1, startOffsetSeconds: 1.45, color: "#be185d", imageSrc: "images/kaze/kaze_panel_5.png" },
+        { quadrant: 4, startOffsetSeconds: 1.85, color: "#ec4899", imageSrc: "images/kaze/kaze_panel_6.png" },
+      ]
+    },
+    {
+      iconSrc: "expressions/nori/emoji_nori.png",
+      auraColor: "#22c55e",
+      startTime: 8.33,
+      endTime: 11.083,
+      sfxSrc: "brawler_voices/nori/BS_Nori_Dies_005-001.wav",
+      panels: [
+        { quadrant: 1, startOffsetSeconds: 0.07, color: "#14532d", imageSrc: "images/nori/nori_panel_3.png" },
+        { quadrant: 4, startOffsetSeconds: 0.87, color: "#15803d", imageSrc: "images/nori/nori_panel_4.png" },
+        { quadrant: 2, startOffsetSeconds: 1.45, color: "#16a34a", imageSrc: "images/nori/nori_panel_5.png" },
+        { quadrant: 3, startOffsetSeconds: 1.85, color: "#22c55e", imageSrc: "images/nori/nori_panel_6.png" },
+      ]
+    },
+  ],
+  dropClips: [
+    // KENJI
+    { src: "brawler_gifs/kenji_win.gif", isSilhouette: true, silhouetteColor: "#0ea5e9" },
+    { src: "brawler_gifs/kenji_win.gif", isSilhouette: false },
+    { src: "images/kenji/kenji_panel_8.png", isSilhouette: false },
+    { src: "images/kenji/kenji_panel_9.png", isSilhouette: false },
+    { src: "images/kenji/kenji_panel_10.png", isSilhouette: false },
+
+    // KAZE
+    { src: "images/kaze/kaze_panel_11.png", isSilhouette: true, silhouetteColor: "#ec4899" },
+    { src: "images/kaze/kaze_panel_11.png", isSilhouette: false },
+    { src: "images/kaze/kaze_panel_8.png", isSilhouette: false },
+    { src: "images/kaze/kaze_panel_9.png", isSilhouette: false },
+    { src: "images/kaze/kaze_panel_10.png", isSilhouette: false },
+
+    // NORI
+    { src: "brawler_gifs/nori_default_happy_182.png", isSilhouette: true, silhouetteColor: "#22c55e" },
+    { src: "brawler_gifs/nori_default_happy_182.png", isSilhouette: false },
+    { src: "images/nori/nori_panel_8.png", isSilhouette: false },
+    { src: "images/nori/nori_panel_9.png", isSilhouette: false },
+    { src: "images/nori/nori_panel_10.png", isSilhouette: false },
+
+    // Final Impact
+    { src: "images/nori/nori_panel_13.png", isSilhouette: false },
+  ],
+  dropCuts: [
+    10.700, 11.083, 11.750, 12.333, 12.883, 13.483, 13.967, 14.600,
+    15.117, 15.683, 16.250, 16.833, 17.383, 17.967, 18.533, 19.100, 19.683
+  ]
+};
