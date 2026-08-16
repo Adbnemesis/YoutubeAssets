@@ -1,7 +1,7 @@
 import React from "react";
 import { Composition } from "remotion";
 import { TrioPhonkTemplate } from "./templates/TrioPhonkTemplate";
-import { trioPhonkProps, taraLeonCrowProps } from "./props";
+import { trioPhonkProps, taraLeonCrowProps, bibiEdgarFrankTrioProps } from "./props";
 
 export const TrioCompositions: React.FC = () => {
   return (
@@ -24,6 +24,16 @@ export const TrioCompositions: React.FC = () => {
         width={1080}
         height={1080}
         defaultProps={taraLeonCrowProps}
+      />
+
+      <Composition
+        id="BrawlCoolTrio-BibiEdgarFrank"
+        component={TrioPhonkTemplate}
+        durationInFrames={869}
+        fps={60}
+        width={1080}
+        height={1080}
+        defaultProps={bibiEdgarFrankTrioProps}
       />
     </>
   );

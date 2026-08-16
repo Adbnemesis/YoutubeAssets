@@ -290,7 +290,7 @@ export const bibiEdgarFrankProps = {
       ]
     },
     {
-      iconSrc: "expressions/bibi/bibi_pin.png", auraColor: "#ec4899", startTime: 3.60, endTime: 5.95, sfxSrc: "brawler_voices/bibi/attack.ogg",
+      iconSrc: "expressions/bibi/angry.png", auraColor: "#ec4899", startTime: 3.60, endTime: 5.95, sfxSrc: "brawler_voices/bibi/attack.ogg",
       panels: [
         { quadrant: 4, startOffsetSeconds: 0.1, color: "#831843", imageSrc: "images/bibi/bibi_panel_4.png" },
         { quadrant: 1, startOffsetSeconds: 0.8, color: "#9d174d", imageSrc: "images/bibi/bibi_panel_5.png" },

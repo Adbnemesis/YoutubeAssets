@@ -199,3 +199,70 @@ See existing usage in:
   `lead` / `kill` are the correct substitute voices.
 - The GitHub API is rate-limited for anonymous use (~60 req/hr). Reuse a
   dumped file listing instead of re-fetching pages repeatedly.
+
+---
+
+# Brawler Pin Emotes & Expressions — How To Download
+
+This section documents how to download official **Brawl Stars Pin Emotes** (Neutral, Happy, Angry, Sad, Special, Thanks, GG, Clap, Facepalm, Phew) and organize them into `project_cool_edit/assets/expressions/`.
+
+---
+
+## 9. Where official pin emotes come from
+
+Official high-resolution transparent pin emotes are mirrored in:
+
+```
+AlecksDeee/Brawl-Stars-Pins
+```
+
+### URL Template for Pins:
+```
+https://raw.githubusercontent.com/AlecksDeee/Brawl-Stars-Pins/master/{CATEGORY}/{Brawler}_Pin-{CATEGORY}.png
+```
+
+- `{CATEGORY}` — one of: `Neutral`, `Happy`, `Angry`, `Sad`, `Special`, `Thanks`, `GG`, `Clap`, `Facepalm`, `Phew`
+- `{Brawler}` — Capitalized brawler name (e.g. `Bibi`, `Hank`, `Frank`, `Edgar`, `Mortis`, `Crow`, `Leon`, `Surge`, `Max`, `Meg`, `Tara`, `Kenji`)
+
+### Examples of Raw Download URLs:
+```
+https://raw.githubusercontent.com/AlecksDeee/Brawl-Stars-Pins/master/Angry/Bibi_Pin-Angry.png
+https://raw.githubusercontent.com/AlecksDeee/Brawl-Stars-Pins/master/Happy/Bibi_Pin-Happy.png
+https://raw.githubusercontent.com/AlecksDeee/Brawl-Stars-Pins/master/Neutral/Bibi_Pin-Neutral.png
+https://raw.githubusercontent.com/AlecksDeee/Brawl-Stars-Pins/master/Sad/Bibi_Pin-Sad.png
+```
+
+---
+
+## 10. Expressions Folder Structure
+
+All expression pins live under:
+
+```
+project_cool_edit/assets/expressions/<brawler>/
+```
+
+### Standard Naming Convention:
+```
+expressions/<brawler>/
+├── angry.png         ← Angry pin
+├── happy.png         ← Happy pin
+├── normal.png        ← Neutral default pin
+├── sad.png           ← Sad / crying pin
+├── special.png       ← Special / heart / hyper pin
+├── thanks.png        ← Thanks / thumbs-up pin
+├── gg.png            ← GG pin
+├── clap.png          ← Applause / clapping pin
+├── facepalm.png      ← Facepalm / sigh pin
+└── phew.png          ← Phew / sweat-wipe pin
+```
+
+---
+
+## 11. Tying expressions into an edit
+
+In `brawl_forms` and other templates, reference the expression pin via:
+
+```ts
+iconSrc: "expressions/bibi/angry.png"
+```
