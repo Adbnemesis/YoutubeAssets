@@ -171,9 +171,17 @@ $$\text{VOICE (Narrator + Nemi)} > \text{SFX (Event Punctuation)} > \text{BGM (E
 * **Loudness Range (LRA):** $\le 3.5\text{ dB}$ (Consistent mobile loudness).
 * **Accidental Speaker Overlap:** **Exactly $0.00\text{ms}$** (Automated validation gate).
 
-### Chatterbox Neural TTS Voice Profile
-* **Voice Configuration:** `tech_voice_profile.json` (Warm, intelligent, restrained, conversational).
-* **Narrator Architecture:** **3–5 coherent long-form performance blocks** (NEVER sentence-by-sentence clips).
+### 6.2 Dual Voice & Character Sound Design (V14 Golden Standard)
+- **Deep Tech Narrator:** Synthesized via **Chatterbox Neural Expressive TTS** on Apple Silicon GPU (`mps`), with `exaggeration=0.55`. Delivers authoritative, cinematic engineering narration.
+- **Nemi Mascot Voice:** Synthesized via **Edge-TTS `en-US-AnaNeural`** (`pitch="+12Hz"`, `rate="+8%"`), providing a cute, lively, expressive companion persona that eliminates metallic pitch-shifting artifacts.
+- **Micro-Pause Standards:** Strict `220ms – 280ms` breathing room between statements for punchy, high-retention pacing without dead air.
+- **Synchronized Sound Effects (SFX):**
+  - Interactive Action Clicks (`click.mp3`)
+  - Reaction Pops (`pop.mp3`, `bruh.mp3`)
+  - Terminal Key Typing (`typing.mp3`)
+  - Anomaly / Error Warnings (`error.mp3`)
+  - Camera & Scene Transitions (`whoosh.mp3`)
+  - Solution & Verification Chimes (`chime.mp3`)** (NEVER sentence-by-sentence clips).
 * **Nemi Spoken Lines:** **2–3 punchy reactive moments** per Reel ($< 1.5\text{s}$ each).
 
 ### Dynamic BGM Narrative Envelope Curve

@@ -215,10 +215,13 @@ def main():
     print(f"   Gaps: 220–280ms (Tight, energetic documentary flow)")
     print(f"   Target Voice LUFS: {TARGET_LUFS}\n")
 
-    print("Loading Chatterbox model weights...")
+    print("Loading Chatterbox model weights for Narrator...")
     model = ChatterboxTTS.from_pretrained(device=device)
     sr = model.sr
     print(f"✅ Model loaded. Sample Rate: {sr} Hz\n")
+
+    import asyncio
+    import edge_tts
 
     timeline_events = []
     current_time_ms = 0
@@ -231,24 +234,34 @@ def main():
         speaker = event["speaker"]
         text = event["text"]
         exag = event.get("exaggeration", 0.55)
-        pitch = event.get("pitch_shift", 0.0)
         gap_after = event.get("gap_after_ms", 250)
 
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
 
-        print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker.upper()}) [pitch: +{pitch}st]: \"{text}\"")
-        wav_tensor = model.generate(text=text, exaggeration=exag)
-        if wav_tensor.ndim > 1:
-            wav_tensor = wav_tensor.squeeze()
+        print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker.upper()}): \"{text}\"")
 
-        y = wav_tensor.cpu().numpy()
+        if speaker == "nemi":
+            # Generate cute, playful, natural mascot voice via Edge-TTS AnaNeural
+            temp_mp3 = BLOCKS_DIR / f"{event_id}_temp.mp3"
+            async def gen_nemi():
+                comm = edge_tts.Communicate(text, "en-US-AnaNeural", pitch="+12Hz", rate="+8%")
+                await comm.save(str(temp_mp3))
+            asyncio.run(gen_nemi())
+
+            # Convert to target sample rate and load as numpy
+            conv_cmd = ["ffmpeg", "-y", "-i", str(temp_mp3), "-ar", str(sr), "-ac", "1", str(out_wav)]
+            subprocess.run(conv_cmd, check=True, capture_output=True)
+            y, _ = sf.read(str(out_wav))
+            if temp_mp3.exists():
+                temp_mp3.unlink()
+        else:
+            # Generate deep, authoritative tech narrator via Chatterbox Neural TTS
+            wav_tensor = model.generate(text=text, exaggeration=exag)
+            if wav_tensor.ndim > 1:
+                wav_tensor = wav_tensor.squeeze()
+            y = wav_tensor.cpu().numpy()
+
         y = trim_silence(y, sr, top_db=35)
-        
-        # Apply distinct mascot pitch shift if speaker is Nemi
-        if pitch != 0.0 and HAS_LIBROSA:
-            y = librosa.effects.pitch_shift(y, sr=sr, n_steps=pitch)
-            y = trim_silence(y, sr, top_db=35)
-
         y = normalize_lufs(y, sr, TARGET_LUFS)
         y = np.clip(y, -1.0, 1.0)
         sf.write(str(out_wav), y, sr)
