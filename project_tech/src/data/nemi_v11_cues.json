@@ -1,0 +1,216 @@
+{
+  "engine": "chatterbox-tts",
+  "version": "v11",
+  "topic": "What Actually Happens When You Type google.com?",
+  "sample_rate": 24000,
+  "target_voice_lufs": -16.0,
+  "total_duration_s": 19.036,
+  "total_frames": 571,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "v11_narrator_01_hook",
+      "speaker": "narrator",
+      "text": "You type google.com and hit Enter. Your browser launches a request.",
+      "emotion": "dramatic",
+      "duration_s": 3.627,
+      "start_time_ms": 0,
+      "end_time_ms": 3626,
+      "start_frame": 0,
+      "end_frame": 108,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "hit Enter",
+          "cue": "enter_press",
+          "time_ms": 1269,
+          "frame": 38
+        },
+        {
+          "phrase": "launches a request",
+          "cue": "packet_launch",
+          "time_ms": 2719,
+          "frame": 81
+        }
+      ]
+    },
+    {
+      "id": "v11_narrator_02_dns",
+      "speaker": "narrator",
+      "text": "First, it asks DNS for Google's IP address.",
+      "emotion": "normal",
+      "duration_s": 2.475,
+      "start_time_ms": 3726,
+      "end_time_ms": 6200,
+      "start_frame": 111,
+      "end_frame": 186,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "asks DNS",
+          "cue": "dns_lookup_enter",
+          "time_ms": 4468,
+          "frame": 134
+        },
+        {
+          "phrase": "IP address",
+          "cue": "ip_resolved",
+          "time_ms": 5581,
+          "frame": 167
+        }
+      ]
+    },
+    {
+      "id": "v11_nemi_01_where",
+      "speaker": "nemi",
+      "text": "Where is that?",
+      "emotion": "normal",
+      "duration_s": 0.939,
+      "start_time_ms": 6300,
+      "end_time_ms": 7238,
+      "start_frame": 189,
+      "end_frame": 217,
+      "gap_after_ms": 120,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "Where is that",
+          "cue": "nemi_puzzled",
+          "time_ms": 6769,
+          "frame": 203
+        }
+      ]
+    },
+    {
+      "id": "v11_narrator_03_travel",
+      "speaker": "narrator",
+      "text": "Found it! Your request races across fiber cables to Google's servers.",
+      "emotion": "dramatic",
+      "duration_s": 3.669,
+      "start_time_ms": 7358,
+      "end_time_ms": 11027,
+      "start_frame": 220,
+      "end_frame": 330,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "races across",
+          "cue": "network_grid_enter",
+          "time_ms": 8275,
+          "frame": 248
+        },
+        {
+          "phrase": "fiber cables",
+          "cue": "fiber_node_hop",
+          "time_ms": 9192,
+          "frame": 275
+        },
+        {
+          "phrase": "Google's servers",
+          "cue": "server_edge_reach",
+          "time_ms": 10476,
+          "frame": 314
+        }
+      ]
+    },
+    {
+      "id": "v11_narrator_04_server",
+      "speaker": "narrator",
+      "text": "The server builds the response... and shoots it right back.",
+      "emotion": "normal",
+      "duration_s": 2.411,
+      "start_time_ms": 11127,
+      "end_time_ms": 13537,
+      "start_frame": 333,
+      "end_frame": 406,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "builds the response",
+          "cue": "server_process_light",
+          "time_ms": 11850,
+          "frame": 355
+        },
+        {
+          "phrase": "shoots it right back",
+          "cue": "response_packet_launch",
+          "time_ms": 12934,
+          "frame": 388
+        }
+      ]
+    },
+    {
+      "id": "v11_narrator_05_render",
+      "speaker": "narrator",
+      "text": "Your browser builds the DOM and paints the page you see.",
+      "emotion": "normal",
+      "duration_s": 2.325,
+      "start_time_ms": 13637,
+      "end_time_ms": 15962,
+      "start_frame": 409,
+      "end_frame": 478,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "builds the DOM",
+          "cue": "dom_structure_snap",
+          "time_ms": 14450,
+          "frame": 433
+        },
+        {
+          "phrase": "paints the page",
+          "cue": "google_ui_illuminate",
+          "time_ms": 15380,
+          "frame": 461
+        }
+      ]
+    },
+    {
+      "id": "v11_narrator_06_payoff",
+      "speaker": "narrator",
+      "text": "All in under a hundred milliseconds.",
+      "emotion": "happy",
+      "duration_s": 1.792,
+      "start_time_ms": 16062,
+      "end_time_ms": 17854,
+      "start_frame": 481,
+      "end_frame": 535,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "hundred milliseconds",
+          "cue": "master_takeaway",
+          "time_ms": 17137,
+          "frame": 514
+        }
+      ]
+    },
+    {
+      "id": "v11_nemi_02_fast",
+      "speaker": "nemi",
+      "text": "That was fast!",
+      "emotion": "happy",
+      "duration_s": 0.832,
+      "start_time_ms": 17954,
+      "end_time_ms": 18786,
+      "start_frame": 538,
+      "end_frame": 563,
+      "gap_after_ms": 200,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "That was fast",
+          "cue": "nemi_celebration",
+          "time_ms": 18370,
+          "frame": 551
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "engine": "chatterbox-tts",
+  "version": "v8",
+  "sample_rate": 24000,
+  "target_voice_lufs": -16.0,
+  "total_duration_s": 23.765,
+  "total_frames": 712,
+  "fps": 30,
+  "narration_blocks": [
+    {
+      "id": "v8_narrator_01_hook",
+      "speaker": "narrator",
+      "text": "Your JavaScript keeps creating objects. A lot of them. So who cleans all of this up?",
+      "emotion": "dramatic",
+      "duration_s": 3.797,
+      "start_time_ms": 0,
+      "end_time_ms": 3797,
+      "start_frame": 0,
+      "end_frame": 113,
+      "semantic_cues": [
+        {
+          "phrase": "keeps creating objects",
+          "cue": "spawn_objects",
+          "time_ms": 569,
+          "frame": 17
+        },
+        {
+          "phrase": "A lot of them",
+          "cue": "ram_surge",
+          "time_ms": 1708,
+          "frame": 51
+        },
+        {
+          "phrase": "who cleans all of this up",
+          "cue": "question_mark",
+          "time_ms": 2847,
+          "frame": 85
+        }
+      ]
+    },
+    {
+      "id": "v8_nemi_01_nope",
+      "speaker": "nemi",
+      "text": "Because I'm not doing it.",
+      "emotion": "cheerful",
+      "duration_s": 1.557,
+      "start_time_ms": 3400,
+      "end_time_ms": 4957,
+      "start_frame": 102,
+      "end_frame": 148,
+      "semantic_cues": [
+        {
+          "phrase": "not doing it",
+          "cue": "nemi_refusal",
+          "time_ms": 4178,
+          "frame": 125
+        }
+      ]
+    },
+    {
+      "id": "v8_narrator_02_challenge",
+      "speaker": "narrator",
+      "text": "Okay, which one gets deleted? You might pick this one...",
+      "emotion": "dramatic",
+      "duration_s": 2.176,
+      "start_time_ms": 4650,
+      "end_time_ms": 6826,
+      "start_frame": 139,
+      "end_frame": 204,
+      "semantic_cues": [
+        {
+          "phrase": "which one gets deleted",
+          "cue": "challenge_grid",
+          "time_ms": 5194,
+          "frame": 155
+        },
+        {
+          "phrase": "pick this one",
+          "cue": "viewer_prompt",
+          "time_ms": 6173,
+          "frame": 185
+        }
+      ]
+    },
+    {
+      "id": "v8_nemi_02_point",
+      "speaker": "nemi",
+      "text": "That one.",
+      "emotion": "normal",
+      "duration_s": 0.576,
+      "start_time_ms": 7500,
+      "end_time_ms": 8076,
+      "start_frame": 225,
+      "end_frame": 242,
+      "semantic_cues": [
+        {
+          "phrase": "That one",
+          "cue": "nemi_point_wrong",
+          "time_ms": 7788,
+          "frame": 233
+        }
+      ]
+    },
+    {
+      "id": "v8_narrator_02b_wait",
+      "speaker": "narrator",
+      "text": "Wait. It's still reachable.",
+      "emotion": "whisper",
+      "duration_s": 1.621,
+      "start_time_ms": 8200,
+      "end_time_ms": 9821,
+      "start_frame": 245,
+      "end_frame": 294,
+      "semantic_cues": [
+        {
+          "phrase": "Wait",
+          "cue": "freeze_frame",
+          "time_ms": 8443,
+          "frame": 253
+        },
+        {
+          "phrase": "still reachable",
+          "cue": "laser_reveal",
+          "time_ms": 9091,
+          "frame": 272
+        }
+      ]
+    },
+    {
+      "id": "v8_nemi_03_oh",
+      "speaker": "nemi",
+      "text": "Oh.",
+      "emotion": "excited",
+      "duration_s": 0.661,
+      "start_time_ms": 9700,
+      "end_time_ms": 10361,
+      "start_frame": 291,
+      "end_frame": 310,
+      "semantic_cues": [
+        {
+          "phrase": "Oh",
+          "cue": "nemi_shocked",
+          "time_ms": 10030,
+          "frame": 300
+        }
+      ]
+    },
+    {
+      "id": "v8_narrator_03_discovery",
+      "speaker": "narrator",
+      "text": "V8 starts from the roots, then follows every connection. Anything it can still reach stays alive.",
+      "emotion": "normal",
+      "duration_s": 5.12,
+      "start_time_ms": 10350,
+      "end_time_ms": 15470,
+      "start_frame": 310,
+      "end_frame": 464,
+      "semantic_cues": [
+        {
+          "phrase": "starts from the roots",
+          "cue": "root_pulse",
+          "time_ms": 11374,
+          "frame": 341
+        },
+        {
+          "phrase": "follows every connection",
+          "cue": "tree_traversal",
+          "time_ms": 12910,
+          "frame": 387
+        },
+        {
+          "phrase": "stays alive",
+          "cue": "green_retained",
+          "time_ms": 14702,
+          "frame": 441
+        }
+      ]
+    },
+    {
+      "id": "v8_narrator_04_cleanup",
+      "speaker": "narrator",
+      "text": "Anything it can't reach is garbage. And garbage gets removed.",
+      "emotion": "dramatic",
+      "duration_s": 3.349,
+      "start_time_ms": 15200,
+      "end_time_ms": 18549,
+      "start_frame": 456,
+      "end_frame": 556,
+      "semantic_cues": [
+        {
+          "phrase": "can't reach is garbage",
+          "cue": "red_orphan_highlight",
+          "time_ms": 16539,
+          "frame": 496
+        },
+        {
+          "phrase": "gets removed",
+          "cue": "garbage_tag",
+          "time_ms": 17879,
+          "frame": 536
+        }
+      ]
+    },
+    {
+      "id": "v8_nemi_04_bye",
+      "speaker": "nemi",
+      "text": "Bye.",
+      "emotion": "cheerful",
+      "duration_s": 0.683,
+      "start_time_ms": 18350,
+      "end_time_ms": 19032,
+      "start_frame": 550,
+      "end_frame": 570,
+      "semantic_cues": [
+        {
+          "phrase": "Bye",
+          "cue": "rapid_vaporize",
+          "time_ms": 18691,
+          "frame": 560
+        }
+      ]
+    },
+    {
+      "id": "v8_narrator_05_payoff",
+      "speaker": "narrator",
+      "text": "Then the remaining memory can be compacted. It finds what's still alive... and clears the rest.",
+      "emotion": "normal",
+      "duration_s": 4.565,
+      "start_time_ms": 18950,
+      "end_time_ms": 23515,
+      "start_frame": 568,
+      "end_frame": 705,
+      "semantic_cues": [
+        {
+          "phrase": "memory can be compacted",
+          "cue": "compaction_slide",
+          "time_ms": 20091,
+          "frame": 602
+        },
+        {
+          "phrase": "finds what's still alive",
+          "cue": "final_summary",
+          "time_ms": 21689,
+          "frame": 650
+        },
+        {
+          "phrase": "clears the rest",
+          "cue": "master_takeaway",
+          "time_ms": 22830,
+          "frame": 684
+        }
+      ]
+    },
+    {
+      "id": "v8_nemi_05_better",
+      "speaker": "nemi",
+      "text": "Much better.",
+      "emotion": "happy",
+      "duration_s": 0.64,
+      "start_time_ms": 22200,
+      "end_time_ms": 22840,
+      "start_frame": 666,
+      "end_frame": 685,
+      "semantic_cues": [
+        {
+          "phrase": "Much better",
+          "cue": "nemi_celebration",
+          "time_ms": 22520,
+          "frame": 675
+        }
+      ]
+    }
+  ]
+}

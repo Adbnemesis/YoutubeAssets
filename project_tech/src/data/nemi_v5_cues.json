@@ -1,0 +1,163 @@
+{
+  "engine": "chatterbox-tts",
+  "sample_rate": 24000,
+  "total_duration_s": 25.848,
+  "total_frames": 775,
+  "fps": 30,
+  "segments": [
+    {
+      "id": "voice_001_hook",
+      "speaker": "narrator",
+      "text": "Your JavaScript keeps creating objects.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_001_hook.wav",
+      "duration_s": 2.1546666666666665,
+      "start_time_ms": 0,
+      "end_time_ms": 2154,
+      "start_frame": 0,
+      "end_frame": 64
+    },
+    {
+      "id": "voice_002_question",
+      "speaker": "narrator",
+      "text": "So who cleans them up?",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_002_question.wav",
+      "duration_s": 0.8533333333333334,
+      "start_time_ms": 2304,
+      "end_time_ms": 3157,
+      "start_frame": 69,
+      "end_frame": 94
+    },
+    {
+      "id": "voice_003_nemi_react1",
+      "speaker": "nemi",
+      "text": "Uh... that's a lot.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_003_nemi_react1.wav",
+      "duration_s": 1.152,
+      "start_time_ms": 3257,
+      "end_time_ms": 4409,
+      "start_frame": 97,
+      "end_frame": 132
+    },
+    {
+      "id": "voice_005_question2",
+      "speaker": "narrator",
+      "text": "But how does JavaScript know which ones are safe to delete?",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_005_question2.wav",
+      "duration_s": 2.3253333333333335,
+      "start_time_ms": 4609,
+      "end_time_ms": 6934,
+      "start_frame": 138,
+      "end_frame": 208
+    },
+    {
+      "id": "voice_006_roots",
+      "speaker": "narrator",
+      "text": "V8 starts from the roots.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_006_roots.wav",
+      "duration_s": 1.6853333333333333,
+      "start_time_ms": 7084,
+      "end_time_ms": 8769,
+      "start_frame": 212,
+      "end_frame": 263
+    },
+    {
+      "id": "voice_007_reachable",
+      "speaker": "narrator",
+      "text": "If an object is still reachable, it stays.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_007_reachable.wav",
+      "duration_s": 1.9413333333333334,
+      "start_time_ms": 8869,
+      "end_time_ms": 10810,
+      "start_frame": 266,
+      "end_frame": 324
+    },
+    {
+      "id": "voice_008_surprise_nemi",
+      "speaker": "nemi",
+      "text": "That one looks dead.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_008_surprise_nemi.wav",
+      "duration_s": 1.0026666666666666,
+      "start_time_ms": 11010,
+      "end_time_ms": 12012,
+      "start_frame": 330,
+      "end_frame": 360
+    },
+    {
+      "id": "voice_009_surprise_narrator",
+      "speaker": "narrator",
+      "text": "And this one? It looks dead... but it's still connected.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_009_surprise_narrator.wav",
+      "duration_s": 2.368,
+      "start_time_ms": 12112,
+      "end_time_ms": 14480,
+      "start_frame": 363,
+      "end_frame": 434
+    },
+    {
+      "id": "voice_010_nemi_surprise",
+      "speaker": "nemi",
+      "text": "Oh!",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_010_nemi_surprise.wav",
+      "duration_s": 0.5546666666666666,
+      "start_time_ms": 14630,
+      "end_time_ms": 15184,
+      "start_frame": 438,
+      "end_frame": 455
+    },
+    {
+      "id": "voice_011_cleanup",
+      "speaker": "narrator",
+      "text": "Anything truly unreachable can go.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_011_cleanup.wav",
+      "duration_s": 1.7066666666666668,
+      "start_time_ms": 15384,
+      "end_time_ms": 17090,
+      "start_frame": 461,
+      "end_frame": 512
+    },
+    {
+      "id": "voice_012_nemi_bye",
+      "speaker": "nemi",
+      "text": "Bye.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_012_nemi_bye.wav",
+      "duration_s": 0.64,
+      "start_time_ms": 17190,
+      "end_time_ms": 17830,
+      "start_frame": 515,
+      "end_frame": 534
+    },
+    {
+      "id": "voice_013_compaction",
+      "speaker": "narrator",
+      "text": "Then the remaining memory can be cleaned up and compacted.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_013_compaction.wav",
+      "duration_s": 2.1333333333333333,
+      "start_time_ms": 17980,
+      "end_time_ms": 20113,
+      "start_frame": 539,
+      "end_frame": 603
+    },
+    {
+      "id": "voice_014_payoff",
+      "speaker": "narrator",
+      "text": "So garbage collection isn't magic. It finds what's still alive... and clears the rest.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_014_payoff.wav",
+      "duration_s": 4.224,
+      "start_time_ms": 20313,
+      "end_time_ms": 24537,
+      "start_frame": 609,
+      "end_frame": 736
+    },
+    {
+      "id": "voice_015_nemi_end",
+      "speaker": "nemi",
+      "text": "Much better.",
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/public/sounds/v5_segments/voice_015_nemi_end.wav",
+      "duration_s": 0.6613333333333333,
+      "start_time_ms": 24687,
+      "end_time_ms": 25348,
+      "start_frame": 740,
+      "end_frame": 760
+    }
+  ]
+}

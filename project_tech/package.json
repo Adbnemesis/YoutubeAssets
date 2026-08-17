@@ -1,0 +1,26 @@
+{
+  "name": "project_tech",
+  "version": "1.0.0",
+  "description": "Autonomous Engine for Faceless Tech, DSA & CS Short-Form Media",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "build": "remotion render src/index.ts OutputPredictor out/Reel_01.mp4",
+    "render:all": "python3 scripts/render_batch.py",
+    "validate": "python3 scripts/validate_code.py",
+    "generate": "python3 scripts/generate_reel_data.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.484",
+    "@remotion/zod-types": "^4.0.484",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.484",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.3.0"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "reel-01",
+  "compositionId": "OutputPredictor",
+  "seriesTitle": "WHAT DOES THIS PRINT?",
+  "difficulty": "MEDIUM",
+  "language": "JavaScript",
+  "hookQuestion": "Why Does [1, 2, 3] + [4, 5, 6] Equal This?",
+  "subHook": "90% of JS Developers Guess Wrong",
+  "codeLines": [
+    {
+      "number": 1,
+      "code": "const a = [1, 2, 3];"
+    },
+    {
+      "number": 2,
+      "code": "const b = [4, 5, 6];"
+    },
+    {
+      "number": 3,
+      "code": "console.log(a + b);"
+    }
+  ],
+  "countdownSeconds": 5,
+  "options": [
+    {
+      "id": "A",
+      "label": "[1,2,3,4,5,6]",
+      "isCorrect": false
+    },
+    {
+      "id": "B",
+      "label": "\"1,2,34,5,6\"",
+      "isCorrect": true
+    },
+    {
+      "id": "C",
+      "label": "TypeError",
+      "isCorrect": false
+    },
+    {
+      "id": "D",
+      "label": "NaN",
+      "isCorrect": false
+    }
+  ],
+  "correctOptionId": "B",
+  "explanationHeading": "Result: \"1,2,34,5,6\"",
+  "explanationPoints": [
+    "The + operator triggers String coercion on both arrays via .toString()",
+    "[1,2,3].toString() evaluates to '1,2,3'",
+    "[4,5,6].toString() evaluates to '4,5,6'",
+    "Concatenation yields '1,2,3' + '4,5,6' = '1,2,34,5,6'"
+  ],
+  "complexityTime": "O(N)",
+  "complexitySpace": "O(N)",
+  "callToAction": "Save this JS interview trap \ud83d\udccc",
+  "brandTag": "@codemind.dev"
+}

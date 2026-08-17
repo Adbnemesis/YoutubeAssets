@@ -1,0 +1,63 @@
+{
+  "project": "Project Tech (Nemi Explains)",
+  "description": "High-Retention Chatterbox Neural Expressive Engine for Tech & Programming Shorts",
+  "provider": "chatterbox-tts",
+  "engine_description": "Chatterbox Neural Expressive Engine — Local M4 GPU Accelerated via PyTorch MPS",
+  "device": "mps",
+  "reference_audio": "projects/common_assets/inflation_bananas_perfect_mix.mp3",
+  "exaggeration_map": {
+    "normal": 0.45,
+    "sad": 0.80,
+    "cheerful": 0.80,
+    "happy": 0.80,
+    "excited": 0.85,
+    "angry": 0.80,
+    "whisper": 0.35,
+    "dramatic": 0.75
+  },
+  "pacing_and_delivery": {
+    "speed_multiplier": 1.18,
+    "target_wpm": 180,
+    "target_short_duration_seconds": {
+      "micro_puzzle": 12.0,
+      "visual_explainer": 24.0,
+      "deep_architecture": 28.0
+    }
+  },
+  "post_processing": {
+    "pause_trimming": {
+      "enabled": true,
+      "standard_pause_seconds": 0.18,
+      "dramatic_pause_seconds": 0.32,
+      "silence_threshold_db": -38
+    },
+    "audio_mastering": {
+      "voice_loudness_lufs": -14,
+      "bgm_ducking_db": -18,
+      "sample_rate": 24000
+    }
+  },
+  "background_music_library": [
+    {
+      "id": "blade_runner",
+      "filename": "Synthwave Goose - Blade Runner 2049.mp3",
+      "genre": "Retro Cyberpunk Synthwave",
+      "vibe": "Hypnotic, futuristic, high-tech focus",
+      "recommended_for": ["CS Under The Hood", "V8 Memory", "Architecture"]
+    },
+    {
+      "id": "luminary",
+      "filename": "joel sunny - luminary [original song] - official audio 4.mp3",
+      "genre": "Dramatic Cinematic Violin Synth",
+      "vibe": "Intellectual tension, high-stakes reveal",
+      "recommended_for": ["Algorithm Duels", "FAANG Traps", "Compiler Mysteries"]
+    },
+    {
+      "id": "bluebird",
+      "filename": "Death of a Bluebird - Rorschach Roy 4.mp3",
+      "genre": "Dark Atmospheric Ambient",
+      "vibe": "Moody, analytical, deep engineering",
+      "recommended_for": ["Bugs & Post-Mortems", "Database Bottlenecks"]
+    }
+  ]
+}

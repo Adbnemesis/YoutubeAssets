@@ -1,0 +1,54 @@
+{
+  "id": "reel-02",
+  "compositionId": "SpotTheBug",
+  "seriesTitle": "SPOT THE BUG",
+  "difficulty": "SENIOR",
+  "language": "Python",
+  "hookQuestion": "Can You Spot the Memory Leak Trap?",
+  "buggyCodeLines": [
+    {
+      "number": 1,
+      "code": "def append_to(element, target=[]):"
+    },
+    {
+      "number": 2,
+      "code": "    target.append(element)"
+    },
+    {
+      "number": 3,
+      "code": "    return target"
+    },
+    {
+      "number": 4,
+      "code": "print(append_to(1)) # [1]"
+    },
+    {
+      "number": 5,
+      "code": "print(append_to(2)) # [1, 2]"
+    }
+  ],
+  "fixedCodeLines": [
+    {
+      "number": 1,
+      "code": "def append_to(element, target=None):"
+    },
+    {
+      "number": 2,
+      "code": "    if target is None: target = []"
+    },
+    {
+      "number": 3,
+      "code": "    target.append(element)"
+    },
+    {
+      "number": 4,
+      "code": "    return target"
+    }
+  ],
+  "buggyLineNumber": 1,
+  "countdownSeconds": 5,
+  "bugExplanation": "Default Mutable Argument Trap",
+  "whyItHappens": "Python evaluates default parameters ONCE at definition time. The list instance is reused across all subsequent invocations.",
+  "callToAction": "Did you catch it? Drop your answer below \ud83d\udc47",
+  "brandTag": "@codemind.dev"
+}

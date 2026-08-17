@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Production Render Outputs & Archives
+out/
+archive/
+reference/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Temporary build artifacts
+.DS_Store
+*.log
+.remotion/
+
+# Python Cache
+__pycache__/
+*.pyc

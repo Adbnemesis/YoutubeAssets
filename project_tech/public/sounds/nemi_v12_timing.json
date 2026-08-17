@@ -1,0 +1,184 @@
+{
+  "engine": "chatterbox-tts",
+  "version": "v12",
+  "topic": "Why Does 0.1 + 0.2 Not Equal 0.3?",
+  "archetype": "mystery",
+  "sample_rate": 24000,
+  "target_voice_lufs": -16.0,
+  "total_duration_s": 22.223,
+  "total_frames": 666,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "v12_narrator_01_hook",
+      "speaker": "narrator",
+      "text": "Your computer just calculated 0.1 plus 0.2. And got this.",
+      "emotion": "dramatic",
+      "duration_s": 4.011,
+      "start_time_ms": 0,
+      "end_time_ms": 4010,
+      "start_frame": 0,
+      "end_frame": 120,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "0.1 plus 0.2",
+          "cue": "code_eval",
+          "time_ms": 1604,
+          "frame": 48
+        },
+        {
+          "phrase": "got this",
+          "cue": "error_result_pop",
+          "time_ms": 3208,
+          "frame": 96
+        }
+      ]
+    },
+    {
+      "id": "v12_nemi_01_what",
+      "speaker": "nemi",
+      "text": "Wait, what?!",
+      "emotion": "puzzled",
+      "duration_s": 0.725,
+      "start_time_ms": 4110,
+      "end_time_ms": 4835,
+      "start_frame": 123,
+      "end_frame": 145,
+      "gap_after_ms": 120,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "Wait, what",
+          "cue": "nemi_shocked",
+          "time_ms": 4472,
+          "frame": 134
+        }
+      ]
+    },
+    {
+      "id": "v12_narrator_02_question",
+      "speaker": "narrator",
+      "text": "Why does a supercomputer fail grade-school math?",
+      "emotion": "normal",
+      "duration_s": 2.752,
+      "start_time_ms": 4955,
+      "end_time_ms": 7707,
+      "start_frame": 148,
+      "end_frame": 231,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "supercomputer fail",
+          "cue": "mystery_question_card",
+          "time_ms": 6055,
+          "frame": 181
+        }
+      ]
+    },
+    {
+      "id": "v12_narrator_03_binary",
+      "speaker": "narrator",
+      "text": "Computers store numbers in binary. And in base-2, 0.1 is an infinite repeating fraction.",
+      "emotion": "dramatic",
+      "duration_s": 5.056,
+      "start_time_ms": 7807,
+      "end_time_ms": 12863,
+      "start_frame": 234,
+      "end_frame": 385,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "numbers in binary",
+          "cue": "binary_grid_enter",
+          "time_ms": 9323,
+          "frame": 279
+        },
+        {
+          "phrase": "repeating fraction",
+          "cue": "infinite_fraction_expand",
+          "time_ms": 11599,
+          "frame": 347
+        }
+      ]
+    },
+    {
+      "id": "v12_narrator_04_approx",
+      "speaker": "narrator",
+      "text": "So it rounds to 53 bits. Adding those two approximations leaves that extra 4 at the end.",
+      "emotion": "normal",
+      "duration_s": 4.779,
+      "start_time_ms": 12963,
+      "end_time_ms": 17741,
+      "start_frame": 388,
+      "end_frame": 532,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "53 bits",
+          "cue": "bit_rounding_highlight",
+          "time_ms": 14157,
+          "frame": 424
+        },
+        {
+          "phrase": "extra 4 at the end",
+          "cue": "trailing_four_zoom",
+          "time_ms": 16546,
+          "frame": 496
+        }
+      ]
+    },
+    {
+      "id": "v12_narrator_05_aha",
+      "speaker": "narrator",
+      "text": "Your computer didn't get math wrong. It just ran out of bits.",
+      "emotion": "happy",
+      "duration_s": 2.816,
+      "start_time_ms": 17841,
+      "end_time_ms": 20657,
+      "start_frame": 535,
+      "end_frame": 619,
+      "gap_after_ms": 100,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "didn't get math wrong",
+          "cue": "aha_transformation",
+          "time_ms": 18826,
+          "frame": 564
+        },
+        {
+          "phrase": "out of bits",
+          "cue": "master_takeaway",
+          "time_ms": 19953,
+          "frame": 598
+        }
+      ]
+    },
+    {
+      "id": "v12_nemi_02_sneaky",
+      "speaker": "nemi",
+      "text": "Sneaky binary!",
+      "emotion": "happy",
+      "duration_s": 1.216,
+      "start_time_ms": 20757,
+      "end_time_ms": 21973,
+      "start_frame": 622,
+      "end_frame": 659,
+      "gap_after_ms": 200,
+      "interrupt": false,
+      "semantic_cues": [
+        {
+          "phrase": "Sneaky binary",
+          "cue": "nemi_celebration",
+          "time_ms": 21365,
+          "frame": 640
+        }
+      ]
+    }
+  ]
+}

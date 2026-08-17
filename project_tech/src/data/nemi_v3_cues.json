@@ -1,0 +1,103 @@
+{
+  "total_duration_s": 33.556,
+  "total_frames": 1006,
+  "fps": 30,
+  "segments": [
+    {
+      "id": "act1_mess",
+      "text": "Your JavaScript keeps creating objects... and some of them become useless.",
+      "start_time_ms": 100,
+      "end_time_ms": 4540,
+      "start_frame": 3,
+      "end_frame": 136,
+      "duration_s": 4.44,
+      "nemi_reaction": "...that's a lot",
+      "nemi_reaction_after": "",
+      "nemi_pose": "shocked"
+    },
+    {
+      "id": "act2_question",
+      "text": "So why doesn't your memory just fill up? Who cleans this mess?",
+      "start_time_ms": 4790,
+      "end_time_ms": 9110,
+      "start_frame": 143,
+      "end_frame": 273,
+      "duration_s": 4.32,
+      "nemi_reaction": "who gets deleted?",
+      "nemi_reaction_after": "",
+      "nemi_pose": "puzzled"
+    },
+    {
+      "id": "act3_predict",
+      "text": "Which ones do you think survive?",
+      "start_time_ms": 9310,
+      "end_time_ms": 11518,
+      "start_frame": 279,
+      "end_frame": 345,
+      "duration_s": 2.208,
+      "nemi_reaction": "",
+      "nemi_reaction_after": "",
+      "nemi_pose": "thinking"
+    },
+    {
+      "id": "act4_investigate",
+      "text": "V8 starts from the roots. Reachable objects stay. Unreachable?",
+      "start_time_ms": 12218,
+      "end_time_ms": 17858,
+      "start_frame": 366,
+      "end_frame": 535,
+      "duration_s": 5.64,
+      "nemi_reaction": "",
+      "nemi_reaction_after": "",
+      "nemi_pose": "thinking"
+    },
+    {
+      "id": "act5_surprise",
+      "text": "Not so fast.",
+      "start_time_ms": 18358,
+      "end_time_ms": 20182,
+      "start_frame": 550,
+      "end_frame": 605,
+      "duration_s": 1.824,
+      "nemi_reaction": "that one's dead!",
+      "nemi_reaction_after": "Oh! It's alive!",
+      "nemi_pose": "aha"
+    },
+    {
+      "id": "act6_delete",
+      "text": "Anything unreachable can go.",
+      "start_time_ms": 20582,
+      "end_time_ms": 22862,
+      "start_frame": 617,
+      "end_frame": 685,
+      "duration_s": 2.28,
+      "nemi_reaction": "bye!",
+      "nemi_reaction_after": "",
+      "nemi_pose": "aha"
+    },
+    {
+      "id": "act7_compact",
+      "text": "Then remaining memory is compacted.",
+      "start_time_ms": 23212,
+      "end_time_ms": 25780,
+      "start_frame": 696,
+      "end_frame": 773,
+      "duration_s": 2.568,
+      "nemi_reaction": "",
+      "nemi_reaction_after": "",
+      "nemi_pose": "smug"
+    },
+    {
+      "id": "act8_payoff",
+      "text": "Garbage collection isn't magic. It finds what's alive... and clears the rest.",
+      "start_time_ms": 26180,
+      "end_time_ms": 31556,
+      "start_frame": 785,
+      "end_frame": 946,
+      "duration_s": 5.376,
+      "nemi_reaction": "much better.",
+      "nemi_reaction_after": "",
+      "nemi_pose": "smug"
+    }
+  ]
+}

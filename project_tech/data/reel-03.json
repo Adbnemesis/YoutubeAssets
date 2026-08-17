@@ -1,0 +1,53 @@
+{
+  "id": "reel-03",
+  "compositionId": "OutputPredictor",
+  "seriesTitle": "INTERVIEW TRAP",
+  "difficulty": "HARD",
+  "language": "JavaScript",
+  "hookQuestion": "Why Does typeof null Equal 'object'?",
+  "subHook": "The 30-Year-Old Bug Still in Production",
+  "codeLines": [
+    {
+      "number": 1,
+      "code": "console.log(typeof null);"
+    },
+    {
+      "number": 2,
+      "code": "console.log(null instanceof Object);"
+    }
+  ],
+  "countdownSeconds": 5,
+  "options": [
+    {
+      "id": "A",
+      "label": "'object', true",
+      "isCorrect": false
+    },
+    {
+      "id": "B",
+      "label": "'object', false",
+      "isCorrect": true
+    },
+    {
+      "id": "C",
+      "label": "'null', false",
+      "isCorrect": false
+    },
+    {
+      "id": "D",
+      "label": "undefined, false",
+      "isCorrect": false
+    }
+  ],
+  "correctOptionId": "B",
+  "explanationHeading": "Result: 'object' and false",
+  "explanationPoints": [
+    "In early JS, values were stored with a type tag in the lowest 3 bits.",
+    "Object type tag was 000. null was represented as the NULL pointer (0x00).",
+    "Hence typeof null returned 'object' \u2014 a legacy bug that can never be fixed without breaking the web!"
+  ],
+  "complexityTime": "O(1)",
+  "complexitySpace": "O(1)",
+  "callToAction": "Share this with a fellow developer \ud83d\udce4",
+  "brandTag": "@codemind.dev"
+}
