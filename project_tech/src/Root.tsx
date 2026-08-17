@@ -28,7 +28,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsCaptcha"
         component={CaptchaExplainsComp}
-        durationInFrames={750} // 25.00s @ 30fps — Debut Reel #1: How CAPTCHA Knows You're Human (Deliberate 9-statement pacing with 450-550ms pauses)
+        durationInFrames={698} // 23.28s @ 30fps — Debut Reel #1: How CAPTCHA Knows You're Human (Dual-voice with 220-280ms pauses & tight scene sync)
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}

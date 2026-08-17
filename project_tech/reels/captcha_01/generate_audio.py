@@ -2,10 +2,9 @@
 """
 Nemi Explains — Chatterbox Neural Audio Pipeline for Debut Reel #1: CAPTCHA
 Topic: "How CAPTCHA Knows You're Human (It's Not The Checkbox)"
-- Clean, deliberate sentence-by-sentence architecture.
-- Spacious, natural 400-550ms breathing pauses across all statements.
-- Correct file paths outputting directly to public/reels/captcha_01 and reels/captcha_01/audio.
-- Broadcast normalized to -16.0 LUFS with dynamic BGM sidechain.
+- Distinct voices: Deep authoritative Narrator vs Animated pitched Nemi (+2.8 semitones).
+- Tight, natural 220-280ms sentence pacing.
+- Direct export to public/reels/captcha_01/captcha_master_audio.mp3.
 """
 
 import os
@@ -57,8 +56,7 @@ FPS = 30
 TARGET_LUFS = -16.0
 
 # ═══════════════════════════════════════════════════════════════
-# SPACIOUS, DELIBERATE NARRATIVE TIMELINE (~23-25s)
-# Each sentence is independent with ~450-550ms breathing room
+# PRECISE 220-280ms SENTENCE PACING (Punchy, Natural & Tight)
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
     # 1. Beat 1: The Hook
@@ -68,19 +66,21 @@ SPEAKER_EVENTS = [
         "text": "You didn't pass the CAPTCHA by clicking the box.",
         "emotion": "dramatic",
         "exaggeration": 0.55,
-        "gap_after_ms": 400,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 220,
         "semantic_phrases": [
             {"phrase": "clicking the box", "cue": "checkbox_click", "rel_pct": 0.60}
         ]
     },
-    # 2. Beat 1b: Nemi Shock
+    # 2. Beat 1b: Nemi Shock (Distinct Pitch Shift +2.8 semitones)
     {
         "id": "c02_nemi_what",
         "speaker": "nemi",
         "text": "Wait, what?!",
         "emotion": "puzzled",
         "exaggeration": 0.85,
-        "gap_after_ms": 450,
+        "pitch_shift": 2.8,
+        "gap_after_ms": 250,
         "semantic_phrases": [
             {"phrase": "Wait, what", "cue": "nemi_shocked", "rel_pct": 0.50}
         ]
@@ -92,7 +92,8 @@ SPEAKER_EVENTS = [
         "text": "A bot can click in one millisecond.",
         "emotion": "dramatic",
         "exaggeration": 0.55,
-        "gap_after_ms": 500,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 250,
         "semantic_phrases": [
             {"phrase": "one millisecond", "cue": "bot_timer", "rel_pct": 0.50}
         ]
@@ -104,7 +105,8 @@ SPEAKER_EVENTS = [
         "text": "And instant zero-latency clicks get blocked immediately.",
         "emotion": "dramatic",
         "exaggeration": 0.55,
-        "gap_after_ms": 550,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 280,
         "semantic_phrases": [
             {"phrase": "blocked immediately", "cue": "access_denied", "rel_pct": 0.70}
         ]
@@ -116,7 +118,8 @@ SPEAKER_EVENTS = [
         "text": "Google profiles the kinematic trajectory of your mouse on its way to the target.",
         "emotion": "normal",
         "exaggeration": 0.50,
-        "gap_after_ms": 550,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 280,
         "semantic_phrases": [
             {"phrase": "kinematic trajectory", "cue": "trajectory_arena", "rel_pct": 0.40},
             {"phrase": "on its way", "cue": "curves_split", "rel_pct": 0.80}
@@ -129,7 +132,8 @@ SPEAKER_EVENTS = [
         "text": "Bots move in straight, linear vectors.",
         "emotion": "dramatic",
         "exaggeration": 0.55,
-        "gap_after_ms": 450,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 250,
         "semantic_phrases": [
             {"phrase": "straight, linear", "cue": "bot_line", "rel_pct": 0.50}
         ]
@@ -141,19 +145,21 @@ SPEAKER_EVENTS = [
         "text": "Humans have curved Bezier paths and involuntary muscle tremors.",
         "emotion": "dramatic",
         "exaggeration": 0.55,
-        "gap_after_ms": 500,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 260,
         "semantic_phrases": [
             {"phrase": "muscle tremors", "cue": "jitter_zoom", "rel_pct": 0.70}
         ]
     },
-    # 8. Beat 5a: Nemi Realization
+    # 8. Beat 5a: Nemi Realization (Distinct Pitch Shift +2.8 semitones)
     {
         "id": "c08_nemi_aha",
         "speaker": "nemi",
         "text": "Aha! My shaky hands are a feature!",
         "emotion": "happy",
         "exaggeration": 0.80,
-        "gap_after_ms": 450,
+        "pitch_shift": 2.8,
+        "gap_after_ms": 250,
         "semantic_phrases": [
             {"phrase": "shaky hands", "cue": "nemi_aha", "rel_pct": 0.50}
         ]
@@ -165,7 +171,8 @@ SPEAKER_EVENTS = [
         "text": "You proved you're human before the click even happened.",
         "emotion": "happy",
         "exaggeration": 0.55,
-        "gap_after_ms": 450,
+        "pitch_shift": 0.0,
+        "gap_after_ms": 300,
         "semantic_phrases": [
             {"phrase": "even happened", "cue": "takeaway_console", "rel_pct": 0.50}
         ]
@@ -198,13 +205,14 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS — CHATTERBOX NEURAL AUDIO PIPELINE (DELIBERATE PACING)")
+    print("🎙️ NEMI EXPLAINS — CHATTERBOX DUAL-VOICE ENGINE (NARRATOR + NEMI)")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS")
     print(f"   Device: {device.upper()}")
-    print(f"   Events: {len(SPEAKER_EVENTS)} Independent Statements")
+    print(f"   Voices: Narrator (Deep Authority) + Nemi Mascot (+2.8 semitones)")
+    print(f"   Gaps: 220–280ms (Tight, energetic documentary flow)")
     print(f"   Target Voice LUFS: {TARGET_LUFS}\n")
 
     print("Loading Chatterbox model weights...")
@@ -223,17 +231,24 @@ def main():
         speaker = event["speaker"]
         text = event["text"]
         exag = event.get("exaggeration", 0.55)
-        gap_after = event.get("gap_after_ms", 450)
+        pitch = event.get("pitch_shift", 0.0)
+        gap_after = event.get("gap_after_ms", 250)
 
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
 
-        print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker}) [{event['emotion']}]: \"{text}\"")
+        print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker.upper()}) [pitch: +{pitch}st]: \"{text}\"")
         wav_tensor = model.generate(text=text, exaggeration=exag)
         if wav_tensor.ndim > 1:
             wav_tensor = wav_tensor.squeeze()
 
         y = wav_tensor.cpu().numpy()
         y = trim_silence(y, sr, top_db=35)
+        
+        # Apply distinct mascot pitch shift if speaker is Nemi
+        if pitch != 0.0 and HAS_LIBROSA:
+            y = librosa.effects.pitch_shift(y, sr=sr, n_steps=pitch)
+            y = trim_silence(y, sr, top_db=35)
+
         y = normalize_lufs(y, sr, TARGET_LUFS)
         y = np.clip(y, -1.0, 1.0)
         sf.write(str(out_wav), y, sr)
@@ -321,10 +336,10 @@ def main():
 
     if bgm_file.exists():
         vol_expr = (
-            "if(lt(t,4.0), 0.32, "
-            "if(lt(t,9.0), 0.25, "
-            "if(lt(t,15.0), 0.32, "
-            "if(lt(t,20.0), 0.40, 0.28))))"
+            "if(lt(t,3.5), 0.32, "
+            "if(lt(t,8.0), 0.25, "
+            "if(lt(t,13.5), 0.32, "
+            "if(lt(t,18.0), 0.40, 0.28))))"
         )
         filter_complex = (
             f"[1:a]volume=eval=frame:volume='{vol_expr}'[bgm_curved];"
@@ -354,9 +369,9 @@ def main():
         curr = timeline_events[i]
         nxt = timeline_events[i+1]
         gap_actual = nxt["start_time_ms"] - curr["end_time_ms"]
-        print(f"   ✓ {curr['id']} → {nxt['id']} | Gap: {gap_actual}ms (Natural Cadence)")
+        print(f"   ✓ {curr['id']} ({curr['speaker']}) → {nxt['id']} ({nxt['speaker']}) | Gap: {gap_actual}ms")
 
-    print("\n🎉 CHATTERBOX AUDIO PIPELINE GENERATION COMPLETE")
+    print("\n🎉 CHATTERBOX DUAL-VOICE AUDIO PIPELINE COMPLETE")
 
 if __name__ == "__main__":
     main()

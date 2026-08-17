@@ -3,26 +3,26 @@
   "slug": "captcha_01",
   "date": "20260817",
   "fps": 30,
-  "total_duration_s": 25.0,
-  "total_frames": 750,
+  "total_duration_s": 23.28,
+  "total_frames": 698,
   "events": [
     {
       "id": "c01_hook",
       "speaker": "narrator",
       "text": "You didn't pass the CAPTCHA by clicking the box.",
       "emotion": "dramatic",
-      "duration_s": 2.133,
+      "duration_s": 2.027,
       "start_time_ms": 0,
-      "end_time_ms": 2133,
+      "end_time_ms": 2026,
       "start_frame": 0,
-      "end_frame": 63,
-      "gap_after_ms": 400,
+      "end_frame": 60,
+      "gap_after_ms": 220,
       "semantic_cues": [
         {
           "phrase": "clicking the box",
           "cue": "checkbox_click",
-          "time_ms": 1279,
-          "frame": 38
+          "time_ms": 1215,
+          "frame": 36
         }
       ]
     },
@@ -31,18 +31,18 @@
       "speaker": "nemi",
       "text": "Wait, what?!",
       "emotion": "puzzled",
-      "duration_s": 0.875,
-      "start_time_ms": 2533,
-      "end_time_ms": 3407,
-      "start_frame": 75,
-      "end_frame": 102,
-      "gap_after_ms": 450,
+      "duration_s": 1.067,
+      "start_time_ms": 2246,
+      "end_time_ms": 3312,
+      "start_frame": 67,
+      "end_frame": 99,
+      "gap_after_ms": 250,
       "semantic_cues": [
         {
           "phrase": "Wait, what",
           "cue": "nemi_shocked",
-          "time_ms": 2970,
-          "frame": 89
+          "time_ms": 2779,
+          "frame": 83
         }
       ]
     },
@@ -51,18 +51,18 @@
       "speaker": "narrator",
       "text": "A bot can click in one millisecond.",
       "emotion": "dramatic",
-      "duration_s": 1.877,
-      "start_time_ms": 3857,
-      "end_time_ms": 5734,
-      "start_frame": 115,
-      "end_frame": 172,
-      "gap_after_ms": 500,
+      "duration_s": 1.749,
+      "start_time_ms": 3562,
+      "end_time_ms": 5311,
+      "start_frame": 106,
+      "end_frame": 159,
+      "gap_after_ms": 250,
       "semantic_cues": [
         {
           "phrase": "one millisecond",
           "cue": "bot_timer",
-          "time_ms": 4795,
-          "frame": 143
+          "time_ms": 4436,
+          "frame": 133
         }
       ]
     },
@@ -71,18 +71,18 @@
       "speaker": "narrator",
       "text": "And instant zero-latency clicks get blocked immediately.",
       "emotion": "dramatic",
-      "duration_s": 2.859,
-      "start_time_ms": 6234,
-      "end_time_ms": 9092,
-      "start_frame": 187,
-      "end_frame": 272,
-      "gap_after_ms": 550,
+      "duration_s": 2.752,
+      "start_time_ms": 5561,
+      "end_time_ms": 8313,
+      "start_frame": 166,
+      "end_frame": 249,
+      "gap_after_ms": 280,
       "semantic_cues": [
         {
           "phrase": "blocked immediately",
           "cue": "access_denied",
-          "time_ms": 8234,
-          "frame": 247
+          "time_ms": 7487,
+          "frame": 224
         }
       ]
     },
@@ -91,24 +91,24 @@
       "speaker": "narrator",
       "text": "Google profiles the kinematic trajectory of your mouse on its way to the target.",
       "emotion": "normal",
-      "duration_s": 3.541,
-      "start_time_ms": 9642,
-      "end_time_ms": 13183,
-      "start_frame": 289,
-      "end_frame": 395,
-      "gap_after_ms": 550,
+      "duration_s": 3.392,
+      "start_time_ms": 8593,
+      "end_time_ms": 11985,
+      "start_frame": 257,
+      "end_frame": 359,
+      "gap_after_ms": 280,
       "semantic_cues": [
         {
           "phrase": "kinematic trajectory",
           "cue": "trajectory_arena",
-          "time_ms": 11058,
-          "frame": 331
+          "time_ms": 9949,
+          "frame": 298
         },
         {
           "phrase": "on its way",
           "cue": "curves_split",
-          "time_ms": 12474,
-          "frame": 374
+          "time_ms": 11306,
+          "frame": 339
         }
       ]
     },
@@ -118,17 +118,17 @@
       "text": "Bots move in straight, linear vectors.",
       "emotion": "dramatic",
       "duration_s": 2.176,
-      "start_time_ms": 13733,
-      "end_time_ms": 15909,
-      "start_frame": 411,
-      "end_frame": 477,
-      "gap_after_ms": 450,
+      "start_time_ms": 12265,
+      "end_time_ms": 14441,
+      "start_frame": 367,
+      "end_frame": 433,
+      "gap_after_ms": 250,
       "semantic_cues": [
         {
           "phrase": "straight, linear",
           "cue": "bot_line",
-          "time_ms": 14821,
-          "frame": 444
+          "time_ms": 13353,
+          "frame": 400
         }
       ]
     },
@@ -137,18 +137,18 @@
       "speaker": "narrator",
       "text": "Humans have curved Bezier paths and involuntary muscle tremors.",
       "emotion": "dramatic",
-      "duration_s": 3.413,
-      "start_time_ms": 16359,
-      "end_time_ms": 19772,
-      "start_frame": 490,
-      "end_frame": 593,
-      "gap_after_ms": 500,
+      "duration_s": 3.136,
+      "start_time_ms": 14691,
+      "end_time_ms": 17827,
+      "start_frame": 440,
+      "end_frame": 534,
+      "gap_after_ms": 260,
       "semantic_cues": [
         {
           "phrase": "muscle tremors",
           "cue": "jitter_zoom",
-          "time_ms": 18748,
-          "frame": 562
+          "time_ms": 16886,
+          "frame": 506
         }
       ]
     },
@@ -157,18 +157,18 @@
       "speaker": "nemi",
       "text": "Aha! My shaky hands are a feature!",
       "emotion": "happy",
-      "duration_s": 1.707,
-      "start_time_ms": 20272,
-      "end_time_ms": 21978,
-      "start_frame": 608,
-      "end_frame": 659,
-      "gap_after_ms": 450,
+      "duration_s": 2.261,
+      "start_time_ms": 18087,
+      "end_time_ms": 20348,
+      "start_frame": 542,
+      "end_frame": 610,
+      "gap_after_ms": 250,
       "semantic_cues": [
         {
           "phrase": "shaky hands",
           "cue": "nemi_aha",
-          "time_ms": 21125,
-          "frame": 633
+          "time_ms": 19217,
+          "frame": 576
         }
       ]
     },
@@ -177,18 +177,18 @@
       "speaker": "narrator",
       "text": "You proved you're human before the click even happened.",
       "emotion": "happy",
-      "duration_s": 2.027,
-      "start_time_ms": 22428,
-      "end_time_ms": 24454,
-      "start_frame": 672,
-      "end_frame": 733,
-      "gap_after_ms": 450,
+      "duration_s": 2.283,
+      "start_time_ms": 20598,
+      "end_time_ms": 22880,
+      "start_frame": 617,
+      "end_frame": 686,
+      "gap_after_ms": 300,
       "semantic_cues": [
         {
           "phrase": "even happened",
           "cue": "takeaway_console",
-          "time_ms": 23441,
-          "frame": 703
+          "time_ms": 21739,
+          "frame": 652
         }
       ]
     }
