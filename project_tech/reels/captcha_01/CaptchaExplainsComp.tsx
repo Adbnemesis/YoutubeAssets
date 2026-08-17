@@ -34,24 +34,24 @@ export const CaptchaExplainsComp: React.FC = () => {
   const { fps } = useVideoConfig();
 
   // ═══════════════════════════════════════════════════════════════
-  // EXACT BEAT TIMING BOUNDARIES (Dual-Voice ~24.67s @ 30fps)
+  // EXACT BEAT TIMING BOUNDARIES (Snappy Dual-Voice ~22.79s @ 30fps)
   // ═══════════════════════════════════════════════════════════════
   // Beat 1: Hook & Click (0 - 100 frames | ~0 - 3.3s)
-  // Beat 2: Bot 0.001s Speed & Block (101 - 247 frames | ~3.4 - 8.2s)
-  // Beat 3: Trajectory Arena & Kinematics (248 - 357 frames | ~8.3 - 11.9s)
-  // Beat 4: 8-12Hz Micro-Jitters & Biometrics (358 - 548 frames | ~11.9 - 18.3s)
-  // Beat 5: Payoff & Takeaway Console (549 - 740 frames | ~18.3 - 24.67s)
+  // Beat 2: Bot 0.001s Speed & Block (101 - 244 frames | ~3.4 - 8.1s)
+  // Beat 3: Trajectory Arena & Kinematics (245 - 360 frames | ~8.2 - 12.0s)
+  // Beat 4: 8-12Hz Micro-Jitters & Biometrics (361 - 535 frames | ~12.0 - 17.8s)
+  // Beat 5: Payoff & Takeaway Console (536 - 683 frames | ~17.9 - 22.79s)
   
   const isBeat1 = frame < 101;
-  const isBeat2 = frame >= 101 && frame < 248;
-  const isBeat3 = frame >= 248 && frame < 358;
-  const isBeat4 = frame >= 358 && frame < 549;
-  const isBeat5 = frame >= 549;
+  const isBeat2 = frame >= 101 && frame < 245;
+  const isBeat3 = frame >= 245 && frame < 361;
+  const isBeat4 = frame >= 361 && frame < 536;
+  const isBeat5 = frame >= 536;
 
   // Global Camera Drift & Impact Punch
   const cameraScale = interpolate(
     frame,
-    [0, 36, 42, 101, 175, 248, 358, 549, 740],
+    [0, 36, 42, 101, 165, 245, 361, 536, 683],
     [1.0, 1.03, 1.01, 1.02, 1.04, 1.02, 1.05, 1.02, 1.0],
     { extrapolateRight: "clamp" }
   );
@@ -67,7 +67,7 @@ export const CaptchaExplainsComp: React.FC = () => {
       }}
     >
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MASTER AUDIO TRACK (Chatterbox Deep Narrator + Ana Mascot Nemi) */}
+      {/* MASTER AUDIO TRACK (Chatterbox Deep Narrator + Snappy Ana Nemi) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Audio src={staticFile("reels/captcha_01/captcha_master_audio.mp3")} />
 
@@ -79,8 +79,8 @@ export const CaptchaExplainsComp: React.FC = () => {
         <Audio src={staticFile("reels/captcha_01/sfx/click.mp3")} volume={0.8} />
       </Sequence>
 
-      {/* 2. Beat 1 Nemi Shock Pop (Frame 66) */}
-      <Sequence from={66} durationInFrames={35}>
+      {/* 2. Beat 1 Nemi Shock Pop (Frame 67) */}
+      <Sequence from={67} durationInFrames={35}>
         <Audio src={staticFile("reels/captcha_01/sfx/pop.mp3")} volume={0.7} />
       </Sequence>
 
@@ -89,28 +89,28 @@ export const CaptchaExplainsComp: React.FC = () => {
         <Audio src={staticFile("reels/captcha_01/sfx/typing.mp3")} volume={0.45} />
       </Sequence>
 
-      {/* 4. Beat 2 Bot Error Alarm SFX (Frame 170) */}
-      <Sequence from={170} durationInFrames={45}>
+      {/* 4. Beat 2 Bot Error Alarm SFX (Frame 165) */}
+      <Sequence from={165} durationInFrames={45}>
         <Audio src={staticFile("reels/captcha_01/sfx/error.mp3")} volume={0.65} />
       </Sequence>
 
-      {/* 5. Beat 3 Trajectory Whoosh (Frame 248) */}
-      <Sequence from={248} durationInFrames={30}>
+      {/* 5. Beat 3 Trajectory Whoosh (Frame 245) */}
+      <Sequence from={245} durationInFrames={30}>
         <Audio src={staticFile("reels/captcha_01/sfx/whoosh.mp3")} volume={0.5} />
       </Sequence>
 
-      {/* 6. Beat 4 Biometric Scanner Whoosh (Frame 358) */}
-      <Sequence from={358} durationInFrames={30}>
+      {/* 6. Beat 4 Biometric Scanner Whoosh (Frame 361) */}
+      <Sequence from={361} durationInFrames={30}>
         <Audio src={staticFile("reels/captcha_01/sfx/whoosh.mp3")} volume={0.5} />
       </Sequence>
 
-      {/* 7. Beat 5 Nemi Aha Pop (Frame 552) */}
-      <Sequence from={552} durationInFrames={35}>
+      {/* 7. Beat 5 Nemi Aha Pop (Frame 539) */}
+      <Sequence from={539} durationInFrames={35}>
         <Audio src={staticFile("reels/captcha_01/sfx/pop.mp3")} volume={0.7} />
       </Sequence>
 
-      {/* 8. Beat 5 Humanity Verified Chime (Frame 648) */}
-      <Sequence from={648} durationInFrames={60}>
+      {/* 8. Beat 5 Humanity Verified Chime (Frame 612) */}
+      <Sequence from={612} durationInFrames={60}>
         <Audio src={staticFile("reels/captcha_01/sfx/chime.mp3")} volume={0.85} />
       </Sequence>
 
@@ -442,10 +442,7 @@ const Beat1CaptchaWidget: React.FC<{ frame: number; fps: number }> = ({ frame, f
 const Beat2BotFailure: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
   const localFrame = frame - 101;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-  const isAlertVisible = localFrame > 65; // Trigger at frame 166
-
-  // Code typing effect
-  const codeProgress = Math.min(localFrame / 30, 1.0);
+  const isAlertVisible = localFrame > 60; // Trigger at frame 161 when c04_bot_block begins
 
   return (
     <div
@@ -523,7 +520,7 @@ const Beat2BotFailure: React.FC<{ frame: number; fps: number }> = ({ frame, fps 
 // BEAT 3: OBSIDIAN KINEMATIC MOUSE TRAJECTORY ARENA
 // ═══════════════════════════════════════════════════════════════
 const Beat3TrajectoryArena: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 248;
+  const localFrame = frame - 245;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const progress = Math.min(localFrame / 90, 1.0);
 
@@ -624,10 +621,10 @@ const Beat3TrajectoryArena: React.FC<{ frame: number; fps: number }> = ({ frame,
 // BEAT 4: ULTRA HIGH-TECH 8-12Hz INVOLUNTARY MUSCLE TREMOR HUD
 // ═══════════════════════════════════════════════════════════════
 const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 358;
+  const localFrame = frame - 361;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   
-  // Laser scanner sweep across the oscilloscope (0 to 900px)
+  // Laser scanner sweep across the oscilloscope
   const scannerX = (localFrame * 14) % 860;
 
   // Jitter coordinates simulation for crosshair
@@ -638,7 +635,7 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
   const fftBands = [
     { freq: "6Hz", val: 20 + Math.sin(localFrame * 0.2) * 8 },
     { freq: "8Hz", val: 55 + Math.sin(localFrame * 0.3) * 15 },
-    { freq: "10Hz", val: 92 + Math.sin(localFrame * 0.4) * 8 }, // PEAK!
+    { freq: "10Hz", val: 92 + Math.sin(localFrame * 0.4) * 8 },
     { freq: "12Hz", val: 78 + Math.cos(localFrame * 0.35) * 12 },
     { freq: "14Hz", val: 40 + Math.sin(localFrame * 0.25) * 10 },
     { freq: "16Hz", val: 18 + Math.cos(localFrame * 0.2) * 6 },
@@ -665,7 +662,6 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
         overflow: "hidden",
       }}
     >
-      {/* Top Telemetry Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#06B6D4", boxShadow: "0 0 12px #06B6D4" }} />
@@ -680,9 +676,7 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
         </div>
       </div>
 
-      {/* Main Dual Stage: Oscilloscope Waveform + FFT Spectrum + Target Crosshair */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 220px", gap: 18, height: 260, position: "relative" }}>
-        {/* Left: Dual Multi-Frequency Oscilloscope with Laser Sweep */}
         <div
           style={{
             backgroundColor: "#03070D",
@@ -696,7 +690,6 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
             padding: 12,
           }}
         >
-          {/* Oscilloscope Grid */}
           <div
             style={{
               position: "absolute",
@@ -712,15 +705,11 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
             <span style={{ color: "#FFD166" }}>CH2: Motor Micro-Jitter</span>
           </div>
 
-          {/* Oscilloscope Waves */}
           <div style={{ width: "100%", height: 160, position: "relative" }}>
             <svg width="100%" height="100%" viewBox="0 0 600 160" style={{ overflow: "visible" }}>
               <line x1="0" y1="80" x2="600" y2="80" stroke="rgba(255,255,255,0.15)" strokeWidth="1" strokeDasharray="4 4" />
-
-              {/* Bot Flat Reference Line (Red) */}
               <line x1="0" y1="80" x2="600" y2="80" stroke="rgba(239, 68, 68, 0.4)" strokeWidth="2" />
 
-              {/* Secondary Amber Waveform */}
               <path
                 d={`M 0,80 ${Array.from({ length: 30 })
                   .map((_, i) => {
@@ -735,7 +724,6 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
                 opacity="0.8"
               />
 
-              {/* Primary Glowing Cyan Physiological Waveform */}
               <path
                 d={`M 0,80 ${Array.from({ length: 30 })
                   .map((_, i) => {
@@ -751,7 +739,6 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
               />
             </svg>
 
-            {/* Vertical Laser Scanner Sweep Line */}
             <div
               style={{
                 position: "absolute",
@@ -772,9 +759,7 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
           </div>
         </div>
 
-        {/* Right: FFT Spectrum Analyzer & Shaking Cursor Crosshair */}
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {/* Magnified Jitter Crosshair Target */}
           <div
             style={{
               height: 125,
@@ -788,13 +773,11 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
               justifyContent: "center",
             }}
           >
-            {/* Target Reticle */}
             <div style={{ position: "absolute", width: 80, height: 80, borderRadius: "50%", border: "1px dashed rgba(255, 209, 102, 0.4)" }} />
             <div style={{ position: "absolute", width: 40, height: 40, borderRadius: "50%", border: "1px solid rgba(255, 209, 102, 0.6)" }} />
             <div style={{ position: "absolute", width: "100%", height: 1, backgroundColor: "rgba(255, 255, 255, 0.1)" }} />
             <div style={{ position: "absolute", width: 1, height: "100%", backgroundColor: "rgba(255, 255, 255, 0.1)" }} />
 
-            {/* Shaking Cursor */}
             <div
               style={{
                 transform: `translate(${jitterX}px, ${jitterY}px)`,
@@ -811,7 +794,6 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
             </div>
           </div>
 
-          {/* FFT Spectrum Equalizer Bars */}
           <div
             style={{
               height: 125,
@@ -851,7 +833,6 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
         </div>
       </div>
 
-      {/* Bottom Live Biometric Verification Chips */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
         <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
@@ -891,7 +872,7 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
 // BEAT 5: 3-POINT CS TAKEAWAY CONSOLE & VERIFIED SCORE (0.98)
 // ═══════════════════════════════════════════════════════════════
 const Beat5TakeawayConsole: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 549;
+  const localFrame = frame - 536;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
 
   return (
@@ -954,17 +935,17 @@ const NemiActorSection: React.FC<{ frame: number; fps: number }> = ({ frame, fps
   let speechBubbleText: string | null = null;
   let nemiY = 980;
 
-  if (frame < 66) {
+  if (frame < 67) {
     pose = "thinking";
-  } else if (frame >= 66 && frame < 101) {
+  } else if (frame >= 67 && frame < 101) {
     pose = "shocked";
     speechBubbleText = "Wait, what?! 🤯";
-  } else if (frame >= 101 && frame < 248) {
+  } else if (frame >= 101 && frame < 245) {
     pose = "puzzled";
     speechBubbleText = "Too fast for humans! 🤖";
-  } else if (frame >= 248 && frame < 358) {
+  } else if (frame >= 245 && frame < 361) {
     pose = "pointing";
-  } else if (frame >= 358 && frame < 549) {
+  } else if (frame >= 361 && frame < 536) {
     pose = "aha";
     speechBubbleText = "Aha! Hand tremors! 💡";
   } else {

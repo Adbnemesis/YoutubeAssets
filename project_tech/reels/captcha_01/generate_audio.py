@@ -151,14 +151,13 @@ SPEAKER_EVENTS = [
             {"phrase": "muscle tremors", "cue": "jitter_zoom", "rel_pct": 0.70}
         ]
     },
-    # 8. Beat 5a: Nemi Realization (Distinct Pitch Shift +2.8 semitones)
+    # 8. Beat 5a: Nemi Realization (Fast, snappy mascot delivery)
     {
         "id": "c08_nemi_aha",
         "speaker": "nemi",
-        "text": "Aha! My shaky hands are a feature!",
+        "text": "Aha, my shaky hands are a feature!",
         "emotion": "happy",
         "exaggeration": 0.80,
-        "pitch_shift": 2.8,
         "gap_after_ms": 250,
         "semantic_phrases": [
             {"phrase": "shaky hands", "cue": "nemi_aha", "rel_pct": 0.50}
@@ -171,7 +170,6 @@ SPEAKER_EVENTS = [
         "text": "You proved you're human before the click even happened.",
         "emotion": "happy",
         "exaggeration": 0.55,
-        "pitch_shift": 0.0,
         "gap_after_ms": 300,
         "semantic_phrases": [
             {"phrase": "even happened", "cue": "takeaway_console", "rel_pct": 0.50}
@@ -205,13 +203,13 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS — CHATTERBOX DUAL-VOICE ENGINE (NARRATOR + NEMI)")
+    print("🎙️ NEMI EXPLAINS — CHATTERBOX DUAL-VOICE ENGINE (SNAPPY MASCOT DELIVERY)")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    print(f"   Engine: Chatterbox Neural Expressive TTS")
+    print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
     print(f"   Device: {device.upper()}")
-    print(f"   Voices: Narrator (Deep Authority) + Nemi Mascot (+2.8 semitones)")
+    print(f"   Voices: Narrator (Deep Authority) + Nemi Mascot (Snappy +18% rate)")
     print(f"   Gaps: 220–280ms (Tight, energetic documentary flow)")
     print(f"   Target Voice LUFS: {TARGET_LUFS}\n")
 
@@ -241,10 +239,10 @@ def main():
         print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker.upper()}): \"{text}\"")
 
         if speaker == "nemi":
-            # Generate cute, playful, natural mascot voice via Edge-TTS AnaNeural
+            # Generate snappy, playful mascot voice via Edge-TTS AnaNeural with rate=+18%
             temp_mp3 = BLOCKS_DIR / f"{event_id}_temp.mp3"
             async def gen_nemi():
-                comm = edge_tts.Communicate(text, "en-US-AnaNeural", pitch="+12Hz", rate="+8%")
+                comm = edge_tts.Communicate(text, "en-US-AnaNeural", pitch="+12Hz", rate="+18%")
                 await comm.save(str(temp_mp3))
             asyncio.run(gen_nemi())
 
