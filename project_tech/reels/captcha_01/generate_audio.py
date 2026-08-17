@@ -63,7 +63,7 @@ SPEAKER_EVENTS = [
         "text": "You didn't pass the CAPTCHA by clicking the box.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
-        "gap_after_ms": 180,
+        "gap_after_ms": 320,
         "semantic_phrases": [
             {"phrase": "clicking the box", "cue": "checkbox_click", "rel_pct": 0.60}
         ]
@@ -75,7 +75,7 @@ SPEAKER_EVENTS = [
         "text": "Wait, what?!",
         "emotion": "puzzled",
         "exaggeration": 0.85,
-        "gap_after_ms": 180,
+        "gap_after_ms": 350,
         "semantic_phrases": [
             {"phrase": "Wait, what", "cue": "nemi_shocked", "rel_pct": 0.50}
         ]
@@ -87,7 +87,7 @@ SPEAKER_EVENTS = [
         "text": "A bot can click in one millisecond. And instant zero-latency clicks get blocked immediately.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
-        "gap_after_ms": 180,
+        "gap_after_ms": 350,
         "semantic_phrases": [
             {"phrase": "one millisecond", "cue": "bot_timer", "rel_pct": 0.30},
             {"phrase": "blocked immediately", "cue": "access_denied", "rel_pct": 0.80}
@@ -100,7 +100,7 @@ SPEAKER_EVENTS = [
         "text": "Google profiles the kinematic trajectory of your mouse on its way to the target.",
         "emotion": "normal",
         "exaggeration": 0.55,
-        "gap_after_ms": 180,
+        "gap_after_ms": 380,
         "semantic_phrases": [
             {"phrase": "kinematic trajectory", "cue": "trajectory_arena", "rel_pct": 0.40},
             {"phrase": "on its way", "cue": "curves_split", "rel_pct": 0.80}
@@ -113,7 +113,7 @@ SPEAKER_EVENTS = [
         "text": "Bots move in straight lines. Humans have curved Bezier paths and involuntary muscle tremors.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
-        "gap_after_ms": 180,
+        "gap_after_ms": 350,
         "semantic_phrases": [
             {"phrase": "straight lines", "cue": "bot_line", "rel_pct": 0.25},
             {"phrase": "muscle tremors", "cue": "jitter_zoom", "rel_pct": 0.75}
@@ -126,7 +126,7 @@ SPEAKER_EVENTS = [
         "text": "Aha! My shaky hands are a feature!",
         "emotion": "happy",
         "exaggeration": 0.80,
-        "gap_after_ms": 180,
+        "gap_after_ms": 350,
         "semantic_phrases": [
             {"phrase": "shaky hands", "cue": "nemi_aha", "rel_pct": 0.50}
         ]
@@ -138,7 +138,7 @@ SPEAKER_EVENTS = [
         "text": "You proved you're human before the click even happened.",
         "emotion": "happy",
         "exaggeration": 0.60,
-        "gap_after_ms": 250,
+        "gap_after_ms": 350,
         "semantic_phrases": [
             {"phrase": "even happened", "cue": "takeaway_console", "rel_pct": 0.50}
         ]
