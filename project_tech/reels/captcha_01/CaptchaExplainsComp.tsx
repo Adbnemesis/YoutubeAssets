@@ -621,83 +621,266 @@ const Beat3TrajectoryArena: React.FC<{ frame: number; fps: number }> = ({ frame,
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 4: 8-12Hz INVOLUNTARY MUSCLE TREMOR BIOMETRIC SCANNER
+// BEAT 4: ULTRA HIGH-TECH 8-12Hz INVOLUNTARY MUSCLE TREMOR HUD
 // ═══════════════════════════════════════════════════════════════
 const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
   const localFrame = frame - 358;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
+  
+  // Laser scanner sweep across the oscilloscope (0 to 900px)
+  const scannerX = (localFrame * 14) % 860;
+
+  // Jitter coordinates simulation for crosshair
+  const jitterX = Math.sin(localFrame * 0.9) * 6 + Math.cos(localFrame * 1.7) * 3;
+  const jitterY = Math.cos(localFrame * 1.1) * 7 + Math.sin(localFrame * 2.1) * 4;
+
+  // FFT frequency bands (6Hz to 16Hz with peak at 10.4Hz)
+  const fftBands = [
+    { freq: "6Hz", val: 20 + Math.sin(localFrame * 0.2) * 8 },
+    { freq: "8Hz", val: 55 + Math.sin(localFrame * 0.3) * 15 },
+    { freq: "10Hz", val: 92 + Math.sin(localFrame * 0.4) * 8 }, // PEAK!
+    { freq: "12Hz", val: 78 + Math.cos(localFrame * 0.35) * 12 },
+    { freq: "14Hz", val: 40 + Math.sin(localFrame * 0.25) * 10 },
+    { freq: "16Hz", val: 18 + Math.cos(localFrame * 0.2) * 6 },
+  ];
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 380,
-        left: 60,
-        right: 60,
-        height: 440,
-        backgroundColor: "#0B0F17",
+        top: 360,
+        left: 50,
+        right: 50,
+        height: 480,
+        backgroundColor: "#070B12",
         borderRadius: 24,
-        border: "2px solid #FFD166",
-        boxShadow: "0 24px 60px rgba(255, 209, 102, 0.25)",
-        padding: "24px 28px",
+        border: "2px solid rgba(6, 182, 212, 0.5)",
+        boxShadow: "0 28px 70px rgba(6, 182, 212, 0.25), inset 0 0 40px rgba(6, 182, 212, 0.08)",
+        padding: "22px 26px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         transform: `scale(${popSpring})`,
         zIndex: 30,
+        overflow: "hidden",
       }}
     >
+      {/* Top Telemetry Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ fontSize: 24 }}>🔬</span>
-          <span style={{ fontSize: 18, fontWeight: 900, color: "#FFD166", letterSpacing: "1px" }}>
-            Involuntary Physiological Tremor (8–12 Hz)
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#06B6D4", boxShadow: "0 0 12px #06B6D4" }} />
+          <span style={{ fontSize: 17, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+            🔬 Biometric Muscle Tremor Sensor (8–12 Hz)
           </span>
         </div>
-        <span style={{ fontSize: 14, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          BIOMETRIC ENTROPY: 99.4%
-        </span>
+        <div style={{ display: "flex", gap: 8, alignItems: "center", backgroundColor: "rgba(16, 185, 129, 0.15)", padding: "4px 12px", borderRadius: 8, border: "1px solid #10B981" }}>
+          <span style={{ fontSize: 12, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            ENTROPY: 99.8% (ORGANIC)
+          </span>
+        </div>
       </div>
 
-      {/* Real-time Oscilloscope Waveform */}
-      <div style={{ width: "100%", height: 180, position: "relative", display: "flex", alignItems: "center" }}>
-        <svg width="100%" height="100%" viewBox="0 0 900 180">
-          <line x1="0" y1="90" x2="900" y2="90" stroke="rgba(255,255,255,0.1)" strokeWidth="2" strokeDasharray="4 4" />
-          
-          <path
-            d={`M 0,90 ${Array.from({ length: 45 })
-              .map((_, i) => {
-                const x = i * 20;
-                const noise = Math.sin((x + localFrame * 8) * 0.15) * 45 + Math.cos((x + localFrame * 12) * 0.3) * 20;
-                return `L ${x},${90 + noise}`;
-              })
-              .join(" ")}`}
-            fill="none"
-            stroke="#06B6D4"
-            strokeWidth="4"
-            style={{ filter: "drop-shadow(0 0 10px #06B6D4)" }}
+      {/* Main Dual Stage: Oscilloscope Waveform + FFT Spectrum + Target Crosshair */}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 220px", gap: 18, height: 260, position: "relative" }}>
+        {/* Left: Dual Multi-Frequency Oscilloscope with Laser Sweep */}
+        <div
+          style={{
+            backgroundColor: "#03070D",
+            borderRadius: 16,
+            border: "1px solid rgba(255, 255, 255, 0.1)",
+            position: "relative",
+            overflow: "hidden",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            padding: 12,
+          }}
+        >
+          {/* Oscilloscope Grid */}
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              backgroundImage: "linear-gradient(rgba(6, 182, 212, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.08) 1px, transparent 1px)",
+              backgroundSize: "20px 20px",
+              pointerEvents: "none",
+            }}
           />
-        </svg>
+
+          <div style={{ display: "flex", justifyContent: "space-between", zIndex: 10, fontSize: 11, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#64748B" }}>
+            <span style={{ color: "#06B6D4" }}>CH1: Biological Tremor (10.4 Hz)</span>
+            <span style={{ color: "#FFD166" }}>CH2: Motor Micro-Jitter</span>
+          </div>
+
+          {/* Oscilloscope Waves */}
+          <div style={{ width: "100%", height: 160, position: "relative" }}>
+            <svg width="100%" height="100%" viewBox="0 0 600 160" style={{ overflow: "visible" }}>
+              <line x1="0" y1="80" x2="600" y2="80" stroke="rgba(255,255,255,0.15)" strokeWidth="1" strokeDasharray="4 4" />
+
+              {/* Bot Flat Reference Line (Red) */}
+              <line x1="0" y1="80" x2="600" y2="80" stroke="rgba(239, 68, 68, 0.4)" strokeWidth="2" />
+
+              {/* Secondary Amber Waveform */}
+              <path
+                d={`M 0,80 ${Array.from({ length: 30 })
+                  .map((_, i) => {
+                    const x = i * 20;
+                    const noise = Math.sin((x + localFrame * 6) * 0.2) * 28 + Math.cos((x + localFrame * 10) * 0.4) * 14;
+                    return `L ${x},${80 + noise}`;
+                  })
+                  .join(" ")}`}
+                fill="none"
+                stroke="#FFD166"
+                strokeWidth="2.5"
+                opacity="0.8"
+              />
+
+              {/* Primary Glowing Cyan Physiological Waveform */}
+              <path
+                d={`M 0,80 ${Array.from({ length: 30 })
+                  .map((_, i) => {
+                    const x = i * 20;
+                    const noise = Math.sin((x + localFrame * 8) * 0.18) * 48 + Math.cos((x + localFrame * 14) * 0.32) * 22;
+                    return `L ${x},${80 + noise}`;
+                  })
+                  .join(" ")}`}
+                fill="none"
+                stroke="#06B6D4"
+                strokeWidth="4"
+                style={{ filter: "drop-shadow(0 0 12px #06B6D4)" }}
+              />
+            </svg>
+
+            {/* Vertical Laser Scanner Sweep Line */}
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                bottom: 0,
+                left: scannerX * 0.7,
+                width: 3,
+                backgroundColor: "#38BDF8",
+                boxShadow: "0 0 16px #38BDF8, 0 0 30px #0284C7",
+                pointerEvents: "none",
+              }}
+            />
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "space-between", zIndex: 10, fontSize: 11, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            <span style={{ color: "#EF4444" }}>● Bot Vector: 0.00 Hz (Flat)</span>
+            <span style={{ color: "#10B981", fontWeight: 800 }}>● Human Tremor: 10.40 Hz (Organic Sine + Noise)</span>
+          </div>
+        </div>
+
+        {/* Right: FFT Spectrum Analyzer & Shaking Cursor Crosshair */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          {/* Magnified Jitter Crosshair Target */}
+          <div
+            style={{
+              height: 125,
+              backgroundColor: "#03070D",
+              borderRadius: 14,
+              border: "1px solid rgba(255, 209, 102, 0.4)",
+              position: "relative",
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {/* Target Reticle */}
+            <div style={{ position: "absolute", width: 80, height: 80, borderRadius: "50%", border: "1px dashed rgba(255, 209, 102, 0.4)" }} />
+            <div style={{ position: "absolute", width: 40, height: 40, borderRadius: "50%", border: "1px solid rgba(255, 209, 102, 0.6)" }} />
+            <div style={{ position: "absolute", width: "100%", height: 1, backgroundColor: "rgba(255, 255, 255, 0.1)" }} />
+            <div style={{ position: "absolute", width: 1, height: "100%", backgroundColor: "rgba(255, 255, 255, 0.1)" }} />
+
+            {/* Shaking Cursor */}
+            <div
+              style={{
+                transform: `translate(${jitterX}px, ${jitterY}px)`,
+                filter: "drop-shadow(0 0 8px #FFD166)",
+              }}
+            >
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFD166" stroke="#000" strokeWidth="1">
+                <path d="M3 3l7 18 3-7 7-3L3 3z" />
+              </svg>
+            </div>
+
+            <div style={{ position: "absolute", bottom: 6, left: 8, fontSize: 10, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              ΔX: ±{Math.abs(jitterX).toFixed(1)}px | ΔY: ±{Math.abs(jitterY).toFixed(1)}px
+            </div>
+          </div>
+
+          {/* FFT Spectrum Equalizer Bars */}
+          <div
+            style={{
+              height: 125,
+              backgroundColor: "#03070D",
+              borderRadius: 14,
+              border: "1px solid rgba(6, 182, 212, 0.3)",
+              padding: "8px 12px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+            }}
+          >
+            <div style={{ fontSize: 11, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono, fontWeight: 700 }}>
+              POWER SPECTRUM (PSD)
+            </div>
+
+            <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", height: 60 }}>
+              {fftBands.map((band, idx) => (
+                <div key={idx} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+                  <div
+                    style={{
+                      width: 18,
+                      height: `${band.val * 0.55}px`,
+                      backgroundColor: band.freq === "10Hz" ? "#10B981" : "#06B6D4",
+                      borderRadius: 4,
+                      boxShadow: band.freq === "10Hz" ? "0 0 10px #10B981" : "none",
+                      transition: "height 0.1s ease",
+                    }}
+                  />
+                  <span style={{ fontSize: 9, color: band.freq === "10Hz" ? "#10B981" : "#64748B", fontFamily: nemiTheme.typography.fontFamily.mono, fontWeight: band.freq === "10Hz" ? 900 : 400 }}>
+                    {band.freq}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
-        <div style={{ backgroundColor: "#18181B", padding: "14px", borderRadius: 14, border: "1px solid #27272A" }}>
-          <div style={{ fontSize: 12, color: "#94A3B8" }}>Hand Tremor</div>
-          <div style={{ fontSize: 17, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            10.4 Hz ✓
+      {/* Bottom Live Biometric Verification Chips */}
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div>
+            <div style={{ fontSize: 11, color: "#64748B" }}>Hand Tremor Peak</div>
+            <div style={{ fontSize: 18, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              10.4 Hz ✓
+            </div>
           </div>
+          <span style={{ fontSize: 20 }}>🦾</span>
         </div>
-        <div style={{ backgroundColor: "#18181B", padding: "14px", borderRadius: 14, border: "1px solid #27272A" }}>
-          <div style={{ fontSize: 12, color: "#94A3B8" }}>Canvas Fingerprint</div>
-          <div style={{ fontSize: 17, color: "#38BDF8", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            0x8F4B... ✓
+
+        <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div>
+            <div style={{ fontSize: 11, color: "#64748B" }}>Canvas Fingerprint</div>
+            <div style={{ fontSize: 18, color: "#38BDF8", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              0x8F4B... ✓
+            </div>
           </div>
+          <span style={{ fontSize: 20 }}>🎨</span>
         </div>
-        <div style={{ backgroundColor: "#18181B", padding: "14px", borderRadius: 14, border: "1px solid #27272A" }}>
-          <div style={{ fontSize: 12, color: "#94A3B8" }}>TCP RTT Entropy</div>
-          <div style={{ fontSize: 17, color: "#FFD166", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            VERIFIED ✓
+
+        <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div>
+            <div style={{ fontSize: 11, color: "#64748B" }}>TCP RTT Entropy</div>
+            <div style={{ fontSize: 18, color: "#FFD166", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              ORGANIC ✓
+            </div>
           </div>
+          <span style={{ fontSize: 20 }}>⚡</span>
         </div>
       </div>
     </div>
