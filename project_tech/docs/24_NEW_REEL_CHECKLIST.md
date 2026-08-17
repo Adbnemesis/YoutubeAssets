@@ -47,3 +47,4 @@
 - [ ] **17. Broadcast Loudness Audit:** Run `ffmpeg -af loudnorm` to verify Integrated Loudness $-16 \pm 1$ LUFS and True Peak $\le -1.5$ dBTP.
 - [ ] **18. Mobile Playback Review:** Watch on a mobile screen to verify scroll-stop power and readability.
 - [ ] **19. Documentation & Case Study:** Create `docs/reels/[topic_slug]/V01.md` and log score on Master Scorecard.
+- [ ] **20. Generate Copy-Paste `metadata.txt`:** Create `reels/[topic_slug]/metadata.txt` with formatted Instagram Reel caption, cover text, hashtags, pinned comment, and YouTube Shorts/TikTok metadata.

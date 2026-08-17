@@ -200,6 +200,46 @@ $$\text{VOICE (Narrator + Nemi)} > \text{SFX (Event Punctuation)} > \text{BGM (E
 
 ---
 
+## 10. REEL PACKAGE DIRECTORY ARCHITECTURE
+
+Every episode/topic in the Nemi Explains Content Engine is maintained as an isolated, self-contained package inside `reels/<slug>/`:
+
+```
+project_tech/reels/<slug>/
+├── metadata.txt               # Copy-paste ready publishing metadata (Instagram, Shorts, TikTok)
+├── generate_audio.py          # Dedicated Chatterbox TTS speech synthesis & dynamic BGM story arc mixer
+├── <Slug>ExplainsComp.tsx     # Full 9:16 vertical Remotion visual composition
+├── README.md                  # Comprehensive case study, visual storyboard breakdown & scorecard audit
+└── audio/                     # Raw uncompressed WAV blocks, voice stems, and master audio
+    ├── voice_track.mp3
+    ├── master_audio.mp3
+    └── blocks/
+        ├── c01_narrator_hook.wav
+        ├── c02_nemi_what.wav
+        └── ...
+```
+
+### Publishing Metadata Standard (`metadata.txt`)
+Every reel MUST contain a copy-paste ready `metadata.txt` file containing:
+1. **Instagram Reels:**
+   * Title / Cover hook text
+   * Recommended cover frame timestamp
+   * Formatted caption with bullet points, value breakdown, and CTA
+   * Hashtag block with broad, dev, and niche reach tags
+   * Pinned comment engagement question
+2. **YouTube Shorts:**
+   * High-CTR title ($< 70$ chars)
+   * SEO description & channel tags
+   * Comma-separated YouTube Studio tags
+3. **TikTok:**
+   * Short-form punchy caption & sound tag
+
+### Static Asset Serving
+* Master mixed audio is placed in `public/reels/<slug>/<slug>_master_audio.mp3` for Remotion `staticFile()` resolution.
+* `src/compositions/<Slug>ExplainsComp.tsx` acts as the clean entry point re-exporting the self-contained reel composition.
+
+---
+
 ## 9. THE 8 STORY ARCHETYPES
 
 | Archetype | Core Narrative Engine | Ideal Topics | Target Duration | Typical Payoff |

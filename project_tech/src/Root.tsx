@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { CaptchaExplainsComp } from "./compositions/CaptchaExplainsComp";
 import { ExecutionSimulatorComp } from "./compositions/ExecutionSimulatorComp";
 import { KineticAlgorithmDuelComp } from "./compositions/KineticAlgorithmDuelComp";
 import { NemiExplainsComp } from "./compositions/NemiExplainsComp";
@@ -24,6 +25,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsCaptcha"
+        component={CaptchaExplainsComp}
+        durationInFrames={632} // 21.08s @ 30fps — Debut Reel #1: How CAPTCHA Knows You're Human (Chatterbox Neural V14 Standard)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsV14"
         component={NemiExplainsV14Comp}

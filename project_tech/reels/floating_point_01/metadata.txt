@@ -1,0 +1,65 @@
+================================================================================
+INSTAGRAM REEL PUBLISHING METADATA
+================================================================================
+
+[TITLE / COVER HOOK]
+Why Supercomputers Fail Grade-School Math 💻❌
+
+[RECOMMENDED COVER FRAME]
+Frame 96 (0.1 + 0.2 = 0.30000000000000004 with Nemi Shocked)
+
+[CAPTION - COPY & PASTE READY]
+Why does a billion-dollar supercomputer fail grade-school math? 🤯
+
+Open your browser console and type:
+0.1 + 0.2
+And you'll get: 0.30000000000000004
+
+Here’s why it actually happens:
+
+1️⃣ Binary Base-2 Representation
+Computers don't think in decimal (base-10). In binary (base-2), the number 0.1 is an infinite repeating fraction (0.0001100110011...).
+
+2️⃣ IEEE-754 53-Bit Truncation
+Computer memory isn't infinite. The CPU cuts off and rounds the fraction at 53 bits.
+
+3️⃣ Compounding Approximations
+When you add two rounded binary approximations together, the tiny truncation errors compound—leaving that extra 4 at the 17th decimal place!
+
+Your computer didn't get math wrong. It just ran out of bits! ⚡
+
+💬 Have you ever had a floating-point rounding error break your production code? Share your war stories below!
+
+🚀 Follow @nemi.explains for daily animated computer science breakdowns!
+
+.
+.
+#programming #javascript #python #computerscience #coding #developer #softwareengineering #floatingpoint #techreels #techtok #learntocode #webdev #nemiexplains #codinglife #programmer
+
+--------------------------------------------------------------------------------
+[PINNED COMMENT]
+Fun fact: A 24-bit floating-point rounding error in the Patriot missile defense system in 1991 caused an interception failure because of clock drift. What's the weirdest bug you've ever diagnosed? 👇
+
+================================================================================
+YOUTUBE SHORTS PUBLISHING METADATA
+================================================================================
+
+[TITLE]
+Why 0.1 + 0.2 != 0.3 in Code (IEEE-754 Explained) 🤯💻
+
+[DESCRIPTION]
+Why does every programming language fail when adding 0.1 and 0.2? Here is the physical IEEE-754 binary floating-point rounding explanation.
+
+Subscribe to @NemiExplains for animated computer science deep dives!
+
+#Shorts #Programming #Coding #JavaScript #Python #ComputerScience #Tech
+
+[TAGS (COMMA SEPARATED FOR YT STUDIO)]
+floating point, 0.1 + 0.2, why 0.1 + 0.2 != 0.3, javascript math, ieee 754, computer science, programming, coding, binary numbers, nemi explains, tech shorts, python, web development
+
+================================================================================
+TIKTOK PUBLISHING METADATA
+================================================================================
+
+[CAPTION]
+Why your computer gets 0.1 + 0.2 wrong 🤯 IEEE 754 floating point explained #coding #programming #javascript #developer #computerscience #fyp #nemiexplains
