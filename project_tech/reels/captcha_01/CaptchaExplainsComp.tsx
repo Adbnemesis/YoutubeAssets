@@ -33,24 +33,24 @@ export const CaptchaExplainsComp: React.FC = () => {
   const { fps } = useVideoConfig();
 
   // ═══════════════════════════════════════════════════════════════
-  // EXACT BEAT TIMING BOUNDARIES (Chatterbox Neural ~22.06s @ 30fps)
+  // EXACT BEAT TIMING BOUNDARIES (Chatterbox Neural ~25.00s @ 30fps)
   // ═══════════════════════════════════════════════════════════════
-  // Beat 1: Hook & Click (0 - 99 frames | ~0 - 3.3s)
-  // Beat 2: Bot 0.001s Speed & Block (100 - 250 frames | ~3.3 - 8.3s)
-  // Beat 3: Trajectory Arena & Kinematics (251 - 365 frames | ~8.3 - 12.2s)
-  // Beat 4: 8-12Hz Micro-Jitters & Biometrics (366 - 512 frames | ~12.2 - 17.1s)
-  // Beat 5: Payoff & Takeaway Console (513 - 661 frames | ~17.1 - 22.06s)
+  // Beat 1: Hook & Click (0 - 104 frames | ~0 - 3.4s)
+  // Beat 2: Bot 0.001s Speed & Block (105 - 305 frames | ~3.5 - 10.1s)
+  // Beat 3: Trajectory Arena & Kinematics (306 - 425 frames | ~10.2 - 14.1s)
+  // Beat 4: 8-12Hz Micro-Jitters & Biometrics (426 - 620 frames | ~14.2 - 20.6s)
+  // Beat 5: Payoff & Takeaway Console (621 - 750 frames | ~20.7 - 25.00s)
   
-  const isBeat1 = frame < 100;
-  const isBeat2 = frame >= 100 && frame < 251;
-  const isBeat3 = frame >= 251 && frame < 366;
-  const isBeat4 = frame >= 366 && frame < 513;
-  const isBeat5 = frame >= 513;
+  const isBeat1 = frame < 105;
+  const isBeat2 = frame >= 105 && frame < 306;
+  const isBeat3 = frame >= 306 && frame < 426;
+  const isBeat4 = frame >= 426 && frame < 621;
+  const isBeat5 = frame >= 621;
 
   // Global Camera Drift
   const cameraScale = interpolate(
     frame,
-    [0, 100, 251, 366, 513, 661],
+    [0, 105, 306, 426, 621, 750],
     [1.0, 1.02, 1.04, 1.05, 1.02, 1.0],
     { extrapolateRight: "clamp" }
   );
@@ -369,9 +369,9 @@ const Beat1CaptchaWidget: React.FC<{ frame: number; fps: number }> = ({ frame, f
 
 // BEAT 2 COMPONENT: 0.001s BOT SCRIPT FAILURE
 const Beat2BotFailure: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 100;
+  const localFrame = frame - 105;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-  const isAlertVisible = localFrame > 35;
+  const isAlertVisible = localFrame > 40;
 
   return (
     <div
@@ -446,7 +446,7 @@ const Beat2BotFailure: React.FC<{ frame: number; fps: number }> = ({ frame, fps 
 
 // BEAT 3 COMPONENT: OBSIDIAN MOUSE TRAJECTORY ARENA
 const Beat3TrajectoryArena: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 251;
+  const localFrame = frame - 306;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const progress = Math.min(localFrame / 90, 1.0);
 
@@ -542,7 +542,7 @@ const Beat3TrajectoryArena: React.FC<{ frame: number; fps: number }> = ({ frame,
 
 // BEAT 4 COMPONENT: MAGNIFIED 8-12Hz MICRO-JITTER & ENTROPY SCAN
 const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 366;
+  const localFrame = frame - 426;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
 
   return (
@@ -623,7 +623,7 @@ const Beat4BiometricScan: React.FC<{ frame: number; fps: number }> = ({ frame, f
 
 // BEAT 5 COMPONENT: 3-POINT HIGH-DENSITY TAKEAWAY CONSOLE
 const Beat5TakeawayConsole: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const localFrame = frame - 513;
+  const localFrame = frame - 621;
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
 
   return (
@@ -684,17 +684,17 @@ const NemiActorSection: React.FC<{ frame: number; fps: number }> = ({ frame, fps
   let speechBubbleText: string | null = null;
   let nemiY = 980;
 
-  if (frame < 69) {
+  if (frame < 71) {
     pose = "thinking";
-  } else if (frame >= 69 && frame < 100) {
+  } else if (frame >= 71 && frame < 105) {
     pose = "shocked";
     speechBubbleText = "Wait, what?! 🤯";
-  } else if (frame >= 100 && frame < 251) {
+  } else if (frame >= 105 && frame < 306) {
     pose = "puzzled";
     speechBubbleText = "Too fast for humans! 🤖";
-  } else if (frame >= 251 && frame < 366) {
+  } else if (frame >= 306 && frame < 426) {
     pose = "pointing";
-  } else if (frame >= 366 && frame < 513) {
+  } else if (frame >= 426 && frame < 621) {
     pose = "aha";
     speechBubbleText = "Aha! Hand tremors! 💡";
   } else {

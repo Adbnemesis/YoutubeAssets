@@ -2,11 +2,10 @@
 """
 Nemi Explains — Chatterbox Neural Audio Pipeline for Debut Reel #1: CAPTCHA
 Topic: "How CAPTCHA Knows You're Human (It's Not The Checkbox)"
-Replicates the proven V14 / V12 audio architecture with Chatterbox TTS.
-- Natural human inflection and expressive reactions.
-- Strict 100-120ms pauses (identical to V14).
-- 0.00ms accidental speaker overlap.
-- Broadcast normalized to -16.0 LUFS.
+- Clean, deliberate sentence-by-sentence architecture.
+- Spacious, natural 400-550ms breathing pauses across all statements.
+- Correct file paths outputting directly to public/reels/captcha_01 and reels/captcha_01/audio.
+- Broadcast normalized to -16.0 LUFS with dynamic BGM sidechain.
 """
 
 import os
@@ -16,12 +15,17 @@ import subprocess
 from datetime import datetime
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-PUBLIC_SOUNDS = BASE_DIR / "public" / "sounds"
-PUBLIC_BGM = BASE_DIR / "public" / "bgm"
-DATA_DIR = BASE_DIR / "src" / "data"
-BLOCKS_DIR = PUBLIC_SOUNDS / "captcha_chatterbox_blocks"
+REEL_DIR = Path(__file__).resolve().parent                 # .../project_tech/reels/captcha_01
+PROJECT_DIR = REEL_DIR.parent.parent                       # .../project_tech
+PUBLIC_REEL_DIR = PROJECT_DIR / "public" / "reels" / "captcha_01"
+PUBLIC_SOUNDS = PROJECT_DIR / "public" / "sounds"
+PUBLIC_BGM = PROJECT_DIR / "public" / "bgm"
+DATA_DIR = PROJECT_DIR / "src" / "data"
+REEL_AUDIO_DIR = REEL_DIR / "audio"
+BLOCKS_DIR = REEL_AUDIO_DIR / "blocks"
+
 BLOCKS_DIR.mkdir(parents=True, exist_ok=True)
+PUBLIC_REEL_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 # Monkey-patch watermarker for macOS compatibility
@@ -53,17 +57,18 @@ FPS = 30
 TARGET_LUFS = -16.0
 
 # ═══════════════════════════════════════════════════════════════
-# PROVEN PUNCHY TIMELINE (~20-22s Standard like V14)
+# SPACIOUS, DELIBERATE NARRATIVE TIMELINE (~23-25s)
+# Each sentence is independent with ~450-550ms breathing room
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
     # 1. Beat 1: The Hook
     {
-        "id": "c01_narrator_hook",
+        "id": "c01_hook",
         "speaker": "narrator",
         "text": "You didn't pass the CAPTCHA by clicking the box.",
         "emotion": "dramatic",
-        "exaggeration": 0.60,
-        "gap_after_ms": 320,
+        "exaggeration": 0.55,
+        "gap_after_ms": 400,
         "semantic_phrases": [
             {"phrase": "clicking the box", "cue": "checkbox_click", "rel_pct": 0.60}
         ]
@@ -75,70 +80,92 @@ SPEAKER_EVENTS = [
         "text": "Wait, what?!",
         "emotion": "puzzled",
         "exaggeration": 0.85,
-        "gap_after_ms": 350,
+        "gap_after_ms": 450,
         "semantic_phrases": [
             {"phrase": "Wait, what", "cue": "nemi_shocked", "rel_pct": 0.50}
         ]
     },
-    # 3. Beat 2: Bot 0.001s Speed & Block
+    # 3. Beat 2a: Bot Speed
     {
-        "id": "c03_narrator_bot",
+        "id": "c03_bot_speed",
         "speaker": "narrator",
-        "text": "A bot can click in one millisecond. And instant zero-latency clicks get blocked immediately.",
+        "text": "A bot can click in one millisecond.",
         "emotion": "dramatic",
-        "exaggeration": 0.60,
-        "gap_after_ms": 350,
+        "exaggeration": 0.55,
+        "gap_after_ms": 500,
         "semantic_phrases": [
-            {"phrase": "one millisecond", "cue": "bot_timer", "rel_pct": 0.30},
-            {"phrase": "blocked immediately", "cue": "access_denied", "rel_pct": 0.80}
+            {"phrase": "one millisecond", "cue": "bot_timer", "rel_pct": 0.50}
         ]
     },
-    # 4. Beat 3: Trajectory Profiling
+    # 4. Beat 2b: Bot Blocked
     {
-        "id": "c04_narrator_trajectory",
+        "id": "c04_bot_block",
+        "speaker": "narrator",
+        "text": "And instant zero-latency clicks get blocked immediately.",
+        "emotion": "dramatic",
+        "exaggeration": 0.55,
+        "gap_after_ms": 550,
+        "semantic_phrases": [
+            {"phrase": "blocked immediately", "cue": "access_denied", "rel_pct": 0.70}
+        ]
+    },
+    # 5. Beat 3: The Kinematic Trajectory
+    {
+        "id": "c05_trajectory",
         "speaker": "narrator",
         "text": "Google profiles the kinematic trajectory of your mouse on its way to the target.",
         "emotion": "normal",
-        "exaggeration": 0.55,
-        "gap_after_ms": 380,
+        "exaggeration": 0.50,
+        "gap_after_ms": 550,
         "semantic_phrases": [
             {"phrase": "kinematic trajectory", "cue": "trajectory_arena", "rel_pct": 0.40},
             {"phrase": "on its way", "cue": "curves_split", "rel_pct": 0.80}
         ]
     },
-    # 5. Beat 4: Kinematics & 8-12Hz Jitters
+    # 6. Beat 4a: Straight Line Bots
     {
-        "id": "c05_narrator_jitters",
+        "id": "c06_linear_bots",
         "speaker": "narrator",
-        "text": "Bots move in straight lines. Humans have curved Bezier paths and involuntary muscle tremors.",
+        "text": "Bots move in straight, linear vectors.",
         "emotion": "dramatic",
-        "exaggeration": 0.60,
-        "gap_after_ms": 350,
+        "exaggeration": 0.55,
+        "gap_after_ms": 450,
         "semantic_phrases": [
-            {"phrase": "straight lines", "cue": "bot_line", "rel_pct": 0.25},
-            {"phrase": "muscle tremors", "cue": "jitter_zoom", "rel_pct": 0.75}
+            {"phrase": "straight, linear", "cue": "bot_line", "rel_pct": 0.50}
         ]
     },
-    # 6. Beat 5: Nemi Realization
+    # 7. Beat 4b: Human Jitters
     {
-        "id": "c06_nemi_feature",
+        "id": "c07_human_tremors",
+        "speaker": "narrator",
+        "text": "Humans have curved Bezier paths and involuntary muscle tremors.",
+        "emotion": "dramatic",
+        "exaggeration": 0.55,
+        "gap_after_ms": 500,
+        "semantic_phrases": [
+            {"phrase": "muscle tremors", "cue": "jitter_zoom", "rel_pct": 0.70}
+        ]
+    },
+    # 8. Beat 5a: Nemi Realization
+    {
+        "id": "c08_nemi_aha",
         "speaker": "nemi",
         "text": "Aha! My shaky hands are a feature!",
         "emotion": "happy",
         "exaggeration": 0.80,
-        "gap_after_ms": 350,
+        "gap_after_ms": 450,
         "semantic_phrases": [
             {"phrase": "shaky hands", "cue": "nemi_aha", "rel_pct": 0.50}
         ]
     },
-    # 7. Beat 6: Payoff
+    # 9. Beat 5b: Payoff
     {
-        "id": "c07_narrator_payoff",
+        "id": "c09_payoff",
         "speaker": "narrator",
         "text": "You proved you're human before the click even happened.",
         "emotion": "happy",
-        "exaggeration": 0.60,
-        "gap_after_ms": 350,
+        "exaggeration": 0.55,
+        "gap_after_ms": 450,
         "semantic_phrases": [
             {"phrase": "even happened", "cue": "takeaway_console", "rel_pct": 0.50}
         ]
@@ -171,13 +198,13 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS — CHATTERBOX NEURAL AUDIO PIPELINE (V14 STANDARD)")
+    print("🎙️ NEMI EXPLAINS — CHATTERBOX NEURAL AUDIO PIPELINE (DELIBERATE PACING)")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS")
     print(f"   Device: {device.upper()}")
-    print(f"   Events: {len(SPEAKER_EVENTS)} (Strict Non-Overlapping Sequence)")
+    print(f"   Events: {len(SPEAKER_EVENTS)} Independent Statements")
     print(f"   Target Voice LUFS: {TARGET_LUFS}\n")
 
     print("Loading Chatterbox model weights...")
@@ -196,7 +223,7 @@ def main():
         speaker = event["speaker"]
         text = event["text"]
         exag = event.get("exaggeration", 0.55)
-        gap_after = event.get("gap_after_ms", 100)
+        gap_after = event.get("gap_after_ms", 450)
 
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
 
@@ -213,19 +240,21 @@ def main():
 
         dur_s = len(y) / sr
         dur_ms = int(dur_s * 1000)
+
         start_ms = current_time_ms
         end_ms = start_ms + dur_ms
         start_frame = int((start_ms / 1000.0) * FPS)
         end_frame = int((end_ms / 1000.0) * FPS)
 
         semantic_cues = []
-        for sp in event.get("semantic_phrases", []):
-            cue_ms = start_ms + int(dur_ms * sp["rel_pct"])
-            cue_frame = int((cue_ms / 1000.0) * FPS)
+        for sem in event.get("semantic_phrases", []):
+            cue_rel_ms = int(dur_ms * sem["rel_pct"])
+            cue_time_ms = start_ms + cue_rel_ms
+            cue_frame = int((cue_time_ms / 1000.0) * FPS)
             semantic_cues.append({
-                "phrase": sp["phrase"],
-                "cue": sp["cue"],
-                "time_ms": cue_ms,
+                "phrase": sem["phrase"],
+                "cue": sem["cue"],
+                "time_ms": cue_time_ms,
                 "frame": cue_frame
             })
 
@@ -252,7 +281,7 @@ def main():
         # Advance timeline by duration + gap (GUARANTEES 0ms overlap!)
         current_time_ms = end_ms + gap_after
 
-    total_dur = (current_time_ms + 50) / 1000.0
+    total_dur = (current_time_ms + 100) / 1000.0
     total_frames = int(total_dur * FPS)
 
     print(f"\n{'─' * 70}")
@@ -263,7 +292,7 @@ def main():
     amix_inputs = "".join(f"[a{i}]" for i in range(input_idx))
     fc = f"{';'.join(filter_parts)};{amix_inputs}amix=inputs={input_idx}:duration=longest:dropout_transition=0:normalize=0[voiceout]"
 
-    voice_track = PUBLIC_SOUNDS / "captcha_voice_track.mp3"
+    voice_track = REEL_AUDIO_DIR / "captcha_voice_track.mp3"
     merge_cmd = ["ffmpeg", "-y"] + audio_inputs + ["-filter_complex", fc, "-map", "[voiceout]", "-b:a", "192k", str(voice_track)]
     subprocess.run(merge_cmd, check=True, capture_output=True)
     print(f"✅ Master Voice Track: {voice_track.name}")
@@ -286,20 +315,16 @@ def main():
 
     # Mix with BGM using dynamic sidechain ducking & story arc curve
     bgm_file = PUBLIC_BGM / "Synthwave Goose - Blade Runner 2049.mp3"
-    final_master = PUBLIC_SOUNDS / "captcha_master_audio.mp3"
+    final_master_reel = REEL_AUDIO_DIR / "captcha_master_audio.mp3"
+    final_master_public = PUBLIC_REEL_DIR / "captcha_master_audio.mp3"
+    final_master_sounds = PUBLIC_SOUNDS / "captcha_master_audio.mp3"
 
     if bgm_file.exists():
-        # Dynamic BGM volume automation across narrative beats:
-        # 0.0 - 3.5s: 0.32 (Hook)
-        # 3.5 - 7.5s: 0.25 (Bot Speed dip)
-        # 7.5 - 14.0s: 0.32 (Trajectory build)
-        # 14.0 - 18.5s: 0.40 (Tremor & Biometric swell)
-        # 18.5 - end: 0.28 (Resolution)
         vol_expr = (
-            "if(lt(t,3.5), 0.32, "
-            "if(lt(t,7.5), 0.25, "
-            "if(lt(t,14.0), 0.32, "
-            "if(lt(t,18.5), 0.40, 0.28))))"
+            "if(lt(t,4.0), 0.32, "
+            "if(lt(t,9.0), 0.25, "
+            "if(lt(t,15.0), 0.32, "
+            "if(lt(t,20.0), 0.40, 0.28))))"
         )
         filter_complex = (
             f"[1:a]volume=eval=frame:volume='{vol_expr}'[bgm_curved];"
@@ -314,17 +339,22 @@ def main():
             "-filter_complex", filter_complex,
             "-map", "[master]",
             "-b:a", "192k",
-            str(final_master)
+            str(final_master_reel)
         ]
         subprocess.run(mix_cmd, check=True, capture_output=True)
-        print(f"✅ Dynamic Master Audio Mix: {final_master.name}")
+        
+        # Copy to public directories for Remotion
+        subprocess.run(["cp", str(final_master_reel), str(final_master_public)], check=True)
+        subprocess.run(["cp", str(final_master_reel), str(final_master_sounds)], check=True)
+        subprocess.run(["cp", str(voice_track), str(PUBLIC_REEL_DIR / "captcha_voice_track.mp3")], check=True)
+        print(f"✅ Dynamic Master Audio Mix copied to: {final_master_public}")
 
     print("\n🔍 Validating Speaker Separation:")
     for i in range(len(timeline_events) - 1):
         curr = timeline_events[i]
         nxt = timeline_events[i+1]
         gap_actual = nxt["start_time_ms"] - curr["end_time_ms"]
-        print(f"   ✓ {curr['id']} → {nxt['id']} | Gap: {gap_actual}ms (V14 Golden Standard)")
+        print(f"   ✓ {curr['id']} → {nxt['id']} | Gap: {gap_actual}ms (Natural Cadence)")
 
     print("\n🎉 CHATTERBOX AUDIO PIPELINE GENERATION COMPLETE")
 
