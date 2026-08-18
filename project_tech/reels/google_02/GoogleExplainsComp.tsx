@@ -263,7 +263,7 @@ export const GoogleExplainsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* CONTINUOUS MULTI-STAGE STAGE MANAGER (Smooth cross-fades) */}
+      {/* CONTINUOUS MULTI-STAGE STAGE MANAGER (Top Cards) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -331,6 +331,20 @@ export const GoogleExplainsComp: React.FC = () => {
             startFrame={fPayoffTakeaway}
           />
         </StageWrapper>
+
+        {/* ══════════════════════════════════════════════════════ */}
+        {/* MID-SCREEN LIVE PROTOCOL TELEMETRY & PACKET INSPECTOR */}
+        {/* (Fills y: 860px to 1420px with rich live telemetry)  */}
+        {/* ══════════════════════════════════════════════════════ */}
+        <MidScreenProtocolFeed
+          frame={frame}
+          fps={fps}
+          evDnsFrame={evDns.start_frame}
+          evTravelFrame={evTravel.start_frame}
+          evServerFrame={evServer.start_frame}
+          evRenderFrame={evRender.start_frame}
+          evPayoffFrame={fPayoffTakeaway}
+        />
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
@@ -1026,6 +1040,300 @@ const Beat6TakeawayConsole: React.FC<{
           Browser parses HTML tokens and paints the viewport in single-digit milliseconds.
         </div>
       </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// MID-SCREEN LIVE PROTOCOL TELEMETRY & PACKET INSPECTOR
+// (Fills y: 880px to 1420px with rich live interactive data)
+// ═══════════════════════════════════════════════════════════════
+const MidScreenProtocolFeed: React.FC<{
+  frame: number;
+  fps: number;
+  evDnsFrame: number;
+  evTravelFrame: number;
+  evServerFrame: number;
+  evRenderFrame: number;
+  evPayoffFrame: number;
+}> = ({ frame, fps, evDnsFrame, evTravelFrame, evServerFrame, evRenderFrame, evPayoffFrame }) => {
+  const isStage1 = frame < evDnsFrame;
+  const isStage2 = frame >= evDnsFrame && frame < evTravelFrame;
+  const isStage3 = frame >= evTravelFrame && frame < evServerFrame;
+  const isStage4 = frame >= evServerFrame && frame < evRenderFrame;
+  const isStage5 = frame >= evRenderFrame && frame < evPayoffFrame;
+  const isStage6 = frame >= evPayoffFrame;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 860,
+        left: 50,
+        right: 50,
+        height: 520,
+        backgroundColor: "#070B12",
+        borderRadius: 24,
+        border: "2px solid rgba(255, 255, 255, 0.1)",
+        boxShadow: "0 24px 60px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(6, 182, 212, 0.05)",
+        padding: "22px 26px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        zIndex: 35,
+        overflow: "hidden",
+      }}
+    >
+      {/* ─── STAGE 1: CLIENT SOCKET EMISSION ─── */}
+      {isStage1 && (
+        <>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", backgroundColor: "#38BDF8", boxShadow: "0 0 10px #38BDF8" }} />
+              <span style={{ fontSize: 15, fontWeight: 900, color: "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                ⚡ Client Network Stack Emission
+              </span>
+            </div>
+            <span style={{ fontSize: 12, color: "#10B981", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              TX_QUEUE: ACTIVE
+            </span>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 12, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#94A3B8", fontSize: 13, fontFamily: nemiTheme.typography.fontFamily.mono }}>Transport Protocol:</span>
+              <span style={{ color: "#F8FAFC", fontSize: 13, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>UDP / QUIC (Port 54321 → 443)</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 12, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#94A3B8", fontSize: 13, fontFamily: nemiTheme.typography.fontFamily.mono }}>Security Layer:</span>
+              <span style={{ color: "#FFD166", fontSize: 13, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>TLS 1.3 (0-RTT Session Resumption)</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 12, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#94A3B8", fontSize: 13, fontFamily: nemiTheme.typography.fontFamily.mono }}>Local Socket Cache:</span>
+              <span style={{ color: "#F43F5E", fontSize: 13, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>CACHE MISS → LAUNCHING DNS</span>
+            </div>
+          </div>
+
+          <div style={{ backgroundColor: "#03070D", padding: "14px", borderRadius: 14, border: "1px solid rgba(56, 189, 248, 0.3)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div>
+              <div style={{ fontSize: 11, color: "#64748B" }}>Outbound Request Size</div>
+              <div style={{ fontSize: 18, color: "#38BDF8", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>248 Bytes (GET / HTTP/3)</div>
+            </div>
+            <span style={{ fontSize: 22 }}>🚀</span>
+          </div>
+        </>
+      )}
+
+      {/* ─── STAGE 2: DNS RECURSIVE TRACE ─── */}
+      {isStage2 && (
+        <>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", backgroundColor: "#FFD166", boxShadow: "0 0 10px #FFD166" }} />
+              <span style={{ fontSize: 15, fontWeight: 900, color: "#FFD166", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                🔍 Recursive DNS Query Trace
+              </span>
+            </div>
+            <span style={{ fontSize: 12, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              PORT 53 (UDP)
+            </span>
+          </div>
+
+          <div style={{ backgroundColor: "#03070D", borderRadius: 14, border: "1px solid rgba(255,255,255,0.08)", padding: "14px 18px", fontFamily: nemiTheme.typography.fontFamily.mono, fontSize: 13, lineHeight: 1.7, color: "#F8FAFC" }}>
+            <span style={{ color: "#64748B" }}>$ dig +trace google.com</span><br />
+            <span style={{ color: "#38BDF8" }}>[1]</span> a.root-servers.net (198.41.0.4) <span style={{ color: "#10B981" }}>→ .com TLD (2ms)</span><br />
+            <span style={{ color: "#38BDF8" }}>[2]</span> a.gtld-servers.net (192.5.6.30) <span style={{ color: "#10B981" }}>→ ns1.google.com (6ms)</span><br />
+            <span style={{ color: "#38BDF8" }}>[3]</span> ns1.google.com (216.239.32.10) <span style={{ color: "#10B981" }}>→ 142.250.190.46 (4ms)</span><br />
+            <span style={{ color: "#FFD166", fontWeight: 900 }}>[+] ANSWER: google.com. 300 IN A 142.250.190.46</span>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B" }}>
+              <div style={{ fontSize: 11, color: "#64748B" }}>DNS Lookup Latency</div>
+              <div style={{ fontSize: 16, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>12.4 ms ✓</div>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B" }}>
+              <div style={{ fontSize: 11, color: "#64748B" }}>EDNS0 Client Subnet</div>
+              <div style={{ fontSize: 16, color: "#38BDF8", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>ENABLED (Geo-IP)</div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* ─── STAGE 3: BGP ROUTING HOPS & OPTICAL TELEMETRY ─── */}
+      {isStage3 && (
+        <>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", backgroundColor: "#06B6D4", boxShadow: "0 0 10px #06B6D4" }} />
+              <span style={{ fontSize: 15, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                🌐 Autonomous System (AS) Telemetry
+              </span>
+            </div>
+            <span style={{ fontSize: 12, color: "#10B981", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              BGP4 ANYCAST
+            </span>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#64748B", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>Hop 1 (Local): 192.168.1.1 (Home Gateway)</span>
+              <span style={{ color: "#10B981", fontSize: 12, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>0.8 ms</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#64748B", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>Hop 2 (ISP): 10.0.4.1 (Fiber Node Gateway)</span>
+              <span style={{ color: "#10B981", fontSize: 12, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>4.2 ms</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#64748B", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>Hop 3 (Tier-1): 72.14.215.1 (Undersea DWDM Backbone)</span>
+              <span style={{ color: "#FFD166", fontSize: 12, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>12.6 ms</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#64748B", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>Hop 4 (Dest): 142.250.190.46 (Google AS15169 CDN)</span>
+              <span style={{ color: "#06B6D4", fontSize: 12, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>21.4 ms</span>
+            </div>
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+            <span>Laser DWDM: 1550nm Wavelength</span>
+            <span style={{ color: "#10B981", fontWeight: 800 }}>Optical Loss: 0.18 dB/km (OPTIMAL)</span>
+          </div>
+        </>
+      )}
+
+      {/* ─── STAGE 4: BORG SERVER INFRASTRUCTURE & ENCRYPTION ─── */}
+      {isStage4 && (
+        <>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", backgroundColor: "#10B981", boxShadow: "0 0 10px #10B981" }} />
+              <span style={{ fontSize: 15, fontWeight: 900, color: "#10B981", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                🖥️ Borg Server Pod & SSL Session
+              </span>
+            </div>
+            <span style={{ fontSize: 12, color: "#10B981", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              HTTP/2 200 OK
+            </span>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div style={{ backgroundColor: "#0F172A", padding: "12px 14px", borderRadius: 12, border: "1px solid #1E293B" }}>
+              <div style={{ fontSize: 11, color: "#64748B" }}>Frontend Proxy</div>
+              <div style={{ fontSize: 15, color: "#F8FAFC", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>GFE-3.1 (Anycast)</div>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "12px 14px", borderRadius: 12, border: "1px solid #1E293B" }}>
+              <div style={{ fontSize: 11, color: "#64748B" }}>Borg Container</div>
+              <div style={{ fontSize: 15, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>Pod #892 (us-east4)</div>
+            </div>
+          </div>
+
+          <div style={{ backgroundColor: "#0F172A", padding: "12px 16px", borderRadius: 12, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+            <span style={{ color: "#94A3B8", fontSize: 13, fontFamily: nemiTheme.typography.fontFamily.mono }}>Response Compression:</span>
+            <span style={{ color: "#10B981", fontSize: 13, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>Brotli (br) / Gzip Level 9</span>
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+            <span>Cache-Control: private, max-age=0</span>
+            <span style={{ color: "#38BDF8", fontWeight: 800 }}>Server Execution: 18ms</span>
+          </div>
+        </>
+      )}
+
+      {/* ─── STAGE 5: V8 & BLINK RENDERING PIPELINE ─── */}
+      {isStage5 && (
+        <>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", backgroundColor: "#F43F5E", boxShadow: "0 0 10px #F43F5E" }} />
+              <span style={{ fontSize: 15, fontWeight: 900, color: "#F43F5E", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                🎨 Blink & V8 Rendering Pipeline
+              </span>
+            </div>
+            <span style={{ fontSize: 12, color: "#10B981", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              60 FPS RASTER
+            </span>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#F8FAFC", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>1. HTML Tokenizer: 1,420 DOM Nodes Created</span>
+              <span style={{ color: "#10B981", fontSize: 12, fontWeight: 800 }}>✓ 2.1ms</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#F8FAFC", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>2. CSSOM Computation: 184 Selectors Matched</span>
+              <span style={{ color: "#10B981", fontSize: 12, fontWeight: 800 }}>✓ 1.4ms</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#F8FAFC", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>3. Render Tree: Layout Geometry Calculated</span>
+              <span style={{ color: "#10B981", fontSize: 12, fontWeight: 800 }}>✓ 1.9ms</span>
+            </div>
+            <div style={{ backgroundColor: "#0F172A", padding: "10px 14px", borderRadius: 10, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between" }}>
+              <span style={{ color: "#F8FAFC", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>4. GPU Paint: Composite Layers Rasterized</span>
+              <span style={{ color: "#10B981", fontSize: 12, fontWeight: 800 }}>✓ 2.8ms</span>
+            </div>
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+            <span>First Contentful Paint (FCP): 54ms</span>
+            <span style={{ color: "#10B981", fontWeight: 800 }}>Largest Contentful Paint (LCP): 64ms</span>
+          </div>
+        </>
+      )}
+
+      {/* ─── STAGE 6: LATENCY WATERFALL BREAKDOWN ─── */}
+      {isStage6 && (
+        <>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ width: 10, height: 10, borderRadius: "50%", backgroundColor: "#FFD166", boxShadow: "0 0 10px #FFD166" }} />
+              <span style={{ fontSize: 15, fontWeight: 900, color: "#FFD166", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                ⏱️ Complete Request Waterfall (64ms)
+              </span>
+            </div>
+            <span style={{ fontSize: 12, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              5x FASTER THAN BLINK
+            </span>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+                <span>DNS Query: 14ms (22%)</span>
+                <span style={{ color: "#38BDF8" }}>■■■■■</span>
+              </div>
+              <div style={{ height: 6, backgroundColor: "#38BDF8", borderRadius: 3, width: "22%" }} />
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+                <span>Undersea Fiber BGP: 22ms (34%)</span>
+                <span style={{ color: "#06B6D4" }}>■■■■■■■■</span>
+              </div>
+              <div style={{ height: 6, backgroundColor: "#06B6D4", borderRadius: 3, width: "34%" }} />
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+                <span>Server Processing: 18ms (28%)</span>
+                <span style={{ color: "#10B981" }}>■■■■■■</span>
+              </div>
+              <div style={{ height: 6, backgroundColor: "#10B981", borderRadius: 3, width: "28%" }} />
+            </div>
+
+            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
+                <span>Browser DOM Paint: 10ms (16%)</span>
+                <span style={{ color: "#FFD166" }}>■■■■</span>
+              </div>
+              <div style={{ height: 6, backgroundColor: "#FFD166", borderRadius: 3, width: "16%" }} />
+            </div>
+          </div>
+
+          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", padding: "8px 14px", borderRadius: 10, border: "1px solid #10B981", textAlign: "center", fontSize: 13, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            ⚡ ALL 4 PROTOCOL PHASES COMPLETE IN 0.064 SECONDS
+          </div>
+        </>
+      )}
     </div>
   );
 };
