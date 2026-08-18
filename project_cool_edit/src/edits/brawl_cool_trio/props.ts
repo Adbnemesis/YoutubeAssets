@@ -855,197 +855,171 @@ export const bibiEdgarFrankTrioProps = {
 // ==========================================
 // MAX / LEON / SURGE SPEED TRIO PROPS
 // ==========================================
-export const maxLeonSurgeTrioProps: BrawlCoolTrioProps = {
-  audioTrack: staticFile("audio/max_leon_surge_audio.wav"),
+export const maxLeonSurgeTrioProps = {
+  audioSrc: staticFile("audio/max_leon_surge_audio.wav"),
+  title: "SPEED TRIO",
   cards: [
-    // 0.00 - 0.40: Trio intro card
+    // ============ PHASE 1: Trio Intro Card (0.00 – 2.80) ============
     {
-      startTime: 0.00,
-      endTime: 0.40,
+      startTime: 0.0,
+      endTime: 2.15,
       layout: "trio",
-      effects: ["flash", "heavy_glitch", "rgb_shift"],
+      effects: ["heavy_glitch", "rgb_shift"],
       images: [
         { src: "images/max/max_panel_1.png", auraColor: "#eab308" },
         { src: "images/leon/leon_panel_1.png", auraColor: "#22c55e" },
         { src: "images/surge/surge_panel_1.png", auraColor: "#f97316" },
       ],
     },
-    // 0.40 - 0.77: Pair card
     {
-      startTime: 0.40,
-      endTime: 0.77,
-      layout: "pair",
-      effects: ["glitch", "rgb_shift"],
+      startTime: 2.15,
+      endTime: 2.42,
+      layout: "trio",
+      effects: ["glitch"],
       images: [
         { src: "images/max/max_panel_2.png", auraColor: "#eab308" },
         { src: "images/leon/leon_panel_2.png", auraColor: "#22c55e" },
+        { src: "images/surge/surge_panel_2.png", auraColor: "#f97316" },
       ],
     },
-    // 0.77 - 1.15: Surge center card
     {
-      startTime: 0.77,
-      endTime: 1.15,
-      layout: "single",
-      effects: ["heavy_glitch"],
-      images: [{ src: "images/surge/surge_panel_2.png", auraColor: "#f97316" }],
-    },
-    // 1.15 - 1.54: Max punch
-    {
-      startTime: 1.15,
-      endTime: 1.54,
-      layout: "single",
-      effects: ["glitch"],
-      images: [{ src: "images/max/max_panel_3.png", auraColor: "#eab308" }],
-    },
-    // 1.54 - 1.93: Leon stealth
-    {
-      startTime: 1.54,
-      endTime: 1.93,
-      layout: "single",
-      effects: ["rgb_shift"],
-      images: [{ src: "images/leon/leon_panel_3.png", auraColor: "#22c55e" }],
-    },
-    // 1.93 - 2.30: Surge upgrade
-    {
-      startTime: 1.93,
-      endTime: 2.30,
-      layout: "single",
-      effects: ["glitch"],
-      images: [{ src: "images/surge/surge_panel_3.png", auraColor: "#f97316" }],
-    },
-    // 2.30 - 2.80: Trio dynamic
-    {
-      startTime: 2.30,
-      endTime: 2.80,
+      startTime: 2.42,
+      endTime: 2.82,
       layout: "trio",
-      effects: ["flash", "heavy_glitch"],
+      effects: ["flash", "rgb_shift"],
       images: [
-        { src: "images/max/max_panel_4.png", auraColor: "#eab308" },
-        { src: "images/leon/leon_panel_4.png", auraColor: "#22c55e" },
-        { src: "images/surge/surge_panel_4.png", auraColor: "#f97316" },
+        { src: "images/max/max_panel_3.png", auraColor: "#eab308" },
+        { src: "images/leon/leon_panel_3.png", auraColor: "#22c55e" },
+        { src: "images/surge/surge_panel_3.png", auraColor: "#f97316" },
       ],
     },
-    // 2.80 - 3.20: Blue phase intro
+
+    // ============ PHASE 2: Character Pair Rush (2.80 – 6.90) ============
     {
-      startTime: 2.80,
-      endTime: 3.20,
-      layout: "single",
-      effects: ["sustained_rgb_shift"],
-      images: [{ src: "images/max/max_panel_5.png", auraColor: "#eab308" }],
-    },
-    // 3.20 - 3.60: Pair
-    {
-      startTime: 3.20,
-      endTime: 3.60,
+      startTime: 2.82,
+      endTime: 3.27,
       layout: "pair",
-      effects: ["glitch"],
       images: [
+        { src: "images/leon/leon_panel_4.png", auraColor: "#22c55e" },
+        { src: "images/max/max_panel_4.png", auraColor: "#eab308" },
+      ],
+    },
+    {
+      startTime: 3.27,
+      endTime: 3.80,
+      layout: "pair",
+      images: [
+        { src: "images/surge/surge_panel_4.png", auraColor: "#f97316" },
         { src: "images/leon/leon_panel_5.png", auraColor: "#22c55e" },
+      ],
+    },
+    {
+      startTime: 3.80,
+      endTime: 4.20,
+      layout: "pair",
+      images: [
+        { src: "images/max/max_panel_5.png", auraColor: "#eab308" },
         { src: "images/surge/surge_panel_5.png", auraColor: "#f97316" },
       ],
     },
-    // 3.60 - 4.00
     {
-      startTime: 3.60,
-      endTime: 4.00,
-      layout: "single",
-      effects: ["heavy_glitch"],
-      images: [{ src: "images/max/max_panel_6.png", auraColor: "#eab308" }],
-    },
-    // 4.00 - 4.40
-    {
-      startTime: 4.00,
+      startTime: 4.20,
       endTime: 4.40,
-      layout: "single",
-      effects: ["glitch"],
-      images: [{ src: "images/leon/leon_panel_6.png", auraColor: "#22c55e" }],
+      layout: "pair",
+      images: [
+        { src: "images/leon/leon_panel_6.png", auraColor: "#22c55e" },
+        { src: "images/max/max_panel_6.png", auraColor: "#eab308" },
+      ],
     },
-    // 4.40 - 4.80
     {
       startTime: 4.40,
-      endTime: 4.80,
-      layout: "single",
-      effects: ["rgb_shift"],
-      images: [{ src: "images/surge/surge_panel_6.png", auraColor: "#f97316" }],
-    },
-    // 4.80 - 5.20
-    {
-      startTime: 4.80,
-      endTime: 5.20,
+      endTime: 4.68,
       layout: "pair",
-      effects: ["glitch"],
       images: [
-        { src: "images/max/max_panel_7.png", auraColor: "#eab308" },
         { src: "images/leon/leon_panel_7.png", auraColor: "#22c55e" },
-      ],
-    },
-    // 5.20 - 5.60
-    {
-      startTime: 5.20,
-      endTime: 5.60,
-      layout: "single",
-      effects: ["heavy_glitch"],
-      images: [{ src: "images/surge/surge_panel_7.png", auraColor: "#f97316" }],
-    },
-    // 5.60 - 6.00
-    {
-      startTime: 5.60,
-      endTime: 6.00,
-      layout: "single",
-      effects: ["dark_fade"],
-      images: [{ src: "images/max/max_panel_8.png", auraColor: "#eab308" }],
-    },
-    // 6.00 - 6.50
-    {
-      startTime: 6.00,
-      endTime: 6.50,
-      layout: "pair",
-      effects: ["glitch"],
-      images: [
         { src: "images/leon/leon_panel_8.png", auraColor: "#22c55e" },
-        { src: "images/surge/surge_panel_8.png", auraColor: "#f97316" },
       ],
     },
-    // 6.50 - 7.00
     {
-      startTime: 6.50,
-      endTime: 7.00,
-      layout: "single",
-      effects: ["heavy_glitch"],
-      images: [{ src: "images/max/max_panel_9.png", auraColor: "#eab308" }],
+      startTime: 4.68,
+      endTime: 5.12,
+      layout: "pair",
+      images: [
+        { src: "images/surge/surge_panel_6.png", auraColor: "#f97316" },
+        { src: "images/max/max_panel_7.png", auraColor: "#eab308" },
+      ],
     },
-    // 7.00 - 7.40: Pre-drop riser
     {
-      startTime: 7.00,
+      startTime: 5.12,
+      endTime: 5.52,
+      layout: "pair",
+      images: [
+        { src: "images/max/max_panel_8.png", auraColor: "#eab308" },
+        { src: "images/leon/leon_panel_9.png", auraColor: "#22c55e" },
+      ],
+    },
+    {
+      startTime: 5.52,
+      endTime: 6.10,
+      layout: "pair",
+      images: [
+        { src: "images/leon/leon_panel_10.png", auraColor: "#22c55e" },
+        { src: "images/surge/surge_panel_7.png", auraColor: "#f97316" },
+      ],
+    },
+    {
+      startTime: 6.10,
+      endTime: 6.38,
+      layout: "pair",
+      images: [
+        { src: "images/surge/surge_panel_8.png", auraColor: "#f97316" },
+        { src: "images/max/max_panel_9.png", auraColor: "#eab308" },
+      ],
+    },
+    {
+      startTime: 6.38,
+      endTime: 6.88,
+      layout: "trio",
+      images: [
+        { src: "images/max/max_panel_10.png", auraColor: "#eab308" },
+        { src: "images/leon/leon_panel_11.png", auraColor: "#22c55e" },
+        { src: "images/surge/surge_panel_9.png", auraColor: "#f97316" },
+      ],
+    },
+
+    // ============ BLUE BREATHER (6.88 – 7.40) ============
+    {
+      startTime: 6.88,
       endTime: 7.40,
       layout: "trio",
-      effects: ["flash", "heavy_glitch", "rgb_shift"],
+      tint: "rgba(30, 58, 138, 0.45)",
+      effects: ["dark_fade", "rgb_shift"],
       images: [
-        { src: "images/max/max_panel_1.png", auraColor: "#eab308" },
-        { src: "images/leon/leon_panel_1.png", auraColor: "#22c55e" },
-        { src: "images/surge/surge_panel_1.png", auraColor: "#f97316" },
+        { src: "images/max/max_panel_11.png", auraColor: "#3b82f6" },
+        { src: "images/leon/leon_panel_12.png", auraColor: "#3b82f6" },
+        { src: "images/surge/surge_panel_10.png", auraColor: "#3b82f6" },
       ],
     },
 
     // ============ MAX SECTION (~7.5s VO) ============
-    // 1) Silhouette Phase (0.50s)
+    // 1) Silhouette Phase
     {
       startTime: 7.40,
       endTime: 7.90,
       layout: "single",
-      backgroundImage: "images/surge/surge_panel_1.png",
-      effects: ["glitch"],
+      backgroundImage: "images/max/max_panel_11.png",
+      effects: ["rgb_shift", "flash"],
       images: [
         { src: "brawler_gifs/max_win.gif", isSilhouette: true, silhouetteColor: "#eab308", videoStartFrame: 0 },
       ],
     },
-    // 1b) Reveal Phase (Continuous frame 12)
+    // 1b) Reveal Phase
     {
       startTime: 7.90,
       endTime: 8.27,
       layout: "single",
       effects: ["glitch"],
-      images: [{ src: "brawler_gifs/max_win.gif", auraColor: "#eab308", videoStartFrame: 12 }],
+      images: [{ src: "brawler_gifs/max_win.gif", auraColor: "#eab308", videoStartFrame: 12 }], // 0.5s * 24fps = 12
     },
     // Image 1: Action Clip 1
     {
@@ -1060,7 +1034,7 @@ export const maxLeonSurgeTrioProps: BrawlCoolTrioProps = {
       startTime: 8.62,
       endTime: 8.97,
       layout: "single",
-      effects: ["glitch"],
+      effects: ["rgb_shift"],
       images: [{ src: "images/max/max_panel_4.png", auraColor: "#eab308" }],
     },
     // Image 3: Action Clip 3
@@ -1068,12 +1042,12 @@ export const maxLeonSurgeTrioProps: BrawlCoolTrioProps = {
       startTime: 8.97,
       endTime: 9.30,
       layout: "single",
-      effects: ["flash"],
+      effects: ["glitch"],
       images: [{ src: "images/max/max_panel_7.png", auraColor: "#eab308" }],
     },
 
     // ============ LEON SECTION (~9.5s VO) ============
-    // 1) Silhouette Phase (0.50s)
+    // 1) Silhouette Phase
     {
       startTime: 9.30,
       endTime: 9.80,
@@ -1084,7 +1058,7 @@ export const maxLeonSurgeTrioProps: BrawlCoolTrioProps = {
         { src: "brawler_gifs/leon_win.gif", isSilhouette: true, silhouetteColor: "#22c55e", videoStartFrame: 0 },
       ],
     },
-    // 1b) Reveal Phase (Continuous frame 12)
+    // 1b) Reveal Phase
     {
       startTime: 9.80,
       endTime: 10.23,
@@ -1118,7 +1092,7 @@ export const maxLeonSurgeTrioProps: BrawlCoolTrioProps = {
     },
 
     // ============ SURGE SECTION (~11.5s VO) ============
-    // 1) Silhouette Phase (0.50s)
+    // 1) Silhouette Phase
     {
       startTime: 11.74,
       endTime: 12.24,
@@ -1129,7 +1103,7 @@ export const maxLeonSurgeTrioProps: BrawlCoolTrioProps = {
         { src: "brawler_gifs/surge_win.gif", isSilhouette: true, silhouetteColor: "#f97316", videoStartFrame: 0 },
       ],
     },
-    // 1b) Reveal Phase (Continuous frame 12)
+    // 1b) Reveal Phase
     {
       startTime: 12.24,
       endTime: 12.88,
