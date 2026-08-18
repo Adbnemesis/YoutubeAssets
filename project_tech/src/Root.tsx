@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { GoogleExplainsComp } from "../reels/google_02/GoogleExplainsComp";
 import { CaptchaExplainsComp } from "./compositions/CaptchaExplainsComp";
 import { ExecutionSimulatorComp } from "./compositions/ExecutionSimulatorComp";
 import { KineticAlgorithmDuelComp } from "./compositions/KineticAlgorithmDuelComp";
@@ -25,6 +26,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsGoogle"
+        component={GoogleExplainsComp}
+        durationInFrames={595} // 19.82s @ 30fps — Reel #2: What Actually Happens When You Type google.com? (Dual-Voice + SFX)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsCaptcha"
         component={CaptchaExplainsComp}

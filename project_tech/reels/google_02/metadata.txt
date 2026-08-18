@@ -1,0 +1,30 @@
+================================================================================
+NEMI EXPLAINS — REEL #2: WHAT HAPPENS WHEN YOU TYPE GOOGLE.COM?
+================================================================================
+
+[INSTAGRAM / TIKTOK / YOUTUBE SHORTS CAPTION]
+You type google.com and hit Enter... but what actually happens in that 64 milliseconds? 🤯⚡
+
+Here’s the complete journey of an internet request:
+1️⃣ Recursive DNS lookup maps the domain name to an IP address.
+2️⃣ Your request travels as light pulses through undersea fiber optic cables.
+3️⃣ Google’s Edge server completes a 1-RTT TLS 1.3 handshake and generates the HTML.
+4️⃣ Your browser parses the DOM tree, computes CSSOM styles, and paints the pixels.
+
+All of this happens before you can even blink. Tag a developer who needs to see this! 👇
+
+#webdevelopment #softwareengineering #computerscience #coding #programming #internet #networking #tech #devlife #learntocode #google #frontend #backend #systemdesign
+
+================================================================================
+[YOUTUBE SHORTS TITLE]
+What Actually Happens When You Type google.com? 🤯 (64ms Journey) #shorts
+
+================================================================================
+[VIDEO TECHNICAL SPECS]
+- Composition: NemiExplainsGoogle
+- Duration: 19.82s (595 frames @ 30fps)
+- Aspect Ratio: 9:16 (1080x1920)
+- Audio: Dual-Voice Architecture (Chatterbox Narrator + Edge-TTS AnaNeural Mascot)
+- Integrated SFX: 9 synchronized audio cues (typing, click, whoosh, ping, notification, chime)
+- Target Loudness: -15.5 LUFS
+================================================================================
