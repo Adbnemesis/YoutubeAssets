@@ -1,7 +1,7 @@
 import React from "react";
 import { Composition } from "remotion";
 import { BestCharPhonkTemplate } from "./templates/BestCharPhonkTemplate";
-import { defaultBestCharProps, bestLegendaryProps, bestRangedProps, bestBrawlerKazeNoriProps } from "./props";
+import { defaultBestCharProps, bestLegendaryProps, bestRangedProps, bestBrawlerKazeNoriProps, bestControllerProps } from "./props";
 
 export const BestCharCompositions: React.FC = () => {
   return (
@@ -44,6 +44,16 @@ export const BestCharCompositions: React.FC = () => {
         width={bestBrawlerKazeNoriProps.width}
         height={bestBrawlerKazeNoriProps.height}
         defaultProps={bestBrawlerKazeNoriProps}
+      />
+
+      <Composition
+        id="BrawlBestChar-BestController"
+        component={BestCharPhonkTemplate}
+        durationInFrames={bestControllerProps.durationInFrames}
+        fps={bestControllerProps.fps}
+        width={bestControllerProps.width}
+        height={bestControllerProps.height}
+        defaultProps={bestControllerProps}
       />
     </>
   );

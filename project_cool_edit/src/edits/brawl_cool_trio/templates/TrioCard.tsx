@@ -21,6 +21,7 @@ const BRAWLER_GIF_MAP: Record<string, BrawlerGifMetadata> = {
   "brawler_gifs/bibi_win.gif": { base: "brawler_gif_frames/bibi", frameCount: 153, gifFps: 24 },
   "brawler_gifs/frank_win.gif": { base: "brawler_gif_frames/frank", frameCount: 12, gifFps: 10 },
   "brawler_gifs/hank_win.gif": { base: "brawler_gif_frames/hank", frameCount: 249, gifFps: 24 },
+  "brawler_gifs/kaze_win.gif": { base: "brawler_gif_frames/kaze", frameCount: 500, gifFps: 24 },
 };
 
 export interface TrioImage {
