@@ -317,14 +317,19 @@ def main():
     print(f"✅ Master Voice Track: {final_voice_mp3.name}")
 
     # 3. Dynamic Sidechain Ducking Curve for BGM
-    bgm_path = BASE_DIR / "public" / "bgm" / "nemi_ambient_pulse.mp3"
+    bgm_path = BASE_DIR / "public" / "bgm" / "Synthwave Goose - Blade Runner 2049.mp3"
+    if not bgm_path.exists():
+        bgm_path = BASE_DIR / "assets" / "background_music" / "Synthwave Goose - Blade Runner 2049.mp3"
+
     master_audio_mp3 = PUBLIC_REELS / "google_master_audio.mp3"
 
     if bgm_path.exists():
+        print(f"🎵 Mixing energetic tech BGM: {bgm_path.name}")
+        # BGM starts with gentle fade-in, sidechain compressed against voice, volume=0.22
         sidechain_filter = (
-            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.20[bgm];"
+            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st={total_duration_s - 1.0}:d=1.0[bgm];"
             f"[0:a]asplit=2[voice_main][voice_sc];"
-            f"[bgm][voice_sc]sidechaincompress=threshold=0.03:ratio=6:attack=30:release=250[ducked_bgm];"
+            f"[bgm][voice_sc]sidechaincompress=threshold=0.035:ratio=7:attack=25:release=220[ducked_bgm];"
             f"[voice_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"
             f"[mix]loudnorm=I={TARGET_MASTER_LUFS}:TP=-1.5:LRA=7[out]"
         )
@@ -338,7 +343,7 @@ def main():
             str(master_audio_mp3)
         ]
         subprocess.run(bgm_mix_cmd, check=True, capture_output=True)
-        print(f"✅ Dynamic Master Audio Mix (Voice + Ducked BGM): {master_audio_mp3.name}")
+        print(f"✅ Dynamic Master Audio Mix (Voice + Ducked Synthwave BGM): {master_audio_mp3.name}")
     else:
         import shutil
         shutil.copy(final_voice_mp3, master_audio_mp3)

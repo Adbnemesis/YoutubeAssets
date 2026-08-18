@@ -31,7 +31,7 @@ export const nemiTheme = {
 
 // ═══════════════════════════════════════════════════════════════════
 // NEMI EXPLAINS REEL #2 — WHAT ACTUALLY HAPPENS WHEN YOU TYPE GOOGLE.COM?
-// DUAL-VOICE ENGINE (CHATTERBOX NARRATOR + ANA MASCOT) + SFX LAYER (~19.82s @ 30fps)
+// CONTINUOUS FLUID MULTI-STAGE ENGINE + SYNTHWAVE BGM + SFX LAYER (~19.72s @ 30fps)
 // ═══════════════════════════════════════════════════════════════════
 
 const getEvent = (id: string) => {
@@ -45,14 +45,6 @@ const getCueFrame = (eventId: string, cueName: string, fallback: number) => {
   const sc = ev.semantic_cues.find((x: any) => x.cue === cueName);
   return sc ? sc.frame : fallback;
 };
-
-// Network Routing Nodes along the fiber track
-const ROUTING_NODES = [
-  { id: 1, label: "Home Router", ip: "192.168.1.1", x: 260, y: 520 },
-  { id: 2, label: "ISP Gateway", ip: "10.0.4.1", x: 780, y: 680 },
-  { id: 3, label: "Tier-1 Backbone", ip: "AS15169", x: 300, y: 880 },
-  { id: 4, label: "Google Edge CDN", ip: "142.250.190.46", x: 760, y: 1040, isDestination: true },
-];
 
 export const GoogleExplainsComp: React.FC = () => {
   const frame = useCurrentFrame();
@@ -68,7 +60,7 @@ export const GoogleExplainsComp: React.FC = () => {
   const evPayoff = getEvent("g07_payoff");
   const evFast = getEvent("g08_nemi_fast");
 
-  // Semantic Phrase Timing
+  // Exact Cue Timestamps
   const fEnterPress = getCueFrame("g01_hook", "enter_press", evHook.start_frame + 36);
   const fPacketLaunch = getCueFrame("g01_hook", "packet_launch", evHook.start_frame + 78);
   const fDnsLookup = getCueFrame("g02_dns", "dns_lookup_enter", evDns.start_frame + 22);
@@ -81,78 +73,42 @@ export const GoogleExplainsComp: React.FC = () => {
   const fGoogleUi = getCueFrame("g06_render", "google_ui_illuminate", evRender.start_frame + 58);
   const fPayoffTakeaway = getCueFrame("g07_payoff", "master_takeaway", evPayoff.start_frame + 30);
 
-  // ─── Visual Stages Classification (6 Continuous Beats) ───
-  const isInputStage = frame < evDns.start_frame;
-  const isDnsStage = frame >= evDns.start_frame && frame < evTravel.start_frame;
-  const isTravelStage = frame >= evTravel.start_frame && frame < evServer.start_frame;
-  const isServerStage = frame >= evServer.start_frame && frame < evRender.start_frame;
-  const isRenderStage = frame >= evRender.start_frame && frame < fPayoffTakeaway;
-  const isPayoffStage = frame >= fPayoffTakeaway;
+  // ─── Continuous Background Interpolation ───
+  const isDarkScene = frame >= evDns.start_frame && frame < evRender.start_frame;
+  const darkFade = interpolate(
+    frame,
+    [evDns.start_frame - 10, evDns.start_frame + 10, evRender.start_frame - 10, evRender.start_frame + 10],
+    [0, 1, 1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
 
-  // ─── Background Theme Selection ───
-  const isDarkScene = isDnsStage || isTravelStage || isServerStage;
-  const bgColor = isDarkScene ? "#090D16" : nemiTheme.colors.canvasLight;
-
-  // ─── Continuous Camera Transforms ───
-  let cameraZoom = 1.0;
-  let cameraPanY = 0;
-
-  if (isTravelStage) {
-    cameraZoom = interpolate(frame, [evTravel.start_frame, fServerReach], [1.0, 1.18], {
-      extrapolateLeft: "clamp",
-      extrapolateRight: "clamp",
-    });
-    cameraPanY = interpolate(frame, [evTravel.start_frame, fServerReach], [0, -80], {
-      extrapolateLeft: "clamp",
-      extrapolateRight: "clamp",
-    });
-  } else if (isServerStage) {
-    cameraZoom = 1.15;
-    cameraPanY = -80;
-  }
+  // ─── Global Cinematic Camera Motion (Fluid, zero abrupt cuts) ───
+  const cameraScale = interpolate(
+    frame,
+    [0, 36, 42, 110, 213, 326, 404, 493, 592],
+    [1.0, 1.03, 1.01, 1.02, 1.05, 1.03, 1.04, 1.02, 1.0],
+    { extrapolateRight: "clamp" }
+  );
 
   // ─── Nemi Dynamic Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "thinking";
   let nemiSpeech: string | null = null;
-  let nemiX = 160;
-  let nemiY = 1580;
-  let nemiScale = 1.35;
 
-  if (isInputStage) {
-    const hasTyped = frame >= fEnterPress;
-    nemiPose = hasTyped ? "pointing" : "thinking";
-    nemiX = 840;
-    nemiY = 1560;
-    nemiScale = 1.4;
-  } else if (isDnsStage) {
-    const isAsking = frame >= evWhere.start_frame;
+  if (frame < evDns.start_frame) {
+    nemiPose = frame >= fEnterPress ? "pointing" : "thinking";
+  } else if (frame >= evDns.start_frame && frame < evTravel.start_frame) {
     nemiPose = "puzzled";
-    nemiX = 220;
-    nemiY = 1560;
-    nemiScale = 1.4;
-    if (isAsking && frame < evWhere.end_frame + 12) {
+    if (frame >= evWhere.start_frame && frame < evWhere.end_frame + 12) {
       nemiSpeech = "Where is that? 🤔";
     }
-  } else if (isTravelStage) {
+  } else if (frame >= evTravel.start_frame && frame < evServer.start_frame) {
     nemiPose = "explaining";
-    nemiX = 180;
-    nemiY = 1580;
-    nemiScale = 1.3;
-  } else if (isServerStage) {
+  } else if (frame >= evServer.start_frame && frame < evRender.start_frame) {
     nemiPose = "shocked";
-    nemiX = 200;
-    nemiY = 1560;
-    nemiScale = 1.4;
-  } else if (isRenderStage) {
+  } else if (frame >= evRender.start_frame && frame < fPayoffTakeaway) {
     nemiPose = "aha";
-    nemiX = 840;
-    nemiY = 1560;
-    nemiScale = 1.4;
-  } else if (isPayoffStage) {
+  } else {
     nemiPose = "smug";
-    nemiX = 540;
-    nemiY = 1520;
-    nemiScale = 1.5;
     if (frame >= evFast.start_frame) {
       nemiSpeech = "That was fast! 😎⚡";
     }
@@ -161,14 +117,14 @@ export const GoogleExplainsComp: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: bgColor,
+        backgroundColor: darkFade > 0.5 ? "#070B12" : nemiTheme.colors.canvasLight,
         overflow: "hidden",
         fontFamily: nemiTheme.typography.fontFamily.sans,
-        transition: "background-color 0.3s ease",
+        transition: "background-color 0.4s ease",
       }}
     >
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MASTER AUDIO TRACK (Chatterbox Narrator + Snappy Ana Nemi) */}
+      {/* MASTER AUDIO (Voice + Ducked Synthwave BGM) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Audio src={staticFile("reels/google_02/google_master_audio.mp3")} />
 
@@ -241,8 +197,8 @@ export const GoogleExplainsComp: React.FC = () => {
               width: 14,
               height: 14,
               borderRadius: "50%",
-              backgroundColor: isDarkScene ? "#38BDF8" : "#2563EB",
-              boxShadow: isDarkScene ? "0 0 16px #38BDF8" : "none",
+              backgroundColor: darkFade > 0.5 ? "#38BDF8" : "#2563EB",
+              boxShadow: darkFade > 0.5 ? "0 0 16px #38BDF8" : "none",
             }}
           />
           <span
@@ -250,7 +206,7 @@ export const GoogleExplainsComp: React.FC = () => {
               fontSize: 18,
               fontWeight: 900,
               letterSpacing: "1.5px",
-              color: isDarkScene ? "#94A3B8" : nemiTheme.colors.textMuted,
+              color: darkFade > 0.5 ? "#94A3B8" : nemiTheme.colors.textMuted,
               textTransform: "uppercase",
             }}
           >
@@ -260,22 +216,22 @@ export const GoogleExplainsComp: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: isDarkScene ? "rgba(15, 23, 42, 0.8)" : "#FFFFFF",
+            backgroundColor: darkFade > 0.5 ? "rgba(15, 23, 42, 0.8)" : "#FFFFFF",
             padding: "8px 18px",
             borderRadius: 20,
-            border: isDarkScene ? "1px solid #1E293B" : `1px solid ${nemiTheme.colors.borderSubtle}`,
+            border: darkFade > 0.5 ? "1px solid #1E293B" : `1px solid ${nemiTheme.colors.borderSubtle}`,
             fontSize: 14,
             fontWeight: 800,
-            color: isDarkScene ? "#38BDF8" : nemiTheme.colors.brandCyan,
+            color: darkFade > 0.5 ? "#38BDF8" : nemiTheme.colors.brandCyan,
             fontFamily: nemiTheme.typography.fontFamily.mono,
           }}
         >
-          {isInputStage && "STAGE 1/5: CLIENT"}
-          {isDnsStage && "STAGE 2/5: DNS"}
-          {isTravelStage && "STAGE 3/5: BGP ROUTING"}
-          {isServerStage && "STAGE 4/5: EDGE SERVER"}
-          {isRenderStage && "STAGE 5/5: DOM ENGINE"}
-          {isPayoffStage && "COMPLETE: 64ms"}
+          {frame < evDns.start_frame && "STAGE 1/5: CLIENT"}
+          {frame >= evDns.start_frame && frame < evTravel.start_frame && "STAGE 2/5: DNS"}
+          {frame >= evTravel.start_frame && frame < evServer.start_frame && "STAGE 3/5: BGP ROUTING"}
+          {frame >= evServer.start_frame && frame < evRender.start_frame && "STAGE 4/5: EDGE SERVER"}
+          {frame >= evRender.start_frame && frame < fPayoffTakeaway && "STAGE 5/5: DOM ENGINE"}
+          {frame >= fPayoffTakeaway && "COMPLETE: 64ms"}
         </div>
       </div>
 
@@ -295,7 +251,7 @@ export const GoogleExplainsComp: React.FC = () => {
           style={{
             fontSize: 44,
             fontWeight: 900,
-            color: isDarkScene ? "#F8FAFC" : nemiTheme.colors.textHeading,
+            color: darkFade > 0.5 ? "#F8FAFC" : nemiTheme.colors.textHeading,
             letterSpacing: "-1.5px",
             margin: 0,
             lineHeight: 1.15,
@@ -307,105 +263,104 @@ export const GoogleExplainsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MAIN CAMERA VIEWPORT & DYNAMIC VISUAL STAGES */}
+      {/* CONTINUOUS MULTI-STAGE STAGE MANAGER (Smooth cross-fades) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          transform: `scale(${cameraZoom}) translateY(${cameraPanY}px)`,
+          transform: `scale(${cameraScale})`,
           transformOrigin: "center center",
-          transition: "transform 0.1s ease-out",
         }}
       >
-        {/* BEAT 1: BROWSER ADDRESS BAR & ENTER IGNITION */}
-        {isInputStage && (
+        {/* STAGE 1: BROWSER ADDRESS BAR & ENTER IGNITION */}
+        <StageWrapper frame={frame} startFrame={0} endFrame={evDns.start_frame + 6}>
           <Beat1AddressBar
             frame={frame}
             fps={fps}
             fEnterPress={fEnterPress}
             fPacketLaunch={fPacketLaunch}
           />
-        )}
+        </StageWrapper>
 
-        {/* BEAT 2: RECURSIVE DNS RESOLUTION MATRIX */}
-        {isDnsStage && (
+        {/* STAGE 2: RECURSIVE DNS RESOLUTION MATRIX */}
+        <StageWrapper frame={frame} startFrame={evDns.start_frame} endFrame={evTravel.start_frame + 6}>
           <Beat2DnsResolution
             frame={frame}
             fps={fps}
             startFrame={evDns.start_frame}
             fIpResolved={fIpResolved}
           />
-        )}
+        </StageWrapper>
 
-        {/* BEAT 3: UNDERSEA FIBER & BGP ROUTING GRID */}
-        {isTravelStage && (
+        {/* STAGE 3: UNDERSEA FIBER & BGP ROUTING GRID */}
+        <StageWrapper frame={frame} startFrame={evTravel.start_frame} endFrame={evServer.start_frame + 6}>
           <Beat3FiberRouting
             frame={frame}
             fps={fps}
             startFrame={evTravel.start_frame}
             fServerReach={fServerReach}
           />
-        )}
+        </StageWrapper>
 
-        {/* BEAT 4: GOOGLE EDGE SERVER & TLS 1.3 HANDSHAKE */}
-        {isServerStage && (
+        {/* STAGE 4: GOOGLE EDGE SERVER & TLS 1.3 HANDSHAKE */}
+        <StageWrapper frame={frame} startFrame={evServer.start_frame} endFrame={evRender.start_frame + 6}>
           <Beat4EdgeServer
             frame={frame}
             fps={fps}
             startFrame={evServer.start_frame}
             fResponseLaunch={fResponseLaunch}
           />
-        )}
+        </StageWrapper>
 
-        {/* BEAT 5: CRITICAL RENDERING PATH & DOM PAINT */}
-        {isRenderStage && (
+        {/* STAGE 5: CRITICAL RENDERING PATH & DOM PAINT */}
+        <StageWrapper frame={frame} startFrame={evRender.start_frame} endFrame={fPayoffTakeaway + 6}>
           <Beat5DomRendering
             frame={frame}
             fps={fps}
             startFrame={evRender.start_frame}
             fGoogleUi={fGoogleUi}
           />
-        )}
+        </StageWrapper>
 
-        {/* BEAT 6: 3-POINT CS TAKEAWAY & 64ms LATENCY PAYOFF */}
-        {isPayoffStage && (
+        {/* STAGE 6: 3-POINT CS TAKEAWAY & 64ms LATENCY PAYOFF */}
+        <StageWrapper frame={frame} startFrame={fPayoffTakeaway} endFrame={592}>
           <Beat6TakeawayConsole
             frame={frame}
             fps={fps}
             startFrame={fPayoffTakeaway}
           />
-        )}
+        </StageWrapper>
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* NEMI ACTOR SECTION */}
+      {/* HERO MASCOT REACTOR STAGE (Smooth, zero teleportation) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
-          top: nemiY,
-          left: nemiX - 140,
+          bottom: 40,
+          left: "50%",
+          transform: "translateX(-50%)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           zIndex: 60,
-          transform: `scale(${nemiScale})`,
-          transition: "top 0.4s ease, left 0.4s ease, transform 0.4s ease",
         }}
       >
+        {/* Animated Speech Bubble */}
         {nemiSpeech && (
           <div
             style={{
               backgroundColor: nemiTheme.colors.brandYellow,
               color: "#18181B",
               fontWeight: 900,
-              fontSize: 20,
-              padding: "10px 24px",
-              borderRadius: 20,
-              boxShadow: "0 10px 24px rgba(0, 0, 0, 0.2)",
-              marginBottom: 12,
-              transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.05, 1.0])})`,
+              fontSize: 22,
+              padding: "12px 28px",
+              borderRadius: 22,
+              boxShadow: "0 12px 30px rgba(0, 0, 0, 0.25)",
+              marginBottom: 16,
+              transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.06, 1.0])})`,
               whiteSpace: "nowrap",
             }}
           >
@@ -413,11 +368,63 @@ export const GoogleExplainsComp: React.FC = () => {
           </div>
         )}
 
+        {/* Breathing Mascot */}
         <div style={{ transform: `translateY(${Math.sin(frame * 0.1) * 6}px)` }}>
-          <NemiMascot pose={nemiPose} scale={1.0} />
+          <NemiMascot pose={nemiPose} scale={1.3} />
         </div>
       </div>
     </AbsoluteFill>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// SILKY SMOOTH STAGE WRAPPER COMPONENT (Parallax slide + fade)
+// ═══════════════════════════════════════════════════════════════
+const StageWrapper: React.FC<{
+  children: React.ReactNode;
+  frame: number;
+  startFrame: number;
+  endFrame: number;
+}> = ({ children, frame, startFrame, endFrame }) => {
+  if (frame < startFrame - 10 || frame > endFrame + 10) {
+    return null;
+  }
+
+  // Smooth entrance: opacity 0 -> 1 over 10 frames, translateY 30px -> 0px
+  const enterOpacity = interpolate(frame, [startFrame, startFrame + 10], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const enterY = interpolate(frame, [startFrame, startFrame + 10], [30, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  // Smooth exit: opacity 1 -> 0 over 8 frames, translateY 0px -> -30px
+  const exitOpacity = interpolate(frame, [endFrame - 8, endFrame], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const exitY = interpolate(frame, [endFrame - 8, endFrame], [0, -30], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  const opacity = Math.min(enterOpacity, exitOpacity);
+  const translateY = enterY + exitY;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        opacity,
+        transform: `translateY(${translateY}px)`,
+        pointerEvents: opacity > 0.1 ? "auto" : "none",
+      }}
+    >
+      {children}
+    </div>
   );
 };
 
@@ -440,7 +447,7 @@ const Beat1AddressBar: React.FC<{
   const currentText = fullText.slice(0, Math.max(typedLen, 0));
 
   // Request packet launch animation
-  const packetY = interpolate(frame, [fPacketLaunch, fPacketLaunch + 25], [460, 1200], {
+  const packetY = interpolate(frame, [fPacketLaunch, fPacketLaunch + 25], [460, 1100], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -452,7 +459,7 @@ const Beat1AddressBar: React.FC<{
         top: 360,
         left: 60,
         right: 60,
-        height: 480,
+        height: 460,
         backgroundColor: "#FFFFFF",
         borderRadius: 28,
         border: `2px solid ${isEntered ? "#38BDF8" : nemiTheme.colors.borderSubtle}`,
@@ -463,7 +470,6 @@ const Beat1AddressBar: React.FC<{
         justifyContent: "space-between",
         transform: `scale(${popSpring})`,
         zIndex: 30,
-        transition: "border 0.2s ease, box-shadow 0.2s ease",
       }}
     >
       {/* Browser Tab Header */}
@@ -510,7 +516,6 @@ const Beat1AddressBar: React.FC<{
             fontFamily: nemiTheme.typography.fontFamily.mono,
             transform: isEntered ? "scale(1.1)" : "scale(1.0)",
             boxShadow: isEntered ? "0 0 20px rgba(2, 132, 199, 0.4)" : "none",
-            transition: "all 0.15s ease",
           }}
         >
           ENTER ↵
@@ -579,7 +584,7 @@ const Beat2DnsResolution: React.FC<{
         top: 360,
         left: 50,
         right: 50,
-        height: 500,
+        height: 480,
         backgroundColor: "#070B12",
         borderRadius: 28,
         border: "2px solid rgba(56, 189, 248, 0.4)",
@@ -605,7 +610,7 @@ const Beat2DnsResolution: React.FC<{
       </div>
 
       {/* DNS Hierarchy Tree Nodes */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         <div style={{ backgroundColor: "#0F172A", padding: "12px 18px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
             <div style={{ fontSize: 11, color: "#64748B" }}>01. Root DNS Server (.)</div>
@@ -691,7 +696,7 @@ const Beat3FiberRouting: React.FC<{
         top: 340,
         left: 40,
         right: 40,
-        height: 520,
+        height: 500,
         backgroundColor: "#070B12",
         borderRadius: 28,
         border: "2px solid rgba(6, 182, 212, 0.4)",
@@ -715,17 +720,17 @@ const Beat3FiberRouting: React.FC<{
       </div>
 
       {/* 3D Routing Track */}
-      <div style={{ width: "100%", height: 360, position: "relative" }}>
-        <svg width="100%" height="100%" viewBox="0 0 900 360" style={{ overflow: "visible" }}>
+      <div style={{ width: "100%", height: 340, position: "relative" }}>
+        <svg width="100%" height="100%" viewBox="0 0 900 340" style={{ overflow: "visible" }}>
           {/* Fiber Path Line */}
           <path
-            d="M 120,60 C 300,60 300,180 500,180 C 700,180 700,300 820,300"
+            d="M 120,60 C 300,60 300,170 500,170 C 700,170 700,280 820,280"
             fill="none"
             stroke="rgba(6, 182, 212, 0.25)"
             strokeWidth="8"
           />
           <path
-            d="M 120,60 C 300,60 300,180 500,180 C 700,180 700,300 820,300"
+            d="M 120,60 C 300,60 300,170 500,170 C 700,170 700,280 820,280"
             fill="none"
             stroke="#06B6D4"
             strokeWidth="4"
@@ -736,18 +741,18 @@ const Beat3FiberRouting: React.FC<{
 
           {/* Routing Node Markers */}
           <circle cx="120" cy="60" r="14" fill="#0F172A" stroke="#06B6D4" strokeWidth="4" />
-          <circle cx="500" cy="180" r="14" fill="#0F172A" stroke="#FFD166" strokeWidth="4" />
-          <circle cx="820" cy="300" r="18" fill="#10B981" stroke="#FFFFFF" strokeWidth="4" />
+          <circle cx="500" cy="170" r="14" fill="#0F172A" stroke="#FFD166" strokeWidth="4" />
+          <circle cx="820" cy="280" r="18" fill="#10B981" stroke="#FFFFFF" strokeWidth="4" />
         </svg>
 
         {/* Node Labels */}
         <div style={{ position: "absolute", top: 40, left: 145, color: "#F8FAFC", fontSize: 14, fontWeight: 800 }}>
           01. Local ISP Gateway
         </div>
-        <div style={{ position: "absolute", top: 160, left: 525, color: "#FFD166", fontSize: 14, fontWeight: 800 }}>
+        <div style={{ position: "absolute", top: 150, left: 525, color: "#FFD166", fontSize: 14, fontWeight: 800 }}>
           02. Tier-1 Backbone (AS15169)
         </div>
-        <div style={{ position: "absolute", top: 280, left: 630, color: "#10B981", fontSize: 16, fontWeight: 900 }}>
+        <div style={{ position: "absolute", top: 260, left: 630, color: "#10B981", fontSize: 16, fontWeight: 900 }}>
           03. Google Edge CDN ✓
         </div>
       </div>
@@ -780,7 +785,7 @@ const Beat4EdgeServer: React.FC<{
         top: 360,
         left: 50,
         right: 50,
-        height: 500,
+        height: 480,
         backgroundColor: "#070B12",
         borderRadius: 28,
         border: "2px solid #10B981",
@@ -884,7 +889,7 @@ const Beat5DomRendering: React.FC<{
         top: 360,
         left: 50,
         right: 50,
-        height: 500,
+        height: 480,
         backgroundColor: "#FFFFFF",
         borderRadius: 28,
         border: "2px solid #CBD5E1",
@@ -915,7 +920,7 @@ const Beat5DomRendering: React.FC<{
           backgroundColor: "#F8FAFC",
           borderRadius: 20,
           border: "1px solid #E2E8F0",
-          height: 280,
+          height: 260,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",

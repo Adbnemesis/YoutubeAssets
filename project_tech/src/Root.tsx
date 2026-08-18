@@ -29,7 +29,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsGoogle"
         component={GoogleExplainsComp}
-        durationInFrames={595} // 19.82s @ 30fps — Reel #2: What Actually Happens When You Type google.com? (Dual-Voice + SFX)
+        durationInFrames={592} // 19.72s @ 30fps — Reel #2: What Actually Happens When You Type google.com? (Fluid Multi-Stage Engine + Synthwave BGM + SFX)
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}
