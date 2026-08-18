@@ -29,10 +29,10 @@ export const nemiTheme = {
   },
 };
 
-// ═══════════════════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════
 // NEMI EXPLAINS REEL #2 — WHAT ACTUALLY HAPPENS WHEN YOU TYPE GOOGLE.COM?
-// CONTINUOUS FLUID MULTI-STAGE ENGINE + SYNTHWAVE BGM + SFX LAYER (~19.72s @ 30fps)
-// ═══════════════════════════════════════════════════════════════════
+// HIGH-VISIBILITY TYPOGRAPHY & LARGER ASSET SCALING (~19.72s @ 30fps)
+// ═══════════════════════════════════════════════════════════════
 
 const getEvent = (id: string) => {
   const ev = cuesData.timeline_events.find((x) => x.id === id);
@@ -131,58 +131,41 @@ export const GoogleExplainsComp: React.FC = () => {
       {/* ══════════════════════════════════════════════════════════ */}
       {/* RICH SYNCHRONIZED SOUND EFFECTS LAYER */}
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* 1. Address Bar Keystroke Typing (Frame 10) */}
       <Sequence from={10} durationInFrames={30}>
         <Audio src={staticFile("reels/google_02/sfx/typing.mp3")} volume={0.4} />
       </Sequence>
-
-      {/* 2. Enter Press Click (Frame 36) */}
       <Sequence from={fEnterPress} durationInFrames={30}>
         <Audio src={staticFile("reels/google_02/sfx/click.mp3")} volume={0.8} />
       </Sequence>
-
-      {/* 3. Packet Launch Ignition (Frame 78) */}
       <Sequence from={fPacketLaunch} durationInFrames={30}>
         <Audio src={staticFile("reels/google_02/sfx/whoosh.mp3")} volume={0.5} />
       </Sequence>
-
-      {/* 4. DNS IP Resolution Ping (Frame 164) */}
       <Sequence from={fIpResolved} durationInFrames={35}>
         <Audio src={staticFile("reels/google_02/sfx/ping.mp3")} volume={0.7} />
       </Sequence>
-
-      {/* 5. Nemi "Where is that?" Pop (Frame 189) */}
       <Sequence from={evWhere.start_frame} durationInFrames={35}>
         <Audio src={staticFile("reels/google_02/sfx/pop.mp3")} volume={0.65} />
       </Sequence>
-
-      {/* 6. Fiber Optic Packet Transit Whoosh (Frame 241) */}
       <Sequence from={fNetworkGrid} durationInFrames={35}>
         <Audio src={staticFile("reels/google_02/sfx/whoosh.mp3")} volume={0.55} />
       </Sequence>
-
-      {/* 7. Server Response Ready Notification (Frame 353) */}
       <Sequence from={fServerProcess} durationInFrames={40}>
         <Audio src={staticFile("reels/google_02/sfx/notification.mp3")} volume={0.6} />
       </Sequence>
-
-      {/* 8. Google UI Pop (Frame 469) */}
       <Sequence from={fGoogleUi} durationInFrames={35}>
         <Audio src={staticFile("reels/google_02/sfx/pop.mp3")} volume={0.7} />
       </Sequence>
-
-      {/* 9. Final 64ms Latency Chime (Frame 521) */}
       <Sequence from={fPayoffTakeaway} durationInFrames={60}>
         <Audio src={staticFile("reels/google_02/sfx/chime.mp3")} volume={0.85} />
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* PERSISTENT HEADER HUD */}
+      {/* PERSISTENT HEADER HUD (Larger, more visible) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
-          top: 70,
+          top: 65,
           left: 60,
           right: 60,
           display: "flex",
@@ -194,16 +177,16 @@ export const GoogleExplainsComp: React.FC = () => {
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <div
             style={{
-              width: 14,
-              height: 14,
+              width: 16,
+              height: 16,
               borderRadius: "50%",
               backgroundColor: darkFade > 0.5 ? "#38BDF8" : "#2563EB",
-              boxShadow: darkFade > 0.5 ? "0 0 16px #38BDF8" : "none",
+              boxShadow: darkFade > 0.5 ? "0 0 18px #38BDF8" : "none",
             }}
           />
           <span
             style={{
-              fontSize: 18,
+              fontSize: 22,
               fontWeight: 900,
               letterSpacing: "1.5px",
               color: darkFade > 0.5 ? "#94A3B8" : nemiTheme.colors.textMuted,
@@ -216,14 +199,15 @@ export const GoogleExplainsComp: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: darkFade > 0.5 ? "rgba(15, 23, 42, 0.8)" : "#FFFFFF",
-            padding: "8px 18px",
-            borderRadius: 20,
-            border: darkFade > 0.5 ? "1px solid #1E293B" : `1px solid ${nemiTheme.colors.borderSubtle}`,
-            fontSize: 14,
-            fontWeight: 800,
+            backgroundColor: darkFade > 0.5 ? "rgba(15, 23, 42, 0.85)" : "#FFFFFF",
+            padding: "10px 22px",
+            borderRadius: 22,
+            border: darkFade > 0.5 ? "1.5px solid #1E293B" : `1.5px solid ${nemiTheme.colors.borderSubtle}`,
+            fontSize: 17,
+            fontWeight: 900,
             color: darkFade > 0.5 ? "#38BDF8" : nemiTheme.colors.brandCyan,
             fontFamily: nemiTheme.typography.fontFamily.mono,
+            boxShadow: "0 6px 18px rgba(0,0,0,0.06)",
           }}
         >
           {frame < evDns.start_frame && "STAGE 1/5: CLIENT"}
@@ -236,7 +220,7 @@ export const GoogleExplainsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* TOPIC BANNER */}
+      {/* TOPIC BANNER (Punchy & Bold) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -249,7 +233,7 @@ export const GoogleExplainsComp: React.FC = () => {
       >
         <h1
           style={{
-            fontSize: 44,
+            fontSize: 50,
             fontWeight: 900,
             color: darkFade > 0.5 ? "#F8FAFC" : nemiTheme.colors.textHeading,
             letterSpacing: "-1.5px",
@@ -333,8 +317,8 @@ export const GoogleExplainsComp: React.FC = () => {
         </StageWrapper>
 
         {/* ══════════════════════════════════════════════════════ */}
-        {/* MID-SCREEN RICH VISUAL ASSETS & GRAPHICAL PROPS */}
-        {/* (Fills y: 860px to 1420px with rich illustrations)  */}
+        {/* MID-SCREEN CLEAN FLOATING ICONS & SUBTLE STAGE TAGS */}
+        {/* (Minimal, transparent, larger icons & text)         */}
         {/* ══════════════════════════════════════════════════════ */}
         <MidScreenVisualAssets
           frame={frame}
@@ -348,12 +332,12 @@ export const GoogleExplainsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* HERO MASCOT REACTOR STAGE (Smooth, zero teleportation) */}
+      {/* HERO MASCOT REACTOR STAGE (Enlarged & Prominent) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
-          bottom: 40,
+          bottom: 30,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
@@ -369,10 +353,10 @@ export const GoogleExplainsComp: React.FC = () => {
               backgroundColor: nemiTheme.colors.brandYellow,
               color: "#18181B",
               fontWeight: 900,
-              fontSize: 22,
-              padding: "12px 28px",
-              borderRadius: 22,
-              boxShadow: "0 12px 30px rgba(0, 0, 0, 0.25)",
+              fontSize: 26,
+              padding: "14px 34px",
+              borderRadius: 24,
+              boxShadow: "0 14px 35px rgba(0, 0, 0, 0.3)",
               marginBottom: 16,
               transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.06, 1.0])})`,
               whiteSpace: "nowrap",
@@ -384,7 +368,7 @@ export const GoogleExplainsComp: React.FC = () => {
 
         {/* Breathing Mascot */}
         <div style={{ transform: `translateY(${Math.sin(frame * 0.1) * 6}px)` }}>
-          <NemiMascot pose={nemiPose} scale={1.3} />
+          <NemiMascot pose={nemiPose} scale={1.42} />
         </div>
       </div>
     </AbsoluteFill>
@@ -404,7 +388,6 @@ const StageWrapper: React.FC<{
     return null;
   }
 
-  // Smooth entrance: opacity 0 -> 1 over 10 frames, translateY 30px -> 0px
   const enterOpacity = interpolate(frame, [startFrame, startFrame + 10], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -414,7 +397,6 @@ const StageWrapper: React.FC<{
     extrapolateRight: "clamp",
   });
 
-  // Smooth exit: opacity 1 -> 0 over 8 frames, translateY 0px -> -30px
   const exitOpacity = interpolate(frame, [endFrame - 8, endFrame], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -455,13 +437,11 @@ const Beat1AddressBar: React.FC<{
   const isEntered = frame >= fEnterPress;
   const isLaunched = frame >= fPacketLaunch;
 
-  // Keystrokes typing simulation
   const fullText = "https://google.com";
   const typedLen = Math.min(Math.floor((frame / fEnterPress) * fullText.length), fullText.length);
   const currentText = fullText.slice(0, Math.max(typedLen, 0));
 
-  // Request packet launch animation
-  const packetY = interpolate(frame, [fPacketLaunch, fPacketLaunch + 25], [460, 1100], {
+  const packetY = interpolate(frame, [fPacketLaunch, fPacketLaunch + 25], [490, 1100], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -471,12 +451,12 @@ const Beat1AddressBar: React.FC<{
       style={{
         position: "absolute",
         top: 360,
-        left: 60,
-        right: 60,
-        height: 460,
+        left: 55,
+        right: 55,
+        height: 490,
         backgroundColor: "#FFFFFF",
         borderRadius: 28,
-        border: `2px solid ${isEntered ? "#38BDF8" : nemiTheme.colors.borderSubtle}`,
+        border: `2.5px solid ${isEntered ? "#38BDF8" : nemiTheme.colors.borderSubtle}`,
         boxShadow: isEntered ? "0 24px 60px rgba(56, 189, 248, 0.25)" : "0 24px 60px rgba(0, 0, 0, 0.08)",
         padding: "32px",
         display: "flex",
@@ -487,11 +467,11 @@ const Beat1AddressBar: React.FC<{
       }}
     >
       {/* Browser Tab Header */}
-      <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-        <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#EF4444" }} />
-        <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#F59E0B" }} />
-        <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#10B981" }} />
-        <div style={{ marginLeft: 16, backgroundColor: "#F1F5F9", padding: "6px 18px", borderRadius: 8, fontSize: 13, color: "#64748B", fontWeight: 700 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#EF4444" }} />
+        <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#F59E0B" }} />
+        <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#10B981" }} />
+        <div style={{ marginLeft: 16, backgroundColor: "#F1F5F9", padding: "8px 20px", borderRadius: 10, fontSize: 16, color: "#64748B", fontWeight: 800 }}>
           New Tab — Chrome V128
         </div>
       </div>
@@ -500,17 +480,17 @@ const Beat1AddressBar: React.FC<{
       <div
         style={{
           backgroundColor: "#F8FAFC",
-          borderRadius: 18,
-          border: `2px solid ${isEntered ? "#0284C7" : "#E2E8F0"}`,
-          padding: "18px 24px",
+          borderRadius: 20,
+          border: `2.5px solid ${isEntered ? "#0284C7" : "#E2E8F0"}`,
+          padding: "20px 26px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 22 }}>🔒</span>
-          <span style={{ fontSize: 26, fontWeight: 800, color: "#0F172A", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <span style={{ fontSize: 28 }}>🔒</span>
+          <span style={{ fontSize: 32, fontWeight: 900, color: "#0F172A", fontFamily: nemiTheme.typography.fontFamily.mono }}>
             {currentText}
             {frame < fEnterPress && (frame % 15 < 8) && (
               <span style={{ color: "#0284C7" }}>|</span>
@@ -524,9 +504,9 @@ const Beat1AddressBar: React.FC<{
             backgroundColor: isEntered ? "#0284C7" : "#E2E8F0",
             color: isEntered ? "#FFFFFF" : "#64748B",
             fontWeight: 900,
-            fontSize: 16,
-            padding: "8px 16px",
-            borderRadius: 10,
+            fontSize: 20,
+            padding: "10px 20px",
+            borderRadius: 12,
             fontFamily: nemiTheme.typography.fontFamily.mono,
             transform: isEntered ? "scale(1.1)" : "scale(1.0)",
             boxShadow: isEntered ? "0 0 20px rgba(2, 132, 199, 0.4)" : "none",
@@ -537,16 +517,16 @@ const Beat1AddressBar: React.FC<{
       </div>
 
       {/* Client Telemetry Badges */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-        <div style={{ backgroundColor: "#F1F5F9", padding: "16px", borderRadius: 16 }}>
-          <div style={{ fontSize: 12, color: "#64748B" }}>Protocol</div>
-          <div style={{ fontSize: 18, fontWeight: 900, color: "#0284C7", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+        <div style={{ backgroundColor: "#F1F5F9", padding: "18px", borderRadius: 18 }}>
+          <div style={{ fontSize: 14, color: "#64748B", fontWeight: 700 }}>Protocol</div>
+          <div style={{ fontSize: 22, fontWeight: 900, color: "#0284C7", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
             HTTP/3 (QUIC / UDP)
           </div>
         </div>
-        <div style={{ backgroundColor: "#F1F5F9", padding: "16px", borderRadius: 16 }}>
-          <div style={{ fontSize: 12, color: "#64748B" }}>Client Socket</div>
-          <div style={{ fontSize: 18, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <div style={{ backgroundColor: "#F1F5F9", padding: "18px", borderRadius: 18 }}>
+          <div style={{ fontSize: 14, color: "#64748B", fontWeight: 700 }}>Client Socket</div>
+          <div style={{ fontSize: 22, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
             192.168.1.105:54321
           </div>
         </div>
@@ -562,10 +542,10 @@ const Beat1AddressBar: React.FC<{
             transform: "translateX(-50%)",
             backgroundColor: "#06B6D4",
             color: "#FFFFFF",
-            padding: "10px 24px",
-            borderRadius: 20,
+            padding: "12px 28px",
+            borderRadius: 24,
             fontWeight: 900,
-            fontSize: 16,
+            fontSize: 20,
             fontFamily: nemiTheme.typography.fontFamily.mono,
             boxShadow: "0 0 30px #06B6D4",
             zIndex: 100,
@@ -598,12 +578,12 @@ const Beat2DnsResolution: React.FC<{
         top: 360,
         left: 50,
         right: 50,
-        height: 480,
+        height: 500,
         backgroundColor: "#070B12",
         borderRadius: 28,
-        border: "2px solid rgba(56, 189, 248, 0.4)",
+        border: "2.5px solid rgba(56, 189, 248, 0.5)",
         boxShadow: "0 28px 70px rgba(0, 0, 0, 0.6)",
-        padding: "26px 30px",
+        padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -612,47 +592,47 @@ const Beat2DnsResolution: React.FC<{
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#38BDF8", boxShadow: "0 0 12px #38BDF8" }} />
-          <span style={{ fontSize: 17, fontWeight: 900, color: "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#38BDF8", boxShadow: "0 0 14px #38BDF8" }} />
+          <span style={{ fontSize: 22, fontWeight: 900, color: "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
             📡 Recursive DNS Resolution
           </span>
         </div>
-        <span style={{ fontSize: 13, color: isResolved ? "#10B981" : "#F59E0B", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 16, color: isResolved ? "#10B981" : "#F59E0B", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           {isResolved ? "RECORD FOUND (A)" : "RESOLVING HIERARCHY..."}
         </span>
       </div>
 
       {/* DNS Hierarchy Tree Nodes */}
       <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "12px 18px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "14px 20px", borderRadius: 16, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={{ fontSize: 11, color: "#64748B" }}>01. Root DNS Server (.)</div>
-            <div style={{ fontSize: 15, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            <div style={{ fontSize: 13, color: "#64748B", fontWeight: 700 }}>01. Root DNS Server (.)</div>
+            <div style={{ fontSize: 18, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
               Delegates to .com TLD Servers
             </div>
           </div>
-          <span style={{ color: "#10B981" }}>✓</span>
+          <span style={{ color: "#10B981", fontSize: 22 }}>✓</span>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "12px 18px", borderRadius: 14, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "14px 20px", borderRadius: 16, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={{ fontSize: 11, color: "#64748B" }}>02. TLD Name Server (.com)</div>
-            <div style={{ fontSize: 15, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            <div style={{ fontSize: 13, color: "#64748B", fontWeight: 700 }}>02. TLD Name Server (.com)</div>
+            <div style={{ fontSize: 18, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
               Delegates to ns1.google.com
             </div>
           </div>
-          <span style={{ color: "#10B981" }}>✓</span>
+          <span style={{ color: "#10B981", fontSize: 22 }}>✓</span>
         </div>
 
         {/* Resolved IP Box */}
         <div
           style={{
             backgroundColor: isResolved ? "rgba(16, 185, 129, 0.15)" : "#0F172A",
-            padding: "16px 20px",
-            borderRadius: 16,
-            border: isResolved ? "2px solid #10B981" : "1px solid #1E293B",
-            boxShadow: isResolved ? "0 0 30px rgba(16, 185, 129, 0.3)" : "none",
+            padding: "18px 24px",
+            borderRadius: 18,
+            border: isResolved ? "2.5px solid #10B981" : "1px solid #1E293B",
+            boxShadow: isResolved ? "0 0 35px rgba(16, 185, 129, 0.3)" : "none",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -660,10 +640,10 @@ const Beat2DnsResolution: React.FC<{
           }}
         >
           <div>
-            <div style={{ fontSize: 12, color: isResolved ? "#10B981" : "#64748B", fontWeight: 800 }}>
+            <div style={{ fontSize: 14, color: isResolved ? "#10B981" : "#64748B", fontWeight: 800 }}>
               03. Authoritative DNS (google.com)
             </div>
-            <div style={{ fontSize: 24, fontWeight: 900, color: isResolved ? "#F8FAFC" : "#64748B", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
+            <div style={{ fontSize: 30, fontWeight: 900, color: isResolved ? "#F8FAFC" : "#64748B", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
               {isResolved ? "142.250.190.46" : "Awaiting response..."}
             </div>
           </div>
@@ -672,9 +652,9 @@ const Beat2DnsResolution: React.FC<{
               backgroundColor: isResolved ? "#10B981" : "#334155",
               color: "#FFFFFF",
               fontWeight: 900,
-              fontSize: 14,
-              padding: "6px 14px",
-              borderRadius: 8,
+              fontSize: 17,
+              padding: "8px 18px",
+              borderRadius: 10,
               fontFamily: nemiTheme.typography.fontFamily.mono,
             }}
           >
@@ -683,7 +663,7 @@ const Beat2DnsResolution: React.FC<{
         </div>
       </div>
 
-      <div style={{ fontSize: 13, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ fontSize: 16, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
         Domain Name mapped to IPv4 Socket in <span style={{ color: "#38BDF8", fontWeight: 900 }}>14ms</span>
       </div>
     </div>
@@ -710,12 +690,12 @@ const Beat3FiberRouting: React.FC<{
         top: 340,
         left: 40,
         right: 40,
-        height: 500,
+        height: 520,
         backgroundColor: "#070B12",
         borderRadius: 28,
-        border: "2px solid rgba(6, 182, 212, 0.4)",
+        border: "2.5px solid rgba(6, 182, 212, 0.5)",
         boxShadow: "0 28px 70px rgba(0, 0, 0, 0.6)",
-        padding: "24px 28px",
+        padding: "26px 30px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -725,55 +705,53 @@ const Beat3FiberRouting: React.FC<{
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ fontSize: 16, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+        <span style={{ fontSize: 20, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
           🌊 Undersea Trans-Oceanic Fiber Transit (BGP)
         </span>
-        <span style={{ fontSize: 13, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          SPEED: 200,000 km/s (LIGHT IN GLASS)
+        <span style={{ fontSize: 16, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          SPEED: 200,000 km/s (LIGHT)
         </span>
       </div>
 
       {/* 3D Routing Track */}
-      <div style={{ width: "100%", height: 340, position: "relative" }}>
-        <svg width="100%" height="100%" viewBox="0 0 900 340" style={{ overflow: "visible" }}>
-          {/* Fiber Path Line */}
+      <div style={{ width: "100%", height: 350, position: "relative" }}>
+        <svg width="100%" height="100%" viewBox="0 0 900 350" style={{ overflow: "visible" }}>
           <path
-            d="M 120,60 C 300,60 300,170 500,170 C 700,170 700,280 820,280"
+            d="M 120,60 C 300,60 300,175 500,175 C 700,175 700,290 820,290"
             fill="none"
             stroke="rgba(6, 182, 212, 0.25)"
-            strokeWidth="8"
+            strokeWidth="12"
           />
           <path
-            d="M 120,60 C 300,60 300,170 500,170 C 700,170 700,280 820,280"
+            d="M 120,60 C 300,60 300,175 500,175 C 700,175 700,290 820,290"
             fill="none"
             stroke="#06B6D4"
-            strokeWidth="4"
+            strokeWidth="6"
             strokeDasharray="1200"
             strokeDashoffset={1200 * (1 - progress)}
-            style={{ filter: "drop-shadow(0 0 10px #06B6D4)" }}
+            style={{ filter: "drop-shadow(0 0 14px #06B6D4)" }}
           />
 
-          {/* Routing Node Markers */}
-          <circle cx="120" cy="60" r="14" fill="#0F172A" stroke="#06B6D4" strokeWidth="4" />
-          <circle cx="500" cy="170" r="14" fill="#0F172A" stroke="#FFD166" strokeWidth="4" />
-          <circle cx="820" cy="280" r="18" fill="#10B981" stroke="#FFFFFF" strokeWidth="4" />
+          <circle cx="120" cy="60" r="18" fill="#0F172A" stroke="#06B6D4" strokeWidth="5" />
+          <circle cx="500" cy="175" r="18" fill="#0F172A" stroke="#FFD166" strokeWidth="5" />
+          <circle cx="820" cy="290" r="24" fill="#10B981" stroke="#FFFFFF" strokeWidth="5" />
         </svg>
 
         {/* Node Labels */}
-        <div style={{ position: "absolute", top: 40, left: 145, color: "#F8FAFC", fontSize: 14, fontWeight: 800 }}>
+        <div style={{ position: "absolute", top: 40, left: 155, color: "#F8FAFC", fontSize: 18, fontWeight: 800 }}>
           01. Local ISP Gateway
         </div>
-        <div style={{ position: "absolute", top: 150, left: 525, color: "#FFD166", fontSize: 14, fontWeight: 800 }}>
+        <div style={{ position: "absolute", top: 155, left: 535, color: "#FFD166", fontSize: 18, fontWeight: 800 }}>
           02. Tier-1 Backbone (AS15169)
         </div>
-        <div style={{ position: "absolute", top: 260, left: 630, color: "#10B981", fontSize: 16, fontWeight: 900 }}>
+        <div style={{ position: "absolute", top: 270, left: 620, color: "#10B981", fontSize: 20, fontWeight: 900 }}>
           03. Google Edge CDN ✓
         </div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#64748B" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", fontSize: 15, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#94A3B8" }}>
         <span>Packet: IP 192.168.1.105 → 142.250.190.46</span>
-        <span style={{ color: "#06B6D4" }}>TTL: 56 Hops | Transit Latency: 22ms</span>
+        <span style={{ color: "#06B6D4", fontWeight: 800 }}>TTL: 56 Hops | Transit Latency: 22ms</span>
       </div>
     </div>
   );
@@ -799,12 +777,12 @@ const Beat4EdgeServer: React.FC<{
         top: 360,
         left: 50,
         right: 50,
-        height: 480,
+        height: 500,
         backgroundColor: "#070B12",
         borderRadius: 28,
-        border: "2px solid #10B981",
+        border: "2.5px solid #10B981",
         boxShadow: "0 28px 70px rgba(16, 185, 129, 0.25)",
-        padding: "26px 30px",
+        padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -813,29 +791,29 @@ const Beat4EdgeServer: React.FC<{
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{ width: 12, height: 12, borderRadius: "50%", backgroundColor: "#10B981", boxShadow: "0 0 12px #10B981" }} />
-          <span style={{ fontSize: 17, fontWeight: 900, color: "#10B981", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#10B981", boxShadow: "0 0 14px #10B981" }} />
+          <span style={{ fontSize: 22, fontWeight: 900, color: "#10B981", letterSpacing: "1.5px", textTransform: "uppercase" }}>
             🖥️ Google Edge Data Center (Server Cluster)
           </span>
         </div>
-        <span style={{ fontSize: 13, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 16, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           STATUS: 200 OK
         </span>
       </div>
 
       {/* Server Rack Status */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 16, border: "1px solid #1E293B" }}>
-          <div style={{ fontSize: 12, color: "#64748B" }}>Cryptographic Handshake</div>
-          <div style={{ fontSize: 19, fontWeight: 900, color: "#38BDF8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 18, border: "1px solid #1E293B" }}>
+          <div style={{ fontSize: 14, color: "#64748B", fontWeight: 700 }}>Cryptographic Handshake</div>
+          <div style={{ fontSize: 23, fontWeight: 900, color: "#38BDF8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
             TLS 1.3 (1-RTT Session)
           </div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 16, border: "1px solid #1E293B" }}>
-          <div style={{ fontSize: 12, color: "#64748B" }}>Generated Payload</div>
-          <div style={{ fontSize: 19, fontWeight: 900, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 18, border: "1px solid #1E293B" }}>
+          <div style={{ fontSize: 14, color: "#64748B", fontWeight: 700 }}>Generated Payload</div>
+          <div style={{ fontSize: 23, fontWeight: 900, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
             42.8 KB (gzip HTML/CSS)
           </div>
         </div>
@@ -845,17 +823,17 @@ const Beat4EdgeServer: React.FC<{
       <div
         style={{
           backgroundColor: "#03070D",
-          borderRadius: 16,
-          padding: "20px",
-          border: "1px solid rgba(255, 255, 255, 0.1)",
+          borderRadius: 18,
+          padding: "22px",
+          border: "1px solid rgba(255, 255, 255, 0.12)",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
         <div>
-          <div style={{ fontSize: 12, color: "#64748B" }}>HTTP/2 Stream #1</div>
-          <div style={{ fontSize: 20, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ fontSize: 14, color: "#64748B", fontWeight: 700 }}>HTTP/2 Stream #1</div>
+          <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Content-Type: text/html; charset=UTF-8
           </div>
         </div>
@@ -864,19 +842,19 @@ const Beat4EdgeServer: React.FC<{
           style={{
             backgroundColor: isShootingBack ? "#10B981" : "#0284C7",
             color: "#FFFFFF",
-            padding: "8px 18px",
-            borderRadius: 12,
+            padding: "10px 20px",
+            borderRadius: 14,
             fontWeight: 900,
-            fontSize: 14,
+            fontSize: 17,
             fontFamily: nemiTheme.typography.fontFamily.mono,
-            boxShadow: isShootingBack ? "0 0 20px #10B981" : "none",
+            boxShadow: isShootingBack ? "0 0 25px #10B981" : "none",
           }}
         >
           {isShootingBack ? "TRANSMITTING ⚡" : "GENERATING..."}
         </div>
       </div>
 
-      <div style={{ fontSize: 13, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ fontSize: 16, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
         Google Search Engine generated HTML payload in <span style={{ color: "#10B981", fontWeight: 900 }}>18ms</span>
       </div>
     </div>
@@ -903,10 +881,10 @@ const Beat5DomRendering: React.FC<{
         top: 360,
         left: 50,
         right: 50,
-        height: 480,
+        height: 500,
         backgroundColor: "#FFFFFF",
         borderRadius: 28,
-        border: "2px solid #CBD5E1",
+        border: "2.5px solid #CBD5E1",
         boxShadow: "0 28px 70px rgba(0, 0, 0, 0.1)",
         padding: "32px",
         display: "flex",
@@ -917,13 +895,13 @@ const Beat5DomRendering: React.FC<{
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ fontSize: 22 }}>⚡</span>
-          <span style={{ fontSize: 17, fontWeight: 900, color: "#0F172A", letterSpacing: "1px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <span style={{ fontSize: 26 }}>⚡</span>
+          <span style={{ fontSize: 22, fontWeight: 900, color: "#0F172A", letterSpacing: "1px" }}>
             Critical Rendering Path (DOM + CSSOM)
           </span>
         </div>
-        <span style={{ fontSize: 13, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 16, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           PAINT COMPLETE
         </span>
       </div>
@@ -932,20 +910,20 @@ const Beat5DomRendering: React.FC<{
       <div
         style={{
           backgroundColor: "#F8FAFC",
-          borderRadius: 20,
+          borderRadius: 22,
           border: "1px solid #E2E8F0",
-          height: 260,
+          height: 280,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: 20,
-          padding: "20px",
+          gap: 22,
+          padding: "24px",
           boxShadow: isGoogleUiVisible ? "0 10px 30px rgba(0, 0, 0, 0.05)" : "none",
         }}
       >
         {/* Google Colorful Brand Logo */}
-        <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: "-2px" }}>
+        <div style={{ fontSize: 64, fontWeight: 900, letterSpacing: "-2px" }}>
           <span style={{ color: "#4285F4" }}>G</span>
           <span style={{ color: "#EA4335" }}>o</span>
           <span style={{ color: "#FBBC05" }}>o</span>
@@ -957,23 +935,23 @@ const Beat5DomRendering: React.FC<{
         {/* Google Search Bar */}
         <div
           style={{
-            width: "80%",
+            width: "85%",
             backgroundColor: "#FFFFFF",
-            borderRadius: 24,
-            border: "1px solid #CBD5E1",
-            padding: "12px 20px",
+            borderRadius: 28,
+            border: "1.5px solid #CBD5E1",
+            padding: "14px 24px",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.05)",
+            boxShadow: "0 6px 16px rgba(0, 0, 0, 0.06)",
           }}
         >
-          <span style={{ fontSize: 16, color: "#94A3B8" }}>Search Google or type a URL</span>
-          <span style={{ fontSize: 18 }}>🔍</span>
+          <span style={{ fontSize: 20, color: "#94A3B8" }}>Search Google or type a URL</span>
+          <span style={{ fontSize: 24 }}>🔍</span>
         </div>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "space-between", fontSize: 13, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#64748B" }}>
+      <div style={{ display: "flex", justifyContent: "space-between", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#64748B" }}>
         <span>HTML Tokens → DOM Tree</span>
         <span style={{ color: "#10B981", fontWeight: 800 }}>GPU Raster Paint: 8ms</span>
       </div>
@@ -1001,9 +979,9 @@ const Beat6TakeawayConsole: React.FC<{
         right: 50,
         backgroundColor: "#18181B",
         borderRadius: 28,
-        border: "2px solid #27272A",
+        border: "2.5px solid #27272A",
         boxShadow: "0 28px 70px rgba(0, 0, 0, 0.5)",
-        padding: "28px 32px",
+        padding: "30px 34px",
         display: "flex",
         flexDirection: "column",
         gap: 16,
@@ -1012,31 +990,31 @@ const Beat6TakeawayConsole: React.FC<{
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-        <span style={{ fontSize: 18, fontWeight: 900, color: nemiTheme.colors.brandYellow, letterSpacing: "1.5px" }}>
+        <span style={{ fontSize: 22, fontWeight: 900, color: nemiTheme.colors.brandYellow, letterSpacing: "1.5px" }}>
           ⚡ 3 ARCHITECTURAL PILLARS
         </span>
-        <span style={{ fontSize: 15, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 18, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           TOTAL ROUND-TRIP: 64ms
         </span>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "14px 20px", borderRadius: 14, borderLeft: "4px solid #38BDF8" }}>
-        <div style={{ fontSize: 20, fontWeight: 900, color: "#F8FAFC" }}>01. Recursive DNS Hierarchy</div>
-        <div style={{ fontSize: 15, color: "#94A3B8", marginTop: 2 }}>
+      <div style={{ backgroundColor: "#27272A", padding: "16px 22px", borderRadius: 16, borderLeft: "5px solid #38BDF8" }}>
+        <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC" }}>01. Recursive DNS Hierarchy</div>
+        <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 4 }}>
           Domain resolved to server IP in a single sub-millisecond cached query.
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "14px 20px", borderRadius: 14, borderLeft: "4px solid #06B6D4" }}>
-        <div style={{ fontSize: 20, fontWeight: 900, color: "#F8FAFC" }}>02. Undersea Fiber Optic BGP</div>
-        <div style={{ fontSize: 15, color: "#94A3B8", marginTop: 2 }}>
+      <div style={{ backgroundColor: "#27272A", padding: "16px 22px", borderRadius: 16, borderLeft: "5px solid #06B6D4" }}>
+        <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC" }}>02. Undersea Fiber Optic BGP</div>
+        <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 4 }}>
           Photons travel thousands of kilometers across global backbones at light speed.
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "14px 20px", borderRadius: 14, borderLeft: "4px solid #10B981" }}>
-        <div style={{ fontSize: 20, fontWeight: 900, color: "#F8FAFC" }}>03. GPU-Accelerated DOM Paint</div>
-        <div style={{ fontSize: 15, color: "#94A3B8", marginTop: 2 }}>
+      <div style={{ backgroundColor: "#27272A", padding: "16px 22px", borderRadius: 16, borderLeft: "5px solid #10B981" }}>
+        <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC" }}>03. GPU-Accelerated DOM Paint</div>
+        <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 4 }}>
           Browser parses HTML tokens and paints the viewport in single-digit milliseconds.
         </div>
       </div>
@@ -1046,7 +1024,7 @@ const Beat6TakeawayConsole: React.FC<{
 
 // ═══════════════════════════════════════════════════════════════
 // MID-SCREEN CLEAN FLOATING ICONS & SUBTLE STAGE TAGS
-// (Minimal, transparent, airy — zero heavy black box)
+// (Enlarged icons & typography for instant mobile readability)
 // ═══════════════════════════════════════════════════════════════
 const MidScreenVisualAssets: React.FC<{
   frame: number;
@@ -1069,43 +1047,43 @@ const MidScreenVisualAssets: React.FC<{
       style={{
         position: "absolute",
         top: 900,
-        left: 60,
-        right: 60,
-        height: 260,
+        left: 50,
+        right: 50,
+        height: 280,
         backgroundColor: "transparent",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        gap: 20,
+        gap: 22,
         zIndex: 35,
       }}
     >
       {/* ─── STAGE 1: CLIENT LAPTOP & WI-FI ─── */}
       {isStage1 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", padding: "12px 20px", borderRadius: 20, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>💻</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#1E293B" }}>Client Device</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>💻</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#1E293B" }}>Client Device</span>
             </div>
 
-            <span style={{ fontSize: 22, color: nemiTheme.colors.brandCyan }}>➔</span>
+            <span style={{ fontSize: 28, color: nemiTheme.colors.brandCyan, fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", padding: "12px 20px", borderRadius: 20, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>📡</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#0284C7" }}>5GHz Wi-Fi</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>📡</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#0284C7" }}>5GHz Wi-Fi</span>
             </div>
 
-            <span style={{ fontSize: 22, color: nemiTheme.colors.brandCyan }}>➔</span>
+            <span style={{ fontSize: 28, color: nemiTheme.colors.brandCyan, fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", padding: "12px 20px", borderRadius: 20, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>⚡</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#10B981" }}>QUIC / UDP</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>⚡</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#10B981" }}>QUIC / UDP</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(2, 132, 199, 0.1)", padding: "8px 22px", borderRadius: 20, border: "1px solid rgba(2, 132, 199, 0.25)", color: "#0284C7", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(2, 132, 199, 0.12)", padding: "10px 26px", borderRadius: 22, border: "1.5px solid rgba(2, 132, 199, 0.3)", color: "#0284C7", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             HTTP/3 0-RTT Connection Initiated
           </div>
         </>
@@ -1114,28 +1092,28 @@ const MidScreenVisualAssets: React.FC<{
       {/* ─── STAGE 2: DNS PHONEBOOK ─── */}
       {isStage2 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(255, 209, 102, 0.3)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>📖</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#FFD166" }}>DNS Phonebook</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(255, 209, 102, 0.4)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>📖</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#FFD166" }}>DNS Phonebook</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#FFD166" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#FFD166", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(56, 189, 248, 0.3)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🔍</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#38BDF8" }}>"google.com"</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(56, 189, 248, 0.4)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🔍</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#38BDF8" }}>"google.com"</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#10B981" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#10B981", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(16, 185, 129, 0.4)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🌐</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>142.250.190.46</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(16, 185, 129, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🌐</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>142.250.190.46</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(56, 189, 248, 0.12)", padding: "8px 22px", borderRadius: 20, border: "1px solid rgba(56, 189, 248, 0.3)", color: "#38BDF8", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(56, 189, 248, 0.15)", padding: "10px 26px", borderRadius: 22, border: "1.5px solid rgba(56, 189, 248, 0.35)", color: "#38BDF8", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Root ➔ TLD ➔ Authoritative (14ms)
           </div>
         </>
@@ -1144,28 +1122,28 @@ const MidScreenVisualAssets: React.FC<{
       {/* ─── STAGE 3: UNDERSEA FIBER TRANSIT ─── */}
       {isStage3 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(6, 182, 212, 0.3)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🏠</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#F8FAFC" }}>ISP Gateway</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🏠</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#F8FAFC" }}>ISP Gateway</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#06B6D4" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#06B6D4", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(6, 182, 212, 0.5)", display: "flex", alignItems: "center", gap: 10, boxShadow: "0 0 25px rgba(6, 182, 212, 0.25)" }}>
-              <span style={{ fontSize: 28 }}>🌊</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#06B6D4" }}>Undersea Fiber Cable</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(6, 182, 212, 0.6)", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 0 25px rgba(6, 182, 212, 0.3)" }}>
+              <span style={{ fontSize: 38 }}>🌊</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#06B6D4" }}>Undersea Fiber Cable</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#10B981" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#10B981", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(16, 185, 129, 0.4)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>📍</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#10B981" }}>Google Edge POP</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(16, 185, 129, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>📍</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#10B981" }}>Google Edge POP</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(6, 182, 212, 0.12)", padding: "8px 22px", borderRadius: 20, border: "1px solid rgba(6, 182, 212, 0.3)", color: "#06B6D4", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(6, 182, 212, 0.15)", padding: "10px 26px", borderRadius: 22, border: "1.5px solid rgba(6, 182, 212, 0.35)", color: "#06B6D4", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             DWDM Optical Laser Pulse (200,000 km/s)
           </div>
         </>
@@ -1174,28 +1152,28 @@ const MidScreenVisualAssets: React.FC<{
       {/* ─── STAGE 4: DATA CENTER SERVER RACK ─── */}
       {isStage4 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(16, 185, 129, 0.4)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🖥️</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#F8FAFC" }}>Borg Cluster</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(16, 185, 129, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🖥️</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#F8FAFC" }}>Borg Cluster</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#38BDF8" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#38BDF8", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(56, 189, 248, 0.4)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🔐</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#38BDF8" }}>TLS 1.3 Decrypt</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(56, 189, 248, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🔐</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#38BDF8" }}>TLS 1.3 Decrypt</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#FFD166" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#FFD166", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.8)", padding: "12px 20px", borderRadius: 20, border: "1px solid rgba(255, 209, 102, 0.4)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>📦</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#FFD166" }}>42.8 KB Payload</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.85)", padding: "14px 24px", borderRadius: 24, border: "1.5px solid rgba(255, 209, 102, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>📦</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#FFD166" }}>42.8 KB Payload</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.12)", padding: "8px 22px", borderRadius: 20, border: "1px solid rgba(16, 185, 129, 0.3)", color: "#10B981", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", padding: "10px 26px", borderRadius: 22, border: "1.5px solid rgba(16, 185, 129, 0.35)", color: "#10B981", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             HTTP/2 200 OK • GFE Server Execution (18ms)
           </div>
         </>
@@ -1204,28 +1182,28 @@ const MidScreenVisualAssets: React.FC<{
       {/* ─── STAGE 5: DOM & UI PAINT ─── */}
       {isStage5 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", padding: "12px 20px", borderRadius: 20, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🌲</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#1E293B" }}>DOM Tree</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🌲</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#1E293B" }}>DOM Tree</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#0284C7" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#0284C7", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", padding: "12px 20px", borderRadius: 20, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🎨</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#0284C7" }}>CSSOM Style</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🎨</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#0284C7" }}>CSSOM Style</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#10B981" }}>➔</span>
+            <span style={{ fontSize: 28, color: "#10B981", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.9)", padding: "12px 20px", borderRadius: 20, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 28 }}>🎮</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#10B981" }}>GPU Paint</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, boxShadow: "0 8px 24px rgba(0,0,0,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🎮</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#10B981" }}>GPU Paint</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.1)", padding: "8px 22px", borderRadius: 20, border: "1px solid rgba(16, 185, 129, 0.25)", color: "#10B981", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.12)", padding: "10px 26px", borderRadius: 22, border: "1.5px solid rgba(16, 185, 129, 0.3)", color: "#10B981", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Blink Rendering Engine • 60 FPS Raster
           </div>
         </>
@@ -1235,20 +1213,20 @@ const MidScreenVisualAssets: React.FC<{
       {isStage6 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
-            <div style={{ backgroundColor: "rgba(239, 68, 68, 0.12)", padding: "12px 22px", borderRadius: 20, border: "1px solid rgba(239, 68, 68, 0.3)", display: "flex", alignItems: "center", gap: 10 }}>
-              <span style={{ fontSize: 26 }}>👁️</span>
-              <span style={{ fontSize: 16, fontWeight: 800, color: "#EF4444" }}>Human Blink: 300ms</span>
+            <div style={{ backgroundColor: "rgba(239, 68, 68, 0.15)", padding: "14px 26px", borderRadius: 24, border: "1.5px solid rgba(239, 68, 68, 0.4)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 34 }}>👁️</span>
+              <span style={{ fontSize: 20, fontWeight: 900, color: "#EF4444" }}>Human Blink: 300ms</span>
             </div>
 
-            <span style={{ fontSize: 22, color: "#FFD166", fontWeight: 900 }}>VS</span>
+            <span style={{ fontSize: 26, color: "#FFD166", fontWeight: 900 }}>VS</span>
 
-            <div style={{ backgroundColor: "rgba(16, 185, 129, 0.15)", padding: "12px 24px", borderRadius: 20, border: "2px solid #10B981", display: "flex", alignItems: "center", gap: 10, boxShadow: "0 0 25px rgba(16, 185, 129, 0.3)" }}>
-              <span style={{ fontSize: 28 }}>⚡</span>
-              <span style={{ fontSize: 18, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>Round-Trip: 64ms</span>
+            <div style={{ backgroundColor: "rgba(16, 185, 129, 0.18)", padding: "14px 28px", borderRadius: 24, border: "2.5px solid #10B981", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 0 30px rgba(16, 185, 129, 0.35)" }}>
+              <span style={{ fontSize: 34 }}>⚡</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>Round-Trip: 64ms</span>
             </div>
           </div>
 
-          <div style={{ color: "#FFD166", fontSize: 15, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ color: "#FFD166", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             5x Faster than Human Perception! 🚀
           </div>
         </>
