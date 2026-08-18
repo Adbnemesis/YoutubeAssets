@@ -525,3 +525,92 @@ export const tankTitansProps = {
     15.117, 15.683, 16.250, 16.833, 17.383, 17.967, 18.533, 19.100, 19.683
   ]
 };
+
+export const shadowRealmProps = {
+  titleText: "THE SHADOW REALM",
+  titleColor: "#a855f7",
+  titleAccentColor: "#3b82f6",
+  audioSrc: staticFile("audio/extracted_audio.wav"),
+  introForms: [
+    {
+      iconSrc: "expressions/mortis/special.png",
+      auraColor: "#8b5cf6",
+      startTime: 0,
+      endTime: 3.60,
+      panels: [
+        { quadrant: 1, startOffsetSeconds: 0.1, color: "#c084fc", imageSrc: "images/mortis/mortis_panel_1.png" },
+        { quadrant: 2, startOffsetSeconds: 1.45, color: "#60a5fa", imageSrc: "images/crow/crow_panel_1.png" },
+        { quadrant: 3, startOffsetSeconds: 1.85, color: "#4ade80", imageSrc: "images/leon/leon_panel_1.png" },
+        { quadrant: 4, startOffsetSeconds: 2.22, color: "#a855f7", imageSrc: "images/mortis/mortis_panel_2.png" },
+      ]
+    },
+    {
+      iconSrc: "expressions/mortis/mortis_happy_pin.png",
+      auraColor: "#8b5cf6",
+      startTime: 3.60,
+      endTime: 5.95,
+      sfxSrc: "brawler_voices/mortis/super.ogg",
+      panels: [
+        { quadrant: 4, startOffsetSeconds: 0.1, color: "#581c87", imageSrc: "images/mortis/mortis_panel_3.png" },
+        { quadrant: 1, startOffsetSeconds: 0.8, color: "#7e22ce", imageSrc: "images/mortis/mortis_panel_4.png" },
+        { quadrant: 3, startOffsetSeconds: 1.45, color: "#9333ea", imageSrc: "images/mortis/mortis_panel_5.png" },
+        { quadrant: 2, startOffsetSeconds: 1.85, color: "#a855f7", imageSrc: "images/mortis/mortis_panel_6.png" },
+      ]
+    },
+    {
+      iconSrc: "expressions/crow/special.png",
+      auraColor: "#3b82f6",
+      startTime: 5.95,
+      endTime: 8.33,
+      sfxSrc: "brawler_voices/crow/super.ogg",
+      panels: [
+        { quadrant: 2, startOffsetSeconds: 0.05, color: "#1e3a8a", imageSrc: "images/crow/crow_panel_3.png" },
+        { quadrant: 3, startOffsetSeconds: 0.85, color: "#1d4ed8", imageSrc: "images/crow/crow_panel_4.png" },
+        { quadrant: 1, startOffsetSeconds: 1.45, color: "#2563eb", imageSrc: "images/crow/crow_panel_5.png" },
+        { quadrant: 4, startOffsetSeconds: 1.85, color: "#3b82f6", imageSrc: "images/crow/crow_panel_6.png" },
+      ]
+    },
+    {
+      iconSrc: "expressions/leon/happy.png",
+      auraColor: "#22c55e",
+      startTime: 8.33,
+      endTime: 11.083,
+      sfxSrc: "brawler_voices/leon/leon_ulti_vo_01.ogg",
+      panels: [
+        { quadrant: 1, startOffsetSeconds: 0.07, color: "#14532d", imageSrc: "images/leon/leon_panel_3.png" },
+        { quadrant: 4, startOffsetSeconds: 0.87, color: "#15803d", imageSrc: "images/leon/leon_panel_4.png" },
+        { quadrant: 2, startOffsetSeconds: 1.45, color: "#16a34a", imageSrc: "images/leon/leon_panel_5.png" },
+        { quadrant: 3, startOffsetSeconds: 1.85, color: "#22c55e", imageSrc: "images/leon/leon_panel_6.png" },
+      ]
+    },
+  ],
+  dropClips: [
+    // MORTIS
+    { src: "brawler_gifs/mortis_win.gif", isSilhouette: true, silhouetteColor: "#8b5cf6" },
+    { src: "brawler_gifs/mortis_win.gif", isSilhouette: false },
+    { src: "images/mortis/mortis_panel_8.png", isSilhouette: false },
+    { src: "images/mortis/mortis_panel_9.png", isSilhouette: false },
+    { src: "images/mortis/mortis_panel_10.png", isSilhouette: false },
+
+    // CROW
+    { src: "brawler_gifs/crow_win.gif", isSilhouette: true, silhouetteColor: "#3b82f6" },
+    { src: "brawler_gifs/crow_win.gif", isSilhouette: false },
+    { src: "images/crow/crow_panel_8.png", isSilhouette: false },
+    { src: "images/crow/crow_panel_9.png", isSilhouette: false },
+    { src: "images/crow/crow_panel_10.png", isSilhouette: false },
+
+    // LEON
+    { src: "brawler_gifs/leon_win.gif", isSilhouette: true, silhouetteColor: "#22c55e" },
+    { src: "brawler_gifs/leon_win.gif", isSilhouette: false },
+    { src: "images/leon/leon_panel_8.png", isSilhouette: false },
+    { src: "images/leon/leon_panel_9.png", isSilhouette: false },
+    { src: "images/leon/leon_panel_10.png", isSilhouette: false },
+
+    // Final Impact
+    { src: "images/crow/crow_panel_13.png", isSilhouette: false },
+  ],
+  dropCuts: [
+    10.700, 11.083, 11.750, 12.333, 12.883, 13.483, 13.967, 14.600,
+    15.117, 15.683, 16.250, 16.833, 17.383, 17.967, 18.533, 19.100, 19.683
+  ]
+};

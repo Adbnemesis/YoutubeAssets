@@ -1,6 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
-import { defaultMonsterTrioProps, defaultKenjiLeonTaraProps, defaultBibiFrankHankProps, defaultSushiFamilyProps } from "./props";
+import { defaultMonsterTrioProps, defaultKenjiLeonTaraProps, defaultBibiFrankHankProps, defaultSushiFamilyProps, defaultMechaTrioProps } from "./props";
 import { MonsterTrioPhonkTemplate } from "./templates/MonsterTrioPhonkTemplate";
 
 export const MonsterTrioCompositions: React.FC = () => {
@@ -44,6 +44,16 @@ export const MonsterTrioCompositions: React.FC = () => {
         width={defaultSushiFamilyProps.width}
         height={defaultSushiFamilyProps.height}
         defaultProps={defaultSushiFamilyProps}
+      />
+
+      <Composition
+        id="BrawlMonsterTrio-MechaTrio"
+        component={MonsterTrioPhonkTemplate}
+        durationInFrames={defaultMechaTrioProps.durationInFrames}
+        fps={defaultMechaTrioProps.fps}
+        width={defaultMechaTrioProps.width}
+        height={defaultMechaTrioProps.height}
+        defaultProps={defaultMechaTrioProps}
       />
     </>
   );
