@@ -1,0 +1,172 @@
+{
+  "reel_id": "twosum_03",
+  "title": "Two Sum: The O(N^2) Trap vs The 1-Pass Hash Map",
+  "total_duration_s": 24.472,
+  "total_frames": 734,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "ts01_hook",
+      "speaker": "narrator",
+      "text": "This is the number one asked question in FAANG interviews: Two Sum.",
+      "start_time_ms": 0,
+      "end_time_ms": 3349,
+      "duration_s": 3.349,
+      "start_frame": 0,
+      "end_frame": 100,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "number one",
+          "cue": "array_enter",
+          "time_ms": 1172,
+          "frame": 35
+        },
+        {
+          "phrase": "Two Sum",
+          "cue": "target_glow",
+          "time_ms": 2511,
+          "frame": 75
+        }
+      ]
+    },
+    {
+      "id": "ts02_brute",
+      "speaker": "narrator",
+      "text": "The naive mistake? Checking every pair with nested loops. That's O of N squared!",
+      "start_time_ms": 3549,
+      "end_time_ms": 8349,
+      "duration_s": 4.8,
+      "start_frame": 106,
+      "end_frame": 250,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "nested loops",
+          "cue": "brute_scan_start",
+          "time_ms": 5709,
+          "frame": 171
+        },
+        {
+          "phrase": "N squared",
+          "cue": "n_squared_alarm",
+          "time_ms": 7389,
+          "frame": 222
+        }
+      ]
+    },
+    {
+      "id": "ts03_nemi_question",
+      "speaker": "nemi",
+      "text": "Can we do it in one pass?",
+      "start_time_ms": 8549,
+      "end_time_ms": 9978,
+      "duration_s": 1.429,
+      "start_frame": 256,
+      "end_frame": 299,
+      "gap_after_ms": 220,
+      "semantic_cues": [
+        {
+          "phrase": "one pass",
+          "cue": "nemi_puzzled_pass",
+          "time_ms": 9263,
+          "frame": 278
+        }
+      ]
+    },
+    {
+      "id": "ts04_formula",
+      "speaker": "narrator",
+      "text": "Yes! Use a Hash Map. For each number, calculate Target minus Current.",
+      "start_time_ms": 10198,
+      "end_time_ms": 14144,
+      "duration_s": 3.947,
+      "start_frame": 306,
+      "end_frame": 424,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "Hash Map",
+          "cue": "hash_map_spawn",
+          "time_ms": 11381,
+          "frame": 341
+        },
+        {
+          "phrase": "Target minus Current",
+          "cue": "formula_illuminate",
+          "time_ms": 13157,
+          "frame": 395
+        }
+      ]
+    },
+    {
+      "id": "ts05_resolution",
+      "speaker": "narrator",
+      "text": "At two, store index zero. At seven, nine minus seven is two... it's already in our map!",
+      "start_time_ms": 14344,
+      "end_time_ms": 19485,
+      "duration_s": 5.141,
+      "start_frame": 430,
+      "end_frame": 585,
+      "gap_after_ms": 220,
+      "semantic_cues": [
+        {
+          "phrase": "index zero",
+          "cue": "map_insert_two",
+          "time_ms": 15629,
+          "frame": 469
+        },
+        {
+          "phrase": "nine minus seven",
+          "cue": "calc_seven_two",
+          "time_ms": 17428,
+          "frame": 523
+        },
+        {
+          "phrase": "already in our map",
+          "cue": "instant_collision_match",
+          "time_ms": 18713,
+          "frame": 561
+        }
+      ]
+    },
+    {
+      "id": "ts06_payoff",
+      "speaker": "narrator",
+      "text": "Boom! Solved in O of N linear time.",
+      "start_time_ms": 19705,
+      "end_time_ms": 22222,
+      "duration_s": 2.517,
+      "start_frame": 591,
+      "end_frame": 667,
+      "gap_after_ms": 180,
+      "semantic_cues": [
+        {
+          "phrase": "linear time",
+          "cue": "linear_payoff_glow",
+          "time_ms": 21215,
+          "frame": 636
+        }
+      ]
+    },
+    {
+      "id": "ts07_nemi_smug",
+      "speaker": "nemi",
+      "text": "One pass, instant hire!",
+      "start_time_ms": 22402,
+      "end_time_ms": 24172,
+      "duration_s": 1.771,
+      "start_frame": 672,
+      "end_frame": 725,
+      "gap_after_ms": 300,
+      "semantic_cues": [
+        {
+          "phrase": "instant hire",
+          "cue": "nemi_smug_hire",
+          "time_ms": 23287,
+          "frame": 699
+        }
+      ]
+    }
+  ]
+}

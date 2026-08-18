@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { TwoSumComp } from "../reels/twosum_03/TwoSumComp";
 import { GoogleExplainsComp } from "../reels/google_02/GoogleExplainsComp";
 import { CaptchaExplainsComp } from "./compositions/CaptchaExplainsComp";
 import { ExecutionSimulatorComp } from "./compositions/ExecutionSimulatorComp";
@@ -26,6 +27,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsTwoSum"
+        component={TwoSumComp}
+        durationInFrames={734} // 24.47s @ 30fps — Reel #3: Two Sum (LeetCode #1) — The O(N^2) Trap vs The 1-Pass Hash Map
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsGoogle"
         component={GoogleExplainsComp}
