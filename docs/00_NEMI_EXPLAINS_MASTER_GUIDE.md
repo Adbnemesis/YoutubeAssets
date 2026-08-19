@@ -4,31 +4,32 @@ This document serves as the official specification, aesthetic rulebook, and engi
 
 ---
 
-## 📐 1. Visual Hierarchy & High-Visibility Typography Rules (+10% Mobile Standard)
+## 📐 1. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
 
-On 1080x1920 (9:16 vertical) mobile viewports, small elements become unreadable. All components must strictly adhere to the following **High-Visibility Scale Token Standards**:
+On 1080x1920 (9:16 vertical) mobile viewports, small elements become unreadable while scrolling fast. All components must strictly adhere to the following **High-Visibility Token Standards**:
 
-| Element | Previous Base | **Current Standard (+10% Boosted)** | Weight / Styling |
-|---|---|---|---|
-| **Main Topic Headline** | `44px - 50px` | **`56px`** | `fontWeight: 900`, `letterSpacing: -1.5px` |
-| **HUD Category Tag** | `18px - 22px` | **`25px`** | `fontWeight: 900`, uppercase, glowing cyan indicator (`18px`) |
-| **HUD Stage Badge** | `14px - 17px` | **`19px`** | `fontWeight: 900`, `padding: "12px 24px"`, Mono |
-| **Primary Code / Key Values** | `24px - 32px` | **`36px - 40px`** | `fontWeight: 900`, Mono, high contrast |
-| **Card Headers & Titles** | `17px - 22px` | **`25px`** | `fontWeight: 900`, letterSpacing `1.5px` |
-| **Body Explanations & Captions** | `13px - 16px` | **`19px - 20px`** | `fontWeight: 700 - 800` |
-| **Status Pills & Stage Tags** | `14px - 17px` | **`19px`** | `padding: "12px 28px"`, Mono |
-| **Mid-Screen Floating Emojis** | `28px - 38px` | **`44px`** | Clean floating glassmorphic pills (no black boxes) |
-| **Connecting Arrows** | `22px - 28px` | **`32px`** | `fontWeight: 900` |
-| **Nemi Mascot Scale** | `1.30 - 1.42` | **`1.56`** | Dedicated bottom-center dock with organic breathing |
-| **Nemi Speech Bubble** | `22px - 26px` | **`30px`** | `padding: "16px 38px"`, `fontWeight: 900`, spring pop |
+| Element | Initial Base | +10% Scale | **Ultra Standard (+20% Total)** | Weight / Styling |
+|---|---|---|---|---|
+| **Main Topic Headline** | `44px - 50px` | `56px` | **`62px`** | `fontWeight: 900`, `letterSpacing: -1.5px` |
+| **HUD Category Tag** | `18px - 22px` | `25px` | **`28px`** | `fontWeight: 900`, uppercase, glowing cyan indicator (`20px`) |
+| **HUD Stage Badge** | `14px - 17px` | `19px` | **`22px`** | `fontWeight: 900`, `padding: "14px 26px"`, Mono |
+| **Primary Numbers & Array Values** | `28px - 34px` | `40px` | **`46px`** | `fontWeight: 900`, Mono, index tags `18px` |
+| **Complement / Key Formula** | `24px - 32px` | `36px / 28px` | **`40px / 32px`** | `fontWeight: 900`, Mono, high contrast glowing border |
+| **Card Headers & Titles** | `17px - 22px` | `25px` | **`28px`** | `fontWeight: 900`, letterSpacing `1.5px` |
+| **Body Explanations & Captions** | `13px - 16px` | `19px - 20px` | **`22px - 24px`** | `fontWeight: 700 - 800` |
+| **Status Pills & Stage Tags** | `14px - 17px` | `19px` | **`22px`** | `padding: "14px 32px"`, Mono |
+| **Mid-Screen Floating Emojis** | `28px - 38px` | `44px` | **`50px`** | Clean floating glassmorphic pills (zero black boxes) |
+| **Connecting Arrows** | `22px - 28px` | `32px` | **`36px`** | `fontWeight: 900` |
+| **Nemi Mascot Scale** | `1.30 - 1.42` | `1.56` | **`1.72`** | Dedicated bottom-center dock with organic breathing |
+| **Nemi Speech Bubble** | `22px - 26px` | `30px` | **`34px`** | `padding: "18px 42px"`, `fontWeight: 900`, spring pop |
 
 ---
 
 ## 🎨 2. Design Aesthetics & Layout Blueprint
 
-1. **Airy, Breathable Negative Space (Zero Heavy Black Rectangles):**
+1. **Airy, Breathable Negative Space (Zero Heavy Solid Black Rectangles):**
    - Never use massive solid black cards covering the middle canvas.
-   - Use clean, transparent glassmorphic pills with glowing borders (`border: "1.5px solid rgba(...)"`).
+   - Use clean, transparent glassmorphic pills with glowing borders (`border: "2px solid rgba(...)"`).
 2. **Deterministic Frame-by-Frame Motion:**
    - Never use CSS transitions for positions or opacity.
    - Always use Remotion `interpolate()` or `spring()` with `extrapolateLeft: "clamp"`.
