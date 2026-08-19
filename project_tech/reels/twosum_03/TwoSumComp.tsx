@@ -34,7 +34,7 @@ export const nemiTheme = {
 
 // ═══════════════════════════════════════════════════════════════
 // NEMI EXPLAINS REEL #3 — TWO SUM (LEETCODE #1)
-// ULTRA-HIGH VISIBILITY (+20% TOTAL BOOST) (734 FRAMES @ 30FPS)
+// SAFE-ZONE PADDED EDITION (4-EDGE SAFE MARGINS FOR INSTAGRAM/REELS)
 // ═══════════════════════════════════════════════════════════════
 
 const getEvent = (id: string) => {
@@ -157,14 +157,14 @@ export const TwoSumComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* PERSISTENT HEADER HUD (Ultra Boosted: 28px / 22px) */}
+      {/* PERSISTENT HEADER HUD (Safe Zone: top: 85px, sides: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
-          top: 55,
-          left: 50,
-          right: 50,
+          top: 85,
+          left: 70,
+          right: 70,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
@@ -174,16 +174,16 @@ export const TwoSumComp: React.FC = () => {
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <div
             style={{
-              width: 20,
-              height: 20,
+              width: 18,
+              height: 18,
               borderRadius: "50%",
               backgroundColor: darkFade > 0.5 ? "#38BDF8" : "#2563EB",
-              boxShadow: darkFade > 0.5 ? "0 0 22px #38BDF8" : "none",
+              boxShadow: darkFade > 0.5 ? "0 0 20px #38BDF8" : "none",
             }}
           />
           <span
             style={{
-              fontSize: 28,
+              fontSize: 26,
               fontWeight: 900,
               letterSpacing: "1.5px",
               color: darkFade > 0.5 ? "#94A3B8" : nemiTheme.colors.textMuted,
@@ -197,10 +197,10 @@ export const TwoSumComp: React.FC = () => {
         <div
           style={{
             backgroundColor: darkFade > 0.5 ? "rgba(15, 23, 42, 0.90)" : "#FFFFFF",
-            padding: "14px 26px",
-            borderRadius: 26,
+            padding: "12px 24px",
+            borderRadius: 24,
             border: darkFade > 0.5 ? "2px solid #1E293B" : `2px solid ${nemiTheme.colors.borderSubtle}`,
-            fontSize: 22,
+            fontSize: 20,
             fontWeight: 900,
             color: darkFade > 0.5 ? "#38BDF8" : nemiTheme.colors.brandCyan,
             fontFamily: nemiTheme.typography.fontFamily.mono,
@@ -217,20 +217,20 @@ export const TwoSumComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* TOPIC BANNER (Ultra Bold: 62px) */}
+      {/* TOPIC BANNER (Safe Zone: top: 165px, sides: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
-          top: 130,
-          left: 50,
-          right: 50,
+          top: 165,
+          left: 70,
+          right: 70,
           zIndex: 50,
         }}
       >
         <h1
           style={{
-            fontSize: 62,
+            fontSize: 58,
             fontWeight: 900,
             color: darkFade > 0.5 ? "#F8FAFC" : nemiTheme.colors.textHeading,
             letterSpacing: "-1.5px",
@@ -301,12 +301,12 @@ export const TwoSumComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* HERO MASCOT REACTOR STAGE (Ultra Scaled: 1.72) */}
+      {/* HERO MASCOT REACTOR STAGE (Safe Zone: bottom: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
           position: "absolute",
-          bottom: 20,
+          bottom: 70,
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
@@ -322,9 +322,9 @@ export const TwoSumComp: React.FC = () => {
               backgroundColor: nemiTheme.colors.brandYellow,
               color: "#18181B",
               fontWeight: 900,
-              fontSize: 34,
-              padding: "18px 42px",
-              borderRadius: 28,
+              fontSize: 32,
+              padding: "16px 38px",
+              borderRadius: 26,
               boxShadow: "0 18px 45px rgba(0, 0, 0, 0.4)",
               marginBottom: 16,
               transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.06, 1.0])})`,
@@ -337,7 +337,7 @@ export const TwoSumComp: React.FC = () => {
 
         {/* Breathing Mascot */}
         <div style={{ transform: `translateY(${Math.sin(frame * 0.1) * 6}px)` }}>
-          <NemiMascot pose={nemiPose} scale={1.72} />
+          <NemiMascot pose={nemiPose} scale={1.65} />
         </div>
       </div>
     </AbsoluteFill>
@@ -394,7 +394,7 @@ const StageWrapper: React.FC<{
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 1: PROBLEM SETUP & ARRAY PRESENTATION (Ultra Boosted: 46px tiles)
+// BEAT 1: PROBLEM SETUP & ARRAY PRESENTATION (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const Beat1ArraySetup: React.FC<{
   frame: number;
@@ -409,15 +409,15 @@ const Beat1ArraySetup: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 350,
-        left: 45,
-        right: 45,
-        height: 560,
+        top: 380,
+        left: 65,
+        right: 65,
+        height: 550,
         backgroundColor: "#FFFFFF",
         borderRadius: 32,
         border: `3.5px solid ${isTargetGlow ? "#38BDF8" : nemiTheme.colors.borderSubtle}`,
         boxShadow: isTargetGlow ? "0 28px 70px rgba(56, 189, 248, 0.32)" : "0 28px 70px rgba(0, 0, 0, 0.1)",
-        padding: "36px",
+        padding: "34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -428,8 +428,8 @@ const Beat1ArraySetup: React.FC<{
       {/* Target Pill Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ fontSize: 36 }}>🎯</span>
-          <span style={{ fontSize: 28, fontWeight: 900, color: "#0F172A" }}>
+          <span style={{ fontSize: 34 }}>🎯</span>
+          <span style={{ fontSize: 26, fontWeight: 900, color: "#0F172A" }}>
             Given Array & Target
           </span>
         </div>
@@ -438,8 +438,8 @@ const Beat1ArraySetup: React.FC<{
             backgroundColor: isTargetGlow ? "#0284C7" : "#F1F5F9",
             color: isTargetGlow ? "#FFFFFF" : "#64748B",
             fontWeight: 900,
-            fontSize: 25,
-            padding: "14px 28px",
+            fontSize: 24,
+            padding: "12px 26px",
             borderRadius: 18,
             fontFamily: nemiTheme.typography.fontFamily.mono,
             boxShadow: isTargetGlow ? "0 0 28px rgba(2, 132, 199, 0.5)" : "none",
@@ -451,28 +451,28 @@ const Beat1ArraySetup: React.FC<{
 
       {/* Array Tiles Grid */}
       <div>
-        <div style={{ fontSize: 20, fontWeight: 800, color: "#64748B", marginBottom: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <div style={{ fontSize: 19, fontWeight: 800, color: "#64748B", marginBottom: 12, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           nums = [ 2,  7, 11, 15 ]
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 18 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
           {numbers.map((val, idx) => (
             <div
               key={idx}
               style={{
                 backgroundColor: idx <= 1 && isTargetGlow ? "rgba(2, 132, 199, 0.12)" : "#F8FAFC",
                 border: idx <= 1 && isTargetGlow ? "3.5px solid #0284C7" : "2.5px solid #E2E8F0",
-                borderRadius: 24,
-                padding: "24px 10px",
+                borderRadius: 22,
+                padding: "22px 8px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 gap: 8,
               }}
             >
-              <span style={{ fontSize: 18, color: "#94A3B8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              <span style={{ fontSize: 16, color: "#94A3B8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                 index [{idx}]
               </span>
-              <span style={{ fontSize: 46, fontWeight: 900, color: "#0F172A", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              <span style={{ fontSize: 44, fontWeight: 900, color: "#0F172A", fontFamily: nemiTheme.typography.fontFamily.mono }}>
                 {val}
               </span>
             </div>
@@ -484,24 +484,24 @@ const Beat1ArraySetup: React.FC<{
       <div
         style={{
           backgroundColor: "#F1F5F9",
-          borderRadius: 22,
-          padding: "22px 28px",
+          borderRadius: 20,
+          padding: "20px 24px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-        <span style={{ fontSize: 23, fontWeight: 800, color: "#334155" }}>
+        <span style={{ fontSize: 22, fontWeight: 800, color: "#334155" }}>
           Goal: Return indices [i, j] such that nums[i] + nums[j] == 9
         </span>
-        <span style={{ fontSize: 32 }}>💡</span>
+        <span style={{ fontSize: 30 }}>💡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 2: BRUTE FORCE O(N^2) TRAP (Ultra Boosted: 28px/32px)
+// BEAT 2: BRUTE FORCE O(N^2) TRAP (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const Beat2BruteForce: React.FC<{
   frame: number;
@@ -513,7 +513,6 @@ const Beat2BruteForce: React.FC<{
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const isAlarm = frame >= fN2Alarm;
 
-  // Simulate scanning pair pointers
   const scanStep = Math.max(0, Math.floor(Math.max(0, localFrame) / 15) % 4);
   const pairs = [
     { i: 0, j: 1, sum: "2 + 7 = 9", match: true },
@@ -527,15 +526,15 @@ const Beat2BruteForce: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 350,
-        left: 40,
-        right: 40,
-        height: 560,
+        top: 380,
+        left: 65,
+        right: 65,
+        height: 550,
         backgroundColor: "#070B12",
         borderRadius: 32,
         border: `3.5px solid ${isAlarm ? "#EF4444" : "rgba(239, 68, 68, 0.55)"}`,
         boxShadow: isAlarm ? "0 28px 70px rgba(239, 68, 68, 0.45)" : "0 28px 70px rgba(0, 0, 0, 0.6)",
-        padding: "32px 36px",
+        padding: "30px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -546,25 +545,25 @@ const Beat2BruteForce: React.FC<{
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ width: 18, height: 18, borderRadius: "50%", backgroundColor: "#EF4444", boxShadow: "0 0 18px #EF4444" }} />
-          <span style={{ fontSize: 28, fontWeight: 900, color: "#EF4444", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+          <span style={{ fontSize: 26, fontWeight: 900, color: "#EF4444", letterSpacing: "1.5px", textTransform: "uppercase" }}>
             ❌ The Naive Nested Loops Trap
           </span>
         </div>
-        <span style={{ fontSize: 20, color: "#EF4444", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 19, color: "#EF4444", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           TIME: O(N²)
         </span>
       </div>
 
       {/* Dual Pointer Scanner Simulation */}
-      <div style={{ backgroundColor: "#0F172A", padding: "24px", borderRadius: 22, border: "1px solid #1E293B" }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
-          <span style={{ color: "#94A3B8", fontSize: 20, fontWeight: 700 }}>Nested For-Loops (i, j):</span>
-          <span style={{ color: "#F8FAFC", fontSize: 23, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 20, border: "1px solid #1E293B" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+          <span style={{ color: "#94A3B8", fontSize: 19, fontWeight: 700 }}>Nested For-Loops (i, j):</span>
+          <span style={{ color: "#F8FAFC", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Testing Pair: {currentPair.sum}
           </span>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 14 }}>
           {[2, 7, 11, 15].map((val, idx) => {
             const isI = idx === currentPair.i;
             const isJ = idx === currentPair.j;
@@ -574,18 +573,18 @@ const Beat2BruteForce: React.FC<{
                 style={{
                   backgroundColor: isI || isJ ? "rgba(239, 68, 68, 0.32)" : "#1E293B",
                   border: isI || isJ ? "3.5px solid #EF4444" : "1px solid #334155",
-                  borderRadius: 20,
-                  padding: "20px 8px",
+                  borderRadius: 18,
+                  padding: "18px 6px",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
                   gap: 6,
                 }}
               >
-                <span style={{ fontSize: 16, color: isI ? "#FFD166" : isJ ? "#38BDF8" : "#64748B", fontWeight: 900 }}>
+                <span style={{ fontSize: 15, color: isI ? "#FFD166" : isJ ? "#38BDF8" : "#64748B", fontWeight: 900 }}>
                   {isI ? "Pointer i" : isJ ? "Pointer j" : `[${idx}]`}
                 </span>
-                <span style={{ fontSize: 36, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <span style={{ fontSize: 34, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>
                   {val}
                 </span>
               </div>
@@ -598,8 +597,8 @@ const Beat2BruteForce: React.FC<{
       <div
         style={{
           backgroundColor: "rgba(239, 68, 68, 0.18)",
-          borderRadius: 22,
-          padding: "20px 26px",
+          borderRadius: 20,
+          padding: "18px 24px",
           border: "1.5px solid rgba(239, 68, 68, 0.5)",
           display: "flex",
           justifyContent: "space-between",
@@ -607,8 +606,8 @@ const Beat2BruteForce: React.FC<{
         }}
       >
         <div>
-          <div style={{ fontSize: 18, color: "#EF4444", fontWeight: 800 }}>N = 100,000 Elements</div>
-          <div style={{ fontSize: 28, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
+          <div style={{ fontSize: 17, color: "#EF4444", fontWeight: 800 }}>N = 100,000 Elements</div>
+          <div style={{ fontSize: 26, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
             10,000,000,000 Operations (Time Limit Exceeded 💥)
           </div>
         </div>
@@ -618,7 +617,7 @@ const Beat2BruteForce: React.FC<{
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 3: COMPLEMENT FORMULA & HASH MAP LOGIC (Ultra Boosted)
+// BEAT 3: COMPLEMENT FORMULA & HASH MAP LOGIC (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const Beat3ComplementFormula: React.FC<{
   frame: number;
@@ -634,15 +633,15 @@ const Beat3ComplementFormula: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 350,
-        left: 40,
-        right: 40,
-        height: 560,
+        top: 380,
+        left: 65,
+        right: 65,
+        height: 550,
         backgroundColor: "#070B12",
         borderRadius: 32,
         border: "3.5px solid #38BDF8",
         boxShadow: "0 28px 70px rgba(56, 189, 248, 0.32)",
-        padding: "32px 36px",
+        padding: "30px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -653,11 +652,11 @@ const Beat3ComplementFormula: React.FC<{
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ width: 18, height: 18, borderRadius: "50%", backgroundColor: "#38BDF8", boxShadow: "0 0 18px #38BDF8" }} />
-          <span style={{ fontSize: 28, fontWeight: 900, color: "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+          <span style={{ fontSize: 26, fontWeight: 900, color: "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
             🧠 The Complement Formula
           </span>
         </div>
-        <span style={{ fontSize: 20, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 19, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           LOOKUP: O(1)
         </span>
       </div>
@@ -666,42 +665,42 @@ const Beat3ComplementFormula: React.FC<{
       <div
         style={{
           backgroundColor: isFormula ? "rgba(56, 189, 248, 0.18)" : "#0F172A",
-          padding: "26px 32px",
-          borderRadius: 24,
+          padding: "24px 28px",
+          borderRadius: 22,
           border: isFormula ? "3.5px solid #38BDF8" : "1px solid #1E293B",
           boxShadow: isFormula ? "0 0 45px rgba(56, 189, 248, 0.4)" : "none",
           textAlign: "center",
         }}
       >
-        <div style={{ fontSize: 18, color: "#94A3B8", fontWeight: 800, marginBottom: 8 }}>
+        <div style={{ fontSize: 17, color: "#94A3B8", fontWeight: 800, marginBottom: 6 }}>
           INSTEAD OF SEARCHING FORWARD, REMEMBER THE PAST:
         </div>
-        <div style={{ fontSize: 40, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <div style={{ fontSize: 38, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>
           Complement = Target − Current
         </div>
-        <div style={{ fontSize: 32, fontWeight: 900, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>
+        <div style={{ fontSize: 30, fontWeight: 900, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
           Complement = 9 − Current Number
         </div>
       </div>
 
       {/* Hash Map Concept Schema */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 22, border: "1px solid #1E293B" }}>
-          <div style={{ fontSize: 18, color: "#64748B", fontWeight: 700 }}>Map Key</div>
-          <div style={{ fontSize: 28, fontWeight: 900, color: "#38BDF8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "1px solid #1E293B" }}>
+          <div style={{ fontSize: 17, color: "#64748B", fontWeight: 700 }}>Map Key</div>
+          <div style={{ fontSize: 26, fontWeight: 900, color: "#38BDF8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
             Number Value (x)
           </div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 22, border: "1px solid #1E293B" }}>
-          <div style={{ fontSize: 18, color: "#64748B", fontWeight: 700 }}>Map Value</div>
-          <div style={{ fontSize: 28, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "1px solid #1E293B" }}>
+          <div style={{ fontSize: 17, color: "#64748B", fontWeight: 700 }}>Map Value</div>
+          <div style={{ fontSize: 26, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
             Array Index (i)
           </div>
         </div>
       </div>
 
-      <div style={{ fontSize: 20, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
         Hash Map gives instant <span style={{ color: "#10B981", fontWeight: 900 }}>O(1) lookups</span> in single pass!
       </div>
     </div>
@@ -709,7 +708,7 @@ const Beat3ComplementFormula: React.FC<{
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 4: LIVE RESOLUTION & INSTANT COLLISION MATCH (Ultra Boosted)
+// BEAT 4: LIVE RESOLUTION & INSTANT COLLISION MATCH (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const Beat4LiveResolution: React.FC<{
   frame: number;
@@ -723,22 +722,21 @@ const Beat4LiveResolution: React.FC<{
   const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
 
   const hasTwoInserted = frame >= fMapInsertTwo;
-  const isCalcSeven = frame >= fCalcSeven;
   const isMatched = frame >= fInstantMatch;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 350,
-        left: 40,
-        right: 40,
-        height: 560,
+        top: 380,
+        left: 65,
+        right: 65,
+        height: 550,
         backgroundColor: "#070B12",
         borderRadius: 32,
         border: `3.5px solid ${isMatched ? "#10B981" : "#38BDF8"}`,
         boxShadow: isMatched ? "0 28px 70px rgba(16, 185, 129, 0.45)" : "0 28px 70px rgba(0, 0, 0, 0.6)",
-        padding: "32px 36px",
+        padding: "30px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -749,26 +747,26 @@ const Beat4LiveResolution: React.FC<{
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ width: 18, height: 18, borderRadius: "50%", backgroundColor: isMatched ? "#10B981" : "#38BDF8", boxShadow: `0 0 18px ${isMatched ? "#10B981" : "#38BDF8"}` }} />
-          <span style={{ fontSize: 28, fontWeight: 900, color: isMatched ? "#10B981" : "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+          <span style={{ fontSize: 26, fontWeight: 900, color: isMatched ? "#10B981" : "#38BDF8", letterSpacing: "1.5px", textTransform: "uppercase" }}>
             {isMatched ? "🎉 SOLUTION FOUND (1-PASS)" : "⚡ LIVE HASH MAP EXECUTION"}
           </span>
         </div>
-        <span style={{ fontSize: 20, color: isMatched ? "#10B981" : "#FFD166", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 19, color: isMatched ? "#10B981" : "#FFD166", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           {isMatched ? "RETURN [0, 1]" : "SCANNING INDEX 1"}
         </span>
       </div>
 
       {/* Live Traversal Steps */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
         {/* Step 1: Element 2 at Index 0 */}
-        <div style={{ backgroundColor: "#0F172A", padding: "18px 24px", borderRadius: 20, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 18, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={{ fontSize: 17, color: "#64748B", fontWeight: 700 }}>Step 1: nums[0] = 2 (Need 9 - 2 = 7)</div>
-            <div style={{ fontSize: 23, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
+            <div style={{ fontSize: 16, color: "#64748B", fontWeight: 700 }}>Step 1: nums[0] = 2 (Need 9 - 2 = 7)</div>
+            <div style={{ fontSize: 21, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
               7 not in map → Store &#123; 2 : index 0 &#125;
             </div>
           </div>
-          <span style={{ color: hasTwoInserted ? "#10B981" : "#64748B", fontSize: 26, fontWeight: 900 }}>
+          <span style={{ color: hasTwoInserted ? "#10B981" : "#64748B", fontSize: 24, fontWeight: 900 }}>
             {hasTwoInserted ? "STORED ✓" : "..."}
           </span>
         </div>
@@ -777,8 +775,8 @@ const Beat4LiveResolution: React.FC<{
         <div
           style={{
             backgroundColor: isMatched ? "rgba(16, 185, 129, 0.22)" : "#0F172A",
-            padding: "20px 24px",
-            borderRadius: 20,
+            padding: "18px 22px",
+            borderRadius: 18,
             border: isMatched ? "3.5px solid #10B981" : "1px solid #1E293B",
             boxShadow: isMatched ? "0 0 40px rgba(16, 185, 129, 0.4)" : "none",
             display: "flex",
@@ -787,10 +785,10 @@ const Beat4LiveResolution: React.FC<{
           }}
         >
           <div>
-            <div style={{ fontSize: 17, color: isMatched ? "#10B981" : "#64748B", fontWeight: 800 }}>
+            <div style={{ fontSize: 16, color: isMatched ? "#10B981" : "#64748B", fontWeight: 800 }}>
               Step 2: nums[1] = 7 (Need 9 - 7 = 2)
             </div>
-            <div style={{ fontSize: 32, fontWeight: 900, color: isMatched ? "#F8FAFC" : "#64748B", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
+            <div style={{ fontSize: 29, fontWeight: 900, color: isMatched ? "#F8FAFC" : "#64748B", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 2 }}>
               {isMatched ? "KEY 2 FOUND IN MAP AT INDEX 0! 🎯" : "Calculating 9 - 7..."}
             </div>
           </div>
@@ -799,9 +797,9 @@ const Beat4LiveResolution: React.FC<{
               backgroundColor: isMatched ? "#10B981" : "#334155",
               color: "#FFFFFF",
               fontWeight: 900,
-              fontSize: 22,
-              padding: "12px 22px",
-              borderRadius: 14,
+              fontSize: 20,
+              padding: "10px 20px",
+              borderRadius: 12,
               fontFamily: nemiTheme.typography.fontFamily.mono,
             }}
           >
@@ -815,25 +813,25 @@ const Beat4LiveResolution: React.FC<{
         style={{
           backgroundColor: isMatched ? "#10B981" : "#03070D",
           color: "#FFFFFF",
-          borderRadius: 20,
-          padding: "20px 28px",
+          borderRadius: 18,
+          padding: "18px 24px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           fontFamily: nemiTheme.typography.fontFamily.mono,
         }}
       >
-        <span style={{ fontSize: 26, fontWeight: 900 }}>
+        <span style={{ fontSize: 24, fontWeight: 900 }}>
           {isMatched ? "result = [0, 1] // nums[0] + nums[1] == 9" : "hash_map = { 2: 0 }"}
         </span>
-        <span style={{ fontSize: 30 }}>⚡</span>
+        <span style={{ fontSize: 28 }}>⚡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 5: LINEAR TIME PAYOFF & SCORECARD (Ultra Boosted)
+// BEAT 5: LINEAR TIME PAYOFF & SCORECARD (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const Beat5PayoffScorecard: React.FC<{
   frame: number;
@@ -847,47 +845,47 @@ const Beat5PayoffScorecard: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 350,
-        left: 40,
-        right: 40,
+        top: 380,
+        left: 65,
+        right: 65,
         backgroundColor: "#18181B",
         borderRadius: 32,
         border: "3.5px solid #27272A",
         boxShadow: "0 28px 70px rgba(0, 0, 0, 0.5)",
-        padding: "34px 38px",
+        padding: "32px 36px",
         display: "flex",
         flexDirection: "column",
-        gap: 20,
+        gap: 18,
         transform: `scale(${popSpring})`,
         zIndex: 30,
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 4 }}>
-        <span style={{ fontSize: 28, fontWeight: 900, color: nemiTheme.colors.brandYellow, letterSpacing: "1.5px" }}>
+        <span style={{ fontSize: 26, fontWeight: 900, color: nemiTheme.colors.brandYellow, letterSpacing: "1.5px" }}>
           ⚡ TWO SUM SCORECARD
         </span>
-        <span style={{ fontSize: 22, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 20, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           TIME COMPLEXITY: O(N)
         </span>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "20px 26px", borderRadius: 20, borderLeft: "7px solid #EF4444" }}>
-        <div style={{ fontSize: 28, fontWeight: 900, color: "#EF4444" }}>❌ Naive Brute Force (Nested Loops)</div>
-        <div style={{ fontSize: 22, color: "#94A3B8", marginTop: 4 }}>
+      <div style={{ backgroundColor: "#27272A", padding: "18px 24px", borderRadius: 18, borderLeft: "7px solid #EF4444" }}>
+        <div style={{ fontSize: 26, fontWeight: 900, color: "#EF4444" }}>❌ Naive Brute Force (Nested Loops)</div>
+        <div style={{ fontSize: 20, color: "#94A3B8", marginTop: 4 }}>
           Time: O(N²) • Space: O(1) • 100K items = 10 Billion operations (TLE)
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "20px 26px", borderRadius: 20, borderLeft: "7px solid #10B981" }}>
-        <div style={{ fontSize: 28, fontWeight: 900, color: "#10B981" }}>⚡ 1-Pass Hash Map (Complement Storage)</div>
-        <div style={{ fontSize: 22, color: "#94A3B8", marginTop: 4 }}>
+      <div style={{ backgroundColor: "#27272A", padding: "18px 24px", borderRadius: 18, borderLeft: "7px solid #10B981" }}>
+        <div style={{ fontSize: 26, fontWeight: 900, color: "#10B981" }}>⚡ 1-Pass Hash Map (Complement Storage)</div>
+        <div style={{ fontSize: 20, color: "#94A3B8", marginTop: 4 }}>
           Time: O(N) • Space: O(N) • 100K items = 100,000 operations (1ms instant)
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "20px 26px", borderRadius: 20, borderLeft: "7px solid #38BDF8" }}>
-        <div style={{ fontSize: 28, fontWeight: 900, color: "#38BDF8" }}>🚀 Core Interview Takeaway</div>
-        <div style={{ fontSize: 22, color: "#94A3B8", marginTop: 4 }}>
+      <div style={{ backgroundColor: "#27272A", padding: "18px 24px", borderRadius: 18, borderLeft: "7px solid #38BDF8" }}>
+        <div style={{ fontSize: 26, fontWeight: 900, color: "#38BDF8" }}>🚀 Core Interview Takeaway</div>
+        <div style={{ fontSize: 20, color: "#94A3B8", marginTop: 4 }}>
           Trade a little bit of O(N) RAM space to achieve lightning-fast O(N) time!
         </div>
       </div>
@@ -896,7 +894,7 @@ const Beat5PayoffScorecard: React.FC<{
 };
 
 // ═══════════════════════════════════════════════════════════════
-// MID-SCREEN CLEAN FLOATING ICONS & SUBTLE STAGE TAGS (Ultra Boosted: 50px emojis)
+// MID-SCREEN CLEAN FLOATING ICONS & SUBTLE STAGE TAGS (Safe Zone: top: 960px, sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const MidScreenTwoSumAssets: React.FC<{
   frame: number;
@@ -916,37 +914,37 @@ const MidScreenTwoSumAssets: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 930,
-        left: 40,
-        right: 40,
-        height: 310,
+        top: 960,
+        left: 65,
+        right: 65,
+        height: 300,
         backgroundColor: "transparent",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        gap: 24,
+        gap: 22,
         zIndex: 35,
       }}
     >
       {/* ─── STAGE 1: ARRAY TILES ─── */}
       {isStage1 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "18px 28px", borderRadius: 28, boxShadow: "0 10px 30px rgba(0,0,0,0.09)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>🔢</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#1E293B" }}>nums = [2, 7, 11, 15]</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "16px 26px", borderRadius: 26, boxShadow: "0 10px 30px rgba(0,0,0,0.09)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>🔢</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#1E293B" }}>nums = [2, 7, 11, 15]</span>
             </div>
 
-            <span style={{ fontSize: 36, color: nemiTheme.colors.brandCyan, fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: nemiTheme.colors.brandCyan, fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "18px 28px", borderRadius: 28, boxShadow: "0 10px 30px rgba(0,0,0,0.09)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>🎯</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#0284C7" }}>Target = 9</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "16px 26px", borderRadius: 26, boxShadow: "0 10px 30px rgba(0,0,0,0.09)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>🎯</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#0284C7" }}>Target = 9</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(2, 132, 199, 0.15)", padding: "14px 32px", borderRadius: 26, border: "2px solid rgba(2, 132, 199, 0.4)", color: "#0284C7", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(2, 132, 199, 0.15)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(2, 132, 199, 0.4)", color: "#0284C7", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Find 2 Array Elements That Add Up to 9
           </div>
         </>
@@ -955,28 +953,28 @@ const MidScreenTwoSumAssets: React.FC<{
       {/* ─── STAGE 2: BRUTE FORCE SCANNER ─── */}
       {isStage2 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(239, 68, 68, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>🔴</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#EF4444" }}>Outer Loop i</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>🔴</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#EF4444" }}>Outer Loop i</span>
             </div>
 
-            <span style={{ fontSize: 36, color: "#EF4444", fontWeight: 900 }}>✕</span>
+            <span style={{ fontSize: 32, color: "#EF4444", fontWeight: 900 }}>✕</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(239, 68, 68, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>🔴</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#EF4444" }}>Inner Loop j</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>🔴</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#EF4444" }}>Inner Loop j</span>
             </div>
 
-            <span style={{ fontSize: 36, color: "#EF4444", fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: "#EF4444", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(239, 68, 68, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>💥</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#EF4444" }}>O(N²) Redline</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>💥</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#EF4444" }}>O(N²) Redline</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "14px 32px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.45)", color: "#EF4444", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(239, 68, 68, 0.45)", color: "#EF4444", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Checking All N*(N-1)/2 Combinations!
           </div>
         </>
@@ -985,28 +983,28 @@ const MidScreenTwoSumAssets: React.FC<{
       {/* ─── STAGE 3: COMPLEMENT FORMULA ─── */}
       {isStage3 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(56, 189, 248, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>📐</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#38BDF8" }}>9 − Current</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(56, 189, 248, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>📐</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#38BDF8" }}>9 − Current</span>
             </div>
 
-            <span style={{ fontSize: 36, color: "#38BDF8", fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: "#38BDF8", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(255, 209, 102, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>📦</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#FFD166" }}>Hash Map Lookup</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(255, 209, 102, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>📦</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#FFD166" }}>Hash Map Lookup</span>
             </div>
 
-            <span style={{ fontSize: 36, color: "#10B981", fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: "#10B981", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(16, 185, 129, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>⚡</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981" }}>O(1) Speed</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>⚡</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>O(1) Speed</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(56, 189, 248, 0.18)", padding: "14px 32px", borderRadius: 26, border: "2px solid rgba(56, 189, 248, 0.45)", color: "#38BDF8", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(56, 189, 248, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(56, 189, 248, 0.45)", color: "#38BDF8", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Store Visited Elements • Constant Time Check
           </div>
         </>
@@ -1015,28 +1013,28 @@ const MidScreenTwoSumAssets: React.FC<{
       {/* ─── STAGE 4: LIVE RESOLUTION & COLLISION ─── */}
       {isStage4 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(16, 185, 129, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>📥</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981" }}>Map: &#123; 2: 0 &#125;</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>📥</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Map: &#123; 2: 0 &#125;</span>
             </div>
 
-            <span style={{ fontSize: 36, color: "#10B981", fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: "#10B981", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(56, 189, 248, 0.55)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 50 }}>🔍</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#38BDF8" }}>9 − 7 = 2</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(56, 189, 248, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 46 }}>🔍</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#38BDF8" }}>9 − 7 = 2</span>
             </div>
 
-            <span style={{ fontSize: 36, color: "#10B981", fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: "#10B981", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "18px 28px", borderRadius: 28, border: "2px solid rgba(16, 185, 129, 0.7)", display: "flex", alignItems: "center", gap: 16, boxShadow: "0 0 32px rgba(16, 185, 129, 0.4)" }}>
-              <span style={{ fontSize: 50 }}>🎉</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981" }}>Match: [0, 1]!</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.7)", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 32px rgba(16, 185, 129, 0.4)" }}>
+              <span style={{ fontSize: 46 }}>🎉</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Match: [0, 1]!</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.18)", padding: "14px 32px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.45)", color: "#10B981", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(16, 185, 129, 0.45)", color: "#10B981", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Element 7 Found Matching Key 2 in 1 Lookup!
           </div>
         </>
@@ -1045,21 +1043,21 @@ const MidScreenTwoSumAssets: React.FC<{
       {/* ─── STAGE 5: SCORECARD ─── */}
       {isStage5 && (
         <>
-          <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
-            <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "18px 32px", borderRadius: 28, border: "2px solid rgba(239, 68, 68, 0.5)", display: "flex", alignItems: "center", gap: 16 }}>
-              <span style={{ fontSize: 44 }}>🐢</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#EF4444" }}>O(N²): 10,000ms</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
+            <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "16px 28px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
+              <span style={{ fontSize: 40 }}>🐢</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#EF4444" }}>O(N²): 10,000ms</span>
             </div>
 
-            <span style={{ fontSize: 34, color: "#FFD166", fontWeight: 900 }}>VS</span>
+            <span style={{ fontSize: 30, color: "#FFD166", fontWeight: 900 }}>VS</span>
 
-            <div style={{ backgroundColor: "rgba(16, 185, 129, 0.22)", padding: "18px 34px", borderRadius: 28, border: "3px solid #10B981", display: "flex", alignItems: "center", gap: 16, boxShadow: "0 0 40px rgba(16, 185, 129, 0.45)" }}>
-              <span style={{ fontSize: 44 }}>🚀</span>
-              <span style={{ fontSize: 28, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>O(N): 1ms</span>
+            <div style={{ backgroundColor: "rgba(16, 185, 129, 0.22)", padding: "16px 30px", borderRadius: 26, border: "3px solid #10B981", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 40px rgba(16, 185, 129, 0.45)" }}>
+              <span style={{ fontSize: 40 }}>🚀</span>
+              <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>O(N): 1ms</span>
             </div>
           </div>
 
-          <div style={{ color: "#FFD166", fontSize: 23, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ color: "#FFD166", fontSize: 21, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             10,000x Speedup with 1-Pass Hash Map! 🚀
           </div>
         </>

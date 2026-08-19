@@ -4,28 +4,45 @@ This document serves as the official specification, aesthetic rulebook, and engi
 
 ---
 
-## 📐 1. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
+## 🛡️ 1. Instagram / Shorts / TikTok 4-Edge Safe Zone Architecture
 
-On 1080x1920 (9:16 vertical) mobile viewports, small elements become unreadable while scrolling fast. All components must strictly adhere to the following **High-Visibility Token Standards**:
+Vertical 9:16 mobile video viewports (1080x1920) have native UI overlays and physical device cutouts (notch, dynamic island, status bar, bottom swipe bar, and right-hand engagement rails: like/comment/share buttons). 
 
-| Element | Initial Base | +10% Scale | **Ultra Standard (+20% Total)** | Weight / Styling |
-|---|---|---|---|---|
-| **Main Topic Headline** | `44px - 50px` | `56px` | **`62px`** | `fontWeight: 900`, `letterSpacing: -1.5px` |
-| **HUD Category Tag** | `18px - 22px` | `25px` | **`28px`** | `fontWeight: 900`, uppercase, glowing cyan indicator (`20px`) |
-| **HUD Stage Badge** | `14px - 17px` | `19px` | **`22px`** | `fontWeight: 900`, `padding: "14px 26px"`, Mono |
-| **Primary Numbers & Array Values** | `28px - 34px` | `40px` | **`46px`** | `fontWeight: 900`, Mono, index tags `18px` |
-| **Complement / Key Formula** | `24px - 32px` | `36px / 28px` | **`40px / 32px`** | `fontWeight: 900`, Mono, high contrast glowing border |
-| **Card Headers & Titles** | `17px - 22px` | `25px` | **`28px`** | `fontWeight: 900`, letterSpacing `1.5px` |
-| **Body Explanations & Captions** | `13px - 16px` | `19px - 20px` | **`22px - 24px`** | `fontWeight: 700 - 800` |
-| **Status Pills & Stage Tags** | `14px - 17px` | `19px` | **`22px`** | `padding: "14px 32px"`, Mono |
-| **Mid-Screen Floating Emojis** | `28px - 38px` | `44px` | **`50px`** | Clean floating glassmorphic pills (zero black boxes) |
-| **Connecting Arrows** | `22px - 28px` | `32px` | **`36px`** | `fontWeight: 900` |
-| **Nemi Mascot Scale** | `1.30 - 1.42` | `1.56` | **`1.72`** | Dedicated bottom-center dock with organic breathing |
-| **Nemi Speech Bubble** | `22px - 26px` | `30px` | **`34px`** | `padding: "18px 42px"`, `fontWeight: 900`, spring pop |
+To prevent content cropping on any mobile screen, all elements must strictly respect the **4-Edge Safe Margins**:
+
+| Safe Zone Boundary | Padding / Offset | Protected Content |
+|---|---|---|
+| **Top Safe Inset** | **`85px - 90px`** | Clears phone status bar, camera hole-punch, and Instagram top header |
+| **Topic Title Inset** | **`165px - 170px`** | Guaranteed clean breathing room under HUD |
+| **Horizontal Gutters (Left & Right)** | **`65px - 70px`** | Shields cards & labels from Instagram's right-side interaction rail and curved screen corners |
+| **Main Card Top Anchor** | **`380px`** (Height: `550px`) | Perfect vertical balance between header and mid-screen |
+| **Mid-Screen Visual Anchor** | **`top: 960px`** | Perfectly centered between main cards and mascot |
+| **Bottom Safe Inset** | **`bottom: 70px`** | Clears Instagram bottom caption area, audio marquee, and device home swipe bar |
 
 ---
 
-## 🎨 2. Design Aesthetics & Layout Blueprint
+## 📐 2. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
+
+All components strictly adhere to the following **High-Visibility Token Standards**:
+
+| Element | Initial Base | +10% Scale | **Ultra Standard (+20% Total)** | Weight / Styling |
+|---|---|---|---|---|
+| **Main Topic Headline** | `44px - 50px` | `56px` | **`58px - 62px`** | `fontWeight: 900`, `letterSpacing: -1.5px` |
+| **HUD Category Tag** | `18px - 22px` | `25px` | **`26px - 28px`** | `fontWeight: 900`, uppercase, glowing cyan indicator (`18px`) |
+| **HUD Stage Badge** | `14px - 17px` | `19px` | **`20px - 22px`** | `fontWeight: 900`, `padding: "12px 24px"`, Mono |
+| **Primary Numbers & Array Values** | `28px - 34px` | `40px` | **`44px - 46px`** | `fontWeight: 900`, Mono, index tags `16px` |
+| **Complement / Key Formula** | `24px - 32px` | `36px / 28px` | **`38px / 30px`** | `fontWeight: 900`, Mono, high contrast glowing border |
+| **Card Headers & Titles** | `17px - 22px` | `25px` | **`26px - 28px`** | `fontWeight: 900`, letterSpacing `1.5px` |
+| **Body Explanations & Captions** | `13px - 16px` | `19px - 20px` | **`20px - 22px`** | `fontWeight: 700 - 800` |
+| **Status Pills & Stage Tags** | `14px - 17px` | `19px` | **`20px - 22px`** | `padding: "12px 28px"`, Mono |
+| **Mid-Screen Floating Emojis** | `28px - 38px` | `44px` | **`46px - 50px`** | Clean floating glassmorphic pills (zero solid black boxes) |
+| **Connecting Arrows** | `22px - 28px` | `32px` | **`32px - 36px`** | `fontWeight: 900` |
+| **Nemi Mascot Scale** | `1.30 - 1.42` | `1.56` | **`1.65 - 1.72`** | Dedicated bottom-center dock with organic breathing |
+| **Nemi Speech Bubble** | `22px - 26px` | `30px` | **`32px - 34px`** | `padding: "16px 38px"`, `fontWeight: 900`, spring pop |
+
+---
+
+## 🎨 3. Design Aesthetics & Layout Blueprint
 
 1. **Airy, Breathable Negative Space (Zero Heavy Solid Black Rectangles):**
    - Never use massive solid black cards covering the middle canvas.
@@ -38,7 +55,7 @@ On 1080x1920 (9:16 vertical) mobile viewports, small elements become unreadable 
 
 ---
 
-## 🎙️ 3. Audio & Voice Architecture
+## 🎙️ 4. Audio & Voice Architecture
 
 1. **Dual-Voice Character Setup:**
    - **Narrator:** Deep, authoritative tech documentary voice via `Chatterbox Neural TTS` (`exaggeration=0.55 - 0.65`).
@@ -52,7 +69,7 @@ On 1080x1920 (9:16 vertical) mobile viewports, small elements become unreadable 
 
 ---
 
-## 🎬 4. Production Catalog
+## 🎬 5. Production Catalog
 
 | Reel # | Composition ID | Topic | Duration | Master Video |
 |---|---|---|---|---|
