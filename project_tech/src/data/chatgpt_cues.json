@@ -1,164 +1,170 @@
 {
   "reel_id": "chatgpt_04",
-  "title": "How ChatGPT Actually Predicts Words: Embeddings & Attention",
-  "total_duration_s": 26.684,
-  "total_frames": 801,
+  "title": "How ChatGPT Actually Works: In Simple Terms",
+  "total_duration_s": 25.53,
+  "total_frames": 766,
   "fps": 30,
   "timeline_events": [
     {
       "id": "ai01_hook",
       "speaker": "narrator",
-      "text": "ChatGPT doesn't understand English. It turns your words into twelve thousand dimensional coordinates.",
+      "text": "ChatGPT doesn't understand English. It turns your words into a giant 3D map.",
       "start_time_ms": 0,
-      "end_time_ms": 5013,
-      "duration_s": 5.013,
+      "end_time_ms": 4053,
+      "duration_s": 4.053,
       "start_frame": 0,
-      "end_frame": 150,
-      "gap_after_ms": 200,
+      "end_frame": 122,
+      "gap_after_ms": 180,
       "semantic_cues": [
         {
           "phrase": "doesn't understand",
           "cue": "prompt_enter",
-          "time_ms": 1503,
-          "frame": 45
+          "time_ms": 1215,
+          "frame": 36
         },
         {
-          "phrase": "dimensional coordinates",
-          "cue": "coords_glow",
-          "time_ms": 3759,
-          "frame": 113
+          "phrase": "giant 3D map",
+          "cue": "map_glow",
+          "time_ms": 3039,
+          "frame": 91
         }
       ]
     },
     {
       "id": "ai02_tokens",
       "speaker": "narrator",
-      "text": "First, the tokenizer chops sentences into numeric tokens.",
-      "start_time_ms": 5213,
-      "end_time_ms": 8199,
-      "duration_s": 2.987,
-      "start_frame": 156,
-      "end_frame": 246,
-      "gap_after_ms": 200,
+      "text": "First, it chops sentences into number puzzle pieces.",
+      "start_time_ms": 4233,
+      "end_time_ms": 6963,
+      "duration_s": 2.731,
+      "start_frame": 127,
+      "end_frame": 209,
+      "gap_after_ms": 180,
       "semantic_cues": [
         {
-          "phrase": "tokenizer chops",
+          "phrase": "chops sentences",
           "cue": "token_chop",
-          "time_ms": 6258,
-          "frame": 188
+          "time_ms": 5188,
+          "frame": 156
         },
         {
-          "phrase": "numeric tokens",
+          "phrase": "puzzle pieces",
           "cue": "token_ids_glow",
-          "time_ms": 7452,
-          "frame": 224
+          "time_ms": 6280,
+          "frame": 188
         }
       ]
     },
     {
       "id": "ai03_nemi_queen",
       "speaker": "nemi",
-      "text": "Like King minus Man plus Woman equals Queen?",
-      "start_time_ms": 8399,
-      "end_time_ms": 11065,
-      "duration_s": 2.667,
-      "start_frame": 252,
-      "end_frame": 332,
-      "gap_after_ms": 220,
+      "text": "So King minus Man plus Woman gives Queen?",
+      "start_time_ms": 7143,
+      "end_time_ms": 9724,
+      "duration_s": 2.581,
+      "start_frame": 214,
+      "end_frame": 292,
+      "gap_after_ms": 200,
       "semantic_cues": [
         {
-          "phrase": "equals Queen",
+          "phrase": "gives Queen",
           "cue": "vector_equation_pop",
-          "time_ms": 9998,
-          "frame": 300
+          "time_ms": 8691,
+          "frame": 261
         }
       ]
     },
     {
       "id": "ai04_attention",
       "speaker": "narrator",
-      "text": "Exactly! Then, Self-Attention calculates context, so bank of a river isn't confused with money.",
-      "start_time_ms": 11285,
-      "end_time_ms": 16533,
-      "duration_s": 5.248,
-      "start_frame": 339,
-      "end_frame": 496,
-      "gap_after_ms": 200,
+      "text": "Exactly! Words with similar meanings sit together. Attention acts like a detective, so river bank isn't confused with money bank.",
+      "start_time_ms": 9924,
+      "end_time_ms": 17028,
+      "duration_s": 7.104,
+      "start_frame": 298,
+      "end_frame": 511,
+      "gap_after_ms": 180,
       "semantic_cues": [
         {
-          "phrase": "Self-Attention",
-          "cue": "attention_matrix_sweep",
-          "time_ms": 12859,
-          "frame": 386
+          "phrase": "sit together",
+          "cue": "meaning_cluster",
+          "time_ms": 11700,
+          "frame": 351
         },
         {
-          "phrase": "bank of a river",
+          "phrase": "detective",
+          "cue": "attention_beam",
+          "time_ms": 13831,
+          "frame": 415
+        },
+        {
+          "phrase": "river bank",
           "cue": "context_resolved",
-          "time_ms": 15221,
-          "frame": 457
+          "time_ms": 15607,
+          "frame": 468
         }
       ]
     },
     {
       "id": "ai05_softmax",
       "speaker": "narrator",
-      "text": "Finally, Softmax picks the highest probability next word in fifteen milliseconds.",
-      "start_time_ms": 16733,
-      "end_time_ms": 20637,
-      "duration_s": 3.904,
-      "start_frame": 502,
-      "end_frame": 619,
-      "gap_after_ms": 200,
+      "text": "Finally, it picks the most likely next word in fifteen milliseconds.",
+      "start_time_ms": 17208,
+      "end_time_ms": 20066,
+      "duration_s": 2.859,
+      "start_frame": 516,
+      "end_frame": 602,
+      "gap_after_ms": 180,
       "semantic_cues": [
         {
-          "phrase": "Softmax picks",
-          "cue": "softmax_bars_rise",
-          "time_ms": 18099,
-          "frame": 543
+          "phrase": "picks the most likely",
+          "cue": "prob_bars_rise",
+          "time_ms": 18208,
+          "frame": 546
         },
         {
           "phrase": "fifteen milliseconds",
-          "cue": "token_selected",
-          "time_ms": 19856,
-          "frame": 596
+          "cue": "word_chosen",
+          "time_ms": 19494,
+          "frame": 585
         }
       ]
     },
     {
       "id": "ai06_payoff",
       "speaker": "narrator",
-      "text": "Tokenize, embed, attend, predict. That's modern AI.",
-      "start_time_ms": 20837,
-      "end_time_ms": 24506,
-      "duration_s": 3.669,
-      "start_frame": 625,
-      "end_frame": 735,
-      "gap_after_ms": 200,
+      "text": "Puzzle pieces, 3D map, context, next word. That's AI.",
+      "start_time_ms": 20246,
+      "end_time_ms": 23360,
+      "duration_s": 3.115,
+      "start_frame": 607,
+      "end_frame": 701,
+      "gap_after_ms": 180,
       "semantic_cues": [
         {
-          "phrase": "Tokenize, embed",
-          "cue": "master_scorecard_snap",
-          "time_ms": 22304,
-          "frame": 669
+          "phrase": "Puzzle pieces",
+          "cue": "scorecard_snap",
+          "time_ms": 21180,
+          "frame": 635
         }
       ]
     },
     {
       "id": "ai07_nemi_smug",
       "speaker": "nemi",
-      "text": "Just pure vector geometry! \ud83d\ude0e\u26a1",
-      "start_time_ms": 24706,
-      "end_time_ms": 26434,
-      "duration_s": 1.728,
-      "start_frame": 741,
-      "end_frame": 793,
-      "gap_after_ms": 250,
+      "text": "It's just math, not magic! \ud83d\ude0e\u26a1",
+      "start_time_ms": 23540,
+      "end_time_ms": 25310,
+      "duration_s": 1.771,
+      "start_frame": 706,
+      "end_frame": 759,
+      "gap_after_ms": 220,
       "semantic_cues": [
         {
-          "phrase": "vector geometry",
+          "phrase": "not magic",
           "cue": "nemi_sunglasses",
-          "time_ms": 25570,
-          "frame": 767
+          "time_ms": 24425,
+          "frame": 733
         }
       ]
     }

@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-Nemi Explains Reel #4 — Master Speaker Orchestration Audio Pipeline
-Topic: "How ChatGPT Actually Predicts Words: Embeddings & Attention" (~21s @ 30fps)
-Dual-Voice Architecture: Chatterbox Neural Expressive TTS (Narrator) + Edge-TTS AnaNeural (Nemi)
-Guarantees 0ms accidental speaker overlap with strict deterministic state machine.
+Nemi Explains Reel #4 — Simplified High-Retention Dual-Voice Pipeline
+Topic: "How ChatGPT Actually Works (In Simple Terms)" (~20s @ 30fps)
+Uses fresh BGM: 'joel sunny - luminary' (or 'Death of a Bluebird')
 """
 
 import os
@@ -49,95 +48,96 @@ except ImportError:
     HAS_LIBROSA = False
 
 # ═══════════════════════════════════════════════════════════════
-# REEL #4 MASTER SPEAKER TIMELINE (~21s Target)
+# SIMPLIFIED HIGH-RETENTION SCRIPT (ELI5 & VISUAL)
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
-    # 1. Beat 1: Hook (0-4s)
+    # 1. Beat 1: Simple Counter-Intuitive Hook
     {
         "id": "ai01_hook",
         "speaker": "narrator",
-        "text": "ChatGPT doesn't understand English. It turns your words into twelve thousand dimensional coordinates.",
+        "text": "ChatGPT doesn't understand English. It turns your words into a giant 3D map.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
             {"phrase": "doesn't understand", "cue": "prompt_enter", "rel_pct": 0.30},
-            {"phrase": "dimensional coordinates", "cue": "coords_glow", "rel_pct": 0.75},
+            {"phrase": "giant 3D map", "cue": "map_glow", "rel_pct": 0.75},
         ]
     },
-    # 2. Beat 2: Tokenization (4-7s)
+    # 2. Beat 2: Number Puzzle Pieces (Tokenization)
     {
         "id": "ai02_tokens",
         "speaker": "narrator",
-        "text": "First, the tokenizer chops sentences into numeric tokens.",
+        "text": "First, it chops sentences into number puzzle pieces.",
         "emotion": "normal",
         "exaggeration": 0.55,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "tokenizer chops", "cue": "token_chop", "rel_pct": 0.35},
-            {"phrase": "numeric tokens", "cue": "token_ids_glow", "rel_pct": 0.75},
+            {"phrase": "chops sentences", "cue": "token_chop", "rel_pct": 0.35},
+            {"phrase": "puzzle pieces", "cue": "token_ids_glow", "rel_pct": 0.75},
         ]
     },
-    # 3. Beat 3: Nemi Vector Math Equation (7-10s)
+    # 3. Beat 3: Nemi's Visual Analogy (King - Man + Woman = Queen)
     {
         "id": "ai03_nemi_queen",
         "speaker": "nemi",
-        "text": "Like King minus Man plus Woman equals Queen?",
+        "text": "So King minus Man plus Woman gives Queen?",
         "emotion": "normal",
         "exaggeration": 0.65,
-        "gap_after_ms": 220,
+        "gap_after_ms": 200,
         "semantic_phrases": [
-            {"phrase": "equals Queen", "cue": "vector_equation_pop", "rel_pct": 0.60}
+            {"phrase": "gives Queen", "cue": "vector_equation_pop", "rel_pct": 0.60}
         ]
     },
-    # 4. Beat 4: Self-Attention Context Disambiguation (10-15s)
+    # 4. Beat 4: The Context Detective (Self-Attention)
     {
         "id": "ai04_attention",
         "speaker": "narrator",
-        "text": "Exactly! Then, Self-Attention calculates context, so bank of a river isn't confused with money.",
+        "text": "Exactly! Words with similar meanings sit together. Attention acts like a detective, so river bank isn't confused with money bank.",
         "emotion": "normal",
         "exaggeration": 0.55,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "Self-Attention", "cue": "attention_matrix_sweep", "rel_pct": 0.30},
-            {"phrase": "bank of a river", "cue": "context_resolved", "rel_pct": 0.75},
+            {"phrase": "sit together", "cue": "meaning_cluster", "rel_pct": 0.25},
+            {"phrase": "detective", "cue": "attention_beam", "rel_pct": 0.55},
+            {"phrase": "river bank", "cue": "context_resolved", "rel_pct": 0.80},
         ]
     },
-    # 5. Beat 5: Softmax Next Token Prediction (15-18s)
+    # 5. Beat 5: Next Word Dice Roll (Prediction)
     {
         "id": "ai05_softmax",
         "speaker": "narrator",
-        "text": "Finally, Softmax picks the highest probability next word in fifteen milliseconds.",
+        "text": "Finally, it picks the most likely next word in fifteen milliseconds.",
         "emotion": "normal",
         "exaggeration": 0.60,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "Softmax picks", "cue": "softmax_bars_rise", "rel_pct": 0.35},
-            {"phrase": "fifteen milliseconds", "cue": "token_selected", "rel_pct": 0.80},
+            {"phrase": "picks the most likely", "cue": "prob_bars_rise", "rel_pct": 0.35},
+            {"phrase": "fifteen milliseconds", "cue": "word_chosen", "rel_pct": 0.80},
         ]
     },
-    # 6. Beat 6: 4-Pillar Architecture Takeaway (18-21s)
+    # 6. Beat 6: The 4-Step Summary
     {
         "id": "ai06_payoff",
         "speaker": "narrator",
-        "text": "Tokenize, embed, attend, predict. That's modern AI.",
+        "text": "Puzzle pieces, 3D map, context, next word. That's AI.",
         "emotion": "dramatic",
         "exaggeration": 0.65,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "Tokenize, embed", "cue": "master_scorecard_snap", "rel_pct": 0.40},
+            {"phrase": "Puzzle pieces", "cue": "scorecard_snap", "rel_pct": 0.30},
         ]
     },
-    # 7. Beat 7: Nemi Smug Outro (21-23s)
+    # 7. Beat 7: Nemi Mascot Outro
     {
         "id": "ai07_nemi_smug",
         "speaker": "nemi",
-        "text": "Just pure vector geometry! 😎⚡",
+        "text": "It's just math, not magic! 😎⚡",
         "emotion": "normal",
         "exaggeration": 0.70,
-        "gap_after_ms": 250,
+        "gap_after_ms": 220,
         "semantic_phrases": [
-            {"phrase": "vector geometry", "cue": "nemi_sunglasses", "rel_pct": 0.50}
+            {"phrase": "not magic", "cue": "nemi_sunglasses", "rel_pct": 0.50}
         ]
     }
 ]
@@ -171,14 +171,13 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS REEL #4 — HOW CHATGPT PREDICTS WORDS (AUDIO PIPELINE)")
+    print("🎙️ NEMI EXPLAINS REEL #4 (V2 ELI5) — AUDIO PIPELINE")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
     print(f"   Device: {device.upper()}")
     print(f"   Voices: Narrator (Deep Authority) + Nemi Mascot (Playful +18% rate)")
-    print(f"   Gaps: 200–250ms (Rapid high-retention tech flow)")
     print(f"   Target Voice LUFS: {TARGET_VOICE_LUFS}\n")
 
     print("Loading Chatterbox model weights for Narrator...")
@@ -197,7 +196,7 @@ def main():
         speaker = event["speaker"]
         text = event["text"]
         exag = event.get("exaggeration", 0.55)
-        gap_after = event.get("gap_after_ms", 220)
+        gap_after = event.get("gap_after_ms", 180)
 
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
 
@@ -292,17 +291,17 @@ def main():
     subprocess.run(norm_cmd, check=True, capture_output=True)
     print(f"✅ Master Voice Track: {final_voice_mp3.name}")
 
-    # 3. Dynamic Sidechain Ducking Curve for BGM
-    bgm_path = BASE_DIR / "public" / "bgm" / "Synthwave Goose - Blade Runner 2049.mp3"
+    # 3. Dynamic Sidechain Ducking with Fresh Track: "joel sunny - luminary"
+    bgm_path = BASE_DIR / "public" / "bgm" / "joel sunny - luminary [original song] - official audio 4.mp3"
     if not bgm_path.exists():
-        bgm_path = BASE_DIR / "assets" / "background_music" / "Synthwave Goose - Blade Runner 2049.mp3"
+        bgm_path = BASE_DIR / "public" / "bgm" / "Death of a Bluebird - Rorschach Roy 4.mp3"
 
     master_audio_mp3 = PUBLIC_REELS / "chatgpt_master_audio.mp3"
 
     if bgm_path.exists():
-        print(f"🎵 Mixing energetic tech BGM: {bgm_path.name}")
+        print(f"🎵 Mixing fresh melodic tech BGM: {bgm_path.name}")
         sidechain_filter = (
-            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st={total_duration_s - 1.0}:d=1.0[bgm];"
+            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.25,afade=t=in:st=0:d=0.4,afade=t=out:st={total_duration_s - 1.0}:d=1.0[bgm];"
             f"[0:a]asplit=2[voice_main][voice_sc];"
             f"[bgm][voice_sc]sidechaincompress=threshold=0.035:ratio=7:attack=25:release=220[ducked_bgm];"
             f"[voice_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"
@@ -318,26 +317,17 @@ def main():
             str(master_audio_mp3)
         ]
         subprocess.run(bgm_mix_cmd, check=True, capture_output=True)
-        print(f"✅ Dynamic Master Audio Mix (Voice + Ducked Synthwave BGM): {master_audio_mp3.name}")
+        print(f"✅ Dynamic Master Audio Mix: {master_audio_mp3.name}")
     else:
         shutil.copy(final_voice_mp3, master_audio_mp3)
 
     shutil.copy(master_audio_mp3, PUBLIC_SOUNDS / "chatgpt_master_audio.mp3")
 
-    # Copy SFX to public/reels/chatgpt_04/sfx/
-    dest_sfx = PUBLIC_REELS / "sfx"
-    dest_sfx.mkdir(parents=True, exist_ok=True)
-    for sfx_name in ["typing.mp3", "click.mp3", "whoosh.mp3", "ping.mp3", "notification.mp3", "pop.mp3", "chime.mp3", "error.mp3"]:
-        src = PUBLIC_SOUNDS / sfx_name
-        dst = dest_sfx / sfx_name
-        if src.exists() and not dst.exists():
-            shutil.copy(src, dst)
-
     # 4. Export JSON cues for Remotion
     cues_json_path = BASE_DIR / "src" / "data" / "chatgpt_cues.json"
     cues_data = {
         "reel_id": "chatgpt_04",
-        "title": "How ChatGPT Actually Predicts Words: Embeddings & Attention",
+        "title": "How ChatGPT Actually Works: In Simple Terms",
         "total_duration_s": total_duration_s,
         "total_frames": total_frames,
         "fps": 30,
