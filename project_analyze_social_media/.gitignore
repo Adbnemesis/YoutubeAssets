@@ -1,0 +1,13 @@
+# Ignore sensitive OAuth credentials and tokens across all subfolders
+*client_secret*.json
+*token*.json
+*.pickle
+.env
+*.env
+
+# Ignore cached data and virtual environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/
