@@ -76,3 +76,4 @@ All components strictly adhere to the following **High-Visibility Token Standard
 | **#1** | `NemiExplainsCaptcha` | How CAPTCHA Knows You're Human (Micro-Tremors) | `22.79s` (683f) | `out/NemiExplains_14_Master.mp4` |
 | **#2** | `NemiExplainsGoogle` | What Happens When You Type google.com? (64ms Journey) | `19.72s` (592f) | `out/NemiExplains_Google_20260818.mp4` |
 | **#3** | `NemiExplainsTwoSum` | Two Sum: The $O(N^2)$ Trap vs The 1-Pass Hash Map (LeetCode #1) | `24.47s` (734f) | `out/NemiExplains_TwoSum_20260818.mp4` |
+| **#4** | `NemiExplainsChatGPT` | How ChatGPT Actually Predicts Words: Embeddings & Attention | `26.68s` (801f) | `out/NemiExplains_ChatGPT_20260820.mp4` |

@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { ChatGPTExplainsComp } from "../reels/chatgpt_04/ChatGPTExplainsComp";
 import { TwoSumComp } from "../reels/twosum_03/TwoSumComp";
 import { GoogleExplainsComp } from "../reels/google_02/GoogleExplainsComp";
 import { CaptchaExplainsComp } from "./compositions/CaptchaExplainsComp";
@@ -27,6 +28,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsChatGPT"
+        component={ChatGPTExplainsComp}
+        durationInFrames={801} // 26.68s @ 30fps — Reel #4: How ChatGPT Actually Predicts Words: Embeddings & Attention
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsTwoSum"
         component={TwoSumComp}

@@ -1,0 +1,166 @@
+{
+  "reel_id": "chatgpt_04",
+  "title": "How ChatGPT Actually Predicts Words: Embeddings & Attention",
+  "total_duration_s": 26.684,
+  "total_frames": 801,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "ai01_hook",
+      "speaker": "narrator",
+      "text": "ChatGPT doesn't understand English. It turns your words into twelve thousand dimensional coordinates.",
+      "start_time_ms": 0,
+      "end_time_ms": 5013,
+      "duration_s": 5.013,
+      "start_frame": 0,
+      "end_frame": 150,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "doesn't understand",
+          "cue": "prompt_enter",
+          "time_ms": 1503,
+          "frame": 45
+        },
+        {
+          "phrase": "dimensional coordinates",
+          "cue": "coords_glow",
+          "time_ms": 3759,
+          "frame": 113
+        }
+      ]
+    },
+    {
+      "id": "ai02_tokens",
+      "speaker": "narrator",
+      "text": "First, the tokenizer chops sentences into numeric tokens.",
+      "start_time_ms": 5213,
+      "end_time_ms": 8199,
+      "duration_s": 2.987,
+      "start_frame": 156,
+      "end_frame": 246,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "tokenizer chops",
+          "cue": "token_chop",
+          "time_ms": 6258,
+          "frame": 188
+        },
+        {
+          "phrase": "numeric tokens",
+          "cue": "token_ids_glow",
+          "time_ms": 7452,
+          "frame": 224
+        }
+      ]
+    },
+    {
+      "id": "ai03_nemi_queen",
+      "speaker": "nemi",
+      "text": "Like King minus Man plus Woman equals Queen?",
+      "start_time_ms": 8399,
+      "end_time_ms": 11065,
+      "duration_s": 2.667,
+      "start_frame": 252,
+      "end_frame": 332,
+      "gap_after_ms": 220,
+      "semantic_cues": [
+        {
+          "phrase": "equals Queen",
+          "cue": "vector_equation_pop",
+          "time_ms": 9998,
+          "frame": 300
+        }
+      ]
+    },
+    {
+      "id": "ai04_attention",
+      "speaker": "narrator",
+      "text": "Exactly! Then, Self-Attention calculates context, so bank of a river isn't confused with money.",
+      "start_time_ms": 11285,
+      "end_time_ms": 16533,
+      "duration_s": 5.248,
+      "start_frame": 339,
+      "end_frame": 496,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "Self-Attention",
+          "cue": "attention_matrix_sweep",
+          "time_ms": 12859,
+          "frame": 386
+        },
+        {
+          "phrase": "bank of a river",
+          "cue": "context_resolved",
+          "time_ms": 15221,
+          "frame": 457
+        }
+      ]
+    },
+    {
+      "id": "ai05_softmax",
+      "speaker": "narrator",
+      "text": "Finally, Softmax picks the highest probability next word in fifteen milliseconds.",
+      "start_time_ms": 16733,
+      "end_time_ms": 20637,
+      "duration_s": 3.904,
+      "start_frame": 502,
+      "end_frame": 619,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "Softmax picks",
+          "cue": "softmax_bars_rise",
+          "time_ms": 18099,
+          "frame": 543
+        },
+        {
+          "phrase": "fifteen milliseconds",
+          "cue": "token_selected",
+          "time_ms": 19856,
+          "frame": 596
+        }
+      ]
+    },
+    {
+      "id": "ai06_payoff",
+      "speaker": "narrator",
+      "text": "Tokenize, embed, attend, predict. That's modern AI.",
+      "start_time_ms": 20837,
+      "end_time_ms": 24506,
+      "duration_s": 3.669,
+      "start_frame": 625,
+      "end_frame": 735,
+      "gap_after_ms": 200,
+      "semantic_cues": [
+        {
+          "phrase": "Tokenize, embed",
+          "cue": "master_scorecard_snap",
+          "time_ms": 22304,
+          "frame": 669
+        }
+      ]
+    },
+    {
+      "id": "ai07_nemi_smug",
+      "speaker": "nemi",
+      "text": "Just pure vector geometry! \ud83d\ude0e\u26a1",
+      "start_time_ms": 24706,
+      "end_time_ms": 26434,
+      "duration_s": 1.728,
+      "start_frame": 741,
+      "end_frame": 793,
+      "gap_after_ms": 250,
+      "semantic_cues": [
+        {
+          "phrase": "vector geometry",
+          "cue": "nemi_sunglasses",
+          "time_ms": 25570,
+          "frame": 767
+        }
+      ]
+    }
+  ]
+}
