@@ -202,17 +202,22 @@ npx remotion render src/index.tsx Chatnemi \
 ### 4. YouTube Metadata & High-CTR Thumbnail Rules
 Every episode directory must contain a `metadata.txt` with Title, Description, Tags, Thumbnail Prompts, and the official Supercell Fan Content disclaimer.
 
-#### 🖼️ Thumbnail Prompt Design Rules (Human-Edited 2D Discord Style):
+#### 🖼️ Thumbnail Prompt Design Rules (Pure Authentic Discord Chat):
 > [!IMPORTANT]
-> **AVOID AI 3D UNCANNY LOOK**: Do **not** generate glossy 3D Pixar/CGI renders for thumbnails that look obviously AI-generated.
-> Top-converting Discord parody thumbnails (Beluga style) look like **authentic, clean 2D screenshot edits** created by human editors.
+> **PURE DISCORD CHAT ONLY**: Keep thumbnails completely clean and minimal.
+> - **NO** red circles or red arrows.
+> - **NO** overlay text banners (e.g. no "CAUGHT IN 4K", "BRO IS COOKED", etc.).
+> - **NO** 3D AI Pixar/CGI renders.
+> 
+> The thumbnail must look like an **authentic, clean 2D Discord dark mode screenshot** where the comedic text exchange between brawlers speaks for itself!
 
-1. **Canvas**: Standard **16:9 Widescreen (1280x720 / 1920x1080)** with dark theme Discord UI (`#313338`).
-2. **Characters**: Flat 2D official Brawl Stars game portraits/pins beside clean Discord chat bubbles.
-3. **The Joke / Curiosity Gap**: 
-   - Speaker A (Accuser): *"Edgar you literally dealt 0 damage."*
-   - Speaker B (Edgar / Target): *"it was aura warfare 💀👎"*
-4. **Zero Clutter**: High readability on mobile YouTube feeds.
+1. **Canvas**: Standard **16:9 Landscape Widescreen (1280x720 / 1920x1080)** with authentic dark theme Discord UI (`#313338` background, `#2b2d31` sidebar/channel bar).
+2. **Characters**: Flat 2D official Brawl Stars profile icons with accurate username colored headers (e.g. pink `#E91E63` for Edgar, cyan `#29B6F6` for Shelly).
+3. **The Joke / Text Hook**:
+   - 2 to 3 concise, highly readable Discord message lines delivering the central absurd premise:
+     - Speaker A (Accuser): *"Edgar you literally dealt 0 damage."*
+     - Speaker B (Edgar / Target): *"it was aura warfare 💀👎"*
+4. **Authenticity & Clarity**: Exact Discord UI typography (gg sans / Whitney), crisp chat bubbles, timestamp (`Today at 5:42 PM`), and high readability on mobile feeds without any graphic clutter.
 
 #### ⚖️ Mandatory Supercell Disclaimer:
 > *"This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy."*

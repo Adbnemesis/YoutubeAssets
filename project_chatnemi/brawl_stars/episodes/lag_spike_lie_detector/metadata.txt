@@ -9,12 +9,12 @@ Edgar loses a Knockout match to Crow and blames a 9999ms Wi-Fi lag spike. But Le
 Tags:
 #brawlstars #brawlstarsmemes #edgar #leon #crow #chester #discordmemes #gaming #ranked #brawlstarsanimation #brawlstarslongform
 
-Thumbnail Prompt (Clean Human-Edited Discord Style, 16:9):
-Prompt 1 (Authentic Discord Chat & 12ms Ping Reveal):
-"Clean 16:9 YouTube thumbnail in Discord meme edit style. Dark theme Discord chat window (#313338). On the left, Edgar's 2D game profile icon with message bubble: 'SUPERCELL FIX YOUR 9999MS LAG 🤬'. On the right, Leon's 2D game profile icon with message bubble: 'bro your ping is 12ms 💀'. A bright hand-drawn red circle highlighting a green 'PING: 12ms (5G)' stats badge with a bold red arrow. Bold white and yellow 2D YouTube text on top: 'CAUGHT IN 4K 📸'. Flat 2D vector Brawl Stars aesthetic, authentic Discord UI screenshot look, high contrast, zero AI artifacting, 16:9 widescreen."
+Thumbnail Prompt (Pure Authentic Discord Chat, 16:9 Landscape):
+Prompt 1 (Primary - Pure Discord Text Chat):
+"Ultra-clean 16:9 YouTube thumbnail styled as an authentic dark mode (#313338) Discord chat screenshot. Large, crisp Discord message cards with official 2D Brawl Stars profile avatars. Message 1 from Edgar (pink username): 'SUPERCELL FIX YOUR 9999MS LAG RIGHT NOW 🤬'. Reply from Leon (green username): 'bro your ping was 12ms on 5G fiber.'. Reply from Crow (blue username): 'you were playing Subway Surfers on split screen 💀'. Completely clean, no red circles, no red arrows, no overlay text banners, exact Discord dark theme typography and layout, 100% authentic screenshot look, 16:9 widescreen."
 
-Prompt 2 (Discord Voice Call & Subway Surfers Reveal):
-"16:9 YouTube thumbnail styled as an authentic Discord group call screenshot. Large dark voice call tile showing Edgar's profile icon. Below, a floating crop of Subway Surfers gameplay over Edgar's Discord stream with Crow typing in text chat: 'why were you playing subway surfers in knockout 😭'. Big red circle and bold 2D text: 'EXPOSED LIVE! 💀'. Clean graphic design, high clarity."
+Prompt 2 (Alternative - Pure Discord Voice Call & Chat):
+"Clean 16:9 YouTube thumbnail of an authentic Discord channel window. At the top, Discord voice call bar showing Edgar and Crow. In the text chat below, Edgar: 'MY SCREEN RECORDER GLITCHED OKAY' and Leon: 'I pulled your 12ms telemetry receipts 📸'. Pure dialogue, high contrast, clean Discord dark mode UI, zero graphic clutter, 16:9 widescreen format."
 
 Disclaimer:
 This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan Content Policy: www.supercell.com/fan-content-policy.
