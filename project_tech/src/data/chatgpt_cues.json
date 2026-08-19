@@ -1,120 +1,151 @@
 {
   "reel_id": "chatgpt_04",
-  "title": "How ChatGPT Actually Works: Super Autocomplete",
-  "total_duration_s": 16.623,
-  "total_frames": 499,
+  "title": "How ChatGPT ACTUALLY Works: The Transformer Network",
+  "total_duration_s": 25.752,
+  "total_frames": 773,
   "fps": 30,
   "timeline_events": [
     {
       "id": "ai01_hook",
       "speaker": "narrator",
-      "text": "ChatGPT does not think. It is literally the world's most powerful autocomplete.",
+      "text": "How does ChatGPT write essays and code? It doesn't understand a single word you type.",
       "start_time_ms": 0,
-      "end_time_ms": 3797,
-      "duration_s": 3.797,
+      "end_time_ms": 4565,
+      "duration_s": 4.565,
       "start_frame": 0,
-      "end_frame": 114,
-      "gap_after_ms": 160,
+      "end_frame": 137,
+      "gap_after_ms": 140,
       "semantic_cues": [
         {
-          "phrase": "does not think",
-          "cue": "not_thinking",
-          "time_ms": 949,
-          "frame": 28
-        },
-        {
-          "phrase": "powerful autocomplete",
-          "cue": "autocomplete_glow",
-          "time_ms": 2847,
-          "frame": 85
-        }
-      ]
-    },
-    {
-      "id": "ai02_probabilities",
-      "speaker": "narrator",
-      "text": "When you type a prompt, it calculates the probability of every possible next word.",
-      "start_time_ms": 3957,
-      "end_time_ms": 7647,
-      "duration_s": 3.691,
-      "start_frame": 119,
-      "end_frame": 229,
-      "gap_after_ms": 160,
-      "semantic_cues": [
-        {
-          "phrase": "type a prompt",
+          "phrase": "essays and code",
           "cue": "prompt_type",
-          "time_ms": 4879,
-          "frame": 146
+          "time_ms": 1369,
+          "frame": 41
         },
         {
-          "phrase": "every possible next word",
-          "cue": "prob_bars_rise",
-          "time_ms": 6724,
-          "frame": 202
+          "phrase": "doesn't understand",
+          "cue": "hook_reveal",
+          "time_ms": 3423,
+          "frame": 103
         }
       ]
     },
     {
-      "id": "ai03_loop",
+      "id": "ai02_attention",
       "speaker": "narrator",
-      "text": "It picks the highest chance word, adds it to the sentence, and repeats sixty times a second.",
-      "start_time_ms": 7807,
-      "end_time_ms": 12009,
-      "duration_s": 4.203,
-      "start_frame": 234,
-      "end_frame": 360,
+      "text": "Inside is a Transformer network. Self-Attention connects every word together, figuring out if bank means money or water.",
+      "start_time_ms": 4705,
+      "end_time_ms": 10614,
+      "duration_s": 5.909,
+      "start_frame": 141,
+      "end_frame": 318,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "Transformer network",
+          "cue": "transformer_enter",
+          "time_ms": 5886,
+          "frame": 177
+        },
+        {
+          "phrase": "connects every word",
+          "cue": "attention_matrix",
+          "time_ms": 7364,
+          "frame": 221
+        },
+        {
+          "phrase": "money or water",
+          "cue": "bank_disambiguate",
+          "time_ms": 9727,
+          "frame": 292
+        }
+      ]
+    },
+    {
+      "id": "ai03_layers",
+      "speaker": "narrator",
+      "text": "It pushes these vectors through ninety-six deep neural layers, processing billions of internet patterns.",
+      "start_time_ms": 10754,
+      "end_time_ms": 15255,
+      "duration_s": 4.501,
+      "start_frame": 323,
+      "end_frame": 458,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "ninety-six",
+          "cue": "layers_stack",
+          "time_ms": 12329,
+          "frame": 370
+        },
+        {
+          "phrase": "billions of internet patterns",
+          "cue": "weights_glow",
+          "time_ms": 14129,
+          "frame": 424
+        }
+      ]
+    },
+    {
+      "id": "ai04_sampling",
+      "speaker": "narrator",
+      "text": "At the final layer, it scores 100,000 tokens to pick the best next word in fifteen milliseconds.",
+      "start_time_ms": 15395,
+      "end_time_ms": 20152,
+      "duration_s": 4.757,
+      "start_frame": 462,
+      "end_frame": 605,
+      "gap_after_ms": 160,
+      "semantic_cues": [
+        {
+          "phrase": "scores 100,000 tokens",
+          "cue": "vocab_scores",
+          "time_ms": 17059,
+          "frame": 512
+        },
+        {
+          "phrase": "fifteen milliseconds",
+          "cue": "word_emitted",
+          "time_ms": 19200,
+          "frame": 576
+        }
+      ]
+    },
+    {
+      "id": "ai05_nemi_aha",
+      "speaker": "nemi",
+      "text": "So ninety-six layers of math predict the next word?! \ud83e\udd2f",
+      "start_time_ms": 20312,
+      "end_time_ms": 23128,
+      "duration_s": 2.816,
+      "start_frame": 609,
+      "end_frame": 694,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "predict the next word",
+          "cue": "nemi_mindblown",
+          "time_ms": 22001,
+          "frame": 660
+        }
+      ]
+    },
+    {
+      "id": "ai06_outro",
+      "speaker": "narrator",
+      "text": "Exactly. Pure Transformer architecture.",
+      "start_time_ms": 23268,
+      "end_time_ms": 25572,
+      "duration_s": 2.304,
+      "start_frame": 698,
+      "end_frame": 767,
       "gap_after_ms": 180,
       "semantic_cues": [
         {
-          "phrase": "highest chance word",
-          "cue": "word_snap",
-          "time_ms": 9067,
-          "frame": 272
-        },
-        {
-          "phrase": "repeats sixty times",
-          "cue": "loop_speedup",
-          "time_ms": 10958,
-          "frame": 329
-        }
-      ]
-    },
-    {
-      "id": "ai04_nemi_aha",
-      "speaker": "nemi",
-      "text": "So it's just predicting one word at a time?! \ud83e\udd2f",
-      "start_time_ms": 12189,
-      "end_time_ms": 14493,
-      "duration_s": 2.304,
-      "start_frame": 366,
-      "end_frame": 435,
-      "gap_after_ms": 160,
-      "semantic_cues": [
-        {
-          "phrase": "one word at a time",
-          "cue": "nemi_mindblown",
-          "time_ms": 13571,
-          "frame": 407
-        }
-      ]
-    },
-    {
-      "id": "ai05_outro",
-      "speaker": "narrator",
-      "text": "Exactly. Just pure probability.",
-      "start_time_ms": 14653,
-      "end_time_ms": 16423,
-      "duration_s": 1.771,
-      "start_frame": 440,
-      "end_frame": 493,
-      "gap_after_ms": 200,
-      "semantic_cues": [
-        {
-          "phrase": "pure probability",
-          "cue": "payoff_snap",
-          "time_ms": 15538,
-          "frame": 466
+          "phrase": "Transformer architecture",
+          "cue": "scorecard_snap",
+          "time_ms": 24420,
+          "frame": 733
         }
       ]
     }

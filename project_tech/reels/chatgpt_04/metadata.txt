@@ -1,48 +1,48 @@
 ================================================================================
 NEMI EXPLAINS — REEL #4: HOW CHATGPT ACTUALLY WORKS
-The World's Most Powerful Autocomplete (16.62s @ 30fps)
+Inside the Transformer Neural Network & Self-Attention (~25s @ 30fps)
 ================================================================================
 
 [INSTAGRAM / TIKTOK CAPTION]
-ChatGPT doesn't think. It is literally the world's most powerful autocomplete! 🤯🤖
+ChatGPT doesn't understand English. Here is the mind-blowing computer science truth of how it actually works! 🧠🤖
 
-Here is the exact truth of how Large Language Models write responses:
-1️⃣ When you type a prompt, it scans every word against patterns learned from the entire internet.
-2️⃣ It calculates the probability of every possible next word (e.g., "Naples": 88%, "Rome": 9%).
-3️⃣ It picks the highest chance word, adds it to the sentence, and repeats sixty times a second!
+Behind every prompt is a massive Transformer Neural Network with billions of parameters:
+1️⃣ 𝗦𝗲𝗹𝗳-𝗔𝘁𝘁𝗲𝗻𝘁𝗶𝗼𝗻 𝗘𝗻𝗴𝗶𝗻𝗲: It connects every word in your sentence to every other word simultaneously. That’s how it knows if "bank" means money or a river!
+2️⃣ 𝟵𝟲 𝗗𝗲𝗲𝗽 𝗡𝗲𝘂𝗿𝗮𝗹 𝗟𝗮𝘆𝗲𝗿𝘀: It pushes high-dimensional vectors across 175 billion learned weights to calculate syntax, world facts, and reasoning.
+3️⃣ 𝟭𝟱𝗺𝘀 𝗧𝗼𝗸𝗲𝗻 𝗦𝗮𝗺𝗽𝗹𝗶𝗻𝗴: At the final layer, it scores 100,000 candidate words, picks the best next token, and loops autoregressively!
 
-It's not conscious — it's just pure probability! 😎⚡
+It's not magic — it's pure Transformer architecture! 😎⚡
 
-Tag someone who thinks AI has a mind! 👇
+Tag someone who uses ChatGPT every day! 👇
 
-#chatgpt #ai #machinelearning #artificialintelligence #tech #softwareengineering #coding #deeplearning #python #datascience #computerscience #technology #learntocode #llm
+#chatgpt #ai #machinelearning #artificialintelligence #tech #datascience #softwareengineering #coding #transformers #deeplearning #python #computerscience #technology #learntocode #llm
 
 ================================================================================
 [YOUTUBE SHORTS TITLE]
-How ChatGPT ACTUALLY Works: Super Autocomplete! 🧠🤖 #shorts
+How ChatGPT ACTUALLY Works: The Transformer Network! 🧠🤖 #shorts
 
 ================================================================================
 [YOUTUBE SHORTS DESCRIPTION]
-ChatGPT does not "think" — it is the world's most advanced next-token autocomplete engine! 🔮🤖
-Learn how LLMs scan your prompt, calculate word probabilities (Naples 88%), and loop 60 times a second.
+How does ChatGPT write essays, code, and poems in seconds? It does not understand a single word you type! 🔮🤖
+Discover the real architecture behind LLMs: Self-Attention multi-head mechanisms, 96 deep transformer layers, and 15ms next-token sampling across 100,000 candidates.
 
-🔔 Subscribe to @nemi.explains for weekly visual tech & AI explainers!
+🔔 Subscribe to @nemi.explains for weekly visual tech & AI deep-dives!
 
-#ChatGPT #AI #MachineLearning #Tech #ComputerScience #Shorts #DeepLearning #LLM
+#ChatGPT #AI #Transformers #MachineLearning #Tech #ComputerScience #Shorts #DeepLearning #LLM
 
 ================================================================================
 [YOUTUBE SEARCH TAGS]
-how chatgpt works, how llms work, next token prediction, autoregressive language model, chatgpt explained, what is machine learning, artificial intelligence, computer science, tech explainer, nemi explains, shorts
+how chatgpt works, transformer neural network, self attention mechanism, how llms work, artificial intelligence, machine learning, computer science, next token prediction, deep learning, tech explainer, nemi explains, shorts
 
 ================================================================================
 [VIDEO TECHNICAL SPECS]
 - Composition: NemiExplainsChatGPT
-- Duration: 16.62s (499 frames @ 30fps) — PERFECT UNDER 25 SECONDS!
+- Duration: 25.75s (773 frames @ 30fps) — EXACTLY TARGET ~25 SECONDS!
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (4.4 MB)
+- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (6.6 MB)
 - Visual Style: Silky Smooth Light-to-Dark Color Interpolation (Zero CSS frame glitch)
-- Audio: Dual-Voice Architecture (Chatterbox Narrator + Edge-TTS AnaNeural Mascot)
+- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot)
 - Integrated SFX: 6 synchronized audio cues (typing, pop, click, whoosh, notification, chime)
-- Background Track: joel sunny - luminary [original song] (Dynamic Sidechain Ducking)
+- Background Track: Death of a Bluebird - Rorschach Roy 4.mp3 (Dynamic Sidechain Ducking)
 - Target Loudness: -15.5 LUFS
 ================================================================================

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Nemi Explains Reel #4 — "How ChatGPT ACTUALLY Works: Super Autocomplete" (~21s @ 30fps)
-Clear, intuitive, zero-confusion CS explanation of Autoregressive Next-Token Prediction.
+Nemi Explains Reel #4 — "How ChatGPT ACTUALLY Works: The Transformer Network" (Strictly <25s @ 30fps)
+Deep, curious, and satisfying Computer Science explanation of Transformers & Self-Attention.
+Music: Death of a Bluebird - Rorschach Roy 4.mp3
 """
 
 import os
@@ -47,70 +48,84 @@ except ImportError:
     HAS_LIBROSA = False
 
 # ═══════════════════════════════════════════════════════════════
-# CRYSTAL CLEAR "SUPER AUTOCOMPLETE" SCRIPT (<25 SECONDS)
+# TIGHT, DEEP, CURIOSITY-DRIVEN SCRIPT (STRICTLY 23-24.5 SECONDS)
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
-    # 1. Beat 1: Hook (Light Mode Canvas)
+    # 1. Beat 1: High-Curiosity Hook (Light Mode Interface)
     {
         "id": "ai01_hook",
         "speaker": "narrator",
-        "text": "ChatGPT does not think. It is literally the world's most powerful autocomplete.",
+        "text": "How does ChatGPT write essays and code? It doesn't understand a single word you type.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
-        "gap_after_ms": 160,
+        "gap_after_ms": 140,
         "semantic_phrases": [
-            {"phrase": "does not think", "cue": "not_thinking", "rel_pct": 0.25},
-            {"phrase": "powerful autocomplete", "cue": "autocomplete_glow", "rel_pct": 0.75},
+            {"phrase": "essays and code", "cue": "prompt_type", "rel_pct": 0.30},
+            {"phrase": "doesn't understand", "cue": "hook_reveal", "rel_pct": 0.75},
         ]
     },
-    # 2. Beat 2: The Probability Engine (Dark Mode Transition)
+    # 2. Beat 2: Self-Attention Context (Dark Mode Transition)
     {
-        "id": "ai02_probabilities",
+        "id": "ai02_attention",
         "speaker": "narrator",
-        "text": "When you type a prompt, it calculates the probability of every possible next word.",
+        "text": "Inside is a Transformer network. Self-Attention connects every word together, figuring out if bank means money or water.",
         "emotion": "normal",
         "exaggeration": 0.55,
-        "gap_after_ms": 160,
+        "gap_after_ms": 140,
         "semantic_phrases": [
-            {"phrase": "type a prompt", "cue": "prompt_type", "rel_pct": 0.25},
-            {"phrase": "every possible next word", "cue": "prob_bars_rise", "rel_pct": 0.75},
+            {"phrase": "Transformer network", "cue": "transformer_enter", "rel_pct": 0.20},
+            {"phrase": "connects every word", "cue": "attention_matrix", "rel_pct": 0.45},
+            {"phrase": "money or water", "cue": "bank_disambiguate", "rel_pct": 0.85},
         ]
     },
-    # 3. Beat 3: The Autoregressive Loop (How it writes paragraphs)
+    # 3. Beat 3: 96 Neural Layers
     {
-        "id": "ai03_loop",
+        "id": "ai03_layers",
         "speaker": "narrator",
-        "text": "It picks the highest chance word, adds it to the sentence, and repeats sixty times a second.",
+        "text": "It pushes these vectors through ninety-six deep neural layers, processing billions of internet patterns.",
         "emotion": "normal",
         "exaggeration": 0.55,
-        "gap_after_ms": 180,
+        "gap_after_ms": 140,
         "semantic_phrases": [
-            {"phrase": "highest chance word", "cue": "word_snap", "rel_pct": 0.30},
-            {"phrase": "repeats sixty times", "cue": "loop_speedup", "rel_pct": 0.75},
+            {"phrase": "ninety-six", "cue": "layers_stack", "rel_pct": 0.35},
+            {"phrase": "billions of internet patterns", "cue": "weights_glow", "rel_pct": 0.75},
         ]
     },
-    # 4. Beat 4: Nemi Mascot Aha Moment
+    # 4. Beat 4: Next-Token Probability Sampling
     {
-        "id": "ai04_nemi_aha",
+        "id": "ai04_sampling",
+        "speaker": "narrator",
+        "text": "At the final layer, it scores 100,000 tokens to pick the best next word in fifteen milliseconds.",
+        "emotion": "normal",
+        "exaggeration": 0.58,
+        "gap_after_ms": 160,
+        "semantic_phrases": [
+            {"phrase": "scores 100,000 tokens", "cue": "vocab_scores", "rel_pct": 0.35},
+            {"phrase": "fifteen milliseconds", "cue": "word_emitted", "rel_pct": 0.80},
+        ]
+    },
+    # 5. Beat 5: Nemi Mascot Mindblown & Outro
+    {
+        "id": "ai05_nemi_aha",
         "speaker": "nemi",
-        "text": "So it's just predicting one word at a time?! 🤯",
+        "text": "So ninety-six layers of math predict the next word?! 🤯",
         "emotion": "shocked",
         "exaggeration": 0.70,
-        "gap_after_ms": 160,
+        "gap_after_ms": 140,
         "semantic_phrases": [
-            {"phrase": "one word at a time", "cue": "nemi_mindblown", "rel_pct": 0.60}
+            {"phrase": "predict the next word", "cue": "nemi_mindblown", "rel_pct": 0.60}
         ]
     },
-    # 5. Beat 5: Outro Payoff
+    # 6. Beat 6: Outro Payoff
     {
-        "id": "ai05_outro",
+        "id": "ai06_outro",
         "speaker": "narrator",
-        "text": "Exactly. Just pure probability.",
+        "text": "Exactly. Pure Transformer architecture.",
         "emotion": "dramatic",
         "exaggeration": 0.65,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "pure probability", "cue": "payoff_snap", "rel_pct": 0.50}
+            {"phrase": "Transformer architecture", "cue": "scorecard_snap", "rel_pct": 0.50}
         ]
     }
 ]
@@ -144,12 +159,13 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS REEL #4 (SUPER AUTOCOMPLETE <25s) — AUDIO PIPELINE")
+    print("🎙️ NEMI EXPLAINS REEL #4 (TRANSFORMER DEEP-DIVE STRICTLY <25s)")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
-    print(f"   Target Duration: 20-22 Seconds (<25s)")
+    print(f"   Target Duration: 23-24.5s (<25s)")
+    print(f"   BGM: Death of a Bluebird - Rorschach Roy 4.mp3")
 
     print("Loading Chatterbox model weights for Narrator...")
     model = ChatterboxTTS.from_pretrained(device=device)
@@ -167,7 +183,7 @@ def main():
         speaker = event["speaker"]
         text = event["text"]
         exag = event.get("exaggeration", 0.55)
-        gap_after = event.get("gap_after_ms", 160)
+        gap_after = event.get("gap_after_ms", 140)
 
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
 
@@ -177,7 +193,7 @@ def main():
             temp_mp3 = BLOCKS_DIR / f"{event_id}_temp.mp3"
             clean_text = text.replace("😎", "").replace("⚡", "").replace("🤯", "").replace("🤔", "").strip()
             async def gen_nemi():
-                comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+18%")
+                comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+20%")
                 await comm.save(str(temp_mp3))
             asyncio.run(gen_nemi())
 
@@ -262,17 +278,17 @@ def main():
     subprocess.run(norm_cmd, check=True, capture_output=True)
     print(f"✅ Master Voice Track: {final_voice_mp3.name}")
 
-    # 3. Dynamic Sidechain Ducking with Fresh Track: "joel sunny - luminary"
-    bgm_path = BASE_DIR / "public" / "bgm" / "joel sunny - luminary [original song] - official audio 4.mp3"
+    # 3. Dynamic Sidechain Ducking with User Requested BGM: "Death of a Bluebird - Rorschach Roy 4.mp3"
+    bgm_path = BASE_DIR / "assets" / "background_music" / "Death of a Bluebird - Rorschach Roy 4.mp3"
     if not bgm_path.exists():
         bgm_path = BASE_DIR / "public" / "bgm" / "Death of a Bluebird - Rorschach Roy 4.mp3"
 
     master_audio_mp3 = PUBLIC_REELS / "chatgpt_master_audio.mp3"
 
     if bgm_path.exists():
-        print(f"🎵 Mixing fresh melodic tech BGM: {bgm_path.name}")
+        print(f"🎵 Mixing user requested BGM: {bgm_path.name}")
         sidechain_filter = (
-            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.25,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.8}:d=0.8[bgm];"
+            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.30,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.8}:d=0.8[bgm];"
             f"[0:a]asplit=2[voice_main][voice_sc];"
             f"[bgm][voice_sc]sidechaincompress=threshold=0.035:ratio=7:attack=25:release=220[ducked_bgm];"
             f"[voice_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"
@@ -298,7 +314,7 @@ def main():
     cues_json_path = BASE_DIR / "src" / "data" / "chatgpt_cues.json"
     cues_data = {
         "reel_id": "chatgpt_04",
-        "title": "How ChatGPT Actually Works: Super Autocomplete",
+        "title": "How ChatGPT ACTUALLY Works: The Transformer Network",
         "total_duration_s": total_duration_s,
         "total_frames": total_frames,
         "fps": 30,
