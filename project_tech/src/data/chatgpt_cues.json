@@ -1,120 +1,120 @@
 {
   "reel_id": "chatgpt_04",
-  "title": "How ChatGPT Works: In Simple Terms (<22s)",
-  "total_duration_s": 16.986,
-  "total_frames": 510,
+  "title": "How ChatGPT Actually Works: Super Autocomplete",
+  "total_duration_s": 16.623,
+  "total_frames": 499,
   "fps": 30,
   "timeline_events": [
     {
       "id": "ai01_hook",
       "speaker": "narrator",
-      "text": "ChatGPT doesn't understand English. It turns your words into a 3D map.",
+      "text": "ChatGPT does not think. It is literally the world's most powerful autocomplete.",
       "start_time_ms": 0,
-      "end_time_ms": 3605,
-      "duration_s": 3.605,
+      "end_time_ms": 3797,
+      "duration_s": 3.797,
       "start_frame": 0,
-      "end_frame": 108,
+      "end_frame": 114,
       "gap_after_ms": 160,
       "semantic_cues": [
         {
-          "phrase": "doesn't understand",
-          "cue": "prompt_enter",
-          "time_ms": 1081,
-          "frame": 32
+          "phrase": "does not think",
+          "cue": "not_thinking",
+          "time_ms": 949,
+          "frame": 28
         },
         {
-          "phrase": "3D map",
-          "cue": "map_glow",
-          "time_ms": 2703,
-          "frame": 81
+          "phrase": "powerful autocomplete",
+          "cue": "autocomplete_glow",
+          "time_ms": 2847,
+          "frame": 85
         }
       ]
     },
     {
-      "id": "ai02_tokens",
+      "id": "ai02_probabilities",
       "speaker": "narrator",
-      "text": "First, words become numbers. Then, words with similar meanings sit together.",
-      "start_time_ms": 3765,
-      "end_time_ms": 7541,
-      "duration_s": 3.776,
-      "start_frame": 113,
-      "end_frame": 226,
+      "text": "When you type a prompt, it calculates the probability of every possible next word.",
+      "start_time_ms": 3957,
+      "end_time_ms": 7647,
+      "duration_s": 3.691,
+      "start_frame": 119,
+      "end_frame": 229,
       "gap_after_ms": 160,
       "semantic_cues": [
         {
-          "phrase": "words become numbers",
-          "cue": "token_chop",
-          "time_ms": 5086,
-          "frame": 153
+          "phrase": "type a prompt",
+          "cue": "prompt_type",
+          "time_ms": 4879,
+          "frame": 146
         },
         {
-          "phrase": "sit together",
-          "cue": "cluster_glow",
-          "time_ms": 6597,
-          "frame": 198
+          "phrase": "every possible next word",
+          "cue": "prob_bars_rise",
+          "time_ms": 6724,
+          "frame": 202
         }
       ]
     },
     {
-      "id": "ai03_nemi_queen",
-      "speaker": "nemi",
-      "text": "So King minus Man plus Woman gives Queen?",
-      "start_time_ms": 7701,
-      "end_time_ms": 10239,
-      "duration_s": 2.539,
-      "start_frame": 231,
-      "end_frame": 307,
+      "id": "ai03_loop",
+      "speaker": "narrator",
+      "text": "It picks the highest chance word, adds it to the sentence, and repeats sixty times a second.",
+      "start_time_ms": 7807,
+      "end_time_ms": 12009,
+      "duration_s": 4.203,
+      "start_frame": 234,
+      "end_frame": 360,
       "gap_after_ms": 180,
       "semantic_cues": [
         {
-          "phrase": "gives Queen",
-          "cue": "vector_pop",
-          "time_ms": 9223,
-          "frame": 277
+          "phrase": "highest chance word",
+          "cue": "word_snap",
+          "time_ms": 9067,
+          "frame": 272
+        },
+        {
+          "phrase": "repeats sixty times",
+          "cue": "loop_speedup",
+          "time_ms": 10958,
+          "frame": 329
         }
       ]
     },
     {
-      "id": "ai04_attention_pred",
-      "speaker": "narrator",
-      "text": "Exactly! Attention acts like a detective, then picks the next word in fifteen milliseconds.",
-      "start_time_ms": 10419,
-      "end_time_ms": 14877,
-      "duration_s": 4.459,
-      "start_frame": 313,
-      "end_frame": 446,
+      "id": "ai04_nemi_aha",
+      "speaker": "nemi",
+      "text": "So it's just predicting one word at a time?! \ud83e\udd2f",
+      "start_time_ms": 12189,
+      "end_time_ms": 14493,
+      "duration_s": 2.304,
+      "start_frame": 366,
+      "end_frame": 435,
       "gap_after_ms": 160,
       "semantic_cues": [
         {
-          "phrase": "acts like a detective",
-          "cue": "detective_beam",
-          "time_ms": 12202,
-          "frame": 366
-        },
-        {
-          "phrase": "fifteen milliseconds",
-          "cue": "word_chosen",
-          "time_ms": 14208,
-          "frame": 426
+          "phrase": "one word at a time",
+          "cue": "nemi_mindblown",
+          "time_ms": 13571,
+          "frame": 407
         }
       ]
     },
     {
-      "id": "ai05_nemi_smug",
-      "speaker": "nemi",
-      "text": "It's just math, not magic! \ud83d\ude0e\u26a1",
-      "start_time_ms": 15037,
-      "end_time_ms": 16786,
-      "duration_s": 1.749,
-      "start_frame": 451,
-      "end_frame": 504,
+      "id": "ai05_outro",
+      "speaker": "narrator",
+      "text": "Exactly. Just pure probability.",
+      "start_time_ms": 14653,
+      "end_time_ms": 16423,
+      "duration_s": 1.771,
+      "start_frame": 440,
+      "end_frame": 493,
       "gap_after_ms": 200,
       "semantic_cues": [
         {
-          "phrase": "not magic",
-          "cue": "nemi_sunglasses",
-          "time_ms": 15911,
-          "frame": 477
+          "phrase": "pure probability",
+          "cue": "payoff_snap",
+          "time_ms": 15538,
+          "frame": 466
         }
       ]
     }

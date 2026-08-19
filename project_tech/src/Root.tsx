@@ -31,7 +31,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsChatGPT"
         component={ChatGPTExplainsComp}
-        durationInFrames={510} // 16.99s @ 30fps — Fast <22s ELI5 Edition
+        durationInFrames={499} // 16.62s @ 30fps — Super Autocomplete (<25s)
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}

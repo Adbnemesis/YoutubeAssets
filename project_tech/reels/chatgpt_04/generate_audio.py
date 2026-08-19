@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Nemi Explains Reel #4 — Ultra-Fast High-Retention ELI5 Pipeline (<22s @ 30fps)
-Theme: "How ChatGPT Works: In Simple Terms"
-Uses fresh BGM: 'joel sunny - luminary'
+Nemi Explains Reel #4 — "How ChatGPT ACTUALLY Works: Super Autocomplete" (~21s @ 30fps)
+Clear, intuitive, zero-confusion CS explanation of Autoregressive Next-Token Prediction.
 """
 
 import os
@@ -48,70 +47,70 @@ except ImportError:
     HAS_LIBROSA = False
 
 # ═══════════════════════════════════════════════════════════════
-# TIGHT, FAST, HIGH-RETENTION SCRIPT (<22 SECONDS)
+# CRYSTAL CLEAR "SUPER AUTOCOMPLETE" SCRIPT (<25 SECONDS)
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
-    # 1. Beat 1: The Counter-Intuitive Hook (Light Mode Canvas)
+    # 1. Beat 1: Hook (Light Mode Canvas)
     {
         "id": "ai01_hook",
         "speaker": "narrator",
-        "text": "ChatGPT doesn't understand English. It turns your words into a 3D map.",
+        "text": "ChatGPT does not think. It is literally the world's most powerful autocomplete.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
         "gap_after_ms": 160,
         "semantic_phrases": [
-            {"phrase": "doesn't understand", "cue": "prompt_enter", "rel_pct": 0.30},
-            {"phrase": "3D map", "cue": "map_glow", "rel_pct": 0.75},
+            {"phrase": "does not think", "cue": "not_thinking", "rel_pct": 0.25},
+            {"phrase": "powerful autocomplete", "cue": "autocomplete_glow", "rel_pct": 0.75},
         ]
     },
-    # 2. Beat 2: Number Puzzle Pieces & 3D Space (Dark Mode Transition)
+    # 2. Beat 2: The Probability Engine (Dark Mode Transition)
     {
-        "id": "ai02_tokens",
+        "id": "ai02_probabilities",
         "speaker": "narrator",
-        "text": "First, words become numbers. Then, words with similar meanings sit together.",
+        "text": "When you type a prompt, it calculates the probability of every possible next word.",
         "emotion": "normal",
         "exaggeration": 0.55,
         "gap_after_ms": 160,
         "semantic_phrases": [
-            {"phrase": "words become numbers", "cue": "token_chop", "rel_pct": 0.35},
-            {"phrase": "sit together", "cue": "cluster_glow", "rel_pct": 0.75},
+            {"phrase": "type a prompt", "cue": "prompt_type", "rel_pct": 0.25},
+            {"phrase": "every possible next word", "cue": "prob_bars_rise", "rel_pct": 0.75},
         ]
     },
-    # 3. Beat 3: Nemi's Visual Analogy (King - Man + Woman = Queen)
+    # 3. Beat 3: The Autoregressive Loop (How it writes paragraphs)
     {
-        "id": "ai03_nemi_queen",
-        "speaker": "nemi",
-        "text": "So King minus Man plus Woman gives Queen?",
+        "id": "ai03_loop",
+        "speaker": "narrator",
+        "text": "It picks the highest chance word, adds it to the sentence, and repeats sixty times a second.",
         "emotion": "normal",
-        "exaggeration": 0.65,
+        "exaggeration": 0.55,
         "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "gives Queen", "cue": "vector_pop", "rel_pct": 0.60}
+            {"phrase": "highest chance word", "cue": "word_snap", "rel_pct": 0.30},
+            {"phrase": "repeats sixty times", "cue": "loop_speedup", "rel_pct": 0.75},
         ]
     },
-    # 4. Beat 4: Context Detective & 15ms Next Word Prediction
+    # 4. Beat 4: Nemi Mascot Aha Moment
     {
-        "id": "ai04_attention_pred",
-        "speaker": "narrator",
-        "text": "Exactly! Attention acts like a detective, then picks the next word in fifteen milliseconds.",
-        "emotion": "normal",
-        "exaggeration": 0.58,
+        "id": "ai04_nemi_aha",
+        "speaker": "nemi",
+        "text": "So it's just predicting one word at a time?! 🤯",
+        "emotion": "shocked",
+        "exaggeration": 0.70,
         "gap_after_ms": 160,
         "semantic_phrases": [
-            {"phrase": "acts like a detective", "cue": "detective_beam", "rel_pct": 0.40},
-            {"phrase": "fifteen milliseconds", "cue": "word_chosen", "rel_pct": 0.85},
+            {"phrase": "one word at a time", "cue": "nemi_mindblown", "rel_pct": 0.60}
         ]
     },
-    # 5. Beat 5: Nemi Mascot Outro
+    # 5. Beat 5: Outro Payoff
     {
-        "id": "ai05_nemi_smug",
-        "speaker": "nemi",
-        "text": "It's just math, not magic! 😎⚡",
-        "emotion": "normal",
-        "exaggeration": 0.70,
+        "id": "ai05_outro",
+        "speaker": "narrator",
+        "text": "Exactly. Just pure probability.",
+        "emotion": "dramatic",
+        "exaggeration": 0.65,
         "gap_after_ms": 200,
         "semantic_phrases": [
-            {"phrase": "not magic", "cue": "nemi_sunglasses", "rel_pct": 0.50}
+            {"phrase": "pure probability", "cue": "payoff_snap", "rel_pct": 0.50}
         ]
     }
 ]
@@ -145,12 +144,12 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS REEL #4 (FAST <22s ELI5) — AUDIO PIPELINE")
+    print("🎙️ NEMI EXPLAINS REEL #4 (SUPER AUTOCOMPLETE <25s) — AUDIO PIPELINE")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
-    print(f"   Target Duration: <22 Seconds")
+    print(f"   Target Duration: 20-22 Seconds (<25s)")
 
     print("Loading Chatterbox model weights for Narrator...")
     model = ChatterboxTTS.from_pretrained(device=device)
@@ -176,9 +175,9 @@ def main():
 
         if speaker == "nemi":
             temp_mp3 = BLOCKS_DIR / f"{event_id}_temp.mp3"
-            clean_text = text.replace("😎", "").replace("⚡", "").replace("🤔", "").replace("💡", "").strip()
+            clean_text = text.replace("😎", "").replace("⚡", "").replace("🤯", "").replace("🤔", "").strip()
             async def gen_nemi():
-                comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+20%")
+                comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+18%")
                 await comm.save(str(temp_mp3))
             asyncio.run(gen_nemi())
 
@@ -241,7 +240,7 @@ def main():
     total_frames = int(round(total_duration_s * 30))
 
     print("\n" + "─" * 70)
-    print(f"⏱ Total Master Duration: {total_duration_s:.2f}s ({total_frames} frames @ 30fps) — PERFECT UNDER 22s!")
+    print(f"⏱ Total Master Duration: {total_duration_s:.2f}s ({total_frames} frames @ 30fps) — PERFECT <25s!")
     print("─" * 70 + "\n")
 
     # 1. Stitch clean voice track
@@ -299,7 +298,7 @@ def main():
     cues_json_path = BASE_DIR / "src" / "data" / "chatgpt_cues.json"
     cues_data = {
         "reel_id": "chatgpt_04",
-        "title": "How ChatGPT Works: In Simple Terms (<22s)",
+        "title": "How ChatGPT Actually Works: Super Autocomplete",
         "total_duration_s": total_duration_s,
         "total_frames": total_frames,
         "fps": 30,

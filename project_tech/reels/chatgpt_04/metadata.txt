@@ -1,49 +1,48 @@
 ================================================================================
-NEMI EXPLAINS — REEL #4: HOW CHATGPT ACTUALLY WORKS (IN SIMPLE TERMS)
-16.99s Fast High-Retention Reel | Silky Light-to-Dark Transition
+NEMI EXPLAINS — REEL #4: HOW CHATGPT ACTUALLY WORKS
+The World's Most Powerful Autocomplete (16.62s @ 30fps)
 ================================================================================
 
 [INSTAGRAM / TIKTOK CAPTION]
-ChatGPT doesn't understand English. It turns your words into a 3D map! 🤯🤖
+ChatGPT doesn't think. It is literally the world's most powerful autocomplete! 🤯🤖
 
-Here is how AI actually thinks in 4 simple steps:
-1️⃣ Number IDs: Words are turned into numbers ([464, 9246, ...]).
-2️⃣ 3D Meaning Map: Words with similar meanings sit together (King - Man + Woman = Queen).
-3️⃣ Context Detective: Attention scans nearby words so "river bank" isn't confused with money bank.
-4️⃣ 15ms Next Word: It picks the highest probability answer in fifteen milliseconds!
+Here is the exact truth of how Large Language Models write responses:
+1️⃣ When you type a prompt, it scans every word against patterns learned from the entire internet.
+2️⃣ It calculates the probability of every possible next word (e.g., "Naples": 88%, "Rome": 9%).
+3️⃣ It picks the highest chance word, adds it to the sentence, and repeats sixty times a second!
 
-It's just pure math, not magic! 😎⚡
+It's not conscious — it's just pure probability! 😎⚡
 
-Tag someone who needs to understand AI! 👇
+Tag someone who thinks AI has a mind! 👇
 
-#chatgpt #ai #machinelearning #artificialintelligence #tech #softwareengineering #coding #deeplearning #python #datascience #computerscience #technology #learntocode
+#chatgpt #ai #machinelearning #artificialintelligence #tech #softwareengineering #coding #deeplearning #python #datascience #computerscience #technology #learntocode #llm
 
 ================================================================================
 [YOUTUBE SHORTS TITLE]
-How ChatGPT Actually Works in 17 Seconds! 🧠🤖 #shorts
+How ChatGPT ACTUALLY Works: Super Autocomplete! 🧠🤖 #shorts
 
 ================================================================================
 [YOUTUBE SHORTS DESCRIPTION]
-ChatGPT doesn't think in English — it turns your thoughts into a 3D map! 🗺️🤖
-Learn the 4 simple steps behind every AI response: Number IDs, 3D Word Math (King - Man + Woman = Queen), Context Detectives, and 15ms Next-Word Predictions.
+ChatGPT does not "think" — it is the world's most advanced next-token autocomplete engine! 🔮🤖
+Learn how LLMs scan your prompt, calculate word probabilities (Naples 88%), and loop 60 times a second.
 
 🔔 Subscribe to @nemi.explains for weekly visual tech & AI explainers!
 
-#ChatGPT #AI #MachineLearning #Tech #ComputerScience #Shorts #DeepLearning
+#ChatGPT #AI #MachineLearning #Tech #ComputerScience #Shorts #DeepLearning #LLM
 
 ================================================================================
 [YOUTUBE SEARCH TAGS]
-how chatgpt works, chatgpt explained simply, ai for beginners, what is machine learning, large language models, transformer architecture, self attention, tokenization, word embeddings, computer science, tech explainer, nemi explains, shorts
+how chatgpt works, how llms work, next token prediction, autoregressive language model, chatgpt explained, what is machine learning, artificial intelligence, computer science, tech explainer, nemi explains, shorts
 
 ================================================================================
 [VIDEO TECHNICAL SPECS]
 - Composition: NemiExplainsChatGPT
-- Duration: 16.99s (510 frames @ 30fps) — PERFECT UNDER 22 SECONDS!
+- Duration: 16.62s (499 frames @ 30fps) — PERFECT UNDER 25 SECONDS!
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (5.0 MB)
+- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (4.4 MB)
 - Visual Style: Silky Smooth Light-to-Dark Color Interpolation (Zero CSS frame glitch)
 - Audio: Dual-Voice Architecture (Chatterbox Narrator + Edge-TTS AnaNeural Mascot)
-- Integrated SFX: 6 synchronized audio cues (typing, pop, whoosh, click, chime)
+- Integrated SFX: 6 synchronized audio cues (typing, pop, click, whoosh, notification, chime)
 - Background Track: joel sunny - luminary [original song] (Dynamic Sidechain Ducking)
 - Target Loudness: -15.5 LUFS
 ================================================================================
