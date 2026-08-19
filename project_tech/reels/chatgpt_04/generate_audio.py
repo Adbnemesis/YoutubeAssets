@@ -104,26 +104,37 @@ SPEAKER_EVENTS = [
             {"phrase": "fifteen milliseconds", "cue": "word_emitted", "rel_pct": 0.80},
         ]
     },
-    # 5. Beat 5: Nemi Mascot Mindblown & Outro
+    # 5. Beat 5: Nemi Mascot Mindblown & Question
     {
         "id": "ai05_nemi_aha",
         "speaker": "nemi",
         "text": "So ninety-six layers of math predict the next word?! 🤯",
         "emotion": "shocked",
         "exaggeration": 0.70,
-        "gap_after_ms": 140,
+        "gap_after_ms": 100,
         "semantic_phrases": [
             {"phrase": "predict the next word", "cue": "nemi_mindblown", "rel_pct": 0.60}
         ]
     },
-    # 6. Beat 6: Outro Payoff
+    # 6. Beat 6: Narrator Confirm + Nemi Outro Punchline (NEMI SPEAKS PURE TRANSFORMER ARCHITECTURE)
     {
-        "id": "ai06_outro",
+        "id": "ai06_narrator_confirm",
         "speaker": "narrator",
-        "text": "Exactly. Pure Transformer architecture.",
+        "text": "Exactly.",
         "emotion": "dramatic",
-        "exaggeration": 0.65,
-        "gap_after_ms": 180,
+        "exaggeration": 0.60,
+        "gap_after_ms": 90,
+        "semantic_phrases": [
+            {"phrase": "Exactly", "cue": "confirm_snap", "rel_pct": 0.50}
+        ]
+    },
+    {
+        "id": "ai07_nemi_outro",
+        "speaker": "nemi",
+        "text": "Pure Transformer architecture! 😎⚡",
+        "emotion": "smug",
+        "exaggeration": 0.75,
+        "gap_after_ms": 200,
         "semantic_phrases": [
             {"phrase": "Transformer architecture", "cue": "scorecard_snap", "rel_pct": 0.50}
         ]

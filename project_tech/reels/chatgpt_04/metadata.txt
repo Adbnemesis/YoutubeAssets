@@ -1,6 +1,6 @@
 ================================================================================
 NEMI EXPLAINS — REEL #4: HOW CHATGPT ACTUALLY WORKS
-Inside the Transformer Neural Network & Self-Attention (~25s @ 30fps)
+Inside the Transformer Neural Network & Self-Attention (26.2s @ 30fps)
 ================================================================================
 
 [INSTAGRAM / TIKTOK CAPTION]
@@ -37,11 +37,11 @@ how chatgpt works, transformer neural network, self attention mechanism, how llm
 ================================================================================
 [VIDEO TECHNICAL SPECS]
 - Composition: NemiExplainsChatGPT
-- Duration: 25.75s (773 frames @ 30fps) — EXACTLY TARGET ~25 SECONDS!
+- Duration: 26.20s (786 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (6.6 MB)
-- Visual Style: Silky Smooth Light-to-Dark Color Interpolation (Zero CSS frame glitch)
-- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot)
+- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (8.6 MB)
+- Visual Style: Dynamic Neural Particle Background + Animated Typing + Multi-Head Heatmaps + Token Race Bars
+- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline)
 - Integrated SFX: 6 synchronized audio cues (typing, pop, click, whoosh, notification, chime)
 - Background Track: Death of a Bluebird - Rorschach Roy 4.mp3 (Dynamic Sidechain Ducking)
 - Target Loudness: -15.5 LUFS

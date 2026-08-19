@@ -1,8 +1,8 @@
 {
   "reel_id": "chatgpt_04",
   "title": "How ChatGPT ACTUALLY Works: The Transformer Network",
-  "total_duration_s": 25.752,
-  "total_frames": 773,
+  "total_duration_s": 26.206,
+  "total_frames": 786,
   "fps": 30,
   "timeline_events": [
     {
@@ -10,23 +10,23 @@
       "speaker": "narrator",
       "text": "How does ChatGPT write essays and code? It doesn't understand a single word you type.",
       "start_time_ms": 0,
-      "end_time_ms": 4565,
-      "duration_s": 4.565,
+      "end_time_ms": 4224,
+      "duration_s": 4.224,
       "start_frame": 0,
-      "end_frame": 137,
+      "end_frame": 127,
       "gap_after_ms": 140,
       "semantic_cues": [
         {
           "phrase": "essays and code",
           "cue": "prompt_type",
-          "time_ms": 1369,
-          "frame": 41
+          "time_ms": 1267,
+          "frame": 38
         },
         {
           "phrase": "doesn't understand",
           "cue": "hook_reveal",
-          "time_ms": 3423,
-          "frame": 103
+          "time_ms": 3168,
+          "frame": 95
         }
       ]
     },
@@ -34,30 +34,30 @@
       "id": "ai02_attention",
       "speaker": "narrator",
       "text": "Inside is a Transformer network. Self-Attention connects every word together, figuring out if bank means money or water.",
-      "start_time_ms": 4705,
-      "end_time_ms": 10614,
-      "duration_s": 5.909,
-      "start_frame": 141,
-      "end_frame": 318,
+      "start_time_ms": 4364,
+      "end_time_ms": 10422,
+      "duration_s": 6.059,
+      "start_frame": 131,
+      "end_frame": 313,
       "gap_after_ms": 140,
       "semantic_cues": [
         {
           "phrase": "Transformer network",
           "cue": "transformer_enter",
-          "time_ms": 5886,
-          "frame": 177
+          "time_ms": 5575,
+          "frame": 167
         },
         {
           "phrase": "connects every word",
           "cue": "attention_matrix",
-          "time_ms": 7364,
-          "frame": 221
+          "time_ms": 7090,
+          "frame": 213
         },
         {
           "phrase": "money or water",
           "cue": "bank_disambiguate",
-          "time_ms": 9727,
-          "frame": 292
+          "time_ms": 9513,
+          "frame": 285
         }
       ]
     },
@@ -65,24 +65,24 @@
       "id": "ai03_layers",
       "speaker": "narrator",
       "text": "It pushes these vectors through ninety-six deep neural layers, processing billions of internet patterns.",
-      "start_time_ms": 10754,
-      "end_time_ms": 15255,
-      "duration_s": 4.501,
-      "start_frame": 323,
-      "end_frame": 458,
+      "start_time_ms": 10562,
+      "end_time_ms": 15298,
+      "duration_s": 4.736,
+      "start_frame": 317,
+      "end_frame": 459,
       "gap_after_ms": 140,
       "semantic_cues": [
         {
           "phrase": "ninety-six",
           "cue": "layers_stack",
-          "time_ms": 12329,
-          "frame": 370
+          "time_ms": 12219,
+          "frame": 367
         },
         {
           "phrase": "billions of internet patterns",
           "cue": "weights_glow",
-          "time_ms": 14129,
-          "frame": 424
+          "time_ms": 14114,
+          "frame": 423
         }
       ]
     },
@@ -90,24 +90,24 @@
       "id": "ai04_sampling",
       "speaker": "narrator",
       "text": "At the final layer, it scores 100,000 tokens to pick the best next word in fifteen milliseconds.",
-      "start_time_ms": 15395,
-      "end_time_ms": 20152,
+      "start_time_ms": 15438,
+      "end_time_ms": 20195,
       "duration_s": 4.757,
-      "start_frame": 462,
-      "end_frame": 605,
+      "start_frame": 463,
+      "end_frame": 606,
       "gap_after_ms": 160,
       "semantic_cues": [
         {
           "phrase": "scores 100,000 tokens",
           "cue": "vocab_scores",
-          "time_ms": 17059,
-          "frame": 512
+          "time_ms": 17102,
+          "frame": 513
         },
         {
           "phrase": "fifteen milliseconds",
           "cue": "word_emitted",
-          "time_ms": 19200,
-          "frame": 576
+          "time_ms": 19243,
+          "frame": 577
         }
       ]
     },
@@ -115,37 +115,56 @@
       "id": "ai05_nemi_aha",
       "speaker": "nemi",
       "text": "So ninety-six layers of math predict the next word?! \ud83e\udd2f",
-      "start_time_ms": 20312,
-      "end_time_ms": 23128,
+      "start_time_ms": 20355,
+      "end_time_ms": 23171,
       "duration_s": 2.816,
-      "start_frame": 609,
-      "end_frame": 694,
-      "gap_after_ms": 140,
+      "start_frame": 611,
+      "end_frame": 695,
+      "gap_after_ms": 100,
       "semantic_cues": [
         {
           "phrase": "predict the next word",
           "cue": "nemi_mindblown",
-          "time_ms": 22001,
-          "frame": 660
+          "time_ms": 22044,
+          "frame": 661
         }
       ]
     },
     {
-      "id": "ai06_outro",
+      "id": "ai06_narrator_confirm",
       "speaker": "narrator",
-      "text": "Exactly. Pure Transformer architecture.",
-      "start_time_ms": 23268,
-      "end_time_ms": 25572,
-      "duration_s": 2.304,
+      "text": "Exactly.",
+      "start_time_ms": 23271,
+      "end_time_ms": 24124,
+      "duration_s": 0.853,
       "start_frame": 698,
-      "end_frame": 767,
-      "gap_after_ms": 180,
+      "end_frame": 724,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "Exactly",
+          "cue": "confirm_snap",
+          "time_ms": 23697,
+          "frame": 711
+        }
+      ]
+    },
+    {
+      "id": "ai07_nemi_outro",
+      "speaker": "nemi",
+      "text": "Pure Transformer architecture! \ud83d\ude0e\u26a1",
+      "start_time_ms": 24214,
+      "end_time_ms": 26006,
+      "duration_s": 1.792,
+      "start_frame": 726,
+      "end_frame": 780,
+      "gap_after_ms": 200,
       "semantic_cues": [
         {
           "phrase": "Transformer architecture",
           "cue": "scorecard_snap",
-          "time_ms": 24420,
-          "frame": 733
+          "time_ms": 25110,
+          "frame": 753
         }
       ]
     }
