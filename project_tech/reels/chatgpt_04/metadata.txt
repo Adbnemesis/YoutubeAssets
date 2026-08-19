@@ -1,0 +1,46 @@
+================================================================================
+NEMI EXPLAINS — REEL #4: HOW CHATGPT PREDICTS WORDS
+12,288-D Vector Embeddings & Multi-Head Self-Attention Transformer Pipeline
+================================================================================
+
+[INSTAGRAM / TIKTOK CAPTION]
+ChatGPT doesn’t understand English… it turns your thoughts into 12,000-dimensional math coordinates! 🤯🤖
+
+Here is the complete 4-step Transformer pipeline behind every response:
+1️⃣ Tokenization: Sentences are chopped into numeric token IDs from a 100k vocabulary.
+2️⃣ Vector Embeddings: Words map into spatial geometry where King - Man + Woman = Queen.
+3️⃣ Self-Attention: 96 attention heads calculate exact context so "river bank" isn't confused with money.
+4️⃣ Softmax Sampling: The highest probability next word is emitted in 15 milliseconds.
+
+Tag a developer or AI enthusiast who needs to see this! 👇
+
+#chatgpt #ai #machinelearning #artificialintelligence #deeplearning #datascience #llm #python #technology #softwareengineering #coding #tech #learntocode #transformers #computerscience
+
+================================================================================
+[YOUTUBE SHORTS TITLE]
+How ChatGPT Actually Predicts Words! 🧠 (Vectors & Attention) #shorts
+
+================================================================================
+[YOUTUBE SHORTS DESCRIPTION]
+ChatGPT doesn't think in words — it turns your thoughts into 12,288-dimensional coordinates! 📐🤖
+Learn how Tokenization, Vector Embeddings (King - Man + Woman = Queen), Self-Attention, and Softmax generate answers in 15ms.
+
+🔔 Subscribe to @nemi.explains for weekly visual tech & AI explainers!
+
+#ChatGPT #AI #MachineLearning #DeepLearning #LLM #ComputerScience #Tech #Shorts
+
+================================================================================
+[YOUTUBE SEARCH TAGS]
+chatgpt, ai, how chatgpt works, transformer architecture, self attention, vector embeddings, word2vec, large language models, llm, machine learning, artificial intelligence, deep learning, python, tech, nemi explains, shorts
+
+================================================================================
+[VIDEO TECHNICAL SPECS]
+- Composition: NemiExplainsChatGPT
+- Duration: 26.68s (801 frames @ 30fps)
+- Aspect Ratio: 9:16 (1080x1920)
+- Master Render: out/NemiExplains_ChatGPT_20260820.mp4
+- Audio: Dual-Voice Architecture (Chatterbox Narrator + Edge-TTS AnaNeural Mascot)
+- Integrated SFX: 8 synchronized audio cues (typing, ping, pop, whoosh, notification, click, chime)
+- Background Track: Synthwave Goose - Blade Runner 2049 (Dynamic Sidechain Ducking)
+- Target Loudness: -15.5 LUFS
+================================================================================
