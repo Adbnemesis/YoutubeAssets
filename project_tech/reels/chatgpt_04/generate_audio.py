@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Nemi Explains Reel #4 — Simplified High-Retention Dual-Voice Pipeline
-Topic: "How ChatGPT Actually Works (In Simple Terms)" (~20s @ 30fps)
-Uses fresh BGM: 'joel sunny - luminary' (or 'Death of a Bluebird')
+Nemi Explains Reel #4 — Ultra-Fast High-Retention ELI5 Pipeline (<22s @ 30fps)
+Theme: "How ChatGPT Works: In Simple Terms"
+Uses fresh BGM: 'joel sunny - luminary'
 """
 
 import os
@@ -48,33 +48,33 @@ except ImportError:
     HAS_LIBROSA = False
 
 # ═══════════════════════════════════════════════════════════════
-# SIMPLIFIED HIGH-RETENTION SCRIPT (ELI5 & VISUAL)
+# TIGHT, FAST, HIGH-RETENTION SCRIPT (<22 SECONDS)
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
-    # 1. Beat 1: Simple Counter-Intuitive Hook
+    # 1. Beat 1: The Counter-Intuitive Hook (Light Mode Canvas)
     {
         "id": "ai01_hook",
         "speaker": "narrator",
-        "text": "ChatGPT doesn't understand English. It turns your words into a giant 3D map.",
+        "text": "ChatGPT doesn't understand English. It turns your words into a 3D map.",
         "emotion": "dramatic",
         "exaggeration": 0.60,
-        "gap_after_ms": 180,
+        "gap_after_ms": 160,
         "semantic_phrases": [
             {"phrase": "doesn't understand", "cue": "prompt_enter", "rel_pct": 0.30},
-            {"phrase": "giant 3D map", "cue": "map_glow", "rel_pct": 0.75},
+            {"phrase": "3D map", "cue": "map_glow", "rel_pct": 0.75},
         ]
     },
-    # 2. Beat 2: Number Puzzle Pieces (Tokenization)
+    # 2. Beat 2: Number Puzzle Pieces & 3D Space (Dark Mode Transition)
     {
         "id": "ai02_tokens",
         "speaker": "narrator",
-        "text": "First, it chops sentences into number puzzle pieces.",
+        "text": "First, words become numbers. Then, words with similar meanings sit together.",
         "emotion": "normal",
         "exaggeration": 0.55,
-        "gap_after_ms": 180,
+        "gap_after_ms": 160,
         "semantic_phrases": [
-            {"phrase": "chops sentences", "cue": "token_chop", "rel_pct": 0.35},
-            {"phrase": "puzzle pieces", "cue": "token_ids_glow", "rel_pct": 0.75},
+            {"phrase": "words become numbers", "cue": "token_chop", "rel_pct": 0.35},
+            {"phrase": "sit together", "cue": "cluster_glow", "rel_pct": 0.75},
         ]
     },
     # 3. Beat 3: Nemi's Visual Analogy (King - Man + Woman = Queen)
@@ -84,58 +84,32 @@ SPEAKER_EVENTS = [
         "text": "So King minus Man plus Woman gives Queen?",
         "emotion": "normal",
         "exaggeration": 0.65,
-        "gap_after_ms": 200,
+        "gap_after_ms": 180,
         "semantic_phrases": [
-            {"phrase": "gives Queen", "cue": "vector_equation_pop", "rel_pct": 0.60}
+            {"phrase": "gives Queen", "cue": "vector_pop", "rel_pct": 0.60}
         ]
     },
-    # 4. Beat 4: The Context Detective (Self-Attention)
+    # 4. Beat 4: Context Detective & 15ms Next Word Prediction
     {
-        "id": "ai04_attention",
+        "id": "ai04_attention_pred",
         "speaker": "narrator",
-        "text": "Exactly! Words with similar meanings sit together. Attention acts like a detective, so river bank isn't confused with money bank.",
+        "text": "Exactly! Attention acts like a detective, then picks the next word in fifteen milliseconds.",
         "emotion": "normal",
-        "exaggeration": 0.55,
-        "gap_after_ms": 180,
+        "exaggeration": 0.58,
+        "gap_after_ms": 160,
         "semantic_phrases": [
-            {"phrase": "sit together", "cue": "meaning_cluster", "rel_pct": 0.25},
-            {"phrase": "detective", "cue": "attention_beam", "rel_pct": 0.55},
-            {"phrase": "river bank", "cue": "context_resolved", "rel_pct": 0.80},
+            {"phrase": "acts like a detective", "cue": "detective_beam", "rel_pct": 0.40},
+            {"phrase": "fifteen milliseconds", "cue": "word_chosen", "rel_pct": 0.85},
         ]
     },
-    # 5. Beat 5: Next Word Dice Roll (Prediction)
+    # 5. Beat 5: Nemi Mascot Outro
     {
-        "id": "ai05_softmax",
-        "speaker": "narrator",
-        "text": "Finally, it picks the most likely next word in fifteen milliseconds.",
-        "emotion": "normal",
-        "exaggeration": 0.60,
-        "gap_after_ms": 180,
-        "semantic_phrases": [
-            {"phrase": "picks the most likely", "cue": "prob_bars_rise", "rel_pct": 0.35},
-            {"phrase": "fifteen milliseconds", "cue": "word_chosen", "rel_pct": 0.80},
-        ]
-    },
-    # 6. Beat 6: The 4-Step Summary
-    {
-        "id": "ai06_payoff",
-        "speaker": "narrator",
-        "text": "Puzzle pieces, 3D map, context, next word. That's AI.",
-        "emotion": "dramatic",
-        "exaggeration": 0.65,
-        "gap_after_ms": 180,
-        "semantic_phrases": [
-            {"phrase": "Puzzle pieces", "cue": "scorecard_snap", "rel_pct": 0.30},
-        ]
-    },
-    # 7. Beat 7: Nemi Mascot Outro
-    {
-        "id": "ai07_nemi_smug",
+        "id": "ai05_nemi_smug",
         "speaker": "nemi",
         "text": "It's just math, not magic! 😎⚡",
         "emotion": "normal",
         "exaggeration": 0.70,
-        "gap_after_ms": 220,
+        "gap_after_ms": 200,
         "semantic_phrases": [
             {"phrase": "not magic", "cue": "nemi_sunglasses", "rel_pct": 0.50}
         ]
@@ -171,14 +145,12 @@ def normalize_lufs(y, sr, target):
 
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS REEL #4 (V2 ELI5) — AUDIO PIPELINE")
+    print("🎙️ NEMI EXPLAINS REEL #4 (FAST <22s ELI5) — AUDIO PIPELINE")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
-    print(f"   Device: {device.upper()}")
-    print(f"   Voices: Narrator (Deep Authority) + Nemi Mascot (Playful +18% rate)")
-    print(f"   Target Voice LUFS: {TARGET_VOICE_LUFS}\n")
+    print(f"   Target Duration: <22 Seconds")
 
     print("Loading Chatterbox model weights for Narrator...")
     model = ChatterboxTTS.from_pretrained(device=device)
@@ -196,7 +168,7 @@ def main():
         speaker = event["speaker"]
         text = event["text"]
         exag = event.get("exaggeration", 0.55)
-        gap_after = event.get("gap_after_ms", 180)
+        gap_after = event.get("gap_after_ms", 160)
 
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
 
@@ -206,7 +178,7 @@ def main():
             temp_mp3 = BLOCKS_DIR / f"{event_id}_temp.mp3"
             clean_text = text.replace("😎", "").replace("⚡", "").replace("🤔", "").replace("💡", "").strip()
             async def gen_nemi():
-                comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+18%")
+                comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+20%")
                 await comm.save(str(temp_mp3))
             asyncio.run(gen_nemi())
 
@@ -269,7 +241,7 @@ def main():
     total_frames = int(round(total_duration_s * 30))
 
     print("\n" + "─" * 70)
-    print(f"⏱ Total Master Duration: {total_duration_s:.2f}s ({total_frames} frames @ 30fps)")
+    print(f"⏱ Total Master Duration: {total_duration_s:.2f}s ({total_frames} frames @ 30fps) — PERFECT UNDER 22s!")
     print("─" * 70 + "\n")
 
     # 1. Stitch clean voice track
@@ -301,7 +273,7 @@ def main():
     if bgm_path.exists():
         print(f"🎵 Mixing fresh melodic tech BGM: {bgm_path.name}")
         sidechain_filter = (
-            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.25,afade=t=in:st=0:d=0.4,afade=t=out:st={total_duration_s - 1.0}:d=1.0[bgm];"
+            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.25,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.8}:d=0.8[bgm];"
             f"[0:a]asplit=2[voice_main][voice_sc];"
             f"[bgm][voice_sc]sidechaincompress=threshold=0.035:ratio=7:attack=25:release=220[ducked_bgm];"
             f"[voice_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"
@@ -327,7 +299,7 @@ def main():
     cues_json_path = BASE_DIR / "src" / "data" / "chatgpt_cues.json"
     cues_data = {
         "reel_id": "chatgpt_04",
-        "title": "How ChatGPT Actually Works: In Simple Terms",
+        "title": "How ChatGPT Works: In Simple Terms (<22s)",
         "total_duration_s": total_duration_s,
         "total_frames": total_frames,
         "fps": 30,

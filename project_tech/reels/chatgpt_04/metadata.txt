@@ -1,18 +1,18 @@
 ================================================================================
 NEMI EXPLAINS — REEL #4: HOW CHATGPT ACTUALLY WORKS (IN SIMPLE TERMS)
-Puzzle Pieces, Giant 3D Word Maps, and Context Detectives
+16.99s Fast High-Retention Reel | Silky Light-to-Dark Transition
 ================================================================================
 
 [INSTAGRAM / TIKTOK CAPTION]
-ChatGPT doesn't understand English. It turns your words into a giant 3D map! 🤯🤖
+ChatGPT doesn't understand English. It turns your words into a 3D map! 🤯🤖
 
 Here is how AI actually thinks in 4 simple steps:
-1️⃣ Puzzle Pieces: It chops your sentence into number IDs ([464, 9246, ...]).
-2️⃣ 3D Meaning Map: Words with similar meanings sit next to each other (King - Man + Woman = Queen).
-3️⃣ Context Detective: Attention reads nearby words like a detective so "river bank" isn't confused with money bank.
-4️⃣ Pick Next Word: It rolls a probability dice and picks the best answer in 15 milliseconds!
+1️⃣ Number IDs: Words are turned into numbers ([464, 9246, ...]).
+2️⃣ 3D Meaning Map: Words with similar meanings sit together (King - Man + Woman = Queen).
+3️⃣ Context Detective: Attention scans nearby words so "river bank" isn't confused with money bank.
+4️⃣ 15ms Next Word: It picks the highest probability answer in fifteen milliseconds!
 
-It's not magic — it's just pure math! 😎⚡
+It's just pure math, not magic! 😎⚡
 
 Tag someone who needs to understand AI! 👇
 
@@ -20,12 +20,12 @@ Tag someone who needs to understand AI! 👇
 
 ================================================================================
 [YOUTUBE SHORTS TITLE]
-How ChatGPT Actually Works: In Simple Terms! 🧠🤖 #shorts
+How ChatGPT Actually Works in 17 Seconds! 🧠🤖 #shorts
 
 ================================================================================
 [YOUTUBE SHORTS DESCRIPTION]
-ChatGPT doesn't think in English — it turns your thoughts into points on a giant 3D map! 🗺️🤖
-Learn the 4 simple steps behind every AI response: Puzzle Pieces, 3D Word Math (King - Man + Woman = Queen), Context Detectives, and 15ms Next-Word Predictions.
+ChatGPT doesn't think in English — it turns your thoughts into a 3D map! 🗺️🤖
+Learn the 4 simple steps behind every AI response: Number IDs, 3D Word Math (King - Man + Woman = Queen), Context Detectives, and 15ms Next-Word Predictions.
 
 🔔 Subscribe to @nemi.explains for weekly visual tech & AI explainers!
 
@@ -38,12 +38,12 @@ how chatgpt works, chatgpt explained simply, ai for beginners, what is machine l
 ================================================================================
 [VIDEO TECHNICAL SPECS]
 - Composition: NemiExplainsChatGPT
-- Duration: 25.53s (766 frames @ 30fps)
+- Duration: 16.99s (510 frames @ 30fps) — PERFECT UNDER 22 SECONDS!
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (6.7 MB)
-- Visual Style: Consistent Sleek Dark Canvas (#070B12) with Zero Glitch Transitions
+- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (5.0 MB)
+- Visual Style: Silky Smooth Light-to-Dark Color Interpolation (Zero CSS frame glitch)
 - Audio: Dual-Voice Architecture (Chatterbox Narrator + Edge-TTS AnaNeural Mascot)
-- Integrated SFX: 8 synchronized audio cues (typing, ping, pop, whoosh, notification, click, chime)
-- Background Track: joel sunny - luminary [original song] (Fresh Melodic Tech BGM with Dynamic Ducking)
+- Integrated SFX: 6 synchronized audio cues (typing, pop, whoosh, click, chime)
+- Background Track: joel sunny - luminary [original song] (Dynamic Sidechain Ducking)
 - Target Loudness: -15.5 LUFS
 ================================================================================

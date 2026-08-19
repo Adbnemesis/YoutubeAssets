@@ -1,57 +1,57 @@
 {
   "reel_id": "chatgpt_04",
-  "title": "How ChatGPT Actually Works: In Simple Terms",
-  "total_duration_s": 25.53,
-  "total_frames": 766,
+  "title": "How ChatGPT Works: In Simple Terms (<22s)",
+  "total_duration_s": 16.986,
+  "total_frames": 510,
   "fps": 30,
   "timeline_events": [
     {
       "id": "ai01_hook",
       "speaker": "narrator",
-      "text": "ChatGPT doesn't understand English. It turns your words into a giant 3D map.",
+      "text": "ChatGPT doesn't understand English. It turns your words into a 3D map.",
       "start_time_ms": 0,
-      "end_time_ms": 4053,
-      "duration_s": 4.053,
+      "end_time_ms": 3605,
+      "duration_s": 3.605,
       "start_frame": 0,
-      "end_frame": 122,
-      "gap_after_ms": 180,
+      "end_frame": 108,
+      "gap_after_ms": 160,
       "semantic_cues": [
         {
           "phrase": "doesn't understand",
           "cue": "prompt_enter",
-          "time_ms": 1215,
-          "frame": 36
+          "time_ms": 1081,
+          "frame": 32
         },
         {
-          "phrase": "giant 3D map",
+          "phrase": "3D map",
           "cue": "map_glow",
-          "time_ms": 3039,
-          "frame": 91
+          "time_ms": 2703,
+          "frame": 81
         }
       ]
     },
     {
       "id": "ai02_tokens",
       "speaker": "narrator",
-      "text": "First, it chops sentences into number puzzle pieces.",
-      "start_time_ms": 4233,
-      "end_time_ms": 6963,
-      "duration_s": 2.731,
-      "start_frame": 127,
-      "end_frame": 209,
-      "gap_after_ms": 180,
+      "text": "First, words become numbers. Then, words with similar meanings sit together.",
+      "start_time_ms": 3765,
+      "end_time_ms": 7541,
+      "duration_s": 3.776,
+      "start_frame": 113,
+      "end_frame": 226,
+      "gap_after_ms": 160,
       "semantic_cues": [
         {
-          "phrase": "chops sentences",
+          "phrase": "words become numbers",
           "cue": "token_chop",
-          "time_ms": 5188,
-          "frame": 156
+          "time_ms": 5086,
+          "frame": 153
         },
         {
-          "phrase": "puzzle pieces",
-          "cue": "token_ids_glow",
-          "time_ms": 6280,
-          "frame": 188
+          "phrase": "sit together",
+          "cue": "cluster_glow",
+          "time_ms": 6597,
+          "frame": 198
         }
       ]
     },
@@ -59,112 +59,62 @@
       "id": "ai03_nemi_queen",
       "speaker": "nemi",
       "text": "So King minus Man plus Woman gives Queen?",
-      "start_time_ms": 7143,
-      "end_time_ms": 9724,
-      "duration_s": 2.581,
-      "start_frame": 214,
-      "end_frame": 292,
-      "gap_after_ms": 200,
+      "start_time_ms": 7701,
+      "end_time_ms": 10239,
+      "duration_s": 2.539,
+      "start_frame": 231,
+      "end_frame": 307,
+      "gap_after_ms": 180,
       "semantic_cues": [
         {
           "phrase": "gives Queen",
-          "cue": "vector_equation_pop",
-          "time_ms": 8691,
-          "frame": 261
+          "cue": "vector_pop",
+          "time_ms": 9223,
+          "frame": 277
         }
       ]
     },
     {
-      "id": "ai04_attention",
+      "id": "ai04_attention_pred",
       "speaker": "narrator",
-      "text": "Exactly! Words with similar meanings sit together. Attention acts like a detective, so river bank isn't confused with money bank.",
-      "start_time_ms": 9924,
-      "end_time_ms": 17028,
-      "duration_s": 7.104,
-      "start_frame": 298,
-      "end_frame": 511,
-      "gap_after_ms": 180,
+      "text": "Exactly! Attention acts like a detective, then picks the next word in fifteen milliseconds.",
+      "start_time_ms": 10419,
+      "end_time_ms": 14877,
+      "duration_s": 4.459,
+      "start_frame": 313,
+      "end_frame": 446,
+      "gap_after_ms": 160,
       "semantic_cues": [
         {
-          "phrase": "sit together",
-          "cue": "meaning_cluster",
-          "time_ms": 11700,
-          "frame": 351
-        },
-        {
-          "phrase": "detective",
-          "cue": "attention_beam",
-          "time_ms": 13831,
-          "frame": 415
-        },
-        {
-          "phrase": "river bank",
-          "cue": "context_resolved",
-          "time_ms": 15607,
-          "frame": 468
-        }
-      ]
-    },
-    {
-      "id": "ai05_softmax",
-      "speaker": "narrator",
-      "text": "Finally, it picks the most likely next word in fifteen milliseconds.",
-      "start_time_ms": 17208,
-      "end_time_ms": 20066,
-      "duration_s": 2.859,
-      "start_frame": 516,
-      "end_frame": 602,
-      "gap_after_ms": 180,
-      "semantic_cues": [
-        {
-          "phrase": "picks the most likely",
-          "cue": "prob_bars_rise",
-          "time_ms": 18208,
-          "frame": 546
+          "phrase": "acts like a detective",
+          "cue": "detective_beam",
+          "time_ms": 12202,
+          "frame": 366
         },
         {
           "phrase": "fifteen milliseconds",
           "cue": "word_chosen",
-          "time_ms": 19494,
-          "frame": 585
+          "time_ms": 14208,
+          "frame": 426
         }
       ]
     },
     {
-      "id": "ai06_payoff",
-      "speaker": "narrator",
-      "text": "Puzzle pieces, 3D map, context, next word. That's AI.",
-      "start_time_ms": 20246,
-      "end_time_ms": 23360,
-      "duration_s": 3.115,
-      "start_frame": 607,
-      "end_frame": 701,
-      "gap_after_ms": 180,
-      "semantic_cues": [
-        {
-          "phrase": "Puzzle pieces",
-          "cue": "scorecard_snap",
-          "time_ms": 21180,
-          "frame": 635
-        }
-      ]
-    },
-    {
-      "id": "ai07_nemi_smug",
+      "id": "ai05_nemi_smug",
       "speaker": "nemi",
       "text": "It's just math, not magic! \ud83d\ude0e\u26a1",
-      "start_time_ms": 23540,
-      "end_time_ms": 25310,
-      "duration_s": 1.771,
-      "start_frame": 706,
-      "end_frame": 759,
-      "gap_after_ms": 220,
+      "start_time_ms": 15037,
+      "end_time_ms": 16786,
+      "duration_s": 1.749,
+      "start_frame": 451,
+      "end_frame": 504,
+      "gap_after_ms": 200,
       "semantic_cues": [
         {
           "phrase": "not magic",
           "cue": "nemi_sunglasses",
-          "time_ms": 24425,
-          "frame": 733
+          "time_ms": 15911,
+          "frame": 477
         }
       ]
     }

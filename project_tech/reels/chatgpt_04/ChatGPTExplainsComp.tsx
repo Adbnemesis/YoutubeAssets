@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
+  interpolateColors,
   spring,
   staticFile,
   useCurrentFrame,
@@ -18,11 +19,14 @@ export const nemiTheme = {
     brandCyan: "#06B6D4",
     brandPurple: "#8B5CF6",
     brandGreen: "#10B981",
+    canvasLight: "#FAF8F5",
     canvasDark: "#070B12",
-    canvasCard: "#0F172A",
-    textHeading: "#F8FAFC",
-    textMuted: "#94A3B8",
-    borderSubtle: "#1E293B",
+    cardLight: "#FFFFFF",
+    cardDark: "#0F172A",
+    textLight: "#0F172A",
+    textDark: "#F8FAFC",
+    borderLight: "#E2E8F0",
+    borderDark: "#1E293B",
   },
   typography: {
     fontFamily: {
@@ -33,8 +37,8 @@ export const nemiTheme = {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// NEMI EXPLAINS REEL #4 — HOW CHATGPT ACTUALLY WORKS (ELI5 EDITION)
-// CONSISTENT SLEEK DARK CANVAS + ZERO GLITCH + FRESH BGM
+// NEMI EXPLAINS REEL #4 — HOW CHATGPT WORKS (FAST <22s ELI5)
+// SILKY SMOOTH LIGHT -> DARK -> LIGHT COLOR INTERPOLATION
 // ═══════════════════════════════════════════════════════════════
 
 const getEvent = (id: string) => {
@@ -57,26 +61,59 @@ export const ChatGPTExplainsComp: React.FC = () => {
   const evHook = getEvent("ai01_hook");
   const evTokens = getEvent("ai02_tokens");
   const evQueen = getEvent("ai03_nemi_queen");
-  const evAttention = getEvent("ai04_attention");
-  const evSoftmax = getEvent("ai05_softmax");
-  const evPayoff = getEvent("ai06_payoff");
-  const evSmug = getEvent("ai07_nemi_smug");
+  const evAttentionPred = getEvent("ai04_attention_pred");
+  const evSmug = getEvent("ai05_nemi_smug");
 
-  // Semantic Cue Frames
-  const fMapGlow = getCueFrame("ai01_hook", "map_glow", evHook.start_frame + 100);
-  const fTokenChop = getCueFrame("ai02_tokens", "token_chop", evTokens.start_frame + 30);
-  const fVectorPop = getCueFrame("ai03_nemi_queen", "vector_equation_pop", evQueen.start_frame + 45);
-  const fAttentionBeam = getCueFrame("ai04_attention", "attention_beam", evAttention.start_frame + 55);
-  const fContextResolved = getCueFrame("ai04_attention", "context_resolved", evAttention.start_frame + 120);
-  const fProbRise = getCueFrame("ai05_softmax", "prob_bars_rise", evSoftmax.start_frame + 35);
-  const fWordChosen = getCueFrame("ai05_softmax", "word_chosen", evSoftmax.start_frame + 75);
-  const fScorecardSnap = getCueFrame("ai06_payoff", "scorecard_snap", evPayoff.start_frame + 30);
+  // Semantic Cues
+  const fTokenChop = getCueFrame("ai02_tokens", "token_chop", evTokens.start_frame + 20);
+  const fVectorPop = getCueFrame("ai03_nemi_queen", "vector_pop", evQueen.start_frame + 35);
+  const fDetectiveBeam = getCueFrame("ai04_attention_pred", "detective_beam", evAttentionPred.start_frame + 30);
+  const fWordChosen = getCueFrame("ai04_attention_pred", "word_chosen", evAttentionPred.start_frame + 80);
 
-  // ─── Global Cinematic Camera Motion ───
+  // ─── SILKY SMOOTH LIGHT -> DARK -> LIGHT TRANSITIONS (NO CSS GLITCH) ───
+  // darkProgress: 0 = 100% Light Mode, 1 = 100% Dark Mode
+  const darkProgress = interpolate(
+    frame,
+    [evTokens.start_frame - 15, evTokens.start_frame + 5, evSmug.start_frame - 10, evSmug.start_frame + 5],
+    [0, 1, 1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+
+  const canvasBg = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [nemiTheme.colors.canvasLight, nemiTheme.colors.canvasDark]
+  );
+
+  const textHeading = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [nemiTheme.colors.textLight, nemiTheme.colors.textDark]
+  );
+
+  const textMuted = interpolateColors(
+    darkProgress,
+    [0, 1],
+    ["#64748B", "#94A3B8"]
+  );
+
+  const hudBg = interpolateColors(
+    darkProgress,
+    [0, 1],
+    ["rgba(255, 255, 255, 0.95)", "rgba(15, 23, 42, 0.90)"]
+  );
+
+  const hudBorder = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [nemiTheme.colors.borderLight, nemiTheme.colors.borderDark]
+  );
+
+  // ─── Camera Motion ───
   const cameraScale = interpolate(
     frame,
-    [0, 50, 147, 242, 328, 516, 607, 766],
-    [1.0, 1.02, 1.01, 1.03, 1.02, 1.04, 1.02, 1.0],
+    [0, 50, 113, 231, 313, 451, 510],
+    [1.0, 1.02, 1.01, 1.03, 1.02, 1.03, 1.0],
     { extrapolateRight: "clamp" }
   );
 
@@ -88,17 +125,13 @@ export const ChatGPTExplainsComp: React.FC = () => {
     nemiPose = "thinking";
   } else if (frame >= evTokens.start_frame && frame < evQueen.start_frame) {
     nemiPose = "puzzled";
-  } else if (frame >= evQueen.start_frame && frame < evAttention.start_frame) {
+  } else if (frame >= evQueen.start_frame && frame < evAttentionPred.start_frame) {
     nemiPose = "aha";
-    if (frame >= evQueen.start_frame && frame < evQueen.end_frame + 8) {
+    if (frame >= evQueen.start_frame && frame < evQueen.end_frame + 6) {
       nemiSpeech = "King - Man + Woman = Queen? 👑🤔";
     }
-  } else if (frame >= evAttention.start_frame && frame < evSoftmax.start_frame) {
+  } else if (frame >= evAttentionPred.start_frame && frame < evSmug.start_frame) {
     nemiPose = "explaining";
-  } else if (frame >= evSoftmax.start_frame && frame < evPayoff.start_frame) {
-    nemiPose = "shocked";
-  } else if (frame >= evPayoff.start_frame && frame < evSmug.start_frame) {
-    nemiPose = "pointing";
   } else {
     nemiPose = "smug";
     if (frame >= evSmug.start_frame) {
@@ -109,46 +142,40 @@ export const ChatGPTExplainsComp: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: nemiTheme.colors.canvasDark,
+        backgroundColor: canvasBg,
         overflow: "hidden",
         fontFamily: nemiTheme.typography.fontFamily.sans,
       }}
     >
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MASTER AUDIO (Voice + Fresh Ducked Melodic Track) */}
+      {/* MASTER AUDIO (<22s Dual-Voice + Fresh Melodic Tech BGM) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Audio src={staticFile("reels/chatgpt_04/chatgpt_master_audio.mp3")} />
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* SYNCHRONIZED SOUND EFFECTS LAYER */}
+      {/* SYNCHRONIZED SFX LAYER */}
       {/* ══════════════════════════════════════════════════════════ */}
-      <Sequence from={15} durationInFrames={30}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/typing.mp3")} volume={0.45} />
-      </Sequence>
-      <Sequence from={fMapGlow} durationInFrames={30}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/ping.mp3")} volume={0.7} />
+      <Sequence from={10} durationInFrames={30}>
+        <Audio src={staticFile("reels/chatgpt_04/sfx/typing.mp3")} volume={0.4} />
       </Sequence>
       <Sequence from={fTokenChop} durationInFrames={30}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/pop.mp3")} volume={0.75} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/pop.mp3")} volume={0.7} />
       </Sequence>
-      <Sequence from={evQueen.start_frame} durationInFrames={35}>
+      <Sequence from={evQueen.start_frame} durationInFrames={30}>
         <Audio src={staticFile("reels/chatgpt_04/sfx/pop.mp3")} volume={0.65} />
       </Sequence>
-      <Sequence from={fAttentionBeam} durationInFrames={35}>
+      <Sequence from={fDetectiveBeam} durationInFrames={35}>
         <Audio src={staticFile("reels/chatgpt_04/sfx/whoosh.mp3")} volume={0.6} />
-      </Sequence>
-      <Sequence from={fContextResolved} durationInFrames={35}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/notification.mp3")} volume={0.65} />
       </Sequence>
       <Sequence from={fWordChosen} durationInFrames={35}>
         <Audio src={staticFile("reels/chatgpt_04/sfx/click.mp3")} volume={0.8} />
       </Sequence>
-      <Sequence from={fScorecardSnap} durationInFrames={50}>
+      <Sequence from={evSmug.start_frame} durationInFrames={45}>
         <Audio src={staticFile("reels/chatgpt_04/sfx/chime.mp3")} volume={0.85} />
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* PERSISTENT HEADER HUD (Safe Zone: top: 85px, sides: 70px) */}
+      {/* TOP HUD (Safe Zone: top: 85px, sides: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -177,7 +204,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
               fontSize: 26,
               fontWeight: 900,
               letterSpacing: "1.5px",
-              color: "#C084FC",
+              color: "#A855F7",
               textTransform: "uppercase",
             }}
           >
@@ -187,23 +214,22 @@ export const ChatGPTExplainsComp: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.90)",
+            backgroundColor: hudBg,
             padding: "12px 24px",
             borderRadius: 24,
-            border: "2px solid #1E293B",
+            border: `2px solid ${hudBorder}`,
             fontSize: 20,
             fontWeight: 900,
             color: "#A855F7",
             fontFamily: nemiTheme.typography.fontFamily.mono,
-            boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
+            boxShadow: "0 8px 24px rgba(0,0,0,0.15)",
           }}
         >
-          {frame < evTokens.start_frame && "STEP 1: 3D WORD MAP"}
+          {frame < evTokens.start_frame && "STEP 1: 3D MAP"}
           {frame >= evTokens.start_frame && frame < evQueen.start_frame && "STEP 2: PUZZLE PIECES"}
-          {frame >= evQueen.start_frame && frame < evAttention.start_frame && "STEP 2B: WORD MATH"}
-          {frame >= evAttention.start_frame && frame < evSoftmax.start_frame && "STEP 3: CONTEXT DETECTIVE"}
-          {frame >= evSoftmax.start_frame && frame < evPayoff.start_frame && "STEP 4: PICK NEXT WORD"}
-          {frame >= evPayoff.start_frame && "HOW AI THINKS"}
+          {frame >= evQueen.start_frame && frame < evAttentionPred.start_frame && "STEP 2B: WORD MATH"}
+          {frame >= evAttentionPred.start_frame && frame < evSmug.start_frame && "STEP 3: CONTEXT & PREDICTION"}
+          {frame >= evSmug.start_frame && "HOW AI THINKS"}
         </div>
       </div>
 
@@ -223,7 +249,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
           style={{
             fontSize: 58,
             fontWeight: 900,
-            color: "#F8FAFC",
+            color: textHeading,
             letterSpacing: "-1.5px",
             margin: 0,
             lineHeight: 1.15,
@@ -235,7 +261,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MULTI-STAGE STAGE MANAGER (Top Cards) */}
+      {/* STAGE MANAGER */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -245,80 +271,53 @@ export const ChatGPTExplainsComp: React.FC = () => {
           transformOrigin: "center center",
         }}
       >
-        {/* STAGE 1: PROMPT INPUT & 3D MEANING MAP */}
-        <StageWrapper frame={frame} startFrame={0} endFrame={evTokens.start_frame + 6}>
-          <Beat1SimpleMap
-            frame={frame}
-            fps={fps}
-            fMapGlow={fMapGlow}
-          />
+        {/* BEAT 1: PROMPT INPUT (Light Mode) */}
+        <StageWrapper frame={frame} startFrame={0} endFrame={evTokens.start_frame + 4}>
+          <Beat1LightPrompt frame={frame} fps={fps} />
         </StageWrapper>
 
-        {/* STAGE 2: NUMBER PUZZLE PIECES */}
-        <StageWrapper frame={frame} startFrame={evTokens.start_frame} endFrame={evQueen.start_frame + 6}>
-          <Beat2PuzzlePieces
-            frame={frame}
-            fps={fps}
-            startFrame={evTokens.start_frame}
-            fTokenChop={fTokenChop}
-          />
+        {/* BEAT 2: NUMBER PUZZLE PIECES (Dark Mode) */}
+        <StageWrapper frame={frame} startFrame={evTokens.start_frame} endFrame={evQueen.start_frame + 4}>
+          <Beat2DarkPuzzle frame={frame} fps={fps} startFrame={evTokens.start_frame} fTokenChop={fTokenChop} />
         </StageWrapper>
 
-        {/* STAGE 3: WORD GEOMETRY FORMULA (KING - MAN + WOMAN = QUEEN) */}
-        <StageWrapper frame={frame} startFrame={evQueen.start_frame} endFrame={evAttention.start_frame + 6}>
-          <Beat3WordMath
-            frame={frame}
-            fps={fps}
-            startFrame={evQueen.start_frame}
-            fVectorPop={fVectorPop}
-          />
+        {/* BEAT 3: WORD MATH (Dark Mode) */}
+        <StageWrapper frame={frame} startFrame={evQueen.start_frame} endFrame={evAttentionPred.start_frame + 4}>
+          <Beat3DarkMath frame={frame} fps={fps} startFrame={evQueen.start_frame} fVectorPop={fVectorPop} />
         </StageWrapper>
 
-        {/* STAGE 4: THE CONTEXT DETECTIVE (SELF-ATTENTION) */}
-        <StageWrapper frame={frame} startFrame={evAttention.start_frame} endFrame={evSoftmax.start_frame + 6}>
-          <Beat4ContextDetective
+        {/* BEAT 4: CONTEXT DETECTIVE & PREDICTION (Dark Mode) */}
+        <StageWrapper frame={frame} startFrame={evAttentionPred.start_frame} endFrame={evSmug.start_frame + 4}>
+          <Beat4DarkAttentionPred
             frame={frame}
             fps={fps}
-            startFrame={evAttention.start_frame}
-            fContextResolved={fContextResolved}
-          />
-        </StageWrapper>
-
-        {/* STAGE 5: PICKING THE MOST LIKELY NEXT WORD */}
-        <StageWrapper frame={frame} startFrame={evSoftmax.start_frame} endFrame={evPayoff.start_frame + 6}>
-          <Beat5NextWordPicker
-            frame={frame}
-            fps={fps}
-            startFrame={evSoftmax.start_frame}
+            startFrame={evAttentionPred.start_frame}
+            fDetectiveBeam={fDetectiveBeam}
             fWordChosen={fWordChosen}
           />
         </StageWrapper>
 
-        {/* STAGE 6: 4-STEP AI SUMMARY SCORECARD */}
-        <StageWrapper frame={frame} startFrame={evPayoff.start_frame} endFrame={766}>
-          <Beat6SummaryConsole
-            frame={frame}
-            fps={fps}
-            startFrame={evPayoff.start_frame}
-          />
+        {/* BEAT 5: FINAL SUMMARY (Gold/Light Mode Payoff) */}
+        <StageWrapper frame={frame} startFrame={evSmug.start_frame} endFrame={510}>
+          <Beat5SummaryPayoff frame={frame} fps={fps} startFrame={evSmug.start_frame} />
         </StageWrapper>
 
         {/* ══════════════════════════════════════════════════════ */}
-        {/* MID-SCREEN CLEAN FLOATING ICONS & STAGE TAGS */}
+        {/* MID-SCREEN VISUAL ASSETS (Safe Zone: top: 960px) */}
         {/* ══════════════════════════════════════════════════════ */}
         <MidScreenVisualAssets
           frame={frame}
           fps={fps}
           evTokensFrame={evTokens.start_frame}
           evQueenFrame={evQueen.start_frame}
-          evAttentionFrame={evAttention.start_frame}
-          evSoftmaxFrame={evSoftmax.start_frame}
-          evPayoffFrame={evPayoff.start_frame}
+          evAttentionPredFrame={evAttentionPred.start_frame}
+          evSmugFrame={evSmug.start_frame}
+          darkProgress={darkProgress}
         />
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* HERO MASCOT DOCK (Safe Zone: bottom: 70px) */}
+      {/* MASCOT DOCK (Safe Zone: bottom: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -336,7 +335,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* NEMI SPEECH BUBBLE / SUBTITLE (Always on Top of Nemi) */}
+      {/* SPEECH BUBBLE (Always on Top of Nemi) */}
       {/* ══════════════════════════════════════════════════════════ */}
       {nemiSpeech && (
         <div
@@ -367,7 +366,6 @@ export const ChatGPTExplainsComp: React.FC = () => {
           >
             {nemiSpeech}
           </div>
-          {/* Downward Pointer Tail */}
           <div
             style={{
               width: 0,
@@ -385,7 +383,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// SILKY SMOOTH STAGE WRAPPER COMPONENT
+// SILKY SMOOTH STAGE WRAPPER
 // ═══════════════════════════════════════════════════════════════
 const StageWrapper: React.FC<{
   children: React.ReactNode;
@@ -393,24 +391,24 @@ const StageWrapper: React.FC<{
   startFrame: number;
   endFrame: number;
 }> = ({ children, frame, startFrame, endFrame }) => {
-  if (frame < startFrame - 10 || frame > endFrame + 10) {
+  if (frame < startFrame - 8 || frame > endFrame + 8) {
     return null;
   }
 
-  const enterOpacity = interpolate(frame, [startFrame, startFrame + 10], [0, 1], {
+  const enterOpacity = interpolate(frame, [startFrame, startFrame + 8], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const enterY = interpolate(frame, [startFrame, startFrame + 10], [30, 0], {
+  const enterY = interpolate(frame, [startFrame, startFrame + 8], [25, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const exitOpacity = interpolate(frame, [endFrame - 8, endFrame], [1, 0], {
+  const exitOpacity = interpolate(frame, [endFrame - 6, endFrame], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const exitY = interpolate(frame, [endFrame - 8, endFrame], [0, -30], {
+  const exitY = interpolate(frame, [endFrame - 6, endFrame], [0, -25], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -434,15 +432,10 @@ const StageWrapper: React.FC<{
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 1: PROMPT INPUT & 3D MEANING MAP (Safe Zone: sides: 65px)
+// BEAT 1: LIGHT MODE PROMPT (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
-const Beat1SimpleMap: React.FC<{
-  frame: number;
-  fps: number;
-  fMapGlow: number;
-}> = ({ frame, fps, fMapGlow }) => {
-  const popSpring = spring({ frame, fps, config: { damping: 14, stiffness: 120 } });
-  const isGlowing = frame >= fMapGlow;
+const Beat1LightPrompt: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
+  const pop = spring({ frame, fps, config: { damping: 14, stiffness: 120 } });
 
   return (
     <div
@@ -452,78 +445,63 @@ const Beat1SimpleMap: React.FC<{
         left: 65,
         right: 65,
         height: 550,
-        backgroundColor: "#0F172A",
+        backgroundColor: "#FFFFFF",
         borderRadius: 32,
-        border: `3.5px solid ${isGlowing ? "#A855F7" : "rgba(168, 85, 247, 0.4)"}`,
-        boxShadow: isGlowing ? "0 28px 70px rgba(168, 85, 247, 0.35)" : "0 28px 70px rgba(0, 0, 0, 0.6)",
+        border: "3.5px solid #E2E8F0",
+        boxShadow: "0 24px 60px rgba(0, 0, 0, 0.08)",
         padding: "34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transform: `scale(${popSpring})`,
+        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>💬</span>
-          <span style={{ fontSize: 26, fontWeight: 900, color: "#F8FAFC" }}>Your Question to AI</span>
+          <span style={{ fontSize: 26, fontWeight: 900, color: "#0F172A" }}>Your Question to AI</span>
         </div>
-        <div style={{ backgroundColor: "#3B0764", color: "#C084FC", fontWeight: 900, fontSize: 19, padding: "8px 18px", borderRadius: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          AI Brain
+        <div style={{ backgroundColor: "#F3E8FF", color: "#9333EA", fontWeight: 900, fontSize: 19, padding: "8px 18px", borderRadius: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          AI Input
         </div>
       </div>
 
-      {/* Prompt Chat Bubble */}
-      <div style={{ backgroundColor: "#1E293B", borderRadius: 24, border: "2px solid #334155", padding: "24px 28px" }}>
-        <div style={{ fontSize: 17, color: "#94A3B8", fontWeight: 700 }}>Human English:</div>
-        <div style={{ fontSize: 34, fontWeight: 900, color: "#F8FAFC", marginTop: 6, lineHeight: 1.25 }}>
+      <div style={{ backgroundColor: "#F8FAFC", borderRadius: 24, border: "2px solid #E2E8F0", padding: "26px 28px" }}>
+        <div style={{ fontSize: 17, color: "#64748B", fontWeight: 700 }}>Human English:</div>
+        <div style={{ fontSize: 34, fontWeight: 900, color: "#0F172A", marginTop: 6, lineHeight: 1.25 }}>
           "The robot loves pizza on the river bank..."
         </div>
       </div>
 
-      {/* 3D Map Analogy Box */}
-      <div
-        style={{
-          backgroundColor: isGlowing ? "rgba(168, 85, 247, 0.22)" : "#1E293B",
-          borderRadius: 24,
-          padding: "24px 28px",
-          border: isGlowing ? "3.5px solid #A855F7" : "2px solid #334155",
-          boxShadow: isGlowing ? "0 0 35px rgba(168, 85, 247, 0.4)" : "none",
-          transition: "all 0.3s ease",
-        }}
-      >
+      <div style={{ backgroundColor: "#F5F3FF", borderRadius: 24, padding: "24px 28px", border: "2.5px solid #C084FC" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ fontSize: 20, color: isGlowing ? "#C084FC" : "#94A3B8", fontWeight: 800 }}>
-            🗺️ Giant 3D Meaning Map
-          </span>
-          <span style={{ fontSize: 19, color: "#38BDF8", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            SPATIAL MAP
-          </span>
+          <span style={{ fontSize: 20, color: "#9333EA", fontWeight: 800 }}>🗺️ Giant 3D Meaning Map</span>
+          <span style={{ fontSize: 19, color: "#0284C7", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>SPATIAL</span>
         </div>
-        <div style={{ fontSize: 30, fontWeight: 900, color: "#38BDF8", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 8 }}>
+        <div style={{ fontSize: 30, fontWeight: 900, color: "#0284C7", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 8 }}>
           [ +0.84, -0.19, +0.51, ... +0.94 ]
         </div>
       </div>
 
-      <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-        ChatGPT turns your words into <span style={{ color: "#FFD166", fontWeight: 900 }}>points on a 3D map</span>
+      <div style={{ fontSize: 19, color: "#64748B", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        ChatGPT turns your words into <span style={{ color: "#9333EA", fontWeight: 900 }}>points on a 3D map</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 2: NUMBER PUZZLE PIECES (Safe Zone: sides: 65px)
+// BEAT 2: DARK MODE PUZZLE PIECES (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
-const Beat2PuzzlePieces: React.FC<{
+const Beat2DarkPuzzle: React.FC<{
   frame: number;
   fps: number;
   startFrame: number;
   fTokenChop: number;
 }> = ({ frame, fps, startFrame, fTokenChop }) => {
   const localFrame = frame - startFrame;
-  const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
+  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const isChopped = frame >= fTokenChop;
 
   return (
@@ -542,7 +520,7 @@ const Beat2PuzzlePieces: React.FC<{
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transform: `scale(${popSpring})`,
+        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -554,55 +532,54 @@ const Beat2PuzzlePieces: React.FC<{
           </span>
         </div>
         <span style={{ fontSize: 19, color: isChopped ? "#10B981" : "#F59E0B", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          {isChopped ? "4 PIECES READY" : "SLICING SENTENCE..."}
+          {isChopped ? "4 PIECES READY" : "SLICING..."}
         </span>
       </div>
 
-      {/* 4 Puzzle Pieces Grid */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #8B5CF6", boxShadow: "0 0 25px rgba(139, 92, 246, 0.2)" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #8B5CF6" }}>
           <div style={{ fontSize: 17, color: "#C084FC", fontWeight: 800 }}>Piece #1</div>
           <div style={{ fontSize: 36, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>"The"</div>
-          <div style={{ fontSize: 20, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>Number: 464</div>
+          <div style={{ fontSize: 20, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>ID: 464</div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #8B5CF6", boxShadow: "0 0 25px rgba(139, 92, 246, 0.2)" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #8B5CF6" }}>
           <div style={{ fontSize: 17, color: "#C084FC", fontWeight: 800 }}>Piece #2</div>
           <div style={{ fontSize: 36, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>" robot"</div>
-          <div style={{ fontSize: 20, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>Number: 9246</div>
+          <div style={{ fontSize: 20, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>ID: 9246</div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #8B5CF6", boxShadow: "0 0 25px rgba(139, 92, 246, 0.2)" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #8B5CF6" }}>
           <div style={{ fontSize: 17, color: "#C084FC", fontWeight: 800 }}>Piece #3</div>
           <div style={{ fontSize: 36, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>" loves"</div>
-          <div style={{ fontSize: 20, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>Number: 12845</div>
+          <div style={{ fontSize: 20, color: "#38BDF8", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>ID: 12845</div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #10B981", boxShadow: "0 0 25px rgba(16, 185, 129, 0.3)" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #10B981" }}>
           <div style={{ fontSize: 17, color: "#10B981", fontWeight: 800 }}>Piece #4</div>
           <div style={{ fontSize: 36, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>" pizza"</div>
-          <div style={{ fontSize: 20, color: "#10B981", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>Number: 11452</div>
+          <div style={{ fontSize: 20, color: "#10B981", fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>ID: 11452</div>
         </div>
       </div>
 
       <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-        AI doesn't read letters — it only understands <span style={{ color: "#38BDF8", fontWeight: 900 }}>Number IDs</span>
+        Words become <span style={{ color: "#38BDF8", fontWeight: 900 }}>Numbers</span> and sit on the 3D Map
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 3: WORD GEOMETRY (KING - MAN + WOMAN = QUEEN)
+// BEAT 3: DARK MODE WORD MATH (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
-const Beat3WordMath: React.FC<{
+const Beat3DarkMath: React.FC<{
   frame: number;
   fps: number;
   startFrame: number;
   fVectorPop: number;
 }> = ({ frame, fps, startFrame, fVectorPop }) => {
   const localFrame = frame - startFrame;
-  const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
+  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const isPopped = frame >= fVectorPop;
 
   return (
@@ -621,7 +598,7 @@ const Beat3WordMath: React.FC<{
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transform: `scale(${popSpring})`,
+        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -633,11 +610,10 @@ const Beat3WordMath: React.FC<{
           </span>
         </div>
         <span style={{ fontSize: 19, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          MATH MATCH: 98%
+          MATCH: 98%
         </span>
       </div>
 
-      {/* The Famous Word Equation */}
       <div
         style={{
           backgroundColor: "#0F172A",
@@ -678,7 +654,6 @@ const Beat3WordMath: React.FC<{
             borderRadius: 18,
             border: isPopped ? "3px solid #10B981" : "none",
             boxShadow: isPopped ? "0 0 35px rgba(16, 185, 129, 0.5)" : "none",
-            transition: "all 0.3s ease",
           }}
         >
           <div style={{ fontSize: 44 }}>👸</div>
@@ -691,7 +666,7 @@ const Beat3WordMath: React.FC<{
       <div style={{ backgroundColor: "#0F172A", padding: "18px 24px", borderRadius: 18, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ color: "#94A3B8", fontSize: 18 }}>Royalty - Male + Female = Female Royalty</span>
         <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          ✓ PERFECT MATCH
+          ✓ MATCH!
         </span>
       </div>
 
@@ -703,17 +678,18 @@ const Beat3WordMath: React.FC<{
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 4: THE CONTEXT DETECTIVE (SELF-ATTENTION)
+// BEAT 4: DARK MODE CONTEXT DETECTIVE & PREDICTION (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
-const Beat4ContextDetective: React.FC<{
+const Beat4DarkAttentionPred: React.FC<{
   frame: number;
   fps: number;
   startFrame: number;
-  fContextResolved: number;
-}> = ({ frame, fps, startFrame, fContextResolved }) => {
+  fDetectiveBeam: number;
+  fWordChosen: number;
+}> = ({ frame, fps, startFrame, fDetectiveBeam, fWordChosen }) => {
   const localFrame = frame - startFrame;
-  const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-  const isResolved = frame >= fContextResolved;
+  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
+  const isChosen = frame >= fWordChosen;
 
   return (
     <div
@@ -731,7 +707,7 @@ const Beat4ContextDetective: React.FC<{
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transform: `scale(${popSpring})`,
+        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -739,167 +715,68 @@ const Beat4ContextDetective: React.FC<{
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <span style={{ fontSize: 32 }}>🕵️</span>
           <span style={{ fontSize: 26, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
-            The Context Detective (Attention)
+            Detective & Next Word
           </span>
         </div>
         <span style={{ fontSize: 19, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          CLUE: "RIVER"
+          15 MILLISECONDS
         </span>
       </div>
 
-      {/* Disambiguation Cards */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18 }}>
-        {/* River Bank (Active Match) */}
-        <div
-          style={{
-            backgroundColor: isResolved ? "rgba(6, 182, 212, 0.22)" : "#0F172A",
-            padding: "22px",
-            borderRadius: 20,
-            border: isResolved ? "3px solid #06B6D4" : "1px solid #1E293B",
-            boxShadow: isResolved ? "0 0 35px rgba(6, 182, 212, 0.4)" : "none",
-          }}
-        >
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <span style={{ fontSize: 34 }}>🌊</span>
-            <span style={{ fontSize: 22, fontWeight: 900, color: "#06B6D4", fontFamily: nemiTheme.typography.fontFamily.mono }}>94% SURE</span>
+      {/* Top: Detective Context Clue */}
+      <div style={{ backgroundColor: "#0F172A", padding: "18px 24px", borderRadius: 20, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <span style={{ fontSize: 32 }}>🌊</span>
+          <div>
+            <div style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>River Bank Clue</div>
+            <div style={{ fontSize: 16, color: "#94A3B8" }}>Attention confirms: Water Bank (94%)</div>
           </div>
-          <div style={{ fontSize: 28, fontWeight: 900, color: "#F8FAFC", marginTop: 8 }}>River Bank</div>
-          <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 4 }}>Because the word "river" was nearby!</div>
         </div>
-
-        {/* Money Bank (Suppressed) */}
-        <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 20, border: "1px solid #1E293B", opacity: isResolved ? 0.45 : 1.0 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <span style={{ fontSize: 34 }}>🏦</span>
-            <span style={{ fontSize: 22, fontWeight: 900, color: "#64748B", fontFamily: nemiTheme.typography.fontFamily.mono }}>6% SURE</span>
-          </div>
-          <div style={{ fontSize: 28, fontWeight: 900, color: "#94A3B8", marginTop: 8 }}>Money Bank</div>
-          <div style={{ fontSize: 17, color: "#64748B", marginTop: 4 }}>No money words in prompt</div>
-        </div>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>✓ CONTEXT</span>
       </div>
 
-      <div style={{ backgroundColor: "#03070D", padding: "18px 24px", borderRadius: 18, border: "1px solid rgba(255, 255, 255, 0.12)", display: "flex", justifyContent: "space-between" }}>
-        <span style={{ color: "#94A3B8", fontSize: 18 }}>Attention scans all nearby words together</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          Context Found! ✓
+      {/* Bottom: Next Word Prediction */}
+      <div
+        style={{
+          backgroundColor: isChosen ? "rgba(16, 185, 129, 0.25)" : "#0F172A",
+          padding: "20px 24px",
+          borderRadius: 20,
+          border: isChosen ? "3px solid #10B981" : "1px solid #1E293B",
+          boxShadow: isChosen ? "0 0 35px rgba(16, 185, 129, 0.4)" : "none",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <span style={{ fontSize: 36 }}>🍕</span>
+          <div>
+            <div style={{ fontSize: 28, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>"pizza"</div>
+            <div style={{ fontSize: 16, color: "#10B981" }}>Picked in 15ms</div>
+          </div>
+        </div>
+        <span style={{ backgroundColor: "#10B981", color: "#FFFFFF", padding: "8px 18px", borderRadius: 12, fontSize: 18, fontWeight: 900 }}>
+          84% LIKELY
         </span>
       </div>
 
       <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-        Attention acts like a detective to find the <span style={{ color: "#06B6D4", fontWeight: 900 }}>true meaning</span>
+        Attention scans context $\to$ picks next word in <span style={{ color: "#10B981", fontWeight: 900 }}>15ms</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// BEAT 5: PICKING THE MOST LIKELY NEXT WORD
+// BEAT 5: FINAL SUMMARY (Safe Zone: sides: 65px)
 // ═══════════════════════════════════════════════════════════════
-const Beat5NextWordPicker: React.FC<{
-  frame: number;
-  fps: number;
-  startFrame: number;
-  fWordChosen: number;
-}> = ({ frame, fps, startFrame, fWordChosen }) => {
-  const localFrame = frame - startFrame;
-  const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-  const isChosen = frame >= fWordChosen;
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: 380,
-        left: 65,
-        right: 65,
-        height: 550,
-        backgroundColor: "#070B12",
-        borderRadius: 32,
-        border: "3.5px solid #10B981",
-        boxShadow: "0 28px 70px rgba(16, 185, 129, 0.35)",
-        padding: "30px 34px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        transform: `scale(${popSpring})`,
-        zIndex: 30,
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-          <span style={{ fontSize: 32 }}>🎲</span>
-          <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981", letterSpacing: "1.5px", textTransform: "uppercase" }}>
-            Picking the Next Word
-          </span>
-        </div>
-        <span style={{ fontSize: 19, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          SPEED: 15ms
-        </span>
-      </div>
-
-      {/* Word Options */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
-        {/* Choice 1: Pizza (84%) */}
-        <div
-          style={{
-            backgroundColor: isChosen ? "rgba(16, 185, 129, 0.25)" : "#0F172A",
-            padding: "16px 22px",
-            borderRadius: 18,
-            border: isChosen ? "3px solid #10B981" : "1px solid #1E293B",
-            boxShadow: isChosen ? "0 0 35px rgba(16, 185, 129, 0.4)" : "none",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <span style={{ fontSize: 32 }}>🍕</span>
-            <span style={{ fontSize: 28, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>"pizza"</span>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <span style={{ fontSize: 28, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>84% Likely</span>
-            <span style={{ backgroundColor: "#10B981", color: "#FFFFFF", padding: "6px 14px", borderRadius: 10, fontSize: 16, fontWeight: 900 }}>
-              WINNER
-            </span>
-          </div>
-        </div>
-
-        {/* Choice 2: Tacos (11%) */}
-        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 18, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center", opacity: 0.6 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <span style={{ fontSize: 32 }}>🌮</span>
-            <span style={{ fontSize: 26, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>"tacos"</span>
-          </div>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>11%</span>
-        </div>
-
-        {/* Choice 3: Burgers (5%) */}
-        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 18, border: "1px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center", opacity: 0.4 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            <span style={{ fontSize: 32 }}>🍔</span>
-            <span style={{ fontSize: 26, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>"burgers"</span>
-          </div>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>5%</span>
-        </div>
-      </div>
-
-      <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-        ChatGPT picks the next word one by one in <span style={{ color: "#10B981", fontWeight: 900 }}>15 milliseconds</span>
-      </div>
-    </div>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════════
-// BEAT 6: 4-STEP AI SUMMARY SCORECARD
-// ═══════════════════════════════════════════════════════════════
-const Beat6SummaryConsole: React.FC<{
+const Beat5SummaryPayoff: React.FC<{
   frame: number;
   fps: number;
   startFrame: number;
 }> = ({ frame, fps, startFrame }) => {
   const localFrame = frame - startFrame;
-  const popSpring = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
+  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
 
   return (
     <div
@@ -916,7 +793,7 @@ const Beat6SummaryConsole: React.FC<{
         display: "flex",
         flexDirection: "column",
         gap: 16,
-        transform: `scale(${popSpring})`,
+        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -925,7 +802,7 @@ const Beat6SummaryConsole: React.FC<{
           ⚡ 4 STEPS BEHIND CHATGPT
         </span>
         <span style={{ fontSize: 20, color: "#10B981", fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          60 WORDS / SEC
+          AI BRAIN
         </span>
       </div>
 
@@ -935,41 +812,40 @@ const Beat6SummaryConsole: React.FC<{
       </div>
 
       <div style={{ backgroundColor: "#27272A", padding: "14px 22px", borderRadius: 16, borderLeft: "7px solid #FFD166" }}>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>02. Giant 3D Meaning Map</div>
-        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Places similar words next to each other.</div>
+        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>02. 3D Meaning Map</div>
+        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>King - Man + Woman = Queen.</div>
       </div>
 
       <div style={{ backgroundColor: "#27272A", padding: "14px 22px", borderRadius: 16, borderLeft: "7px solid #06B6D4" }}>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>03. The Context Detective</div>
-        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Figures out the exact meaning from surrounding words.</div>
+        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>03. Context Detective</div>
+        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Scans surrounding words for meaning.</div>
       </div>
 
       <div style={{ backgroundColor: "#27272A", padding: "14px 22px", borderRadius: 16, borderLeft: "7px solid #10B981" }}>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>04. Pick Next Word</div>
-        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Emits the most likely answer in 15 milliseconds.</div>
+        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>04. Next Word in 15ms</div>
+        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Emits the best answer instantly.</div>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// MID-SCREEN CLEAN FLOATING ICONS & STAGE TAGS (Safe Zone: top: 960px, sides: 65px)
+// MID-SCREEN CLEAN FLOATING ICONS (Safe Zone: top: 960px, sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const MidScreenVisualAssets: React.FC<{
   frame: number;
   fps: number;
   evTokensFrame: number;
   evQueenFrame: number;
-  evAttentionFrame: number;
-  evSoftmaxFrame: number;
-  evPayoffFrame: number;
-}> = ({ frame, fps, evTokensFrame, evQueenFrame, evAttentionFrame, evSoftmaxFrame, evPayoffFrame }) => {
+  evAttentionPredFrame: number;
+  evSmugFrame: number;
+  darkProgress: number;
+}> = ({ frame, fps, evTokensFrame, evQueenFrame, evAttentionPredFrame, evSmugFrame, darkProgress }) => {
   const isStage1 = frame < evTokensFrame;
   const isStage2 = frame >= evTokensFrame && frame < evQueenFrame;
-  const isStage3 = frame >= evQueenFrame && frame < evAttentionFrame;
-  const isStage4 = frame >= evAttentionFrame && frame < evSoftmaxFrame;
-  const isStage5 = frame >= evSoftmaxFrame && frame < evPayoffFrame;
-  const isStage6 = frame >= evPayoffFrame;
+  const isStage3 = frame >= evQueenFrame && frame < evAttentionPredFrame;
+  const isStage4 = frame >= evAttentionPredFrame && frame < evSmugFrame;
+  const isStage5 = frame >= evSmugFrame;
 
   return (
     <div
@@ -988,30 +864,30 @@ const MidScreenVisualAssets: React.FC<{
         zIndex: 35,
       }}
     >
-      {/* ─── STAGE 1: PROMPT TO 3D MAP ─── */}
+      {/* ─── STAGE 1: PROMPT TO 3D MAP (Light Mode) ─── */}
       {isStage1 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(168, 85, 247, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "16px 26px", borderRadius: 26, border: "2px solid #C084FC", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 8px 24px rgba(0,0,0,0.06)" }}>
               <span style={{ fontSize: 46 }}>🔤</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Human Words</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Human Words</span>
             </div>
 
-            <span style={{ fontSize: 32, color: "#A855F7", fontWeight: 900 }}>➔</span>
+            <span style={{ fontSize: 32, color: "#9333EA", fontWeight: 900 }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(56, 189, 248, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "16px 26px", borderRadius: 26, border: "2px solid #38BDF8", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 8px 24px rgba(0,0,0,0.06)" }}>
               <span style={{ fontSize: 46 }}>🗺️</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#38BDF8" }}>3D Word Map</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#0284C7" }}>3D Word Map</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(168, 85, 247, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(168, 85, 247, 0.45)", color: "#C084FC", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(147, 51, 234, 0.10)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(147, 51, 234, 0.35)", color: "#9333EA", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Words Turned into Spatial Coordinates
           </div>
         </>
       )}
 
-      {/* ─── STAGE 2: PUZZLE PIECES ─── */}
+      {/* ─── STAGE 2: PUZZLE PIECES (Dark Mode) ─── */}
       {isStage2 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -1034,7 +910,7 @@ const MidScreenVisualAssets: React.FC<{
         </>
       )}
 
-      {/* ─── STAGE 3: WORD MATH ─── */}
+      {/* ─── STAGE 3: WORD MATH (Dark Mode) ─── */}
       {isStage3 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -1057,7 +933,7 @@ const MidScreenVisualAssets: React.FC<{
         </>
       )}
 
-      {/* ─── STAGE 4: CONTEXT DETECTIVE ─── */}
+      {/* ─── STAGE 4: DETECTIVE & PREDICTION (Dark Mode) ─── */}
       {isStage4 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
@@ -1066,45 +942,22 @@ const MidScreenVisualAssets: React.FC<{
               <span style={{ fontSize: 24, fontWeight: 900, color: "#06B6D4" }}>"River" Clue</span>
             </div>
 
-            <span style={{ fontSize: 32, color: "#06B6D4", fontWeight: 900 }}>➔</span>
-
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.7)", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 30px rgba(16, 185, 129, 0.4)" }}>
-              <span style={{ fontSize: 46 }}>💡</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Water Bank</span>
-            </div>
-          </div>
-
-          <div style={{ backgroundColor: "rgba(6, 182, 212, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(6, 182, 212, 0.45)", color: "#06B6D4", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            Surrounding Words Reveal the Meaning
-          </div>
-        </>
-      )}
-
-      {/* ─── STAGE 5: NEXT WORD ─── */}
-      {isStage5 && (
-        <>
-          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.55)", display: "flex", alignItems: "center", gap: 14 }}>
-              <span style={{ fontSize: 46 }}>🎲</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Most Likely</span>
-            </div>
-
             <span style={{ fontSize: 32, color: "#10B981", fontWeight: 900 }}>➔</span>
 
             <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.7)", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 30px rgba(16, 185, 129, 0.4)" }}>
               <span style={{ fontSize: 46 }}>🍕</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>"pizza"</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>"pizza"</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.16)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(16, 185, 129, 0.4)", color: "#10B981", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            Predicts Next Word in 15 Milliseconds
+          <div style={{ backgroundColor: "rgba(6, 182, 212, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(6, 182, 212, 0.45)", color: "#06B6D4", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            Attention Scans Context $\to$ Emits Next Word
           </div>
         </>
       )}
 
-      {/* ─── STAGE 6: CS PAYOFF ─── */}
-      {isStage6 && (
+      {/* ─── STAGE 5: SUMMARY PAYOFF (Gold / Clean Mode) ─── */}
+      {isStage5 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
             <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "16px 28px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
