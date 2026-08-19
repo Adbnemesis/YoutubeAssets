@@ -59,9 +59,7 @@ Extracts subscriber counts, top videos, average view duration, and 30-day time s
 ```
 > 📊 **Output saved to**: `youtube/cutenemi/data/youtube_channel_summary.json`
 
-### B. Publish a Video / Short
-Upload any video directly from your local computer:
-
+### B. Publish a Long-Form Video (with Thumbnail)
 ```bash
 .venv/bin/python youtube/cutenemi/publish_youtube_video.py \
   --video "/Users/talus/Downloads/youtube_ai/OpenMontage/project_chatnemi/brawl_stars/episodes/lag_spike_lie_detector/lag_spike_lie_detector.mp4" \
@@ -70,6 +68,18 @@ Upload any video directly from your local computer:
   --tags "brawlstars" "brawlstarsmemes" "edgar" "leon" "gaming" "ranked" \
   --thumbnail "/Users/talus/Downloads/youtube_ai/OpenMontage/project_chatnemi/brawl_stars/episodes/lag_spike_lie_detector/thumbnail.png" \
   --category "20" \
+  --privacy "unlisted"
+```
+
+### C. Publish a YouTube Short
+```bash
+.venv/bin/python youtube/cutenemi/publish_youtube_video.py \
+  --video "/path/to/brawlstars_short.mp4" \
+  --title "Kenji x Kaze x Nori Edit 🔥 #shorts" \
+  --description "Best family edit in Brawl Stars! 🎮 #BrawlStars #Shorts" \
+  --tags "brawlstars" "brawlstarsmemes" "kenji" "shorts" "gaming" \
+  --category "20" \
+  --is-short \
   --privacy "unlisted"
 ```
 

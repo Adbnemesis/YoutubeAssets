@@ -164,6 +164,7 @@ if __name__ == "__main__":
     parser.add_argument("--tags", nargs="*", default=["brawlstars", "gaming"], help="List of tags")
     parser.add_argument("--privacy", default="unlisted", choices=["public", "unlisted", "private"], help="Privacy status")
     parser.add_argument("--schedule", default=None, help="Schedule release (ISO 8601, e.g. 2026-08-20T12:00:00Z)")
+    parser.add_argument("--category", default="20", help="YouTube Category ID (20 = Gaming, 28 = Science & Tech, 24 = Entertainment)")
     parser.add_argument("--thumbnail", default=None, help="Path to thumbnail image (.jpg/.png)")
     parser.add_argument("--is-short", action="store_true", help="Set flag if video is a Short")
 
@@ -174,6 +175,7 @@ if __name__ == "__main__":
         title=args.title,
         description=args.description,
         tags=args.tags,
+        category_id=args.category,
         privacy_status=args.privacy,
         publish_at=args.schedule,
         thumbnail_path=args.thumbnail,
