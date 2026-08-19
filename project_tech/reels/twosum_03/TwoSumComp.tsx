@@ -34,7 +34,7 @@ export const nemiTheme = {
 
 // ═══════════════════════════════════════════════════════════════
 // NEMI EXPLAINS REEL #3 — TWO SUM (LEETCODE #1)
-// SAFE-ZONE PADDED EDITION (4-EDGE SAFE MARGINS FOR INSTAGRAM/REELS)
+// SAFE-ZONE PADDED EDITION (4-EDGE SAFE MARGINS + ON-TOP SUBTITLES)
 // ═══════════════════════════════════════════════════════════════
 
 const getEvent = (id: string) => {
@@ -301,7 +301,7 @@ export const TwoSumComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* HERO MASCOT REACTOR STAGE (Safe Zone: bottom: 70px) */}
+      {/* HERO MASCOT DOCK (Safe Zone: bottom: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -315,31 +315,54 @@ export const TwoSumComp: React.FC = () => {
           zIndex: 60,
         }}
       >
-        {/* Animated Speech Bubble */}
-        {nemiSpeech && (
+        <NemiMascot pose={nemiPose} scale={1.65} />
+      </div>
+
+      {/* ══════════════════════════════════════════════════════════ */}
+      {/* NEMI SPEECH BUBBLE / SUBTITLE (Always on Top of Nemi) */}
+      {/* ══════════════════════════════════════════════════════════ */}
+      {nemiSpeech && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 440,
+            left: "50%",
+            transform: "translateX(-50%)",
+            zIndex: 100,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
           <div
             style={{
               backgroundColor: nemiTheme.colors.brandYellow,
               color: "#18181B",
               fontWeight: 900,
               fontSize: 32,
-              padding: "16px 38px",
+              padding: "16px 36px",
               borderRadius: 26,
-              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.4)",
-              marginBottom: 16,
-              transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.06, 1.0])})`,
+              border: "3.5px solid #18181B",
+              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.45)",
+              transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.05, 1.0])})`,
               whiteSpace: "nowrap",
             }}
           >
             {nemiSpeech}
           </div>
-        )}
-
-        {/* Breathing Mascot */}
-        <div style={{ transform: `translateY(${Math.sin(frame * 0.1) * 6}px)` }}>
-          <NemiMascot pose={nemiPose} scale={1.65} />
+          {/* Downward Speech Tail Pointing directly to Nemi */}
+          <div
+            style={{
+              width: 0,
+              height: 0,
+              borderLeft: "14px solid transparent",
+              borderRight: "14px solid transparent",
+              borderTop: "14px solid #18181B",
+              marginTop: -2,
+            }}
+          />
         </div>
-      </div>
+      )}
     </AbsoluteFill>
   );
 };
