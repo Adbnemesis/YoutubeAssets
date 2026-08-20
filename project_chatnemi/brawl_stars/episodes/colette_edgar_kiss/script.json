@@ -4,6 +4,7 @@
     { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
     { "id": "shelly", "name": "Shelly", "color": "#29B6F6", "avatarUrl": "shelly.png" },
     { "id": "piper", "name": "Piper", "color": "#AB47BC", "avatarUrl": "piper.png" },
+    { "id": "mortis", "name": "Mortis", "color": "#9C27B0", "avatarUrl": "mortis.png" },
     { "id": "chester", "name": "Chester", "color": "#FF7043", "avatarUrl": "chester.png" },
     { "id": "mandy", "name": "Mandy", "color": "#EC407A", "avatarUrl": "mandy.png" },
     { "id": "starr_park_bot", "name": "Starr Park HR Bot", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
@@ -12,55 +13,79 @@
   "bgm": "sneaky_snitch.mp3",
   "events": [
     { "type": "message", "characterId": "colette", "text": "GUYS IT FINALLY HAPPENED IN AISLE 4 😭😭❤️", "delaySeconds": 0.5, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "colette", "text": "MY SCRAPBOOK HAS ACHIEVED MAXIMUM CANON STATUS", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "MY SCRAPBOOK HAS OFFICIALLY ACHIEVED CANON STATUS", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "AFTER 3 YEARS OF WORKING THE GIFT SHOP CASH REGISTER", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "...", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "COLETTE DO NOT POST THAT IN THE PUBLIC GENERAL CHAT", "delaySeconds": 1.4, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "...", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "COLETTE DO NOT POST THAT IN GENERAL CHAT", "delaySeconds": 1.4, "sfx": "record_scratch.mp3" },
     { "type": "message", "characterId": "edgar", "text": "IT WAS AN ACCIDENT MY SCARF TRIPPED OVER A SPIKE PLUSHIE", "delaySeconds": 1.6, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I was reaching for the receipt printer roll.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
     { "type": "cutaway", "mediaUrl": "colette_edgar_kiss_cctv.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "anime-wow.mp3" },
     
-    { "type": "message", "characterId": "colette", "text": "You literally leaned in for 0.6 seconds and held my scrapbook.", "delaySeconds": 1.4, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "You literally leaned in for 0.8 seconds and held my scrapbook.", "delaySeconds": 1.4, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "colette", "text": "I felt your emo heartbeat through your hoodie Edgar.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "And you whispered 'whatever...' right before you ran away.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "I WAS REACHING FOR THE CASH REGISTER RECEIPT TAPE", "delaySeconds": 2.6, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "you guys are delusional", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I WAS HYPERVENTILATING FROM ASTHMA", "delaySeconds": 2.6, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "my scarf acts independently when it detects dust", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i literally have a medical allergy to romantic affection", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "piper", "text": "Oh my darling...", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "piper", "text": "Oh my darling...", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
     { "type": "message", "characterId": "piper", "text": "That is not a trip. That is a tactical 1000-Elo romantic advance.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "piper", "text": "I've analyzed the trajectory from 40 tiles away with my sniper scope.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "piper", "text": "Your head tilted exactly 32 degrees toward her scrapbook.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "shelly", "text": "Look at the official Gift Shop security camera still.", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "shelly", "text": "Edgar your entire face is glowing redder than my Hypercharge button.", "delaySeconds": 1.6, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Even your scarf is blushing purple.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
     { "type": "cutaway", "mediaUrl": "edgar_blushing_scarf.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "THE CCTV CAMERA FRAME RATE WAS INTERPOLATED BY STARR PARK AI", "delaySeconds": 1.6, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "edgar", "text": "MY SCARF HAS A DEFECTIVE THERMAL REGULATOR", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I AM CURRENTLY CONSULTING MY LAWYER", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mortis", "text": "i can host the wedding ceremony in the mortuary graveyard for free", "delaySeconds": 2.6, "isTypingDuration": 0.9, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "we already have gothic bats and black roses ready for Edgar", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "i will dash down the aisle with the rings", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "Mortis you will dash into a brick wall and drop both rings.", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
     
     { "type": "message", "characterId": "chester", "text": "ATTENTION EVERYONE 🚨", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
     { "type": "message", "characterId": "chester", "text": "I am now officially ordained by Supercell to marry them in general chat 💒", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "chester", "text": "I just renamed the Discord server to: 💒 EDGAR & COLETTE WEDDING HALL 💒", "delaySeconds": 1.6, "sfx": "vine_boom.mp3" },
-    { "type": "message", "characterId": "chester", "text": "Front row seats in Voice Chat cost 500 Gems. No refunds.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "chester", "text": "NEW SERVER ROLES CREATED:", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "chester", "text": "@Groomsman (100 Gems) | @Flower Girl (250 Gems) | @Divorce Lawyer (500 Gems)", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "chester", "text": "VIP Front Row Voice Chat tickets are 50% off for Edgar's haters.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "mandy", "text": "Chester.", "delaySeconds": 3.0, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "mandy", "text": "Chester.", "delaySeconds": 3.2, "isTypingDuration": 0.9, "sfx": "record_scratch.mp3" },
     { "type": "message", "characterId": "mandy", "text": "Stop selling fake wedding tickets in the announcements channel.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "mandy", "text": "Or I am shooting Sugar Ray through the Discord voice server.", "delaySeconds": 1.6, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "mandy", "text": "If you add one more marriage role I am shooting Sugar Ray through voice chat.", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
     
     { "type": "cutaway", "mediaUrl": "DISCORD_CALL_colette", "durationSeconds": 2.8, "delaySeconds": 3.4, "fadeIn": true, "sfx": "discord_call.mp3" },
     
     { "type": "message", "characterId": "colette", "text": "EDGAR ANSWER THE VOICE CALL WE NEED TO PICK OUR WEDDING HYPERCHARGE THEME", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "I ALREADY ORDERED 500 CUSTOM CAKE TOPPERS WITH OUR FACES", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "AND I SENT THE INVITATION TO SPIKE'S OFFICIAL POST OFFICE BOX", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "I AM HIDING IN THE RETROPOLIS DUMPSTER RIGHT NOW", "delaySeconds": 2.8, "isTypingDuration": 0.8, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I HAVE UNINSTALLED DISCORD FROM 4 DEVICES", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "MY BATTERY IS AT 2% AND I'M EATING A MOLDY BURGER", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "edgar", "text": "PLEASE LEAVE ME ALONE", "delaySeconds": 1.2, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "starr_park_bot", "text": "⚠️ STARR PARK HR WORKPLACE AUDIT COMPLETE ⚠️", "delaySeconds": 2.0, "sfx": "supercell_jingle.mp3" },
-    { "type": "message", "characterId": "starr_park_bot", "text": "Witness #1 (Spike Plushie): Remained silent but blushed.", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Witness #1 (Spike Plushie): Remained silent but blushed (❤️).", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Security Footage Review: Edgar leaned in with 100% intentional velocity.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
     { "type": "message", "characterId": "starr_park_bot", "text": "HR Ruling: Official Gift Shop Marriage License Approved (100% Canon).", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "brawl_match_win.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Employee Benefit: 50% discount on all Spike merchandise for the newlywed couple.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "starr_park_bot", "text": "Edgar's 'Emo Lone Wolf' title revoked. New Title: 'Colette's Boy-Toy'.", "delaySeconds": 1.8, "sfx": "vine_boom.mp3" },
     
     { "type": "cutaway", "mediaUrl": "starr_park_marriage_cert.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "IM SELLING MY PHONE AND JOINING BULL'S BIKER GANG", "delaySeconds": 2.6, "sfx": "discord_leave.mp3" },
-    { "type": "message", "characterId": "colette", "text": "SEE YOU TOMORROW AT WORK HUBBY 🥰👋", "delaySeconds": 1.6, "sfx": "ping.mp3" }
+    { "type": "message", "characterId": "edgar", "text": "IM SELLING MY PHONE AND JOINING BULL'S BIKER GANG IN RETROPOLIS", "delaySeconds": 2.6, "sfx": "discord_leave.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Bull already locked the biker bar doors Edgar.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You belong to the Gift Shop now.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "SEE YOU TOMORROW AT WORK HUBBY 🥰👋❤️", "delaySeconds": 1.6, "sfx": "ping.mp3" }
   ]
 }
