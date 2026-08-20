@@ -62,7 +62,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
   const evConfirm = getEvent("ai06_narrator_confirm");
   const evOutro = getEvent("ai07_nemi_outro");
 
-  const totalFrames = cuesData.total_frames || 786;
+  const totalFrames = cuesData.total_frames || 768;
 
   // Semantic Cues
   const fAttentionMatrix = getCueFrame("ai02_attention", "attention_matrix", evAttention.start_frame + 45);
@@ -109,7 +109,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
     { extrapolateRight: "clamp" }
   );
 
-  // ─── Nemi Character Emotional Flow & Speech ───
+  // ─── Nemi Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "thinking";
   let nemiSpeech: string | null = null;
 
@@ -138,34 +138,34 @@ export const ChatGPTExplainsComp: React.FC = () => {
       }}
     >
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MASTER AUDIO (Voice + User Requested BGM: Death of a Bluebird) */}
+      {/* MASTER AUDIO (Voice + Enhanced BGM: Death of a Bluebird) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Audio src={staticFile("reels/chatgpt_04/chatgpt_master_audio.mp3")} />
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* SYNCHRONIZED SFX LAYER */}
+      {/* SYNCHRONIZED SFX LAYER (Audible & Punchy) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Sequence from={15} durationInFrames={35}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/typing.mp3")} volume={0.45} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/typing.mp3")} volume={0.95} />
       </Sequence>
       <Sequence from={evAttention.start_frame} durationInFrames={35}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/whoosh.mp3")} volume={0.65} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/whoosh.mp3")} volume={1.0} />
       </Sequence>
       <Sequence from={fAttentionMatrix} durationInFrames={30}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/pop.mp3")} volume={0.75} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/pop.mp3")} volume={1.0} />
       </Sequence>
       <Sequence from={fWeightsGlow} durationInFrames={35}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/notification.mp3")} volume={0.7} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/notification.mp3")} volume={1.0} />
       </Sequence>
       <Sequence from={fWordEmitted} durationInFrames={35}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/click.mp3")} volume={0.85} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/click.mp3")} volume={1.0} />
       </Sequence>
       <Sequence from={evOutro.start_frame} durationInFrames={45}>
-        <Audio src={staticFile("reels/chatgpt_04/sfx/chime.mp3")} volume={0.9} />
+        <Audio src={staticFile("reels/chatgpt_04/sfx/chime.mp3")} volume={1.0} />
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* DYNAMIC NEURAL BACKGROUND PARTICLES & GRID */}
+      {/* DYNAMIC NEURAL BACKGROUND PARTICLES & ORBS */}
       {/* ══════════════════════════════════════════════════════════ */}
       <NeuralBackground frame={frame} darkProgress={darkProgress} />
 
@@ -293,7 +293,7 @@ export const ChatGPTExplainsComp: React.FC = () => {
         </StageWrapper>
 
         {/* ══════════════════════════════════════════════════════ */}
-        {/* DYNAMIC MID-SCREEN VISUAL ASSETS (Safe Zone: top: 960px) */}
+        {/* DYNAMIC MID-SCREEN VISUAL ASSETS (Safe Zone: top: 920px) */}
         {/* ══════════════════════════════════════════════════════ */}
         <MidScreenVisualAssets
           frame={frame}
@@ -303,6 +303,12 @@ export const ChatGPTExplainsComp: React.FC = () => {
           evSamplingFrame={evSampling.start_frame}
           evAhaFrame={evAha.start_frame}
         />
+
+        {/* ══════════════════════════════════════════════════════ */}
+        {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
+        {/* Hidden when Nemi's Speech Bubble is active */}
+        {/* ══════════════════════════════════════════════════════ */}
+        {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} fps={fps} />}
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
@@ -372,6 +378,82 @@ export const ChatGPTExplainsComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
+// DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px, sides: 65px)
+// Word-by-Word Highlight with Glowing Pill & Zero Asset Overlap
+// ═══════════════════════════════════════════════════════════════
+const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
+  const subtitles = cuesData.subtitles || [];
+  const currentChunk = subtitles.find(
+    (chunk: any) => frame >= chunk.start_frame && frame <= chunk.end_frame + 2
+  );
+
+  if (!currentChunk) return null;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 1140,
+        left: 65,
+        right: 65,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        zIndex: 80,
+      }}
+    >
+      <div
+        style={{
+          backgroundColor: "rgba(10, 15, 30, 0.88)",
+          backdropFilter: "blur(20px)",
+          borderRadius: 24,
+          border: "2px solid rgba(168, 85, 247, 0.55)",
+          boxShadow: "0 14px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(168, 85, 247, 0.25)",
+          padding: "14px 28px",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 14,
+          maxWidth: 920,
+        }}
+      >
+        {currentChunk.words.map((w: any, idx: number) => {
+          const isWordActive = frame >= w.start_frame && frame <= w.end_frame + 1;
+          const wordPop = isWordActive
+            ? interpolate(frame - w.start_frame, [0, 3, 7], [1.0, 1.18, 1.08], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              })
+            : 1.0;
+
+          const activeColor = idx % 2 === 0 ? "#FFD166" : "#06B6D4";
+
+          return (
+            <span
+              key={`${w.word}_${idx}`}
+              style={{
+                fontSize: 32,
+                fontWeight: 900,
+                letterSpacing: "-0.5px",
+                color: isWordActive ? activeColor : "#F8FAFC",
+                textShadow: isWordActive
+                  ? `0 0 20px ${activeColor}, 0 2px 4px #000000`
+                  : "0 2px 6px rgba(0,0,0,0.8)",
+                transform: `scale(${wordPop})`,
+                display: "inline-block",
+              }}
+            >
+              {w.word}
+            </span>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
 // DYNAMIC NEURAL BACKGROUND (Pulsing Orbs & Wave Grid)
 // ═══════════════════════════════════════════════════════════════
 const NeuralBackground: React.FC<{ frame: number; darkProgress: number }> = ({ frame, darkProgress }) => {
@@ -381,17 +463,17 @@ const NeuralBackground: React.FC<{ frame: number; darkProgress: number }> = ({ f
   const orb2Y = 800 + Math.cos(frame * 0.04) * 50;
 
   return (
-    <div style={{ position: "absolute", inset: 0, pointerEvents: "none", opacity: darkProgress * 0.8, zIndex: 5 }}>
+    <div style={{ position: "absolute", inset: 0, pointerEvents: "none", opacity: darkProgress * 0.85, zIndex: 5 }}>
       {/* Glowing Neural Ambient Orbs */}
       <div
         style={{
           position: "absolute",
           top: orb1Y,
           left: -100,
-          width: 450,
-          height: 450,
+          width: 480,
+          height: 480,
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(168, 85, 247, 0.25) 0%, rgba(168, 85, 247, 0) 70%)",
+          background: "radial-gradient(circle, rgba(168, 85, 247, 0.28) 0%, rgba(168, 85, 247, 0) 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -400,10 +482,10 @@ const NeuralBackground: React.FC<{ frame: number; darkProgress: number }> = ({ f
           position: "absolute",
           top: orb2Y,
           right: -100,
-          width: 450,
-          height: 450,
+          width: 480,
+          height: 480,
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(6, 182, 212, 0.22) 0%, rgba(6, 182, 212, 0) 70%)",
+          background: "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(6, 182, 212, 0) 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -473,15 +555,15 @@ const Beat1LightPrompt: React.FC<{ frame: number; fps: number }> = ({ frame, fps
     <div
       style={{
         position: "absolute",
-        top: 380,
+        top: 360,
         left: 65,
         right: 65,
-        height: 550,
+        height: 520,
         backgroundColor: "#FFFFFF",
         borderRadius: 32,
         border: "3.5px solid #E2E8F0",
         boxShadow: "0 24px 60px rgba(0, 0, 0, 0.08)",
-        padding: "34px",
+        padding: "32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -502,16 +584,16 @@ const Beat1LightPrompt: React.FC<{ frame: number; fps: number }> = ({ frame, fps
       </div>
 
       {/* ChatGPT Search Input with Live Typing */}
-      <div style={{ backgroundColor: "#F8FAFC", borderRadius: 24, border: "2.5px solid #CBD5E1", padding: "26px 28px", minHeight: 140 }}>
+      <div style={{ backgroundColor: "#F8FAFC", borderRadius: 24, border: "2.5px solid #CBD5E1", padding: "24px 28px", minHeight: 130 }}>
         <div style={{ fontSize: 16, color: "#64748B", fontWeight: 800, textTransform: "uppercase", letterSpacing: "1px" }}>Prompt Input</div>
-        <div style={{ fontSize: 30, fontWeight: 900, color: "#0F172A", marginTop: 8, lineHeight: 1.3 }}>
+        <div style={{ fontSize: 29, fontWeight: 900, color: "#0F172A", marginTop: 8, lineHeight: 1.3 }}>
           "{fullText.slice(0, charsShown)}
           <span style={{ color: "#9333EA", fontWeight: 900 }}>{cursorBlink}</span>"
         </div>
       </div>
 
       {/* Curiosity Reveal */}
-      <div style={{ backgroundColor: "#FDF4FF", borderRadius: 24, padding: "22px 28px", border: "2.5px solid #F0ABFC", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ backgroundColor: "#FDF4FF", borderRadius: 24, padding: "20px 28px", border: "2.5px solid #F0ABFC", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div>
           <div style={{ fontSize: 18, color: "#C026D3", fontWeight: 800 }}>🤔 THE SECRET:</div>
           <div style={{ fontSize: 26, fontWeight: 900, color: "#0F172A", marginTop: 4 }}>
@@ -546,15 +628,15 @@ const Beat2SelfAttention: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 380,
+        top: 360,
         left: 65,
         right: 65,
-        height: 550,
+        height: 520,
         backgroundColor: "#070B12",
         borderRadius: 32,
         border: "3.5px solid #A855F7",
         boxShadow: "0 28px 70px rgba(168, 85, 247, 0.4)",
-        padding: "30px 34px",
+        padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -580,7 +662,7 @@ const Beat2SelfAttention: React.FC<{
         <div
           style={{
             backgroundColor: isMatrixOn ? "rgba(168, 85, 247, 0.25)" : "#0F172A",
-            padding: "22px",
+            padding: "20px",
             borderRadius: 20,
             border: isMatrixOn ? "3px solid #C084FC" : "1px solid #1E293B",
             boxShadow: isMatrixOn ? "0 0 40px rgba(168, 85, 247, 0.5)" : "none",
@@ -591,7 +673,7 @@ const Beat2SelfAttention: React.FC<{
             <span style={{ fontSize: 34 }}>🏦</span>
             <span style={{ fontSize: 22, fontWeight: 900, color: "#C084FC", fontFamily: nemiTheme.typography.fontFamily.mono }}>98% SCORE</span>
           </div>
-          <div style={{ fontSize: 26, fontWeight: 900, color: "#F8FAFC", marginTop: 8 }}>Money Vault</div>
+          <div style={{ fontSize: 25, fontWeight: 900, color: "#F8FAFC", marginTop: 8 }}>Money Vault</div>
           <div style={{ fontSize: 16, color: "#C084FC", marginTop: 4, fontWeight: 700 }}>⚡ Attends to "robbed"</div>
         </div>
 
@@ -599,7 +681,7 @@ const Beat2SelfAttention: React.FC<{
         <div
           style={{
             backgroundColor: isMatrixOn ? "rgba(6, 182, 212, 0.25)" : "#0F172A",
-            padding: "22px",
+            padding: "20px",
             borderRadius: 20,
             border: isMatrixOn ? "3px solid #06B6D4" : "1px solid #1E293B",
             boxShadow: isMatrixOn ? "0 0 40px rgba(6, 182, 212, 0.5)" : "none",
@@ -610,12 +692,12 @@ const Beat2SelfAttention: React.FC<{
             <span style={{ fontSize: 34 }}>🌊</span>
             <span style={{ fontSize: 22, fontWeight: 900, color: "#06B6D4", fontFamily: nemiTheme.typography.fontFamily.mono }}>95% SCORE</span>
           </div>
-          <div style={{ fontSize: 26, fontWeight: 900, color: "#F8FAFC", marginTop: 8 }}>Water Bank</div>
+          <div style={{ fontSize: 25, fontWeight: 900, color: "#F8FAFC", marginTop: 8 }}>Water Bank</div>
           <div style={{ fontSize: 16, color: "#06B6D4", marginTop: 4, fontWeight: 700 }}>⚡ Attends to "river"</div>
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#03070D", padding: "18px 24px", borderRadius: 18, border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ backgroundColor: "#03070D", padding: "16px 24px", borderRadius: 18, border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ color: "#94A3B8", fontSize: 18 }}>Attention connects all words simultaneously</span>
         <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           Context Resolved! ✓
@@ -641,21 +723,20 @@ const Beat3DeepLayers: React.FC<{
   const localFrame = frame - startFrame;
   const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const isGlowing = frame >= fWeightsGlow;
-  const signalPos = (frame * 6) % 350;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 380,
+        top: 360,
         left: 65,
         right: 65,
-        height: 550,
+        height: 520,
         backgroundColor: "#070B12",
         borderRadius: 32,
         border: "3.5px solid #38BDF8",
         boxShadow: "0 28px 70px rgba(56, 189, 248, 0.4)",
-        padding: "30px 34px",
+        padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -676,30 +757,30 @@ const Beat3DeepLayers: React.FC<{
       </div>
 
       {/* 3 Layer Blocks Stack with Energy Glow */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 12, position: "relative" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         {/* Layer 1: Syntax */}
-        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 16, border: "2px solid #38BDF8", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "14px 22px", borderRadius: 16, border: "2px solid #38BDF8", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>Layer 01 – 32: Syntax & Grammar</div>
-            <div style={{ fontSize: 16, color: "#94A3B8" }}>Identifies nouns, verbs, structure.</div>
+            <div style={{ fontSize: 21, fontWeight: 900, color: "#F8FAFC" }}>Layer 01 – 32: Syntax & Grammar</div>
+            <div style={{ fontSize: 15, color: "#94A3B8" }}>Identifies nouns, verbs, structure.</div>
           </div>
-          <span style={{ color: "#38BDF8", fontWeight: 900, fontSize: 18 }}>✓ GRAMMAR</span>
+          <span style={{ color: "#38BDF8", fontWeight: 900, fontSize: 17 }}>✓ GRAMMAR</span>
         </div>
 
         {/* Layer 2: Knowledge */}
-        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 16, border: "2px solid #8B5CF6", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "14px 22px", borderRadius: 16, border: "2px solid #8B5CF6", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>Layer 33 – 64: World Knowledge</div>
-            <div style={{ fontSize: 16, color: "#94A3B8" }}>Connects geography, physics, history.</div>
+            <div style={{ fontSize: 21, fontWeight: 900, color: "#F8FAFC" }}>Layer 33 – 64: World Knowledge</div>
+            <div style={{ fontSize: 15, color: "#94A3B8" }}>Connects geography, physics, history.</div>
           </div>
-          <span style={{ color: "#8B5CF6", fontWeight: 900, fontSize: 18 }}>✓ KNOWLEDGE</span>
+          <span style={{ color: "#8B5CF6", fontWeight: 900, fontSize: 17 }}>✓ KNOWLEDGE</span>
         </div>
 
         {/* Layer 3: Reasoning */}
         <div
           style={{
             backgroundColor: isGlowing ? "rgba(16, 185, 129, 0.25)" : "#0F172A",
-            padding: "16px 22px",
+            padding: "14px 22px",
             borderRadius: 16,
             border: isGlowing ? "3px solid #10B981" : "2px solid #1E293B",
             boxShadow: isGlowing ? "0 0 35px rgba(16, 185, 129, 0.5)" : "none",
@@ -709,10 +790,10 @@ const Beat3DeepLayers: React.FC<{
           }}
         >
           <div>
-            <div style={{ fontSize: 22, fontWeight: 900, color: isGlowing ? "#10B981" : "#F8FAFC" }}>Layer 65 – 96: Deep Reasoning</div>
-            <div style={{ fontSize: 16, color: "#94A3B8" }}>Synthesizes output context & logic.</div>
+            <div style={{ fontSize: 21, fontWeight: 900, color: isGlowing ? "#10B981" : "#F8FAFC" }}>Layer 65 – 96: Deep Reasoning</div>
+            <div style={{ fontSize: 15, color: "#94A3B8" }}>Synthesizes output context & logic.</div>
           </div>
-          <span style={{ color: "#10B981", fontWeight: 900, fontSize: 18 }}>✓ REASONING</span>
+          <span style={{ color: "#10B981", fontWeight: 900, fontSize: 17 }}>✓ REASONING</span>
         </div>
       </div>
 
@@ -741,15 +822,15 @@ const Beat4NextTokenSampling: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 380,
+        top: 360,
         left: 65,
         right: 65,
-        height: 550,
+        height: 520,
         backgroundColor: "#070B12",
         borderRadius: 32,
         border: "3.5px solid #10B981",
         boxShadow: "0 28px 70px rgba(16, 185, 129, 0.4)",
-        padding: "30px 34px",
+        padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -770,12 +851,12 @@ const Beat4NextTokenSampling: React.FC<{
       </div>
 
       {/* Dynamic Animated Token Probability Race Bars */}
-      <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
         {/* Token 1: escape (91.4%) */}
         <div
           style={{
             backgroundColor: isEmitted ? "rgba(16, 185, 129, 0.25)" : "#0F172A",
-            padding: "16px 22px",
+            padding: "14px 22px",
             borderRadius: 18,
             border: isEmitted ? "3px solid #10B981" : "1px solid #1E293B",
             boxShadow: isEmitted ? "0 0 40px rgba(16, 185, 129, 0.5)" : "none",
@@ -783,7 +864,6 @@ const Beat4NextTokenSampling: React.FC<{
             overflow: "hidden",
           }}
         >
-          {/* Animated Background Progress Fill */}
           <div
             style={{
               position: "absolute",
@@ -799,10 +879,10 @@ const Beat4NextTokenSampling: React.FC<{
           <div style={{ position: "relative", zIndex: 2, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               <span style={{ fontSize: 32 }}>🏃‍♂️</span>
-              <span style={{ fontSize: 30, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>"escape"</span>
+              <span style={{ fontSize: 28, fontWeight: 900, color: "#F8FAFC", fontFamily: nemiTheme.typography.fontFamily.mono }}>"escape"</span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-              <span style={{ fontSize: 28, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>91.4%</span>
+              <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>91.4%</span>
               <span style={{ backgroundColor: "#10B981", color: "#FFFFFF", padding: "6px 14px", borderRadius: 10, fontSize: 16, fontWeight: 900 }}>
                 WINNER 🟢
               </span>
@@ -811,26 +891,26 @@ const Beat4NextTokenSampling: React.FC<{
         </div>
 
         {/* Token 2: vault (5.2%) */}
-        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 18, border: "1px solid #1E293B", position: "relative", overflow: "hidden", opacity: 0.65 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "14px 22px", borderRadius: 18, border: "1px solid #1E293B", position: "relative", overflow: "hidden", opacity: 0.65 }}>
           <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${barProgress * 35}%`, backgroundColor: "rgba(56, 189, 248, 0.2)", zIndex: 1 }} />
           <div style={{ position: "relative", zIndex: 2, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               <span style={{ fontSize: 32 }}>🔐</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>"vault"</span>
+              <span style={{ fontSize: 25, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>"vault"</span>
             </div>
-            <span style={{ fontSize: 24, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>5.2%</span>
+            <span style={{ fontSize: 22, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>5.2%</span>
           </div>
         </div>
 
         {/* Token 3: police (2.1%) */}
-        <div style={{ backgroundColor: "#0F172A", padding: "16px 22px", borderRadius: 18, border: "1px solid #1E293B", position: "relative", overflow: "hidden", opacity: 0.45 }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "14px 22px", borderRadius: 18, border: "1px solid #1E293B", position: "relative", overflow: "hidden", opacity: 0.45 }}>
           <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: `${barProgress * 15}%`, backgroundColor: "rgba(168, 85, 247, 0.2)", zIndex: 1 }} />
           <div style={{ position: "relative", zIndex: 2, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
               <span style={{ fontSize: 32 }}>🚓</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>"police"</span>
+              <span style={{ fontSize: 25, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>"police"</span>
             </div>
-            <span style={{ fontSize: 24, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>2.1%</span>
+            <span style={{ fontSize: 22, fontWeight: 900, color: "#94A3B8", fontFamily: nemiTheme.typography.fontFamily.mono }}>2.1%</span>
           </div>
         </div>
       </div>
@@ -858,17 +938,17 @@ const Beat5SummaryConsole: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 380,
+        top: 360,
         left: 65,
         right: 65,
         backgroundColor: "#18181B",
         borderRadius: 32,
         border: "3.5px solid #27272A",
         boxShadow: "0 28px 70px rgba(0, 0, 0, 0.5)",
-        padding: "32px 36px",
+        padding: "30px 36px",
         display: "flex",
         flexDirection: "column",
-        gap: 16,
+        gap: 14,
         transform: `scale(${pop})`,
         zIndex: 30,
       }}
@@ -882,26 +962,26 @@ const Beat5SummaryConsole: React.FC<{
         </span>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "16px 22px", borderRadius: 16, borderLeft: "7px solid #A855F7" }}>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>01. Self-Attention Engine</div>
-        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Resolves multi-word context simultaneously.</div>
+      <div style={{ backgroundColor: "#27272A", padding: "14px 22px", borderRadius: 16, borderLeft: "7px solid #A855F7" }}>
+        <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC" }}>01. Self-Attention Engine</div>
+        <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 2 }}>Resolves multi-word context simultaneously.</div>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "16px 22px", borderRadius: 16, borderLeft: "7px solid #38BDF8" }}>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>02. 96 Deep Neural Layers</div>
-        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Pushes vectors across 175B learned weights.</div>
+      <div style={{ backgroundColor: "#27272A", padding: "14px 22px", borderRadius: 16, borderLeft: "7px solid #38BDF8" }}>
+        <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC" }}>02. 96 Deep Neural Layers</div>
+        <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 2 }}>Pushes vectors across 175B learned weights.</div>
       </div>
 
-      <div style={{ backgroundColor: "#27272A", padding: "16px 22px", borderRadius: 16, borderLeft: "7px solid #10B981" }}>
-        <div style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>03. 15ms Next-Token Sampling</div>
-        <div style={{ fontSize: 18, color: "#94A3B8", marginTop: 2 }}>Scores 100,000 candidates and loops!</div>
+      <div style={{ backgroundColor: "#27272A", padding: "14px 22px", borderRadius: 16, borderLeft: "7px solid #10B981" }}>
+        <div style={{ fontSize: 23, fontWeight: 900, color: "#F8FAFC" }}>03. 15ms Next-Token Sampling</div>
+        <div style={{ fontSize: 17, color: "#94A3B8", marginTop: 2 }}>Scores 100,000 candidates and loops!</div>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// DYNAMIC MID-SCREEN VISUAL ASSETS (Safe Zone: top: 960px, sides: 65px)
+// DYNAMIC MID-SCREEN VISUAL ASSETS (Safe Zone: top: 920px, sides: 65px)
 // ═══════════════════════════════════════════════════════════════
 const MidScreenVisualAssets: React.FC<{
   frame: number;
@@ -922,16 +1002,16 @@ const MidScreenVisualAssets: React.FC<{
     <div
       style={{
         position: "absolute",
-        top: 960,
+        top: 920,
         left: 65,
         right: 65,
-        height: 300,
+        height: 200,
         backgroundColor: "transparent",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        gap: 22,
+        gap: 16,
         zIndex: 35,
       }}
     >
@@ -939,20 +1019,20 @@ const MidScreenVisualAssets: React.FC<{
       {isStage1 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "16px 26px", borderRadius: 26, border: "2px solid #C084FC", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 8px 24px rgba(0,0,0,0.06)" }}>
-              <span style={{ fontSize: 46 }}>⌨️</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>User Words</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, border: "2px solid #C084FC", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 8px 24px rgba(0,0,0,0.06)" }}>
+              <span style={{ fontSize: 38 }}>⌨️</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#0F172A" }}>User Words</span>
             </div>
 
-            <span style={{ fontSize: 32, color: "#9333EA", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
+            <span style={{ fontSize: 30, color: "#9333EA", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "16px 26px", borderRadius: 26, border: "2px solid #C084FC", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 8px 24px rgba(0,0,0,0.06)" }}>
-              <span style={{ fontSize: 46 }}>🧠</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#9333EA" }}>Transformer Net</span>
+            <div style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", padding: "14px 24px", borderRadius: 24, border: "2px solid #C084FC", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 8px 24px rgba(0,0,0,0.06)" }}>
+              <span style={{ fontSize: 38 }}>🧠</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#9333EA" }}>Transformer Net</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(147, 51, 234, 0.10)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(147, 51, 234, 0.35)", color: "#9333EA", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(147, 51, 234, 0.10)", padding: "10px 24px", borderRadius: 20, border: "2px solid rgba(147, 51, 234, 0.35)", color: "#9333EA", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Behind Every Prompt is a Massive Neural Net
           </div>
         </>
@@ -962,20 +1042,20 @@ const MidScreenVisualAssets: React.FC<{
       {isStage2 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(168, 85, 247, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
-              <span style={{ fontSize: 46 }}>🔗</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#C084FC" }}>Word Links</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "14px 24px", borderRadius: 24, border: "2px solid rgba(168, 85, 247, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🔗</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#C084FC" }}>Word Links</span>
             </div>
 
-            <span style={{ fontSize: 32, color: "#A855F7", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
+            <span style={{ fontSize: 30, color: "#A855F7", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(168, 85, 247, 0.7)", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 30px rgba(168, 85, 247, 0.5)", transform: `scale(${pulse})` }}>
-              <span style={{ fontSize: 46 }}>💡</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#C084FC" }}>True Meaning</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "14px 24px", borderRadius: 24, border: "2px solid rgba(168, 85, 247, 0.7)", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 0 30px rgba(168, 85, 247, 0.5)", transform: `scale(${pulse})` }}>
+              <span style={{ fontSize: 38 }}>💡</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#C084FC" }}>True Meaning</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(168, 85, 247, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(168, 85, 247, 0.45)", color: "#C084FC", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(168, 85, 247, 0.18)", padding: "10px 24px", borderRadius: 20, border: "2px solid rgba(168, 85, 247, 0.45)", color: "#C084FC", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Self-Attention Connects Every Word Together
           </div>
         </>
@@ -985,20 +1065,20 @@ const MidScreenVisualAssets: React.FC<{
       {isStage3 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(56, 189, 248, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
-              <span style={{ fontSize: 46 }}>🥞</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#38BDF8" }}>96 Layers</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "14px 24px", borderRadius: 24, border: "2px solid rgba(56, 189, 248, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>🥞</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#38BDF8" }}>96 Layers</span>
             </div>
 
-            <span style={{ fontSize: 32, color: "#38BDF8", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
+            <span style={{ fontSize: 30, color: "#38BDF8", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(56, 189, 248, 0.7)", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 30px rgba(56, 189, 248, 0.5)", transform: `scale(${pulse})` }}>
-              <span style={{ fontSize: 46 }}>🌐</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#38BDF8" }}>175B Weights</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "14px 24px", borderRadius: 24, border: "2px solid rgba(56, 189, 248, 0.7)", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 0 30px rgba(56, 189, 248, 0.5)", transform: `scale(${pulse})` }}>
+              <span style={{ fontSize: 38 }}>🌐</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#38BDF8" }}>175B Weights</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(56, 189, 248, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(56, 189, 248, 0.45)", color: "#38BDF8", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(56, 189, 248, 0.18)", padding: "10px 24px", borderRadius: 20, border: "2px solid rgba(56, 189, 248, 0.45)", color: "#38BDF8", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Pushes Vectors Across 96 Deep Neural Layers
           </div>
         </>
@@ -1008,20 +1088,20 @@ const MidScreenVisualAssets: React.FC<{
       {isStage4 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
-              <span style={{ fontSize: 46 }}>📊</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>100k Tokens</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "14px 24px", borderRadius: 24, border: "2px solid rgba(16, 185, 129, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 38 }}>📊</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#10B981" }}>100k Tokens</span>
             </div>
 
-            <span style={{ fontSize: 32, color: "#10B981", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
+            <span style={{ fontSize: 30, color: "#10B981", fontWeight: 900, transform: `scale(${pulse})` }}>➔</span>
 
-            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "16px 26px", borderRadius: 26, border: "2px solid rgba(16, 185, 129, 0.7)", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)", transform: `scale(${pulse})` }}>
-              <span style={{ fontSize: 46 }}>🎯</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>15ms Winner</span>
+            <div style={{ backgroundColor: "rgba(15, 23, 42, 0.90)", padding: "14px 24px", borderRadius: 24, border: "2px solid rgba(16, 185, 129, 0.7)", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 0 30px rgba(16, 185, 129, 0.5)", transform: `scale(${pulse})` }}>
+              <span style={{ fontSize: 38 }}>🎯</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#10B981" }}>15ms Winner</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.18)", padding: "12px 28px", borderRadius: 24, border: "2px solid rgba(16, 185, 129, 0.45)", color: "#10B981", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ backgroundColor: "rgba(16, 185, 129, 0.18)", padding: "10px 24px", borderRadius: 20, border: "2px solid rgba(16, 185, 129, 0.45)", color: "#10B981", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Samples the Best Token & Loops Autoregressively
           </div>
         </>
@@ -1031,20 +1111,20 @@ const MidScreenVisualAssets: React.FC<{
       {isStage5 && (
         <>
           <div style={{ display: "flex", alignItems: "center", gap: 24 }}>
-            <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "16px 28px", borderRadius: 26, border: "2px solid rgba(239, 68, 68, 0.5)", display: "flex", alignItems: "center", gap: 14 }}>
-              <span style={{ fontSize: 40 }}>❌</span>
-              <span style={{ fontSize: 24, fontWeight: 900, color: "#EF4444" }}>Not Magic</span>
+            <div style={{ backgroundColor: "rgba(239, 68, 68, 0.18)", padding: "14px 26px", borderRadius: 24, border: "2px solid rgba(239, 68, 68, 0.5)", display: "flex", alignItems: "center", gap: 12 }}>
+              <span style={{ fontSize: 36 }}>❌</span>
+              <span style={{ fontSize: 22, fontWeight: 900, color: "#EF4444" }}>Not Magic</span>
             </div>
 
-            <span style={{ fontSize: 30, color: "#FFD166", fontWeight: 900 }}>VS</span>
+            <span style={{ fontSize: 28, color: "#FFD166", fontWeight: 900 }}>VS</span>
 
-            <div style={{ backgroundColor: "rgba(16, 185, 129, 0.22)", padding: "16px 30px", borderRadius: 26, border: "3px solid #10B981", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 0 40px rgba(16, 185, 129, 0.5)", transform: `scale(${pulse})` }}>
-              <span style={{ fontSize: 40 }}>⚡</span>
-              <span style={{ fontSize: 26, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>Transformer Net!</span>
+            <div style={{ backgroundColor: "rgba(16, 185, 129, 0.22)", padding: "14px 28px", borderRadius: 24, border: "3px solid #10B981", display: "flex", alignItems: "center", gap: 12, boxShadow: "0 0 40px rgba(16, 185, 129, 0.5)", transform: `scale(${pulse})` }}>
+              <span style={{ fontSize: 36 }}>⚡</span>
+              <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981", fontFamily: nemiTheme.typography.fontFamily.mono }}>Transformer Net!</span>
             </div>
           </div>
 
-          <div style={{ color: "#FFD166", fontSize: 21, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <div style={{ color: "#FFD166", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             Self-Attention + 96 Layers = ChatGPT! 🚀
           </div>
         </>

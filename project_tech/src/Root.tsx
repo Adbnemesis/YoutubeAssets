@@ -31,7 +31,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsChatGPT"
         component={ChatGPTExplainsComp}
-        durationInFrames={786} // 26.2s @ 30fps — Transformer Network (Nemi Outro + Dynamic Visuals)
+        durationInFrames={768} // 25.61s @ 30fps — Transformer Network with Dynamic Karaoke Captions & Enhanced BGM
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}

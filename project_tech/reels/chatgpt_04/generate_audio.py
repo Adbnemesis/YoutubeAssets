@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """
-Nemi Explains Reel #4 — "How ChatGPT ACTUALLY Works: The Transformer Network" (Strictly <25s @ 30fps)
-Deep, curious, and satisfying Computer Science explanation of Transformers & Self-Attention.
-Music: Death of a Bluebird - Rorschach Roy 4.mp3
+Nemi Explains Reel #4 — "How ChatGPT ACTUALLY Works: The Transformer Network"
+Includes:
+- Crisp Dual-Voice TTS (Chatterbox Narrator + Edge-TTS Nemi Punchline)
+- Punchy & Audible BGM Mix (Death of a Bluebird) with gentle musical sidechain ducking
+- Automatic Word-Level Timestamp Extraction (faster_whisper) for Dynamic Viral Captions
 """
 
 import os
@@ -12,6 +14,7 @@ import asyncio
 import subprocess
 import shutil
 from pathlib import Path
+from faster_whisper import WhisperModel
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 PUBLIC_REELS = BASE_DIR / "public" / "reels" / "chatgpt_04"
@@ -48,7 +51,7 @@ except ImportError:
     HAS_LIBROSA = False
 
 # ═══════════════════════════════════════════════════════════════
-# TIGHT, DEEP, CURIOSITY-DRIVEN SCRIPT (STRICTLY 23-24.5 SECONDS)
+# TIGHT, DEEP, CURIOSITY-DRIVEN SCRIPT (STRICTLY <25s @ 30fps)
 # ═══════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
     # 1. Beat 1: High-Curiosity Hook (Light Mode Interface)
@@ -142,7 +145,7 @@ SPEAKER_EVENTS = [
 ]
 
 TARGET_VOICE_LUFS = -16.0
-TARGET_MASTER_LUFS = -15.5
+TARGET_MASTER_LUFS = -15.0
 
 def trim_silence(y, sr, top_db=35):
     if HAS_LIBROSA:
@@ -168,14 +171,52 @@ def normalize_lufs(y, sr, target):
         return y * (0.8 / max_val)
     return y
 
+def extract_subtitles_whisper(audio_path, fps=30):
+    print("\n🔍 Extracting Millisecond-Accurate Word Timestamps (faster_whisper)...")
+    model = WhisperModel("base", device="cpu", compute_type="int8")
+    segments, _ = model.transcribe(str(audio_path), word_timestamps=True)
+
+    words_raw = []
+    for segment in segments:
+        for w in segment.words:
+            clean_w = w.word.strip()
+            if clean_w:
+                words_raw.append({
+                    "word": clean_w,
+                    "start_s": round(w.start, 3),
+                    "end_s": round(w.end, 3),
+                    "start_frame": int(round(w.start * fps)),
+                    "end_frame": int(round(w.end * fps))
+                })
+
+    # Group into punchy 3-5 word phrase chunks for dynamic viral captions
+    phrase_chunks = []
+    chunk_size = 4
+    for i in range(0, len(words_raw), chunk_size):
+        group = words_raw[i:i+chunk_size]
+        if not group:
+            continue
+        start_f = group[0]["start_frame"]
+        end_f = group[-1]["end_frame"] + 4
+        phrase_text = " ".join([item["word"] for item in group])
+        phrase_chunks.append({
+            "start_frame": start_f,
+            "end_frame": end_f,
+            "text": phrase_text,
+            "words": group
+        })
+
+    print(f"✅ Extracted {len(words_raw)} words across {len(phrase_chunks)} caption phrase chunks.")
+    return phrase_chunks, words_raw
+
 def main():
     print("═" * 70)
-    print("🎙️ NEMI EXPLAINS REEL #4 (TRANSFORMER DEEP-DIVE STRICTLY <25s)")
+    print("🎙️ NEMI EXPLAINS REEL #4 (DEEP TRANSFORMER EXPLAINER + VIRAL CAPTIONS)")
     print("═" * 70)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
-    print(f"   Target Duration: 23-24.5s (<25s)")
+    print(f"   Target Duration: 23-26s")
     print(f"   BGM: Death of a Bluebird - Rorschach Roy 4.mp3")
 
     print("Loading Chatterbox model weights for Narrator...")
@@ -290,6 +331,7 @@ def main():
     print(f"✅ Master Voice Track: {final_voice_mp3.name}")
 
     # 3. Dynamic Sidechain Ducking with User Requested BGM: "Death of a Bluebird - Rorschach Roy 4.mp3"
+    # Adjusted for high audibility, rich rhythm, and gentle musical ducking!
     bgm_path = BASE_DIR / "assets" / "background_music" / "Death of a Bluebird - Rorschach Roy 4.mp3"
     if not bgm_path.exists():
         bgm_path = BASE_DIR / "public" / "bgm" / "Death of a Bluebird - Rorschach Roy 4.mp3"
@@ -297,11 +339,12 @@ def main():
     master_audio_mp3 = PUBLIC_REELS / "chatgpt_master_audio.mp3"
 
     if bgm_path.exists():
-        print(f"🎵 Mixing user requested BGM: {bgm_path.name}")
+        print(f"🎵 Mixing user requested BGM (Enhanced Audibility): {bgm_path.name}")
+        # Volume boosted to 0.52, gentle sidechain compression (ratio 2.5, threshold 0.08) so music remains clearly heard!
         sidechain_filter = (
-            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.30,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.8}:d=0.8[bgm];"
+            f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s},volume=0.52,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.8}:d=0.8[bgm];"
             f"[0:a]asplit=2[voice_main][voice_sc];"
-            f"[bgm][voice_sc]sidechaincompress=threshold=0.035:ratio=7:attack=25:release=220[ducked_bgm];"
+            f"[bgm][voice_sc]sidechaincompress=threshold=0.08:ratio=2.5:attack=35:release=160[ducked_bgm];"
             f"[voice_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"
             f"[mix]loudnorm=I={TARGET_MASTER_LUFS}:TP=-1.5:LRA=7[out]"
         )
@@ -321,7 +364,10 @@ def main():
 
     shutil.copy(master_audio_mp3, PUBLIC_SOUNDS / "chatgpt_master_audio.mp3")
 
-    # 4. Export JSON cues for Remotion
+    # 4. Extract word-level subtitles using faster_whisper
+    subtitles, words_all = extract_subtitles_whisper(final_voice_mp3, fps=30)
+
+    # 5. Export JSON cues for Remotion
     cues_json_path = BASE_DIR / "src" / "data" / "chatgpt_cues.json"
     cues_data = {
         "reel_id": "chatgpt_04",
@@ -329,13 +375,15 @@ def main():
         "total_duration_s": total_duration_s,
         "total_frames": total_frames,
         "fps": 30,
-        "timeline_events": timeline_events
+        "timeline_events": timeline_events,
+        "subtitles": subtitles,
+        "words": words_all
     }
     with open(cues_json_path, "w") as f:
         json.dump(cues_data, f, indent=2)
-    print(f"✅ Timeline cues written to: {cues_json_path}")
+    print(f"✅ Timeline cues and word-level subtitles written to: {cues_json_path}")
 
-    # 5. Validate Speaker Separation & Overlap
+    # 6. Validate Speaker Separation & Overlap
     print("\n🔍 Validating Speaker Separation:")
     has_overlap = False
     for j in range(len(timeline_events) - 1):
@@ -348,7 +396,7 @@ def main():
             has_overlap = True
 
     if not has_overlap:
-        print("\n🎉 DUAL-VOICE AUDIO PIPELINE COMPLETE — 0.00ms OVERLAP GUARANTEED\n")
+        print("\n🎉 DUAL-VOICE AUDIO & SUBTITLE PIPELINE COMPLETE — 0.00ms OVERLAP GUARANTEED\n")
 
 if __name__ == "__main__":
     main()

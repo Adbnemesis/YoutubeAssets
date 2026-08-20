@@ -1,8 +1,8 @@
 {
   "reel_id": "chatgpt_04",
   "title": "How ChatGPT ACTUALLY Works: The Transformer Network",
-  "total_duration_s": 26.206,
-  "total_frames": 786,
+  "total_duration_s": 25.608,
+  "total_frames": 768,
   "fps": 30,
   "timeline_events": [
     {
@@ -10,23 +10,23 @@
       "speaker": "narrator",
       "text": "How does ChatGPT write essays and code? It doesn't understand a single word you type.",
       "start_time_ms": 0,
-      "end_time_ms": 4224,
-      "duration_s": 4.224,
+      "end_time_ms": 3989,
+      "duration_s": 3.989,
       "start_frame": 0,
-      "end_frame": 127,
+      "end_frame": 120,
       "gap_after_ms": 140,
       "semantic_cues": [
         {
           "phrase": "essays and code",
           "cue": "prompt_type",
-          "time_ms": 1267,
-          "frame": 38
+          "time_ms": 1196,
+          "frame": 36
         },
         {
           "phrase": "doesn't understand",
           "cue": "hook_reveal",
-          "time_ms": 3168,
-          "frame": 95
+          "time_ms": 2991,
+          "frame": 90
         }
       ]
     },
@@ -34,30 +34,30 @@
       "id": "ai02_attention",
       "speaker": "narrator",
       "text": "Inside is a Transformer network. Self-Attention connects every word together, figuring out if bank means money or water.",
-      "start_time_ms": 4364,
-      "end_time_ms": 10422,
-      "duration_s": 6.059,
-      "start_frame": 131,
-      "end_frame": 313,
+      "start_time_ms": 4129,
+      "end_time_ms": 9931,
+      "duration_s": 5.803,
+      "start_frame": 124,
+      "end_frame": 298,
       "gap_after_ms": 140,
       "semantic_cues": [
         {
           "phrase": "Transformer network",
           "cue": "transformer_enter",
-          "time_ms": 5575,
-          "frame": 167
+          "time_ms": 5289,
+          "frame": 159
         },
         {
           "phrase": "connects every word",
           "cue": "attention_matrix",
-          "time_ms": 7090,
-          "frame": 213
+          "time_ms": 6739,
+          "frame": 202
         },
         {
           "phrase": "money or water",
           "cue": "bank_disambiguate",
-          "time_ms": 9513,
-          "frame": 285
+          "time_ms": 9060,
+          "frame": 272
         }
       ]
     },
@@ -65,24 +65,24 @@
       "id": "ai03_layers",
       "speaker": "narrator",
       "text": "It pushes these vectors through ninety-six deep neural layers, processing billions of internet patterns.",
-      "start_time_ms": 10562,
-      "end_time_ms": 15298,
-      "duration_s": 4.736,
-      "start_frame": 317,
-      "end_frame": 459,
+      "start_time_ms": 10071,
+      "end_time_ms": 14871,
+      "duration_s": 4.8,
+      "start_frame": 302,
+      "end_frame": 446,
       "gap_after_ms": 140,
       "semantic_cues": [
         {
           "phrase": "ninety-six",
           "cue": "layers_stack",
-          "time_ms": 12219,
-          "frame": 367
+          "time_ms": 11751,
+          "frame": 353
         },
         {
           "phrase": "billions of internet patterns",
           "cue": "weights_glow",
-          "time_ms": 14114,
-          "frame": 423
+          "time_ms": 13671,
+          "frame": 410
         }
       ]
     },
@@ -90,24 +90,24 @@
       "id": "ai04_sampling",
       "speaker": "narrator",
       "text": "At the final layer, it scores 100,000 tokens to pick the best next word in fifteen milliseconds.",
-      "start_time_ms": 15438,
-      "end_time_ms": 20195,
-      "duration_s": 4.757,
-      "start_frame": 463,
-      "end_frame": 606,
+      "start_time_ms": 15011,
+      "end_time_ms": 19832,
+      "duration_s": 4.821,
+      "start_frame": 450,
+      "end_frame": 595,
       "gap_after_ms": 160,
       "semantic_cues": [
         {
           "phrase": "scores 100,000 tokens",
           "cue": "vocab_scores",
-          "time_ms": 17102,
-          "frame": 513
+          "time_ms": 16698,
+          "frame": 501
         },
         {
           "phrase": "fifteen milliseconds",
           "cue": "word_emitted",
-          "time_ms": 19243,
-          "frame": 577
+          "time_ms": 18867,
+          "frame": 566
         }
       ]
     },
@@ -115,18 +115,18 @@
       "id": "ai05_nemi_aha",
       "speaker": "nemi",
       "text": "So ninety-six layers of math predict the next word?! \ud83e\udd2f",
-      "start_time_ms": 20355,
-      "end_time_ms": 23171,
+      "start_time_ms": 19992,
+      "end_time_ms": 22808,
       "duration_s": 2.816,
-      "start_frame": 611,
-      "end_frame": 695,
+      "start_frame": 600,
+      "end_frame": 684,
       "gap_after_ms": 100,
       "semantic_cues": [
         {
           "phrase": "predict the next word",
           "cue": "nemi_mindblown",
-          "time_ms": 22044,
-          "frame": 661
+          "time_ms": 21681,
+          "frame": 650
         }
       ]
     },
@@ -134,18 +134,18 @@
       "id": "ai06_narrator_confirm",
       "speaker": "narrator",
       "text": "Exactly.",
-      "start_time_ms": 23271,
-      "end_time_ms": 24124,
-      "duration_s": 0.853,
-      "start_frame": 698,
-      "end_frame": 724,
+      "start_time_ms": 22908,
+      "end_time_ms": 23526,
+      "duration_s": 0.619,
+      "start_frame": 687,
+      "end_frame": 706,
       "gap_after_ms": 90,
       "semantic_cues": [
         {
           "phrase": "Exactly",
           "cue": "confirm_snap",
-          "time_ms": 23697,
-          "frame": 711
+          "time_ms": 23217,
+          "frame": 697
         }
       ]
     },
@@ -153,20 +153,1284 @@
       "id": "ai07_nemi_outro",
       "speaker": "nemi",
       "text": "Pure Transformer architecture! \ud83d\ude0e\u26a1",
-      "start_time_ms": 24214,
-      "end_time_ms": 26006,
+      "start_time_ms": 23616,
+      "end_time_ms": 25408,
       "duration_s": 1.792,
-      "start_frame": 726,
-      "end_frame": 780,
+      "start_frame": 708,
+      "end_frame": 762,
       "gap_after_ms": 200,
       "semantic_cues": [
         {
           "phrase": "Transformer architecture",
           "cue": "scorecard_snap",
-          "time_ms": 25110,
-          "frame": 753
+          "time_ms": 24512,
+          "frame": 735
         }
       ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 32,
+      "text": "How does chat GPT",
+      "words": [
+        {
+          "word": "How",
+          "start_s": 0.0,
+          "end_s": 0.14,
+          "start_frame": 0,
+          "end_frame": 4
+        },
+        {
+          "word": "does",
+          "start_s": 0.14,
+          "end_s": 0.26,
+          "start_frame": 4,
+          "end_frame": 8
+        },
+        {
+          "word": "chat",
+          "start_s": 0.26,
+          "end_s": 0.44,
+          "start_frame": 8,
+          "end_frame": 13
+        },
+        {
+          "word": "GPT",
+          "start_s": 0.44,
+          "end_s": 0.92,
+          "start_frame": 13,
+          "end_frame": 28
+        }
+      ]
+    },
+    {
+      "start_frame": 28,
+      "end_frame": 63,
+      "text": "write essays and code?",
+      "words": [
+        {
+          "word": "write",
+          "start_s": 0.92,
+          "end_s": 1.14,
+          "start_frame": 28,
+          "end_frame": 34
+        },
+        {
+          "word": "essays",
+          "start_s": 1.14,
+          "end_s": 1.46,
+          "start_frame": 34,
+          "end_frame": 44
+        },
+        {
+          "word": "and",
+          "start_s": 1.46,
+          "end_s": 1.7,
+          "start_frame": 44,
+          "end_frame": 51
+        },
+        {
+          "word": "code?",
+          "start_s": 1.7,
+          "end_s": 1.96,
+          "start_frame": 51,
+          "end_frame": 59
+        }
+      ]
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 98,
+      "text": "It doesn't understand a",
+      "words": [
+        {
+          "word": "It",
+          "start_s": 2.32,
+          "end_s": 2.38,
+          "start_frame": 70,
+          "end_frame": 71
+        },
+        {
+          "word": "doesn't",
+          "start_s": 2.38,
+          "end_s": 2.6,
+          "start_frame": 71,
+          "end_frame": 78
+        },
+        {
+          "word": "understand",
+          "start_s": 2.6,
+          "end_s": 2.96,
+          "start_frame": 78,
+          "end_frame": 89
+        },
+        {
+          "word": "a",
+          "start_s": 2.96,
+          "end_s": 3.12,
+          "start_frame": 89,
+          "end_frame": 94
+        }
+      ]
+    },
+    {
+      "start_frame": 94,
+      "end_frame": 122,
+      "text": "single word you type.",
+      "words": [
+        {
+          "word": "single",
+          "start_s": 3.12,
+          "end_s": 3.34,
+          "start_frame": 94,
+          "end_frame": 100
+        },
+        {
+          "word": "word",
+          "start_s": 3.34,
+          "end_s": 3.56,
+          "start_frame": 100,
+          "end_frame": 107
+        },
+        {
+          "word": "you",
+          "start_s": 3.56,
+          "end_s": 3.72,
+          "start_frame": 107,
+          "end_frame": 112
+        },
+        {
+          "word": "type.",
+          "start_s": 3.72,
+          "end_s": 3.94,
+          "start_frame": 112,
+          "end_frame": 118
+        }
+      ]
+    },
+    {
+      "start_frame": 125,
+      "end_frame": 160,
+      "text": "Inside is a transformer",
+      "words": [
+        {
+          "word": "Inside",
+          "start_s": 4.16,
+          "end_s": 4.46,
+          "start_frame": 125,
+          "end_frame": 134
+        },
+        {
+          "word": "is",
+          "start_s": 4.46,
+          "end_s": 4.72,
+          "start_frame": 134,
+          "end_frame": 142
+        },
+        {
+          "word": "a",
+          "start_s": 4.72,
+          "end_s": 4.8,
+          "start_frame": 142,
+          "end_frame": 144
+        },
+        {
+          "word": "transformer",
+          "start_s": 4.8,
+          "end_s": 5.2,
+          "start_frame": 144,
+          "end_frame": 156
+        }
+      ]
+    },
+    {
+      "start_frame": 156,
+      "end_frame": 215,
+      "text": "network. Self -attention connects",
+      "words": [
+        {
+          "word": "network.",
+          "start_s": 5.2,
+          "end_s": 5.62,
+          "start_frame": 156,
+          "end_frame": 169
+        },
+        {
+          "word": "Self",
+          "start_s": 6.22,
+          "end_s": 6.36,
+          "start_frame": 187,
+          "end_frame": 191
+        },
+        {
+          "word": "Attention",
+          "start_s": 6.36,
+          "end_s": 6.72,
+          "start_frame": 191,
+          "end_frame": 202
+        },
+        {
+          "word": "connects",
+          "start_s": 6.72,
+          "end_s": 7.02,
+          "start_frame": 202,
+          "end_frame": 211
+        }
+      ]
+    },
+    {
+      "start_frame": 211,
+      "end_frame": 249,
+      "text": "every word together, figuring",
+      "words": [
+        {
+          "word": "every",
+          "start_s": 7.02,
+          "end_s": 7.36,
+          "start_frame": 211,
+          "end_frame": 221
+        },
+        {
+          "word": "word",
+          "start_s": 7.36,
+          "end_s": 7.5,
+          "start_frame": 221,
+          "end_frame": 225
+        },
+        {
+          "word": "together,",
+          "start_s": 7.5,
+          "end_s": 7.84,
+          "start_frame": 225,
+          "end_frame": 235
+        },
+        {
+          "word": "figuring",
+          "start_s": 8.04,
+          "end_s": 8.18,
+          "start_frame": 241,
+          "end_frame": 245
+        }
+      ]
+    },
+    {
+      "start_frame": 245,
+      "end_frame": 275,
+      "text": "out if bank means",
+      "words": [
+        {
+          "word": "out",
+          "start_s": 8.18,
+          "end_s": 8.44,
+          "start_frame": 245,
+          "end_frame": 253
+        },
+        {
+          "word": "if",
+          "start_s": 8.44,
+          "end_s": 8.58,
+          "start_frame": 253,
+          "end_frame": 257
+        },
+        {
+          "word": "bank",
+          "start_s": 8.58,
+          "end_s": 8.72,
+          "start_frame": 257,
+          "end_frame": 262
+        },
+        {
+          "word": "means",
+          "start_s": 8.72,
+          "end_s": 9.04,
+          "start_frame": 262,
+          "end_frame": 271
+        }
+      ]
+    },
+    {
+      "start_frame": 271,
+      "end_frame": 309,
+      "text": "money or water. It",
+      "words": [
+        {
+          "word": "money",
+          "start_s": 9.04,
+          "end_s": 9.3,
+          "start_frame": 271,
+          "end_frame": 279
+        },
+        {
+          "word": "or",
+          "start_s": 9.3,
+          "end_s": 9.5,
+          "start_frame": 279,
+          "end_frame": 285
+        },
+        {
+          "word": "water.",
+          "start_s": 9.5,
+          "end_s": 9.78,
+          "start_frame": 285,
+          "end_frame": 293
+        },
+        {
+          "word": "It",
+          "start_s": 10.08,
+          "end_s": 10.16,
+          "start_frame": 302,
+          "end_frame": 305
+        }
+      ]
+    },
+    {
+      "start_frame": 305,
+      "end_frame": 344,
+      "text": "pushes these vectors through",
+      "words": [
+        {
+          "word": "pushes",
+          "start_s": 10.16,
+          "end_s": 10.46,
+          "start_frame": 305,
+          "end_frame": 314
+        },
+        {
+          "word": "these",
+          "start_s": 10.46,
+          "end_s": 10.7,
+          "start_frame": 314,
+          "end_frame": 321
+        },
+        {
+          "word": "vectors",
+          "start_s": 10.7,
+          "end_s": 11.02,
+          "start_frame": 321,
+          "end_frame": 331
+        },
+        {
+          "word": "through",
+          "start_s": 11.02,
+          "end_s": 11.32,
+          "start_frame": 331,
+          "end_frame": 340
+        }
+      ]
+    },
+    {
+      "start_frame": 340,
+      "end_frame": 386,
+      "text": "96 deep neural layers,",
+      "words": [
+        {
+          "word": "96",
+          "start_s": 11.32,
+          "end_s": 11.76,
+          "start_frame": 340,
+          "end_frame": 353
+        },
+        {
+          "word": "deep",
+          "start_s": 11.76,
+          "end_s": 12.16,
+          "start_frame": 353,
+          "end_frame": 365
+        },
+        {
+          "word": "neural",
+          "start_s": 12.16,
+          "end_s": 12.38,
+          "start_frame": 365,
+          "end_frame": 371
+        },
+        {
+          "word": "layers,",
+          "start_s": 12.38,
+          "end_s": 12.72,
+          "start_frame": 371,
+          "end_frame": 382
+        }
+      ]
+    },
+    {
+      "start_frame": 390,
+      "end_frame": 429,
+      "text": "processing billions of internet",
+      "words": [
+        {
+          "word": "processing",
+          "start_s": 13.0,
+          "end_s": 13.28,
+          "start_frame": 390,
+          "end_frame": 398
+        },
+        {
+          "word": "billions",
+          "start_s": 13.28,
+          "end_s": 13.76,
+          "start_frame": 398,
+          "end_frame": 413
+        },
+        {
+          "word": "of",
+          "start_s": 13.76,
+          "end_s": 13.96,
+          "start_frame": 413,
+          "end_frame": 419
+        },
+        {
+          "word": "internet",
+          "start_s": 13.96,
+          "end_s": 14.18,
+          "start_frame": 419,
+          "end_frame": 425
+        }
+      ]
+    },
+    {
+      "start_frame": 425,
+      "end_frame": 467,
+      "text": "patterns. At the final",
+      "words": [
+        {
+          "word": "patterns.",
+          "start_s": 14.18,
+          "end_s": 14.58,
+          "start_frame": 425,
+          "end_frame": 437
+        },
+        {
+          "word": "At",
+          "start_s": 15.02,
+          "end_s": 15.1,
+          "start_frame": 451,
+          "end_frame": 453
+        },
+        {
+          "word": "the",
+          "start_s": 15.1,
+          "end_s": 15.2,
+          "start_frame": 453,
+          "end_frame": 456
+        },
+        {
+          "word": "final",
+          "start_s": 15.2,
+          "end_s": 15.42,
+          "start_frame": 456,
+          "end_frame": 463
+        }
+      ]
+    },
+    {
+      "start_frame": 463,
+      "end_frame": 502,
+      "text": "layer, it scores 100",
+      "words": [
+        {
+          "word": "layer,",
+          "start_s": 15.42,
+          "end_s": 15.68,
+          "start_frame": 463,
+          "end_frame": 470
+        },
+        {
+          "word": "it",
+          "start_s": 15.84,
+          "end_s": 15.88,
+          "start_frame": 475,
+          "end_frame": 476
+        },
+        {
+          "word": "scores",
+          "start_s": 15.88,
+          "end_s": 16.06,
+          "start_frame": 476,
+          "end_frame": 482
+        },
+        {
+          "word": "100k",
+          "start_s": 16.06,
+          "end_s": 16.6,
+          "start_frame": 482,
+          "end_frame": 498
+        }
+      ]
+    },
+    {
+      "start_frame": 498,
+      "end_frame": 533,
+      "text": ",000 tokens to pick",
+      "words": [
+        {
+          "word": "100,000",
+          "start_s": 16.6,
+          "end_s": 16.98,
+          "start_frame": 498,
+          "end_frame": 509
+        },
+        {
+          "word": "tokens",
+          "start_s": 16.98,
+          "end_s": 17.28,
+          "start_frame": 509,
+          "end_frame": 518
+        },
+        {
+          "word": "to",
+          "start_s": 17.28,
+          "end_s": 17.48,
+          "start_frame": 518,
+          "end_frame": 524
+        },
+        {
+          "word": "pick",
+          "start_s": 17.48,
+          "end_s": 17.62,
+          "start_frame": 524,
+          "end_frame": 529
+        }
+      ]
+    },
+    {
+      "start_frame": 529,
+      "end_frame": 556,
+      "text": "the best next word",
+      "words": [
+        {
+          "word": "the",
+          "start_s": 17.62,
+          "end_s": 17.76,
+          "start_frame": 529,
+          "end_frame": 533
+        },
+        {
+          "word": "best",
+          "start_s": 17.76,
+          "end_s": 17.96,
+          "start_frame": 533,
+          "end_frame": 539
+        },
+        {
+          "word": "next",
+          "start_s": 17.96,
+          "end_s": 18.14,
+          "start_frame": 539,
+          "end_frame": 544
+        },
+        {
+          "word": "word",
+          "start_s": 18.14,
+          "end_s": 18.4,
+          "start_frame": 544,
+          "end_frame": 552
+        }
+      ]
+    },
+    {
+      "start_frame": 552,
+      "end_frame": 609,
+      "text": "in 15 milliseconds. So,",
+      "words": [
+        {
+          "word": "in",
+          "start_s": 18.4,
+          "end_s": 18.58,
+          "start_frame": 552,
+          "end_frame": 557
+        },
+        {
+          "word": "15",
+          "start_s": 18.58,
+          "end_s": 18.96,
+          "start_frame": 557,
+          "end_frame": 569
+        },
+        {
+          "word": "milliseconds.",
+          "start_s": 18.96,
+          "end_s": 19.5,
+          "start_frame": 569,
+          "end_frame": 585
+        },
+        {
+          "word": "So,",
+          "start_s": 19.86,
+          "end_s": 20.16,
+          "start_frame": 596,
+          "end_frame": 605
+        }
+      ]
+    },
+    {
+      "start_frame": 608,
+      "end_frame": 651,
+      "text": "96 layers of math",
+      "words": [
+        {
+          "word": "96",
+          "start_s": 20.28,
+          "end_s": 20.66,
+          "start_frame": 608,
+          "end_frame": 620
+        },
+        {
+          "word": "layers",
+          "start_s": 20.66,
+          "end_s": 21.12,
+          "start_frame": 620,
+          "end_frame": 634
+        },
+        {
+          "word": "of",
+          "start_s": 21.12,
+          "end_s": 21.34,
+          "start_frame": 634,
+          "end_frame": 640
+        },
+        {
+          "word": "math",
+          "start_s": 21.34,
+          "end_s": 21.56,
+          "start_frame": 640,
+          "end_frame": 647
+        }
+      ]
+    },
+    {
+      "start_frame": 647,
+      "end_frame": 684,
+      "text": "predict the next word?",
+      "words": [
+        {
+          "word": "predict",
+          "start_s": 21.56,
+          "end_s": 21.92,
+          "start_frame": 647,
+          "end_frame": 658
+        },
+        {
+          "word": "the",
+          "start_s": 21.92,
+          "end_s": 22.22,
+          "start_frame": 658,
+          "end_frame": 667
+        },
+        {
+          "word": "next",
+          "start_s": 22.22,
+          "end_s": 22.42,
+          "start_frame": 667,
+          "end_frame": 673
+        },
+        {
+          "word": "word?",
+          "start_s": 22.42,
+          "end_s": 22.68,
+          "start_frame": 673,
+          "end_frame": 680
+        }
+      ]
+    },
+    {
+      "start_frame": 688,
+      "end_frame": 758,
+      "text": "Exactly. Pure transformer architecture.",
+      "words": [
+        {
+          "word": "Exactly.",
+          "start_s": 22.92,
+          "end_s": 23.2,
+          "start_frame": 688,
+          "end_frame": 696
+        },
+        {
+          "word": "Pure",
+          "start_s": 23.62,
+          "end_s": 23.84,
+          "start_frame": 709,
+          "end_frame": 715
+        },
+        {
+          "word": "transformer",
+          "start_s": 23.84,
+          "end_s": 24.48,
+          "start_frame": 715,
+          "end_frame": 734
+        },
+        {
+          "word": "architecture.",
+          "start_s": 24.48,
+          "end_s": 25.14,
+          "start_frame": 734,
+          "end_frame": 754
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "How",
+      "start_s": 0.0,
+      "end_s": 0.14,
+      "start_frame": 0,
+      "end_frame": 4
+    },
+    {
+      "word": "does",
+      "start_s": 0.14,
+      "end_s": 0.26,
+      "start_frame": 4,
+      "end_frame": 8
+    },
+    {
+      "word": "chat",
+      "start_s": 0.26,
+      "end_s": 0.44,
+      "start_frame": 8,
+      "end_frame": 13
+    },
+    {
+      "word": "GPT",
+      "start_s": 0.44,
+      "end_s": 0.92,
+      "start_frame": 13,
+      "end_frame": 28
+    },
+    {
+      "word": "write",
+      "start_s": 0.92,
+      "end_s": 1.14,
+      "start_frame": 28,
+      "end_frame": 34
+    },
+    {
+      "word": "essays",
+      "start_s": 1.14,
+      "end_s": 1.46,
+      "start_frame": 34,
+      "end_frame": 44
+    },
+    {
+      "word": "and",
+      "start_s": 1.46,
+      "end_s": 1.7,
+      "start_frame": 44,
+      "end_frame": 51
+    },
+    {
+      "word": "code?",
+      "start_s": 1.7,
+      "end_s": 1.96,
+      "start_frame": 51,
+      "end_frame": 59
+    },
+    {
+      "word": "It",
+      "start_s": 2.32,
+      "end_s": 2.38,
+      "start_frame": 70,
+      "end_frame": 71
+    },
+    {
+      "word": "doesn't",
+      "start_s": 2.38,
+      "end_s": 2.6,
+      "start_frame": 71,
+      "end_frame": 78
+    },
+    {
+      "word": "understand",
+      "start_s": 2.6,
+      "end_s": 2.96,
+      "start_frame": 78,
+      "end_frame": 89
+    },
+    {
+      "word": "a",
+      "start_s": 2.96,
+      "end_s": 3.12,
+      "start_frame": 89,
+      "end_frame": 94
+    },
+    {
+      "word": "single",
+      "start_s": 3.12,
+      "end_s": 3.34,
+      "start_frame": 94,
+      "end_frame": 100
+    },
+    {
+      "word": "word",
+      "start_s": 3.34,
+      "end_s": 3.56,
+      "start_frame": 100,
+      "end_frame": 107
+    },
+    {
+      "word": "you",
+      "start_s": 3.56,
+      "end_s": 3.72,
+      "start_frame": 107,
+      "end_frame": 112
+    },
+    {
+      "word": "type.",
+      "start_s": 3.72,
+      "end_s": 3.94,
+      "start_frame": 112,
+      "end_frame": 118
+    },
+    {
+      "word": "Inside",
+      "start_s": 4.16,
+      "end_s": 4.46,
+      "start_frame": 125,
+      "end_frame": 134
+    },
+    {
+      "word": "is",
+      "start_s": 4.46,
+      "end_s": 4.72,
+      "start_frame": 134,
+      "end_frame": 142
+    },
+    {
+      "word": "a",
+      "start_s": 4.72,
+      "end_s": 4.8,
+      "start_frame": 142,
+      "end_frame": 144
+    },
+    {
+      "word": "transformer",
+      "start_s": 4.8,
+      "end_s": 5.2,
+      "start_frame": 144,
+      "end_frame": 156
+    },
+    {
+      "word": "network.",
+      "start_s": 5.2,
+      "end_s": 5.62,
+      "start_frame": 156,
+      "end_frame": 169
+    },
+    {
+      "word": "Self",
+      "start_s": 6.22,
+      "end_s": 6.36,
+      "start_frame": 187,
+      "end_frame": 191
+    },
+    {
+      "word": "Attention",
+      "start_s": 6.36,
+      "end_s": 6.72,
+      "start_frame": 191,
+      "end_frame": 202
+    },
+    {
+      "word": "connects",
+      "start_s": 6.72,
+      "end_s": 7.02,
+      "start_frame": 202,
+      "end_frame": 211
+    },
+    {
+      "word": "every",
+      "start_s": 7.02,
+      "end_s": 7.36,
+      "start_frame": 211,
+      "end_frame": 221
+    },
+    {
+      "word": "word",
+      "start_s": 7.36,
+      "end_s": 7.5,
+      "start_frame": 221,
+      "end_frame": 225
+    },
+    {
+      "word": "together,",
+      "start_s": 7.5,
+      "end_s": 7.84,
+      "start_frame": 225,
+      "end_frame": 235
+    },
+    {
+      "word": "figuring",
+      "start_s": 8.04,
+      "end_s": 8.18,
+      "start_frame": 241,
+      "end_frame": 245
+    },
+    {
+      "word": "out",
+      "start_s": 8.18,
+      "end_s": 8.44,
+      "start_frame": 245,
+      "end_frame": 253
+    },
+    {
+      "word": "if",
+      "start_s": 8.44,
+      "end_s": 8.58,
+      "start_frame": 253,
+      "end_frame": 257
+    },
+    {
+      "word": "bank",
+      "start_s": 8.58,
+      "end_s": 8.72,
+      "start_frame": 257,
+      "end_frame": 262
+    },
+    {
+      "word": "means",
+      "start_s": 8.72,
+      "end_s": 9.04,
+      "start_frame": 262,
+      "end_frame": 271
+    },
+    {
+      "word": "money",
+      "start_s": 9.04,
+      "end_s": 9.3,
+      "start_frame": 271,
+      "end_frame": 279
+    },
+    {
+      "word": "or",
+      "start_s": 9.3,
+      "end_s": 9.5,
+      "start_frame": 279,
+      "end_frame": 285
+    },
+    {
+      "word": "water.",
+      "start_s": 9.5,
+      "end_s": 9.78,
+      "start_frame": 285,
+      "end_frame": 293
+    },
+    {
+      "word": "It",
+      "start_s": 10.08,
+      "end_s": 10.16,
+      "start_frame": 302,
+      "end_frame": 305
+    },
+    {
+      "word": "pushes",
+      "start_s": 10.16,
+      "end_s": 10.46,
+      "start_frame": 305,
+      "end_frame": 314
+    },
+    {
+      "word": "these",
+      "start_s": 10.46,
+      "end_s": 10.7,
+      "start_frame": 314,
+      "end_frame": 321
+    },
+    {
+      "word": "vectors",
+      "start_s": 10.7,
+      "end_s": 11.02,
+      "start_frame": 321,
+      "end_frame": 331
+    },
+    {
+      "word": "through",
+      "start_s": 11.02,
+      "end_s": 11.32,
+      "start_frame": 331,
+      "end_frame": 340
+    },
+    {
+      "word": "96",
+      "start_s": 11.32,
+      "end_s": 11.76,
+      "start_frame": 340,
+      "end_frame": 353
+    },
+    {
+      "word": "deep",
+      "start_s": 11.76,
+      "end_s": 12.16,
+      "start_frame": 353,
+      "end_frame": 365
+    },
+    {
+      "word": "neural",
+      "start_s": 12.16,
+      "end_s": 12.38,
+      "start_frame": 365,
+      "end_frame": 371
+    },
+    {
+      "word": "layers,",
+      "start_s": 12.38,
+      "end_s": 12.72,
+      "start_frame": 371,
+      "end_frame": 382
+    },
+    {
+      "word": "processing",
+      "start_s": 13.0,
+      "end_s": 13.28,
+      "start_frame": 390,
+      "end_frame": 398
+    },
+    {
+      "word": "billions",
+      "start_s": 13.28,
+      "end_s": 13.76,
+      "start_frame": 398,
+      "end_frame": 413
+    },
+    {
+      "word": "of",
+      "start_s": 13.76,
+      "end_s": 13.96,
+      "start_frame": 413,
+      "end_frame": 419
+    },
+    {
+      "word": "internet",
+      "start_s": 13.96,
+      "end_s": 14.18,
+      "start_frame": 419,
+      "end_frame": 425
+    },
+    {
+      "word": "patterns.",
+      "start_s": 14.18,
+      "end_s": 14.58,
+      "start_frame": 425,
+      "end_frame": 437
+    },
+    {
+      "word": "At",
+      "start_s": 15.02,
+      "end_s": 15.1,
+      "start_frame": 451,
+      "end_frame": 453
+    },
+    {
+      "word": "the",
+      "start_s": 15.1,
+      "end_s": 15.2,
+      "start_frame": 453,
+      "end_frame": 456
+    },
+    {
+      "word": "final",
+      "start_s": 15.2,
+      "end_s": 15.42,
+      "start_frame": 456,
+      "end_frame": 463
+    },
+    {
+      "word": "layer,",
+      "start_s": 15.42,
+      "end_s": 15.68,
+      "start_frame": 463,
+      "end_frame": 470
+    },
+    {
+      "word": "it",
+      "start_s": 15.84,
+      "end_s": 15.88,
+      "start_frame": 475,
+      "end_frame": 476
+    },
+    {
+      "word": "scores",
+      "start_s": 15.88,
+      "end_s": 16.06,
+      "start_frame": 476,
+      "end_frame": 482
+    },
+    {
+      "word": "100k",
+      "start_s": 16.06,
+      "end_s": 16.6,
+      "start_frame": 482,
+      "end_frame": 498
+    },
+    {
+      "word": "100,000",
+      "start_s": 16.6,
+      "end_s": 16.98,
+      "start_frame": 498,
+      "end_frame": 509
+    },
+    {
+      "word": "tokens",
+      "start_s": 16.98,
+      "end_s": 17.28,
+      "start_frame": 509,
+      "end_frame": 518
+    },
+    {
+      "word": "to",
+      "start_s": 17.28,
+      "end_s": 17.48,
+      "start_frame": 518,
+      "end_frame": 524
+    },
+    {
+      "word": "pick",
+      "start_s": 17.48,
+      "end_s": 17.62,
+      "start_frame": 524,
+      "end_frame": 529
+    },
+    {
+      "word": "the",
+      "start_s": 17.62,
+      "end_s": 17.76,
+      "start_frame": 529,
+      "end_frame": 533
+    },
+    {
+      "word": "best",
+      "start_s": 17.76,
+      "end_s": 17.96,
+      "start_frame": 533,
+      "end_frame": 539
+    },
+    {
+      "word": "next",
+      "start_s": 17.96,
+      "end_s": 18.14,
+      "start_frame": 539,
+      "end_frame": 544
+    },
+    {
+      "word": "word",
+      "start_s": 18.14,
+      "end_s": 18.4,
+      "start_frame": 544,
+      "end_frame": 552
+    },
+    {
+      "word": "in",
+      "start_s": 18.4,
+      "end_s": 18.58,
+      "start_frame": 552,
+      "end_frame": 557
+    },
+    {
+      "word": "15",
+      "start_s": 18.58,
+      "end_s": 18.96,
+      "start_frame": 557,
+      "end_frame": 569
+    },
+    {
+      "word": "milliseconds.",
+      "start_s": 18.96,
+      "end_s": 19.5,
+      "start_frame": 569,
+      "end_frame": 585
+    },
+    {
+      "word": "So,",
+      "start_s": 19.86,
+      "end_s": 20.16,
+      "start_frame": 596,
+      "end_frame": 605
+    },
+    {
+      "word": "96",
+      "start_s": 20.28,
+      "end_s": 20.66,
+      "start_frame": 608,
+      "end_frame": 620
+    },
+    {
+      "word": "layers",
+      "start_s": 20.66,
+      "end_s": 21.12,
+      "start_frame": 620,
+      "end_frame": 634
+    },
+    {
+      "word": "of",
+      "start_s": 21.12,
+      "end_s": 21.34,
+      "start_frame": 634,
+      "end_frame": 640
+    },
+    {
+      "word": "math",
+      "start_s": 21.34,
+      "end_s": 21.56,
+      "start_frame": 640,
+      "end_frame": 647
+    },
+    {
+      "word": "predict",
+      "start_s": 21.56,
+      "end_s": 21.92,
+      "start_frame": 647,
+      "end_frame": 658
+    },
+    {
+      "word": "the",
+      "start_s": 21.92,
+      "end_s": 22.22,
+      "start_frame": 658,
+      "end_frame": 667
+    },
+    {
+      "word": "next",
+      "start_s": 22.22,
+      "end_s": 22.42,
+      "start_frame": 667,
+      "end_frame": 673
+    },
+    {
+      "word": "word?",
+      "start_s": 22.42,
+      "end_s": 22.68,
+      "start_frame": 673,
+      "end_frame": 680
+    },
+    {
+      "word": "Exactly.",
+      "start_s": 22.92,
+      "end_s": 23.2,
+      "start_frame": 688,
+      "end_frame": 696
+    },
+    {
+      "word": "Pure",
+      "start_s": 23.62,
+      "end_s": 23.84,
+      "start_frame": 709,
+      "end_frame": 715
+    },
+    {
+      "word": "transformer",
+      "start_s": 23.84,
+      "end_s": 24.48,
+      "start_frame": 715,
+      "end_frame": 734
+    },
+    {
+      "word": "architecture.",
+      "start_s": 24.48,
+      "end_s": 25.14,
+      "start_frame": 734,
+      "end_frame": 754
     }
   ]
 }
