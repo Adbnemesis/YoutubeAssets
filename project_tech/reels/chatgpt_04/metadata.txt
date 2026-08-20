@@ -42,7 +42,9 @@ how chatgpt works, transformer neural network, self attention mechanism, how llm
 - Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (8.6 MB)
 - Visual Style: Dynamic Neural Particle Background + Animated Typing + Multi-Head Heatmaps + Token Race Bars
 - Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline)
-- Integrated SFX: 6 synchronized audio cues (typing, pop, click, whoosh, notification, chime)
-- Background Track: Death of a Bluebird - Rorschach Roy 4.mp3 (Dynamic Sidechain Ducking)
-- Target Loudness: -15.5 LUFS
+================================================================================
+[PUBLISHED LINKS & ASSET IDS]
+- Instagram Reel (@nemi.explains): https://www.instagram.com/reel/DcRE_hgCijF/ (Media ID: 18125455370493835)
+- YouTube Shorts (Unlisted): https://youtu.be/LjMMl8M-usg (Video ID: LjMMl8M-usg)
+- Published At: 2026-08-20T20:55:00+05:30
 ================================================================================
