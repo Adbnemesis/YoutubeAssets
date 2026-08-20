@@ -98,15 +98,17 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
 
     let maxTextWidth = 0;
 
-    // Scan forwards to find max length in block
+    // Scan forwards to find max line length in block
     for (let i = startIndex; i < script.events.length; i++) {
       const evt = script.events[i] as any;
       if (evt.type === "cutaway" || evt.characterId !== currentCharId) break;
       if (evt.type === "message" && evt.text) {
-        // Average char width in 16px Whitney font is around 8px, not 14px!
-        const textWidth = evt.text.length * 8; 
-        if (textWidth > maxTextWidth) {
-          maxTextWidth = textWidth;
+        const lines = evt.text.split("\n");
+        for (const line of lines) {
+          const textWidth = line.length * 9.5; // Safe estimate including emojis/caps
+          if (textWidth > maxTextWidth) {
+            maxTextWidth = textWidth;
+          }
         }
       }
     }
@@ -118,15 +120,25 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
     estimatedMessageWidth = 56 + contentWidth;
   }
   
-  // Estimate total unscaled height of active messages in this block
+  // Estimate total unscaled height of active messages including multi-line text
   let estimatedHeight = 68; // Base height of first message with header & margins
+  activeEvents.forEach(e => {
+    if (e.type === "message") {
+      const scriptEvt = script.events[e.eventIndex] as any;
+      if (scriptEvt && scriptEvt.text) {
+        const lineCount = (scriptEvt.text.match(/\n/g) || []).length + 1;
+        estimatedHeight += (lineCount - 1) * 22;
+      }
+    }
+  });
+
   const activeCount = activeEvents.filter(e => e.type === "message" || e.type === "typing").length;
   if (activeCount > 1) {
     estimatedHeight += (activeCount - 1) * 28;
   }
 
-  // Bound scale horizontally (1720px max safe width from X=80 origin)
-  const scaleByWidth = 1720 / estimatedMessageWidth;
+  // Bound scale horizontally (1520px max safe width from X=80 origin leaves safe 200px right-side margin)
+  const scaleByWidth = 1520 / estimatedMessageWidth;
 
   // Bound scale vertically so stacked messages never overflow the 1080px screen (840px max safe height)
   const maxVerticalScale = 840 / estimatedHeight;
