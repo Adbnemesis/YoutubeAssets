@@ -1296,7 +1296,7 @@ export const rangerRanchCoolTrioProps = {
       backgroundImage: "images/colt/colt_panel_11.png",
       effects: ["rgb_shift", "flash"],
       images: [
-        { src: "images/colt/colt_panel_1.png", isSilhouette: true, silhouetteColor: "#3b82f6" },
+        { src: "brawler_gifs/colt_win.gif", isSilhouette: true, silhouetteColor: "#3b82f6", videoStartFrame: 0 },
       ],
     },
     // 1b) Reveal Phase
@@ -1305,7 +1305,7 @@ export const rangerRanchCoolTrioProps = {
       endTime: 8.27,
       layout: "single",
       effects: ["glitch"],
-      images: [{ src: "images/colt/colt_panel_1.png", auraColor: "#3b82f6" }],
+      images: [{ src: "brawler_gifs/colt_win.gif", auraColor: "#3b82f6", videoStartFrame: 12 }],
     },
     // Image 1: Action Clip 1
     {
@@ -1341,7 +1341,7 @@ export const rangerRanchCoolTrioProps = {
       backgroundImage: "images/colt/colt_panel_4.png",
       effects: ["glitch"],
       images: [
-        { src: "images/shelly/shelly_panel_1.png", isSilhouette: true, silhouetteColor: "#a855f7" },
+        { src: "brawler_gifs/shelly_win.gif", isSilhouette: true, silhouetteColor: "#a855f7", videoStartFrame: 0 },
       ],
     },
     // 1b) Reveal Phase
@@ -1350,7 +1350,7 @@ export const rangerRanchCoolTrioProps = {
       endTime: 10.23,
       layout: "single",
       effects: ["glitch"],
-      images: [{ src: "images/shelly/shelly_panel_1.png", auraColor: "#a855f7" }],
+      images: [{ src: "brawler_gifs/shelly_win.gif", auraColor: "#a855f7", videoStartFrame: 10 }],
     },
     // Image 1: Action Clip 1
     {
@@ -1386,7 +1386,7 @@ export const rangerRanchCoolTrioProps = {
       backgroundImage: "images/shelly/shelly_panel_3.png",
       effects: ["glitch"],
       images: [
-        { src: "images/spike/spike_panel_1.png", isSilhouette: true, silhouetteColor: "#22c55e" },
+        { src: "brawler_gifs/spike_win.gif", isSilhouette: true, silhouetteColor: "#22c55e", videoStartFrame: 0 },
       ],
     },
     // 1b) Reveal Phase
@@ -1395,7 +1395,7 @@ export const rangerRanchCoolTrioProps = {
       endTime: 12.88,
       layout: "single",
       effects: ["glitch", "rgb_shift"],
-      images: [{ src: "images/spike/spike_panel_1.png", auraColor: "#22c55e" }],
+      images: [{ src: "brawler_gifs/spike_win.gif", auraColor: "#22c55e", videoStartFrame: 8 }],
     },
     // Image 1: Action Clip 1
     {
@@ -1627,7 +1627,7 @@ export const shamanTribeCoolTrioProps = {
       backgroundImage: "images/leon/leon_panel_4.png",
       effects: ["glitch"],
       images: [
-        { src: "images/nita/nita_panel_1.png", isSilhouette: true, silhouetteColor: "#ef4444" },
+        { src: "brawler_gifs/nita_win.gif", isSilhouette: true, silhouetteColor: "#ef4444", videoStartFrame: 0 },
       ],
     },
     // 1b) Reveal Phase
@@ -1636,7 +1636,7 @@ export const shamanTribeCoolTrioProps = {
       endTime: 10.23,
       layout: "single",
       effects: ["glitch"],
-      images: [{ src: "images/nita/nita_panel_1.png", auraColor: "#ef4444" }],
+      images: [{ src: "brawler_gifs/nita_win.gif", auraColor: "#ef4444", videoStartFrame: 10 }],
     },
     // Image 1: Action Clip 1
     {
@@ -1672,7 +1672,7 @@ export const shamanTribeCoolTrioProps = {
       backgroundImage: "images/nita/nita_panel_3.png",
       effects: ["glitch"],
       images: [
-        { src: "images/bo/bo_panel_1.png", isSilhouette: true, silhouetteColor: "#eab308" },
+        { src: "brawler_gifs/bo_win.gif", isSilhouette: true, silhouetteColor: "#eab308", videoStartFrame: 0 },
       ],
     },
     // 1b) Reveal Phase
@@ -1681,7 +1681,7 @@ export const shamanTribeCoolTrioProps = {
       endTime: 12.88,
       layout: "single",
       effects: ["glitch", "rgb_shift"],
-      images: [{ src: "images/bo/bo_panel_1.png", auraColor: "#eab308" }],
+      images: [{ src: "brawler_gifs/bo_win.gif", auraColor: "#eab308", videoStartFrame: 12 }],
     },
     // Image 1: Action Clip 1
     {

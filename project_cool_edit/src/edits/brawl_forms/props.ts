@@ -675,22 +675,22 @@ export const rangerRanchFormsProps = {
   ],
   dropClips: [
     // COLT
-    { src: "images/colt/colt_panel_1.png", isSilhouette: true, silhouetteColor: "#3b82f6" },
-    { src: "images/colt/colt_panel_1.png", isSilhouette: false },
+    { src: "brawler_gifs/colt_win.gif", isSilhouette: true, silhouetteColor: "#3b82f6" },
+    { src: "brawler_gifs/colt_win.gif", isSilhouette: false },
     { src: "images/colt/colt_panel_8.png", isSilhouette: false },
     { src: "images/colt/colt_panel_9.png", isSilhouette: false },
     { src: "images/colt/colt_panel_10.png", isSilhouette: false },
 
     // SHELLY
-    { src: "images/shelly/shelly_panel_1.png", isSilhouette: true, silhouetteColor: "#a855f7" },
-    { src: "images/shelly/shelly_panel_1.png", isSilhouette: false },
+    { src: "brawler_gifs/shelly_win.gif", isSilhouette: true, silhouetteColor: "#a855f7" },
+    { src: "brawler_gifs/shelly_win.gif", isSilhouette: false },
     { src: "images/shelly/shelly_panel_8.png", isSilhouette: false },
     { src: "images/shelly/shelly_panel_9.png", isSilhouette: false },
     { src: "images/shelly/shelly_panel_10.png", isSilhouette: false },
 
     // SPIKE
-    { src: "images/spike/spike_panel_1.png", isSilhouette: true, silhouetteColor: "#22c55e" },
-    { src: "images/spike/spike_panel_1.png", isSilhouette: false },
+    { src: "brawler_gifs/spike_win.gif", isSilhouette: true, silhouetteColor: "#22c55e" },
+    { src: "brawler_gifs/spike_win.gif", isSilhouette: false },
     { src: "images/spike/spike_panel_8.png", isSilhouette: false },
     { src: "images/spike/spike_panel_9.png", isSilhouette: false },
     { src: "images/spike/spike_panel_10.png", isSilhouette: false },
@@ -771,15 +771,15 @@ export const shamanTribeFormsProps = {
     { src: "images/leon/leon_panel_10.png", isSilhouette: false },
 
     // NITA
-    { src: "images/nita/nita_panel_1.png", isSilhouette: true, silhouetteColor: "#ef4444" },
-    { src: "images/nita/nita_panel_1.png", isSilhouette: false },
+    { src: "brawler_gifs/nita_win.gif", isSilhouette: true, silhouetteColor: "#ef4444" },
+    { src: "brawler_gifs/nita_win.gif", isSilhouette: false },
     { src: "images/nita/nita_panel_8.png", isSilhouette: false },
     { src: "images/nita/nita_panel_9.png", isSilhouette: false },
     { src: "images/nita/nita_panel_10.png", isSilhouette: false },
 
     // BO
-    { src: "images/bo/bo_panel_1.png", isSilhouette: true, silhouetteColor: "#eab308" },
-    { src: "images/bo/bo_panel_1.png", isSilhouette: false },
+    { src: "brawler_gifs/bo_win.gif", isSilhouette: true, silhouetteColor: "#eab308" },
+    { src: "brawler_gifs/bo_win.gif", isSilhouette: false },
     { src: "images/bo/bo_panel_8.png", isSilhouette: false },
     { src: "images/bo/bo_panel_9.png", isSilhouette: false },
     { src: "images/bo/bo_panel_10.png", isSilhouette: false },
