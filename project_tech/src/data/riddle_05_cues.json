@@ -1,0 +1,1553 @@
+{
+  "reel_id": "riddle_05",
+  "title": "The Deadly Riddle: The Dining Philosophers & The System Deadlock",
+  "total_duration_s": 25.831,
+  "total_frames": 775,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "rd01_hook",
+      "speaker": "narrator",
+      "text": "Can you solve this deadly riddle?",
+      "start_time_ms": 0,
+      "end_time_ms": 1472,
+      "duration_s": 1.472,
+      "start_frame": 0,
+      "end_frame": 44,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "deadly riddle",
+          "cue": "hook_impact",
+          "time_ms": 736,
+          "frame": 22
+        }
+      ]
+    },
+    {
+      "id": "rd02_setup_masters",
+      "speaker": "narrator",
+      "text": "Five masters sit at a table. To eat, each master must hold two chopsticks.",
+      "start_time_ms": 1572,
+      "end_time_ms": 6094,
+      "duration_s": 4.523,
+      "start_frame": 47,
+      "end_frame": 183,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "Five masters",
+          "cue": "table_spawn",
+          "time_ms": 2476,
+          "frame": 74
+        },
+        {
+          "phrase": "two chopsticks",
+          "cue": "chopsticks_rule",
+          "time_ms": 4963,
+          "frame": 149
+        }
+      ]
+    },
+    {
+      "id": "rd03_left_grab",
+      "speaker": "narrator",
+      "text": "Every master simultaneously grabs the chopstick to their left.",
+      "start_time_ms": 6194,
+      "end_time_ms": 8967,
+      "duration_s": 2.773,
+      "start_frame": 186,
+      "end_frame": 269,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "simultaneously grabs",
+          "cue": "left_grab_sweep",
+          "time_ms": 7303,
+          "frame": 219
+        },
+        {
+          "phrase": "to their left",
+          "cue": "hold_one",
+          "time_ms": 8412,
+          "frame": 252
+        }
+      ]
+    },
+    {
+      "id": "rd04_starvation_trap",
+      "speaker": "narrator",
+      "text": "Each master waits forever for the right chopstick, and all five starve without dropping theirs.",
+      "start_time_ms": 9067,
+      "end_time_ms": 13461,
+      "duration_s": 4.395,
+      "start_frame": 272,
+      "end_frame": 404,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "waits forever",
+          "cue": "circular_arrows",
+          "time_ms": 10385,
+          "frame": 312
+        },
+        {
+          "phrase": "all five starve",
+          "cue": "starvation_alert",
+          "time_ms": 12142,
+          "frame": 364
+        }
+      ]
+    },
+    {
+      "id": "rd05_countdown_prompt",
+      "speaker": "narrator",
+      "text": "What invisible curse just killed them all?",
+      "start_time_ms": 13561,
+      "end_time_ms": 15609,
+      "duration_s": 2.048,
+      "start_frame": 407,
+      "end_frame": 468,
+      "gap_after_ms": 80,
+      "semantic_cues": [
+        {
+          "phrase": "invisible curse",
+          "cue": "timer_start",
+          "time_ms": 14380,
+          "frame": 431
+        }
+      ]
+    },
+    {
+      "id": "rd06_nemi_guess",
+      "speaker": "nemi",
+      "text": "A curse from the chef?! \ud83e\udd14",
+      "start_time_ms": 15689,
+      "end_time_ms": 16819,
+      "duration_s": 1.131,
+      "start_frame": 471,
+      "end_frame": 505,
+      "gap_after_ms": 80,
+      "semantic_cues": [
+        {
+          "phrase": "from the chef",
+          "cue": "buzzer_shock",
+          "time_ms": 16367,
+          "frame": 491
+        }
+      ]
+    },
+    {
+      "id": "rd07_reveal_deadlock",
+      "speaker": "narrator",
+      "text": "It's a DEADLOCK. Thread A holds Lock one waiting for Lock two, while Thread B holds Lock two waiting for Lock one, freezing the system.",
+      "start_time_ms": 16899,
+      "end_time_ms": 23299,
+      "duration_s": 6.4,
+      "start_frame": 507,
+      "end_frame": 699,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "DEADLOCK",
+          "cue": "deadlock_title",
+          "time_ms": 17859,
+          "frame": 536
+        },
+        {
+          "phrase": "Lock one waiting for Lock two",
+          "cue": "thread_cycle",
+          "time_ms": 20099,
+          "frame": 603
+        },
+        {
+          "phrase": "freezing the system",
+          "cue": "os_freeze",
+          "time_ms": 22339,
+          "frame": 670
+        }
+      ]
+    },
+    {
+      "id": "rd08_nemi_payoff",
+      "speaker": "nemi",
+      "text": "Circular wait equals frozen servers! \u2744\ufe0f\ud83d\udc80",
+      "start_time_ms": 23389,
+      "end_time_ms": 25671,
+      "duration_s": 2.283,
+      "start_frame": 702,
+      "end_frame": 770,
+      "gap_after_ms": 160,
+      "semantic_cues": [
+        {
+          "phrase": "frozen servers",
+          "cue": "nemi_smug_stamp",
+          "time_ms": 24530,
+          "frame": 736
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 28,
+      "text": "Can you solve this",
+      "words": [
+        {
+          "word": "Can",
+          "start_s": 0.0,
+          "end_s": 0.14,
+          "start_frame": 0,
+          "end_frame": 4
+        },
+        {
+          "word": "you",
+          "start_s": 0.14,
+          "end_s": 0.26,
+          "start_frame": 4,
+          "end_frame": 8
+        },
+        {
+          "word": "solve",
+          "start_s": 0.26,
+          "end_s": 0.5,
+          "start_frame": 8,
+          "end_frame": 15
+        },
+        {
+          "word": "this",
+          "start_s": 0.5,
+          "end_s": 0.8,
+          "start_frame": 15,
+          "end_frame": 24
+        }
+      ]
+    },
+    {
+      "start_frame": 24,
+      "end_frame": 71,
+      "text": "deadly riddle? Five masters",
+      "words": [
+        {
+          "word": "deadly",
+          "start_s": 0.8,
+          "end_s": 1.06,
+          "start_frame": 24,
+          "end_frame": 32
+        },
+        {
+          "word": "riddle?",
+          "start_s": 1.06,
+          "end_s": 1.34,
+          "start_frame": 32,
+          "end_frame": 40
+        },
+        {
+          "word": "Five",
+          "start_s": 1.6,
+          "end_s": 1.86,
+          "start_frame": 48,
+          "end_frame": 56
+        },
+        {
+          "word": "masters",
+          "start_s": 1.86,
+          "end_s": 2.22,
+          "start_frame": 56,
+          "end_frame": 67
+        }
+      ]
+    },
+    {
+      "start_frame": 67,
+      "end_frame": 95,
+      "text": "sit at a table.",
+      "words": [
+        {
+          "word": "sit",
+          "start_s": 2.22,
+          "end_s": 2.48,
+          "start_frame": 67,
+          "end_frame": 74
+        },
+        {
+          "word": "at",
+          "start_s": 2.48,
+          "end_s": 2.62,
+          "start_frame": 74,
+          "end_frame": 79
+        },
+        {
+          "word": "a",
+          "start_s": 2.62,
+          "end_s": 2.76,
+          "start_frame": 79,
+          "end_frame": 83
+        },
+        {
+          "word": "table.",
+          "start_s": 2.76,
+          "end_s": 3.02,
+          "start_frame": 83,
+          "end_frame": 91
+        }
+      ]
+    },
+    {
+      "start_frame": 107,
+      "end_frame": 144,
+      "text": "To eat, each master",
+      "words": [
+        {
+          "word": "To",
+          "start_s": 3.58,
+          "end_s": 3.68,
+          "start_frame": 107,
+          "end_frame": 110
+        },
+        {
+          "word": "eat,",
+          "start_s": 3.68,
+          "end_s": 3.9,
+          "start_frame": 110,
+          "end_frame": 117
+        },
+        {
+          "word": "each",
+          "start_s": 4.14,
+          "end_s": 4.32,
+          "start_frame": 124,
+          "end_frame": 130
+        },
+        {
+          "word": "master",
+          "start_s": 4.32,
+          "end_s": 4.66,
+          "start_frame": 130,
+          "end_frame": 140
+        }
+      ]
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 176,
+      "text": "must hold two chopsticks.",
+      "words": [
+        {
+          "word": "must",
+          "start_s": 4.66,
+          "end_s": 4.84,
+          "start_frame": 140,
+          "end_frame": 145
+        },
+        {
+          "word": "hold",
+          "start_s": 4.84,
+          "end_s": 5.04,
+          "start_frame": 145,
+          "end_frame": 151
+        },
+        {
+          "word": "two",
+          "start_s": 5.04,
+          "end_s": 5.3,
+          "start_frame": 151,
+          "end_frame": 159
+        },
+        {
+          "word": "chopsticks.",
+          "start_s": 5.3,
+          "end_s": 5.72,
+          "start_frame": 159,
+          "end_frame": 172
+        }
+      ]
+    },
+    {
+      "start_frame": 184,
+      "end_frame": 234,
+      "text": "Every master simultaneously grabs",
+      "words": [
+        {
+          "word": "Every",
+          "start_s": 6.14,
+          "end_s": 6.38,
+          "start_frame": 184,
+          "end_frame": 191
+        },
+        {
+          "word": "master",
+          "start_s": 6.38,
+          "end_s": 6.72,
+          "start_frame": 191,
+          "end_frame": 202
+        },
+        {
+          "word": "simultaneously",
+          "start_s": 6.72,
+          "end_s": 7.34,
+          "start_frame": 202,
+          "end_frame": 220
+        },
+        {
+          "word": "grabs",
+          "start_s": 7.34,
+          "end_s": 7.66,
+          "start_frame": 220,
+          "end_frame": 230
+        }
+      ]
+    },
+    {
+      "start_frame": 230,
+      "end_frame": 260,
+      "text": "the chopstick to their",
+      "words": [
+        {
+          "word": "the",
+          "start_s": 7.66,
+          "end_s": 7.9,
+          "start_frame": 230,
+          "end_frame": 237
+        },
+        {
+          "word": "chopstick",
+          "start_s": 7.9,
+          "end_s": 8.26,
+          "start_frame": 237,
+          "end_frame": 248
+        },
+        {
+          "word": "to",
+          "start_s": 8.26,
+          "end_s": 8.4,
+          "start_frame": 248,
+          "end_frame": 252
+        },
+        {
+          "word": "their",
+          "start_s": 8.4,
+          "end_s": 8.52,
+          "start_frame": 252,
+          "end_frame": 256
+        }
+      ]
+    },
+    {
+      "start_frame": 256,
+      "end_frame": 295,
+      "text": "left. Each master waits",
+      "words": [
+        {
+          "word": "left.",
+          "start_s": 8.52,
+          "end_s": 8.7,
+          "start_frame": 256,
+          "end_frame": 261
+        },
+        {
+          "word": "Each",
+          "start_s": 9.1,
+          "end_s": 9.26,
+          "start_frame": 273,
+          "end_frame": 278
+        },
+        {
+          "word": "master",
+          "start_s": 9.26,
+          "end_s": 9.56,
+          "start_frame": 278,
+          "end_frame": 287
+        },
+        {
+          "word": "waits",
+          "start_s": 9.56,
+          "end_s": 9.7,
+          "start_frame": 287,
+          "end_frame": 291
+        }
+      ]
+    },
+    {
+      "start_frame": 291,
+      "end_frame": 318,
+      "text": "forever for the right",
+      "words": [
+        {
+          "word": "forever",
+          "start_s": 9.7,
+          "end_s": 10.04,
+          "start_frame": 291,
+          "end_frame": 301
+        },
+        {
+          "word": "for",
+          "start_s": 10.04,
+          "end_s": 10.24,
+          "start_frame": 301,
+          "end_frame": 307
+        },
+        {
+          "word": "the",
+          "start_s": 10.24,
+          "end_s": 10.34,
+          "start_frame": 307,
+          "end_frame": 310
+        },
+        {
+          "word": "right",
+          "start_s": 10.34,
+          "end_s": 10.46,
+          "start_frame": 310,
+          "end_frame": 314
+        }
+      ]
+    },
+    {
+      "start_frame": 314,
+      "end_frame": 360,
+      "text": "chopstick, and all five",
+      "words": [
+        {
+          "word": "chopstick,",
+          "start_s": 10.46,
+          "end_s": 10.94,
+          "start_frame": 314,
+          "end_frame": 328
+        },
+        {
+          "word": "and",
+          "start_s": 11.26,
+          "end_s": 11.38,
+          "start_frame": 338,
+          "end_frame": 341
+        },
+        {
+          "word": "all",
+          "start_s": 11.38,
+          "end_s": 11.58,
+          "start_frame": 341,
+          "end_frame": 347
+        },
+        {
+          "word": "five",
+          "start_s": 11.58,
+          "end_s": 11.88,
+          "start_frame": 347,
+          "end_frame": 356
+        }
+      ]
+    },
+    {
+      "start_frame": 356,
+      "end_frame": 400,
+      "text": "starve without dropping theirs.",
+      "words": [
+        {
+          "word": "starve",
+          "start_s": 11.88,
+          "end_s": 12.2,
+          "start_frame": 356,
+          "end_frame": 366
+        },
+        {
+          "word": "without",
+          "start_s": 12.2,
+          "end_s": 12.5,
+          "start_frame": 366,
+          "end_frame": 375
+        },
+        {
+          "word": "dropping",
+          "start_s": 12.5,
+          "end_s": 12.9,
+          "start_frame": 375,
+          "end_frame": 387
+        },
+        {
+          "word": "theirs.",
+          "start_s": 12.9,
+          "end_s": 13.2,
+          "start_frame": 387,
+          "end_frame": 396
+        }
+      ]
+    },
+    {
+      "start_frame": 408,
+      "end_frame": 447,
+      "text": "What invisible curse just",
+      "words": [
+        {
+          "word": "What",
+          "start_s": 13.6,
+          "end_s": 13.7,
+          "start_frame": 408,
+          "end_frame": 411
+        },
+        {
+          "word": "invisible",
+          "start_s": 13.7,
+          "end_s": 14.18,
+          "start_frame": 411,
+          "end_frame": 425
+        },
+        {
+          "word": "curse",
+          "start_s": 14.18,
+          "end_s": 14.46,
+          "start_frame": 425,
+          "end_frame": 434
+        },
+        {
+          "word": "just",
+          "start_s": 14.46,
+          "end_s": 14.78,
+          "start_frame": 434,
+          "end_frame": 443
+        }
+      ]
+    },
+    {
+      "start_frame": 443,
+      "end_frame": 477,
+      "text": "killed them all? A",
+      "words": [
+        {
+          "word": "killed",
+          "start_s": 14.78,
+          "end_s": 15.08,
+          "start_frame": 443,
+          "end_frame": 452
+        },
+        {
+          "word": "them",
+          "start_s": 15.08,
+          "end_s": 15.26,
+          "start_frame": 452,
+          "end_frame": 458
+        },
+        {
+          "word": "all?",
+          "start_s": 15.26,
+          "end_s": 15.52,
+          "start_frame": 458,
+          "end_frame": 466
+        },
+        {
+          "word": "A",
+          "start_s": 15.66,
+          "end_s": 15.78,
+          "start_frame": 470,
+          "end_frame": 473
+        }
+      ]
+    },
+    {
+      "start_frame": 473,
+      "end_frame": 503,
+      "text": "curse from the chef.",
+      "words": [
+        {
+          "word": "curse",
+          "start_s": 15.78,
+          "end_s": 16.02,
+          "start_frame": 473,
+          "end_frame": 481
+        },
+        {
+          "word": "from",
+          "start_s": 16.02,
+          "end_s": 16.28,
+          "start_frame": 481,
+          "end_frame": 488
+        },
+        {
+          "word": "the",
+          "start_s": 16.28,
+          "end_s": 16.48,
+          "start_frame": 488,
+          "end_frame": 494
+        },
+        {
+          "word": "chef.",
+          "start_s": 16.48,
+          "end_s": 16.64,
+          "start_frame": 494,
+          "end_frame": 499
+        }
+      ]
+    },
+    {
+      "start_frame": 506,
+      "end_frame": 551,
+      "text": "It's a deadlock. Fred",
+      "words": [
+        {
+          "word": "It's",
+          "start_s": 16.88,
+          "end_s": 17.08,
+          "start_frame": 506,
+          "end_frame": 512
+        },
+        {
+          "word": "a",
+          "start_s": 17.08,
+          "end_s": 17.12,
+          "start_frame": 512,
+          "end_frame": 514
+        },
+        {
+          "word": "deadlock.",
+          "start_s": 17.12,
+          "end_s": 17.52,
+          "start_frame": 514,
+          "end_frame": 526
+        },
+        {
+          "word": "Fred",
+          "start_s": 18.06,
+          "end_s": 18.22,
+          "start_frame": 542,
+          "end_frame": 547
+        }
+      ]
+    },
+    {
+      "start_frame": 547,
+      "end_frame": 581,
+      "text": "A holds lock one,",
+      "words": [
+        {
+          "word": "A",
+          "start_s": 18.22,
+          "end_s": 18.46,
+          "start_frame": 547,
+          "end_frame": 554
+        },
+        {
+          "word": "holds",
+          "start_s": 18.46,
+          "end_s": 18.78,
+          "start_frame": 554,
+          "end_frame": 563
+        },
+        {
+          "word": "lock",
+          "start_s": 18.78,
+          "end_s": 18.98,
+          "start_frame": 563,
+          "end_frame": 569
+        },
+        {
+          "word": "one,",
+          "start_s": 18.98,
+          "end_s": 19.24,
+          "start_frame": 569,
+          "end_frame": 577
+        }
+      ]
+    },
+    {
+      "start_frame": 582,
+      "end_frame": 607,
+      "text": "waiting for lock two,",
+      "words": [
+        {
+          "word": "waiting",
+          "start_s": 19.4,
+          "end_s": 19.54,
+          "start_frame": 582,
+          "end_frame": 586
+        },
+        {
+          "word": "for",
+          "start_s": 19.54,
+          "end_s": 19.68,
+          "start_frame": 586,
+          "end_frame": 590
+        },
+        {
+          "word": "lock",
+          "start_s": 19.68,
+          "end_s": 19.82,
+          "start_frame": 590,
+          "end_frame": 595
+        },
+        {
+          "word": "two,",
+          "start_s": 19.82,
+          "end_s": 20.1,
+          "start_frame": 595,
+          "end_frame": 603
+        }
+      ]
+    },
+    {
+      "start_frame": 608,
+      "end_frame": 634,
+      "text": "while Fred B holds",
+      "words": [
+        {
+          "word": "while",
+          "start_s": 20.28,
+          "end_s": 20.36,
+          "start_frame": 608,
+          "end_frame": 611
+        },
+        {
+          "word": "Fred",
+          "start_s": 20.36,
+          "end_s": 20.54,
+          "start_frame": 611,
+          "end_frame": 616
+        },
+        {
+          "word": "B",
+          "start_s": 20.54,
+          "end_s": 20.78,
+          "start_frame": 616,
+          "end_frame": 623
+        },
+        {
+          "word": "holds",
+          "start_s": 20.78,
+          "end_s": 21.0,
+          "start_frame": 623,
+          "end_frame": 630
+        }
+      ]
+    },
+    {
+      "start_frame": 630,
+      "end_frame": 659,
+      "text": "lock two, waiting for",
+      "words": [
+        {
+          "word": "lock",
+          "start_s": 21.0,
+          "end_s": 21.24,
+          "start_frame": 630,
+          "end_frame": 637
+        },
+        {
+          "word": "two,",
+          "start_s": 21.24,
+          "end_s": 21.46,
+          "start_frame": 637,
+          "end_frame": 644
+        },
+        {
+          "word": "waiting",
+          "start_s": 21.58,
+          "end_s": 21.68,
+          "start_frame": 647,
+          "end_frame": 650
+        },
+        {
+          "word": "for",
+          "start_s": 21.68,
+          "end_s": 21.84,
+          "start_frame": 650,
+          "end_frame": 655
+        }
+      ]
+    },
+    {
+      "start_frame": 655,
+      "end_frame": 687,
+      "text": "lock one, freezing the",
+      "words": [
+        {
+          "word": "lock",
+          "start_s": 21.84,
+          "end_s": 21.96,
+          "start_frame": 655,
+          "end_frame": 659
+        },
+        {
+          "word": "one,",
+          "start_s": 21.96,
+          "end_s": 22.22,
+          "start_frame": 659,
+          "end_frame": 667
+        },
+        {
+          "word": "freezing",
+          "start_s": 22.44,
+          "end_s": 22.58,
+          "start_frame": 673,
+          "end_frame": 677
+        },
+        {
+          "word": "the",
+          "start_s": 22.58,
+          "end_s": 22.76,
+          "start_frame": 677,
+          "end_frame": 683
+        }
+      ]
+    },
+    {
+      "start_frame": 683,
+      "end_frame": 737,
+      "text": "system. Circular weight equals",
+      "words": [
+        {
+          "word": "system.",
+          "start_s": 22.76,
+          "end_s": 23.04,
+          "start_frame": 683,
+          "end_frame": 691
+        },
+        {
+          "word": "Circular",
+          "start_s": 23.34,
+          "end_s": 23.82,
+          "start_frame": 700,
+          "end_frame": 715
+        },
+        {
+          "word": "weight",
+          "start_s": 23.82,
+          "end_s": 24.06,
+          "start_frame": 715,
+          "end_frame": 722
+        },
+        {
+          "word": "equals",
+          "start_s": 24.06,
+          "end_s": 24.44,
+          "start_frame": 722,
+          "end_frame": 733
+        }
+      ]
+    },
+    {
+      "start_frame": 733,
+      "end_frame": 764,
+      "text": "frozen servers.",
+      "words": [
+        {
+          "word": "frozen",
+          "start_s": 24.44,
+          "end_s": 24.92,
+          "start_frame": 733,
+          "end_frame": 748
+        },
+        {
+          "word": "servers.",
+          "start_s": 24.92,
+          "end_s": 25.32,
+          "start_frame": 748,
+          "end_frame": 760
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Can",
+      "start_s": 0.0,
+      "end_s": 0.14,
+      "start_frame": 0,
+      "end_frame": 4
+    },
+    {
+      "word": "you",
+      "start_s": 0.14,
+      "end_s": 0.26,
+      "start_frame": 4,
+      "end_frame": 8
+    },
+    {
+      "word": "solve",
+      "start_s": 0.26,
+      "end_s": 0.5,
+      "start_frame": 8,
+      "end_frame": 15
+    },
+    {
+      "word": "this",
+      "start_s": 0.5,
+      "end_s": 0.8,
+      "start_frame": 15,
+      "end_frame": 24
+    },
+    {
+      "word": "deadly",
+      "start_s": 0.8,
+      "end_s": 1.06,
+      "start_frame": 24,
+      "end_frame": 32
+    },
+    {
+      "word": "riddle?",
+      "start_s": 1.06,
+      "end_s": 1.34,
+      "start_frame": 32,
+      "end_frame": 40
+    },
+    {
+      "word": "Five",
+      "start_s": 1.6,
+      "end_s": 1.86,
+      "start_frame": 48,
+      "end_frame": 56
+    },
+    {
+      "word": "masters",
+      "start_s": 1.86,
+      "end_s": 2.22,
+      "start_frame": 56,
+      "end_frame": 67
+    },
+    {
+      "word": "sit",
+      "start_s": 2.22,
+      "end_s": 2.48,
+      "start_frame": 67,
+      "end_frame": 74
+    },
+    {
+      "word": "at",
+      "start_s": 2.48,
+      "end_s": 2.62,
+      "start_frame": 74,
+      "end_frame": 79
+    },
+    {
+      "word": "a",
+      "start_s": 2.62,
+      "end_s": 2.76,
+      "start_frame": 79,
+      "end_frame": 83
+    },
+    {
+      "word": "table.",
+      "start_s": 2.76,
+      "end_s": 3.02,
+      "start_frame": 83,
+      "end_frame": 91
+    },
+    {
+      "word": "To",
+      "start_s": 3.58,
+      "end_s": 3.68,
+      "start_frame": 107,
+      "end_frame": 110
+    },
+    {
+      "word": "eat,",
+      "start_s": 3.68,
+      "end_s": 3.9,
+      "start_frame": 110,
+      "end_frame": 117
+    },
+    {
+      "word": "each",
+      "start_s": 4.14,
+      "end_s": 4.32,
+      "start_frame": 124,
+      "end_frame": 130
+    },
+    {
+      "word": "master",
+      "start_s": 4.32,
+      "end_s": 4.66,
+      "start_frame": 130,
+      "end_frame": 140
+    },
+    {
+      "word": "must",
+      "start_s": 4.66,
+      "end_s": 4.84,
+      "start_frame": 140,
+      "end_frame": 145
+    },
+    {
+      "word": "hold",
+      "start_s": 4.84,
+      "end_s": 5.04,
+      "start_frame": 145,
+      "end_frame": 151
+    },
+    {
+      "word": "two",
+      "start_s": 5.04,
+      "end_s": 5.3,
+      "start_frame": 151,
+      "end_frame": 159
+    },
+    {
+      "word": "chopsticks.",
+      "start_s": 5.3,
+      "end_s": 5.72,
+      "start_frame": 159,
+      "end_frame": 172
+    },
+    {
+      "word": "Every",
+      "start_s": 6.14,
+      "end_s": 6.38,
+      "start_frame": 184,
+      "end_frame": 191
+    },
+    {
+      "word": "master",
+      "start_s": 6.38,
+      "end_s": 6.72,
+      "start_frame": 191,
+      "end_frame": 202
+    },
+    {
+      "word": "simultaneously",
+      "start_s": 6.72,
+      "end_s": 7.34,
+      "start_frame": 202,
+      "end_frame": 220
+    },
+    {
+      "word": "grabs",
+      "start_s": 7.34,
+      "end_s": 7.66,
+      "start_frame": 220,
+      "end_frame": 230
+    },
+    {
+      "word": "the",
+      "start_s": 7.66,
+      "end_s": 7.9,
+      "start_frame": 230,
+      "end_frame": 237
+    },
+    {
+      "word": "chopstick",
+      "start_s": 7.9,
+      "end_s": 8.26,
+      "start_frame": 237,
+      "end_frame": 248
+    },
+    {
+      "word": "to",
+      "start_s": 8.26,
+      "end_s": 8.4,
+      "start_frame": 248,
+      "end_frame": 252
+    },
+    {
+      "word": "their",
+      "start_s": 8.4,
+      "end_s": 8.52,
+      "start_frame": 252,
+      "end_frame": 256
+    },
+    {
+      "word": "left.",
+      "start_s": 8.52,
+      "end_s": 8.7,
+      "start_frame": 256,
+      "end_frame": 261
+    },
+    {
+      "word": "Each",
+      "start_s": 9.1,
+      "end_s": 9.26,
+      "start_frame": 273,
+      "end_frame": 278
+    },
+    {
+      "word": "master",
+      "start_s": 9.26,
+      "end_s": 9.56,
+      "start_frame": 278,
+      "end_frame": 287
+    },
+    {
+      "word": "waits",
+      "start_s": 9.56,
+      "end_s": 9.7,
+      "start_frame": 287,
+      "end_frame": 291
+    },
+    {
+      "word": "forever",
+      "start_s": 9.7,
+      "end_s": 10.04,
+      "start_frame": 291,
+      "end_frame": 301
+    },
+    {
+      "word": "for",
+      "start_s": 10.04,
+      "end_s": 10.24,
+      "start_frame": 301,
+      "end_frame": 307
+    },
+    {
+      "word": "the",
+      "start_s": 10.24,
+      "end_s": 10.34,
+      "start_frame": 307,
+      "end_frame": 310
+    },
+    {
+      "word": "right",
+      "start_s": 10.34,
+      "end_s": 10.46,
+      "start_frame": 310,
+      "end_frame": 314
+    },
+    {
+      "word": "chopstick,",
+      "start_s": 10.46,
+      "end_s": 10.94,
+      "start_frame": 314,
+      "end_frame": 328
+    },
+    {
+      "word": "and",
+      "start_s": 11.26,
+      "end_s": 11.38,
+      "start_frame": 338,
+      "end_frame": 341
+    },
+    {
+      "word": "all",
+      "start_s": 11.38,
+      "end_s": 11.58,
+      "start_frame": 341,
+      "end_frame": 347
+    },
+    {
+      "word": "five",
+      "start_s": 11.58,
+      "end_s": 11.88,
+      "start_frame": 347,
+      "end_frame": 356
+    },
+    {
+      "word": "starve",
+      "start_s": 11.88,
+      "end_s": 12.2,
+      "start_frame": 356,
+      "end_frame": 366
+    },
+    {
+      "word": "without",
+      "start_s": 12.2,
+      "end_s": 12.5,
+      "start_frame": 366,
+      "end_frame": 375
+    },
+    {
+      "word": "dropping",
+      "start_s": 12.5,
+      "end_s": 12.9,
+      "start_frame": 375,
+      "end_frame": 387
+    },
+    {
+      "word": "theirs.",
+      "start_s": 12.9,
+      "end_s": 13.2,
+      "start_frame": 387,
+      "end_frame": 396
+    },
+    {
+      "word": "What",
+      "start_s": 13.6,
+      "end_s": 13.7,
+      "start_frame": 408,
+      "end_frame": 411
+    },
+    {
+      "word": "invisible",
+      "start_s": 13.7,
+      "end_s": 14.18,
+      "start_frame": 411,
+      "end_frame": 425
+    },
+    {
+      "word": "curse",
+      "start_s": 14.18,
+      "end_s": 14.46,
+      "start_frame": 425,
+      "end_frame": 434
+    },
+    {
+      "word": "just",
+      "start_s": 14.46,
+      "end_s": 14.78,
+      "start_frame": 434,
+      "end_frame": 443
+    },
+    {
+      "word": "killed",
+      "start_s": 14.78,
+      "end_s": 15.08,
+      "start_frame": 443,
+      "end_frame": 452
+    },
+    {
+      "word": "them",
+      "start_s": 15.08,
+      "end_s": 15.26,
+      "start_frame": 452,
+      "end_frame": 458
+    },
+    {
+      "word": "all?",
+      "start_s": 15.26,
+      "end_s": 15.52,
+      "start_frame": 458,
+      "end_frame": 466
+    },
+    {
+      "word": "A",
+      "start_s": 15.66,
+      "end_s": 15.78,
+      "start_frame": 470,
+      "end_frame": 473
+    },
+    {
+      "word": "curse",
+      "start_s": 15.78,
+      "end_s": 16.02,
+      "start_frame": 473,
+      "end_frame": 481
+    },
+    {
+      "word": "from",
+      "start_s": 16.02,
+      "end_s": 16.28,
+      "start_frame": 481,
+      "end_frame": 488
+    },
+    {
+      "word": "the",
+      "start_s": 16.28,
+      "end_s": 16.48,
+      "start_frame": 488,
+      "end_frame": 494
+    },
+    {
+      "word": "chef.",
+      "start_s": 16.48,
+      "end_s": 16.64,
+      "start_frame": 494,
+      "end_frame": 499
+    },
+    {
+      "word": "It's",
+      "start_s": 16.88,
+      "end_s": 17.08,
+      "start_frame": 506,
+      "end_frame": 512
+    },
+    {
+      "word": "a",
+      "start_s": 17.08,
+      "end_s": 17.12,
+      "start_frame": 512,
+      "end_frame": 514
+    },
+    {
+      "word": "deadlock.",
+      "start_s": 17.12,
+      "end_s": 17.52,
+      "start_frame": 514,
+      "end_frame": 526
+    },
+    {
+      "word": "Fred",
+      "start_s": 18.06,
+      "end_s": 18.22,
+      "start_frame": 542,
+      "end_frame": 547
+    },
+    {
+      "word": "A",
+      "start_s": 18.22,
+      "end_s": 18.46,
+      "start_frame": 547,
+      "end_frame": 554
+    },
+    {
+      "word": "holds",
+      "start_s": 18.46,
+      "end_s": 18.78,
+      "start_frame": 554,
+      "end_frame": 563
+    },
+    {
+      "word": "lock",
+      "start_s": 18.78,
+      "end_s": 18.98,
+      "start_frame": 563,
+      "end_frame": 569
+    },
+    {
+      "word": "one,",
+      "start_s": 18.98,
+      "end_s": 19.24,
+      "start_frame": 569,
+      "end_frame": 577
+    },
+    {
+      "word": "waiting",
+      "start_s": 19.4,
+      "end_s": 19.54,
+      "start_frame": 582,
+      "end_frame": 586
+    },
+    {
+      "word": "for",
+      "start_s": 19.54,
+      "end_s": 19.68,
+      "start_frame": 586,
+      "end_frame": 590
+    },
+    {
+      "word": "lock",
+      "start_s": 19.68,
+      "end_s": 19.82,
+      "start_frame": 590,
+      "end_frame": 595
+    },
+    {
+      "word": "two,",
+      "start_s": 19.82,
+      "end_s": 20.1,
+      "start_frame": 595,
+      "end_frame": 603
+    },
+    {
+      "word": "while",
+      "start_s": 20.28,
+      "end_s": 20.36,
+      "start_frame": 608,
+      "end_frame": 611
+    },
+    {
+      "word": "Fred",
+      "start_s": 20.36,
+      "end_s": 20.54,
+      "start_frame": 611,
+      "end_frame": 616
+    },
+    {
+      "word": "B",
+      "start_s": 20.54,
+      "end_s": 20.78,
+      "start_frame": 616,
+      "end_frame": 623
+    },
+    {
+      "word": "holds",
+      "start_s": 20.78,
+      "end_s": 21.0,
+      "start_frame": 623,
+      "end_frame": 630
+    },
+    {
+      "word": "lock",
+      "start_s": 21.0,
+      "end_s": 21.24,
+      "start_frame": 630,
+      "end_frame": 637
+    },
+    {
+      "word": "two,",
+      "start_s": 21.24,
+      "end_s": 21.46,
+      "start_frame": 637,
+      "end_frame": 644
+    },
+    {
+      "word": "waiting",
+      "start_s": 21.58,
+      "end_s": 21.68,
+      "start_frame": 647,
+      "end_frame": 650
+    },
+    {
+      "word": "for",
+      "start_s": 21.68,
+      "end_s": 21.84,
+      "start_frame": 650,
+      "end_frame": 655
+    },
+    {
+      "word": "lock",
+      "start_s": 21.84,
+      "end_s": 21.96,
+      "start_frame": 655,
+      "end_frame": 659
+    },
+    {
+      "word": "one,",
+      "start_s": 21.96,
+      "end_s": 22.22,
+      "start_frame": 659,
+      "end_frame": 667
+    },
+    {
+      "word": "freezing",
+      "start_s": 22.44,
+      "end_s": 22.58,
+      "start_frame": 673,
+      "end_frame": 677
+    },
+    {
+      "word": "the",
+      "start_s": 22.58,
+      "end_s": 22.76,
+      "start_frame": 677,
+      "end_frame": 683
+    },
+    {
+      "word": "system.",
+      "start_s": 22.76,
+      "end_s": 23.04,
+      "start_frame": 683,
+      "end_frame": 691
+    },
+    {
+      "word": "Circular",
+      "start_s": 23.34,
+      "end_s": 23.82,
+      "start_frame": 700,
+      "end_frame": 715
+    },
+    {
+      "word": "weight",
+      "start_s": 23.82,
+      "end_s": 24.06,
+      "start_frame": 715,
+      "end_frame": 722
+    },
+    {
+      "word": "equals",
+      "start_s": 24.06,
+      "end_s": 24.44,
+      "start_frame": 722,
+      "end_frame": 733
+    },
+    {
+      "word": "frozen",
+      "start_s": 24.44,
+      "end_s": 24.92,
+      "start_frame": 733,
+      "end_frame": 748
+    },
+    {
+      "word": "servers.",
+      "start_s": 24.92,
+      "end_s": 25.32,
+      "start_frame": 748,
+      "end_frame": 760
+    }
+  ]
+}

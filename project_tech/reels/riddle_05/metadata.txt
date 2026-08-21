@@ -1,0 +1,65 @@
+================================================================================
+NEMI EXPLAINS REEL #5 — PRODUCTION & SOCIAL METADATA
+================================================================================
+
+TITLE:
+Can You Solve This Deadly Riddle? The Dining Philosophers & System Deadlock 🍜💀
+
+HOOK LINE:
+"Can you solve this deadly riddle? Five masters sit at a table..."
+
+DURATION:
+25.83 Seconds (775 Frames @ 30 FPS)
+
+RENDER OUTPUT:
+project_tech/out/NemiExplains_Riddle_Deadlock_20260821.mp4
+
+AUDIO ASSETS:
+- Master Audio: project_tech/public/reels/riddle_05/riddle_master_audio.mp3
+- Voices: Chatterbox Neural Expressive TTS (Narrator) + Edge-TTS AnaNeural (Nemi Mascot)
+- BGM: Synthwave Goose - Blade Runner 2049 (Sidechain Ducked, Loudness: -15 LUFS)
+
+--------------------------------------------------------------------------------
+INSTAGRAM REELS POST SPECIFICATION
+--------------------------------------------------------------------------------
+Account: @nemi.explains
+
+Caption:
+Can you solve this 50-year-old deadly riddle? 🤔🍜
+
+Five masters sit at a circular table. To eat, each master needs two chopsticks. Every master grabs the chopstick to their left simultaneously... and now all five wait forever for the right one. Nobody drops theirs, and all five starve.
+
+What invisible curse just killed them? 💀
+
+It's a DEADLOCK. In computer science, this is the exact nightmare that freezes multi-threaded systems: Thread A holds Lock 1 waiting for Lock 2, while Thread B holds Lock 2 waiting for Lock 1.
+
+The 4 Coffman Conditions:
+1️⃣ Mutual Exclusion
+2️⃣ Hold & Wait
+3️⃣ No Preemption
+4️⃣ Circular Wait
+
+Break ANY one condition, and the deadlock is broken! 💡
+
+Tag a programmer who has frozen a server! 👇
+
+#coding #computerscience #softwareengineering #riddle #brainteaser #deadlock #programming #tech #developer #concurrency #algorithm #learntocode #webdev #python #javascript #systemdesign #nemiexplains
+
+--------------------------------------------------------------------------------
+YOUTUBE SHORTS POST SPECIFICATION
+--------------------------------------------------------------------------------
+Channel: Nemi Explains
+
+Title:
+Can You Solve This Deadly Riddle? 🍜💀 (The System Deadlock) #shorts
+
+Description:
+Can you solve the 5-chopstick riddle? Five masters sit at a table, grab the chopstick to their left, and starve waiting for the right one. What curse killed them? 
+
+Learn how the classic Dining Philosophers problem explains why multi-threaded operating systems and servers freeze in a System Deadlock, and the 4 Coffman conditions to prevent it!
+
+Subscribe to @NemiExplains for fast, visual coding breakdowns! 🚀
+
+Tags:
+deadlock, dining philosophers, computer science, coding riddle, programming riddle, multi threading, operating systems, software engineering, algorithms, concurrency, nemi explains, tech shorts, leetcode, coding interview
+================================================================================

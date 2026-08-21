@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { RiddleDeadlockComp } from "../reels/riddle_05/RiddleDeadlockComp";
 import { ChatGPTExplainsComp } from "../reels/chatgpt_04/ChatGPTExplainsComp";
 import { TwoSumComp } from "../reels/twosum_03/TwoSumComp";
 import { GoogleExplainsComp } from "../reels/google_02/GoogleExplainsComp";
@@ -28,6 +29,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsRiddleDeadlock"
+        component={RiddleDeadlockComp}
+        durationInFrames={775} // 25.83s @ 30fps — Reel #5: The Deadly Riddle: The Dining Philosophers & The System Deadlock
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsChatGPT"
         component={ChatGPTExplainsComp}
