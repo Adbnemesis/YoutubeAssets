@@ -1,5 +1,5 @@
 ================================================================================
-NEMI EXPLAINS REEL #5 — LIVE PUBLISHING COMPLETE
+NEMI EXPLAINS REEL #5 — MULTI-PLATFORM PUBLISHING RECORD
 ================================================================================
 
 TITLE:
@@ -11,7 +11,12 @@ PLATFORM LINKS:
    - Link: https://www.instagram.com/reel/DcTkaQ3AAcq/
    - Media ID: 17947446531271415
 
-2. 📺 YOUTUBE SHORTS (UNLISTED):
+2. 📘 FACEBOOK REELS (LIVE):
+   - Page: Nemi Explains (ID: 1243122028888830)
+   - Link: https://www.facebook.com/reel/2064191290853512
+   - Video ID: 2064191290853512
+
+3. 📺 YOUTUBE SHORTS (UNLISTED):
    - Channel: Nemi Explains
    - Link: https://youtu.be/GtDqQAsOMck
    - Video ID: GtDqQAsOMck
@@ -20,7 +25,7 @@ PLATFORM LINKS:
 ASSETS & SPECS:
 - Master 4K Video: project_tech/out/NemiExplains_Riddle_Deadlock_4K_20260821.mp4 (18.9 MB)
 - Staged CDN: https://files.catbox.moe/s7q0rv.mp4
-- Resolution: 2160 x 3840 (4K Vertical UHD @ 30 FPS)
+- Resolution: 2160 x 3840 (4K Vertical UHD @ 30 FPS, CRF=10)
 - Duration: 25.88s (775 frames)
 
 --------------------------------------------------------------------------------
