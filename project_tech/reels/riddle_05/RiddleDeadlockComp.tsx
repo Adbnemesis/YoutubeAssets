@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
+  interpolateColors,
   spring,
   staticFile,
   useCurrentFrame,
@@ -20,10 +21,13 @@ export const nemiTheme = {
     brandGreen: "#10B981",
     brandCoral: "#F43F5E",
     brandIce: "#38BDF8",
+    canvasLight: "#FAF8F5",
     canvasDark: "#070B12",
+    cardLight: "#FFFFFF",
     cardDark: "#0F172A",
-    textLight: "#F8FAFC",
-    textMuted: "#94A3B8",
+    textLight: "#0F172A",
+    textDark: "#F8FAFC",
+    borderLight: "#E2E8F0",
     borderDark: "#1E293B",
   },
   typography: {
@@ -55,8 +59,41 @@ export const RiddleDeadlockComp: React.FC = () => {
 
   const totalFrames = cuesData.total_frames || 775;
 
-  // ─── Smooth Steady Cinematic Camera (No Jerking / Wobble) ───
-  const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.02], {
+  // ─── SILKY SMOOTH COLOR INTERPOLATION (Light -> Dark Transition) ───
+  // Starts in crisp Light Studio (#FAF8F5), transitions to Deep Cyber Dark (#070B12) when the left grab trap begins
+  const darkProgress = interpolate(
+    frame,
+    [evLeftGrab.start_frame - 15, evLeftGrab.start_frame + 15],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+
+  const canvasBg = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [nemiTheme.colors.canvasLight, nemiTheme.colors.canvasDark]
+  );
+
+  const textHeading = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [nemiTheme.colors.textLight, nemiTheme.colors.textDark]
+  );
+
+  const hudBg = interpolateColors(
+    darkProgress,
+    [0, 1],
+    ["rgba(255, 255, 255, 0.96)", "rgba(15, 23, 42, 0.95)"]
+  );
+
+  const hudBorder = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [nemiTheme.colors.borderLight, nemiTheme.colors.borderDark]
+  );
+
+  // ─── Rock-Solid Cinematic Camera (Continuous subtle drift, NO wobble) ───
+  const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.018], {
     extrapolateRight: "clamp",
   });
 
@@ -83,7 +120,7 @@ export const RiddleDeadlockComp: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: nemiTheme.colors.canvasDark,
+        backgroundColor: canvasBg,
         overflow: "hidden",
         fontFamily: nemiTheme.typography.fontFamily.sans,
       }}
@@ -122,9 +159,9 @@ export const RiddleDeadlockComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STATIC HIGH-RES STUDIO GLOW (NO FLICKERING ORBS) */}
+      {/* STATIC HIGH-RES STUDIO GLOW (Clean & Perfectly Stable) */}
       {/* ══════════════════════════════════════════════════════════ */}
-      <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
+      <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5, opacity: darkProgress }}>
         <div
           style={{
             position: "absolute",
@@ -134,22 +171,22 @@ export const RiddleDeadlockComp: React.FC = () => {
             height: 600,
             borderRadius: "50%",
             background: frame >= evReveal.start_frame
-              ? "radial-gradient(circle, rgba(244, 63, 94, 0.18) 0%, rgba(0,0,0,0) 70%)"
-              : "radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, rgba(0,0,0,0) 70%)",
+              ? "radial-gradient(circle, rgba(244, 63, 94, 0.2) 0%, rgba(0,0,0,0) 70%)"
+              : "radial-gradient(circle, rgba(6, 182, 212, 0.18) 0%, rgba(0,0,0,0) 70%)",
             filter: "blur(80px)",
           }}
         />
         <div
           style={{
             position: "absolute",
-            top: 600,
+            top: 650,
             right: -150,
             width: 600,
             height: 600,
             borderRadius: "50%",
             background: frame >= evReveal.start_frame
-              ? "radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(0,0,0,0) 70%)"
-              : "radial-gradient(circle, rgba(255, 209, 102, 0.12) 0%, rgba(0,0,0,0) 70%)",
+              ? "radial-gradient(circle, rgba(56, 189, 248, 0.16) 0%, rgba(0,0,0,0) 70%)"
+              : "radial-gradient(circle, rgba(255, 209, 102, 0.14) 0%, rgba(0,0,0,0) 70%)",
             filter: "blur(80px)",
           }}
         />
@@ -186,7 +223,7 @@ export const RiddleDeadlockComp: React.FC = () => {
               fontSize: 26,
               fontWeight: 900,
               letterSpacing: "1.5px",
-              color: frame >= evReveal.start_frame ? nemiTheme.colors.brandCoral : nemiTheme.colors.brandYellow,
+              color: frame >= evReveal.start_frame ? nemiTheme.colors.brandCoral : "#EAB308",
               textTransform: "uppercase",
             }}
           >
@@ -196,15 +233,15 @@ export const RiddleDeadlockComp: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.95)",
+            backgroundColor: hudBg,
             padding: "12px 24px",
             borderRadius: 24,
-            border: "2px solid #1E293B",
+            border: `2px solid ${hudBorder}`,
             fontSize: 20,
             fontWeight: 900,
-            color: frame >= evReveal.start_frame ? "#F43F5E" : "#FFD166",
+            color: frame >= evReveal.start_frame ? "#F43F5E" : "#D97706",
             fontFamily: nemiTheme.typography.fontFamily.mono,
-            boxShadow: "0 8px 24px rgba(0,0,0,0.4)",
+            boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
           }}
         >
           {frame < evCountdown.start_frame && "PHASE 1: THE RIDDLE"}
@@ -229,14 +266,14 @@ export const RiddleDeadlockComp: React.FC = () => {
           style={{
             fontSize: 56,
             fontWeight: 900,
-            color: "#F8FAFC",
+            color: textHeading,
             letterSpacing: "-1.5px",
             margin: 0,
             lineHeight: 1.15,
           }}
         >
           Can You Solve This:{" "}
-          <span style={{ color: frame >= evReveal.start_frame ? "#F43F5E" : "#FFD166" }}>
+          <span style={{ color: frame >= evReveal.start_frame ? "#F43F5E" : "#D97706" }}>
             {frame >= evReveal.start_frame ? "The System Deadlock!" : "The 5 Masters Riddle"}
           </span>
         </h1>
@@ -254,17 +291,23 @@ export const RiddleDeadlockComp: React.FC = () => {
         }}
       >
         {/* BEAT 1 & 2: THE 5 MASTERS TABLE & CIRCULAR TRAP */}
-        <StageWrapper frame={frame} startFrame={0} endFrame={evCountdown.start_frame}>
-          <Beat1PhilosophersTable frame={frame} fps={fps} evLeftGrab={evLeftGrab.start_frame} evStarve={evStarve.start_frame} />
+        <StageWrapper frame={frame} startFrame={0} endFrame={evCountdown.start_frame + 6}>
+          <Beat1PhilosophersTable
+            frame={frame}
+            fps={fps}
+            evLeftGrab={evLeftGrab.start_frame}
+            evStarve={evStarve.start_frame}
+            darkProgress={darkProgress}
+          />
         </StageWrapper>
 
         {/* BEAT 3: 3-SECOND TICKING COUNTDOWN & NEMI WRONG GUESS */}
-        <StageWrapper frame={frame} startFrame={evCountdown.start_frame} endFrame={evReveal.start_frame}>
+        <StageWrapper frame={frame} startFrame={evCountdown.start_frame} endFrame={evReveal.start_frame + 6}>
           <Beat2CountdownAndGuess frame={frame} fps={fps} startFrame={evCountdown.start_frame} nemiGuessFrame={evNemiGuess.start_frame} />
         </StageWrapper>
 
         {/* BEAT 4: THE REVELATION — OS THREAD DEADLOCK */}
-        <StageWrapper frame={frame} startFrame={evReveal.start_frame} endFrame={evPayoff.start_frame}>
+        <StageWrapper frame={frame} startFrame={evReveal.start_frame} endFrame={evPayoff.start_frame + 6}>
           <Beat3DeadlockMechanism frame={frame} fps={fps} startFrame={evReveal.start_frame} />
         </StageWrapper>
 
@@ -282,11 +325,12 @@ export const RiddleDeadlockComp: React.FC = () => {
           evStarve={evStarve.start_frame}
           evCountdown={evCountdown.start_frame}
           evReveal={evReveal.start_frame}
+          darkProgress={darkProgress}
         />
 
         {/* ══════════════════════════════════════════════════════ */}
         {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
-        {/* Hidden when Nemi's Speech Bubble is active */}
+        {/* Non-flickering continuous container */}
         {/* ══════════════════════════════════════════════════════ */}
         {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} fps={fps} />}
       </div>
@@ -358,17 +402,30 @@ export const RiddleDeadlockComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// STAGE 1: THE 5 PHILOSOPHERS TABLE WITH INTERACTIVE CHOPSTICKS
+// STAGE 1: THE 5 PHILOSOPHERS TABLE WITH SEAMLESS LIGHT->DARK THEME
 // ═══════════════════════════════════════════════════════════════
 const Beat1PhilosophersTable: React.FC<{
   frame: number;
   fps: number;
   evLeftGrab: number;
   evStarve: number;
-}> = ({ frame, fps, evLeftGrab, evStarve }) => {
-  const pop = spring({ frame, fps, config: { damping: 14, stiffness: 120 } });
+  darkProgress: number;
+}> = ({ frame, fps, evLeftGrab, evStarve, darkProgress }) => {
   const isLeftGrabbed = frame >= evLeftGrab;
   const isStarving = frame >= evStarve;
+
+  const cardBg = interpolateColors(darkProgress, [0, 1], ["#FFFFFF", "#0B1120"]);
+  const cardBorder = interpolateColors(
+    darkProgress,
+    [0, 1],
+    [
+      "#E2E8F0",
+      isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : "#06B6D4",
+    ]
+  );
+  const tableFill = interpolateColors(darkProgress, [0, 1], ["#F1F5F9", "#111C35"]);
+  const tableStroke = interpolateColors(darkProgress, [0, 1], ["#CBD5E1", isStarving ? "#F43F5E" : "#1E293B"]);
+  const textColor = interpolateColors(darkProgress, [0, 1], ["#0F172A", "#F8FAFC"]);
 
   // 5 Philosophers at 72 deg angles around center (240, 210)
   const philosophers = [
@@ -391,16 +448,17 @@ const Beat1PhilosophersTable: React.FC<{
         left: 65,
         right: 65,
         height: 520,
-        backgroundColor: "#0B1120",
+        backgroundColor: cardBg,
         borderRadius: 32,
-        border: `3px solid ${isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : "#06B6D4"}`,
-        boxShadow: `0 24px 70px ${isStarving ? "rgba(244, 63, 94, 0.3)" : "rgba(6, 182, 212, 0.25)"}`,
+        border: `3.5px solid ${cardBorder}`,
+        boxShadow: darkProgress > 0.5
+          ? `0 24px 70px ${isStarving ? "rgba(244, 63, 94, 0.3)" : "rgba(6, 182, 212, 0.25)"}`
+          : "0 24px 60px rgba(0, 0, 0, 0.08)",
         padding: "24px 28px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
-        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -408,13 +466,21 @@ const Beat1PhilosophersTable: React.FC<{
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <span style={{ fontSize: 28 }}>🥢</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>The Dining Table</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: textColor }}>The Dining Table</span>
         </div>
         <div
           style={{
-            backgroundColor: isStarving ? "rgba(244, 63, 94, 0.25)" : "rgba(6, 182, 212, 0.2)",
-            color: isStarving ? "#F43F5E" : "#06B6D4",
-            border: `1.5px solid ${isStarving ? "#F43F5E" : "#06B6D4"}`,
+            backgroundColor: darkProgress < 0.5
+              ? "#FEF3C7"
+              : isStarving
+              ? "rgba(244, 63, 94, 0.25)"
+              : "rgba(6, 182, 212, 0.2)",
+            color: darkProgress < 0.5
+              ? "#D97706"
+              : isStarving
+              ? "#F43F5E"
+              : "#06B6D4",
+            border: `1.5px solid ${darkProgress < 0.5 ? "#FDE68A" : isStarving ? "#F43F5E" : "#06B6D4"}`,
             padding: "6px 14px",
             borderRadius: 12,
             fontSize: 16,
@@ -434,13 +500,13 @@ const Beat1PhilosophersTable: React.FC<{
             cx={centerX}
             cy={centerY}
             r={tableRadius}
-            fill="#111C35"
-            stroke={isStarving ? "#F43F5E" : "#1E293B"}
+            fill={tableFill}
+            stroke={tableStroke}
             strokeWidth="4"
           />
 
           {/* Central Rice Bowl */}
-          <circle cx={centerX} cy={centerY} r={50} fill="#1E293B" stroke="#334155" strokeWidth="3" />
+          <circle cx={centerX} cy={centerY} r={50} fill={darkProgress < 0.5 ? "#E2E8F0" : "#1E293B"} stroke={darkProgress < 0.5 ? "#CBD5E1" : "#334155"} strokeWidth="3" />
           <text x={centerX} y={centerY + 8} textAnchor="middle" fill="#FFD166" fontSize="28" fontWeight="900">
             🍜
           </text>
@@ -487,7 +553,7 @@ const Beat1PhilosophersTable: React.FC<{
                 )}
 
                 {/* Chopstick Icon */}
-                <circle cx={cx} cy={cy} r={20} fill={isLeftGrabbed ? "#FFD166" : "#334155"} />
+                <circle cx={cx} cy={cy} r={20} fill={isLeftGrabbed ? "#FFD166" : darkProgress < 0.5 ? "#CBD5E1" : "#334155"} />
                 <text x={cx} y={cy + 6} textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">
                   🥢
                 </text>
@@ -497,7 +563,7 @@ const Beat1PhilosophersTable: React.FC<{
                   cx={px}
                   cy={py}
                   r={30}
-                  fill={isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : "#06B6D4"}
+                  fill={isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : darkProgress < 0.5 ? "#0284C7" : "#06B6D4"}
                   stroke="#FFFFFF"
                   strokeWidth="3"
                 />
@@ -510,7 +576,7 @@ const Beat1PhilosophersTable: React.FC<{
         </svg>
       </div>
 
-      <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ fontSize: 18, color: darkProgress < 0.5 ? "#64748B" : "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
         {isStarving
           ? "Nobody drops their chopstick ➔ Infinite Circular Wait!"
           : isLeftGrabbed
@@ -531,7 +597,6 @@ const Beat2CountdownAndGuess: React.FC<{
   nemiGuessFrame: number;
 }> = ({ frame, fps, startFrame, nemiGuessFrame }) => {
   const localFrame = frame - startFrame;
-  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
   const isGuessActive = frame >= nemiGuessFrame;
 
   // 3-second countdown calculation
@@ -547,14 +612,13 @@ const Beat2CountdownAndGuess: React.FC<{
         height: 520,
         backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: "3px solid #FFD166",
+        border: "3.5px solid #FFD166",
         boxShadow: "0 28px 70px rgba(255, 209, 102, 0.35)",
         padding: "32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
-        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -626,9 +690,6 @@ const Beat3DeadlockMechanism: React.FC<{
   fps: number;
   startFrame: number;
 }> = ({ frame, fps, startFrame }) => {
-  const localFrame = frame - startFrame;
-  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-
   return (
     <div
       style={{
@@ -639,13 +700,12 @@ const Beat3DeadlockMechanism: React.FC<{
         height: 520,
         backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: "3px solid #F43F5E",
+        border: "3.5px solid #F43F5E",
         boxShadow: "0 28px 80px rgba(244, 63, 94, 0.45)",
         padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -729,9 +789,6 @@ const Beat4SummaryCard: React.FC<{
   fps: number;
   startFrame: number;
 }> = ({ frame, fps, startFrame }) => {
-  const localFrame = frame - startFrame;
-  const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-
   return (
     <div
       style={{
@@ -742,13 +799,12 @@ const Beat4SummaryCard: React.FC<{
         height: 520,
         backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: "3px solid #10B981",
+        border: "3.5px solid #10B981",
         boxShadow: "0 28px 80px rgba(16, 185, 129, 0.35)",
         padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        transform: `scale(${pop})`,
         zIndex: 30,
       }}
     >
@@ -806,7 +862,8 @@ const MidScreenDynamicBadges: React.FC<{
   evStarve: number;
   evCountdown: number;
   evReveal: number;
-}> = ({ frame, evLeftGrab, evStarve, evCountdown, evReveal }) => {
+  darkProgress: number;
+}> = ({ frame, evLeftGrab, evStarve, evCountdown, evReveal, darkProgress }) => {
   return (
     <div
       style={{
@@ -821,7 +878,18 @@ const MidScreenDynamicBadges: React.FC<{
       }}
     >
       {frame < evLeftGrab && (
-        <div style={{ backgroundColor: "rgba(6, 182, 212, 0.15)", border: "2px solid #06B6D4", padding: "12px 28px", borderRadius: 20, color: "#06B6D4", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <div
+          style={{
+            backgroundColor: darkProgress < 0.5 ? "#E0F2FE" : "rgba(6, 182, 212, 0.15)",
+            border: `2px solid ${darkProgress < 0.5 ? "#0284C7" : "#06B6D4"}`,
+            padding: "12px 28px",
+            borderRadius: 20,
+            color: darkProgress < 0.5 ? "#0369A1" : "#06B6D4",
+            fontSize: 22,
+            fontWeight: 900,
+            fontFamily: nemiTheme.typography.fontFamily.mono,
+          }}
+        >
           🥢 5 Masters • 5 Chopsticks
         </div>
       )}
@@ -855,12 +923,17 @@ const MidScreenDynamicBadges: React.FC<{
 
 // ═══════════════════════════════════════════════════════════════
 // DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px, sides: 65px)
+// Seamless chunk switching with zero flicker gaps
 // ═══════════════════════════════════════════════════════════════
 const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
   const subtitles = cuesData.subtitles || [];
-  const currentChunk = subtitles.find(
-    (chunk: any) => frame >= chunk.start_frame && frame <= chunk.end_frame + 2
-  );
+  
+  // Continuous search so small inter-word gaps don't cause container flicker
+  const currentChunk = subtitles.find((chunk: any, idx: number) => {
+    const nextChunk = subtitles[idx + 1];
+    const untilFrame = nextChunk ? nextChunk.start_frame : chunk.end_frame + 6;
+    return frame >= chunk.start_frame && frame < untilFrame;
+  });
 
   if (!currentChunk) return null;
 
@@ -929,7 +1002,7 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
 };
 
 // ═══════════════════════════════════════════════════════════════
-// SILKY SMOOTH STAGE WRAPPER
+// SILKY SMOOTH CROSS-FADE STAGE WRAPPER (ZERO BLACK GAPS)
 // ═══════════════════════════════════════════════════════════════
 const StageWrapper: React.FC<{
   children: React.ReactNode;
@@ -937,7 +1010,7 @@ const StageWrapper: React.FC<{
   startFrame: number;
   endFrame: number;
 }> = ({ children, frame, startFrame, endFrame }) => {
-  if (frame < startFrame - 4 || frame > endFrame + 4) {
+  if (frame < startFrame || frame > endFrame) {
     return null;
   }
 
@@ -946,7 +1019,7 @@ const StageWrapper: React.FC<{
     extrapolateRight: "clamp",
   });
 
-  const exitOpacity = interpolate(frame, [endFrame - 4, endFrame], [1, 0], {
+  const exitOpacity = interpolate(frame, [endFrame - 6, endFrame], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
