@@ -22,6 +22,11 @@ const BRAWLER_GIF_MAP: Record<string, BrawlerGifMetadata> = {
   "brawler_gifs/frank_win.gif": { base: "brawler_gif_frames/frank", frameCount: 12, gifFps: 10 },
   "brawler_gifs/hank_win.gif": { base: "brawler_gif_frames/hank", frameCount: 249, gifFps: 24 },
   "brawler_gifs/kaze_win.gif": { base: "brawler_gif_frames/kaze", frameCount: 500, gifFps: 24 },
+  "brawler_gifs/colt_win.gif": { base: "brawler_gif_frames/colt", frameCount: 1, gifFps: 24 },
+  "brawler_gifs/shelly_win.gif": { base: "brawler_gif_frames/shelly", frameCount: 1, gifFps: 24 },
+  "brawler_gifs/spike_win.gif": { base: "brawler_gif_frames/spike", frameCount: 1, gifFps: 24 },
+  "brawler_gifs/nita_win.gif": { base: "brawler_gif_frames/nita", frameCount: 1, gifFps: 24 },
+  "brawler_gifs/bo_win.gif": { base: "brawler_gif_frames/bo", frameCount: 1, gifFps: 24 },
 };
 
 export const MangaPhonkClip: React.FC<{

@@ -3,7 +3,7 @@ import { Composition } from "remotion";
 import { MasterPhonkTemplate } from "./templates/MasterPhonkTemplate";
 import { MangaPhonkTemplate } from "./templates/MangaPhonkTemplate";
 import { MidnightTrioTemplate } from "./templates/MidnightTrioTemplate";
-import { phonkPrototypeProps, mangaPhonkProps, midnightTrioProps, superheroTrioProps, bibiEdgarFrankProps, kenjiKazeNoriProps, tankTitansProps, shadowRealmProps } from "./props";
+import { phonkPrototypeProps, mangaPhonkProps, midnightTrioProps, superheroTrioProps, bibiEdgarFrankProps, kenjiKazeNoriProps, tankTitansProps, shadowRealmProps, rangerRanchFormsProps, shamanTribeFormsProps } from "./props";
 
 export const PhonkCompositions: React.FC = () => {
   return (
@@ -86,6 +86,26 @@ export const PhonkCompositions: React.FC = () => {
         width={1080}
         height={1920}
         defaultProps={shadowRealmProps}
+      />
+
+      <Composition
+        id="BrawlForms-RangerRanch"
+        component={MidnightTrioTemplate}
+        durationInFrames={585}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={rangerRanchFormsProps}
+      />
+
+      <Composition
+        id="BrawlForms-ShamanTribe"
+        component={MidnightTrioTemplate}
+        durationInFrames={585}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={shamanTribeFormsProps}
       />
     </>
   );

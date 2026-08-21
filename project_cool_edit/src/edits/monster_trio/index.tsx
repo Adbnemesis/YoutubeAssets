@@ -1,6 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
-import { defaultMonsterTrioProps, defaultKenjiLeonTaraProps, defaultBibiFrankHankProps, defaultSushiFamilyProps, defaultMechaTrioProps } from "./props";
+import { defaultMonsterTrioProps, defaultKenjiLeonTaraProps, defaultBibiFrankHankProps, defaultSushiFamilyProps, defaultMechaTrioProps, rangerRanchMonsterTrioProps, shamanTribeMonsterTrioProps } from "./props";
 import { MonsterTrioPhonkTemplate } from "./templates/MonsterTrioPhonkTemplate";
 
 export const MonsterTrioCompositions: React.FC = () => {
@@ -54,6 +54,26 @@ export const MonsterTrioCompositions: React.FC = () => {
         width={defaultMechaTrioProps.width}
         height={defaultMechaTrioProps.height}
         defaultProps={defaultMechaTrioProps}
+      />
+
+      <Composition
+        id="BrawlMonsterTrio-RangerRanch"
+        component={MonsterTrioPhonkTemplate}
+        durationInFrames={rangerRanchMonsterTrioProps.durationInFrames}
+        fps={rangerRanchMonsterTrioProps.fps}
+        width={rangerRanchMonsterTrioProps.width}
+        height={rangerRanchMonsterTrioProps.height}
+        defaultProps={rangerRanchMonsterTrioProps}
+      />
+
+      <Composition
+        id="BrawlMonsterTrio-ShamanTribe"
+        component={MonsterTrioPhonkTemplate}
+        durationInFrames={shamanTribeMonsterTrioProps.durationInFrames}
+        fps={shamanTribeMonsterTrioProps.fps}
+        width={shamanTribeMonsterTrioProps.width}
+        height={shamanTribeMonsterTrioProps.height}
+        defaultProps={shamanTribeMonsterTrioProps}
       />
     </>
   );
