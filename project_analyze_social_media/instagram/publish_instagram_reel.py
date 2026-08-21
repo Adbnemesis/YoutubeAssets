@@ -1,17 +1,13 @@
 """
-Instagram Automated Reels Publisher
------------------------------------
-Publishes or schedules Reels to Instagram via Meta Graph API.
-
-Features:
-- Supports direct local video files (--video) with automatic fast staging
-- Supports remote HTTPS video URLs (--video-url)
-- Monitors Meta video encoding container status in real-time
-- Publishes live to Instagram (@nemi.explains)
+Instagram & Facebook Automated Reels Publisher
+----------------------------------------------
+Publishes or schedules Reels to Instagram (@nemi.explains) and optionally
+cross-publishes directly to the connected Facebook Page.
 """
 
 import os
 import time
+import sys
 import argparse
 from pathlib import Path
 import requests
@@ -140,11 +136,11 @@ def publish_reel_container(account_id: str, access_token: str, container_id: str
         raise RuntimeError(f"Error publishing Reel: {resp['error'].get('message')}")
         
     published_media_id = resp["id"]
-    print(f" Success! Reel is published live! (Media ID: {published_media_id})", flush=True)
+    print(f" Success! Reel is published live to Instagram! (Media ID: {published_media_id})", flush=True)
     return published_media_id
 
 
-def publish_reel(video_url: str = None, video_path: str = None, caption: str = "", cover_url: str = None, share_to_feed: bool = True):
+def publish_reel(video_url: str = None, video_path: str = None, caption: str = "", cover_url: str = None, share_to_feed: bool = True, crosspost_fb: bool = False):
     access_token, account_id = get_credentials()
     
     if not video_url and video_path:
@@ -152,24 +148,32 @@ def publish_reel(video_url: str = None, video_path: str = None, caption: str = "
     elif not video_url:
         raise ValueError("Must provide either video_path or video_url!")
 
-    # Create container
+    # 1. Publish to Instagram
     container_id = create_reel_container(account_id, access_token, video_url, caption, cover_url, share_to_feed)
-    
-    # Wait for encoding
     wait_for_container_processing(container_id, access_token)
-    
-    # Publish live
-    media_id = publish_reel_container(account_id, access_token, container_id)
-    return media_id
+    ig_media_id = publish_reel_container(account_id, access_token, container_id)
+
+    # 2. Optionally Dual-Publish to Facebook Page
+    fb_video_id = None
+    if crosspost_fb:
+        try:
+            sys.path.append(str(BASE_DIR.parent / "facebook"))
+            from publish_facebook_reel import publish_facebook_reel
+            fb_video_id = publish_facebook_reel(video_url=video_url, description=caption)
+        except Exception as e:
+            print(f"⚠️ Warning: Could not cross-post to Facebook: {e}", flush=True)
+
+    return ig_media_id, fb_video_id
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Publish a Reel to Instagram")
+    parser = argparse.ArgumentParser(description="Publish a Reel to Instagram and optionally Facebook")
     parser.add_argument("--video", default=None, help="Path to local video file (.mp4)")
     parser.add_argument("--video-url", default=None, help="Publicly accessible HTTPS URL to the video file")
     parser.add_argument("--caption", default="", help="Reel caption and hashtags")
     parser.add_argument("--cover-url", default=None, help="Public HTTPS URL to custom cover image")
     parser.add_argument("--no-feed", action="store_true", help="Do not share to profile grid (Reels tab only)")
+    parser.add_argument("--crosspost-fb", action="store_true", help="Also publish as a Facebook Reel to connected Page")
 
     args = parser.parse_args()
 
@@ -178,5 +182,6 @@ if __name__ == "__main__":
         video_path=args.video,
         caption=args.caption,
         cover_url=args.cover_url,
-        share_to_feed=not args.no_feed
+        share_to_feed=not args.no_feed,
+        crosspost_fb=args.crosspost_fb
     )
