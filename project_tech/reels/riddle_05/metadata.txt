@@ -1,5 +1,5 @@
 ================================================================================
-NEMI EXPLAINS REEL #5 — PRODUCTION & SOCIAL METADATA
+NEMI EXPLAINS REEL #5 — PRODUCTION & SOCIAL METADATA (4K ULTRA-HD)
 ================================================================================
 
 TITLE:
@@ -8,11 +8,14 @@ Can You Solve This Deadly Riddle? The Dining Philosophers & System Deadlock 🍜
 HOOK LINE:
 "Can you solve this deadly riddle? Five masters sit at a table..."
 
+RESOLUTION:
+4K Ultra-HD Vertical: 2160 x 3840 @ 30 FPS
+
 DURATION:
 25.83 Seconds (775 Frames @ 30 FPS)
 
 RENDER OUTPUT:
-project_tech/out/NemiExplains_Riddle_Deadlock_20260821.mp4
+project_tech/out/NemiExplains_Riddle_Deadlock_4K_20260821.mp4 (13.4 MB, 2160x3840 4K UHD)
 
 AUDIO ASSETS:
 - Master Audio: project_tech/public/reels/riddle_05/riddle_master_audio.mp3
