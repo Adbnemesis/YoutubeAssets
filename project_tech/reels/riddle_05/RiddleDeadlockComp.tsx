@@ -3,7 +3,6 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
-  interpolateColors,
   spring,
   staticFile,
   useCurrentFrame,
@@ -56,13 +55,10 @@ export const RiddleDeadlockComp: React.FC = () => {
 
   const totalFrames = cuesData.total_frames || 775;
 
-  // ─── Camera Breathing / Dynamic Zoom ───
-  const cameraScale = interpolate(
-    frame,
-    [0, 45, evSetup.start_frame, evLeftGrab.start_frame, evCountdown.start_frame, evReveal.start_frame, totalFrames],
-    [1.0, 1.035, 1.015, 1.03, 1.04, 1.02, 1.0],
-    { extrapolateRight: "clamp" }
-  );
+  // ─── Smooth Steady Cinematic Camera (No Jerking / Wobble) ───
+  const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.02], {
+    extrapolateRight: "clamp",
+  });
 
   // ─── Nemi Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "thinking";
@@ -126,9 +122,38 @@ export const RiddleDeadlockComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* DYNAMIC AMBIENT NEURAL / CYBER BACKGROUND */}
+      {/* STATIC HIGH-RES STUDIO GLOW (NO FLICKERING ORBS) */}
       {/* ══════════════════════════════════════════════════════════ */}
-      <CyberBackground frame={frame} isDeadlock={frame >= evReveal.start_frame} />
+      <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
+        <div
+          style={{
+            position: "absolute",
+            top: 200,
+            left: -150,
+            width: 600,
+            height: 600,
+            borderRadius: "50%",
+            background: frame >= evReveal.start_frame
+              ? "radial-gradient(circle, rgba(244, 63, 94, 0.18) 0%, rgba(0,0,0,0) 70%)"
+              : "radial-gradient(circle, rgba(6, 182, 212, 0.15) 0%, rgba(0,0,0,0) 70%)",
+            filter: "blur(80px)",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 600,
+            right: -150,
+            width: 600,
+            height: 600,
+            borderRadius: "50%",
+            background: frame >= evReveal.start_frame
+              ? "radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(0,0,0,0) 70%)"
+              : "radial-gradient(circle, rgba(255, 209, 102, 0.12) 0%, rgba(0,0,0,0) 70%)",
+            filter: "blur(80px)",
+          }}
+        />
+      </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
       {/* TOP HUD (Safe Zone: top: 85px, sides: 70px) */}
@@ -153,7 +178,7 @@ export const RiddleDeadlockComp: React.FC = () => {
               borderRadius: "50%",
               backgroundColor: frame >= evReveal.start_frame ? nemiTheme.colors.brandCoral : nemiTheme.colors.brandYellow,
               boxShadow: `0 0 24px ${frame >= evReveal.start_frame ? nemiTheme.colors.brandCoral : nemiTheme.colors.brandYellow}`,
-              transform: `scale(${interpolate(frame % 20, [0, 10, 20], [1.0, 1.3, 1.0])})`,
+              transform: `scale(${interpolate(frame % 20, [0, 10, 20], [1.0, 1.25, 1.0])})`,
             }}
           />
           <span
@@ -171,7 +196,7 @@ export const RiddleDeadlockComp: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.92)",
+            backgroundColor: "rgba(15, 23, 42, 0.95)",
             padding: "12px 24px",
             borderRadius: 24,
             border: "2px solid #1E293B",
@@ -229,17 +254,17 @@ export const RiddleDeadlockComp: React.FC = () => {
         }}
       >
         {/* BEAT 1 & 2: THE 5 MASTERS TABLE & CIRCULAR TRAP */}
-        <StageWrapper frame={frame} startFrame={0} endFrame={evCountdown.start_frame + 4}>
+        <StageWrapper frame={frame} startFrame={0} endFrame={evCountdown.start_frame}>
           <Beat1PhilosophersTable frame={frame} fps={fps} evLeftGrab={evLeftGrab.start_frame} evStarve={evStarve.start_frame} />
         </StageWrapper>
 
         {/* BEAT 3: 3-SECOND TICKING COUNTDOWN & NEMI WRONG GUESS */}
-        <StageWrapper frame={frame} startFrame={evCountdown.start_frame} endFrame={evReveal.start_frame + 4}>
+        <StageWrapper frame={frame} startFrame={evCountdown.start_frame} endFrame={evReveal.start_frame}>
           <Beat2CountdownAndGuess frame={frame} fps={fps} startFrame={evCountdown.start_frame} nemiGuessFrame={evNemiGuess.start_frame} />
         </StageWrapper>
 
         {/* BEAT 4: THE REVELATION — OS THREAD DEADLOCK */}
-        <StageWrapper frame={frame} startFrame={evReveal.start_frame} endFrame={evPayoff.start_frame + 4}>
+        <StageWrapper frame={frame} startFrame={evReveal.start_frame} endFrame={evPayoff.start_frame}>
           <Beat3DeadlockMechanism frame={frame} fps={fps} startFrame={evReveal.start_frame} />
         </StageWrapper>
 
@@ -345,7 +370,7 @@ const Beat1PhilosophersTable: React.FC<{
   const isLeftGrabbed = frame >= evLeftGrab;
   const isStarving = frame >= evStarve;
 
-  // 5 Philosophers at 72 deg angles around center (240, 240)
+  // 5 Philosophers at 72 deg angles around center (240, 210)
   const philosophers = [
     { id: 0, label: "P1", angle: -90 },
     { id: 1, label: "P2", angle: -18 },
@@ -354,9 +379,9 @@ const Beat1PhilosophersTable: React.FC<{
     { id: 4, label: "P5", angle: 198 },
   ];
 
-  const tableRadius = 180;
+  const tableRadius = 160;
   const centerX = 240;
-  const centerY = 240;
+  const centerY = 210;
 
   return (
     <div
@@ -366,11 +391,11 @@ const Beat1PhilosophersTable: React.FC<{
         left: 65,
         right: 65,
         height: 520,
-        backgroundColor: "#070B12",
+        backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: `3.5px solid ${isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : "#06B6D4"}`,
-        boxShadow: `0 24px 70px ${isStarving ? "rgba(244, 63, 94, 0.4)" : "rgba(6, 182, 212, 0.35)"}`,
-        padding: "24px",
+        border: `3px solid ${isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : "#06B6D4"}`,
+        boxShadow: `0 24px 70px ${isStarving ? "rgba(244, 63, 94, 0.3)" : "rgba(6, 182, 212, 0.25)"}`,
+        padding: "24px 28px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -382,12 +407,12 @@ const Beat1PhilosophersTable: React.FC<{
       {/* Top Table Status Bar */}
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span style={{ fontSize: 30 }}>🥢</span>
+          <span style={{ fontSize: 28 }}>🥢</span>
           <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>The Dining Table</span>
         </div>
         <div
           style={{
-            backgroundColor: isStarving ? "rgba(244, 63, 94, 0.2)" : "rgba(6, 182, 212, 0.2)",
+            backgroundColor: isStarving ? "rgba(244, 63, 94, 0.25)" : "rgba(6, 182, 212, 0.2)",
             color: isStarving ? "#F43F5E" : "#06B6D4",
             border: `1.5px solid ${isStarving ? "#F43F5E" : "#06B6D4"}`,
             padding: "6px 14px",
@@ -402,21 +427,20 @@ const Beat1PhilosophersTable: React.FC<{
       </div>
 
       {/* SVG Circular Table Diagram */}
-      <div style={{ position: "relative", width: 480, height: 420 }}>
-        <svg width="480" height="420" viewBox="0 0 480 480">
+      <div style={{ position: "relative", width: 480, height: 390 }}>
+        <svg width="480" height="390" viewBox="0 0 480 420">
           {/* Outer Table Circle */}
           <circle
             cx={centerX}
             cy={centerY}
             r={tableRadius}
-            fill="#0F172A"
+            fill="#111C35"
             stroke={isStarving ? "#F43F5E" : "#1E293B"}
             strokeWidth="4"
-            strokeDasharray={isStarving ? "8 6" : "none"}
           />
 
           {/* Central Rice Bowl */}
-          <circle cx={centerX} cy={centerY} r={55} fill="#1E293B" stroke="#334155" strokeWidth="3" />
+          <circle cx={centerX} cy={centerY} r={50} fill="#1E293B" stroke="#334155" strokeWidth="3" />
           <text x={centerX} y={centerY + 8} textAnchor="middle" fill="#FFD166" fontSize="28" fontWeight="900">
             🍜
           </text>
@@ -426,12 +450,11 @@ const Beat1PhilosophersTable: React.FC<{
             <circle
               cx={centerX}
               cy={centerY}
-              r={tableRadius - 30}
+              r={tableRadius - 28}
               fill="none"
               stroke="#F43F5E"
               strokeWidth="4"
-              strokeDasharray="16 10"
-              transform={`rotate(${frame * 2} ${centerX} ${centerY})`}
+              strokeDasharray="14 8"
             />
           )}
 
@@ -445,14 +468,27 @@ const Beat1PhilosophersTable: React.FC<{
             const nextP = philosophers[(idx + 1) % 5];
             const midAngle = p.angle + 36;
             const midRad = (midAngle * Math.PI) / 180;
-            const cx = centerX + (tableRadius - 55) * Math.cos(midRad);
-            const cy = centerY + (tableRadius - 55) * Math.sin(midRad);
+            const cx = centerX + (tableRadius - 52) * Math.cos(midRad);
+            const cy = centerY + (tableRadius - 52) * Math.sin(midRad);
 
             return (
               <g key={p.id}>
+                {/* Left Grab Line when active */}
+                {isLeftGrabbed && (
+                  <line
+                    x1={px}
+                    y1={py}
+                    x2={cx}
+                    y2={cy}
+                    stroke="#FFD166"
+                    strokeWidth="4"
+                    strokeDasharray="4 2"
+                  />
+                )}
+
                 {/* Chopstick Icon */}
-                <circle cx={cx} cy={cy} r={22} fill={isLeftGrabbed ? "#FFD166" : "#334155"} />
-                <text x={cx} y={cy + 7} textAnchor="middle" fill="#0F172A" fontSize="18" fontWeight="900">
+                <circle cx={cx} cy={cy} r={20} fill={isLeftGrabbed ? "#FFD166" : "#334155"} />
+                <text x={cx} y={cy + 6} textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">
                   🥢
                 </text>
 
@@ -460,7 +496,7 @@ const Beat1PhilosophersTable: React.FC<{
                 <circle
                   cx={px}
                   cy={py}
-                  r={32}
+                  r={30}
                   fill={isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : "#06B6D4"}
                   stroke="#FFFFFF"
                   strokeWidth="3"
@@ -468,16 +504,6 @@ const Beat1PhilosophersTable: React.FC<{
                 <text x={px} y={py + 8} textAnchor="middle" fill="#0F172A" fontSize="20" fontWeight="900">
                   {isStarving ? "💀" : "🧙‍♂️"}
                 </text>
-
-                {/* Left Grab Arrow when active */}
-                {isLeftGrabbed && (
-                  <path
-                    d={`M ${px} ${py} L ${cx} ${cy}`}
-                    stroke="#FFD166"
-                    strokeWidth="3.5"
-                    strokeDasharray="4 2"
-                  />
-                )}
               </g>
             );
           })}
@@ -519,10 +545,10 @@ const Beat2CountdownAndGuess: React.FC<{
         left: 65,
         right: 65,
         height: 520,
-        backgroundColor: "#070B12",
+        backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: "3.5px solid #FFD166",
-        boxShadow: "0 28px 70px rgba(255, 209, 102, 0.4)",
+        border: "3px solid #FFD166",
+        boxShadow: "0 28px 70px rgba(255, 209, 102, 0.35)",
         padding: "32px",
         display: "flex",
         flexDirection: "column",
@@ -544,20 +570,19 @@ const Beat2CountdownAndGuess: React.FC<{
       {/* Massive Ticking Countdown Clock */}
       <div
         style={{
-          width: 170,
-          height: 170,
+          width: 160,
+          height: 160,
           borderRadius: "50%",
           backgroundColor: "#0F172A",
           border: "5px solid #FFD166",
-          boxShadow: "0 0 50px rgba(255, 209, 102, 0.6)",
+          boxShadow: "0 0 45px rgba(255, 209, 102, 0.5)",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          transform: `scale(${interpolate(frame % 20, [0, 10, 20], [1.0, 1.1, 1.0])})`,
         }}
       >
-        <span style={{ fontSize: 72, fontWeight: 900, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+        <span style={{ fontSize: 68, fontWeight: 900, color: "#FFD166", fontFamily: nemiTheme.typography.fontFamily.mono }}>
           {secondsLeft}
         </span>
         <span style={{ fontSize: 16, color: "#94A3B8", fontWeight: 800 }}>SECONDS</span>
@@ -568,7 +593,7 @@ const Beat2CountdownAndGuess: React.FC<{
         {isGuessActive ? (
           <div
             style={{
-              backgroundColor: "rgba(244, 63, 94, 0.2)",
+              backgroundColor: "rgba(244, 63, 94, 0.25)",
               border: "2.5px solid #F43F5E",
               borderRadius: 20,
               padding: "16px 24px",
@@ -578,7 +603,7 @@ const Beat2CountdownAndGuess: React.FC<{
               gap: 16,
             }}
           >
-            <span style={{ fontSize: 36 }}>❌</span>
+            <span style={{ fontSize: 34 }}>❌</span>
             <span style={{ fontSize: 26, fontWeight: 900, color: "#F43F5E" }}>
               WRONG GUESS: "Food Poisoning" 🙅‍♂️
             </span>
@@ -603,7 +628,6 @@ const Beat3DeadlockMechanism: React.FC<{
 }> = ({ frame, fps, startFrame }) => {
   const localFrame = frame - startFrame;
   const pop = spring({ frame: localFrame, fps, config: { damping: 14, stiffness: 120 } });
-  const pulse = interpolate(frame % 20, [0, 10, 20], [1.0, 1.03, 1.0]);
 
   return (
     <div
@@ -613,10 +637,10 @@ const Beat3DeadlockMechanism: React.FC<{
         left: 65,
         right: 65,
         height: 520,
-        backgroundColor: "#070B12",
+        backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: "3.5px solid #F43F5E",
-        boxShadow: "0 28px 80px rgba(244, 63, 94, 0.5)",
+        border: "3px solid #F43F5E",
+        boxShadow: "0 28px 80px rgba(244, 63, 94, 0.45)",
         padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
@@ -645,9 +669,8 @@ const Beat3DeadlockMechanism: React.FC<{
             backgroundColor: "#0F172A",
             padding: "20px",
             borderRadius: 22,
-            border: "2.5px solid #38BDF8",
-            boxShadow: "0 0 35px rgba(56, 189, 248, 0.3)",
-            transform: `scale(${pulse})`,
+            border: "2px solid #38BDF8",
+            boxShadow: "0 0 30px rgba(56, 189, 248, 0.25)",
           }}
         >
           <div style={{ fontSize: 22, fontWeight: 900, color: "#38BDF8" }}>🧵 THREAD A</div>
@@ -661,9 +684,8 @@ const Beat3DeadlockMechanism: React.FC<{
             backgroundColor: "#0F172A",
             padding: "20px",
             borderRadius: 22,
-            border: "2.5px solid #A855F7",
-            boxShadow: "0 0 35px rgba(168, 85, 247, 0.3)",
-            transform: `scale(${pulse})`,
+            border: "2px solid #A855F7",
+            boxShadow: "0 0 30px rgba(168, 85, 247, 0.25)",
           }}
         >
           <div style={{ fontSize: 22, fontWeight: 900, color: "#C084FC" }}>🧵 THREAD B</div>
@@ -718,10 +740,10 @@ const Beat4SummaryCard: React.FC<{
         left: 65,
         right: 65,
         height: 520,
-        backgroundColor: "#070B12",
+        backgroundColor: "#0B1120",
         borderRadius: 32,
-        border: "3.5px solid #10B981",
-        boxShadow: "0 28px 80px rgba(16, 185, 129, 0.4)",
+        border: "3px solid #10B981",
+        boxShadow: "0 28px 80px rgba(16, 185, 129, 0.35)",
         padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
@@ -857,7 +879,7 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
     >
       <div
         style={{
-          backgroundColor: "rgba(10, 15, 30, 0.88)",
+          backgroundColor: "rgba(10, 15, 30, 0.92)",
           backdropFilter: "blur(20px)",
           borderRadius: 24,
           border: "2px solid rgba(255, 209, 102, 0.55)",
@@ -907,44 +929,6 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
 };
 
 // ═══════════════════════════════════════════════════════════════
-// CYBER / ICE BLUE BACKGROUND PARTICLES
-// ═══════════════════════════════════════════════════════════════
-const CyberBackground: React.FC<{ frame: number; isDeadlock: boolean }> = ({ frame, isDeadlock }) => {
-  const orbColor = isDeadlock ? "rgba(244, 63, 94, 0.3)" : "rgba(6, 182, 212, 0.25)";
-  const orb1Y = 300 + Math.sin(frame * 0.05) * 40;
-  const orb2Y = 800 + Math.cos(frame * 0.04) * 50;
-
-  return (
-    <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
-      <div
-        style={{
-          position: "absolute",
-          top: orb1Y,
-          left: -100,
-          width: 480,
-          height: 480,
-          borderRadius: "50%",
-          background: `radial-gradient(circle, ${orbColor} 0%, rgba(0,0,0,0) 70%)`,
-          filter: "blur(60px)",
-        }}
-      />
-      <div
-        style={{
-          position: "absolute",
-          top: orb2Y,
-          right: -100,
-          width: 480,
-          height: 480,
-          borderRadius: "50%",
-          background: `radial-gradient(circle, ${isDeadlock ? "rgba(56, 189, 248, 0.25)" : "rgba(255, 209, 102, 0.2)"} 0%, rgba(0,0,0,0) 70%)`,
-          filter: "blur(60px)",
-        }}
-      />
-    </div>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════════
 // SILKY SMOOTH STAGE WRAPPER
 // ═══════════════════════════════════════════════════════════════
 const StageWrapper: React.FC<{
@@ -953,30 +937,21 @@ const StageWrapper: React.FC<{
   startFrame: number;
   endFrame: number;
 }> = ({ children, frame, startFrame, endFrame }) => {
-  if (frame < startFrame - 8 || frame > endFrame + 8) {
+  if (frame < startFrame - 4 || frame > endFrame + 4) {
     return null;
   }
 
-  const enterOpacity = interpolate(frame, [startFrame, startFrame + 8], [0, 1], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-  const enterY = interpolate(frame, [startFrame, startFrame + 8], [25, 0], {
+  const enterOpacity = interpolate(frame, [startFrame, startFrame + 6], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const exitOpacity = interpolate(frame, [endFrame - 6, endFrame], [1, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-  const exitY = interpolate(frame, [endFrame - 6, endFrame], [0, -25], {
+  const exitOpacity = interpolate(frame, [endFrame - 4, endFrame], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
   const opacity = Math.min(enterOpacity, exitOpacity);
-  const translateY = enterY + exitY;
 
   return (
     <div
@@ -984,7 +959,6 @@ const StageWrapper: React.FC<{
         position: "absolute",
         inset: 0,
         opacity,
-        transform: `translateY(${translateY}px)`,
         pointerEvents: opacity > 0.1 ? "auto" : "none",
       }}
     >
