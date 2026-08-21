@@ -1,38 +1,52 @@
-# NEMI EXPLAINS — QUALITY CONTROL & 16-DIMENSION EVALUATION RUBRIC
+# 🔍 NEMI EXPLAINS — QUALITY CONTROL & 3-4s RETENTION AUDIT CHECKLIST
 
-## 1. The 16-Dimension Evaluation Rubric
-Every completed Reel render must be evaluated against all 16 dimensions before publishing:
-
-| Dimension | Min Standard | Key Criteria |
-|:---|:---:|:---|
-| **1. Hook** | `9/10` | Immediate motion in frame 0, high visual stakes, problem established by second 3. |
-| **2. Curiosity** | `8/10` | An unanswered question that makes the brain need to stay for the payoff. |
-| **3. Participation** | `8/10` | Interactive moment with a deliberate 0.6–0.8s gap for audience mental prediction. |
-| **4. Story Progression** | `9/10` | Clear cause-and-effect micro-story arc without static lecture pauses. |
-| **5. Scene Variety** | `8/10` | At least 7 distinct visual modes; no single composition exceeds 3.5 seconds. |
-| **6. Nemi Character** | `9/10` | Nemi acts as viewer avatar (curious, makes assumption, surprised, celebrates). |
-| **7. Voice Intelligibility** | `9/10` | Clear, natural cadence without awkward robotic word-by-word fragmentation. |
-| **8. BGM Presence** | `8/10` | Music is rich and audible (-14 LUFS master) and ducks dynamically under speech. |
-| **9. SFX Punctuation** | `8/10` | Restrained sound effects highlight key narrative events (impact, laser, pop, chime). |
-| **10. Audio/Visual Sync** | `9/10` | Psychological synchronization: audio creates anticipation, visuals provide answer. |
-| **11. Visual Clarity** | `9/10` | Clean typography, high contrast, balanced vertical layout across the 1080x1920 canvas. |
-| **12. Technical Accuracy** | `10/10` | 100% verified computer science accuracy. Zero fake or misleading claims. |
-| **13. Payoff Satisfaction** | `9/10` | Clear mental model resolution, satisfying memory cleanup/transformation. |
-| **14. Brand Identity** | `9/10` | Distinctive cream/charcoal/yellow color tokens and unmistakable Nemi mascot. |
-| **15. Shareability (DMs)** | `8/10` | Surprising insight that engineers send to coworkers ("Did you know this?"). |
-| **16. Sponsor Friendliness** | `8/10` | Premium, brand-safe environment suited for high-ticket B2B developer tools. |
+Before any reel is approved for render, upload, or broadcast, it must achieve **100% compliance** across the **5 Quality Control Pillars**:
 
 ---
 
-## 2. Permanent Regression Checklist
-Before certifying any render for release:
-- [ ] Nemi visual identity preserved (Cream `#F8F6F0`, Charcoal `#18181B`, Yellow `#FFD166`).
-- [ ] Chatterbox expressive voiceover clearly audible.
-- [ ] Integrated loudness measured between `-13.5` and `-14.5` LUFS.
-- [ ] True peak measured $\le -1.5$ dBTP (zero clipping).
-- [ ] Duration strictly within `20.0s – 25.0s`.
-- [ ] Scene diversity script passes with 0 critical errors.
-- [ ] No static scene longer than 3.5 continuous seconds.
-- [ ] Viewer participation gap included before reveal.
-- [ ] Mute test passed (visual story readable with sound muted).
-- [ ] Audio-only test passed (narration flows as a coherent story).
+## 🛑 Pillar 1: The 3-4s Retention Audit (Eliminating Swipes)
+
+- [ ] **Frame 0 Auditory Impact:** Audio (Voice + SFX impact) starts immediately at Frame 0 (0ms dead air).
+- [ ] **Frame 0 Visual Interest:** No blank screens or static title cards. Camera zoom (`1.0x -> 1.05x`) is active.
+- [ ] **Misconception-First Copy:** The hook establishes a cognitive contradiction within 1.5 seconds.
+- [ ] **First Visual Cut/Change by Second 2.0:** A visual state change occurs within the first 60 frames.
+- [ ] **Curiosity Gap Locked by Second 3.5:** The viewer knows the core question they are investing time to discover.
+
+---
+
+## 🛡️ Pillar 2: 4-Edge Safe-Zone Validation
+
+- [ ] **Top Safe Inset (`85px - 90px`):** Top HUD and category pills clear all phone status bars and dynamic islands.
+- [ ] **Headline Safe Inset (`165px`):** Topic title has at least 15px clearance below the top HUD.
+- [ ] **Horizontal Gutters (`65px - 70px`):** No text, buttons, or critical visual cards touch the left/right 65px margins.
+- [ ] **Captions Band (`top: 1140px`):** Word-by-word karaoke pill sits cleanly in the empty middle-lower band.
+- [ ] **Mascot & Bubble Zone (`bottom: 70px` / `bottom: 440px`):** Speech bubble is positioned strictly above Nemi's head without overlapping the captions above.
+
+---
+
+## 🔊 Pillar 3: Audio & Sound Design Audit
+
+- [ ] **Audible Background Music:** BGM volume is set to `0.50 – 0.55` (upbeat 110–130 BPM).
+- [ ] **Musical Sidechain Ducking:** FFmpeg filter configured with `threshold=0.08:ratio=2.5:attack=35:release=160` (BGM remains clearly audible throughout).
+- [ ] **Integrated SFX Volume:** All sound effects (whoosh, pop, notification, chime, click) set to `0.95 – 1.0`.
+- [ ] **Voice Track Loudness:** Normalized to `-16.0 LUFS` ($\pm 0.5$ LUFS).
+- [ ] **Master Audio Loudness:** Calibrated to `-15.0 LUFS` (`TP = -1.5 dBTP`).
+- [ ] **Zero Voice Overlap:** Minimum 120ms gap between narrator and mascot lines.
+
+---
+
+## 💬 Pillar 4: Kinetic Karaoke Captions Audit
+
+- [ ] **Word Alignment:** Whisper millisecond timestamps correctly extracted and stored in `_cues.json`.
+- [ ] **Active Word Highlighting:** Active word scales smoothly (`1.18x`) and lights up in Gold (`#FFD166`) / Cyan (`#06B6D4`).
+- [ ] **Text Size & Readability:** Caption font size is at least `32px` bold with dark frosted container.
+- [ ] **Mascot Speech Coordination:** Caption pill automatically hides when Nemi's yellow speech bubble is active.
+
+---
+
+## 🧮 Pillar 5: Technical Engine & Composition Audit
+
+- [ ] **Pacing & Duration:** Total reel duration is **strictly 23.5s – 25.8s** (<26s @ 30fps).
+- [ ] **Visual Velocity:** Visual state changes occur every 1.5 – 2.5 seconds (at least 8–10 distinct visual states).
+- [ ] **Manim Cutaways (If Applicable):** 3–5s Manim `.mp4` rendered at 1080x540 / 30fps with dark background (`#070B12`).
+- [ ] **Infinite Replay Loop:** Outro sentence connects back logically to the opening hook.

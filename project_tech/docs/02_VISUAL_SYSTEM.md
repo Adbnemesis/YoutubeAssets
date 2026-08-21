@@ -1,39 +1,77 @@
-# NEMI EXPLAINS — VISUAL DESIGN SYSTEM & DESIGN TOKENS
+# 🎨 NEMI EXPLAINS — VISUAL DESIGN SYSTEM & 4-EDGE SAFE ZONE TOKENS
+
+> Sources: OpenMontage `skills/creative/typography.md`, `skills/creative/short-form.md`, `skills/creative/data-visualization.md`.
+
+---
 
 ## 1. Color Palette Tokens
 
-### Backgrounds
-* **Warm Designer Cream (Primary Stage):** `#F8F6F0`
-* **Deep Studio Dark (Technical Stage):** `#0D1117` / `#18181B`
-* **Surface Glass Panels:** `rgba(24, 24, 27, 0.94)`
-* **Muted Borders:** `rgba(0, 0, 0, 0.08)` (Cream) / `rgba(255, 255, 255, 0.12)` (Dark)
+### Canvas & Backgrounds
+* **Warm Designer Cream (Light Mode / Hook):** `#FAF8F5`
+* **Deep Studio Dark (Technical Stage / Dark Mode):** `#070B12` / `#0F172A`
+* **Card Surface (Light):** `#FFFFFF` (Border: `#E2E8F0`)
+* **Card Surface (Dark):** `#0F172A` (Border: `#1E293B`)
+* **Frosted Glass Pill:** `rgba(10, 15, 30, 0.88)` (Blur: `20px`, Border: `2px solid rgba(168, 85, 247, 0.55)`)
 
 ### Brand & Semantic Accents
-* **Signature Electric Yellow:** `#FFD166` (Glow: `#FFE484`) — Key emphasis, brand badge, high-energy focal points.
-* **Logic Cyan:** `#06B6D4` (Glow: `#22D3EE`) — Root objects, memory pointers, scanning laser.
-* **Reachable / Success Emerald:** `#10B981` (Glow: `#34D399`) — Live memory, survived objects, valid paths.
-* **Garbage / Bug Coral:** `#F43F5E` (Glow: `#FB7185`) — Unreachable nodes, memory leaks, wrong assumptions.
-* **Warm Peach:** `#FFCDB2` — Nemi face, subtle highlight tags.
+* **Signature Electric Yellow:** `#FFD166` — Key emphasis, brand badge, speech bubble, active caption highlight.
+* **Logic Cyan:** `#06B6D4` — Secondary highlight, pointers, memory addresses.
+* **Neural Purple:** `#A855F7` — Transformer weights, architecture badges, attention laser beams.
+* **Success Emerald:** `#10B981` — Winning tokens, optimal $O(1)$ solutions, verified states.
+* **Alert Coral / Red:** `#EF4444` / `#F43F5E` — $O(N^2)$ traps, misconceptions, wrong paths.
 
 ---
 
-## 2. Typography Hierarchy
-* **Display / Hero Headlines:** `Inter` (900 Black) / `-apple-system` — Letter spacing `-2px` to `-2.5px`, line-height `1.12`.
-* **Technical Labels & Tags:** `JetBrains Mono` / `Fira Code` (Bold 800) — Letter spacing `1.5px` to `2.0px`.
-* **Code Blocks & Memory Addresses:** `JetBrains Mono` (Bold 700).
+## 2. Ultra-Scale Typography Tokens (+20% Scale Standard)
+
+Mobile screens require large, bold typography for instant legibility while scrolling:
+
+| UI Element | Font Size | Weight | Styling & Tracking |
+|---|---|---|---|
+| **Main Topic Headline** | **`56px - 60px`** | `fontWeight: 900` | `letterSpacing: -1.5px`, dual-tone accent |
+| **HUD Category Tag** | **`26px`** | `fontWeight: 900` | Uppercase, glowing indicator dot (`18px`) |
+| **HUD Stage Badge** | **`20px`** | `fontWeight: 900` | `padding: "12px 24px"`, Mono |
+| **Card Header Titles** | **`26px - 28px`** | `fontWeight: 900` | `letterSpacing: 1.5px`, uppercase |
+| **Primary Numbers & Array Values** | **`28px - 34px`** | `fontWeight: 900` | Mono, glowing badge containers |
+| **Body Explanations** | **`19px - 21px`** | `fontWeight: 700 - 800` | Crisp `#94A3B8` / `#64748B` |
+| **Dynamic Karaoke Captions** | **`32px`** | `fontWeight: 900` | Glowing `#FFD166` / `#06B6D4` active word |
+| **Nemi Mascot Scale** | **`1.65`** | — | Bottom-center dock with organic breathing |
+| **Nemi Speech Bubble** | **`32px`** | `fontWeight: 900` | `padding: "16px 36px"`, Brand Yellow |
 
 ---
 
-## 3. Motion Physics & Remotion Springs
-* **Snappy Pop:** `{ damping: 12, stiffness: 220, mass: 0.6 }` — Card entries, badge pops, Nemi speech bubbles.
-* **Bouncy Character:** `{ damping: 9, stiffness: 190, mass: 0.8 }` — Nemi head tilts, reaction bounces.
-* **Smooth Camera / Layout Transition:** `{ damping: 14, stiffness: 140, mass: 0.9 }` — Compaction sliding, scene layout shifts.
+## 3. Mobile 9:16 Safe-Zone Coordinate Architecture (1080x1920)
+
+```
+┌────────────────────────────────────────────────────────┐  Y = 0px
+│ [TOP INSET: 85px] Top Phone Status Bar & Header Safe   │
+│   • HUD Category & Stage Pill (Top: 85px)              │
+│   • Main Topic Headline (Top: 165px)                   │
+├────────────────────────────────────────────────────────┤  Y = 360px
+│ [MAIN CARD STAGE: Top 360px - 880px]                   │
+│   • Remotion Interactive Cards OR                      │
+│   • Manim Rendered Cutaway Video (1080x540)            │
+├────────────────────────────────────────────────────────┤  Y = 920px
+│ [MID-SCREEN DYNAMIC BADGES: Top 920px - 1100px]        │
+│   • Interactive flow arrows & state pills              │
+├────────────────────────────────────────────────────────┤  Y = 1140px
+│ [DYNAMIC KARAOKE CAPTIONS: Top 1140px - 1280px]        │
+│   • Dedicated non-overlapping subtitle pill            │
+├────────────────────────────────────────────────────────┤  Y = 1320px
+│ [SPEECH BUBBLE ZONE: Bottom: 440px]                    │
+│   • Yellow punchline bubble on top of Nemi             │
+├────────────────────────────────────────────────────────┤  Y = 1440px
+│ [MASCOT DOCK: Bottom: 70px]                            │
+│   • Nemi Mascot Head (Scale: 1.65)                     │
+│ [BOTTOM INSET: 70px] Instagram Caption & Marquee Safe  │
+└────────────────────────────────────────────────────────┘  Y = 1920px
+```
 
 ---
 
-## 4. Canvas Geometry & Safe Zones
-* **Resolution:** `1080 x 1920` (9:16 Vertical Video)
-* **Frame Rate:** `30 fps`
-* **Top Header Safe Zone:** Top 60px–180px
-* **Center Action Canvas:** Top 320px–1380px
-* **Bottom Character & Watermark Zone:** Top 1400px–1860px
+## 4. Deterministic Motion & Physics
+
+* **Snappy Spring Pop:** `{ damping: 14, stiffness: 120 }` — Card appearances and modal pop-ups.
+* **Word Karaoke Scale:** `interpolate(frame - w.start_frame, [0, 3, 7], [1.0, 1.18, 1.08])` — Active word punch.
+* **Stage Transitions:** Cross-fade using `StageWrapper` parallax sliding (`translateY: 25px -> 0px -> -25px`, `opacity: 0 -> 1 -> 0`).
+* **Continuous Camera Breathing:** Subtle zoom ramp (`1.0x -> 1.035x -> 1.0x`) across the duration of the reel.

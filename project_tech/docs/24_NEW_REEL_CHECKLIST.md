@@ -1,50 +1,64 @@
-# 📋 NEMI EXPLAINS — NEW REEL PRODUCTION CHECKLIST
-> **PURPOSE:** Step-by-step operational guide for producing a brand-new Nemi Explains episode on ANY topic.
+# 📋 NEMI EXPLAINS — STEP-BY-STEP REEL CREATION CHECKLIST
+
+Use this exact step-by-step procedure to conceive, engineer, and render every new reel:
 
 ---
 
-## PHASE 1: RESEARCH & STORY ARCHITECTURE
-- [ ] **1. Select Topic & Angle:** Pick topic from `docs/24_CONTENT_IDEA_MATRIX.md` or define a new core technical paradox/mystery.
-- [ ] **2. Authoritative Fact-Check:** Verify against official RFCs, engine sources (V8, CPython, Linux Kernel, IEEE 754), and eliminate universal oversimplifications.
-- [ ] **3. Select Narrative Archetype:** Match to 1 of 8 Story Archetypes (`Mystery`, `Hidden Journey`, `Transformation`, `Duel`, `Challenge`, `Wrong Assumption`, `Behind the Scenes`, `Escalation`).
-- [ ] **4. Draft 5-Beat Storyboard:**
-  - Beat 1 (Hook): Scroll-stopping contradiction or glitch (0.0s – 3.5s).
-  - Beat 2 (Core Dilemma): Why does this happen? (3.5s – 7.5s).
-  - Beat 3 (Physical Mechanism): Unfold the physical world / data stream (7.5s – 13.0s).
-  - Beat 4 (The Revelation / Collision): Show the exact moment of failure or resolution (13.0s – 17.5s).
-  - Beat 5 (Payoff & Takeaway): High-density practical takeaway + Nemi reaction (17.5s – 22.0s).
+## Phase 1: Scripting & Concept Architecture
+- [ ] **Choose Topic:** Focus strictly on **Tech / AI / DSA / Computer Science**.
+- [ ] **Draft Misconception-First Hook:** Frame 0 contradiction + voice starts immediately at Frame 0.
+- [ ] **Write "But-Therefore" Script:** 6 to 8 tight events totaling **65–75 words** (~24–25.5s at 180-200 WPM).
+- [ ] **Assign Mascot Punchline:** Ensure Nemi delivers the emotional realization ("96 layers?! 🤯") and final technical punchline.
+- [ ] **Draft Infinite Loop:** Outro sentence connects back to the opening line.
 
 ---
 
-## PHASE 2: AUDIO SYNTHESIS & TIMELINE MAPPING
-- [ ] **5. Write Script in 3–5 Coherent Narrator Blocks:** Avoid 1-sentence micro-clips. Write natural continuous narration.
-- [ ] **6. Add 2–3 Reactive Nemi Moments:** Keep Nemi spoken lines short, reactive, and personality-driven (`< 1.5s`).
-- [ ] **7. Synthesize Chatterbox Voice:** Run TTS script using `tech_voice_profile.json` normalized to `-16.0 LUFS`.
-- [ ] **8. Generate Dynamic Audio Mix & Timeline Cues:**
-  - Map semantic cue frames into `nemi_vXX_cues.json`.
-  - Mix dynamic BGM envelope curve via `mix_vXX_audio.py` (audible bed with climax swell and sidechain ducking).
-- [ ] **9. Verify 0.00ms Speaker Overlap:** Ensure zero accidental collision between narrator and Nemi speech.
+## Phase 2: Audio Synthesis & Word-Level Alignment
+- [ ] **Configure `generate_audio.py`:**
+  - Narrator blocks in `Chatterbox Neural TTS` (`exaggeration=0.55 - 0.65`).
+  - Nemi blocks in `Edge-TTS en-US-AnaNeural` (`pitch=+12Hz`, `rate=+20%`).
+  - Select upbeat BGM track from `assets/background_music/`.
+- [ ] **Run Audio Pipeline:**
+  - Normalize voice to `-16.0 LUFS`.
+  - Apply gentle musical sidechain ducking (`volume=0.52`, `ratio=2.5:1`, `threshold=0.08`, `attack=35ms`, `release=160ms`).
+  - Master audio exported to `-15.0 LUFS`.
+- [ ] **Extract Subtitles with `faster_whisper`:**
+  - Automatically extract millisecond word timestamps and 3-5 word phrase chunks into `src/data/<reel>_cues.json`.
 
 ---
 
-## PHASE 3: REMOTION 9:16 VERTICAL CHOREOGRAPHY
-- [ ] **10. Build Full-Screen Component:** Create `src/compositions/NemiExplains[Topic]Comp.tsx`.
-- [ ] **11. Apply 4-Zone Canvas Distribution:**
-  - Top Zone (Y: 60–340): Brand badge & punchy headline.
-  - Upper-Middle Zone (Y: 380–840): Primary hero console / conveyor / chassis.
-  - Center / Lower-Middle (Y: 840–1200): Nemi placed dynamically next to active elements (not parked in footer!).
-  - Lower-Third Zone (Y: 1320–1600): Secondary educational context card.
-  - Bottom Zone (Y: 1800+): Minimal watermark.
-- [ ] **12. Implement Continuous Camera Transforms:** Add subtle push/pull/pan/follow interpolations.
-- [ ] **13. Register in `src/Root.tsx`:** Set target frames at 30fps ($18\text{s} - 24\text{s}$ total runtime).
+## Phase 3: Visual Engineering (Manim + Remotion)
+- [ ] **Determine if Manim is needed:**
+  - If topic involves math proofs, matrix transforms, or tree/graph algorithms, write Python Manim script and render to `1080x540 / 30fps`.
+- [ ] **Build Remotion Composition (`<ReelComp>.tsx`):**
+  - Use `StageWrapper` for seamless scene cross-fades.
+  - Mount dynamic cards or embedded Manim `<OffthreadVideo>`.
+  - Add `DynamicKaraokeCaptions` at `top: 1140px` (hidden when `nemiSpeech` is active).
+  - Add synchronized SFX sequences (whoosh, pop, click, chime).
+- [ ] **Register Composition in `src/Root.tsx`:**
+  - Set `durationInFrames` matching `total_frames` from `_cues.json`.
 
 ---
 
-## PHASE 4: QUALITY CONTROL & BROADCAST AUDIT
-- [ ] **14. Render Keyframe Stills (6 Frames):** Visually inspect composition, text contrast, and mascot acting.
-- [ ] **15. Run Automated QA Engine:** Execute `python3 scripts/qa_engine.py` (checks overlap, duration, loudness, and anti-slideshow rules).
-- [ ] **16. Render Master MP4:** Execute `npx remotion render src/index.ts [CompositionId] out/[FileName].mp4`.
-- [ ] **17. Broadcast Loudness Audit:** Run `ffmpeg -af loudnorm` to verify Integrated Loudness $-16 \pm 1$ LUFS and True Peak $\le -1.5$ dBTP.
-- [ ] **18. Mobile Playback Review:** Watch on a mobile screen to verify scroll-stop power and readability.
-- [ ] **19. Documentation & Case Study:** Create `docs/reels/[topic_slug]/V01.md` and log score on Master Scorecard.
-- [ ] **20. Generate Copy-Paste `metadata.txt`:** Create `reels/[topic_slug]/metadata.txt` with formatted Instagram Reel caption, cover text, hashtags, pinned comment, and YouTube Shorts/TikTok metadata.
+## Phase 4: Verification & Still Audits
+- [ ] **Render 5 Critical Still Frames:**
+  - Frame 45 (Hook & light mode prompt).
+  - Frame 200 (Core insight card).
+  - Frame 400 (Deep architecture / Manim cutaway).
+  - Frame 600 (Mascot reaction with speech bubble).
+  - Frame 720 (Final summary payoff).
+- [ ] **Verify Safe-Zone Compliance:**
+  - Check that no text touches the top 85px, bottom 70px, or left/right 65px margins.
+  - Confirm captions sit cleanly without overlapping cards above or Nemi below.
+
+---
+
+## Phase 5: Master Render & Publication
+- [ ] **Render Master MP4:**
+  ```bash
+  npx remotion render src/index.ts <CompID> out/<VideoName>.mp4
+  ```
+- [ ] **Publish via Social Media Tools:**
+  - Instagram Reel: `python instagram/publish_instagram_reel.py --video out/...`
+  - YouTube Short: `python youtube/nemi_explains/publish_youtube_video.py --video out/... --privacy unlisted`
+- [ ] **Record Metadata & Links:** Update `reels/<reel_id>/metadata.txt` and commit to Git.
