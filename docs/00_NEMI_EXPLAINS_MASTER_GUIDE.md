@@ -1,14 +1,44 @@
-# 📘 NEMI EXPLAINS — MASTER PRODUCTION & DESIGN SYSTEM GUIDE
+# 📘 NEMI EXPLAINS — MASTER PRODUCTION & HIGH-RETENTION SYSTEM GUIDE
 
-This document serves as the official specification, aesthetic rulebook, and engineering architecture for all videos produced under the **`@nemi.explains`** brand.
+This document serves as the official specification, aesthetic rulebook, viral psychology framework, and engineering architecture for all videos produced under the **`@nemi.explains`** brand.
 
 ---
 
-## 🛡️ 1. Instagram / Shorts / TikTok 4-Edge Safe Zone Architecture
+## 🚀 1. The High-Retention Blueprint: Eliminating the 3-4s Drop-off
 
-Vertical 9:16 mobile video viewports (1080x1920) have native UI overlays and physical device cutouts (notch, dynamic island, status bar, bottom swipe bar, and right-hand engagement rails: like/comment/share buttons). 
+> **Algorithm Reality:** Short-form viewers on Instagram Reels, YouTube Shorts, and TikTok make the decision to swipe or stay within **1.7 seconds** (70%+ drop-off if hook fails). An average view duration of 3–4 seconds means the hook was too passive or visual velocity was too slow.
 
-To prevent content cropping on any mobile screen, all elements must strictly respect the **4-Edge Safe Margins**:
+To achieve **75%+ 3-Second Retention** and **60%+ Full Completion**, every reel strictly executes the **OpenMontage Viral Short-Form Framework**:
+
+```
+[0.0s - 1.5s]  ⚡ FRAME-1 HOOK IMPACT
+               - Visual: High-contrast pattern interrupt + immediate camera punch-in (1.0 -> 1.05x).
+               - Audio: Sub-impact SFX + crisp voiceover starts at FRAME 0 (Zero dead air).
+               - Psychological: Misconception-First / Contradiction Hook ("Stop thinking X does Y!").
+
+[1.5s - 6.0s]  🔓 THE CURIOSITY GAP & INFORMATION TENSION
+               - "Here's what everyone gets wrong..." Show the naive failure or mystery.
+               - Visual velocity: 2 visual state changes within the first 4 seconds.
+
+[6.0s - 18.0s] 🧠 PROGRESSIVE REVELATION (Visual Change every 1.5 - 2.5s)
+               - Show, don't tell: Dynamic Manim math transforms / animated UI / live interactive state.
+               - The "But-Therefore" momentum engine (no boring "and then" transitions).
+
+[18.0s - 22.0s] 💡 THE "AHA!" MOMENT & MASCOT EMOTIONAL REACTION
+               - Nemi Mascot delivers the shocking realization ("96 layers of math?! 🤯").
+
+[22.0s - 25.5s] 🏆 PAYOFF & SEAMLESS REPLAY LOOP
+               - Nemi delivers the smug technical punchline.
+               - Final sentence connects back to the opening sentence for an infinite replay loop!
+```
+
+---
+
+## 🛡️ 2. Instagram / Shorts / TikTok 4-Edge Safe Zone Architecture
+
+Vertical 9:16 mobile video viewports (1080x1920) have native UI overlays (notch, dynamic island, status bar, bottom caption marquee, and right-hand engagement rails).
+
+All elements must strictly respect the **4-Edge Safe Margins**:
 
 | Safe Zone Boundary | Padding / Offset | Protected Content |
 |---|---|---|
@@ -23,53 +53,40 @@ To prevent content cropping on any mobile screen, all elements must strictly res
 
 ---
 
-## 💬 2. Dynamic Viral Karaoke Captions System
+## 💬 3. Dynamic Viral Karaoke Captions System
 
-Viral short-form content demands rapid, punchy, and highly legible on-screen captions:
+Captions are mandatory (**80%+ of users scroll muted initially**):
 
-1. **Dedicated Non-Overlapping Safe Zone:**
-   - Captions are anchored at **`top: 1140px`**, in the clear visual band between the mid-screen badges (`920px - 1100px`) and Nemi's mascot head.
-   - **Zero Overlap Guarantee:** Captions never collide with the main cards above or Nemi / Speech Bubble below.
-2. **Word-by-Word Highlight Animation:**
-   - Each spoken word scales up smoothly (`interpolate(frame - w.start_frame, [0, 3, 7], [1.0, 1.18, 1.08])`). Words **never scale below `1.0`** so text is always 100% visible.
-   - Active words light up in **Vibrant Gold (`#FFD166`)** or **Electric Cyan (`#06B6D4`)** with a glowing drop shadow (`textShadow: 0 0 20px ...`).
-   - Inactive words remain crisp silver-white (`#F8FAFC`) with dark text-shadow for razor-sharp legibility against all backgrounds.
-3. **Frosted Glass Container:**
-   - Background: `rgba(10, 15, 30, 0.88)`
-   - Backdrop Filter: `blur(20px)`
-   - Border: `2px solid rgba(168, 85, 247, 0.55)`
-   - Border Radius: `24px`
-   - Shadow: `0 14px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(168, 85, 247, 0.25)`
-4. **Smart Mascot Coordination:**
-   - The caption pill automatically hides (`!nemiSpeech`) when Nemi's yellow speech bubble is active to prevent redundant/duplicate on-screen text.
-5. **Automated Timestamp Extraction:**
-   - Generated with millisecond accuracy using `faster_whisper` (`base` model, `int8` on CPU) and grouped into 3–5 word phrase chunks in `src/data/<reel>_cues.json`.
+1. **Dedicated Safe Zone (`top: 1140px`):** Positioned in the clear visual band between mid-screen badges and Nemi's head. Zero overlap with cards or speech bubbles.
+2. **Word-by-Word Highlight Animation:** Spoken words punch smoothly with `1.18x` spring physics. Active words light up in **Vibrant Gold (`#FFD166`)** or **Electric Cyan (`#06B6D4`)** with glowing drop shadows.
+3. **Frosted Glass Container:** `rgba(10, 15, 30, 0.88)` with `blur(20px)`, subtle purple border, and soft drop shadow.
+4. **Smart Mascot Coordination:** Automatically hides (`!nemiSpeech`) when Nemi's yellow speech bubble is active to eliminate duplicate text clutter.
+5. **Whisper Precision:** Generated with millisecond-accuracy using `faster_whisper` on CPU (`int8`), grouped into 3–5 word punchy chunks.
 
 ---
 
-## 🔊 3. Audio, Voice & SFX Engineering
+## 🔊 4. Multi-Layered Sound Design & Audio Engineering
+
+Audio drives over **50% of emotional retention**. We follow the OpenMontage Sound Design Skill:
 
 1. **Dual-Voice Character Setup:**
-   - **Narrator:** Deep, authoritative tech documentary voice via `Chatterbox Neural TTS` (`exaggeration=0.55 - 0.65`).
-   - **Nemi Mascot:** Cute, expressive mascot via `Edge-TTS en-US-AnaNeural` (`pitch=+12Hz`, `rate=+18%` to `+20%`).
-   - **Mascot Dialogue Rule:** Nemi strictly delivers emotional punchlines, surprise reactions, and closing technical payoffs (e.g. *"Pure Transformer architecture! 😎⚡"*).
-2. **Audible & Musical Background Music Mix:**
-   - BGM Volume: `0.50 - 0.55` (ensures the melody, groove, and rhythm are clearly audible).
-   - Sidechain Compression Filter:
-     ```bash
-     [bgm][voice_sc]sidechaincompress=threshold=0.08:ratio=2.5:attack=35:release=160[ducked_bgm]
-     ```
-   - **Result:** Gentle, musical ducking during voice segments while keeping the music energized and audible throughout the reel.
-   - Master Target Loudness: `-15.0 LUFS` (`TP=-1.5`, `LRA=7`).
-3. **High-Impact SFX Layer:**
-   - All SFX volumes boosted to `0.90 - 1.0` (typing `0.95`, whoosh `1.0`, pop `1.0`, notification `1.0`, click `1.0`, chime `1.0`).
-   - Sound effects are frame-synchronized to visual changes (typing, matrix pop, layer glow, winner token reveal).
+   - **Narrator:** Authoritative tech documentary voice via `Chatterbox Neural TTS` (`exaggeration=0.55 - 0.65`). Paced at **180-200 WPM** (energetic, zero dead air).
+   - **Nemi Mascot:** Expressive mascot via `Edge-TTS en-US-AnaNeural` (`pitch=+12Hz`, `rate=+20%`). Strictly delivers reactions and punchlines.
+2. **Layered Sound Effects (SFX):**
+   - **Transition Whooshes (`1.0` vol):** Starts 15ms before visual cut.
+   - **Pops & Plucks (`1.0` vol):** Triggers on text/badge reveals.
+   - **Notification/Chime (`1.0` vol):** Triggers on "Aha!" insights.
+   - **Typing SFX (`0.95` vol):** Frame-synced to prompt inputs.
+3. **Audible Background Music (BGM) with Musical Ducking:**
+   - Base volume: `0.50 - 0.55` (upbeat 110-130 BPM).
+   - Sidechain Compression: `threshold=0.08:ratio=2.5:attack=35ms:release=160ms`.
+   - Target Loudness: `-15.0 LUFS` (`TP=-1.5 dBTP`).
 
 ---
 
-## 🧮 4. Hybrid Manim + Remotion Visual Architecture
+## 🧮 5. Hybrid Manim + Remotion Visual Architecture
 
-For deep mathematical, vector, and algorithmic concepts, we leverage a **Hybrid Pipeline** combining **Manim (Python)** and **Remotion (React/TypeScript)**:
+For deep math, vector spaces, and algorithm proofs, we deploy **Manim (Python)** inside **Remotion**:
 
 ```
 ┌────────────────────────────────────────────────────────┐
@@ -91,9 +108,7 @@ For deep mathematical, vector, and algorithmic concepts, we leverage a **Hybrid 
 └────────────────────────────────────────────────────────┘
 ```
 
-### When to Use Manim vs. Native Remotion Components:
-
-| Scenario / Visual Requirement | Recommended Engine | Rationale |
+| Visual Requirement | Recommended Engine | Rationale |
 |---|---|---|
 | **App UI, Chat interfaces, Web mockups** | **Remotion** | Native CSS, flexbox, pixel-perfect modern web cards |
 | **Nemi Mascot, Reactions, Speech Bubbles** | **Remotion** | SVG spring physics, eye-tracking, dialogue sync |
@@ -104,25 +119,9 @@ For deep mathematical, vector, and algorithmic concepts, we leverage a **Hybrid 
 | **LaTeX Equation Transformations** | **Manim** | `TransformMatchingTex` morphing symbols dynamically |
 | **Big-O Growth Curves & Asymptotics** | **Manim** | Mathematical plotting ($O(1)$ vs $O(N)$ vs $O(N^2)$) |
 
-### Manim Asset Integration Workflow:
-1. **Script the Scene:** Write the Python scene in `reels/<reel_id>/manim/<scene_name>.py`.
-2. **Render Resolution:** Render at 1080x1080 (1:1 square) or 1080x600 card ratio at 30fps:
-   ```bash
-   manim -qh -r 1080,600 --fps 30 scene.py MainCardScene -o card_clip.mp4
-   ```
-3. **Embed in Remotion:** Place the clip inside Remotion's main stage container:
-   ```tsx
-   <OffthreadVideo
-     src={staticFile("reels/my_reel/manim/card_clip.mp4")}
-     style={{ width: "100%", height: "100%", borderRadius: 28 }}
-   />
-   ```
-
 ---
 
-## 📐 5. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
-
-All components strictly adhere to the following **High-Visibility Token Standards**:
+## 📐 6. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
 
 | Element | Size | Weight / Styling |
 |---|---|---|
@@ -135,22 +134,6 @@ All components strictly adhere to the following **High-Visibility Token Standard
 | **Karaoke Captions** | `32px` | `fontWeight: 900`, `#FFD166` / `#06B6D4` active highlight |
 | **Nemi Mascot Scale** | `1.65` | Dedicated bottom-center dock with organic breathing |
 | **Nemi Speech Bubble** | `32px` | `padding: "16px 36px"`, `fontWeight: 900`, brand yellow |
-
----
-
-## 🎨 6. Design Aesthetics & Visual Blueprint
-
-1. **Airy, Breathable Negative Space (Zero Heavy Solid Black Rectangles):**
-   - Never use massive solid black cards covering the middle canvas.
-   - Use clean, transparent glassmorphic pills with glowing borders (`border: "2px solid rgba(...)"`).
-2. **Deterministic Frame-by-Frame Motion:**
-   - Never use CSS transitions for positions or opacity.
-   - Always use Remotion `interpolate()` or `spring()` with `extrapolateLeft: "clamp"`.
-3. **Continuous World Stage Manager:**
-   - Multi-beat scenes cross-fade smoothly using `StageWrapper` parallax sliding (`translateY: 25px -> 0px -> -25px`, `opacity: 0 -> 1 -> 0`).
-4. **Curiosity-Driven Scripting for Tech / AI / DSA:**
-   - Explain real computer science architectures clearly and simply (e.g. Attention context disambiguation, 96 Layers / 175B weights, 15ms sampling).
-   - Target reel duration: **24.0s – 26.0s** (fast-paced, high retention, under 26s).
 
 ---
 
