@@ -1,42 +1,31 @@
 ================================================================================
-NEMI EXPLAINS REEL #5 — PUBLISHING RECORD & METADATA
+NEMI EXPLAINS REEL #5 — LIVE PUBLISHING COMPLETE
 ================================================================================
 
 TITLE:
-Can You Solve This Deadly Riddle? 🍜💀 (The System Deadlock) #shorts
+Can You Solve This Deadly Riddle? 🍜💀 (The System Deadlock)
 
-STATUS & LINKS:
-- YouTube Shorts (Unlisted): https://youtu.be/GtDqQAsOMck (Video ID: GtDqQAsOMck)
-- Master 4K Video File: project_tech/out/NemiExplains_Riddle_Deadlock_4K_20260821.mp4 (18.9 MB)
-- High-Speed Video Staging CDN: https://files.catbox.moe/s7q0rv.mp4
+PLATFORM LINKS:
+1. 📸 INSTAGRAM REELS (LIVE):
+   - Account: @nemi.explains
+   - Link: https://www.instagram.com/reel/DcTkaQ3AAcq/
+   - Media ID: 17947446531271415
 
---------------------------------------------------------------------------------
-YOUTUBE SHORTS (PUBLISHED AS UNLISTED)
---------------------------------------------------------------------------------
-Channel: Nemi Explains
-Privacy: Unlisted
-Link: https://youtu.be/GtDqQAsOMck
-Category: Science & Technology (28)
+2. 📺 YOUTUBE SHORTS (UNLISTED):
+   - Channel: Nemi Explains
+   - Link: https://youtu.be/GtDqQAsOMck
+   - Video ID: GtDqQAsOMck
+   - Privacy: Unlisted
 
-Title:
-Can You Solve This Deadly Riddle? 🍜💀 (The System Deadlock) #shorts
-
-Description:
-Can you solve the 5-chopstick riddle? Five masters sit at a table, grab the chopstick to their left, and starve waiting for the right one. What curse killed them? 
-
-Learn how the classic Dining Philosophers problem explains why multi-threaded operating systems and servers freeze in a System Deadlock, and the 4 Coffman conditions to prevent it!
-
-Subscribe to @NemiExplains for fast, visual coding breakdowns! 🚀
-
-#Shorts #coding #programming #computerscience #deadlock #softwareengineer #tech
+ASSETS & SPECS:
+- Master 4K Video: project_tech/out/NemiExplains_Riddle_Deadlock_4K_20260821.mp4 (18.9 MB)
+- Staged CDN: https://files.catbox.moe/s7q0rv.mp4
+- Resolution: 2160 x 3840 (4K Vertical UHD @ 30 FPS)
+- Duration: 25.88s (775 frames)
 
 --------------------------------------------------------------------------------
-INSTAGRAM REELS SPECIFICATION (@nemi.explains)
+PUBLISHED CAPTION & HASHTAGS
 --------------------------------------------------------------------------------
-Status: Meta Graph API Token Refresh Required ("API access blocked")
-CDN Staged Video: https://files.catbox.moe/s7q0rv.mp4
-
-Caption:
 Can you solve this 50-year-old deadly riddle? 🤔🍜
 
 Five masters sit at a circular table. To eat, each master needs two chopsticks. Every master grabs the chopstick to their left simultaneously... and now all five wait forever for the right one. Nobody drops theirs, and all five starve.
