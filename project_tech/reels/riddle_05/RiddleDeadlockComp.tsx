@@ -60,7 +60,6 @@ export const RiddleDeadlockComp: React.FC = () => {
   const totalFrames = cuesData.total_frames || 775;
 
   // ─── SILKY SMOOTH COLOR INTERPOLATION (Light -> Dark Transition) ───
-  // Starts in crisp Light Studio (#FAF8F5), transitions to Deep Cyber Dark (#070B12) when the left grab trap begins
   const darkProgress = interpolate(
     frame,
     [evLeftGrab.start_frame - 15, evLeftGrab.start_frame + 15],
@@ -92,7 +91,7 @@ export const RiddleDeadlockComp: React.FC = () => {
     [nemiTheme.colors.borderLight, nemiTheme.colors.borderDark]
   );
 
-  // ─── Rock-Solid Cinematic Camera (Continuous subtle drift, NO wobble) ───
+  // ─── Rock-Solid Cinematic Camera ───
   const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.018], {
     extrapolateRight: "clamp",
   });
@@ -136,8 +135,23 @@ export const RiddleDeadlockComp: React.FC = () => {
       <Sequence from={0} durationInFrames={35}>
         <Audio src={staticFile("reels/riddle_05/sfx/whoosh.mp3")} volume={1.0} />
       </Sequence>
-      <Sequence from={evSetup.start_frame} durationInFrames={30}>
-        <Audio src={staticFile("reels/riddle_05/sfx/pop.mp3")} volume={1.0} />
+      <Sequence from={35} durationInFrames={25}>
+        <Audio src={staticFile("reels/riddle_05/sfx/pop.mp3")} volume={0.9} />
+      </Sequence>
+      <Sequence from={45} durationInFrames={25}>
+        <Audio src={staticFile("reels/riddle_05/sfx/pop.mp3")} volume={0.9} />
+      </Sequence>
+      <Sequence from={55} durationInFrames={25}>
+        <Audio src={staticFile("reels/riddle_05/sfx/pop.mp3")} volume={0.9} />
+      </Sequence>
+      <Sequence from={65} durationInFrames={25}>
+        <Audio src={staticFile("reels/riddle_05/sfx/pop.mp3")} volume={0.9} />
+      </Sequence>
+      <Sequence from={75} durationInFrames={25}>
+        <Audio src={staticFile("reels/riddle_05/sfx/pop.mp3")} volume={0.9} />
+      </Sequence>
+      <Sequence from={95} durationInFrames={30}>
+        <Audio src={staticFile("reels/riddle_05/sfx/notification.mp3")} volume={0.95} />
       </Sequence>
       <Sequence from={evLeftGrab.start_frame} durationInFrames={35}>
         <Audio src={staticFile("reels/riddle_05/sfx/whoosh.mp3")} volume={1.0} />
@@ -159,7 +173,7 @@ export const RiddleDeadlockComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STATIC HIGH-RES STUDIO GLOW (Clean & Perfectly Stable) */}
+      {/* STATIC HIGH-RES STUDIO GLOW */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5, opacity: darkProgress }}>
         <div
@@ -223,7 +237,7 @@ export const RiddleDeadlockComp: React.FC = () => {
               fontSize: 26,
               fontWeight: 900,
               letterSpacing: "1.5px",
-              color: frame >= evReveal.start_frame ? nemiTheme.colors.brandCoral : "#EAB308",
+              color: frame >= evReveal.start_frame ? nemiTheme.colors.brandCoral : "#D97706",
               textTransform: "uppercase",
             }}
           >
@@ -330,7 +344,6 @@ export const RiddleDeadlockComp: React.FC = () => {
 
         {/* ══════════════════════════════════════════════════════ */}
         {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
-        {/* Non-flickering continuous container */}
         {/* ══════════════════════════════════════════════════════ */}
         {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} fps={fps} />}
       </div>
@@ -350,6 +363,22 @@ export const RiddleDeadlockComp: React.FC = () => {
           zIndex: 60,
         }}
       >
+        {/* Bouncy Floating Question Mark in Hook (Frames 0-35) */}
+        {frame < 40 && (
+          <div
+            style={{
+              position: "absolute",
+              top: -60,
+              display: "flex",
+              gap: 12,
+              animation: "bounce 1s infinite",
+            }}
+          >
+            <span style={{ fontSize: 36, filter: "drop-shadow(0 4px 12px rgba(245, 158, 11, 0.5))" }}>❓</span>
+            <span style={{ fontSize: 44, transform: "translateY(-10px)", filter: "drop-shadow(0 4px 12px rgba(245, 158, 11, 0.6))" }}>🤔</span>
+            <span style={{ fontSize: 36, filter: "drop-shadow(0 4px 12px rgba(245, 158, 11, 0.5))" }}>❓</span>
+          </div>
+        )}
         <NemiMascot pose={nemiPose} scale={1.65} />
       </div>
 
@@ -402,7 +431,7 @@ export const RiddleDeadlockComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// STAGE 1: THE 5 PHILOSOPHERS TABLE WITH SEAMLESS LIGHT->DARK THEME
+// STAGE 1: THE 5 PHILOSOPHERS TABLE WITH KINETIC HOOK & SPAWNS
 // ═══════════════════════════════════════════════════════════════
 const Beat1PhilosophersTable: React.FC<{
   frame: number;
@@ -429,16 +458,24 @@ const Beat1PhilosophersTable: React.FC<{
 
   // 5 Philosophers at 72 deg angles around center (240, 210)
   const philosophers = [
-    { id: 0, label: "P1", angle: -90 },
-    { id: 1, label: "P2", angle: -18 },
-    { id: 2, label: "P3", angle: 54 },
-    { id: 3, label: "P4", angle: 126 },
-    { id: 4, label: "P5", angle: 198 },
+    { id: 0, label: "1", angle: -90, spawnFrame: 35 },
+    { id: 1, label: "2", angle: -18, spawnFrame: 45 },
+    { id: 2, label: "3", angle: 54, spawnFrame: 55 },
+    { id: 3, label: "4", angle: 126, spawnFrame: 65 },
+    { id: 4, label: "5", angle: 198, spawnFrame: 75 },
   ];
 
   const tableRadius = 160;
   const centerX = 240;
   const centerY = 210;
+
+  // Frame 0-35 Hook: Animated Mystery Badge
+  const isHookIntro = frame < 36;
+  const hookPop = spring({ frame, fps, config: { damping: 12, stiffness: 140 } });
+
+  // Steam floating animation for the ramen bowl
+  const steamY1 = (frame * 1.5) % 30;
+  const steamY2 = ((frame + 15) * 1.5) % 30;
 
   return (
     <div
@@ -492,8 +529,49 @@ const Beat1PhilosophersTable: React.FC<{
         </div>
       </div>
 
-      {/* SVG Circular Table Diagram */}
+      {/* SVG Circular Table Diagram with High-Energy Kinetic Drop-ins */}
       <div style={{ position: "relative", width: 480, height: 390 }}>
+        {/* Frame 0-35 Hook Badge Overlay */}
+        {isHookIntro && (
+          <div
+            style={{
+              position: "absolute",
+              top: 60,
+              left: 30,
+              right: 30,
+              backgroundColor: "rgba(255, 255, 255, 0.98)",
+              borderRadius: 24,
+              border: "3.5px solid #F59E0B",
+              boxShadow: "0 20px 50px rgba(245, 158, 11, 0.4)",
+              padding: "24px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              transform: `scale(${hookPop})`,
+              zIndex: 50,
+            }}
+          >
+            <span style={{ fontSize: 48 }}>🤔❓</span>
+            <span style={{ fontSize: 28, fontWeight: 900, color: "#92400E", marginTop: 8, textAlign: "center" }}>
+              50-YEAR-OLD RIDDLE
+            </span>
+            <div
+              style={{
+                backgroundColor: "#FEF3C7",
+                border: "1.5px solid #FCD34D",
+                padding: "6px 16px",
+                borderRadius: 12,
+                fontSize: 15,
+                color: "#B45309",
+                fontWeight: 900,
+                marginTop: 8,
+              }}
+            >
+              🔥 99% OF PROGRAMMERS FAIL!
+            </div>
+          </div>
+        )}
+
         <svg width="480" height="390" viewBox="0 0 480 420">
           {/* Outer Table Circle */}
           <circle
@@ -505,11 +583,28 @@ const Beat1PhilosophersTable: React.FC<{
             strokeWidth="4"
           />
 
-          {/* Central Rice Bowl */}
-          <circle cx={centerX} cy={centerY} r={50} fill={darkProgress < 0.5 ? "#E2E8F0" : "#1E293B"} stroke={darkProgress < 0.5 ? "#CBD5E1" : "#334155"} strokeWidth="3" />
-          <text x={centerX} y={centerY + 8} textAnchor="middle" fill="#FFD166" fontSize="28" fontWeight="900">
-            🍜
-          </text>
+          {/* Central Rice Bowl with Animated Steam */}
+          <g>
+            <circle cx={centerX} cy={centerY} r={50} fill={darkProgress < 0.5 ? "#E2E8F0" : "#1E293B"} stroke={darkProgress < 0.5 ? "#CBD5E1" : "#334155"} strokeWidth="3" />
+            <text x={centerX} y={centerY + 8} textAnchor="middle" fill="#FFD166" fontSize="28" fontWeight="900">
+              🍜
+            </text>
+            {/* Rising Steam Lines */}
+            <path
+              d={`M ${centerX - 12} ${centerY - 25 - steamY1} Q ${centerX - 6} ${centerY - 35 - steamY1} ${centerX - 12} ${centerY - 45 - steamY1}`}
+              stroke="#CBD5E1"
+              strokeWidth="2.5"
+              fill="none"
+              opacity={Math.max(0, 1 - steamY1 / 30)}
+            />
+            <path
+              d={`M ${centerX + 12} ${centerY - 25 - steamY2} Q ${centerX + 18} ${centerY - 35 - steamY2} ${centerX + 12} ${centerY - 45 - steamY2}`}
+              stroke="#CBD5E1"
+              strokeWidth="2.5"
+              fill="none"
+              opacity={Math.max(0, 1 - steamY2 / 30)}
+            />
+          </g>
 
           {/* Circular Red Dependency Arrows when Starving */}
           {isStarving && (
@@ -524,18 +619,33 @@ const Beat1PhilosophersTable: React.FC<{
             />
           )}
 
-          {/* Render 5 Philosophers & 5 Chopsticks */}
+          {/* Render 5 Philosophers & 5 Chopsticks with Drop-in Animation */}
           {philosophers.map((p, idx) => {
             const rad = (p.angle * Math.PI) / 180;
             const px = centerX + tableRadius * Math.cos(rad);
             const py = centerY + tableRadius * Math.sin(rad);
 
             // Chopstick angle halfway between this and next philosopher
-            const nextP = philosophers[(idx + 1) % 5];
             const midAngle = p.angle + 36;
             const midRad = (midAngle * Math.PI) / 180;
             const cx = centerX + (tableRadius - 52) * Math.cos(midRad);
             const cy = centerY + (tableRadius - 52) * Math.sin(midRad);
+
+            // Staggered drop-in scale for philosophers in the first 5 seconds
+            const philosopherPop = spring({
+              frame: frame - p.spawnFrame,
+              fps,
+              config: { damping: 12, stiffness: 130 },
+            });
+            const pScale = frame >= p.spawnFrame ? Math.min(1.0, Math.max(0, philosopherPop)) : 0;
+
+            // Chopsticks fly in starting at frame 90
+            const chopstickPop = spring({
+              frame: frame - (90 + idx * 4),
+              fps,
+              config: { damping: 12, stiffness: 130 },
+            });
+            const cScale = frame >= (90 + idx * 4) ? Math.min(1.0, Math.max(0, chopstickPop)) : (frame >= 36 ? 0.6 : 0);
 
             return (
               <g key={p.id}>
@@ -552,24 +662,37 @@ const Beat1PhilosophersTable: React.FC<{
                   />
                 )}
 
-                {/* Chopstick Icon */}
-                <circle cx={cx} cy={cy} r={20} fill={isLeftGrabbed ? "#FFD166" : darkProgress < 0.5 ? "#CBD5E1" : "#334155"} />
-                <text x={cx} y={cy + 6} textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">
-                  🥢
-                </text>
+                {/* Chopstick Icon with Elastic Entry */}
+                <g transform={`translate(${cx}, ${cy}) scale(${cScale}) translate(${-cx}, ${-cy})`}>
+                  <circle cx={cx} cy={cy} r={20} fill={isLeftGrabbed ? "#FFD166" : darkProgress < 0.5 ? "#CBD5E1" : "#334155"} />
+                  <text x={cx} y={cy + 6} textAnchor="middle" fill="#0F172A" fontSize="16" fontWeight="900">
+                    🥢
+                  </text>
+                </g>
 
-                {/* Philosopher Node */}
-                <circle
-                  cx={px}
-                  cy={py}
-                  r={30}
-                  fill={isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : darkProgress < 0.5 ? "#0284C7" : "#06B6D4"}
-                  stroke="#FFFFFF"
-                  strokeWidth="3"
-                />
-                <text x={px} y={py + 8} textAnchor="middle" fill="#0F172A" fontSize="20" fontWeight="900">
-                  {isStarving ? "💀" : "🧙‍♂️"}
-                </text>
+                {/* Philosopher Node with Staggered Drop-in */}
+                <g transform={`translate(${px}, ${py}) scale(${pScale}) translate(${-px}, ${-py})`}>
+                  <circle
+                    cx={px}
+                    cy={py}
+                    r={32}
+                    fill={isStarving ? "#F43F5E" : isLeftGrabbed ? "#FFD166" : darkProgress < 0.5 ? "#0284C7" : "#06B6D4"}
+                    stroke="#FFFFFF"
+                    strokeWidth="3.5"
+                  />
+                  <text x={px} y={py + 8} textAnchor="middle" fill="#0F172A" fontSize="20" fontWeight="900">
+                    {isStarving ? "💀" : "🧙‍♂️"}
+                  </text>
+                  {/* Master ID Badge */}
+                  {!isStarving && (
+                    <g transform={`translate(${px + 22}, ${py - 22})`}>
+                      <circle cx={0} cy={0} r={12} fill="#F59E0B" stroke="#FFFFFF" strokeWidth="2" />
+                      <text x={0} y={4} textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="900">
+                        {p.label}
+                      </text>
+                    </g>
+                  )}
+                </g>
               </g>
             );
           })}
@@ -923,7 +1046,6 @@ const MidScreenDynamicBadges: React.FC<{
 
 // ═══════════════════════════════════════════════════════════════
 // DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px, sides: 65px)
-// Seamless chunk switching with zero flicker gaps
 // ═══════════════════════════════════════════════════════════════
 const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
   const subtitles = cuesData.subtitles || [];
@@ -1002,7 +1124,7 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
 };
 
 // ═══════════════════════════════════════════════════════════════
-// SILKY SMOOTH CROSS-FADE STAGE WRAPPER (ZERO BLACK GAPS)
+// SILKY SMOOTH CROSS-FADE STAGE WRAPPER
 // ═══════════════════════════════════════════════════════════════
 const StageWrapper: React.FC<{
   children: React.ReactNode;
