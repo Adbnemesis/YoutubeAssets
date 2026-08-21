@@ -15,7 +15,7 @@ To prevent content cropping on any mobile screen, all elements must strictly res
 | **Top Safe Inset** | **`85px - 90px`** | Clears phone status bar, camera hole-punch, and Instagram top header |
 | **Topic Title Inset** | **`165px - 170px`** | Guaranteed clean breathing room under HUD |
 | **Horizontal Gutters (Left & Right)** | **`65px - 70px`** | Shields cards & labels from Instagram's right-side interaction rail and curved screen corners |
-| **Main Card Top Anchor** | **`380px`** (Height: `520px - 540px`) | Perfect vertical balance between header and mid-screen |
+| **Main Card Top Anchor** | **`380px`** (Height: `520px - 540px`) | Perfect vertical balance between header and mid-screen (Embeds Remotion UI or Manim cutaways) |
 | **Mid-Screen Dynamic Visuals** | **`top: 920px - 1100px`** | Interactive badges, relationship arrows, and state pills |
 | **Viral Karaoke Captions Zone** | **`top: 1140px - 1280px`** | Dedicated clear band above Nemi with zero asset overlap |
 | **Nemi Mascot Dock** | **`bottom: 70px`** | Dedicated bottom-center dock with organic breathing |
@@ -67,7 +67,60 @@ Viral short-form content demands rapid, punchy, and highly legible on-screen cap
 
 ---
 
-## 📐 4. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
+## 🧮 4. Hybrid Manim + Remotion Visual Architecture
+
+For deep mathematical, vector, and algorithmic concepts, we leverage a **Hybrid Pipeline** combining **Manim (Python)** and **Remotion (React/TypeScript)**:
+
+```
+┌────────────────────────────────────────────────────────┐
+│                   MANIM (Python Engine)                │
+│  - Mathematical proofs & LaTeX morphs                  │
+│  - Vector embeddings & 3D Loss landscapes              │
+│  - Graph & Tree Traversals (Dijkstra, BFS, AVL trees)   │
+│  - Matrix multiplications (Q x K^T Attention)          │
+└──────────────────────────┬─────────────────────────────┘
+                           │ Renders 3-5s MP4 Card Asset
+                           ▼
+┌────────────────────────────────────────────────────────┐
+│                 REMOTION (Master Stage)                │
+│  - 9:16 Vertical Safe-Zone Layout (1080x1920)          │
+│  - Nemi Mascot character animations & speech bubbles   │
+│  - Word-by-word viral karaoke captions                │
+│  - Top Category HUD & animated stage cards             │
+│  - Synchronized SFX & Master Audio ducking             │
+└────────────────────────────────────────────────────────┘
+```
+
+### When to Use Manim vs. Native Remotion Components:
+
+| Scenario / Visual Requirement | Recommended Engine | Rationale |
+|---|---|---|
+| **App UI, Chat interfaces, Web mockups** | **Remotion** | Native CSS, flexbox, pixel-perfect modern web cards |
+| **Nemi Mascot, Reactions, Speech Bubbles** | **Remotion** | SVG spring physics, eye-tracking, dialogue sync |
+| **Viral Karaoke Captions & Safe-Zone HUDs** | **Remotion** | Dynamic text layout, viewport constraints, backdrop blurs |
+| **Vector Space Projections & Embeddings** | **Manim** | High-dimensional geometric transforms, cosine distances |
+| **Self-Attention Heatmaps & Dot Products** | **Manim** | Smooth matrix multiplication animations ($QK^T / \sqrt{d}$) |
+| **Graph & Tree Algorithms (Trees, Pointers)** | **Manim** | Graph node traversals, pointer shifting, edge weighting |
+| **LaTeX Equation Transformations** | **Manim** | `TransformMatchingTex` morphing symbols dynamically |
+| **Big-O Growth Curves & Asymptotics** | **Manim** | Mathematical plotting ($O(1)$ vs $O(N)$ vs $O(N^2)$) |
+
+### Manim Asset Integration Workflow:
+1. **Script the Scene:** Write the Python scene in `reels/<reel_id>/manim/<scene_name>.py`.
+2. **Render Resolution:** Render at 1080x1080 (1:1 square) or 1080x600 card ratio at 30fps:
+   ```bash
+   manim -qh -r 1080,600 --fps 30 scene.py MainCardScene -o card_clip.mp4
+   ```
+3. **Embed in Remotion:** Place the clip inside Remotion's main stage container:
+   ```tsx
+   <OffthreadVideo
+     src={staticFile("reels/my_reel/manim/card_clip.mp4")}
+     style={{ width: "100%", height: "100%", borderRadius: 28 }}
+   />
+   ```
+
+---
+
+## 📐 5. Visual Hierarchy & High-Visibility Typography Rules (Ultra-Scale Standard)
 
 All components strictly adhere to the following **High-Visibility Token Standards**:
 
@@ -85,7 +138,7 @@ All components strictly adhere to the following **High-Visibility Token Standard
 
 ---
 
-## 🎨 5. Design Aesthetics & Visual Blueprint
+## 🎨 6. Design Aesthetics & Visual Blueprint
 
 1. **Airy, Breathable Negative Space (Zero Heavy Solid Black Rectangles):**
    - Never use massive solid black cards covering the middle canvas.
@@ -101,12 +154,13 @@ All components strictly adhere to the following **High-Visibility Token Standard
 
 ---
 
-## 🎬 6. Production Catalog
+## 🎬 7. Production Catalog
 
-| Reel # | Composition ID | Topic | Duration | BGM Track | Master Video |
-|---|---|---|---|---|---|
-| **#1** | `NemiExplainsCaptcha` | How CAPTCHA Knows You're Human (Micro-Tremors) | `22.79s` (683f) | *Synthwave Goose - Blade Runner 2049* | `out/NemiExplains_Captcha_20260817.mp4` |
-| **#2** | `NemiExplainsGoogle` | What Happens When You Type google.com? (64ms Journey) | `19.72s` (592f) | *Synthwave Goose - Blade Runner 2049* | `out/NemiExplains_Google_20260818.mp4` |
-| **#3** | `NemiExplainsTwoSum` | Two Sum: The $O(N^2)$ Trap vs The 1-Pass Hash Map (LeetCode #1) | `24.47s` (734f) | *Synthwave Goose - Blade Runner 2049* | `out/NemiExplains_TwoSum_20260818.mp4` |
-| **#4** | `NemiExplainsChatGPT` | How ChatGPT ACTUALLY Works: The Transformer Network | `25.61s` (768f) | *Death of a Bluebird - Rorschach Roy 4.mp3* | `out/NemiExplains_ChatGPT_20260820.mp4` |
+| Reel # | Composition ID | Topic | Duration | Visual Engine | BGM Track | Master Video |
+|---|---|---|---|---|---|---|
+| **#1** | `NemiExplainsCaptcha` | How CAPTCHA Knows You're Human (Micro-Tremors) | `22.79s` (683f) | Remotion UI | *Synthwave Goose - Blade Runner 2049* | `out/NemiExplains_Captcha_20260817.mp4` |
+| **#2** | `NemiExplainsGoogle` | What Happens When You Type google.com? (64ms Journey) | `19.72s` (592f) | Remotion UI | *Synthwave Goose - Blade Runner 2049* | `out/NemiExplains_Google_20260818.mp4` |
+| **#3** | `NemiExplainsTwoSum` | Two Sum: $O(N^2)$ Trap vs 1-Pass Hash Map (LeetCode #1) | `24.47s` (734f) | Remotion DSA | *Synthwave Goose - Blade Runner 2049* | `out/NemiExplains_TwoSum_20260818.mp4` |
+| **#4** | `NemiExplainsChatGPT` | How ChatGPT ACTUALLY Works: The Transformer Network | `25.61s` (768f) | Remotion AI + Captions | *Death of a Bluebird - Rorschach Roy 4.mp3* | `out/NemiExplains_ChatGPT_20260820.mp4` |
+| **#5+** | *(Upcoming)* | Binary Search Trees / Backpropagation / Hash Collisions | `~24-25s` | **Hybrid Manim + Remotion** | *TBD Curated Track* | *In Development* |
 
