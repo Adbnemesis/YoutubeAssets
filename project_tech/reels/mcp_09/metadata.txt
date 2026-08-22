@@ -1,0 +1,31 @@
+================================================================================
+NEMI EXPLAINS — REEL #9 METADATA
+================================================================================
+
+TITLE:
+MCP vs API: What's the Actual Difference? (USB-C for AI Models)
+
+HOOK (0-3s):
+"MCP versus API: what's the actual difference?"
+
+SHORT DESCRIPTION / CAPTION (Instagram / Facebook / YouTube):
+Why is everyone building MCP servers if we already have APIs? 🤯
+
+Here is the secret:
+📦 Traditional REST APIs were built for human programmers writing fixed backend code. You have to hardcode endpoints, manage custom auth tokens, and rewrite SDKs for every new tool ($N \times M$ integration hell).
+
+🔌 MCP (Model Context Protocol) is like USB-C for AI models. It connects your AI Agent directly to tools, databases, and files with dynamic runtime auto-discovery (`tools/list` & `tools/call`) — zero backend rewrites required!
+
+APIs connect apps to apps.
+MCP connects AI to the world! ⚡️
+
+Follow @nemi.explains for deep technical insights made ridiculously simple! 🚀
+
+HASHTAGS:
+#mcp #modelcontextprotocol #api #restapi #aiengineering #softwareengineering #anthropic #claude #systemdesign #coding #webdev #developers #techtrends #programming #tech #nemiexplains
+
+YOUTUBE TAGS:
+mcp vs api, what is mcp, model context protocol explained, rest api vs mcp, claude mcp, anthropic model context protocol, cursor mcp, ai agents architecture, software engineering, nemi explains
+
+DURATION: 23.77s (713 frames @ 30fps)
+RESOLUTION: 4K UHD (2160x3840)

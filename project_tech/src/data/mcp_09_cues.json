@@ -1,0 +1,1346 @@
+{
+  "reel_id": "mcp_09",
+  "title": "MCP vs API: What's the Actual Difference?",
+  "total_duration_s": 23.765,
+  "total_frames": 713,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "mcp01_hook",
+      "speaker": "narrator",
+      "text": "MCP versus API: what's the actual difference?",
+      "start_time_ms": 0,
+      "end_time_ms": 2282,
+      "duration_s": 2.283,
+      "start_frame": 0,
+      "end_frame": 68,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "versus API",
+          "cue": "versus_pop",
+          "time_ms": 912,
+          "frame": 27
+        },
+        {
+          "phrase": "actual difference",
+          "cue": "split_reveal",
+          "time_ms": 1825,
+          "frame": 55
+        }
+      ]
+    },
+    {
+      "id": "mcp02_api_side",
+      "speaker": "narrator",
+      "text": "An API connects two programs using fixed, hardcoded endpoints and custom keys.",
+      "start_time_ms": 2392,
+      "end_time_ms": 6296,
+      "duration_s": 3.904,
+      "start_frame": 72,
+      "end_frame": 189,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "two programs",
+          "cue": "api_endpoints",
+          "time_ms": 3758,
+          "frame": 113
+        },
+        {
+          "phrase": "custom keys",
+          "cue": "api_spaghetti",
+          "time_ms": 5437,
+          "frame": 163
+        }
+      ]
+    },
+    {
+      "id": "mcp03_nemi_guess",
+      "speaker": "nemi",
+      "text": "Rewrite code for every app?! \ud83e\udd2f",
+      "start_time_ms": 6396,
+      "end_time_ms": 7868,
+      "duration_s": 1.472,
+      "start_frame": 192,
+      "end_frame": 236,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "Rewrite code",
+          "cue": "buzzer_shock",
+          "time_ms": 7132,
+          "frame": 214
+        }
+      ]
+    },
+    {
+      "id": "mcp04_mcp_side",
+      "speaker": "narrator",
+      "text": "Exactly! But MCP is built specifically for AI models like USB-C.",
+      "start_time_ms": 7958,
+      "end_time_ms": 11904,
+      "duration_s": 3.947,
+      "start_frame": 239,
+      "end_frame": 357,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "specifically for AI",
+          "cue": "mcp_glow",
+          "time_ms": 9733,
+          "frame": 292
+        },
+        {
+          "phrase": "USB-C",
+          "cue": "usbc_plug",
+          "time_ms": 11114,
+          "frame": 333
+        }
+      ]
+    },
+    {
+      "id": "mcp05_payoff",
+      "speaker": "narrator",
+      "text": "Instead of manual coding, the AI auto-discovers and plugs into any tool dynamically.",
+      "start_time_ms": 12004,
+      "end_time_ms": 16590,
+      "duration_s": 4.587,
+      "start_frame": 360,
+      "end_frame": 498,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "auto-discovers",
+          "cue": "tool_discovery",
+          "time_ms": 13930,
+          "frame": 418
+        },
+        {
+          "phrase": "dynamically",
+          "cue": "plug_and_play",
+          "time_ms": 15672,
+          "frame": 470
+        }
+      ]
+    },
+    {
+      "id": "mcp06_nemi_payoff",
+      "speaker": "nemi",
+      "text": "One plug for everything! \ud83d\ude0e",
+      "start_time_ms": 16700,
+      "end_time_ms": 18172,
+      "duration_s": 1.472,
+      "start_frame": 501,
+      "end_frame": 545,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "One plug for everything",
+          "cue": "smug_stamp",
+          "time_ms": 17288,
+          "frame": 519
+        }
+      ]
+    },
+    {
+      "id": "mcp07_loop",
+      "speaker": "narrator",
+      "text": "APIs connect apps to apps \u2014 MCP connects AI to the world. And that's MCP versus API.",
+      "start_time_ms": 18312,
+      "end_time_ms": 23645,
+      "duration_s": 5.333,
+      "start_frame": 549,
+      "end_frame": 709,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "apps to apps",
+          "cue": "side_by_side_summary",
+          "time_ms": 20178,
+          "frame": 605
+        },
+        {
+          "phrase": "versus API",
+          "cue": "loop_seam_check",
+          "time_ms": 22845,
+          "frame": 685
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_s": 0.0,
+      "end_s": 1.44,
+      "start_frame": 0,
+      "end_frame": 43,
+      "text": "MCP versus API, what's",
+      "words": [
+        {
+          "word": "MCP",
+          "start_s": 0.0,
+          "end_s": 0.42,
+          "start_frame": 0,
+          "end_frame": 13
+        },
+        {
+          "word": "versus",
+          "start_s": 0.42,
+          "end_s": 0.68,
+          "start_frame": 13,
+          "end_frame": 20
+        },
+        {
+          "word": "API,",
+          "start_s": 0.68,
+          "end_s": 0.92,
+          "start_frame": 20,
+          "end_frame": 28
+        },
+        {
+          "word": "what's",
+          "start_s": 1.3,
+          "end_s": 1.44,
+          "start_frame": 39,
+          "end_frame": 43
+        }
+      ]
+    },
+    {
+      "start_s": 1.44,
+      "end_s": 2.48,
+      "start_frame": 43,
+      "end_frame": 74,
+      "text": "the actual difference? An",
+      "words": [
+        {
+          "word": "the",
+          "start_s": 1.44,
+          "end_s": 1.52,
+          "start_frame": 43,
+          "end_frame": 46
+        },
+        {
+          "word": "actual",
+          "start_s": 1.52,
+          "end_s": 1.76,
+          "start_frame": 46,
+          "end_frame": 53
+        },
+        {
+          "word": "difference?",
+          "start_s": 1.76,
+          "end_s": 2.04,
+          "start_frame": 53,
+          "end_frame": 61
+        },
+        {
+          "word": "An",
+          "start_s": 2.42,
+          "end_s": 2.48,
+          "start_frame": 73,
+          "end_frame": 74
+        }
+      ]
+    },
+    {
+      "start_s": 2.48,
+      "end_s": 3.66,
+      "start_frame": 74,
+      "end_frame": 110,
+      "text": "API connects two programs",
+      "words": [
+        {
+          "word": "API",
+          "start_s": 2.48,
+          "end_s": 2.78,
+          "start_frame": 74,
+          "end_frame": 83
+        },
+        {
+          "word": "connects",
+          "start_s": 2.78,
+          "end_s": 3.0,
+          "start_frame": 83,
+          "end_frame": 90
+        },
+        {
+          "word": "two",
+          "start_s": 3.0,
+          "end_s": 3.3,
+          "start_frame": 90,
+          "end_frame": 99
+        },
+        {
+          "word": "programs",
+          "start_s": 3.3,
+          "end_s": 3.66,
+          "start_frame": 99,
+          "end_frame": 110
+        }
+      ]
+    },
+    {
+      "start_s": 3.66,
+      "end_s": 4.78,
+      "start_frame": 110,
+      "end_frame": 143,
+      "text": "using fixed, hard -coded",
+      "words": [
+        {
+          "word": "using",
+          "start_s": 3.66,
+          "end_s": 3.98,
+          "start_frame": 110,
+          "end_frame": 119
+        },
+        {
+          "word": "fixed,",
+          "start_s": 3.98,
+          "end_s": 4.3,
+          "start_frame": 119,
+          "end_frame": 129
+        },
+        {
+          "word": "hard",
+          "start_s": 4.42,
+          "end_s": 4.56,
+          "start_frame": 133,
+          "end_frame": 137
+        },
+        {
+          "word": "-coded",
+          "start_s": 4.56,
+          "end_s": 4.78,
+          "start_frame": 137,
+          "end_frame": 143
+        }
+      ]
+    },
+    {
+      "start_s": 4.78,
+      "end_s": 6.08,
+      "start_frame": 143,
+      "end_frame": 182,
+      "text": "endpoints and custom keys.",
+      "words": [
+        {
+          "word": "endpoints",
+          "start_s": 4.78,
+          "end_s": 5.14,
+          "start_frame": 143,
+          "end_frame": 154
+        },
+        {
+          "word": "and",
+          "start_s": 5.14,
+          "end_s": 5.4,
+          "start_frame": 154,
+          "end_frame": 162
+        },
+        {
+          "word": "custom",
+          "start_s": 5.4,
+          "end_s": 5.7,
+          "start_frame": 162,
+          "end_frame": 171
+        },
+        {
+          "word": "keys.",
+          "start_s": 5.7,
+          "end_s": 6.08,
+          "start_frame": 171,
+          "end_frame": 182
+        }
+      ]
+    },
+    {
+      "start_s": 6.3,
+      "end_s": 7.26,
+      "start_frame": 189,
+      "end_frame": 218,
+      "text": "We write code for",
+      "words": [
+        {
+          "word": "We",
+          "start_s": 6.3,
+          "end_s": 6.52,
+          "start_frame": 189,
+          "end_frame": 196
+        },
+        {
+          "word": "write",
+          "start_s": 6.52,
+          "end_s": 6.7,
+          "start_frame": 196,
+          "end_frame": 201
+        },
+        {
+          "word": "code",
+          "start_s": 6.7,
+          "end_s": 7.0,
+          "start_frame": 201,
+          "end_frame": 210
+        },
+        {
+          "word": "for",
+          "start_s": 7.0,
+          "end_s": 7.26,
+          "start_frame": 210,
+          "end_frame": 218
+        }
+      ]
+    },
+    {
+      "start_s": 7.26,
+      "end_s": 8.98,
+      "start_frame": 218,
+      "end_frame": 269,
+      "text": "every app. Exactly. But",
+      "words": [
+        {
+          "word": "every",
+          "start_s": 7.26,
+          "end_s": 7.58,
+          "start_frame": 218,
+          "end_frame": 227
+        },
+        {
+          "word": "app.",
+          "start_s": 7.58,
+          "end_s": 7.8,
+          "start_frame": 227,
+          "end_frame": 234
+        },
+        {
+          "word": "Exactly.",
+          "start_s": 7.96,
+          "end_s": 8.26,
+          "start_frame": 239,
+          "end_frame": 248
+        },
+        {
+          "word": "But",
+          "start_s": 8.86,
+          "end_s": 8.98,
+          "start_frame": 266,
+          "end_frame": 269
+        }
+      ]
+    },
+    {
+      "start_s": 8.98,
+      "end_s": 10.02,
+      "start_frame": 269,
+      "end_frame": 301,
+      "text": "MCP is built specifically",
+      "words": [
+        {
+          "word": "MCP",
+          "start_s": 8.98,
+          "end_s": 9.38,
+          "start_frame": 269,
+          "end_frame": 281
+        },
+        {
+          "word": "is",
+          "start_s": 9.38,
+          "end_s": 9.5,
+          "start_frame": 281,
+          "end_frame": 285
+        },
+        {
+          "word": "built",
+          "start_s": 9.5,
+          "end_s": 9.64,
+          "start_frame": 285,
+          "end_frame": 289
+        },
+        {
+          "word": "specifically",
+          "start_s": 9.64,
+          "end_s": 10.02,
+          "start_frame": 289,
+          "end_frame": 301
+        }
+      ]
+    },
+    {
+      "start_s": 10.02,
+      "end_s": 11.06,
+      "start_frame": 301,
+      "end_frame": 332,
+      "text": "for AI models like",
+      "words": [
+        {
+          "word": "for",
+          "start_s": 10.02,
+          "end_s": 10.34,
+          "start_frame": 301,
+          "end_frame": 310
+        },
+        {
+          "word": "AI",
+          "start_s": 10.34,
+          "end_s": 10.54,
+          "start_frame": 310,
+          "end_frame": 316
+        },
+        {
+          "word": "models",
+          "start_s": 10.54,
+          "end_s": 10.86,
+          "start_frame": 316,
+          "end_frame": 326
+        },
+        {
+          "word": "like",
+          "start_s": 10.86,
+          "end_s": 11.06,
+          "start_frame": 326,
+          "end_frame": 332
+        }
+      ]
+    },
+    {
+      "start_s": 11.06,
+      "end_s": 12.38,
+      "start_frame": 332,
+      "end_frame": 371,
+      "text": "USB -C. Instead of",
+      "words": [
+        {
+          "word": "USB",
+          "start_s": 11.06,
+          "end_s": 11.3,
+          "start_frame": 332,
+          "end_frame": 339
+        },
+        {
+          "word": "-C.",
+          "start_s": 11.3,
+          "end_s": 11.76,
+          "start_frame": 339,
+          "end_frame": 353
+        },
+        {
+          "word": "Instead",
+          "start_s": 12.02,
+          "end_s": 12.22,
+          "start_frame": 361,
+          "end_frame": 367
+        },
+        {
+          "word": "of",
+          "start_s": 12.22,
+          "end_s": 12.38,
+          "start_frame": 367,
+          "end_frame": 371
+        }
+      ]
+    },
+    {
+      "start_s": 12.38,
+      "end_s": 13.8,
+      "start_frame": 371,
+      "end_frame": 414,
+      "text": "manual coding, the AI",
+      "words": [
+        {
+          "word": "manual",
+          "start_s": 12.38,
+          "end_s": 12.66,
+          "start_frame": 371,
+          "end_frame": 380
+        },
+        {
+          "word": "coding,",
+          "start_s": 12.66,
+          "end_s": 13.0,
+          "start_frame": 380,
+          "end_frame": 390
+        },
+        {
+          "word": "the",
+          "start_s": 13.44,
+          "end_s": 13.48,
+          "start_frame": 403,
+          "end_frame": 404
+        },
+        {
+          "word": "AI",
+          "start_s": 13.48,
+          "end_s": 13.8,
+          "start_frame": 404,
+          "end_frame": 414
+        }
+      ]
+    },
+    {
+      "start_s": 13.8,
+      "end_s": 14.92,
+      "start_frame": 414,
+      "end_frame": 448,
+      "text": "auto -discovers and plugs",
+      "words": [
+        {
+          "word": "auto",
+          "start_s": 13.8,
+          "end_s": 14.12,
+          "start_frame": 414,
+          "end_frame": 424
+        },
+        {
+          "word": "-discovers",
+          "start_s": 14.12,
+          "end_s": 14.58,
+          "start_frame": 424,
+          "end_frame": 437
+        },
+        {
+          "word": "and",
+          "start_s": 14.58,
+          "end_s": 14.74,
+          "start_frame": 437,
+          "end_frame": 442
+        },
+        {
+          "word": "plugs",
+          "start_s": 14.74,
+          "end_s": 14.92,
+          "start_frame": 442,
+          "end_frame": 448
+        }
+      ]
+    },
+    {
+      "start_s": 14.92,
+      "end_s": 16.28,
+      "start_frame": 448,
+      "end_frame": 488,
+      "text": "into any tool dynamically.",
+      "words": [
+        {
+          "word": "into",
+          "start_s": 14.92,
+          "end_s": 15.24,
+          "start_frame": 448,
+          "end_frame": 457
+        },
+        {
+          "word": "any",
+          "start_s": 15.24,
+          "end_s": 15.48,
+          "start_frame": 457,
+          "end_frame": 464
+        },
+        {
+          "word": "tool",
+          "start_s": 15.48,
+          "end_s": 15.78,
+          "start_frame": 464,
+          "end_frame": 473
+        },
+        {
+          "word": "dynamically.",
+          "start_s": 15.78,
+          "end_s": 16.28,
+          "start_frame": 473,
+          "end_frame": 488
+        }
+      ]
+    },
+    {
+      "start_s": 16.66,
+      "end_s": 17.96,
+      "start_frame": 500,
+      "end_frame": 539,
+      "text": "One plug for everything.",
+      "words": [
+        {
+          "word": "One",
+          "start_s": 16.66,
+          "end_s": 16.92,
+          "start_frame": 500,
+          "end_frame": 508
+        },
+        {
+          "word": "plug",
+          "start_s": 16.92,
+          "end_s": 17.22,
+          "start_frame": 508,
+          "end_frame": 517
+        },
+        {
+          "word": "for",
+          "start_s": 17.22,
+          "end_s": 17.48,
+          "start_frame": 517,
+          "end_frame": 524
+        },
+        {
+          "word": "everything.",
+          "start_s": 17.48,
+          "end_s": 17.96,
+          "start_frame": 524,
+          "end_frame": 539
+        }
+      ]
+    },
+    {
+      "start_s": 18.32,
+      "end_s": 19.52,
+      "start_frame": 550,
+      "end_frame": 586,
+      "text": "APIs connect apps to",
+      "words": [
+        {
+          "word": "APIs",
+          "start_s": 18.32,
+          "end_s": 18.62,
+          "start_frame": 550,
+          "end_frame": 559
+        },
+        {
+          "word": "connect",
+          "start_s": 18.62,
+          "end_s": 18.96,
+          "start_frame": 559,
+          "end_frame": 569
+        },
+        {
+          "word": "apps",
+          "start_s": 18.96,
+          "end_s": 19.28,
+          "start_frame": 569,
+          "end_frame": 578
+        },
+        {
+          "word": "to",
+          "start_s": 19.28,
+          "end_s": 19.52,
+          "start_frame": 578,
+          "end_frame": 586
+        }
+      ]
+    },
+    {
+      "start_s": 19.52,
+      "end_s": 21.04,
+      "start_frame": 586,
+      "end_frame": 631,
+      "text": "apps. MCP connects AI",
+      "words": [
+        {
+          "word": "apps.",
+          "start_s": 19.52,
+          "end_s": 19.76,
+          "start_frame": 586,
+          "end_frame": 593
+        },
+        {
+          "word": "MCP",
+          "start_s": 20.08,
+          "end_s": 20.48,
+          "start_frame": 602,
+          "end_frame": 614
+        },
+        {
+          "word": "connects",
+          "start_s": 20.48,
+          "end_s": 20.72,
+          "start_frame": 614,
+          "end_frame": 622
+        },
+        {
+          "word": "AI",
+          "start_s": 20.72,
+          "end_s": 21.04,
+          "start_frame": 622,
+          "end_frame": 631
+        }
+      ]
+    },
+    {
+      "start_s": 21.04,
+      "end_s": 21.92,
+      "start_frame": 631,
+      "end_frame": 658,
+      "text": "to the world, and",
+      "words": [
+        {
+          "word": "to",
+          "start_s": 21.04,
+          "end_s": 21.28,
+          "start_frame": 631,
+          "end_frame": 638
+        },
+        {
+          "word": "the",
+          "start_s": 21.28,
+          "end_s": 21.38,
+          "start_frame": 638,
+          "end_frame": 641
+        },
+        {
+          "word": "world,",
+          "start_s": 21.38,
+          "end_s": 21.64,
+          "start_frame": 641,
+          "end_frame": 649
+        },
+        {
+          "word": "and",
+          "start_s": 21.86,
+          "end_s": 21.92,
+          "start_frame": 656,
+          "end_frame": 658
+        }
+      ]
+    },
+    {
+      "start_s": 21.92,
+      "end_s": 23.24,
+      "start_frame": 658,
+      "end_frame": 697,
+      "text": "that's MCP versus API.",
+      "words": [
+        {
+          "word": "that's",
+          "start_s": 21.92,
+          "end_s": 22.16,
+          "start_frame": 658,
+          "end_frame": 665
+        },
+        {
+          "word": "MCP",
+          "start_s": 22.16,
+          "end_s": 22.64,
+          "start_frame": 665,
+          "end_frame": 679
+        },
+        {
+          "word": "versus",
+          "start_s": 22.64,
+          "end_s": 22.88,
+          "start_frame": 679,
+          "end_frame": 686
+        },
+        {
+          "word": "API.",
+          "start_s": 22.88,
+          "end_s": 23.24,
+          "start_frame": 686,
+          "end_frame": 697
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "MCP",
+      "start_s": 0.0,
+      "end_s": 0.42,
+      "start_frame": 0,
+      "end_frame": 13
+    },
+    {
+      "word": "versus",
+      "start_s": 0.42,
+      "end_s": 0.68,
+      "start_frame": 13,
+      "end_frame": 20
+    },
+    {
+      "word": "API,",
+      "start_s": 0.68,
+      "end_s": 0.92,
+      "start_frame": 20,
+      "end_frame": 28
+    },
+    {
+      "word": "what's",
+      "start_s": 1.3,
+      "end_s": 1.44,
+      "start_frame": 39,
+      "end_frame": 43
+    },
+    {
+      "word": "the",
+      "start_s": 1.44,
+      "end_s": 1.52,
+      "start_frame": 43,
+      "end_frame": 46
+    },
+    {
+      "word": "actual",
+      "start_s": 1.52,
+      "end_s": 1.76,
+      "start_frame": 46,
+      "end_frame": 53
+    },
+    {
+      "word": "difference?",
+      "start_s": 1.76,
+      "end_s": 2.04,
+      "start_frame": 53,
+      "end_frame": 61
+    },
+    {
+      "word": "An",
+      "start_s": 2.42,
+      "end_s": 2.48,
+      "start_frame": 73,
+      "end_frame": 74
+    },
+    {
+      "word": "API",
+      "start_s": 2.48,
+      "end_s": 2.78,
+      "start_frame": 74,
+      "end_frame": 83
+    },
+    {
+      "word": "connects",
+      "start_s": 2.78,
+      "end_s": 3.0,
+      "start_frame": 83,
+      "end_frame": 90
+    },
+    {
+      "word": "two",
+      "start_s": 3.0,
+      "end_s": 3.3,
+      "start_frame": 90,
+      "end_frame": 99
+    },
+    {
+      "word": "programs",
+      "start_s": 3.3,
+      "end_s": 3.66,
+      "start_frame": 99,
+      "end_frame": 110
+    },
+    {
+      "word": "using",
+      "start_s": 3.66,
+      "end_s": 3.98,
+      "start_frame": 110,
+      "end_frame": 119
+    },
+    {
+      "word": "fixed,",
+      "start_s": 3.98,
+      "end_s": 4.3,
+      "start_frame": 119,
+      "end_frame": 129
+    },
+    {
+      "word": "hard",
+      "start_s": 4.42,
+      "end_s": 4.56,
+      "start_frame": 133,
+      "end_frame": 137
+    },
+    {
+      "word": "-coded",
+      "start_s": 4.56,
+      "end_s": 4.78,
+      "start_frame": 137,
+      "end_frame": 143
+    },
+    {
+      "word": "endpoints",
+      "start_s": 4.78,
+      "end_s": 5.14,
+      "start_frame": 143,
+      "end_frame": 154
+    },
+    {
+      "word": "and",
+      "start_s": 5.14,
+      "end_s": 5.4,
+      "start_frame": 154,
+      "end_frame": 162
+    },
+    {
+      "word": "custom",
+      "start_s": 5.4,
+      "end_s": 5.7,
+      "start_frame": 162,
+      "end_frame": 171
+    },
+    {
+      "word": "keys.",
+      "start_s": 5.7,
+      "end_s": 6.08,
+      "start_frame": 171,
+      "end_frame": 182
+    },
+    {
+      "word": "We",
+      "start_s": 6.3,
+      "end_s": 6.52,
+      "start_frame": 189,
+      "end_frame": 196
+    },
+    {
+      "word": "write",
+      "start_s": 6.52,
+      "end_s": 6.7,
+      "start_frame": 196,
+      "end_frame": 201
+    },
+    {
+      "word": "code",
+      "start_s": 6.7,
+      "end_s": 7.0,
+      "start_frame": 201,
+      "end_frame": 210
+    },
+    {
+      "word": "for",
+      "start_s": 7.0,
+      "end_s": 7.26,
+      "start_frame": 210,
+      "end_frame": 218
+    },
+    {
+      "word": "every",
+      "start_s": 7.26,
+      "end_s": 7.58,
+      "start_frame": 218,
+      "end_frame": 227
+    },
+    {
+      "word": "app.",
+      "start_s": 7.58,
+      "end_s": 7.8,
+      "start_frame": 227,
+      "end_frame": 234
+    },
+    {
+      "word": "Exactly.",
+      "start_s": 7.96,
+      "end_s": 8.26,
+      "start_frame": 239,
+      "end_frame": 248
+    },
+    {
+      "word": "But",
+      "start_s": 8.86,
+      "end_s": 8.98,
+      "start_frame": 266,
+      "end_frame": 269
+    },
+    {
+      "word": "MCP",
+      "start_s": 8.98,
+      "end_s": 9.38,
+      "start_frame": 269,
+      "end_frame": 281
+    },
+    {
+      "word": "is",
+      "start_s": 9.38,
+      "end_s": 9.5,
+      "start_frame": 281,
+      "end_frame": 285
+    },
+    {
+      "word": "built",
+      "start_s": 9.5,
+      "end_s": 9.64,
+      "start_frame": 285,
+      "end_frame": 289
+    },
+    {
+      "word": "specifically",
+      "start_s": 9.64,
+      "end_s": 10.02,
+      "start_frame": 289,
+      "end_frame": 301
+    },
+    {
+      "word": "for",
+      "start_s": 10.02,
+      "end_s": 10.34,
+      "start_frame": 301,
+      "end_frame": 310
+    },
+    {
+      "word": "AI",
+      "start_s": 10.34,
+      "end_s": 10.54,
+      "start_frame": 310,
+      "end_frame": 316
+    },
+    {
+      "word": "models",
+      "start_s": 10.54,
+      "end_s": 10.86,
+      "start_frame": 316,
+      "end_frame": 326
+    },
+    {
+      "word": "like",
+      "start_s": 10.86,
+      "end_s": 11.06,
+      "start_frame": 326,
+      "end_frame": 332
+    },
+    {
+      "word": "USB",
+      "start_s": 11.06,
+      "end_s": 11.3,
+      "start_frame": 332,
+      "end_frame": 339
+    },
+    {
+      "word": "-C.",
+      "start_s": 11.3,
+      "end_s": 11.76,
+      "start_frame": 339,
+      "end_frame": 353
+    },
+    {
+      "word": "Instead",
+      "start_s": 12.02,
+      "end_s": 12.22,
+      "start_frame": 361,
+      "end_frame": 367
+    },
+    {
+      "word": "of",
+      "start_s": 12.22,
+      "end_s": 12.38,
+      "start_frame": 367,
+      "end_frame": 371
+    },
+    {
+      "word": "manual",
+      "start_s": 12.38,
+      "end_s": 12.66,
+      "start_frame": 371,
+      "end_frame": 380
+    },
+    {
+      "word": "coding,",
+      "start_s": 12.66,
+      "end_s": 13.0,
+      "start_frame": 380,
+      "end_frame": 390
+    },
+    {
+      "word": "the",
+      "start_s": 13.44,
+      "end_s": 13.48,
+      "start_frame": 403,
+      "end_frame": 404
+    },
+    {
+      "word": "AI",
+      "start_s": 13.48,
+      "end_s": 13.8,
+      "start_frame": 404,
+      "end_frame": 414
+    },
+    {
+      "word": "auto",
+      "start_s": 13.8,
+      "end_s": 14.12,
+      "start_frame": 414,
+      "end_frame": 424
+    },
+    {
+      "word": "-discovers",
+      "start_s": 14.12,
+      "end_s": 14.58,
+      "start_frame": 424,
+      "end_frame": 437
+    },
+    {
+      "word": "and",
+      "start_s": 14.58,
+      "end_s": 14.74,
+      "start_frame": 437,
+      "end_frame": 442
+    },
+    {
+      "word": "plugs",
+      "start_s": 14.74,
+      "end_s": 14.92,
+      "start_frame": 442,
+      "end_frame": 448
+    },
+    {
+      "word": "into",
+      "start_s": 14.92,
+      "end_s": 15.24,
+      "start_frame": 448,
+      "end_frame": 457
+    },
+    {
+      "word": "any",
+      "start_s": 15.24,
+      "end_s": 15.48,
+      "start_frame": 457,
+      "end_frame": 464
+    },
+    {
+      "word": "tool",
+      "start_s": 15.48,
+      "end_s": 15.78,
+      "start_frame": 464,
+      "end_frame": 473
+    },
+    {
+      "word": "dynamically.",
+      "start_s": 15.78,
+      "end_s": 16.28,
+      "start_frame": 473,
+      "end_frame": 488
+    },
+    {
+      "word": "One",
+      "start_s": 16.66,
+      "end_s": 16.92,
+      "start_frame": 500,
+      "end_frame": 508
+    },
+    {
+      "word": "plug",
+      "start_s": 16.92,
+      "end_s": 17.22,
+      "start_frame": 508,
+      "end_frame": 517
+    },
+    {
+      "word": "for",
+      "start_s": 17.22,
+      "end_s": 17.48,
+      "start_frame": 517,
+      "end_frame": 524
+    },
+    {
+      "word": "everything.",
+      "start_s": 17.48,
+      "end_s": 17.96,
+      "start_frame": 524,
+      "end_frame": 539
+    },
+    {
+      "word": "APIs",
+      "start_s": 18.32,
+      "end_s": 18.62,
+      "start_frame": 550,
+      "end_frame": 559
+    },
+    {
+      "word": "connect",
+      "start_s": 18.62,
+      "end_s": 18.96,
+      "start_frame": 559,
+      "end_frame": 569
+    },
+    {
+      "word": "apps",
+      "start_s": 18.96,
+      "end_s": 19.28,
+      "start_frame": 569,
+      "end_frame": 578
+    },
+    {
+      "word": "to",
+      "start_s": 19.28,
+      "end_s": 19.52,
+      "start_frame": 578,
+      "end_frame": 586
+    },
+    {
+      "word": "apps.",
+      "start_s": 19.52,
+      "end_s": 19.76,
+      "start_frame": 586,
+      "end_frame": 593
+    },
+    {
+      "word": "MCP",
+      "start_s": 20.08,
+      "end_s": 20.48,
+      "start_frame": 602,
+      "end_frame": 614
+    },
+    {
+      "word": "connects",
+      "start_s": 20.48,
+      "end_s": 20.72,
+      "start_frame": 614,
+      "end_frame": 622
+    },
+    {
+      "word": "AI",
+      "start_s": 20.72,
+      "end_s": 21.04,
+      "start_frame": 622,
+      "end_frame": 631
+    },
+    {
+      "word": "to",
+      "start_s": 21.04,
+      "end_s": 21.28,
+      "start_frame": 631,
+      "end_frame": 638
+    },
+    {
+      "word": "the",
+      "start_s": 21.28,
+      "end_s": 21.38,
+      "start_frame": 638,
+      "end_frame": 641
+    },
+    {
+      "word": "world,",
+      "start_s": 21.38,
+      "end_s": 21.64,
+      "start_frame": 641,
+      "end_frame": 649
+    },
+    {
+      "word": "and",
+      "start_s": 21.86,
+      "end_s": 21.92,
+      "start_frame": 656,
+      "end_frame": 658
+    },
+    {
+      "word": "that's",
+      "start_s": 21.92,
+      "end_s": 22.16,
+      "start_frame": 658,
+      "end_frame": 665
+    },
+    {
+      "word": "MCP",
+      "start_s": 22.16,
+      "end_s": 22.64,
+      "start_frame": 665,
+      "end_frame": 679
+    },
+    {
+      "word": "versus",
+      "start_s": 22.64,
+      "end_s": 22.88,
+      "start_frame": 679,
+      "end_frame": 686
+    },
+    {
+      "word": "API.",
+      "start_s": 22.88,
+      "end_s": 23.24,
+      "start_frame": 686,
+      "end_frame": 697
+    }
+  ]
+}

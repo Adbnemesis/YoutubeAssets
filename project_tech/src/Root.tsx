@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { McpComp } from "../reels/mcp_09/McpComp";
 import { TokenizeComp } from "../reels/tokenize_08/TokenizeComp";
 import { ShazamComp } from "../reels/shazam_07/ShazamComp";
 import { QrCodeComp } from "../reels/qr_06/QrCodeComp";
@@ -32,6 +33,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsMcp"
+        component={McpComp}
+        durationInFrames={713} // 23.77s @ 30fps — Reel #9: MCP vs API: What's the Actual Difference? (Side-by-Side Split Architecture)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsTokenize"
         component={TokenizeComp}
