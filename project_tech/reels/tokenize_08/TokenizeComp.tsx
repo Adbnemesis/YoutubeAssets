@@ -73,7 +73,7 @@ export const TokenizeComp: React.FC = () => {
   const smugStampCue = getCue("tk06_nemi_payoff", "smug_stamp"); // 488
   const loopCheckCue = getCue("tk07_loop", "loop_check"); // 627
 
-  // ─── Stage Boundaries (Punch Cuts) ───
+  // ─── Stage Boundaries ───
   const cutB = evSecret.start_frame; // 79
   const cutD = evReversal.start_frame; // 237
   const cutE = evPayoff.start_frame; // 363
@@ -174,7 +174,7 @@ export const TokenizeComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* AMBIENT BACKGROUND GLOW (Dark World Only) */}
+      {/* AMBIENT BACKGROUND GLOW */}
       {/* ══════════════════════════════════════════════════════════ */}
       {isDarkWorld && (
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
@@ -270,7 +270,7 @@ export const TokenizeComp: React.FC = () => {
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE A — FRAME-0 HOOK: LASER WORD SLICER */}
+      {/* STAGE A — FRAME-0 HOOK: LIVING LASER WORD SLICER */}
       {/* ══════════════════════════════════════════════════════════ */}
       {inStageA && (
         <>
@@ -292,12 +292,12 @@ export const TokenizeComp: React.FC = () => {
             </div>
           </div>
 
-          <LaserTokenizerCard frame={frame} wordSplitCue={wordSplitCue} tokenIdsCue={tokenIdsCue} />
+          <LivingLaserTokenizerCard frame={frame} wordSplitCue={wordSplitCue} tokenIdsCue={tokenIdsCue} />
         </>
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE B+C — THE BYTE PAIR SLICER & FREQUENCY MATRIX */}
+      {/* STAGE B+C — LIVING BYTE PAIR SLICER & SCANNER */}
       {/* ══════════════════════════════════════════════════════════ */}
       {inStageBC && (
         <>
@@ -307,12 +307,12 @@ export const TokenizeComp: React.FC = () => {
             </div>
           </div>
 
-          <BpeFrequencyMatrix frame={frame} cutB={cutB} chopTextCue={chopTextCue} />
+          <LivingBpeFrequencyMatrix frame={frame} cutB={cutB} chopTextCue={chopTextCue} />
         </>
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE D — VOCABULARY IDS (100,000 TOKEN DICTIONARY) */}
+      {/* STAGE D — LIVING VOCABULARY MATRIX & STREAM */}
       {/* ══════════════════════════════════════════════════════════ */}
       {inStageD && (
         <>
@@ -322,12 +322,12 @@ export const TokenizeComp: React.FC = () => {
             </div>
           </div>
 
-          <VocabLookupGrid frame={frame} cutD={cutD} idsPopulateCue={idsPopulateCue} />
+          <LivingVocabLookupGrid frame={frame} cutD={cutD} idsPopulateCue={idsPopulateCue} />
         </>
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE E — THE PAYOFF: STRAWBERRY BLUEPRINT X-RAY */}
+      {/* STAGE E — THE PAYOFF: LIVING STRAWBERRY X-RAY TARGETING */}
       {/* ══════════════════════════════════════════════════════════ */}
       {inStageE && (
         <>
@@ -337,7 +337,7 @@ export const TokenizeComp: React.FC = () => {
             </div>
           </div>
 
-          <StrawberryXrayPanel frame={frame} cutE={cutE} piecesSplitCue={piecesSplitCue} rsHighlightCue={rsHighlightCue} />
+          <LivingStrawberryXrayPanel frame={frame} cutE={cutE} piecesSplitCue={piecesSplitCue} rsHighlightCue={rsHighlightCue} />
         </>
       )}
 
@@ -352,7 +352,7 @@ export const TokenizeComp: React.FC = () => {
             </div>
           </div>
 
-          <TokenizerTakeaway frame={frame} cutF={cutF} />
+          <LivingTokenizerTakeaway frame={frame} cutF={cutF} />
         </>
       )}
 
@@ -427,19 +427,16 @@ export const TokenizeComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. LASER TOKENIZER CARD (Stage A: Animated Slicing Conveyor)
-// ═══════════════════════════════════════════════════════════════
-const LaserTokenizerCard: React.FC<{ frame: number; wordSplitCue: number; tokenIdsCue: number }> = ({ frame, wordSplitCue, tokenIdsCue }) => {
+// 1. LIVING LASER TOKENIZER CARD (Stage A: Active Moving Conveyor & Laser)
+// ═══════════════════════════════════════════════════════════
+const LivingLaserTokenizerCard: React.FC<{ frame: number; wordSplitCue: number; tokenIdsCue: number }> = ({ frame, wordSplitCue, tokenIdsCue }) => {
   const isSplit = frame >= wordSplitCue;
-  const splitGap = interpolate(frame - wordSplitCue, [0, 8], [0, 48], {
+  const splitGap = interpolate(frame - wordSplitCue, [0, 8], [0, 56], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const laserSweep = interpolate(frame, [wordSplitCue - 6, wordSplitCue + 6], [0, 180], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
+  const trackOffset = (frame * 4) % 40;
 
   return (
     <div
@@ -454,7 +451,7 @@ const LaserTokenizerCard: React.FC<{ frame: number; wordSplitCue: number; tokenI
         borderRadius: 36,
         border: "3.5px solid #06B6D4",
         boxShadow: "0 24px 80px rgba(6, 182, 212, 0.2)",
-        padding: "36px 40px",
+        padding: "32px 40px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -470,38 +467,49 @@ const LaserTokenizerCard: React.FC<{ frame: number; wordSplitCue: number; tokenI
           <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Hardware Byte-Pair Laser Slicer</span>
         </div>
         <span style={{ backgroundColor: "#CFFAFE", color: "#0891B2", border: "1.5px solid #67E8F9", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          LIVE TOKENIZER ENGINE
+          CHUNKING IN MOTION ⚡
         </span>
       </div>
 
-      {/* Slicing Conveyor Bed */}
+      {/* Moving Conveyor Bed */}
       <div style={{ width: "100%", height: 260, position: "relative", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        {/* Conveyor Bed Track */}
-        <div style={{ position: "absolute", width: "100%", height: 120, backgroundColor: "#F1F5F9", borderRadius: 24, border: "2px solid #E2E8F0" }} />
+        {/* Animated Conveyor Belt with Moving Grid */}
+        <div
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: 130,
+            backgroundColor: "#F1F5F9",
+            borderRadius: 24,
+            border: "2px solid #CBD5E1",
+            backgroundImage: `repeating-linear-gradient(90deg, #E2E8F0 0px, #E2E8F0 2px, transparent 2px, transparent 40px)`,
+            backgroundPosition: `${trackOffset}px 0`,
+          }}
+        />
 
-        {/* Word Chunks Splitting */}
+        {/* Word Chunks Splitting apart */}
         <div style={{ display: "flex", alignItems: "center", zIndex: 10 }}>
           {/* Chunk 1: "straw" */}
           <div
             style={{
               transform: `translateX(-${isSplit ? splitGap : 0}px)`,
               backgroundColor: isSplit ? "#ECFEFF" : "#FFFFFF",
-              border: isSplit ? "3px solid #06B6D4" : "2px solid #CBD5E1",
-              borderRadius: 20,
-              padding: "16px 28px",
+              border: isSplit ? "3.5px solid #06B6D4" : "2px solid #CBD5E1",
+              borderRadius: 22,
+              padding: "18px 30px",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              boxShadow: isSplit ? "0 10px 30px rgba(6, 182, 212, 0.25)" : "0 4px 12px rgba(0,0,0,0.05)",
+              boxShadow: isSplit ? "0 12px 35px rgba(6, 182, 212, 0.3)" : "0 4px 12px rgba(0,0,0,0.05)",
             }}
           >
             <div style={{ display: "flex", gap: 6 }}>
               {["s", "t", "r", "a", "w"].map((c, i) => (
-                <span key={i} style={{ fontSize: 48, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: c === "r" ? "#F43F5E" : "#0F172A" }}>{c}</span>
+                <span key={i} style={{ fontSize: 50, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: c === "r" ? "#F43F5E" : "#0F172A" }}>{c}</span>
               ))}
             </div>
             {isSplit && (
-              <div style={{ backgroundColor: "#06B6D4", color: "#FFFFFF", padding: "4px 16px", borderRadius: 10, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 8 }}>
+              <div style={{ backgroundColor: "#06B6D4", color: "#FFFFFF", padding: "6px 20px", borderRadius: 12, fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 10 }}>
                 Token #496
               </div>
             )}
@@ -512,22 +520,22 @@ const LaserTokenizerCard: React.FC<{ frame: number; wordSplitCue: number; tokenI
             style={{
               transform: `translateX(${isSplit ? splitGap : 0}px)`,
               backgroundColor: isSplit ? "#FFF1F2" : "#FFFFFF",
-              border: isSplit ? "3px solid #F43F5E" : "2px solid #CBD5E1",
-              borderRadius: 20,
-              padding: "16px 28px",
+              border: isSplit ? "3.5px solid #F43F5E" : "2px solid #CBD5E1",
+              borderRadius: 22,
+              padding: "18px 30px",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              boxShadow: isSplit ? "0 10px 30px rgba(244, 63, 94, 0.25)" : "0 4px 12px rgba(0,0,0,0.05)",
+              boxShadow: isSplit ? "0 12px 35px rgba(244, 63, 94, 0.3)" : "0 4px 12px rgba(0,0,0,0.05)",
             }}
           >
             <div style={{ display: "flex", gap: 6 }}>
               {["b", "e", "r", "r", "y"].map((c, i) => (
-                <span key={i} style={{ fontSize: 48, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: c === "r" ? "#F43F5E" : "#0F172A" }}>{c}</span>
+                <span key={i} style={{ fontSize: 50, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: c === "r" ? "#F43F5E" : "#0F172A" }}>{c}</span>
               ))}
             </div>
             {isSplit && (
-              <div style={{ backgroundColor: "#F43F5E", color: "#FFFFFF", padding: "4px 16px", borderRadius: 10, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 8 }}>
+              <div style={{ backgroundColor: "#F43F5E", color: "#FFFFFF", padding: "6px 20px", borderRadius: 12, fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 10 }}>
                 Token #675
               </div>
             )}
@@ -535,22 +543,35 @@ const LaserTokenizerCard: React.FC<{ frame: number; wordSplitCue: number; tokenI
         </div>
 
         {/* Laser Beam Slicing down on split frame */}
-        {frame >= wordSplitCue - 4 && frame <= wordSplitCue + 10 && (
-          <div style={{ position: "absolute", top: 10, width: 4, height: 240, backgroundColor: "#06B6D4", boxShadow: "0 0 20px #06B6D4, 0 0 40px #06B6D4", zIndex: 30 }} />
+        {frame >= wordSplitCue - 4 && frame <= wordSplitCue + 12 && (
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              width: 5,
+              backgroundColor: "#06B6D4",
+              boxShadow: "0 0 24px #06B6D4, 0 0 48px #06B6D4",
+              zIndex: 30,
+            }}
+          />
         )}
       </div>
 
       <div style={{ fontSize: 19, color: "#64748B", fontWeight: 700, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-        The LLM only sees Token IDs: [496, 675] — never individual letters!
+        The LLM only receives token IDs [496, 675] — never individual letters!
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 2. BPE FREQUENCY MATRIX (Stage B+C: Merge Tree Animation)
-// ═══════════════════════════════════════════════════════════
-const BpeFrequencyMatrix: React.FC<{ frame: number; cutB: number; chopTextCue: number }> = ({ frame, cutB, chopTextCue }) => {
+// 2. LIVING BPE FREQUENCY MATRIX (Stage B+C: Active Scanning Radar)
+// ═══════════════════════════════════════════════════════════════
+const LivingBpeFrequencyMatrix: React.FC<{ frame: number; cutB: number; chopTextCue: number }> = ({ frame, cutB, chopTextCue }) => {
+  const scanX = ((frame - cutB) * 8) % 860;
+  const dashOffset = -frame * 6;
+
   return (
     <div
       style={{
@@ -564,46 +585,67 @@ const BpeFrequencyMatrix: React.FC<{ frame: number; cutB: number; chopTextCue: n
         borderRadius: 36,
         border: "3.5px solid #F43F5E",
         boxShadow: "0 24px 80px rgba(244, 63, 94, 0.3)",
-        padding: "28px 36px",
+        padding: "24px 36px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
         zIndex: 30,
+        position: "relative",
+        overflow: "hidden",
       }}
     >
+      {/* Moving Frequency Scan Beam */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          left: scanX,
+          width: 4,
+          background: "linear-gradient(to bottom, transparent, #F43F5E, transparent)",
+          boxShadow: "0 0 20px #F43F5E",
+          pointerEvents: "none",
+          zIndex: 40,
+          opacity: 0.8,
+        }}
+      />
+
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>🔬</span>
           <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Byte-Pair Encoding Pipeline</span>
         </div>
         <span style={{ backgroundColor: "rgba(244, 63, 94, 0.2)", color: "#F43F5E", border: "1.5px solid #F43F5E", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          FREQUENCY MERGE
+          PAIR SCANNER ACTIVE ⚡
         </span>
       </div>
 
-      {/* Visual BPE Tree Diagram */}
+      {/* Living BPE Merge Tree with Moving Data Beams */}
       <svg width="860" height="280" viewBox="0 0 860 280">
         {/* Top: 10 Raw ASCII Letter Blocks */}
-        {["s", "t", "r", "a", "w", "b", "e", "r", "r", "y"].map((char, i) => (
-          <g key={i} transform={`translate(${45 + i * 78}, 20)`}>
-            <rect width="64" height="50" rx="12" fill="#1E293B" stroke="#64748B" strokeWidth="2" />
-            <text x="32" y="34" textAnchor="middle" fontSize="24" fontWeight="bold" fill="#F8FAFC" fontFamily="monospace">{char}</text>
-          </g>
-        ))}
+        {["s", "t", "r", "a", "w", "b", "e", "r", "r", "y"].map((char, i) => {
+          const isScanned = Math.abs(scanX - (45 + i * 78 + 32)) < 50;
+          return (
+            <g key={i} transform={`translate(${45 + i * 78}, 20)`}>
+              <rect width="64" height="50" rx="12" fill={isScanned ? "#881337" : "#1E293B"} stroke={isScanned ? "#F43F5E" : "#64748B"} strokeWidth={isScanned ? 3 : 2} />
+              <text x="32" y="34" textAnchor="middle" fontSize="24" fontWeight="bold" fill="#F8FAFC" fontFamily="monospace">{char}</text>
+            </g>
+          );
+        })}
 
-        {/* Merge Branch Lines */}
-        <path d="M 77 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" />
-        <path d="M 155 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" />
-        <path d="M 233 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" />
-        <path d="M 311 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" />
-        <path d="M 389 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" />
+        {/* Merge Branch Lines with Moving Dashes */}
+        <path d="M 77 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 155 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 233 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 311 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 389 70 L 233 130" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
 
-        <path d="M 467 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" />
-        <path d="M 545 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" />
-        <path d="M 623 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" />
-        <path d="M 701 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" />
-        <path d="M 779 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" />
+        <path d="M 467 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 545 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 623 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 701 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
+        <path d="M 779 70 L 623 130" stroke="#F43F5E" strokeWidth="2.5" strokeDasharray="6 4" strokeDashoffset={dashOffset} />
 
         {/* Level 2: Merged Subword Blocks */}
         <rect x="110" y="130" width="246" height="55" rx="16" fill="#083344" stroke="#06B6D4" strokeWidth="2.5" />
@@ -623,7 +665,7 @@ const BpeFrequencyMatrix: React.FC<{ frame: number; cutB: number; chopTextCue: n
         <text x="623" y="245" textAnchor="middle" fontSize="20" fontWeight="bold" fill="#A7F3D0" fontFamily="monospace">Token #675</text>
       </svg>
 
-      <div style={{ width: "100%", backgroundColor: "#18060B", padding: "14px 22px", borderRadius: 18, border: "2px solid #F43F5E", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ width: "100%", backgroundColor: "#18060B", padding: "12px 22px", borderRadius: 18, border: "2px solid #F43F5E", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>BPE merges frequent character pairs:</span>
         <span style={{ color: "#F43F5E", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>LETTERS GET PACKED 📦</span>
       </div>
@@ -632,13 +674,15 @@ const BpeFrequencyMatrix: React.FC<{ frame: number; cutB: number; chopTextCue: n
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 3. VOCAB LOOKUP GRID (Stage D: 100,000 Token Dictionary)
+// 3. LIVING VOCAB LOOKUP GRID (Stage D: Moving Matrix & Counter)
 // ═══════════════════════════════════════════════════════════════
-const VocabLookupGrid: React.FC<{ frame: number; cutD: number; idsPopulateCue: number }> = ({ frame, cutD, idsPopulateCue }) => {
-  const count = Math.min(100000, Math.round(interpolate(frame - cutD, [0, 40], [1000, 100000], {
+const LivingVocabLookupGrid: React.FC<{ frame: number; cutD: number; idsPopulateCue: number }> = ({ frame, cutD, idsPopulateCue }) => {
+  const count = Math.min(100000, Math.round(interpolate(frame - cutD, [0, 40], [1200, 100000], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   })));
+
+  const wave = Math.sin(frame * 0.2);
 
   return (
     <div
@@ -653,7 +697,7 @@ const VocabLookupGrid: React.FC<{ frame: number; cutD: number; idsPopulateCue: n
         borderRadius: 36,
         border: "3.5px solid #06B6D4",
         boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "28px 36px",
+        padding: "24px 36px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -667,32 +711,32 @@ const VocabLookupGrid: React.FC<{ frame: number; cutD: number; idsPopulateCue: n
           <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Fixed Vocabulary Lookup Table</span>
         </div>
         <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          {count.toLocaleString()} TOKENS
+          {count.toLocaleString()} TOKENS ⚡
         </span>
       </div>
 
-      {/* Vocabulary Cards */}
+      {/* Interactive Matrix Columns */}
       <div style={{ width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 18 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "2px solid #06B6D4", textAlign: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "2px solid #06B6D4", textAlign: "center", transform: `scale(${1 + wave * 0.02})` }}>
           <div style={{ color: "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Index #496</div>
-          <div style={{ color: "#06B6D4", fontSize: 32, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>"straw"</div>
-          <div style={{ color: "#10B981", fontSize: 15, fontWeight: 800, marginTop: 8 }}>1 Token</div>
+          <div style={{ color: "#06B6D4", fontSize: 34, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>"straw"</div>
+          <div style={{ color: "#10B981", fontSize: 15, fontWeight: 800, marginTop: 8 }}>1 Vector Token</div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "2px solid #F43F5E", textAlign: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "2px solid #F43F5E", textAlign: "center", transform: `scale(${1 - wave * 0.02})` }}>
           <div style={{ color: "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Index #675</div>
-          <div style={{ color: "#F43F5E", fontSize: 32, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>"berry"</div>
-          <div style={{ color: "#10B981", fontSize: 15, fontWeight: 800, marginTop: 8 }}>1 Token</div>
+          <div style={{ color: "#F43F5E", fontSize: 34, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>"berry"</div>
+          <div style={{ color: "#10B981", fontSize: 15, fontWeight: 800, marginTop: 8 }}>1 Vector Token</div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "2px solid #FFD166", textAlign: "center" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "20px", borderRadius: 20, border: "2px solid #FFD166", textAlign: "center", transform: `scale(${1 + wave * 0.02})` }}>
           <div style={{ color: "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Index #912</div>
-          <div style={{ color: "#FFD166", fontSize: 32, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>"apple"</div>
-          <div style={{ color: "#10B981", fontSize: 15, fontWeight: 800, marginTop: 8 }}>1 Token</div>
+          <div style={{ color: "#FFD166", fontSize: 34, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>"apple"</div>
+          <div style={{ color: "#10B981", fontSize: 15, fontWeight: 800, marginTop: 8 }}>1 Vector Token</div>
         </div>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "14px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "12px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Average English Compression:</span>
         <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>~4 CHARACTERS PER TOKEN ⚡</span>
       </div>
@@ -701,10 +745,11 @@ const VocabLookupGrid: React.FC<{ frame: number; cutD: number; idsPopulateCue: n
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 4. STRAWBERRY X-RAY PANEL (Stage E: Payoff 3 'R's Reveal)
-// ═══════════════════════════════════════════════════════════
-const StrawberryXrayPanel: React.FC<{ frame: number; cutE: number; piecesSplitCue: number; rsHighlightCue: number }> = ({ frame, cutE, piecesSplitCue, rsHighlightCue }) => {
+// 4. LIVING STRAWBERRY X-RAY (Stage E: Active Target Reticles)
+// ═══════════════════════════════════════════════════════════════
+const LivingStrawberryXrayPanel: React.FC<{ frame: number; cutE: number; piecesSplitCue: number; rsHighlightCue: number }> = ({ frame, cutE, piecesSplitCue, rsHighlightCue }) => {
   const isHighlighted = frame >= rsHighlightCue;
+  const pulse = Math.sin(frame * 0.3);
 
   return (
     <div
@@ -719,7 +764,7 @@ const StrawberryXrayPanel: React.FC<{ frame: number; cutE: number; piecesSplitCu
         borderRadius: 36,
         border: "3.5px solid #10B981",
         boxShadow: "0 24px 80px rgba(16, 185, 129, 0.35)",
-        padding: "28px 36px",
+        padding: "24px 36px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -733,36 +778,36 @@ const StrawberryXrayPanel: React.FC<{ frame: number; cutE: number; piecesSplitCu
           <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Inside the AI's Neural Perception</span>
         </div>
         <span style={{ backgroundColor: "rgba(16, 185, 129, 0.25)", color: "#10B981", border: "1.5px solid #10B981", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          TRAPPED 'R'S FOUND
+          3 TARGETS LOCKED 🎯
         </span>
       </div>
 
-      {/* Interactive Blueprint Chambers */}
+      {/* Interactive Blueprint Chambers with Moving Target Reticles */}
       <div style={{ display: "flex", gap: 24 }}>
         {/* Chamber 1: "straw" */}
-        <div style={{ backgroundColor: "#0F172A", padding: "24px 38px", borderRadius: 24, border: "3px solid #06B6D4", textAlign: "center", boxShadow: "0 10px 30px rgba(6, 182, 212, 0.25)" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "24px 40px", borderRadius: 24, border: "3px solid #06B6D4", textAlign: "center", boxShadow: "0 10px 30px rgba(6, 182, 212, 0.25)" }}>
           <div style={{ color: "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Token #496</div>
-          <div style={{ fontSize: 44, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#06B6D4", marginTop: 4 }}>
-            st<span style={{ color: isHighlighted ? "#10B981" : "#F43F5E", textDecoration: "underline", textShadow: isHighlighted ? "0 0 20px #10B981" : "none" }}>r</span>aw
+          <div style={{ fontSize: 46, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#06B6D4", marginTop: 4 }}>
+            st<span style={{ color: isHighlighted ? "#10B981" : "#F43F5E", textDecoration: "underline", textShadow: isHighlighted ? "0 0 24px #10B981" : "none", transform: `scale(${1 + pulse * 0.1})`, display: "inline-block" }}>r</span>aw
           </div>
           <div style={{ color: isHighlighted ? "#10B981" : "#94A3B8", fontSize: 18, fontWeight: 900, marginTop: 8 }}>
-            1 'r' Trapped
+            🎯 1 'r' Trapped Inside
           </div>
         </div>
 
         {/* Chamber 2: "berry" */}
-        <div style={{ backgroundColor: "#0F172A", padding: "24px 38px", borderRadius: 24, border: "3px solid #F43F5E", textAlign: "center", boxShadow: "0 10px 30px rgba(244, 63, 94, 0.25)" }}>
+        <div style={{ backgroundColor: "#0F172A", padding: "24px 40px", borderRadius: 24, border: "3px solid #F43F5E", textAlign: "center", boxShadow: "0 10px 30px rgba(244, 63, 94, 0.25)" }}>
           <div style={{ color: "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Token #675</div>
-          <div style={{ fontSize: 44, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#F43F5E", marginTop: 4 }}>
-            be<span style={{ color: isHighlighted ? "#10B981" : "#F43F5E", textDecoration: "underline", textShadow: isHighlighted ? "0 0 20px #10B981" : "none" }}>rr</span>y
+          <div style={{ fontSize: 46, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, color: "#F43F5E", marginTop: 4 }}>
+            be<span style={{ color: isHighlighted ? "#10B981" : "#F43F5E", textDecoration: "underline", textShadow: isHighlighted ? "0 0 24px #10B981" : "none", transform: `scale(${1 + pulse * 0.1})`, display: "inline-block" }}>rr</span>y
           </div>
           <div style={{ color: isHighlighted ? "#10B981" : "#94A3B8", fontSize: 18, fontWeight: 900, marginTop: 8 }}>
-            2 'r's Trapped
+            🎯 2 'r's Trapped Inside
           </div>
         </div>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "14px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "12px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Total 'R's Counted:</span>
         <span style={{ color: "#10B981", fontWeight: 900, fontSize: 22, fontFamily: nemiTheme.typography.fontFamily.mono }}>1 + 2 = 3 'R'S TOTAL! ✓</span>
       </div>
@@ -771,9 +816,9 @@ const StrawberryXrayPanel: React.FC<{ frame: number; cutE: number; piecesSplitCu
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 5. TOKENIZER TAKEAWAY (Stage F: Core Mental Model)
-// ═══════════════════════════════════════════════════════════
-const TokenizerTakeaway: React.FC<{ frame: number; cutF: number }> = ({ frame, cutF }) => {
+// 5. LIVING TOKENIZER TAKEAWAY (Stage F: Takeaway & Loop Seam)
+// ═══════════════════════════════════════════════════════════════
+const LivingTokenizerTakeaway: React.FC<{ frame: number; cutF: number }> = ({ frame, cutF }) => {
   return (
     <div
       style={{

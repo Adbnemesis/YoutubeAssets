@@ -13,9 +13,10 @@
 5. **Law of Tactile SFX:** Every state transition has a whoosh (-15ms lead), every card pop has a pluck, every reveal has an impact.
 6. **Law of Kinetic Captions:** High-visibility karaoke captions at `top: 1140px` with active words scaling to `1.18x` in Gold/Cyan.
 7. **Law of the Mascot Payoff:** Nemi Mascot mirrors the audience's surprise at second 20 and delivers the technical punchline at second 24.
-8. **Law of the 25-Second Ceiling:** Total video duration must stay strictly between **24.0s and 25.8s** for optimal short-form completion rate.
+8. **Law of the Duration Window:** Total video duration targets **19.0s – 22.0s** with a **24.0s hard cap**. Length is not the retention problem — the hook is (see `06_HOOK_SYSTEM.md` §6). Field data: the two longest reels had the two worst APVs; don't creep past 24s chasing completeness — compress setup instead.
 9. **Law of the Hybrid Manim Cutaway:** Use Python Manim for mathematical proofs, vector embeddings, and tree traversals embedded in Remotion.
 10. **Law of the Seamless Loop:** The final phrase flows naturally back into the opening hook for infinite replay loops.
+11. **Law of Living Motion (Zero Static Visuals):** Visuals must NEVER be static styled boxes or resting diagrams. Every stage must feature continuous, living motion: undulating waveforms (`Math.sin`), physical sweeping laser beams, active path drawing (`strokeDashoffset`), pulsing data packets streaming along wires, real-time filling meters/gauges, and dynamic node connections. The audience must *watch the physical process happen in motion*.
 
 ---
 
