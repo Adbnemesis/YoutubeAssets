@@ -1,5 +1,8 @@
 import React from "react";
 import { Composition } from "remotion";
+import { TokenizeComp } from "../reels/tokenize_08/TokenizeComp";
+import { ShazamComp } from "../reels/shazam_07/ShazamComp";
+import { QrCodeComp } from "../reels/qr_06/QrCodeComp";
 import { RiddleDeadlockComp } from "../reels/riddle_05/RiddleDeadlockComp";
 import { ChatGPTExplainsComp } from "../reels/chatgpt_04/ChatGPTExplainsComp";
 import { TwoSumComp } from "../reels/twosum_03/TwoSumComp";
@@ -29,6 +32,30 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsTokenize"
+        component={TokenizeComp}
+        durationInFrames={665} // 22.17s @ 30fps — Reel #8: ChatGPT Has Never Seen a Single Letter of This Word (Tokenization & BPE)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
+      <Composition
+        id="NemiExplainsShazam"
+        component={ShazamComp}
+        durationInFrames={608} // 20.27s @ 30fps — Reel #7: It Heard 1 Second of Noise. And Named the Song. (Shazam Fingerprints)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
+      <Composition
+        id="NemiExplainsQrCode"
+        component={QrCodeComp}
+        durationInFrames={544} // 18.13s @ 30fps — Reel #6: You Destroyed This QR Code. It Still Scanned. (Reed-Solomon)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsRiddleDeadlock"
         component={RiddleDeadlockComp}
