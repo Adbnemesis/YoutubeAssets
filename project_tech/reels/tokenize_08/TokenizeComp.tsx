@@ -3,7 +3,6 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
-  spring,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
@@ -19,9 +18,10 @@ export const nemiTheme = {
     brandPurple: "#A855F7",
     brandGreen: "#10B981",
     brandCoral: "#F43F5E",
+    brandAmber: "#F59E0B",
     canvasLight: "#FAF8F5",
     canvasDark: "#070B12",
-    cardDark: "#0F172A",
+    cardDark: "#0B1120",
     textLight: "#0F172A",
     textDark: "#F8FAFC",
     borderLight: "#E2E8F0",
@@ -71,7 +71,6 @@ export const TokenizeComp: React.FC = () => {
   const piecesSplitCue = getCue("tk05_payoff", "pieces_split"); // 405
   const rsHighlightCue = getCue("tk05_payoff", "rs_highlight"); // 445
   const smugStampCue = getCue("tk06_nemi_payoff", "smug_stamp"); // 488
-  const loopWaveCue = getCue("tk07_loop", "loop_wave"); // 563
   const loopCheckCue = getCue("tk07_loop", "loop_check"); // 627
 
   // ─── Stage Boundaries (Punch Cuts — Zero Slide Drift) ───
@@ -80,20 +79,19 @@ export const TokenizeComp: React.FC = () => {
   const cutE = evPayoff.start_frame; // 363
   const cutF = evNemiPayoff.start_frame - 1; // 475
 
-  // ─── Canvas Worlds (Cream for Stage A & Outro, Deep Cyber Dark for Tech Core) ───
-  const isDarkWorld = frame >= cutB && frame < cutF;
+  // ─── Canvas Worlds ───
+  const isDarkWorld = frame >= cutB;
   const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
-  const textMain = isDarkWorld ? nemiTheme.colors.textDark : nemiTheme.colors.textLight;
 
-  // ─── Dynamic Camera: Continuous Breathing + Punch Accents + Cut Settle ───
-  const breathing = interpolate(frame, [0, totalFrames], [1.0, 1.03], {
+  // ─── Dynamic Camera: Smooth Continuous Breathing + Sparse Accents ───
+  const breathing = interpolate(frame, [0, totalFrames], [1.0, 1.025], {
     extrapolateRight: "clamp",
   });
 
-  const punch = (at: number, amt = 0.045, dur = 7) => {
+  const punch = (at: number, amt = 0.038, dur = 8) => {
     const d = frame - at;
     if (at <= 0 || d < 0) return 0;
-    return interpolate(d, [0, 2, dur], [amt, amt * 0.5, 0], {
+    return interpolate(d, [0, 2, dur], [amt, amt * 0.4, 0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
@@ -102,26 +100,20 @@ export const TokenizeComp: React.FC = () => {
   const cutSettle = (at: number) => {
     const d = frame - at;
     if (d < 0) return 0;
-    return interpolate(d, [0, 5], [0.05, 0], {
+    return interpolate(d, [0, 6], [0.03, 0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
   };
 
-  const punchTotal =
-    punch(wordSplitCue) +
-    punch(tokenIdsCue, 0.055) +
-    punch(chopTextCue) +
-    punch(idsPopulateCue) +
-    punch(piecesSplitCue, 0.055) +
-    punch(rsHighlightCue, 0.06) +
-    punch(loopCheckCue) +
+  const cameraScale =
+    breathing +
+    punch(wordSplitCue, 0.035) +
+    punch(piecesSplitCue, 0.04) +
     cutSettle(cutB) +
     cutSettle(cutD) +
     cutSettle(cutE) +
     cutSettle(cutF);
-
-  const cameraScale = breathing + punchTotal;
 
   // ─── Nemi Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "shocked";
@@ -197,19 +189,13 @@ export const TokenizeComp: React.FC = () => {
       <Sequence from={idsPopulateCue} durationInFrames={28}>
         <Audio src={staticFile("reels/tokenize_08/sfx/notification.mp3")} volume={0.63} />
       </Sequence>
-      <Sequence from={dictCounterCue} durationInFrames={25}>
-        <Audio src={staticFile("reels/tokenize_08/sfx/click.mp3")} volume={0.63} />
-      </Sequence>
       <Sequence from={Math.max(0, cutE - 1)} durationInFrames={35}>
         <Audio src={staticFile("reels/tokenize_08/sfx/whoosh.mp3")} volume={0.7} />
       </Sequence>
       <Sequence from={piecesSplitCue} durationInFrames={20}>
         <Audio src={staticFile("reels/tokenize_08/sfx/pop.mp3")} volume={0.66} />
       </Sequence>
-      <Sequence from={piecesSplitCue + 6} durationInFrames={20}>
-        <Audio src={staticFile("reels/tokenize_08/sfx/pop.mp3")} volume={0.6} />
-      </Sequence>
-      <Sequence from={rsHighlightCue} durationInFrames={45}>
+      <Sequence from={rsHighlightCue} durationInFrames={40}>
         <Audio src={staticFile("reels/tokenize_08/sfx/chime.mp3")} volume={0.7} />
       </Sequence>
       <Sequence from={Math.max(0, cutF - 1)} durationInFrames={35}>
@@ -217,9 +203,6 @@ export const TokenizeComp: React.FC = () => {
       </Sequence>
       <Sequence from={smugStampCue} durationInFrames={30}>
         <Audio src={staticFile("reels/tokenize_08/sfx/notification.mp3")} volume={0.66} />
-      </Sequence>
-      <Sequence from={loopCheckCue} durationInFrames={30}>
-        <Audio src={staticFile("reels/tokenize_08/sfx/ping.mp3")} volume={0.7} />
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
@@ -234,13 +217,13 @@ export const TokenizeComp: React.FC = () => {
                 position: "absolute",
                 top: 180,
                 left: -160,
-                width: 620,
-                height: 620,
+                width: 650,
+                height: 650,
                 borderRadius: "50%",
-                background: inStageE
-                  ? "radial-gradient(circle, rgba(244, 63, 94, 0.24) 0%, rgba(0,0,0,0) 70%)"
+                background: inStageBC
+                  ? "radial-gradient(circle, rgba(244, 63, 94, 0.22) 0%, rgba(0,0,0,0) 70%)"
                   : "radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, rgba(0,0,0,0) 70%)",
-                filter: "blur(80px)",
+                filter: "blur(90px)",
               }}
             />
             <div
@@ -248,13 +231,13 @@ export const TokenizeComp: React.FC = () => {
                 position: "absolute",
                 top: 700,
                 right: -160,
-                width: 620,
-                height: 620,
+                width: 650,
+                height: 650,
                 borderRadius: "50%",
-                background: inStageE
-                  ? "radial-gradient(circle, rgba(255, 209, 102, 0.18) 0%, rgba(0,0,0,0) 70%)"
-                  : "radial-gradient(circle, rgba(168, 85, 247, 0.16) 0%, rgba(0,0,0,0) 70%)",
-                filter: "blur(80px)",
+                background: inStageE || inStageF
+                  ? "radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(0,0,0,0) 70%)"
+                  : "radial-gradient(circle, rgba(255, 209, 102, 0.16) 0%, rgba(0,0,0,0) 70%)",
+                filter: "blur(90px)",
               }}
             />
           </div>
@@ -286,9 +269,8 @@ export const TokenizeComp: React.FC = () => {
                   width: 18,
                   height: 18,
                   borderRadius: "50%",
-                  backgroundColor: inStageE ? nemiTheme.colors.brandCoral : nemiTheme.colors.brandCyan,
-                  boxShadow: `0 0 24px ${inStageE ? nemiTheme.colors.brandCoral : nemiTheme.colors.brandCyan}`,
-                  transform: `scale(${interpolate(frame % 20, [0, 10, 20], [1.0, 1.25, 1.0])})`,
+                  backgroundColor: inStageE || inStageF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCoral,
+                  boxShadow: `0 0 24px ${inStageE || inStageF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCoral}`,
                 }}
               />
               <span
@@ -297,10 +279,10 @@ export const TokenizeComp: React.FC = () => {
                   fontWeight: 900,
                   letterSpacing: "1.5px",
                   textTransform: "uppercase",
-                  color: isDarkWorld ? (inStageE ? "#F43F5E" : "#06B6D4") : "#0284C7",
+                  color: isDarkWorld ? (inStageE || inStageF ? "#10B981" : "#F43F5E") : "#E11D48",
                 }}
               >
-                Ep.8 · The Tokenizer Trap
+                Ep.8 · LLM Tokenization
               </span>
             </div>
             <div
@@ -311,32 +293,22 @@ export const TokenizeComp: React.FC = () => {
                 border: `2px solid ${isDarkWorld ? nemiTheme.colors.borderDark : nemiTheme.colors.borderLight}`,
                 fontSize: 20,
                 fontWeight: 900,
-                color: isDarkWorld ? (inStageE ? "#F43F5E" : "#06B6D4") : "#0284C7",
+                color: isDarkWorld ? (inStageE || inStageF ? "#10B981" : "#F43F5E") : "#E11D48",
                 fontFamily: nemiTheme.typography.fontFamily.mono,
                 boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
               }}
             >
-              {inStageA ? "AI MYSTERY" : inStageBC ? "BYTE-PAIR ENCODING" : inStageD ? "100K VOCABULARY" : inStageE ? "STRAWBERRY X-RAY" : "THE TAKEAWAY"}
+              {inStageA ? "TOKENIZER TEST" : inStageBC ? "BYTE PAIR SLICER" : inStageD ? "VOCABULARY IDS" : inStageE ? "STRAWBERRY X-RAY" : "THE TRUTH"}
             </div>
           </div>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE A — FRAME-0 MONEY SHOT HOOK (Contradiction Punch) */}
+        {/* STAGE A — FRAME-0 MONEY SHOT (STRAWBERRY SPLIT ANOMALY) */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageA && (
           <>
-            {/* Contradiction overlay: ≤8 Words, Bold, Legible at Thumbnail Size */}
-            <div
-              style={{
-                position: "absolute",
-                top: 180,
-                left: 70,
-                right: 70,
-                textAlign: "center",
-                zIndex: 55,
-              }}
-            >
+            <div style={{ position: "absolute", top: 180, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
               <div
                 style={{
                   fontSize: 58,
@@ -346,43 +318,39 @@ export const TokenizeComp: React.FC = () => {
                   color: frame >= wordSplitCue ? nemiTheme.colors.brandCoral : nemiTheme.colors.textLight,
                   transform: `scale(${
                     frame >= wordSplitCue
-                      ? interpolate(frame - wordSplitCue, [0, 4, 9], [1.2, 1.06, 1.0], {
+                      ? interpolate(frame - wordSplitCue, [0, 4, 8], [1.15, 1.05, 1.0], {
                           extrapolateLeft: "clamp",
                           extrapolateRight: "clamp",
                         })
-                      : interpolate(frame, [0, 5], [1.12, 1.0], {
+                      : interpolate(frame, [0, 5], [1.08, 1.0], {
                           extrapolateLeft: "clamp",
                           extrapolateRight: "clamp",
                         })
                   })`,
-                  textShadow: frame >= wordSplitCue ? "0 0 30px rgba(244, 63, 94, 0.35)" : "none",
+                  textShadow: frame >= wordSplitCue ? "0 0 30px rgba(244, 63, 94, 0.3)" : "none",
                 }}
               >
                 {frame >= wordSplitCue ? (
-                  <>
-                    CHATGPT HAS <span style={{ color: nemiTheme.colors.brandCoral }}>NEVER SEEN</span> IT.
-                  </>
+                  <>CHATGPT HAS NEVER SEEN IT.</>
                 ) : (
-                  <>
-                    HOW MANY "R"S IN STRAWBERRY?
-                  </>
+                  <>HOW MANY "R"S IN STRAWBERRY?</>
                 )}
               </div>
             </div>
 
-            {/* Frame-0 Anomaly Card */}
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#FFFFFF",
-                borderRadius: 32,
-                border: "3.5px solid #0284C7",
-                boxShadow: "0 24px 70px rgba(2, 132, 199, 0.2)",
-                padding: "26px 30px",
+                borderRadius: 36,
+                border: "3.5px solid #06B6D4",
+                boxShadow: "0 24px 80px rgba(6, 182, 212, 0.2)",
+                padding: "36px 40px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -391,120 +359,78 @@ export const TokenizeComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>🤖</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#0F172A" }}>User Prompt & Token Split</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>🤖</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Tokenizer Word Slicer</span>
                 </div>
-                <span style={{ backgroundColor: "#E0F2FE", color: "#0369A1", border: "1.5px solid #BAE6FD", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                  FRAME 0 REVEAL
+                <span style={{ backgroundColor: "#CFFAFE", color: "#0891B2", border: "1.5px solid #67E8F9", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  LIVE EXPERIMENT
                 </span>
               </div>
 
-              {/* Central Word Tile Splitting */}
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 20, width: "100%" }}>
-                <div
-                  style={{
-                    backgroundColor: "#F8FAFC",
-                    border: "2px dashed #CBD5E1",
-                    padding: "16px 32px",
-                    borderRadius: 20,
-                    fontSize: 34,
-                    fontWeight: 900,
-                    letterSpacing: "4px",
-                    fontFamily: nemiTheme.typography.fontFamily.mono,
-                    color: "#0F172A",
-                  }}
-                >
-                  "st<span style={{ color: "#F43F5E" }}>r</span>awbe<span style={{ color: "#F43F5E" }}>rr</span>y"
-                </div>
-
-                {/* Slicing Laser Beam */}
-                <div style={{ width: "85%", height: 4, backgroundColor: "#06B6D4", position: "relative", boxShadow: "0 0 16px #06B6D4" }}>
-                  <div style={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", backgroundColor: "#06B6D4", color: "#0F172A", padding: "2px 12px", borderRadius: 10, fontSize: 13, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                    TOKENIZER LASER ✂️
-                  </div>
-                </div>
-
-                {/* Sliced 3D Blocks */}
-                <div style={{ display: "flex", gap: 20, justifyContent: "center", width: "100%" }}>
-                  <div
+              {/* Word Visual */}
+              <div style={{ display: "flex", gap: 8, padding: "20px 36px", backgroundColor: "#F8FAFC", borderRadius: 24, border: "2px dashed #CBD5E1" }}>
+                {["s", "t", "r", "a", "w", "b", "e", "r", "r", "y"].map((char, i) => (
+                  <span
+                    key={i}
                     style={{
-                      backgroundColor: "#FFFFFF",
-                      border: "3px solid #06B6D4",
-                      borderRadius: 22,
-                      padding: "18px 24px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      boxShadow: "0 12px 35px rgba(6, 182, 212, 0.25)",
-                      transform: `scale(${frame >= wordSplitCue ? 1.05 : 1.0})`,
-                      transition: "transform 0.2s ease",
-                      minWidth: 150,
+                      fontSize: 48,
+                      fontWeight: 900,
+                      fontFamily: nemiTheme.typography.fontFamily.mono,
+                      color: char === "r" ? "#F43F5E" : "#0F172A",
+                      padding: "4px 8px",
+                      backgroundColor: char === "r" ? "#FFE4E6" : "transparent",
+                      borderRadius: 10,
                     }}
                   >
-                    <span style={{ fontSize: 32, fontWeight: 900, color: "#06B6D4", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                      "straw"
-                    </span>
-                    <span style={{ fontSize: 16, fontWeight: 900, color: "#0284C7", marginTop: 8, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                      Token #496
-                    </span>
-                  </div>
+                    {char}
+                  </span>
+                ))}
+              </div>
 
-                  <div
-                    style={{
-                      backgroundColor: "#FFFFFF",
-                      border: "3px solid #F43F5E",
-                      borderRadius: 22,
-                      padding: "18px 24px",
-                      display: "flex",
-                      flexDirection: "column",
-                      alignItems: "center",
-                      boxShadow: "0 12px 35px rgba(244, 63, 94, 0.25)",
-                      transform: `scale(${frame >= wordSplitCue ? 1.05 : 1.0})`,
-                      transition: "transform 0.2s ease",
-                      minWidth: 150,
-                    }}
-                  >
-                    <span style={{ fontSize: 32, fontWeight: 900, color: "#F43F5E", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                      "berry"
-                    </span>
-                    <span style={{ fontSize: 16, fontWeight: 900, color: "#E11D48", marginTop: 8, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                      Token #675
-                    </span>
-                  </div>
+              {/* Sliced Tokens */}
+              <div style={{ display: "flex", gap: 24 }}>
+                <div style={{ backgroundColor: "#ECFEFF", padding: "18px 32px", borderRadius: 20, border: "2.5px solid #06B6D4", textAlign: "center" }}>
+                  <div style={{ fontSize: 32, fontWeight: 900, color: "#0891B2", fontFamily: nemiTheme.typography.fontFamily.mono }}>"straw"</div>
+                  <div style={{ fontSize: 18, fontWeight: 800, color: "#0E7490", marginTop: 4 }}>Token #496</div>
+                </div>
+                <div style={{ backgroundColor: "#FFF1F2", padding: "18px 32px", borderRadius: 20, border: "2.5px solid #F43F5E", textAlign: "center" }}>
+                  <div style={{ fontSize: 32, fontWeight: 900, color: "#E11D48", fontFamily: nemiTheme.typography.fontFamily.mono }}>"berry"</div>
+                  <div style={{ fontSize: 18, fontWeight: 800, color: "#BE123C", marginTop: 4 }}>Token #675</div>
                 </div>
               </div>
 
-              <div style={{ fontSize: 18, fontWeight: 800, color: "#64748B", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                The AI never receives letters — only chunk numbers!
+              <div style={{ fontSize: 19, color: "#64748B", fontWeight: 700, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                The AI never receives raw characters — only integer chunk IDs!
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE B+C — THE BYTE-PAIR TOKENIZER & NEMI'S WRONG GUESS */}
+        {/* STAGE B+C — THE BYTE PAIR SLICER & NEMI'S WRONG GUESS */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageBC && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
-                Step 1: Text Gets Sliced
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#F43F5E" }}>
+                Byte-Pair Slicing In Action
               </div>
             </div>
 
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
-                border: "3.5px solid #06B6D4",
-                boxShadow: "0 24px 75px rgba(6, 182, 212, 0.3)",
-                padding: "26px 30px",
+                borderRadius: 36,
+                border: "3.5px solid #F43F5E",
+                boxShadow: "0 24px 80px rgba(244, 63, 94, 0.3)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -513,74 +439,67 @@ export const TokenizeComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>✂️</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>Byte-Pair Slicer</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>✂️</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>BPE Tokenizer Pipeline</span>
                 </div>
-                <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                  PRE-PROCESSING
+                <span style={{ backgroundColor: "rgba(244, 63, 94, 0.2)", color: "#F43F5E", border: "1.5px solid #F43F5E", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  AUTOMATIC CHUNKING
                 </span>
               </div>
 
-              {/* Slicing Animation of Sentence */}
+              {/* Slicing Step Visual */}
               <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 16 }}>
-                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B" }}>
-                  <span style={{ color: "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>RAW SENTENCE:</span>
-                  <div style={{ color: "#F8FAFC", fontSize: 24, fontWeight: 800, marginTop: 4, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                    "Before any thinking..."
-                  </div>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#94A3B8", fontSize: 18 }}>Raw Input:</span>
+                  <span style={{ color: "#F8FAFC", fontSize: 24, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>"strawberry"</span>
+                  <span style={{ color: "#F43F5E", fontWeight: 800 }}>10 Letters</span>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "2px solid #06B6D4", textAlign: "center" }}>
-                    <span style={{ color: "#06B6D4", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>["Before"]</span>
-                    <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>Chunk #1</div>
-                  </div>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "2px solid #06B6D4", textAlign: "center" }}>
-                    <span style={{ color: "#06B6D4", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>[" any"]</span>
-                    <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>Chunk #2</div>
-                  </div>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "2px solid #A855F7", textAlign: "center" }}>
-                    <span style={{ color: "#C084FC", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>[" think"]</span>
-                    <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>Chunk #3</div>
-                  </div>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "2px solid #A855F7", textAlign: "center" }}>
-                    <span style={{ color: "#C084FC", fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>["ing"]</span>
-                    <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>Chunk #4</div>
-                  </div>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#94A3B8", fontSize: 18 }}>Chunk Slicer:</span>
+                  <span style={{ color: "#06B6D4", fontSize: 24, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>["straw", "berry"]</span>
+                  <span style={{ color: "#06B6D4", fontWeight: 800 }}>2 Chunks</span>
+                </div>
+
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#94A3B8", fontSize: 18 }}>Model Receives:</span>
+                  <span style={{ color: "#10B981", fontSize: 24, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>[496, 675]</span>
+                  <span style={{ color: "#10B981", fontWeight: 800 }}>2 Number IDs</span>
                 </div>
               </div>
 
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                Words are broken down into subword statistical pieces!
+              <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                The neural network processes number tokens — not individual letters!
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE D — THE 100,000-ENTRY TOKEN VOCABULARY */}
+        {/* STAGE D — VOCABULARY IDS (100,000 TOKEN DICTIONARY) */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageD && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#C084FC" }}>
-                Step 2: 100,000 Token IDs
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
+                100,000 Token Dictionary 📚
               </div>
             </div>
 
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
-                border: "3.5px solid #A855F7",
-                boxShadow: "0 24px 80px rgba(168, 85, 247, 0.35)",
-                padding: "26px 30px",
+                borderRadius: 36,
+                border: "3.5px solid #06B6D4",
+                boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -589,75 +508,63 @@ export const TokenizeComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>📖</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>Vocabulary Hash Table</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>📖</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Pre-Trained Vocabulary Lookup</span>
                 </div>
-                <span style={{ backgroundColor: "rgba(168, 85, 247, 0.2)", color: "#C084FC", border: "1.5px solid #A855F7", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                  100,256 ENTRIES
+                <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  100,000+ TOKENS
                 </span>
               </div>
 
-              {/* Table of mapped tokens */}
-              <div style={{ width: "100%", backgroundColor: "#0F172A", borderRadius: 20, border: "2px solid #1E293B", padding: "16px 20px", display: "flex", flexDirection: "column", gap: 8 }}>
-                {[
-                  { word: "the", id: "262", color: "#FFD166" },
-                  { word: "straw", id: "496", color: "#06B6D4" },
-                  { word: "berry", id: "675", color: "#F43F5E" },
-                  { word: "ing", id: "278", color: "#A855F7" },
-                ].map((item, idx) => (
-                  <div
-                    key={item.word}
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      padding: "8px 12px",
-                      borderRadius: 12,
-                      backgroundColor: idx % 2 === 0 ? "rgba(255,255,255,0.03)" : "transparent",
-                    }}
-                  >
-                    <span style={{ color: "#F8FAFC", fontSize: 22, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                      "{item.word}"
-                    </span>
-                    <span style={{ color: "#94A3B8", fontSize: 18 }}>➔</span>
-                    <span style={{ color: item.color, fontSize: 22, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                      #{item.id}
-                    </span>
-                  </div>
-                ))}
+              {/* Vocab Lookup Grid */}
+              <div style={{ width: "100%", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 18, border: "1.5px solid #1E293B", textAlign: "center" }}>
+                  <div style={{ color: "#94A3B8", fontSize: 16 }}>Token #496</div>
+                  <div style={{ color: "#06B6D4", fontSize: 26, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>"straw"</div>
+                </div>
+                <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 18, border: "1.5px solid #1E293B", textAlign: "center" }}>
+                  <div style={{ color: "#94A3B8", fontSize: 16 }}>Token #675</div>
+                  <div style={{ color: "#F43F5E", fontSize: 26, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>"berry"</div>
+                </div>
+                <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 18, border: "1.5px solid #1E293B", textAlign: "center" }}>
+                  <div style={{ color: "#94A3B8", fontSize: 16 }}>Token #912</div>
+                  <div style={{ color: "#FFD166", fontSize: 26, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>"apple"</div>
+                </div>
               </div>
 
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                Every common subword piece gets a permanent integer ID!
+              <div style={{ width: "100%", backgroundColor: "#03140C", padding: "16px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>Compression Ratio:</span>
+                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>~4 CHARACTERS PER TOKEN</span>
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE E — THE PAYOFF: STRAWBERRY X-RAY (LOST R's) */}
+        {/* STAGE E — THE PAYOFF: STRAWBERRY X-RAY REVEAL (~58%) */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageE && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#F43F5E" }}>
-                The X-Ray: Letters Locked In! 🍓
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#10B981" }}>
+                The Payoff: The Letters Are Trapped! 🍓
               </div>
             </div>
 
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
-                border: "3.5px solid #F43F5E",
-                boxShadow: "0 24px 80px rgba(244, 63, 94, 0.4)",
-                padding: "26px 30px",
+                borderRadius: 36,
+                border: "3.5px solid #10B981",
+                boxShadow: "0 24px 80px rgba(16, 185, 129, 0.35)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -666,69 +573,66 @@ export const TokenizeComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>🍓</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#F43F5E" }}>The 'R' Lock-In</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>🔬</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Inside the AI's Perception</span>
                 </div>
-                <span style={{ backgroundColor: "rgba(244, 63, 94, 0.25)", color: "#F43F5E", border: "1.5px solid #F43F5E", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                  PAYOFF REVEAL
+                <span style={{ backgroundColor: "rgba(16, 185, 129, 0.25)", color: "#10B981", border: "1.5px solid #10B981", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  TRAPPED 'R'S
                 </span>
               </div>
 
-              {/* Two Giant Token Capsules */}
-              <div style={{ display: "flex", gap: 20, width: "100%" }}>
-                <div style={{ flex: 1, backgroundColor: "#0F172A", borderRadius: 22, border: "2.5px solid #06B6D4", padding: "20px", textAlign: "center", boxShadow: "0 0 30px rgba(6, 182, 212, 0.2)" }}>
-                  <div style={{ color: "#06B6D4", fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>TOKEN #496</div>
-                  <div style={{ color: "#F8FAFC", fontSize: 36, fontWeight: 900, margin: "10px 0", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                    st<span style={{ color: "#F43F5E", textShadow: "0 0 16px #F43F5E" }}>r</span>aw
+              {/* Trapped chunk boxes */}
+              <div style={{ display: "flex", gap: 24 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "20px 36px", borderRadius: 24, border: "2.5px solid #06B6D4", textAlign: "center" }}>
+                  <div style={{ color: "#94A3B8", fontSize: 16 }}>Token #496</div>
+                  <div style={{ fontSize: 36, fontWeight: 900, color: "#06B6D4", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
+                    st<span style={{ color: "#F43F5E", textDecoration: "underline" }}>r</span>aw
                   </div>
-                  <div style={{ color: "#94A3B8", fontSize: 14 }}>1 'r' trapped</div>
+                  <div style={{ color: "#10B981", fontSize: 17, fontWeight: 800, marginTop: 8 }}>Contains 1 'r'</div>
                 </div>
 
-                <div style={{ flex: 1, backgroundColor: "#0F172A", borderRadius: 22, border: "2.5px solid #F43F5E", padding: "20px", textAlign: "center", boxShadow: "0 0 30px rgba(244, 63, 94, 0.25)" }}>
-                  <div style={{ color: "#F43F5E", fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>TOKEN #675</div>
-                  <div style={{ color: "#F8FAFC", fontSize: 36, fontWeight: 900, margin: "10px 0", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                    be<span style={{ color: "#F43F5E", textShadow: "0 0 16px #F43F5E" }}>rr</span>y
+                <div style={{ backgroundColor: "#0F172A", padding: "20px 36px", borderRadius: 24, border: "2.5px solid #F43F5E", textAlign: "center" }}>
+                  <div style={{ color: "#94A3B8", fontSize: 16 }}>Token #675</div>
+                  <div style={{ fontSize: 36, fontWeight: 900, color: "#F43F5E", fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
+                    be<span style={{ color: "#F43F5E", textDecoration: "underline" }}>rr</span>y
                   </div>
-                  <div style={{ color: "#94A3B8", fontSize: 14 }}>2 'r's trapped</div>
+                  <div style={{ color: "#10B981", fontSize: 17, fontWeight: 800, marginTop: 8 }}>Contains 2 'r's</div>
                 </div>
               </div>
 
-              <div style={{ width: "100%", backgroundColor: "#03070D", padding: "16px 20px", borderRadius: 18, border: "2px solid #F43F5E", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>AI only sees numbers: <strong style={{ color: "#FFD166" }}>[496, 675]</strong></span>
-                <span style={{ color: "#F43F5E", fontWeight: 900, fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>ZERO LETTERS! ❌</span>
-              </div>
-
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                To count letters, AI has to guess from training weights, not raw vision!
+              <div style={{ width: "100%", backgroundColor: "#03140C", padding: "16px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>Total 'R's Count:</span>
+                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 22, fontFamily: nemiTheme.typography.fontFamily.mono }}>1 + 2 = 3 'R'S TOTAL! ✓</span>
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE F — LOOP SEAM & TAKEAWAY SUMMARY */}
+        {/* STAGE F — LOOP SEAM & CORE MENTAL MODEL */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageF && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#10B981" }}>
-                The Golden AI Rule
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#FFD166" }}>
+                The Tokenizer Secret
               </div>
             </div>
 
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
-                border: "3.5px solid #10B981",
-                boxShadow: "0 24px 80px rgba(16, 185, 129, 0.35)",
-                padding: "26px 30px",
+                borderRadius: 36,
+                border: "3.5px solid #FFD166",
+                boxShadow: "0 24px 80px rgba(255, 209, 102, 0.25)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -736,43 +640,34 @@ export const TokenizeComp: React.FC = () => {
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
                   <span style={{ fontSize: 32 }}>💡</span>
-                  <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981", letterSpacing: "1.5px", textTransform: "uppercase" }}>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#FFD166", letterSpacing: "1.5px", textTransform: "uppercase" }}>
                     CORE MENTAL MODEL
                   </span>
                 </div>
-                <span style={{ backgroundColor: "rgba(16, 185, 129, 0.25)", color: "#10B981", border: "1.5px solid #10B981", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <span style={{ backgroundColor: "rgba(255, 209, 102, 0.2)", color: "#FFD166", border: "1.5px solid #FFD166", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                   TAKEAWAY
                 </span>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
-                <div style={{ backgroundColor: "#0F172A", padding: "16px", borderRadius: 16, border: "1.5px solid #1E293B" }}>
-                  <div style={{ color: "#FFD166", fontWeight: 900, fontSize: 18 }}>1. No Character Grid</div>
-                  <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>LLMs never see single letters</div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 22, border: "2.5px solid #F43F5E" }}>
+                  <div style={{ color: "#F43F5E", fontWeight: 900, fontSize: 24 }}>What You See 👀</div>
+                  <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 10 }}>"s-t-r-a-w-b-e-r-r-y"</div>
+                  <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>10 raw letters on your screen</div>
                 </div>
-                <div style={{ backgroundColor: "#0F172A", padding: "16px", borderRadius: 16, border: "1.5px solid #1E293B" }}>
-                  <div style={{ color: "#06B6D4", fontWeight: 900, fontSize: 18 }}>2. Token ID Stream</div>
-                  <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>Only sequences of integers</div>
-                </div>
-                <div style={{ backgroundColor: "#0F172A", padding: "16px", borderRadius: 16, border: "1.5px solid #A855F7" }}>
-                  <div style={{ color: "#A855F7", fontWeight: 900, fontSize: 18 }}>3. Subword Merges</div>
-                  <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>Common chunks get compressed</div>
-                </div>
-                <div style={{ backgroundColor: "#0F172A", padding: "16px", borderRadius: 16, border: "1.5px solid #10B981" }}>
-                  <div style={{ color: "#10B981", fontWeight: 900, fontSize: 18 }}>4. Always Ask 💡</div>
-                  <div style={{ color: "#94A3B8", fontSize: 14, marginTop: 4 }}>"What does the AI actually see?"</div>
+
+                <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 22, border: "2.5px solid #10B981" }}>
+                  <div style={{ color: "#10B981", fontWeight: 900, fontSize: 24 }}>What AI Sees 🤖</div>
+                  <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 10 }}>[496, 675]</div>
+                  <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>2 pre-baked number tokens</div>
                 </div>
               </div>
 
-              <div style={{ backgroundColor: "#03070D", padding: "16px 20px", borderRadius: 18, border: "1px solid rgba(255, 255, 255, 0.15)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ color: "#F8FAFC", fontSize: 18 }}>Next time AI miscounts, blame the tokens!</span>
-                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>SOLVED ✓</span>
-              </div>
-
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                Share with a friend who argued with ChatGPT! 👇
+              <div style={{ backgroundColor: "#03070D", padding: "18px 24px", borderRadius: 20, border: "1.5px solid rgba(255, 209, 102, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Don't blame ChatGPT — blame the tokenizer!</span>
+                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>SOLVED ✓</span>
               </div>
             </div>
           </>
@@ -827,8 +722,7 @@ export const TokenizeComp: React.FC = () => {
               padding: "16px 36px",
               borderRadius: 26,
               border: "3.5px solid #18181B",
-              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.5)",
-              transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.05, 1.0])})`,
+              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.45)",
               whiteSpace: "nowrap",
             }}
           >
@@ -895,13 +789,6 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
       >
         {currentChunk.words.map((w: any, idx: number) => {
           const isWordActive = frame >= w.start_frame && frame <= w.end_frame + 1;
-          const wordPop = isWordActive
-            ? interpolate(frame - w.start_frame, [0, 3, 7], [1.0, 1.18, 1.08], {
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              })
-            : 1.0;
-
           const activeColor = idx % 2 === 0 ? "#FFD166" : "#06B6D4";
 
           return (
@@ -915,7 +802,6 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
                 textShadow: isWordActive
                   ? `0 0 20px ${activeColor}, 0 2px 4px #000000`
                   : "0 2px 6px rgba(0,0,0,0.8)",
-                transform: `scale(${wordPop})`,
                 display: "inline-block",
               }}
             >

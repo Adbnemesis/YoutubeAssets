@@ -3,7 +3,6 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
-  spring,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
@@ -72,12 +71,11 @@ export const McpComp: React.FC = () => {
   const toolDiscoveryCue = getCue("mcp05_payoff", "tool_discovery"); // 418
   const plugAndPlayCue = getCue("mcp05_payoff", "plug_and_play"); // 470
   const smugStampCue = getCue("mcp06_nemi_payoff", "smug_stamp"); // 501
-  const sideBySideCue = getCue("mcp07_loop", "side_by_side_summary"); // 580
   const loopSeamCue = getCue("mcp07_loop", "loop_seam_check"); // 680
 
   // ─── Stage Boundaries (Hard Punch Cuts) ───
-  const cutB = evApiSide.start_frame; // 72 (API Focus)
-  const cutD = evMcpSide.start_frame; // 239 (MCP Focus)
+  const cutB = evApiSide.start_frame; // 72 (API Deep Dive)
+  const cutD = evMcpSide.start_frame; // 239 (MCP Deep Dive)
   const cutE = evPayoff.start_frame; // 360 (Payoff Discovery)
   const cutF = evNemiPayoff.start_frame - 1; // 500 (Outro Summary)
 
@@ -85,15 +83,15 @@ export const McpComp: React.FC = () => {
   const isDarkWorld = frame >= cutB;
   const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
 
-  // ─── Camera: Continuous Breathing + Punch Accents ───
-  const breathing = interpolate(frame, [0, totalFrames], [1.0, 1.03], {
+  // ─── Camera: Smooth continuous breathing + sparse punch accents (NO jitter) ───
+  const breathing = interpolate(frame, [0, totalFrames], [1.0, 1.025], {
     extrapolateRight: "clamp",
   });
 
-  const punch = (at: number, amt = 0.045, dur = 7) => {
+  const punch = (at: number, amt = 0.038, dur = 8) => {
     const d = frame - at;
     if (at <= 0 || d < 0) return 0;
-    return interpolate(d, [0, 2, dur], [amt, amt * 0.5, 0], {
+    return interpolate(d, [0, 2, dur], [amt, amt * 0.4, 0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
@@ -102,26 +100,22 @@ export const McpComp: React.FC = () => {
   const cutSettle = (at: number) => {
     const d = frame - at;
     if (d < 0) return 0;
-    return interpolate(d, [0, 5], [0.05, 0], {
+    return interpolate(d, [0, 6], [0.03, 0], {
       extrapolateLeft: "clamp",
       extrapolateRight: "clamp",
     });
   };
 
-  const punchTotal =
-    punch(versusPopCue) +
-    punch(splitRevealCue, 0.05) +
-    punch(apiSpaghettiCue) +
-    punch(mcpGlowCue) +
-    punch(usbcPlugCue, 0.055) +
-    punch(toolDiscoveryCue, 0.06) +
-    punch(loopSeamCue) +
+  // Sparse, punchy accents only on key narrative shifts
+  const cameraScale =
+    breathing +
+    punch(versusPopCue, 0.035) +
+    punch(usbcPlugCue, 0.04) +
+    punch(toolDiscoveryCue, 0.045) +
     cutSettle(cutB) +
     cutSettle(cutD) +
     cutSettle(cutE) +
     cutSettle(cutF);
-
-  const cameraScale = breathing + punchTotal;
 
   // ─── Nemi Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "thinking";
@@ -173,9 +167,6 @@ export const McpComp: React.FC = () => {
       <Sequence from={versusPopCue} durationInFrames={20}>
         <Audio src={staticFile("reels/mcp_09/sfx/pop.mp3")} volume={0.66} />
       </Sequence>
-      <Sequence from={versusPopCue + 5} durationInFrames={20}>
-        <Audio src={staticFile("reels/mcp_09/sfx/pop.mp3")} volume={0.6} />
-      </Sequence>
       <Sequence from={splitRevealCue} durationInFrames={30}>
         <Audio src={staticFile("reels/mcp_09/sfx/ping.mp3")} volume={0.7} />
       </Sequence>
@@ -206,9 +197,6 @@ export const McpComp: React.FC = () => {
       <Sequence from={toolDiscoveryCue} durationInFrames={20}>
         <Audio src={staticFile("reels/mcp_09/sfx/pop.mp3")} volume={0.66} />
       </Sequence>
-      <Sequence from={toolDiscoveryCue + 5} durationInFrames={20}>
-        <Audio src={staticFile("reels/mcp_09/sfx/pop.mp3")} volume={0.6} />
-      </Sequence>
       <Sequence from={plugAndPlayCue} durationInFrames={40}>
         <Audio src={staticFile("reels/mcp_09/sfx/chime.mp3")} volume={0.7} />
       </Sequence>
@@ -217,9 +205,6 @@ export const McpComp: React.FC = () => {
       </Sequence>
       <Sequence from={smugStampCue} durationInFrames={30}>
         <Audio src={staticFile("reels/mcp_09/sfx/notification.mp3")} volume={0.66} />
-      </Sequence>
-      <Sequence from={loopSeamCue} durationInFrames={30}>
-        <Audio src={staticFile("reels/mcp_09/sfx/ping.mp3")} volume={0.7} />
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
@@ -238,8 +223,8 @@ export const McpComp: React.FC = () => {
                 height: 650,
                 borderRadius: "50%",
                 background: inStageBC
-                  ? "radial-gradient(circle, rgba(245, 158, 11, 0.25) 0%, rgba(0,0,0,0) 70%)"
-                  : "radial-gradient(circle, rgba(6, 182, 212, 0.22) 0%, rgba(0,0,0,0) 70%)",
+                  ? "radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, rgba(0,0,0,0) 70%)"
+                  : "radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, rgba(0,0,0,0) 70%)",
                 filter: "blur(90px)",
               }}
             />
@@ -252,8 +237,8 @@ export const McpComp: React.FC = () => {
                 height: 650,
                 borderRadius: "50%",
                 background: inStageD || inStageE || inStageF
-                  ? "radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, rgba(0,0,0,0) 70%)"
-                  : "radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, rgba(0,0,0,0) 70%)",
+                  ? "radial-gradient(circle, rgba(16, 185, 129, 0.22) 0%, rgba(0,0,0,0) 70%)"
+                  : "radial-gradient(circle, rgba(168, 85, 247, 0.16) 0%, rgba(0,0,0,0) 70%)",
                 filter: "blur(90px)",
               }}
             />
@@ -288,7 +273,6 @@ export const McpComp: React.FC = () => {
                   borderRadius: "50%",
                   backgroundColor: inStageD || inStageE || inStageF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandAmber,
                   boxShadow: `0 0 24px ${inStageD || inStageE || inStageF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandAmber}`,
-                  transform: `scale(${interpolate(frame % 20, [0, 10, 20], [1.0, 1.25, 1.0])})`,
                 }}
               />
               <span
@@ -322,7 +306,7 @@ export const McpComp: React.FC = () => {
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE A — FRAME-0 MONEY SHOT (SIDE-BY-SIDE DUEL OPENER) */}
+        {/* STAGE A — FRAME-0 HOOK: SIDE-BY-SIDE SHOWDOWN */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageA && (
           <>
@@ -339,23 +323,23 @@ export const McpComp: React.FC = () => {
             >
               <div
                 style={{
-                  fontSize: 56,
+                  fontSize: 58,
                   fontWeight: 900,
                   letterSpacing: -2,
                   lineHeight: 1.1,
                   color: frame >= versusPopCue ? nemiTheme.colors.brandCoral : nemiTheme.colors.textLight,
                   transform: `scale(${
                     frame >= versusPopCue
-                      ? interpolate(frame - versusPopCue, [0, 4, 9], [1.2, 1.06, 1.0], {
+                      ? interpolate(frame - versusPopCue, [0, 4, 8], [1.15, 1.05, 1.0], {
                           extrapolateLeft: "clamp",
                           extrapolateRight: "clamp",
                         })
-                      : interpolate(frame, [0, 5], [1.12, 1.0], {
+                      : interpolate(frame, [0, 5], [1.08, 1.0], {
                           extrapolateLeft: "clamp",
                           extrapolateRight: "clamp",
                         })
                   })`,
-                  textShadow: frame >= versusPopCue ? "0 0 30px rgba(244, 63, 94, 0.35)" : "none",
+                  textShadow: frame >= versusPopCue ? "0 0 30px rgba(244, 63, 94, 0.3)" : "none",
                 }}
               >
                 {frame >= versusPopCue ? (
@@ -370,28 +354,29 @@ export const McpComp: React.FC = () => {
               </div>
             </div>
 
-            {/* Split Screen Dual Columns on Frame 0 */}
+            {/* Side-by-Side Dual Hero Cards */}
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 display: "grid",
                 gridTemplateColumns: "1fr 1fr",
-                gap: 20,
+                gap: 24,
                 zIndex: 30,
               }}
             >
-              {/* Left Column: API */}
+              {/* Left Side: API */}
               <div
                 style={{
                   backgroundColor: "#FFFFFF",
-                  borderRadius: 28,
+                  borderRadius: 32,
                   border: "3.5px solid #F59E0B",
-                  boxShadow: "0 20px 60px rgba(245, 158, 11, 0.2)",
-                  padding: "24px 20px",
+                  boxShadow: "0 20px 60px rgba(245, 158, 11, 0.18)",
+                  padding: "30px 24px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -399,35 +384,35 @@ export const McpComp: React.FC = () => {
                 }}
               >
                 <div style={{ textAlign: "center" }}>
-                  <div style={{ fontSize: 28, fontWeight: 900, color: "#D97706" }}>REST API 📦</div>
-                  <div style={{ fontSize: 14, color: "#94A3B8", fontWeight: 700, marginTop: 4 }}>For Programmers</div>
+                  <div style={{ fontSize: 32, fontWeight: 900, color: "#D97706" }}>REST API 📦</div>
+                  <div style={{ fontSize: 16, color: "#64748B", fontWeight: 800, marginTop: 4 }}>For Programmers</div>
                 </div>
 
-                <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 10 }}>
-                  <div style={{ backgroundColor: "#FEF3C7", padding: "10px 14px", borderRadius: 12, border: "1.5px solid #FCD34D", color: "#92400E", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12 }}>
+                  <div style={{ backgroundColor: "#FEF3C7", padding: "12px 16px", borderRadius: 14, border: "1.5px solid #FCD34D", color: "#92400E", fontSize: 16, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                     POST /v1/chat
                   </div>
-                  <div style={{ backgroundColor: "#FEF3C7", padding: "10px 14px", borderRadius: 12, border: "1.5px solid #FCD34D", color: "#92400E", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  <div style={{ backgroundColor: "#FEF3C7", padding: "12px 16px", borderRadius: 14, border: "1.5px solid #FCD34D", color: "#92400E", fontSize: 16, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                     Bearer: sk-auth-xyz
                   </div>
-                  <div style={{ backgroundColor: "#FEE2E2", padding: "10px 14px", borderRadius: 12, border: "1.5px solid #FCA5A5", color: "#991B1B", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  <div style={{ backgroundColor: "#FEE2E2", padding: "12px 16px", borderRadius: 14, border: "1.5px solid #FCA5A5", color: "#991B1B", fontSize: 16, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                     ⚠️ Rigid JSON Schema
                   </div>
                 </div>
 
-                <div style={{ fontSize: 15, fontWeight: 800, color: "#D97706", textAlign: "center" }}>
+                <div style={{ fontSize: 18, fontWeight: 900, color: "#D97706", textAlign: "center" }}>
                   Hardcoded Endpoints
                 </div>
               </div>
 
-              {/* Right Column: MCP */}
+              {/* Right Side: MCP */}
               <div
                 style={{
                   backgroundColor: "#FFFFFF",
-                  borderRadius: 28,
+                  borderRadius: 32,
                   border: "3.5px solid #06B6D4",
-                  boxShadow: "0 20px 60px rgba(6, 182, 212, 0.2)",
-                  padding: "24px 20px",
+                  boxShadow: "0 20px 60px rgba(6, 182, 212, 0.18)",
+                  padding: "30px 24px",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "space-between",
@@ -435,23 +420,23 @@ export const McpComp: React.FC = () => {
                 }}
               >
                 <div style={{ textAlign: "center" }}>
-                  <div style={{ fontSize: 28, fontWeight: 900, color: "#0891B2" }}>MCP PROTOCOL 🔌</div>
-                  <div style={{ fontSize: 14, color: "#94A3B8", fontWeight: 700, marginTop: 4 }}>For AI Models</div>
+                  <div style={{ fontSize: 32, fontWeight: 900, color: "#0891B2" }}>MCP PROTOCOL 🔌</div>
+                  <div style={{ fontSize: 16, color: "#64748B", fontWeight: 800, marginTop: 4 }}>For AI Models</div>
                 </div>
 
-                <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 10 }}>
-                  <div style={{ backgroundColor: "#CFFAFE", padding: "10px 14px", borderRadius: 12, border: "1.5px solid #67E8F9", color: "#155E75", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12 }}>
+                  <div style={{ backgroundColor: "#CFFAFE", padding: "12px 16px", borderRadius: 14, border: "1.5px solid #67E8F9", color: "#155E75", fontSize: 16, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                     tools/list (Auto-Discover)
                   </div>
-                  <div style={{ backgroundColor: "#CFFAFE", padding: "10px 14px", borderRadius: 12, border: "1.5px solid #67E8F9", color: "#155E75", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  <div style={{ backgroundColor: "#CFFAFE", padding: "12px 16px", borderRadius: 14, border: "1.5px solid #67E8F9", color: "#155E75", fontSize: 16, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                     Universal USB-C Bus
                   </div>
-                  <div style={{ backgroundColor: "#D1FAE5", padding: "10px 14px", borderRadius: 12, border: "1.5px solid #6EE7B7", color: "#065F46", fontSize: 14, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  <div style={{ backgroundColor: "#D1FAE5", padding: "12px 16px", borderRadius: 14, border: "1.5px solid #6EE7B7", color: "#065F46", fontSize: 16, fontWeight: 800, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                     ⚡ Zero Code Changes
                   </div>
                 </div>
 
-                <div style={{ fontSize: 15, fontWeight: 800, color: "#0891B2", textAlign: "center" }}>
+                <div style={{ fontSize: 18, fontWeight: 900, color: "#0891B2", textAlign: "center" }}>
                   Dynamic Plug & Play
                 </div>
               </div>
@@ -460,12 +445,12 @@ export const McpComp: React.FC = () => {
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE B+C — LEFT SIDE DEEP DIVE (THE API REWIRING TRAP) */}
+        {/* STAGE B+C — LEFT SIDE DEEP DIVE: THE API SPAGHETTI TRAP */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageBC && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#F59E0B" }}>
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#F59E0B" }}>
                 The API Trap: N × M Rewiring
               </div>
             </div>
@@ -473,15 +458,16 @@ export const McpComp: React.FC = () => {
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
+                borderRadius: 36,
                 border: "3.5px solid #F59E0B",
-                boxShadow: "0 24px 80px rgba(245, 158, 11, 0.35)",
-                padding: "26px 30px",
+                boxShadow: "0 24px 80px rgba(245, 158, 11, 0.3)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -490,55 +476,51 @@ export const McpComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>📦</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>Traditional REST API Architecture</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>📦</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Traditional REST API Integration</span>
                 </div>
-                <span style={{ backgroundColor: "rgba(245, 158, 11, 0.2)", color: "#F59E0B", border: "1.5px solid #F59E0B", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <span style={{ backgroundColor: "rgba(245, 158, 11, 0.2)", color: "#F59E0B", border: "1.5px solid #F59E0B", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                   MANUAL REWIRING
                 </span>
               </div>
 
-              {/* Spaghetti wiring diagram */}
-              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14 }}>
-                <div style={{ backgroundColor: "#0F172A", padding: "14px 18px", borderRadius: 16, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800 }}>🧑‍💻 Developer</span>
-                  <span style={{ color: "#F59E0B", fontSize: 16 }}>writes custom client SDK</span>
-                  <span style={{ color: "#06B6D4", fontSize: 18, fontWeight: 800 }}>GitHub API 🐙</span>
+              {/* Spaghetti wiring items */}
+              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 16 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>🧑‍💻 Developer</span>
+                  <span style={{ color: "#F59E0B", fontSize: 17, fontWeight: 700 }}>writes custom client SDK ➔</span>
+                  <span style={{ color: "#06B6D4", fontSize: 20, fontWeight: 800 }}>GitHub API 🐙</span>
                 </div>
 
-                <div style={{ backgroundColor: "#0F172A", padding: "14px 18px", borderRadius: 16, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800 }}>🧑‍💻 Developer</span>
-                  <span style={{ color: "#F59E0B", fontSize: 16 }}>writes new auth headers</span>
-                  <span style={{ color: "#A855F7", fontSize: 18, fontWeight: 800 }}>Slack API 💬</span>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>🧑‍💻 Developer</span>
+                  <span style={{ color: "#F59E0B", fontSize: 17, fontWeight: 700 }}>writes custom auth headers ➔</span>
+                  <span style={{ color: "#A855F7", fontSize: 20, fontWeight: 800 }}>Slack API 💬</span>
                 </div>
 
-                <div style={{ backgroundColor: "#0F172A", padding: "14px 18px", borderRadius: 16, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800 }}>🧑‍💻 Developer</span>
-                  <span style={{ color: "#F43F5E", fontSize: 16 }}>re-deploys full application</span>
-                  <span style={{ color: "#10B981", fontSize: 18, fontWeight: 800 }}>Postgres API 🗄️</span>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #1E293B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>🧑‍💻 Developer</span>
+                  <span style={{ color: "#F43F5E", fontSize: 17, fontWeight: 700 }}>re-deploys backend server ➔</span>
+                  <span style={{ color: "#10B981", fontSize: 20, fontWeight: 800 }}>Postgres API 🗄️</span>
                 </div>
               </div>
 
-              <div style={{ width: "100%", backgroundColor: "#181005", padding: "14px 18px", borderRadius: 16, border: "2px solid #F59E0B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ color: "#F8FAFC", fontSize: 17 }}>If you connect 10 AI models to 10 tools:</span>
-                <span style={{ color: "#F59E0B", fontWeight: 900, fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>100 CUSTOM APIS! 🍝</span>
-              </div>
-
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                Every single integration requires human code edits!
+              <div style={{ width: "100%", backgroundColor: "#181005", padding: "16px 22px", borderRadius: 18, border: "2px solid #F59E0B", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>10 AI Models × 10 Tools:</span>
+                <span style={{ color: "#F59E0B", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>100 CUSTOM APIS! 🍝</span>
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE D — RIGHT SIDE DEEP DIVE (MCP IS USB-C FOR AI) */}
+        {/* STAGE D — RIGHT SIDE DEEP DIVE: MCP IS USB-C FOR AI */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageD && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
                 The Solution: USB-C for AI 🔌
               </div>
             </div>
@@ -546,15 +528,16 @@ export const McpComp: React.FC = () => {
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
+                borderRadius: 36,
                 border: "3.5px solid #06B6D4",
-                boxShadow: "0 24px 80px rgba(6, 182, 212, 0.35)",
-                padding: "26px 30px",
+                boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -563,76 +546,77 @@ export const McpComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>🔌</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>Model Context Protocol Standard</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>🔌</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Model Context Protocol Standard</span>
                 </div>
-                <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                   UNIVERSAL PROTOCOL
                 </span>
               </div>
 
               {/* Universal Hub Visual */}
-              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14 }}>
-                <div style={{ backgroundColor: "#0F172A", padding: "18px 20px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                    <span style={{ fontSize: 32 }}>🤖</span>
+              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 18 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "20px 24px", borderRadius: 20, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                    <span style={{ fontSize: 36 }}>🤖</span>
                     <div>
-                      <div style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 900 }}>AI Client / Agent</div>
-                      <div style={{ color: "#94A3B8", fontSize: 13 }}>Claude, Antigravity, Cursor</div>
+                      <div style={{ color: "#F8FAFC", fontSize: 22, fontWeight: 900 }}>AI Agent (Claude / Cursor)</div>
+                      <div style={{ color: "#94A3B8", fontSize: 15, fontWeight: 700 }}>Single Standardized Client</div>
                     </div>
                   </div>
-                  <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", padding: "6px 16px", borderRadius: 12, fontSize: 15, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                    ONE SINGLE MCP PORT ⚡
+                  <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", padding: "8px 20px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                    ONE UNIVERSAL PORT ⚡
                   </span>
                 </div>
 
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 }}>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "1.5px solid #1E293B", textAlign: "center" }}>
-                    <div style={{ fontSize: 24 }}>🐙</div>
-                    <div style={{ color: "#F8FAFC", fontSize: 16, fontWeight: 800, marginTop: 4 }}>GitHub MCP</div>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }}>
+                  <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 18, border: "1.5px solid #1E293B", textAlign: "center" }}>
+                    <div style={{ fontSize: 28 }}>🐙</div>
+                    <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 6 }}>GitHub MCP</div>
                   </div>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "1.5px solid #1E293B", textAlign: "center" }}>
-                    <div style={{ fontSize: 24 }}>💬</div>
-                    <div style={{ color: "#F8FAFC", fontSize: 16, fontWeight: 800, marginTop: 4 }}>Slack MCP</div>
+                  <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 18, border: "1.5px solid #1E293B", textAlign: "center" }}>
+                    <div style={{ fontSize: 28 }}>💬</div>
+                    <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 6 }}>Slack MCP</div>
                   </div>
-                  <div style={{ backgroundColor: "#0F172A", padding: "14px", borderRadius: 16, border: "1.5px solid #1E293B", textAlign: "center" }}>
-                    <div style={{ fontSize: 24 }}>🗄️</div>
-                    <div style={{ color: "#F8FAFC", fontSize: 16, fontWeight: 800, marginTop: 4 }}>Postgres MCP</div>
+                  <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 18, border: "1.5px solid #1E293B", textAlign: "center" }}>
+                    <div style={{ fontSize: 28 }}>🗄️</div>
+                    <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 6 }}>Postgres MCP</div>
                   </div>
                 </div>
               </div>
 
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                1 Protocol replaces thousands of custom API integrations!
+              <div style={{ fontSize: 19, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                1 Protocol replaces thousands of custom API glue scripts!
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE E — THE PAYOFF: DYNAMIC TOOL DISCOVERY (58% MARK) */}
+        {/* STAGE E — THE PAYOFF: DYNAMIC TOOL AUTO-DISCOVERY (~58%) */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageE && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#10B981" }}>
-                The Payoff: Dynamic Auto-Discovery! ⚡
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#10B981" }}>
+                The Payoff: Auto-Discovery! ⚡
               </div>
             </div>
 
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
+                borderRadius: 36,
                 border: "3.5px solid #10B981",
-                boxShadow: "0 24px 80px rgba(16, 185, 129, 0.4)",
-                padding: "26px 30px",
+                boxShadow: "0 24px 80px rgba(16, 185, 129, 0.35)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -641,55 +625,51 @@ export const McpComp: React.FC = () => {
               }}
             >
               <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ fontSize: 28 }}>⚡</span>
-                  <span style={{ fontSize: 22, fontWeight: 900, color: "#10B981" }}>Runtime Tool Execution</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+                  <span style={{ fontSize: 32 }}>⚡</span>
+                  <span style={{ fontSize: 24, fontWeight: 900, color: "#10B981" }}>Runtime Tool Discovery Flow</span>
                 </div>
-                <span style={{ backgroundColor: "rgba(16, 185, 129, 0.25)", color: "#10B981", border: "1.5px solid #10B981", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                  ZERO MANUAL CODE
+                <span style={{ backgroundColor: "rgba(16, 185, 129, 0.25)", color: "#10B981", border: "1.5px solid #10B981", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  ZERO CODE WRITTEN
                 </span>
               </div>
 
-              {/* Dynamic handshake flow */}
-              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12 }}>
-                <div style={{ backgroundColor: "#0F172A", padding: "14px 18px", borderRadius: 16, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#06B6D4", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>1. tools/list</span>
-                  <span style={{ color: "#F8FAFC", fontSize: 16 }}>AI asks what capabilities exist</span>
-                  <span style={{ color: "#10B981", fontWeight: 900 }}>Auto-Discovered ✓</span>
+              {/* Protocol Handshake */}
+              <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#06B6D4", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>1. tools/list</span>
+                  <span style={{ color: "#F8FAFC", fontSize: 17, fontWeight: 700 }}>AI asks server for capabilities</span>
+                  <span style={{ color: "#10B981", fontWeight: 900, fontSize: 17 }}>Discovered ✓</span>
                 </div>
 
-                <div style={{ backgroundColor: "#0F172A", padding: "14px 18px", borderRadius: 16, border: "2px solid #A855F7", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#C084FC", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>2. tools/call</span>
-                  <span style={{ color: "#F8FAFC", fontSize: 16 }}>AI invokes parameters dynamically</span>
-                  <span style={{ color: "#10B981", fontWeight: 900 }}>Executed ✓</span>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #A855F7", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#C084FC", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>2. tools/call</span>
+                  <span style={{ color: "#F8FAFC", fontSize: 17, fontWeight: 700 }}>AI passes parameters dynamically</span>
+                  <span style={{ color: "#10B981", fontWeight: 900, fontSize: 17 }}>Executed ✓</span>
                 </div>
 
-                <div style={{ backgroundColor: "#0F172A", padding: "14px 18px", borderRadius: 16, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                  <span style={{ color: "#10B981", fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>3. Context Sync</span>
-                  <span style={{ color: "#F8FAFC", fontSize: 16 }}>Live database & file streams attached</span>
-                  <span style={{ color: "#10B981", fontWeight: 900 }}>Connected ✓</span>
+                <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ color: "#10B981", fontSize: 18, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>3. Context Sync</span>
+                  <span style={{ color: "#F8FAFC", fontSize: 17, fontWeight: 700 }}>Live data attached to model prompt</span>
+                  <span style={{ color: "#10B981", fontWeight: 900, fontSize: 17 }}>Attached ✓</span>
                 </div>
               </div>
 
-              <div style={{ width: "100%", backgroundColor: "#03140C", padding: "16px 20px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Plug in any new tool:</span>
-                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>INSTANTLY AVAILABLE! 🚀</span>
-              </div>
-
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                The AI adapts itself without writing a single line of backend glue code!
+              <div style={{ width: "100%", backgroundColor: "#03140C", padding: "16px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>Plug in any new tool at runtime:</span>
+                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>INSTANTLY AVAILABLE! 🚀</span>
               </div>
             </div>
           </>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* STAGE F — LOOP SEAM & COMPARISON SUMMARY (DARK MODE SLEEK) */}
+        {/* STAGE F — LOOP SEAM & FINAL COMPARISON TABLE */}
         {/* ══════════════════════════════════════════════════════════ */}
         {inStageF && (
           <>
             <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-              <div style={{ fontSize: 50, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
+              <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
                 The Golden Rule: API vs MCP
               </div>
             </div>
@@ -697,15 +677,16 @@ export const McpComp: React.FC = () => {
             <div
               style={{
                 position: "absolute",
-                top: 350,
-                left: 65,
-                right: 65,
-                height: 530,
+                top: 360,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 950,
+                height: 540,
                 backgroundColor: "#0B1120",
-                borderRadius: 32,
+                borderRadius: 36,
                 border: "3.5px solid #06B6D4",
-                boxShadow: "0 24px 80px rgba(6, 182, 212, 0.35)",
-                padding: "26px 30px",
+                boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
+                padding: "32px 36px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -713,40 +694,36 @@ export const McpComp: React.FC = () => {
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
                   <span style={{ fontSize: 32 }}>⚖️</span>
                   <span style={{ fontSize: 24, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
                     FINAL COMPARISON
                   </span>
                 </div>
-                <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 14px", borderRadius: 12, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
                   TAKEAWAY
                 </span>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
-                <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 20, border: "2.5px solid #F59E0B" }}>
-                  <div style={{ color: "#F59E0B", fontWeight: 900, fontSize: 22 }}>REST API 📦</div>
-                  <div style={{ color: "#F8FAFC", fontSize: 16, fontWeight: 700, marginTop: 8 }}>• Connects App to App</div>
-                  <div style={{ color: "#94A3B8", fontSize: 15, marginTop: 4 }}>• Fixed, rigid endpoints</div>
-                  <div style={{ color: "#94A3B8", fontSize: 15, marginTop: 4 }}>• Manual developer code</div>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+                <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 22, border: "2.5px solid #F59E0B" }}>
+                  <div style={{ color: "#F59E0B", fontWeight: 900, fontSize: 24 }}>REST API 📦</div>
+                  <div style={{ color: "#F8FAFC", fontSize: 17, fontWeight: 800, marginTop: 10 }}>• Connects App to App</div>
+                  <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Fixed, hardcoded routes</div>
+                  <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Manual developer code</div>
                 </div>
 
-                <div style={{ backgroundColor: "#0F172A", padding: "18px", borderRadius: 20, border: "2.5px solid #10B981" }}>
-                  <div style={{ color: "#10B981", fontWeight: 900, fontSize: 22 }}>MCP PROTOCOL 🔌</div>
-                  <div style={{ color: "#F8FAFC", fontSize: 16, fontWeight: 700, marginTop: 8 }}>• Connects AI to World</div>
-                  <div style={{ color: "#94A3B8", fontSize: 15, marginTop: 4 }}>• Dynamic auto-discovery</div>
-                  <div style={{ color: "#94A3B8", fontSize: 15, marginTop: 4 }}>• Zero code changes</div>
+                <div style={{ backgroundColor: "#0F172A", padding: "22px", borderRadius: 22, border: "2.5px solid #10B981" }}>
+                  <div style={{ color: "#10B981", fontWeight: 900, fontSize: 24 }}>MCP PROTOCOL 🔌</div>
+                  <div style={{ color: "#F8FAFC", fontSize: 17, fontWeight: 800, marginTop: 10 }}>• Connects AI to World</div>
+                  <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Dynamic auto-discovery</div>
+                  <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Zero code changes</div>
                 </div>
               </div>
 
-              <div style={{ backgroundColor: "#03070D", padding: "16px 20px", borderRadius: 18, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>APIs for apps. MCP for agents!</span>
-                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>SOLVED ✓</span>
-              </div>
-
-              <div style={{ fontSize: 18, color: "#94A3B8", textAlign: "center", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-                Share with a developer building AI agents! 👇
+              <div style={{ backgroundColor: "#03070D", padding: "18px 24px", borderRadius: 20, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>APIs for apps. MCP for agents!</span>
+                <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>SOLVED ✓</span>
               </div>
             </div>
           </>
@@ -801,8 +778,7 @@ export const McpComp: React.FC = () => {
               padding: "16px 36px",
               borderRadius: 26,
               border: "3.5px solid #18181B",
-              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.5)",
-              transform: `scale(${interpolate(frame % 30, [0, 15, 30], [1.0, 1.05, 1.0])})`,
+              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.45)",
               whiteSpace: "nowrap",
             }}
           >
@@ -869,13 +845,6 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
       >
         {currentChunk.words.map((w: any, idx: number) => {
           const isWordActive = frame >= w.start_frame && frame <= w.end_frame + 1;
-          const wordPop = isWordActive
-            ? interpolate(frame - w.start_frame, [0, 3, 7], [1.0, 1.18, 1.08], {
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              })
-            : 1.0;
-
           const activeColor = idx % 2 === 0 ? "#FFD166" : "#06B6D4";
 
           return (
@@ -889,7 +858,6 @@ const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ fram
                 textShadow: isWordActive
                   ? `0 0 20px ${activeColor}, 0 2px 4px #000000`
                   : "0 2px 6px rgba(0,0,0,0.8)",
-                transform: `scale(${wordPop})`,
                 display: "inline-block",
               }}
             >
