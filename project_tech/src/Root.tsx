@@ -41,7 +41,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsOxAlpha"
         component={OxAlphaComp}
-        durationInFrames={693} // 23.11s @ 30fps — Reel #14: The Mysterious Free 0x-alpha AI Model (1M Context Stealth Drop)
+        durationInFrames={669} // 22.30s @ 30fps — Reel #14: The Mysterious Free 0x-alpha AI Model (1M Context Stealth Drop)
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}

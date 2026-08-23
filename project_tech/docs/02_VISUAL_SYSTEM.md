@@ -151,3 +151,13 @@ Faces are the strongest stop-scroll trigger. One variant test: Nemi's shocked fa
    * **Multi-Dimensional Vector Space:** 3D-feeling galaxy of clustered floating embedding points with cosine similarity laser vectors.
    * **Attention Weight Heatmaps:** Dynamic multi-head attention matrix grids glowing and routing token probabilities.
 
+---
+
+## 7. OPEN-CANVAS HOLOGRAPHIC ARCHITECTURE (ZERO MANDATORY RECTANGULAR BOX) (added 2026-08-23)
+
+> **Core Rule:** Do NOT default to putting every visual inside a bounded white or dark rounded card/box container. Visuals must be **open-canvas, spatial, and free-floating across the entire 1080x1920 viewport**.
+
+### Visual Freedom Guidelines:
+1. **Zero Mandatory Box Frame:** Visuals breathe directly onto the background canvas. Use floating coordinate axes, open holographic rings, unbounded particle streams, and borderless vector nodes.
+2. **Multi-Layered Spatial Depth:** Place ambient glowing volumetric nebulas, cyber-grid planes, and floating HUD micro-widgets across different Z-indices.
+3. **4K Master Production Exclusively:** All production renders must use `--scale=2` targeting 2160x3840 @ 30fps. Never output or keep 1080p fallback clutter.

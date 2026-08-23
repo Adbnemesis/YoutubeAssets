@@ -16,20 +16,13 @@ export const nemiTheme = {
   colors: {
     brandYellow: "#FFD166",
     brandCyan: "#06B6D4",
-    brandPurple: "#A855F7",
-    brandGreen: "#10B981",
+    brandEmerald: "#10B981",
     brandRed: "#EF4444",
-    brandCoral: "#F43F5E",
-    brandAmber: "#F59E0B",
-    canvasLight: "#FAF8F5",
-    canvasDark: "#070B12",
-    cardDark: "#0F172A",
-    cardSurface: "#1E293B",
-    textLight: "#0F172A",
-    textDark: "#F8FAFC",
+    brandPurple: "#A855F7",
+    brandOrange: "#F97316",
+    canvasDark: "#060A14",
+    textLight: "#F8FAFC",
     textMuted: "#94A3B8",
-    borderLight: "#E2E8F0",
-    borderDark: "#334155",
   },
   typography: {
     fontFamily: {
@@ -60,7 +53,7 @@ const getCue = (eventId: string, cueName: string): number => {
 export const OxAlphaComp: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const totalFrames = cuesData.total_frames || 693;
+  const totalFrames = cuesData.total_frames || 669;
 
   // ─── Timeline Events ───
   const evHook = getEvent("ox01_hook");
@@ -72,32 +65,28 @@ export const OxAlphaComp: React.FC = () => {
   const evLoop = getEvent("ox07_loop");
 
   // ─── Semantic Cues ───
-  const modelSpawnCue = getCue("ox01_hook", "model_spawn"); // 47
-  const mysteryBadgeCue = getCue("ox01_hook", "mystery_badge"); // 80
-  const millionContextCue = getCue("ox02_specs", "million_context"); // 155
-  const freeZeroDollarCue = getCue("ox02_specs", "free_zero_dollar"); // 219
-  const nemiCuriousCue = getCue("ox03_nemi", "nemi_curious"); // 281
-  const swe80PercentCue = getCue("ox04_swe_bench", "swe_80_percent"); // 350
-  const dnaMatchZhipuCue = getCue("ox04_swe_bench", "dna_match_zhipu"); // 442
-  const sevenDayTimerCue = getCue("ox05_warning", "seven_day_timer"); // 502
-  const vaultWarningCue = getCue("ox05_warning", "vault_warning"); // 544
-  const nemiExcitedCue = getCue("ox06_nemi", "nemi_excited"); // 639
-  const loopSeamCue = getCue("ox07_loop", "loop_seam"); // 675
+  const modelSpawnCue = getCue("ox01_hook", "model_spawn"); // 49
+  const mysteryBadgeCue = getCue("ox01_hook", "mystery_badge"); // 83
+  const millionContextCue = getCue("ox02_specs", "million_context"); // 144
+  const freeZeroDollarCue = getCue("ox02_specs", "free_zero_dollar"); // 194
+  const nemiCuriousCue = getCue("ox03_nemi", "nemi_curious"); // 251
+  const swe80PercentCue = getCue("ox04_swe_bench", "swe_80_percent"); // 315
+  const dnaMatchZhipuCue = getCue("ox04_swe_bench", "dna_match_zhipu"); // 399
+  const sevenDayTimerCue = getCue("ox05_warning", "seven_day_timer"); // 451
+  const vaultWarningCue = getCue("ox05_warning", "vault_warning"); // 484
+  const nemiExcitedCue = getCue("ox06_nemi", "nemi_excited"); // 589
+  const loopSeamCue = getCue("ox07_loop", "loop_seam"); // 645
 
   // ─── Stage Boundaries ───
-  const cutB = evSpecs.start_frame; // 97
-  const cutC = evNemi.start_frame; // 244
-  const cutD = evSwe.start_frame; // 300
-  const cutE = evWarning.start_frame; // 470
-  const cutF = evNemiExcited.start_frame; // 566
-  const cutG = evLoop.start_frame; // 660
-
-  // ─── Smooth Theme ───
-  const isDarkWorld = frame >= cutB && frame < loopSeamCue;
-  const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
+  const cutB = evSpecs.start_frame; // 100
+  const cutC = evNemi.start_frame; // 213
+  const cutD = evSwe.start_frame; // 269
+  const cutE = evWarning.start_frame; // 425
+  const cutF = evNemiExcited.start_frame; // 501
+  const cutG = evLoop.start_frame; // 621
 
   // ─── Camera Breathing ───
-  const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.025], {
+  const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.03], {
     extrapolateRight: "clamp",
   });
 
@@ -116,9 +105,9 @@ export const OxAlphaComp: React.FC = () => {
     nemiPose = "aha";
   } else if (frame < cutF) {
     nemiPose = "pointing";
-  } else if (frame < cutG + 15) {
+  } else if (frame < cutG) {
     nemiPose = "smug";
-    nemiSpeech = "Free coding AI? I'm using this right now! 😎⚡";
+    nemiSpeech = "Free frontier AI? I'm using this before it disappears! 😎⚡";
   } else {
     nemiPose = "smug";
   }
@@ -126,7 +115,7 @@ export const OxAlphaComp: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: canvasBg,
+        backgroundColor: nemiTheme.colors.canvasDark,
         overflow: "hidden",
         fontFamily: nemiTheme.typography.fontFamily.sans,
       }}
@@ -134,7 +123,7 @@ export const OxAlphaComp: React.FC = () => {
       {/* ══════════════════════════════════════════════════════════ */}
       {/* MASTER AUDIO (Voice + Ducked BGM) */}
       {/* ══════════════════════════════════════════════════════════ */}
-      <Audio src={staticFile("reels/ox_alpha_14/ox_alpha_master_audio.mp3")} volume={0.92} />
+      <Audio src={staticFile("reels/ox_alpha_14/ox_alpha_master_audio.mp3")} volume={0.95} />
 
       {/* ══════════════════════════════════════════════════════════ */}
       {/* SYNCHRONIZED SFX LAYER */}
@@ -174,103 +163,109 @@ export const OxAlphaComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* CAMERA & AMBIENT WORLD */}
+      {/* CAMERA & MULTI-LAYERED SPATIAL BACKGROUND */}
       {/* ══════════════════════════════════════════════════════════ */}
       <AbsoluteFill style={{ transform: `scale(${cameraScale})` }}>
-        {/* Dynamic Ambient Glows */}
-        {isDarkWorld && (
-          <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
-            <div
-              style={{
-                position: "absolute",
-                top: 200,
-                left: -120,
-                width: 600,
-                height: 600,
-                borderRadius: "50%",
-                background: frame < cutD
-                  ? "radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, rgba(0,0,0,0) 70%)"
-                  : "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(0,0,0,0) 70%)",
-                filter: "blur(90px)",
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                top: 680,
-                right: -120,
-                width: 600,
-                height: 600,
-                borderRadius: "50%",
-                background: frame >= cutE
-                  ? "radial-gradient(circle, rgba(239, 68, 68, 0.28) 0%, rgba(0,0,0,0) 70%)"
-                  : "radial-gradient(circle, rgba(255, 209, 102, 0.2) 0%, rgba(0,0,0,0) 70%)",
-                filter: "blur(90px)",
-              }}
-            />
-          </div>
-        )}
-
-        {/* ══════════════════════════════════════════════════════════ */}
-        {/* TOP HUD (Safe Zone: top 85px) — appears frame 60+ */}
-        {/* ══════════════════════════════════════════════════════════ */}
-        {frame >= 60 && (
+        {/* Dynamic Volumetric Neon Glow Nebulas */}
+        <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 1 }}>
           <div
             style={{
               position: "absolute",
-              top: 85,
-              left: 70,
-              right: 70,
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              zIndex: 50,
-              opacity: interpolate(frame, [60, 68], [0, 1], {
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              }),
+              top: 150,
+              left: -180,
+              width: 750,
+              height: 750,
+              borderRadius: "50%",
+              background: frame < cutD
+                ? "radial-gradient(circle, rgba(16, 185, 129, 0.32) 0%, rgba(0,0,0,0) 70%)"
+                : "radial-gradient(circle, rgba(6, 182, 212, 0.32) 0%, rgba(0,0,0,0) 70%)",
+              filter: "blur(120px)",
             }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-              <div
-                style={{
-                  width: 18,
-                  height: 18,
-                  borderRadius: "50%",
-                  backgroundColor: frame >= cutE ? nemiTheme.colors.brandRed : nemiTheme.colors.brandGreen,
-                  boxShadow: `0 0 20px ${frame >= cutE ? nemiTheme.colors.brandRed : nemiTheme.colors.brandGreen}`,
-                }}
-              />
-              <span
-                style={{
-                  fontSize: 26,
-                  fontWeight: 900,
-                  letterSpacing: "1.5px",
-                  textTransform: "uppercase",
-                  color: isDarkWorld ? (frame >= cutE ? "#EF4444" : "#10B981") : "#059669",
-                }}
-              >
-                AI News · 0x-Alpha
-              </span>
-            </div>
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: 550,
+              right: -180,
+              width: 750,
+              height: 750,
+              borderRadius: "50%",
+              background: frame >= cutE
+                ? "radial-gradient(circle, rgba(239, 68, 68, 0.35) 0%, rgba(0,0,0,0) 70%)"
+                : "radial-gradient(circle, rgba(255, 209, 102, 0.25) 0%, rgba(0,0,0,0) 70%)",
+              filter: "blur(120px)",
+            }}
+          />
 
+          {/* Cyber-Grid Spatial Floor Lines */}
+          <svg
+            width="1080"
+            height="1920"
+            style={{ position: "absolute", top: 0, left: 0, opacity: 0.18 }}
+          >
+            <defs>
+              <pattern id="cyberGrid" width="70" height="70" patternUnits="userSpaceOnUse">
+                <path d="M 70 0 L 0 0 0 70" fill="none" stroke="#38BDF8" strokeWidth="1" />
+              </pattern>
+            </defs>
+            <rect width="1080" height="1920" fill="url(#cyberGrid)" />
+          </svg>
+        </div>
+
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* TOP HUD (Safe Zone: top 85px) */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        <div
+          style={{
+            position: "absolute",
+            top: 85,
+            left: 70,
+            right: 70,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            zIndex: 50,
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             <div
               style={{
-                backgroundColor: isDarkWorld ? "rgba(15, 23, 42, 0.94)" : "#FFFFFF",
-                padding: "12px 24px",
-                borderRadius: 24,
-                border: `2px solid ${isDarkWorld ? nemiTheme.colors.borderDark : nemiTheme.colors.borderLight}`,
-                fontSize: 20,
+                width: 18,
+                height: 18,
+                borderRadius: "50%",
+                backgroundColor: frame >= cutE ? nemiTheme.colors.brandRed : nemiTheme.colors.brandEmerald,
+                boxShadow: `0 0 24px ${frame >= cutE ? nemiTheme.colors.brandRed : nemiTheme.colors.brandEmerald}`,
+              }}
+            />
+            <span
+              style={{
+                fontSize: 26,
                 fontWeight: 900,
-                color: isDarkWorld ? (frame >= cutE ? "#EF4444" : "#10B981") : "#059669",
-                fontFamily: nemiTheme.typography.fontFamily.mono,
-                boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+                letterSpacing: "1.5px",
+                textTransform: "uppercase",
+                color: frame >= cutE ? "#EF4444" : "#10B981",
               }}
             >
-              {frame < cutB ? "STEALTH DROP" : frame < cutD ? "1M CONTEXT · $0.00" : frame < cutE ? "80% SWE-BENCH · GLM-5.3" : "7-DAY TIMER · PRIVACY WARNING"}
-            </div>
+              AI News · 0x-Alpha
+            </span>
           </div>
-        )}
+
+          <div
+            style={{
+              backgroundColor: "rgba(15, 23, 42, 0.88)",
+              padding: "10px 24px",
+              borderRadius: 22,
+              border: `1.5px solid ${frame >= cutE ? "rgba(239, 68, 68, 0.5)" : "rgba(16, 185, 129, 0.5)"}`,
+              fontSize: 18,
+              fontWeight: 900,
+              color: frame >= cutE ? "#EF4444" : "#10B981",
+              fontFamily: nemiTheme.typography.fontFamily.mono,
+              boxShadow: "0 8px 30px rgba(0,0,0,0.6)",
+            }}
+          >
+            {frame < cutB ? "STEALTH DROP 📡" : frame < cutD ? "1M CONTEXT · $0.00" : frame < cutE ? "80% SWE-BENCH · GLM-5.3" : "7-DAY TIMER · PRIVACY WARNING"}
+          </div>
+        </div>
 
         {/* ══════════════════════════════════════════════════════════ */}
         {/* HEADLINE TITLE (Safe Zone: top: 165px) */}
@@ -282,12 +277,13 @@ export const OxAlphaComp: React.FC = () => {
               fontWeight: 900,
               letterSpacing: -1.5,
               lineHeight: 1.15,
-              color: isDarkWorld ? "#F8FAFC" : nemiTheme.colors.textLight,
+              color: "#F8FAFC",
+              textShadow: "0 4px 20px rgba(0,0,0,0.8)",
             }}
           >
             {frame < cutB ? (
               <>
-                A Mystery AI Just Dropped <span style={{ color: nemiTheme.colors.brandGreen }}>For 100% Free!</span> 🤯⚡
+                A Mystery AI Just Dropped <span style={{ color: nemiTheme.colors.brandEmerald }}>For 100% Free!</span> 🤯⚡
               </>
             ) : frame < cutC ? (
               <>
@@ -307,7 +303,7 @@ export const OxAlphaComp: React.FC = () => {
               </>
             ) : frame < cutG ? (
               <>
-                Free Frontier Coding AI: <span style={{ color: "#10B981" }}>Active Right Now!</span> ⚡🚀
+                Free Frontier Coding AI: <span style={{ color: "#10B981" }}>Grab It Now!</span> ⚡🚀
               </>
             ) : (
               <>
@@ -318,37 +314,42 @@ export const OxAlphaComp: React.FC = () => {
         </div>
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* MAIN VISUAL CARD STAGES (Safe Zone: top: 310px, height: 600px) */}
+        {/* OPEN-CANVAS SPATIAL VISUAL ENGINES (Zero Box Enclosure) */}
         {/* ══════════════════════════════════════════════════════════ */}
 
-        {/* STAGE 1: CYBERPUNK RADAR SCANNER (0 to 96) */}
+        {/* STAGE 1: OPEN-CANVAS HOLOGRAPHIC RADAR SCANNER (0 to 100) */}
         {frame < cutB && (
-          <Visual1_RadarScanner frame={frame} modelSpawnCue={modelSpawnCue} mysteryBadgeCue={mysteryBadgeCue} />
+          <OpenVisual1_RadarScanner frame={frame} modelSpawnCue={modelSpawnCue} mysteryBadgeCue={mysteryBadgeCue} />
         )}
 
-        {/* STAGE 2: 1-MILLION TOKEN HOLOGRAPHIC BUFFER (97 to 243) */}
+        {/* STAGE 2: OPEN-CANVAS 3D PLANETARY MEMORY ORBITS (100 to 213) */}
         {frame >= cutB && frame < cutC && (
-          <Visual2_MillionTokenBuffer frame={frame} millionContextCue={millionContextCue} freeZeroDollarCue={freeZeroDollarCue} />
+          <OpenVisual2_PlanetaryMemoryRings frame={frame} millionContextCue={millionContextCue} freeZeroDollarCue={freeZeroDollarCue} />
         )}
 
-        {/* STAGE 3: NEMI DETECTIVE SPOTLIGHT (244 to 299) */}
+        {/* STAGE 3: OPEN-CANVAS LASER DE-ANONYMIZER HUD (213 to 269) */}
         {frame >= cutC && frame < cutD && (
-          <Visual3_DetectiveSpotlight frame={frame} nemiCuriousCue={nemiCuriousCue} />
+          <OpenVisual3_DeAnonymizerLaser frame={frame} nemiCuriousCue={nemiCuriousCue} />
         )}
 
-        {/* STAGE 4: SWE-BENCH BAR GRAPH & TOKENIZER DNA MATCH (300 to 469) */}
+        {/* STAGE 4: OPEN-CANVAS FLOATING LEADERBOARD & DNA CONDUIT (269 to 425) */}
         {frame >= cutD && frame < cutE && (
-          <Visual4_SweDnaMatch frame={frame} swe80PercentCue={swe80PercentCue} dnaMatchZhipuCue={dnaMatchZhipuCue} />
+          <OpenVisual4_LeaderboardDnaConduit frame={frame} swe80PercentCue={swe80PercentCue} dnaMatchZhipuCue={dnaMatchZhipuCue} />
         )}
 
-        {/* STAGE 5: 7-DAY TIMER & SECURITY VAULT WARNING (470 to 659) */}
-        {frame >= cutE && frame < cutG && (
-          <Visual5_TimerVaultWarning frame={frame} sevenDayTimerCue={sevenDayTimerCue} vaultWarningCue={vaultWarningCue} />
+        {/* STAGE 5: OPEN-CANVAS 7-DAY COUNTDOWN & HAZARD SHIELD (425 to 501) */}
+        {frame >= cutE && frame < cutF && (
+          <OpenVisual5_TimerHazardShield frame={frame} sevenDayTimerCue={sevenDayTimerCue} vaultWarningCue={vaultWarningCue} />
         )}
 
-        {/* STAGE 6: LOOP SEAM RADAR RETURN (660 to 693) */}
+        {/* STAGE 6: OPEN-CANVAS CELEBRATORY CODE SPEEDRUN & PARTICLES (501 to 621) */}
+        {frame >= cutF && frame < cutG && (
+          <OpenVisual6_CodeSpeedrunStream frame={frame} nemiExcitedCue={nemiExcitedCue} />
+        )}
+
+        {/* STAGE 7: INFINITE REPLAY RADAR SEAM (621 to 669) */}
         {frame >= cutG && (
-          <Visual1_RadarScanner frame={frame} modelSpawnCue={0} mysteryBadgeCue={0} />
+          <OpenVisual1_RadarScanner frame={frame} modelSpawnCue={0} mysteryBadgeCue={0} />
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
@@ -423,258 +424,297 @@ export const OxAlphaComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. STAGE 1: CYBERPUNK RADAR SCANNER (0-96)
+// 1. OPEN-CANVAS STAGE 1: CYBERPUNK RADAR & TARGET LOCK (0-100)
 // ═══════════════════════════════════════════════════════════════
-const Visual1_RadarScanner: React.FC<{ frame: number; modelSpawnCue: number; mysteryBadgeCue: number }> = ({ frame, modelSpawnCue, mysteryBadgeCue }) => {
+const OpenVisual1_RadarScanner: React.FC<{ frame: number; modelSpawnCue: number; mysteryBadgeCue: number }> = ({ frame, modelSpawnCue, mysteryBadgeCue }) => {
   const isSpawned = frame >= modelSpawnCue;
   const isBadged = frame >= mysteryBadgeCue;
-  const radarAngle = (frame * 12) % 360;
+  const radarAngle = (frame * 10) % 360;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 310,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 950,
-        height: 600,
-        backgroundColor: "#FFFFFF",
-        borderRadius: 36,
-        border: isBadged ? "4px solid #10B981" : "3.5px solid #E2E8F0",
-        boxShadow: isBadged ? "0 24px 80px rgba(16, 185, 129, 0.35)" : "0 24px 80px rgba(0, 0, 0, 0.08)",
-        padding: "28px 32px",
+        top: 280,
+        left: 0,
+        right: 0,
+        height: 680,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
         alignItems: "center",
+        justifyContent: "center",
         zIndex: 30,
-        overflow: "hidden",
       }}
     >
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>📡</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>OpenRouter Live Feed: stealth/0x-alpha</span>
-        </div>
-        <span style={{ backgroundColor: "#ECFDF5", color: "#059669", border: "1.5px solid #10B981", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          STATUS: ONLINE 🟢
-        </span>
-      </div>
+      <svg width="1040" height="660" viewBox="0 0 1040 660">
+        <defs>
+          <radialGradient id="radarSweep" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#10B981" stopOpacity="0.45" />
+            <stop offset="100%" stopColor="#10B981" stopOpacity="0" />
+          </radialGradient>
+          <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="14" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
 
-      {/* SVG Radar Terminal & Target Lock */}
-      <div style={{ width: "100%", height: 280, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <svg width="880" height="260" viewBox="0 0 880 260">
-          <defs>
-            <radialGradient id="radarScan" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#10B981" stopOpacity="0.3" />
-              <stop offset="100%" stopColor="#10B981" stopOpacity="0" />
-            </radialGradient>
-          </defs>
+        {/* Telemetry Data Columns on Left and Right */}
+        <g opacity="0.7" fontFamily="monospace" fontSize="14" fill="#38BDF8">
+          <text x="60" y="180">LAT: 39.9042° N</text>
+          <text x="60" y="210">LON: 116.4074° E</text>
+          <text x="60" y="240">PORT: 443 [HTTPS]</text>
+          <text x="60" y="270">STATUS: ACTIVE 🟢</text>
+          <text x="60" y="300">PROTO: SSE_STREAM</text>
 
-          {/* Radar Circles */}
-          <circle cx="440" cy="130" r="110" fill="none" stroke="#CBD5E1" strokeWidth="2.5" strokeDasharray="6,6" />
-          <circle cx="440" cy="130" r="70" fill="none" stroke="#94A3B8" strokeWidth="2.5" />
-          <circle cx="440" cy="130" r="30" fill="#F1F5F9" stroke="#10B981" strokeWidth="3" />
+          <text x="860" y="180">CTX: 1,048,576</text>
+          <text x="860" y="210">OUT: 131,072</text>
+          <text x="860" y="240">COST: $0.00 / 1M</text>
+          <text x="860" y="270">AUTH: STEALTH</text>
+          <text x="860" y="300">BENCH: 80% SWE</text>
+        </g>
 
-          {/* Crosshairs */}
-          <line x1="300" y1="130" x2="580" y2="130" stroke="#CBD5E1" strokeWidth="2" />
-          <line x1="440" y1="10" x2="440" y2="250" stroke="#CBD5E1" strokeWidth="2" />
+        {/* Outer Circular Holographic Grid Rings */}
+        <circle cx="520" cy="310" r="270" fill="none" stroke="#10B981" strokeWidth="2" strokeDasharray="14,14" opacity="0.4" />
+        <circle cx="520" cy="310" r="200" fill="none" stroke="#38BDF8" strokeWidth="2.5" strokeDasharray="8,8" opacity="0.6" />
+        <circle cx="520" cy="310" r="130" fill="rgba(16, 185, 129, 0.08)" stroke="#10B981" strokeWidth="3" filter="url(#glowGreen)" />
+        <circle cx="520" cy="310" r="45" fill="#0F172A" stroke="#10B981" strokeWidth="3.5" />
 
-          {/* Rotating Radar Sweep Line */}
-          <g transform={`rotate(${radarAngle} 440 130)`}>
-            <line x1="440" y1="130" x2="550" y2="130" stroke="#10B981" strokeWidth="4" />
-            <polygon points="440,130 550,110 550,150" fill="url(#radarScan)" />
+        {/* Spatial Compass Axes */}
+        <line x1="180" y1="310" x2="860" y2="310" stroke="#334155" strokeWidth="2" strokeDasharray="6,6" />
+        <line x1="520" y1="30" x2="520" y2="590" stroke="#334155" strokeWidth="2" strokeDasharray="6,6" />
+
+        {/* Rotating Radar Sweep Beam */}
+        <g transform={`rotate(${radarAngle} 520 310)`}>
+          <line x1="520" y1="310" x2="790" y2="310" stroke="#10B981" strokeWidth="4" />
+          <polygon points="520,310 790,240 790,380" fill="url(#radarSweep)" />
+        </g>
+
+        {/* Orbiting Spatial Data Nodes */}
+        {[0, 45, 90, 135, 180, 225, 270, 315].map((deg, i) => {
+          const rad = ((deg + frame * 3) * Math.PI) / 180;
+          const nx = 520 + Math.cos(rad) * 200;
+          const ny = 310 + Math.sin(rad) * 200;
+          return <circle key={i} cx={nx} cy={ny} r="7" fill="#38BDF8" filter="url(#glowGreen)" />;
+        })}
+
+        {/* Center Target Lock Capsule */}
+        {isSpawned && (
+          <g transform="translate(520, 310)">
+            <rect x="-190" y="-50" width="380" height="100" rx="30" fill="#0B1120" stroke="#10B981" strokeWidth="4" filter="url(#glowGreen)" />
+            <text x="0" y="-10" fill="#F8FAFC" fontSize="20" fontWeight="900" textAnchor="middle">ANONYMOUS STEALTH MODEL</text>
+            <text x="0" y="26" fill="#10B981" fontSize="30" fontWeight="900" textAnchor="middle" fontFamily="monospace">
+              stealth/0x-alpha
+            </text>
           </g>
+        )}
+      </svg>
 
-          {/* Locked Model Target Badge */}
-          {isSpawned && (
-            <g transform="translate(440, 130)">
-              <rect x="-140" y="-35" width="280" height="70" rx="20" fill="#0F172A" stroke="#10B981" strokeWidth="3.5" />
-              <text x="0" y="8" fill="#10B981" fontSize="24" fontWeight="900" textAnchor="middle" fontFamily="monospace">
-                stealth/0x-alpha
-              </text>
-            </g>
-          )}
-        </svg>
-      </div>
-
-      {/* Gold Price Tag Callout */}
-      {isBadged ? (
+      {/* Floating Spatial Pill Badges */}
+      {isBadged && (
         <div
           style={{
-            backgroundColor: "#ECFDF5",
-            border: "3.5px solid #10B981",
-            borderRadius: 22,
-            padding: "14px 36px",
+            position: "absolute",
+            bottom: 10,
+            backgroundColor: "rgba(16, 185, 129, 0.25)",
+            border: "3px solid #10B981",
+            borderRadius: 32,
+            padding: "14px 44px",
             display: "flex",
             alignItems: "center",
             gap: 16,
-            boxShadow: "0 14px 40px rgba(16, 185, 129, 0.35)",
+            boxShadow: "0 0 50px rgba(16, 185, 129, 0.5)",
           }}
         >
           <span style={{ fontSize: 32 }}>💎</span>
-          <span style={{ fontSize: 26, fontWeight: 900, color: "#065F46", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <span style={{ fontSize: 26, fontWeight: 900, color: "#A7F3D0", fontFamily: nemiTheme.typography.fontFamily.mono }}>
             PRICED AT $0.00 / 1M TOKENS!
           </span>
         </div>
-      ) : (
-        <div style={{ width: "100%", backgroundColor: "#F8FAFC", padding: "14px 24px", borderRadius: 18, border: "1.5px solid #E2E8F0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ color: "#64748B", fontSize: 18, fontWeight: 700 }}>Anonymous Stealth Provider:</span>
-          <span style={{ color: "#0F172A", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>LIMITED PREVIEW ⚡</span>
+      )}
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 2. OPEN-CANVAS STAGE 2: 3D PLANETARY MEMORY ORBITS (100-213)
+// ═══════════════════════════════════════════════════════════════
+const OpenVisual2_PlanetaryMemoryRings: React.FC<{ frame: number; millionContextCue: number; freeZeroDollarCue: number }> = ({ frame, millionContextCue, freeZeroDollarCue }) => {
+  const isFree = frame >= freeZeroDollarCue;
+  const rot1 = (frame * 4) % 360;
+  const rot2 = (frame * -3) % 360;
+
+  const files = [
+    { name: "App.tsx", color: "#38BDF8" },
+    { name: "server.go", color: "#00ADD8" },
+    { name: "model.py", color: "#FFD166" },
+    { name: "schema.sql", color: "#10B981" },
+    { name: "auth.rs", color: "#F97316" },
+    { name: "routes.ts", color: "#A855F7" },
+  ];
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 280,
+        left: 0,
+        right: 0,
+        height: 680,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 30,
+      }}
+    >
+      <svg width="1040" height="660" viewBox="0 0 1040 660">
+        <defs>
+          <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="16" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
+
+        {/* Left Side: Standard AI 32k Limitation Orbit */}
+        <g transform="translate(230, 310)">
+          <circle cx="0" cy="0" r="120" fill="none" stroke="#EF4444" strokeWidth="2.5" strokeDasharray="8,8" opacity="0.5" />
+          <circle cx="0" cy="0" r="75" fill="rgba(239, 68, 68, 0.08)" stroke="#EF4444" strokeWidth="3" />
+          <text x="0" y="-12" fill="#FCA5A5" fontSize="18" fontWeight="900" textAnchor="middle">STANDARD AI</text>
+          <text x="0" y="22" fill="#EF4444" fontSize="32" fontWeight="900" textAnchor="middle" fontFamily="monospace">32k</text>
+          <text x="0" y="48" fill="#94A3B8" fontSize="14" fontWeight="800" textAnchor="middle">(~10 code files)</text>
+        </g>
+
+        {/* Spatial Connecting Laser Bridge */}
+        <line x1="360" y1="310" x2="490" y2="310" stroke="#38BDF8" strokeWidth="3" strokeDasharray="8,8" opacity="0.6" />
+
+        {/* Right Side: 0x-alpha 1-Million Token Planetary Giant */}
+        <g transform="translate(710, 310)">
+          {/* Outer Orbit 1 */}
+          <ellipse cx="0" cy="0" rx="220" ry="160" fill="none" stroke="#06B6D4" strokeWidth="3" strokeDasharray="16,10" transform={`rotate(${rot1})`} filter="url(#glowCyan)" />
+          {/* Inner Orbit 2 */}
+          <ellipse cx="0" cy="0" rx="170" ry="120" fill="none" stroke="#10B981" strokeWidth="2.5" strokeDasharray="12,8" transform={`rotate(${rot2})`} />
+
+          {/* Central Glowing Planetary Core */}
+          <circle cx="0" cy="0" r="95" fill="#0B1120" stroke="#06B6D4" strokeWidth="4.5" filter="url(#glowCyan)" />
+          <circle cx="0" cy="0" r="75" fill="rgba(6, 182, 212, 0.25)" />
+
+          <text x="0" y="-18" fill="#F8FAFC" fontSize="24" fontWeight="900" textAnchor="middle">1 MILLION</text>
+          <text x="0" y="18" fill="#10B981" fontSize="30" fontWeight="900" textAnchor="middle" fontFamily="monospace">1,048,576</text>
+          <text x="0" y="44" fill="#38BDF8" fontSize="13" fontWeight="900" textAnchor="middle">300+ FILES IN MEMORY</text>
+
+          {/* Orbiting Satellite Code Files in 3D Orbit */}
+          {files.map((file, i) => {
+            const angle = ((i * (360 / files.length) + frame * 3.5) * Math.PI) / 180;
+            const fx = Math.cos(angle) * 190;
+            const fy = Math.sin(angle) * 140;
+            return (
+              <g key={i} transform={`translate(${fx}, ${fy})`}>
+                <rect x="-38" y="-15" width="76" height="30" rx="10" fill="#0F172A" stroke={file.color} strokeWidth="2" />
+                <text x="0" y="5" fill={file.color} fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="monospace">
+                  {file.name}
+                </text>
+              </g>
+            );
+          })}
+        </g>
+      </svg>
+
+      {/* Floating Bottom Zero-Dollar Hologram */}
+      {isFree && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 10,
+            backgroundColor: "rgba(6, 182, 212, 0.25)",
+            border: "3px solid #06B6D4",
+            borderRadius: 32,
+            padding: "14px 44px",
+            display: "flex",
+            alignItems: "center",
+            gap: 16,
+            boxShadow: "0 0 50px rgba(6, 182, 212, 0.5)",
+          }}
+        >
+          <span style={{ fontSize: 32 }}>🪐</span>
+          <span style={{ fontSize: 26, fontWeight: 900, color: "#BAE6FD", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            FULL REPO IN MEMORY · $0.00 FREE!
+          </span>
         </div>
       )}
-
-      <div style={{ width: "100%", backgroundColor: "#F0FDF4", padding: "14px 24px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>OpenRouter & OpenCode endpoints:</span>
-        <span style={{ color: "#059669", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>100% FREE ACTIVE NOW ✓</span>
-      </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 2. STAGE 2: 1-MILLION TOKEN HOLOGRAPHIC BUFFER (97-243)
+// 3. OPEN-CANVAS STAGE 3: LASER DE-ANONYMIZER HUD (213-269)
 // ═══════════════════════════════════════════════════════════════
-const Visual2_MillionTokenBuffer: React.FC<{ frame: number; millionContextCue: number; freeZeroDollarCue: number }> = ({ frame, millionContextCue, freeZeroDollarCue }) => {
-  const isFree = frame >= freeZeroDollarCue;
-  const ringRotate = (frame * 3) % 360;
+const OpenVisual3_DeAnonymizerLaser: React.FC<{ frame: number; nemiCuriousCue: number }> = ({ frame, nemiCuriousCue }) => {
+  const scanY = 220 + Math.sin(frame * 0.25) * 90;
+
+  const hexLines = [
+    "0x00A0: 7F 45 4C 46 02 01 01 00 [ZHIPU_BYTE_ENCODER]",
+    "0x00B0: 47 4C 4D 2D 35 2E 33 00 [MATCH_SIGNATURE_FOUND]",
+    "0x00C0: 53 54 45 41 4C 54 48 5F [DECRYPTING_VOCABULARY]",
+    "0x00D0: 31 4D 5F 54 4F 4B 45 4E [AGENTIC_CODE_PREVIEW]",
+  ];
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 310,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 950,
-        height: 600,
-        backgroundColor: "#0B1120",
-        borderRadius: 36,
-        border: "3.5px solid #06B6D4",
-        boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "26px 34px",
+        top: 280,
+        left: 0,
+        right: 0,
+        height: 680,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
         alignItems: "center",
+        justifyContent: "center",
         zIndex: 30,
       }}
     >
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>🪐</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Context Memory Buffer Architecture</span>
-        </div>
-        <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          1,048,576 TOKENS ⚡
-        </span>
-      </div>
+      <svg width="1040" height="660" viewBox="0 0 1040 660">
+        <defs>
+          <filter id="glowYellow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="14" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
 
-      {/* SVG Concentric 1M Token Ring */}
-      <div style={{ width: "100%", height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <svg width="880" height="280" viewBox="0 0 880 280">
-          {/* Left: Standard 8k/32k Box */}
-          <rect x="40" y="70" width="240" height="130" rx="20" fill="rgba(239, 68, 68, 0.08)" stroke="#EF4444" strokeWidth="2.5" strokeDasharray="6,6" />
-          <text x="160" y="120" fill="#FDA4AF" fontSize="22" fontWeight="900" textAnchor="middle">STANDARD AI</text>
-          <text x="160" y="160" fill="#EF4444" fontSize="28" fontWeight="900" textAnchor="middle" fontFamily="monospace">32k Tokens</text>
-          <text x="160" y="185" fill="#94A3B8" fontSize="14" fontWeight="700" textAnchor="middle">(~10 code files)</text>
+        {/* Forensic Hex Code Matrix Background */}
+        <g opacity="0.6" fontFamily="monospace" fontSize="16" fill="#38BDF8">
+          {hexLines.map((line, idx) => (
+            <text key={idx} x="120" y={140 + idx * 36}>
+              {line}
+            </text>
+          ))}
+        </g>
 
-          {/* Central Connecting Conduit */}
-          <line x1="280" y1="135" x2="380" y2="135" stroke="#334155" strokeWidth="4" strokeDasharray="6,6" />
+        {/* Center Floating Decryption Reticle */}
+        <g transform="translate(520, 310)">
+          <circle cx="0" cy="0" r="170" fill="rgba(255, 209, 102, 0.06)" stroke="#FFD166" strokeWidth="2.5" strokeDasharray="12,12" />
+          <circle cx="0" cy="0" r="120" fill="#0B1120" stroke="#FFD166" strokeWidth="4" filter="url(#glowYellow)" />
 
-          {/* Right: 1 Million Token Hologram */}
-          <g transform="translate(620, 135)">
-            {/* Outer Rotating Data Stream Ring */}
-            <circle cx="0" cy="0" r="105" fill="none" stroke="#06B6D4" strokeWidth="3" strokeDasharray="16,8" transform={`rotate(${ringRotate})`} />
-            <circle cx="0" cy="0" r="85" fill="rgba(6, 182, 212, 0.12)" stroke="#38BDF8" strokeWidth="2.5" />
-            <circle cx="0" cy="0" r="60" fill="#0F172A" stroke="#10B981" strokeWidth="3.5" />
+          <text x="0" y="-28" fill="#94A3B8" fontSize="18" fontWeight="800" textAnchor="middle">ANONYMOUS LAB</text>
+          <text x="0" y="16" fill="#F8FAFC" fontSize="40" fontWeight="900" textAnchor="middle" fontFamily="monospace">0x-alpha</text>
+          <text x="0" y="52" fill="#FFD166" fontSize="19" fontWeight="900" textAnchor="middle">DECRYPTING DNA 🧬</text>
+        </g>
 
-            <text x="0" y="-8" fill="#F8FAFC" fontSize="20" fontWeight="900" textAnchor="middle">1 MILLION</text>
-            <text x="0" y="20" fill="#10B981" fontSize="24" fontWeight="900" textAnchor="middle" fontFamily="monospace">1,048,576</text>
-            <text x="0" y="40" fill="#38BDF8" fontSize="12" fontWeight="900" textAnchor="middle">FULL REPOSITORY BUFFER</text>
-          </g>
-        </svg>
-      </div>
-
-      <div style={{ width: "100%", backgroundColor: isFree ? "#022C22" : "#1E293B", padding: "14px 24px", borderRadius: 18, border: isFree ? "2.5px solid #10B981" : "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Reads 300+ code files simultaneously:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          {isFree ? "100% FREE ($0.00) ✓" : "1M Context Window"}
-        </span>
-      </div>
+        {/* Dynamic Sweeping Laser Scanner Bar */}
+        <line x1="200" y1={scanY} x2="840" y2={scanY} stroke="#06B6D4" strokeWidth="5" filter="url(#glowYellow)" />
+        <circle cx="200" cy={scanY} r="9" fill="#06B6D4" />
+        <circle cx="840" cy={scanY} r="9" fill="#06B6D4" />
+      </svg>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 3. STAGE 3: NEMI DETECTIVE SPOTLIGHT (244-299)
+// 4. OPEN-CANVAS STAGE 4: FLOATING LEADERBOARD & DNA MATCH (269-425)
 // ═══════════════════════════════════════════════════════════════
-const Visual3_DetectiveSpotlight: React.FC<{ frame: number; nemiCuriousCue: number }> = ({ frame, nemiCuriousCue }) => {
-  const pulse = Math.sin(frame * 0.3);
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: 310,
-        left: "50%",
-        transform: "translateX(-50)",
-        width: 950,
-        height: 600,
-        backgroundColor: "#0B1120",
-        borderRadius: 36,
-        border: "3.5px solid #FFD166",
-        boxShadow: "0 24px 80px rgba(255, 209, 102, 0.3)",
-        padding: "26px 34px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center",
-        zIndex: 30,
-      }}
-    >
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>🕵️‍♂️</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>The Mystery: Who Secretly Built It?</span>
-        </div>
-        <span style={{ backgroundColor: "rgba(255, 209, 102, 0.2)", color: "#FFD166", border: "1.5px solid #FFD166", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          PROVIDER: STEALTH 🔒
-        </span>
-      </div>
-
-      {/* SVG Magnifying Glass Radar */}
-      <div style={{ width: "100%", height: 300, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <svg width="880" height="280" viewBox="0 0 880 280">
-          {/* Mystery Model File Card */}
-          <rect x="240" y="40" width="400" height="180" rx="24" fill="#1E293B" stroke="#FFD166" strokeWidth="3" />
-          <text x="440" y="90" fill="#94A3B8" fontSize="18" fontWeight="800" textAnchor="middle">MODEL_METADATA_HEADER</text>
-          <text x="440" y="135" fill="#F8FAFC" fontSize="32" fontWeight="900" textAnchor="middle" fontFamily="monospace">0x-alpha [???]</text>
-          <text x="440" y="180" fill="#FFD166" fontSize="20" fontWeight="900" textAnchor="middle">AUTHOR: ANONYMOUS LAB</text>
-
-          {/* Animated Magnifying Glass Reticle */}
-          <g transform={`translate(${440 + pulse * 20}, 130)`}>
-            <circle cx="0" cy="0" r="60" fill="none" stroke="#06B6D4" strokeWidth="4" strokeDasharray="8,8" />
-            <line x1="42" y1="42" x2="85" y2="85" stroke="#06B6D4" strokeWidth="6" strokeLinecap="round" />
-          </g>
-        </svg>
-      </div>
-
-      <div style={{ width: "100%", backgroundColor: "#1E293B", padding: "14px 24px", borderRadius: 18, border: "2px solid #FFD166", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Zero corporate branding released:</span>
-        <span style={{ color: "#FFD166", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>INVESTIGATING DNA 🧬</span>
-      </div>
-    </div>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════════
-// 4. STAGE 4: SWE-BENCH BAR GRAPH & TOKENIZER DNA MATCH (300-469)
-// ═══════════════════════════════════════════════════════════════
-const Visual4_SweDnaMatch: React.FC<{ frame: number; swe80PercentCue: number; dnaMatchZhipuCue: number }> = ({ frame, swe80PercentCue, dnaMatchZhipuCue }) => {
+const OpenVisual4_LeaderboardDnaConduit: React.FC<{ frame: number; swe80PercentCue: number; dnaMatchZhipuCue: number }> = ({ frame, swe80PercentCue, dnaMatchZhipuCue }) => {
   const isDna = frame >= dnaMatchZhipuCue;
-  const barAnim = interpolate(frame - swe80PercentCue, [0, 25], [0, 1], {
+  const barAnim = interpolate(frame - swe80PercentCue, [0, 20], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -683,131 +723,200 @@ const Visual4_SweDnaMatch: React.FC<{ frame: number; swe80PercentCue: number; dn
     <div
       style={{
         position: "absolute",
-        top: 310,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 950,
-        height: 600,
-        backgroundColor: "#0B1120",
-        borderRadius: 36,
-        border: isDna ? "4px solid #10B981" : "3.5px solid #06B6D4",
-        boxShadow: isDna ? "0 24px 80px rgba(16, 185, 129, 0.35)" : "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "24px 34px",
+        top: 280,
+        left: 0,
+        right: 0,
+        height: 680,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
         alignItems: "center",
+        justifyContent: "center",
         zIndex: 30,
       }}
     >
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>🧬</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>SWE-Bench Pass@1 & Tokenizer DNA Match</span>
-        </div>
-        <span style={{ backgroundColor: isDna ? "#064E3B" : "rgba(6, 182, 212, 0.2)", color: isDna ? "#10B981" : "#06B6D4", border: "1.5px solid #10B981", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          {isDna ? "MATCH: ZHIPU GLM-5.3 ✓" : "BENCHMARK SCORE: 80%"}
-        </span>
-      </div>
+      <svg width="1040" height="660" viewBox="0 0 1040 660">
+        <defs>
+          <filter id="glowGreenBar" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="12" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
 
-      {/* SVG Comparative Bar Graph & DNA Conduit */}
-      <div style={{ width: "100%", height: 320, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <svg width="880" height="300" viewBox="0 0 880 300">
-          {/* Bar 1: 0x-alpha (80% Green Winner) */}
-          <text x="50" y="45" fill="#10B981" fontSize="20" fontWeight="900" fontFamily="monospace">0x-alpha</text>
-          <rect x="220" y="25" width={560 * barAnim} height="36" rx="14" fill="#10B981" />
-          <text x={240 + 560 * barAnim} y="49" fill="#10B981" fontSize="22" fontWeight="900">80% ⚡</text>
+        {/* Leaderboard Header */}
+        <text x="120" y="55" fill="#94A3B8" fontSize="22" fontWeight="900" letterSpacing="1px">SWE-BENCH CODING PASS@1 LEADERBOARD</text>
 
-          {/* Bar 2: Claude 3.5 Sonnet (72%) */}
-          <text x="50" y="105" fill="#94A3B8" fontSize="18" fontWeight="800">Claude 3.5</text>
-          <rect x="220" y="85" width="500" height="30" rx="12" fill="#334155" />
-          <text x="735" y="107" fill="#94A3B8" fontSize="18" fontWeight="800">72%</text>
+        {/* Bar 1: 0x-alpha (80% Green Winner) */}
+        <g transform="translate(120, 90)">
+          <text x="0" y="30" fill="#10B981" fontSize="28" fontWeight="900" fontFamily="monospace">0x-alpha</text>
+          <rect x="220" y="0" width={560 * barAnim} height="44" rx="18" fill="#10B981" filter="url(#glowGreenBar)" />
+          <text x={245 + 560 * barAnim} y="31" fill="#10B981" fontSize="28" fontWeight="900">80% ⚡</text>
+        </g>
 
-          {/* Bar 3: GPT-4o (65%) */}
-          <text x="50" y="160" fill="#94A3B8" fontSize="18" fontWeight="800">GPT-4o</text>
-          <rect x="220" y="140" width="440" height="30" rx="12" fill="#334155" />
-          <text x="675" y="162" fill="#94A3B8" fontSize="18" fontWeight="800">65%</text>
+        {/* Bar 2: Claude 3.5 Sonnet (72%) */}
+        <g transform="translate(120, 160)">
+          <text x="0" y="26" fill="#94A3B8" fontSize="22" fontWeight="800">Claude 3.5</text>
+          <rect x="220" y="0" width="500" height="34" rx="14" fill="#334155" opacity="0.8" />
+          <text x="735" y="26" fill="#94A3B8" fontSize="22" fontWeight="800">72%</text>
+        </g>
 
-          {/* Bottom DNA Fingerprint Match Conduit */}
+        {/* Bar 3: GPT-4o (65%) */}
+        <g transform="translate(120, 220)">
+          <text x="0" y="26" fill="#94A3B8" fontSize="22" fontWeight="800">GPT-4o</text>
+          <rect x="220" y="0" width="440" height="34" rx="14" fill="#334155" opacity="0.8" />
+          <text x="675" y="26" fill="#94A3B8" fontSize="22" fontWeight="800">65%</text>
+        </g>
+
+        {/* Bottom Double-Helix DNA Match Conduit */}
+        <g transform="translate(120, 310)">
+          <rect x="0" y="0" width="800" height="95" rx="26" fill={isDna ? "rgba(16, 185, 129, 0.18)" : "rgba(30, 41, 59, 0.5)"} stroke={isDna ? "#10B981" : "#334155"} strokeWidth="3" filter={isDna ? "url(#glowGreenBar)" : undefined} />
+          <text x="40" y="40" fill="#A7F3D0" fontSize="19" fontWeight="900">TOKENIZER BYTE-PAIR FINGERPRINT:</text>
+          <text x="40" y="72" fill={isDna ? "#FFD166" : "#94A3B8"} fontSize="26" fontWeight="900" fontFamily="monospace">
+            {isDna ? "99% MATCH → Zhipu GLM-5.3 🇨🇳" : "ANALYZING STACK TRACES..."}
+          </text>
           {isDna && (
-            <g transform="translate(0, 200)">
-              <rect x="50" y="15" width="780" height="65" rx="18" fill="#022C22" stroke="#10B981" strokeWidth="2.5" />
-              <text x="100" y="52" fill="#A7F3D0" fontSize="18" fontWeight="900">Tokenizer Byte-Pair DNA:</text>
-              <text x="450" y="52" fill="#FFD166" fontSize="20" fontWeight="900" fontFamily="monospace">99% MATCH → Zhipu GLM-5.3 🇨🇳</text>
-            </g>
+            <>
+              <circle cx="740" cy="48" r="22" fill="#10B981" />
+              <text x="740" y="56" fill="#0F172A" fontSize="24" fontWeight="900" textAnchor="middle">✓</text>
+            </>
           )}
-        </svg>
-      </div>
-
-      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "14px 24px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Stack traces & vocabulary fingerprint match:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>SECRET GLM-5.3 PREVIEW ⚡</span>
-      </div>
+        </g>
+      </svg>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 5. STAGE 5: 7-DAY TIMER & SECURITY VAULT WARNING (470-659)
+// 5. OPEN-CANVAS STAGE 5: 7-DAY TIMER & HAZARD SHIELD (425-501)
 // ═══════════════════════════════════════════════════════════════
-const Visual5_TimerVaultWarning: React.FC<{ frame: number; sevenDayTimerCue: number; vaultWarningCue: number }> = ({ frame, sevenDayTimerCue, vaultWarningCue }) => {
-  const isVault = frame >= vaultWarningCue;
-  const pulse = Math.sin(frame * 0.35);
-
+const OpenVisual5_TimerHazardShield: React.FC<{ frame: number; sevenDayTimerCue: number; vaultWarningCue: number }> = ({ frame, sevenDayTimerCue, vaultWarningCue }) => {
   return (
     <div
       style={{
         position: "absolute",
-        top: 310,
-        left: "50%",
-        transform: "translateX(-50%)",
-        width: 950,
-        height: 600,
-        backgroundColor: "#0B1120",
-        borderRadius: 36,
-        border: "3.5px solid #EF4444",
-        boxShadow: "0 24px 80px rgba(239, 68, 68, 0.35)",
-        padding: "24px 34px",
+        top: 280,
+        left: 0,
+        right: 0,
+        height: 680,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-between",
         alignItems: "center",
+        justifyContent: "center",
         zIndex: 30,
       }}
     >
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>⚠️</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#EF4444" }}>Free Window & Privacy Hazard Rules</span>
+      <svg width="1040" height="660" viewBox="0 0 1040 660">
+        <defs>
+          <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="16" result="blur" />
+            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+          </filter>
+        </defs>
+
+        {/* Left Side: 7-Day Countdown Gauge */}
+        <g transform="translate(260, 310)">
+          <circle cx="0" cy="0" r="140" fill="#0B1120" stroke="#10B981" strokeWidth="4.5" />
+          <circle cx="0" cy="0" r="110" fill="rgba(16, 185, 129, 0.12)" />
+          <text x="0" y="-32" fill="#94A3B8" fontSize="19" fontWeight="900" textAnchor="middle">FREE WINDOW</text>
+          <text x="0" y="28" fill="#10B981" fontSize="58" fontWeight="900" textAnchor="middle" fontFamily="monospace">7 DAYS</text>
+          <text x="0" y="65" fill="#34D399" fontSize="17" fontWeight="800" textAnchor="middle">Expires This Week</text>
+        </g>
+
+        {/* Right Side: Red Privacy Warning Lock */}
+        <g transform="translate(740, 310)">
+          <circle cx="0" cy="0" r="140" fill="#450A0A" stroke="#EF4444" strokeWidth="4.5" filter="url(#glowRed)" />
+          {/* Padlock Icon */}
+          <rect x="-40" y="-15" width="80" height="60" rx="14" fill="#EF4444" />
+          <path d="M -24 -15 V -40 C -24 -56 24 -56 24 -40 V -15" fill="none" stroke="#EF4444" strokeWidth="9" />
+          <circle cx="0" cy="12" r="7" fill="#FEE2E2" />
+
+          <text x="0" y="82" fill="#FCA5A5" fontSize="19" fontWeight="900" textAnchor="middle">PROMPTS RECORDED!</text>
+          <text x="0" y="108" fill="#EF4444" fontSize="16" fontWeight="900" textAnchor="middle">NO PRIVATE PASSWORDS</text>
+        </g>
+      </svg>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 6. OPEN-CANVAS STAGE 6: CODE SPEEDRUN & PARTICLES (501-621)
+// ═══════════════════════════════════════════════════════════════
+const OpenVisual6_CodeSpeedrunStream: React.FC<{ frame: number; nemiExcitedCue: number }> = ({ frame, nemiExcitedCue }) => {
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 280,
+        left: 0,
+        right: 0,
+        height: 680,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 30,
+      }}
+    >
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 24 }}>
+        {/* Glowing Terminal Code Window */}
+        <div
+          style={{
+            backgroundColor: "rgba(11, 17, 32, 0.95)",
+            border: "3.5px solid #10B981",
+            borderRadius: 28,
+            padding: "24px 38px",
+            width: 820,
+            boxShadow: "0 0 60px rgba(16, 185, 129, 0.45)",
+            fontFamily: nemiTheme.typography.fontFamily.mono,
+          }}
+        >
+          <div style={{ display: "flex", gap: 10, marginBottom: 16 }}>
+            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#EF4444" }} />
+            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#F59E0B" }} />
+            <div style={{ width: 14, height: 14, borderRadius: "50%", backgroundColor: "#10B981" }} />
+            <span style={{ color: "#94A3B8", fontSize: 14, marginLeft: 10, fontWeight: 700 }}>terminal — 0x-alpha agent</span>
+          </div>
+          <div style={{ color: "#A7F3D0", fontSize: 20, lineHeight: 1.6 }}>
+            <div><span style={{ color: "#F43F5E" }}>import</span> <span style={{ color: "#38BDF8" }}>stealth_0x_alpha</span></div>
+            <div>agent = <span style={{ color: "#38BDF8" }}>stealth_0x_alpha</span>.<span style={{ color: "#FFD166" }}>Agent</span>(context=<span style={{ color: "#34D399" }}>"1,000,000"</span>)</div>
+            <div>agent.<span style={{ color: "#FFD166" }}>solve_all_bugs</span>(repo=<span style={{ color: "#34D399" }}>"full_project"</span>)</div>
+            <div style={{ color: "#FFD166", marginTop: 8 }}>✓ 80% SWE-Bench Solved in 14s! ⚡</div>
+          </div>
         </div>
-        <span style={{ backgroundColor: "rgba(239, 68, 68, 0.25)", color: "#EF4444", border: "1.5px solid #EF4444", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          LIMITED 7 DAYS ONLY ⏳
-        </span>
-      </div>
 
-      {/* SVG Countdown Clock & Hazard Shield */}
-      <div style={{ width: "100%", height: 320, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <svg width="880" height="300" viewBox="0 0 880 300">
-          {/* 7-Day Countdown Timer Box */}
-          <rect x="50" y="30" width="360" height="220" rx="24" fill="#1E293B" stroke="#10B981" strokeWidth="3" />
-          <text x="230" y="80" fill="#94A3B8" fontSize="18" fontWeight="900" textAnchor="middle">FREE TESTING WINDOW</text>
-          <text x="230" y="145" fill="#10B981" fontSize="48" fontWeight="900" textAnchor="middle" fontFamily="monospace">7 DAYS</text>
-          <text x="230" y="195" fill="#34D399" fontSize="18" fontWeight="800" textAnchor="middle">Expires ~August 27th</text>
+        {/* Floating Neon Badges */}
+        <div style={{ display: "flex", gap: 20 }}>
+          <div
+            style={{
+              backgroundColor: "rgba(16, 185, 129, 0.25)",
+              border: "3px solid #10B981",
+              borderRadius: 24,
+              padding: "12px 32px",
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+              boxShadow: "0 0 35px rgba(16, 185, 129, 0.4)",
+            }}
+          >
+            <span style={{ fontSize: 24 }}>⚡</span>
+            <span style={{ fontSize: 22, fontWeight: 900, color: "#F8FAFC" }}>100% FREE ACTIVE</span>
+          </div>
 
-          {/* Privacy Hazard Lock Shield */}
-          <g transform="translate(630, 140)">
-            <rect x="-180" y="-110" width="360" height="220" rx="24" fill="#450A0A" stroke="#EF4444" strokeWidth="3.5" />
-            <circle cx="0" cy="-35" r="30" fill="none" stroke="#EF4444" strokeWidth="6" />
-            <rect x="-35" y="-35" width="70" height="50" rx="10" fill="#EF4444" />
-            <text x="0" y="45" fill="#FCA5A5" fontSize="20" fontWeight="900" textAnchor="middle">PRIVACY WARNING</text>
-            <text x="0" y="75" fill="#EF4444" fontSize="16" fontWeight="900" textAnchor="middle">DO NOT PASTE API KEYS!</text>
-          </g>
-        </svg>
-      </div>
-
-      <div style={{ width: "100%", backgroundColor: "#450A0A", padding: "14px 24px", borderRadius: 18, border: "2px solid #EF4444", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>OpenRouter logs prompts for training:</span>
-        <span style={{ color: "#F87171", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>USE FOR CODE ONLY ⚡</span>
+          <div
+            style={{
+              backgroundColor: "rgba(6, 182, 212, 0.25)",
+              border: "3px solid #06B6D4",
+              borderRadius: 24,
+              padding: "12px 32px",
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+              boxShadow: "0 0 35px rgba(6, 182, 212, 0.4)",
+            }}
+          >
+            <span style={{ fontSize: 24 }}>🪐</span>
+            <span style={{ fontSize: 22, fontWeight: 900, color: "#38BDF8" }}>1M TOKEN BUFFER</span>
+          </div>
+        </div>
       </div>
     </div>
   );

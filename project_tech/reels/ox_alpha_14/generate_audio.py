@@ -37,7 +37,7 @@ SPEAKER_EVENTS = [
         "id": "ox01_hook",
         "speaker": "narrator",
         "text": "A mystery AI model named 0x-alpha just dropped out of nowhere.",
-        "gap_after": 90,
+        "gap_after": 80,
         "semantic_phrases": [
             {"phrase": "0x-alpha", "cue": "model_spawn", "rel_pct": 0.50},
             {"phrase": "out of nowhere", "cue": "mystery_badge", "rel_pct": 0.85},
@@ -46,18 +46,18 @@ SPEAKER_EVENTS = [
     {
         "id": "ox02_specs",
         "speaker": "narrator",
-        "text": "It has a massive 1 million token context — and it is 100% free.",
-        "gap_after": 100,
+        "text": "It gives you a massive 1 million token context — for exactly zero dollars.",
+        "gap_after": 90,
         "semantic_phrases": [
             {"phrase": "1 million token", "cue": "million_context", "rel_pct": 0.40},
-            {"phrase": "100% free", "cue": "free_zero_dollar", "rel_pct": 0.85},
+            {"phrase": "zero dollars", "cue": "free_zero_dollar", "rel_pct": 0.85},
         ]
     },
     {
         "id": "ox03_nemi",
         "speaker": "nemi",
         "text": "Wait, who secretly built this?",
-        "gap_after": 90,
+        "gap_after": 80,
         "semantic_phrases": [
             {"phrase": "secretly built this", "cue": "nemi_curious", "rel_pct": 0.70},
         ]
@@ -66,7 +66,7 @@ SPEAKER_EVENTS = [
         "id": "ox04_swe_bench",
         "speaker": "narrator",
         "text": "It scored 80% on coding benchmarks! Tokenizer fingerprints match Zhipu's GLM-5.3.",
-        "gap_after": 100,
+        "gap_after": 90,
         "semantic_phrases": [
             {"phrase": "80% on coding", "cue": "swe_80_percent", "rel_pct": 0.30},
             {"phrase": "GLM-5.3", "cue": "dna_match_zhipu", "rel_pct": 0.85},
@@ -75,29 +75,29 @@ SPEAKER_EVENTS = [
     {
         "id": "ox05_warning",
         "speaker": "narrator",
-        "text": "It's only free for a few days, but don't paste private passwords.",
-        "gap_after": 100,
+        "text": "It's only free for a week, and all prompts are recorded for training.",
+        "gap_after": 90,
         "semantic_phrases": [
-            {"phrase": "a few days", "cue": "seven_day_timer", "rel_pct": 0.35},
-            {"phrase": "private passwords", "cue": "vault_warning", "rel_pct": 0.80},
+            {"phrase": "for a week", "cue": "seven_day_timer", "rel_pct": 0.35},
+            {"phrase": "recorded for training", "cue": "vault_warning", "rel_pct": 0.80},
         ]
     },
     {
         "id": "ox06_nemi",
         "speaker": "nemi",
-        "text": "Free coding AI? I'm using this right now!",
-        "gap_after": 110,
+        "text": "Free frontier AI? I'm using this before it disappears!",
+        "gap_after": 90,
         "semantic_phrases": [
-            {"phrase": "right now", "cue": "nemi_excited", "rel_pct": 0.80},
+            {"phrase": "before it disappears", "cue": "nemi_excited", "rel_pct": 0.75},
         ]
     },
     {
         "id": "ox07_loop",
         "speaker": "narrator",
-        "text": "Because out of nowhere...",
+        "text": "Before everyone finds out that...",
         "gap_after": 0,
         "semantic_phrases": [
-            {"phrase": "out of nowhere", "cue": "loop_seam", "rel_pct": 0.50},
+            {"phrase": "finds out that", "cue": "loop_seam", "rel_pct": 0.50},
         ]
     }
 ]
@@ -193,7 +193,7 @@ def main():
         event_id = event["id"]
         speaker = event["speaker"]
         text = event["text"]
-        gap_after = event.get("gap_after", 100)
+        gap_after = event.get("gap_after", 80)
         
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
         

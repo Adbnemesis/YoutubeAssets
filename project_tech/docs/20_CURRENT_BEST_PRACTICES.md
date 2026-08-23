@@ -22,6 +22,8 @@
     * **Audio & Signals:** Real-time frequency waterfall spectrograms, constellation peak star maps, audio wave interference collisions.
     * **Systems & Error Correction:** Reed-Solomon parity repair beams, laser module rebuilds, active packet routing conduits.
 13. **Law of Clean Metadata & 5-Dot Spacing:** Never use long horizontal dashes / divider lines (`====` or `----`) in metadata files. Files must lead with `INSTAGRAM DESCRIPTION:`, followed by a punchy one-liner, 5 lines containing only a single dot `.`, and exactly 5 tech-based hashtags (LeetCode/DSA reels: `#leetcode #dsa #placement` + 2 specific; Generic Tech reels: `#tech #algorithm` + 3 specific).
+14. **Law of Open-Canvas Holographic Visuals (Zero Mandatory Box Container):** Do NOT enclose every visual inside a generic rounded card or rectangular boundary. Visuals should be **free-floating, spatial, and open-canvas**: circular radar sweeps, glowing coordinate axes, spatial nodes, floating neon badges, energy conduits, and full-bleed particle fields that breathe freely across the canvas without artificial box frames.
+15. **Law of 4K Master Production (Zero 1080p Clutter):** Master production videos are rendered **exclusively in 4K** (`--scale=2`, 2160x3840 @ 30fps). Do not output or keep secondary 1080p files.
 
 
 ---
