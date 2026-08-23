@@ -17,6 +17,11 @@
 9. **Law of the Hybrid Manim Cutaway:** Use Python Manim for mathematical proofs, vector embeddings, and tree traversals embedded in Remotion.
 10. **Law of the Seamless Loop:** The final phrase flows naturally back into the opening hook for infinite replay loops.
 11. **Law of Living Motion (Zero Static Visuals):** Visuals must NEVER be static styled boxes or resting diagrams. Every stage must feature continuous, living motion: undulating waveforms (`Math.sin`), physical sweeping laser beams, active path drawing (`strokeDashoffset`), pulsing data packets streaming along wires, real-time filling meters/gauges, and dynamic node connections. The audience must *watch the physical process happen in motion*.
+12. **Law of Topic-Specific Vector Visuals (Zero-Generic-Box Mandate):** Never display generic rounded cards filled with plain text or bullet points as the primary visual. Every reel must feature custom, topic-specific SVG mathematical & physical animation engines (e.g. 3Blue1Brown / ByteByteGo standard):
+    * **Algorithms & Search/Sort:** Real coordinate complexity graphs ($O(N)$ vs $O(\log N)$ Cartesian plots), dynamic frequency spectrum density bars, laser partition slicers, animated branching decision trees, and exponential telescope funnels.
+    * **Audio & Signals:** Real-time frequency waterfall spectrograms, constellation peak star maps, audio wave interference collisions.
+    * **Systems & Error Correction:** Reed-Solomon parity repair beams, laser module rebuilds, active packet routing conduits.
+    * **AI & LLMs:** Multi-dimensional vector embedding galaxy, attention connection matrices, tokenization byte-pair merges.
 
 ---
 
