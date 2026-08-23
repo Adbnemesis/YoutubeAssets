@@ -30,7 +30,7 @@ BLOCKS_DIR = Path(__file__).resolve().parent / "audio" / "blocks"
 BLOCKS_DIR.mkdir(parents=True, exist_ok=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
-# REEL #14 SCRIPT: 0X-ALPHA MYSTERY AI MODEL (STEALTH FREE 1M TOKEN RELEASE)
+# REEL #14 SCRIPT: 0X-ALPHA MYSTERY AI MODEL (CRISP NATURAL ENDING)
 # ══════════════════════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
     {
@@ -86,18 +86,9 @@ SPEAKER_EVENTS = [
         "id": "ox06_nemi",
         "speaker": "nemi",
         "text": "Free frontier AI? I'm using this before it disappears!",
-        "gap_after": 90,
-        "semantic_phrases": [
-            {"phrase": "before it disappears", "cue": "nemi_excited", "rel_pct": 0.75},
-        ]
-    },
-    {
-        "id": "ox07_loop",
-        "speaker": "narrator",
-        "text": "Before everyone finds out that...",
         "gap_after": 0,
         "semantic_phrases": [
-            {"phrase": "finds out that", "cue": "loop_seam", "rel_pct": 0.50},
+            {"phrase": "before it disappears", "cue": "nemi_excited", "rel_pct": 0.75},
         ]
     }
 ]
@@ -157,8 +148,15 @@ def extract_subtitles_whisper(audio_path: Path, fps: int = 30):
             for w in chunk:
                 w_start_f = int(round(w.start * fps))
                 w_end_f = int(round(w.end * fps))
+                clean_word = w.word.strip()
+                # Clean speech artifacts
+                if "XAlpha" in clean_word:
+                    clean_word = clean_word.replace("XAlpha", "0x-alpha")
+                if "GPU" in clean_word or "GIPU" in clean_word:
+                    clean_word = clean_word.replace("GPU's", "Zhipu's").replace("GIPU's", "Zhipu's").replace("GPU", "Zhipu").replace("GIPU", "Zhipu")
+                
                 chunk_words.append({
-                    "word": w.word.strip(),
+                    "word": clean_word,
                     "start_s": round(w.start, 2),
                     "end_s": round(w.end, 2),
                     "start_frame": w_start_f,
@@ -169,7 +167,7 @@ def extract_subtitles_whisper(audio_path: Path, fps: int = 30):
             subtitles.append({
                 "start_frame": c_start_frame,
                 "end_frame": c_end_frame,
-                "text": c_text,
+                "text": " ".join([cw["word"] for cw in chunk_words]),
                 "words": chunk_words
             })
             
@@ -290,7 +288,7 @@ def main():
         "-i", str(final_voice_mp3),
         "-i", str(bgm_path),
         "-filter_complex",
-        f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s + 0.5},volume=0.52,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.7}:d=0.8[bgm];"
+        f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s + 0.5},volume=0.52,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.5}:d=0.6[bgm];"
         f"[0:a]asplit=2[v_main][v_sc];"
         f"[bgm][v_sc]sidechaincompress=threshold=0.08:ratio=2.5:attack=35:release=160[ducked_bgm];"
         f"[v_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"

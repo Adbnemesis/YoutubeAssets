@@ -1,8 +1,8 @@
 {
   "reel_id": "ox_alpha_14",
   "title": "A Mystery AI Model Just Dropped (0x-alpha)",
-  "total_duration_s": 22.3,
-  "total_frames": 669,
+  "total_duration_s": 21.463,
+  "total_frames": 644,
   "fps": 30,
   "timeline_events": [
     {
@@ -10,23 +10,23 @@
       "speaker": "narrator",
       "text": "A mystery AI model named 0x-alpha just dropped out of nowhere.",
       "start_time_ms": 0,
-      "end_time_ms": 3264,
-      "duration_s": 3.264,
+      "end_time_ms": 2901,
+      "duration_s": 2.901,
       "start_frame": 0,
-      "end_frame": 98,
+      "end_frame": 87,
       "gap_after_ms": 80,
       "semantic_cues": [
         {
           "phrase": "0x-alpha",
           "cue": "model_spawn",
-          "time_ms": 1632,
-          "frame": 49
+          "time_ms": 1450,
+          "frame": 44
         },
         {
           "phrase": "out of nowhere",
           "cue": "mystery_badge",
-          "time_ms": 2774,
-          "frame": 83
+          "time_ms": 2465,
+          "frame": 74
         }
       ]
     },
@@ -34,24 +34,24 @@
       "id": "ox02_specs",
       "speaker": "narrator",
       "text": "It gives you a massive 1 million token context \u2014 for exactly zero dollars.",
-      "start_time_ms": 3344,
-      "end_time_ms": 7013,
-      "duration_s": 3.669,
-      "start_frame": 100,
-      "end_frame": 210,
+      "start_time_ms": 2981,
+      "end_time_ms": 7631,
+      "duration_s": 4.651,
+      "start_frame": 89,
+      "end_frame": 229,
       "gap_after_ms": 90,
       "semantic_cues": [
         {
           "phrase": "1 million token",
           "cue": "million_context",
-          "time_ms": 4811,
-          "frame": 144
+          "time_ms": 4841,
+          "frame": 145
         },
         {
           "phrase": "zero dollars",
           "cue": "free_zero_dollar",
-          "time_ms": 6462,
-          "frame": 194
+          "time_ms": 6933,
+          "frame": 208
         }
       ]
     },
@@ -59,18 +59,18 @@
       "id": "ox03_nemi",
       "speaker": "nemi",
       "text": "Wait, who secretly built this?",
-      "start_time_ms": 7103,
-      "end_time_ms": 8895,
+      "start_time_ms": 7721,
+      "end_time_ms": 9513,
       "duration_s": 1.792,
-      "start_frame": 213,
-      "end_frame": 267,
+      "start_frame": 232,
+      "end_frame": 285,
       "gap_after_ms": 80,
       "semantic_cues": [
         {
           "phrase": "secretly built this",
           "cue": "nemi_curious",
-          "time_ms": 8357,
-          "frame": 251
+          "time_ms": 8975,
+          "frame": 269
         }
       ]
     },
@@ -78,24 +78,24 @@
       "id": "ox04_swe_bench",
       "speaker": "narrator",
       "text": "It scored 80% on coding benchmarks! Tokenizer fingerprints match Zhipu's GLM-5.3.",
-      "start_time_ms": 8975,
-      "end_time_ms": 14073,
-      "duration_s": 5.099,
-      "start_frame": 269,
-      "end_frame": 422,
+      "start_time_ms": 9593,
+      "end_time_ms": 14649,
+      "duration_s": 5.056,
+      "start_frame": 288,
+      "end_frame": 439,
       "gap_after_ms": 90,
       "semantic_cues": [
         {
           "phrase": "80% on coding",
           "cue": "swe_80_percent",
-          "time_ms": 10504,
-          "frame": 315
+          "time_ms": 11109,
+          "frame": 333
         },
         {
           "phrase": "GLM-5.3",
           "cue": "dna_match_zhipu",
-          "time_ms": 13308,
-          "frame": 399
+          "time_ms": 13890,
+          "frame": 417
         }
       ]
     },
@@ -103,24 +103,24 @@
       "id": "ox05_warning",
       "speaker": "narrator",
       "text": "It's only free for a week, and all prompts are recorded for training.",
-      "start_time_ms": 14163,
-      "end_time_ms": 16616,
-      "duration_s": 2.453,
-      "start_frame": 425,
-      "end_frame": 498,
+      "start_time_ms": 14739,
+      "end_time_ms": 17469,
+      "duration_s": 2.731,
+      "start_frame": 442,
+      "end_frame": 524,
       "gap_after_ms": 90,
       "semantic_cues": [
         {
           "phrase": "for a week",
           "cue": "seven_day_timer",
-          "time_ms": 15021,
-          "frame": 451
+          "time_ms": 15694,
+          "frame": 471
         },
         {
           "phrase": "recorded for training",
           "cue": "vault_warning",
-          "time_ms": 16125,
-          "frame": 484
+          "time_ms": 16923,
+          "frame": 508
         }
       ]
     },
@@ -128,37 +128,18 @@
       "id": "ox06_nemi",
       "speaker": "nemi",
       "text": "Free frontier AI? I'm using this before it disappears!",
-      "start_time_ms": 16706,
-      "end_time_ms": 20610,
+      "start_time_ms": 17559,
+      "end_time_ms": 21463,
       "duration_s": 3.904,
-      "start_frame": 501,
-      "end_frame": 618,
-      "gap_after_ms": 90,
+      "start_frame": 527,
+      "end_frame": 644,
+      "gap_after_ms": 0,
       "semantic_cues": [
         {
           "phrase": "before it disappears",
           "cue": "nemi_excited",
-          "time_ms": 19634,
-          "frame": 589
-        }
-      ]
-    },
-    {
-      "id": "ox07_loop",
-      "speaker": "narrator",
-      "text": "Before everyone finds out that...",
-      "start_time_ms": 20700,
-      "end_time_ms": 22300,
-      "duration_s": 1.6,
-      "start_frame": 621,
-      "end_frame": 669,
-      "gap_after_ms": 0,
-      "semantic_cues": [
-        {
-          "phrase": "finds out that",
-          "cue": "loop_seam",
-          "time_ms": 21500,
-          "frame": 645
+          "time_ms": 20487,
+          "frame": 615
         }
       ]
     }
@@ -166,7 +147,7 @@
   "subtitles": [
     {
       "start_frame": 0,
-      "end_frame": 35,
+      "end_frame": 28,
       "text": "A mystery AI model",
       "words": [
         {
@@ -179,618 +160,576 @@
         {
           "word": "mystery",
           "start_s": 0.08,
-          "end_s": 0.44,
+          "end_s": 0.34,
           "start_frame": 2,
-          "end_frame": 13
+          "end_frame": 10
         },
         {
           "word": "AI",
-          "start_s": 0.44,
-          "end_s": 0.78,
-          "start_frame": 13,
-          "end_frame": 23
+          "start_s": 0.34,
+          "end_s": 0.6,
+          "start_frame": 10,
+          "end_frame": 18
         },
         {
           "word": "model",
-          "start_s": 0.78,
-          "end_s": 1.16,
-          "start_frame": 23,
-          "end_frame": 35
+          "start_s": 0.6,
+          "end_s": 0.94,
+          "start_frame": 18,
+          "end_frame": 28
         }
       ]
     },
     {
-      "start_frame": 35,
-      "end_frame": 74,
-      "text": "named 0x-alpha just dropped",
+      "start_frame": 28,
+      "end_frame": 58,
+      "text": "named OX Alpha just",
       "words": [
         {
           "word": "named",
-          "start_s": 1.16,
-          "end_s": 1.36,
-          "start_frame": 35,
-          "end_frame": 41
+          "start_s": 0.94,
+          "end_s": 1.16,
+          "start_frame": 28,
+          "end_frame": 35
         },
         {
-          "word": "0x-alpha",
-          "start_s": 1.36,
-          "end_s": 2.0,
-          "start_frame": 41,
-          "end_frame": 60
+          "word": "OX",
+          "start_s": 1.16,
+          "end_s": 1.48,
+          "start_frame": 35,
+          "end_frame": 44
+        },
+        {
+          "word": "Alpha",
+          "start_s": 1.48,
+          "end_s": 1.76,
+          "start_frame": 44,
+          "end_frame": 53
         },
         {
           "word": "just",
-          "start_s": 2.0,
-          "end_s": 2.22,
-          "start_frame": 60,
-          "end_frame": 67
-        },
-        {
-          "word": "dropped",
-          "start_s": 2.22,
-          "end_s": 2.48,
-          "start_frame": 67,
-          "end_frame": 74
+          "start_s": 1.76,
+          "end_s": 1.94,
+          "start_frame": 53,
+          "end_frame": 58
         }
       ]
     },
     {
-      "start_frame": 74,
-      "end_frame": 89,
-      "text": "out of nowhere.",
+      "start_frame": 58,
+      "end_frame": 81,
+      "text": "dropped out of nowhere.",
       "words": [
         {
+          "word": "dropped",
+          "start_s": 1.94,
+          "end_s": 2.14,
+          "start_frame": 58,
+          "end_frame": 64
+        },
+        {
           "word": "out",
-          "start_s": 2.48,
-          "end_s": 2.62,
-          "start_frame": 74,
-          "end_frame": 79
+          "start_s": 2.14,
+          "end_s": 2.34,
+          "start_frame": 64,
+          "end_frame": 70
         },
         {
           "word": "of",
-          "start_s": 2.62,
-          "end_s": 2.72,
-          "start_frame": 79,
-          "end_frame": 82
+          "start_s": 2.34,
+          "end_s": 2.42,
+          "start_frame": 70,
+          "end_frame": 73
         },
         {
           "word": "nowhere.",
-          "start_s": 2.72,
-          "end_s": 2.98,
-          "start_frame": 82,
-          "end_frame": 89
+          "start_s": 2.42,
+          "end_s": 2.7,
+          "start_frame": 73,
+          "end_frame": 81
         }
       ]
     },
     {
-      "start_frame": 101,
-      "end_frame": 114,
+      "start_frame": 89,
+      "end_frame": 107,
       "text": "It gives you a",
       "words": [
         {
           "word": "It",
-          "start_s": 3.36,
-          "end_s": 3.44,
-          "start_frame": 101,
-          "end_frame": 103
+          "start_s": 2.96,
+          "end_s": 3.08,
+          "start_frame": 89,
+          "end_frame": 92
         },
         {
           "word": "gives",
-          "start_s": 3.44,
-          "end_s": 3.56,
-          "start_frame": 103,
-          "end_frame": 107
+          "start_s": 3.08,
+          "end_s": 3.26,
+          "start_frame": 92,
+          "end_frame": 98
         },
         {
           "word": "you",
-          "start_s": 3.56,
-          "end_s": 3.7,
-          "start_frame": 107,
-          "end_frame": 111
+          "start_s": 3.26,
+          "end_s": 3.42,
+          "start_frame": 98,
+          "end_frame": 103
         },
         {
           "word": "a",
-          "start_s": 3.7,
-          "end_s": 3.8,
-          "start_frame": 111,
-          "end_frame": 114
+          "start_s": 3.42,
+          "end_s": 3.56,
+          "start_frame": 103,
+          "end_frame": 107
         }
       ]
     },
     {
-      "start_frame": 114,
-      "end_frame": 146,
+      "start_frame": 107,
+      "end_frame": 151,
       "text": "massive 1 million token",
       "words": [
         {
           "word": "massive",
-          "start_s": 3.8,
+          "start_s": 3.56,
           "end_s": 4.08,
-          "start_frame": 114,
+          "start_frame": 107,
           "end_frame": 122
         },
         {
           "word": "1",
           "start_s": 4.08,
-          "end_s": 4.34,
+          "end_s": 4.44,
           "start_frame": 122,
-          "end_frame": 130
+          "end_frame": 133
         },
         {
           "word": "million",
-          "start_s": 4.34,
-          "end_s": 4.6,
-          "start_frame": 130,
-          "end_frame": 138
+          "start_s": 4.44,
+          "end_s": 4.7,
+          "start_frame": 133,
+          "end_frame": 141
         },
         {
           "word": "token",
-          "start_s": 4.6,
-          "end_s": 4.86,
-          "start_frame": 138,
-          "end_frame": 146
+          "start_s": 4.7,
+          "end_s": 5.02,
+          "start_frame": 141,
+          "end_frame": 151
         }
       ]
     },
     {
-      "start_frame": 146,
-      "end_frame": 196,
+      "start_frame": 151,
+      "end_frame": 212,
       "text": "context for exactly $0.",
       "words": [
         {
           "word": "context",
-          "start_s": 4.86,
-          "end_s": 5.42,
-          "start_frame": 146,
-          "end_frame": 163
+          "start_s": 5.02,
+          "end_s": 5.52,
+          "start_frame": 151,
+          "end_frame": 166
         },
         {
           "word": "for",
-          "start_s": 5.42,
-          "end_s": 5.8,
-          "start_frame": 163,
-          "end_frame": 174
+          "start_s": 5.52,
+          "end_s": 5.96,
+          "start_frame": 166,
+          "end_frame": 179
         },
         {
           "word": "exactly",
-          "start_s": 5.8,
-          "end_s": 6.1,
-          "start_frame": 174,
-          "end_frame": 183
+          "start_s": 5.96,
+          "end_s": 6.44,
+          "start_frame": 179,
+          "end_frame": 193
         },
         {
           "word": "$0.",
-          "start_s": 6.1,
-          "end_s": 6.52,
-          "start_frame": 183,
-          "end_frame": 196
+          "start_s": 6.44,
+          "end_s": 7.08,
+          "start_frame": 193,
+          "end_frame": 212
         }
       ]
     },
     {
-      "start_frame": 211,
-      "end_frame": 253,
+      "start_frame": 230,
+      "end_frame": 272,
       "text": "Wait, who secretly built",
       "words": [
         {
           "word": "Wait,",
-          "start_s": 7.02,
-          "end_s": 7.26,
-          "start_frame": 211,
-          "end_frame": 218
+          "start_s": 7.66,
+          "end_s": 7.88,
+          "start_frame": 230,
+          "end_frame": 236
         },
         {
           "word": "who",
-          "start_s": 7.6,
-          "end_s": 7.8,
-          "start_frame": 228,
-          "end_frame": 234
+          "start_s": 8.2,
+          "end_s": 8.42,
+          "start_frame": 246,
+          "end_frame": 253
         },
         {
           "word": "secretly",
-          "start_s": 7.8,
-          "end_s": 8.18,
-          "start_frame": 234,
-          "end_frame": 245
+          "start_s": 8.42,
+          "end_s": 8.8,
+          "start_frame": 253,
+          "end_frame": 264
         },
         {
           "word": "built",
-          "start_s": 8.18,
-          "end_s": 8.44,
-          "start_frame": 245,
-          "end_frame": 253
+          "start_s": 8.8,
+          "end_s": 9.08,
+          "start_frame": 264,
+          "end_frame": 272
         }
       ]
     },
     {
-      "start_frame": 253,
-      "end_frame": 263,
+      "start_frame": 272,
+      "end_frame": 280,
       "text": "this?",
       "words": [
         {
           "word": "this?",
-          "start_s": 8.44,
-          "end_s": 8.78,
-          "start_frame": 253,
-          "end_frame": 263
+          "start_s": 9.08,
+          "end_s": 9.34,
+          "start_frame": 272,
+          "end_frame": 280
         }
       ]
     },
     {
-      "start_frame": 269,
-      "end_frame": 297,
+      "start_frame": 289,
+      "end_frame": 313,
       "text": "It scored 80 %",
       "words": [
         {
           "word": "It",
-          "start_s": 8.98,
-          "end_s": 9.08,
-          "start_frame": 269,
-          "end_frame": 272
+          "start_s": 9.62,
+          "end_s": 9.7,
+          "start_frame": 289,
+          "end_frame": 291
         },
         {
           "word": "scored",
-          "start_s": 9.08,
-          "end_s": 9.3,
-          "start_frame": 272,
-          "end_frame": 279
+          "start_s": 9.7,
+          "end_s": 9.86,
+          "start_frame": 291,
+          "end_frame": 296
         },
         {
           "word": "80",
-          "start_s": 9.3,
-          "end_s": 9.6,
-          "start_frame": 279,
-          "end_frame": 288
+          "start_s": 9.86,
+          "end_s": 10.16,
+          "start_frame": 296,
+          "end_frame": 305
         },
         {
           "word": "%",
-          "start_s": 9.6,
-          "end_s": 9.9,
-          "start_frame": 288,
-          "end_frame": 297
+          "start_s": 10.16,
+          "end_s": 10.44,
+          "start_frame": 305,
+          "end_frame": 313
         }
       ]
     },
     {
-      "start_frame": 297,
-      "end_frame": 322,
+      "start_frame": 313,
+      "end_frame": 340,
       "text": "on coding benchmarks.",
       "words": [
         {
           "word": "on",
-          "start_s": 9.9,
-          "end_s": 10.1,
-          "start_frame": 297,
-          "end_frame": 303
+          "start_s": 10.44,
+          "end_s": 10.68,
+          "start_frame": 313,
+          "end_frame": 320
         },
         {
           "word": "coding",
-          "start_s": 10.1,
-          "end_s": 10.3,
-          "start_frame": 303,
-          "end_frame": 309
+          "start_s": 10.68,
+          "end_s": 10.92,
+          "start_frame": 320,
+          "end_frame": 328
         },
         {
           "word": "benchmarks.",
-          "start_s": 10.3,
-          "end_s": 10.72,
-          "start_frame": 309,
-          "end_frame": 322
+          "start_s": 10.92,
+          "end_s": 11.34,
+          "start_frame": 328,
+          "end_frame": 340
         }
       ]
     },
     {
-      "start_frame": 335,
-      "end_frame": 383,
-      "text": "Tokenizer fingerprints match Zhipu's",
+      "start_frame": 353,
+      "end_frame": 399,
+      "text": "Tokenizer fingerprints match Jippo's",
       "words": [
         {
           "word": "Tokenizer",
-          "start_s": 11.16,
-          "end_s": 11.56,
-          "start_frame": 335,
-          "end_frame": 347
+          "start_s": 11.78,
+          "end_s": 12.12,
+          "start_frame": 353,
+          "end_frame": 364
         },
         {
           "word": "fingerprints",
-          "start_s": 11.56,
-          "end_s": 11.86,
-          "start_frame": 347,
-          "end_frame": 356
+          "start_s": 12.12,
+          "end_s": 12.44,
+          "start_frame": 364,
+          "end_frame": 373
         },
         {
           "word": "match",
-          "start_s": 11.86,
-          "end_s": 12.3,
-          "start_frame": 356,
-          "end_frame": 369
+          "start_s": 12.44,
+          "end_s": 12.82,
+          "start_frame": 373,
+          "end_frame": 385
         },
         {
-          "word": "Zhipu's",
-          "start_s": 12.3,
-          "end_s": 12.78,
-          "start_frame": 369,
-          "end_frame": 383
+          "word": "Jippo's",
+          "start_s": 12.82,
+          "end_s": 13.3,
+          "start_frame": 385,
+          "end_frame": 399
         }
       ]
     },
     {
-      "start_frame": 383,
-      "end_frame": 416,
+      "start_frame": 399,
+      "end_frame": 434,
       "text": "GLM 5 .3.",
       "words": [
         {
           "word": "GLM",
-          "start_s": 12.78,
-          "end_s": 13.24,
-          "start_frame": 383,
-          "end_frame": 397
+          "start_s": 13.3,
+          "end_s": 13.8,
+          "start_frame": 399,
+          "end_frame": 414
         },
         {
           "word": "5",
-          "start_s": 13.24,
-          "end_s": 13.46,
-          "start_frame": 397,
-          "end_frame": 404
+          "start_s": 13.8,
+          "end_s": 14.04,
+          "start_frame": 414,
+          "end_frame": 421
         },
         {
           "word": ".3.",
-          "start_s": 13.46,
-          "end_s": 13.88,
-          "start_frame": 404,
-          "end_frame": 416
+          "start_s": 14.04,
+          "end_s": 14.46,
+          "start_frame": 421,
+          "end_frame": 434
         }
       ]
     },
     {
-      "start_frame": 425,
-      "end_frame": 444,
+      "start_frame": 443,
+      "end_frame": 461,
       "text": "It's only free for",
       "words": [
         {
           "word": "It's",
-          "start_s": 14.18,
-          "end_s": 14.4,
-          "start_frame": 425,
-          "end_frame": 432
+          "start_s": 14.76,
+          "end_s": 14.88,
+          "start_frame": 443,
+          "end_frame": 446
         },
         {
           "word": "only",
-          "start_s": 14.4,
-          "end_s": 14.54,
-          "start_frame": 432,
-          "end_frame": 436
+          "start_s": 14.88,
+          "end_s": 15.04,
+          "start_frame": 446,
+          "end_frame": 451
         },
         {
           "word": "free",
-          "start_s": 14.54,
-          "end_s": 14.7,
-          "start_frame": 436,
-          "end_frame": 441
+          "start_s": 15.04,
+          "end_s": 15.24,
+          "start_frame": 451,
+          "end_frame": 457
         },
         {
           "word": "for",
-          "start_s": 14.7,
-          "end_s": 14.8,
-          "start_frame": 441,
-          "end_frame": 444
+          "start_s": 15.24,
+          "end_s": 15.38,
+          "start_frame": 457,
+          "end_frame": 461
         }
       ]
     },
     {
-      "start_frame": 444,
-      "end_frame": 464,
+      "start_frame": 461,
+      "end_frame": 485,
       "text": "a week, and all",
       "words": [
         {
           "word": "a",
-          "start_s": 14.8,
-          "end_s": 14.9,
-          "start_frame": 444,
-          "end_frame": 447
+          "start_s": 15.38,
+          "end_s": 15.5,
+          "start_frame": 461,
+          "end_frame": 465
         },
         {
           "word": "week,",
-          "start_s": 14.9,
-          "end_s": 15.04,
-          "start_frame": 447,
-          "end_frame": 451
+          "start_s": 15.5,
+          "end_s": 15.66,
+          "start_frame": 465,
+          "end_frame": 470
         },
         {
           "word": "and",
-          "start_s": 15.28,
-          "end_s": 15.36,
-          "start_frame": 458,
-          "end_frame": 461
+          "start_s": 15.94,
+          "end_s": 16.04,
+          "start_frame": 478,
+          "end_frame": 481
         },
         {
           "word": "all",
-          "start_s": 15.36,
-          "end_s": 15.48,
-          "start_frame": 461,
-          "end_frame": 464
+          "start_s": 16.04,
+          "end_s": 16.16,
+          "start_frame": 481,
+          "end_frame": 485
         }
       ]
     },
     {
-      "start_frame": 464,
-      "end_frame": 486,
-      "text": "prongs are recorded for",
+      "start_frame": 485,
+      "end_frame": 510,
+      "text": "prompts are recorded for",
       "words": [
         {
-          "word": "prongs",
-          "start_s": 15.48,
-          "end_s": 15.74,
-          "start_frame": 464,
-          "end_frame": 472
+          "word": "prompts",
+          "start_s": 16.16,
+          "end_s": 16.44,
+          "start_frame": 485,
+          "end_frame": 493
         },
         {
           "word": "are",
-          "start_s": 15.74,
-          "end_s": 15.82,
-          "start_frame": 472,
-          "end_frame": 475
+          "start_s": 16.44,
+          "end_s": 16.56,
+          "start_frame": 493,
+          "end_frame": 497
         },
         {
           "word": "recorded",
-          "start_s": 15.82,
-          "end_s": 16.0,
-          "start_frame": 475,
-          "end_frame": 480
+          "start_s": 16.56,
+          "end_s": 16.84,
+          "start_frame": 497,
+          "end_frame": 505
         },
         {
           "word": "for",
-          "start_s": 16.0,
-          "end_s": 16.2,
-          "start_frame": 480,
-          "end_frame": 486
+          "start_s": 16.84,
+          "end_s": 17.0,
+          "start_frame": 505,
+          "end_frame": 510
         }
       ]
     },
     {
-      "start_frame": 486,
-      "end_frame": 493,
+      "start_frame": 510,
+      "end_frame": 518,
       "text": "training.",
       "words": [
         {
           "word": "training.",
-          "start_s": 16.2,
-          "end_s": 16.42,
-          "start_frame": 486,
-          "end_frame": 493
+          "start_s": 17.0,
+          "end_s": 17.28,
+          "start_frame": 510,
+          "end_frame": 518
         }
       ]
     },
     {
-      "start_frame": 500,
-      "end_frame": 533,
+      "start_frame": 527,
+      "end_frame": 559,
       "text": "Free Frontier AI?",
       "words": [
         {
           "word": "Free",
-          "start_s": 16.68,
-          "end_s": 16.94,
-          "start_frame": 500,
-          "end_frame": 508
+          "start_s": 17.56,
+          "end_s": 17.78,
+          "start_frame": 527,
+          "end_frame": 533
         },
         {
           "word": "Frontier",
-          "start_s": 16.94,
-          "end_s": 17.42,
-          "start_frame": 508,
-          "end_frame": 523
+          "start_s": 17.78,
+          "end_s": 18.28,
+          "start_frame": 533,
+          "end_frame": 548
         },
         {
           "word": "AI?",
-          "start_s": 17.42,
-          "end_s": 17.78,
-          "start_frame": 523,
-          "end_frame": 533
+          "start_s": 18.28,
+          "end_s": 18.64,
+          "start_frame": 548,
+          "end_frame": 559
         }
       ]
     },
     {
-      "start_frame": 550,
-      "end_frame": 590,
+      "start_frame": 576,
+      "end_frame": 616,
       "text": "I'm using this before",
       "words": [
         {
           "word": "I'm",
-          "start_s": 18.32,
-          "end_s": 18.84,
-          "start_frame": 550,
-          "end_frame": 565
+          "start_s": 19.2,
+          "end_s": 19.7,
+          "start_frame": 576,
+          "end_frame": 591
         },
         {
           "word": "using",
-          "start_s": 18.84,
-          "end_s": 19.08,
-          "start_frame": 565,
-          "end_frame": 572
+          "start_s": 19.7,
+          "end_s": 19.92,
+          "start_frame": 591,
+          "end_frame": 598
         },
         {
           "word": "this",
-          "start_s": 19.08,
-          "end_s": 19.3,
-          "start_frame": 572,
-          "end_frame": 579
+          "start_s": 19.92,
+          "end_s": 20.14,
+          "start_frame": 598,
+          "end_frame": 604
         },
         {
           "word": "before",
-          "start_s": 19.3,
-          "end_s": 19.68,
-          "start_frame": 579,
-          "end_frame": 590
+          "start_s": 20.14,
+          "end_s": 20.52,
+          "start_frame": 604,
+          "end_frame": 616
         }
       ]
     },
     {
-      "start_frame": 590,
-      "end_frame": 610,
+      "start_frame": 616,
+      "end_frame": 634,
       "text": "it disappears.",
       "words": [
         {
           "word": "it",
-          "start_s": 19.68,
-          "end_s": 19.88,
-          "start_frame": 590,
-          "end_frame": 596
+          "start_s": 20.52,
+          "end_s": 20.74,
+          "start_frame": 616,
+          "end_frame": 622
         },
         {
           "word": "disappears.",
-          "start_s": 19.88,
-          "end_s": 20.32,
-          "start_frame": 596,
-          "end_frame": 610
-        }
-      ]
-    },
-    {
-      "start_frame": 621,
-      "end_frame": 653,
-      "text": "Before everyone finds out",
-      "words": [
-        {
-          "word": "Before",
-          "start_s": 20.7,
-          "end_s": 20.88,
-          "start_frame": 621,
-          "end_frame": 626
-        },
-        {
-          "word": "everyone",
-          "start_s": 20.88,
-          "end_s": 21.32,
-          "start_frame": 626,
-          "end_frame": 640
-        },
-        {
-          "word": "finds",
-          "start_s": 21.32,
-          "end_s": 21.6,
-          "start_frame": 640,
-          "end_frame": 648
-        },
-        {
-          "word": "out",
-          "start_s": 21.6,
-          "end_s": 21.78,
-          "start_frame": 648,
-          "end_frame": 653
-        }
-      ]
-    },
-    {
-      "start_frame": 653,
-      "end_frame": 668,
-      "text": "that...",
-      "words": [
-        {
-          "word": "that...",
-          "start_s": 21.78,
-          "end_s": 22.28,
-          "start_frame": 653,
-          "end_frame": 668
+          "start_s": 20.74,
+          "end_s": 21.14,
+          "start_frame": 622,
+          "end_frame": 634
         }
       ]
     }
@@ -806,478 +745,450 @@
     {
       "word": "mystery",
       "start_s": 0.08,
-      "end_s": 0.44,
+      "end_s": 0.34,
       "start_frame": 2,
-      "end_frame": 13
+      "end_frame": 10
     },
     {
       "word": "AI",
-      "start_s": 0.44,
-      "end_s": 0.78,
-      "start_frame": 13,
-      "end_frame": 23
+      "start_s": 0.34,
+      "end_s": 0.6,
+      "start_frame": 10,
+      "end_frame": 18
     },
     {
       "word": "model",
-      "start_s": 0.78,
-      "end_s": 1.16,
-      "start_frame": 23,
-      "end_frame": 35
+      "start_s": 0.6,
+      "end_s": 0.94,
+      "start_frame": 18,
+      "end_frame": 28
     },
     {
       "word": "named",
-      "start_s": 1.16,
-      "end_s": 1.36,
-      "start_frame": 35,
-      "end_frame": 41
+      "start_s": 0.94,
+      "end_s": 1.16,
+      "start_frame": 28,
+      "end_frame": 35
     },
     {
-      "word": "0x-alpha",
-      "start_s": 1.36,
-      "end_s": 2.0,
-      "start_frame": 41,
-      "end_frame": 60
+      "word": "OX",
+      "start_s": 1.16,
+      "end_s": 1.48,
+      "start_frame": 35,
+      "end_frame": 44
+    },
+    {
+      "word": "Alpha",
+      "start_s": 1.48,
+      "end_s": 1.76,
+      "start_frame": 44,
+      "end_frame": 53
     },
     {
       "word": "just",
-      "start_s": 2.0,
-      "end_s": 2.22,
-      "start_frame": 60,
-      "end_frame": 67
+      "start_s": 1.76,
+      "end_s": 1.94,
+      "start_frame": 53,
+      "end_frame": 58
     },
     {
       "word": "dropped",
-      "start_s": 2.22,
-      "end_s": 2.48,
-      "start_frame": 67,
-      "end_frame": 74
+      "start_s": 1.94,
+      "end_s": 2.14,
+      "start_frame": 58,
+      "end_frame": 64
     },
     {
       "word": "out",
-      "start_s": 2.48,
-      "end_s": 2.62,
-      "start_frame": 74,
-      "end_frame": 79
+      "start_s": 2.14,
+      "end_s": 2.34,
+      "start_frame": 64,
+      "end_frame": 70
     },
     {
       "word": "of",
-      "start_s": 2.62,
-      "end_s": 2.72,
-      "start_frame": 79,
-      "end_frame": 82
+      "start_s": 2.34,
+      "end_s": 2.42,
+      "start_frame": 70,
+      "end_frame": 73
     },
     {
       "word": "nowhere.",
-      "start_s": 2.72,
-      "end_s": 2.98,
-      "start_frame": 82,
-      "end_frame": 89
+      "start_s": 2.42,
+      "end_s": 2.7,
+      "start_frame": 73,
+      "end_frame": 81
     },
     {
       "word": "It",
-      "start_s": 3.36,
-      "end_s": 3.44,
-      "start_frame": 101,
-      "end_frame": 103
+      "start_s": 2.96,
+      "end_s": 3.08,
+      "start_frame": 89,
+      "end_frame": 92
     },
     {
       "word": "gives",
-      "start_s": 3.44,
+      "start_s": 3.08,
+      "end_s": 3.26,
+      "start_frame": 92,
+      "end_frame": 98
+    },
+    {
+      "word": "you",
+      "start_s": 3.26,
+      "end_s": 3.42,
+      "start_frame": 98,
+      "end_frame": 103
+    },
+    {
+      "word": "a",
+      "start_s": 3.42,
       "end_s": 3.56,
       "start_frame": 103,
       "end_frame": 107
     },
     {
-      "word": "you",
-      "start_s": 3.56,
-      "end_s": 3.7,
-      "start_frame": 107,
-      "end_frame": 111
-    },
-    {
-      "word": "a",
-      "start_s": 3.7,
-      "end_s": 3.8,
-      "start_frame": 111,
-      "end_frame": 114
-    },
-    {
       "word": "massive",
-      "start_s": 3.8,
+      "start_s": 3.56,
       "end_s": 4.08,
-      "start_frame": 114,
+      "start_frame": 107,
       "end_frame": 122
     },
     {
       "word": "1",
       "start_s": 4.08,
-      "end_s": 4.34,
+      "end_s": 4.44,
       "start_frame": 122,
-      "end_frame": 130
+      "end_frame": 133
     },
     {
       "word": "million",
-      "start_s": 4.34,
-      "end_s": 4.6,
-      "start_frame": 130,
-      "end_frame": 138
+      "start_s": 4.44,
+      "end_s": 4.7,
+      "start_frame": 133,
+      "end_frame": 141
     },
     {
       "word": "token",
-      "start_s": 4.6,
-      "end_s": 4.86,
-      "start_frame": 138,
-      "end_frame": 146
+      "start_s": 4.7,
+      "end_s": 5.02,
+      "start_frame": 141,
+      "end_frame": 151
     },
     {
       "word": "context",
-      "start_s": 4.86,
-      "end_s": 5.42,
-      "start_frame": 146,
-      "end_frame": 163
+      "start_s": 5.02,
+      "end_s": 5.52,
+      "start_frame": 151,
+      "end_frame": 166
     },
     {
       "word": "for",
-      "start_s": 5.42,
-      "end_s": 5.8,
-      "start_frame": 163,
-      "end_frame": 174
+      "start_s": 5.52,
+      "end_s": 5.96,
+      "start_frame": 166,
+      "end_frame": 179
     },
     {
       "word": "exactly",
-      "start_s": 5.8,
-      "end_s": 6.1,
-      "start_frame": 174,
-      "end_frame": 183
+      "start_s": 5.96,
+      "end_s": 6.44,
+      "start_frame": 179,
+      "end_frame": 193
     },
     {
       "word": "$0.",
-      "start_s": 6.1,
-      "end_s": 6.52,
-      "start_frame": 183,
-      "end_frame": 196
+      "start_s": 6.44,
+      "end_s": 7.08,
+      "start_frame": 193,
+      "end_frame": 212
     },
     {
       "word": "Wait,",
-      "start_s": 7.02,
-      "end_s": 7.26,
-      "start_frame": 211,
-      "end_frame": 218
+      "start_s": 7.66,
+      "end_s": 7.88,
+      "start_frame": 230,
+      "end_frame": 236
     },
     {
       "word": "who",
-      "start_s": 7.6,
-      "end_s": 7.8,
-      "start_frame": 228,
-      "end_frame": 234
-    },
-    {
-      "word": "secretly",
-      "start_s": 7.8,
-      "end_s": 8.18,
-      "start_frame": 234,
-      "end_frame": 245
-    },
-    {
-      "word": "built",
-      "start_s": 8.18,
-      "end_s": 8.44,
-      "start_frame": 245,
+      "start_s": 8.2,
+      "end_s": 8.42,
+      "start_frame": 246,
       "end_frame": 253
     },
     {
-      "word": "this?",
-      "start_s": 8.44,
-      "end_s": 8.78,
+      "word": "secretly",
+      "start_s": 8.42,
+      "end_s": 8.8,
       "start_frame": 253,
-      "end_frame": 263
+      "end_frame": 264
     },
     {
-      "word": "It",
-      "start_s": 8.98,
+      "word": "built",
+      "start_s": 8.8,
       "end_s": 9.08,
-      "start_frame": 269,
+      "start_frame": 264,
       "end_frame": 272
     },
     {
-      "word": "scored",
+      "word": "this?",
       "start_s": 9.08,
-      "end_s": 9.3,
+      "end_s": 9.34,
       "start_frame": 272,
-      "end_frame": 279
+      "end_frame": 280
+    },
+    {
+      "word": "It",
+      "start_s": 9.62,
+      "end_s": 9.7,
+      "start_frame": 289,
+      "end_frame": 291
+    },
+    {
+      "word": "scored",
+      "start_s": 9.7,
+      "end_s": 9.86,
+      "start_frame": 291,
+      "end_frame": 296
     },
     {
       "word": "80",
-      "start_s": 9.3,
-      "end_s": 9.6,
-      "start_frame": 279,
-      "end_frame": 288
+      "start_s": 9.86,
+      "end_s": 10.16,
+      "start_frame": 296,
+      "end_frame": 305
     },
     {
       "word": "%",
-      "start_s": 9.6,
-      "end_s": 9.9,
-      "start_frame": 288,
-      "end_frame": 297
+      "start_s": 10.16,
+      "end_s": 10.44,
+      "start_frame": 305,
+      "end_frame": 313
     },
     {
       "word": "on",
-      "start_s": 9.9,
-      "end_s": 10.1,
-      "start_frame": 297,
-      "end_frame": 303
+      "start_s": 10.44,
+      "end_s": 10.68,
+      "start_frame": 313,
+      "end_frame": 320
     },
     {
       "word": "coding",
-      "start_s": 10.1,
-      "end_s": 10.3,
-      "start_frame": 303,
-      "end_frame": 309
+      "start_s": 10.68,
+      "end_s": 10.92,
+      "start_frame": 320,
+      "end_frame": 328
     },
     {
       "word": "benchmarks.",
-      "start_s": 10.3,
-      "end_s": 10.72,
-      "start_frame": 309,
-      "end_frame": 322
+      "start_s": 10.92,
+      "end_s": 11.34,
+      "start_frame": 328,
+      "end_frame": 340
     },
     {
       "word": "Tokenizer",
-      "start_s": 11.16,
-      "end_s": 11.56,
-      "start_frame": 335,
-      "end_frame": 347
+      "start_s": 11.78,
+      "end_s": 12.12,
+      "start_frame": 353,
+      "end_frame": 364
     },
     {
       "word": "fingerprints",
-      "start_s": 11.56,
-      "end_s": 11.86,
-      "start_frame": 347,
-      "end_frame": 356
+      "start_s": 12.12,
+      "end_s": 12.44,
+      "start_frame": 364,
+      "end_frame": 373
     },
     {
       "word": "match",
-      "start_s": 11.86,
-      "end_s": 12.3,
-      "start_frame": 356,
-      "end_frame": 369
+      "start_s": 12.44,
+      "end_s": 12.82,
+      "start_frame": 373,
+      "end_frame": 385
     },
     {
-      "word": "Zhipu's",
-      "start_s": 12.3,
-      "end_s": 12.78,
-      "start_frame": 369,
-      "end_frame": 383
+      "word": "Jippo's",
+      "start_s": 12.82,
+      "end_s": 13.3,
+      "start_frame": 385,
+      "end_frame": 399
     },
     {
       "word": "GLM",
-      "start_s": 12.78,
-      "end_s": 13.24,
-      "start_frame": 383,
-      "end_frame": 397
+      "start_s": 13.3,
+      "end_s": 13.8,
+      "start_frame": 399,
+      "end_frame": 414
     },
     {
       "word": "5",
-      "start_s": 13.24,
-      "end_s": 13.46,
-      "start_frame": 397,
-      "end_frame": 404
+      "start_s": 13.8,
+      "end_s": 14.04,
+      "start_frame": 414,
+      "end_frame": 421
     },
     {
       "word": ".3.",
-      "start_s": 13.46,
-      "end_s": 13.88,
-      "start_frame": 404,
-      "end_frame": 416
+      "start_s": 14.04,
+      "end_s": 14.46,
+      "start_frame": 421,
+      "end_frame": 434
     },
     {
       "word": "It's",
-      "start_s": 14.18,
-      "end_s": 14.4,
-      "start_frame": 425,
-      "end_frame": 432
+      "start_s": 14.76,
+      "end_s": 14.88,
+      "start_frame": 443,
+      "end_frame": 446
     },
     {
       "word": "only",
-      "start_s": 14.4,
-      "end_s": 14.54,
-      "start_frame": 432,
-      "end_frame": 436
-    },
-    {
-      "word": "free",
-      "start_s": 14.54,
-      "end_s": 14.7,
-      "start_frame": 436,
-      "end_frame": 441
-    },
-    {
-      "word": "for",
-      "start_s": 14.7,
-      "end_s": 14.8,
-      "start_frame": 441,
-      "end_frame": 444
-    },
-    {
-      "word": "a",
-      "start_s": 14.8,
-      "end_s": 14.9,
-      "start_frame": 444,
-      "end_frame": 447
-    },
-    {
-      "word": "week,",
-      "start_s": 14.9,
+      "start_s": 14.88,
       "end_s": 15.04,
-      "start_frame": 447,
+      "start_frame": 446,
       "end_frame": 451
     },
     {
-      "word": "and",
-      "start_s": 15.28,
-      "end_s": 15.36,
-      "start_frame": 458,
-      "end_frame": 461
-    },
-    {
-      "word": "all",
-      "start_s": 15.36,
-      "end_s": 15.48,
-      "start_frame": 461,
-      "end_frame": 464
-    },
-    {
-      "word": "prongs",
-      "start_s": 15.48,
-      "end_s": 15.74,
-      "start_frame": 464,
-      "end_frame": 472
-    },
-    {
-      "word": "are",
-      "start_s": 15.74,
-      "end_s": 15.82,
-      "start_frame": 472,
-      "end_frame": 475
-    },
-    {
-      "word": "recorded",
-      "start_s": 15.82,
-      "end_s": 16.0,
-      "start_frame": 475,
-      "end_frame": 480
+      "word": "free",
+      "start_s": 15.04,
+      "end_s": 15.24,
+      "start_frame": 451,
+      "end_frame": 457
     },
     {
       "word": "for",
-      "start_s": 16.0,
-      "end_s": 16.2,
-      "start_frame": 480,
-      "end_frame": 486
+      "start_s": 15.24,
+      "end_s": 15.38,
+      "start_frame": 457,
+      "end_frame": 461
     },
     {
-      "word": "training.",
-      "start_s": 16.2,
-      "end_s": 16.42,
-      "start_frame": 486,
+      "word": "a",
+      "start_s": 15.38,
+      "end_s": 15.5,
+      "start_frame": 461,
+      "end_frame": 465
+    },
+    {
+      "word": "week,",
+      "start_s": 15.5,
+      "end_s": 15.66,
+      "start_frame": 465,
+      "end_frame": 470
+    },
+    {
+      "word": "and",
+      "start_s": 15.94,
+      "end_s": 16.04,
+      "start_frame": 478,
+      "end_frame": 481
+    },
+    {
+      "word": "all",
+      "start_s": 16.04,
+      "end_s": 16.16,
+      "start_frame": 481,
+      "end_frame": 485
+    },
+    {
+      "word": "prompts",
+      "start_s": 16.16,
+      "end_s": 16.44,
+      "start_frame": 485,
       "end_frame": 493
     },
     {
+      "word": "are",
+      "start_s": 16.44,
+      "end_s": 16.56,
+      "start_frame": 493,
+      "end_frame": 497
+    },
+    {
+      "word": "recorded",
+      "start_s": 16.56,
+      "end_s": 16.84,
+      "start_frame": 497,
+      "end_frame": 505
+    },
+    {
+      "word": "for",
+      "start_s": 16.84,
+      "end_s": 17.0,
+      "start_frame": 505,
+      "end_frame": 510
+    },
+    {
+      "word": "training.",
+      "start_s": 17.0,
+      "end_s": 17.28,
+      "start_frame": 510,
+      "end_frame": 518
+    },
+    {
       "word": "Free",
-      "start_s": 16.68,
-      "end_s": 16.94,
-      "start_frame": 500,
-      "end_frame": 508
-    },
-    {
-      "word": "Frontier",
-      "start_s": 16.94,
-      "end_s": 17.42,
-      "start_frame": 508,
-      "end_frame": 523
-    },
-    {
-      "word": "AI?",
-      "start_s": 17.42,
+      "start_s": 17.56,
       "end_s": 17.78,
-      "start_frame": 523,
+      "start_frame": 527,
       "end_frame": 533
     },
     {
+      "word": "Frontier",
+      "start_s": 17.78,
+      "end_s": 18.28,
+      "start_frame": 533,
+      "end_frame": 548
+    },
+    {
+      "word": "AI?",
+      "start_s": 18.28,
+      "end_s": 18.64,
+      "start_frame": 548,
+      "end_frame": 559
+    },
+    {
       "word": "I'm",
-      "start_s": 18.32,
-      "end_s": 18.84,
-      "start_frame": 550,
-      "end_frame": 565
+      "start_s": 19.2,
+      "end_s": 19.7,
+      "start_frame": 576,
+      "end_frame": 591
     },
     {
       "word": "using",
-      "start_s": 18.84,
-      "end_s": 19.08,
-      "start_frame": 565,
-      "end_frame": 572
+      "start_s": 19.7,
+      "end_s": 19.92,
+      "start_frame": 591,
+      "end_frame": 598
     },
     {
       "word": "this",
-      "start_s": 19.08,
-      "end_s": 19.3,
-      "start_frame": 572,
-      "end_frame": 579
+      "start_s": 19.92,
+      "end_s": 20.14,
+      "start_frame": 598,
+      "end_frame": 604
     },
     {
       "word": "before",
-      "start_s": 19.3,
-      "end_s": 19.68,
-      "start_frame": 579,
-      "end_frame": 590
+      "start_s": 20.14,
+      "end_s": 20.52,
+      "start_frame": 604,
+      "end_frame": 616
     },
     {
       "word": "it",
-      "start_s": 19.68,
-      "end_s": 19.88,
-      "start_frame": 590,
-      "end_frame": 596
+      "start_s": 20.52,
+      "end_s": 20.74,
+      "start_frame": 616,
+      "end_frame": 622
     },
     {
       "word": "disappears.",
-      "start_s": 19.88,
-      "end_s": 20.32,
-      "start_frame": 596,
-      "end_frame": 610
-    },
-    {
-      "word": "Before",
-      "start_s": 20.7,
-      "end_s": 20.88,
-      "start_frame": 621,
-      "end_frame": 626
-    },
-    {
-      "word": "everyone",
-      "start_s": 20.88,
-      "end_s": 21.32,
-      "start_frame": 626,
-      "end_frame": 640
-    },
-    {
-      "word": "finds",
-      "start_s": 21.32,
-      "end_s": 21.6,
-      "start_frame": 640,
-      "end_frame": 648
-    },
-    {
-      "word": "out",
-      "start_s": 21.6,
-      "end_s": 21.78,
-      "start_frame": 648,
-      "end_frame": 653
-    },
-    {
-      "word": "that...",
-      "start_s": 21.78,
-      "end_s": 22.28,
-      "start_frame": 653,
-      "end_frame": 668
+      "start_s": 20.74,
+      "end_s": 21.14,
+      "start_frame": 622,
+      "end_frame": 634
     }
   ]
 }

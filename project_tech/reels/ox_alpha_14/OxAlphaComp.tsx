@@ -62,28 +62,25 @@ export const OxAlphaComp: React.FC = () => {
   const evSwe = getEvent("ox04_swe_bench");
   const evWarning = getEvent("ox05_warning");
   const evNemiExcited = getEvent("ox06_nemi");
-  const evLoop = getEvent("ox07_loop");
 
   // ─── Semantic Cues ───
-  const modelSpawnCue = getCue("ox01_hook", "model_spawn"); // 49
-  const mysteryBadgeCue = getCue("ox01_hook", "mystery_badge"); // 83
-  const millionContextCue = getCue("ox02_specs", "million_context"); // 144
-  const freeZeroDollarCue = getCue("ox02_specs", "free_zero_dollar"); // 194
-  const nemiCuriousCue = getCue("ox03_nemi", "nemi_curious"); // 251
-  const swe80PercentCue = getCue("ox04_swe_bench", "swe_80_percent"); // 315
-  const dnaMatchZhipuCue = getCue("ox04_swe_bench", "dna_match_zhipu"); // 399
-  const sevenDayTimerCue = getCue("ox05_warning", "seven_day_timer"); // 451
-  const vaultWarningCue = getCue("ox05_warning", "vault_warning"); // 484
-  const nemiExcitedCue = getCue("ox06_nemi", "nemi_excited"); // 589
-  const loopSeamCue = getCue("ox07_loop", "loop_seam"); // 645
+  const modelSpawnCue = getCue("ox01_hook", "model_spawn");
+  const mysteryBadgeCue = getCue("ox01_hook", "mystery_badge");
+  const millionContextCue = getCue("ox02_specs", "million_context");
+  const freeZeroDollarCue = getCue("ox02_specs", "free_zero_dollar");
+  const nemiCuriousCue = getCue("ox03_nemi", "nemi_curious");
+  const swe80PercentCue = getCue("ox04_swe_bench", "swe_80_percent");
+  const dnaMatchZhipuCue = getCue("ox04_swe_bench", "dna_match_zhipu");
+  const sevenDayTimerCue = getCue("ox05_warning", "seven_day_timer");
+  const vaultWarningCue = getCue("ox05_warning", "vault_warning");
+  const nemiExcitedCue = getCue("ox06_nemi", "nemi_excited");
 
   // ─── Stage Boundaries ───
-  const cutB = evSpecs.start_frame; // 100
-  const cutC = evNemi.start_frame; // 213
-  const cutD = evSwe.start_frame; // 269
-  const cutE = evWarning.start_frame; // 425
-  const cutF = evNemiExcited.start_frame; // 501
-  const cutG = evLoop.start_frame; // 621
+  const cutB = evSpecs.start_frame; // ~89
+  const cutC = evNemi.start_frame; // ~232
+  const cutD = evSwe.start_frame; // ~288
+  const cutE = evWarning.start_frame; // ~442
+  const cutF = evNemiExcited.start_frame; // ~527
 
   // ─── Camera Breathing ───
   const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.03], {
@@ -105,11 +102,9 @@ export const OxAlphaComp: React.FC = () => {
     nemiPose = "aha";
   } else if (frame < cutF) {
     nemiPose = "pointing";
-  } else if (frame < cutG) {
-    nemiPose = "smug";
-    nemiSpeech = "Free frontier AI? I'm using this before it disappears! 😎⚡";
   } else {
     nemiPose = "smug";
+    nemiSpeech = "Free frontier AI? I'm using this before it disappears! 😎⚡";
   }
 
   return (
@@ -301,13 +296,9 @@ export const OxAlphaComp: React.FC = () => {
               <>
                 Free for 7 Days: <span style={{ color: "#EF4444" }}>Don't Leak Private Keys!</span> ⚠️🔒
               </>
-            ) : frame < cutG ? (
-              <>
-                Free Frontier Coding AI: <span style={{ color: "#10B981" }}>Grab It Now!</span> ⚡🚀
-              </>
             ) : (
               <>
-                The Secret Behind <span style={{ color: nemiTheme.colors.brandCyan }}>0x-alpha</span> ⚡
+                Free Frontier Coding AI: <span style={{ color: "#10B981" }}>Grab It Now!</span> ⚡🚀
               </>
             )}
           </div>
@@ -317,39 +308,34 @@ export const OxAlphaComp: React.FC = () => {
         {/* OPEN-CANVAS SPATIAL VISUAL ENGINES (Zero Box Enclosure) */}
         {/* ══════════════════════════════════════════════════════════ */}
 
-        {/* STAGE 1: OPEN-CANVAS HOLOGRAPHIC RADAR SCANNER (0 to 100) */}
+        {/* STAGE 1: OPEN-CANVAS HOLOGRAPHIC RADAR SCANNER */}
         {frame < cutB && (
           <OpenVisual1_RadarScanner frame={frame} modelSpawnCue={modelSpawnCue} mysteryBadgeCue={mysteryBadgeCue} />
         )}
 
-        {/* STAGE 2: OPEN-CANVAS 3D PLANETARY MEMORY ORBITS (100 to 213) */}
+        {/* STAGE 2: OPEN-CANVAS 3D PLANETARY MEMORY ORBITS */}
         {frame >= cutB && frame < cutC && (
           <OpenVisual2_PlanetaryMemoryRings frame={frame} millionContextCue={millionContextCue} freeZeroDollarCue={freeZeroDollarCue} />
         )}
 
-        {/* STAGE 3: OPEN-CANVAS LASER DE-ANONYMIZER HUD (213 to 269) */}
+        {/* STAGE 3: OPEN-CANVAS LASER DE-ANONYMIZER HUD */}
         {frame >= cutC && frame < cutD && (
           <OpenVisual3_DeAnonymizerLaser frame={frame} nemiCuriousCue={nemiCuriousCue} />
         )}
 
-        {/* STAGE 4: OPEN-CANVAS FLOATING LEADERBOARD & DNA CONDUIT (269 to 425) */}
+        {/* STAGE 4: OPEN-CANVAS FLOATING LEADERBOARD & DNA CONDUIT */}
         {frame >= cutD && frame < cutE && (
           <OpenVisual4_LeaderboardDnaConduit frame={frame} swe80PercentCue={swe80PercentCue} dnaMatchZhipuCue={dnaMatchZhipuCue} />
         )}
 
-        {/* STAGE 5: OPEN-CANVAS 7-DAY COUNTDOWN & HAZARD SHIELD (425 to 501) */}
+        {/* STAGE 5: OPEN-CANVAS 7-DAY COUNTDOWN & HAZARD SHIELD */}
         {frame >= cutE && frame < cutF && (
           <OpenVisual5_TimerHazardShield frame={frame} sevenDayTimerCue={sevenDayTimerCue} vaultWarningCue={vaultWarningCue} />
         )}
 
-        {/* STAGE 6: OPEN-CANVAS CELEBRATORY CODE SPEEDRUN & PARTICLES (501 to 621) */}
-        {frame >= cutF && frame < cutG && (
+        {/* STAGE 6: OPEN-CANVAS CELEBRATORY CODE SPEEDRUN & PARTICLES */}
+        {frame >= cutF && (
           <OpenVisual6_CodeSpeedrunStream frame={frame} nemiExcitedCue={nemiExcitedCue} />
-        )}
-
-        {/* STAGE 7: INFINITE REPLAY RADAR SEAM (621 to 669) */}
-        {frame >= cutG && (
-          <OpenVisual1_RadarScanner frame={frame} modelSpawnCue={0} mysteryBadgeCue={0} />
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
