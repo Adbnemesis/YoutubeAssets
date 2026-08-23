@@ -40,7 +40,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsBinary"
         component={BinaryComp}
-        durationInFrames={639} // 21.30s @ 30fps — Reel #13: A Billion Answers. Thirty Questions. (Binary Search)
+        durationInFrames={742} // 24.73s @ 30fps — Reel #13: Number Guessing to 1 Billion (Binary Search)
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}

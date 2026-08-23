@@ -1,27 +1,27 @@
-#!/usr/bin/env python3
-"""
-Nemi Explains Reel #13 — "A Billion Answers. Thirty Questions."
-How binary search actually works (sorted halves + logarithmic elimination).
-
-Everyday Tech Mystery — doctrine applied:
-- Frame-0 money shot (three distance spheres intersecting on a pin, mid-solve)
-- ≤8-word contradiction overlay ("YOUR PHONE IS SILENT.")
-- Payoff lands ~60% of runtime (pin drop)
-- Loop seam (final line returns to the silent-phone image)
-- Duration target 19-22s
-- BGM energy floor with dynamic story-arc envelope
-"""
-
 import os
 import sys
 import json
+import shutil
 import asyncio
 import subprocess
-import shutil
+import edge_tts
+import torch
+import soundfile as sf
+import numpy as np
 from pathlib import Path
-from faster_whisper import WhisperModel
+from typing import List, Dict, Any
 
+# Ensure project paths
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
+sys.path.append(str(BASE_DIR))
+
+# Chatterbox voice import
+from chatterbox.tts import ChatterboxTTS
+
+# Target Loudness Specs (from Law 4 & 20_CURRENT_BEST_PRACTICES.md)
+TARGET_VOICE_LUFS = -16.0
+TARGET_MASTER_LUFS = -15.0
+
 PUBLIC_REELS = BASE_DIR / "public" / "reels" / "binary_13"
 PUBLIC_REELS.mkdir(parents=True, exist_ok=True)
 PUBLIC_SOUNDS = BASE_DIR / "public" / "sounds"
@@ -30,274 +30,207 @@ PUBLIC_SOUNDS.mkdir(parents=True, exist_ok=True)
 BLOCKS_DIR = Path(__file__).resolve().parent / "audio" / "blocks"
 BLOCKS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Monkey-patch watermarker for macOS compatibility
-import chatterbox.tts
-class DummyWatermarker:
-    def apply_watermark(self, wav, *args, **kwargs):
-        return wav
-chatterbox.tts.perth = type('perth', (), {'PerthImplicitWatermarker': DummyWatermarker})
-
-from chatterbox import ChatterboxTTS
-import soundfile as sf
-import torch
-import numpy as np
-import edge_tts
-
-try:
-    import pyloudnorm as pyln
-    HAS_PYLN = True
-except ImportError:
-    HAS_PYLN = False
-
-try:
-    import librosa
-    HAS_LIBROSA = True
-except ImportError:
-    HAS_LIBROSA = False
-
-# ═══════════════════════════════════════════════════════════════
-# NOISE SCRIPT — payoff ~55-58%, loop seam, 19-22s window
-# ═══════════════════════════════════════════════════════════════
+# ══════════════════════════════════════════════════════════════════════════════
+# REEL #13 SCRIPT: CRYSTAL-CLEAR BINARY SEARCH NUMBER GUESSING DEMO
+# ══════════════════════════════════════════════════════════════════════════════
 SPEAKER_EVENTS = [
-    # 1. Beat 1: FRAME-0 HOOK — direct DSA framing, timeframe tension
     {
         "id": "bn01_hook",
         "speaker": "narrator",
-        "text": "A billion sorted answers. Thirty questions. That's the trick.",
-        "emotion": "dramatic",
-        "exaggeration": 0.60,
-        "gap_after_ms": 110,
+        "text": "How do you find a number from 1 to 100 in just 7 guesses?",
+        "gap_after": 100,
         "semantic_phrases": [
-            {"phrase": "billion", "cue": "counter_wall", "rel_pct": 0.20},
-            {"phrase": "Thirty questions", "cue": "thirty_slam", "rel_pct": 0.65}
+            {"phrase": "1 to 100", "cue": "range_spawn", "rel_pct": 0.45},
+            {"phrase": "7 guesses", "cue": "seven_slam", "rel_pct": 0.85},
         ]
     },
-    # 2. Beat 2: THE CLAIM (pattern interrupt: the wall slices)
     {
-        "id": "bn02_claim",
+        "id": "bn02_linear",
         "speaker": "narrator",
-        "text": "Your computer finds one item without searching them all.",
-        "emotion": "normal",
-        "exaggeration": 0.55,
-        "gap_after_ms": 100,
+        "text": "Don't guess one by one. Always pick 50 — the exact middle.",
+        "gap_after": 100,
         "semantic_phrases": [
-            {"phrase": "finds one item", "cue": "wall_slice", "rel_pct": 0.40},
-            {"phrase": "without searching", "cue": "counter_halve", "rel_pct": 0.80}
+            {"phrase": "one by one", "cue": "linear_cross", "rel_pct": 0.25},
+            {"phrase": "pick 50", "cue": "mid_fifty", "rel_pct": 0.70},
         ]
     },
-    # 3. Beat 3: Nemi voices the viewer's question
     {
-        "id": "bn03_nemi_guess",
+        "id": "bn03_nemi",
         "speaker": "nemi",
-        "text": "Wait — how do you find something without searching?!",
-        "emotion": "shocked",
-        "exaggeration": 0.70,
-        "gap_after_ms": 90,
+        "text": "What if the secret number is 73?",
+        "gap_after": 90,
         "semantic_phrases": [
-            {"phrase": "without searching", "cue": "nemi_shock", "rel_pct": 0.55}
+            {"phrase": "73", "cue": "target_73", "rel_pct": 0.70},
         ]
     },
-    # 4. Beat 4: THE SECRET — sorted
     {
-        "id": "bn04_secret",
+        "id": "bn04_halve",
         "speaker": "narrator",
-        "text": "The list is sorted. It only checks the exact middle.",
-        "emotion": "normal",
-        "exaggeration": 0.55,
-        "gap_after_ms": 100,
+        "text": "73 is higher! So you instantly throw away 1 to 50 in one step.",
+        "gap_after": 100,
         "semantic_phrases": [
-            {"phrase": "sorted", "cue": "sorted_lock", "rel_pct": 0.25},
-            {"phrase": "exact middle", "cue": "mid_check", "rel_pct": 0.75}
+            {"phrase": "73 is higher", "cue": "higher_verdict", "rel_pct": 0.25},
+            {"phrase": "throw away 1 to 50", "cue": "purge_left", "rel_pct": 0.75},
         ]
     },
-    # 5. Beat 5: MECHANISM — halves die
     {
-        "id": "bn05_mechanism",
+        "id": "bn05_step2",
         "speaker": "narrator",
-        "text": "Too high? Half dies. Too low? The other half dies.",
-        "emotion": "dramatic",
-        "exaggeration": 0.60,
-        "gap_after_ms": 100,
+        "text": "Next, check 75. Too high? Discard 76 to 100.",
+        "gap_after": 100,
         "semantic_phrases": [
-            {"phrase": "Too high", "cue": "too_high", "rel_pct": 0.25},
-            {"phrase": "other half dies", "cue": "half_die", "rel_pct": 0.70}
+            {"phrase": "check 75", "cue": "mid_75", "rel_pct": 0.30},
+            {"phrase": "Discard 76 to 100", "cue": "purge_right", "rel_pct": 0.75},
         ]
     },
-    # 6. Beat 6: PAYOFF (~58%)
     {
-        "id": "bn06_payoff",
+        "id": "bn06_scale",
         "speaker": "narrator",
-        "text": "Thirty cuts. One billion becomes one.",
-        "emotion": "dramatic",
-        "exaggeration": 0.62,
-        "gap_after_ms": 110,
+        "text": "Every cut eliminates half. Even in 1 billion items, it takes just 30 steps.",
+        "gap_after": 110,
         "semantic_phrases": [
-            {"phrase": "Thirty cuts", "cue": "thirty_payoff", "rel_pct": 0.30},
-            {"phrase": "becomes one", "cue": "one_left", "rel_pct": 0.80}
+            {"phrase": "eliminates half", "cue": "half_cascade", "rel_pct": 0.35},
+            {"phrase": "just 30 steps", "cue": "billion_payoff", "rel_pct": 0.85},
         ]
     },
-    # 7. Beat 7: Nemi Smug Stamp
     {
-        "id": "bn07_nemi_payoff",
+        "id": "bn07_nemi",
         "speaker": "nemi",
-        "text": "So the trick is asking better questions?",
-        "emotion": "smug",
-        "exaggeration": 0.75,
-        "gap_after_ms": 140,
+        "text": "That's why computers are so fast!",
+        "gap_after": 120,
         "semantic_phrases": [
-            {"phrase": "better questions", "cue": "smug_stamp", "rel_pct": 0.50}
+            {"phrase": "so fast", "cue": "nemi_smug", "rel_pct": 0.65},
         ]
     },
-    # 8. Beat 8: LOOP SEAM
     {
         "id": "bn08_loop",
         "speaker": "narrator",
-        "text": "Your computer runs this trick billions of times a day.",
-        "emotion": "normal",
-        "exaggeration": 0.55,
-        "gap_after_ms": 120,
+        "text": "Next time you search anything, this trick just ran.",
+        "gap_after": 120,
         "semantic_phrases": [
-            {"phrase": "billions of times", "cue": "loop_wall", "rel_pct": 0.45}
+            {"phrase": "this trick just ran", "cue": "loop_seam", "rel_pct": 0.75},
         ]
     }
 ]
 
-TARGET_VOICE_LUFS = -16.0
-TARGET_MASTER_LUFS = -15.0
+async def generate_nemi_clip(text: str, out_wav: Path):
+    temp_mp3 = out_wav.with_suffix(".temp.mp3")
+    comm = edge_tts.Communicate(text, "en-US-AnaNeural", pitch="+12Hz", rate="+18%")
+    await comm.save(str(temp_mp3))
+    cmd = ["ffmpeg", "-y", "-i", str(temp_mp3), "-ar", "24000", "-ac", "1", str(out_wav)]
+    subprocess.run(cmd, check=True, capture_output=True)
+    if temp_mp3.exists():
+        temp_mp3.unlink()
 
-def trim_silence(y, sr, top_db=35):
-    if HAS_LIBROSA:
-        y_trimmed, _ = librosa.effects.trim(y, top_db=top_db)
-        return y_trimmed
-    threshold = 10 ** (-top_db / 20) * np.max(np.abs(y))
-    above = np.where(np.abs(y) > threshold)[0]
-    if len(above) == 0:
+def normalize_lufs(y: np.ndarray, sr: int, target_lufs: float) -> np.ndarray:
+    import pyloudnorm as pyln
+    meter = pyln.Meter(sr)
+    current_lufs = meter.integrated_loudness(y)
+    if np.isinf(current_lufs) or np.isnan(current_lufs):
         return y
-    return y[above[0]:above[-1]+1]
+    gain = target_lufs - current_lufs
+    y_norm = y * (10.0 ** (gain / 20.0))
+    max_val = np.max(np.abs(y_norm))
+    if max_val > 0.98:
+        y_norm = y_norm * (0.98 / max_val)
+    return y_norm
 
-def normalize_lufs(y, sr, target):
-    if HAS_PYLN and len(y) >= int(0.4 * sr):
-        try:
-            meter = pyln.Meter(sr)
-            lufs = meter.integrated_loudness(y)
-            if lufs > -90:
-                return pyln.normalize.loudness(y, lufs, target)
-        except Exception:
-            pass
-    max_val = np.max(np.abs(y)) if len(y) > 0 else 0
-    if max_val > 0:
-        return y * (0.8 / max_val)
-    return y
+def trim_silence(y: np.ndarray, sr: int, top_db: int = 35) -> np.ndarray:
+    import librosa
+    trimmed, _ = librosa.effects.trim(y, top_db=top_db)
+    return trimmed
 
-def extract_subtitles_whisper(audio_path, fps=30):
-    print("\n🔍 Extracting Millisecond-Accurate Word Timestamps (faster_whisper)...")
+def extract_subtitles_whisper(audio_path: Path, fps: int = 30):
+    from faster_whisper import WhisperModel
+    print("🔍 Extracting Millisecond-Accurate Word Timestamps (faster_whisper)...")
     model = WhisperModel("base", device="cpu", compute_type="int8")
-    segments, _ = model.transcribe(str(audio_path), word_timestamps=True)
-
-    words_raw = []
+    segments, _ = model.transcribe(str(audio_path), word_timestamps=True, language="en")
+    
+    words_all = []
+    subtitles = []
+    
     for segment in segments:
-        for w in segment.words:
-            clean_w = w.word.strip()
-            if clean_w:
-                words_raw.append({
-                    "word": clean_w,
-                    "start_s": round(w.start, 3),
-                    "end_s": round(w.end, 3),
-                    "start_frame": int(round(w.start * fps)),
-                    "end_frame": int(round(w.end * fps))
-                })
-
-    phrase_chunks = []
-    chunk_size = 4
-    for i in range(0, len(words_raw), chunk_size):
-        group = words_raw[i:i+chunk_size]
-        if not group:
+        words = segment.words
+        if not words:
             continue
-        start_f = group[0]["start_frame"]
-        end_f = group[-1]["end_frame"] + 4
-        phrase_text = " ".join([item["word"] for item in group])
-        phrase_chunks.append({
-            "start_frame": start_f,
-            "end_frame": end_f,
-            "text": phrase_text,
-            "words": group
-        })
-
-    print(f"✅ Extracted {len(words_raw)} words across {len(phrase_chunks)} caption phrase chunks.")
-    return phrase_chunks, words_raw
+        
+        chunk_size = 4
+        for i in range(0, len(words), chunk_size):
+            chunk = words[i:i + chunk_size]
+            c_start = chunk[0].start
+            c_end = chunk[-1].end
+            c_text = " ".join([w.word.strip() for w in chunk])
+            
+            c_start_frame = int(round(c_start * fps))
+            c_end_frame = int(round(c_end * fps))
+            
+            chunk_words = []
+            for w in chunk:
+                w_start_f = int(round(w.start * fps))
+                w_end_f = int(round(w.end * fps))
+                chunk_words.append({
+                    "word": w.word.strip(),
+                    "start_s": round(w.start, 2),
+                    "end_s": round(w.end, 2),
+                    "start_frame": w_start_f,
+                    "end_frame": w_end_f
+                })
+                words_all.append(chunk_words[-1])
+            
+            subtitles.append({
+                "start_frame": c_start_frame,
+                "end_frame": c_end_frame,
+                "text": c_text,
+                "words": chunk_words
+            })
+            
+    return subtitles, words_all
 
 def main():
-    print("═" * 70)
-    print("🎙️ NEMI EXPLAINS REEL #13 — BINARY SEARCH (19-22s WINDOW)")
-    print("═" * 70)
-
+    print("🎙️ NEMI EXPLAINS REEL #13 — CRYSTAL-CLEAR BINARY SEARCH PIPELINE")
+    
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    print(f"   Engine: Chatterbox Neural Expressive TTS + Edge-TTS AnaNeural")
-    print(f"   BGM: NONE — SFX-only sound design continues (music stays out per Ep.12 test)")
-
-    print("Loading Chatterbox model weights for Narrator...")
+    print(f"Loading Chatterbox model on {device}...")
     model = ChatterboxTTS.from_pretrained(device=device)
     sr = model.sr
-    print(f"✅ Model loaded. Sample Rate: {sr} Hz\n")
-
-    timeline_events = []
+    
     current_time_ms = 0
+    timeline_events = []
     audio_inputs = []
     filter_parts = []
     input_idx = 0
-
+    
     for i, event in enumerate(SPEAKER_EVENTS, 1):
         event_id = event["id"]
         speaker = event["speaker"]
         text = event["text"]
-        exag = event.get("exaggeration", 0.55)
-        gap_after = event.get("gap_after_ms", 100)
-
+        gap_after = event.get("gap_after", 100)
+        
         out_wav = BLOCKS_DIR / f"{event_id}.wav"
-
+        
         if speaker == "nemi":
-            if out_wav.exists():
-                # Pre-generated Nemi clip (Edge-TTS run out-of-process to avoid
-                # asyncio/torch-MPS deadlock in the loaded-model process)
-                print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Using pre-generated '{event_id}' (NEMI)")
-                y, _ = sf.read(str(out_wav))
-            else:
-                print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker.upper()}): \"{text}\"")
-                temp_mp3 = BLOCKS_DIR / f"{event_id}_temp.mp3"
-                clean_text = text.replace("😎", "").replace("⚡", "").replace("🤯", "").replace("🤔", "").strip()
-                async def gen_nemi():
-                    comm = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+20%")
-                    await asyncio.wait_for(comm.save(str(temp_mp3)), timeout=60)
-                asyncio.run(gen_nemi())
-
-                conv_cmd = ["ffmpeg", "-y", "-i", str(temp_mp3), "-ar", str(sr), "-ac", "1", str(out_wav)]
-                subprocess.run(conv_cmd, check=True, capture_output=True)
-                y, _ = sf.read(str(out_wav))
-                if temp_mp3.exists():
-                    temp_mp3.unlink()
-        elif out_wav.exists():
-            # Reuse a fully-synthesized narrator block from a previous interrupted run
-            print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Reusing existing '{event_id}' (NARRATOR)")
+            print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' (NEMI): \"{text}\"")
+            asyncio.run(generate_nemi_clip(text, out_wav))
             y, _ = sf.read(str(out_wav))
         else:
-            print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' ({speaker.upper()}): \"{text}\"")
-            wav_tensor = model.generate(text=text, exaggeration=exag)
+            print(f"[{i:2d}/{len(SPEAKER_EVENTS)}] Generating '{event_id}' (NARRATOR): \"{text}\"")
+            wav_tensor = model.generate(text=text, exaggeration=0.75)
             if wav_tensor.ndim > 1:
                 wav_tensor = wav_tensor.squeeze()
             y = wav_tensor.cpu().numpy()
-
+            
         y = trim_silence(y, sr, top_db=35)
         y = normalize_lufs(y, sr, TARGET_VOICE_LUFS)
         sf.write(str(out_wav), y, sr)
-
+        
         dur_s = len(y) / sr
         dur_ms = int(dur_s * 1000)
-
+        
         start_time_ms = current_time_ms
         end_time_ms = start_time_ms + dur_ms
         start_frame = int(round((start_time_ms / 1000.0) * 30))
         end_frame = int(round((end_time_ms / 1000.0) * 30))
-
+        
         cues = []
         for sc in event.get("semantic_phrases", []):
             rel_pct = sc.get("rel_pct", 0.5)
@@ -309,7 +242,7 @@ def main():
                 "time_ms": cue_time_ms,
                 "frame": cue_frame
             })
-
+            
         timeline_events.append({
             "id": event_id,
             "speaker": speaker,
@@ -322,30 +255,30 @@ def main():
             "gap_after_ms": gap_after,
             "semantic_cues": cues
         })
-
+        
         audio_inputs.extend(["-i", str(out_wav)])
         filter_parts.append(f"[{input_idx}:a]adelay={start_time_ms}|{start_time_ms}[a{input_idx}]")
         input_idx += 1
-
+        
         current_time_ms = end_time_ms + gap_after
         print(f"   ✓ {dur_s:.2f}s | {start_time_ms}ms (f{start_frame}) → {end_time_ms}ms (f{end_frame}) [gap: {gap_after}ms]")
-
+        
     total_duration_s = current_time_ms / 1000.0
     total_frames = int(round(total_duration_s * 30))
-
+    
     print("\n" + "─" * 70)
     print(f"⏱ Total Master Duration: {total_duration_s:.2f}s ({total_frames} frames @ 30fps)")
     print("─" * 70 + "\n")
-
+    
     # 1. Stitch clean voice track
     mix_labels = "".join([f"[a{k}]" for k in range(input_idx)])
     filter_complex = f"{';'.join(filter_parts)};{mix_labels}amix=inputs={input_idx}:normalize=0[voice_out]"
-
+    
     raw_voice_wav = BLOCKS_DIR / "binary_voice_raw.wav"
     cmd = ["ffmpeg", "-y"] + audio_inputs + ["-filter_complex", filter_complex, "-map", "[voice_out]", "-ar", "48000", str(raw_voice_wav)]
     subprocess.run(cmd, check=True, capture_output=True)
-
-    # 2. Master Voice Loudness Target
+    
+    # 2. Master Voice Track
     final_voice_mp3 = Path(__file__).resolve().parent / "audio" / "binary_voice_track.mp3"
     norm_cmd = [
         "ffmpeg", "-y", "-i", str(raw_voice_wav),
@@ -355,26 +288,32 @@ def main():
     ]
     subprocess.run(norm_cmd, check=True, capture_output=True)
     print(f"✅ Master Voice Track: {final_voice_mp3.name}")
-
-    # 3. SFX-ONLY SOUND DESIGN (Ep.12 hypothesis test — no melodic BGM bed).
-    # Ambience/SFX are layered in the Remotion composition (public/reels/trash_12/sfx),
-    # not baked here. Master = voice boosted to -15 LUFS master target.
+    
+    # 3. Mix with BGM with 2.5:1 sidechain ducking
+    bgm_path = BASE_DIR / "assets" / "background_music" / "Death of a Bluebird - Rorschach Roy 4.mp3"
     master_audio_mp3 = PUBLIC_REELS / "binary_master_audio.mp3"
-    boost_cmd = [
+    
+    mix_cmd = [
         "ffmpeg", "-y",
         "-i", str(final_voice_mp3),
-        "-af", f"loudnorm=I={TARGET_MASTER_LUFS}:TP=-1.5:LRA=9",
+        "-i", str(bgm_path),
+        "-filter_complex",
+        f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_duration_s + 0.5},volume=0.52,afade=t=in:st=0:d=0.3,afade=t=out:st={total_duration_s - 0.7}:d=0.8[bgm];"
+        f"[0:a]asplit=2[v_main][v_sc];"
+        f"[bgm][v_sc]sidechaincompress=threshold=0.08:ratio=2.5:attack=35:release=160[ducked_bgm];"
+        f"[v_main][ducked_bgm]amix=inputs=2:normalize=0[mix];"
+        f"[mix]loudnorm=I={TARGET_MASTER_LUFS}:TP=-1.5:LRA=7[out]",
+        "-map", "[out]",
         "-b:a", "320k",
         str(master_audio_mp3)
     ]
-    subprocess.run(boost_cmd, check=True, capture_output=True)
-    print(f"✅ SFX-Only Master (voice @ {TARGET_MASTER_LUFS} LUFS, music intentionally absent): {master_audio_mp3.name}")
-
+    subprocess.run(mix_cmd, check=True, capture_output=True)
+    print(f"✅ Ducked Master Audio: {master_audio_mp3.name}")
     shutil.copy(master_audio_mp3, PUBLIC_SOUNDS / "binary_master_audio.mp3")
-
+    
     # 4. Extract word-level subtitles using faster_whisper
     subtitles, words_all = extract_subtitles_whisper(final_voice_mp3, fps=30)
-
+    
     # 5. Export JSON cues for Remotion
     cues_json_path = BASE_DIR / "src" / "data" / "binary_13_cues.json"
     cues_data = {
@@ -390,7 +329,7 @@ def main():
     with open(cues_json_path, "w") as f:
         json.dump(cues_data, f, indent=2)
     print(f"✅ Timeline cues and word-level subtitles written to: {cues_json_path}")
-
+    
     # 6. Validate Speaker Separation & Overlap
     print("\n🔍 Validating Speaker Separation:")
     has_overlap = False
@@ -402,7 +341,7 @@ def main():
         if gap < 0:
             print(f"   ❌ CRITICAL OVERLAP DETECTED: {abs(gap)}ms between {curr['id']} and {nxt['id']}")
             has_overlap = True
-
+            
     if not has_overlap:
         print("\n🎉 DUAL-VOICE AUDIO & SUBTITLE PIPELINE COMPLETE — 0.00ms OVERLAP GUARANTEED\n")
 

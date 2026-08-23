@@ -1,33 +1,33 @@
 ================================================================================
-NEMI EXPLAINS — REEL #13: A BILLION ANSWERS. THIRTY QUESTIONS.
-Binary Search & Logarithmic Time (21.30s @ 30fps)
+NEMI EXPLAINS — REEL #13: GUESS 1 TO 100 IN 7 GUESSES (BINARY SEARCH)
+How Binary Search Solves 1 Billion Items in 30 Steps (24.73s @ 30fps)
 ================================================================================
 
 [INSTAGRAM / FACEBOOK CAPTION]
-A billion sorted answers. Thirty questions. That’s the trick. 🤯📱
+How do you find any number from 1 to 100 in just 7 guesses? 🤯🔢
 
-If you searched 1,000,000,000 items one-by-one, your computer would freeze for seconds. But with Binary Search, it finds the exact answer in just 30 comparisons! Here's how:
+Don't guess one by one! The secret is Binary Search:
+1️⃣ Always pick 50 (the exact middle).
+2️⃣ If the secret is 73, you know 73 > 50 — so numbers 1 to 50 are instantly DISCARDED!
+3️⃣ Next, check 75 (middle of 51–100). 73 < 75? Discard 76 to 100!
 
-1️⃣ 𝗧𝗵𝗲 𝗦𝗼𝗿𝘁: The list is sorted from smallest to largest
-2️⃣ 𝗧𝗵𝗲 𝗠𝗶𝗱𝗱𝗹𝗲 𝗖𝘂𝘁: It probes the exact center element (Index 500,000,000)
-3️⃣ 𝗧𝗵𝗲 𝗚𝘂𝗶𝗹𝗹𝗼𝘁𝗶𝗻𝗲: Too high? Half the universe dies. Too low? The other half dies!
+Every single question cuts the remaining search space in half. 
+Because 2³⁰ > 1,000,000,000, even if you search ONE BILLION items, it takes just 30 steps!
 
-Because 2³⁰ is over 1 BILLION, 30 cuts eliminate every wrong answer on Earth. 
+Ask better questions — that's why computers are so fast! 😎⚡
 
-Your computer runs this algorithmic miracle billions of times every single day! 😎⚡
-
-Tag a coder who needs to optimize their search 👇
-
-#binarysearch #computerscience #algorithms #coding #softwareengineering #math #programming #datascience #developer #dsa #python #javascript #techie #didyouknow #nemiexplains
+#binarysearch #computerscience #algorithms #coding #math #programming #softwareengineering #developer #dsa #python #javascript #tech #didyouknow #nemiexplains
 
 ================================================================================
 [YOUTUBE SHORTS TITLE]
-A Billion Items. 30 Questions. The Binary Search Trick 🤯⚡ #shorts
+Guess 1 to 100 in 7 Guesses! Binary Search Explained 🤯⚡ #shorts
 
 ================================================================================
 [YOUTUBE SHORTS DESCRIPTION]
-How does your phone find 1 item out of a billion in microseconds without searching them all? 🔍📱
-The secret is Binary Search: halving the search space at every single step. Because 2³⁰ is over 1,000,000,000, exactly 30 questions isolate any answer on Earth. 
+How do you guess any number from 1 to 100 in just 7 tries? 🔍🔢
+The secret is Binary Search: always picking the middle number and throwing away half the universe at every step. 
+
+Because 2³⁰ is over 1,000,000,000, exactly 30 cuts can find 1 item in a billion in microseconds.
 
 🔔 Subscribe to @nemi.explains for weekly visual tech & computer science deep-dives!
 
@@ -35,15 +35,15 @@ The secret is Binary Search: halving the search space at every single step. Beca
 
 ================================================================================
 [YOUTUBE SEARCH TAGS]
-binary search explained, how binary search works, o log n time complexity, search 1 billion items, binary search algorithm, computer science algorithms, log n explained, data structures and algorithms, coding interview, nemi explains, tech shorts
+binary search explained, how binary search works, guess a number 1 to 100 in 7 tries, o log n time complexity, search 1 billion items, binary search algorithm, computer science algorithms, log n explained, data structures and algorithms, coding interview, nemi explains, tech shorts
 
 ================================================================================
 [VIDEO TECHNICAL SPECS]
 - Composition: NemiExplainsBinary
-- Duration: 21.30s (639 frames @ 30fps)
+- Duration: 24.73s (742 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_Binary_4K_20260823.mp4 (8.3 MB)
-- Visual Style: Cyberpunk Number Wall Matrix + Laser Split Halving + Center Probe Targeting + Logarithmic Guillotine + 30-Step Elimination Tower + Loop Seam
+- Master Render: out/NemiExplains_Binary_4K_20260823.mp4 (18.5 MB)
+- Visual Style: Number Line Track + Midpoint Lock (50) + Secret Target Beacon (73) + 50% Guillotine Slicing & Disintegration + 30-Step Power Meter Matrix + Summary Scorecard + Replay Seam
 - Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline), Death of a Bluebird BGM with 2.5:1 Sidechain Ducking
 - Master Loudness: -15.0 LUFS | True Peak: -1.5 dBTP | Overlap: 0.00ms
 
@@ -58,4 +58,3 @@ binary search explained, how binary search works, o log n time complexity, searc
 T+48H POST-MORTEM:
 Views: ___ | Reach: ___ | Avg Watch: ___s | APV: ___%
 3s retention: ___ | Follows: ___ | Saves: ___ | Shares: ___ | Comments: ___
-================================================================================
