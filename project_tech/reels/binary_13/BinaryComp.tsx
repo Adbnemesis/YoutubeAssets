@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
+  interpolateColors,
   spring,
   staticFile,
   useCurrentFrame,
@@ -76,6 +77,7 @@ const TARGET_VAL = 13;
 export const BinaryComp: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const totalFrames = cuesData.total_frames || 639;
 
   // ─── Timeline Events ───
   const evHook = getEvent("bn01_hook");
@@ -113,6 +115,11 @@ export const BinaryComp: React.FC = () => {
   // ─── Smooth Background Theme Interpolation ───
   const isDarkWorld = frame >= cutB && frame < loopWallCue;
   const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
+
+  // ─── Camera Breathing ───
+  const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.025], {
+    extrapolateRight: "clamp",
+  });
 
   // ─── Nemi Dynamic Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "thinking";
@@ -201,253 +208,256 @@ export const BinaryComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* AMBIENT BACKGROUND GLOW */}
+      {/* CAMERA & AMBIENT WORLD */}
       {/* ══════════════════════════════════════════════════════════ */}
-      {isDarkWorld && (
-        <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
-          <div
-            style={{
-              position: "absolute",
-              top: 180,
-              left: -150,
-              width: 650,
-              height: 650,
-              borderRadius: "50%",
-              background: frame < cutE
-                ? "radial-gradient(circle, rgba(6, 182, 212, 0.24) 0%, rgba(0,0,0,0) 70%)"
-                : "radial-gradient(circle, rgba(244, 63, 94, 0.24) 0%, rgba(0,0,0,0) 70%)",
-              filter: "blur(90px)",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: 720,
-              right: -150,
-              width: 650,
-              height: 650,
-              borderRadius: "50%",
-              background: frame >= cutF
-                ? "radial-gradient(circle, rgba(16, 185, 129, 0.24) 0%, rgba(0,0,0,0) 70%)"
-                : "radial-gradient(circle, rgba(255, 209, 102, 0.18) 0%, rgba(0,0,0,0) 70%)",
-              filter: "blur(90px)",
-            }}
-          />
-        </div>
-      )}
-
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* PERSISTENT HEADER HUD (Appears frame 60+) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      {frame >= 60 && (
-        <div
-          style={{
-            position: "absolute",
-            top: 85,
-            left: 70,
-            right: 70,
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            zIndex: 50,
-            opacity: interpolate(frame, [60, 68], [0, 1], {
-              extrapolateLeft: "clamp",
-              extrapolateRight: "clamp",
-            }),
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+      <AbsoluteFill style={{ transform: `scale(${cameraScale})` }}>
+        {isDarkWorld && (
+          <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
             <div
               style={{
-                width: 18,
-                height: 18,
+                position: "absolute",
+                top: 180,
+                left: -150,
+                width: 650,
+                height: 650,
                 borderRadius: "50%",
-                backgroundColor: frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan,
-                boxShadow: `0 0 20px ${frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan}`,
+                background: frame < cutE
+                  ? "radial-gradient(circle, rgba(6, 182, 212, 0.28) 0%, rgba(0,0,0,0) 70%)"
+                  : "radial-gradient(circle, rgba(244, 63, 94, 0.28) 0%, rgba(0,0,0,0) 70%)",
+                filter: "blur(90px)",
               }}
             />
-            <span
+            <div
               style={{
-                fontSize: 26,
-                fontWeight: 900,
-                letterSpacing: "1.5px",
-                textTransform: "uppercase",
-                color: isDarkWorld ? (frame >= cutF ? "#10B981" : "#06B6D4") : "#0891B2",
+                position: "absolute",
+                top: 720,
+                right: -150,
+                width: 650,
+                height: 650,
+                borderRadius: "50%",
+                background: frame >= cutF
+                  ? "radial-gradient(circle, rgba(16, 185, 129, 0.28) 0%, rgba(0,0,0,0) 70%)"
+                  : "radial-gradient(circle, rgba(255, 209, 102, 0.2) 0%, rgba(0,0,0,0) 70%)",
+                filter: "blur(90px)",
               }}
-            >
-              LeetCode #704 · Binary Search
-            </span>
+            />
           </div>
+        )}
 
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* PERSISTENT HEADER HUD (Appears frame 60+) */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {frame >= 60 && (
           <div
             style={{
-              backgroundColor: isDarkWorld ? "rgba(15, 23, 42, 0.94)" : "#FFFFFF",
-              padding: "12px 24px",
-              borderRadius: 24,
-              border: `2px solid ${isDarkWorld ? nemiTheme.colors.borderDark : nemiTheme.colors.borderLight}`,
-              fontSize: 20,
-              fontWeight: 900,
-              color: isDarkWorld ? (frame >= cutF ? "#10B981" : "#06B6D4") : "#0891B2",
-              fontFamily: nemiTheme.typography.fontFamily.mono,
-              boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+              position: "absolute",
+              top: 85,
+              left: 70,
+              right: 70,
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              zIndex: 50,
+              opacity: interpolate(frame, [60, 68], [0, 1], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              }),
             }}
           >
-            {frame < cutB ? "SETUP: 1B SORTED ITEMS" : frame < cutD ? "TRAP: O(N) LINEAR SCAN" : frame < cutE ? "STEP 1: MID = (L+R)/2" : frame < cutF ? "STEP 2: DISCARD 50%" : "PAYOFF: O(log N) IN 30 OPS"}
+            <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+              <div
+                style={{
+                  width: 18,
+                  height: 18,
+                  borderRadius: "50%",
+                  backgroundColor: frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan,
+                  boxShadow: `0 0 20px ${frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan}`,
+                }}
+              />
+              <span
+                style={{
+                  fontSize: 26,
+                  fontWeight: 900,
+                  letterSpacing: "1.5px",
+                  textTransform: "uppercase",
+                  color: isDarkWorld ? (frame >= cutF ? "#10B981" : "#06B6D4") : "#0891B2",
+                }}
+              >
+                LeetCode #704 · Binary Search
+              </span>
+            </div>
+
+            <div
+              style={{
+                backgroundColor: isDarkWorld ? "rgba(15, 23, 42, 0.94)" : "#FFFFFF",
+                padding: "12px 24px",
+                borderRadius: 24,
+                border: `2px solid ${isDarkWorld ? nemiTheme.colors.borderDark : nemiTheme.colors.borderLight}`,
+                fontSize: 20,
+                fontWeight: 900,
+                color: isDarkWorld ? (frame >= cutF ? "#10B981" : "#06B6D4") : "#0891B2",
+                fontFamily: nemiTheme.typography.fontFamily.mono,
+                boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+              }}
+            >
+              {frame < cutB ? "SETUP: 1B SORTED ITEMS" : frame < cutD ? "TRAP: O(N) LINEAR SCAN" : frame < cutE ? "STEP 1: MID = (L+R)/2" : frame < cutF ? "STEP 2: DISCARD 50%" : "PAYOFF: O(log N) IN 30 OPS"}
+            </div>
+          </div>
+        )}
+
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* HEADLINE TITLE (Safe Zone: top: 165px) */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
+          <div
+            style={{
+              fontSize: 54,
+              fontWeight: 900,
+              letterSpacing: -1.5,
+              lineHeight: 1.15,
+              color: isDarkWorld ? "#F8FAFC" : nemiTheme.colors.textLight,
+            }}
+          >
+            {frame < cutB ? (
+              <>
+                1 Billion Items. <span style={{ color: nemiTheme.colors.brandCoral }}>30 Questions.</span>
+              </>
+            ) : frame < cutD ? (
+              <>
+                How Binary Search Finds <span style={{ color: nemiTheme.colors.brandCyan }}>Target = 13</span> ⚡
+              </>
+            ) : frame < cutE ? (
+              <>
+                Probe The Center: <span style={{ color: "#10B981" }}>mid = (L + R) // 2</span>
+              </>
+            ) : frame < cutF ? (
+              <>
+                Too Low? <span style={{ color: "#F43F5E" }}>Discard Entire Left Half!</span> 💥
+              </>
+            ) : frame < cutG ? (
+              <>
+                30 Cuts: <span style={{ color: nemiTheme.colors.brandYellow }}>1 Billion Becomes 1!</span> 👑
+              </>
+            ) : (
+              <>
+                The Power of <span style={{ color: nemiTheme.colors.brandCyan }}>O(log N) Time</span> ⚡
+              </>
+            )}
           </div>
         </div>
-      )}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* HEADLINE TITLE (Safe Zone: top: 165px) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-        <div
-          style={{
-            fontSize: 54,
-            fontWeight: 900,
-            letterSpacing: -1.5,
-            lineHeight: 1.15,
-            color: isDarkWorld ? "#F8FAFC" : nemiTheme.colors.textLight,
-          }}
-        >
-          {frame < cutB ? (
-            <>
-              1 Billion Items. <span style={{ color: nemiTheme.colors.brandCoral }}>30 Questions.</span>
-            </>
-          ) : frame < cutD ? (
-            <>
-              How Binary Search Finds <span style={{ color: nemiTheme.colors.brandCyan }}>Target = 13</span> ⚡
-            </>
-          ) : frame < cutE ? (
-            <>
-              Probe The Center: <span style={{ color: "#10B981" }}>mid = (L + R) // 2</span>
-            </>
-          ) : frame < cutF ? (
-            <>
-              Too Low? <span style={{ color: "#F43F5E" }}>Discard Entire Left Half!</span> 💥
-            </>
-          ) : frame < cutG ? (
-            <>
-              30 Cuts: <span style={{ color: nemiTheme.colors.brandYellow }}>1 Billion Becomes 1!</span> 👑
-            </>
-          ) : (
-            <>
-              The Power of <span style={{ color: nemiTheme.colors.brandCyan }}>O(log N) Time</span> ⚡
-            </>
-          )}
-        </div>
-      </div>
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* MAIN VISUAL STAGES (Safe Zone: top: 310px, height: 600px) */}
+        {/* ══════════════════════════════════════════════════════════ */}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* MAIN VISUAL STAGES (Safe Zone: top: 310px, height: 600px) */}
-      {/* ══════════════════════════════════════════════════════════ */}
+        {/* STAGE 1: BEAT 1 & 2 — PROBLEM SETUP & THE 1 BILLION HOOK */}
+        {frame < cutB && (
+          <Stage1BillionHook frame={frame} thirtySlamCue={thirtySlamCue} />
+        )}
 
-      {/* STAGE 1: BEAT 1 & 2 — PROBLEM SETUP & THE 1 BILLION HOOK */}
-      {frame < cutB && (
-        <Stage1BillionHook frame={frame} thirtySlamCue={thirtySlamCue} />
-      )}
+        {/* STAGE 2: BEAT 3 — TWO POINTERS SETUP (L=0, R=8) & SCAN TRAP */}
+        {frame >= cutB && frame < cutD && (
+          <Stage2TwoPointersTrap frame={frame} wallSliceCue={wallSliceCue} counterHalveCue={counterHalveCue} />
+        )}
 
-      {/* STAGE 2: BEAT 3 — TWO POINTERS SETUP (L=0, R=8) & SCAN TRAP */}
-      {frame >= cutB && frame < cutD && (
-        <Stage2TwoPointersTrap frame={frame} wallSliceCue={wallSliceCue} counterHalveCue={counterHalveCue} />
-      )}
+        {/* STAGE 3: BEAT 4 — MIDPOINT PROBE (mid = 4, val = 9) */}
+        {frame >= cutD && frame < cutE && (
+          <Stage3MidpointProbe frame={frame} sortedLockCue={sortedLockCue} midCheckCue={midCheckCue} />
+        )}
 
-      {/* STAGE 3: BEAT 4 — MIDPOINT PROBE (mid = 4, val = 9) */}
-      {frame >= cutD && frame < cutE && (
-        <Stage3MidpointProbe frame={frame} sortedLockCue={sortedLockCue} midCheckCue={midCheckCue} />
-      )}
+        {/* STAGE 4: BEAT 5 — ELIMINATION & SECOND PROBE (L=5, mid=6 -> MATCH!) */}
+        {frame >= cutE && frame < cutF && (
+          <Stage4GuillotineMatch frame={frame} tooHighCue={tooHighCue} halfDieCue={halfDieCue} />
+        )}
 
-      {/* STAGE 4: BEAT 5 — ELIMINATION & SECOND PROBE (L=5, mid=6 -> MATCH!) */}
-      {frame >= cutE && frame < cutF && (
-        <Stage4GuillotineMatch frame={frame} tooHighCue={tooHighCue} halfDieCue={halfDieCue} />
-      )}
+        {/* STAGE 5: BEAT 6 — 30 CUTS LOGARITHMIC TOWER PAYOFF */}
+        {frame >= cutF && frame < cutG && (
+          <Stage5LogarithmicTower frame={frame} thirtyPayoffCue={thirtyPayoffCue} oneLeftCue={oneLeftCue} />
+        )}
 
-      {/* STAGE 5: BEAT 6 — 30 CUTS LOGARITHMIC TOWER PAYOFF */}
-      {frame >= cutF && frame < cutG && (
-        <Stage5LogarithmicTower frame={frame} thirtyPayoffCue={thirtyPayoffCue} oneLeftCue={oneLeftCue} />
-      )}
+        {/* STAGE 6: BEAT 7 & 8 — PYTHON CODE & SCORECARD */}
+        {frame >= cutG && (
+          <Stage6CodeAndScorecard frame={frame} cutG={cutG} loopWallCue={loopWallCue} />
+        )}
 
-      {/* STAGE 6: BEAT 7 & 8 — PYTHON CODE & SCORECARD */}
-      {frame >= cutG && (
-        <Stage6CodeAndScorecard frame={frame} cutG={cutG} loopWallCue={loopWallCue} />
-      )}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} fps={fps} />}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} fps={fps} />}
-
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* HERO MASCOT DOCK (Safe Zone: bottom: 70px) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 70,
-          left: "50%",
-          transform: "translateX(-50%)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          zIndex: 60,
-        }}
-      >
-        <NemiMascot pose={nemiPose} scale={1.65} />
-      </div>
-
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* NEMI SPEECH BUBBLE (Strictly at bottom: 440px) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      {nemiSpeech && (
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* HERO MASCOT DOCK (Safe Zone: bottom: 70px) */}
+        {/* ══════════════════════════════════════════════════════════ */}
         <div
           style={{
             position: "absolute",
-            bottom: 440,
+            bottom: 70,
             left: "50%",
             transform: "translateX(-50%)",
-            zIndex: 100,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            zIndex: 60,
           }}
         >
+          <NemiMascot pose={nemiPose} scale={1.65} />
+        </div>
+
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* NEMI SPEECH BUBBLE (Strictly at bottom: 440px) */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {nemiSpeech && (
           <div
             style={{
-              backgroundColor: nemiTheme.colors.brandYellow,
-              color: "#18181B",
-              fontWeight: 900,
-              fontSize: 32,
-              padding: "16px 36px",
-              borderRadius: 26,
-              border: "3.5px solid #18181B",
-              boxShadow: "0 18px 45px rgba(0, 0, 0, 0.45)",
-              whiteSpace: "nowrap",
+              position: "absolute",
+              bottom: 440,
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 100,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
-            {nemiSpeech}
+            <div
+              style={{
+                backgroundColor: nemiTheme.colors.brandYellow,
+                color: "#18181B",
+                fontWeight: 900,
+                fontSize: 32,
+                padding: "16px 36px",
+                borderRadius: 26,
+                border: "3.5px solid #18181B",
+                boxShadow: "0 18px 45px rgba(0, 0, 0, 0.45)",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {nemiSpeech}
+            </div>
+            <div
+              style={{
+                width: 0,
+                height: 0,
+                borderLeft: "14px solid transparent",
+                borderRight: "14px solid transparent",
+                borderTop: "14px solid #18181B",
+                marginTop: -2,
+              }}
+            />
           </div>
-          <div
-            style={{
-              width: 0,
-              height: 0,
-              borderLeft: "14px solid transparent",
-              borderRight: "14px solid transparent",
-              borderTop: "14px solid #18181B",
-              marginTop: -2,
-            }}
-          />
-        </div>
-      )}
+        )}
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. STAGE 1: PROBLEM SETUP & BILLION ARRAY HOOK
+// 1. STAGE 1: LIVING ARRAY HIGHWAY & 1-BILLION SCANNER
 // ═══════════════════════════════════════════════════════════════
 const Stage1BillionHook: React.FC<{ frame: number; thirtySlamCue: number }> = ({ frame, thirtySlamCue }) => {
   const isSlammed = frame >= thirtySlamCue;
   const pulse = Math.sin(frame * 0.25);
+  const scanX = (frame * 18) % 860;
 
   return (
     <div
@@ -461,49 +471,75 @@ const Stage1BillionHook: React.FC<{ frame: number; thirtySlamCue: number }> = ({
         backgroundColor: "#FFFFFF",
         borderRadius: 36,
         border: isSlammed ? "4px solid #06B6D4" : "3.5px solid #E2E8F0",
-        boxShadow: "0 24px 80px rgba(6, 182, 212, 0.22)",
+        boxShadow: isSlammed ? "0 24px 80px rgba(6, 182, 212, 0.35)" : "0 24px 80px rgba(0, 0, 0, 0.08)",
         padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
         zIndex: 30,
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 10 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>📦</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Input: Sorted Array (N = 1,000,000,000)</span>
+          <span style={{ fontSize: 32 }}>📚</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Input: 1,000,000,000 Sorted Items</span>
         </div>
         <span style={{ backgroundColor: "#ECFEFF", color: "#0891B2", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           TARGET = 13 🎯
         </span>
       </div>
 
-      {/* LeetCode Array Cells */}
-      <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%" }}>
-        {ARRAY_DATA.map((item) => (
+      {/* LeetCode Array Cells with Active Laser Sweep */}
+      <div style={{ position: "relative", width: "100%", zIndex: 10 }}>
+        {/* Moving Laser Beam */}
+        {!isSlammed && (
           <div
-            key={item.idx}
             style={{
-              flex: 1,
-              height: 115,
-              backgroundColor: item.val === TARGET_VAL ? "#FEF3C7" : "#F8FAFC",
-              border: item.val === TARGET_VAL ? "3px solid #F59E0B" : "2px solid #CBD5E1",
-              borderRadius: 18,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 6,
+              position: "absolute",
+              top: -10,
+              bottom: -10,
+              left: scanX,
+              width: 8,
+              backgroundColor: "#EF4444",
+              boxShadow: "0 0 25px 8px rgba(239, 68, 68, 0.8)",
+              borderRadius: 4,
+              zIndex: 20,
+              pointerEvents: "none",
             }}
-          >
-            <span style={{ color: "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>[{item.idx}]</span>
-            <span style={{ color: item.val === TARGET_VAL ? "#B45309" : "#0F172A", fontSize: 28, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-              {item.val}
-            </span>
-          </div>
-        ))}
+          />
+        )}
+
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%" }}>
+          {ARRAY_DATA.map((item) => {
+            const isTarget = item.val === TARGET_VAL;
+            return (
+              <div
+                key={item.idx}
+                style={{
+                  flex: 1,
+                  height: 115,
+                  backgroundColor: isTarget ? "#FEF3C7" : "#F8FAFC",
+                  border: isTarget ? "3.5px solid #F59E0B" : "2px solid #CBD5E1",
+                  borderRadius: 18,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 6,
+                  boxShadow: isTarget ? "0 0 25px rgba(245, 158, 11, 0.4)" : "none",
+                }}
+              >
+                <span style={{ color: "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>[{item.idx}]</span>
+                <span style={{ color: isTarget ? "#B45309" : "#0F172A", fontSize: 28, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  {item.val}
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       {/* Callout Box */}
@@ -519,6 +555,7 @@ const Stage1BillionHook: React.FC<{ frame: number; thirtySlamCue: number }> = ({
             gap: 16,
             boxShadow: "0 14px 40px rgba(6, 182, 212, 0.35)",
             transform: `scale(${1 + pulse * 0.03})`,
+            zIndex: 10,
           }}
         >
           <span style={{ fontSize: 36 }}>⚡</span>
@@ -527,14 +564,14 @@ const Stage1BillionHook: React.FC<{ frame: number; thirtySlamCue: number }> = ({
           </span>
         </div>
       ) : (
-        <div style={{ width: "100%", backgroundColor: "#F8FAFC", padding: "16px 22px", borderRadius: 18, border: "1.5px solid #E2E8F0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ width: "100%", backgroundColor: "#F8FAFC", padding: "16px 22px", borderRadius: 18, border: "1.5px solid #E2E8F0", display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 10 }}>
           <span style={{ color: "#64748B", fontSize: 19, fontWeight: 700 }}>Linear scan checks 1 by 1:</span>
-          <span style={{ color: "#EF4444", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>1,000,000,000 CHECKS 🐌</span>
+          <span style={{ color: "#EF4444", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>1,000,000,000 CHECKS (31 YEARS! 🐌)</span>
         </div>
       )}
 
-      <div style={{ width: "100%", backgroundColor: "#F0FDFA", padding: "14px 24px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>Why check every element when the list is sorted?</span>
+      <div style={{ width: "100%", backgroundColor: "#F0FDFA", padding: "14px 24px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 10 }}>
+        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>Why scan item by item when the array is sorted?</span>
         <span style={{ color: "#0891B2", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>USE TWO POINTERS ⚡</span>
       </div>
     </div>
@@ -545,6 +582,8 @@ const Stage1BillionHook: React.FC<{ frame: number; thirtySlamCue: number }> = ({
 // 2. STAGE 2: TWO POINTERS SETUP (L=0, R=8)
 // ═══════════════════════════════════════════════════════════════
 const Stage2TwoPointersTrap: React.FC<{ frame: number; wallSliceCue: number; counterHalveCue: number }> = ({ frame, wallSliceCue, counterHalveCue }) => {
+  const pulse = Math.sin(frame * 0.3);
+
   return (
     <div
       style={{
@@ -586,12 +625,12 @@ const Stage2TwoPointersTrap: React.FC<{ frame: number; wallSliceCue: number; cou
             return (
               <div key={item.idx} style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
                 {isL && (
-                  <div style={{ backgroundColor: "#06B6D4", color: "#070B12", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, boxShadow: "0 0 18px #06B6D4" }}>
+                  <div style={{ backgroundColor: "#06B6D4", color: "#070B12", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, boxShadow: "0 0 20px #06B6D4", transform: `scale(${1 + pulse * 0.08})` }}>
                     ↓ L
                   </div>
                 )}
                 {isR && (
-                  <div style={{ backgroundColor: "#A855F7", color: "#FFFFFF", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, boxShadow: "0 0 18px #A855F7" }}>
+                  <div style={{ backgroundColor: "#A855F7", color: "#FFFFFF", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, boxShadow: "0 0 20px #A855F7", transform: `scale(${1 + pulse * 0.08})` }}>
                     ↓ R
                   </div>
                 )}
