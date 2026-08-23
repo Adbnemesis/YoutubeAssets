@@ -96,7 +96,7 @@ export const BinaryComp: React.FC = () => {
   const cutG = evNemiSmug.start_frame; // 605
   const cutH = evLoop.start_frame; // 668
 
-  // ─── Smooth Background Theme Interpolation ───
+  // ─── Smooth Background Theme ───
   const isDarkWorld = frame >= cutB && frame < loopSeamCue;
   const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
 
@@ -192,29 +192,30 @@ export const BinaryComp: React.FC = () => {
       {/* CAMERA & AMBIENT WORLD */}
       {/* ══════════════════════════════════════════════════════════ */}
       <AbsoluteFill style={{ transform: `scale(${cameraScale})` }}>
+        {/* Dynamic Background Glows */}
         {isDarkWorld && (
           <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 5 }}>
             <div
               style={{
                 position: "absolute",
-                top: 180,
-                left: -150,
-                width: 650,
-                height: 650,
+                top: 200,
+                left: -120,
+                width: 600,
+                height: 600,
                 borderRadius: "50%",
                 background: frame < cutE
-                  ? "radial-gradient(circle, rgba(6, 182, 212, 0.28) 0%, rgba(0,0,0,0) 70%)"
-                  : "radial-gradient(circle, rgba(244, 63, 94, 0.28) 0%, rgba(0,0,0,0) 70%)",
+                  ? "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(0,0,0,0) 70%)"
+                  : "radial-gradient(circle, rgba(244, 63, 94, 0.25) 0%, rgba(0,0,0,0) 70%)",
                 filter: "blur(90px)",
               }}
             />
             <div
               style={{
                 position: "absolute",
-                top: 720,
-                right: -150,
-                width: 650,
-                height: 650,
+                top: 680,
+                right: -120,
+                width: 600,
+                height: 600,
                 borderRadius: "50%",
                 background: frame >= cutF
                   ? "radial-gradient(circle, rgba(16, 185, 129, 0.28) 0%, rgba(0,0,0,0) 70%)"
@@ -226,7 +227,7 @@ export const BinaryComp: React.FC = () => {
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* PERSISTENT HEADER HUD (Appears frame 60+) */}
+        {/* TOP HUD (Safe Zone: top 85px) — appears frame 60+ */}
         {/* ══════════════════════════════════════════════════════════ */}
         {frame >= 60 && (
           <div
@@ -281,7 +282,7 @@ export const BinaryComp: React.FC = () => {
                 boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
               }}
             >
-              {frame < cutB ? "THE 1-TO-100 GAME" : frame < cutD ? "STEP 1: ALWAYS PICK 50" : frame < cutE ? "STEP 2: 1-50 PURGED" : frame < cutF ? "STEP 3: CHECK 75" : "SCALE: 1 BILLION IN 30 OPS"}
+              {frame < cutB ? "THE 1-TO-100 GAME" : frame < cutD ? "MIDPOINT PROBE (50)" : frame < cutE ? "50% PURGED IN 1 CUT" : frame < cutF ? "BINARY DECISION TREE" : frame < cutG ? "1 BILLION IN 30 OPS" : "O(log N) COMPLEXITY GRAPH"}
             </div>
           </div>
         )}
@@ -292,7 +293,7 @@ export const BinaryComp: React.FC = () => {
         <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
           <div
             style={{
-              fontSize: 54,
+              fontSize: 52,
               fontWeight: 900,
               letterSpacing: -1.5,
               lineHeight: 1.15,
@@ -309,7 +310,7 @@ export const BinaryComp: React.FC = () => {
               </>
             ) : frame < cutD ? (
               <>
-                Target is 73: <span style={{ color: nemiTheme.colors.brandYellow }}>73 &gt; 50!</span>
+                Secret is 73: <span style={{ color: nemiTheme.colors.brandYellow }}>73 &gt; 50 (Higher!)</span>
               </>
             ) : frame < cutE ? (
               <>
@@ -317,7 +318,7 @@ export const BinaryComp: React.FC = () => {
               </>
             ) : frame < cutF ? (
               <>
-                Check 75: <span style={{ color: nemiTheme.colors.brandCyan }}>73 &lt; 75 (Too High!)</span> 👈
+                Next Probe 75: <span style={{ color: nemiTheme.colors.brandCyan }}>73 &lt; 75 (Too High!)</span> 👈
               </>
             ) : frame < cutG ? (
               <>
@@ -325,49 +326,49 @@ export const BinaryComp: React.FC = () => {
               </>
             ) : (
               <>
-                The Magic of <span style={{ color: nemiTheme.colors.brandCyan }}>Binary Search</span> ⚡
+                The Power of <span style={{ color: nemiTheme.colors.brandCyan }}>O(log N) Time</span> ⚡
               </>
             )}
           </div>
         </div>
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* MAIN VISUAL STAGES (Safe Zone: top: 310px, height: 600px) */}
+        {/* MAIN VISUAL CARD STAGES (Safe Zone: top: 310px, height: 600px) */}
         {/* ══════════════════════════════════════════════════════════ */}
 
-        {/* STAGE 1: THE 1-100 CHALLENGE (0 to 87) */}
+        {/* STAGE 1: DYNAMIC SPECTRUM DENSITY WAVEFORM (0 to 87) */}
         {frame < cutB && (
-          <Stage1GuessChallenge frame={frame} sevenSlamCue={sevenSlamCue} />
+          <Visual1_SpectrumWaveform frame={frame} sevenSlamCue={sevenSlamCue} />
         )}
 
-        {/* STAGE 2: ALWAYS PICK 50 (87 to 186) */}
+        {/* STAGE 2: LASER MIDPOINT RETICLE ON 50 (87 to 186) */}
         {frame >= cutB && frame < cutC && (
-          <Stage2PickFifty frame={frame} linearCrossCue={linearCrossCue} midFiftyCue={midFiftyCue} />
+          <Visual2_MidpointReticle frame={frame} linearCrossCue={linearCrossCue} midFiftyCue={midFiftyCue} />
         )}
 
-        {/* STAGE 3: NEMI ASKS: WHAT IF SECRET IS 73? (186 to 251) */}
+        {/* STAGE 3: TARGET BEACON 73 & DECISION PROBE (186 to 251) */}
         {frame >= cutC && frame < cutD && (
-          <Stage3Secret73 frame={frame} target73Cue={target73Cue} />
+          <Visual3_TargetBeacon frame={frame} target73Cue={target73Cue} />
         )}
 
-        {/* STAGE 4: 1 TO 50 DISCARDED IN 1 STEP (251 to 368) */}
+        {/* STAGE 4: THE 50% PARTICLE DISINTEGRATION SLICE (251 to 368) */}
         {frame >= cutD && frame < cutE && (
-          <Stage4PurgeFifty frame={frame} higherVerdictCue={higherVerdictCue} purgeLeftCue={purgeLeftCue} />
+          <Visual4_ParticleShatter frame={frame} higherVerdictCue={higherVerdictCue} purgeLeftCue={purgeLeftCue} />
         )}
 
-        {/* STAGE 5: CHECK 75 & DISCARD 76-100 (368 to 484) */}
+        {/* STAGE 5: ANIMATED SVG BINARY DECISION TREE (368 to 484) */}
         {frame >= cutE && frame < cutF && (
-          <Stage5Check75 frame={frame} mid75Cue={mid75Cue} purgeRightCue={purgeRightCue} />
+          <Visual5_BinaryDecisionTree frame={frame} mid75Cue={mid75Cue} purgeRightCue={purgeRightCue} />
         )}
 
-        {/* STAGE 6: 1 BILLION SCALE IN 30 CUTS (484 to 605) */}
+        {/* STAGE 6: 1 BILLION EXPONENTIAL TELESCOPE FUNNEL (484 to 605) */}
         {frame >= cutF && frame < cutG && (
-          <Stage6BillionScale frame={frame} halfCascadeCue={halfCascadeCue} billionPayoffCue={billionPayoffCue} />
+          <Visual6_ExponentialFunnel frame={frame} halfCascadeCue={halfCascadeCue} billionPayoffCue={billionPayoffCue} />
         )}
 
-        {/* STAGE 7 & 8: NEMI SMUG & SUMMARY SCORECARD (605 to 742) */}
+        {/* STAGE 7 & 8: O(N) VS O(log N) INTERACTIVE GRAPH SHOWDOWN (605 to 742) */}
         {frame >= cutG && (
-          <Stage7SummaryScorecard frame={frame} cutG={cutG} loopSeamCue={loopSeamCue} />
+          <Visual7_ComplexityGraph frame={frame} cutG={cutG} loopSeamCue={loopSeamCue} />
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
@@ -442,11 +443,12 @@ export const BinaryComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. STAGE 1: GUESS CHALLENGE (1 TO 100)
+// 1. STAGE 1: DYNAMIC SPECTRUM DENSITY WAVEFORM (0-87)
 // ═══════════════════════════════════════════════════════════════
-const Stage1GuessChallenge: React.FC<{ frame: number; sevenSlamCue: number }> = ({ frame, sevenSlamCue }) => {
+const Visual1_SpectrumWaveform: React.FC<{ frame: number; sevenSlamCue: number }> = ({ frame, sevenSlamCue }) => {
   const isSlammed = frame >= sevenSlamCue;
   const pulse = Math.sin(frame * 0.25);
+  const scanSweep = (frame * 14) % 860;
 
   return (
     <div
@@ -461,46 +463,86 @@ const Stage1GuessChallenge: React.FC<{ frame: number; sevenSlamCue: number }> = 
         borderRadius: 36,
         border: isSlammed ? "4px solid #06B6D4" : "3.5px solid #E2E8F0",
         boxShadow: isSlammed ? "0 24px 80px rgba(6, 182, 212, 0.35)" : "0 24px 80px rgba(0, 0, 0, 0.08)",
-        padding: "32px",
+        padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
         zIndex: 30,
+        overflow: "hidden",
       }}
     >
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>🎮</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Game: Guess A Secret Number (1 to 100)</span>
+          <span style={{ fontSize: 32 }}>📊</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Search Space: 100 Ordered Elements</span>
         </div>
         <span style={{ backgroundColor: "#ECFEFF", color: "#0891B2", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           SECRET = ??? 🔒
         </span>
       </div>
 
-      {/* Visual Number Line */}
-      <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14, alignItems: "center" }}>
-        <div style={{ width: "100%", height: 36, backgroundColor: "#F1F5F9", borderRadius: 18, border: "2px solid #CBD5E1", position: "relative", overflow: "hidden" }}>
-          <div style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0, background: "linear-gradient(90deg, #06B6D4 0%, #3B82F6 50%, #A855F7 100%)", opacity: 0.25 }} />
-          <div style={{ position: "absolute", top: 0, bottom: 0, left: "50%", width: 4, backgroundColor: "#06B6D4", boxShadow: "0 0 10px #06B6D4" }} />
-        </div>
+      {/* SVG 100-Bar Frequency Waveform Spectrum */}
+      <div style={{ width: "100%", height: 260, position: "relative", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <svg width="880" height="250" viewBox="0 0 880 250">
+          <defs>
+            <linearGradient id="barGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#06B6D4" />
+              <stop offset="100%" stopColor="#3B82F6" />
+            </linearGradient>
+            <linearGradient id="midGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#10B981" />
+              <stop offset="100%" stopColor="#059669" />
+            </linearGradient>
+          </defs>
 
-        <div style={{ display: "flex", justifyContent: "space-between", width: "100%", fontFamily: nemiTheme.typography.fontFamily.mono, fontSize: 26, fontWeight: 900, color: "#0F172A" }}>
-          <span>1</span>
-          <span style={{ color: "#0891B2" }}>50 (MID)</span>
-          <span>100</span>
-        </div>
+          {/* Vertical Density Waveform Bars */}
+          {Array.from({ length: 50 }, (_, i) => {
+            const x = 30 + i * 16.5;
+            const isCenter = i >= 23 && i <= 26;
+            const barH = 50 + Math.sin(i * 0.18 + frame * 0.12) * 35 + (isCenter ? 55 : 0);
+            const y = 190 - barH;
+
+            return (
+              <rect
+                key={i}
+                x={x}
+                y={y}
+                width="10"
+                height={barH}
+                rx="5"
+                fill={isCenter ? "url(#midGrad)" : "url(#barGrad)"}
+                opacity={isCenter ? 1 : 0.7}
+              />
+            );
+          })}
+
+          {/* Base Axis Line */}
+          <line x1="30" y1="195" x2="855" y2="195" stroke="#CBD5E1" strokeWidth="4" strokeLinecap="round" />
+
+          {/* Active Red Linear Scanning Beam */}
+          {!isSlammed && (
+            <g transform={`translate(${scanSweep}, 0)`}>
+              <line x1="30" y1="10" x2="30" y2="200" stroke="#EF4444" strokeWidth="5" />
+              <polygon points="20,10 40,10 30,25" fill="#EF4444" />
+            </g>
+          )}
+
+          {/* Text Labels on Axis */}
+          <text x="35" y="230" fill="#0F172A" fontSize="22" fontWeight="900" fontFamily="monospace">1</text>
+          <text x="440" y="230" fill="#0891B2" fontSize="24" fontWeight="900" fontFamily="monospace" textAnchor="middle">50 (MID)</text>
+          <text x="845" y="230" fill="#0F172A" fontSize="22" fontWeight="900" fontFamily="monospace" textAnchor="end">100</text>
+        </svg>
       </div>
 
-      {/* Gold Slam Badge */}
+      {/* Gold Slam Badge or Linear Scan Callout */}
       {isSlammed ? (
         <div
           style={{
             backgroundColor: "#ECFEFF",
             border: "3.5px solid #06B6D4",
-            borderRadius: 24,
-            padding: "18px 36px",
+            borderRadius: 22,
+            padding: "16px 36px",
             display: "flex",
             alignItems: "center",
             gap: 16,
@@ -508,30 +550,30 @@ const Stage1GuessChallenge: React.FC<{ frame: number; sevenSlamCue: number }> = 
             transform: `scale(${1 + pulse * 0.03})`,
           }}
         >
-          <span style={{ fontSize: 38 }}>⚡</span>
-          <span style={{ fontSize: 30, fontWeight: 900, color: "#0E7490", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          <span style={{ fontSize: 36 }}>⚡</span>
+          <span style={{ fontSize: 28, fontWeight: 900, color: "#0E7490", fontFamily: nemiTheme.typography.fontFamily.mono }}>
             SOLVED IN MAXIMUM 7 GUESSES!
           </span>
         </div>
       ) : (
         <div style={{ width: "100%", backgroundColor: "#F8FAFC", padding: "16px 24px", borderRadius: 18, border: "1.5px solid #E2E8F0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <span style={{ color: "#64748B", fontSize: 19, fontWeight: 700 }}>Guessing 1, 2, 3... takes up to:</span>
-          <span style={{ color: "#EF4444", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>100 TRIES 🐌</span>
+          <span style={{ color: "#64748B", fontSize: 19, fontWeight: 700 }}>Linear scan tests 1 by 1:</span>
+          <span style={{ color: "#EF4444", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>UP TO 100 TRIES (TOO SLOW! 🐌)</span>
         </div>
       )}
 
       <div style={{ width: "100%", backgroundColor: "#F0FDFA", padding: "14px 24px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>How do we guarantee finding it in 7 steps?</span>
-        <span style={{ color: "#0891B2", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>CUT IN HALF ⚡</span>
+        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>Halve the entire array on every single question:</span>
+        <span style={{ color: "#0891B2", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>O(log N) SPEED ⚡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 2. STAGE 2: ALWAYS PICK 50 (MIDPOINT)
+// 2. STAGE 2: LASER MIDPOINT RETICLE ON 50 (87-186)
 // ═══════════════════════════════════════════════════════════════
-const Stage2PickFifty: React.FC<{ frame: number; linearCrossCue: number; midFiftyCue: number }> = ({ frame, linearCrossCue, midFiftyCue }) => {
+const Visual2_MidpointReticle: React.FC<{ frame: number; linearCrossCue: number; midFiftyCue: number }> = ({ frame, linearCrossCue, midFiftyCue }) => {
   const isMid = frame >= midFiftyCue;
   const pulse = Math.sin(frame * 0.3);
 
@@ -548,7 +590,7 @@ const Stage2PickFifty: React.FC<{ frame: number; linearCrossCue: number; midFift
         borderRadius: 36,
         border: "3.5px solid #06B6D4",
         boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "30px 34px",
+        padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -559,52 +601,56 @@ const Stage2PickFifty: React.FC<{ frame: number; linearCrossCue: number; midFift
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>🎯</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Rule #1: Always Guess The Exact Middle</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Rule #1: Always Probe The Exact Center</span>
         </div>
         <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          GUESS #1: 50 ⚡
+          PROBE: 50 ⚡
         </span>
       </div>
 
-      {/* Number Line with Center Lock */}
-      <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14, alignItems: "center" }}>
-        <div style={{ width: "100%", height: 48, backgroundColor: "#1E293B", borderRadius: 24, border: "2px solid #334155", position: "relative", overflow: "hidden" }}>
-          {/* Active 50 Marker */}
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              bottom: 0,
-              left: "50%",
-              width: 8,
-              transform: "translateX(-50%)",
-              backgroundColor: isMid ? "#10B981" : "#06B6D4",
-              boxShadow: `0 0 25px ${isMid ? "#10B981" : "#06B6D4"}`,
-            }}
-          />
-        </div>
+      {/* SVG High-Tech Radar & Midpoint Reticle */}
+      <div style={{ width: "100%", height: 280, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <svg width="880" height="260" viewBox="0 0 880 260">
+          <defs>
+            <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#06B6D4" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#06B6D4" stopOpacity="0" />
+            </radialGradient>
+          </defs>
 
-        <div style={{ display: "flex", justifyContent: "space-between", width: "100%", fontFamily: nemiTheme.typography.fontFamily.mono, fontSize: 28, fontWeight: 900 }}>
-          <span style={{ color: "#64748B" }}>1</span>
-          <span style={{ color: isMid ? "#10B981" : "#06B6D4", transform: `scale(${1 + pulse * 0.08})` }}>
-            ↓ 50 (MIDPOINT)
-          </span>
-          <span style={{ color: "#64748B" }}>100</span>
-        </div>
+          {/* Left Partition Box (1-50) */}
+          <rect x="30" y="60" width="390" height="130" rx="18" fill="rgba(6, 182, 212, 0.08)" stroke="#06B6D4" strokeWidth="2.5" strokeDasharray="8,8" />
+          <text x="225" y="115" fill="#06B6D4" fontSize="22" fontWeight="900" textAnchor="middle">LEFT PARTITION</text>
+          <text x="225" y="155" fill="#38BDF8" fontSize="28" fontWeight="900" textAnchor="middle" fontFamily="monospace">1 — 50</text>
+
+          {/* Right Partition Box (51-100) */}
+          <rect x="460" y="60" width="390" height="130" rx="18" fill="rgba(168, 85, 247, 0.08)" stroke="#A855F7" strokeWidth="2.5" strokeDasharray="8,8" />
+          <text x="655" y="115" fill="#A855F7" fontSize="22" fontWeight="900" textAnchor="middle">RIGHT PARTITION</text>
+          <text x="655" y="155" fill="#C084FC" fontSize="28" fontWeight="900" textAnchor="middle" fontFamily="monospace">51 — 100</text>
+
+          {/* Center Laser Guillotine Beam at X=440 */}
+          <line x1="440" y1="10" x2="440" y2="245" stroke={isMid ? "#10B981" : "#06B6D4"} strokeWidth="6" />
+          <circle cx="440" cy="125" r="44" fill="url(#radarGlow)" />
+          <circle cx="440" cy="125" r="28" fill="#0B1120" stroke={isMid ? "#10B981" : "#06B6D4"} strokeWidth="4" />
+          <text x="440" y="133" fill={isMid ? "#10B981" : "#06B6D4"} fontSize="22" fontWeight="900" textAnchor="middle" fontFamily="monospace">50</text>
+
+          {/* Top Target Arrow */}
+          <polygon points="440,50 425,30 455,30" fill={isMid ? "#10B981" : "#06B6D4"} />
+        </svg>
       </div>
 
       <div style={{ width: "100%", backgroundColor: "#022C22", padding: "16px 24px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>One question tests 50 numbers at once:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>50% ELIMINATED ⚡</span>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>50% ELIMINATED INSTANTLY ⚡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 3. STAGE 3: SECRET NUMBER IS 73
+// 3. STAGE 3: TARGET BEACON 73 & DECISION PROBE (186-251)
 // ═══════════════════════════════════════════════════════════════
-const Stage3Secret73: React.FC<{ frame: number; target73Cue: number }> = ({ frame, target73Cue }) => {
+const Visual3_TargetBeacon: React.FC<{ frame: number; target73Cue: number }> = ({ frame, target73Cue }) => {
   const pulse = Math.sin(frame * 0.3);
 
   return (
@@ -620,7 +666,7 @@ const Stage3Secret73: React.FC<{ frame: number; target73Cue: number }> = ({ fram
         borderRadius: 36,
         border: "3.5px solid #FFD166",
         boxShadow: "0 24px 80px rgba(255, 209, 102, 0.3)",
-        padding: "30px 34px",
+        padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -631,54 +677,59 @@ const Stage3Secret73: React.FC<{ frame: number; target73Cue: number }> = ({ fram
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>🔐</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Secret Target = 73</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Secret Target = 73 (Is 73 &gt; 50?)</span>
         </div>
         <span style={{ backgroundColor: "rgba(255, 209, 102, 0.2)", color: "#FFD166", border: "1.5px solid #FFD166", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          TESTING: 73 &gt; 50?
+          VERDICT: HIGHER! 👉
         </span>
       </div>
 
-      {/* Number Line with Target Beacon at 73% */}
-      <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 14, alignItems: "center" }}>
-        <div style={{ width: "100%", height: 48, backgroundColor: "#1E293B", borderRadius: 24, border: "2px solid #334155", position: "relative", overflow: "hidden" }}>
-          {/* Mid at 50% */}
-          <div style={{ position: "absolute", top: 0, bottom: 0, left: "50%", width: 4, backgroundColor: "#06B6D4" }} />
-          {/* Target at 73% */}
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              bottom: 0,
-              left: "73%",
-              width: 8,
-              transform: "translateX(-50%)",
-              backgroundColor: "#FFD166",
-              boxShadow: "0 0 25px #FFD166",
-            }}
-          />
-        </div>
+      {/* SVG Interactive Compass & Target Beacon */}
+      <div style={{ width: "100%", height: 280, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <svg width="880" height="260" viewBox="0 0 880 260">
+          {/* Axis Track */}
+          <line x1="40" y1="130" x2="840" y2="130" stroke="#334155" strokeWidth="6" strokeLinecap="round" />
 
-        <div style={{ display: "flex", justifyContent: "space-between", width: "100%", fontFamily: nemiTheme.typography.fontFamily.mono, fontSize: 26, fontWeight: 900 }}>
-          <span style={{ color: "#64748B" }}>1</span>
-          <span style={{ color: "#06B6D4" }}>50 (Guess)</span>
-          <span style={{ color: "#FFD166", transform: `scale(${1 + pulse * 0.08})` }}>🎯 73 (Secret!)</span>
-          <span style={{ color: "#64748B" }}>100</span>
-        </div>
+          {/* Left Half (1-50): Marked for Elimination */}
+          <rect x="40" y="80" width="390" height="100" rx="16" fill="rgba(239, 68, 68, 0.12)" stroke="#EF4444" strokeWidth="2.5" strokeDasharray="6,6" />
+          <text x="235" y="125" fill="#FDA4AF" fontSize="24" fontWeight="900" textAnchor="middle" textDecoration="line-through">1 — 50</text>
+          <text x="235" y="155" fill="#EF4444" fontSize="16" fontWeight="900" textAnchor="middle">❌ TOO LOW (DISCARD)</text>
+
+          {/* 50 Center Marker */}
+          <circle cx="440" cy="130" r="20" fill="#06B6D4" />
+          <text x="440" y="137" fill="#0B1120" fontSize="16" fontWeight="900" textAnchor="middle" fontFamily="monospace">50</text>
+
+          {/* 73 Target Beacon with Radial Pulsing Waves */}
+          <g transform="translate(640, 130)">
+            <circle cx="0" cy="0" r={36 + pulse * 6} fill="none" stroke="#FFD166" strokeWidth="2.5" opacity="0.6" />
+            <circle cx="0" cy="0" r="24" fill="#FFD166" />
+            <text x="0" y="7" fill="#0B1120" fontSize="18" fontWeight="900" textAnchor="middle" fontFamily="monospace">73</text>
+            <text x="0" y="-45" fill="#FFD166" fontSize="22" fontWeight="900" textAnchor="middle">🎯 SECRET = 73</text>
+          </g>
+
+          {/* Energy Arrow pointing from 50 to 73 */}
+          <path d="M 470 130 Q 550 80 610 115" fill="none" stroke="#10B981" strokeWidth="5" strokeDasharray="8,8" />
+          <polygon points="615,115 600,105 605,122" fill="#10B981" />
+        </svg>
       </div>
 
       <div style={{ width: "100%", backgroundColor: "#1E293B", padding: "16px 24px", borderRadius: 18, border: "2px solid #FFD166", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>Is 73 higher than 50?</span>
-        <span style={{ color: "#FFD166", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>YES! HIGHER 👉</span>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>Because 73 &gt; 50, the secret is guaranteed on the right:</span>
+        <span style={{ color: "#FFD166", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>TARGET IS HIGHER 👉</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 4. STAGE 4: 1 TO 50 DISCARDED IN ONE STEP
+// 4. STAGE 4: 50% PARTICLE DISINTEGRATION SLICE (251-368)
 // ═══════════════════════════════════════════════════════════════
-const Stage4PurgeFifty: React.FC<{ frame: number; higherVerdictCue: number; purgeLeftCue: number }> = ({ frame, higherVerdictCue, purgeLeftCue }) => {
+const Visual4_ParticleShatter: React.FC<{ frame: number; higherVerdictCue: number; purgeLeftCue: number }> = ({ frame, higherVerdictCue, purgeLeftCue }) => {
   const isPurged = frame >= purgeLeftCue;
+  const purgeProgress = interpolate(frame - purgeLeftCue, [0, 25], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
 
   return (
     <div
@@ -693,82 +744,79 @@ const Stage4PurgeFifty: React.FC<{ frame: number; higherVerdictCue: number; purg
         borderRadius: 36,
         border: "3.5px solid #F43F5E",
         boxShadow: "0 24px 80px rgba(244, 63, 94, 0.35)",
-        padding: "30px 34px",
+        padding: "28px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
         zIndex: 30,
+        overflow: "hidden",
       }}
     >
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>✂️</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>73 is Higher: Discard Numbers 1 to 50!</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>73 is Higher: 1 to 50 Disintegrated in 1 Step!</span>
         </div>
         <span style={{ backgroundColor: "rgba(244, 63, 94, 0.25)", color: "#F43F5E", border: "1.5px solid #F43F5E", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          -50 NUMBERS PURGED 💥
+          -50% DISCARDED 💥
         </span>
       </div>
 
-      {/* Slashed Left Half & Active Right Half */}
-      <div style={{ display: "flex", gap: 20, width: "100%" }}>
-        {/* Left Half (1-50): Slashed Out */}
-        <div
-          style={{
-            flex: 1,
-            height: 180,
-            backgroundColor: "#4C0519",
-            border: "2.5px dashed #F43F5E",
-            borderRadius: 24,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 10,
-            opacity: isPurged ? 0.4 : 1,
-          }}
-        >
-          <span style={{ color: "#FDA4AF", fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>Range [1 .. 50]</span>
-          <span style={{ color: "#F43F5E", fontSize: 44, fontWeight: 900, textDecoration: "line-through" }}>1 — 50</span>
-          <span style={{ color: "#F43F5E", fontSize: 16, fontWeight: 900 }}>❌ PURGED FOREVER</span>
-        </div>
+      {/* SVG Particle Shatter & Slicing Blade */}
+      <div style={{ width: "100%", height: 280, display: "flex", alignItems: "center", justifyContent: "center", position: "relative" }}>
+        <svg width="880" height="260" viewBox="0 0 880 260">
+          {/* Left Half (1-50): Smashed & Falling Shards */}
+          <g opacity={1 - purgeProgress * 0.7}>
+            <rect x="30" y="50" width="380" height="150" rx="20" fill="#4C0519" stroke="#F43F5E" strokeWidth="3" strokeDasharray="8,8" />
+            <text x="220" y="115" fill="#FDA4AF" fontSize="28" fontWeight="900" textAnchor="middle" textDecoration="line-through">1 — 50</text>
+            <text x="220" y="160" fill="#F43F5E" fontSize="20" fontWeight="900" textAnchor="middle">❌ PURGED FOREVER</text>
+          </g>
 
-        {/* Right Half (51-100): Kept Active */}
-        <div
-          style={{
-            flex: 1,
-            height: 180,
-            backgroundColor: "#064E3B",
-            border: "3.5px solid #10B981",
-            borderRadius: 24,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 10,
-            boxShadow: "0 0 35px rgba(16, 185, 129, 0.35)",
-          }}
-        >
-          <span style={{ color: "#A7F3D0", fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>New Search Range</span>
-          <span style={{ color: "#10B981", fontSize: 44, fontWeight: 900 }}>51 — 100</span>
-          <span style={{ color: "#FFD166", fontSize: 16, fontWeight: 900 }}>✓ TARGET 73 IS HERE!</span>
-        </div>
+          {/* Falling Disintegration Particles */}
+          {isPurged && Array.from({ length: 22 }, (_, i) => {
+            const px = 50 + (i * 18) % 340;
+            const py = 50 + purgeProgress * (130 + (i * 14) % 80);
+            return (
+              <circle
+                key={i}
+                cx={px}
+                cy={py}
+                r={3.5 + (i % 3)}
+                fill="#F43F5E"
+                opacity={1 - purgeProgress}
+              />
+            );
+          })}
+
+          {/* Neon Guillotine Slicing Blade at X=425 */}
+          <line x1="425" y1="10" x2="425" y2="250" stroke="#F43F5E" strokeWidth="6" />
+          <polygon points="425,250 412,230 438,230" fill="#F43F5E" />
+
+          {/* Right Half (51-100): Expanding into Focus */}
+          <g transform={`translate(${interpolate(purgeProgress, [0, 1], [0, -35])}, 0)`}>
+            <rect x="450" y="45" width="400" height="160" rx="22" fill="#064E3B" stroke="#10B981" strokeWidth="3.5" />
+            <text x="650" y="110" fill="#A7F3D0" fontSize="22" fontWeight="900" textAnchor="middle">NEW SEARCH RANGE</text>
+            <text x="650" y="160" fill="#10B981" fontSize="46" fontWeight="900" textAnchor="middle" fontFamily="monospace">51 — 100</text>
+            <circle cx="760" cy="150" r="16" fill="#FFD166" />
+            <text x="760" y="156" fill="#0B1120" fontSize="14" fontWeight="900" textAnchor="middle">73</text>
+          </g>
+        </svg>
       </div>
 
       <div style={{ width: "100%", backgroundColor: "#18060B", padding: "16px 24px", borderRadius: 18, border: "2px solid #F43F5E", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>In a single guess, half the universe disappeared:</span>
-        <span style={{ color: "#F43F5E", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>50 NUMBERS ELIMINATED ⚡</span>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>In a single question, half the search space vanished:</span>
+        <span style={{ color: "#F43F5E", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>50 NUMBERS PURGED ⚡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 5. STAGE 5: CHECK 75 & DISCARD 76 TO 100
+// 5. STAGE 5: ANIMATED SVG BINARY DECISION TREE (368-484)
 // ═══════════════════════════════════════════════════════════════
-const Stage5Check75: React.FC<{ frame: number; mid75Cue: number; purgeRightCue: number }> = ({ frame, mid75Cue, purgeRightCue }) => {
-  const isPurged = frame >= purgeRightCue;
+const Visual5_BinaryDecisionTree: React.FC<{ frame: number; mid75Cue: number; purgeRightCue: number }> = ({ frame, mid75Cue, purgeRightCue }) => {
+  const isRightPurged = frame >= purgeRightCue;
 
   return (
     <div
@@ -783,7 +831,7 @@ const Stage5Check75: React.FC<{ frame: number; mid75Cue: number; purgeRightCue: 
         borderRadius: 36,
         border: "3.5px solid #06B6D4",
         boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "30px 34px",
+        padding: "24px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -793,71 +841,59 @@ const Stage5Check75: React.FC<{ frame: number; mid75Cue: number; purgeRightCue: 
     >
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>🎯</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Guess #2: Middle of 51 to 100 is 75!</span>
+          <span style={{ fontSize: 32 }}>🌳</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Binary Decision Tree: Probe 75</span>
         </div>
         <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           73 &lt; 75 (TOO HIGH!)
         </span>
       </div>
 
-      {/* Active Range & Right Slashed */}
-      <div style={{ display: "flex", gap: 20, width: "100%" }}>
-        {/* Remaining Range (51-74): Target is here */}
-        <div
-          style={{
-            flex: 1,
-            height: 180,
-            backgroundColor: "#064E3B",
-            border: "3.5px solid #10B981",
-            borderRadius: 24,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 10,
-            boxShadow: "0 0 35px rgba(16, 185, 129, 0.35)",
-          }}
-        >
-          <span style={{ color: "#A7F3D0", fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>Remaining Search Range</span>
-          <span style={{ color: "#10B981", fontSize: 44, fontWeight: 900 }}>51 — 74</span>
-          <span style={{ color: "#FFD166", fontSize: 16, fontWeight: 900 }}>🎯 73 LOCKED IN 4 MORE CUTS!</span>
-        </div>
+      {/* SVG 3-Tier Binary Tree with Enhanced Bold Geometry */}
+      <div style={{ width: "100%", height: 320, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <svg width="880" height="300" viewBox="0 0 880 300">
+          {/* Level 0: Root Node [1 .. 100] */}
+          <rect x="340" y="10" width="200" height="52" rx="16" fill="#1E293B" stroke="#06B6D4" strokeWidth="3" />
+          <text x="440" y="42" fill="#F8FAFC" fontSize="22" fontWeight="900" textAnchor="middle" fontFamily="monospace">[1 .. 100]</text>
 
-        {/* Right Half (76-100): Slashed Out */}
-        <div
-          style={{
-            flex: 1,
-            height: 180,
-            backgroundColor: "#4C0519",
-            border: "2.5px dashed #F43F5E",
-            borderRadius: 24,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 10,
-            opacity: isPurged ? 0.4 : 1,
-          }}
-        >
-          <span style={{ color: "#FDA4AF", fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>Range [76 .. 100]</span>
-          <span style={{ color: "#F43F5E", fontSize: 44, fontWeight: 900, textDecoration: "line-through" }}>76 — 100</span>
-          <span style={{ color: "#F43F5E", fontSize: 16, fontWeight: 900 }}>❌ 75% TOTAL ELIMINATED</span>
-        </div>
+          {/* Level 0 to Level 1 Branches */}
+          <path d="M 380 62 Q 240 95 240 120" fill="none" stroke="#F43F5E" strokeWidth="4" strokeDasharray="6,6" />
+          <path d="M 500 62 Q 640 95 640 120" fill="none" stroke="#10B981" strokeWidth="4.5" />
+
+          {/* Level 1 Left Node: [1 .. 50] (Purged) */}
+          <rect x="140" y="120" width="200" height="52" rx="16" fill="#4C0519" stroke="#F43F5E" strokeWidth="2.5" opacity="0.4" />
+          <text x="240" y="152" fill="#FDA4AF" fontSize="20" fontWeight="900" textAnchor="middle" textDecoration="line-through">[1 .. 50] ❌</text>
+
+          {/* Level 1 Right Node: [51 .. 100] (Split by 75) */}
+          <rect x="540" y="120" width="200" height="52" rx="16" fill="#064E3B" stroke="#10B981" strokeWidth="3" />
+          <text x="640" y="152" fill="#A7F3D0" fontSize="20" fontWeight="900" textAnchor="middle" fontFamily="monospace">[51 .. 100] ✓</text>
+
+          {/* Level 1 to Level 2 Branches */}
+          <path d="M 590 172 Q 490 205 490 230" fill="none" stroke="#10B981" strokeWidth="4.5" />
+          <path d="M 690 172 Q 780 205 780 230" fill="none" stroke="#F43F5E" strokeWidth="4" strokeDasharray="6,6" />
+
+          {/* Level 2 Left Node: [51 .. 74] (Target 73 is HERE!) */}
+          <rect x="380" y="230" width="220" height="56" rx="18" fill="#064E3B" stroke="#FFD166" strokeWidth="3.5" />
+          <text x="490" y="265" fill="#FFD166" fontSize="22" fontWeight="900" textAnchor="middle" fontFamily="monospace">🎯 [51 .. 74]</text>
+
+          {/* Level 2 Right Node: [76 .. 100] (Purged) */}
+          <rect x="670" y="230" width="220" height="56" rx="18" fill="#4C0519" stroke="#F43F5E" strokeWidth="2.5" opacity={isRightPurged ? 0.35 : 1} />
+          <text x="780" y="265" fill="#FDA4AF" fontSize="20" fontWeight="900" textAnchor="middle" textDecoration={isRightPurged ? "line-through" : "none"}>[76 .. 100] ❌</text>
+        </svg>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "16px 24px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>In just 2 questions, only 24 numbers remain:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>EXPONENTIAL SPEED ⚡</span>
+      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "14px 24px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>In just 2 questions, only 24 items remain:</span>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>75% TOTAL PURGED ⚡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 6. STAGE 6: 1 BILLION SCALE IN 30 CUTS
+// 6. STAGE 6: 1 BILLION EXPONENTIAL TELESCOPE FUNNEL (484-605)
 // ═══════════════════════════════════════════════════════════════
-const Stage6BillionScale: React.FC<{ frame: number; halfCascadeCue: number; billionPayoffCue: number }> = ({ frame, halfCascadeCue, billionPayoffCue }) => {
+const Visual6_ExponentialFunnel: React.FC<{ frame: number; halfCascadeCue: number; billionPayoffCue: number }> = ({ frame, halfCascadeCue, billionPayoffCue }) => {
   const isBillion = frame >= billionPayoffCue;
   const count = interpolate(frame - halfCascadeCue, [0, 45], [1, 30], {
     extrapolateLeft: "clamp",
@@ -877,7 +913,7 @@ const Stage6BillionScale: React.FC<{ frame: number; halfCascadeCue: number; bill
         borderRadius: 36,
         border: "3.5px solid #FFD166",
         boxShadow: "0 24px 80px rgba(255, 209, 102, 0.3)",
-        padding: "30px 34px",
+        padding: "24px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -888,46 +924,63 @@ const Stage6BillionScale: React.FC<{ frame: number; halfCascadeCue: number; bill
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>👑</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#FFD166" }}>Scaling to 1 Billion Items: 2³⁰ &gt; 10⁹</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#FFD166" }}>Scaling to 1 Billion: 2³⁰ = 1,073,741,824</span>
         </div>
         <span style={{ backgroundColor: "rgba(255, 209, 102, 0.2)", color: "#FFD166", border: "1.5px solid #FFD166", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          STEP {Math.round(count)} / 30 ⚡
+          CUT {Math.round(count)} / 30 ⚡
         </span>
       </div>
 
-      {/* 30 Steps Progress Matrix */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(10, 1fr)", gap: 10, width: "100%" }}>
-        {Array.from({ length: 30 }, (_, i) => {
-          const isActive = i < count;
-          const isFinal = i === 29 && isBillion;
-          return (
-            <div
-              key={i}
-              style={{
-                height: 52,
-                borderRadius: 10,
-                backgroundColor: isFinal ? "#10B981" : isActive ? "#FFD166" : "#1E293B",
-                border: isFinal ? "2px solid #A7F3D0" : isActive ? "1.5px solid #FDE047" : "1px solid #334155",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: isActive ? "#0B1120" : "#64748B",
-                fontWeight: 900,
-                fontSize: 15,
-                fontFamily: nemiTheme.typography.fontFamily.mono,
-                boxShadow: isFinal ? "0 0 22px #10B981" : "none",
-              }}
-            >
-              {i + 1}
-            </div>
-          );
-        })}
+      {/* SVG 30-Tier Exponential Halving Funnel Matrix */}
+      <div style={{ width: "100%", height: 320, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <svg width="880" height="300" viewBox="0 0 880 300">
+          {/* Cascading Halving Rings */}
+          {[
+            { n: "1,000,000,000", w: 780, y: 15 },
+            { n: "500,000,000", w: 620, y: 52 },
+            { n: "250,000,000", w: 480, y: 89 },
+            { n: "125,000,000", w: 360, y: 126 },
+            { n: "62,500,000", w: 260, y: 163 },
+            { n: "...", w: 180, y: 200 },
+            { n: "1 EXACT ITEM", w: 140, y: 237 },
+          ].map((tier, idx) => {
+            const x = (880 - tier.w) / 2;
+            const isFinal = idx === 6 && isBillion;
+            return (
+              <g key={idx}>
+                <rect
+                  x={x}
+                  y={tier.y}
+                  width={tier.w}
+                  height="30"
+                  rx="15"
+                  fill={isFinal ? "#10B981" : idx * 4 < count ? "#FFD166" : "#1E293B"}
+                  stroke={isFinal ? "#A7F3D0" : idx * 4 < count ? "#FDE047" : "#334155"}
+                  strokeWidth="2.5"
+                />
+                <text
+                  x="440"
+                  y={tier.y + 21}
+                  fill={idx * 4 < count ? "#0B1120" : "#94A3B8"}
+                  fontSize="15"
+                  fontWeight="900"
+                  textAnchor="middle"
+                  fontFamily="monospace"
+                >
+                  {tier.n}
+                </text>
+              </g>
+            );
+          })}
+
+          {/* Central Laser Beam Plunge */}
+          <line x1="440" y1="5" x2="440" y2="280" stroke="#10B981" strokeWidth="4" strokeDasharray="6,6" />
+        </svg>
       </div>
 
-      {/* Result Box */}
-      <div style={{ backgroundColor: "#022C22", padding: "18px 32px", borderRadius: 20, border: "2.5px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>1,000,000,000 Items:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 26, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "14px 24px", borderRadius: 18, border: "2.5px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 800 }}>Search 1,000,000,000 Items:</span>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 22, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           {isBillion ? "EXACTLY 30 QUESTIONS! ✓" : "Narrowing (1B → 1)..."}
         </span>
       </div>
@@ -936,9 +989,14 @@ const Stage6BillionScale: React.FC<{ frame: number; halfCascadeCue: number; bill
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 7. STAGE 7 & 8: SUMMARY SCORECARD & LOOP SEAM
+// 7. STAGE 7 & 8: O(N) VS O(log N) COMPLEXITY GRAPH SHOWDOWN (605-742)
 // ═══════════════════════════════════════════════════════════════
-const Stage7SummaryScorecard: React.FC<{ frame: number; cutG: number; loopSeamCue: number }> = ({ frame, cutG, loopSeamCue }) => {
+const Visual7_ComplexityGraph: React.FC<{ frame: number; cutG: number; loopSeamCue: number }> = ({ frame, cutG, loopSeamCue }) => {
+  const drawProgress = interpolate(frame - cutG, [0, 25], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
   return (
     <div
       style={{
@@ -952,18 +1010,19 @@ const Stage7SummaryScorecard: React.FC<{ frame: number; cutG: number; loopSeamCu
         borderRadius: 36,
         border: "3.5px solid #06B6D4",
         boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "28px 34px",
+        padding: "24px 34px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
+        alignItems: "center",
         zIndex: 30,
       }}
     >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>💡</span>
+          <span style={{ fontSize: 32 }}>📈</span>
           <span style={{ fontSize: 24, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
-            BINARY SEARCH SECRET
+            Time Complexity: O(N) vs O(log N)
           </span>
         </div>
         <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
@@ -971,25 +1030,51 @@ const Stage7SummaryScorecard: React.FC<{ frame: number; cutG: number; loopSeamCu
         </span>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "24px", borderRadius: 22, border: "2.5px solid #F43F5E" }}>
-          <div style={{ color: "#F43F5E", fontWeight: 900, fontSize: 26 }}>Linear Scan: O(N) 🐌</div>
-          <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 10 }}>• 100 items = 100 tries</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• 1 Billion = 1B tries</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Freezes the computer</div>
-        </div>
+      {/* SVG Mathematical Complexity Graph Plotter */}
+      <div style={{ width: "100%", height: 320, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <svg width="880" height="300" viewBox="0 0 880 300">
+          {/* Grid lines */}
+          <line x1="100" y1="40" x2="840" y2="40" stroke="#1E293B" strokeWidth="1.5" strokeDasharray="6,6" />
+          <line x1="100" y1="120" x2="840" y2="120" stroke="#1E293B" strokeWidth="1.5" strokeDasharray="6,6" />
+          <line x1="100" y1="200" x2="840" y2="200" stroke="#1E293B" strokeWidth="1.5" strokeDasharray="6,6" />
 
-        <div style={{ backgroundColor: "#0F172A", padding: "24px", borderRadius: 22, border: "2.5px solid #10B981" }}>
-          <div style={{ color: "#10B981", fontWeight: 900, fontSize: 26 }}>Binary Search: O(log N) ⚡</div>
-          <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 10 }}>• 100 items = 7 tries</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• 1 Billion = 30 tries</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Microsecond lookup</div>
-        </div>
+          {/* Coordinate Axes */}
+          <line x1="100" y1="20" x2="100" y2="260" stroke="#64748B" strokeWidth="3.5" />
+          <line x1="100" y1="260" x2="840" y2="260" stroke="#64748B" strokeWidth="3.5" />
+
+          {/* Axis Labels */}
+          <text x="85" y="45" fill="#EF4444" fontSize="18" fontWeight="900" textAnchor="end">1B Ops</text>
+          <text x="85" y="255" fill="#10B981" fontSize="18" fontWeight="900" textAnchor="end">30 Ops</text>
+          <text x="840" y="290" fill="#94A3B8" fontSize="18" fontWeight="900" textAnchor="end">N (1 Billion Items)</text>
+
+          {/* O(N) Red Line Rocketing Straight to Ceiling */}
+          <path
+            d="M 100 260 L 520 30"
+            fill="none"
+            stroke="#EF4444"
+            strokeWidth="6"
+            strokeDasharray="700"
+            strokeDashoffset={700 * (1 - drawProgress)}
+          />
+          <text x="535" y="40" fill="#EF4444" fontSize="22" fontWeight="900">O(N) Linear (1B Checks! 🐌❌)</text>
+
+          {/* O(log N) Green Logarithmic Curve (Flatline Speed) */}
+          <path
+            d="M 100 260 Q 240 250 840 245"
+            fill="none"
+            stroke="#10B981"
+            strokeWidth="6"
+            strokeDasharray="800"
+            strokeDashoffset={800 * (1 - drawProgress)}
+          />
+          <text x="560" y="230" fill="#10B981" fontSize="22" fontWeight="900">O(log N) Binary (30 Ops! ⚡✓)</text>
+          <circle cx="840" cy="245" r="9" fill="#10B981" />
+        </svg>
       </div>
 
-      <div style={{ backgroundColor: "#03070D", padding: "18px 24px", borderRadius: 20, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Ask better questions — halve the search space!</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>SOLVED 😎✓</span>
+      <div style={{ width: "100%", backgroundColor: "#03070D", padding: "14px 24px", borderRadius: 18, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800 }}>Ask better questions — halve the search space!</span>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>HIRED 😎✓</span>
       </div>
     </div>
   );
