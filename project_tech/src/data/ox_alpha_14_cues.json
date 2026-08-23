@@ -1,0 +1,1276 @@
+{
+  "reel_id": "ox_alpha_14",
+  "title": "A Mystery AI Model Just Dropped (0x-alpha)",
+  "total_duration_s": 23.115,
+  "total_frames": 693,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "ox01_hook",
+      "speaker": "narrator",
+      "text": "A mystery AI model named 0x-alpha just dropped out of nowhere.",
+      "start_time_ms": 0,
+      "end_time_ms": 3157,
+      "duration_s": 3.157,
+      "start_frame": 0,
+      "end_frame": 95,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "0x-alpha",
+          "cue": "model_spawn",
+          "time_ms": 1578,
+          "frame": 47
+        },
+        {
+          "phrase": "out of nowhere",
+          "cue": "mystery_badge",
+          "time_ms": 2683,
+          "frame": 80
+        }
+      ]
+    },
+    {
+      "id": "ox02_specs",
+      "speaker": "narrator",
+      "text": "It has a massive 1 million token context \u2014 and it is 100% free.",
+      "start_time_ms": 3247,
+      "end_time_ms": 8025,
+      "duration_s": 4.779,
+      "start_frame": 97,
+      "end_frame": 241,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "1 million token",
+          "cue": "million_context",
+          "time_ms": 5158,
+          "frame": 155
+        },
+        {
+          "phrase": "100% free",
+          "cue": "free_zero_dollar",
+          "time_ms": 7308,
+          "frame": 219
+        }
+      ]
+    },
+    {
+      "id": "ox03_nemi",
+      "speaker": "nemi",
+      "text": "Wait, who secretly built this?",
+      "start_time_ms": 8125,
+      "end_time_ms": 9917,
+      "duration_s": 1.792,
+      "start_frame": 244,
+      "end_frame": 298,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "secretly built this",
+          "cue": "nemi_curious",
+          "time_ms": 9379,
+          "frame": 281
+        }
+      ]
+    },
+    {
+      "id": "ox04_swe_bench",
+      "speaker": "narrator",
+      "text": "It scored 80% on coding benchmarks! Tokenizer fingerprints match Zhipu's GLM-5.3.",
+      "start_time_ms": 10007,
+      "end_time_ms": 15553,
+      "duration_s": 5.547,
+      "start_frame": 300,
+      "end_frame": 467,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "80% on coding",
+          "cue": "swe_80_percent",
+          "time_ms": 11670,
+          "frame": 350
+        },
+        {
+          "phrase": "GLM-5.3",
+          "cue": "dna_match_zhipu",
+          "time_ms": 14721,
+          "frame": 442
+        }
+      ]
+    },
+    {
+      "id": "ox05_warning",
+      "speaker": "narrator",
+      "text": "It's only free for a few days, but don't paste private passwords.",
+      "start_time_ms": 15653,
+      "end_time_ms": 18767,
+      "duration_s": 3.115,
+      "start_frame": 470,
+      "end_frame": 563,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "a few days",
+          "cue": "seven_day_timer",
+          "time_ms": 16742,
+          "frame": 502
+        },
+        {
+          "phrase": "private passwords",
+          "cue": "vault_warning",
+          "time_ms": 18144,
+          "frame": 544
+        }
+      ]
+    },
+    {
+      "id": "ox06_nemi",
+      "speaker": "nemi",
+      "text": "Free coding AI? I'm using this right now!",
+      "start_time_ms": 18867,
+      "end_time_ms": 21896,
+      "duration_s": 3.029,
+      "start_frame": 566,
+      "end_frame": 657,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "right now",
+          "cue": "nemi_excited",
+          "time_ms": 21290,
+          "frame": 639
+        }
+      ]
+    },
+    {
+      "id": "ox07_loop",
+      "speaker": "narrator",
+      "text": "Because out of nowhere...",
+      "start_time_ms": 22006,
+      "end_time_ms": 23115,
+      "duration_s": 1.109,
+      "start_frame": 660,
+      "end_frame": 693,
+      "gap_after_ms": 0,
+      "semantic_cues": [
+        {
+          "phrase": "out of nowhere",
+          "cue": "loop_seam",
+          "time_ms": 22560,
+          "frame": 677
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 34,
+      "text": "A mystery AI model",
+      "words": [
+        {
+          "word": "A",
+          "start_s": 0.0,
+          "end_s": 0.1,
+          "start_frame": 0,
+          "end_frame": 3
+        },
+        {
+          "word": "mystery",
+          "start_s": 0.1,
+          "end_s": 0.48,
+          "start_frame": 3,
+          "end_frame": 14
+        },
+        {
+          "word": "AI",
+          "start_s": 0.48,
+          "end_s": 0.78,
+          "start_frame": 14,
+          "end_frame": 23
+        },
+        {
+          "word": "model",
+          "start_s": 0.78,
+          "end_s": 1.12,
+          "start_frame": 23,
+          "end_frame": 34
+        }
+      ]
+    },
+    {
+      "start_frame": 34,
+      "end_frame": 65,
+      "text": "named OX Alpha just",
+      "words": [
+        {
+          "word": "named",
+          "start_s": 1.12,
+          "end_s": 1.34,
+          "start_frame": 34,
+          "end_frame": 40
+        },
+        {
+          "word": "OX",
+          "start_s": 1.34,
+          "end_s": 1.76,
+          "start_frame": 40,
+          "end_frame": 53
+        },
+        {
+          "word": "Alpha",
+          "start_s": 1.76,
+          "end_s": 2.02,
+          "start_frame": 53,
+          "end_frame": 61
+        },
+        {
+          "word": "just",
+          "start_s": 2.02,
+          "end_s": 2.18,
+          "start_frame": 61,
+          "end_frame": 65
+        }
+      ]
+    },
+    {
+      "start_frame": 65,
+      "end_frame": 88,
+      "text": "struck out of nowhere.",
+      "words": [
+        {
+          "word": "struck",
+          "start_s": 2.18,
+          "end_s": 2.38,
+          "start_frame": 65,
+          "end_frame": 71
+        },
+        {
+          "word": "out",
+          "start_s": 2.38,
+          "end_s": 2.56,
+          "start_frame": 71,
+          "end_frame": 77
+        },
+        {
+          "word": "of",
+          "start_s": 2.56,
+          "end_s": 2.66,
+          "start_frame": 77,
+          "end_frame": 80
+        },
+        {
+          "word": "nowhere.",
+          "start_s": 2.66,
+          "end_s": 2.92,
+          "start_frame": 80,
+          "end_frame": 88
+        }
+      ]
+    },
+    {
+      "start_frame": 98,
+      "end_frame": 127,
+      "text": "It has a massive",
+      "words": [
+        {
+          "word": "It",
+          "start_s": 3.28,
+          "end_s": 3.36,
+          "start_frame": 98,
+          "end_frame": 101
+        },
+        {
+          "word": "has",
+          "start_s": 3.36,
+          "end_s": 3.56,
+          "start_frame": 101,
+          "end_frame": 107
+        },
+        {
+          "word": "a",
+          "start_s": 3.56,
+          "end_s": 3.76,
+          "start_frame": 107,
+          "end_frame": 113
+        },
+        {
+          "word": "massive",
+          "start_s": 3.76,
+          "end_s": 4.24,
+          "start_frame": 113,
+          "end_frame": 127
+        }
+      ]
+    },
+    {
+      "start_frame": 127,
+      "end_frame": 174,
+      "text": "1 million token context,",
+      "words": [
+        {
+          "word": "1",
+          "start_s": 4.24,
+          "end_s": 4.62,
+          "start_frame": 127,
+          "end_frame": 139
+        },
+        {
+          "word": "million",
+          "start_s": 4.62,
+          "end_s": 4.98,
+          "start_frame": 139,
+          "end_frame": 149
+        },
+        {
+          "word": "token",
+          "start_s": 4.98,
+          "end_s": 5.3,
+          "start_frame": 149,
+          "end_frame": 159
+        },
+        {
+          "word": "context,",
+          "start_s": 5.3,
+          "end_s": 5.8,
+          "start_frame": 159,
+          "end_frame": 174
+        }
+      ]
+    },
+    {
+      "start_frame": 187,
+      "end_frame": 212,
+      "text": "and it is 100",
+      "words": [
+        {
+          "word": "and",
+          "start_s": 6.22,
+          "end_s": 6.36,
+          "start_frame": 187,
+          "end_frame": 191
+        },
+        {
+          "word": "it",
+          "start_s": 6.36,
+          "end_s": 6.48,
+          "start_frame": 191,
+          "end_frame": 194
+        },
+        {
+          "word": "is",
+          "start_s": 6.48,
+          "end_s": 6.6,
+          "start_frame": 194,
+          "end_frame": 198
+        },
+        {
+          "word": "100",
+          "start_s": 6.6,
+          "end_s": 7.06,
+          "start_frame": 198,
+          "end_frame": 212
+        }
+      ]
+    },
+    {
+      "start_frame": 212,
+      "end_frame": 236,
+      "text": "% free.",
+      "words": [
+        {
+          "word": "%",
+          "start_s": 7.06,
+          "end_s": 7.46,
+          "start_frame": 212,
+          "end_frame": 224
+        },
+        {
+          "word": "free.",
+          "start_s": 7.46,
+          "end_s": 7.86,
+          "start_frame": 224,
+          "end_frame": 236
+        }
+      ]
+    },
+    {
+      "start_frame": 242,
+      "end_frame": 284,
+      "text": "Wait, who secretly built",
+      "words": [
+        {
+          "word": "Wait,",
+          "start_s": 8.08,
+          "end_s": 8.3,
+          "start_frame": 242,
+          "end_frame": 249
+        },
+        {
+          "word": "who",
+          "start_s": 8.6,
+          "end_s": 8.82,
+          "start_frame": 258,
+          "end_frame": 265
+        },
+        {
+          "word": "secretly",
+          "start_s": 8.82,
+          "end_s": 9.2,
+          "start_frame": 265,
+          "end_frame": 276
+        },
+        {
+          "word": "built",
+          "start_s": 9.2,
+          "end_s": 9.46,
+          "start_frame": 276,
+          "end_frame": 284
+        }
+      ]
+    },
+    {
+      "start_frame": 284,
+      "end_frame": 292,
+      "text": "this?",
+      "words": [
+        {
+          "word": "this?",
+          "start_s": 9.46,
+          "end_s": 9.74,
+          "start_frame": 284,
+          "end_frame": 292
+        }
+      ]
+    },
+    {
+      "start_frame": 301,
+      "end_frame": 328,
+      "text": "It scored 80 %",
+      "words": [
+        {
+          "word": "It",
+          "start_s": 10.02,
+          "end_s": 10.1,
+          "start_frame": 301,
+          "end_frame": 303
+        },
+        {
+          "word": "scored",
+          "start_s": 10.1,
+          "end_s": 10.26,
+          "start_frame": 303,
+          "end_frame": 308
+        },
+        {
+          "word": "80",
+          "start_s": 10.26,
+          "end_s": 10.6,
+          "start_frame": 308,
+          "end_frame": 318
+        },
+        {
+          "word": "%",
+          "start_s": 10.6,
+          "end_s": 10.94,
+          "start_frame": 318,
+          "end_frame": 328
+        }
+      ]
+    },
+    {
+      "start_frame": 328,
+      "end_frame": 357,
+      "text": "on coding benchmarks.",
+      "words": [
+        {
+          "word": "on",
+          "start_s": 10.94,
+          "end_s": 11.16,
+          "start_frame": 328,
+          "end_frame": 335
+        },
+        {
+          "word": "coding",
+          "start_s": 11.16,
+          "end_s": 11.42,
+          "start_frame": 335,
+          "end_frame": 343
+        },
+        {
+          "word": "benchmarks.",
+          "start_s": 11.42,
+          "end_s": 11.9,
+          "start_frame": 343,
+          "end_frame": 357
+        }
+      ]
+    },
+    {
+      "start_frame": 372,
+      "end_frame": 423,
+      "text": "Tokenizer fingerprints match GIPU's",
+      "words": [
+        {
+          "word": "Tokenizer",
+          "start_s": 12.4,
+          "end_s": 12.74,
+          "start_frame": 372,
+          "end_frame": 382
+        },
+        {
+          "word": "fingerprints",
+          "start_s": 12.74,
+          "end_s": 13.16,
+          "start_frame": 382,
+          "end_frame": 395
+        },
+        {
+          "word": "match",
+          "start_s": 13.16,
+          "end_s": 13.54,
+          "start_frame": 395,
+          "end_frame": 406
+        },
+        {
+          "word": "GIPU's",
+          "start_s": 13.54,
+          "end_s": 14.1,
+          "start_frame": 406,
+          "end_frame": 423
+        }
+      ]
+    },
+    {
+      "start_frame": 423,
+      "end_frame": 460,
+      "text": "GLM 5 .3.",
+      "words": [
+        {
+          "word": "GLM",
+          "start_s": 14.1,
+          "end_s": 14.56,
+          "start_frame": 423,
+          "end_frame": 437
+        },
+        {
+          "word": "5",
+          "start_s": 14.56,
+          "end_s": 14.82,
+          "start_frame": 437,
+          "end_frame": 445
+        },
+        {
+          "word": ".3.",
+          "start_s": 14.82,
+          "end_s": 15.32,
+          "start_frame": 445,
+          "end_frame": 460
+        }
+      ]
+    },
+    {
+      "start_frame": 470,
+      "end_frame": 490,
+      "text": "It's only free for",
+      "words": [
+        {
+          "word": "It's",
+          "start_s": 15.66,
+          "end_s": 15.82,
+          "start_frame": 470,
+          "end_frame": 475
+        },
+        {
+          "word": "only",
+          "start_s": 15.82,
+          "end_s": 15.98,
+          "start_frame": 475,
+          "end_frame": 479
+        },
+        {
+          "word": "free",
+          "start_s": 15.98,
+          "end_s": 16.18,
+          "start_frame": 479,
+          "end_frame": 485
+        },
+        {
+          "word": "for",
+          "start_s": 16.18,
+          "end_s": 16.34,
+          "start_frame": 485,
+          "end_frame": 490
+        }
+      ]
+    },
+    {
+      "start_frame": 490,
+      "end_frame": 517,
+      "text": "a few days, but",
+      "words": [
+        {
+          "word": "a",
+          "start_s": 16.34,
+          "end_s": 16.46,
+          "start_frame": 490,
+          "end_frame": 494
+        },
+        {
+          "word": "few",
+          "start_s": 16.46,
+          "end_s": 16.58,
+          "start_frame": 494,
+          "end_frame": 497
+        },
+        {
+          "word": "days,",
+          "start_s": 16.58,
+          "end_s": 16.82,
+          "start_frame": 497,
+          "end_frame": 505
+        },
+        {
+          "word": "but",
+          "start_s": 17.14,
+          "end_s": 17.24,
+          "start_frame": 514,
+          "end_frame": 517
+        }
+      ]
+    },
+    {
+      "start_frame": 517,
+      "end_frame": 554,
+      "text": "don't paste private passwords.",
+      "words": [
+        {
+          "word": "don't",
+          "start_s": 17.24,
+          "end_s": 17.54,
+          "start_frame": 517,
+          "end_frame": 526
+        },
+        {
+          "word": "paste",
+          "start_s": 17.54,
+          "end_s": 17.72,
+          "start_frame": 526,
+          "end_frame": 532
+        },
+        {
+          "word": "private",
+          "start_s": 17.72,
+          "end_s": 18.06,
+          "start_frame": 532,
+          "end_frame": 542
+        },
+        {
+          "word": "passwords.",
+          "start_s": 18.06,
+          "end_s": 18.46,
+          "start_frame": 542,
+          "end_frame": 554
+        }
+      ]
+    },
+    {
+      "start_frame": 563,
+      "end_frame": 590,
+      "text": "Free coding AI?",
+      "words": [
+        {
+          "word": "Free",
+          "start_s": 18.78,
+          "end_s": 19.06,
+          "start_frame": 563,
+          "end_frame": 572
+        },
+        {
+          "word": "coding",
+          "start_s": 19.06,
+          "end_s": 19.38,
+          "start_frame": 572,
+          "end_frame": 581
+        },
+        {
+          "word": "AI?",
+          "start_s": 19.38,
+          "end_s": 19.68,
+          "start_frame": 581,
+          "end_frame": 590
+        }
+      ]
+    },
+    {
+      "start_frame": 607,
+      "end_frame": 646,
+      "text": "I'm using this right",
+      "words": [
+        {
+          "word": "I'm",
+          "start_s": 20.24,
+          "end_s": 20.8,
+          "start_frame": 607,
+          "end_frame": 624
+        },
+        {
+          "word": "using",
+          "start_s": 20.8,
+          "end_s": 21.04,
+          "start_frame": 624,
+          "end_frame": 631
+        },
+        {
+          "word": "this",
+          "start_s": 21.04,
+          "end_s": 21.28,
+          "start_frame": 631,
+          "end_frame": 638
+        },
+        {
+          "word": "right",
+          "start_s": 21.28,
+          "end_s": 21.52,
+          "start_frame": 638,
+          "end_frame": 646
+        }
+      ]
+    },
+    {
+      "start_frame": 646,
+      "end_frame": 653,
+      "text": "now.",
+      "words": [
+        {
+          "word": "now.",
+          "start_s": 21.52,
+          "end_s": 21.76,
+          "start_frame": 646,
+          "end_frame": 653
+        }
+      ]
+    },
+    {
+      "start_frame": 653,
+      "end_frame": 685,
+      "text": "Because out of nowhere.",
+      "words": [
+        {
+          "word": "Because",
+          "start_s": 21.76,
+          "end_s": 22.18,
+          "start_frame": 653,
+          "end_frame": 665
+        },
+        {
+          "word": "out",
+          "start_s": 22.18,
+          "end_s": 22.4,
+          "start_frame": 665,
+          "end_frame": 672
+        },
+        {
+          "word": "of",
+          "start_s": 22.4,
+          "end_s": 22.5,
+          "start_frame": 672,
+          "end_frame": 675
+        },
+        {
+          "word": "nowhere.",
+          "start_s": 22.5,
+          "end_s": 22.82,
+          "start_frame": 675,
+          "end_frame": 685
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "A",
+      "start_s": 0.0,
+      "end_s": 0.1,
+      "start_frame": 0,
+      "end_frame": 3
+    },
+    {
+      "word": "mystery",
+      "start_s": 0.1,
+      "end_s": 0.48,
+      "start_frame": 3,
+      "end_frame": 14
+    },
+    {
+      "word": "AI",
+      "start_s": 0.48,
+      "end_s": 0.78,
+      "start_frame": 14,
+      "end_frame": 23
+    },
+    {
+      "word": "model",
+      "start_s": 0.78,
+      "end_s": 1.12,
+      "start_frame": 23,
+      "end_frame": 34
+    },
+    {
+      "word": "named",
+      "start_s": 1.12,
+      "end_s": 1.34,
+      "start_frame": 34,
+      "end_frame": 40
+    },
+    {
+      "word": "OX",
+      "start_s": 1.34,
+      "end_s": 1.76,
+      "start_frame": 40,
+      "end_frame": 53
+    },
+    {
+      "word": "Alpha",
+      "start_s": 1.76,
+      "end_s": 2.02,
+      "start_frame": 53,
+      "end_frame": 61
+    },
+    {
+      "word": "just",
+      "start_s": 2.02,
+      "end_s": 2.18,
+      "start_frame": 61,
+      "end_frame": 65
+    },
+    {
+      "word": "struck",
+      "start_s": 2.18,
+      "end_s": 2.38,
+      "start_frame": 65,
+      "end_frame": 71
+    },
+    {
+      "word": "out",
+      "start_s": 2.38,
+      "end_s": 2.56,
+      "start_frame": 71,
+      "end_frame": 77
+    },
+    {
+      "word": "of",
+      "start_s": 2.56,
+      "end_s": 2.66,
+      "start_frame": 77,
+      "end_frame": 80
+    },
+    {
+      "word": "nowhere.",
+      "start_s": 2.66,
+      "end_s": 2.92,
+      "start_frame": 80,
+      "end_frame": 88
+    },
+    {
+      "word": "It",
+      "start_s": 3.28,
+      "end_s": 3.36,
+      "start_frame": 98,
+      "end_frame": 101
+    },
+    {
+      "word": "has",
+      "start_s": 3.36,
+      "end_s": 3.56,
+      "start_frame": 101,
+      "end_frame": 107
+    },
+    {
+      "word": "a",
+      "start_s": 3.56,
+      "end_s": 3.76,
+      "start_frame": 107,
+      "end_frame": 113
+    },
+    {
+      "word": "massive",
+      "start_s": 3.76,
+      "end_s": 4.24,
+      "start_frame": 113,
+      "end_frame": 127
+    },
+    {
+      "word": "1",
+      "start_s": 4.24,
+      "end_s": 4.62,
+      "start_frame": 127,
+      "end_frame": 139
+    },
+    {
+      "word": "million",
+      "start_s": 4.62,
+      "end_s": 4.98,
+      "start_frame": 139,
+      "end_frame": 149
+    },
+    {
+      "word": "token",
+      "start_s": 4.98,
+      "end_s": 5.3,
+      "start_frame": 149,
+      "end_frame": 159
+    },
+    {
+      "word": "context,",
+      "start_s": 5.3,
+      "end_s": 5.8,
+      "start_frame": 159,
+      "end_frame": 174
+    },
+    {
+      "word": "and",
+      "start_s": 6.22,
+      "end_s": 6.36,
+      "start_frame": 187,
+      "end_frame": 191
+    },
+    {
+      "word": "it",
+      "start_s": 6.36,
+      "end_s": 6.48,
+      "start_frame": 191,
+      "end_frame": 194
+    },
+    {
+      "word": "is",
+      "start_s": 6.48,
+      "end_s": 6.6,
+      "start_frame": 194,
+      "end_frame": 198
+    },
+    {
+      "word": "100",
+      "start_s": 6.6,
+      "end_s": 7.06,
+      "start_frame": 198,
+      "end_frame": 212
+    },
+    {
+      "word": "%",
+      "start_s": 7.06,
+      "end_s": 7.46,
+      "start_frame": 212,
+      "end_frame": 224
+    },
+    {
+      "word": "free.",
+      "start_s": 7.46,
+      "end_s": 7.86,
+      "start_frame": 224,
+      "end_frame": 236
+    },
+    {
+      "word": "Wait,",
+      "start_s": 8.08,
+      "end_s": 8.3,
+      "start_frame": 242,
+      "end_frame": 249
+    },
+    {
+      "word": "who",
+      "start_s": 8.6,
+      "end_s": 8.82,
+      "start_frame": 258,
+      "end_frame": 265
+    },
+    {
+      "word": "secretly",
+      "start_s": 8.82,
+      "end_s": 9.2,
+      "start_frame": 265,
+      "end_frame": 276
+    },
+    {
+      "word": "built",
+      "start_s": 9.2,
+      "end_s": 9.46,
+      "start_frame": 276,
+      "end_frame": 284
+    },
+    {
+      "word": "this?",
+      "start_s": 9.46,
+      "end_s": 9.74,
+      "start_frame": 284,
+      "end_frame": 292
+    },
+    {
+      "word": "It",
+      "start_s": 10.02,
+      "end_s": 10.1,
+      "start_frame": 301,
+      "end_frame": 303
+    },
+    {
+      "word": "scored",
+      "start_s": 10.1,
+      "end_s": 10.26,
+      "start_frame": 303,
+      "end_frame": 308
+    },
+    {
+      "word": "80",
+      "start_s": 10.26,
+      "end_s": 10.6,
+      "start_frame": 308,
+      "end_frame": 318
+    },
+    {
+      "word": "%",
+      "start_s": 10.6,
+      "end_s": 10.94,
+      "start_frame": 318,
+      "end_frame": 328
+    },
+    {
+      "word": "on",
+      "start_s": 10.94,
+      "end_s": 11.16,
+      "start_frame": 328,
+      "end_frame": 335
+    },
+    {
+      "word": "coding",
+      "start_s": 11.16,
+      "end_s": 11.42,
+      "start_frame": 335,
+      "end_frame": 343
+    },
+    {
+      "word": "benchmarks.",
+      "start_s": 11.42,
+      "end_s": 11.9,
+      "start_frame": 343,
+      "end_frame": 357
+    },
+    {
+      "word": "Tokenizer",
+      "start_s": 12.4,
+      "end_s": 12.74,
+      "start_frame": 372,
+      "end_frame": 382
+    },
+    {
+      "word": "fingerprints",
+      "start_s": 12.74,
+      "end_s": 13.16,
+      "start_frame": 382,
+      "end_frame": 395
+    },
+    {
+      "word": "match",
+      "start_s": 13.16,
+      "end_s": 13.54,
+      "start_frame": 395,
+      "end_frame": 406
+    },
+    {
+      "word": "GIPU's",
+      "start_s": 13.54,
+      "end_s": 14.1,
+      "start_frame": 406,
+      "end_frame": 423
+    },
+    {
+      "word": "GLM",
+      "start_s": 14.1,
+      "end_s": 14.56,
+      "start_frame": 423,
+      "end_frame": 437
+    },
+    {
+      "word": "5",
+      "start_s": 14.56,
+      "end_s": 14.82,
+      "start_frame": 437,
+      "end_frame": 445
+    },
+    {
+      "word": ".3.",
+      "start_s": 14.82,
+      "end_s": 15.32,
+      "start_frame": 445,
+      "end_frame": 460
+    },
+    {
+      "word": "It's",
+      "start_s": 15.66,
+      "end_s": 15.82,
+      "start_frame": 470,
+      "end_frame": 475
+    },
+    {
+      "word": "only",
+      "start_s": 15.82,
+      "end_s": 15.98,
+      "start_frame": 475,
+      "end_frame": 479
+    },
+    {
+      "word": "free",
+      "start_s": 15.98,
+      "end_s": 16.18,
+      "start_frame": 479,
+      "end_frame": 485
+    },
+    {
+      "word": "for",
+      "start_s": 16.18,
+      "end_s": 16.34,
+      "start_frame": 485,
+      "end_frame": 490
+    },
+    {
+      "word": "a",
+      "start_s": 16.34,
+      "end_s": 16.46,
+      "start_frame": 490,
+      "end_frame": 494
+    },
+    {
+      "word": "few",
+      "start_s": 16.46,
+      "end_s": 16.58,
+      "start_frame": 494,
+      "end_frame": 497
+    },
+    {
+      "word": "days,",
+      "start_s": 16.58,
+      "end_s": 16.82,
+      "start_frame": 497,
+      "end_frame": 505
+    },
+    {
+      "word": "but",
+      "start_s": 17.14,
+      "end_s": 17.24,
+      "start_frame": 514,
+      "end_frame": 517
+    },
+    {
+      "word": "don't",
+      "start_s": 17.24,
+      "end_s": 17.54,
+      "start_frame": 517,
+      "end_frame": 526
+    },
+    {
+      "word": "paste",
+      "start_s": 17.54,
+      "end_s": 17.72,
+      "start_frame": 526,
+      "end_frame": 532
+    },
+    {
+      "word": "private",
+      "start_s": 17.72,
+      "end_s": 18.06,
+      "start_frame": 532,
+      "end_frame": 542
+    },
+    {
+      "word": "passwords.",
+      "start_s": 18.06,
+      "end_s": 18.46,
+      "start_frame": 542,
+      "end_frame": 554
+    },
+    {
+      "word": "Free",
+      "start_s": 18.78,
+      "end_s": 19.06,
+      "start_frame": 563,
+      "end_frame": 572
+    },
+    {
+      "word": "coding",
+      "start_s": 19.06,
+      "end_s": 19.38,
+      "start_frame": 572,
+      "end_frame": 581
+    },
+    {
+      "word": "AI?",
+      "start_s": 19.38,
+      "end_s": 19.68,
+      "start_frame": 581,
+      "end_frame": 590
+    },
+    {
+      "word": "I'm",
+      "start_s": 20.24,
+      "end_s": 20.8,
+      "start_frame": 607,
+      "end_frame": 624
+    },
+    {
+      "word": "using",
+      "start_s": 20.8,
+      "end_s": 21.04,
+      "start_frame": 624,
+      "end_frame": 631
+    },
+    {
+      "word": "this",
+      "start_s": 21.04,
+      "end_s": 21.28,
+      "start_frame": 631,
+      "end_frame": 638
+    },
+    {
+      "word": "right",
+      "start_s": 21.28,
+      "end_s": 21.52,
+      "start_frame": 638,
+      "end_frame": 646
+    },
+    {
+      "word": "now.",
+      "start_s": 21.52,
+      "end_s": 21.76,
+      "start_frame": 646,
+      "end_frame": 653
+    },
+    {
+      "word": "Because",
+      "start_s": 21.76,
+      "end_s": 22.18,
+      "start_frame": 653,
+      "end_frame": 665
+    },
+    {
+      "word": "out",
+      "start_s": 22.18,
+      "end_s": 22.4,
+      "start_frame": 665,
+      "end_frame": 672
+    },
+    {
+      "word": "of",
+      "start_s": 22.4,
+      "end_s": 22.5,
+      "start_frame": 672,
+      "end_frame": 675
+    },
+    {
+      "word": "nowhere.",
+      "start_s": 22.5,
+      "end_s": 22.82,
+      "start_frame": 675,
+      "end_frame": 685
+    }
+  ]
+}

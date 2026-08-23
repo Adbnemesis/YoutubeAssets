@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { OxAlphaComp } from "../reels/ox_alpha_14/OxAlphaComp";
 import { BinaryComp } from "../reels/binary_13/BinaryComp";
 import { TrashComp } from "../reels/trash_12/TrashComp";
 import { NoiseComp } from "../reels/noise_11/NoiseComp";
@@ -37,6 +38,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsOxAlpha"
+        component={OxAlphaComp}
+        durationInFrames={693} // 23.11s @ 30fps — Reel #14: The Mysterious Free 0x-alpha AI Model (1M Context Stealth Drop)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsBinary"
         component={BinaryComp}
