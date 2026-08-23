@@ -1,13 +1,11 @@
-TITLE: Why 0.1 + 0.2 Is NOT 0.3 In Code
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 Why your computer calculates 0.1 plus 0.2 as 0.30000000000000004.
 .
 .
 .
 .
 .
-#floatingpoint #math #coding #computerscience #nemiexplains
+#tech #algorithm #coding #math #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 Why 0.1 + 0.2 Is NOT 0.3 in Code 🤯💻 #shorts
@@ -19,7 +17,7 @@ Why your computer calculates 0.1 plus 0.2 as 0.30000000000000004.
 .
 .
 .
-#floatingpoint #math #coding #computerscience #nemiexplains
+#tech #algorithm #coding #math #nemiexplains
 
 YOUTUBE TAGS:
 floating point math, ieee 754, why 0.1 + 0.2 is not 0.3, binary fractions, coding math, nemi explains, shorts

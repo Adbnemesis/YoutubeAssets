@@ -1,13 +1,11 @@
-TITLE: It Heard 1 Second of Noise. And Named the Song.
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 Shazam heard one second of noisy audio and named the exact song.
 .
 .
 .
 .
 .
-#shazam #audio #algorithms #music #nemiexplains
+#tech #algorithm #shazam #audio #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 How Shazam Names Any Song From 1 Second of Audio 🎵🤯 #shorts
@@ -19,7 +17,7 @@ Shazam heard one second of noisy audio and named the exact song.
 .
 .
 .
-#shazam #audio #algorithms #music #nemiexplains
+#tech #algorithm #shazam #audio #nemiexplains
 
 YOUTUBE TAGS:
 how shazam works, audio fingerprinting, spectrogram, music recognition, dsp, algorithms, nemi explains, shorts

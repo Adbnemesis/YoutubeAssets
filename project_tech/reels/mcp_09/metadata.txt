@@ -1,13 +1,11 @@
-TITLE: MCP vs API: What's the Actual Difference?
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 How the Model Context Protocol connects AI models directly to your tools and databases.
 .
 .
 .
 .
 .
-#mcp #ai #softwareengineering #developer #nemiexplains
+#tech #algorithm #mcp #ai #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 MCP vs API: The USB-C of Artificial Intelligence 🔌🤖 #shorts
@@ -19,7 +17,7 @@ How the Model Context Protocol connects AI models directly to your tools and dat
 .
 .
 .
-#mcp #ai #softwareengineering #developer #nemiexplains
+#tech #algorithm #mcp #ai #nemiexplains
 
 YOUTUBE TAGS:
 model context protocol, mcp vs api, anthropic mcp, ai tools integration, software architecture, nemi explains, shorts

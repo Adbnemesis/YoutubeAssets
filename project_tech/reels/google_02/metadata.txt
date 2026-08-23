@@ -1,13 +1,11 @@
-TITLE: How Google Searches Billions of Pages in Milliseconds
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 How Google searched billions of web pages in milliseconds before modern AI existed.
 .
 .
 .
 .
 .
-#google #pagerank #algorithms #tech #nemiexplains
+#tech #algorithm #google #pagerank #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 How Google Searches 100B Pages Instantly 🔍⚡ #shorts
@@ -19,7 +17,7 @@ How Google searched billions of web pages in milliseconds before modern AI exist
 .
 .
 .
-#google #pagerank #algorithms #tech #nemiexplains
+#tech #algorithm #google #pagerank #nemiexplains
 
 YOUTUBE TAGS:
 how google search works, pagerank algorithm, inverted index, search engine architecture, algorithms, nemi explains, shorts

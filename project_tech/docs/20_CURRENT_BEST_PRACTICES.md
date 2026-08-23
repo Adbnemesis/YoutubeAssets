@@ -21,8 +21,8 @@
     * **Algorithms & Search/Sort:** Real coordinate complexity graphs ($O(N)$ vs $O(\log N)$ Cartesian plots), dynamic frequency spectrum density bars, laser partition slicers, animated branching decision trees, and exponential telescope funnels.
     * **Audio & Signals:** Real-time frequency waterfall spectrograms, constellation peak star maps, audio wave interference collisions.
     * **Systems & Error Correction:** Reed-Solomon parity repair beams, laser module rebuilds, active packet routing conduits.
-    * **AI & LLMs:** Multi-dimensional vector embedding galaxy, attention connection matrices, tokenization byte-pair merges.
-13. **Law of Clean Metadata & 5-Dot Spacing:** Never use long horizontal dashes / divider lines (`====` or `----`) in metadata files. Descriptions must consist of a punchy one-liner, followed by 5 lines containing only a dot `.`, followed by exactly 5 relevant hashtags.
+13. **Law of Clean Metadata & 5-Dot Spacing:** Never use long horizontal dashes / divider lines (`====` or `----`) in metadata files. Files must lead with `INSTAGRAM DESCRIPTION:`, followed by a punchy one-liner, 5 lines containing only a single dot `.`, and exactly 5 tech-based hashtags (LeetCode/DSA reels: `#leetcode #dsa #placement` + 2 specific; Generic Tech reels: `#tech #algorithm` + 3 specific).
+
 
 ---
 

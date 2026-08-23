@@ -1,13 +1,11 @@
-TITLE: You Destroyed This QR Code. It Still Scanned.
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 You destroyed 30% of this QR code with a marker and it still scanned perfectly.
 .
 .
 .
 .
 .
-#qrcode #errorcorrection #math #tech #nemiexplains
+#tech #algorithm #qrcode #errorcorrection #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 You Destroyed This QR Code. It Still Scanned. 🤯📱 #shorts
@@ -19,7 +17,7 @@ You destroyed 30% of this QR code with a marker and it still scanned perfectly.
 .
 .
 .
-#qrcode #errorcorrection #math #tech #nemiexplains
+#tech #algorithm #qrcode #errorcorrection #nemiexplains
 
 YOUTUBE TAGS:
 how qr codes work, reed solomon error correction, qr code damage repair, computer science, math, nemi explains, shorts

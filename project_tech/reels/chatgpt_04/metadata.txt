@@ -1,13 +1,11 @@
-TITLE: How ChatGPT Predicts One Word at a Time
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 ChatGPT doesn't think in full sentences — it predicts one token at a time.
 .
 .
 .
 .
 .
-#chatgpt #ai #machinelearning #transformers #nemiexplains
+#tech #algorithm #chatgpt #ai #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 How ChatGPT Actually Generates Words 🤖⚡ #shorts
@@ -19,7 +17,7 @@ ChatGPT doesn't think in full sentences — it predicts one token at a time.
 .
 .
 .
-#chatgpt #ai #machinelearning #transformers #nemiexplains
+#tech #algorithm #chatgpt #ai #nemiexplains
 
 YOUTUBE TAGS:
 how chatgpt works, transformer architecture, next token prediction, large language models, ai explainer, nemi explains, shorts

@@ -1,13 +1,11 @@
-TITLE: FAANG's #1 Coding Question: Two Sum (LeetCode #1)
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 How a simple hash map turns an O(N²) nested loop into instant O(1) lookups.
 .
 .
 .
 .
 .
-#leetcode #twosum #datastructures #algorithms #nemiexplains
+#leetcode #dsa #placement #twosum #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 LeetCode #1 Two Sum: The O(1) Hash Map Trick ⚡💻 #shorts
@@ -19,7 +17,7 @@ How a simple hash map turns an O(N²) nested loop into instant O(1) lookups.
 .
 .
 .
-#leetcode #twosum #datastructures #algorithms #nemiexplains
+#leetcode #dsa #placement #twosum #nemiexplains
 
 YOUTUBE TAGS:
 leetcode 1, two sum solution, hash map complement, coding interview, dsa, algorithms, nemi explains, shorts

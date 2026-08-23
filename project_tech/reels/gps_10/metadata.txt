@@ -1,13 +1,11 @@
-TITLE: How 4 Satellites Pinpoint You on Earth
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 Four satellites in space pinpoint your location on Earth to within three meters.
 .
 .
 .
 .
 .
-#gps #physics #space #engineering #nemiexplains
+#tech #algorithm #gps #physics #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 How 4 Satellites Find Your Exact Location 🛰️📍 #shorts
@@ -19,7 +17,7 @@ Four satellites in space pinpoint your location on Earth to within three meters.
 .
 .
 .
-#gps #physics #space #engineering #nemiexplains
+#tech #algorithm #gps #physics #nemiexplains
 
 YOUTUBE TAGS:
 how gps works, trilateration, gps atomic clocks, relativity in gps, satellite navigation, nemi explains, shorts

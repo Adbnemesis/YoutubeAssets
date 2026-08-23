@@ -5,10 +5,9 @@ REELS_DIR = Path("/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/ree
 
 REEL_METADATA = {
     "captcha_01": {
-        "title": "Why CAPTCHAs Secretly Watch Your Mouse",
         "yt_title": "Why CAPTCHAs Watch Your Mouse 🤖🖱️ #shorts",
         "one_liner": "The checkbox didn't care about your click, it was watching how your mouse moved to get there.",
-        "hashtags": ["#captcha", "#security", "#computerscience", "#tech", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#captcha", "#security", "#nemiexplains"],
         "tags": ["captcha", "recaptcha", "how captcha works", "bot detection", "computer science", "tech explainer", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsCaptcha",
@@ -18,10 +17,9 @@ REEL_METADATA = {
         "links": []
     },
     "floating_point_01": {
-        "title": "Why 0.1 + 0.2 Is NOT 0.3 In Code",
         "yt_title": "Why 0.1 + 0.2 Is NOT 0.3 in Code 🤯💻 #shorts",
         "one_liner": "Why your computer calculates 0.1 plus 0.2 as 0.30000000000000004.",
-        "hashtags": ["#floatingpoint", "#math", "#coding", "#computerscience", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#coding", "#math", "#nemiexplains"],
         "tags": ["floating point math", "ieee 754", "why 0.1 + 0.2 is not 0.3", "binary fractions", "coding math", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsFloatingPoint",
@@ -31,10 +29,9 @@ REEL_METADATA = {
         "links": []
     },
     "google_02": {
-        "title": "How Google Searches Billions of Pages in Milliseconds",
         "yt_title": "How Google Searches 100B Pages Instantly 🔍⚡ #shorts",
         "one_liner": "How Google searched billions of web pages in milliseconds before modern AI existed.",
-        "hashtags": ["#google", "#pagerank", "#algorithms", "#tech", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#google", "#pagerank", "#nemiexplains"],
         "tags": ["how google search works", "pagerank algorithm", "inverted index", "search engine architecture", "algorithms", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsGoogle",
@@ -44,10 +41,9 @@ REEL_METADATA = {
         "links": []
     },
     "twosum_03": {
-        "title": "FAANG's #1 Coding Question: Two Sum (LeetCode #1)",
         "yt_title": "LeetCode #1 Two Sum: The O(1) Hash Map Trick ⚡💻 #shorts",
         "one_liner": "How a simple hash map turns an O(N²) nested loop into instant O(1) lookups.",
-        "hashtags": ["#leetcode", "#twosum", "#datastructures", "#algorithms", "#nemiexplains"],
+        "hashtags": ["#leetcode", "#dsa", "#placement", "#twosum", "#nemiexplains"],
         "tags": ["leetcode 1", "two sum solution", "hash map complement", "coding interview", "dsa", "algorithms", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsTwoSum",
@@ -57,10 +53,9 @@ REEL_METADATA = {
         "links": []
     },
     "chatgpt_04": {
-        "title": "How ChatGPT Predicts One Word at a Time",
         "yt_title": "How ChatGPT Actually Generates Words 🤖⚡ #shorts",
         "one_liner": "ChatGPT doesn't think in full sentences — it predicts one token at a time.",
-        "hashtags": ["#chatgpt", "#ai", "#machinelearning", "#transformers", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#chatgpt", "#ai", "#nemiexplains"],
         "tags": ["how chatgpt works", "transformer architecture", "next token prediction", "large language models", "ai explainer", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsChatGPT",
@@ -70,10 +65,9 @@ REEL_METADATA = {
         "links": []
     },
     "riddle_05": {
-        "title": "Can You Solve This Deadlock Riddle?",
         "yt_title": "The Deadlock Riddle: Why You Must Switch 🍜💀 #shorts",
         "one_liner": "Why switching doors doubles your mathematical chances of winning the grand prize.",
-        "hashtags": ["#math", "#probability", "#puzzles", "#logic", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#probability", "#math", "#nemiexplains"],
         "tags": ["monty hall problem", "probability riddle", "game theory", "math paradox", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsRiddle",
@@ -87,10 +81,9 @@ REEL_METADATA = {
         ]
     },
     "qr_06": {
-        "title": "You Destroyed This QR Code. It Still Scanned.",
         "yt_title": "You Destroyed This QR Code. It Still Scanned. 🤯📱 #shorts",
         "one_liner": "You destroyed 30% of this QR code with a marker and it still scanned perfectly.",
-        "hashtags": ["#qrcode", "#errorcorrection", "#math", "#tech", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#qrcode", "#errorcorrection", "#nemiexplains"],
         "tags": ["how qr codes work", "reed solomon error correction", "qr code damage repair", "computer science", "math", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsQrCode",
@@ -104,10 +97,9 @@ REEL_METADATA = {
         ]
     },
     "shazam_07": {
-        "title": "It Heard 1 Second of Noise. And Named the Song.",
         "yt_title": "How Shazam Names Any Song From 1 Second of Audio 🎵🤯 #shorts",
         "one_liner": "Shazam heard one second of noisy audio and named the exact song.",
-        "hashtags": ["#shazam", "#audio", "#algorithms", "#music", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#shazam", "#audio", "#nemiexplains"],
         "tags": ["how shazam works", "audio fingerprinting", "spectrogram", "music recognition", "dsp", "algorithms", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsShazam",
@@ -121,10 +113,9 @@ REEL_METADATA = {
         ]
     },
     "tokenize_08": {
-        "title": "How AI Sees Words: The Tokenizer Trap",
         "yt_title": "Why ChatGPT Can't Count Letters (The Tokenizer Trap) 🤖🤯 #shorts",
         "one_liner": "How large language models slice human language into mathematical tokens.",
-        "hashtags": ["#tokenization", "#llm", "#ai", "#datascience", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#tokenization", "#ai", "#nemiexplains"],
         "tags": ["how tokenization works", "byte pair encoding", "why ai cannot count letters", "token dictionary", "transformers", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsTokenize",
@@ -134,10 +125,9 @@ REEL_METADATA = {
         "links": []
     },
     "mcp_09": {
-        "title": "MCP vs API: What's the Actual Difference?",
         "yt_title": "MCP vs API: The USB-C of Artificial Intelligence 🔌🤖 #shorts",
         "one_liner": "How the Model Context Protocol connects AI models directly to your tools and databases.",
-        "hashtags": ["#mcp", "#ai", "#softwareengineering", "#developer", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#mcp", "#ai", "#nemiexplains"],
         "tags": ["model context protocol", "mcp vs api", "anthropic mcp", "ai tools integration", "software architecture", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsMCP",
@@ -147,10 +137,9 @@ REEL_METADATA = {
         "links": []
     },
     "gps_10": {
-        "title": "How 4 Satellites Pinpoint You on Earth",
         "yt_title": "How 4 Satellites Find Your Exact Location 🛰️📍 #shorts",
         "one_liner": "Four satellites in space pinpoint your location on Earth to within three meters.",
-        "hashtags": ["#gps", "#physics", "#space", "#engineering", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#gps", "#physics", "#nemiexplains"],
         "tags": ["how gps works", "trilateration", "gps atomic clocks", "relativity in gps", "satellite navigation", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsGPS",
@@ -160,10 +149,9 @@ REEL_METADATA = {
         "links": []
     },
     "noise_11": {
-        "title": "Silence Is Made of Sound: Active Noise Cancellation",
         "yt_title": "How Active Noise Cancellation Creates Pure Silence 🎧🔇 #shorts",
         "one_liner": "Your headphones play exact anti-sound to cancel airplane noise into pure silence.",
-        "hashtags": ["#noisecancelling", "#audio", "#physics", "#headphones", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#noisecancelling", "#audio", "#nemiexplains"],
         "tags": ["how noise cancelling works", "destructive interference", "phase inversion", "anc headphones", "audio physics", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsNoise",
@@ -173,10 +161,9 @@ REEL_METADATA = {
         "links": []
     },
     "trash_12": {
-        "title": "POV: You Just Emptied Your Trash (Nothing Was Deleted)",
         "yt_title": "Why Emptying Trash Deletes Nothing 🗑️💾 #shorts",
         "one_liner": "Emptying the trash bin never erases your files — it only deletes the pointer.",
-        "hashtags": ["#cybersecurity", "#tech", "#computerscience", "#storage", "#nemiexplains"],
+        "hashtags": ["#tech", "#algorithm", "#cybersecurity", "#storage", "#nemiexplains"],
         "tags": ["why deleting files does not erase data", "file recovery", "hard drive pointers", "how file deletion works", "cybersecurity", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsTrash",
@@ -186,10 +173,9 @@ REEL_METADATA = {
         "links": []
     },
     "binary_13": {
-        "title": "Guess 1 to 100 in 7 Guesses (Binary Search)",
         "yt_title": "Guess 1 to 100 in 7 Guesses! Binary Search Explained 🤯⚡ #shorts",
         "one_liner": "How to find any number from 1 to 100 in just 7 guesses using Binary Search.",
-        "hashtags": ["#binarysearch", "#algorithms", "#computerscience", "#math", "#nemiexplains"],
+        "hashtags": ["#leetcode", "#dsa", "#placement", "#binarysearch", "#nemiexplains"],
         "tags": ["binary search explained", "how binary search works", "guess a number 1 to 100", "o log n time complexity", "search 1 billion items", "nemi explains", "shorts"],
         "specs": [
             "- Composition: NemiExplainsBinary",
@@ -202,9 +188,7 @@ REEL_METADATA = {
 
 def format_metadata(data):
     lines = []
-    lines.append(f"TITLE: {data['title']}")
-    lines.append("")
-    lines.append("DESCRIPTION:")
+    lines.append("INSTAGRAM DESCRIPTION:")
     lines.append(data['one_liner'])
     lines.append(".")
     lines.append(".")

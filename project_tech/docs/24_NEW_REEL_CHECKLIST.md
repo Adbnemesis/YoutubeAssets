@@ -73,9 +73,10 @@ Use this exact step-by-step procedure to conceive, engineer, and render every ne
   - Instagram Reel: `python instagram/publish_instagram_reel.py --video out/...`
   - YouTube Short: `python youtube/nemi_explains/publish_youtube_video.py --video out/... --privacy unlisted`
 - [ ] **Record Metadata & Links (`11_CONTENT_SCHEMA.md` §3):**
-  - Create `reels/<reel_id>/metadata.txt` with zero long dashes (`====` or `----`).
+  - Create `reels/<reel_id>/metadata.txt` starting with `INSTAGRAM DESCRIPTION:` with zero long dashes (`====` or `----`).
   - Single punchy one-liner description.
-  - Followed by 5 lines containing only a dot `.`.
-  - Followed by exactly 5 relevant hashtags.
+  - Followed by 5 lines containing only a single dot `.`.
+  - Followed by exactly 5 tech hashtags (`#leetcode #dsa #placement` for LeetCode; `#tech #algorithm` for generic tech).
   - Record live publication URLs and commit to Git.
+
 

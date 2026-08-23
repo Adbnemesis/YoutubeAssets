@@ -45,8 +45,9 @@ Every Reel generates a structured timing cue file (`src/data/nemi_v{N}_cues.json
 
 All `metadata.txt` files across reels must adhere strictly to these rules:
 1. **Never use long dashes / horizontal divider lines:** Do not include `=====` or `-----` divider lines anywhere in metadata files. Use clean capitalized headers.
-2. **One-Liner Description:** The description must open with a single, high-impact punchy sentence summarizing the reel.
-3. **5-Dot Line Breaks:** The one-liner description must be followed by exactly 5 lines containing only a single dot `.`:
+2. **Explicit Instagram Identification Header:** The file must start with `INSTAGRAM DESCRIPTION:` for immediate unambiguous identification.
+3. **One-Liner Description:** The description must open with a single, high-impact punchy sentence summarizing the reel.
+4. **5-Dot Line Breaks:** The one-liner description must be followed by exactly 5 lines containing only a single dot `.`:
    ```
    .
    .
@@ -54,21 +55,21 @@ All `metadata.txt` files across reels must adhere strictly to these rules:
    .
    .
    ```
-4. **Exactly 5 Hashtags:** Follow the 5 dots with exactly 5 relevant, high-performing hashtags (e.g. `#topic #subtopic #dsa #tech #nemiexplains`).
+5. **Exactly 5 Tech-Based Hashtags with Fixed Pillars:**
+   * **For LeetCode / DSA questions:** Fixed 3 tags `#leetcode #dsa #placement` + 2 specific tags (e.g. `#twosum #nemiexplains`). Total = 5 hashtags.
+   * **For Generic Tech / Computer Science concepts:** Fixed 2 tags `#tech #algorithm` + 3 specific tags (e.g. `#shazam #audio #nemiexplains`). Total = 5 hashtags.
 
 ### Canonical Example (`metadata.txt`):
 
 ```text
-TITLE: It Heard 1 Second of Noise. And Named the Song.
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 Shazam heard one second of noisy audio and named the exact song.
 .
 .
 .
 .
 .
-#shazam #audio #algorithms #music #nemiexplains
+#tech #algorithm #shazam #audio #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 How Shazam Names Any Song From 1 Second of Audio 🎵🤯 #shorts
@@ -80,7 +81,7 @@ Shazam heard one second of noisy audio and named the exact song.
 .
 .
 .
-#shazam #audio #algorithms #music #nemiexplains
+#tech #algorithm #shazam #audio #nemiexplains
 
 YOUTUBE TAGS:
 how shazam works, audio fingerprinting, spectrogram, music recognition, dsp, algorithms, nemi explains, shorts
@@ -95,4 +96,5 @@ PUBLISHED LINKS:
 - Facebook Reel: https://www.facebook.com/reel/...
 - YouTube Shorts: https://youtu.be/...
 ```
+
 

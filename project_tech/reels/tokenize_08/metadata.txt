@@ -1,13 +1,11 @@
-TITLE: How AI Sees Words: The Tokenizer Trap
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 How large language models slice human language into mathematical tokens.
 .
 .
 .
 .
 .
-#tokenization #llm #ai #datascience #nemiexplains
+#tech #algorithm #tokenization #ai #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 Why ChatGPT Can't Count Letters (The Tokenizer Trap) 🤖🤯 #shorts
@@ -19,7 +17,7 @@ How large language models slice human language into mathematical tokens.
 .
 .
 .
-#tokenization #llm #ai #datascience #nemiexplains
+#tech #algorithm #tokenization #ai #nemiexplains
 
 YOUTUBE TAGS:
 how tokenization works, byte pair encoding, why ai cannot count letters, token dictionary, transformers, nemi explains, shorts

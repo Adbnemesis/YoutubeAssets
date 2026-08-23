@@ -1,13 +1,11 @@
-TITLE: Guess 1 to 100 in 7 Guesses (Binary Search)
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 How to find any number from 1 to 100 in just 7 guesses using Binary Search.
 .
 .
 .
 .
 .
-#binarysearch #algorithms #computerscience #math #nemiexplains
+#leetcode #dsa #placement #binarysearch #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 Guess 1 to 100 in 7 Guesses! Binary Search Explained 🤯⚡ #shorts
@@ -19,7 +17,7 @@ How to find any number from 1 to 100 in just 7 guesses using Binary Search.
 .
 .
 .
-#binarysearch #algorithms #computerscience #math #nemiexplains
+#leetcode #dsa #placement #binarysearch #nemiexplains
 
 YOUTUBE TAGS:
 binary search explained, how binary search works, guess a number 1 to 100, o log n time complexity, search 1 billion items, nemi explains, shorts

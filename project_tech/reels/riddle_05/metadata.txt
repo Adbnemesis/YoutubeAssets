@@ -1,13 +1,11 @@
-TITLE: Can You Solve This Deadlock Riddle?
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 Why switching doors doubles your mathematical chances of winning the grand prize.
 .
 .
 .
 .
 .
-#math #probability #puzzles #logic #nemiexplains
+#tech #algorithm #probability #math #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 The Deadlock Riddle: Why You Must Switch 🍜💀 #shorts
@@ -19,7 +17,7 @@ Why switching doors doubles your mathematical chances of winning the grand prize
 .
 .
 .
-#math #probability #puzzles #logic #nemiexplains
+#tech #algorithm #probability #math #nemiexplains
 
 YOUTUBE TAGS:
 monty hall problem, probability riddle, game theory, math paradox, nemi explains, shorts

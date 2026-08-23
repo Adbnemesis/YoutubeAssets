@@ -1,13 +1,11 @@
-TITLE: Why CAPTCHAs Secretly Watch Your Mouse
-
-DESCRIPTION:
+INSTAGRAM DESCRIPTION:
 The checkbox didn't care about your click, it was watching how your mouse moved to get there.
 .
 .
 .
 .
 .
-#captcha #security #computerscience #tech #nemiexplains
+#tech #algorithm #captcha #security #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 Why CAPTCHAs Watch Your Mouse 🤖🖱️ #shorts
@@ -19,7 +17,7 @@ The checkbox didn't care about your click, it was watching how your mouse moved 
 .
 .
 .
-#captcha #security #computerscience #tech #nemiexplains
+#tech #algorithm #captcha #security #nemiexplains
 
 YOUTUBE TAGS:
 captcha, recaptcha, how captcha works, bot detection, computer science, tech explainer, nemi explains, shorts
