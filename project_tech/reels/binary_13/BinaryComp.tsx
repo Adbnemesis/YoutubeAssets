@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
+  spring,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
@@ -17,15 +18,18 @@ export const nemiTheme = {
     brandCyan: "#06B6D4",
     brandPurple: "#A855F7",
     brandGreen: "#10B981",
+    brandRed: "#EF4444",
     brandCoral: "#F43F5E",
     brandAmber: "#F59E0B",
     canvasLight: "#FAF8F5",
     canvasDark: "#070B12",
-    cardDark: "#0B1120",
+    cardDark: "#0F172A",
+    cardSurface: "#1E293B",
     textLight: "#0F172A",
     textDark: "#F8FAFC",
+    textMuted: "#94A3B8",
     borderLight: "#E2E8F0",
-    borderDark: "#1E293B",
+    borderDark: "#334155",
   },
   typography: {
     fontFamily: {
@@ -54,30 +58,24 @@ const getCue = (eventId: string, cueName: string): number => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// PSEUDO-RANDOM NUMBER MATRIX
+// LEETCODE ARRAY DATA FOR BINARY SEARCH DEMO
 // ═══════════════════════════════════════════════════════════════
-const COLS = 12;
-const ROWS = 16;
-const WALL_VALUES: string[][] = (() => {
-  let a = 31337;
-  const r = () => {
-    a |= 0;
-    a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-  return Array.from({ length: ROWS }, () =>
-    Array.from({ length: COLS }, () =>
-      String(Math.floor(r() * 100000)).padStart(5, "0")
-    )
-  );
-})();
+const ARRAY_DATA = [
+  { idx: 0, val: 1 },
+  { idx: 1, val: 3 },
+  { idx: 2, val: 5 },
+  { idx: 3, val: 7 },
+  { idx: 4, val: 9 },
+  { idx: 5, val: 11 },
+  { idx: 6, val: 13 }, // TARGET
+  { idx: 7, val: 15 },
+  { idx: 8, val: 17 },
+];
+const TARGET_VAL = 13;
 
 export const BinaryComp: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const totalFrames = cuesData.total_frames || 639;
 
   // ─── Timeline Events ───
   const evHook = getEvent("bn01_hook");
@@ -89,8 +87,7 @@ export const BinaryComp: React.FC = () => {
   const evNemiPayoff = getEvent("bn07_nemi_payoff");
   const evLoop = getEvent("bn08_loop");
 
-  // ─── Semantic Cue Frames ───
-  const counterWallCue = getCue("bn01_hook", "counter_wall"); // 20
+  // ─── Semantic Cues ───
   const thirtySlamCue = getCue("bn01_hook", "thirty_slam"); // 64
   const wallSliceCue = getCue("bn02_claim", "wall_slice"); // 133
   const counterHalveCue = getCue("bn02_claim", "counter_halve"); // 163
@@ -113,11 +110,11 @@ export const BinaryComp: React.FC = () => {
   const cutG = evNemiPayoff.start_frame; // 491
   const cutH = evLoop.start_frame; // 559
 
-  // ─── Canvas Worlds ───
+  // ─── Smooth Background Theme Interpolation ───
   const isDarkWorld = frame >= cutB && frame < loopWallCue;
   const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
 
-  // ─── Nemi Emotional Arc & Dialogue ───
+  // ─── Nemi Dynamic Emotional Arc & Dialogue ───
   let nemiPose: NemiPose = "thinking";
   let nemiSpeech: string | null = null;
 
@@ -127,16 +124,16 @@ export const BinaryComp: React.FC = () => {
     nemiPose = "pointing";
   } else if (frame < cutD) {
     nemiPose = "shocked";
-    nemiSpeech = "Find it without searching?! 🤯";
+    nemiSpeech = "Find it without scanning all?! 🤯";
   } else if (frame < cutE) {
-    nemiPose = "pointing";
+    nemiPose = "explaining";
   } else if (frame < cutF) {
     nemiPose = "aha";
   } else if (frame < cutG) {
     nemiPose = "aha";
-  } else if (frame < cutH + 10) {
+  } else if (frame < cutH + 15) {
     nemiPose = "smug";
-    nemiSpeech = "Ask better questions! 😎";
+    nemiSpeech = "Ask better questions! 😎⚡";
   } else {
     nemiPose = "smug";
   }
@@ -150,27 +147,24 @@ export const BinaryComp: React.FC = () => {
       }}
     >
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MASTER AUDIO (Voice + Ducked BGM) */}
+      {/* MASTER AUDIO (Voice + Sidechain-Ducked BGM) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Audio src={staticFile("reels/binary_13/binary_master_audio.mp3")} volume={0.92} />
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* SFX LAYER */}
+      {/* SYNCHRONIZED SFX LAYER */}
       {/* ══════════════════════════════════════════════════════════ */}
       <Sequence from={0} durationInFrames={35}>
-        <Audio src={staticFile("reels/binary_13/sfx/whoosh.mp3")} volume={0.7} />
-      </Sequence>
-      <Sequence from={counterWallCue} durationInFrames={25}>
-        <Audio src={staticFile("reels/binary_13/sfx/notification.mp3")} volume={0.65} />
+        <Audio src={staticFile("reels/binary_13/sfx/whoosh.mp3")} volume={0.65} />
       </Sequence>
       <Sequence from={thirtySlamCue} durationInFrames={30}>
         <Audio src={staticFile("reels/binary_13/sfx/pop.mp3")} volume={0.7} />
       </Sequence>
-      <Sequence from={Math.max(0, cutB - 1)} durationInFrames={35}>
-        <Audio src={staticFile("reels/binary_13/sfx/whoosh.mp3")} volume={0.7} />
+      <Sequence from={Math.max(0, cutB - 2)} durationInFrames={30}>
+        <Audio src={staticFile("reels/binary_13/sfx/whoosh.mp3")} volume={0.65} />
       </Sequence>
       <Sequence from={wallSliceCue} durationInFrames={25}>
-        <Audio src={staticFile("reels/binary_13/sfx/ping.mp3")} volume={0.68} />
+        <Audio src={staticFile("reels/binary_13/sfx/ping.mp3")} volume={0.7} />
       </Sequence>
       <Sequence from={counterHalveCue} durationInFrames={25}>
         <Audio src={staticFile("reels/binary_13/sfx/click.mp3")} volume={0.65} />
@@ -178,8 +172,8 @@ export const BinaryComp: React.FC = () => {
       <Sequence from={nemiShockCue} durationInFrames={30}>
         <Audio src={staticFile("reels/binary_13/sfx/error.mp3")} volume={0.7} />
       </Sequence>
-      <Sequence from={Math.max(0, cutD - 1)} durationInFrames={35}>
-        <Audio src={staticFile("reels/binary_13/sfx/whoosh.mp3")} volume={0.7} />
+      <Sequence from={Math.max(0, cutD - 2)} durationInFrames={30}>
+        <Audio src={staticFile("reels/binary_13/sfx/whoosh.mp3")} volume={0.65} />
       </Sequence>
       <Sequence from={sortedLockCue} durationInFrames={25}>
         <Audio src={staticFile("reels/binary_13/sfx/click.mp3")} volume={0.65} />
@@ -193,14 +187,14 @@ export const BinaryComp: React.FC = () => {
       <Sequence from={halfDieCue} durationInFrames={30}>
         <Audio src={staticFile("reels/binary_13/sfx/pop.mp3")} volume={0.68} />
       </Sequence>
-      <Sequence from={Math.max(0, cutF - 1)} durationInFrames={35}>
+      <Sequence from={Math.max(0, cutF - 2)} durationInFrames={35}>
         <Audio src={staticFile("reels/binary_13/sfx/riser.mp3")} volume={0.7} />
       </Sequence>
       <Sequence from={thirtyPayoffCue} durationInFrames={30}>
         <Audio src={staticFile("reels/binary_13/sfx/notification.mp3")} volume={0.65} />
       </Sequence>
       <Sequence from={oneLeftCue} durationInFrames={40}>
-        <Audio src={staticFile("reels/binary_13/sfx/chime.mp3")} volume={0.7} />
+        <Audio src={staticFile("reels/binary_13/sfx/chime.mp3")} volume={0.75} />
       </Sequence>
       <Sequence from={smugStampCue} durationInFrames={30}>
         <Audio src={staticFile("reels/binary_13/sfx/pop.mp3")} volume={0.66} />
@@ -215,26 +209,26 @@ export const BinaryComp: React.FC = () => {
             style={{
               position: "absolute",
               top: 180,
-              left: -160,
+              left: -150,
               width: 650,
               height: 650,
               borderRadius: "50%",
               background: frame < cutE
-                ? "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(0,0,0,0) 70%)"
-                : "radial-gradient(circle, rgba(244, 63, 94, 0.25) 0%, rgba(0,0,0,0) 70%)",
+                ? "radial-gradient(circle, rgba(6, 182, 212, 0.24) 0%, rgba(0,0,0,0) 70%)"
+                : "radial-gradient(circle, rgba(244, 63, 94, 0.24) 0%, rgba(0,0,0,0) 70%)",
               filter: "blur(90px)",
             }}
           />
           <div
             style={{
               position: "absolute",
-              top: 700,
-              right: -160,
+              top: 720,
+              right: -150,
               width: 650,
               height: 650,
               borderRadius: "50%",
               background: frame >= cutF
-                ? "radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, rgba(0,0,0,0) 70%)"
+                ? "radial-gradient(circle, rgba(16, 185, 129, 0.24) 0%, rgba(0,0,0,0) 70%)"
                 : "radial-gradient(circle, rgba(255, 209, 102, 0.18) 0%, rgba(0,0,0,0) 70%)",
               filter: "blur(90px)",
             }}
@@ -243,7 +237,7 @@ export const BinaryComp: React.FC = () => {
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* TOP HUD (Appears strictly AFTER Second 2 — Frame 60+) */}
+      {/* PERSISTENT HEADER HUD (Appears frame 60+) */}
       {/* ══════════════════════════════════════════════════════════ */}
       {frame >= 60 && (
         <div
@@ -269,7 +263,7 @@ export const BinaryComp: React.FC = () => {
                 height: 18,
                 borderRadius: "50%",
                 backgroundColor: frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan,
-                boxShadow: `0 0 24px ${frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan}`,
+                boxShadow: `0 0 20px ${frame >= cutF ? nemiTheme.colors.brandGreen : nemiTheme.colors.brandCyan}`,
               }}
             />
             <span
@@ -281,12 +275,13 @@ export const BinaryComp: React.FC = () => {
                 color: isDarkWorld ? (frame >= cutF ? "#10B981" : "#06B6D4") : "#0891B2",
               }}
             >
-              Ep.13 · Binary Search
+              LeetCode #704 · Binary Search
             </span>
           </div>
+
           <div
             style={{
-              backgroundColor: isDarkWorld ? "rgba(15, 23, 42, 0.95)" : "rgba(255, 255, 255, 0.96)",
+              backgroundColor: isDarkWorld ? "rgba(15, 23, 42, 0.94)" : "#FFFFFF",
               padding: "12px 24px",
               borderRadius: 24,
               border: `2px solid ${isDarkWorld ? nemiTheme.colors.borderDark : nemiTheme.colors.borderLight}`,
@@ -297,115 +292,84 @@ export const BinaryComp: React.FC = () => {
               boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
             }}
           >
-            {frame < cutB ? "THE BILLION WALL" : frame < cutD ? "HALF-CUT SLICER" : frame < cutE ? "MIDDLE PROBE" : frame < cutF ? "LOGARITHMIC DEATH" : "30 STEPS TO 1"}
+            {frame < cutB ? "SETUP: 1B SORTED ITEMS" : frame < cutD ? "TRAP: O(N) LINEAR SCAN" : frame < cutE ? "STEP 1: MID = (L+R)/2" : frame < cutF ? "STEP 2: DISCARD 50%" : "PAYOFF: O(log N) IN 30 OPS"}
           </div>
         </div>
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE A — FRAME-0 TO BEAT 2: BILLION NUMBER WALL & 30 SLAM */}
+      {/* HEADLINE TITLE (Safe Zone: top: 165px) */}
       {/* ══════════════════════════════════════════════════════════ */}
+      <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
+        <div
+          style={{
+            fontSize: 54,
+            fontWeight: 900,
+            letterSpacing: -1.5,
+            lineHeight: 1.15,
+            color: isDarkWorld ? "#F8FAFC" : nemiTheme.colors.textLight,
+          }}
+        >
+          {frame < cutB ? (
+            <>
+              1 Billion Items. <span style={{ color: nemiTheme.colors.brandCoral }}>30 Questions.</span>
+            </>
+          ) : frame < cutD ? (
+            <>
+              How Binary Search Finds <span style={{ color: nemiTheme.colors.brandCyan }}>Target = 13</span> ⚡
+            </>
+          ) : frame < cutE ? (
+            <>
+              Probe The Center: <span style={{ color: "#10B981" }}>mid = (L + R) // 2</span>
+            </>
+          ) : frame < cutF ? (
+            <>
+              Too Low? <span style={{ color: "#F43F5E" }}>Discard Entire Left Half!</span> 💥
+            </>
+          ) : frame < cutG ? (
+            <>
+              30 Cuts: <span style={{ color: nemiTheme.colors.brandYellow }}>1 Billion Becomes 1!</span> 👑
+            </>
+          ) : (
+            <>
+              The Power of <span style={{ color: nemiTheme.colors.brandCyan }}>O(log N) Time</span> ⚡
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* ══════════════════════════════════════════════════════════ */}
+      {/* MAIN VISUAL STAGES (Safe Zone: top: 310px, height: 600px) */}
+      {/* ══════════════════════════════════════════════════════════ */}
+
+      {/* STAGE 1: BEAT 1 & 2 — PROBLEM SETUP & THE 1 BILLION HOOK */}
       {frame < cutB && (
-        <>
-          <div style={{ position: "absolute", top: 180, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-            <div
-              style={{
-                fontSize: 58,
-                fontWeight: 900,
-                letterSpacing: -2,
-                lineHeight: 1.1,
-                color: frame >= thirtySlamCue ? nemiTheme.colors.brandCyan : nemiTheme.colors.textLight,
-              }}
-            >
-              {frame >= thirtySlamCue ? (
-                <>
-                  1,000,000,000 ITEMS. <span style={{ color: nemiTheme.colors.brandCoral }}>30 QUESTIONS.</span>
-                </>
-              ) : (
-                <>
-                  A BILLION SORTED ANSWERS.
-                </>
-              )}
-            </div>
-          </div>
-
-          <LivingBillionWallCard frame={frame} thirtySlamCue={thirtySlamCue} />
-        </>
+        <Stage1BillionHook frame={frame} thirtySlamCue={thirtySlamCue} />
       )}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE B+C — BEAT 3 TO 5: THE FIRST 50% LASER SLICE */}
-      {/* ══════════════════════════════════════════════════════════ */}
+      {/* STAGE 2: BEAT 3 — TWO POINTERS SETUP (L=0, R=8) & SCAN TRAP */}
       {frame >= cutB && frame < cutD && (
-        <>
-          <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-            <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
-              {frame < cutC ? "Finding Without Scanning Every Item ⚡" : "The Contradiction: No Linear Scan! 🤯"}
-            </div>
-          </div>
-
-          <LivingHalfSliceCard frame={frame} wallSliceCue={wallSliceCue} counterHalveCue={counterHalveCue} />
-        </>
+        <Stage2TwoPointersTrap frame={frame} wallSliceCue={wallSliceCue} counterHalveCue={counterHalveCue} />
       )}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE D — BEAT 6: THE EXACT MIDDLE PROBE */}
-      {/* ══════════════════════════════════════════════════════════ */}
+      {/* STAGE 3: BEAT 4 — MIDPOINT PROBE (mid = 4, val = 9) */}
       {frame >= cutD && frame < cutE && (
-        <>
-          <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-            <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#10B981" }}>
-              The Secret: Sorted + Middle Probe 🎯
-            </div>
-          </div>
-
-          <LivingMiddleProbeCard frame={frame} sortedLockCue={sortedLockCue} midCheckCue={midCheckCue} />
-        </>
+        <Stage3MidpointProbe frame={frame} sortedLockCue={sortedLockCue} midCheckCue={midCheckCue} />
       )}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE E — BEAT 7 TO 8: LOGARITHMIC ELIMINATION (HALF DIES) */}
-      {/* ══════════════════════════════════════════════════════════ */}
+      {/* STAGE 4: BEAT 5 — ELIMINATION & SECOND PROBE (L=5, mid=6 -> MATCH!) */}
       {frame >= cutE && frame < cutF && (
-        <>
-          <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-            <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#F43F5E" }}>
-              Too High? Half Dies. Too Low? Half Dies. 💥
-            </div>
-          </div>
-
-          <LivingGuillotineCard frame={frame} tooHighCue={tooHighCue} halfDieCue={halfDieCue} />
-        </>
+        <Stage4GuillotineMatch frame={frame} tooHighCue={tooHighCue} halfDieCue={halfDieCue} />
       )}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE F — BEAT 9 TO 10: 30 STEPS TO 1 PAYOFF TOWER */}
-      {/* ══════════════════════════════════════════════════════════ */}
+      {/* STAGE 5: BEAT 6 — 30 CUTS LOGARITHMIC TOWER PAYOFF */}
       {frame >= cutF && frame < cutG && (
-        <>
-          <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-            <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#FFD166" }}>
-              Thirty Cuts: 1 Billion Becomes 1! ⚡
-            </div>
-          </div>
-
-          <LivingThirtyStepTowerCard frame={frame} thirtyPayoffCue={thirtyPayoffCue} oneLeftCue={oneLeftCue} />
-        </>
+        <Stage5LogarithmicTower frame={frame} thirtyPayoffCue={thirtyPayoffCue} oneLeftCue={oneLeftCue} />
       )}
 
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* STAGE G+H — BEAT 11 TO 13: NEMI SMUG & REPLAY LOOP SEAM */}
-      {/* ══════════════════════════════════════════════════════════ */}
+      {/* STAGE 6: BEAT 7 & 8 — PYTHON CODE & SCORECARD */}
       {frame >= cutG && (
-        <>
-          <div style={{ position: "absolute", top: 165, left: 70, right: 70, textAlign: "center", zIndex: 55 }}>
-            <div style={{ fontSize: 52, fontWeight: 900, letterSpacing: -1.5, color: "#06B6D4" }}>
-              The Power of O(log N)
-            </div>
-          </div>
-
-          <LivingBinaryVerdictCard frame={frame} cutG={cutG} loopWallCue={loopWallCue} />
-        </>
+        <Stage6CodeAndScorecard frame={frame} cutG={cutG} loopWallCue={loopWallCue} />
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
@@ -414,7 +378,7 @@ export const BinaryComp: React.FC = () => {
       {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} fps={fps} />}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* MASCOT DOCK (Safe Zone: bottom: 70px) */}
+      {/* HERO MASCOT DOCK (Safe Zone: bottom: 70px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
@@ -432,7 +396,7 @@ export const BinaryComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* SPEECH BUBBLE (Strictly on Top of Nemi at bottom: 440px) */}
+      {/* NEMI SPEECH BUBBLE (Strictly at bottom: 440px) */}
       {/* ══════════════════════════════════════════════════════════ */}
       {nemiSpeech && (
         <div
@@ -479,222 +443,223 @@ export const BinaryComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. LIVING BILLION WALL CARD (Stage A: Active Moving Grid Rain)
+// 1. STAGE 1: PROBLEM SETUP & BILLION ARRAY HOOK
 // ═══════════════════════════════════════════════════════════════
-const LivingBillionWallCard: React.FC<{ frame: number; thirtySlamCue: number }> = ({ frame, thirtySlamCue }) => {
+const Stage1BillionHook: React.FC<{ frame: number; thirtySlamCue: number }> = ({ frame, thirtySlamCue }) => {
   const isSlammed = frame >= thirtySlamCue;
   const pulse = Math.sin(frame * 0.25);
-  const matrixShift = (frame * 4) % 30;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 360,
+        top: 310,
         left: "50%",
         transform: "translateX(-50%)",
         width: 950,
-        height: 540,
+        height: 600,
         backgroundColor: "#FFFFFF",
         borderRadius: 36,
-        border: isSlammed ? "4px solid #06B6D4" : "3.5px solid #F59E0B",
-        boxShadow: "0 24px 80px rgba(6, 182, 212, 0.25)",
-        padding: "24px 30px",
+        border: isSlammed ? "4px solid #06B6D4" : "3.5px solid #E2E8F0",
+        boxShadow: "0 24px 80px rgba(6, 182, 212, 0.22)",
+        padding: "28px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
         alignItems: "center",
         zIndex: 30,
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      {/* Moving Numeric Matrix Background */}
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          opacity: 0.12,
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          gap: 6,
-          fontFamily: nemiTheme.typography.fontFamily.mono,
-          fontSize: 16,
-          fontWeight: 700,
-          color: "#0F172A",
-          transform: `translateY(${matrixShift}px)`,
-        }}
-      >
-        {WALL_VALUES.slice(0, 10).map((row, ri) => (
-          <div key={ri} style={{ display: "flex", justifyContent: "space-around" }}>
-            {row.map((val, ci) => (
-              <span key={ci}>{val}</span>
-            ))}
-          </div>
-        ))}
-      </div>
-
-      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 10 }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>📚</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>1,000,000,000 Item Array</span>
-        </div>
-        <span style={{ backgroundColor: "#CFFAFE", color: "#0891B2", border: "1.5px solid #67E8F9", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          SORTED IN MEMORY ⚡
-        </span>
-      </div>
-
-      {/* Main Visual Display */}
-      <div style={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", gap: 20, zIndex: 10 }}>
-        <div style={{ fontSize: 72, fontWeight: 900, color: "#0891B2", fontFamily: nemiTheme.typography.fontFamily.mono, letterSpacing: -2, textShadow: "0 0 30px rgba(6, 182, 212, 0.3)" }}>
-          1,000,000,000
-        </div>
-
-        {isSlammed && (
-          <div
-            style={{
-              backgroundColor: "#ECFEFF",
-              border: "3.5px solid #06B6D4",
-              borderRadius: 24,
-              padding: "16px 36px",
-              display: "flex",
-              alignItems: "center",
-              gap: 16,
-              boxShadow: "0 14px 40px rgba(6, 182, 212, 0.35)",
-              transform: `scale(${1 + pulse * 0.04})`,
-            }}
-          >
-            <span style={{ fontSize: 36 }}>🎯</span>
-            <span style={{ fontSize: 32, fontWeight: 900, color: "#0E7490", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-              SOLVED IN EXACTLY 30 CUTS
-            </span>
-          </div>
-        )}
-      </div>
-
-      <div style={{ width: "100%", backgroundColor: "#F0FDFA", padding: "12px 22px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 10 }}>
-        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>Linear search takes 1 billion steps:</span>
-        <span style={{ color: "#0891B2", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>BINARY TAKES 30 ⚡</span>
-      </div>
-    </div>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════════
-// 2. LIVING HALF SLICE CARD (Stage B: Laser Split in Half)
-// ═══════════════════════════════════════════════════════════════
-const LivingHalfSliceCard: React.FC<{ frame: number; wallSliceCue: number; counterHalveCue: number }> = ({ frame, wallSliceCue, counterHalveCue }) => {
-  const isSliced = frame >= wallSliceCue;
-  const isHalved = frame >= counterHalveCue;
-  const splitGap = interpolate(frame - wallSliceCue, [0, 8], [0, 48], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-  });
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: 360,
-        left: "50%",
-        transform: "translateX(-50)",
-        width: 950,
-        height: 540,
-        backgroundColor: "#0B1120",
-        borderRadius: 36,
-        border: "3.5px solid #06B6D4",
-        boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "24px 36px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center",
-        zIndex: 30,
-        position: "relative",
-        overflow: "hidden",
       }}
     >
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>✂️</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>The First Cut: 50% Eliminated Instantly</span>
+          <span style={{ fontSize: 32 }}>📦</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#0F172A" }}>Input: Sorted Array (N = 1,000,000,000)</span>
         </div>
-        <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          STEP 1 OF 30 ⚡
+        <span style={{ backgroundColor: "#ECFEFF", color: "#0891B2", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          TARGET = 13 🎯
         </span>
       </div>
 
-      {/* Two Halves Splitting Apart */}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: splitGap, width: "100%" }}>
-        <div
-          style={{
-            backgroundColor: "#0F172A",
-            padding: "24px 30px",
-            borderRadius: 24,
-            border: "3px solid #06B6D4",
-            textAlign: "center",
-            width: 380,
-            boxShadow: "0 10px 30px rgba(6, 182, 212, 0.2)",
-          }}
-        >
-          <div style={{ color: "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Left Half (0 → 500M)</div>
-          <div style={{ color: "#06B6D4", fontSize: 38, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>
-            500,000,000
+      {/* LeetCode Array Cells */}
+      <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%" }}>
+        {ARRAY_DATA.map((item) => (
+          <div
+            key={item.idx}
+            style={{
+              flex: 1,
+              height: 115,
+              backgroundColor: item.val === TARGET_VAL ? "#FEF3C7" : "#F8FAFC",
+              border: item.val === TARGET_VAL ? "3px solid #F59E0B" : "2px solid #CBD5E1",
+              borderRadius: 18,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 6,
+            }}
+          >
+            <span style={{ color: "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>[{item.idx}]</span>
+            <span style={{ color: item.val === TARGET_VAL ? "#B45309" : "#0F172A", fontSize: 28, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+              {item.val}
+            </span>
           </div>
-          <div style={{ color: "#10B981", fontSize: 16, fontWeight: 800, marginTop: 8 }}>✓ Kept for Search</div>
-        </div>
-
-        <div
-          style={{
-            backgroundColor: isHalved ? "#4C0519" : "#0F172A",
-            padding: "24px 30px",
-            borderRadius: 24,
-            border: isHalved ? "3px solid #F43F5E" : "3px solid #64748B",
-            textAlign: "center",
-            width: 380,
-            boxShadow: isHalved ? "0 10px 30px rgba(244, 63, 94, 0.3)" : "none",
-          }}
-        >
-          <div style={{ color: isHalved ? "#FDA4AF" : "#94A3B8", fontSize: 16, fontFamily: nemiTheme.typography.fontFamily.mono }}>Right Half (500M → 1B)</div>
-          <div style={{ color: isHalved ? "#F43F5E" : "#94A3B8", fontSize: 38, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 6 }}>
-            500,000,000
-          </div>
-          <div style={{ color: isHalved ? "#F43F5E" : "#94A3B8", fontSize: 16, fontWeight: 800, marginTop: 8 }}>
-            {isHalved ? "❌ DISCARDED FOREVER" : "Testing..."}
-          </div>
-        </div>
+        ))}
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "12px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>Single comparison discards half the universe:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>500,000,000 ITEMS GONE 💥</span>
+      {/* Callout Box */}
+      {isSlammed ? (
+        <div
+          style={{
+            backgroundColor: "#ECFEFF",
+            border: "3.5px solid #06B6D4",
+            borderRadius: 22,
+            padding: "18px 36px",
+            display: "flex",
+            alignItems: "center",
+            gap: 16,
+            boxShadow: "0 14px 40px rgba(6, 182, 212, 0.35)",
+            transform: `scale(${1 + pulse * 0.03})`,
+          }}
+        >
+          <span style={{ fontSize: 36 }}>⚡</span>
+          <span style={{ fontSize: 28, fontWeight: 900, color: "#0E7490", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            SOLVED IN MAXIMUM 30 COMPARISONS!
+          </span>
+        </div>
+      ) : (
+        <div style={{ width: "100%", backgroundColor: "#F8FAFC", padding: "16px 22px", borderRadius: 18, border: "1.5px solid #E2E8F0", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ color: "#64748B", fontSize: 19, fontWeight: 700 }}>Linear scan checks 1 by 1:</span>
+          <span style={{ color: "#EF4444", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>1,000,000,000 CHECKS 🐌</span>
+        </div>
+      )}
+
+      <div style={{ width: "100%", backgroundColor: "#F0FDFA", padding: "14px 24px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#0F172A", fontSize: 18, fontWeight: 700 }}>Why check every element when the list is sorted?</span>
+        <span style={{ color: "#0891B2", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>USE TWO POINTERS ⚡</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 3. LIVING MIDDLE PROBE CARD (Stage D: Center Element Targeting)
+// 2. STAGE 2: TWO POINTERS SETUP (L=0, R=8)
 // ═══════════════════════════════════════════════════════════════
-const LivingMiddleProbeCard: React.FC<{ frame: number; sortedLockCue: number; midCheckCue: number }> = ({ frame, sortedLockCue, midCheckCue }) => {
-  const isMid = frame >= midCheckCue;
+const Stage2TwoPointersTrap: React.FC<{ frame: number; wallSliceCue: number; counterHalveCue: number }> = ({ frame, wallSliceCue, counterHalveCue }) => {
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 310,
+        left: "50%",
+        transform: "translateX(-50%)",
+        width: 950,
+        height: 600,
+        backgroundColor: "#0B1120",
+        borderRadius: 36,
+        border: "3.5px solid #06B6D4",
+        boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
+        padding: "26px 32px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        alignItems: "center",
+        zIndex: 30,
+      }}
+    >
+      <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <span style={{ fontSize: 32 }}>📍</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Initialize Two Pointers: Left & Right Bounds</span>
+        </div>
+        <span style={{ backgroundColor: "rgba(6, 182, 212, 0.2)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          L = 0, R = 8
+        </span>
+      </div>
+
+      {/* Pointers Row + Array */}
+      <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Pointers */}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%", height: 48 }}>
+          {ARRAY_DATA.map((item) => {
+            const isL = item.idx === 0;
+            const isR = item.idx === 8;
+            return (
+              <div key={item.idx} style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
+                {isL && (
+                  <div style={{ backgroundColor: "#06B6D4", color: "#070B12", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, boxShadow: "0 0 18px #06B6D4" }}>
+                    ↓ L
+                  </div>
+                )}
+                {isR && (
+                  <div style={{ backgroundColor: "#A855F7", color: "#FFFFFF", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, boxShadow: "0 0 18px #A855F7" }}>
+                    ↓ R
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Array Cells */}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%" }}>
+          {ARRAY_DATA.map((item) => {
+            const isL = item.idx === 0;
+            const isR = item.idx === 8;
+            return (
+              <div
+                key={item.idx}
+                style={{
+                  flex: 1,
+                  height: 115,
+                  backgroundColor: isL ? "rgba(6, 182, 212, 0.22)" : isR ? "rgba(168, 85, 247, 0.22)" : "#1E293B",
+                  border: isL ? "3px solid #06B6D4" : isR ? "3px solid #A855F7" : "2px solid #334155",
+                  borderRadius: 18,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 6,
+                }}
+              >
+                <span style={{ color: "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>[{item.idx}]</span>
+                <span style={{ color: isL ? "#06B6D4" : isR ? "#A855F7" : "#F8FAFC", fontSize: 28, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  {item.val}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "16px 24px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>Search Space = Entire Array [L .. R]:</span>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>READY TO CUT IN HALF ⚡</span>
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 3. STAGE 3: MIDPOINT PROBE (mid = 4, val = 9)
+// ═══════════════════════════════════════════════════════════════
+const Stage3MidpointProbe: React.FC<{ frame: number; sortedLockCue: number; midCheckCue: number }> = ({ frame, sortedLockCue, midCheckCue }) => {
+  const isMidChecked = frame >= midCheckCue;
   const pulse = Math.sin(frame * 0.3);
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 360,
+        top: 310,
         left: "50%",
         transform: "translateX(-50%)",
         width: 950,
-        height: 540,
+        height: 600,
         backgroundColor: "#0B1120",
         borderRadius: 36,
         border: "3.5px solid #10B981",
         boxShadow: "0 24px 80px rgba(16, 185, 129, 0.3)",
-        padding: "24px 36px",
+        padding: "26px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -705,77 +670,106 @@ const LivingMiddleProbeCard: React.FC<{ frame: number; sortedLockCue: number; mi
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>🎯</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Sorted Index Arithmetic: mid = (L + R) / 2</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Calculate Midpoint: mid = (0 + 8) // 2 = 4</span>
         </div>
         <span style={{ backgroundColor: "rgba(16, 185, 129, 0.2)", color: "#10B981", border: "1.5px solid #10B981", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          PROBE TARGETING ⚡
+          nums[mid] = 9
         </span>
       </div>
 
-      {/* Sorted Array Ladder */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: 14, width: "100%" }}>
-        {[
-          { label: "Index 0", val: "10", type: "left" },
-          { label: "Index 250M", val: "2,491", type: "sub" },
-          { label: "Index 500M (MID)", val: "4,992", type: "mid" },
-          { label: "Index 750M", val: "7,819", type: "sub" },
-          { label: "Index 1B", val: "9,999", type: "right" },
-        ].map((item, idx) => {
-          const isCenter = item.type === "mid";
-          return (
-            <div
-              key={idx}
-              style={{
-                backgroundColor: isCenter ? (isMid ? "#064E3B" : "#0F172A") : "#0F172A",
-                padding: "20px 10px",
-                borderRadius: 20,
-                border: isCenter ? "3px solid #10B981" : "1.5px solid #334155",
-                textAlign: "center",
-                transform: isCenter ? `scale(${1 + pulse * 0.06})` : "scale(1)",
-                boxShadow: isCenter ? "0 0 30px rgba(16, 185, 129, 0.4)" : "none",
-              }}
-            >
-              <div style={{ color: isCenter ? "#A7F3D0" : "#94A3B8", fontSize: 13, fontFamily: nemiTheme.typography.fontFamily.mono }}>{item.label}</div>
-              <div style={{ color: isCenter ? "#10B981" : "#F8FAFC", fontSize: 26, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>
-                {item.val}
+      {/* Pointers Row + Array */}
+      <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Pointers */}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%", height: 48 }}>
+          {ARRAY_DATA.map((item) => {
+            const isL = item.idx === 0;
+            const isMid = item.idx === 4;
+            const isR = item.idx === 8;
+            return (
+              <div key={item.idx} style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
+                {isL && (
+                  <div style={{ backgroundColor: "#06B6D4", color: "#070B12", fontWeight: 900, fontSize: 15, padding: "4px 8px", borderRadius: 8, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                    L
+                  </div>
+                )}
+                {isMid && (
+                  <div style={{ backgroundColor: "#10B981", color: "#070B12", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, transform: `scale(${1 + pulse * 0.1})`, boxShadow: "0 0 22px #10B981" }}>
+                    ↓ MID
+                  </div>
+                )}
+                {isR && (
+                  <div style={{ backgroundColor: "#A855F7", color: "#FFFFFF", fontWeight: 900, fontSize: 15, padding: "4px 8px", borderRadius: 8, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                    R
+                  </div>
+                )}
               </div>
-              <div style={{ color: isCenter ? "#FFD166" : "#64748B", fontSize: 13, fontWeight: 800, marginTop: 6 }}>
-                {isCenter ? "🎯 Target Check" : "Skipped"}
+            );
+          })}
+        </div>
+
+        {/* Array Cells */}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%" }}>
+          {ARRAY_DATA.map((item) => {
+            const isMid = item.idx === 4;
+            return (
+              <div
+                key={item.idx}
+                style={{
+                  flex: 1,
+                  height: 115,
+                  backgroundColor: isMid ? (isMidChecked ? "#064E3B" : "#1E293B") : "#1E293B",
+                  border: isMid ? "3.5px solid #10B981" : "2px solid #334155",
+                  borderRadius: 18,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 6,
+                  transform: isMid ? `scale(${1 + pulse * 0.05})` : "none",
+                }}
+              >
+                <span style={{ color: isMid ? "#A7F3D0" : "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>[{item.idx}]</span>
+                <span style={{ color: isMid ? "#10B981" : "#F8FAFC", fontSize: 28, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                  {item.val}
+                </span>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#022C22", padding: "12px 22px", borderRadius: 18, border: "2px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>If Target &lt; Mid: discard entire right half:</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>EXACT 1-OP DECISION ⚡</span>
+      {/* Comparison Verdict */}
+      <div style={{ width: "100%", backgroundColor: "#1E293B", padding: "16px 24px", borderRadius: 18, border: "2px solid #06B6D4", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>
+          Comparison: <strong style={{ color: "#10B981" }}>nums[4] (9)</strong> &lt; <strong style={{ color: "#F59E0B" }}>Target (13)</strong>
+        </span>
+        <span style={{ color: "#06B6D4", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>TARGET IS ON THE RIGHT 👉</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 4. LIVING GUILLOTINE CARD (Stage E: Discarding Halves Rapidly)
+// 4. STAGE 4: DISCARD 50% & SECOND PROBE (MATCH!)
 // ═══════════════════════════════════════════════════════════════
-const LivingGuillotineCard: React.FC<{ frame: number; tooHighCue: number; halfDieCue: number }> = ({ frame, tooHighCue, halfDieCue }) => {
-  const isHigh = frame >= tooHighCue;
-  const isSecondDie = frame >= halfDieCue;
+const Stage4GuillotineMatch: React.FC<{ frame: number; tooHighCue: number; halfDieCue: number }> = ({ frame, tooHighCue, halfDieCue }) => {
+  const isMatch = frame >= halfDieCue;
+  const pulse = Math.sin(frame * 0.35);
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 360,
+        top: 310,
         left: "50%",
         transform: "translateX(-50%)",
         width: 950,
-        height: 540,
+        height: 600,
         backgroundColor: "#0B1120",
         borderRadius: 36,
-        border: "3.5px solid #F43F5E",
-        boxShadow: "0 24px 80px rgba(244, 63, 94, 0.3)",
-        padding: "24px 36px",
+        border: isMatch ? "3.5px solid #10B981" : "3.5px solid #F43F5E",
+        boxShadow: isMatch ? "0 24px 80px rgba(16, 185, 129, 0.4)" : "0 24px 80px rgba(244, 63, 94, 0.3)",
+        padding: "26px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -785,51 +779,97 @@ const LivingGuillotineCard: React.FC<{ frame: number; tooHighCue: number; halfDi
     >
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>💥</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>Exponential Elimination: N → N/2 → N/4</span>
+          <span style={{ fontSize: 32 }}>{isMatch ? "🎉" : "✂️"}</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#F8FAFC" }}>
+            {isMatch ? "Step 2: nums[6] == 13 (MATCH!)" : "L = mid + 1: Left Half Slashed & Discarded"}
+          </span>
         </div>
-        <span style={{ backgroundColor: "rgba(244, 63, 94, 0.25)", color: "#F43F5E", border: "1.5px solid #F43F5E", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          SEARCH SPACE COLLAPSE
+        <span style={{ backgroundColor: isMatch ? "rgba(16, 185, 129, 0.25)" : "rgba(244, 63, 94, 0.25)", color: isMatch ? "#10B981" : "#F43F5E", border: `1.5px solid ${isMatch ? "#10B981" : "#F43F5E"}`, padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          {isMatch ? "TARGET LOCATED 🎯" : "50% ELIMINATED ❌"}
         </span>
       </div>
 
-      {/* 3 Step Sequence */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 18, width: "100%" }}>
-        <div style={{ backgroundColor: "#4C0519", padding: "20px", borderRadius: 20, border: "2px solid #F43F5E", textAlign: "center" }}>
-          <div style={{ color: "#FDA4AF", fontSize: 15, fontFamily: nemiTheme.typography.fontFamily.mono }}>Cut 1: Too High</div>
-          <div style={{ color: "#F43F5E", fontSize: 32, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>-500,000,000</div>
-          <div style={{ color: "#FDA4AF", fontSize: 14, fontWeight: 800, marginTop: 6 }}>❌ 50% Deleted</div>
+      {/* Pointers Row + Array */}
+      <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12 }}>
+        {/* Pointers */}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%", height: 48 }}>
+          {ARRAY_DATA.map((item) => {
+            const isL = item.idx === 5;
+            const isTargetMatch = item.idx === 6 && isMatch;
+            const isR = item.idx === 8;
+            return (
+              <div key={item.idx} style={{ flex: 1, display: "flex", justifyContent: "center", alignItems: "flex-end" }}>
+                {isL && !isTargetMatch && (
+                  <div style={{ backgroundColor: "#06B6D4", color: "#070B12", fontWeight: 900, fontSize: 15, padding: "4px 8px", borderRadius: 8, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                    ↓ L
+                  </div>
+                )}
+                {isTargetMatch && (
+                  <div style={{ backgroundColor: "#10B981", color: "#070B12", fontWeight: 900, fontSize: 16, padding: "5px 12px", borderRadius: 10, fontFamily: nemiTheme.typography.fontFamily.mono, transform: `scale(${1 + pulse * 0.12})`, boxShadow: "0 0 25px #10B981" }}>
+                    🎯 MATCH
+                  </div>
+                )}
+                {isR && (
+                  <div style={{ backgroundColor: "#A855F7", color: "#FFFFFF", fontWeight: 900, fontSize: 15, padding: "4px 8px", borderRadius: 8, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+                    ↓ R
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
 
-        <div style={{ backgroundColor: isHigh ? "#4C0519" : "#0F172A", padding: "20px", borderRadius: 20, border: isHigh ? "2px solid #F43F5E" : "2px solid #334155", textAlign: "center" }}>
-          <div style={{ color: isHigh ? "#FDA4AF" : "#94A3B8", fontSize: 15, fontFamily: nemiTheme.typography.fontFamily.mono }}>Cut 2: Too Low</div>
-          <div style={{ color: isHigh ? "#F43F5E" : "#94A3B8", fontSize: 32, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>-250,000,000</div>
-          <div style={{ color: isHigh ? "#FDA4AF" : "#94A3B8", fontSize: 14, fontWeight: 800, marginTop: 6 }}>
-            {isHigh ? "❌ 75% Deleted" : "Waiting..."}
-          </div>
-        </div>
-
-        <div style={{ backgroundColor: isSecondDie ? "#4C0519" : "#0F172A", padding: "20px", borderRadius: 20, border: isSecondDie ? "2px solid #F43F5E" : "2px solid #334155", textAlign: "center" }}>
-          <div style={{ color: isSecondDie ? "#FDA4AF" : "#94A3B8", fontSize: 15, fontFamily: nemiTheme.typography.fontFamily.mono }}>Cut 3: Too High</div>
-          <div style={{ color: isSecondDie ? "#F43F5E" : "#94A3B8", fontSize: 32, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, marginTop: 4 }}>-125,000,000</div>
-          <div style={{ color: isSecondDie ? "#FDA4AF" : "#94A3B8", fontSize: 14, fontWeight: 800, marginTop: 6 }}>
-            {isSecondDie ? "❌ 87.5% Deleted" : "Waiting..."}
-          </div>
+        {/* Array Cells */}
+        <div style={{ display: "flex", gap: 12, justifyContent: "center", width: "100%" }}>
+          {ARRAY_DATA.map((item) => {
+            const isDead = item.idx <= 4;
+            const isTargetMatch = item.idx === 6 && isMatch;
+            return (
+              <div
+                key={item.idx}
+                style={{
+                  flex: 1,
+                  height: 115,
+                  backgroundColor: isTargetMatch ? "#064E3B" : isDead ? "#1E1E24" : "#1E293B",
+                  border: isTargetMatch ? "3.5px solid #10B981" : isDead ? "1.5px dashed #475569" : "2px solid #334155",
+                  borderRadius: 18,
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 6,
+                  opacity: isDead ? 0.35 : 1,
+                  transform: isTargetMatch ? `scale(${1 + pulse * 0.06})` : "none",
+                  boxShadow: isTargetMatch ? "0 0 30px rgba(16, 185, 129, 0.5)" : "none",
+                }}
+              >
+                <span style={{ color: "#94A3B8", fontSize: 14, fontFamily: nemiTheme.typography.fontFamily.mono }}>[{item.idx}]</span>
+                <span style={{ color: isTargetMatch ? "#10B981" : isDead ? "#64748B" : "#F8FAFC", fontSize: 28, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono, textDecoration: isDead ? "line-through" : "none" }}>
+                  {item.val}
+                </span>
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      <div style={{ width: "100%", backgroundColor: "#18060B", padding: "12px 22px", borderRadius: 18, border: "2px solid #F43F5E", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 700 }}>In just 3 questions, 875,000,000 answers died:</span>
-        <span style={{ color: "#F43F5E", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>EXPONENTIAL SPEED ⚡</span>
+      {/* Result Footer */}
+      <div style={{ width: "100%", backgroundColor: isMatch ? "#022C22" : "#4C0519", padding: "16px 24px", borderRadius: 18, border: `2px solid ${isMatch ? "#10B981" : "#F43F5E"}`, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 700 }}>
+          {isMatch ? "Target 13 found at Index 6 in just 2 steps!" : "Discarded [1, 3, 5, 7, 9] in a single comparison!"}
+        </span>
+        <span style={{ color: isMatch ? "#10B981" : "#F43F5E", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          {isMatch ? "RETURN 6 ✓" : "-50% SEARCH SPACE"}
+        </span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 5. LIVING 30-STEP TOWER CARD (Stage F: Payoff — 1 Billion to 1)
+// 5. STAGE 5: 30 CUTS LOGARITHMIC TOWER PAYOFF
 // ═══════════════════════════════════════════════════════════════
-const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: number; oneLeftCue: number }> = ({ frame, thirtyPayoffCue, oneLeftCue }) => {
+const Stage5LogarithmicTower: React.FC<{ frame: number; thirtyPayoffCue: number; oneLeftCue: number }> = ({ frame, thirtyPayoffCue, oneLeftCue }) => {
   const isOne = frame >= oneLeftCue;
   const count = interpolate(frame - thirtyPayoffCue, [0, 30], [1, 30], {
     extrapolateLeft: "clamp",
@@ -840,16 +880,16 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
     <div
       style={{
         position: "absolute",
-        top: 360,
+        top: 310,
         left: "50%",
         transform: "translateX(-50%)",
         width: 950,
-        height: 540,
+        height: 600,
         backgroundColor: "#0B1120",
         borderRadius: 36,
         border: "3.5px solid #FFD166",
         boxShadow: "0 24px 80px rgba(255, 209, 102, 0.3)",
-        padding: "24px 36px",
+        padding: "26px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -860,7 +900,7 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
       <div style={{ width: "100%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 32 }}>👑</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#FFD166" }}>2³⁰ = 1,073,741,824 Operations</span>
+          <span style={{ fontSize: 24, fontWeight: 900, color: "#FFD166" }}>Mathematical Power: 2³⁰ = 1,073,741,824</span>
         </div>
         <span style={{ backgroundColor: "rgba(255, 209, 102, 0.2)", color: "#FFD166", border: "1.5px solid #FFD166", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           STEP {Math.round(count)} / 30 ⚡
@@ -868,7 +908,7 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
       </div>
 
       {/* 30 Steps Progress Matrix */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(10, 1fr)", gap: 8, width: "100%" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(10, 1fr)", gap: 10, width: "100%" }}>
         {Array.from({ length: 30 }, (_, i) => {
           const isActive = i < count;
           const isFinal = i === 29 && isOne;
@@ -876,7 +916,7 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
             <div
               key={i}
               style={{
-                height: 48,
+                height: 52,
                 borderRadius: 10,
                 backgroundColor: isFinal ? "#10B981" : isActive ? "#FFD166" : "#1E293B",
                 border: isFinal ? "2px solid #A7F3D0" : isActive ? "1.5px solid #FDE047" : "1px solid #334155",
@@ -885,9 +925,9 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
                 justifyContent: "center",
                 color: isActive ? "#0B1120" : "#64748B",
                 fontWeight: 900,
-                fontSize: 14,
+                fontSize: 15,
                 fontFamily: nemiTheme.typography.fontFamily.mono,
-                boxShadow: isFinal ? "0 0 20px #10B981" : "none",
+                boxShadow: isFinal ? "0 0 22px #10B981" : "none",
               }}
             >
               {i + 1}
@@ -896,11 +936,11 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
         })}
       </div>
 
-      {/* Target Result Box */}
-      <div style={{ backgroundColor: "#022C22", padding: "16px 30px", borderRadius: 20, border: "2.5px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Remaining Candidate Items:</span>
+      {/* Math Result Box */}
+      <div style={{ backgroundColor: "#022C22", padding: "18px 32px", borderRadius: 20, border: "2.5px solid #10B981", display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Remaining Search Items:</span>
         <span style={{ color: "#10B981", fontWeight: 900, fontSize: 26, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          {isOne ? "EXACTLY 1 ITEM LOCATED! ✓" : "Narrowing..."}
+          {isOne ? "1 EXACT ITEM FOUND! ✓" : "Narrowing (1B → 1)..."}
         </span>
       </div>
     </div>
@@ -908,23 +948,23 @@ const LivingThirtyStepTowerCard: React.FC<{ frame: number; thirtyPayoffCue: numb
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 6. LIVING BINARY VERDICT CARD (Stage G+H: Verdict & Loop Seam)
+// 6. STAGE 6: PYTHON LEETCODE CODE & SCORECARD
 // ═══════════════════════════════════════════════════════════════
-const LivingBinaryVerdictCard: React.FC<{ frame: number; cutG: number; loopWallCue: number }> = ({ frame, cutG, loopWallCue }) => {
+const Stage6CodeAndScorecard: React.FC<{ frame: number; cutG: number; loopWallCue: number }> = ({ frame, cutG, loopWallCue }) => {
   return (
     <div
       style={{
         position: "absolute",
-        top: 360,
+        top: 310,
         left: "50%",
         transform: "translateX(-50%)",
         width: 950,
-        height: 540,
+        height: 600,
         backgroundColor: "#0B1120",
         borderRadius: 36,
         border: "3.5px solid #06B6D4",
         boxShadow: "0 24px 80px rgba(6, 182, 212, 0.3)",
-        padding: "28px 36px",
+        padding: "26px 32px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -933,42 +973,66 @@ const LivingBinaryVerdictCard: React.FC<{ frame: number; cutG: number; loopWallC
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <span style={{ fontSize: 32 }}>💡</span>
-          <span style={{ fontSize: 24, fontWeight: 900, color: "#06B6D4", letterSpacing: "1.5px", textTransform: "uppercase" }}>
-            THE BINARY SEARCH SECRET
+          <span style={{ fontSize: 30 }}>💻</span>
+          <span style={{ fontSize: 22, fontWeight: 900, color: "#06B6D4", letterSpacing: "1px", textTransform: "uppercase" }}>
+            LeetCode #704 Solution (Python)
           </span>
         </div>
-        <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "8px 18px", borderRadius: 14, fontSize: 17, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          TAKEAWAY
+        <span style={{ backgroundColor: "rgba(6, 182, 212, 0.25)", color: "#06B6D4", border: "1.5px solid #06B6D4", padding: "6px 16px", borderRadius: 14, fontSize: 16, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          O(log N) Time · O(1) Space
         </span>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
-        <div style={{ backgroundColor: "#0F172A", padding: "24px", borderRadius: 22, border: "2.5px solid #F43F5E" }}>
-          <div style={{ color: "#F43F5E", fontWeight: 900, fontSize: 26 }}>Linear Scan (O(N)) 🐌</div>
-          <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 10 }}>• 1 Billion comparisons</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Checks item by item</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Freezes your processor</div>
+      <div style={{ display: "grid", gridTemplateColumns: "1.25fr 1fr", gap: 18 }}>
+        {/* Python Code Block */}
+        <div
+          style={{
+            backgroundColor: "#0F172A",
+            padding: "18px 22px",
+            borderRadius: 20,
+            border: "2px solid #334155",
+            fontFamily: nemiTheme.typography.fontFamily.mono,
+            fontSize: 16,
+            lineHeight: 1.45,
+            color: "#E2E8F0",
+          }}
+        >
+          <div><span style={{ color: "#F43F5E" }}>def</span> <span style={{ color: "#38BDF8" }}>search</span>(nums, target):</div>
+          <div style={{ paddingLeft: 16 }}>L, R = <span style={{ color: "#F59E0B" }}>0</span>, len(nums) - <span style={{ color: "#F59E0B" }}>1</span></div>
+          <div style={{ paddingLeft: 16 }}><span style={{ color: "#F43F5E" }}>while</span> L &lt;= R:</div>
+          <div style={{ paddingLeft: 32 }}>mid = (L + R) // <span style={{ color: "#F59E0B" }}>2</span></div>
+          <div style={{ paddingLeft: 32 }}><span style={{ color: "#F43F5E" }}>if</span> nums[mid] == target:</div>
+          <div style={{ paddingLeft: 48 }}><span style={{ color: "#10B981" }}>return mid</span> <span style={{ color: "#64748B" }}># Found!</span></div>
+          <div style={{ paddingLeft: 32 }}><span style={{ color: "#F43F5E" }}>elif</span> nums[mid] &lt; target:</div>
+          <div style={{ paddingLeft: 48 }}>L = mid + <span style={{ color: "#F59E0B" }}>1</span></div>
+          <div style={{ paddingLeft: 32 }}><span style={{ color: "#F43F5E" }}>else</span>:</div>
+          <div style={{ paddingLeft: 48 }}>R = mid - <span style={{ color: "#F59E0B" }}>1</span></div>
+          <div style={{ paddingLeft: 16 }}><span style={{ color: "#F43F5E" }}>return</span> -<span style={{ color: "#F59E0B" }}>1</span></div>
         </div>
 
-        <div style={{ backgroundColor: "#0F172A", padding: "24px", borderRadius: 22, border: "2.5px solid #10B981" }}>
-          <div style={{ color: "#10B981", fontWeight: 900, fontSize: 26 }}>Binary Search (O(log N)) ⚡</div>
-          <div style={{ color: "#F8FAFC", fontSize: 18, fontWeight: 800, marginTop: 10 }}>• 30 comparisons total</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Cuts half each step</div>
-          <div style={{ color: "#94A3B8", fontSize: 16, marginTop: 6 }}>• Microsecond lookup</div>
+        {/* Complexity Scorecard */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+          <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #F43F5E" }}>
+            <div style={{ color: "#F43F5E", fontWeight: 900, fontSize: 20 }}>Linear Scan: O(N) 🐌</div>
+            <div style={{ color: "#94A3B8", fontSize: 15, marginTop: 4 }}>1,000,000,000 checks</div>
+          </div>
+          <div style={{ backgroundColor: "#0F172A", padding: "16px 20px", borderRadius: 18, border: "2px solid #10B981" }}>
+            <div style={{ color: "#10B981", fontWeight: 900, fontSize: 20 }}>Binary Search: O(log N) ⚡</div>
+            <div style={{ color: "#94A3B8", fontSize: 15, marginTop: 4 }}>Maximum 30 checks</div>
+          </div>
         </div>
       </div>
 
-      <div style={{ backgroundColor: "#03070D", padding: "18px 24px", borderRadius: 20, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Ask better questions — eliminate half the universe!</span>
-        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 20, fontFamily: nemiTheme.typography.fontFamily.mono }}>SOLVED ✓</span>
+      <div style={{ backgroundColor: "#03070D", padding: "16px 22px", borderRadius: 18, border: "1.5px solid rgba(6, 182, 212, 0.4)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ color: "#F8FAFC", fontSize: 19, fontWeight: 800 }}>Ask better questions — halve the search space!</span>
+        <span style={{ color: "#10B981", fontWeight: 900, fontSize: 19, fontFamily: nemiTheme.typography.fontFamily.mono }}>HIRED 😎✓</span>
       </div>
     </div>
   );
 };
 
 // ═══════════════════════════════════════════════════════════════
-// DYNAMIC VIRAL KARAOKE CAPTIONS
+// DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px)
 // ═══════════════════════════════════════════════════════════════
 const DynamicKaraokeCaptions: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
   const subtitles = cuesData.subtitles || [];
