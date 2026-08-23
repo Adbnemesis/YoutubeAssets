@@ -1,0 +1,1287 @@
+{
+  "reel_id": "binary_13",
+  "title": "A Billion Answers. Thirty Questions.",
+  "total_duration_s": 21.305,
+  "total_frames": 639,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "bn01_hook",
+      "speaker": "narrator",
+      "text": "A billion sorted answers. Thirty questions. That's the trick.",
+      "start_time_ms": 0,
+      "end_time_ms": 3285,
+      "duration_s": 3.285,
+      "start_frame": 0,
+      "end_frame": 99,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "billion",
+          "cue": "counter_wall",
+          "time_ms": 657,
+          "frame": 20
+        },
+        {
+          "phrase": "Thirty questions",
+          "cue": "thirty_slam",
+          "time_ms": 2135,
+          "frame": 64
+        }
+      ]
+    },
+    {
+      "id": "bn02_claim",
+      "speaker": "narrator",
+      "text": "Your computer finds one item without searching them all.",
+      "start_time_ms": 3395,
+      "end_time_ms": 5955,
+      "duration_s": 2.56,
+      "start_frame": 102,
+      "end_frame": 179,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "finds one item",
+          "cue": "wall_slice",
+          "time_ms": 4419,
+          "frame": 133
+        },
+        {
+          "phrase": "without searching",
+          "cue": "counter_halve",
+          "time_ms": 5443,
+          "frame": 163
+        }
+      ]
+    },
+    {
+      "id": "bn03_nemi_guess",
+      "speaker": "nemi",
+      "text": "Wait \u2014 how do you find something without searching?!",
+      "start_time_ms": 6055,
+      "end_time_ms": 8465,
+      "duration_s": 2.411,
+      "start_frame": 182,
+      "end_frame": 254,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "without searching",
+          "cue": "nemi_shock",
+          "time_ms": 7380,
+          "frame": 221
+        }
+      ]
+    },
+    {
+      "id": "bn04_secret",
+      "speaker": "narrator",
+      "text": "The list is sorted. It only checks the exact middle.",
+      "start_time_ms": 8555,
+      "end_time_ms": 10709,
+      "duration_s": 2.155,
+      "start_frame": 257,
+      "end_frame": 321,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "sorted",
+          "cue": "sorted_lock",
+          "time_ms": 9093,
+          "frame": 273
+        },
+        {
+          "phrase": "exact middle",
+          "cue": "mid_check",
+          "time_ms": 10170,
+          "frame": 305
+        }
+      ]
+    },
+    {
+      "id": "bn05_mechanism",
+      "speaker": "narrator",
+      "text": "Too high? Half dies. Too low? The other half dies.",
+      "start_time_ms": 10809,
+      "end_time_ms": 13966,
+      "duration_s": 3.157,
+      "start_frame": 324,
+      "end_frame": 419,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "Too high",
+          "cue": "too_high",
+          "time_ms": 11598,
+          "frame": 348
+        },
+        {
+          "phrase": "other half dies",
+          "cue": "half_die",
+          "time_ms": 13018,
+          "frame": 391
+        }
+      ]
+    },
+    {
+      "id": "bn06_payoff",
+      "speaker": "narrator",
+      "text": "Thirty cuts. One billion becomes one.",
+      "start_time_ms": 14066,
+      "end_time_ms": 16263,
+      "duration_s": 2.197,
+      "start_frame": 422,
+      "end_frame": 488,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "Thirty cuts",
+          "cue": "thirty_payoff",
+          "time_ms": 14725,
+          "frame": 442
+        },
+        {
+          "phrase": "becomes one",
+          "cue": "one_left",
+          "time_ms": 15823,
+          "frame": 475
+        }
+      ]
+    },
+    {
+      "id": "bn07_nemi_payoff",
+      "speaker": "nemi",
+      "text": "So the trick is asking better questions?",
+      "start_time_ms": 16373,
+      "end_time_ms": 18485,
+      "duration_s": 2.112,
+      "start_frame": 491,
+      "end_frame": 555,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "better questions",
+          "cue": "smug_stamp",
+          "time_ms": 17429,
+          "frame": 523
+        }
+      ]
+    },
+    {
+      "id": "bn08_loop",
+      "speaker": "narrator",
+      "text": "Your computer runs this trick billions of times a day.",
+      "start_time_ms": 18625,
+      "end_time_ms": 21185,
+      "duration_s": 2.56,
+      "start_frame": 559,
+      "end_frame": 636,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "billions of times",
+          "cue": "loop_wall",
+          "time_ms": 19777,
+          "frame": 593
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 35,
+      "text": "A billion sorted answers.",
+      "words": [
+        {
+          "word": "A",
+          "start_s": 0.0,
+          "end_s": 0.1,
+          "start_frame": 0,
+          "end_frame": 3
+        },
+        {
+          "word": "billion",
+          "start_s": 0.1,
+          "end_s": 0.34,
+          "start_frame": 3,
+          "end_frame": 10
+        },
+        {
+          "word": "sorted",
+          "start_s": 0.34,
+          "end_s": 0.66,
+          "start_frame": 10,
+          "end_frame": 20
+        },
+        {
+          "word": "answers.",
+          "start_s": 0.66,
+          "end_s": 1.02,
+          "start_frame": 20,
+          "end_frame": 31
+        }
+      ]
+    },
+    {
+      "start_frame": 48,
+      "end_frame": 91,
+      "text": "30 questions, that's the",
+      "words": [
+        {
+          "word": "30",
+          "start_s": 1.6,
+          "end_s": 1.72,
+          "start_frame": 48,
+          "end_frame": 52
+        },
+        {
+          "word": "questions,",
+          "start_s": 1.72,
+          "end_s": 2.12,
+          "start_frame": 52,
+          "end_frame": 64
+        },
+        {
+          "word": "that's",
+          "start_s": 2.48,
+          "end_s": 2.8,
+          "start_frame": 74,
+          "end_frame": 84
+        },
+        {
+          "word": "the",
+          "start_s": 2.8,
+          "end_s": 2.9,
+          "start_frame": 84,
+          "end_frame": 87
+        }
+      ]
+    },
+    {
+      "start_frame": 87,
+      "end_frame": 126,
+      "text": "trick. Your computer finds",
+      "words": [
+        {
+          "word": "trick.",
+          "start_s": 2.9,
+          "end_s": 3.06,
+          "start_frame": 87,
+          "end_frame": 92
+        },
+        {
+          "word": "Your",
+          "start_s": 3.42,
+          "end_s": 3.48,
+          "start_frame": 103,
+          "end_frame": 104
+        },
+        {
+          "word": "computer",
+          "start_s": 3.48,
+          "end_s": 3.78,
+          "start_frame": 104,
+          "end_frame": 113
+        },
+        {
+          "word": "finds",
+          "start_s": 3.78,
+          "end_s": 4.08,
+          "start_frame": 113,
+          "end_frame": 122
+        }
+      ]
+    },
+    {
+      "start_frame": 122,
+      "end_frame": 167,
+      "text": "one item without searching",
+      "words": [
+        {
+          "word": "one",
+          "start_s": 4.08,
+          "end_s": 4.36,
+          "start_frame": 122,
+          "end_frame": 131
+        },
+        {
+          "word": "item",
+          "start_s": 4.36,
+          "end_s": 4.72,
+          "start_frame": 131,
+          "end_frame": 142
+        },
+        {
+          "word": "without",
+          "start_s": 4.72,
+          "end_s": 5.02,
+          "start_frame": 142,
+          "end_frame": 151
+        },
+        {
+          "word": "searching",
+          "start_s": 5.02,
+          "end_s": 5.42,
+          "start_frame": 151,
+          "end_frame": 163
+        }
+      ]
+    },
+    {
+      "start_frame": 163,
+      "end_frame": 207,
+      "text": "them all. Wait, how",
+      "words": [
+        {
+          "word": "them",
+          "start_s": 5.42,
+          "end_s": 5.58,
+          "start_frame": 163,
+          "end_frame": 167
+        },
+        {
+          "word": "all.",
+          "start_s": 5.58,
+          "end_s": 5.84,
+          "start_frame": 167,
+          "end_frame": 175
+        },
+        {
+          "word": "Wait,",
+          "start_s": 6.02,
+          "end_s": 6.22,
+          "start_frame": 181,
+          "end_frame": 187
+        },
+        {
+          "word": "how",
+          "start_s": 6.52,
+          "end_s": 6.76,
+          "start_frame": 196,
+          "end_frame": 203
+        }
+      ]
+    },
+    {
+      "start_frame": 203,
+      "end_frame": 230,
+      "text": "do you find something",
+      "words": [
+        {
+          "word": "do",
+          "start_s": 6.76,
+          "end_s": 6.86,
+          "start_frame": 203,
+          "end_frame": 206
+        },
+        {
+          "word": "you",
+          "start_s": 6.86,
+          "end_s": 6.94,
+          "start_frame": 206,
+          "end_frame": 208
+        },
+        {
+          "word": "find",
+          "start_s": 6.94,
+          "end_s": 7.14,
+          "start_frame": 208,
+          "end_frame": 214
+        },
+        {
+          "word": "something",
+          "start_s": 7.14,
+          "end_s": 7.54,
+          "start_frame": 214,
+          "end_frame": 226
+        }
+      ]
+    },
+    {
+      "start_frame": 226,
+      "end_frame": 268,
+      "text": "without searching? The list",
+      "words": [
+        {
+          "word": "without",
+          "start_s": 7.54,
+          "end_s": 7.82,
+          "start_frame": 226,
+          "end_frame": 235
+        },
+        {
+          "word": "searching?",
+          "start_s": 7.82,
+          "end_s": 8.26,
+          "start_frame": 235,
+          "end_frame": 248
+        },
+        {
+          "word": "The",
+          "start_s": 8.54,
+          "end_s": 8.66,
+          "start_frame": 256,
+          "end_frame": 260
+        },
+        {
+          "word": "list",
+          "start_s": 8.66,
+          "end_s": 8.8,
+          "start_frame": 260,
+          "end_frame": 264
+        }
+      ]
+    },
+    {
+      "start_frame": 264,
+      "end_frame": 296,
+      "text": "is sorted, it only",
+      "words": [
+        {
+          "word": "is",
+          "start_s": 8.8,
+          "end_s": 8.98,
+          "start_frame": 264,
+          "end_frame": 269
+        },
+        {
+          "word": "sorted,",
+          "start_s": 8.98,
+          "end_s": 9.26,
+          "start_frame": 269,
+          "end_frame": 278
+        },
+        {
+          "word": "it",
+          "start_s": 9.48,
+          "end_s": 9.56,
+          "start_frame": 284,
+          "end_frame": 287
+        },
+        {
+          "word": "only",
+          "start_s": 9.56,
+          "end_s": 9.72,
+          "start_frame": 287,
+          "end_frame": 292
+        }
+      ]
+    },
+    {
+      "start_frame": 292,
+      "end_frame": 321,
+      "text": "checks the exact middle.",
+      "words": [
+        {
+          "word": "checks",
+          "start_s": 9.72,
+          "end_s": 9.88,
+          "start_frame": 292,
+          "end_frame": 296
+        },
+        {
+          "word": "the",
+          "start_s": 9.88,
+          "end_s": 10.08,
+          "start_frame": 296,
+          "end_frame": 302
+        },
+        {
+          "word": "exact",
+          "start_s": 10.08,
+          "end_s": 10.26,
+          "start_frame": 302,
+          "end_frame": 308
+        },
+        {
+          "word": "middle.",
+          "start_s": 10.26,
+          "end_s": 10.58,
+          "start_frame": 308,
+          "end_frame": 317
+        }
+      ]
+    },
+    {
+      "start_frame": 325,
+      "end_frame": 360,
+      "text": "Too high, half dies,",
+      "words": [
+        {
+          "word": "Too",
+          "start_s": 10.84,
+          "end_s": 10.96,
+          "start_frame": 325,
+          "end_frame": 329
+        },
+        {
+          "word": "high,",
+          "start_s": 10.96,
+          "end_s": 11.22,
+          "start_frame": 329,
+          "end_frame": 337
+        },
+        {
+          "word": "half",
+          "start_s": 11.48,
+          "end_s": 11.7,
+          "start_frame": 344,
+          "end_frame": 351
+        },
+        {
+          "word": "dies,",
+          "start_s": 11.7,
+          "end_s": 11.86,
+          "start_frame": 351,
+          "end_frame": 356
+        }
+      ]
+    },
+    {
+      "start_frame": 367,
+      "end_frame": 398,
+      "text": "too low, the other",
+      "words": [
+        {
+          "word": "too",
+          "start_s": 12.24,
+          "end_s": 12.38,
+          "start_frame": 367,
+          "end_frame": 371
+        },
+        {
+          "word": "low,",
+          "start_s": 12.38,
+          "end_s": 12.6,
+          "start_frame": 371,
+          "end_frame": 378
+        },
+        {
+          "word": "the",
+          "start_s": 12.9,
+          "end_s": 12.98,
+          "start_frame": 387,
+          "end_frame": 389
+        },
+        {
+          "word": "other",
+          "start_s": 12.98,
+          "end_s": 13.14,
+          "start_frame": 389,
+          "end_frame": 394
+        }
+      ]
+    },
+    {
+      "start_frame": 394,
+      "end_frame": 440,
+      "text": "half dies. 30 cuts,",
+      "words": [
+        {
+          "word": "half",
+          "start_s": 13.14,
+          "end_s": 13.4,
+          "start_frame": 394,
+          "end_frame": 402
+        },
+        {
+          "word": "dies.",
+          "start_s": 13.4,
+          "end_s": 13.66,
+          "start_frame": 402,
+          "end_frame": 410
+        },
+        {
+          "word": "30",
+          "start_s": 14.08,
+          "end_s": 14.3,
+          "start_frame": 422,
+          "end_frame": 429
+        },
+        {
+          "word": "cuts,",
+          "start_s": 14.3,
+          "end_s": 14.54,
+          "start_frame": 429,
+          "end_frame": 436
+        }
+      ]
+    },
+    {
+      "start_frame": 447,
+      "end_frame": 489,
+      "text": "one billion becomes one.",
+      "words": [
+        {
+          "word": "one",
+          "start_s": 14.9,
+          "end_s": 15.1,
+          "start_frame": 447,
+          "end_frame": 453
+        },
+        {
+          "word": "billion",
+          "start_s": 15.1,
+          "end_s": 15.4,
+          "start_frame": 453,
+          "end_frame": 462
+        },
+        {
+          "word": "becomes",
+          "start_s": 15.4,
+          "end_s": 15.74,
+          "start_frame": 462,
+          "end_frame": 472
+        },
+        {
+          "word": "one.",
+          "start_s": 15.74,
+          "end_s": 16.16,
+          "start_frame": 472,
+          "end_frame": 485
+        }
+      ]
+    },
+    {
+      "start_frame": 491,
+      "end_frame": 517,
+      "text": "So the trick is",
+      "words": [
+        {
+          "word": "So",
+          "start_s": 16.38,
+          "end_s": 16.54,
+          "start_frame": 491,
+          "end_frame": 496
+        },
+        {
+          "word": "the",
+          "start_s": 16.54,
+          "end_s": 16.68,
+          "start_frame": 496,
+          "end_frame": 500
+        },
+        {
+          "word": "trick",
+          "start_s": 16.68,
+          "end_s": 16.9,
+          "start_frame": 500,
+          "end_frame": 507
+        },
+        {
+          "word": "is",
+          "start_s": 16.9,
+          "end_s": 17.1,
+          "start_frame": 507,
+          "end_frame": 513
+        }
+      ]
+    },
+    {
+      "start_frame": 513,
+      "end_frame": 566,
+      "text": "asking better questions? Your",
+      "words": [
+        {
+          "word": "asking",
+          "start_s": 17.1,
+          "end_s": 17.46,
+          "start_frame": 513,
+          "end_frame": 524
+        },
+        {
+          "word": "better",
+          "start_s": 17.46,
+          "end_s": 17.7,
+          "start_frame": 524,
+          "end_frame": 531
+        },
+        {
+          "word": "questions?",
+          "start_s": 17.7,
+          "end_s": 18.18,
+          "start_frame": 531,
+          "end_frame": 545
+        },
+        {
+          "word": "Your",
+          "start_s": 18.6,
+          "end_s": 18.74,
+          "start_frame": 558,
+          "end_frame": 562
+        }
+      ]
+    },
+    {
+      "start_frame": 562,
+      "end_frame": 598,
+      "text": "computer runs this trick",
+      "words": [
+        {
+          "word": "computer",
+          "start_s": 18.74,
+          "end_s": 19.12,
+          "start_frame": 562,
+          "end_frame": 574
+        },
+        {
+          "word": "runs",
+          "start_s": 19.12,
+          "end_s": 19.34,
+          "start_frame": 574,
+          "end_frame": 580
+        },
+        {
+          "word": "this",
+          "start_s": 19.34,
+          "end_s": 19.54,
+          "start_frame": 580,
+          "end_frame": 586
+        },
+        {
+          "word": "trick",
+          "start_s": 19.54,
+          "end_s": 19.8,
+          "start_frame": 586,
+          "end_frame": 594
+        }
+      ]
+    },
+    {
+      "start_frame": 594,
+      "end_frame": 628,
+      "text": "billions of times a",
+      "words": [
+        {
+          "word": "billions",
+          "start_s": 19.8,
+          "end_s": 20.2,
+          "start_frame": 594,
+          "end_frame": 606
+        },
+        {
+          "word": "of",
+          "start_s": 20.2,
+          "end_s": 20.42,
+          "start_frame": 606,
+          "end_frame": 613
+        },
+        {
+          "word": "times",
+          "start_s": 20.42,
+          "end_s": 20.66,
+          "start_frame": 613,
+          "end_frame": 620
+        },
+        {
+          "word": "a",
+          "start_s": 20.66,
+          "end_s": 20.8,
+          "start_frame": 620,
+          "end_frame": 624
+        }
+      ]
+    },
+    {
+      "start_frame": 624,
+      "end_frame": 634,
+      "text": "day.",
+      "words": [
+        {
+          "word": "day.",
+          "start_s": 20.8,
+          "end_s": 21.0,
+          "start_frame": 624,
+          "end_frame": 630
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "A",
+      "start_s": 0.0,
+      "end_s": 0.1,
+      "start_frame": 0,
+      "end_frame": 3
+    },
+    {
+      "word": "billion",
+      "start_s": 0.1,
+      "end_s": 0.34,
+      "start_frame": 3,
+      "end_frame": 10
+    },
+    {
+      "word": "sorted",
+      "start_s": 0.34,
+      "end_s": 0.66,
+      "start_frame": 10,
+      "end_frame": 20
+    },
+    {
+      "word": "answers.",
+      "start_s": 0.66,
+      "end_s": 1.02,
+      "start_frame": 20,
+      "end_frame": 31
+    },
+    {
+      "word": "30",
+      "start_s": 1.6,
+      "end_s": 1.72,
+      "start_frame": 48,
+      "end_frame": 52
+    },
+    {
+      "word": "questions,",
+      "start_s": 1.72,
+      "end_s": 2.12,
+      "start_frame": 52,
+      "end_frame": 64
+    },
+    {
+      "word": "that's",
+      "start_s": 2.48,
+      "end_s": 2.8,
+      "start_frame": 74,
+      "end_frame": 84
+    },
+    {
+      "word": "the",
+      "start_s": 2.8,
+      "end_s": 2.9,
+      "start_frame": 84,
+      "end_frame": 87
+    },
+    {
+      "word": "trick.",
+      "start_s": 2.9,
+      "end_s": 3.06,
+      "start_frame": 87,
+      "end_frame": 92
+    },
+    {
+      "word": "Your",
+      "start_s": 3.42,
+      "end_s": 3.48,
+      "start_frame": 103,
+      "end_frame": 104
+    },
+    {
+      "word": "computer",
+      "start_s": 3.48,
+      "end_s": 3.78,
+      "start_frame": 104,
+      "end_frame": 113
+    },
+    {
+      "word": "finds",
+      "start_s": 3.78,
+      "end_s": 4.08,
+      "start_frame": 113,
+      "end_frame": 122
+    },
+    {
+      "word": "one",
+      "start_s": 4.08,
+      "end_s": 4.36,
+      "start_frame": 122,
+      "end_frame": 131
+    },
+    {
+      "word": "item",
+      "start_s": 4.36,
+      "end_s": 4.72,
+      "start_frame": 131,
+      "end_frame": 142
+    },
+    {
+      "word": "without",
+      "start_s": 4.72,
+      "end_s": 5.02,
+      "start_frame": 142,
+      "end_frame": 151
+    },
+    {
+      "word": "searching",
+      "start_s": 5.02,
+      "end_s": 5.42,
+      "start_frame": 151,
+      "end_frame": 163
+    },
+    {
+      "word": "them",
+      "start_s": 5.42,
+      "end_s": 5.58,
+      "start_frame": 163,
+      "end_frame": 167
+    },
+    {
+      "word": "all.",
+      "start_s": 5.58,
+      "end_s": 5.84,
+      "start_frame": 167,
+      "end_frame": 175
+    },
+    {
+      "word": "Wait,",
+      "start_s": 6.02,
+      "end_s": 6.22,
+      "start_frame": 181,
+      "end_frame": 187
+    },
+    {
+      "word": "how",
+      "start_s": 6.52,
+      "end_s": 6.76,
+      "start_frame": 196,
+      "end_frame": 203
+    },
+    {
+      "word": "do",
+      "start_s": 6.76,
+      "end_s": 6.86,
+      "start_frame": 203,
+      "end_frame": 206
+    },
+    {
+      "word": "you",
+      "start_s": 6.86,
+      "end_s": 6.94,
+      "start_frame": 206,
+      "end_frame": 208
+    },
+    {
+      "word": "find",
+      "start_s": 6.94,
+      "end_s": 7.14,
+      "start_frame": 208,
+      "end_frame": 214
+    },
+    {
+      "word": "something",
+      "start_s": 7.14,
+      "end_s": 7.54,
+      "start_frame": 214,
+      "end_frame": 226
+    },
+    {
+      "word": "without",
+      "start_s": 7.54,
+      "end_s": 7.82,
+      "start_frame": 226,
+      "end_frame": 235
+    },
+    {
+      "word": "searching?",
+      "start_s": 7.82,
+      "end_s": 8.26,
+      "start_frame": 235,
+      "end_frame": 248
+    },
+    {
+      "word": "The",
+      "start_s": 8.54,
+      "end_s": 8.66,
+      "start_frame": 256,
+      "end_frame": 260
+    },
+    {
+      "word": "list",
+      "start_s": 8.66,
+      "end_s": 8.8,
+      "start_frame": 260,
+      "end_frame": 264
+    },
+    {
+      "word": "is",
+      "start_s": 8.8,
+      "end_s": 8.98,
+      "start_frame": 264,
+      "end_frame": 269
+    },
+    {
+      "word": "sorted,",
+      "start_s": 8.98,
+      "end_s": 9.26,
+      "start_frame": 269,
+      "end_frame": 278
+    },
+    {
+      "word": "it",
+      "start_s": 9.48,
+      "end_s": 9.56,
+      "start_frame": 284,
+      "end_frame": 287
+    },
+    {
+      "word": "only",
+      "start_s": 9.56,
+      "end_s": 9.72,
+      "start_frame": 287,
+      "end_frame": 292
+    },
+    {
+      "word": "checks",
+      "start_s": 9.72,
+      "end_s": 9.88,
+      "start_frame": 292,
+      "end_frame": 296
+    },
+    {
+      "word": "the",
+      "start_s": 9.88,
+      "end_s": 10.08,
+      "start_frame": 296,
+      "end_frame": 302
+    },
+    {
+      "word": "exact",
+      "start_s": 10.08,
+      "end_s": 10.26,
+      "start_frame": 302,
+      "end_frame": 308
+    },
+    {
+      "word": "middle.",
+      "start_s": 10.26,
+      "end_s": 10.58,
+      "start_frame": 308,
+      "end_frame": 317
+    },
+    {
+      "word": "Too",
+      "start_s": 10.84,
+      "end_s": 10.96,
+      "start_frame": 325,
+      "end_frame": 329
+    },
+    {
+      "word": "high,",
+      "start_s": 10.96,
+      "end_s": 11.22,
+      "start_frame": 329,
+      "end_frame": 337
+    },
+    {
+      "word": "half",
+      "start_s": 11.48,
+      "end_s": 11.7,
+      "start_frame": 344,
+      "end_frame": 351
+    },
+    {
+      "word": "dies,",
+      "start_s": 11.7,
+      "end_s": 11.86,
+      "start_frame": 351,
+      "end_frame": 356
+    },
+    {
+      "word": "too",
+      "start_s": 12.24,
+      "end_s": 12.38,
+      "start_frame": 367,
+      "end_frame": 371
+    },
+    {
+      "word": "low,",
+      "start_s": 12.38,
+      "end_s": 12.6,
+      "start_frame": 371,
+      "end_frame": 378
+    },
+    {
+      "word": "the",
+      "start_s": 12.9,
+      "end_s": 12.98,
+      "start_frame": 387,
+      "end_frame": 389
+    },
+    {
+      "word": "other",
+      "start_s": 12.98,
+      "end_s": 13.14,
+      "start_frame": 389,
+      "end_frame": 394
+    },
+    {
+      "word": "half",
+      "start_s": 13.14,
+      "end_s": 13.4,
+      "start_frame": 394,
+      "end_frame": 402
+    },
+    {
+      "word": "dies.",
+      "start_s": 13.4,
+      "end_s": 13.66,
+      "start_frame": 402,
+      "end_frame": 410
+    },
+    {
+      "word": "30",
+      "start_s": 14.08,
+      "end_s": 14.3,
+      "start_frame": 422,
+      "end_frame": 429
+    },
+    {
+      "word": "cuts,",
+      "start_s": 14.3,
+      "end_s": 14.54,
+      "start_frame": 429,
+      "end_frame": 436
+    },
+    {
+      "word": "one",
+      "start_s": 14.9,
+      "end_s": 15.1,
+      "start_frame": 447,
+      "end_frame": 453
+    },
+    {
+      "word": "billion",
+      "start_s": 15.1,
+      "end_s": 15.4,
+      "start_frame": 453,
+      "end_frame": 462
+    },
+    {
+      "word": "becomes",
+      "start_s": 15.4,
+      "end_s": 15.74,
+      "start_frame": 462,
+      "end_frame": 472
+    },
+    {
+      "word": "one.",
+      "start_s": 15.74,
+      "end_s": 16.16,
+      "start_frame": 472,
+      "end_frame": 485
+    },
+    {
+      "word": "So",
+      "start_s": 16.38,
+      "end_s": 16.54,
+      "start_frame": 491,
+      "end_frame": 496
+    },
+    {
+      "word": "the",
+      "start_s": 16.54,
+      "end_s": 16.68,
+      "start_frame": 496,
+      "end_frame": 500
+    },
+    {
+      "word": "trick",
+      "start_s": 16.68,
+      "end_s": 16.9,
+      "start_frame": 500,
+      "end_frame": 507
+    },
+    {
+      "word": "is",
+      "start_s": 16.9,
+      "end_s": 17.1,
+      "start_frame": 507,
+      "end_frame": 513
+    },
+    {
+      "word": "asking",
+      "start_s": 17.1,
+      "end_s": 17.46,
+      "start_frame": 513,
+      "end_frame": 524
+    },
+    {
+      "word": "better",
+      "start_s": 17.46,
+      "end_s": 17.7,
+      "start_frame": 524,
+      "end_frame": 531
+    },
+    {
+      "word": "questions?",
+      "start_s": 17.7,
+      "end_s": 18.18,
+      "start_frame": 531,
+      "end_frame": 545
+    },
+    {
+      "word": "Your",
+      "start_s": 18.6,
+      "end_s": 18.74,
+      "start_frame": 558,
+      "end_frame": 562
+    },
+    {
+      "word": "computer",
+      "start_s": 18.74,
+      "end_s": 19.12,
+      "start_frame": 562,
+      "end_frame": 574
+    },
+    {
+      "word": "runs",
+      "start_s": 19.12,
+      "end_s": 19.34,
+      "start_frame": 574,
+      "end_frame": 580
+    },
+    {
+      "word": "this",
+      "start_s": 19.34,
+      "end_s": 19.54,
+      "start_frame": 580,
+      "end_frame": 586
+    },
+    {
+      "word": "trick",
+      "start_s": 19.54,
+      "end_s": 19.8,
+      "start_frame": 586,
+      "end_frame": 594
+    },
+    {
+      "word": "billions",
+      "start_s": 19.8,
+      "end_s": 20.2,
+      "start_frame": 594,
+      "end_frame": 606
+    },
+    {
+      "word": "of",
+      "start_s": 20.2,
+      "end_s": 20.42,
+      "start_frame": 606,
+      "end_frame": 613
+    },
+    {
+      "word": "times",
+      "start_s": 20.42,
+      "end_s": 20.66,
+      "start_frame": 613,
+      "end_frame": 620
+    },
+    {
+      "word": "a",
+      "start_s": 20.66,
+      "end_s": 20.8,
+      "start_frame": 620,
+      "end_frame": 624
+    },
+    {
+      "word": "day.",
+      "start_s": 20.8,
+      "end_s": 21.0,
+      "start_frame": 624,
+      "end_frame": 630
+    }
+  ]
+}

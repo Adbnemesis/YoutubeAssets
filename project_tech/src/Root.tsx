@@ -1,6 +1,10 @@
 import React from "react";
 import { Composition } from "remotion";
+import { BinaryComp } from "../reels/binary_13/BinaryComp";
+import { TrashComp } from "../reels/trash_12/TrashComp";
+import { NoiseComp } from "../reels/noise_11/NoiseComp";
 import { McpComp } from "../reels/mcp_09/McpComp";
+import { GpsComp } from "../reels/gps_10/GpsComp";
 import { TokenizeComp } from "../reels/tokenize_08/TokenizeComp";
 import { ShazamComp } from "../reels/shazam_07/ShazamComp";
 import { QrCodeComp } from "../reels/qr_06/QrCodeComp";
@@ -33,6 +37,38 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsBinary"
+        component={BinaryComp}
+        durationInFrames={639} // 21.30s @ 30fps — Reel #13: A Billion Answers. Thirty Questions. (Binary Search)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
+      <Composition
+        id="NemiExplainsTrash"
+        component={TrashComp}
+        durationInFrames={629} // 20.97s @ 30fps — Reel #12: POV: You Just Emptied Your Trash (file deletion / free-space marking)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
+      <Composition
+        id="NemiExplainsNoise"
+        component={NoiseComp}
+        durationInFrames={580} // 19.34s @ 30fps — Reel #11: Silence Is Made of Sound. (Active Noise Cancelling / inverse phase)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
+      <Composition
+        id="NemiExplainsGps"
+        component={GpsComp}
+        durationInFrames={674} // 22.47s @ 30fps — Reel #10: Your Phone Is Silent. They Still Find You. (GPS Trilateration)
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsMcp"
         component={McpComp}
