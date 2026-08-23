@@ -1,50 +1,33 @@
-================================================================================
-NEMI EXPLAINS — REEL #4: HOW CHATGPT ACTUALLY WORKS
-Inside the Transformer Neural Network & Self-Attention (26.2s @ 30fps)
-================================================================================
+TITLE: How ChatGPT Predicts One Word at a Time
 
-[INSTAGRAM / TIKTOK CAPTION]
-ChatGPT doesn't understand English. Here is the mind-blowing computer science truth of how it actually works! 🧠🤖
+DESCRIPTION:
+ChatGPT doesn't think in full sentences — it predicts one token at a time.
+.
+.
+.
+.
+.
+#chatgpt #ai #machinelearning #transformers #nemiexplains
 
-Behind every prompt is a massive Transformer Neural Network with billions of parameters:
-1️⃣ 𝗦𝗲𝗹𝗳-𝗔𝘁𝘁𝗲𝗻𝘁𝗶𝗼𝗻 𝗘𝗻𝗴𝗶𝗻𝗲: It connects every word in your sentence to every other word simultaneously. That’s how it knows if "bank" means money or a river!
-2️⃣ 𝟵𝟲 𝗗𝗲𝗲𝗽 𝗡𝗲𝘂𝗿𝗮𝗹 𝗟𝗮𝘆𝗲𝗿𝘀: It pushes high-dimensional vectors across 175 billion learned weights to calculate syntax, world facts, and reasoning.
-3️⃣ 𝟭𝟱𝗺𝘀 𝗧𝗼𝗸𝗲𝗻 𝗦𝗮𝗺𝗽𝗹𝗶𝗻𝗴: At the final layer, it scores 100,000 candidate words, picks the best next token, and loops autoregressively!
+YOUTUBE SHORTS TITLE:
+How ChatGPT Actually Generates Words 🤖⚡ #shorts
 
-It's not magic — it's pure Transformer architecture! 😎⚡
+YOUTUBE SHORTS DESCRIPTION:
+ChatGPT doesn't think in full sentences — it predicts one token at a time.
+.
+.
+.
+.
+.
+#chatgpt #ai #machinelearning #transformers #nemiexplains
 
-Tag someone who uses ChatGPT every day! 👇
+YOUTUBE TAGS:
+how chatgpt works, transformer architecture, next token prediction, large language models, ai explainer, nemi explains, shorts
 
-#chatgpt #ai #machinelearning #artificialintelligence #tech #datascience #softwareengineering #coding #transformers #deeplearning #python #computerscience #technology #learntocode #llm
-
-================================================================================
-[YOUTUBE SHORTS TITLE]
-How ChatGPT ACTUALLY Works: The Transformer Network! 🧠🤖 #shorts
-
-================================================================================
-[YOUTUBE SHORTS DESCRIPTION]
-How does ChatGPT write essays, code, and poems in seconds? It does not understand a single word you type! 🔮🤖
-Discover the real architecture behind LLMs: Self-Attention multi-head mechanisms, 96 deep transformer layers, and 15ms next-token sampling across 100,000 candidates.
-
-🔔 Subscribe to @nemi.explains for weekly visual tech & AI deep-dives!
-
-#ChatGPT #AI #Transformers #MachineLearning #Tech #ComputerScience #Shorts #DeepLearning #LLM
-
-================================================================================
-[YOUTUBE SEARCH TAGS]
-how chatgpt works, transformer neural network, self attention mechanism, how llms work, artificial intelligence, machine learning, computer science, next token prediction, deep learning, tech explainer, nemi explains, shorts
-
-================================================================================
-[VIDEO TECHNICAL SPECS]
+TECHNICAL SPECS:
 - Composition: NemiExplainsChatGPT
-- Duration: 26.20s (786 frames @ 30fps)
+- Duration: 20.00s (600 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_ChatGPT_20260820.mp4 (8.6 MB)
-- Visual Style: Dynamic Neural Particle Background + Animated Typing + Multi-Head Heatmaps + Token Race Bars
-- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline)
-================================================================================
-[PUBLISHED LINKS & ASSET IDS]
-- Instagram Reel (@nemi.explains): https://www.instagram.com/reel/DcRE_hgCijF/ (Media ID: 18125455370493835)
-- YouTube Shorts (Unlisted): https://youtu.be/LjMMl8M-usg (Video ID: LjMMl8M-usg)
-- Published At: 2026-08-20T20:55:00+05:30
-================================================================================
+
+PUBLISHED LINKS:
+- Status: Pending publication

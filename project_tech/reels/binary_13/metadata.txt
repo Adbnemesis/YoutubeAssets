@@ -1,60 +1,33 @@
-================================================================================
-NEMI EXPLAINS — REEL #13: GUESS 1 TO 100 IN 7 GUESSES (BINARY SEARCH)
-How Binary Search Solves 1 Billion Items in 30 Steps (24.73s @ 30fps)
-================================================================================
+TITLE: Guess 1 to 100 in 7 Guesses (Binary Search)
 
-[INSTAGRAM / FACEBOOK CAPTION]
-How do you find any number from 1 to 100 in just 7 guesses? 🤯🔢
+DESCRIPTION:
+How to find any number from 1 to 100 in just 7 guesses using Binary Search.
+.
+.
+.
+.
+.
+#binarysearch #algorithms #computerscience #math #nemiexplains
 
-Don't guess one by one! The secret is Binary Search:
-1️⃣ Always pick 50 (the exact middle).
-2️⃣ If the secret is 73, you know 73 > 50 — so numbers 1 to 50 are instantly DISCARDED!
-3️⃣ Next, check 75 (middle of 51–100). 73 < 75? Discard 76 to 100!
-
-Every single question cuts the remaining search space in half. 
-Because 2³⁰ > 1,000,000,000, even if you search ONE BILLION items, it takes just 30 steps!
-
-Ask better questions — that's why computers are so fast! 😎⚡
-
-#binarysearch #computerscience #algorithms #coding #math #programming #softwareengineering #developer #dsa #python #javascript #tech #didyouknow #nemiexplains
-
-================================================================================
-[YOUTUBE SHORTS TITLE]
+YOUTUBE SHORTS TITLE:
 Guess 1 to 100 in 7 Guesses! Binary Search Explained 🤯⚡ #shorts
 
-================================================================================
-[YOUTUBE SHORTS DESCRIPTION]
-How do you guess any number from 1 to 100 in just 7 tries? 🔍🔢
-The secret is Binary Search: always picking the middle number and throwing away half the universe at every step. 
+YOUTUBE SHORTS DESCRIPTION:
+How to find any number from 1 to 100 in just 7 guesses using Binary Search.
+.
+.
+.
+.
+.
+#binarysearch #algorithms #computerscience #math #nemiexplains
 
-Because 2³⁰ is over 1,000,000,000, exactly 30 cuts can find 1 item in a billion in microseconds.
+YOUTUBE TAGS:
+binary search explained, how binary search works, guess a number 1 to 100, o log n time complexity, search 1 billion items, nemi explains, shorts
 
-🔔 Subscribe to @nemi.explains for weekly visual tech & computer science deep-dives!
-
-#BinarySearch #ComputerScience #Algorithms #Math #Tech #Programming #Shorts #DidYouKnow #Engineering
-
-================================================================================
-[YOUTUBE SEARCH TAGS]
-binary search explained, how binary search works, guess a number 1 to 100 in 7 tries, o log n time complexity, search 1 billion items, binary search algorithm, computer science algorithms, log n explained, data structures and algorithms, coding interview, nemi explains, tech shorts
-
-================================================================================
-[VIDEO TECHNICAL SPECS]
+TECHNICAL SPECS:
 - Composition: NemiExplainsBinary
 - Duration: 24.73s (742 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_Binary_4K_20260823.mp4 (18.5 MB)
-- Visual Style: Number Line Track + Midpoint Lock (50) + Secret Target Beacon (73) + 50% Guillotine Slicing & Disintegration + 30-Step Power Meter Matrix + Summary Scorecard + Replay Seam
-- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline), Death of a Bluebird BGM with 2.5:1 Sidechain Ducking
-- Master Loudness: -15.0 LUFS | True Peak: -1.5 dBTP | Overlap: 0.00ms
 
-================================================================================
-[PUBLISHED LINKS & ASSET IDS]
-- Instagram Reel (@nemi.explains): (pending)
-- YouTube Shorts: (pending)
-- Facebook Reel: (pending)
-- Published At: (pending)
-
---------------------------------------------------------------------------------
-T+48H POST-MORTEM:
-Views: ___ | Reach: ___ | Avg Watch: ___s | APV: ___%
-3s retention: ___ | Follows: ___ | Saves: ___ | Shares: ___ | Comments: ___
+PUBLISHED LINKS:
+- Status: Pending publication

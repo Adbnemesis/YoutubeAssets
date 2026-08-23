@@ -22,6 +22,7 @@
     * **Audio & Signals:** Real-time frequency waterfall spectrograms, constellation peak star maps, audio wave interference collisions.
     * **Systems & Error Correction:** Reed-Solomon parity repair beams, laser module rebuilds, active packet routing conduits.
     * **AI & LLMs:** Multi-dimensional vector embedding galaxy, attention connection matrices, tokenization byte-pair merges.
+13. **Law of Clean Metadata & 5-Dot Spacing:** Never use long horizontal dashes / divider lines (`====` or `----`) in metadata files. Descriptions must consist of a punchy one-liner, followed by 5 lines containing only a dot `.`, followed by exactly 5 relevant hashtags.
 
 ---
 

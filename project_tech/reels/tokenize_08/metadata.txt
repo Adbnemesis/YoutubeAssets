@@ -1,30 +1,33 @@
-================================================================================
-NEMI EXPLAINS — REEL #8: HOW AI SEES WORDS: THE TOKENIZER TRAP
-Why ChatGPT Can't Count Letters (22.17s @ 30fps)
-================================================================================
+TITLE: How AI Sees Words: The Tokenizer Trap
 
-[INSTAGRAM / FACEBOOK CAPTION]
-ChatGPT has never seen a single letter of this word. 🤯🤖
+DESCRIPTION:
+How large language models slice human language into mathematical tokens.
+.
+.
+.
+.
+.
+#tokenization #llm #ai #datascience #nemiexplains
 
-Ever wondered why AI famously struggles to count the 'r's in "strawberry"? Here is the mind-blowing computer science truth:
+YOUTUBE SHORTS TITLE:
+Why ChatGPT Can't Count Letters (The Tokenizer Trap) 🤖🤯 #shorts
 
-1️⃣ 𝗧𝗵𝗲 𝗧𝗼𝗸𝗲𝗻𝗶𝘇𝗲𝗿: Before any neural network calculates reasoning, text is sliced into subword chunks called tokens!
-2️⃣ 𝗧𝗵𝗲 𝟭𝟬𝟬𝗞 𝗗𝗶𝗰𝘁𝗶𝗼𝗻𝗮𝗿𝘆: Every common chunk is assigned a permanent integer ID number from a 100,000-entry vocabulary dictionary.
-3️⃣ 𝗧𝗵𝗲 𝗧𝗿𝗮𝗽: "strawberry" is split into just two token IDs — [496] and [675]. The individual letters 'r', 'r', 'r' are completely swallowed inside the embedding math!
+YOUTUBE SHORTS DESCRIPTION:
+How large language models slice human language into mathematical tokens.
+.
+.
+.
+.
+.
+#tokenization #llm #ai #datascience #nemiexplains
 
-The AI doesn't have eyes for characters — it only calculates probabilities on integer streams. Next time ChatGPT miscounts a word, blame the tokens! 😎⚡
+YOUTUBE TAGS:
+how tokenization works, byte pair encoding, why ai cannot count letters, token dictionary, transformers, nemi explains, shorts
 
-Tag a developer who argued with ChatGPT! 👇
+TECHNICAL SPECS:
+- Composition: NemiExplainsTokenize
+- Duration: 22.17s (665 frames @ 30fps)
+- Aspect Ratio: 9:16 (1080x1920)
 
-#chatgpt #ai #machinelearning #tokenization #computerscience #softwareengineering #coding #bpe #python #deeplearning #artificialintelligence #tech #datascience #developer #learntocode #nemiexplains
-
-================================================================================
-[YOUTUBE SHORTS TITLE]
-Why ChatGPT Can't Count Letters in "Strawberry" 🍓🤖 #shorts
-
-================================================================================
-[YOUTUBE SHORTS DESCRIPTION]
-Why does ChatGPT fail at counting the 'r's in "strawberry"? 🔍🤖
-It's not broken — it's the Byte-Pair Tokenizer! Large Language Models never see individual letters. Words are sliced into subword chunks and mapped directly to integers from a 100,000-entry dictionary. "strawberry" becomes [496] + [675], locking the letters away in high-dimensional vector space.
-
-🔔 Subscribe to @nemi.explains for weekly visual tech & AI deep-dives!
+PUBLISHED LINKS:
+- Status: Pending publication

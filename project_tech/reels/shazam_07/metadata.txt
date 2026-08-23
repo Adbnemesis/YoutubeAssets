@@ -1,60 +1,35 @@
-================================================================================
-NEMI EXPLAINS — REEL #7: IT HEARD 1 SECOND OF NOISE. AND NAMED THE SONG.
-How Shazam Fingerprints Audio (20.27s @ 30fps)
-================================================================================
+TITLE: It Heard 1 Second of Noise. And Named the Song.
 
-[INSTAGRAM / TIKTOK CAPTION]
-Shazam heard 1 second of this bar noise… and still named the song. 🎵🤯
+DESCRIPTION:
+Shazam heard one second of noisy audio and named the exact song.
+.
+.
+.
+.
+.
+#shazam #audio #algorithms #music #nemiexplains
 
-It never records music. It draws the song's secret fingerprint instead:
-
-1️⃣ 𝗦𝗽𝗲𝗰𝘁𝗿𝗼𝗴𝗿𝗮𝗺: The sound becomes a map of energy across time and frequency
-2️⃣ 𝗣𝗲𝗮𝗸 𝗖𝗼𝗻𝘀𝘁𝗲𝗹𝗹𝗮𝘁𝗶𝗼𝗻: Only the loudest points survive as "stars"
-3️⃣ 𝗦𝘁𝗮𝗿 𝗛𝗮𝘀𝗵𝗲𝘀: Pairs of stars become tiny time-offset codes — billions live in one lookup table
-4️⃣ 𝗧𝗵𝗲 𝗩𝗼𝘁𝗶𝗻𝗴: Matched pairs vote on a time offset — ONE spike = your song!
-
-So no, Shazam isn't spying on you. It's doing astronomy on sound waves 😎⚡
-
-Tag someone who Shazams EVERYTHING 👇
-
-#shazam #music #audioengineering #computerscience #algorithms #dsp #howitworks #sound #tech #datastructures #machinelearning #didyouknow #technology #musicians #nemiexplains
-
-================================================================================
-[YOUTUBE SHORTS TITLE]
+YOUTUBE SHORTS TITLE:
 How Shazam Names Any Song From 1 Second of Audio 🎵🤯 #shorts
 
-================================================================================
-[YOUTUBE SHORTS DESCRIPTION]
-Your phone hears 1 second of bar noise and names the exact song. No magic — just math! 🔍🎵
-Discover how Shazam really works: spectrogram peak constellations, star-pair hash codes, and the time-offset voting trick that makes ONE bar spike above billions of songs in a lookup table.
+YOUTUBE SHORTS DESCRIPTION:
+Shazam heard one second of noisy audio and named the exact song.
+.
+.
+.
+.
+.
+#shazam #audio #algorithms #music #nemiexplains
 
-🔔 Subscribe to @nemi.explains for weekly visual tech & AI deep-dives!
+YOUTUBE TAGS:
+how shazam works, audio fingerprinting, spectrogram, music recognition, dsp, algorithms, nemi explains, shorts
 
-#Shazam #MusicTech #AudioEngineering #ComputerScience #Algorithms #Shorts #DSP #HowItWorks
-
-================================================================================
-[YOUTUBE SEARCH TAGS]
-how shazam works, shazam algorithm, audio fingerprinting, spectrogram explained, music recognition, signal processing, dsp, hash lookup, computer science, algorithms, how music recognition works, tech explainer, nemi explains, shorts
-
-================================================================================
-[VIDEO TECHNICAL SPECS]
+TECHNICAL SPECS:
 - Composition: NemiExplainsShazam
 - Duration: 20.27s (608 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_Shazam_20260822.mp4 (5.1 MB)
-- Visual Style: Chaotic Waveform Hook + Spectrogram Constellation + Star-Pair Hash Lines + Offset Histogram Spike Payoff + Loop Seam
-- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline), Luminary BGM with Dynamic Story Arc
-- Master Loudness: -15.74 LUFS | True Peak: -1.79 dBTP | Overlap: 0.00ms
 
-================================================================================
-[PUBLISHED LINKS & ASSET IDS]
+PUBLISHED LINKS:
 - Instagram Reel (@nemi.explains): https://www.instagram.com/reel/DcYSPm2Akbl/ (Media ID: 18124983754837340)
-- YouTube Shorts: https://youtu.be/DkDxOFlZi3c (Video ID: DkDxOFlZi3c)
 - Facebook Reel: https://www.facebook.com/reel/2721823171553206 (Video ID: 2721823171553206)
-- Published At: 2026-08-23T16:06:00+05:30
-
---------------------------------------------------------------------------------
-T+48H POST-MORTEM (playbook protocol, fill on 2026-08-24):
-Views: ___ | Reach: ___ | Avg Watch: ___s | APV: ___%
-3s retention: ___ | Follows: ___ | Saves: ___ | Shares: ___ | Comments: ___
-================================================================================
+- YouTube Shorts: https://youtu.be/DkDxOFlZi3c (Video ID: DkDxOFlZi3c)

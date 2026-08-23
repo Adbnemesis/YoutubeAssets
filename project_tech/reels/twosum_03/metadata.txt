@@ -1,33 +1,33 @@
-================================================================================
-NEMI EXPLAINS — REEL #3: TWO SUM (LEETCODE #1)
-The O(N²) Brute Force Trap vs The 1-Pass Hash Map Complement
-================================================================================
+TITLE: FAANG's #1 Coding Question: Two Sum (LeetCode #1)
 
-[INSTAGRAM / TIKTOK / YOUTUBE SHORTS CAPTION]
-FAANG’s #1 most asked interview question: Two Sum. 🤯⚡
+DESCRIPTION:
+How a simple hash map turns an O(N²) nested loop into instant O(1) lookups.
+.
+.
+.
+.
+.
+#leetcode #twosum #datastructures #algorithms #nemiexplains
 
-If you're still using nested for-loops, here is why your code will fail with Time Limit Exceeded (TLE):
-❌ Brute Force: Testing all pairs is O(N²) time. At 100,000 numbers, that’s 10 BILLION calculations! 💥
-⚡ 1-Pass Hash Map: Don't search forward — remember the past!
-Calculate (Target - Current) at each step and query your Hash Map in O(1) constant time.
+YOUTUBE SHORTS TITLE:
+LeetCode #1 Two Sum: The O(1) Hash Map Trick ⚡💻 #shorts
 
-One pass, O(N) linear time, instant hire! 🚀
+YOUTUBE SHORTS DESCRIPTION:
+How a simple hash map turns an O(N²) nested loop into instant O(1) lookups.
+.
+.
+.
+.
+.
+#leetcode #twosum #datastructures #algorithms #nemiexplains
 
-Tag a developer preparing for coding interviews! 👇
+YOUTUBE TAGS:
+leetcode 1, two sum solution, hash map complement, coding interview, dsa, algorithms, nemi explains, shorts
 
-#leetcode #twosum #dsa #algorithms #datastructures #codinginterview #faang #softwareengineering #computerscience #python #javascript #coding #learntocode #tech
-
-================================================================================
-[YOUTUBE SHORTS TITLE]
-How to Solve Two Sum in O(N) Time! 🧠 (LeetCode #1) #shorts
-
-================================================================================
-[VIDEO TECHNICAL SPECS]
+TECHNICAL SPECS:
 - Composition: NemiExplainsTwoSum
-- Duration: 24.47s (734 frames @ 30fps)
+- Duration: 21.00s (630 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Audio: Dual-Voice Architecture (Chatterbox Narrator + Edge-TTS AnaNeural Mascot)
-- Integrated SFX: 8 synchronized audio cues (whoosh, ping, error alarm, pop, click, notification, chime)
-- Background Track: Synthwave Goose - Blade Runner 2049 (Dynamic Sidechain Ducking)
-- Target Loudness: -15.5 LUFS
-================================================================================
+
+PUBLISHED LINKS:
+- Status: Pending publication

@@ -1,59 +1,35 @@
-================================================================================
-NEMI EXPLAINS — REEL #6: YOU DESTROYED THIS QR CODE. IT STILL SCANNED.
-Reed–Solomon Error Correction (18.13s @ 30fps)
-================================================================================
+TITLE: You Destroyed This QR Code. It Still Scanned.
 
-[INSTAGRAM / TIKTOK CAPTION]
-You destroyed this QR code. It still scanned. 🤯📱
+DESCRIPTION:
+You destroyed 30% of this QR code with a marker and it still scanned perfectly.
+.
+.
+.
+.
+.
+#qrcode #errorcorrection #math #tech #nemiexplains
 
-Every QR code secretly carries backup math inside it — not spare copies, EQUATIONS. Here's how Reed–Solomon error correction actually works:
-
-1️⃣ 𝗧𝗵𝗲 𝗚𝗿𝗶𝗱: Your data is encoded into a grid of black-and-white modules
-2️⃣ 𝗧𝗵𝗲 𝗕𝗮𝗰𝗸𝘂𝗽 𝗠𝗮𝘁𝗵: Reed–Solomon equations compute hidden "parity" values woven into the pattern
-3️⃣ 𝗧𝗵𝗲 𝗥𝗲𝗯𝘂𝗶𝗹𝗱: Destroy up to ~30% of the code, and any scanner reconstructs the missing blocks from whatever survives!
-
-That's why your scratched, crumpled, sticker-stabbed UPI QR codes scan every single time. It's not luck — it's math from 1960 doing the healing! 😎⚡
-
-Tag a friend who destroys QR codes daily 👇
-
-#qrcode #tech #computerscience #mathematics #errorcorrection #engineering #upi #digitalpayments #technology #didyouknow #science #coding #learntocode #techie #nemiexplains
-
-================================================================================
-[YOUTUBE SHORTS TITLE]
+YOUTUBE SHORTS TITLE:
 You Destroyed This QR Code. It Still Scanned. 🤯📱 #shorts
 
-================================================================================
-[YOUTUBE SHORTS DESCRIPTION]
-This QR code is covered in marker scribbles… and it STILL scans perfectly. How?! 🔍📱
-The secret is Reed–Solomon error correction: hidden parity equations baked into every QR code that let scanners rebuild up to 30% of the code from thin air. Invented in 1960 — powering every UPI payment and boarding pass today.
+YOUTUBE SHORTS DESCRIPTION:
+You destroyed 30% of this QR code with a marker and it still scanned perfectly.
+.
+.
+.
+.
+.
+#qrcode #errorcorrection #math #tech #nemiexplains
 
-🔔 Subscribe to @nemi.explains for weekly visual tech & AI deep-dives!
+YOUTUBE TAGS:
+how qr codes work, reed solomon error correction, qr code damage repair, computer science, math, nemi explains, shorts
 
-#QRCode #ComputerScience #Math #Tech #Engineering #Shorts #DidYouKnow #UPI #Technology
-
-================================================================================
-[YOUTUBE SEARCH TAGS]
-how qr codes work, qr code error correction, reed solomon code, why damaged qr codes work, qr code explained, error correcting codes, computer science, mathematics, tech explainer, upi qr code, digital payments, nemi explains, shorts
-
-================================================================================
-[VIDEO TECHNICAL SPECS]
+TECHNICAL SPECS:
 - Composition: NemiExplainsQrCode
 - Duration: 18.13s (544 frames @ 30fps)
 - Aspect Ratio: 9:16 (1080x1920)
-- Master Render: out/NemiExplains_QR_20260822.mp4 (5.8 MB)
-- Visual Style: Scribbled QR Anomaly Hook + Module Grid World + Reed-Solomon Rebuild Beams + Offset Damage Meter + Loop Seam
-- Audio: Dual-Voice Architecture (Chatterbox Neural Narrator + Edge-TTS AnaNeural Mascot Punchline), Luminary BGM with Dynamic Story Arc
-- Master Loudness: -15.87 LUFS | True Peak: -1.95 dBTP | Overlap: 0.00ms
 
-================================================================================
-[PUBLISHED LINKS & ASSET IDS]
-- Instagram Reel (@nemi.explains): https://www.instagram.com/reel/DcWIKGngC5e/
-- YouTube Shorts: https://youtu.be/-ccCaoY1Ke4
-- Facebook Reel: https://www.facebook.com/reel/2308269849943389
-- Published At: 2026-08-22T19:59:00+05:30
-
---------------------------------------------------------------------------------
-T+48H POST-MORTEM (playbook protocol, fill on 2026-08-24):
-Views: ___ | Reach: ___ | Avg Watch: ___s | APV: ___%
-3s retention: ___ | Follows: ___ | Saves: ___ | Shares: ___ | Comments: ___
-================================================================================
+PUBLISHED LINKS:
+- Instagram Reel (@nemi.explains): https://www.instagram.com/reel/DcWIKGngC5e/ (Media ID: 18375461539239975)
+- Facebook Reel: https://www.facebook.com/reel/2308269849943389 (Video ID: 2308269849943389)
+- YouTube Shorts: https://youtu.be/-ccCaoY1Ke4 (Video ID: -ccCaoY1Ke4)

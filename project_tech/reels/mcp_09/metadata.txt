@@ -1,31 +1,33 @@
-================================================================================
-NEMI EXPLAINS — REEL #9 METADATA
-================================================================================
+TITLE: MCP vs API: What's the Actual Difference?
 
-TITLE:
-MCP vs API: What's the Actual Difference? (USB-C for AI Models)
+DESCRIPTION:
+How the Model Context Protocol connects AI models directly to your tools and databases.
+.
+.
+.
+.
+.
+#mcp #ai #softwareengineering #developer #nemiexplains
 
-HOOK (0-3s):
-"MCP versus API: what's the actual difference?"
+YOUTUBE SHORTS TITLE:
+MCP vs API: The USB-C of Artificial Intelligence 🔌🤖 #shorts
 
-SHORT DESCRIPTION / CAPTION (Instagram / Facebook / YouTube):
-Why is everyone building MCP servers if we already have APIs? 🤯
-
-Here is the secret:
-📦 Traditional REST APIs were built for human programmers writing fixed backend code. You have to hardcode endpoints, manage custom auth tokens, and rewrite SDKs for every new tool ($N \times M$ integration hell).
-
-🔌 MCP (Model Context Protocol) is like USB-C for AI models. It connects your AI Agent directly to tools, databases, and files with dynamic runtime auto-discovery (`tools/list` & `tools/call`) — zero backend rewrites required!
-
-APIs connect apps to apps.
-MCP connects AI to the world! ⚡️
-
-Follow @nemi.explains for deep technical insights made ridiculously simple! 🚀
-
-HASHTAGS:
-#mcp #modelcontextprotocol #api #restapi #aiengineering #softwareengineering #anthropic #claude #systemdesign #coding #webdev #developers #techtrends #programming #tech #nemiexplains
+YOUTUBE SHORTS DESCRIPTION:
+How the Model Context Protocol connects AI models directly to your tools and databases.
+.
+.
+.
+.
+.
+#mcp #ai #softwareengineering #developer #nemiexplains
 
 YOUTUBE TAGS:
-mcp vs api, what is mcp, model context protocol explained, rest api vs mcp, claude mcp, anthropic model context protocol, cursor mcp, ai agents architecture, software engineering, nemi explains
+model context protocol, mcp vs api, anthropic mcp, ai tools integration, software architecture, nemi explains, shorts
 
-DURATION: 23.77s (713 frames @ 30fps)
-RESOLUTION: 4K UHD (2160x3840)
+TECHNICAL SPECS:
+- Composition: NemiExplainsMCP
+- Duration: 21.00s (630 frames @ 30fps)
+- Aspect Ratio: 9:16 (1080x1920)
+
+PUBLISHED LINKS:
+- Status: Pending publication

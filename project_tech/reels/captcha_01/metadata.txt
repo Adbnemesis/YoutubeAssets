@@ -1,63 +1,33 @@
-================================================================================
-INSTAGRAM REEL PUBLISHING METADATA
-================================================================================
+TITLE: Why CAPTCHAs Secretly Watch Your Mouse
 
-[TITLE / COVER HOOK]
-You Didn't Pass The CAPTCHA By Clicking The Box 🤯
-
-[RECOMMENDED COVER FRAME]
-Frame 35 (Checkbox Clicked [✓] with Nemi Puzzled)
-
-[CAPTION - COPY & PASTE READY]
-You didn't pass the CAPTCHA by clicking the box... 🤯
-
-A simple bot script can trigger a click event in under 0.001 seconds. But instant zero-latency clicks get blocked immediately.
-
-Here’s what Google reCAPTCHA actually analyzes before your finger even touches the box:
-
-1️⃣ Kinematic Trajectory Dynamics
-Bots travel in straight, linear vectors with constant velocity (0 jerk). Humans follow curved Bezier paths with natural acceleration shifts and deceleration overshoots.
-
-2️⃣ 8–12 Hz Biological Hand Tremors
-Human hands produce involuntary physiological micro-jitters. This creates high-entropy chaotic noise that simple deterministic scripts cannot fake.
-
-3️⃣ Deep Browser Telemetry
-Canvas device fingerprinting, interaction history, and network latency consistency.
-
-Your shaky hands are literally a cybersecurity feature! 😎⚡
-
-💬 Did you know your cursor movements were being tracked before the click? Drop your thoughts below!
-
-🚀 Follow @nemi.explains for daily animated tech & computer science breakdowns!
-
+DESCRIPTION:
+The checkbox didn't care about your click, it was watching how your mouse moved to get there.
 .
 .
-#tech #programming #coding #computerscience #developer #cybersecurity #recaptcha #softwareengineering #webdevelopment #techtok #techreels #learntocode #python #algorithms #nemiexplains #codinglife #programmer
+.
+.
+.
+#captcha #security #computerscience #tech #nemiexplains
 
---------------------------------------------------------------------------------
-[PINNED COMMENT]
-Fun fact: reCAPTCHA v3 doesn't even show you a checkbox anymore—it silently scores your browsing trajectory in the background. What's the most annoying CAPTCHA puzzle you've ever had to solve? 👇
+YOUTUBE SHORTS TITLE:
+Why CAPTCHAs Watch Your Mouse 🤖🖱️ #shorts
 
-================================================================================
-YOUTUBE SHORTS PUBLISHING METADATA
-================================================================================
+YOUTUBE SHORTS DESCRIPTION:
+The checkbox didn't care about your click, it was watching how your mouse moved to get there.
+.
+.
+.
+.
+.
+#captcha #security #computerscience #tech #nemiexplains
 
-[TITLE]
-How CAPTCHA Knows You're Human (It's NOT The Checkbox) 🤖❌
+YOUTUBE TAGS:
+captcha, recaptcha, how captcha works, bot detection, computer science, tech explainer, nemi explains, shorts
 
-[DESCRIPTION]
-Every time you click "I'm not a robot", your computer isn't verifying the click—it's analyzing the kinematic trajectory and physiological hand tremors of your cursor.
+TECHNICAL SPECS:
+- Composition: NemiExplainsCaptcha
+- Duration: 20.00s (600 frames @ 30fps)
+- Aspect Ratio: 9:16 (1080x1920)
 
-Subscribe to @NemiExplains for weekly animated computer science deep dives!
-
-#Shorts #Tech #Programming #Coding #Cybersecurity #reCAPTCHA #ComputerScience
-
-[TAGS (COMMA SEPARATED FOR YT STUDIO)]
-captcha, recaptcha, how captcha works, programming, cybersecurity, computer science, coding, python bots, software engineering, nemi explains, tech shorts, web development, algorithms
-
-================================================================================
-TIKTOK PUBLISHING METADATA
-================================================================================
-
-[CAPTION]
-Your shaky hands are literally a security feature 🤯 How CAPTCHA actually knows you're human #tech #coding #programming #cybersecurity #developer #fyp #nemiexplains
+PUBLISHED LINKS:
+- Status: Pending publication
