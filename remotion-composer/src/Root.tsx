@@ -11,6 +11,11 @@ import {
   calculateTitledVideoMetadata,
 } from "./TitledVideo";
 import { EndTag, EndTagProps } from "./components/EndTag";
+// import {
+//   TimelineReel,
+//   calculateTimelineReelMetadata,
+//   TimelineReelProps,
+// } from "./TimelineReel";
 import { HeroTitle } from "./components/HeroTitle";
 import { ProductReveal, ProductRevealProps } from "./components/ProductReveal";
 import { CaptionOverlay, WordCaption } from "./components/CaptionOverlay";
@@ -360,6 +365,32 @@ export const Root: React.FC = () => {
           overlay: true,
         } as EndTagProps}
       />
+      {/* <Composition
+        id="TimelineReel"
+        component={TimelineReel}
+        calculateMetadata={calculateTimelineReelMetadata}
+        durationInFrames={30 * 40}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={
+          {
+            title: "Sinking Car Escape",
+            series: "SURVIVE",
+            episode: "EP. 01",
+            hookText: "YOU HAVE\n90 SECONDS",
+            totalDuration: 40,
+            fps: 30,
+            endCard: {
+              series: "SURVIVE",
+              episode: "EP. 01",
+              cta: "Tomorrow: buried alive.",
+              commentBait: "What would YOU have done?",
+            },
+            beats: [],
+          } as unknown as TimelineReelProps
+        }
+      /> */}
     </>
   );
 };

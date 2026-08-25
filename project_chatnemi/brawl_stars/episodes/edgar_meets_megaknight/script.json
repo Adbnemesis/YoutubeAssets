@@ -1,0 +1,77 @@
+{
+  "characters": [
+    { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
+    { "id": "mega_knight", "name": "Mega Knight", "color": "#29B6F6", "avatarUrl": "mega_knight.png" },
+    { "id": "shelly", "name": "Shelly", "color": "#00E676", "avatarUrl": "shelly.png" },
+    { "id": "mortis", "name": "Mortis", "color": "#AB47BC", "avatarUrl": "mortis.png" },
+    { "id": "cr_king", "name": "Clash King", "color": "#FFD700", "avatarUrl": "cr_king.png" },
+    { "id": "chester", "name": "Chester", "color": "#FF7043", "avatarUrl": "chester.png" },
+    { "id": "starr_park_bot", "name": "Supercell Audit Bot", "color": "#FFD700", "avatarUrl": "starr_park_bot.png" }
+  ],
+  "startTime": "4:20 PM",
+  "bgm": "sneaky_snitch.mp3",
+  "events": [
+    { "type": "message", "characterId": "edgar", "text": "Nobody in any Supercell game\nhas a more brainless jump than me 🥱👎", "delaySeconds": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i literally press yellow button\nand people uninstall the game", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "Edgar you jumped onto a 10-cube Bull\nwith 0 ammo yesterday.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You died before your feet touched the grass.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "THAT WAS TACTICAL INTIMIDATION", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "no other character has my mid-air aura", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mega_knight", "text": "DID SOMEONE SAY BRAINLESS JUMP? 💥", "delaySeconds": 2.6, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "who invited this 500-pound\nmetal trash can to the server 💀", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "error.mp3" },
+    
+    { "type": "message", "characterId": "mega_knight", "text": "I drop from the clouds\nand flatten entire bridge pushes.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mega_knight", "text": "I have 5,000 HP and two spiked iron balls.", "delaySeconds": 1.6, "sfx": "vine_boom.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "edgar_vs_megaknight_jump.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "anime-wow.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "WHAT THE HECK WAS THAT", "delaySeconds": 1.4, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "HE DROPPED ON ME IN BRAWL BALL\nAND CAUSED A REAL 6.2 MAGNITUDE EARTHQUAKE", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mortis", "text": "i tried to dash past the bridge\nand he jumped 8 tiles and flattened my bats", "delaySeconds": 2.6, "isTypingDuration": 0.9, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "my shovel is bent 90 degrees", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "cr_king", "text": "HE HE HE HA 👑😂", "delaySeconds": 2.2, "isTypingDuration": 0.7, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "cr_king", "text": "THANKS FOR THE 3 CROWNS 🏆", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "WHY IS A CARTOON BOOMER KING\nLAUGHING AT ME IN GENERAL CHAT 🤬", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I HAVE 15% LIFESTEAL I WOULD BEAT HIM", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mega_knight", "text": "Little boy your scarf does 500 damage.\nMy armor absorbs your entire existence.", "delaySeconds": 2.2, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "edgar_crushed_splat.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "Edgar is literally pancaked into the dirt\nlike a cartoon rug.", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Even your living scarf gave up and went flat.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "chester", "text": "ATTENTION EVERYONE 🚨", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "chester", "text": "NEW CROSSOVER LEAKED BY SUPERCELL 🎪", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "chester", "text": "I just renamed the server to:\n🎪 MID-LADDER BRAINROT CHAMPIONSHIP 🎪", "delaySeconds": 1.6, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "chester", "text": "MATCHUP 1:\nEdgar & Mortis VS Mega Knight & Elite Barbarians!", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "mortis", "text": "please do not put me in that ring\ni have a family of bats to feed", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "DISCORD_CALL_mega_knight", "durationSeconds": 2.8, "delaySeconds": 3.4, "fadeIn": true, "sfx": "discord_call.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "HE CALLED ME AND ALL I HEARD\nWAS HEAVY BREATHING AND METAL CREAKING", "delaySeconds": 1.4, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "SUPERCELL CANCEL THE CROSSOVER PLEASE", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "starr_park_bot", "text": "⚠️ SUPERCELL CROSS-GAME MENACE AUDIT ⚠️", "delaySeconds": 2.0, "sfx": "supercell_jingle.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Metric #1 (Brainless Jumping):\nEdgar: 100% | Mega Knight: 100%", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Metric #2 (Toxic Emote Usage):\nEdgar: Thumbs Down (👎) | Mega Knight: Laugh (😂)", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Metric #3 (Skill Required):\n0.00% DETECTED ACROSS BOTH UNIVERSES.", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Official Verdict:\nBrothers from Another Supercell Game (100% Match).", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "brawl_match_win.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "supercell_menace_registry.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
+    
+    { "type": "message", "characterId": "mega_knight", "text": "Let's 2v2 jump on ladder together brother 🤝", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "IM UNINSTALLING BOTH GAMES AND MOVING TO HAY DAY", "delaySeconds": 2.6, "sfx": "discord_leave.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "He'll be back in 10 minutes to bush-camp.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "cr_king", "text": "HE HE HE HA 👑👋", "delaySeconds": 1.4, "sfx": "ping.mp3" }
+  ]
+}
