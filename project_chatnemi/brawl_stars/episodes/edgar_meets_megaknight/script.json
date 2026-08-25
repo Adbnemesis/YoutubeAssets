@@ -1,70 +1,83 @@
 {
   "characters": [
-    { "id": "edgar", "name": "Edgar", "color": "#E91E63", "avatarUrl": "edgar.png" },
-    { "id": "megaknight", "name": "Mega Knight", "color": "#29B6F6", "avatarUrl": "megaknight.png" },
+    { "id": "edgar", "name": "Edgar", "color": "#FF4081", "avatarUrl": "edgar.png" },
+    { "id": "megaknight", "name": "Mega Knight", "color": "#42A5F5", "avatarUrl": "megaknight.png" },
+    { "id": "shelly", "name": "Shelly", "color": "#26A69A", "avatarUrl": "shelly.png" },
+    { "id": "mortis", "name": "Mortis", "color": "#AB47BC", "avatarUrl": "mortis.png" },
     { "id": "colt", "name": "Colt", "color": "#FF7043", "avatarUrl": "colt.png" },
-    { "id": "crow", "name": "Crow", "color": "#FFEB3B", "avatarUrl": "crow.png" },
-    { "id": "cr_king", "name": "Clash King", "color": "#FFC107", "avatarUrl": "cr_king.png" }
+    { "id": "cr_king", "name": "Clash King", "color": "#FFD700", "avatarUrl": "cr_king.png" }
   ],
-  "startTime": "3:45 PM",
+  "startTime": "4:20 PM",
   "bgm": "fluffing_a_duck.mp3",
   "events": [
-    { "type": "message", "characterId": "edgar", "text": "WHO TOLD ME MEGA KNIGHT WAS\nA NEW BRAWLER IN THE MYTHIC DROP 🤬", "delaySeconds": 0.5, "sfx": "record_scratch.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "I DRAFTED HIM IN RANKED HEIST\nAND HE DIDN'T EVEN SHOOT THE SAFE ONCE", "delaySeconds": 1.4, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "Nobody in any Supercell game\nhas a more toxic jump than me 🥱👎", "delaySeconds": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i literally press the yellow button\nand people ragequit on the spot", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "megaknight", "text": "Why would I shoot a metal box\nwhen there are 3 squishy targets in front of me?", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "megaknight", "text": "You placed me at the bridge.\nI did standard bridge spam protocol.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Edgar, you literally jump on Shelly\nwith full Super ready.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You get deleted in 0.2 seconds\nand turn into 0 gems.", "delaySeconds": 1.6, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "colt", "text": "THERE IS NO BRIDGE IN SAFE ZONE MAP BRO", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
-    { "type": "message", "characterId": "colt", "text": "You literally jumped over the river,\ncrushed my Hypercharge, and sat on our Safe.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "THAT WAS A BAIT TACTIC", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "my jump has maximum psychological terror", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "megaknight", "text": "Did someone say psychological terror jump? 💥", "delaySeconds": 2.6, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "megaknight", "text": "I cost 7 Elixir and drop from orbit\nwith 5,000 HP and two spiked balls.", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "who is this iron trash can 💀", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "i have animated lifesteal scarf punches.\nyou have heavy clunky boots.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
     { "type": "cutaway", "mediaUrl": "edgar_vs_megaknight_jump.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "anime-wow.mp3" },
     
-    { "type": "message", "characterId": "crow", "text": "I spent 45 seconds throwing poisoned daggers\nat his back.", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "crow", "text": "He didn't even turn around.\nHis health bar didn't move 1 millimeter.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colt", "text": "Edgar his shadow alone\nis bigger than the entire Gem Grab mine.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "megaknight", "text": "I thought those were Starr Park mosquitoes.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "pop.mp3" },
-    { "type": "message", "characterId": "megaknight", "text": "In Royale Arena, small birds get zapped.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "Size doesn't matter Colt.\nAt least I counter snipers like Piper and Bea.", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "THIS IS BRAWL STARS NOT ROYAL CLASH", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "error.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "I activated my Hardcore Shield\nand jumped on him with full lifesteal punches.", "delaySeconds": 1.8, "sfx": "edgar_super_jump.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "AND I GOT PANCAKED INTO A RUG", "delaySeconds": 1.4, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "megaknight", "text": "I counter entire 20-skeleton swarms\nand Goblin Gangs in 1 bounce.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "pop.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "edgar_crushed_splat.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "pin_surrender.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "yeah until a 3-elixir Knight\nkites you into the King Tower", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "you have the exact same IQ as Edgar", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "And P.E.K.K.A from Clash Royale\nis literally me with a 10-foot purple sword.", "delaySeconds": 2.4, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "You two share the exact same nightmares.", "delaySeconds": 1.4, "sfx": "vine_boom.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "clash_meets_brawl_counters.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
     
     { "type": "message", "characterId": "cr_king", "text": "HE HE HE HA 👑😂", "delaySeconds": 2.0, "isTypingDuration": 0.7, "sfx": "fahhh.mp3" },
     { "type": "message", "characterId": "cr_king", "text": "Positive Elixir Trade right there! 🏆", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "WHO IS THIS OLD GUY IN A CROWN\nSPAMMING AUDIO EMOTES IN TEXT CHAT", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "KICK HIM FROM THE DISCORD CALL", "delaySeconds": 1.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "STOP LAUGHING OLD CROWN MAN", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "Mega Knight 1v1 me in Cavern Churn right now.\nI'll bush camp your entire existence.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "cr_king", "text": "Coach's analysis for Edgar:", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "cr_king", "text": "1️⃣ Your deck cost is 1 Elixir (cheap scarf).\n2️⃣ You have no building to kite tanks.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "cr_king", "text": "3️⃣ Next time place a Cannon in the center tiles.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "megaknight", "text": "I don't need bushes.\nI jump across the entire arena screen.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "edgar_super_jump.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "WE DO NOT HAVE CANNONS BRO\nWE HAVE PENNY'S MORTAR AND IT'S NERFED", "delaySeconds": 2.6, "isTypingDuration": 0.9, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I activated Hardcore Shield\nand jumped directly into the center...", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "AND HE CRUSHED THE BUSH, THE DIRT,\nAND MY RIBS INTO DUST", "delaySeconds": 1.6, "sfx": "fahhh.mp3" },
     
-    { "type": "message", "characterId": "colt", "text": "Wait wait wait.", "delaySeconds": 2.0, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "colt", "text": "Mega Knight... what did you do\nwhen the match ended in Defeat?", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    { "type": "cutaway", "mediaUrl": "edgar_crushed_splat.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "pin_surrender.mp3" },
     
-    { "type": "message", "characterId": "megaknight", "text": "I looked up at the sky for the 3 Crown animation.\nNothing fell down except red thumbs down pins.", "delaySeconds": 2.4, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "megaknight", "text": "Your game's victory fanfare is very disrespectful.", "delaySeconds": 1.6, "sfx": "brawl_match_lose.mp3" },
-    
-    { "type": "message", "characterId": "crow", "text": "That's just Edgar's natural aura.", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "pop.mp3" },
-    { "type": "message", "characterId": "crow", "text": "He does that even when we win by 100%.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
-    
-    { "type": "cutaway", "mediaUrl": "supercell_menace_registry.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "brawl_hypercharge.mp3" },
-    
-    { "type": "message", "characterId": "megaknight", "text": "Look at this compatibility chart.\nWe share the exact same playstyle.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "megaknight", "text": "1️⃣ Never look at mini-map.\n2️⃣ Jump into 4 enemies with zero backup.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "megaknight", "text": "3️⃣ Blame teammates in voice chat.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Edgar is literally a 2D purple rug\non the arena floor.", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Even your scarf gave up and flattened.", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "...", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "okay that is terrifyingly accurate", "delaySeconds": 1.6, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "maybe we are brothers from another universe 💀", "delaySeconds": 1.6, "sfx": "chime.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "okay wait a minute...", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "Mega Knight... what is your thought process\nwhen you play Clash Royale?", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "colt", "text": "Great. Now there are two of them.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "get-out.mp3" },
-    { "type": "message", "characterId": "colt", "text": "I am banning both of you from our 3v3 team forever.", "delaySeconds": 1.6, "sfx": "discord_leave.mp3" },
+    { "type": "message", "characterId": "megaknight", "text": "1️⃣ Turn off brain completely.\n2️⃣ Drop on bridge immediately.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "megaknight", "text": "3️⃣ Spam laughing emote\nwhile getting 3-crowned.", "delaySeconds": 1.6, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "BROTHER?!?! 😭❤️", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "anime-wow.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "THAT IS LITERALLY MY BRAWL STARS PLAYSTYLE:", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "1️⃣ Turn off brain.\n2️⃣ Jump into 3 people with 0 ammo.", "delaySeconds": 1.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "3️⃣ Flash thumbs down pin (👎)\nwhile dying in 0.1s.", "delaySeconds": 1.6, "sfx": "brawl_hypercharge.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "supercell_menace_registry.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "brawl_match_win.mp3" },
+    
+    { "type": "message", "characterId": "megaknight", "text": "We are not enemies Edgar.\nWe are Supercell brothers from another game 🤝", "delaySeconds": 2.4, "isTypingDuration": 0.8, "sfx": "chime.mp3" },
+    
+    { "type": "message", "characterId": "edgar", "text": "Let's queue 2v2 Showdown & Ladder right now.\nWe're about to make 10 million players uninstall.", "delaySeconds": 2.2, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
+    
+    { "type": "message", "characterId": "colt", "text": "Oh no. The mid-ladder brainrot\nhas achieved critical mass.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "get-out.mp3" },
+    
+    { "type": "message", "characterId": "shelly", "text": "Supercell emergency maintenance\nincoming in 3... 2... 1...", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "brawl_match_lose.mp3" },
     
     { "type": "message", "characterId": "cr_king", "text": "HE HE HE HA! 👑👋", "delaySeconds": 1.4, "sfx": "fahhh.mp3" }
   ]
