@@ -95,24 +95,19 @@ Every 2–3 minute episode follows a 4-act escalating storyline:
 
 Audio drives 50% of the comedy. We blend the classic Beluga meme sounds with authentic Brawl Stars in-game audio:
 
-### Classic Discord Meme Audio:
-- `ping.mp3` & `notification.mp3`: Standard message delivery.
-- `typing.mp3` & `key-press.mp3`: Plays strictly while `isTypingDuration` is active.
-- `discord_call.mp3`: Dramatic voice call cutaways.
-- `discord_join.mp3` & `discord_leave.mp3`: When brawlers enter or rage-quit the group.
-- `vine_boom.mp3`: Punchlines, absurd claims, and sudden reveals.
-- `record_scratch.mp3`: Awkward pauses and mood shifts.
-- `bruh.mp3`, `error.mp3`, `fahhh.mp3`, `get-out.mp3`: Comedic reaction sounds.
+### BGM & Mandatory YouTube Copyright Attribution:
+Whenever using royalty-free music by Kevin MacLeod (Incompetech), the exact **Creative Commons Attribution 4.0** block must be included in `metadata.txt` for 100% copyright safety and Content ID compliance:
 
-### Authentic Brawl Stars Audio:
-- `supercell_jingle.mp3`: Starr Park / Supercell admin announcements.
-- `brawl_super.mp3`: When a brawler threatens to use their Super.
-- `brawl_hypercharge.mp3`: Ultimate power flex in chat.
-- `brawl_match_lose.mp3`: Defeat sound when someone gets exposed or roasted.
-- `brawl_match_win.mp3`: Victory celebration.
-- `pin_surrender.mp3`: White flag / clown emoji spam.
-- `edgar_punch.mp3` & `edgar_super_jump.mp3`: Edgar raging or jumping in.
-- `shelly_super.mp3`: Instant point-blank explosion.
+```
+🎵 Music & Audio Credits:
+"<Track Name>" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+```
+
+- For `fluffing_a_duck.mp3`: `"Fluffing a Duck" Kevin MacLeod (incompetech.com)`
+- For `sneaky_snitch.mp3`: `"Sneaky Snitch" Kevin MacLeod (incompetech.com)`
+- For `monkeys_spinning_monkeys.mp3`: `"Monkeys Spinning Monkeys" Kevin MacLeod (incompetech.com)`
 
 ---
 
