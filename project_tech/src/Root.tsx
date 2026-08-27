@@ -33,11 +33,20 @@ import { NemiExplainsV14Comp } from "./compositions/NemiExplainsV14Comp";
 import { OutputPredictorComp } from "./compositions/OutputPredictorComp";
 import { SpotTheBugComp } from "./compositions/SpotTheBugComp";
 import { ThingsExplainedComp } from "./compositions/ThingsExplainedComp";
+import { AdaShowcaseComp } from "./components/AdaShowcaseComp";
 import { THEME } from "./constants/theme";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="AdaShowcase"
+        component={AdaShowcaseComp}
+        durationInFrames={30}
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsOxAlpha"
         component={OxAlphaComp}
