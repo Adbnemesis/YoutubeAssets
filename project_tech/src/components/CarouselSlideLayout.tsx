@@ -23,8 +23,6 @@ export interface CarouselSlideLayoutProps {
   mascotScale?: number;
   /** Whether to show Nemi sitting on Ada's shoulder */
   showNemiShoulder?: boolean;
-  /** Whether to show Instagram side navigation arrows */
-  showNavArrows?: boolean;
   /** Custom background color override */
   bgOverride?: string;
 }
@@ -40,7 +38,6 @@ export const CarouselSlideLayout: React.FC<CarouselSlideLayoutProps> = ({
   mascotPose = "neutral",
   mascotScale,
   showNemiShoulder = true,
-  showNavArrows = true,
   bgOverride,
 }) => {
   const isCover = slideNumber === 1;
@@ -206,62 +203,7 @@ export const CarouselSlideLayout: React.FC<CarouselSlideLayoutProps> = ({
       )}
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* 3. INSTAGRAM UI NAVIGATION ARROWS (Optional) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      {showNavArrows && (
-        <>
-          {slideNumber > 1 && (
-            <div
-              style={{
-                position: "absolute",
-                left: 20,
-                top: "50%",
-                transform: "translateY(-50%)",
-                width: 44,
-                height: 44,
-                borderRadius: "50%",
-                backgroundColor: isCover ? "rgba(255, 255, 255, 0.25)" : "rgba(0, 0, 0, 0.08)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: isCover ? "#FFFFFF" : "#4A5568",
-                fontSize: 24,
-                fontWeight: 900,
-                backdropFilter: "blur(4px)",
-              }}
-            >
-              ‹
-            </div>
-          )}
-
-          {slideNumber < totalSlides && (
-            <div
-              style={{
-                position: "absolute",
-                right: 20,
-                top: "50%",
-                transform: "translateY(-50%)",
-                width: 44,
-                height: 44,
-                borderRadius: "50%",
-                backgroundColor: isCover ? "rgba(255, 255, 255, 0.25)" : "rgba(0, 0, 0, 0.08)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: isCover ? "#FFFFFF" : "#4A5568",
-                fontSize: 24,
-                fontWeight: 900,
-                backdropFilter: "blur(4px)",
-              }}
-            >
-              ›
-            </div>
-          )}
-        </>
-      )}
-
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* 4. PAGINATION DOTS (BOTTOM) */}
+      {/* 3. PAGINATION DOTS (BOTTOM) */}
       {/* ══════════════════════════════════════════════════════════ */}
       <div
         style={{
