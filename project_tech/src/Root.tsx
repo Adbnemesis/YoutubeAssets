@@ -36,11 +36,20 @@ import { ThingsExplainedComp } from "./compositions/ThingsExplainedComp";
 import { AdaShowcaseComp } from "./components/AdaShowcaseComp";
 import { BinarySearchCarouselComp } from "./compositions/BinarySearchCarouselComp";
 import { SyscallCarouselComp } from "./compositions/SyscallCarouselComp";
+import { ClaudeCodeSkillsCarouselComp } from "./compositions/ClaudeCodeSkillsCarouselComp";
 import { THEME } from "./constants/theme";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="ClaudeCodeSkillsCarousel"
+        component={ClaudeCodeSkillsCarouselComp}
+        durationInFrames={7} // 7 slides (frames 0 to 6)
+        fps={THEME.dimensions.fps}
+        width={1080}
+        height={1350} // 4:5 Instagram Portrait Standard
+      />
       <Composition
         id="SyscallCarousel"
         component={SyscallCarouselComp}

@@ -201,44 +201,6 @@ export const CarouselSlideLayout: React.FC<CarouselSlideLayoutProps> = ({
           )}
         </div>
       )}
-
-      {/* ══════════════════════════════════════════════════════════ */}
-      {/* 3. PAGINATION DOTS (BOTTOM) */}
-      {/* ══════════════════════════════════════════════════════════ */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 22,
-          left: 0,
-          right: 0,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: 7,
-          zIndex: 50,
-        }}
-      >
-        {Array.from({ length: totalSlides }).map((_, idx) => {
-          const isCurrent = idx + 1 === slideNumber;
-          return (
-            <div
-              key={idx}
-              style={{
-                width: 6,
-                height: 6,
-                borderRadius: "50%",
-                backgroundColor: isCover
-                  ? isCurrent
-                    ? "#FFFFFF"
-                    : "rgba(255, 255, 255, 0.3)"
-                  : isCurrent
-                  ? "#2D3748"
-                  : "rgba(45, 55, 72, 0.2)",
-              }}
-            />
-          );
-        })}
-      </div>
     </AbsoluteFill>
   );
 };
