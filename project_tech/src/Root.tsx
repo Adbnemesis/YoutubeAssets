@@ -35,11 +35,20 @@ import { SpotTheBugComp } from "./compositions/SpotTheBugComp";
 import { ThingsExplainedComp } from "./compositions/ThingsExplainedComp";
 import { AdaShowcaseComp } from "./components/AdaShowcaseComp";
 import { BinarySearchCarouselComp } from "./compositions/BinarySearchCarouselComp";
+import { SyscallCarouselComp } from "./compositions/SyscallCarouselComp";
 import { THEME } from "./constants/theme";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="SyscallCarousel"
+        component={SyscallCarouselComp}
+        durationInFrames={6} // 6 slides (frames 0 to 5)
+        fps={THEME.dimensions.fps}
+        width={1080}
+        height={1350} // 4:5 Instagram Portrait Standard
+      />
       <Composition
         id="BinarySearchCarousel"
         component={BinarySearchCarouselComp}

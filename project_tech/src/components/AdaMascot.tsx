@@ -1,11 +1,11 @@
 import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { NEMI_THEME } from "../constants/nemiTheme";
 
 export type AdaPose =
-  | "thinking"
+  | "neutral"
   | "explaining"
   | "pointing"
+  | "thinking"
   | "aha"
   | "shocked"
   | "smug"
@@ -16,10 +16,9 @@ export interface AdaMascotProps {
   scale?: number;
   flipX?: boolean;
   hairColor?: string;
-  hairStreakColor?: string;
-  headphoneColor?: string;
-  hoodieColor?: string;
-  accentColor?: string;
+  outfit?: "school-tie" | "developer-hoodie";
+  showNemiShoulder?: boolean;
+  showHeadphones?: boolean;
   style?: React.CSSProperties;
 }
 
@@ -27,25 +26,24 @@ export const AdaMascot: React.FC<AdaMascotProps> = ({
   pose = "explaining",
   scale = 1.0,
   flipX = false,
-  hairColor = "#2D1B4E", // Deep Indigo/Violet Hair
-  hairStreakColor = "#06B6D4", // Neon Cyan Streak
-  headphoneColor = "#8B5CF6", // Electric Purple Headphone
-  hoodieColor = "#18181B", // Dark Tech Hoodie
-  accentColor = "#FFD166", // Warm Yellow Accents
+  hairColor = "#2A2538", // Deep charcoal-indigo anime hair
+  outfit = "school-tie",
+  showNemiShoulder = true,
+  showHeadphones = true,
   style,
 }) => {
   const frame = useCurrentFrame();
   const { fps = 30 } = useVideoConfig();
 
   // Subtle breathing float animation
-  const floatY = Math.sin((frame / fps) * Math.PI * 2) * 5;
+  const floatY = Math.sin((frame / fps) * Math.PI * 2) * 4;
   const headTilt =
     pose === "thinking"
-      ? 7
+      ? 6
       : pose === "aha"
       ? -4
       : pose === "smug"
-      ? -5
+      ? -4
       : pose === "shocked"
       ? 2
       : 0;
@@ -54,14 +52,7 @@ export const AdaMascot: React.FC<AdaMascotProps> = ({
   const blinkCycle = frame % 90;
   const isBlinking = blinkCycle > 84 && blinkCycle < 88;
 
-  // Headphone LED pulse
-  const ledGlowOpacity = interpolate(
-    Math.sin((frame / fps) * Math.PI * 3),
-    [-1, 1],
-    [0.4, 0.95]
-  );
-
-  // Pointing / gesturing arm bounce
+  // Arm gesturing bounce
   const armBob =
     pose === "pointing" || pose === "explaining"
       ? Math.sin((frame / fps) * Math.PI * 3) * 2.5
@@ -72,400 +63,446 @@ export const AdaMascot: React.FC<AdaMascotProps> = ({
       style={{
         transform: `scale(${scale}) scaleX(${flipX ? -1 : 1}) translateY(${floatY}px)`,
         transformOrigin: "bottom center",
-        width: "200px",
-        height: "240px",
+        width: "280px",
+        height: "360px",
         position: "relative",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        filter: "drop-shadow(0 16px 30px rgba(0,0,0,0.35))",
+        filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.25))",
         ...style,
       }}
     >
       <svg
-        width="200"
-        height="240"
-        viewBox="0 0 200 240"
+        width="280"
+        height="360"
+        viewBox="0 0 280 360"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{
           transform: `rotate(${headTilt}deg)`,
-          transformOrigin: "50% 75%",
+          transformOrigin: "50% 80%",
           overflow: "visible",
         }}
       >
         <defs>
-          {/* Gradients */}
-          <linearGradient id="adaSkinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#FFE0D2" />
-            <stop offset="100%" stopColor="#FFCDB2" />
+          {/* Skin Gradient */}
+          <linearGradient id="adaSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#FFF2EC" />
+            <stop offset="100%" stopColor="#FDE2D6" />
           </linearGradient>
 
-          <linearGradient id="adaHairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          {/* Hair Gradient */}
+          <linearGradient id="adaHair" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor={hairColor} />
-            <stop offset="100%" stopColor="#1E1338" />
+            <stop offset="60%" stopColor="#1E192A" />
+            <stop offset="100%" stopColor="#3B2D54" />
           </linearGradient>
 
-          <linearGradient id="adaStreakGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#38BDF8" />
-            <stop offset="100%" stopColor={hairStreakColor} />
+          {/* Hair Shine Highlight */}
+          <linearGradient id="adaHairShine" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#A78BFA" stopOpacity="0.8" />
+            <stop offset="100%" stopColor="#818CF8" stopOpacity="0" />
           </linearGradient>
 
-          <linearGradient id="adaHeadphoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor={headphoneColor} />
-            <stop offset="100%" stopColor="#4C1D95" />
+          {/* Shirt Shading */}
+          <linearGradient id="adaShirt" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#FFFFFF" />
+            <stop offset="100%" stopColor="#E2E8F0" />
           </linearGradient>
 
-          <linearGradient id="adaLaptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          {/* Striped Tie Gradient */}
+          <linearGradient id="adaTie" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stopColor="#1E293B" />
             <stop offset="100%" stopColor="#0F172A" />
           </linearGradient>
-
-          <filter id="adaGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
-            <feGaussianBlur stdDeviation="4" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-          </filter>
         </defs>
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* 1. BACK HAIR (Behind Head & Body) */}
+        {/* 1. BACK HAIR (Shoulder Layers) */}
         {/* ══════════════════════════════════════════════════════════ */}
-        <path
-          d="M40 90 C30 140 35 180 50 200 C58 205 65 190 62 170 C60 140 65 110 70 95 Z"
-          fill="url(#adaHairGrad)"
-        />
-        <path
-          d="M160 90 C170 140 165 180 150 200 C142 205 135 190 138 170 C140 140 135 110 130 95 Z"
-          fill="url(#adaHairGrad)"
-        />
-        {/* Twin Tail Back Waves */}
-        <path
-          d="M38 110 C20 130 18 165 32 185 C36 170 42 145 45 125 Z"
-          fill={hairColor}
-        />
-        <path
-          d="M162 110 C180 130 182 165 168 185 C164 170 158 145 155 125 Z"
-          fill={hairColor}
-        />
-
-        {/* ══════════════════════════════════════════════════════════ */}
-        {/* 2. BODY / DEVELOPER HOODIE */}
-        {/* ══════════════════════════════════════════════════════════ */}
-        <g id="ada-body">
-          {/* Main Hoodie Torso */}
+        <g id="back-hair">
+          {/* Main hair flow behind shoulders */}
           <path
-            d="M45 175 C45 150 70 142 100 142 C130 142 155 150 155 175 L168 240 L32 240 Z"
-            fill={hoodieColor}
+            d="M50 140 C35 190 40 260 65 300 C80 310 90 280 85 240 C80 200 85 160 90 140 Z"
+            fill="url(#adaHair)"
           />
-          {/* Hoodie Inner Neck Shadow */}
           <path
-            d="M82 143 C88 152 112 152 118 143 C124 148 126 156 122 162 C114 172 86 172 78 162 C74 156 76 148 82 143 Z"
-            fill="#0F0F12"
+            d="M230 140 C245 190 240 260 215 300 C200 310 190 280 195 240 C200 200 195 160 190 140 Z"
+            fill="url(#adaHair)"
           />
-          {/* Cute Visible Collar Neck */}
+          {/* Back center hair drape */}
           <path
-            d="M86 138 C86 148 114 148 114 138 Z"
-            fill="url(#adaSkinGrad)"
+            d="M75 140 C65 200 80 280 140 290 C200 280 215 200 205 140 Z"
+            fill="#1E192A"
           />
-
-          {/* Hoodie Drawstrings & Neon Beads */}
-          <path d="M84 156 L80 198" stroke={accentColor} strokeWidth="3" strokeLinecap="round" />
-          <circle cx="80" cy="201" r="3.5" fill={accentColor} />
-          <path d="M116 156 L120 198" stroke={accentColor} strokeWidth="3" strokeLinecap="round" />
-          <circle cx="120" cy="201" r="3.5" fill={accentColor} />
-
-          {/* Developer Cyber Chest Badge */}
-          <rect x="126" y="172" width="18" height="10" rx="3" fill="#1E293B" stroke={hairStreakColor} strokeWidth="1.5" />
-          <circle cx="131" cy="177" r="1.5" fill="#10B981" />
-          <line x1="135" y1="177" x2="140" y2="177" stroke="#94A3B8" strokeWidth="1.5" strokeLinecap="round" />
         </g>
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* 3. HEAD & FACE STRUCTURE */}
+        {/* 2. BODY & OUTFIT (School Shirt + Tie or Hoodie) */}
         {/* ══════════════════════════════════════════════════════════ */}
-        <g id="ada-head">
-          {/* Face Base */}
-          <ellipse cx="100" cy="98" rx="52" ry="46" fill="url(#adaSkinGrad)" />
-
-          {/* Cheerful Soft Pink Blush */}
-          <ellipse cx="68" cy="112" rx="10" ry="5.5" fill="#FB7185" opacity="0.45" />
-          <ellipse cx="132" cy="112" rx="10" ry="5.5" fill="#FB7185" opacity="0.45" />
-          {/* Cute blush anime hatch marks */}
-          <line x1="65" y1="110" x2="71" y2="114" stroke="#F43F5E" strokeWidth="1.2" strokeLinecap="round" opacity="0.5" />
-          <line x1="129" y1="110" x2="135" y2="114" stroke="#F43F5E" strokeWidth="1.2" strokeLinecap="round" opacity="0.5" />
-
-          {/* ─── EYES & EYEBROWS ─── */}
-          {pose === "shocked" ? (
-            /* Shocked Wide Eyes */
+        <g id="body-outfit">
+          {outfit === "school-tie" ? (
             <>
-              {/* Left Eyebrow */}
-              <path d="M68 72 Q78 65 88 74" stroke="#4A1E6D" strokeWidth="3" strokeLinecap="round" fill="none" />
-              {/* Right Eyebrow */}
-              <path d="M112 74 Q122 65 132 72" stroke="#4A1E6D" strokeWidth="3" strokeLinecap="round" fill="none" />
+              {/* White Collared School Shirt */}
+              <path
+                d="M60 240 C60 210 95 198 140 198 C185 198 220 210 220 240 L235 360 L45 360 Z"
+                fill="url(#adaShirt)"
+                stroke="#CBD5E1"
+                strokeWidth="1.5"
+              />
 
-              {/* Left Eye */}
-              <circle cx="78" cy="95" r="13" fill="#18181B" />
-              <circle cx="78" cy="95" r="10" fill="#6366F1" />
-              <circle cx="75" cy="91" r="4.5" fill="#FFFFFF" />
-              <circle cx="82" cy="98" r="2.5" fill="#FFFFFF" />
+              {/* Collar Left */}
+              <path
+                d="M105 196 L136 232 L110 236 L86 204 Z"
+                fill="#FFFFFF"
+                stroke="#94A3B8"
+                strokeWidth="1.5"
+              />
+              {/* Collar Right */}
+              <path
+                d="M175 196 L144 232 L170 236 L194 204 Z"
+                fill="#FFFFFF"
+                stroke="#94A3B8"
+                strokeWidth="1.5"
+              />
 
-              {/* Right Eye */}
-              <circle cx="122" cy="95" r="13" fill="#18181B" />
-              <circle cx="122" cy="95" r="10" fill="#6366F1" />
-              <circle cx="119" cy="91" r="4.5" fill="#FFFFFF" />
-              <circle cx="126" cy="98" r="2.5" fill="#FFFFFF" />
-            </>
-          ) : pose === "smug" ? (
-            /* Smug Wink */
-            <>
-              {/* Left Eyebrow */}
-              <path d="M68 76 Q78 72 88 78" stroke="#4A1E6D" strokeWidth="3" strokeLinecap="round" fill="none" />
-              {/* Right Eyebrow arched */}
-              <path d="M112 73 Q122 66 132 73" stroke="#4A1E6D" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+              {/* Exposed Neck */}
+              <path
+                d="M118 180 C118 206 162 206 162 180 Z"
+                fill="url(#adaSkin)"
+              />
 
-              {/* Left Eye: Cool Wink Line */}
-              <path d="M68 96 Q78 104 88 94" stroke="#18181B" strokeWidth="4" strokeLinecap="round" fill="none" />
-              {/* Upper Eyelash */}
-              <path d="M86 93 L92 89" stroke="#18181B" strokeWidth="2.5" strokeLinecap="round" />
-
-              {/* Right Eye: Big Sparkling Anime Eye */}
-              <ellipse cx="122" cy="95" rx="11" ry="13" fill="#18181B" />
-              <ellipse cx="122" cy="97" rx="9" ry="10" fill="#7C3AED" />
-              <ellipse cx="122" cy="100" rx="7" ry="6" fill="#06B6D4" />
-              <circle cx="118" cy="90" r="4" fill="#FFFFFF" />
-              <circle cx="125" cy="99" r="2.5" fill="#FFFFFF" />
-              {/* Eyelash */}
-              <path d="M111 86 Q122 81 133 87" stroke="#18181B" strokeWidth="3.5" strokeLinecap="round" fill="none" />
-              <path d="M131 85 L136 81" stroke="#18181B" strokeWidth="2.5" strokeLinecap="round" />
-            </>
-          ) : isBlinking ? (
-            /* Blinking Curved Lines */
-            <>
-              <path d="M68 95 Q78 102 88 95" stroke="#18181B" strokeWidth="3.5" strokeLinecap="round" fill="none" />
-              <path d="M112 95 Q122 102 132 95" stroke="#18181B" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+              {/* Tie Knot */}
+              <polygon points="132,230 148,230 144,248 136,248" fill="#1E293B" />
+              {/* Main Tie Body with Stripes */}
+              <path
+                d="M136 248 L144 248 L150 330 L140 344 L130 330 Z"
+                fill="url(#adaTie)"
+              />
+              {/* Tie Diagonal Stripes */}
+              <line x1="135" y1="262" x2="146" y2="256" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="134" y1="282" x2="147" y2="276" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="133" y1="302" x2="148" y2="296" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="132" y1="322" x2="149" y2="316" stroke="#38BDF8" strokeWidth="2.5" strokeLinecap="round" />
             </>
           ) : (
-            /* Standard Anime Chibi Sparkle Eyes */
             <>
-              {/* Eyebrows */}
-              <path d="M68 76 Q78 70 88 76" stroke="#4A1E6D" strokeWidth="3" strokeLinecap="round" fill="none" />
-              <path d="M112 76 Q122 70 132 76" stroke="#4A1E6D" strokeWidth="3" strokeLinecap="round" fill="none" />
-
-              {/* Left Eye */}
-              <ellipse cx="78" cy="95" rx="11" ry="13.5" fill="#18181B" />
-              <ellipse cx="78" cy="97" rx="9" ry="10.5" fill="#6366F1" />
-              <ellipse cx="78" cy="101" rx="7" ry="6" fill="#38BDF8" />
-              <circle cx="74" cy="90" r="4.5" fill="#FFFFFF" />
-              <circle cx="82" cy="99" r="2.5" fill="#FFFFFF" />
-              {/* Eyelash */}
-              <path d="M67 86 Q78 81 89 87" stroke="#18181B" strokeWidth="3.5" strokeLinecap="round" fill="none" />
-              <path d="M69 85 L64 81" stroke="#18181B" strokeWidth="2.5" strokeLinecap="round" />
-
-              {/* Right Eye */}
-              <ellipse cx="122" cy="95" rx="11" ry="13.5" fill="#18181B" />
-              <ellipse cx="122" cy="97" rx="9" ry="10.5" fill="#6366F1" />
-              <ellipse cx="122" cy="101" rx="7" ry="6" fill="#38BDF8" />
-              <circle cx="118" cy="90" r="4.5" fill="#FFFFFF" />
-              <circle cx="126" cy="99" r="2.5" fill="#FFFFFF" />
-              {/* Eyelash */}
-              <path d="M111 86 Q122 81 133 87" stroke="#18181B" strokeWidth="3.5" strokeLinecap="round" fill="none" />
-              <path d="M131 85 L136 81" stroke="#18181B" strokeWidth="2.5" strokeLinecap="round" />
+              {/* Developer Tech Hoodie */}
+              <path
+                d="M60 240 C60 205 95 195 140 195 C185 195 220 205 220 240 L235 360 L45 360 Z"
+                fill="#18181B"
+              />
+              {/* Drawstrings */}
+              <path d="M120 215 L115 270" stroke="#FFD166" strokeWidth="3" strokeLinecap="round" />
+              <circle cx="115" cy="273" r="3.5" fill="#FFD166" />
+              <path d="M160 215 L165 270" stroke="#FFD166" strokeWidth="3" strokeLinecap="round" />
+              <circle cx="165" cy="273" r="3.5" fill="#FFD166" />
             </>
           )}
-
-          {/* Cute Tiny Button Nose */}
-          <ellipse cx="100" cy="106" rx="2" ry="1.5" fill="#E5989B" />
-
-          {/* ─── MOUTH EXPRESSIONS ─── */}
-          {pose === "aha" ? (
-            /* Happy Open Smile */
-            <path
-              d="M91 114 Q100 126 109 114 C109 122 91 122 91 114 Z"
-              fill="#F43F5E"
-              stroke="#881337"
-              strokeWidth="2"
-              strokeLinejoin="round"
-            />
-          ) : pose === "shocked" ? (
-            /* O-Mouth */
-            <ellipse cx="100" cy="118" rx="5.5" ry="7" fill="#881337" stroke="#F43F5E" strokeWidth="1.5" />
-          ) : pose === "smug" ? (
-            /* Confident Side Smirk */
-            <path d="M93 116 Q102 121 110 114" stroke="#881337" strokeWidth="3" strokeLinecap="round" fill="none" />
-          ) : pose === "thinking" ? (
-            /* Puzzled Wavy Mouth */
-            <path d="M93 117 Q97 121 101 117 Q105 120 108 117" stroke="#881337" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-          ) : (
-            /* Sweet Gentle Smile */
-            <path d="M92 115 Q100 122 108 115" stroke="#881337" strokeWidth="2.8" strokeLinecap="round" fill="none" />
-          )}
-
-          {/* ─── FRONT HAIR BANGS & NEON CYBER STREAK ─── */}
-          {/* Main Bangs Left */}
-          <path
-            d="M50 82 C55 50 85 45 100 45 C115 45 145 50 150 82 C145 70 135 65 125 70 C110 75 105 60 95 62 C80 65 70 78 50 82 Z"
-            fill="url(#adaHairGrad)"
-          />
-          {/* Left Side Bang Frame */}
-          <path
-            d="M52 78 C48 95 50 120 58 135 C62 135 63 125 60 108 C58 95 60 85 68 76 Z"
-            fill="url(#adaHairGrad)"
-          />
-          {/* Right Side Bang Frame with Neon Streak */}
-          <path
-            d="M148 78 C152 95 150 120 142 135 C138 135 137 125 140 108 C142 95 140 85 132 76 Z"
-            fill="url(#adaHairGrad)"
-          />
-          {/* Cyber Neon Cyan Hair Streak Accent */}
-          <path
-            d="M136 68 C144 85 145 110 138 128 C135 128 134 120 136 108 C138 95 136 82 130 74 Z"
-            fill="url(#adaStreakGrad)"
-            filter="url(#adaGlowCyan)"
-          />
-          {/* Top Hair Highlights */}
-          <path
-            d="M75 56 Q100 48 125 56"
-            stroke="#A78BFA"
-            strokeWidth="3"
-            strokeLinecap="round"
-            fill="none"
-            opacity="0.6"
-          />
         </g>
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* 4. OVERSIZED CYBER HEADPHONES */}
+        {/* 3. NEMI ON SHOULDER COMPANION */}
         {/* ══════════════════════════════════════════════════════════ */}
-        <g id="ada-headphones">
-          {/* Headphone Arch Band */}
-          <path
-            d="M44 82 C44 40 156 40 156 82"
-            stroke="url(#adaHeadphoneGrad)"
-            strokeWidth="9"
-            strokeLinecap="round"
-            fill="none"
-          />
-          <path
-            d="M52 75 C52 46 148 46 148 75"
-            stroke="#1E1B4B"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            fill="none"
-          />
-
-          {/* Left Earcup */}
-          <g transform="translate(32, 70)">
-            {/* Cushion */}
-            <rect x="0" y="0" width="18" height="38" rx="9" fill="#18181B" stroke="#312E81" strokeWidth="2" />
-            {/* Outer Shell */}
-            <rect x="-8" y="4" width="12" height="30" rx="6" fill="url(#adaHeadphoneGrad)" />
-            {/* Glowing LED Ring */}
-            <circle cx="-2" cy="19" r="4.5" fill="#38BDF8" opacity={ledGlowOpacity} filter="url(#adaGlowCyan)" />
-          </g>
-
-          {/* Right Earcup */}
-          <g transform="translate(150, 70)">
-            {/* Cushion */}
-            <rect x="0" y="0" width="18" height="38" rx="9" fill="#18181B" stroke="#312E81" strokeWidth="2" />
-            {/* Outer Shell */}
-            <rect x="14" y="4" width="12" height="30" rx="6" fill="url(#adaHeadphoneGrad)" />
-            {/* Glowing LED Ring */}
-            <circle cx="20" cy="19" r="4.5" fill="#38BDF8" opacity={ledGlowOpacity} filter="url(#adaGlowCyan)" />
-          </g>
-        </g>
-
-        {/* ══════════════════════════════════════════════════════════ */}
-        {/* 5. ARMS & PROPS (According to Pose) */}
-        {/* ══════════════════════════════════════════════════════════ */}
-        {pose === "pointing" && (
-          <g id="ada-pointing-arm" transform={`translate(0, ${armBob})`}>
-            {/* Right Arm Pointing Upwards */}
+        {showNemiShoulder && (
+          <g id="nemi-shoulder-companion" transform="translate(182, 175)">
+            {/* Nemi Body */}
+            <path d="M15 45 C15 35 28 32 40 32 C52 32 65 35 65 45 L68 70 L12 70 Z" fill="#18181B" />
+            {/* Ears */}
+            <circle cx="18" cy="24" r="10" fill="#2B2D42" />
+            <circle cx="18" cy="24" r="6" fill="#FFCDB2" />
+            <circle cx="62" cy="24" r="10" fill="#2B2D42" />
+            <circle cx="62" cy="24" r="6" fill="#FFCDB2" />
+            {/* Head Base */}
+            <ellipse cx="40" cy="24" rx="22" ry="20" fill="#2B2D42" />
+            {/* Face Peach Mask */}
             <path
-              d="M152 175 L190 135 L208 115"
-              stroke={hoodieColor}
-              strokeWidth="15"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
+              d="M24 20 C24 12 32 12 40 16 C48 12 56 12 56 20 C56 32 48 38 40 38 C32 38 24 32 24 20 Z"
+              fill="#FFCDB2"
             />
-            {/* Hand & Index Finger */}
-            <circle cx="208" cy="115" r="7.5" fill="url(#adaSkinGrad)" />
-            <path d="M208 115 L218 102" stroke="#FFCDB2" strokeWidth="5.5" strokeLinecap="round" />
-            {/* Energy Sparkle on Tip */}
-            <circle cx="221" cy="98" r="3.5" fill={accentColor} filter="url(#adaGlowCyan)" />
+            {/* Glasses */}
+            <circle cx="32" cy="22" r="8" stroke="#FFD166" strokeWidth="2.5" fill="rgba(6,182,212,0.2)" />
+            <circle cx="48" cy="22" r="8" stroke="#FFD166" strokeWidth="2.5" fill="rgba(6,182,212,0.2)" />
+            <line x1="40" y1="22" x2="40" y2="22" stroke="#FFD166" strokeWidth="2.5" />
+            {/* Eyes */}
+            <circle cx="32" cy="22" r="3" fill="#111827" />
+            <circle cx="31" cy="21" r="1" fill="#FFFFFF" />
+            <circle cx="48" cy="22" r="3" fill="#111827" />
+            <circle cx="47" cy="21" r="1" fill="#FFFFFF" />
+            {/* Cute Smile */}
+            <path d="M36 32 Q40 35 44 32" stroke="#4A2810" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+            {/* Hand with Stylus */}
+            <circle cx="14" cy="52" r="4" fill="#FFCDB2" />
+            <line x1="12" y1="58" x2="16" y2="46" stroke="#38BDF8" strokeWidth="2" strokeLinecap="round" />
           </g>
         )}
 
-        {pose === "explaining" && (
-          <g id="ada-explaining-arms" transform={`translate(0, ${armBob})`}>
-            {/* Right Hand Gesturing Open */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* 4. HEADPHONES AROUND NECK */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {showHeadphones && (
+          <g id="neck-headphones">
+            {/* Headphone band around neck */}
             <path
-              d="M150 178 L185 170 L200 162"
-              stroke={hoodieColor}
-              strokeWidth="14"
+              d="M95 212 C95 238 185 238 185 212"
+              stroke="#1E1B4B"
+              strokeWidth="10"
               strokeLinecap="round"
               fill="none"
             />
-            <circle cx="200" cy="162" r="7.5" fill="url(#adaSkinGrad)" />
-            <path d="M200 162 L210 156" stroke="#FFCDB2" strokeWidth="4.5" strokeLinecap="round" />
-          </g>
-        )}
-
-        {pose === "thinking" && (
-          <g id="ada-thinking-arm">
-            {/* Hand Resting Under Chin */}
-            <path
-              d="M150 185 L142 145 L118 128"
-              stroke={hoodieColor}
-              strokeWidth="13"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              fill="none"
-            />
-            <circle cx="116" cy="126" r="7" fill="url(#adaSkinGrad)" />
-          </g>
-        )}
-
-        {pose === "coding" && (
-          <g id="ada-coding-laptop">
-            {/* Holographic Glowing Mini Laptop/Tablet */}
-            <g transform="translate(60, 175)">
-              <rect x="0" y="0" width="80" height="52" rx="8" fill="url(#adaLaptopGrad)" stroke="#38BDF8" strokeWidth="2.5" filter="url(#adaGlowCyan)" />
-              {/* Screen Content - Glowing Code Matrix Lines */}
-              <line x1="12" y1="12" x2="40" y2="12" stroke="#F43F5E" strokeWidth="3" strokeLinecap="round" />
-              <line x1="45" y1="12" x2="68" y2="12" stroke="#38BDF8" strokeWidth="3" strokeLinecap="round" />
-              <line x1="12" y1="22" x2="55" y2="22" stroke="#10B981" strokeWidth="3" strokeLinecap="round" />
-              <line x1="12" y1="32" x2="35" y2="32" stroke="#FFD166" strokeWidth="3" strokeLinecap="round" />
-              <line x1="40" y1="32" x2="65" y2="32" stroke="#A78BFA" strokeWidth="3" strokeLinecap="round" />
-              <line x1="12" y1="42" x2="48" y2="42" stroke="#38BDF8" strokeWidth="3" strokeLinecap="round" />
-
-              {/* Cute Chibi Hands on Keyboard */}
-              <circle cx="14" cy="50" r="6" fill="url(#adaSkinGrad)" />
-              <circle cx="66" cy="50" r="6" fill="url(#adaSkinGrad)" />
+            {/* Left Earcup */}
+            <g transform="translate(80, 185) rotate(-18)">
+              <rect x="0" y="0" width="22" height="42" rx="11" fill="#1E293B" stroke="#475569" strokeWidth="2" />
+              <circle cx="11" cy="21" r="5" fill="#38BDF8" />
+            </g>
+            {/* Right Earcup */}
+            <g transform="translate(178, 180) rotate(18)">
+              <rect x="0" y="0" width="22" height="42" rx="11" fill="#1E293B" stroke="#475569" strokeWidth="2" />
+              <circle cx="11" cy="21" r="5" fill="#38BDF8" />
             </g>
           </g>
         )}
 
         {/* ══════════════════════════════════════════════════════════ */}
-        {/* 6. FLOATING REACTION BADGES */}
+        {/* 5. HEAD & FACIAL FEATURES */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        <g id="head-structure">
+          {/* Head Shape */}
+          <ellipse cx="140" cy="130" rx="66" ry="60" fill="url(#adaSkin)" />
+
+          {/* Cute Anime Pink Blush */}
+          <ellipse cx="98" cy="148" rx="13" ry="7" fill="#FB7185" opacity="0.4" />
+          <ellipse cx="182" cy="148" rx="13" ry="7" fill="#FB7185" opacity="0.4" />
+          {/* Soft Manga Blush Lines */}
+          <line x1="94" y1="146" x2="102" y2="151" stroke="#F43F5E" strokeWidth="1.5" strokeLinecap="round" opacity="0.45" />
+          <line x1="178" y1="146" x2="186" y2="151" stroke="#F43F5E" strokeWidth="1.5" strokeLinecap="round" opacity="0.45" />
+
+          {/* ─── EYES & EYEBROWS ─── */}
+          {pose === "shocked" ? (
+            /* Shocked Wide Eyes */
+            <>
+              {/* Eyebrows */}
+              <path d="M100 96 Q112 88 124 98" stroke="#3B2D54" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+              <path d="M156 98 Q168 88 180 96" stroke="#3B2D54" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+
+              {/* Eyes */}
+              <circle cx="112" cy="126" r="16" fill="#18181B" />
+              <circle cx="112" cy="126" r="12" fill="#5B21B6" />
+              <circle cx="108" cy="121" r="5.5" fill="#FFFFFF" />
+              <circle cx="117" cy="130" r="3" fill="#FFFFFF" />
+
+              <circle cx="168" cy="126" r="16" fill="#18181B" />
+              <circle cx="168" cy="126" r="12" fill="#5B21B6" />
+              <circle cx="164" cy="121" r="5.5" fill="#FFFFFF" />
+              <circle cx="173" cy="130" r="3" fill="#FFFFFF" />
+            </>
+          ) : pose === "smug" ? (
+            /* Smug Wink */
+            <>
+              {/* Left Eyebrow */}
+              <path d="M100 102 Q112 98 124 104" stroke="#3B2D54" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+              {/* Right Eyebrow arched */}
+              <path d="M156 98 Q168 90 180 98" stroke="#3B2D54" strokeWidth="4" strokeLinecap="round" fill="none" />
+
+              {/* Left Eye: Wink */}
+              <path d="M98 128 Q112 138 126 126" stroke="#18181B" strokeWidth="5" strokeLinecap="round" fill="none" />
+              <path d="M122 124 L130 119" stroke="#18181B" strokeWidth="3" strokeLinecap="round" />
+
+              {/* Right Eye: Big Anime Eye */}
+              <ellipse cx="168" cy="126" rx="14" ry="17" fill="#18181B" />
+              <ellipse cx="168" cy="129" rx="11" ry="13" fill="#5B21B6" />
+              <ellipse cx="168" cy="133" rx="9" ry="8" fill="#38BDF8" />
+              <circle cx="163" cy="120" r="5.5" fill="#FFFFFF" />
+              <circle cx="173" cy="132" r="3" fill="#FFFFFF" />
+              {/* Eyelash */}
+              <path d="M154 114 Q168 108 182 116" stroke="#18181B" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+              <path d="M180 113 L186 108" stroke="#18181B" strokeWidth="3" strokeLinecap="round" />
+            </>
+          ) : isBlinking ? (
+            /* Blinking */
+            <>
+              <path d="M98 126 Q112 135 126 126" stroke="#18181B" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+              <path d="M154 126 Q168 135 182 126" stroke="#18181B" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+            </>
+          ) : (
+            /* Standard Anime Eyes */
+            <>
+              {/* Eyebrows */}
+              <path d="M100 102 Q112 94 124 102" stroke="#3B2D54" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+              <path d="M156 102 Q168 94 180 102" stroke="#3B2D54" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+
+              {/* Left Eye */}
+              <ellipse cx="112" cy="126" rx="14" ry="17" fill="#18181B" />
+              <ellipse cx="112" cy="129" rx="11" ry="13" fill="#5B21B6" />
+              <ellipse cx="112" cy="133" rx="9" ry="8" fill="#38BDF8" />
+              <circle cx="107" cy="120" r="5.5" fill="#FFFFFF" />
+              <circle cx="117" cy="132" r="3" fill="#FFFFFF" />
+              {/* Eyelash */}
+              <path d="M98 114 Q112 108 126 116" stroke="#18181B" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+              <path d="M100 113 L94 108" stroke="#18181B" strokeWidth="3" strokeLinecap="round" />
+
+              {/* Right Eye */}
+              <ellipse cx="168" cy="126" rx="14" ry="17" fill="#18181B" />
+              <ellipse cx="168" cy="129" rx="11" ry="13" fill="#5B21B6" />
+              <ellipse cx="168" cy="133" rx="9" ry="8" fill="#38BDF8" />
+              <circle cx="163" cy="120" r="5.5" fill="#FFFFFF" />
+              <circle cx="173" cy="132" r="3" fill="#FFFFFF" />
+              {/* Eyelash */}
+              <path d="M154 114 Q168 108 182 116" stroke="#18181B" strokeWidth="4.5" strokeLinecap="round" fill="none" />
+              <path d="M180 113 L186 108" stroke="#18181B" strokeWidth="3" strokeLinecap="round" />
+            </>
+          )}
+
+          {/* Cute Button Nose */}
+          <ellipse cx="140" cy="140" rx="2" ry="1.5" fill="#E5989B" />
+
+          {/* ─── MOUTH EXPRESSIONS ─── */}
+          {pose === "aha" ? (
+            /* Open Cheerful Smile */
+            <path
+              d="M128 152 Q140 166 152 152 C152 162 128 162 128 152 Z"
+              fill="#F43F5E"
+              stroke="#881337"
+              strokeWidth="2.5"
+              strokeLinejoin="round"
+            />
+          ) : pose === "shocked" ? (
+            /* O-Mouth */
+            <ellipse cx="140" cy="156" rx="7" ry="9" fill="#881337" stroke="#F43F5E" strokeWidth="2" />
+          ) : pose === "smug" ? (
+            /* Confident Side Smirk */
+            <path d="M130 154 Q142 160 154 150" stroke="#881337" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+          ) : pose === "thinking" ? (
+            /* Puzzled Wavy Mouth */
+            <path d="M130 154 Q136 158 141 154 Q146 158 150 154" stroke="#881337" strokeWidth="3" strokeLinecap="round" fill="none" />
+          ) : (
+            /* Gentle Sweet Smile */
+            <path d="M130 152 Q140 160 150 152" stroke="#881337" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+          )}
+
+          {/* ─── FRONT HAIR BANGS & ANIME STRANDS ─── */}
+          {/* Main Top Hair Dome */}
+          <path
+            d="M75 110 C80 60 120 50 140 50 C160 50 200 60 205 110 C195 95 180 90 170 96 C150 102 145 82 135 84 C115 88 100 105 75 110 Z"
+            fill="url(#adaHair)"
+          />
+          {/* Left Framing Bangs */}
+          <path
+            d="M78 105 C72 130 75 165 85 185 C90 185 92 172 88 148 C85 130 88 116 100 102 Z"
+            fill="url(#adaHair)"
+          />
+          {/* Right Framing Bangs */}
+          <path
+            d="M202 105 C208 130 205 165 195 185 C190 185 188 172 192 148 C195 130 192 116 180 102 Z"
+            fill="url(#adaHair)"
+          />
+          {/* Center Cute Ahoge / Forehead Strands */}
+          <path
+            d="M136 50 C132 30 144 20 148 18 C144 28 140 38 142 50 Z"
+            fill="url(#adaHair)"
+          />
+          {/* Hair Gloss Highlight Arc */}
+          <path
+            d="M105 75 Q140 64 175 75"
+            stroke="#C4B5FD"
+            strokeWidth="3.5"
+            strokeLinecap="round"
+            fill="none"
+            opacity="0.65"
+          />
+        </g>
+
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* 6. ARMS & PROPS (According to Pose) */}
+        {/* ══════════════════════════════════════════════════════════ */}
+        {pose === "pointing" && (
+          <g id="pointing-arm" transform={`translate(0, ${armBob})`}>
+            <path
+              d="M210 245 L255 195 L278 165"
+              stroke="#FFFFFF"
+              strokeWidth="20"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+            <path
+              d="M210 245 L255 195 L278 165"
+              stroke="#CBD5E1"
+              strokeWidth="20"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+              opacity="0.3"
+            />
+            {/* Hand & Pointing Finger */}
+            <circle cx="278" cy="165" r="9" fill="url(#adaSkin)" />
+            <path d="M278 165 L292 148" stroke="#FDE2D6" strokeWidth="7" strokeLinecap="round" />
+            <circle cx="295" cy="144" r="4" fill="#FFD166" />
+          </g>
+        )}
+
+        {pose === "explaining" && (
+          <g id="explaining-arm" transform={`translate(0, ${armBob})`}>
+            <path
+              d="M210 250 L250 240 L270 230"
+              stroke="#FFFFFF"
+              strokeWidth="18"
+              strokeLinecap="round"
+              fill="none"
+            />
+            <circle cx="270" cy="230" r="9" fill="url(#adaSkin)" />
+            <path d="M270 230 L282 222" stroke="#FDE2D6" strokeWidth="5.5" strokeLinecap="round" />
+          </g>
+        )}
+
+        {pose === "thinking" && (
+          <g id="thinking-arm">
+            <path
+              d="M210 260 L198 200 L165 175"
+              stroke="#FFFFFF"
+              strokeWidth="18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              fill="none"
+            />
+            <circle cx="162" cy="172" r="9" fill="url(#adaSkin)" />
+          </g>
+        )}
+
+        {pose === "coding" && (
+          <g id="coding-laptop" transform="translate(85, 240)">
+            <rect x="0" y="0" width="110" height="70" rx="10" fill="#0F172A" stroke="#38BDF8" strokeWidth="3" />
+            <line x1="16" y1="16" x2="55" y2="16" stroke="#F43F5E" strokeWidth="3.5" strokeLinecap="round" />
+            <line x1="62" y1="16" x2="94" y2="16" stroke="#38BDF8" strokeWidth="3.5" strokeLinecap="round" />
+            <line x1="16" y1="30" x2="75" y2="30" stroke="#10B981" strokeWidth="3.5" strokeLinecap="round" />
+            <line x1="16" y1="44" x2="48" y2="44" stroke="#FFD166" strokeWidth="3.5" strokeLinecap="round" />
+            <line x1="54" y1="44" x2="90" y2="44" stroke="#A78BFA" strokeWidth="3.5" strokeLinecap="round" />
+            <circle cx="20" cy="68" r="8" fill="url(#adaSkin)" />
+            <circle cx="90" cy="68" r="8" fill="url(#adaSkin)" />
+          </g>
+        )}
+
+        {/* ══════════════════════════════════════════════════════════ */}
+        {/* 7. REACTION BADGES */}
         {/* ══════════════════════════════════════════════════════════ */}
         {pose === "aha" && (
-          <g id="badge-aha" transform="translate(138, 8)">
-            <circle cx="16" cy="16" r="16" fill="#FEF08A" filter="url(#adaGlowCyan)" />
-            <text x="7" y="22" fontSize="18">💡</text>
+          <g id="badge-aha" transform="translate(195, 25)">
+            <circle cx="20" cy="20" r="20" fill="#FEF08A" />
+            <text x="9" y="27" fontSize="22">💡</text>
           </g>
         )}
 
         {pose === "smug" && (
-          <g id="badge-smug" transform="translate(142, 12)">
-            <text x="0" y="20" fontSize="22" filter="url(#adaGlowCyan)">✨</text>
+          <g id="badge-smug" transform="translate(195, 30)">
+            <text x="0" y="24" fontSize="28">✨</text>
           </g>
         )}
 
         {pose === "shocked" && (
-          <g id="badge-shocked" transform="translate(140, 10)">
-            <circle cx="15" cy="15" r="15" fill="#FEE2E2" />
-            <text x="5" y="22" fontSize="18">⚡</text>
+          <g id="badge-shocked" transform="translate(195, 25)">
+            <circle cx="18" cy="18" r="18" fill="#FEE2E2" />
+            <text x="6" y="25" fontSize="22">⚡</text>
           </g>
         )}
       </svg>
