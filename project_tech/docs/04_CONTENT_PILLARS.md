@@ -1,6 +1,25 @@
 # NEMI EXPLAINS — CONTENT PILLARS & EDITORIAL MIX
 
-## 1. Editorial Distribution Strategy
+> ⚠️ **INTERIM OVERRIDE (2026-08-22, per `26_RETENTION_POSTMORTEM_AND_PLAYBOOK.md` §2):**
+> Field data shows Everyday Tech Mysteries retain **~1.8× better** than developer-niche topics
+> (CAPTCHA 25.3% & google.com 24.3% APV vs Two Sum 14.3% & ChatGPT 13.0%). Until any reel reaches
+> **APV ≥ 40%**, production follows the INTERIM mix below. Revert to the strategic mix once data
+> supports it.
+
+## 1A. INTERIM Editorial Mix (active now)
+
+| Pillar | Target % (interim) |
+|:---|:---:|
+| **6. Everyday Tech Mysteries** | **40%** |
+| **2. Internet Infrastructure** | **20%** |
+| **1. Under The Hood** | **15%** |
+| **5. System Design in 30s** | **10%** |
+| **3. Code That Tricks You** | **10%** |
+| **4. DSA & Algorithm Duels** | **5%** |
+
+---
+
+## 1. Strategic Editorial Distribution Strategy (revisit when APV ≥ 40%)
 To ensure both algorithmic virality and high-ticket B2B commercial value, Nemi Explains content is divided into 6 distinct pillars:
 
 | Pillar | Focus Area | Audience Appeal | Shareability Driver | Target % |

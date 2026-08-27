@@ -1,0 +1,21 @@
+{
+  "name": "kit_def_oc_ulti_projectile",
+  "frameCount": 1,
+  "canvas": {
+    "width": 350,
+    "height": 424
+  },
+  "anchor": {
+    "x": 175,
+    "y": 212
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 49,
+      "y": 57,
+      "w": 252,
+      "h": 310
+    }
+  ]
+}

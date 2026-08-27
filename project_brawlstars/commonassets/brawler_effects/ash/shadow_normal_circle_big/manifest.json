@@ -1,0 +1,21 @@
+{
+  "name": "shadow_normal_circle_big",
+  "frameCount": 1,
+  "canvas": {
+    "width": 136,
+    "height": 136
+  },
+  "anchor": {
+    "x": 68,
+    "y": 68
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 136,
+      "h": 136
+    }
+  ]
+}

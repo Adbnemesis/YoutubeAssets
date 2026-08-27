@@ -1,0 +1,21 @@
+{
+  "name": "twirl_2_angelo",
+  "frameCount": 1,
+  "canvas": {
+    "width": 272,
+    "height": 288
+  },
+  "anchor": {
+    "x": 136,
+    "y": 144
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 3,
+      "y": 156,
+      "w": 269,
+      "h": 132
+    }
+  ]
+}

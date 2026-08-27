@@ -1,0 +1,41 @@
+# Video Metadata - Qwen 3.8 Max vs Kimi K3 Explainer
+
+## Title Options
+1. Qwen 3.8 Max vs Kimi K3: The Ultimate Chinese AI Battle!
+2. The 2.8 Trillion Parameter Monster: Kimi K3 Explained
+3. Qwen 3.8 Max vs Kimi K3: Pricing, Specs & Which is Better?
+4. Moonshot Kimi K3 vs Alibaba Qwen 3.8 Max: 3-Minute Explainer
+
+## Video Description
+Alibaba and Moonshot AI just dropped two massive Chinese flagship models: Qwen 3.8 Max and Kimi K3. How do they compare, and which one should you use? In this 3-minute explainer, we break down the parameters, Mixture-of-Experts (MoE) architectures, key delta attention features, pricing discounts, and multimodal capabilities of these two frontier models.
+
+We cover Kimi K3's massive 2.8 Trillion parameter scale, its 90% caching discount, and Moonshot's linear delta attention mechanism. We also break down Alibaba's 2.4 Trillion parameter Qwen 3.8 Max, its multimodal strengths, and how its subscription tiers shape up in preview. 
+
+Leave a like and subscribe for more direct, metric-focused artificial intelligence and tech explainer videos!
+
+#Qwen #KimiK3 #Qwen38Max #MoonshotAI #Alibaba #ChineseAI #LargeLanguageModels #GenerativeAI #AIComparison #ArtificialIntelligence #TechExplainer #CodingAI #MultimodalAI
+
+## Timestamps / Chapters
+00:00 The Translator Monkeys (Mixture-of-Experts)
+00:29 Trillion Parameter Scale (2.8T vs 2.4T)
+00:54 The Secret to Speed & Cost (MoE Experts)
+01:14 KDA & Attention Residuals
+01:29 Alibaba's Multimodal Beast
+01:47 1 Million Token Context
+01:55 The 90% Pricing Discount (Cache Hit)
+02:13 Qwen 3.8 Max Preview & Subscription Tiers
+02:22 Kimi K3 vs Qwen 3.8 Max: Which Wins?
+
+## Keywords & Tags
+qwen 3.8 max, kimi k3, moonshot ai, alibaba ai, qwen vs kimi, mixture of experts, moe architecture, kimi delta attention, attention residuals, ai pricing, context window, 1m token context, coding ai, multimodal ai, chinese llm, frontier models, claude 5 fable, token plan, qoder, qoderwork
+
+## Sources & References
+- Moonshot AI Developer Docs: "Kimi K3 Technical Specifications & Caching" (https://platform.moonshot.cn)
+- Alibaba Cloud: "Qwen 3.8 Max Model Specifications & Subscription Pricing" (https://www.alibabacloud.com)
+
+## Thumbnail Prompts
+### Option 1: The AI Duel "IT'S WAR..." (High-CTR style mimicking monkeythumbnail.png reference)
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey teacher with thick black-rimmed glasses, simple dot eyes, and basic line mouth (no realistic chimp features, zero fur textures, zero shading, flat solid brown color fill, clean bold black marker outlines). He is looking shocked and sweating, with wide anxious eyes and holding his simple cartoon hands to his cheeks. On the left side, a clean blackboard comparison graph is drawn with two giant columns: a bright orange bar labeled "QWEN 3.8" and a cobalt blue bar labeled "KIMI K3". At the top-left, a light red pill-shaped capsule contains red text "90% OFF" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S WAR...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+
+### Option 2: The Cost Crash "IT'S OVER..." (High-CTR style mimicking monkeythumbnail.png reference)
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey teacher with thick black-rimmed glasses, simple dot eyes, and a basic line mouth (no realistic chimp features, zero fur textures, zero shading, flat solid brown color fill, clean bold black marker outlines). He looks extremely worried with a single cartoon tear rolling down his cheek, looking at the viewer. On the left side, a simple line chart is drawn in thick blue marker lines showing a steep line crashing downwards, with a giant red down-pointing arrow. At the top-left, a light red pill-shaped capsule contains a red down arrow icon and text "10x CHEAPER" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S OVER...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.

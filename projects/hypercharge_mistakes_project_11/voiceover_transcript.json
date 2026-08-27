@@ -1,0 +1,5726 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.32,
+      "text": "You press the purple button, hear that epic lightning sound effect, and immediately charge",
+      "words": [
+        {
+          "word": " You",
+          "start": 0.0,
+          "end": 0.18,
+          "probability": 0.69
+        },
+        {
+          "word": " press",
+          "start": 0.18,
+          "end": 0.42,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 0.42,
+          "end": 0.66,
+          "probability": 0.993
+        },
+        {
+          "word": " purple",
+          "start": 0.66,
+          "end": 0.88,
+          "probability": 0.763
+        },
+        {
+          "word": " button,",
+          "start": 0.88,
+          "end": 1.28,
+          "probability": 0.999
+        },
+        {
+          "word": " hear",
+          "start": 1.54,
+          "end": 1.66,
+          "probability": 0.969
+        },
+        {
+          "word": " that",
+          "start": 1.66,
+          "end": 1.86,
+          "probability": 0.994
+        },
+        {
+          "word": " epic",
+          "start": 1.86,
+          "end": 2.18,
+          "probability": 0.862
+        },
+        {
+          "word": " lightning",
+          "start": 2.18,
+          "end": 2.54,
+          "probability": 0.838
+        },
+        {
+          "word": " sound",
+          "start": 2.54,
+          "end": 2.82,
+          "probability": 0.981
+        },
+        {
+          "word": " effect,",
+          "start": 2.82,
+          "end": 3.12,
+          "probability": 0.989
+        },
+        {
+          "word": " and",
+          "start": 3.44,
+          "end": 3.5,
+          "probability": 0.991
+        },
+        {
+          "word": " immediately",
+          "start": 3.5,
+          "end": 3.88,
+          "probability": 0.996
+        },
+        {
+          "word": " charge",
+          "start": 3.88,
+          "end": 4.32,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 4.32,
+      "end": 8.72,
+      "text": "straight into the enemy team. Two seconds later, you are looking at a respawn screen.",
+      "words": [
+        {
+          "word": " straight",
+          "start": 4.32,
+          "end": 4.7,
+          "probability": 0.983
+        },
+        {
+          "word": " into",
+          "start": 4.7,
+          "end": 5.04,
+          "probability": 0.99
+        },
+        {
+          "word": " the",
+          "start": 5.04,
+          "end": 5.18,
+          "probability": 0.994
+        },
+        {
+          "word": " enemy",
+          "start": 5.18,
+          "end": 5.36,
+          "probability": 0.997
+        },
+        {
+          "word": " team.",
+          "start": 5.36,
+          "end": 5.76,
+          "probability": 0.997
+        },
+        {
+          "word": " Two",
+          "start": 6.28,
+          "end": 6.5,
+          "probability": 0.878
+        },
+        {
+          "word": " seconds",
+          "start": 6.5,
+          "end": 6.76,
+          "probability": 0.993
+        },
+        {
+          "word": " later,",
+          "start": 6.76,
+          "end": 7.1,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 7.32,
+          "end": 7.38,
+          "probability": 0.997
+        },
+        {
+          "word": " are",
+          "start": 7.38,
+          "end": 7.5,
+          "probability": 0.967
+        },
+        {
+          "word": " looking",
+          "start": 7.5,
+          "end": 7.76,
+          "probability": 0.998
+        },
+        {
+          "word": " at",
+          "start": 7.76,
+          "end": 7.94,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 7.94,
+          "end": 8.02,
+          "probability": 0.997
+        },
+        {
+          "word": " respawn",
+          "start": 8.02,
+          "end": 8.42,
+          "probability": 0.895
+        },
+        {
+          "word": " screen.",
+          "start": 8.42,
+          "end": 8.72,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 9.18,
+      "end": 13.82,
+      "text": "Why does this happen? The most common mistake players make with hypercharge is assuming it makes",
+      "words": [
+        {
+          "word": " Why",
+          "start": 9.18,
+          "end": 9.36,
+          "probability": 0.991
+        },
+        {
+          "word": " does",
+          "start": 9.36,
+          "end": 9.5,
+          "probability": 0.996
+        },
+        {
+          "word": " this",
+          "start": 9.5,
+          "end": 9.62,
+          "probability": 0.998
+        },
+        {
+          "word": " happen?",
+          "start": 9.62,
+          "end": 9.94,
+          "probability": 0.999
+        },
+        {
+          "word": " The",
+          "start": 10.48,
+          "end": 10.62,
+          "probability": 0.987
+        },
+        {
+          "word": " most",
+          "start": 10.62,
+          "end": 10.84,
+          "probability": 0.995
+        },
+        {
+          "word": " common",
+          "start": 10.84,
+          "end": 11.14,
+          "probability": 0.998
+        },
+        {
+          "word": " mistake",
+          "start": 11.14,
+          "end": 11.44,
+          "probability": 0.977
+        },
+        {
+          "word": " players",
+          "start": 11.44,
+          "end": 11.76,
+          "probability": 0.994
+        },
+        {
+          "word": " make",
+          "start": 11.76,
+          "end": 11.98,
+          "probability": 0.997
+        },
+        {
+          "word": " with",
+          "start": 11.98,
+          "end": 12.2,
+          "probability": 0.998
+        },
+        {
+          "word": " hypercharge",
+          "start": 12.2,
+          "end": 12.7,
+          "probability": 0.634
+        },
+        {
+          "word": " is",
+          "start": 12.7,
+          "end": 13.0,
+          "probability": 0.889
+        },
+        {
+          "word": " assuming",
+          "start": 13.0,
+          "end": 13.44,
+          "probability": 0.996
+        },
+        {
+          "word": " it",
+          "start": 13.44,
+          "end": 13.62,
+          "probability": 0.993
+        },
+        {
+          "word": " makes",
+          "start": 13.62,
+          "end": 13.82,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 13.82,
+      "end": 18.64,
+      "text": "them invincible. In reality, activating hypercharge is often the easiest way to throw a game.",
+      "words": [
+        {
+          "word": " them",
+          "start": 13.82,
+          "end": 14.0,
+          "probability": 0.999
+        },
+        {
+          "word": " invincible.",
+          "start": 14.0,
+          "end": 14.44,
+          "probability": 0.942
+        },
+        {
+          "word": " In",
+          "start": 14.88,
+          "end": 14.98,
+          "probability": 0.994
+        },
+        {
+          "word": " reality,",
+          "start": 14.98,
+          "end": 15.34,
+          "probability": 0.996
+        },
+        {
+          "word": " activating",
+          "start": 15.64,
+          "end": 15.98,
+          "probability": 0.97
+        },
+        {
+          "word": " hypercharge",
+          "start": 15.98,
+          "end": 16.62,
+          "probability": 0.973
+        },
+        {
+          "word": " is",
+          "start": 16.62,
+          "end": 16.8,
+          "probability": 0.997
+        },
+        {
+          "word": " often",
+          "start": 16.8,
+          "end": 17.18,
+          "probability": 0.985
+        },
+        {
+          "word": " the",
+          "start": 17.18,
+          "end": 17.34,
+          "probability": 0.999
+        },
+        {
+          "word": " easiest",
+          "start": 17.34,
+          "end": 17.74,
+          "probability": 0.996
+        },
+        {
+          "word": " way",
+          "start": 17.74,
+          "end": 17.96,
+          "probability": 1.0
+        },
+        {
+          "word": " to",
+          "start": 17.96,
+          "end": 18.08,
+          "probability": 0.999
+        },
+        {
+          "word": " throw",
+          "start": 18.08,
+          "end": 18.28,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 18.28,
+          "end": 18.42,
+          "probability": 1.0
+        },
+        {
+          "word": " game.",
+          "start": 18.42,
+          "end": 18.64,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 18.96,
+      "end": 24.94,
+      "text": "Let us look at the math. A level 11 Edgar has 6600 health. When he activates his hypercharge,",
+      "words": [
+        {
+          "word": " Let",
+          "start": 18.96,
+          "end": 19.08,
+          "probability": 0.994
+        },
+        {
+          "word": " us",
+          "start": 19.08,
+          "end": 19.2,
+          "probability": 0.971
+        },
+        {
+          "word": " look",
+          "start": 19.2,
+          "end": 19.36,
+          "probability": 0.996
+        },
+        {
+          "word": " at",
+          "start": 19.36,
+          "end": 19.48,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 19.48,
+          "end": 19.58,
+          "probability": 0.995
+        },
+        {
+          "word": " math.",
+          "start": 19.58,
+          "end": 19.82,
+          "probability": 0.94
+        },
+        {
+          "word": " A",
+          "start": 20.12,
+          "end": 20.2,
+          "probability": 0.961
+        },
+        {
+          "word": " level",
+          "start": 20.2,
+          "end": 20.5,
+          "probability": 0.917
+        },
+        {
+          "word": " 11",
+          "start": 20.5,
+          "end": 20.84,
+          "probability": 0.969
+        },
+        {
+          "word": " Edgar",
+          "start": 20.84,
+          "end": 21.3,
+          "probability": 0.623
+        },
+        {
+          "word": " has",
+          "start": 21.3,
+          "end": 21.54,
+          "probability": 0.998
+        },
+        {
+          "word": " 6600",
+          "start": 21.54,
+          "end": 22.82,
+          "probability": 0.718
+        },
+        {
+          "word": " health.",
+          "start": 22.82,
+          "end": 23.24,
+          "probability": 0.977
+        },
+        {
+          "word": " When",
+          "start": 23.4,
+          "end": 23.56,
+          "probability": 0.997
+        },
+        {
+          "word": " he",
+          "start": 23.56,
+          "end": 23.66,
+          "probability": 0.999
+        },
+        {
+          "word": " activates",
+          "start": 23.66,
+          "end": 24.1,
+          "probability": 0.992
+        },
+        {
+          "word": " his",
+          "start": 24.1,
+          "end": 24.32,
+          "probability": 0.996
+        },
+        {
+          "word": " hypercharge,",
+          "start": 24.32,
+          "end": 24.94,
+          "probability": 0.981
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 24.94,
+      "end": 32.38,
+      "text": "he receives a 15% shield. This increases his effective health to 7,764. That is less than one",
+      "words": [
+        {
+          "word": " he",
+          "start": 24.94,
+          "end": 25.28,
+          "probability": 0.136
+        },
+        {
+          "word": " receives",
+          "start": 25.28,
+          "end": 25.66,
+          "probability": 0.977
+        },
+        {
+          "word": " a",
+          "start": 25.66,
+          "end": 25.86,
+          "probability": 0.992
+        },
+        {
+          "word": " 15",
+          "start": 25.86,
+          "end": 26.24,
+          "probability": 0.976
+        },
+        {
+          "word": "%",
+          "start": 26.24,
+          "end": 26.62,
+          "probability": 0.902
+        },
+        {
+          "word": " shield.",
+          "start": 26.62,
+          "end": 27.02,
+          "probability": 0.991
+        },
+        {
+          "word": " This",
+          "start": 27.34,
+          "end": 27.44,
+          "probability": 0.993
+        },
+        {
+          "word": " increases",
+          "start": 27.44,
+          "end": 27.88,
+          "probability": 0.995
+        },
+        {
+          "word": " his",
+          "start": 27.88,
+          "end": 28.12,
+          "probability": 0.997
+        },
+        {
+          "word": " effective",
+          "start": 28.12,
+          "end": 28.46,
+          "probability": 0.981
+        },
+        {
+          "word": " health",
+          "start": 28.46,
+          "end": 28.8,
+          "probability": 0.995
+        },
+        {
+          "word": " to",
+          "start": 28.8,
+          "end": 28.98,
+          "probability": 0.991
+        },
+        {
+          "word": " 7",
+          "start": 28.98,
+          "end": 29.34,
+          "probability": 0.769
+        },
+        {
+          "word": ",764.",
+          "start": 29.34,
+          "end": 30.98,
+          "probability": 0.879
+        },
+        {
+          "word": " That",
+          "start": 31.38,
+          "end": 31.54,
+          "probability": 0.991
+        },
+        {
+          "word": " is",
+          "start": 31.54,
+          "end": 31.66,
+          "probability": 0.987
+        },
+        {
+          "word": " less",
+          "start": 31.66,
+          "end": 31.86,
+          "probability": 0.993
+        },
+        {
+          "word": " than",
+          "start": 31.86,
+          "end": 32.08,
+          "probability": 0.995
+        },
+        {
+          "word": " one",
+          "start": 32.08,
+          "end": 32.38,
+          "probability": 0.849
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 32.38,
+      "end": 36.96,
+      "text": "extra shot from a piper. If you run in a straight line, you are not an unstoppable force.",
+      "words": [
+        {
+          "word": " extra",
+          "start": 32.38,
+          "end": 32.84,
+          "probability": 0.996
+        },
+        {
+          "word": " shot",
+          "start": 32.84,
+          "end": 33.08,
+          "probability": 0.994
+        },
+        {
+          "word": " from",
+          "start": 33.08,
+          "end": 33.26,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 33.26,
+          "end": 33.42,
+          "probability": 0.997
+        },
+        {
+          "word": " piper.",
+          "start": 33.42,
+          "end": 33.7,
+          "probability": 0.658
+        },
+        {
+          "word": " If",
+          "start": 34.02,
+          "end": 34.16,
+          "probability": 0.991
+        },
+        {
+          "word": " you",
+          "start": 34.16,
+          "end": 34.26,
+          "probability": 0.999
+        },
+        {
+          "word": " run",
+          "start": 34.26,
+          "end": 34.44,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 34.44,
+          "end": 34.56,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 34.56,
+          "end": 34.66,
+          "probability": 0.998
+        },
+        {
+          "word": " straight",
+          "start": 34.66,
+          "end": 34.86,
+          "probability": 0.996
+        },
+        {
+          "word": " line,",
+          "start": 34.86,
+          "end": 35.18,
+          "probability": 0.998
+        },
+        {
+          "word": " you",
+          "start": 35.48,
+          "end": 35.56,
+          "probability": 0.997
+        },
+        {
+          "word": " are",
+          "start": 35.56,
+          "end": 35.64,
+          "probability": 0.982
+        },
+        {
+          "word": " not",
+          "start": 35.64,
+          "end": 35.88,
+          "probability": 0.994
+        },
+        {
+          "word": " an",
+          "start": 35.88,
+          "end": 36.06,
+          "probability": 0.994
+        },
+        {
+          "word": " unstoppable",
+          "start": 36.06,
+          "end": 36.52,
+          "probability": 0.967
+        },
+        {
+          "word": " force.",
+          "start": 36.52,
+          "end": 36.96,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 37.56,
+      "end": 42.46,
+      "text": "You are just a purple target. This leads to the second major mistake. Tunnel vision.",
+      "words": [
+        {
+          "word": " You",
+          "start": 37.56,
+          "end": 37.7,
+          "probability": 0.993
+        },
+        {
+          "word": " are",
+          "start": 37.7,
+          "end": 37.76,
+          "probability": 0.958
+        },
+        {
+          "word": " just",
+          "start": 37.76,
+          "end": 37.92,
+          "probability": 0.997
+        },
+        {
+          "word": " a",
+          "start": 37.92,
+          "end": 38.06,
+          "probability": 0.998
+        },
+        {
+          "word": " purple",
+          "start": 38.06,
+          "end": 38.32,
+          "probability": 0.934
+        },
+        {
+          "word": " target.",
+          "start": 38.32,
+          "end": 38.7,
+          "probability": 0.998
+        },
+        {
+          "word": " This",
+          "start": 39.56,
+          "end": 39.74,
+          "probability": 0.97
+        },
+        {
+          "word": " leads",
+          "start": 39.74,
+          "end": 39.92,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 39.92,
+          "end": 40.14,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 40.14,
+          "end": 40.24,
+          "probability": 0.992
+        },
+        {
+          "word": " second",
+          "start": 40.24,
+          "end": 40.6,
+          "probability": 0.975
+        },
+        {
+          "word": " major",
+          "start": 40.6,
+          "end": 40.88,
+          "probability": 0.989
+        },
+        {
+          "word": " mistake.",
+          "start": 40.88,
+          "end": 41.24,
+          "probability": 0.998
+        },
+        {
+          "word": " Tunnel",
+          "start": 41.94,
+          "end": 42.18,
+          "probability": 0.979
+        },
+        {
+          "word": " vision.",
+          "start": 42.18,
+          "end": 42.46,
+          "probability": 0.58
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 43.06,
+      "end": 47.96,
+      "text": "The moment players activate hypercharge, they stop playing tactically. They stop using walls,",
+      "words": [
+        {
+          "word": " The",
+          "start": 43.06,
+          "end": 43.18,
+          "probability": 0.96
+        },
+        {
+          "word": " moment",
+          "start": 43.18,
+          "end": 43.42,
+          "probability": 0.991
+        },
+        {
+          "word": " players",
+          "start": 43.42,
+          "end": 43.74,
+          "probability": 0.986
+        },
+        {
+          "word": " activate",
+          "start": 43.74,
+          "end": 44.28,
+          "probability": 0.997
+        },
+        {
+          "word": " hypercharge,",
+          "start": 44.28,
+          "end": 44.9,
+          "probability": 0.68
+        },
+        {
+          "word": " they",
+          "start": 45.22,
+          "end": 45.32,
+          "probability": 0.998
+        },
+        {
+          "word": " stop",
+          "start": 45.32,
+          "end": 45.58,
+          "probability": 0.988
+        },
+        {
+          "word": " playing",
+          "start": 45.58,
+          "end": 45.9,
+          "probability": 0.996
+        },
+        {
+          "word": " tactically.",
+          "start": 45.9,
+          "end": 46.48,
+          "probability": 0.998
+        },
+        {
+          "word": " They",
+          "start": 46.94,
+          "end": 47.16,
+          "probability": 0.998
+        },
+        {
+          "word": " stop",
+          "start": 47.16,
+          "end": 47.36,
+          "probability": 0.997
+        },
+        {
+          "word": " using",
+          "start": 47.36,
+          "end": 47.66,
+          "probability": 0.998
+        },
+        {
+          "word": " walls,",
+          "start": 47.66,
+          "end": 47.96,
+          "probability": 0.969
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 48.32,
+      "end": 52.82,
+      "text": "they stop dodging, and they focus entirely on trying to get value from their upgraded super,",
+      "words": [
+        {
+          "word": " they",
+          "start": 48.32,
+          "end": 48.42,
+          "probability": 0.988
+        },
+        {
+          "word": " stop",
+          "start": 48.42,
+          "end": 48.72,
+          "probability": 0.995
+        },
+        {
+          "word": " dodging,",
+          "start": 48.72,
+          "end": 49.1,
+          "probability": 0.989
+        },
+        {
+          "word": " and",
+          "start": 49.3,
+          "end": 49.44,
+          "probability": 0.998
+        },
+        {
+          "word": " they",
+          "start": 49.44,
+          "end": 49.56,
+          "probability": 0.99
+        },
+        {
+          "word": " focus",
+          "start": 49.56,
+          "end": 49.84,
+          "probability": 0.997
+        },
+        {
+          "word": " entirely",
+          "start": 49.84,
+          "end": 50.36,
+          "probability": 0.998
+        },
+        {
+          "word": " on",
+          "start": 50.36,
+          "end": 50.68,
+          "probability": 0.999
+        },
+        {
+          "word": " trying",
+          "start": 50.68,
+          "end": 50.92,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 50.92,
+          "end": 51.1,
+          "probability": 0.999
+        },
+        {
+          "word": " get",
+          "start": 51.1,
+          "end": 51.24,
+          "probability": 0.999
+        },
+        {
+          "word": " value",
+          "start": 51.24,
+          "end": 51.62,
+          "probability": 0.996
+        },
+        {
+          "word": " from",
+          "start": 51.62,
+          "end": 51.82,
+          "probability": 0.997
+        },
+        {
+          "word": " their",
+          "start": 51.82,
+          "end": 51.96,
+          "probability": 0.996
+        },
+        {
+          "word": " upgraded",
+          "start": 51.96,
+          "end": 52.42,
+          "probability": 0.994
+        },
+        {
+          "word": " super,",
+          "start": 52.42,
+          "end": 52.82,
+          "probability": 0.915
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 52.82,
+      "end": 57.24,
+      "text": "but why waste the most powerful part of the buff? When you activate hypercharge,",
+      "words": [
+        {
+          "word": " but",
+          "start": 52.82,
+          "end": 53.22,
+          "probability": 0.117
+        },
+        {
+          "word": " why",
+          "start": 53.22,
+          "end": 53.5,
+          "probability": 0.975
+        },
+        {
+          "word": " waste",
+          "start": 53.5,
+          "end": 53.86,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 53.86,
+          "end": 54.02,
+          "probability": 0.997
+        },
+        {
+          "word": " most",
+          "start": 54.02,
+          "end": 54.32,
+          "probability": 0.997
+        },
+        {
+          "word": " powerful",
+          "start": 54.32,
+          "end": 54.8,
+          "probability": 0.992
+        },
+        {
+          "word": " part",
+          "start": 54.8,
+          "end": 55.12,
+          "probability": 0.998
+        },
+        {
+          "word": " of",
+          "start": 55.12,
+          "end": 55.32,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 55.32,
+          "end": 55.44,
+          "probability": 0.989
+        },
+        {
+          "word": " buff?",
+          "start": 55.44,
+          "end": 55.68,
+          "probability": 0.968
+        },
+        {
+          "word": " When",
+          "start": 56.0,
+          "end": 56.08,
+          "probability": 0.986
+        },
+        {
+          "word": " you",
+          "start": 56.08,
+          "end": 56.2,
+          "probability": 0.999
+        },
+        {
+          "word": " activate",
+          "start": 56.2,
+          "end": 56.64,
+          "probability": 0.996
+        },
+        {
+          "word": " hypercharge,",
+          "start": 56.64,
+          "end": 57.24,
+          "probability": 0.56
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 57.58,
+      "end": 63.44,
+      "text": "you receive a massive speed boost, usually between 20% and 26%, instead of immediately using",
+      "words": [
+        {
+          "word": " you",
+          "start": 57.58,
+          "end": 57.64,
+          "probability": 0.996
+        },
+        {
+          "word": " receive",
+          "start": 57.64,
+          "end": 57.92,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 57.92,
+          "end": 58.16,
+          "probability": 0.995
+        },
+        {
+          "word": " massive",
+          "start": 58.16,
+          "end": 58.54,
+          "probability": 0.991
+        },
+        {
+          "word": " speed",
+          "start": 58.54,
+          "end": 58.94,
+          "probability": 0.971
+        },
+        {
+          "word": " boost,",
+          "start": 58.94,
+          "end": 59.22,
+          "probability": 0.991
+        },
+        {
+          "word": " usually",
+          "start": 59.46,
+          "end": 59.66,
+          "probability": 0.996
+        },
+        {
+          "word": " between",
+          "start": 59.66,
+          "end": 60.04,
+          "probability": 0.996
+        },
+        {
+          "word": " 20",
+          "start": 60.04,
+          "end": 60.4,
+          "probability": 0.994
+        },
+        {
+          "word": "%",
+          "start": 60.4,
+          "end": 60.72,
+          "probability": 0.811
+        },
+        {
+          "word": " and",
+          "start": 60.72,
+          "end": 61.08,
+          "probability": 0.992
+        },
+        {
+          "word": " 26%,",
+          "start": 61.08,
+          "end": 62.14,
+          "probability": 0.692
+        },
+        {
+          "word": " instead",
+          "start": 62.14,
+          "end": 62.52,
+          "probability": 0.987
+        },
+        {
+          "word": " of",
+          "start": 62.52,
+          "end": 62.7,
+          "probability": 0.999
+        },
+        {
+          "word": " immediately",
+          "start": 62.7,
+          "end": 63.06,
+          "probability": 0.986
+        },
+        {
+          "word": " using",
+          "start": 63.06,
+          "end": 63.44,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 63.44,
+      "end": 67.36,
+      "text": "your super, you should use this speed to position yourself, bait out enemy gadgets,",
+      "words": [
+        {
+          "word": " your",
+          "start": 63.44,
+          "end": 63.66,
+          "probability": 0.994
+        },
+        {
+          "word": " super,",
+          "start": 63.66,
+          "end": 63.92,
+          "probability": 0.874
+        },
+        {
+          "word": " you",
+          "start": 64.2,
+          "end": 64.28,
+          "probability": 0.996
+        },
+        {
+          "word": " should",
+          "start": 64.28,
+          "end": 64.44,
+          "probability": 0.997
+        },
+        {
+          "word": " use",
+          "start": 64.44,
+          "end": 64.6,
+          "probability": 0.993
+        },
+        {
+          "word": " this",
+          "start": 64.6,
+          "end": 64.8,
+          "probability": 0.994
+        },
+        {
+          "word": " speed",
+          "start": 64.8,
+          "end": 65.1,
+          "probability": 0.985
+        },
+        {
+          "word": " to",
+          "start": 65.1,
+          "end": 65.32,
+          "probability": 0.995
+        },
+        {
+          "word": " position",
+          "start": 65.32,
+          "end": 65.64,
+          "probability": 0.999
+        },
+        {
+          "word": " yourself,",
+          "start": 65.64,
+          "end": 66.06,
+          "probability": 0.996
+        },
+        {
+          "word": " bait",
+          "start": 66.4,
+          "end": 66.5,
+          "probability": 0.84
+        },
+        {
+          "word": " out",
+          "start": 66.5,
+          "end": 66.7,
+          "probability": 0.987
+        },
+        {
+          "word": " enemy",
+          "start": 66.7,
+          "end": 66.98,
+          "probability": 0.991
+        },
+        {
+          "word": " gadgets,",
+          "start": 66.98,
+          "end": 67.36,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 67.68,
+      "end": 71.44,
+      "text": "and force them to waste their ammo. Once they are defenseless, that is when you strike.",
+      "words": [
+        {
+          "word": " and",
+          "start": 67.68,
+          "end": 67.78,
+          "probability": 0.997
+        },
+        {
+          "word": " force",
+          "start": 67.78,
+          "end": 68.02,
+          "probability": 0.994
+        },
+        {
+          "word": " them",
+          "start": 68.02,
+          "end": 68.22,
+          "probability": 0.991
+        },
+        {
+          "word": " to",
+          "start": 68.22,
+          "end": 68.4,
+          "probability": 0.998
+        },
+        {
+          "word": " waste",
+          "start": 68.4,
+          "end": 68.6,
+          "probability": 0.955
+        },
+        {
+          "word": " their",
+          "start": 68.6,
+          "end": 68.86,
+          "probability": 0.998
+        },
+        {
+          "word": " ammo.",
+          "start": 68.86,
+          "end": 69.16,
+          "probability": 0.993
+        },
+        {
+          "word": " Once",
+          "start": 69.42,
+          "end": 69.6,
+          "probability": 0.995
+        },
+        {
+          "word": " they",
+          "start": 69.6,
+          "end": 69.74,
+          "probability": 0.996
+        },
+        {
+          "word": " are",
+          "start": 69.74,
+          "end": 69.82,
+          "probability": 0.986
+        },
+        {
+          "word": " defenseless,",
+          "start": 69.82,
+          "end": 70.36,
+          "probability": 0.994
+        },
+        {
+          "word": " that",
+          "start": 70.64,
+          "end": 70.8,
+          "probability": 0.998
+        },
+        {
+          "word": " is",
+          "start": 70.8,
+          "end": 70.9,
+          "probability": 0.976
+        },
+        {
+          "word": " when",
+          "start": 70.9,
+          "end": 71.06,
+          "probability": 0.985
+        },
+        {
+          "word": " you",
+          "start": 71.06,
+          "end": 71.18,
+          "probability": 0.999
+        },
+        {
+          "word": " strike.",
+          "start": 71.18,
+          "end": 71.44,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 71.78,
+      "end": 76.56,
+      "text": "There is also a hidden mechanic that even seasoned players miss. It is called the hypercharge charge",
+      "words": [
+        {
+          "word": " There",
+          "start": 71.78,
+          "end": 71.88,
+          "probability": 0.997
+        },
+        {
+          "word": " is",
+          "start": 71.88,
+          "end": 72.02,
+          "probability": 0.991
+        },
+        {
+          "word": " also",
+          "start": 72.02,
+          "end": 72.3,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 72.3,
+          "end": 72.44,
+          "probability": 0.999
+        },
+        {
+          "word": " hidden",
+          "start": 72.44,
+          "end": 72.62,
+          "probability": 0.982
+        },
+        {
+          "word": " mechanic",
+          "start": 72.62,
+          "end": 73.08,
+          "probability": 0.999
+        },
+        {
+          "word": " that",
+          "start": 73.08,
+          "end": 73.38,
+          "probability": 0.947
+        },
+        {
+          "word": " even",
+          "start": 73.38,
+          "end": 73.64,
+          "probability": 0.993
+        },
+        {
+          "word": " seasoned",
+          "start": 73.64,
+          "end": 73.96,
+          "probability": 0.303
+        },
+        {
+          "word": " players",
+          "start": 73.96,
+          "end": 74.32,
+          "probability": 0.983
+        },
+        {
+          "word": " miss.",
+          "start": 74.32,
+          "end": 74.64,
+          "probability": 0.993
+        },
+        {
+          "word": " It",
+          "start": 74.92,
+          "end": 75.02,
+          "probability": 0.996
+        },
+        {
+          "word": " is",
+          "start": 75.02,
+          "end": 75.14,
+          "probability": 0.992
+        },
+        {
+          "word": " called",
+          "start": 75.14,
+          "end": 75.34,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 75.34,
+          "end": 75.56,
+          "probability": 0.967
+        },
+        {
+          "word": " hypercharge",
+          "start": 75.56,
+          "end": 76.14,
+          "probability": 0.596
+        },
+        {
+          "word": " charge",
+          "start": 76.14,
+          "end": 76.56,
+          "probability": 0.71
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 76.56,
+      "end": 81.72,
+      "text": "lock. Normally, your hypercharge charges at 40% of your regular supercharge rate. However,",
+      "words": [
+        {
+          "word": " lock.",
+          "start": 76.56,
+          "end": 76.78,
+          "probability": 0.963
+        },
+        {
+          "word": " Normally,",
+          "start": 77.12,
+          "end": 77.42,
+          "probability": 0.994
+        },
+        {
+          "word": " your",
+          "start": 77.7,
+          "end": 77.76,
+          "probability": 0.991
+        },
+        {
+          "word": " hypercharge",
+          "start": 77.76,
+          "end": 78.32,
+          "probability": 0.971
+        },
+        {
+          "word": " charges",
+          "start": 78.32,
+          "end": 78.78,
+          "probability": 0.944
+        },
+        {
+          "word": " at",
+          "start": 78.78,
+          "end": 79.02,
+          "probability": 0.996
+        },
+        {
+          "word": " 40",
+          "start": 79.02,
+          "end": 79.38,
+          "probability": 0.992
+        },
+        {
+          "word": "%",
+          "start": 79.38,
+          "end": 79.68,
+          "probability": 0.992
+        },
+        {
+          "word": " of",
+          "start": 79.68,
+          "end": 79.92,
+          "probability": 0.999
+        },
+        {
+          "word": " your",
+          "start": 79.92,
+          "end": 80.04,
+          "probability": 0.996
+        },
+        {
+          "word": " regular",
+          "start": 80.04,
+          "end": 80.36,
+          "probability": 0.997
+        },
+        {
+          "word": " supercharge",
+          "start": 80.36,
+          "end": 81.0,
+          "probability": 0.969
+        },
+        {
+          "word": " rate.",
+          "start": 81.0,
+          "end": 81.22,
+          "probability": 0.998
+        },
+        {
+          "word": " However,",
+          "start": 81.46,
+          "end": 81.72,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 81.72,
+      "end": 86.62,
+      "text": "while your hypercharge is active, any damage you deal does not contribute to your next hypercharge.",
+      "words": [
+        {
+          "word": " while",
+          "start": 81.72,
+          "end": 82.12,
+          "probability": 0.031
+        },
+        {
+          "word": " your",
+          "start": 82.12,
+          "end": 82.32,
+          "probability": 0.958
+        },
+        {
+          "word": " hypercharge",
+          "start": 82.32,
+          "end": 82.76,
+          "probability": 0.702
+        },
+        {
+          "word": " is",
+          "start": 82.76,
+          "end": 83.02,
+          "probability": 0.989
+        },
+        {
+          "word": " active,",
+          "start": 83.02,
+          "end": 83.3,
+          "probability": 0.997
+        },
+        {
+          "word": " any",
+          "start": 83.62,
+          "end": 83.8,
+          "probability": 0.996
+        },
+        {
+          "word": " damage",
+          "start": 83.8,
+          "end": 84.1,
+          "probability": 0.994
+        },
+        {
+          "word": " you",
+          "start": 84.1,
+          "end": 84.32,
+          "probability": 0.991
+        },
+        {
+          "word": " deal",
+          "start": 84.32,
+          "end": 84.6,
+          "probability": 0.993
+        },
+        {
+          "word": " does",
+          "start": 84.6,
+          "end": 84.88,
+          "probability": 0.914
+        },
+        {
+          "word": " not",
+          "start": 84.88,
+          "end": 85.06,
+          "probability": 0.989
+        },
+        {
+          "word": " contribute",
+          "start": 85.06,
+          "end": 85.48,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 85.48,
+          "end": 85.68,
+          "probability": 0.993
+        },
+        {
+          "word": " your",
+          "start": 85.68,
+          "end": 85.76,
+          "probability": 0.991
+        },
+        {
+          "word": " next",
+          "start": 85.76,
+          "end": 85.98,
+          "probability": 0.925
+        },
+        {
+          "word": " hypercharge.",
+          "start": 85.98,
+          "end": 86.62,
+          "probability": 0.94
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 86.94,
+      "end": 91.04,
+      "text": "The meter is completely locked. If you dump all your ammo and charge another super,",
+      "words": [
+        {
+          "word": " The",
+          "start": 86.94,
+          "end": 87.06,
+          "probability": 0.988
+        },
+        {
+          "word": " meter",
+          "start": 87.06,
+          "end": 87.28,
+          "probability": 0.99
+        },
+        {
+          "word": " is",
+          "start": 87.28,
+          "end": 87.52,
+          "probability": 0.999
+        },
+        {
+          "word": " completely",
+          "start": 87.52,
+          "end": 88.02,
+          "probability": 0.997
+        },
+        {
+          "word": " locked.",
+          "start": 88.02,
+          "end": 88.32,
+          "probability": 0.996
+        },
+        {
+          "word": " If",
+          "start": 88.76,
+          "end": 88.88,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 88.88,
+          "end": 89.0,
+          "probability": 0.999
+        },
+        {
+          "word": " dump",
+          "start": 89.0,
+          "end": 89.18,
+          "probability": 0.997
+        },
+        {
+          "word": " all",
+          "start": 89.18,
+          "end": 89.4,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 89.4,
+          "end": 89.6,
+          "probability": 0.992
+        },
+        {
+          "word": " ammo",
+          "start": 89.6,
+          "end": 89.84,
+          "probability": 0.987
+        },
+        {
+          "word": " and",
+          "start": 89.84,
+          "end": 90.12,
+          "probability": 0.979
+        },
+        {
+          "word": " charge",
+          "start": 90.12,
+          "end": 90.34,
+          "probability": 0.998
+        },
+        {
+          "word": " another",
+          "start": 90.34,
+          "end": 90.66,
+          "probability": 0.997
+        },
+        {
+          "word": " super,",
+          "start": 90.66,
+          "end": 91.04,
+          "probability": 0.929
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 91.4,
+      "end": 95.46,
+      "text": "while the purple lightning is active, you get zero progress towards your next hypercharge.",
+      "words": [
+        {
+          "word": " while",
+          "start": 91.4,
+          "end": 91.5,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 91.5,
+          "end": 91.64,
+          "probability": 0.998
+        },
+        {
+          "word": " purple",
+          "start": 91.64,
+          "end": 91.88,
+          "probability": 0.97
+        },
+        {
+          "word": " lightning",
+          "start": 91.88,
+          "end": 92.16,
+          "probability": 0.848
+        },
+        {
+          "word": " is",
+          "start": 92.16,
+          "end": 92.38,
+          "probability": 0.999
+        },
+        {
+          "word": " active,",
+          "start": 92.38,
+          "end": 92.68,
+          "probability": 0.999
+        },
+        {
+          "word": " you",
+          "start": 93.04,
+          "end": 93.16,
+          "probability": 0.998
+        },
+        {
+          "word": " get",
+          "start": 93.16,
+          "end": 93.32,
+          "probability": 0.998
+        },
+        {
+          "word": " zero",
+          "start": 93.32,
+          "end": 93.62,
+          "probability": 0.913
+        },
+        {
+          "word": " progress",
+          "start": 93.62,
+          "end": 94.1,
+          "probability": 0.998
+        },
+        {
+          "word": " towards",
+          "start": 94.1,
+          "end": 94.42,
+          "probability": 0.737
+        },
+        {
+          "word": " your",
+          "start": 94.42,
+          "end": 94.6,
+          "probability": 0.99
+        },
+        {
+          "word": " next",
+          "start": 94.6,
+          "end": 94.76,
+          "probability": 0.993
+        },
+        {
+          "word": " hypercharge.",
+          "start": 94.76,
+          "end": 95.46,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 95.7,
+      "end": 100.48,
+      "text": "To maximize efficiency, you should try to charge your regular super before activating hypercharge.",
+      "words": [
+        {
+          "word": " To",
+          "start": 95.7,
+          "end": 95.82,
+          "probability": 0.995
+        },
+        {
+          "word": " maximize",
+          "start": 95.82,
+          "end": 96.18,
+          "probability": 0.987
+        },
+        {
+          "word": " efficiency,",
+          "start": 96.18,
+          "end": 96.72,
+          "probability": 0.994
+        },
+        {
+          "word": " you",
+          "start": 97.1,
+          "end": 97.16,
+          "probability": 0.998
+        },
+        {
+          "word": " should",
+          "start": 97.16,
+          "end": 97.3,
+          "probability": 0.999
+        },
+        {
+          "word": " try",
+          "start": 97.3,
+          "end": 97.5,
+          "probability": 0.984
+        },
+        {
+          "word": " to",
+          "start": 97.5,
+          "end": 97.62,
+          "probability": 0.998
+        },
+        {
+          "word": " charge",
+          "start": 97.62,
+          "end": 97.88,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 97.88,
+          "end": 98.04,
+          "probability": 0.993
+        },
+        {
+          "word": " regular",
+          "start": 98.04,
+          "end": 98.34,
+          "probability": 0.997
+        },
+        {
+          "word": " super",
+          "start": 98.34,
+          "end": 98.76,
+          "probability": 0.98
+        },
+        {
+          "word": " before",
+          "start": 98.76,
+          "end": 99.24,
+          "probability": 0.958
+        },
+        {
+          "word": " activating",
+          "start": 99.24,
+          "end": 99.82,
+          "probability": 0.995
+        },
+        {
+          "word": " hypercharge.",
+          "start": 99.82,
+          "end": 100.48,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 100.8,
+      "end": 105.16,
+      "text": "This allows you to use your upgraded super immediately, and then use your normal attacks after",
+      "words": [
+        {
+          "word": " This",
+          "start": 100.8,
+          "end": 100.94,
+          "probability": 0.996
+        },
+        {
+          "word": " allows",
+          "start": 100.94,
+          "end": 101.22,
+          "probability": 0.997
+        },
+        {
+          "word": " you",
+          "start": 101.22,
+          "end": 101.44,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 101.44,
+          "end": 101.56,
+          "probability": 0.997
+        },
+        {
+          "word": " use",
+          "start": 101.56,
+          "end": 101.76,
+          "probability": 0.998
+        },
+        {
+          "word": " your",
+          "start": 101.76,
+          "end": 101.92,
+          "probability": 0.997
+        },
+        {
+          "word": " upgraded",
+          "start": 101.92,
+          "end": 102.3,
+          "probability": 0.993
+        },
+        {
+          "word": " super",
+          "start": 102.3,
+          "end": 102.66,
+          "probability": 0.986
+        },
+        {
+          "word": " immediately,",
+          "start": 102.66,
+          "end": 103.06,
+          "probability": 0.963
+        },
+        {
+          "word": " and",
+          "start": 103.44,
+          "end": 103.54,
+          "probability": 0.994
+        },
+        {
+          "word": " then",
+          "start": 103.54,
+          "end": 103.68,
+          "probability": 0.987
+        },
+        {
+          "word": " use",
+          "start": 103.68,
+          "end": 103.9,
+          "probability": 0.992
+        },
+        {
+          "word": " your",
+          "start": 103.9,
+          "end": 104.04,
+          "probability": 0.995
+        },
+        {
+          "word": " normal",
+          "start": 104.04,
+          "end": 104.32,
+          "probability": 0.993
+        },
+        {
+          "word": " attacks",
+          "start": 104.32,
+          "end": 104.72,
+          "probability": 0.992
+        },
+        {
+          "word": " after",
+          "start": 104.72,
+          "end": 105.16,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 105.16,
+      "end": 109.72,
+      "text": "the hypercharge ends to immediately start building the next one. Finally, you must learn how to play",
+      "words": [
+        {
+          "word": " the",
+          "start": 105.16,
+          "end": 105.32,
+          "probability": 0.996
+        },
+        {
+          "word": " hypercharge",
+          "start": 105.32,
+          "end": 105.82,
+          "probability": 0.979
+        },
+        {
+          "word": " ends",
+          "start": 105.82,
+          "end": 106.14,
+          "probability": 0.995
+        },
+        {
+          "word": " to",
+          "start": 106.14,
+          "end": 106.4,
+          "probability": 0.918
+        },
+        {
+          "word": " immediately",
+          "start": 106.4,
+          "end": 106.72,
+          "probability": 0.999
+        },
+        {
+          "word": " start",
+          "start": 106.72,
+          "end": 107.1,
+          "probability": 0.997
+        },
+        {
+          "word": " building",
+          "start": 107.1,
+          "end": 107.32,
+          "probability": 0.999
+        },
+        {
+          "word": " the",
+          "start": 107.32,
+          "end": 107.54,
+          "probability": 0.996
+        },
+        {
+          "word": " next",
+          "start": 107.54,
+          "end": 107.76,
+          "probability": 1.0
+        },
+        {
+          "word": " one.",
+          "start": 107.76,
+          "end": 108.0,
+          "probability": 0.997
+        },
+        {
+          "word": " Finally,",
+          "start": 108.2,
+          "end": 108.58,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 108.8,
+          "end": 108.88,
+          "probability": 0.998
+        },
+        {
+          "word": " must",
+          "start": 108.88,
+          "end": 109.04,
+          "probability": 0.998
+        },
+        {
+          "word": " learn",
+          "start": 109.04,
+          "end": 109.24,
+          "probability": 0.998
+        },
+        {
+          "word": " how",
+          "start": 109.24,
+          "end": 109.44,
+          "probability": 0.995
+        },
+        {
+          "word": " to",
+          "start": 109.44,
+          "end": 109.54,
+          "probability": 0.999
+        },
+        {
+          "word": " play",
+          "start": 109.54,
+          "end": 109.72,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 109.72,
+      "end": 114.52,
+      "text": "against hypercharge. When you see an enemy turn purple, your immediate reaction should be to retreat.",
+      "words": [
+        {
+          "word": " against",
+          "start": 109.72,
+          "end": 110.08,
+          "probability": 0.886
+        },
+        {
+          "word": " hypercharge.",
+          "start": 110.08,
+          "end": 110.6,
+          "probability": 0.634
+        },
+        {
+          "word": " When",
+          "start": 110.94,
+          "end": 111.06,
+          "probability": 0.977
+        },
+        {
+          "word": " you",
+          "start": 111.06,
+          "end": 111.18,
+          "probability": 0.997
+        },
+        {
+          "word": " see",
+          "start": 111.18,
+          "end": 111.38,
+          "probability": 0.996
+        },
+        {
+          "word": " an",
+          "start": 111.38,
+          "end": 111.5,
+          "probability": 0.99
+        },
+        {
+          "word": " enemy",
+          "start": 111.5,
+          "end": 111.74,
+          "probability": 0.986
+        },
+        {
+          "word": " turn",
+          "start": 111.74,
+          "end": 112.02,
+          "probability": 0.904
+        },
+        {
+          "word": " purple,",
+          "start": 112.02,
+          "end": 112.38,
+          "probability": 0.969
+        },
+        {
+          "word": " your",
+          "start": 112.66,
+          "end": 112.76,
+          "probability": 0.984
+        },
+        {
+          "word": " immediate",
+          "start": 112.76,
+          "end": 113.12,
+          "probability": 0.999
+        },
+        {
+          "word": " reaction",
+          "start": 113.12,
+          "end": 113.62,
+          "probability": 0.987
+        },
+        {
+          "word": " should",
+          "start": 113.62,
+          "end": 113.88,
+          "probability": 0.994
+        },
+        {
+          "word": " be",
+          "start": 113.88,
+          "end": 114.04,
+          "probability": 0.981
+        },
+        {
+          "word": " to",
+          "start": 114.04,
+          "end": 114.22,
+          "probability": 0.986
+        },
+        {
+          "word": " retreat.",
+          "start": 114.22,
+          "end": 114.52,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 114.92,
+      "end": 120.24,
+      "text": "Hypercharge only lasts for 5 seconds. If you can use knockbacks, stuns, or simply run behind",
+      "words": [
+        {
+          "word": " Hypercharge",
+          "start": 114.92,
+          "end": 115.4,
+          "probability": 0.903
+        },
+        {
+          "word": " only",
+          "start": 115.4,
+          "end": 115.72,
+          "probability": 0.997
+        },
+        {
+          "word": " lasts",
+          "start": 115.72,
+          "end": 115.98,
+          "probability": 0.996
+        },
+        {
+          "word": " for",
+          "start": 115.98,
+          "end": 116.28,
+          "probability": 0.971
+        },
+        {
+          "word": " 5",
+          "start": 116.28,
+          "end": 116.6,
+          "probability": 0.642
+        },
+        {
+          "word": " seconds.",
+          "start": 116.6,
+          "end": 116.98,
+          "probability": 0.987
+        },
+        {
+          "word": " If",
+          "start": 117.24,
+          "end": 117.38,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 117.38,
+          "end": 117.5,
+          "probability": 0.998
+        },
+        {
+          "word": " can",
+          "start": 117.5,
+          "end": 117.68,
+          "probability": 0.988
+        },
+        {
+          "word": " use",
+          "start": 117.68,
+          "end": 117.9,
+          "probability": 0.996
+        },
+        {
+          "word": " knockbacks,",
+          "start": 117.9,
+          "end": 118.36,
+          "probability": 0.887
+        },
+        {
+          "word": " stuns,",
+          "start": 118.78,
+          "end": 119.16,
+          "probability": 0.991
+        },
+        {
+          "word": " or",
+          "start": 119.24,
+          "end": 119.32,
+          "probability": 0.994
+        },
+        {
+          "word": " simply",
+          "start": 119.32,
+          "end": 119.64,
+          "probability": 0.955
+        },
+        {
+          "word": " run",
+          "start": 119.64,
+          "end": 119.9,
+          "probability": 0.998
+        },
+        {
+          "word": " behind",
+          "start": 119.9,
+          "end": 120.24,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 120.24,
+      "end": 126.52,
+      "text": "walls, you can easily waste their entire activation. A wasted hypercharge is a massive 5000 coin deficit",
+      "words": [
+        {
+          "word": " walls,",
+          "start": 120.24,
+          "end": 120.6,
+          "probability": 0.989
+        },
+        {
+          "word": " you",
+          "start": 120.82,
+          "end": 120.92,
+          "probability": 0.996
+        },
+        {
+          "word": " can",
+          "start": 120.92,
+          "end": 121.08,
+          "probability": 0.997
+        },
+        {
+          "word": " easily",
+          "start": 121.08,
+          "end": 121.48,
+          "probability": 0.99
+        },
+        {
+          "word": " waste",
+          "start": 121.48,
+          "end": 121.84,
+          "probability": 0.966
+        },
+        {
+          "word": " their",
+          "start": 121.84,
+          "end": 122.04,
+          "probability": 0.988
+        },
+        {
+          "word": " entire",
+          "start": 122.04,
+          "end": 122.36,
+          "probability": 0.892
+        },
+        {
+          "word": " activation.",
+          "start": 122.36,
+          "end": 123.04,
+          "probability": 0.996
+        },
+        {
+          "word": " A",
+          "start": 123.38,
+          "end": 123.46,
+          "probability": 0.993
+        },
+        {
+          "word": " wasted",
+          "start": 123.46,
+          "end": 123.8,
+          "probability": 0.946
+        },
+        {
+          "word": " hypercharge",
+          "start": 123.8,
+          "end": 124.48,
+          "probability": 0.976
+        },
+        {
+          "word": " is",
+          "start": 124.48,
+          "end": 124.7,
+          "probability": 0.992
+        },
+        {
+          "word": " a",
+          "start": 124.7,
+          "end": 124.8,
+          "probability": 0.996
+        },
+        {
+          "word": " massive",
+          "start": 124.8,
+          "end": 125.18,
+          "probability": 0.983
+        },
+        {
+          "word": " 5000",
+          "start": 125.18,
+          "end": 125.74,
+          "probability": 0.474
+        },
+        {
+          "word": " coin",
+          "start": 125.74,
+          "end": 126.18,
+          "probability": 0.935
+        },
+        {
+          "word": " deficit",
+          "start": 126.18,
+          "end": 126.52,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 126.52,
+      "end": 131.36,
+      "text": "for the enemy team. Next time you play, treat hypercharge as a positioning tool first, and a",
+      "words": [
+        {
+          "word": " for",
+          "start": 126.52,
+          "end": 126.82,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 126.82,
+          "end": 126.96,
+          "probability": 0.993
+        },
+        {
+          "word": " enemy",
+          "start": 126.96,
+          "end": 127.14,
+          "probability": 0.993
+        },
+        {
+          "word": " team.",
+          "start": 127.14,
+          "end": 127.54,
+          "probability": 0.998
+        },
+        {
+          "word": " Next",
+          "start": 127.8,
+          "end": 127.98,
+          "probability": 0.991
+        },
+        {
+          "word": " time",
+          "start": 127.98,
+          "end": 128.18,
+          "probability": 0.992
+        },
+        {
+          "word": " you",
+          "start": 128.18,
+          "end": 128.32,
+          "probability": 0.984
+        },
+        {
+          "word": " play,",
+          "start": 128.32,
+          "end": 128.56,
+          "probability": 0.997
+        },
+        {
+          "word": " treat",
+          "start": 128.84,
+          "end": 128.96,
+          "probability": 0.969
+        },
+        {
+          "word": " hypercharge",
+          "start": 128.96,
+          "end": 129.62,
+          "probability": 0.946
+        },
+        {
+          "word": " as",
+          "start": 129.62,
+          "end": 129.84,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 129.84,
+          "end": 129.94,
+          "probability": 0.995
+        },
+        {
+          "word": " positioning",
+          "start": 129.94,
+          "end": 130.3,
+          "probability": 0.998
+        },
+        {
+          "word": " tool",
+          "start": 130.3,
+          "end": 130.6,
+          "probability": 0.997
+        },
+        {
+          "word": " first,",
+          "start": 130.6,
+          "end": 130.94,
+          "probability": 0.988
+        },
+        {
+          "word": " and",
+          "start": 131.2,
+          "end": 131.28,
+          "probability": 0.996
+        },
+        {
+          "word": " a",
+          "start": 131.28,
+          "end": 131.36,
+          "probability": 0.978
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 131.36,
+      "end": 136.74,
+      "text": "damage tool second. Use the speed to take space, wait for the enemy to panic, and only use your super",
+      "words": [
+        {
+          "word": " damage",
+          "start": 131.36,
+          "end": 131.62,
+          "probability": 0.727
+        },
+        {
+          "word": " tool",
+          "start": 131.62,
+          "end": 131.88,
+          "probability": 0.952
+        },
+        {
+          "word": " second.",
+          "start": 131.88,
+          "end": 132.24,
+          "probability": 0.988
+        },
+        {
+          "word": " Use",
+          "start": 132.54,
+          "end": 132.68,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 132.68,
+          "end": 132.86,
+          "probability": 0.992
+        },
+        {
+          "word": " speed",
+          "start": 132.86,
+          "end": 133.12,
+          "probability": 0.988
+        },
+        {
+          "word": " to",
+          "start": 133.12,
+          "end": 133.3,
+          "probability": 0.996
+        },
+        {
+          "word": " take",
+          "start": 133.3,
+          "end": 133.5,
+          "probability": 0.994
+        },
+        {
+          "word": " space,",
+          "start": 133.5,
+          "end": 133.8,
+          "probability": 0.997
+        },
+        {
+          "word": " wait",
+          "start": 134.2,
+          "end": 134.34,
+          "probability": 0.985
+        },
+        {
+          "word": " for",
+          "start": 134.34,
+          "end": 134.52,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 134.52,
+          "end": 134.66,
+          "probability": 0.993
+        },
+        {
+          "word": " enemy",
+          "start": 134.66,
+          "end": 134.9,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 134.9,
+          "end": 135.12,
+          "probability": 0.995
+        },
+        {
+          "word": " panic,",
+          "start": 135.12,
+          "end": 135.38,
+          "probability": 0.979
+        },
+        {
+          "word": " and",
+          "start": 135.64,
+          "end": 135.74,
+          "probability": 0.997
+        },
+        {
+          "word": " only",
+          "start": 135.74,
+          "end": 136.06,
+          "probability": 0.988
+        },
+        {
+          "word": " use",
+          "start": 136.06,
+          "end": 136.3,
+          "probability": 0.997
+        },
+        {
+          "word": " your",
+          "start": 136.3,
+          "end": 136.44,
+          "probability": 0.976
+        },
+        {
+          "word": " super",
+          "start": 136.44,
+          "end": 136.74,
+          "probability": 0.924
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 136.74,
+      "end": 141.22,
+      "text": "when you are guaranteed a value play. If you want to learn more hidden mechanics to level up your",
+      "words": [
+        {
+          "word": " when",
+          "start": 136.74,
+          "end": 137.06,
+          "probability": 0.433
+        },
+        {
+          "word": " you",
+          "start": 137.06,
+          "end": 137.2,
+          "probability": 0.991
+        },
+        {
+          "word": " are",
+          "start": 137.2,
+          "end": 137.3,
+          "probability": 0.957
+        },
+        {
+          "word": " guaranteed",
+          "start": 137.3,
+          "end": 137.8,
+          "probability": 0.995
+        },
+        {
+          "word": " a",
+          "start": 137.8,
+          "end": 137.98,
+          "probability": 0.996
+        },
+        {
+          "word": " value",
+          "start": 137.98,
+          "end": 138.22,
+          "probability": 0.987
+        },
+        {
+          "word": " play.",
+          "start": 138.22,
+          "end": 138.5,
+          "probability": 0.897
+        },
+        {
+          "word": " If",
+          "start": 138.9,
+          "end": 139.0,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 139.0,
+          "end": 139.1,
+          "probability": 0.998
+        },
+        {
+          "word": " want",
+          "start": 139.1,
+          "end": 139.26,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 139.26,
+          "end": 139.4,
+          "probability": 0.994
+        },
+        {
+          "word": " learn",
+          "start": 139.4,
+          "end": 139.54,
+          "probability": 0.999
+        },
+        {
+          "word": " more",
+          "start": 139.54,
+          "end": 139.76,
+          "probability": 0.998
+        },
+        {
+          "word": " hidden",
+          "start": 139.76,
+          "end": 140.02,
+          "probability": 0.986
+        },
+        {
+          "word": " mechanics",
+          "start": 140.02,
+          "end": 140.44,
+          "probability": 0.998
+        },
+        {
+          "word": " to",
+          "start": 140.44,
+          "end": 140.7,
+          "probability": 0.979
+        },
+        {
+          "word": " level",
+          "start": 140.7,
+          "end": 140.92,
+          "probability": 0.999
+        },
+        {
+          "word": " up",
+          "start": 140.92,
+          "end": 141.1,
+          "probability": 0.984
+        },
+        {
+          "word": " your",
+          "start": 141.1,
+          "end": 141.22,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 141.22,
+      "end": 143.92,
+      "text": "gameplay, make sure to subscribe and watch our next video.",
+      "words": [
+        {
+          "word": " gameplay,",
+          "start": 141.22,
+          "end": 141.62,
+          "probability": 0.974
+        },
+        {
+          "word": " make",
+          "start": 141.92,
+          "end": 142.02,
+          "probability": 0.994
+        },
+        {
+          "word": " sure",
+          "start": 142.02,
+          "end": 142.22,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 142.22,
+          "end": 142.32,
+          "probability": 0.997
+        },
+        {
+          "word": " subscribe",
+          "start": 142.32,
+          "end": 142.72,
+          "probability": 0.986
+        },
+        {
+          "word": " and",
+          "start": 142.72,
+          "end": 143.04,
+          "probability": 0.901
+        },
+        {
+          "word": " watch",
+          "start": 143.04,
+          "end": 143.28,
+          "probability": 0.997
+        },
+        {
+          "word": " our",
+          "start": 143.28,
+          "end": 143.4,
+          "probability": 0.998
+        },
+        {
+          "word": " next",
+          "start": 143.4,
+          "end": 143.6,
+          "probability": 0.996
+        },
+        {
+          "word": " video.",
+          "start": 143.6,
+          "end": 143.92,
+          "probability": 0.997
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " You",
+      "start": 0.0,
+      "end": 0.18,
+      "probability": 0.69
+    },
+    {
+      "word": " press",
+      "start": 0.18,
+      "end": 0.42,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 0.42,
+      "end": 0.66,
+      "probability": 0.993
+    },
+    {
+      "word": " purple",
+      "start": 0.66,
+      "end": 0.88,
+      "probability": 0.763
+    },
+    {
+      "word": " button,",
+      "start": 0.88,
+      "end": 1.28,
+      "probability": 0.999
+    },
+    {
+      "word": " hear",
+      "start": 1.54,
+      "end": 1.66,
+      "probability": 0.969
+    },
+    {
+      "word": " that",
+      "start": 1.66,
+      "end": 1.86,
+      "probability": 0.994
+    },
+    {
+      "word": " epic",
+      "start": 1.86,
+      "end": 2.18,
+      "probability": 0.862
+    },
+    {
+      "word": " lightning",
+      "start": 2.18,
+      "end": 2.54,
+      "probability": 0.838
+    },
+    {
+      "word": " sound",
+      "start": 2.54,
+      "end": 2.82,
+      "probability": 0.981
+    },
+    {
+      "word": " effect,",
+      "start": 2.82,
+      "end": 3.12,
+      "probability": 0.989
+    },
+    {
+      "word": " and",
+      "start": 3.44,
+      "end": 3.5,
+      "probability": 0.991
+    },
+    {
+      "word": " immediately",
+      "start": 3.5,
+      "end": 3.88,
+      "probability": 0.996
+    },
+    {
+      "word": " charge",
+      "start": 3.88,
+      "end": 4.32,
+      "probability": 0.993
+    },
+    {
+      "word": " straight",
+      "start": 4.32,
+      "end": 4.7,
+      "probability": 0.983
+    },
+    {
+      "word": " into",
+      "start": 4.7,
+      "end": 5.04,
+      "probability": 0.99
+    },
+    {
+      "word": " the",
+      "start": 5.04,
+      "end": 5.18,
+      "probability": 0.994
+    },
+    {
+      "word": " enemy",
+      "start": 5.18,
+      "end": 5.36,
+      "probability": 0.997
+    },
+    {
+      "word": " team.",
+      "start": 5.36,
+      "end": 5.76,
+      "probability": 0.997
+    },
+    {
+      "word": " Two",
+      "start": 6.28,
+      "end": 6.5,
+      "probability": 0.878
+    },
+    {
+      "word": " seconds",
+      "start": 6.5,
+      "end": 6.76,
+      "probability": 0.993
+    },
+    {
+      "word": " later,",
+      "start": 6.76,
+      "end": 7.1,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 7.32,
+      "end": 7.38,
+      "probability": 0.997
+    },
+    {
+      "word": " are",
+      "start": 7.38,
+      "end": 7.5,
+      "probability": 0.967
+    },
+    {
+      "word": " looking",
+      "start": 7.5,
+      "end": 7.76,
+      "probability": 0.998
+    },
+    {
+      "word": " at",
+      "start": 7.76,
+      "end": 7.94,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 7.94,
+      "end": 8.02,
+      "probability": 0.997
+    },
+    {
+      "word": " respawn",
+      "start": 8.02,
+      "end": 8.42,
+      "probability": 0.895
+    },
+    {
+      "word": " screen.",
+      "start": 8.42,
+      "end": 8.72,
+      "probability": 0.989
+    },
+    {
+      "word": " Why",
+      "start": 9.18,
+      "end": 9.36,
+      "probability": 0.991
+    },
+    {
+      "word": " does",
+      "start": 9.36,
+      "end": 9.5,
+      "probability": 0.996
+    },
+    {
+      "word": " this",
+      "start": 9.5,
+      "end": 9.62,
+      "probability": 0.998
+    },
+    {
+      "word": " happen?",
+      "start": 9.62,
+      "end": 9.94,
+      "probability": 0.999
+    },
+    {
+      "word": " The",
+      "start": 10.48,
+      "end": 10.62,
+      "probability": 0.987
+    },
+    {
+      "word": " most",
+      "start": 10.62,
+      "end": 10.84,
+      "probability": 0.995
+    },
+    {
+      "word": " common",
+      "start": 10.84,
+      "end": 11.14,
+      "probability": 0.998
+    },
+    {
+      "word": " mistake",
+      "start": 11.14,
+      "end": 11.44,
+      "probability": 0.977
+    },
+    {
+      "word": " players",
+      "start": 11.44,
+      "end": 11.76,
+      "probability": 0.994
+    },
+    {
+      "word": " make",
+      "start": 11.76,
+      "end": 11.98,
+      "probability": 0.997
+    },
+    {
+      "word": " with",
+      "start": 11.98,
+      "end": 12.2,
+      "probability": 0.998
+    },
+    {
+      "word": " hypercharge",
+      "start": 12.2,
+      "end": 12.7,
+      "probability": 0.634
+    },
+    {
+      "word": " is",
+      "start": 12.7,
+      "end": 13.0,
+      "probability": 0.889
+    },
+    {
+      "word": " assuming",
+      "start": 13.0,
+      "end": 13.44,
+      "probability": 0.996
+    },
+    {
+      "word": " it",
+      "start": 13.44,
+      "end": 13.62,
+      "probability": 0.993
+    },
+    {
+      "word": " makes",
+      "start": 13.62,
+      "end": 13.82,
+      "probability": 0.999
+    },
+    {
+      "word": " them",
+      "start": 13.82,
+      "end": 14.0,
+      "probability": 0.999
+    },
+    {
+      "word": " invincible.",
+      "start": 14.0,
+      "end": 14.44,
+      "probability": 0.942
+    },
+    {
+      "word": " In",
+      "start": 14.88,
+      "end": 14.98,
+      "probability": 0.994
+    },
+    {
+      "word": " reality,",
+      "start": 14.98,
+      "end": 15.34,
+      "probability": 0.996
+    },
+    {
+      "word": " activating",
+      "start": 15.64,
+      "end": 15.98,
+      "probability": 0.97
+    },
+    {
+      "word": " hypercharge",
+      "start": 15.98,
+      "end": 16.62,
+      "probability": 0.973
+    },
+    {
+      "word": " is",
+      "start": 16.62,
+      "end": 16.8,
+      "probability": 0.997
+    },
+    {
+      "word": " often",
+      "start": 16.8,
+      "end": 17.18,
+      "probability": 0.985
+    },
+    {
+      "word": " the",
+      "start": 17.18,
+      "end": 17.34,
+      "probability": 0.999
+    },
+    {
+      "word": " easiest",
+      "start": 17.34,
+      "end": 17.74,
+      "probability": 0.996
+    },
+    {
+      "word": " way",
+      "start": 17.74,
+      "end": 17.96,
+      "probability": 1.0
+    },
+    {
+      "word": " to",
+      "start": 17.96,
+      "end": 18.08,
+      "probability": 0.999
+    },
+    {
+      "word": " throw",
+      "start": 18.08,
+      "end": 18.28,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 18.28,
+      "end": 18.42,
+      "probability": 1.0
+    },
+    {
+      "word": " game.",
+      "start": 18.42,
+      "end": 18.64,
+      "probability": 0.998
+    },
+    {
+      "word": " Let",
+      "start": 18.96,
+      "end": 19.08,
+      "probability": 0.994
+    },
+    {
+      "word": " us",
+      "start": 19.08,
+      "end": 19.2,
+      "probability": 0.971
+    },
+    {
+      "word": " look",
+      "start": 19.2,
+      "end": 19.36,
+      "probability": 0.996
+    },
+    {
+      "word": " at",
+      "start": 19.36,
+      "end": 19.48,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 19.48,
+      "end": 19.58,
+      "probability": 0.995
+    },
+    {
+      "word": " math.",
+      "start": 19.58,
+      "end": 19.82,
+      "probability": 0.94
+    },
+    {
+      "word": " A",
+      "start": 20.12,
+      "end": 20.2,
+      "probability": 0.961
+    },
+    {
+      "word": " level",
+      "start": 20.2,
+      "end": 20.5,
+      "probability": 0.917
+    },
+    {
+      "word": " 11",
+      "start": 20.5,
+      "end": 20.84,
+      "probability": 0.969
+    },
+    {
+      "word": " Edgar",
+      "start": 20.84,
+      "end": 21.3,
+      "probability": 0.623
+    },
+    {
+      "word": " has",
+      "start": 21.3,
+      "end": 21.54,
+      "probability": 0.998
+    },
+    {
+      "word": " 6600",
+      "start": 21.54,
+      "end": 22.82,
+      "probability": 0.718
+    },
+    {
+      "word": " health.",
+      "start": 22.82,
+      "end": 23.24,
+      "probability": 0.977
+    },
+    {
+      "word": " When",
+      "start": 23.4,
+      "end": 23.56,
+      "probability": 0.997
+    },
+    {
+      "word": " he",
+      "start": 23.56,
+      "end": 23.66,
+      "probability": 0.999
+    },
+    {
+      "word": " activates",
+      "start": 23.66,
+      "end": 24.1,
+      "probability": 0.992
+    },
+    {
+      "word": " his",
+      "start": 24.1,
+      "end": 24.32,
+      "probability": 0.996
+    },
+    {
+      "word": " hypercharge,",
+      "start": 24.32,
+      "end": 24.94,
+      "probability": 0.981
+    },
+    {
+      "word": " he",
+      "start": 24.94,
+      "end": 25.28,
+      "probability": 0.136
+    },
+    {
+      "word": " receives",
+      "start": 25.28,
+      "end": 25.66,
+      "probability": 0.977
+    },
+    {
+      "word": " a",
+      "start": 25.66,
+      "end": 25.86,
+      "probability": 0.992
+    },
+    {
+      "word": " 15",
+      "start": 25.86,
+      "end": 26.24,
+      "probability": 0.976
+    },
+    {
+      "word": "%",
+      "start": 26.24,
+      "end": 26.62,
+      "probability": 0.902
+    },
+    {
+      "word": " shield.",
+      "start": 26.62,
+      "end": 27.02,
+      "probability": 0.991
+    },
+    {
+      "word": " This",
+      "start": 27.34,
+      "end": 27.44,
+      "probability": 0.993
+    },
+    {
+      "word": " increases",
+      "start": 27.44,
+      "end": 27.88,
+      "probability": 0.995
+    },
+    {
+      "word": " his",
+      "start": 27.88,
+      "end": 28.12,
+      "probability": 0.997
+    },
+    {
+      "word": " effective",
+      "start": 28.12,
+      "end": 28.46,
+      "probability": 0.981
+    },
+    {
+      "word": " health",
+      "start": 28.46,
+      "end": 28.8,
+      "probability": 0.995
+    },
+    {
+      "word": " to",
+      "start": 28.8,
+      "end": 28.98,
+      "probability": 0.991
+    },
+    {
+      "word": " 7",
+      "start": 28.98,
+      "end": 29.34,
+      "probability": 0.769
+    },
+    {
+      "word": ",764.",
+      "start": 29.34,
+      "end": 30.98,
+      "probability": 0.879
+    },
+    {
+      "word": " That",
+      "start": 31.38,
+      "end": 31.54,
+      "probability": 0.991
+    },
+    {
+      "word": " is",
+      "start": 31.54,
+      "end": 31.66,
+      "probability": 0.987
+    },
+    {
+      "word": " less",
+      "start": 31.66,
+      "end": 31.86,
+      "probability": 0.993
+    },
+    {
+      "word": " than",
+      "start": 31.86,
+      "end": 32.08,
+      "probability": 0.995
+    },
+    {
+      "word": " one",
+      "start": 32.08,
+      "end": 32.38,
+      "probability": 0.849
+    },
+    {
+      "word": " extra",
+      "start": 32.38,
+      "end": 32.84,
+      "probability": 0.996
+    },
+    {
+      "word": " shot",
+      "start": 32.84,
+      "end": 33.08,
+      "probability": 0.994
+    },
+    {
+      "word": " from",
+      "start": 33.08,
+      "end": 33.26,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 33.26,
+      "end": 33.42,
+      "probability": 0.997
+    },
+    {
+      "word": " piper.",
+      "start": 33.42,
+      "end": 33.7,
+      "probability": 0.658
+    },
+    {
+      "word": " If",
+      "start": 34.02,
+      "end": 34.16,
+      "probability": 0.991
+    },
+    {
+      "word": " you",
+      "start": 34.16,
+      "end": 34.26,
+      "probability": 0.999
+    },
+    {
+      "word": " run",
+      "start": 34.26,
+      "end": 34.44,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 34.44,
+      "end": 34.56,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 34.56,
+      "end": 34.66,
+      "probability": 0.998
+    },
+    {
+      "word": " straight",
+      "start": 34.66,
+      "end": 34.86,
+      "probability": 0.996
+    },
+    {
+      "word": " line,",
+      "start": 34.86,
+      "end": 35.18,
+      "probability": 0.998
+    },
+    {
+      "word": " you",
+      "start": 35.48,
+      "end": 35.56,
+      "probability": 0.997
+    },
+    {
+      "word": " are",
+      "start": 35.56,
+      "end": 35.64,
+      "probability": 0.982
+    },
+    {
+      "word": " not",
+      "start": 35.64,
+      "end": 35.88,
+      "probability": 0.994
+    },
+    {
+      "word": " an",
+      "start": 35.88,
+      "end": 36.06,
+      "probability": 0.994
+    },
+    {
+      "word": " unstoppable",
+      "start": 36.06,
+      "end": 36.52,
+      "probability": 0.967
+    },
+    {
+      "word": " force.",
+      "start": 36.52,
+      "end": 36.96,
+      "probability": 0.993
+    },
+    {
+      "word": " You",
+      "start": 37.56,
+      "end": 37.7,
+      "probability": 0.993
+    },
+    {
+      "word": " are",
+      "start": 37.7,
+      "end": 37.76,
+      "probability": 0.958
+    },
+    {
+      "word": " just",
+      "start": 37.76,
+      "end": 37.92,
+      "probability": 0.997
+    },
+    {
+      "word": " a",
+      "start": 37.92,
+      "end": 38.06,
+      "probability": 0.998
+    },
+    {
+      "word": " purple",
+      "start": 38.06,
+      "end": 38.32,
+      "probability": 0.934
+    },
+    {
+      "word": " target.",
+      "start": 38.32,
+      "end": 38.7,
+      "probability": 0.998
+    },
+    {
+      "word": " This",
+      "start": 39.56,
+      "end": 39.74,
+      "probability": 0.97
+    },
+    {
+      "word": " leads",
+      "start": 39.74,
+      "end": 39.92,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 39.92,
+      "end": 40.14,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 40.14,
+      "end": 40.24,
+      "probability": 0.992
+    },
+    {
+      "word": " second",
+      "start": 40.24,
+      "end": 40.6,
+      "probability": 0.975
+    },
+    {
+      "word": " major",
+      "start": 40.6,
+      "end": 40.88,
+      "probability": 0.989
+    },
+    {
+      "word": " mistake.",
+      "start": 40.88,
+      "end": 41.24,
+      "probability": 0.998
+    },
+    {
+      "word": " Tunnel",
+      "start": 41.94,
+      "end": 42.18,
+      "probability": 0.979
+    },
+    {
+      "word": " vision.",
+      "start": 42.18,
+      "end": 42.46,
+      "probability": 0.58
+    },
+    {
+      "word": " The",
+      "start": 43.06,
+      "end": 43.18,
+      "probability": 0.96
+    },
+    {
+      "word": " moment",
+      "start": 43.18,
+      "end": 43.42,
+      "probability": 0.991
+    },
+    {
+      "word": " players",
+      "start": 43.42,
+      "end": 43.74,
+      "probability": 0.986
+    },
+    {
+      "word": " activate",
+      "start": 43.74,
+      "end": 44.28,
+      "probability": 0.997
+    },
+    {
+      "word": " hypercharge,",
+      "start": 44.28,
+      "end": 44.9,
+      "probability": 0.68
+    },
+    {
+      "word": " they",
+      "start": 45.22,
+      "end": 45.32,
+      "probability": 0.998
+    },
+    {
+      "word": " stop",
+      "start": 45.32,
+      "end": 45.58,
+      "probability": 0.988
+    },
+    {
+      "word": " playing",
+      "start": 45.58,
+      "end": 45.9,
+      "probability": 0.996
+    },
+    {
+      "word": " tactically.",
+      "start": 45.9,
+      "end": 46.48,
+      "probability": 0.998
+    },
+    {
+      "word": " They",
+      "start": 46.94,
+      "end": 47.16,
+      "probability": 0.998
+    },
+    {
+      "word": " stop",
+      "start": 47.16,
+      "end": 47.36,
+      "probability": 0.997
+    },
+    {
+      "word": " using",
+      "start": 47.36,
+      "end": 47.66,
+      "probability": 0.998
+    },
+    {
+      "word": " walls,",
+      "start": 47.66,
+      "end": 47.96,
+      "probability": 0.969
+    },
+    {
+      "word": " they",
+      "start": 48.32,
+      "end": 48.42,
+      "probability": 0.988
+    },
+    {
+      "word": " stop",
+      "start": 48.42,
+      "end": 48.72,
+      "probability": 0.995
+    },
+    {
+      "word": " dodging,",
+      "start": 48.72,
+      "end": 49.1,
+      "probability": 0.989
+    },
+    {
+      "word": " and",
+      "start": 49.3,
+      "end": 49.44,
+      "probability": 0.998
+    },
+    {
+      "word": " they",
+      "start": 49.44,
+      "end": 49.56,
+      "probability": 0.99
+    },
+    {
+      "word": " focus",
+      "start": 49.56,
+      "end": 49.84,
+      "probability": 0.997
+    },
+    {
+      "word": " entirely",
+      "start": 49.84,
+      "end": 50.36,
+      "probability": 0.998
+    },
+    {
+      "word": " on",
+      "start": 50.36,
+      "end": 50.68,
+      "probability": 0.999
+    },
+    {
+      "word": " trying",
+      "start": 50.68,
+      "end": 50.92,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 50.92,
+      "end": 51.1,
+      "probability": 0.999
+    },
+    {
+      "word": " get",
+      "start": 51.1,
+      "end": 51.24,
+      "probability": 0.999
+    },
+    {
+      "word": " value",
+      "start": 51.24,
+      "end": 51.62,
+      "probability": 0.996
+    },
+    {
+      "word": " from",
+      "start": 51.62,
+      "end": 51.82,
+      "probability": 0.997
+    },
+    {
+      "word": " their",
+      "start": 51.82,
+      "end": 51.96,
+      "probability": 0.996
+    },
+    {
+      "word": " upgraded",
+      "start": 51.96,
+      "end": 52.42,
+      "probability": 0.994
+    },
+    {
+      "word": " super,",
+      "start": 52.42,
+      "end": 52.82,
+      "probability": 0.915
+    },
+    {
+      "word": " but",
+      "start": 52.82,
+      "end": 53.22,
+      "probability": 0.117
+    },
+    {
+      "word": " why",
+      "start": 53.22,
+      "end": 53.5,
+      "probability": 0.975
+    },
+    {
+      "word": " waste",
+      "start": 53.5,
+      "end": 53.86,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 53.86,
+      "end": 54.02,
+      "probability": 0.997
+    },
+    {
+      "word": " most",
+      "start": 54.02,
+      "end": 54.32,
+      "probability": 0.997
+    },
+    {
+      "word": " powerful",
+      "start": 54.32,
+      "end": 54.8,
+      "probability": 0.992
+    },
+    {
+      "word": " part",
+      "start": 54.8,
+      "end": 55.12,
+      "probability": 0.998
+    },
+    {
+      "word": " of",
+      "start": 55.12,
+      "end": 55.32,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 55.32,
+      "end": 55.44,
+      "probability": 0.989
+    },
+    {
+      "word": " buff?",
+      "start": 55.44,
+      "end": 55.68,
+      "probability": 0.968
+    },
+    {
+      "word": " When",
+      "start": 56.0,
+      "end": 56.08,
+      "probability": 0.986
+    },
+    {
+      "word": " you",
+      "start": 56.08,
+      "end": 56.2,
+      "probability": 0.999
+    },
+    {
+      "word": " activate",
+      "start": 56.2,
+      "end": 56.64,
+      "probability": 0.996
+    },
+    {
+      "word": " hypercharge,",
+      "start": 56.64,
+      "end": 57.24,
+      "probability": 0.56
+    },
+    {
+      "word": " you",
+      "start": 57.58,
+      "end": 57.64,
+      "probability": 0.996
+    },
+    {
+      "word": " receive",
+      "start": 57.64,
+      "end": 57.92,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 57.92,
+      "end": 58.16,
+      "probability": 0.995
+    },
+    {
+      "word": " massive",
+      "start": 58.16,
+      "end": 58.54,
+      "probability": 0.991
+    },
+    {
+      "word": " speed",
+      "start": 58.54,
+      "end": 58.94,
+      "probability": 0.971
+    },
+    {
+      "word": " boost,",
+      "start": 58.94,
+      "end": 59.22,
+      "probability": 0.991
+    },
+    {
+      "word": " usually",
+      "start": 59.46,
+      "end": 59.66,
+      "probability": 0.996
+    },
+    {
+      "word": " between",
+      "start": 59.66,
+      "end": 60.04,
+      "probability": 0.996
+    },
+    {
+      "word": " 20",
+      "start": 60.04,
+      "end": 60.4,
+      "probability": 0.994
+    },
+    {
+      "word": "%",
+      "start": 60.4,
+      "end": 60.72,
+      "probability": 0.811
+    },
+    {
+      "word": " and",
+      "start": 60.72,
+      "end": 61.08,
+      "probability": 0.992
+    },
+    {
+      "word": " 26%,",
+      "start": 61.08,
+      "end": 62.14,
+      "probability": 0.692
+    },
+    {
+      "word": " instead",
+      "start": 62.14,
+      "end": 62.52,
+      "probability": 0.987
+    },
+    {
+      "word": " of",
+      "start": 62.52,
+      "end": 62.7,
+      "probability": 0.999
+    },
+    {
+      "word": " immediately",
+      "start": 62.7,
+      "end": 63.06,
+      "probability": 0.986
+    },
+    {
+      "word": " using",
+      "start": 63.06,
+      "end": 63.44,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 63.44,
+      "end": 63.66,
+      "probability": 0.994
+    },
+    {
+      "word": " super,",
+      "start": 63.66,
+      "end": 63.92,
+      "probability": 0.874
+    },
+    {
+      "word": " you",
+      "start": 64.2,
+      "end": 64.28,
+      "probability": 0.996
+    },
+    {
+      "word": " should",
+      "start": 64.28,
+      "end": 64.44,
+      "probability": 0.997
+    },
+    {
+      "word": " use",
+      "start": 64.44,
+      "end": 64.6,
+      "probability": 0.993
+    },
+    {
+      "word": " this",
+      "start": 64.6,
+      "end": 64.8,
+      "probability": 0.994
+    },
+    {
+      "word": " speed",
+      "start": 64.8,
+      "end": 65.1,
+      "probability": 0.985
+    },
+    {
+      "word": " to",
+      "start": 65.1,
+      "end": 65.32,
+      "probability": 0.995
+    },
+    {
+      "word": " position",
+      "start": 65.32,
+      "end": 65.64,
+      "probability": 0.999
+    },
+    {
+      "word": " yourself,",
+      "start": 65.64,
+      "end": 66.06,
+      "probability": 0.996
+    },
+    {
+      "word": " bait",
+      "start": 66.4,
+      "end": 66.5,
+      "probability": 0.84
+    },
+    {
+      "word": " out",
+      "start": 66.5,
+      "end": 66.7,
+      "probability": 0.987
+    },
+    {
+      "word": " enemy",
+      "start": 66.7,
+      "end": 66.98,
+      "probability": 0.991
+    },
+    {
+      "word": " gadgets,",
+      "start": 66.98,
+      "end": 67.36,
+      "probability": 0.987
+    },
+    {
+      "word": " and",
+      "start": 67.68,
+      "end": 67.78,
+      "probability": 0.997
+    },
+    {
+      "word": " force",
+      "start": 67.78,
+      "end": 68.02,
+      "probability": 0.994
+    },
+    {
+      "word": " them",
+      "start": 68.02,
+      "end": 68.22,
+      "probability": 0.991
+    },
+    {
+      "word": " to",
+      "start": 68.22,
+      "end": 68.4,
+      "probability": 0.998
+    },
+    {
+      "word": " waste",
+      "start": 68.4,
+      "end": 68.6,
+      "probability": 0.955
+    },
+    {
+      "word": " their",
+      "start": 68.6,
+      "end": 68.86,
+      "probability": 0.998
+    },
+    {
+      "word": " ammo.",
+      "start": 68.86,
+      "end": 69.16,
+      "probability": 0.993
+    },
+    {
+      "word": " Once",
+      "start": 69.42,
+      "end": 69.6,
+      "probability": 0.995
+    },
+    {
+      "word": " they",
+      "start": 69.6,
+      "end": 69.74,
+      "probability": 0.996
+    },
+    {
+      "word": " are",
+      "start": 69.74,
+      "end": 69.82,
+      "probability": 0.986
+    },
+    {
+      "word": " defenseless,",
+      "start": 69.82,
+      "end": 70.36,
+      "probability": 0.994
+    },
+    {
+      "word": " that",
+      "start": 70.64,
+      "end": 70.8,
+      "probability": 0.998
+    },
+    {
+      "word": " is",
+      "start": 70.8,
+      "end": 70.9,
+      "probability": 0.976
+    },
+    {
+      "word": " when",
+      "start": 70.9,
+      "end": 71.06,
+      "probability": 0.985
+    },
+    {
+      "word": " you",
+      "start": 71.06,
+      "end": 71.18,
+      "probability": 0.999
+    },
+    {
+      "word": " strike.",
+      "start": 71.18,
+      "end": 71.44,
+      "probability": 0.99
+    },
+    {
+      "word": " There",
+      "start": 71.78,
+      "end": 71.88,
+      "probability": 0.997
+    },
+    {
+      "word": " is",
+      "start": 71.88,
+      "end": 72.02,
+      "probability": 0.991
+    },
+    {
+      "word": " also",
+      "start": 72.02,
+      "end": 72.3,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 72.3,
+      "end": 72.44,
+      "probability": 0.999
+    },
+    {
+      "word": " hidden",
+      "start": 72.44,
+      "end": 72.62,
+      "probability": 0.982
+    },
+    {
+      "word": " mechanic",
+      "start": 72.62,
+      "end": 73.08,
+      "probability": 0.999
+    },
+    {
+      "word": " that",
+      "start": 73.08,
+      "end": 73.38,
+      "probability": 0.947
+    },
+    {
+      "word": " even",
+      "start": 73.38,
+      "end": 73.64,
+      "probability": 0.993
+    },
+    {
+      "word": " seasoned",
+      "start": 73.64,
+      "end": 73.96,
+      "probability": 0.303
+    },
+    {
+      "word": " players",
+      "start": 73.96,
+      "end": 74.32,
+      "probability": 0.983
+    },
+    {
+      "word": " miss.",
+      "start": 74.32,
+      "end": 74.64,
+      "probability": 0.993
+    },
+    {
+      "word": " It",
+      "start": 74.92,
+      "end": 75.02,
+      "probability": 0.996
+    },
+    {
+      "word": " is",
+      "start": 75.02,
+      "end": 75.14,
+      "probability": 0.992
+    },
+    {
+      "word": " called",
+      "start": 75.14,
+      "end": 75.34,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 75.34,
+      "end": 75.56,
+      "probability": 0.967
+    },
+    {
+      "word": " hypercharge",
+      "start": 75.56,
+      "end": 76.14,
+      "probability": 0.596
+    },
+    {
+      "word": " charge",
+      "start": 76.14,
+      "end": 76.56,
+      "probability": 0.71
+    },
+    {
+      "word": " lock.",
+      "start": 76.56,
+      "end": 76.78,
+      "probability": 0.963
+    },
+    {
+      "word": " Normally,",
+      "start": 77.12,
+      "end": 77.42,
+      "probability": 0.994
+    },
+    {
+      "word": " your",
+      "start": 77.7,
+      "end": 77.76,
+      "probability": 0.991
+    },
+    {
+      "word": " hypercharge",
+      "start": 77.76,
+      "end": 78.32,
+      "probability": 0.971
+    },
+    {
+      "word": " charges",
+      "start": 78.32,
+      "end": 78.78,
+      "probability": 0.944
+    },
+    {
+      "word": " at",
+      "start": 78.78,
+      "end": 79.02,
+      "probability": 0.996
+    },
+    {
+      "word": " 40",
+      "start": 79.02,
+      "end": 79.38,
+      "probability": 0.992
+    },
+    {
+      "word": "%",
+      "start": 79.38,
+      "end": 79.68,
+      "probability": 0.992
+    },
+    {
+      "word": " of",
+      "start": 79.68,
+      "end": 79.92,
+      "probability": 0.999
+    },
+    {
+      "word": " your",
+      "start": 79.92,
+      "end": 80.04,
+      "probability": 0.996
+    },
+    {
+      "word": " regular",
+      "start": 80.04,
+      "end": 80.36,
+      "probability": 0.997
+    },
+    {
+      "word": " supercharge",
+      "start": 80.36,
+      "end": 81.0,
+      "probability": 0.969
+    },
+    {
+      "word": " rate.",
+      "start": 81.0,
+      "end": 81.22,
+      "probability": 0.998
+    },
+    {
+      "word": " However,",
+      "start": 81.46,
+      "end": 81.72,
+      "probability": 0.996
+    },
+    {
+      "word": " while",
+      "start": 81.72,
+      "end": 82.12,
+      "probability": 0.031
+    },
+    {
+      "word": " your",
+      "start": 82.12,
+      "end": 82.32,
+      "probability": 0.958
+    },
+    {
+      "word": " hypercharge",
+      "start": 82.32,
+      "end": 82.76,
+      "probability": 0.702
+    },
+    {
+      "word": " is",
+      "start": 82.76,
+      "end": 83.02,
+      "probability": 0.989
+    },
+    {
+      "word": " active,",
+      "start": 83.02,
+      "end": 83.3,
+      "probability": 0.997
+    },
+    {
+      "word": " any",
+      "start": 83.62,
+      "end": 83.8,
+      "probability": 0.996
+    },
+    {
+      "word": " damage",
+      "start": 83.8,
+      "end": 84.1,
+      "probability": 0.994
+    },
+    {
+      "word": " you",
+      "start": 84.1,
+      "end": 84.32,
+      "probability": 0.991
+    },
+    {
+      "word": " deal",
+      "start": 84.32,
+      "end": 84.6,
+      "probability": 0.993
+    },
+    {
+      "word": " does",
+      "start": 84.6,
+      "end": 84.88,
+      "probability": 0.914
+    },
+    {
+      "word": " not",
+      "start": 84.88,
+      "end": 85.06,
+      "probability": 0.989
+    },
+    {
+      "word": " contribute",
+      "start": 85.06,
+      "end": 85.48,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 85.48,
+      "end": 85.68,
+      "probability": 0.993
+    },
+    {
+      "word": " your",
+      "start": 85.68,
+      "end": 85.76,
+      "probability": 0.991
+    },
+    {
+      "word": " next",
+      "start": 85.76,
+      "end": 85.98,
+      "probability": 0.925
+    },
+    {
+      "word": " hypercharge.",
+      "start": 85.98,
+      "end": 86.62,
+      "probability": 0.94
+    },
+    {
+      "word": " The",
+      "start": 86.94,
+      "end": 87.06,
+      "probability": 0.988
+    },
+    {
+      "word": " meter",
+      "start": 87.06,
+      "end": 87.28,
+      "probability": 0.99
+    },
+    {
+      "word": " is",
+      "start": 87.28,
+      "end": 87.52,
+      "probability": 0.999
+    },
+    {
+      "word": " completely",
+      "start": 87.52,
+      "end": 88.02,
+      "probability": 0.997
+    },
+    {
+      "word": " locked.",
+      "start": 88.02,
+      "end": 88.32,
+      "probability": 0.996
+    },
+    {
+      "word": " If",
+      "start": 88.76,
+      "end": 88.88,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 88.88,
+      "end": 89.0,
+      "probability": 0.999
+    },
+    {
+      "word": " dump",
+      "start": 89.0,
+      "end": 89.18,
+      "probability": 0.997
+    },
+    {
+      "word": " all",
+      "start": 89.18,
+      "end": 89.4,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 89.4,
+      "end": 89.6,
+      "probability": 0.992
+    },
+    {
+      "word": " ammo",
+      "start": 89.6,
+      "end": 89.84,
+      "probability": 0.987
+    },
+    {
+      "word": " and",
+      "start": 89.84,
+      "end": 90.12,
+      "probability": 0.979
+    },
+    {
+      "word": " charge",
+      "start": 90.12,
+      "end": 90.34,
+      "probability": 0.998
+    },
+    {
+      "word": " another",
+      "start": 90.34,
+      "end": 90.66,
+      "probability": 0.997
+    },
+    {
+      "word": " super,",
+      "start": 90.66,
+      "end": 91.04,
+      "probability": 0.929
+    },
+    {
+      "word": " while",
+      "start": 91.4,
+      "end": 91.5,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 91.5,
+      "end": 91.64,
+      "probability": 0.998
+    },
+    {
+      "word": " purple",
+      "start": 91.64,
+      "end": 91.88,
+      "probability": 0.97
+    },
+    {
+      "word": " lightning",
+      "start": 91.88,
+      "end": 92.16,
+      "probability": 0.848
+    },
+    {
+      "word": " is",
+      "start": 92.16,
+      "end": 92.38,
+      "probability": 0.999
+    },
+    {
+      "word": " active,",
+      "start": 92.38,
+      "end": 92.68,
+      "probability": 0.999
+    },
+    {
+      "word": " you",
+      "start": 93.04,
+      "end": 93.16,
+      "probability": 0.998
+    },
+    {
+      "word": " get",
+      "start": 93.16,
+      "end": 93.32,
+      "probability": 0.998
+    },
+    {
+      "word": " zero",
+      "start": 93.32,
+      "end": 93.62,
+      "probability": 0.913
+    },
+    {
+      "word": " progress",
+      "start": 93.62,
+      "end": 94.1,
+      "probability": 0.998
+    },
+    {
+      "word": " towards",
+      "start": 94.1,
+      "end": 94.42,
+      "probability": 0.737
+    },
+    {
+      "word": " your",
+      "start": 94.42,
+      "end": 94.6,
+      "probability": 0.99
+    },
+    {
+      "word": " next",
+      "start": 94.6,
+      "end": 94.76,
+      "probability": 0.993
+    },
+    {
+      "word": " hypercharge.",
+      "start": 94.76,
+      "end": 95.46,
+      "probability": 0.992
+    },
+    {
+      "word": " To",
+      "start": 95.7,
+      "end": 95.82,
+      "probability": 0.995
+    },
+    {
+      "word": " maximize",
+      "start": 95.82,
+      "end": 96.18,
+      "probability": 0.987
+    },
+    {
+      "word": " efficiency,",
+      "start": 96.18,
+      "end": 96.72,
+      "probability": 0.994
+    },
+    {
+      "word": " you",
+      "start": 97.1,
+      "end": 97.16,
+      "probability": 0.998
+    },
+    {
+      "word": " should",
+      "start": 97.16,
+      "end": 97.3,
+      "probability": 0.999
+    },
+    {
+      "word": " try",
+      "start": 97.3,
+      "end": 97.5,
+      "probability": 0.984
+    },
+    {
+      "word": " to",
+      "start": 97.5,
+      "end": 97.62,
+      "probability": 0.998
+    },
+    {
+      "word": " charge",
+      "start": 97.62,
+      "end": 97.88,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 97.88,
+      "end": 98.04,
+      "probability": 0.993
+    },
+    {
+      "word": " regular",
+      "start": 98.04,
+      "end": 98.34,
+      "probability": 0.997
+    },
+    {
+      "word": " super",
+      "start": 98.34,
+      "end": 98.76,
+      "probability": 0.98
+    },
+    {
+      "word": " before",
+      "start": 98.76,
+      "end": 99.24,
+      "probability": 0.958
+    },
+    {
+      "word": " activating",
+      "start": 99.24,
+      "end": 99.82,
+      "probability": 0.995
+    },
+    {
+      "word": " hypercharge.",
+      "start": 99.82,
+      "end": 100.48,
+      "probability": 0.984
+    },
+    {
+      "word": " This",
+      "start": 100.8,
+      "end": 100.94,
+      "probability": 0.996
+    },
+    {
+      "word": " allows",
+      "start": 100.94,
+      "end": 101.22,
+      "probability": 0.997
+    },
+    {
+      "word": " you",
+      "start": 101.22,
+      "end": 101.44,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 101.44,
+      "end": 101.56,
+      "probability": 0.997
+    },
+    {
+      "word": " use",
+      "start": 101.56,
+      "end": 101.76,
+      "probability": 0.998
+    },
+    {
+      "word": " your",
+      "start": 101.76,
+      "end": 101.92,
+      "probability": 0.997
+    },
+    {
+      "word": " upgraded",
+      "start": 101.92,
+      "end": 102.3,
+      "probability": 0.993
+    },
+    {
+      "word": " super",
+      "start": 102.3,
+      "end": 102.66,
+      "probability": 0.986
+    },
+    {
+      "word": " immediately,",
+      "start": 102.66,
+      "end": 103.06,
+      "probability": 0.963
+    },
+    {
+      "word": " and",
+      "start": 103.44,
+      "end": 103.54,
+      "probability": 0.994
+    },
+    {
+      "word": " then",
+      "start": 103.54,
+      "end": 103.68,
+      "probability": 0.987
+    },
+    {
+      "word": " use",
+      "start": 103.68,
+      "end": 103.9,
+      "probability": 0.992
+    },
+    {
+      "word": " your",
+      "start": 103.9,
+      "end": 104.04,
+      "probability": 0.995
+    },
+    {
+      "word": " normal",
+      "start": 104.04,
+      "end": 104.32,
+      "probability": 0.993
+    },
+    {
+      "word": " attacks",
+      "start": 104.32,
+      "end": 104.72,
+      "probability": 0.992
+    },
+    {
+      "word": " after",
+      "start": 104.72,
+      "end": 105.16,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 105.16,
+      "end": 105.32,
+      "probability": 0.996
+    },
+    {
+      "word": " hypercharge",
+      "start": 105.32,
+      "end": 105.82,
+      "probability": 0.979
+    },
+    {
+      "word": " ends",
+      "start": 105.82,
+      "end": 106.14,
+      "probability": 0.995
+    },
+    {
+      "word": " to",
+      "start": 106.14,
+      "end": 106.4,
+      "probability": 0.918
+    },
+    {
+      "word": " immediately",
+      "start": 106.4,
+      "end": 106.72,
+      "probability": 0.999
+    },
+    {
+      "word": " start",
+      "start": 106.72,
+      "end": 107.1,
+      "probability": 0.997
+    },
+    {
+      "word": " building",
+      "start": 107.1,
+      "end": 107.32,
+      "probability": 0.999
+    },
+    {
+      "word": " the",
+      "start": 107.32,
+      "end": 107.54,
+      "probability": 0.996
+    },
+    {
+      "word": " next",
+      "start": 107.54,
+      "end": 107.76,
+      "probability": 1.0
+    },
+    {
+      "word": " one.",
+      "start": 107.76,
+      "end": 108.0,
+      "probability": 0.997
+    },
+    {
+      "word": " Finally,",
+      "start": 108.2,
+      "end": 108.58,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 108.8,
+      "end": 108.88,
+      "probability": 0.998
+    },
+    {
+      "word": " must",
+      "start": 108.88,
+      "end": 109.04,
+      "probability": 0.998
+    },
+    {
+      "word": " learn",
+      "start": 109.04,
+      "end": 109.24,
+      "probability": 0.998
+    },
+    {
+      "word": " how",
+      "start": 109.24,
+      "end": 109.44,
+      "probability": 0.995
+    },
+    {
+      "word": " to",
+      "start": 109.44,
+      "end": 109.54,
+      "probability": 0.999
+    },
+    {
+      "word": " play",
+      "start": 109.54,
+      "end": 109.72,
+      "probability": 0.998
+    },
+    {
+      "word": " against",
+      "start": 109.72,
+      "end": 110.08,
+      "probability": 0.886
+    },
+    {
+      "word": " hypercharge.",
+      "start": 110.08,
+      "end": 110.6,
+      "probability": 0.634
+    },
+    {
+      "word": " When",
+      "start": 110.94,
+      "end": 111.06,
+      "probability": 0.977
+    },
+    {
+      "word": " you",
+      "start": 111.06,
+      "end": 111.18,
+      "probability": 0.997
+    },
+    {
+      "word": " see",
+      "start": 111.18,
+      "end": 111.38,
+      "probability": 0.996
+    },
+    {
+      "word": " an",
+      "start": 111.38,
+      "end": 111.5,
+      "probability": 0.99
+    },
+    {
+      "word": " enemy",
+      "start": 111.5,
+      "end": 111.74,
+      "probability": 0.986
+    },
+    {
+      "word": " turn",
+      "start": 111.74,
+      "end": 112.02,
+      "probability": 0.904
+    },
+    {
+      "word": " purple,",
+      "start": 112.02,
+      "end": 112.38,
+      "probability": 0.969
+    },
+    {
+      "word": " your",
+      "start": 112.66,
+      "end": 112.76,
+      "probability": 0.984
+    },
+    {
+      "word": " immediate",
+      "start": 112.76,
+      "end": 113.12,
+      "probability": 0.999
+    },
+    {
+      "word": " reaction",
+      "start": 113.12,
+      "end": 113.62,
+      "probability": 0.987
+    },
+    {
+      "word": " should",
+      "start": 113.62,
+      "end": 113.88,
+      "probability": 0.994
+    },
+    {
+      "word": " be",
+      "start": 113.88,
+      "end": 114.04,
+      "probability": 0.981
+    },
+    {
+      "word": " to",
+      "start": 114.04,
+      "end": 114.22,
+      "probability": 0.986
+    },
+    {
+      "word": " retreat.",
+      "start": 114.22,
+      "end": 114.52,
+      "probability": 0.992
+    },
+    {
+      "word": " Hypercharge",
+      "start": 114.92,
+      "end": 115.4,
+      "probability": 0.903
+    },
+    {
+      "word": " only",
+      "start": 115.4,
+      "end": 115.72,
+      "probability": 0.997
+    },
+    {
+      "word": " lasts",
+      "start": 115.72,
+      "end": 115.98,
+      "probability": 0.996
+    },
+    {
+      "word": " for",
+      "start": 115.98,
+      "end": 116.28,
+      "probability": 0.971
+    },
+    {
+      "word": " 5",
+      "start": 116.28,
+      "end": 116.6,
+      "probability": 0.642
+    },
+    {
+      "word": " seconds.",
+      "start": 116.6,
+      "end": 116.98,
+      "probability": 0.987
+    },
+    {
+      "word": " If",
+      "start": 117.24,
+      "end": 117.38,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 117.38,
+      "end": 117.5,
+      "probability": 0.998
+    },
+    {
+      "word": " can",
+      "start": 117.5,
+      "end": 117.68,
+      "probability": 0.988
+    },
+    {
+      "word": " use",
+      "start": 117.68,
+      "end": 117.9,
+      "probability": 0.996
+    },
+    {
+      "word": " knockbacks,",
+      "start": 117.9,
+      "end": 118.36,
+      "probability": 0.887
+    },
+    {
+      "word": " stuns,",
+      "start": 118.78,
+      "end": 119.16,
+      "probability": 0.991
+    },
+    {
+      "word": " or",
+      "start": 119.24,
+      "end": 119.32,
+      "probability": 0.994
+    },
+    {
+      "word": " simply",
+      "start": 119.32,
+      "end": 119.64,
+      "probability": 0.955
+    },
+    {
+      "word": " run",
+      "start": 119.64,
+      "end": 119.9,
+      "probability": 0.998
+    },
+    {
+      "word": " behind",
+      "start": 119.9,
+      "end": 120.24,
+      "probability": 0.997
+    },
+    {
+      "word": " walls,",
+      "start": 120.24,
+      "end": 120.6,
+      "probability": 0.989
+    },
+    {
+      "word": " you",
+      "start": 120.82,
+      "end": 120.92,
+      "probability": 0.996
+    },
+    {
+      "word": " can",
+      "start": 120.92,
+      "end": 121.08,
+      "probability": 0.997
+    },
+    {
+      "word": " easily",
+      "start": 121.08,
+      "end": 121.48,
+      "probability": 0.99
+    },
+    {
+      "word": " waste",
+      "start": 121.48,
+      "end": 121.84,
+      "probability": 0.966
+    },
+    {
+      "word": " their",
+      "start": 121.84,
+      "end": 122.04,
+      "probability": 0.988
+    },
+    {
+      "word": " entire",
+      "start": 122.04,
+      "end": 122.36,
+      "probability": 0.892
+    },
+    {
+      "word": " activation.",
+      "start": 122.36,
+      "end": 123.04,
+      "probability": 0.996
+    },
+    {
+      "word": " A",
+      "start": 123.38,
+      "end": 123.46,
+      "probability": 0.993
+    },
+    {
+      "word": " wasted",
+      "start": 123.46,
+      "end": 123.8,
+      "probability": 0.946
+    },
+    {
+      "word": " hypercharge",
+      "start": 123.8,
+      "end": 124.48,
+      "probability": 0.976
+    },
+    {
+      "word": " is",
+      "start": 124.48,
+      "end": 124.7,
+      "probability": 0.992
+    },
+    {
+      "word": " a",
+      "start": 124.7,
+      "end": 124.8,
+      "probability": 0.996
+    },
+    {
+      "word": " massive",
+      "start": 124.8,
+      "end": 125.18,
+      "probability": 0.983
+    },
+    {
+      "word": " 5000",
+      "start": 125.18,
+      "end": 125.74,
+      "probability": 0.474
+    },
+    {
+      "word": " coin",
+      "start": 125.74,
+      "end": 126.18,
+      "probability": 0.935
+    },
+    {
+      "word": " deficit",
+      "start": 126.18,
+      "end": 126.52,
+      "probability": 0.998
+    },
+    {
+      "word": " for",
+      "start": 126.52,
+      "end": 126.82,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 126.82,
+      "end": 126.96,
+      "probability": 0.993
+    },
+    {
+      "word": " enemy",
+      "start": 126.96,
+      "end": 127.14,
+      "probability": 0.993
+    },
+    {
+      "word": " team.",
+      "start": 127.14,
+      "end": 127.54,
+      "probability": 0.998
+    },
+    {
+      "word": " Next",
+      "start": 127.8,
+      "end": 127.98,
+      "probability": 0.991
+    },
+    {
+      "word": " time",
+      "start": 127.98,
+      "end": 128.18,
+      "probability": 0.992
+    },
+    {
+      "word": " you",
+      "start": 128.18,
+      "end": 128.32,
+      "probability": 0.984
+    },
+    {
+      "word": " play,",
+      "start": 128.32,
+      "end": 128.56,
+      "probability": 0.997
+    },
+    {
+      "word": " treat",
+      "start": 128.84,
+      "end": 128.96,
+      "probability": 0.969
+    },
+    {
+      "word": " hypercharge",
+      "start": 128.96,
+      "end": 129.62,
+      "probability": 0.946
+    },
+    {
+      "word": " as",
+      "start": 129.62,
+      "end": 129.84,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 129.84,
+      "end": 129.94,
+      "probability": 0.995
+    },
+    {
+      "word": " positioning",
+      "start": 129.94,
+      "end": 130.3,
+      "probability": 0.998
+    },
+    {
+      "word": " tool",
+      "start": 130.3,
+      "end": 130.6,
+      "probability": 0.997
+    },
+    {
+      "word": " first,",
+      "start": 130.6,
+      "end": 130.94,
+      "probability": 0.988
+    },
+    {
+      "word": " and",
+      "start": 131.2,
+      "end": 131.28,
+      "probability": 0.996
+    },
+    {
+      "word": " a",
+      "start": 131.28,
+      "end": 131.36,
+      "probability": 0.978
+    },
+    {
+      "word": " damage",
+      "start": 131.36,
+      "end": 131.62,
+      "probability": 0.727
+    },
+    {
+      "word": " tool",
+      "start": 131.62,
+      "end": 131.88,
+      "probability": 0.952
+    },
+    {
+      "word": " second.",
+      "start": 131.88,
+      "end": 132.24,
+      "probability": 0.988
+    },
+    {
+      "word": " Use",
+      "start": 132.54,
+      "end": 132.68,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 132.68,
+      "end": 132.86,
+      "probability": 0.992
+    },
+    {
+      "word": " speed",
+      "start": 132.86,
+      "end": 133.12,
+      "probability": 0.988
+    },
+    {
+      "word": " to",
+      "start": 133.12,
+      "end": 133.3,
+      "probability": 0.996
+    },
+    {
+      "word": " take",
+      "start": 133.3,
+      "end": 133.5,
+      "probability": 0.994
+    },
+    {
+      "word": " space,",
+      "start": 133.5,
+      "end": 133.8,
+      "probability": 0.997
+    },
+    {
+      "word": " wait",
+      "start": 134.2,
+      "end": 134.34,
+      "probability": 0.985
+    },
+    {
+      "word": " for",
+      "start": 134.34,
+      "end": 134.52,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 134.52,
+      "end": 134.66,
+      "probability": 0.993
+    },
+    {
+      "word": " enemy",
+      "start": 134.66,
+      "end": 134.9,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 134.9,
+      "end": 135.12,
+      "probability": 0.995
+    },
+    {
+      "word": " panic,",
+      "start": 135.12,
+      "end": 135.38,
+      "probability": 0.979
+    },
+    {
+      "word": " and",
+      "start": 135.64,
+      "end": 135.74,
+      "probability": 0.997
+    },
+    {
+      "word": " only",
+      "start": 135.74,
+      "end": 136.06,
+      "probability": 0.988
+    },
+    {
+      "word": " use",
+      "start": 136.06,
+      "end": 136.3,
+      "probability": 0.997
+    },
+    {
+      "word": " your",
+      "start": 136.3,
+      "end": 136.44,
+      "probability": 0.976
+    },
+    {
+      "word": " super",
+      "start": 136.44,
+      "end": 136.74,
+      "probability": 0.924
+    },
+    {
+      "word": " when",
+      "start": 136.74,
+      "end": 137.06,
+      "probability": 0.433
+    },
+    {
+      "word": " you",
+      "start": 137.06,
+      "end": 137.2,
+      "probability": 0.991
+    },
+    {
+      "word": " are",
+      "start": 137.2,
+      "end": 137.3,
+      "probability": 0.957
+    },
+    {
+      "word": " guaranteed",
+      "start": 137.3,
+      "end": 137.8,
+      "probability": 0.995
+    },
+    {
+      "word": " a",
+      "start": 137.8,
+      "end": 137.98,
+      "probability": 0.996
+    },
+    {
+      "word": " value",
+      "start": 137.98,
+      "end": 138.22,
+      "probability": 0.987
+    },
+    {
+      "word": " play.",
+      "start": 138.22,
+      "end": 138.5,
+      "probability": 0.897
+    },
+    {
+      "word": " If",
+      "start": 138.9,
+      "end": 139.0,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 139.0,
+      "end": 139.1,
+      "probability": 0.998
+    },
+    {
+      "word": " want",
+      "start": 139.1,
+      "end": 139.26,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 139.26,
+      "end": 139.4,
+      "probability": 0.994
+    },
+    {
+      "word": " learn",
+      "start": 139.4,
+      "end": 139.54,
+      "probability": 0.999
+    },
+    {
+      "word": " more",
+      "start": 139.54,
+      "end": 139.76,
+      "probability": 0.998
+    },
+    {
+      "word": " hidden",
+      "start": 139.76,
+      "end": 140.02,
+      "probability": 0.986
+    },
+    {
+      "word": " mechanics",
+      "start": 140.02,
+      "end": 140.44,
+      "probability": 0.998
+    },
+    {
+      "word": " to",
+      "start": 140.44,
+      "end": 140.7,
+      "probability": 0.979
+    },
+    {
+      "word": " level",
+      "start": 140.7,
+      "end": 140.92,
+      "probability": 0.999
+    },
+    {
+      "word": " up",
+      "start": 140.92,
+      "end": 141.1,
+      "probability": 0.984
+    },
+    {
+      "word": " your",
+      "start": 141.1,
+      "end": 141.22,
+      "probability": 0.995
+    },
+    {
+      "word": " gameplay,",
+      "start": 141.22,
+      "end": 141.62,
+      "probability": 0.974
+    },
+    {
+      "word": " make",
+      "start": 141.92,
+      "end": 142.02,
+      "probability": 0.994
+    },
+    {
+      "word": " sure",
+      "start": 142.02,
+      "end": 142.22,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 142.22,
+      "end": 142.32,
+      "probability": 0.997
+    },
+    {
+      "word": " subscribe",
+      "start": 142.32,
+      "end": 142.72,
+      "probability": 0.986
+    },
+    {
+      "word": " and",
+      "start": 142.72,
+      "end": 143.04,
+      "probability": 0.901
+    },
+    {
+      "word": " watch",
+      "start": 143.04,
+      "end": 143.28,
+      "probability": 0.997
+    },
+    {
+      "word": " our",
+      "start": 143.28,
+      "end": 143.4,
+      "probability": 0.998
+    },
+    {
+      "word": " next",
+      "start": 143.4,
+      "end": 143.6,
+      "probability": 0.996
+    },
+    {
+      "word": " video.",
+      "start": 143.6,
+      "end": 143.92,
+      "probability": 0.997
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 144.222,
+  "model_size": "base",
+  "device": "cpu"
+}

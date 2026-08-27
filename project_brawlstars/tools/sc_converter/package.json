@@ -1,0 +1,9 @@
+{
+  "name": "sc-converter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ultrapowa/sc-tools": "^2.0.4"
+  }
+}

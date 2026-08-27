@@ -1,0 +1,5 @@
+numpy
+zstandard
+Pillow
+flatbuffers
+texture2ddecoder

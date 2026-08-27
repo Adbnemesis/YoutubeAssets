@@ -1,0 +1,21 @@
+{
+  "name": "nani_007_atk_trail_voke",
+  "frameCount": 1,
+  "canvas": {
+    "width": 12,
+    "height": 12
+  },
+  "anchor": {
+    "x": 6,
+    "y": 6
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 12
+    }
+  ]
+}

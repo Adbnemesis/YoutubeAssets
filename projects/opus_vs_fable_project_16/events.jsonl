@@ -1,0 +1,6 @@
+{"ts": "2026-07-25T07:27:48.654672+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-25T07:28:00.238413+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 11.58}
+{"ts": "2026-07-25T07:58:14.619943+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-25T07:58:27.072502+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 12.45}
+{"ts": "2026-07-25T08:19:40.593881+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-25T08:19:53.928912+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 13.33}

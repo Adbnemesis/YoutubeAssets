@@ -1,0 +1,1300 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#FFCC00",
+    "accentColor": "#FF0055",
+    "surfaceColor": "#111111",
+    "textColor": "#000000",
+    "captionHighlightColor": "#FFCC00",
+    "captionBackgroundColor": "rgba(0, 0, 0, 0.85)",
+    "chartColors": [
+      "#FFCC00",
+      "#FF0055",
+      "#00CCFF",
+      "#10B981"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "NanoNoodles steal baby Nori.",
+      "in_seconds": 0.0,
+      "out_seconds": 2.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "NanoNoodles think they smart.",
+      "in_seconds": 2.0,
+      "out_seconds": 5.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_2",
+      "text": "Kenji very angry.",
+      "in_seconds": 5.0,
+      "out_seconds": 8.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/sword_slash.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_3",
+      "text": "Kaze super angry.",
+      "in_seconds": 8.0,
+      "out_seconds": 10.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-08]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/ninja_shuriken.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "Family want baby back.",
+      "in_seconds": 10.0,
+      "out_seconds": 12.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-10]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_5",
+      "text": "Most brawlers walk straight line into HQ.",
+      "in_seconds": 12.0,
+      "out_seconds": 16.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "Walk straight line, security bot shoot bullet.",
+      "in_seconds": 16.0,
+      "out_seconds": 20.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/robot_turret_fire.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "Brawler take damage, brawler sad.",
+      "in_seconds": 20.0,
+      "out_seconds": 23.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-20]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "Kenji use Forty-Five Degree Diagonal Dash.",
+      "in_seconds": 23.0,
+      "out_seconds": 27.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/sword_slash.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "Dash diagonal, dodge straight bullet, charge super fast.",
+      "in_seconds": 27.0,
+      "out_seconds": 32.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/brawl_super.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "If dash diagonal, enemy waste ammo predicting path.",
+      "in_seconds": 32.0,
+      "out_seconds": 36.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-32]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/robot_turret_target.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_11",
+      "text": "Diagonal Dashing.",
+      "in_seconds": 36.0,
+      "out_seconds": 38.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "Kaze control high ground.",
+      "in_seconds": 38.0,
+      "out_seconds": 41.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-38]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "Kaze use Stealth Vision.",
+      "in_seconds": 41.0,
+      "out_seconds": 44.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-41]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "Spot hidden security bot before ambush.",
+      "in_seconds": 44.0,
+      "out_seconds": 47.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_15",
+      "text": "If vision cone clear, team safe.",
+      "in_seconds": 47.0,
+      "out_seconds": 50.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-47]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_16",
+      "text": "Vision Advantage.",
+      "in_seconds": 50.0,
+      "out_seconds": 52.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "Central vault lock behind heavy blast door.",
+      "in_seconds": 52.0,
+      "out_seconds": 56.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-52]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_18",
+      "text": "NanoNoodles think melee brawler stuck.",
+      "in_seconds": 56.0,
+      "out_seconds": 59.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "Nori trapped inside.",
+      "in_seconds": 59.0,
+      "out_seconds": 62.0,
+      "source": "projects/nori_final_battle_project_15/images/[00-59]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "Nori not helpless.",
+      "in_seconds": 62.0,
+      "out_seconds": 64.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "Nori use fishing rod grapple.",
+      "in_seconds": 64.0,
+      "out_seconds": 66.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-04]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_22",
+      "text": "Hook internal beam, pull acceleration weaken vault lock.",
+      "in_seconds": 66.0,
+      "out_seconds": 71.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-06]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_23",
+      "text": "Pull Acceleration.",
+      "in_seconds": 71.0,
+      "out_seconds": 73.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_24",
+      "text": "Kenji activate Super slash on outside.",
+      "in_seconds": 73.0,
+      "out_seconds": 77.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-13]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/brawl_super.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_25",
+      "text": "Nori time grapple jump on inside.",
+      "in_seconds": 77.0,
+      "out_seconds": 80.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-17]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "Dual-sided kinetic strike shatter blast door.",
+      "in_seconds": 80.0,
+      "out_seconds": 84.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-20]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/sword_slash.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_27",
+      "text": "Vault explode, Nori free, family happy.",
+      "in_seconds": 84.0,
+      "out_seconds": 88.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/brawl_match_win.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_28",
+      "text": "Dual Kinetic Synergy.",
+      "in_seconds": 88.0,
+      "out_seconds": 90.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_29",
+      "text": "Brawl Stars is simple.",
+      "in_seconds": 90.0,
+      "out_seconds": 93.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_30",
+      "text": "Never rush in alone.",
+      "in_seconds": 93.0,
+      "out_seconds": 95.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-33]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_31",
+      "text": "Coordinate mobility dash with team crowd control.",
+      "in_seconds": 95.0,
+      "out_seconds": 99.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-35]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_32",
+      "text": "Sometimes Brawl Stars get really bananas.",
+      "in_seconds": 99.0,
+      "out_seconds": 103.0,
+      "source": "projects/nori_final_battle_project_15/images/[01-39]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/brawl_stars_sfx/sushi_wink.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_33",
+      "text": "Please subscribe.",
+      "in_seconds": 103.0,
+      "out_seconds": 104.99,
+      "source": "projects/nori_final_battle_project_15/images/[01-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "words": [
+    {
+      "word": "NanoNoodles",
+      "startMs": 0,
+      "endMs": 500
+    },
+    {
+      "word": "steal",
+      "startMs": 500,
+      "endMs": 1000
+    },
+    {
+      "word": "baby",
+      "startMs": 1000,
+      "endMs": 1500
+    },
+    {
+      "word": "Nori.",
+      "startMs": 1500,
+      "endMs": 2000
+    },
+    {
+      "word": "NanoNoodles",
+      "startMs": 2000,
+      "endMs": 2750
+    },
+    {
+      "word": "think",
+      "startMs": 2750,
+      "endMs": 3500
+    },
+    {
+      "word": "they",
+      "startMs": 3500,
+      "endMs": 4250
+    },
+    {
+      "word": "smart.",
+      "startMs": 4250,
+      "endMs": 5000
+    },
+    {
+      "word": "Kenji",
+      "startMs": 5000,
+      "endMs": 6000
+    },
+    {
+      "word": "very",
+      "startMs": 6000,
+      "endMs": 7000
+    },
+    {
+      "word": "angry.",
+      "startMs": 7000,
+      "endMs": 8000
+    },
+    {
+      "word": "Kaze",
+      "startMs": 8000,
+      "endMs": 8666
+    },
+    {
+      "word": "super",
+      "startMs": 8666,
+      "endMs": 9333
+    },
+    {
+      "word": "angry.",
+      "startMs": 9333,
+      "endMs": 10000
+    },
+    {
+      "word": "Family",
+      "startMs": 10000,
+      "endMs": 10500
+    },
+    {
+      "word": "want",
+      "startMs": 10500,
+      "endMs": 11000
+    },
+    {
+      "word": "baby",
+      "startMs": 11000,
+      "endMs": 11500
+    },
+    {
+      "word": "back.",
+      "startMs": 11500,
+      "endMs": 12000
+    },
+    {
+      "word": "Most",
+      "startMs": 12000,
+      "endMs": 12571
+    },
+    {
+      "word": "brawlers",
+      "startMs": 12571,
+      "endMs": 13142
+    },
+    {
+      "word": "walk",
+      "startMs": 13142,
+      "endMs": 13714
+    },
+    {
+      "word": "straight",
+      "startMs": 13714,
+      "endMs": 14285
+    },
+    {
+      "word": "line",
+      "startMs": 14285,
+      "endMs": 14857
+    },
+    {
+      "word": "into",
+      "startMs": 14857,
+      "endMs": 15428
+    },
+    {
+      "word": "HQ.",
+      "startMs": 15428,
+      "endMs": 16000
+    },
+    {
+      "word": "Walk",
+      "startMs": 16000,
+      "endMs": 16571
+    },
+    {
+      "word": "straight",
+      "startMs": 16571,
+      "endMs": 17142
+    },
+    {
+      "word": "line,",
+      "startMs": 17142,
+      "endMs": 17714
+    },
+    {
+      "word": "security",
+      "startMs": 17714,
+      "endMs": 18285
+    },
+    {
+      "word": "bot",
+      "startMs": 18285,
+      "endMs": 18857
+    },
+    {
+      "word": "shoot",
+      "startMs": 18857,
+      "endMs": 19428
+    },
+    {
+      "word": "bullet.",
+      "startMs": 19428,
+      "endMs": 20000
+    },
+    {
+      "word": "Brawler",
+      "startMs": 20000,
+      "endMs": 20600
+    },
+    {
+      "word": "take",
+      "startMs": 20600,
+      "endMs": 21200
+    },
+    {
+      "word": "damage,",
+      "startMs": 21200,
+      "endMs": 21800
+    },
+    {
+      "word": "brawler",
+      "startMs": 21800,
+      "endMs": 22400
+    },
+    {
+      "word": "sad.",
+      "startMs": 22400,
+      "endMs": 23000
+    },
+    {
+      "word": "Kenji",
+      "startMs": 23000,
+      "endMs": 23666
+    },
+    {
+      "word": "use",
+      "startMs": 23666,
+      "endMs": 24333
+    },
+    {
+      "word": "Forty-Five",
+      "startMs": 24333,
+      "endMs": 25000
+    },
+    {
+      "word": "Degree",
+      "startMs": 25000,
+      "endMs": 25666
+    },
+    {
+      "word": "Diagonal",
+      "startMs": 25666,
+      "endMs": 26333
+    },
+    {
+      "word": "Dash.",
+      "startMs": 26333,
+      "endMs": 27000
+    },
+    {
+      "word": "Dash",
+      "startMs": 27000,
+      "endMs": 27625
+    },
+    {
+      "word": "diagonal,",
+      "startMs": 27625,
+      "endMs": 28250
+    },
+    {
+      "word": "dodge",
+      "startMs": 28250,
+      "endMs": 28875
+    },
+    {
+      "word": "straight",
+      "startMs": 28875,
+      "endMs": 29500
+    },
+    {
+      "word": "bullet,",
+      "startMs": 29500,
+      "endMs": 30125
+    },
+    {
+      "word": "charge",
+      "startMs": 30125,
+      "endMs": 30750
+    },
+    {
+      "word": "super",
+      "startMs": 30750,
+      "endMs": 31375
+    },
+    {
+      "word": "fast.",
+      "startMs": 31375,
+      "endMs": 32000
+    },
+    {
+      "word": "If",
+      "startMs": 32000,
+      "endMs": 32500
+    },
+    {
+      "word": "dash",
+      "startMs": 32500,
+      "endMs": 33000
+    },
+    {
+      "word": "diagonal,",
+      "startMs": 33000,
+      "endMs": 33500
+    },
+    {
+      "word": "enemy",
+      "startMs": 33500,
+      "endMs": 34000
+    },
+    {
+      "word": "waste",
+      "startMs": 34000,
+      "endMs": 34500
+    },
+    {
+      "word": "ammo",
+      "startMs": 34500,
+      "endMs": 35000
+    },
+    {
+      "word": "predicting",
+      "startMs": 35000,
+      "endMs": 35500
+    },
+    {
+      "word": "path.",
+      "startMs": 35500,
+      "endMs": 36000
+    },
+    {
+      "word": "Diagonal",
+      "startMs": 36000,
+      "endMs": 37000
+    },
+    {
+      "word": "Dashing.",
+      "startMs": 37000,
+      "endMs": 38000
+    },
+    {
+      "word": "Kaze",
+      "startMs": 38000,
+      "endMs": 38750
+    },
+    {
+      "word": "control",
+      "startMs": 38750,
+      "endMs": 39500
+    },
+    {
+      "word": "high",
+      "startMs": 39500,
+      "endMs": 40250
+    },
+    {
+      "word": "ground.",
+      "startMs": 40250,
+      "endMs": 41000
+    },
+    {
+      "word": "Kaze",
+      "startMs": 41000,
+      "endMs": 41750
+    },
+    {
+      "word": "use",
+      "startMs": 41750,
+      "endMs": 42500
+    },
+    {
+      "word": "Stealth",
+      "startMs": 42500,
+      "endMs": 43250
+    },
+    {
+      "word": "Vision.",
+      "startMs": 43250,
+      "endMs": 44000
+    },
+    {
+      "word": "Spot",
+      "startMs": 44000,
+      "endMs": 44500
+    },
+    {
+      "word": "hidden",
+      "startMs": 44500,
+      "endMs": 45000
+    },
+    {
+      "word": "security",
+      "startMs": 45000,
+      "endMs": 45500
+    },
+    {
+      "word": "bot",
+      "startMs": 45500,
+      "endMs": 46000
+    },
+    {
+      "word": "before",
+      "startMs": 46000,
+      "endMs": 46500
+    },
+    {
+      "word": "ambush.",
+      "startMs": 46500,
+      "endMs": 47000
+    },
+    {
+      "word": "If",
+      "startMs": 47000,
+      "endMs": 47500
+    },
+    {
+      "word": "vision",
+      "startMs": 47500,
+      "endMs": 48000
+    },
+    {
+      "word": "cone",
+      "startMs": 48000,
+      "endMs": 48500
+    },
+    {
+      "word": "clear,",
+      "startMs": 48500,
+      "endMs": 49000
+    },
+    {
+      "word": "team",
+      "startMs": 49000,
+      "endMs": 49500
+    },
+    {
+      "word": "safe.",
+      "startMs": 49500,
+      "endMs": 50000
+    },
+    {
+      "word": "Vision",
+      "startMs": 50000,
+      "endMs": 51000
+    },
+    {
+      "word": "Advantage.",
+      "startMs": 51000,
+      "endMs": 52000
+    },
+    {
+      "word": "Central",
+      "startMs": 52000,
+      "endMs": 52571
+    },
+    {
+      "word": "vault",
+      "startMs": 52571,
+      "endMs": 53142
+    },
+    {
+      "word": "lock",
+      "startMs": 53142,
+      "endMs": 53714
+    },
+    {
+      "word": "behind",
+      "startMs": 53714,
+      "endMs": 54285
+    },
+    {
+      "word": "heavy",
+      "startMs": 54285,
+      "endMs": 54857
+    },
+    {
+      "word": "blast",
+      "startMs": 54857,
+      "endMs": 55428
+    },
+    {
+      "word": "door.",
+      "startMs": 55428,
+      "endMs": 56000
+    },
+    {
+      "word": "NanoNoodles",
+      "startMs": 56000,
+      "endMs": 56600
+    },
+    {
+      "word": "think",
+      "startMs": 56600,
+      "endMs": 57200
+    },
+    {
+      "word": "melee",
+      "startMs": 57200,
+      "endMs": 57800
+    },
+    {
+      "word": "brawler",
+      "startMs": 57800,
+      "endMs": 58400
+    },
+    {
+      "word": "stuck.",
+      "startMs": 58400,
+      "endMs": 59000
+    },
+    {
+      "word": "Nori",
+      "startMs": 59000,
+      "endMs": 60000
+    },
+    {
+      "word": "trapped",
+      "startMs": 60000,
+      "endMs": 61000
+    },
+    {
+      "word": "inside.",
+      "startMs": 61000,
+      "endMs": 62000
+    },
+    {
+      "word": "Nori",
+      "startMs": 62000,
+      "endMs": 62666
+    },
+    {
+      "word": "not",
+      "startMs": 62666,
+      "endMs": 63333
+    },
+    {
+      "word": "helpless.",
+      "startMs": 63333,
+      "endMs": 64000
+    },
+    {
+      "word": "Nori",
+      "startMs": 64000,
+      "endMs": 64400
+    },
+    {
+      "word": "use",
+      "startMs": 64400,
+      "endMs": 64800
+    },
+    {
+      "word": "fishing",
+      "startMs": 64800,
+      "endMs": 65200
+    },
+    {
+      "word": "rod",
+      "startMs": 65200,
+      "endMs": 65600
+    },
+    {
+      "word": "grapple.",
+      "startMs": 65600,
+      "endMs": 66000
+    },
+    {
+      "word": "Hook",
+      "startMs": 66000,
+      "endMs": 66625
+    },
+    {
+      "word": "internal",
+      "startMs": 66625,
+      "endMs": 67250
+    },
+    {
+      "word": "beam,",
+      "startMs": 67250,
+      "endMs": 67875
+    },
+    {
+      "word": "pull",
+      "startMs": 67875,
+      "endMs": 68500
+    },
+    {
+      "word": "acceleration",
+      "startMs": 68500,
+      "endMs": 69125
+    },
+    {
+      "word": "weaken",
+      "startMs": 69125,
+      "endMs": 69750
+    },
+    {
+      "word": "vault",
+      "startMs": 69750,
+      "endMs": 70375
+    },
+    {
+      "word": "lock.",
+      "startMs": 70375,
+      "endMs": 71000
+    },
+    {
+      "word": "Pull",
+      "startMs": 71000,
+      "endMs": 72000
+    },
+    {
+      "word": "Acceleration.",
+      "startMs": 72000,
+      "endMs": 73000
+    },
+    {
+      "word": "Kenji",
+      "startMs": 73000,
+      "endMs": 73666
+    },
+    {
+      "word": "activate",
+      "startMs": 73666,
+      "endMs": 74333
+    },
+    {
+      "word": "Super",
+      "startMs": 74333,
+      "endMs": 75000
+    },
+    {
+      "word": "slash",
+      "startMs": 75000,
+      "endMs": 75666
+    },
+    {
+      "word": "on",
+      "startMs": 75666,
+      "endMs": 76333
+    },
+    {
+      "word": "outside.",
+      "startMs": 76333,
+      "endMs": 77000
+    },
+    {
+      "word": "Nori",
+      "startMs": 77000,
+      "endMs": 77500
+    },
+    {
+      "word": "time",
+      "startMs": 77500,
+      "endMs": 78000
+    },
+    {
+      "word": "grapple",
+      "startMs": 78000,
+      "endMs": 78500
+    },
+    {
+      "word": "jump",
+      "startMs": 78500,
+      "endMs": 79000
+    },
+    {
+      "word": "on",
+      "startMs": 79000,
+      "endMs": 79500
+    },
+    {
+      "word": "inside.",
+      "startMs": 79500,
+      "endMs": 80000
+    },
+    {
+      "word": "Dual-sided",
+      "startMs": 80000,
+      "endMs": 80666
+    },
+    {
+      "word": "kinetic",
+      "startMs": 80666,
+      "endMs": 81333
+    },
+    {
+      "word": "strike",
+      "startMs": 81333,
+      "endMs": 82000
+    },
+    {
+      "word": "shatter",
+      "startMs": 82000,
+      "endMs": 82666
+    },
+    {
+      "word": "blast",
+      "startMs": 82666,
+      "endMs": 83333
+    },
+    {
+      "word": "door.",
+      "startMs": 83333,
+      "endMs": 84000
+    },
+    {
+      "word": "Vault",
+      "startMs": 84000,
+      "endMs": 84666
+    },
+    {
+      "word": "explode,",
+      "startMs": 84666,
+      "endMs": 85333
+    },
+    {
+      "word": "Nori",
+      "startMs": 85333,
+      "endMs": 86000
+    },
+    {
+      "word": "free,",
+      "startMs": 86000,
+      "endMs": 86666
+    },
+    {
+      "word": "family",
+      "startMs": 86666,
+      "endMs": 87333
+    },
+    {
+      "word": "happy.",
+      "startMs": 87333,
+      "endMs": 88000
+    },
+    {
+      "word": "Dual",
+      "startMs": 88000,
+      "endMs": 88666
+    },
+    {
+      "word": "Kinetic",
+      "startMs": 88666,
+      "endMs": 89333
+    },
+    {
+      "word": "Synergy.",
+      "startMs": 89333,
+      "endMs": 90000
+    },
+    {
+      "word": "Brawl",
+      "startMs": 90000,
+      "endMs": 90750
+    },
+    {
+      "word": "Stars",
+      "startMs": 90750,
+      "endMs": 91500
+    },
+    {
+      "word": "is",
+      "startMs": 91500,
+      "endMs": 92250
+    },
+    {
+      "word": "simple.",
+      "startMs": 92250,
+      "endMs": 93000
+    },
+    {
+      "word": "Never",
+      "startMs": 93000,
+      "endMs": 93500
+    },
+    {
+      "word": "rush",
+      "startMs": 93500,
+      "endMs": 94000
+    },
+    {
+      "word": "in",
+      "startMs": 94000,
+      "endMs": 94500
+    },
+    {
+      "word": "alone.",
+      "startMs": 94500,
+      "endMs": 95000
+    },
+    {
+      "word": "Coordinate",
+      "startMs": 95000,
+      "endMs": 95571
+    },
+    {
+      "word": "mobility",
+      "startMs": 95571,
+      "endMs": 96142
+    },
+    {
+      "word": "dash",
+      "startMs": 96142,
+      "endMs": 96714
+    },
+    {
+      "word": "with",
+      "startMs": 96714,
+      "endMs": 97285
+    },
+    {
+      "word": "team",
+      "startMs": 97285,
+      "endMs": 97857
+    },
+    {
+      "word": "crowd",
+      "startMs": 97857,
+      "endMs": 98428
+    },
+    {
+      "word": "control.",
+      "startMs": 98428,
+      "endMs": 99000
+    },
+    {
+      "word": "Sometimes",
+      "startMs": 99000,
+      "endMs": 99666
+    },
+    {
+      "word": "Brawl",
+      "startMs": 99666,
+      "endMs": 100333
+    },
+    {
+      "word": "Stars",
+      "startMs": 100333,
+      "endMs": 101000
+    },
+    {
+      "word": "get",
+      "startMs": 101000,
+      "endMs": 101666
+    },
+    {
+      "word": "really",
+      "startMs": 101666,
+      "endMs": 102333
+    },
+    {
+      "word": "bananas.",
+      "startMs": 102333,
+      "endMs": 103000
+    },
+    {
+      "word": "Please",
+      "startMs": 103000,
+      "endMs": 103995
+    },
+    {
+      "word": "subscribe.",
+      "startMs": 103995,
+      "endMs": 104990
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/nori_final_battle_project_15/voiceover.mp3",
+      "volume": 1.0
+    }
+  }
+}

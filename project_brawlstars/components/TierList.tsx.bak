@@ -1,0 +1,1689 @@
+import React from "react";
+import {
+  Img,
+  staticFile,
+  interpolate,
+  useCurrentFrame,
+  useVideoConfig,
+  Easing,
+} from "remotion";
+import { BrawlerEntry, TierListConfig, MoveFx, FightTurn, TierMove } from "../types";
+import { popIn } from "../motion";
+import { FONT_FAMILY } from "../fonts";
+import { beatToFrame } from "../beatGrid";
+import { ScEffect } from "./ScEffect";
+import {
+  ROW_TOP,
+  ROW_BOTTOM,
+  rowCenter,
+  STRIP_W,
+  CONTENT_X,
+  CONTENT_W,
+  CARD_SIZE,
+  CARD_GAP,
+  FLY_DURATION,
+  cardSlotX,
+  tierAt,
+  slotAt,
+  slotFor,
+} from "../layout";
+
+export interface TierListProps {
+  config: TierListConfig;
+  /** Frame when cards may begin dropping */
+  settleFrame: number;
+  /** Frame of the D-tier slam (pins + shake) */
+  slamFrame: number;
+  /** Frame when grid is revealed (prevents intro double icons) */
+  gridRevealFrame?: number;
+  /** Fight window — the tier-list cards battle with their abilities */
+  fight?: { start: number; end: number; turns: FightTurn[]; vfxScale?: number; cleanVfx?: boolean };
+}
+
+/**
+ * Full-screen tier list matching the reference video:
+ *  - five equal rows (S,A,B,C,D) with a smooth red→orange→yellow→green
+ *    gradient label strip on the left
+ *  - cards drop in, fly between tiers with FX (splash / glitch / domino)
+ *  - dislike/heart pins land on drop beats
+ *  - during the fight window the existing tier cards attack each other with
+ *    their real Brawl Stars ability VFX flying between them
+ */
+
+const STRIP_GRADIENT = [
+  "#F4598C",
+  "#FF8A5C",
+  "#FFB84D",
+  "#FFD94F",
+  "#7FE35C",
+  "#3BBE5E",
+];
+
+// Fight target resolution uses the entries' array order (ring attack chain).
+const fightOrderFor = (entries: BrawlerEntry[]): string[] =>
+  entries.map((e) => e.id);
+
+const lerp = (a: number, b: number, t: number): number => a + (b - a) * t;
+
+/**
+ * Melee stand position: where the attacker card stands while delivering a
+ * melee blow so the two fighters are visually adjacent.
+ *  - Same row  -> side-by-side, just to the side of the target
+ *  - Diff rows -> stacked, directly above/below the target (one card gap)
+ */
+const meleeStandPos = (
+  attackerPos: { x: number; y: number },
+  targetPos: { x: number; y: number }
+): { x: number; y: number } => {
+  const sameRow = Math.abs(attackerPos.y - targetPos.y) < 100;
+  if (sameRow) {
+    const dir = targetPos.x >= attackerPos.x ? -1 : 1;
+    return { x: targetPos.x + dir * (CARD_SIZE + 24), y: targetPos.y };
+  }
+  const dir = targetPos.y >= attackerPos.y ? -1 : 1;
+  return { x: targetPos.x, y: targetPos.y + dir * (CARD_SIZE + 24) };
+};
+
+// ─── Ability VFX (fly between the attacking card and its target) ──────────
+// Recreated to match the real Brawl Stars attack visuals:
+//  Kenji  — crescent katana slash arc (teal/white) + spinning blade
+//  Edgar  — 4 quick violet punch arcs in a fan
+//  Shelly — orange shotgun pellet cone with muzzle flash
+//  Frank  — orange hammer ground shockwave (elliptical wave)
+
+const KatanaSlash: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean }> = ({
+  rel,
+  fromX,
+  toX,
+  y,
+  isSuper
+}) => {
+  const prog = interpolate(rel, [0, 10], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.inOut(Easing.quad),
+  });
+  const opacity = interpolate(rel, [0, 4, 12], [0, 1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const x = lerp(fromX, toX, prog);
+  const scale = (isSuper ? 1.5 : 1.0) * interpolate(prog, [0, 0.5, 1], [0.8, 1.2, 0.8]);
+  
+  const path = "M 200,50 A 150,150 0 0,0 200,350 A 180,180 0 0,1 250,50 Z";
+  
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: x,
+        top: y,
+        opacity,
+        transform: `translate(-50%,-50%) scale(${scale}) rotate(${toX > fromX ? 0 : 180}deg)`,
+        zIndex: 100,
+      }}
+    >
+      <div style={{ transform: "translate(-200px, -200px)" }}>
+        <svg width="400" height="400" viewBox="0 0 400 400">
+          <path d={path} fill="#00FFFF" stroke="#FFFFFF" strokeWidth="4" />
+          <path d="M 190,40 L 170,80 L 190,100 L 160,150 L 180,180 L 140,250 L 180,280 L 170,330 L 210,360" fill="none" stroke="#00FFFF" strokeWidth="8" strokeLinecap="round" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+const ScarfPunches: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean }> = ({
+  rel,
+  fromX,
+  toX,
+  y,
+  isSuper
+}) => {
+  const prog = interpolate(rel, [0, 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const opacity = interpolate(rel, [0, 4, 12], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const scale = isSuper ? 1.5 : 1;
+  const dir = toX > fromX ? 1 : -1;
+  const x = fromX + (dir * 80);
+
+  const punchX = interpolate(prog, [0, 1], [-100 * dir, 150 * dir]);
+  const punchX2 = interpolate(prog, [0, 1], [100 * dir, -150 * dir]);
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: x,
+        top: y,
+        opacity,
+        transform: `translate(-50%,-50%) scale(${scale})`,
+        zIndex: 100,
+      }}
+    >
+      <div style={{ position: "relative" }}>
+        <div style={{
+          position: "absolute",
+          width: 140, height: 60,
+          background: "linear-gradient(90deg, #FF1C1C 33%, #FFFFFF 33%, #FFFFFF 66%, #1F1F1F 66%)",
+          borderRadius: 30,
+          border: "6px solid black",
+          transform: `translate(${punchX}px, -50px) rotate(${-15 * dir}deg)`,
+          boxShadow: "0px 0px 20px rgba(255,28,28,0.6)"
+        }} />
+        <div style={{
+          position: "absolute",
+          width: 140, height: 60,
+          background: "linear-gradient(90deg, #1F1F1F 33%, #FFFFFF 33%, #FFFFFF 66%, #FF1C1C 66%)",
+          borderRadius: 30,
+          border: "6px solid black",
+          transform: `translate(${punchX2}px, 50px) rotate(${15 * dir}deg)`,
+          boxShadow: "0px 0px 20px rgba(255,28,28,0.6)"
+        }} />
+        
+        {prog > 0.6 && [0,1,2].map(i => (
+          <div key={i} style={{
+            position: "absolute",
+            width: 40, height: 40,
+            background: "white",
+            clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+            transform: `translate(${i===0 ? 160*dir : i===1 ? -160*dir : 0}px, ${i===0 ? -60 : i===1 ? 60 : 0}px) scale(${interpolate(prog, [0.6,1], [0,1])}) rotate(${rel * 10}deg)`
+          }} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const Buckshot: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean }> = ({
+  rel,
+  fromX,
+  toX,
+  y,
+  isSuper
+}) => {
+  const prog = interpolate(rel, [0, 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const opacity = interpolate(rel, [0, 10, 15], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const scale = isSuper ? 1.5 : 1;
+  const dir = toX > fromX ? 1 : -1;
+
+  const pellets = Array.from({ length: 15 }).map((_, i) => {
+    // Generate deterministic randoms for pellets
+    const r1 = Math.sin(i * 123.45);
+    const r2 = Math.cos(i * 678.90);
+    const angle = -45 + (i * 6) + (r1 * 10 - 5);
+    const speed = 10 + r2 * 15;
+    return { angle, speed, size: 10 + Math.abs(r1) * 15 };
+  });
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: fromX,
+        top: y,
+        opacity,
+        transform: `translate(-50%,-50%) scale(${scale})`,
+        zIndex: 100,
+      }}
+    >
+      <div style={{ position: "relative" }}>
+        <div style={{
+          position: "absolute",
+          width: 120, height: 120,
+          background: "#FFFFFF",
+          borderRadius: "50%",
+          border: "8px solid #B0B0B0",
+          transform: `translate(${dir === 1 ? 20 : -140}px, -60px) scale(${interpolate(prog, [0, 1], [0.2, 1])})`,
+          opacity: interpolate(prog, [0, 0.5, 1], [1, 1, 0])
+        }} />
+        
+        {pellets.map((p, i) => {
+          const dist = (rel * p.speed) * dir;
+          const rad = (p.angle * Math.PI) / 180;
+          const px = Math.cos(rad) * dist + (dir === 1 ? 60 : -60);
+          const py = Math.sin(rad) * Math.abs(dist);
+          return (
+            <div key={i} style={{
+              position: "absolute",
+              width: p.size, height: p.size,
+              background: i % 2 === 0 ? "#FFD700" : "#FF4500",
+              borderRadius: "50%",
+              boxShadow: "0 0 10px #FF4500",
+              transform: `translate(${px}px, ${py}px)`
+            }} />
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+const HammerShockwave: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean }> = ({
+  rel,
+  fromX,
+  toX,
+  y,
+  isSuper
+}) => {
+  const prog = interpolate(rel, [0, 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const opacity = interpolate(rel, [0, 10, 15], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const scale = isSuper ? 1.8 : 1.2;
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: toX, // Centers on the target!
+        top: y,
+        opacity,
+        transform: `translate(-50%,-50%) scale(${scale}) rotateX(45deg)`,
+        zIndex: 100,
+      }}
+    >
+      <div style={{ position: "relative" }}>
+        <div style={{
+          position: "absolute",
+          width: 300, height: 300,
+          borderRadius: "50%",
+          border: "20px solid #A020F0",
+          transform: `translate(-150px, -150px) scale(${prog})`,
+          boxShadow: "0 0 40px #A020F0, inset 0 0 40px #A020F0",
+          opacity: interpolate(prog, [0, 1], [1, 0])
+        }} />
+        <div style={{
+          position: "absolute",
+          width: 150, height: 150,
+          background: "#FF00FF",
+          borderRadius: "50%",
+          transform: `translate(-75px, -75px) scale(${prog * 0.8})`,
+          filter: "blur(20px)",
+          opacity: interpolate(prog, [0, 0.5, 1], [1, 1, 0])
+        }} />
+        <svg width="400" height="400" style={{ position: "absolute", transform: "translate(-200px, -200px)" }}>
+          <path d="M 200,200 L 100,100 M 200,200 L 300,80 M 200,200 L 80,300 M 200,200 L 320,320" 
+                stroke="#500080" strokeWidth="8" strokeDasharray="150" strokeDashoffset={interpolate(prog, [0,1], [150, 0])} strokeLinecap="round" />
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+// ─── Ability VFX for Short #2 (Melodie / Bibi / Gale / Crow) ─────────────
+// Recreated to match each brawler's real Brawl Stars attack:
+//  Melodie — fan of golden musical notes (attack) / Melodic Dash note run (super)
+//  Bibi    — Bubblegum Bat sweep (attack) / Spitball bouncing gum ball (super)
+//  Gale    — 6-snowball spread (attack) / Gale Force tornado push (super)
+//  Crow    — 3 poison daggers fan (attack) / Carrion Crow leap + rain (super)
+
+const NoteGlyph: React.FC<{ scale?: number; flip?: boolean; clean?: boolean }> = ({
+  scale = 1,
+  flip = false,
+  clean = false,
+}) => (
+  <svg
+    width="72"
+    height="72"
+    viewBox="0 0 120 120"
+    style={{ transform: `scale(${scale}) ${flip ? "scaleX(-1)" : ""}` }}
+  >
+    <ellipse cx="38" cy="92" rx="20" ry="15" fill={clean ? "#FDE047" : "#FDE047"} stroke="#78350F" strokeWidth="4" />
+    <rect x="54" y="18" width="10" height="76" rx="4" fill="#FDE047" stroke="#78350F" strokeWidth="4" />
+    <path d="M 64 20 Q 100 34 92 80 Q 84 52 64 46 Z" fill="#FDE047" stroke="#78350F" strokeWidth="4" />
+  </svg>
+);
+
+const MelodieNoteVolley: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
+  const opacity = interpolate(rel, [0, 4, 14], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const notes = clean ? 3 : 5;
+  const s = vfxScale;
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity, zIndex: 100, pointerEvents: "none" }}>
+      {Array.from({ length: notes }).map((_, i) => {
+        const spread = (i - (notes - 1) / 2) * 9;
+        const rad = (spread * Math.PI) / 180;
+        const ddx = Math.cos(rad) * (toX - fromX) - Math.sin(rad) * Math.abs(toX - fromX) * 0.3;
+        const ddy = Math.sin(rad) * Math.abs(toX - fromX) * 0.3;
+        const nx = fromX + ddx * prog;
+        const ny = y + ddy * prog;
+        return (
+          <div key={i} style={{ position: "absolute", left: nx, top: ny, transform: `translate(-50%,-50%) rotate(${(rel + i * 4) * 6 * dir}deg)` }}>
+            <NoteGlyph scale={(isSuper ? 1.5 : 1.15) * s} />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const MelodieMelodicDash: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const opacity = interpolate(rel, [0, 5, 16], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const dashX = fromX + (toX - fromX) * prog;
+  const s = vfxScale;
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity, zIndex: 100, pointerEvents: "none" }}>
+      <div
+        style={{
+          position: "absolute",
+          left: dashX,
+          top: y,
+          width: 200 * s,
+          height: 90 * s,
+          transform: `translate(-50%,-50%) rotate(${dir * 6}deg)`,
+          background: `radial-gradient(ellipse, rgba(253,224,71,0.9) 0%, rgba(236,72,153,0.7) 45%, transparent 70%)`,
+          filter: clean ? "none" : "blur(3px)",
+          borderRadius: "50%",
+          boxShadow: clean ? "none" : "0 0 40px #EC4899",
+        }}
+      />
+      {!clean && (
+        <div
+          style={{
+            position: "absolute",
+            left: fromX + (toX - fromX) * 0.5,
+            top: y,
+            width: 560,
+            height: 110,
+            transform: `translate(-50%,-50%) rotate(${dir * 8}deg) scaleX(${prog})`,
+            background: "linear-gradient(90deg, transparent, #FDE047, #FFFFFF, #EC4899, transparent)",
+            filter: "blur(2px)",
+            borderRadius: 55,
+            boxShadow: "0 0 34px #EC4899",
+          }}
+        />
+      )}
+      {Array.from({ length: clean ? 3 : 8 }).map((_, i) => {
+        const t = clean ? ((i / 3) * 0.8 + prog * 0.9) % 1 : ((i / 8) * 0.8 + prog * 0.9) % 1;
+        const nx = fromX + (toX - fromX) * t;
+        const ny = y + Math.sin(t * 7 + i * 2.2) * 52;
+        return (
+          <div key={i} style={{ position: "absolute", left: nx, top: ny, transform: `translate(-50%,-50%) scale(${(isSuper ? 1.3 : 0.9) * s}) rotate(${t * 400 * dir}deg)` }}>
+            <NoteGlyph clean={clean} />
+          </div>
+        );
+      })}
+      <div
+        style={{
+          position: "absolute",
+          left: toX,
+          top: y,
+          transform: `translate(-50%,-50%) scale(${0.2 + prog * 1.8})`,
+          opacity: 1 - prog,
+          width: 260 * s,
+          height: 260 * s,
+          background: "radial-gradient(circle, rgba(253,224,71,0.7), rgba(236,72,153,0.5) 45%, transparent 70%)",
+          borderRadius: "50%",
+          boxShadow: clean ? "none" : "0 0 60px #EC4899",
+        }}
+      />
+      {prog > 0.7 && !clean &&
+        Array.from({ length: 8 }).map((_, i) => {
+          const ang = (i / 8) * Math.PI * 2;
+          const r = (prog - 0.7) * 1.2;
+          return (
+            <div
+              key={`shard${i}`}
+              style={{
+                position: "absolute",
+                left: toX + Math.cos(ang) * r * 160,
+                top: y + Math.sin(ang) * r * 160,
+                fontSize: 34,
+                opacity: 1 - (prog - 0.7) * 2,
+                transform: `rotate(${i * 45}deg)`,
+              }}
+            >
+              ♪
+            </div>
+          );
+        })}
+    </div>
+  );
+};
+
+const BibiBatSwing: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const opacity = interpolate(rel, [0, 4, 12], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const angle = -70 + prog * 120;
+  const swing = Math.sin(prog * Math.PI);
+  const s = vfxScale;
+  return (
+    <div style={{ position: "absolute", left: fromX, top: y, opacity, zIndex: 100, transform: "translate(-50%,-50%)" }}>
+      <div style={{ position: "relative" }}>
+        {/* compact white swing arc (Bibi's wide bat swipe) */}
+        <svg width={460 * s} height={460 * s} viewBox="0 0 460 460" style={{ position: "absolute", transform: `translate(-${230 * s}px,-${230 * s}px) rotate(${dir === 1 ? -110 : 350}deg)` }}>
+          <path d="M 230 230 A 220 220 0 0 0 40 420" stroke="#FFFFFF" strokeWidth={30} strokeLinecap="round" fill="none" opacity={clean ? 0.7 * swing : 0.9 * swing} />
+          {!clean && <path d="M 230 230 A 220 220 0 0 0 40 420" stroke="#FBCFE8" strokeWidth="52" strokeLinecap="round" fill="none" opacity={0.45 * swing} />}
+          <path d="M 230 230 A 220 220 0 0 0 40 420" stroke="#EC4899" strokeWidth="12" strokeLinecap="round" fill="none" opacity={clean ? 0.5 * swing : 0.8 * swing} />
+        </svg>
+        {/* bubblegum baseball bat sweeping */}
+        <div style={{ position: "absolute", transform: `translate(-${230 * s}px,-${230 * s}px) rotate(${angle * dir}deg)`, filter: clean ? "none" : "drop-shadow(0 0 18px rgba(236,72,153,0.9))" }}>
+          <div style={{ width: 300 * s, height: 54 * s, borderRadius: 27, background: "linear-gradient(90deg, #FDF2F8 0%, #FBCFE8 55%, #EC4899 100%)", border: "6px solid #9D174D", boxShadow: clean ? "none" : "0 0 26px rgba(236,72,153,0.8)" }}>
+            <div style={{ position: "absolute", left: 20, top: 10, width: 40, height: 34, borderRadius: 17, background: "#F9A8D4", border: "3px solid #9D174D" }} />
+          </div>
+        </div>
+        {/* bubblegum bubbles trailing */}
+        {prog > 0.25 && !clean &&
+          Array.from({ length: 7 }).map((_, i) => (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: (dir === 1 ? 90 : -320) + (i % 4) * 70,
+                top: (i % 2 === 0 ? -70 : 50) + i * 10,
+                width: 18 + (i % 4) * 9,
+                height: 18 + (i % 4) * 9,
+                borderRadius: "50%",
+                background: "rgba(236,72,153,0.5)",
+                border: "2.5px solid #F9A8D4",
+                transform: `scale(${1 - prog * 0.6})`,
+              }}
+            />
+          ))}
+      </div>
+    </div>
+  );
+};
+
+const BibiSpitball: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const opacity = interpolate(rel, [0, 5, 16], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const bounce = Math.abs(Math.sin(prog * Math.PI * 2)) * -170;
+  const x = fromX + (toX - fromX) * prog;
+  const size = (isSuper ? 150 : 100) * vfxScale;
+  return (
+    <div style={{ position: "absolute", left: x, top: y, opacity, zIndex: 100, transform: `translate(-50%,-50%) translateY(${bounce}px)` }}>
+      {/* bouncing gum ball with glossy highlight */}
+      <div style={{ width: size, height: size, borderRadius: "50%", background: "radial-gradient(circle at 30% 28%, #FCE7F3, #EC4899 50%, #BE185D)", border: "6px solid #9D174D", boxShadow: clean ? "none" : "0 0 38px #EC4899, 0 0 80px #EC489966" }} />
+      <div style={{ position: "absolute", left: 14, top: 12, width: 24, height: 16, borderRadius: "50%", background: "rgba(255,255,255,0.9)" }} />
+      {/* bubble trail */}
+      {!clean && Array.from({ length: 4 }).map((_, i) => (
+        <div key={i} style={{ position: "absolute", left: -i * 28 * dir, top: Math.sin(i * 1.7) * 26, width: 13 + i * 4, height: 13 + i * 4, borderRadius: "50%", border: "2px solid #F9A8D4", background: "rgba(249,168,212,0.45)" }} />
+      ))}
+      {/* pop burst at the end */}
+      {prog > 0.72 && (
+        <div style={{ position: "absolute", left: 0, top: 0, width: size, height: size, transform: `translate(-50%,-50%) scale(${(prog - 0.72) * 2.4})`, borderRadius: "50%", background: "radial-gradient(circle, rgba(253,224,71,0.8), rgba(236,72,153,0.5) 50%, transparent 75%)", boxShadow: clean ? "none" : "0 0 50px #EC4899" }} />
+      )}
+    </div>
+  );
+};
+
+const GaleSnowballSpread: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
+  const opacity = interpolate(rel, [0, 4, 14], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const s = vfxScale;
+  const n = clean ? 3 : 5;
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity, zIndex: 100, pointerEvents: "none" }}>
+      {Array.from({ length: n }).map((_, i) => {
+        const lane = (i - (n - 1) / 2) * 0.12;
+        const nx = fromX + (toX - fromX) * prog;
+        const ny = y + (toX - fromX) * prog * lane;
+        const size = (22 + i % 2 * 6) * s;
+        return (
+          <div key={i} style={{ position: "absolute", left: nx, top: ny, transform: "translate(-50%,-50%)" }}>
+            <div style={{ width: size, height: size, borderRadius: "50%", background: "radial-gradient(circle at 30% 30%, #FFFFFF, #E0F2FE 60%, #7DD3FC)", border: "3px solid #0EA5E9" }} />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const GaleTornado: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 18], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const opacity = interpolate(rel, [0, 6, 18], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const x = fromX + (toX - fromX) * prog;
+  const scale = (isSuper ? 1.8 : 1.15) * vfxScale;
+  const rot = rel * 16;
+  // tall funnel — the tornado pushes across the board like Gale's super
+  return (
+    <div style={{ position: "absolute", left: x, top: y, opacity, zIndex: 100, transform: `translate(-50%,-50%) scale(${scale})` }}>
+      <svg width="320" height="420" viewBox="0 0 320 420" style={{ transform: `rotate(${rot}deg)` }}>
+        {/* tall spinning funnel */}
+        <path d="M 160 10 Q 70 60 160 130 Q 250 200 160 270 Q 60 340 160 410" stroke="#7DD3FC" strokeWidth="30" fill="none" opacity="0.75" />
+        <path d="M 160 10 Q 70 60 160 130 Q 250 200 160 270 Q 60 340 160 410" stroke="#FFFFFF" strokeWidth="12" fill="none" opacity="0.95" />
+        <path d="M 80 50 Q 230 120 90 210 Q 260 290 110 380" stroke="#E0F2FE" strokeWidth="18" fill="none" opacity="0.6" />
+      </svg>
+      {/* spiraling snow particles + snowflakes */}
+      {!clean && Array.from({ length: 6 }).map((_, i) => {
+        const ang = (i / 6) * Math.PI * 2 + rel * 0.3;
+        const r = 50 + (i % 4) * 40;
+        return (
+          <div key={i} style={{ position: "absolute", left: 160 + Math.cos(ang) * r, top: 180 + Math.sin(ang) * r * 0.7 + (i % 3) * 60, width: 11, height: 11, borderRadius: "50%", background: "#FFFFFF", opacity: 0.9 }} />
+        );
+      })}
+      {/* snowflake glyphs caught in the wind */}
+      {!clean && [0, 1].map((i) => (
+        <div key={`fl${i}`} style={{ position: "absolute", left: 60 + i * 100, top: 80 + (i % 2) * 160, fontSize: 30, color: "#FFFFFF", opacity: 0.7, transform: `rotate(${rel * 8}deg)` }}>❄</div>
+      ))}
+    </div>
+  );
+};
+
+// ─── Gale: real in-game effect frames (extracted from effects_brawler_gale.sc) ──
+// Uses the reusable ScEffect player over the PNG sequences produced by
+// tools/sc_converter/extract_effects.py. Falls back to the hand-drawn SVG
+// components above if the frames aren't present.
+
+const GaleScAttack: React.FC<{ rel: number; fromX: number; toX: number; y: number; vfxScale?: number }> = ({
+  rel, fromX, toX, y, vfxScale = 1,
+}) => {
+  const frame = useCurrentFrame();
+  const turnStart = frame - rel;
+  const dir = toX > fromX ? 1 : -1;
+  const prog = interpolate(rel, [0, 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
+  const x = fromX + (toX - fromX) * prog;
+  const scale = 1.1 * vfxScale;
+
+  return (
+    <>
+      {/* flying snowball projectile — loops while in flight */}
+      <ScEffect
+        brawler="gale"
+        part="gale_006_atk_projectile"
+        x={x}
+        y={y}
+        start={turnStart}
+        speed={1}
+        loop
+        scale={scale}
+        flip={dir === -1}
+        hidden={rel > 12}
+      />
+      {/* impact burst at the target when the projectile lands */}
+      <ScEffect
+        brawler="gale"
+        part="gale_006_atk_reached"
+        x={toX}
+        y={y}
+        start={turnStart + 10}
+        speed={1}
+        scale={0.9 * vfxScale}
+        hidden={rel < 10}
+      />
+    </>
+  );
+};
+
+const GaleScSuper: React.FC<{ rel: number; fromX: number; toX: number; y: number; vfxScale?: number }> = ({
+  rel, fromX, toX, y, vfxScale = 1,
+}) => {
+  const frame = useCurrentFrame();
+  const turnStart = frame - rel;
+  const dir = toX > fromX ? 1 : -1;
+  const prog = interpolate(rel, [0, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const x = fromX + (toX - fromX) * prog;
+  const scale = 1.6 * vfxScale;
+
+  return (
+    <>
+      {/* ultimate projectile traveling across */}
+      <ScEffect
+        brawler="gale"
+        part="gale_006_ulti_projectile"
+        x={x}
+        y={y}
+        start={turnStart}
+        speed={1}
+        loop
+        scale={scale}
+        flip={dir === -1}
+        hidden={rel > 14}
+      />
+      {/* ultimate impact on the target */}
+      <ScEffect
+        brawler="gale"
+        part="gale_006_ulti_reached_01"
+        x={toX}
+        y={y}
+        start={turnStart + 12}
+        speed={1}
+        scale={1.0 * vfxScale}
+        hidden={rel < 12}
+      />
+    </>
+  );
+};
+
+
+const CrowPoisonDaggers: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
+  const opacity = interpolate(rel, [0, 4, 14], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const s = vfxScale;
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity, zIndex: 100, pointerEvents: "none" }}>
+      {Array.from({ length: clean ? 2 : 3 }).map((_, i) => {
+        const spread = (i - 1) * 13;
+        const rad = (spread * Math.PI) / 180;
+        const ddx = Math.cos(rad) * (toX - fromX) - Math.sin(rad) * Math.abs(toX - fromX) * 0.4;
+        const ddy = Math.sin(rad) * Math.abs(toX - fromX) * 0.4;
+        const nx = fromX + ddx * prog;
+        const ny = y + ddy * prog;
+        const rot = 40 + spread;
+        return (
+          <div key={i} style={{ position: "absolute", left: nx, top: ny, transform: `translate(-50%,-50%) rotate(${dir === 1 ? rot : 180 - rot}deg)` }}>
+            <svg width={(isSuper ? 82 : 70) * s} height={(isSuper ? 82 : 70) * s} viewBox="0 0 70 70">
+              <path d="M 10 60 L 40 30 L 55 15 L 58 18 L 43 33 L 60 10 L 63 12 L 44 38 L 62 58 L 30 40 Z" fill="#22D3EE" stroke="#164E63" strokeWidth="2.5" />
+              <rect x="10" y="58" width="46" height="9" rx="2" fill="#A855F7" stroke="#4C1D95" strokeWidth="2" />
+            </svg>
+            {!clean && (
+              <div style={{ position: "absolute", top: "50%", right: 20, width: 80, height: 6, borderRadius: 3, background: "linear-gradient(90deg, transparent, rgba(34,211,238,0.85))", transform: `translateY(-50%) scaleX(${1 - prog})` }} />
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+const CrowCarrionCrow: React.FC<{ rel: number; fromX: number; toX: number; y: number; isSuper?: boolean; vfxScale?: number; clean?: boolean }> = ({
+  rel, fromX, toX, y, isSuper, vfxScale = 1, clean = false,
+}) => {
+  const prog = interpolate(rel, [0, 18], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const opacity = interpolate(rel, [0, 6, 18], [1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const dir = toX > fromX ? 1 : -1;
+  const x = fromX + (toX - fromX) * prog;
+  const yOff = -300 * Math.sin(prog * Math.PI);
+  const size = (isSuper ? 1.35 : 1) * vfxScale;
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity, zIndex: 100, pointerEvents: "none" }}>
+      {/* crow silhouette leaping in an arc */}
+      <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) translateY(${yOff}px) rotate(${dir * (12 + prog * 70)}deg) scale(${size})` }}>
+        <div style={{ width: 110, height: 70, clipPath: "polygon(0% 100%, 30% 60%, 50% 0%, 55% 40%, 75% 10%, 70% 50%, 100% 100%, 50% 70%)", background: "#0F172A", filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.6))" }} />
+      </div>
+      {/* wide dagger rain at the landing point */}
+      {Array.from({ length: clean ? 2 : 3 }).map((_, i) => {
+        const dropProg = Math.max(0, Math.min(1, (prog - 0.3 - i * 0.12) / 0.55));
+        const dx = (i - 1) * 58;
+        const dy = -330 * (1 - dropProg);
+        const rot = (i - 1) * 14;
+        return (
+          <div key={i} style={{ position: "absolute", left: toX + dx, top: y, transform: `translate(-50%,-50%) translateY(${dy}px) rotate(${rot}deg)`, opacity: dropProg }}>
+            <svg width={(isSuper ? 76 : 64) * vfxScale} height={(isSuper ? 76 : 64) * vfxScale} viewBox="0 0 60 60">
+              <path d="M 8 52 L 34 26 L 47 13 L 50 16 L 37 29 L 52 8 L 55 10 L 38 33 L 54 50 L 26 34 Z" fill="#22D3EE" stroke="#164E63" strokeWidth="2.5" />
+            </svg>
+          </div>
+        );
+      })}
+      {/* poison cloud + pool forming at the landing */}
+      {prog > 0.62 && !clean && (
+        <>
+          <div style={{ position: "absolute", left: toX, top: y, width: 260, height: 260, transform: `translate(-50%,-50%) scale(${(prog - 0.62) * 2.2})`, borderRadius: "50%", background: "radial-gradient(circle, rgba(168,85,247,0.5), rgba(34,211,238,0.28) 50%, transparent 72%)", boxShadow: "0 0 60px rgba(168,85,247,0.7)" }} />
+          {Array.from({ length: 4 }).map((_, i) => {
+            const ang = (i / 4) * Math.PI * 2;
+            const r = (prog - 0.62) * 1.4;
+            return (
+              <div key={`gas${i}`} style={{ position: "absolute", left: toX + Math.cos(ang) * r * 170, top: y + Math.sin(ang) * r * 170, width: 40 + (i % 3) * 18, height: 40 + (i % 3) * 18, borderRadius: "50%", background: "radial-gradient(circle, rgba(74,222,128,0.5), rgba(168,85,247,0.35), transparent 70%)", opacity: 1 - (prog - 0.62) * 1.5, transform: "scale(1)" }} />
+            );
+          })}
+        </>
+      )}
+    </div>
+  );
+};
+
+const AbilityVfx: React.FC<{
+  id: string;
+  kind: "attack" | "super";
+  rel: number;
+  fromX: number;
+  toX: number;
+  y: number;
+  vfxScale?: number;
+  clean?: boolean;
+}> = ({ id, kind, rel, fromX, toX, y, vfxScale = 1, clean = false }) => {
+  if (rel < 0 || rel > 18) return null;
+  const isSuper = kind === "super";
+  const vfxProps = { vfxScale, clean };
+  // Short #2 brawlers — real attack mechanics
+  if (id === "melodie") {
+    return isSuper ? (
+      <MelodieMelodicDash rel={rel} fromX={fromX} toX={toX} y={y} isSuper {...vfxProps} />
+    ) : (
+      <MelodieNoteVolley rel={rel} fromX={fromX} toX={toX} y={y} isSuper={false} {...vfxProps} />
+    );
+  }
+  if (id === "bibi") {
+    return isSuper ? (
+      <BibiSpitball rel={rel} fromX={fromX} toX={toX} y={y} isSuper {...vfxProps} />
+    ) : (
+      <BibiBatSwing rel={rel} fromX={fromX} toX={toX} y={y} isSuper={false} {...vfxProps} />
+    );
+  }
+  if (id === "gale") {
+    return isSuper ? (
+      <GaleScSuper rel={rel} fromX={fromX} toX={toX} y={y} vfxScale={vfxScale} />
+    ) : (
+      <GaleScAttack rel={rel} fromX={fromX} toX={toX} y={y} vfxScale={vfxScale} />
+    );
+  }
+  if (id === "crow") {
+    return isSuper ? (
+      <CrowCarrionCrow rel={rel} fromX={fromX} toX={toX} y={y} isSuper {...vfxProps} />
+    ) : (
+      <CrowPoisonDaggers rel={rel} fromX={fromX} toX={toX} y={y} isSuper={false} {...vfxProps} />
+    );
+  }
+  return (
+    <>
+      {id === "kenji" && <KatanaSlash rel={rel} fromX={fromX} toX={toX} y={y} isSuper={isSuper} />}
+      {id === "edgar" && <ScarfPunches rel={rel} fromX={fromX} toX={toX} y={y} isSuper={isSuper} />}
+      {id === "shelly" && <Buckshot rel={rel} fromX={fromX} toX={toX} y={y} isSuper={isSuper} />}
+      {id === "frank" && <HammerShockwave rel={rel} fromX={fromX} toX={toX} y={y} isSuper={isSuper} />}
+    </>
+  );
+};
+
+// ─── FX ────────────────────────────────────────────────────────────────────
+
+const SplashFx: React.FC<{ rel: number; color: string }> = ({ rel, color }) => {
+  const scale = interpolate(rel, [0, 14], [0.2, 3.2], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const opacity = interpolate(rel, [0, 6, 14], [0.9, 0.7, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: "50%",
+        top: "50%",
+        width: CARD_SIZE,
+        height: CARD_SIZE,
+        transform: `translate(-50%,-50%) scale(${scale})`,
+        opacity,
+        borderRadius: "50%",
+        background: `radial-gradient(circle, ${color}cc 0%, ${color}33 45%, transparent 70%)`,
+        boxShadow: `0 0 60px ${color}66`,
+      }}
+    />
+  );
+};
+
+const GlitchFx: React.FC<{ rel: number; color: string }> = ({ rel, color }) => {
+  const opacity = interpolate(rel, [0, 16], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const offset = Math.sin(rel * 3) * 6;
+  const borderDashed = rel % 4 < 2;
+  return (
+    <div style={{ position: "absolute", inset: -14, opacity, pointerEvents: "none" }}>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          border: `4px ${borderDashed ? "dashed" : "solid"} ${color}`,
+          borderRadius: 20,
+          boxShadow: `0 0 24px ${color}66`,
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          border: `2px solid ${color}88`,
+          borderRadius: 20,
+          transform: `translateX(${offset}px)`,
+          filter: "blur(1px)",
+        }}
+      />
+    </div>
+  );
+};
+
+const DominoFx: React.FC<{ rel: number; color: string }> = ({ rel, color }) => {
+  const progress = interpolate(rel, [0, 16], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const tiles = Array.from({ length: 16 });
+  return (
+    <div
+      style={{
+        position: "absolute",
+        inset: -16,
+        opacity: interpolate(rel, [0, 18], [1, 0], {
+          extrapolateLeft: "clamp",
+          extrapolateRight: "clamp",
+        }),
+        pointerEvents: "none",
+      }}
+    >
+      {tiles.map((_, i) => {
+        const side = i % 4;
+        const pos = Math.floor(i / 4);
+        const size = 26;
+        let x = 0;
+        let y = 0;
+        if (side === 0) {
+          x = -size;
+          y = pos * (50 / 3) - 25;
+        } else if (side === 1) {
+          x = 100 + size;
+          y = pos * (50 / 3) - 25;
+        } else if (side === 2) {
+          x = pos * (100 / 5) + 10 - 50;
+          y = -size;
+        } else {
+          x = pos * (100 / 5) + 10 - 50;
+          y = 100 + size;
+        }
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: "50%",
+              top: "50%",
+              width: size,
+              height: size,
+              backgroundColor: color,
+              border: "2px solid #FFFFFF",
+              borderRadius: 6,
+              transform: `translate(calc(-50% + ${x * progress}%), calc(-50% + ${y * progress}%)) rotate(${progress * 360}deg)`,
+              boxShadow: "0 4px 10px rgba(0,0,0,0.5)",
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
+const MoveFxLayer: React.FC<{ fx: MoveFx; rel: number }> = ({ fx, rel }) => {
+  if (rel < 0 || rel > 22) return null;
+  if (fx === "splash") return <SplashFx rel={rel} color="#38BDF8" />;
+  if (fx === "glitch") return <GlitchFx rel={rel} color="#06B6D4" />;
+  return <DominoFx rel={rel} color="#A855F7" />;
+};
+
+const ArrowBadge: React.FC<{
+  src: string;
+  isDrop: boolean;
+  eventFrame: number;
+}> = ({ src, isDrop, eventFrame }) => {
+  const frame = useCurrentFrame();
+  const rel = frame - eventFrame;
+  if (rel < 0 || rel >= 30) return null; // Visible for 1 second only
+
+  const bounceScale = popIn(Math.max(0, rel), 30, 0, { damping: 9, stiffness: 240 });
+  const slideY = interpolate(rel, [0, 8], [isDrop ? -28 : 28, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.back(1.4)),
+  });
+  const fadeOut = interpolate(rel, [20, 30], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        right: -14,
+        top: -16,
+        transform: `translateY(${slideY}px) scale(${bounceScale})`,
+        opacity: fadeOut,
+        zIndex: 10,
+        pointerEvents: "none",
+      }}
+    >
+      <Img
+        src={staticFile(src)}
+        style={{
+          width: 68,
+          height: 68,
+          objectFit: "contain",
+          filter: "drop-shadow(0 8px 12px rgba(0,0,0,0.85))",
+        }}
+      />
+    </div>
+  );
+};
+
+// ─── Card ──────────────────────────────────────────────────────────────────
+
+interface BrawlerCardProps {
+  entry: BrawlerEntry;
+  config: TierListConfig;
+  allEntries: BrawlerEntry[];
+  frame: number;
+  fps: number;
+  slamFrame: number;
+  gridRevealFrame?: number;
+  attackState: "attacker" | "target" | "none";
+  /** Direction the fight anim moves the card (toward/away from the opponent) */
+  fightDir?: number;
+  /** Melee: position the attacker card slides to (adjacent to the target) */
+  standPos?: { x: number; y: number };
+  /** Frame relative to the turn's start (0 = attack fires). Animations must
+   *  use THIS, never `frame % N` (absolute modulo caused teleporting). */
+  turnRel?: number;
+  /** Dim this card (bystander during an active exchange) */
+  dimmed?: boolean;
+  attackerId?: string;
+}
+
+const BrawlerCard: React.FC<BrawlerCardProps> = ({ entry, config, allEntries, frame, fps, slamFrame, gridRevealFrame, attackState, fightDir, standPos, turnRel, dimmed, attackerId }) => {
+
+  const currentTier = tierAt(entry, frame);
+  if (!currentTier) return null;
+
+  // Latest move in progress (last match wins) — so a move fired mid-animation
+  // smoothly redirects instead of being skipped (which used to "teleport" cards).
+  let activeMove: TierMove | undefined;
+  for (const m of entry.moves) {
+    const dur = m.duration ?? FLY_DURATION;
+    if (frame >= m.frame && frame < m.frame + dur) activeMove = m;
+  }
+
+  let x: number;
+  let y: number;
+  let flyScale = 1;
+  let rotate = 0;
+
+  if (activeMove) {
+    const dur = activeMove.duration ?? FLY_DURATION;
+    const prevTier = tierAt(entry, activeMove.frame - 1) ?? entry.initialTier;
+    const progress = interpolate(
+      frame,
+      [activeMove.frame, activeMove.frame + dur],
+      [0, 1],
+      { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) }
+    );
+    const fromY = rowCenter(prevTier);
+    const toY = rowCenter(activeMove.tier);
+    const fromSlot = slotFor(allEntries, entry.id, prevTier, activeMove.frame - 1);
+    const toSlot = slotFor(allEntries, entry.id, activeMove.tier, activeMove.frame + dur);
+    x = lerp(cardSlotX(fromSlot), cardSlotX(toSlot), progress);
+    y = lerp(fromY, toY, progress);
+    const isDrop = toY > fromY;
+    rotate = isDrop ? (1 - progress) * 24 : (1 - progress) * 8;
+    flyScale = isDrop ? 1 : 1.08;
+  } else {
+    const slot = slotFor(allEntries, entry.id, currentTier, frame);
+    x = cardSlotX(slot);
+    y = rowCenter(currentTier);
+  }
+
+  const dropRel = frame - entry.dropFrame;
+  let dropScale = 1;
+  let dropY = 0;
+  if (dropRel >= 0 && dropRel < 20 && !activeMove) {
+    const s = popIn(dropRel, fps, 0, { damping: 9, stiffness: 260 });
+    dropScale = s;
+    dropY = interpolate(dropRel, [0, 7], [-320, 0], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+      easing: Easing.out(Easing.cubic),
+    });
+  }
+
+  let slamShake = 0;
+  if (frame >= slamFrame && frame < slamFrame + 12 && currentTier === "D") {
+    slamShake = Math.sin((frame - slamFrame) * 0.9) * 7 * (1 - (frame - slamFrame) / 12);
+  }
+
+  // Fight: attacker lunges TOWARD the target, target recoils away + flashes,
+  // defeated brawlers get a KO marker then slide out of the board.
+  let fightMove = 0;
+  let hitFlash = 0;
+  let attackFlash = 0;
+  let defeatSlide = 0;
+  let defeated = false;
+  const dir = fightDir ?? 1;
+  // Turn-relative time (never absolute `frame % N` — that teleported cards).
+  const rel = turnRel ?? 0;
+
+  // Melee stand: the attacker card physically slides to stand adjacent to the
+  // target (side-by-side / stacked) over the turn, then eases back.
+  let slideToStand = 0;
+  let standDx = 0;
+  let standDy = 0;
+  if (standPos) {
+    // Ease in over the first 5 frames, hold, ease back out over the last 5.
+    slideToStand = interpolate(rel, [0, 5, 13, 18], [0, 1, 1, 0], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+      easing: Easing.inOut(Easing.quad),
+    });
+    standDx = (standPos.x - x) * slideToStand;
+    standDy = (standPos.y - y) * slideToStand;
+    if (attackState === "attacker") {
+      // While at the stand, the small lunge + attack flash still play.
+      if (rel >= 5 && rel < 13) {
+        const p = (rel - 5) / 8;
+        fightMove = Math.sin(p * Math.PI) * 40 * dir;
+        attackFlash = Math.sin(p * Math.PI);
+      }
+    }
+  }
+
+  if (entry.defeatFrame !== undefined && frame >= entry.defeatFrame) {
+    defeated = true;
+    defeatSlide = interpolate(frame, [entry.defeatFrame, entry.defeatFrame + 22], [0, 560], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
+    if (defeatSlide >= 560) return null;
+  } else if (attackState === "attacker" && !standPos) {
+    if (rel >= 0 && rel < 7) {
+      fightMove = Math.sin((rel / 7) * Math.PI) * 80 * dir; // lunge toward target
+      attackFlash = Math.sin((rel / 7) * Math.PI); // 0 to 1 during lunge
+    }
+  } else if (attackState === "target") {
+    if (rel >= 0 && rel < 7) {
+      fightMove = -Math.sin((rel / 7) * Math.PI) * 36 * dir; // recoil away
+      hitFlash = Math.sin((rel / 7) * Math.PI); // 0 to 1 during hit
+    }
+  }
+
+  const idlePulse = currentTier === "S" ? 1 + Math.sin(frame * 0.07) * 0.03 : 1;
+  const accent = entry.accentColor ?? "#FFFFFF";
+  const defeatOpacity = defeated
+    ? Math.max(0, 1 - defeatSlide / 560)
+    : 1;
+
+  // Determine if brawler is currently moving or has an active rank arrow event
+  let arrowType: "red" | "green" | undefined;
+  let arrowStartFrame: number | undefined;
+
+  if (activeMove) {
+    const prevTier = tierAt(entry, activeMove.frame - 1) ?? entry.initialTier;
+    const isDrop = rowCenter(activeMove.tier) > rowCenter(prevTier);
+    arrowType = isDrop ? "red" : "green";
+    arrowStartFrame = activeMove.frame;
+  }
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: x,
+        top: y,
+        transform: `translate(-50%, -50%) scale(${dropScale * flyScale * idlePulse * (1 + attackFlash * 0.3)}) rotate(${rotate}deg) translate(${slamShake + fightMove + defeatSlide + standDx}px, ${standDy}px)`,
+        zIndex: attackState === "attacker" ? 10 : currentTier === "S" ? 5 : 3,
+        opacity: defeatOpacity * (dimmed ? 0.22 : 1),
+        filter: defeated ? "grayscale(0.7)" : dimmed ? "grayscale(0.5) brightness(0.7)" : "none",
+      }}
+    >
+      <div style={{ position: "relative", transform: `translateY(${dropY}px)` }}>
+        <div
+          style={{
+            width: CARD_SIZE,
+            height: CARD_SIZE,
+            borderRadius: 20,
+            overflow: "hidden",
+            border: `4px solid ${currentTier === "S" ? "#FFD60A" : "#FFFFFF"}`,
+            boxShadow: config.glow === false
+              ? "0 10px 26px rgba(0,0,0,0.65)"
+              : [
+                  `0 0 ${currentTier === "S" ? 34 : 18}px ${currentTier === "S" ? "#FFD60A" : accent}aa`,
+                  "0 10px 26px rgba(0,0,0,0.65)",
+                ].join(", "),
+            // Strong red tint + brightness bump when hit
+            filter: hitFlash > 0 ? `brightness(${1 + hitFlash * 0.5}) sepia(1) hue-rotate(-50deg) saturate(${3 + hitFlash * 5})` : "none",
+          }}
+        >
+          <Img
+            src={staticFile(entry.imageSrc)}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+          {/* Dynamic Attack VFX Overlay over ATTACKER (weapon flash) */}
+          {attackFlash > 0 && entry.id === "kenji" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                width: "150%",
+                height: 10,
+                background: "#FFFFFF",
+                transform: `translate(-50%, -50%) rotate(45deg) scale(${attackFlash})`,
+                opacity: attackFlash,
+                filter: "drop-shadow(0 0 20px #2ED885) drop-shadow(0 0 40px #2ED885)",
+              }}
+            />
+          )}
+          {attackFlash > 0 && entry.id === "edgar" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + attackFlash})`,
+                fontSize: 100,
+                opacity: attackFlash,
+                filter: "drop-shadow(0 0 20px #E0245E)",
+              }}
+            >
+              🥊
+            </div>
+          )}
+          {attackFlash > 0 && entry.id === "frank" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "30%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + attackFlash}) rotate(-20deg)`,
+                fontSize: 100,
+                opacity: attackFlash,
+                filter: "drop-shadow(0 0 15px #38BDF8)",
+              }}
+            >
+              🔨
+            </div>
+          )}
+          {attackFlash > 0 && entry.id === "melodie" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + attackFlash})`,
+                fontSize: config.glow === false ? 56 : 100,
+                opacity: attackFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #EC4899) drop-shadow(0 0 40px #FDE047)",
+              }}
+            >
+              ♪
+            </div>
+          )}
+          {attackFlash > 0 && entry.id === "bibi" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + attackFlash}) rotate(-25deg)`,
+                fontSize: config.glow === false ? 56 : 100,
+                opacity: attackFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #EC4899)",
+              }}
+            >
+              🏏
+            </div>
+          )}
+          {attackFlash > 0 && entry.id === "gale" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + attackFlash})`,
+                fontSize: config.glow === false ? 56 : 100,
+                opacity: attackFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #38BDF8)",
+              }}
+            >
+              ❄️
+            </div>
+          )}
+          {attackFlash > 0 && entry.id === "crow" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + attackFlash})`,
+                fontSize: config.glow === false ? 56 : 100,
+                opacity: attackFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #A855F7) drop-shadow(0 0 40px #22D3EE)",
+              }}
+            >
+              🗡️
+            </div>
+          )}
+          {/* Dynamic Attack VFX Overlay based on who attacked */}
+          {hitFlash > 0 && attackerId === "kenji" && (
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                background: "linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.9) 50%, transparent 60%)",
+                transform: `scale(${1 + hitFlash * 1.5})`,
+                opacity: hitFlash,
+                filter: "drop-shadow(0 0 10px #2ED885) drop-shadow(0 0 20px #2ED885)",
+              }}
+            />
+          )}
+          {hitFlash > 0 && attackerId === "edgar" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + hitFlash * 1.5})`,
+                fontSize: 100,
+                opacity: hitFlash,
+                filter: "drop-shadow(0 0 20px #E0245E)",
+              }}
+            >
+              🥊
+            </div>
+          )}
+          {hitFlash > 0 && attackerId === "frank" && (
+            <div
+              style={{
+                position: "absolute",
+                bottom: -20,
+                left: "50%",
+                transform: `translateX(-50%) scale(${1 + hitFlash})`,
+                width: "150%",
+                height: 100,
+                background: "radial-gradient(ellipse, rgba(255,255,255,0.8) 0%, transparent 70%)",
+                opacity: hitFlash,
+                filter: "drop-shadow(0 0 15px #38BDF8)",
+              }}
+            />
+          )}
+          {hitFlash > 0 && attackerId === "melodie" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + hitFlash * 1.6})`,
+                fontSize: config.glow === false ? 48 : 100,
+                opacity: hitFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #EC4899) drop-shadow(0 0 40px #FDE047)",
+              }}
+            >
+              ♪
+            </div>
+          )}
+          {hitFlash > 0 && attackerId === "bibi" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + hitFlash * 1.6})`,
+                fontSize: config.glow === false ? 48 : 100,
+                opacity: hitFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #EC4899)",
+              }}
+            >
+              💥
+            </div>
+          )}
+          {hitFlash > 0 && attackerId === "gale" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + hitFlash * 1.6})`,
+                fontSize: config.glow === false ? 48 : 100,
+                opacity: hitFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #38BDF8)",
+              }}
+            >
+              ❄️
+            </div>
+          )}
+          {hitFlash > 0 && attackerId === "crow" && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: `translate(-50%, -50%) scale(${0.5 + hitFlash * 1.6})`,
+                fontSize: config.glow === false ? 48 : 100,
+                opacity: hitFlash,
+                filter: config.glow === false ? "none" : "drop-shadow(0 0 20px #A855F7) drop-shadow(0 0 40px #22D3EE)",
+              }}
+            >
+              ☠️
+            </div>
+          )}
+          {/* KO marker — the brawler is out of the fight */}
+          {defeated && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%,-50%)",
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                background: "rgba(20,0,0,0.55)",
+                pointerEvents: "none",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: 74,
+                  fontWeight: 900,
+                  color: "#FF2A2A",
+                  fontFamily: "'Space Grotesk', 'Montserrat', sans-serif",
+                  textShadow: config.glow === false
+                    ? "0 3px 0 rgba(0,0,0,0.8)"
+                    : "0 0 18px #FF2A2A, 0 0 40px #FF2A2A",
+                  letterSpacing: 4,
+                }}
+              >
+                KO
+              </span>
+            </div>
+          )}
+        </div>
+        {arrowType === "red" && arrowStartFrame !== undefined && (
+          <ArrowBadge src="brawl/images/red_arrow.png" isDrop={true} eventFrame={arrowStartFrame} />
+        )}
+        {arrowType === "green" && arrowStartFrame !== undefined && (
+          <ArrowBadge src="brawl/images/green_arrow.png" isDrop={false} eventFrame={arrowStartFrame} />
+        )}
+        <div
+          style={{
+            marginTop: 6,
+            fontSize: 21,
+            fontWeight: 900,
+            color: "#FFFFFF",
+            textAlign: "center",
+            textShadow: "0 2px 6px rgba(0,0,0,0.9)",
+            fontFamily: "'Space Grotesk', 'Montserrat', sans-serif",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {entry.name}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ─── Main ──────────────────────────────────────────────────────────────────
+
+export const TierList: React.FC<TierListProps> = ({
+  config,
+  settleFrame,
+  slamFrame,
+  gridRevealFrame,
+  fight,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const rel = frame - settleFrame;
+  // Reference: tier list is at full brightness from frame 0 (no fade-in)
+  const containerOpacity = 1;
+
+  // Resolve all active fight turns at this frame — multiple turns can fire on
+  // the same beat (simultaneous clashes), and each turn may target a specific
+  // brawler (targetId) or fall back to the next brawler in entries order (ring).
+  interface ActiveTurn {
+    turn: FightTurn;
+    attackerId: string;
+    targetId: string;
+    attackerPos: { x: number; y: number };
+    targetPos: { x: number; y: number };
+    /** Where the attacker card stands during the turn (melee: adjacent to
+     *  target; ranged: its own slot). VFX and card position use this. */
+    standPos: { x: number; y: number };
+    melee: boolean;
+  }
+  const activeTurns: ActiveTurn[] = [];
+  if (fight && frame >= fight.start && frame < fight.end) {
+    const order = fightOrderFor(config.entries);
+    for (const t of fight.turns) {
+      const bf = beatToFrame(t.beat, fps);
+      if (frame < bf || frame >= bf + 18) continue;
+      const aEntry = config.entries.find((e) => e.id === t.id);
+      // Defeated brawlers stop attacking — no lunge, no VFX
+      if (!aEntry || (aEntry.defeatFrame !== undefined && frame >= aEntry.defeatFrame)) continue;
+      // Resolve every target: explicit multi-target, single target, or ring.
+      const targetIds =
+        t.targetIds ??
+        (t.targetId ? [t.targetId] : [order[(order.indexOf(t.id) + 1) % order.length]]);
+      for (const tId of targetIds) {
+        const tEntry = config.entries.find((e) => e.id === tId);
+        if (!tEntry) continue;
+        const aTier = tierAt(aEntry, frame);
+        const tTier = tierAt(tEntry, frame);
+        if (!aTier || !tTier) continue;
+        const attackerPos = {
+          x: cardSlotX(slotFor(config.entries, aEntry.id, aTier, frame)),
+          y: rowCenter(aTier),
+        };
+        const targetPos = {
+          x: cardSlotX(slotFor(config.entries, tEntry.id, tTier, frame)),
+          y: rowCenter(tTier),
+        };
+        // Fight positioning (reference): melee attackers physically slide to
+        // stand adjacent to the target (side-by-side same row, or stacked
+        // above/below between rows). Ranged attackers STAY in their own slot
+        // and fire a projectile across the gap (like Meeple throwing from D to
+        // S in the reference) — the camera frames the pair + projectile.
+        const melee = t.melee === true;
+        const standPos = melee
+          ? meleeStandPos(attackerPos, targetPos)
+          : attackerPos;
+        activeTurns.push({
+          turn: t,
+          attackerId: aEntry.id,
+          targetId: tEntry.id,
+          attackerPos,
+          targetPos,
+          standPos,
+          melee,
+        });
+      }
+    }
+  }
+
+  const attackingTargetOf = (id: string): string | undefined =>
+    activeTurns.find((at) => at.targetId === id)?.attackerId;
+
+  const vfxRelOf = (turn: FightTurn): number => frame - beatToFrame(turn.beat, fps);
+
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity: containerOpacity, zIndex: 4 }}>
+      {/* Gradient label strip — clean, no stretch, no double letters */}
+      <div
+        style={{
+          position: "absolute",
+          left: 0,
+          top: 0,
+          width: STRIP_W,
+          height: 1920,
+          background: `linear-gradient(180deg, ${STRIP_GRADIENT.join(", ")})`,
+          boxShadow: "inset -10px 0 24px rgba(0,0,0,0.35)",
+        }}
+      >
+        {[1, 2, 3, 4].map((i) => (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              top: 384 * i,
+              left: 0,
+              right: 0,
+              height: 3,
+              backgroundColor: "rgba(0,0,0,0.35)",
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Tier letters (clean, at equal row centers) */}
+      {config.rows.map((row) => {
+        const center = rowCenter(row.key);
+        return (
+          <div
+            key={row.key}
+            style={{
+              position: "absolute",
+              left: 0,
+              top: center - 70,
+              width: STRIP_W,
+              height: 140,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: FONT_FAMILY,
+                fontSize: 96,
+                color: "#FFFFFF",
+                WebkitTextStroke: "5px rgba(0,0,0,0.85)",
+                paintOrder: "stroke fill",
+                textShadow: config.letterGlow === false
+                  ? "0 4px 0 rgba(0,0,0,0.4)"
+                  : "0 4px 0 rgba(0,0,0,0.4), 0 0 18px rgba(255,255,255,0.45)",
+              }}
+            >
+              {row.label}
+            </span>
+          </div>
+        );
+      })}
+
+      {/* Row separators across the body */}
+      {[1, 2, 3, 4].map((i) => (
+        <div
+          key={i}
+          style={{
+            position: "absolute",
+            top: 384 * i,
+            left: STRIP_W,
+            width: 1080 - STRIP_W,
+            height: 3,
+            backgroundColor: "rgba(255,255,255,0.07)",
+          }}
+        />
+      ))}
+
+      {/* Fight ability VFX — originates from where the attacker stands, flies to
+          the target. Melee turns emit from the adjacent stand position so the
+          blow clearly lands on the opponent (short range), ranged stays far. */}
+      {activeTurns.map((at) => (
+        <AbilityVfx
+          key={`${at.turn.id}-${at.turn.beat}`}
+          id={at.turn.id}
+          kind={at.turn.kind}
+          rel={vfxRelOf(at.turn)}
+          fromX={at.standPos.x}
+          toX={at.targetPos.x}
+          y={lerp(at.standPos.y, at.targetPos.y, 0.5)}
+          vfxScale={fight?.vfxScale ?? 1}
+          clean={fight?.cleanVfx ?? false}
+        />
+      ))}
+
+      {/* Cards */}
+      {config.entries.map((entry) => {
+        let attackState: "attacker" | "target" | "none" = "none";
+        let fightDir = 1;
+        let standPos: { x: number; y: number } | undefined;
+        let turnRel: number | undefined;
+        // During an active exchange, brawlers NOT in it are dimmed so the
+        // camera-framed pair is the only thing the eye lands on (reference: the
+        // fight is framed on just the two fighters). Between exchanges the whole
+        // board is visible again.
+        let dimmed = activeTurns.length > 0;
+        if (activeTurns.length > 0) {
+          // Direction is based on THIS card's active turn(s) so the lunge/recoil
+          // always points at the opponent (readable 1v1s + multi-target supers).
+          const myTurn = activeTurns.find((at) => at.attackerId === entry.id);
+          if (myTurn) {
+            attackState = "attacker";
+            dimmed = false;
+            fightDir = myTurn.targetPos.x >= myTurn.attackerPos.x ? 1 : -1;
+            turnRel = frame - beatToFrame(myTurn.turn.beat, fps);
+            // The attacker slides to its stand position (melee: adjacent to the
+            // target; ranged: into the target's column) so the pair is framed.
+            standPos = myTurn.standPos;
+          } else {
+            const asTarget = activeTurns.find((at) => at.targetId === entry.id);
+            if (asTarget) {
+              attackState = "target";
+              dimmed = false;
+              fightDir = asTarget.attackerPos.x >= asTarget.targetPos.x ? 1 : -1;
+              turnRel = frame - beatToFrame(asTarget.turn.beat, fps);
+            }
+          }
+        }
+        return (
+          <BrawlerCard
+            key={entry.id}
+            entry={entry}
+            config={config}
+            allEntries={config.entries}
+            frame={frame}
+            fps={fps}
+            slamFrame={slamFrame}
+            gridRevealFrame={gridRevealFrame}
+            attackState={attackState}
+            fightDir={fightDir}
+            standPos={standPos}
+            turnRel={turnRel}
+            dimmed={dimmed}
+            attackerId={
+              attackState === "target" ? attackingTargetOf(entry.id) : undefined
+            }
+          />
+        );
+      })}
+
+      {/* Promotion FX bursts at move destination */}
+      {config.entries.flatMap((e) =>
+        e.moves
+          .filter((m) => m.fx && frame >= m.frame && frame < m.frame + 22)
+          .map((m) => {
+            const targetSlot = slotFor(config.entries, e.id, m.tier, m.frame + 20);
+            return (
+              <div
+                key={`${e.id}-${m.frame}`}
+                style={{
+                  position: "absolute",
+                  left: cardSlotX(targetSlot),
+                  top: rowCenter(m.tier),
+                  transform: "translate(-50%,-50%)",
+                }}
+              >
+                <MoveFxLayer fx={m.fx!} rel={frame - m.frame} />
+              </div>
+            );
+          })
+      )}
+    </div>
+  );
+};

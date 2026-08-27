@@ -1,0 +1,21 @@
+{
+  "name": "willow_004_atk_leaf_red_05",
+  "frameCount": 1,
+  "canvas": {
+    "width": 340,
+    "height": 458
+  },
+  "anchor": {
+    "x": 170,
+    "y": 229
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 78,
+      "y": 21,
+      "w": 245,
+      "h": 203
+    }
+  ]
+}

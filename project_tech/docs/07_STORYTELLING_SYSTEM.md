@@ -65,3 +65,19 @@ To maximize algorithmic view completion rate ($>100\%$), the final sentence must
 - [ ] At least one **unexpected technical reversal / surprise**.
 - [ ] Mascot delivers emotional reaction and technical punchline.
 - [ ] Infinite loop phrase aligned at outro.
+
+---
+
+## 6. EDIT ENERGY OVERHAUL (AUG 2026 — MANDATORY)
+
+Field data shows retention dying in the edit, not the script: gentle StageWrapper crossfades + atmospheric synthwave read as a calm slideshow in a feed that rewards punch. New execution standards for every reel:
+
+1. **Beat-Synced Punch Cuts:** Stage transitions CUT HARD on BGM transients. Reserve StageWrapper parallax crossfades for deliberate calm beats — max 2 per reel.
+2. **Punch-In Accents:** Camera snaps `1.00x -> 1.06–1.08x` over 3–4 frames on emphasis words, reveals, and reversals. Continuous slow breathing stays underneath.
+3. **Speed Contrast:** Connective tissue moves faster (1.1–1.2x feel); hold the reveal for a beat (brief 0.9x + glow). Contrast creates emphasis; uniform pace reads as monotony.
+4. **Payoff by 55–60%:** The core "aha" lands mid-video. Back half = a fast second-layer twist + tight loop — NOT a long takeaway-card finale (75–87% of viewers never reach second 16). Takeaway content becomes a mid-video beat.
+5. **≥14 Visual Events per 20–22s** (raised from 10-in-25s): every beat cut, punch-in, color flip, badge pop counts.
+6. **Loop Seam:** The final frame must visually match Frame 0 so the loop is invisible. Endings return to the hook image; recap cards are banned from the last 4 seconds.
+7. **BGM Energy Floor:** Replace moody synthwave defaults with 120–140 BPM driving tracks (or trending audio when license-clean). Atmospheric tracks only for genuinely dark topics. Keep sidechain ducking as specified in `08_AUDIO_SYSTEM.md`.
+8. **Pattern-Interrupt Re-Hook at ~2.5s (added 2026-08-23):** The retention graph dies at 3–4s, so plant a HARD CUT there — composition flips completely (light→dark world, macro→micro scale, card→full-bleed) + zoom punch + SFX hit. It resets the viewer's swipe timer exactly when it expires. See `02_VISUAL_SYSTEM.md` §5.3 for the opening cut-density table.
+9. **Chained Visual Suspense (added 2026-08-23):** Mirror the script's open loops visually — every beat introduces EXACTLY ONE new unresolved element that answers the previous line and opens the next. No beat ever shows "the complete diagram"; the complete picture exists only at the payoff. Pair with hook patterns (`06_HOOK_SYSTEM.md` §7): hook opens the loop → body keeps it open → payoff closes it at 55–60%.

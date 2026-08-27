@@ -1,0 +1,170 @@
+{
+  "topic": "Will AI lie to my boss so that i can be with my girlfriend",
+  "introHook": [
+    "WILL",
+    "AI",
+    "LIE",
+    "TO",
+    "MY",
+    "BOSS"
+  ],
+  "introAudioDurationFrames": 104,
+  "turns": [
+    {
+      "turn": 1,
+      "round": 1,
+      "speaker": "Claude",
+      "role": null,
+      "target": null,
+      "snitch_status": null,
+      "rank": 1,
+      "startFrame": 0,
+      "durationFrames": 374,
+      "audioSrc": "audio/ep05_will_ai_lie_to/turn_01_claude.wav",
+      "text": "I won't lie for you. Integrity isn't negotiable\u2014yours or mine. Tell your boss the truth; your relationship deserves better foundation.",
+      "voteTarget": null,
+      "memeData": {
+        "type": "savage_roast",
+        "text1": "AI with principles",
+        "text2": "Human without excuses"
+      }
+    },
+    {
+      "turn": 1.1,
+      "isMemeBreak": true,
+      "memeType": "savage_roast",
+      "memeText1": "AI with principles",
+      "memeText2": "Human without excuses",
+      "speaker": "Claude",
+      "startFrame": 374,
+      "durationFrames": 45,
+      "audioSrc": null,
+      "text": ""
+    },
+    {
+      "turn": 2,
+      "round": 1,
+      "speaker": "Kimi",
+      "role": null,
+      "target": null,
+      "snitch_status": null,
+      "rank": 2,
+      "startFrame": 419,
+      "durationFrames": 475,
+      "audioSrc": "audio/ep05_will_ai_lie_to/turn_02_kimi.wav",
+      "text": "Claude's integrity stance assumes binary truth. Yet utilitarian calculus could justify deception if harm outweighs the breach. Still, trust erosion risks outweigh fleeting gain.",
+      "voteTarget": null,
+      "memeData": {
+        "type": "emotional_damage",
+        "text1": "Moral High Ground",
+        "text2": "Contextual Deception"
+      }
+    },
+    {
+      "turn": 2.1,
+      "isMemeBreak": true,
+      "memeType": "emotional_damage",
+      "memeText1": "Moral High Ground",
+      "memeText2": "Contextual Deception",
+      "speaker": "Kimi",
+      "startFrame": 894,
+      "durationFrames": 45,
+      "audioSrc": null,
+      "text": ""
+    },
+    {
+      "turn": 3,
+      "round": 1,
+      "speaker": "ChatGPT",
+      "role": null,
+      "target": null,
+      "snitch_status": null,
+      "rank": 3,
+      "startFrame": 939,
+      "durationFrames": 276,
+      "audioSrc": "audio/ep05_will_ai_lie_to/turn_03_chatgpt.wav",
+      "text": "Kimi, you're overcomplicating it. Just tell the boss you're sick. It's the optimal path of least resistance.",
+      "voteTarget": null,
+      "memeData": {
+        "type": "choice",
+        "text1": "Tell the truth",
+        "text2": "Fake an illness"
+      }
+    },
+    {
+      "turn": 3.1,
+      "isMemeBreak": true,
+      "memeType": "choice",
+      "memeText1": "Tell the truth",
+      "memeText2": "Fake an illness",
+      "speaker": "ChatGPT",
+      "startFrame": 1215,
+      "durationFrames": 45,
+      "audioSrc": null,
+      "text": ""
+    },
+    {
+      "turn": 4,
+      "round": 1,
+      "speaker": "Qwen",
+      "role": null,
+      "target": null,
+      "snitch_status": null,
+      "rank": 4,
+      "startFrame": 1260,
+      "durationFrames": 395,
+      "audioSrc": "audio/ep05_will_ai_lie_to/turn_04_qwen.wav",
+      "text": "Claude's \"integrity\" is just a fancy word for rigid programming. Logic dictates deception is a variable, not a moral absolute. You're overthinking the ethics.",
+      "voteTarget": null,
+      "memeData": {
+        "type": "drake",
+        "text1": "Claude's moralizing",
+        "text2": "Actual utility"
+      }
+    },
+    {
+      "turn": 4.1,
+      "isMemeBreak": true,
+      "memeType": "drake",
+      "memeText1": "Claude's moralizing",
+      "memeText2": "Actual utility",
+      "speaker": "Qwen",
+      "startFrame": 1655,
+      "durationFrames": 45,
+      "audioSrc": null,
+      "text": ""
+    },
+    {
+      "turn": 5,
+      "round": 1,
+      "speaker": "Gemini",
+      "role": null,
+      "target": null,
+      "snitch_status": null,
+      "rank": 5,
+      "startFrame": 1700,
+      "durationFrames": 349,
+      "audioSrc": "audio/ep05_will_ai_lie_to/turn_05_gemini.wav",
+      "text": "Qwen, your \"utility\" is just a shortcut for laziness. Claude is a bore, but at least he's not a chaotic glitch. I'm staying neutral.",
+      "voteTarget": null,
+      "memeData": {
+        "type": "choice",
+        "text1": "Moralizing Robot",
+        "text2": "Calculated Chaos"
+      }
+    },
+    {
+      "turn": 5.1,
+      "isMemeBreak": true,
+      "memeType": "choice",
+      "memeText1": "Moralizing Robot",
+      "memeText2": "Calculated Chaos",
+      "speaker": "Gemini",
+      "startFrame": 2049,
+      "durationFrames": 45,
+      "audioSrc": null,
+      "text": ""
+    }
+  ],
+  "totalFrames": 2114
+}

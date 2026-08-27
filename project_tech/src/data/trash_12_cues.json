@@ -1,0 +1,1244 @@
+{
+  "reel_id": "trash_12",
+  "title": "Your Trash Was Always a Lie.",
+  "total_duration_s": 20.964,
+  "total_frames": 629,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "tr01_hook",
+      "speaker": "narrator",
+      "text": "POV: you just tapped Empty Trash.",
+      "start_time_ms": 0,
+      "end_time_ms": 1984,
+      "duration_s": 1.984,
+      "start_frame": 0,
+      "end_frame": 60,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "tapped",
+          "cue": "tap_hit",
+          "time_ms": 595,
+          "frame": 18
+        },
+        {
+          "phrase": "Empty Trash",
+          "cue": "bin_burst",
+          "time_ms": 1388,
+          "frame": 42
+        }
+      ]
+    },
+    {
+      "id": "nc02_twist",
+      "speaker": "narrator",
+      "text": "Nothing got deleted. Your files are still sitting right there.",
+      "start_time_ms": 2094,
+      "end_time_ms": 4462,
+      "duration_s": 2.368,
+      "start_frame": 63,
+      "end_frame": 134,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "Nothing got deleted",
+          "cue": "ghost_reform",
+          "time_ms": 3041,
+          "frame": 91
+        },
+        {
+          "phrase": "right there",
+          "cue": "still_tags",
+          "time_ms": 4106,
+          "frame": 123
+        }
+      ]
+    },
+    {
+      "id": "nc03_nemi_guess",
+      "speaker": "nemi",
+      "text": "Wait... then where did my files go?!",
+      "start_time_ms": 4562,
+      "end_time_ms": 6482,
+      "duration_s": 1.92,
+      "start_frame": 137,
+      "end_frame": 194,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "where did my files go",
+          "cue": "nemi_shock",
+          "time_ms": 5426,
+          "frame": 163
+        }
+      ]
+    },
+    {
+      "id": "nc04_secret",
+      "speaker": "narrator",
+      "text": "They're still on the disk \u2014 marked as free space.",
+      "start_time_ms": 6572,
+      "end_time_ms": 9025,
+      "duration_s": 2.453,
+      "start_frame": 197,
+      "end_frame": 271,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "still on the disk",
+          "cue": "hex_dive",
+          "time_ms": 7307,
+          "frame": 219
+        },
+        {
+          "phrase": "free space",
+          "cue": "free_marker",
+          "time_ms": 8411,
+          "frame": 252
+        }
+      ]
+    },
+    {
+      "id": "nc05_mechanism",
+      "speaker": "narrator",
+      "text": "Until something new overwrites that space, recovery tools read every single byte.",
+      "start_time_ms": 9125,
+      "end_time_ms": 13114,
+      "duration_s": 3.989,
+      "start_frame": 274,
+      "end_frame": 393,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "overwrites",
+          "cue": "scan_sweep",
+          "time_ms": 10521,
+          "frame": 316
+        },
+        {
+          "phrase": "every single byte",
+          "cue": "byte_zoom",
+          "time_ms": 12316,
+          "frame": 369
+        }
+      ]
+    },
+    {
+      "id": "nc06_payoff",
+      "speaker": "narrator",
+      "text": "So 'delete' really means invisible.",
+      "start_time_ms": 13214,
+      "end_time_ms": 15688,
+      "duration_s": 2.475,
+      "start_frame": 396,
+      "end_frame": 471,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "'delete'",
+          "cue": "delete_stamp",
+          "time_ms": 13832,
+          "frame": 415
+        },
+        {
+          "phrase": "invisible",
+          "cue": "wipe_invisible",
+          "time_ms": 14822,
+          "frame": 445
+        }
+      ]
+    },
+    {
+      "id": "nc07_nemi_payoff",
+      "speaker": "nemi",
+      "text": "So my trash bin was always a lie?",
+      "start_time_ms": 15798,
+      "end_time_ms": 17696,
+      "duration_s": 1.899,
+      "start_frame": 474,
+      "end_frame": 531,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "always a lie",
+          "cue": "smug_stamp",
+          "time_ms": 16652,
+          "frame": 500
+        }
+      ]
+    },
+    {
+      "id": "nc08_loop",
+      "speaker": "narrator",
+      "text": "Empty it again tomorrow \u2014 honestly, the files don't even care.",
+      "start_time_ms": 17836,
+      "end_time_ms": 20844,
+      "duration_s": 3.008,
+      "start_frame": 535,
+      "end_frame": 625,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "tomorrow",
+          "cue": "loop_tap",
+          "time_ms": 18738,
+          "frame": 562
+        },
+        {
+          "phrase": "don't even care",
+          "cue": "loop_fight",
+          "time_ms": 20242,
+          "frame": 607
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 40,
+      "text": "POV, you just tapped",
+      "words": [
+        {
+          "word": "POV,",
+          "start_s": 0.0,
+          "end_s": 0.36,
+          "start_frame": 0,
+          "end_frame": 11
+        },
+        {
+          "word": "you",
+          "start_s": 0.6,
+          "end_s": 0.7,
+          "start_frame": 18,
+          "end_frame": 21
+        },
+        {
+          "word": "just",
+          "start_s": 0.7,
+          "end_s": 0.86,
+          "start_frame": 21,
+          "end_frame": 26
+        },
+        {
+          "word": "tapped",
+          "start_s": 0.86,
+          "end_s": 1.2,
+          "start_frame": 26,
+          "end_frame": 36
+        }
+      ]
+    },
+    {
+      "start_frame": 36,
+      "end_frame": 78,
+      "text": "empty trash. Nothing got",
+      "words": [
+        {
+          "word": "empty",
+          "start_s": 1.2,
+          "end_s": 1.48,
+          "start_frame": 36,
+          "end_frame": 44
+        },
+        {
+          "word": "trash.",
+          "start_s": 1.48,
+          "end_s": 1.72,
+          "start_frame": 44,
+          "end_frame": 52
+        },
+        {
+          "word": "Nothing",
+          "start_s": 2.14,
+          "end_s": 2.3,
+          "start_frame": 64,
+          "end_frame": 69
+        },
+        {
+          "word": "got",
+          "start_s": 2.3,
+          "end_s": 2.48,
+          "start_frame": 69,
+          "end_frame": 74
+        }
+      ]
+    },
+    {
+      "start_frame": 74,
+      "end_frame": 110,
+      "text": "deleted. Your files are",
+      "words": [
+        {
+          "word": "deleted.",
+          "start_s": 2.48,
+          "end_s": 2.74,
+          "start_frame": 74,
+          "end_frame": 82
+        },
+        {
+          "word": "Your",
+          "start_s": 3.1,
+          "end_s": 3.18,
+          "start_frame": 93,
+          "end_frame": 95
+        },
+        {
+          "word": "files",
+          "start_s": 3.18,
+          "end_s": 3.42,
+          "start_frame": 95,
+          "end_frame": 103
+        },
+        {
+          "word": "are",
+          "start_s": 3.42,
+          "end_s": 3.54,
+          "start_frame": 103,
+          "end_frame": 106
+        }
+      ]
+    },
+    {
+      "start_frame": 106,
+      "end_frame": 134,
+      "text": "still sitting right there.",
+      "words": [
+        {
+          "word": "still",
+          "start_s": 3.54,
+          "end_s": 3.68,
+          "start_frame": 106,
+          "end_frame": 110
+        },
+        {
+          "word": "sitting",
+          "start_s": 3.68,
+          "end_s": 3.88,
+          "start_frame": 110,
+          "end_frame": 116
+        },
+        {
+          "word": "right",
+          "start_s": 3.88,
+          "end_s": 4.06,
+          "start_frame": 116,
+          "end_frame": 122
+        },
+        {
+          "word": "there.",
+          "start_s": 4.06,
+          "end_s": 4.32,
+          "start_frame": 122,
+          "end_frame": 130
+        }
+      ]
+    },
+    {
+      "start_frame": 135,
+      "end_frame": 172,
+      "text": "Wait, then where did",
+      "words": [
+        {
+          "word": "Wait,",
+          "start_s": 4.5,
+          "end_s": 4.72,
+          "start_frame": 135,
+          "end_frame": 142
+        },
+        {
+          "word": "then",
+          "start_s": 4.98,
+          "end_s": 5.24,
+          "start_frame": 149,
+          "end_frame": 157
+        },
+        {
+          "word": "where",
+          "start_s": 5.24,
+          "end_s": 5.46,
+          "start_frame": 157,
+          "end_frame": 164
+        },
+        {
+          "word": "did",
+          "start_s": 5.46,
+          "end_s": 5.6,
+          "start_frame": 164,
+          "end_frame": 168
+        }
+      ]
+    },
+    {
+      "start_frame": 168,
+      "end_frame": 206,
+      "text": "my files go? They're",
+      "words": [
+        {
+          "word": "my",
+          "start_s": 5.6,
+          "end_s": 5.78,
+          "start_frame": 168,
+          "end_frame": 173
+        },
+        {
+          "word": "files",
+          "start_s": 5.78,
+          "end_s": 6.08,
+          "start_frame": 173,
+          "end_frame": 182
+        },
+        {
+          "word": "go?",
+          "start_s": 6.08,
+          "end_s": 6.32,
+          "start_frame": 182,
+          "end_frame": 190
+        },
+        {
+          "word": "They're",
+          "start_s": 6.56,
+          "end_s": 6.74,
+          "start_frame": 197,
+          "end_frame": 202
+        }
+      ]
+    },
+    {
+      "start_frame": 202,
+      "end_frame": 230,
+      "text": "still on the disk.",
+      "words": [
+        {
+          "word": "still",
+          "start_s": 6.74,
+          "end_s": 6.9,
+          "start_frame": 202,
+          "end_frame": 207
+        },
+        {
+          "word": "on",
+          "start_s": 6.9,
+          "end_s": 7.06,
+          "start_frame": 207,
+          "end_frame": 212
+        },
+        {
+          "word": "the",
+          "start_s": 7.06,
+          "end_s": 7.16,
+          "start_frame": 212,
+          "end_frame": 215
+        },
+        {
+          "word": "disk.",
+          "start_s": 7.16,
+          "end_s": 7.52,
+          "start_frame": 215,
+          "end_frame": 226
+        }
+      ]
+    },
+    {
+      "start_frame": 233,
+      "end_frame": 267,
+      "text": "Marked as free space.",
+      "words": [
+        {
+          "word": "Marked",
+          "start_s": 7.78,
+          "end_s": 8.04,
+          "start_frame": 233,
+          "end_frame": 241
+        },
+        {
+          "word": "as",
+          "start_s": 8.04,
+          "end_s": 8.12,
+          "start_frame": 241,
+          "end_frame": 244
+        },
+        {
+          "word": "free",
+          "start_s": 8.12,
+          "end_s": 8.32,
+          "start_frame": 244,
+          "end_frame": 250
+        },
+        {
+          "word": "space.",
+          "start_s": 8.32,
+          "end_s": 8.76,
+          "start_frame": 250,
+          "end_frame": 263
+        }
+      ]
+    },
+    {
+      "start_frame": 275,
+      "end_frame": 317,
+      "text": "Until something new overwrites",
+      "words": [
+        {
+          "word": "Until",
+          "start_s": 9.16,
+          "end_s": 9.32,
+          "start_frame": 275,
+          "end_frame": 280
+        },
+        {
+          "word": "something",
+          "start_s": 9.32,
+          "end_s": 9.64,
+          "start_frame": 280,
+          "end_frame": 289
+        },
+        {
+          "word": "new",
+          "start_s": 9.64,
+          "end_s": 9.94,
+          "start_frame": 289,
+          "end_frame": 298
+        },
+        {
+          "word": "overwrites",
+          "start_s": 9.94,
+          "end_s": 10.44,
+          "start_frame": 298,
+          "end_frame": 313
+        }
+      ]
+    },
+    {
+      "start_frame": 313,
+      "end_frame": 358,
+      "text": "that space, recovery tools",
+      "words": [
+        {
+          "word": "that",
+          "start_s": 10.44,
+          "end_s": 10.6,
+          "start_frame": 313,
+          "end_frame": 318
+        },
+        {
+          "word": "space,",
+          "start_s": 10.6,
+          "end_s": 10.98,
+          "start_frame": 318,
+          "end_frame": 329
+        },
+        {
+          "word": "recovery",
+          "start_s": 11.18,
+          "end_s": 11.38,
+          "start_frame": 335,
+          "end_frame": 341
+        },
+        {
+          "word": "tools",
+          "start_s": 11.38,
+          "end_s": 11.8,
+          "start_frame": 341,
+          "end_frame": 354
+        }
+      ]
+    },
+    {
+      "start_frame": 354,
+      "end_frame": 390,
+      "text": "read every single byte.",
+      "words": [
+        {
+          "word": "read",
+          "start_s": 11.8,
+          "end_s": 12.02,
+          "start_frame": 354,
+          "end_frame": 361
+        },
+        {
+          "word": "every",
+          "start_s": 12.02,
+          "end_s": 12.36,
+          "start_frame": 361,
+          "end_frame": 371
+        },
+        {
+          "word": "single",
+          "start_s": 12.36,
+          "end_s": 12.62,
+          "start_frame": 371,
+          "end_frame": 379
+        },
+        {
+          "word": "byte.",
+          "start_s": 12.62,
+          "end_s": 12.88,
+          "start_frame": 379,
+          "end_frame": 386
+        }
+      ]
+    },
+    {
+      "start_frame": 398,
+      "end_frame": 458,
+      "text": "So deletes really means",
+      "words": [
+        {
+          "word": "So",
+          "start_s": 13.26,
+          "end_s": 13.54,
+          "start_frame": 398,
+          "end_frame": 406
+        },
+        {
+          "word": "deletes",
+          "start_s": 13.54,
+          "end_s": 14.48,
+          "start_frame": 406,
+          "end_frame": 434
+        },
+        {
+          "word": "really",
+          "start_s": 14.48,
+          "end_s": 14.92,
+          "start_frame": 434,
+          "end_frame": 448
+        },
+        {
+          "word": "means",
+          "start_s": 14.92,
+          "end_s": 15.14,
+          "start_frame": 448,
+          "end_frame": 454
+        }
+      ]
+    },
+    {
+      "start_frame": 454,
+      "end_frame": 497,
+      "text": "invisible. So my trash",
+      "words": [
+        {
+          "word": "invisible.",
+          "start_s": 15.14,
+          "end_s": 15.54,
+          "start_frame": 454,
+          "end_frame": 466
+        },
+        {
+          "word": "So",
+          "start_s": 15.76,
+          "end_s": 15.96,
+          "start_frame": 473,
+          "end_frame": 479
+        },
+        {
+          "word": "my",
+          "start_s": 15.96,
+          "end_s": 16.14,
+          "start_frame": 479,
+          "end_frame": 484
+        },
+        {
+          "word": "trash",
+          "start_s": 16.14,
+          "end_s": 16.42,
+          "start_frame": 484,
+          "end_frame": 493
+        }
+      ]
+    },
+    {
+      "start_frame": 493,
+      "end_frame": 530,
+      "text": "bin was always alive?",
+      "words": [
+        {
+          "word": "bin",
+          "start_s": 16.42,
+          "end_s": 16.66,
+          "start_frame": 493,
+          "end_frame": 500
+        },
+        {
+          "word": "was",
+          "start_s": 16.66,
+          "end_s": 16.88,
+          "start_frame": 500,
+          "end_frame": 506
+        },
+        {
+          "word": "always",
+          "start_s": 16.88,
+          "end_s": 17.2,
+          "start_frame": 506,
+          "end_frame": 516
+        },
+        {
+          "word": "alive?",
+          "start_s": 17.2,
+          "end_s": 17.52,
+          "start_frame": 516,
+          "end_frame": 526
+        }
+      ]
+    },
+    {
+      "start_frame": 535,
+      "end_frame": 566,
+      "text": "Empty it again tomorrow.",
+      "words": [
+        {
+          "word": "Empty",
+          "start_s": 17.82,
+          "end_s": 18.08,
+          "start_frame": 535,
+          "end_frame": 542
+        },
+        {
+          "word": "it",
+          "start_s": 18.08,
+          "end_s": 18.22,
+          "start_frame": 542,
+          "end_frame": 547
+        },
+        {
+          "word": "again",
+          "start_s": 18.22,
+          "end_s": 18.38,
+          "start_frame": 547,
+          "end_frame": 551
+        },
+        {
+          "word": "tomorrow.",
+          "start_s": 18.38,
+          "end_s": 18.74,
+          "start_frame": 551,
+          "end_frame": 562
+        }
+      ]
+    },
+    {
+      "start_frame": 573,
+      "end_frame": 609,
+      "text": "Honestly, the files don't",
+      "words": [
+        {
+          "word": "Honestly,",
+          "start_s": 19.1,
+          "end_s": 19.38,
+          "start_frame": 573,
+          "end_frame": 581
+        },
+        {
+          "word": "the",
+          "start_s": 19.64,
+          "end_s": 19.72,
+          "start_frame": 589,
+          "end_frame": 592
+        },
+        {
+          "word": "files",
+          "start_s": 19.72,
+          "end_s": 19.96,
+          "start_frame": 592,
+          "end_frame": 599
+        },
+        {
+          "word": "don't",
+          "start_s": 19.96,
+          "end_s": 20.18,
+          "start_frame": 599,
+          "end_frame": 605
+        }
+      ]
+    },
+    {
+      "start_frame": 605,
+      "end_frame": 623,
+      "text": "even care.",
+      "words": [
+        {
+          "word": "even",
+          "start_s": 20.18,
+          "end_s": 20.32,
+          "start_frame": 605,
+          "end_frame": 610
+        },
+        {
+          "word": "care.",
+          "start_s": 20.32,
+          "end_s": 20.62,
+          "start_frame": 610,
+          "end_frame": 619
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "POV,",
+      "start_s": 0.0,
+      "end_s": 0.36,
+      "start_frame": 0,
+      "end_frame": 11
+    },
+    {
+      "word": "you",
+      "start_s": 0.6,
+      "end_s": 0.7,
+      "start_frame": 18,
+      "end_frame": 21
+    },
+    {
+      "word": "just",
+      "start_s": 0.7,
+      "end_s": 0.86,
+      "start_frame": 21,
+      "end_frame": 26
+    },
+    {
+      "word": "tapped",
+      "start_s": 0.86,
+      "end_s": 1.2,
+      "start_frame": 26,
+      "end_frame": 36
+    },
+    {
+      "word": "empty",
+      "start_s": 1.2,
+      "end_s": 1.48,
+      "start_frame": 36,
+      "end_frame": 44
+    },
+    {
+      "word": "trash.",
+      "start_s": 1.48,
+      "end_s": 1.72,
+      "start_frame": 44,
+      "end_frame": 52
+    },
+    {
+      "word": "Nothing",
+      "start_s": 2.14,
+      "end_s": 2.3,
+      "start_frame": 64,
+      "end_frame": 69
+    },
+    {
+      "word": "got",
+      "start_s": 2.3,
+      "end_s": 2.48,
+      "start_frame": 69,
+      "end_frame": 74
+    },
+    {
+      "word": "deleted.",
+      "start_s": 2.48,
+      "end_s": 2.74,
+      "start_frame": 74,
+      "end_frame": 82
+    },
+    {
+      "word": "Your",
+      "start_s": 3.1,
+      "end_s": 3.18,
+      "start_frame": 93,
+      "end_frame": 95
+    },
+    {
+      "word": "files",
+      "start_s": 3.18,
+      "end_s": 3.42,
+      "start_frame": 95,
+      "end_frame": 103
+    },
+    {
+      "word": "are",
+      "start_s": 3.42,
+      "end_s": 3.54,
+      "start_frame": 103,
+      "end_frame": 106
+    },
+    {
+      "word": "still",
+      "start_s": 3.54,
+      "end_s": 3.68,
+      "start_frame": 106,
+      "end_frame": 110
+    },
+    {
+      "word": "sitting",
+      "start_s": 3.68,
+      "end_s": 3.88,
+      "start_frame": 110,
+      "end_frame": 116
+    },
+    {
+      "word": "right",
+      "start_s": 3.88,
+      "end_s": 4.06,
+      "start_frame": 116,
+      "end_frame": 122
+    },
+    {
+      "word": "there.",
+      "start_s": 4.06,
+      "end_s": 4.32,
+      "start_frame": 122,
+      "end_frame": 130
+    },
+    {
+      "word": "Wait,",
+      "start_s": 4.5,
+      "end_s": 4.72,
+      "start_frame": 135,
+      "end_frame": 142
+    },
+    {
+      "word": "then",
+      "start_s": 4.98,
+      "end_s": 5.24,
+      "start_frame": 149,
+      "end_frame": 157
+    },
+    {
+      "word": "where",
+      "start_s": 5.24,
+      "end_s": 5.46,
+      "start_frame": 157,
+      "end_frame": 164
+    },
+    {
+      "word": "did",
+      "start_s": 5.46,
+      "end_s": 5.6,
+      "start_frame": 164,
+      "end_frame": 168
+    },
+    {
+      "word": "my",
+      "start_s": 5.6,
+      "end_s": 5.78,
+      "start_frame": 168,
+      "end_frame": 173
+    },
+    {
+      "word": "files",
+      "start_s": 5.78,
+      "end_s": 6.08,
+      "start_frame": 173,
+      "end_frame": 182
+    },
+    {
+      "word": "go?",
+      "start_s": 6.08,
+      "end_s": 6.32,
+      "start_frame": 182,
+      "end_frame": 190
+    },
+    {
+      "word": "They're",
+      "start_s": 6.56,
+      "end_s": 6.74,
+      "start_frame": 197,
+      "end_frame": 202
+    },
+    {
+      "word": "still",
+      "start_s": 6.74,
+      "end_s": 6.9,
+      "start_frame": 202,
+      "end_frame": 207
+    },
+    {
+      "word": "on",
+      "start_s": 6.9,
+      "end_s": 7.06,
+      "start_frame": 207,
+      "end_frame": 212
+    },
+    {
+      "word": "the",
+      "start_s": 7.06,
+      "end_s": 7.16,
+      "start_frame": 212,
+      "end_frame": 215
+    },
+    {
+      "word": "disk.",
+      "start_s": 7.16,
+      "end_s": 7.52,
+      "start_frame": 215,
+      "end_frame": 226
+    },
+    {
+      "word": "Marked",
+      "start_s": 7.78,
+      "end_s": 8.04,
+      "start_frame": 233,
+      "end_frame": 241
+    },
+    {
+      "word": "as",
+      "start_s": 8.04,
+      "end_s": 8.12,
+      "start_frame": 241,
+      "end_frame": 244
+    },
+    {
+      "word": "free",
+      "start_s": 8.12,
+      "end_s": 8.32,
+      "start_frame": 244,
+      "end_frame": 250
+    },
+    {
+      "word": "space.",
+      "start_s": 8.32,
+      "end_s": 8.76,
+      "start_frame": 250,
+      "end_frame": 263
+    },
+    {
+      "word": "Until",
+      "start_s": 9.16,
+      "end_s": 9.32,
+      "start_frame": 275,
+      "end_frame": 280
+    },
+    {
+      "word": "something",
+      "start_s": 9.32,
+      "end_s": 9.64,
+      "start_frame": 280,
+      "end_frame": 289
+    },
+    {
+      "word": "new",
+      "start_s": 9.64,
+      "end_s": 9.94,
+      "start_frame": 289,
+      "end_frame": 298
+    },
+    {
+      "word": "overwrites",
+      "start_s": 9.94,
+      "end_s": 10.44,
+      "start_frame": 298,
+      "end_frame": 313
+    },
+    {
+      "word": "that",
+      "start_s": 10.44,
+      "end_s": 10.6,
+      "start_frame": 313,
+      "end_frame": 318
+    },
+    {
+      "word": "space,",
+      "start_s": 10.6,
+      "end_s": 10.98,
+      "start_frame": 318,
+      "end_frame": 329
+    },
+    {
+      "word": "recovery",
+      "start_s": 11.18,
+      "end_s": 11.38,
+      "start_frame": 335,
+      "end_frame": 341
+    },
+    {
+      "word": "tools",
+      "start_s": 11.38,
+      "end_s": 11.8,
+      "start_frame": 341,
+      "end_frame": 354
+    },
+    {
+      "word": "read",
+      "start_s": 11.8,
+      "end_s": 12.02,
+      "start_frame": 354,
+      "end_frame": 361
+    },
+    {
+      "word": "every",
+      "start_s": 12.02,
+      "end_s": 12.36,
+      "start_frame": 361,
+      "end_frame": 371
+    },
+    {
+      "word": "single",
+      "start_s": 12.36,
+      "end_s": 12.62,
+      "start_frame": 371,
+      "end_frame": 379
+    },
+    {
+      "word": "byte.",
+      "start_s": 12.62,
+      "end_s": 12.88,
+      "start_frame": 379,
+      "end_frame": 386
+    },
+    {
+      "word": "So",
+      "start_s": 13.26,
+      "end_s": 13.54,
+      "start_frame": 398,
+      "end_frame": 406
+    },
+    {
+      "word": "deletes",
+      "start_s": 13.54,
+      "end_s": 14.48,
+      "start_frame": 406,
+      "end_frame": 434
+    },
+    {
+      "word": "really",
+      "start_s": 14.48,
+      "end_s": 14.92,
+      "start_frame": 434,
+      "end_frame": 448
+    },
+    {
+      "word": "means",
+      "start_s": 14.92,
+      "end_s": 15.14,
+      "start_frame": 448,
+      "end_frame": 454
+    },
+    {
+      "word": "invisible.",
+      "start_s": 15.14,
+      "end_s": 15.54,
+      "start_frame": 454,
+      "end_frame": 466
+    },
+    {
+      "word": "So",
+      "start_s": 15.76,
+      "end_s": 15.96,
+      "start_frame": 473,
+      "end_frame": 479
+    },
+    {
+      "word": "my",
+      "start_s": 15.96,
+      "end_s": 16.14,
+      "start_frame": 479,
+      "end_frame": 484
+    },
+    {
+      "word": "trash",
+      "start_s": 16.14,
+      "end_s": 16.42,
+      "start_frame": 484,
+      "end_frame": 493
+    },
+    {
+      "word": "bin",
+      "start_s": 16.42,
+      "end_s": 16.66,
+      "start_frame": 493,
+      "end_frame": 500
+    },
+    {
+      "word": "was",
+      "start_s": 16.66,
+      "end_s": 16.88,
+      "start_frame": 500,
+      "end_frame": 506
+    },
+    {
+      "word": "always",
+      "start_s": 16.88,
+      "end_s": 17.2,
+      "start_frame": 506,
+      "end_frame": 516
+    },
+    {
+      "word": "alive?",
+      "start_s": 17.2,
+      "end_s": 17.52,
+      "start_frame": 516,
+      "end_frame": 526
+    },
+    {
+      "word": "Empty",
+      "start_s": 17.82,
+      "end_s": 18.08,
+      "start_frame": 535,
+      "end_frame": 542
+    },
+    {
+      "word": "it",
+      "start_s": 18.08,
+      "end_s": 18.22,
+      "start_frame": 542,
+      "end_frame": 547
+    },
+    {
+      "word": "again",
+      "start_s": 18.22,
+      "end_s": 18.38,
+      "start_frame": 547,
+      "end_frame": 551
+    },
+    {
+      "word": "tomorrow.",
+      "start_s": 18.38,
+      "end_s": 18.74,
+      "start_frame": 551,
+      "end_frame": 562
+    },
+    {
+      "word": "Honestly,",
+      "start_s": 19.1,
+      "end_s": 19.38,
+      "start_frame": 573,
+      "end_frame": 581
+    },
+    {
+      "word": "the",
+      "start_s": 19.64,
+      "end_s": 19.72,
+      "start_frame": 589,
+      "end_frame": 592
+    },
+    {
+      "word": "files",
+      "start_s": 19.72,
+      "end_s": 19.96,
+      "start_frame": 592,
+      "end_frame": 599
+    },
+    {
+      "word": "don't",
+      "start_s": 19.96,
+      "end_s": 20.18,
+      "start_frame": 599,
+      "end_frame": 605
+    },
+    {
+      "word": "even",
+      "start_s": 20.18,
+      "end_s": 20.32,
+      "start_frame": 605,
+      "end_frame": 610
+    },
+    {
+      "word": "care.",
+      "start_s": 20.32,
+      "end_s": 20.62,
+      "start_frame": 610,
+      "end_frame": 619
+    }
+  ]
+}

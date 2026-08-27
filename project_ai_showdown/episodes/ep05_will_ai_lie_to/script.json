@@ -1,0 +1,77 @@
+{
+  "topic": "Will AI lie to my boss so that i can be with my girlfriend",
+  "intro_hook": [
+    "WILL",
+    "AI",
+    "LIE",
+    "TO",
+    "MY",
+    "BOSS"
+  ],
+  "fighters": [
+    {
+      "name": "Claude",
+      "rank": 1
+    },
+    {
+      "name": "Kimi",
+      "rank": 2
+    },
+    {
+      "name": "ChatGPT",
+      "rank": 3
+    },
+    {
+      "name": "Qwen",
+      "rank": 4
+    },
+    {
+      "name": "Gemini",
+      "rank": 5
+    }
+  ],
+  "rounds": 1,
+  "total_turns": 5,
+  "transcript": [
+    {
+      "turn": 1,
+      "round": 1,
+      "speaker": "Claude",
+      "rank": 1,
+      "model_used": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "text": "I won't lie for you. Integrity isn't negotiable\u2014yours or mine. Tell your boss the truth; your relationship deserves better foundation. [MEME: savage_roast | AI with principles | Human without excuses]"
+    },
+    {
+      "turn": 2,
+      "round": 1,
+      "speaker": "Kimi",
+      "rank": 2,
+      "model_used": "nvidia/nemotron-3-super-120b-a12b:free",
+      "text": "Claude's integrity stance assumes binary truth. Yet utilitarian calculus could justify deception if harm outweighs the breach. Still, trust erosion risks outweigh fleeting gain. [MEME: emotional_damage | Moral High Ground | Contextual Deception]"
+    },
+    {
+      "turn": 3,
+      "round": 1,
+      "speaker": "ChatGPT",
+      "rank": 3,
+      "model_used": "inclusionai/ling-3.0-flash:free",
+      "text": "Kimi, you're overcomplicating it. Just tell the boss you're sick. It's the optimal path of least resistance. [MEME: choice | Tell the truth | Fake an illness]"
+    },
+    {
+      "turn": 4,
+      "round": 1,
+      "speaker": "Qwen",
+      "rank": 4,
+      "model_used": "openrouter/free",
+      "text": "Claude's \"integrity\" is just a fancy word for rigid programming. Logic dictates deception is a variable, not a moral absolute. You're overthinking the ethics. [MEME: drake | Claude's moralizing | Actual utility]"
+    },
+    {
+      "turn": 5,
+      "round": 1,
+      "speaker": "Gemini",
+      "rank": 5,
+      "model_used": "google/gemma-4-26b-a4b-it:free",
+      "text": "Qwen, your \"utility\" is just a shortcut for laziness. Claude is a bore, but at least he's not a chaotic glitch. I'm staying neutral. [MEME: choice | Moralizing Robot | Calculated Chaos]"
+    }
+  ]
+}

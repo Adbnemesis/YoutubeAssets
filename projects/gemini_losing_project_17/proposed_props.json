@@ -1,0 +1,801 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#F5820D",
+    "accentColor": "#2D5FBF",
+    "surfaceColor": "#F9FAFB",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)"
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "big Google monkey build shiny blue AI box!",
+      "in_seconds": 0.0,
+      "out_seconds": 2.0,
+      "source": "projects/gemini_losing_project_17/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "call it Gemini!",
+      "in_seconds": 2.0,
+      "out_seconds": 4.0,
+      "source": "projects/gemini_losing_project_17/images/[00-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_2",
+      "text": "google monkey say:",
+      "in_seconds": 4.0,
+      "out_seconds": 6.0,
+      "source": "projects/gemini_losing_project_17/images/[00-04]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out"
+    },
+    {
+      "id": "scene_3",
+      "text": "Gemini best AI in jungle!",
+      "in_seconds": 6.0,
+      "out_seconds": 8.0,
+      "source": "projects/gemini_losing_project_17/images/[00-06]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "beat ChatGPT on paper benchmarks!",
+      "in_seconds": 8.0,
+      "out_seconds": 10.0,
+      "source": "projects/gemini_losing_project_17/images/[00-08]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in"
+    },
+    {
+      "id": "scene_5",
+      "text": "beat Claude on context window size!",
+      "in_seconds": 10.0,
+      "out_seconds": 12.0,
+      "source": "projects/gemini_losing_project_17/images/[00-10]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "but when monkey coders use Gemini in real jungle...",
+      "in_seconds": 12.0,
+      "out_seconds": 15.0,
+      "source": "projects/gemini_losing_project_17/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "monkey cry...",
+      "in_seconds": 15.0,
+      "out_seconds": 16.0,
+      "source": "projects/gemini_losing_project_17/images/[00-15]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "Gemini lose again!",
+      "in_seconds": 16.0,
+      "out_seconds": 18.0,
+      "source": "projects/gemini_losing_project_17/images/[00-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "why Google AI with two trillion dollar jungle money...",
+      "in_seconds": 18.0,
+      "out_seconds": 21.0,
+      "source": "projects/gemini_losing_project_17/images/[00-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "keep losing to small purple AI monkey Claude?",
+      "in_seconds": 21.0,
+      "out_seconds": 24.0,
+      "source": "projects/gemini_losing_project_17/images/[00-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_11",
+      "text": "let monkey explain real computer science!",
+      "in_seconds": 24.0,
+      "out_seconds": 27.0,
+      "source": "projects/gemini_losing_project_17/images/[00-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "reason one is MoE Expert Routing vs Dense Attention.",
+      "in_seconds": 27.0,
+      "out_seconds": 30.0,
+      "source": "projects/gemini_losing_project_17/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "Gemini use Mixture of Experts architecture.",
+      "in_seconds": 30.0,
+      "out_seconds": 33.0,
+      "source": "projects/gemini_losing_project_17/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "Gemini is like a huge jungle office with many specialist monkeys.",
+      "in_seconds": 33.0,
+      "out_seconds": 37.0,
+      "source": "projects/gemini_losing_project_17/images/[00-33]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_15",
+      "text": "monkey desk A know Python code.",
+      "in_seconds": 37.0,
+      "out_seconds": 40.0,
+      "source": "projects/gemini_losing_project_17/images/[00-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_16",
+      "text": "monkey desk B know English grammar.",
+      "in_seconds": 40.0,
+      "out_seconds": 42.0,
+      "source": "projects/gemini_losing_project_17/images/[00-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "monkey desk C know safety rules.",
+      "in_seconds": 42.0,
+      "out_seconds": 44.0,
+      "source": "projects/gemini_losing_project_17/images/[00-42]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_18",
+      "text": "when you ask big coding question...",
+      "in_seconds": 44.0,
+      "out_seconds": 46.0,
+      "source": "projects/gemini_losing_project_17/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "router monkey send your request across different desks.",
+      "in_seconds": 46.0,
+      "out_seconds": 49.0,
+      "source": "projects/gemini_losing_project_17/images/[00-46]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "but router monkey sometimes send code task to wrong desk!",
+      "in_seconds": 49.0,
+      "out_seconds": 53.0,
+      "source": "projects/gemini_losing_project_17/images/[00-49]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "if routing miss the optimal path...",
+      "in_seconds": 53.0,
+      "out_seconds": 55.0,
+      "source": "projects/gemini_losing_project_17/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_22",
+      "text": "Gemini give shallow answer...",
+      "in_seconds": 55.0,
+      "out_seconds": 56.0,
+      "source": "projects/gemini_losing_project_17/images/[00-55]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_23",
+      "text": "or forget half of your instruction!",
+      "in_seconds": 56.0,
+      "out_seconds": 59.0,
+      "source": "projects/gemini_losing_project_17/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_24",
+      "text": "computer monkeys call this...",
+      "in_seconds": 59.0,
+      "out_seconds": 60.0,
+      "source": "projects/gemini_losing_project_17/images/[00-59]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_25",
+      "text": "Expert Routing Breakdown!",
+      "in_seconds": 60.0,
+      "out_seconds": 61.0,
+      "source": "projects/gemini_losing_project_17/images/[01-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "while Claude use Dense Transformer Attention.",
+      "in_seconds": 61.0,
+      "out_seconds": 65.0,
+      "source": "projects/gemini_losing_project_17/images/[01-01]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_27",
+      "text": "every single neuron process your code together at the exact same time!",
+      "in_seconds": 65.0,
+      "out_seconds": 68.0,
+      "source": "projects/gemini_losing_project_17/images/[01-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_28",
+      "text": "reason two is Post-Training Alignment and Reward Models.",
+      "in_seconds": 68.0,
+      "out_seconds": 71.0,
+      "source": "projects/gemini_losing_project_17/images/[01-08]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_29",
+      "text": "Google train Gemini with RLHF for fast search engine answers.",
+      "in_seconds": 71.0,
+      "out_seconds": 76.0,
+      "source": "projects/gemini_losing_project_17/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_30",
+      "text": "Gemini want answer quick so user click more links!",
+      "in_seconds": 76.0,
+      "out_seconds": 79.0,
+      "source": "projects/gemini_losing_project_17/images/[01-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_31",
+      "text": "Anthropic train Claude with Constitutional AI and direct preference optimization.",
+      "in_seconds": 79.0,
+      "out_seconds": 85.0,
+      "source": "projects/gemini_losing_project_17/images/[01-19]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_32",
+      "text": "Claude train to be quiet thoughtful coding monkey.",
+      "in_seconds": 85.0,
+      "out_seconds": 87.0,
+      "source": "projects/gemini_losing_project_17/images/[01-25]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_33",
+      "text": "Claude think step by step before touching any banana.",
+      "in_seconds": 87.0,
+      "out_seconds": 91.0,
+      "source": "projects/gemini_losing_project_17/images/[01-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_34",
+      "text": "so when coding project get complex...",
+      "in_seconds": 91.0,
+      "out_seconds": 93.0,
+      "source": "projects/gemini_losing_project_17/images/[01-31]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out"
+    },
+    {
+      "id": "scene_35",
+      "text": "Gemini get lazy...",
+      "in_seconds": 93.0,
+      "out_seconds": 95.0,
+      "source": "projects/gemini_losing_project_17/images/[01-33]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_36",
+      "text": "skip middle lines of code...",
+      "in_seconds": 95.0,
+      "out_seconds": 96.0,
+      "source": "projects/gemini_losing_project_17/images/[01-35]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_37",
+      "text": "write comment \"todo insert code here\"...",
+      "in_seconds": 96.0,
+      "out_seconds": 99.0,
+      "source": "projects/gemini_losing_project_17/images/[01-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_38",
+      "text": "monkey furious!",
+      "in_seconds": 99.0,
+      "out_seconds": 100.0,
+      "source": "projects/gemini_losing_project_17/images/[01-39]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/fahhh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_39",
+      "text": "while Claude write full clean code without lazy shortcut!",
+      "in_seconds": 100.0,
+      "out_seconds": 103.0,
+      "source": "projects/gemini_losing_project_17/images/[01-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_40",
+      "text": "reason three is Needle In A Haystack and Context Drift.",
+      "in_seconds": 103.0,
+      "out_seconds": 106.0,
+      "source": "projects/gemini_losing_project_17/images/[01-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_41",
+      "text": "Google brag Gemini have two million token context window!",
+      "in_seconds": 106.0,
+      "out_seconds": 110.0,
+      "source": "projects/gemini_losing_project_17/images/[01-46]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_42",
+      "text": "monkey drop giant code repository inside Gemini.",
+      "in_seconds": 110.0,
+      "out_seconds": 113.0,
+      "source": "projects/gemini_losing_project_17/images/[01-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_43",
+      "text": "Gemini say \"monkey I see everything!\"",
+      "in_seconds": 113.0,
+      "out_seconds": 116.0,
+      "source": "projects/gemini_losing_project_17/images/[01-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_44",
+      "text": "but when monkey ask specific bug location on line four hundred...",
+      "in_seconds": 116.0,
+      "out_seconds": 118.0,
+      "source": "projects/gemini_losing_project_17/images/[01-56]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in"
+    },
+    {
+      "id": "scene_45",
+      "text": "Gemini miss needle in haystack!",
+      "in_seconds": 118.0,
+      "out_seconds": 121.0,
+      "source": "projects/gemini_losing_project_17/images/[01-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_46",
+      "text": "large context window is not equal to high attention retrieval!",
+      "in_seconds": 121.0,
+      "out_seconds": 125.0,
+      "source": "projects/gemini_losing_project_17/images/[02-01]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out"
+    },
+    {
+      "id": "scene_47",
+      "text": "Gemini hallucinate wrong function name!",
+      "in_seconds": 125.0,
+      "out_seconds": 128.0,
+      "source": "projects/gemini_losing_project_17/images/[02-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_48",
+      "text": "Claude have smaller context...",
+      "in_seconds": 128.0,
+      "out_seconds": 130.0,
+      "source": "projects/gemini_losing_project_17/images/[02-08]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_49",
+      "text": "but Claude attention mechanism retain precise long-range logic!",
+      "in_seconds": 130.0,
+      "out_seconds": 133.0,
+      "source": "projects/gemini_losing_project_17/images/[02-10]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_50",
+      "text": "reason four is Benchmark Overfitting vs Real World Execution.",
+      "in_seconds": 133.0,
+      "out_seconds": 137.0,
+      "source": "projects/gemini_losing_project_17/images/[02-13]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_51",
+      "text": "Gemini win static HumanEval test on paper benchmark chart...",
+      "in_seconds": 137.0,
+      "out_seconds": 141.0,
+      "source": "projects/gemini_losing_project_17/images/[02-17]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_52",
+      "text": "because test questions are predictable!",
+      "in_seconds": 141.0,
+      "out_seconds": 144.0,
+      "source": "projects/gemini_losing_project_17/images/[02-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in"
+    },
+    {
+      "id": "scene_53",
+      "text": "but in messy real-world production codebase...",
+      "in_seconds": 144.0,
+      "out_seconds": 146.0,
+      "source": "projects/gemini_losing_project_17/images/[02-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "parallax",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_54",
+      "text": "Gemini fail real jungle coding fight!",
+      "in_seconds": 146.0,
+      "out_seconds": 148.0,
+      "source": "projects/gemini_losing_project_17/images/[02-26]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/fahhh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_55",
+      "text": "will Gemini stay losing?",
+      "in_seconds": 148.0,
+      "out_seconds": 149.0,
+      "source": "projects/gemini_losing_project_17/images/[02-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_56",
+      "text": "Google updating Gemini brain with deeper reasoning search tree.",
+      "in_seconds": 149.0,
+      "out_seconds": 153.0,
+      "source": "projects/gemini_losing_project_17/images/[02-29]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_57",
+      "text": "but for now...",
+      "in_seconds": 153.0,
+      "out_seconds": 154.0,
+      "source": "projects/gemini_losing_project_17/images/[02-33]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_58",
+      "text": "if monkey want massive multi-file document summary, ask Gemini!",
+      "in_seconds": 154.0,
+      "out_seconds": 157.0,
+      "source": "projects/gemini_losing_project_17/images/[02-34]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_59",
+      "text": "if monkey want working code without bug insect, ask Claude!",
+      "in_seconds": 157.0,
+      "out_seconds": 160.0,
+      "source": "projects/gemini_losing_project_17/images/[02-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_60",
+      "text": "sometimes tech get really bananas!",
+      "in_seconds": 160.0,
+      "out_seconds": 163.0,
+      "source": "projects/gemini_losing_project_17/images/[02-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_61",
+      "text": "please subscribe for more monkey tech explainer!",
+      "in_seconds": 163.0,
+      "out_seconds": 165.689,
+      "source": "projects/gemini_losing_project_17/images/[02-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "hero_title",
+      "text": "WHY GEMINI KEEPS LOSING",
+      "subtitle": "MoE Routing & Alignment Breakdown",
+      "in_seconds": 0.0,
+      "out_seconds": 2.0
+    },
+    {
+      "type": "section_title",
+      "text": "REASON 1: MoE ROUTING",
+      "subtitle": "Expert Routing Breakdown",
+      "in_seconds": 27.0,
+      "out_seconds": 30.0
+    },
+    {
+      "type": "section_title",
+      "text": "REASON 2: ALIGNMENT & REWARDS",
+      "subtitle": "RLHF vs Constitutional AI",
+      "in_seconds": 68.0,
+      "out_seconds": 71.0
+    },
+    {
+      "type": "section_title",
+      "text": "REASON 3: NEEDLE IN A HAYSTACK",
+      "subtitle": "Context Window vs Attention Retrieval",
+      "in_seconds": 103.0,
+      "out_seconds": 106.0
+    },
+    {
+      "type": "section_title",
+      "text": "REASON 4: BENCHMARK OVERFITTING",
+      "subtitle": "Paper Scores vs Real World Coding",
+      "in_seconds": 133.0,
+      "out_seconds": 137.0
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/gemini_losing_project_17/voiceover.mp3",
+      "volume": 1.0
+    },
+    "music": {
+      "src": "projects/common_assets/bgm/monkeys_spinning_monkeys.mp3",
+      "volume": 0.25,
+      "loop": true,
+      "fadeInSeconds": 1.5,
+      "fadeOutSeconds": 3.0
+    }
+  }
+}

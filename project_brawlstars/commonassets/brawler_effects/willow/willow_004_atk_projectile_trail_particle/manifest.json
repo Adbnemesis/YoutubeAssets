@@ -1,0 +1,21 @@
+{
+  "name": "willow_004_atk_projectile_trail_particle",
+  "frameCount": 1,
+  "canvas": {
+    "width": 330,
+    "height": 330
+  },
+  "anchor": {
+    "x": 165,
+    "y": 165
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 7,
+      "y": 7,
+      "w": 322,
+      "h": 322
+    }
+  ]
+}

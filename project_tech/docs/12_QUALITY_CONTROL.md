@@ -46,7 +46,7 @@ Before any reel is approved for render, upload, or broadcast, it must achieve **
 
 ## 🧮 Pillar 5: Technical Engine & Composition Audit
 
-- [ ] **Pacing & Duration:** Total reel duration is **strictly 23.5s – 25.8s** (<26s @ 30fps).
+- [ ] **Pacing & Duration:** Total reel duration targets **19.0s – 22.0s** (hard ceiling **24.0s** @ 30fps). Compress setup, never the payoff.
 - [ ] **Visual Velocity:** Visual state changes occur every 1.5 – 2.5 seconds (at least 8–10 distinct visual states).
 - [ ] **Manim Cutaways (If Applicable):** 3–5s Manim `.mp4` rendered at 1080x540 / 30fps with dark background (`#070B12`).
 - [ ] **Infinite Replay Loop:** Outro sentence connects back logically to the opening hook.

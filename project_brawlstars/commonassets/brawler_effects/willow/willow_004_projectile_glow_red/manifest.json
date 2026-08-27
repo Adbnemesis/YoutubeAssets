@@ -1,0 +1,21 @@
+{
+  "name": "willow_004_projectile_glow_red",
+  "frameCount": 1,
+  "canvas": {
+    "width": 560,
+    "height": 560
+  },
+  "anchor": {
+    "x": 280,
+    "y": 280
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 560,
+      "h": 546
+    }
+  ]
+}

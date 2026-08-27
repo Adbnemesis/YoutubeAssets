@@ -1,0 +1,58 @@
+package dev.donutquine.exporter;
+
+import java.lang.reflect.Field;
+
+public final class VideoFormats {
+    /**
+    * The only one format supporting the alpha channel.
+    */
+    public static final VideoFormat WEBM = new VideoFormat("webm", "libvpx-vp9", "yuva420p", false);
+    /**
+    * AV1 is too slow and not tested
+    */
+    public static final VideoFormat AV1 = new VideoFormat("avi", "libaom-av1", "yuv420p", false);
+    /**
+    * libx265 doesn't support alpha channel, but hevc_nvenc does.
+    */
+    public static final VideoFormat HEVC = new VideoFormat("hevc", "libx265", "yuva420p", true);
+    /**
+    * Doesn't support alpha channel at all.
+    */
+    public static final VideoFormat MP4 = new VideoFormat("mp4", "libx264", "yuv420p", true);
+    public static final VideoFormat GIF = new VideoFormat("gif", null, null, false);
+
+    public static enum Format {
+        WEBM(VideoFormats.WEBM),
+        AV1(VideoFormats.AV1),
+        HEVC(VideoFormats.HEVC),
+        MP4(VideoFormats.MP4)
+        ;
+
+        public final VideoFormat format;
+
+        Format(VideoFormat format) {
+            this.format = format;
+        }
+    }
+
+    public static VideoFormat getVideoFormatByName(String name) {
+        Field[] declaredFields = VideoFormats.class.getDeclaredFields();
+
+        for (Field declaredField : declaredFields) {
+            if (declaredField.getType() == VideoFormat.class) {
+                VideoFormat videoFormat;
+                try {
+                    videoFormat = ((VideoFormat) declaredField.get(VideoFormats.class));
+                } catch (IllegalAccessException e) {
+                    throw new RuntimeException(e);
+                }
+
+                if (videoFormat.name().equalsIgnoreCase(name)) {
+                    return videoFormat;
+                }
+            }
+        }
+
+        return null;
+    }
+}

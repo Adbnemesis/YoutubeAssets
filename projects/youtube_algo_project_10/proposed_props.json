@@ -1,0 +1,1593 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#2D5FBF",
+    "accentColor": "#F5820D",
+    "surfaceColor": "#FFFFFF",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "I spent three months to understand the YouTube shorts algorithm, and here it is in 120 seconds.",
+      "in_seconds": 0.0,
+      "out_seconds": 5.52,
+      "source": "projects/youtube_algo_project_10/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "The shorts feed algorithm uses a single metric as the ultimate gatekeeper for your reach.",
+      "in_seconds": 5.52,
+      "out_seconds": 10.2,
+      "source": "projects/youtube_algo_project_10/images/[00-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_2",
+      "text": "This is the viewed versus swiped away rate.",
+      "in_seconds": 10.2,
+      "out_seconds": 12.54,
+      "source": "projects/youtube_algo_project_10/images/[00-10]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_3",
+      "text": "It tracks the exact percentage of viewers who stop to watch your short versus those who",
+      "in_seconds": 12.54,
+      "out_seconds": 16.7,
+      "source": "projects/youtube_algo_project_10/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "swipe past it.",
+      "in_seconds": 16.7,
+      "out_seconds": 18.02,
+      "source": "projects/youtube_algo_project_10/images/[00-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_5",
+      "text": "To go viral today, you need at least 70-90% of those viewers to stay.",
+      "in_seconds": 18.02,
+      "out_seconds": 22.44,
+      "source": "projects/youtube_algo_project_10/images/[00-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "How do you pass this initial gate?",
+      "in_seconds": 22.44,
+      "out_seconds": 24.38,
+      "source": "projects/youtube_algo_project_10/images/[00-22]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "You must optimize the first two seconds of your video to capture attention immediately.",
+      "in_seconds": 24.38,
+      "out_seconds": 28.54,
+      "source": "projects/youtube_algo_project_10/images/[00-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/clock-ticking.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "This is the hook gate.",
+      "in_seconds": 28.54,
+      "out_seconds": 30.18,
+      "source": "projects/youtube_algo_project_10/images/[00-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "If more than 40% of viewers swipe away in those first moments,",
+      "in_seconds": 30.18,
+      "out_seconds": 33.88,
+      "source": "projects/youtube_algo_project_10/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "YouTube stops distributing your video.",
+      "in_seconds": 33.88,
+      "out_seconds": 36.06,
+      "source": "projects/youtube_algo_project_10/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_11",
+      "text": "A recent major platform up he changed how views are calculated.",
+      "in_seconds": 36.06,
+      "out_seconds": 39.84,
+      "source": "projects/youtube_algo_project_10/images/[00-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/key-press.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "A view is now counted the moment your video starts to play.",
+      "in_seconds": 39.84,
+      "out_seconds": 42.98,
+      "source": "projects/youtube_algo_project_10/images/[00-39]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "Why is this update dangerous?",
+      "in_seconds": 42.98,
+      "out_seconds": 44.92,
+      "source": "projects/youtube_algo_project_10/images/[00-42]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "Raw views have become a vanity metric because of instant scroll buys.",
+      "in_seconds": 44.92,
+      "out_seconds": 48.74,
+      "source": "projects/youtube_algo_project_10/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_15",
+      "text": "The algorithm now relies heavily on average percentage viewed or av.",
+      "in_seconds": 48.74,
+      "out_seconds": 52.56,
+      "source": "projects/youtube_algo_project_10/images/[00-48]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_16",
+      "text": "It favors videos with APV over 100%, which means people are looping your video.",
+      "in_seconds": 52.56,
+      "out_seconds": 58.42,
+      "source": "projects/youtube_algo_project_10/images/[00-52]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "Rewatch behavior is the strongest signal of high quality.",
+      "in_seconds": 58.42,
+      "out_seconds": 61.72,
+      "source": "projects/youtube_algo_project_10/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_18",
+      "text": "How do you induce a loop?",
+      "in_seconds": 61.72,
+      "out_seconds": 63.14,
+      "source": "projects/youtube_algo_project_10/images/[01-01]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "You must design a seamless transition from the end of the video back to the start.",
+      "in_seconds": 63.14,
+      "out_seconds": 66.9,
+      "source": "projects/youtube_algo_project_10/images/[01-03]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "The system also tracks engaged views, which measures viewers who stay for a significant duration.",
+      "in_seconds": 66.9,
+      "out_seconds": 72.12,
+      "source": "projects/youtube_algo_project_10/images/[01-06]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "This metric decides your partner program revenue and long-term reach.",
+      "in_seconds": 72.12,
+      "out_seconds": 75.76,
+      "source": "projects/youtube_algo_project_10/images/[01-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_22",
+      "text": "To grow your channel, focus entirely on holding attention past the three second mark.",
+      "in_seconds": 75.76,
+      "out_seconds": 79.959,
+      "source": "projects/youtube_algo_project_10/images/[01-15]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "captions": [
+    {
+      "word": "I",
+      "startMs": 0,
+      "endMs": 80
+    },
+    {
+      "word": "spent",
+      "startMs": 80,
+      "endMs": 280
+    },
+    {
+      "word": "three",
+      "startMs": 280,
+      "endMs": 560
+    },
+    {
+      "word": "months",
+      "startMs": 560,
+      "endMs": 720
+    },
+    {
+      "word": "to",
+      "startMs": 720,
+      "endMs": 980
+    },
+    {
+      "word": "understand",
+      "startMs": 980,
+      "endMs": 1400
+    },
+    {
+      "word": "the",
+      "startMs": 1400,
+      "endMs": 1580
+    },
+    {
+      "word": "YouTube",
+      "startMs": 1580,
+      "endMs": 1840
+    },
+    {
+      "word": "shorts",
+      "startMs": 1840,
+      "endMs": 2200
+    },
+    {
+      "word": "algorithm,",
+      "startMs": 2200,
+      "endMs": 2660
+    },
+    {
+      "word": "and",
+      "startMs": 3080,
+      "endMs": 3180
+    },
+    {
+      "word": "here",
+      "startMs": 3180,
+      "endMs": 3340
+    },
+    {
+      "word": "it",
+      "startMs": 3340,
+      "endMs": 3480
+    },
+    {
+      "word": "is",
+      "startMs": 3480,
+      "endMs": 3560
+    },
+    {
+      "word": "in",
+      "startMs": 3560,
+      "endMs": 3700
+    },
+    {
+      "word": "120",
+      "startMs": 3700,
+      "endMs": 4160
+    },
+    {
+      "word": "seconds.",
+      "startMs": 4160,
+      "endMs": 5040
+    },
+    {
+      "word": "The",
+      "startMs": 5520,
+      "endMs": 5620
+    },
+    {
+      "word": "shorts",
+      "startMs": 5620,
+      "endMs": 5880
+    },
+    {
+      "word": "feed",
+      "startMs": 5880,
+      "endMs": 6100
+    },
+    {
+      "word": "algorithm",
+      "startMs": 6100,
+      "endMs": 6620
+    },
+    {
+      "word": "uses",
+      "startMs": 6620,
+      "endMs": 6980
+    },
+    {
+      "word": "a",
+      "startMs": 6980,
+      "endMs": 7160
+    },
+    {
+      "word": "single",
+      "startMs": 7160,
+      "endMs": 7380
+    },
+    {
+      "word": "metric",
+      "startMs": 7380,
+      "endMs": 7740
+    },
+    {
+      "word": "as",
+      "startMs": 7740,
+      "endMs": 7980
+    },
+    {
+      "word": "the",
+      "startMs": 7980,
+      "endMs": 8119
+    },
+    {
+      "word": "ultimate",
+      "startMs": 8119,
+      "endMs": 8520
+    },
+    {
+      "word": "gatekeeper",
+      "startMs": 8520,
+      "endMs": 8960
+    },
+    {
+      "word": "for",
+      "startMs": 8960,
+      "endMs": 9220
+    },
+    {
+      "word": "your",
+      "startMs": 9220,
+      "endMs": 9360
+    },
+    {
+      "word": "reach.",
+      "startMs": 9360,
+      "endMs": 9700
+    },
+    {
+      "word": "This",
+      "startMs": 10200,
+      "endMs": 10360
+    },
+    {
+      "word": "is",
+      "startMs": 10360,
+      "endMs": 10500
+    },
+    {
+      "word": "the",
+      "startMs": 10500,
+      "endMs": 10640
+    },
+    {
+      "word": "viewed",
+      "startMs": 10640,
+      "endMs": 10880
+    },
+    {
+      "word": "versus",
+      "startMs": 10880,
+      "endMs": 11200
+    },
+    {
+      "word": "swiped",
+      "startMs": 11200,
+      "endMs": 11600
+    },
+    {
+      "word": "away",
+      "startMs": 11600,
+      "endMs": 11780
+    },
+    {
+      "word": "rate.",
+      "startMs": 11780,
+      "endMs": 12060
+    },
+    {
+      "word": "It",
+      "startMs": 12540,
+      "endMs": 12640
+    },
+    {
+      "word": "tracks",
+      "startMs": 12640,
+      "endMs": 12900
+    },
+    {
+      "word": "the",
+      "startMs": 12900,
+      "endMs": 13180
+    },
+    {
+      "word": "exact",
+      "startMs": 13180,
+      "endMs": 13480
+    },
+    {
+      "word": "percentage",
+      "startMs": 13480,
+      "endMs": 14000
+    },
+    {
+      "word": "of",
+      "startMs": 14000,
+      "endMs": 14200
+    },
+    {
+      "word": "viewers",
+      "startMs": 14200,
+      "endMs": 14480
+    },
+    {
+      "word": "who",
+      "startMs": 14480,
+      "endMs": 14760
+    },
+    {
+      "word": "stop",
+      "startMs": 14760,
+      "endMs": 15000
+    },
+    {
+      "word": "to",
+      "startMs": 15000,
+      "endMs": 15240
+    },
+    {
+      "word": "watch",
+      "startMs": 15240,
+      "endMs": 15420
+    },
+    {
+      "word": "your",
+      "startMs": 15420,
+      "endMs": 15640
+    },
+    {
+      "word": "short",
+      "startMs": 15640,
+      "endMs": 15860
+    },
+    {
+      "word": "versus",
+      "startMs": 15860,
+      "endMs": 16239
+    },
+    {
+      "word": "those",
+      "startMs": 16239,
+      "endMs": 16460
+    },
+    {
+      "word": "who",
+      "startMs": 16460,
+      "endMs": 16700
+    },
+    {
+      "word": "swipe",
+      "startMs": 16700,
+      "endMs": 17020
+    },
+    {
+      "word": "past",
+      "startMs": 17020,
+      "endMs": 17420
+    },
+    {
+      "word": "it.",
+      "startMs": 17420,
+      "endMs": 17620
+    },
+    {
+      "word": "To",
+      "startMs": 18020,
+      "endMs": 18120
+    },
+    {
+      "word": "go",
+      "startMs": 18120,
+      "endMs": 18280
+    },
+    {
+      "word": "viral",
+      "startMs": 18280,
+      "endMs": 18580
+    },
+    {
+      "word": "today,",
+      "startMs": 18580,
+      "endMs": 18900
+    },
+    {
+      "word": "you",
+      "startMs": 19220,
+      "endMs": 19300
+    },
+    {
+      "word": "need",
+      "startMs": 19300,
+      "endMs": 19440
+    },
+    {
+      "word": "at",
+      "startMs": 19440,
+      "endMs": 19600
+    },
+    {
+      "word": "least",
+      "startMs": 19600,
+      "endMs": 19700
+    },
+    {
+      "word": "70",
+      "startMs": 19700,
+      "endMs": 20060
+    },
+    {
+      "word": "-90",
+      "startMs": 20060,
+      "endMs": 20500
+    },
+    {
+      "word": "%",
+      "startMs": 20500,
+      "endMs": 20800
+    },
+    {
+      "word": "of",
+      "startMs": 20800,
+      "endMs": 21000
+    },
+    {
+      "word": "those",
+      "startMs": 21000,
+      "endMs": 21200
+    },
+    {
+      "word": "viewers",
+      "startMs": 21200,
+      "endMs": 21500
+    },
+    {
+      "word": "to",
+      "startMs": 21500,
+      "endMs": 21720
+    },
+    {
+      "word": "stay.",
+      "startMs": 21720,
+      "endMs": 21940
+    },
+    {
+      "word": "How",
+      "startMs": 22440,
+      "endMs": 22560
+    },
+    {
+      "word": "do",
+      "startMs": 22560,
+      "endMs": 22640
+    },
+    {
+      "word": "you",
+      "startMs": 22640,
+      "endMs": 22740
+    },
+    {
+      "word": "pass",
+      "startMs": 22740,
+      "endMs": 23000
+    },
+    {
+      "word": "this",
+      "startMs": 23000,
+      "endMs": 23280
+    },
+    {
+      "word": "initial",
+      "startMs": 23280,
+      "endMs": 23620
+    },
+    {
+      "word": "gate?",
+      "startMs": 23620,
+      "endMs": 23820
+    },
+    {
+      "word": "You",
+      "startMs": 24380,
+      "endMs": 24500
+    },
+    {
+      "word": "must",
+      "startMs": 24500,
+      "endMs": 24740
+    },
+    {
+      "word": "optimize",
+      "startMs": 24740,
+      "endMs": 25020
+    },
+    {
+      "word": "the",
+      "startMs": 25020,
+      "endMs": 25260
+    },
+    {
+      "word": "first",
+      "startMs": 25260,
+      "endMs": 25440
+    },
+    {
+      "word": "two",
+      "startMs": 25440,
+      "endMs": 25720
+    },
+    {
+      "word": "seconds",
+      "startMs": 25720,
+      "endMs": 26060
+    },
+    {
+      "word": "of",
+      "startMs": 26060,
+      "endMs": 26240
+    },
+    {
+      "word": "your",
+      "startMs": 26240,
+      "endMs": 26380
+    },
+    {
+      "word": "video",
+      "startMs": 26380,
+      "endMs": 26660
+    },
+    {
+      "word": "to",
+      "startMs": 26660,
+      "endMs": 26820
+    },
+    {
+      "word": "capture",
+      "startMs": 26820,
+      "endMs": 27120
+    },
+    {
+      "word": "attention",
+      "startMs": 27120,
+      "endMs": 27580
+    },
+    {
+      "word": "immediately.",
+      "startMs": 27580,
+      "endMs": 28020
+    },
+    {
+      "word": "This",
+      "startMs": 28540,
+      "endMs": 28840
+    },
+    {
+      "word": "is",
+      "startMs": 28840,
+      "endMs": 28980
+    },
+    {
+      "word": "the",
+      "startMs": 28980,
+      "endMs": 29140
+    },
+    {
+      "word": "hook",
+      "startMs": 29140,
+      "endMs": 29340
+    },
+    {
+      "word": "gate.",
+      "startMs": 29340,
+      "endMs": 29640
+    },
+    {
+      "word": "If",
+      "startMs": 30180,
+      "endMs": 30280
+    },
+    {
+      "word": "more",
+      "startMs": 30280,
+      "endMs": 30460
+    },
+    {
+      "word": "than",
+      "startMs": 30460,
+      "endMs": 30620
+    },
+    {
+      "word": "40",
+      "startMs": 30620,
+      "endMs": 30940
+    },
+    {
+      "word": "%",
+      "startMs": 30940,
+      "endMs": 31260
+    },
+    {
+      "word": "of",
+      "startMs": 31260,
+      "endMs": 31440
+    },
+    {
+      "word": "viewers",
+      "startMs": 31440,
+      "endMs": 31740
+    },
+    {
+      "word": "swipe",
+      "startMs": 31740,
+      "endMs": 32080
+    },
+    {
+      "word": "away",
+      "startMs": 32080,
+      "endMs": 32400
+    },
+    {
+      "word": "in",
+      "startMs": 32400,
+      "endMs": 32619
+    },
+    {
+      "word": "those",
+      "startMs": 32619,
+      "endMs": 32759
+    },
+    {
+      "word": "first",
+      "startMs": 32759,
+      "endMs": 33040
+    },
+    {
+      "word": "moments,",
+      "startMs": 33040,
+      "endMs": 33420
+    },
+    {
+      "word": "YouTube",
+      "startMs": 33880,
+      "endMs": 34100
+    },
+    {
+      "word": "stops",
+      "startMs": 34100,
+      "endMs": 34500
+    },
+    {
+      "word": "distributing",
+      "startMs": 34500,
+      "endMs": 35100
+    },
+    {
+      "word": "your",
+      "startMs": 35100,
+      "endMs": 35320
+    },
+    {
+      "word": "video.",
+      "startMs": 35320,
+      "endMs": 35580
+    },
+    {
+      "word": "A",
+      "startMs": 36060,
+      "endMs": 36200
+    },
+    {
+      "word": "recent",
+      "startMs": 36200,
+      "endMs": 36480
+    },
+    {
+      "word": "major",
+      "startMs": 36480,
+      "endMs": 36800
+    },
+    {
+      "word": "platform",
+      "startMs": 36800,
+      "endMs": 37260
+    },
+    {
+      "word": "up",
+      "startMs": 37260,
+      "endMs": 37520
+    },
+    {
+      "word": "he",
+      "startMs": 37520,
+      "endMs": 37600
+    },
+    {
+      "word": "changed",
+      "startMs": 37600,
+      "endMs": 37940
+    },
+    {
+      "word": "how",
+      "startMs": 37940,
+      "endMs": 38140
+    },
+    {
+      "word": "views",
+      "startMs": 38140,
+      "endMs": 38460
+    },
+    {
+      "word": "are",
+      "startMs": 38460,
+      "endMs": 38780
+    },
+    {
+      "word": "calculated.",
+      "startMs": 38780,
+      "endMs": 39260
+    },
+    {
+      "word": "A",
+      "startMs": 39840,
+      "endMs": 39920
+    },
+    {
+      "word": "view",
+      "startMs": 39920,
+      "endMs": 40080
+    },
+    {
+      "word": "is",
+      "startMs": 40080,
+      "endMs": 40340
+    },
+    {
+      "word": "now",
+      "startMs": 40340,
+      "endMs": 40500
+    },
+    {
+      "word": "counted",
+      "startMs": 40500,
+      "endMs": 40860
+    },
+    {
+      "word": "the",
+      "startMs": 40860,
+      "endMs": 41040
+    },
+    {
+      "word": "moment",
+      "startMs": 41040,
+      "endMs": 41240
+    },
+    {
+      "word": "your",
+      "startMs": 41240,
+      "endMs": 41420
+    },
+    {
+      "word": "video",
+      "startMs": 41420,
+      "endMs": 41720
+    },
+    {
+      "word": "starts",
+      "startMs": 41720,
+      "endMs": 42040
+    },
+    {
+      "word": "to",
+      "startMs": 42040,
+      "endMs": 42280
+    },
+    {
+      "word": "play.",
+      "startMs": 42280,
+      "endMs": 42500
+    },
+    {
+      "word": "Why",
+      "startMs": 42980,
+      "endMs": 43120
+    },
+    {
+      "word": "is",
+      "startMs": 43120,
+      "endMs": 43260
+    },
+    {
+      "word": "this",
+      "startMs": 43260,
+      "endMs": 43380
+    },
+    {
+      "word": "update",
+      "startMs": 43380,
+      "endMs": 43740
+    },
+    {
+      "word": "dangerous?",
+      "startMs": 43740,
+      "endMs": 44260
+    },
+    {
+      "word": "Raw",
+      "startMs": 44920,
+      "endMs": 45080
+    },
+    {
+      "word": "views",
+      "startMs": 45080,
+      "endMs": 45340
+    },
+    {
+      "word": "have",
+      "startMs": 45340,
+      "endMs": 45540
+    },
+    {
+      "word": "become",
+      "startMs": 45540,
+      "endMs": 45860
+    },
+    {
+      "word": "a",
+      "startMs": 45860,
+      "endMs": 46000
+    },
+    {
+      "word": "vanity",
+      "startMs": 46000,
+      "endMs": 46340
+    },
+    {
+      "word": "metric",
+      "startMs": 46340,
+      "endMs": 46700
+    },
+    {
+      "word": "because",
+      "startMs": 46700,
+      "endMs": 47020
+    },
+    {
+      "word": "of",
+      "startMs": 47020,
+      "endMs": 47240
+    },
+    {
+      "word": "instant",
+      "startMs": 47240,
+      "endMs": 47520
+    },
+    {
+      "word": "scroll",
+      "startMs": 47520,
+      "endMs": 47900
+    },
+    {
+      "word": "buys.",
+      "startMs": 47900,
+      "endMs": 48240
+    },
+    {
+      "word": "The",
+      "startMs": 48740,
+      "endMs": 48880
+    },
+    {
+      "word": "algorithm",
+      "startMs": 48880,
+      "endMs": 49320
+    },
+    {
+      "word": "now",
+      "startMs": 49320,
+      "endMs": 49600
+    },
+    {
+      "word": "relies",
+      "startMs": 49600,
+      "endMs": 49880
+    },
+    {
+      "word": "heavily",
+      "startMs": 49880,
+      "endMs": 50360
+    },
+    {
+      "word": "on",
+      "startMs": 50360,
+      "endMs": 50680
+    },
+    {
+      "word": "average",
+      "startMs": 50680,
+      "endMs": 51000
+    },
+    {
+      "word": "percentage",
+      "startMs": 51000,
+      "endMs": 51540
+    },
+    {
+      "word": "viewed",
+      "startMs": 51540,
+      "endMs": 51860
+    },
+    {
+      "word": "or",
+      "startMs": 51860,
+      "endMs": 52340
+    },
+    {
+      "word": "av.",
+      "startMs": 52340,
+      "endMs": 52560
+    },
+    {
+      "word": "It",
+      "startMs": 52560,
+      "endMs": 53160
+    },
+    {
+      "word": "favors",
+      "startMs": 53160,
+      "endMs": 53440
+    },
+    {
+      "word": "videos",
+      "startMs": 53440,
+      "endMs": 53840
+    },
+    {
+      "word": "with",
+      "startMs": 53840,
+      "endMs": 54160
+    },
+    {
+      "word": "APV",
+      "startMs": 54160,
+      "endMs": 54740
+    },
+    {
+      "word": "over",
+      "startMs": 54740,
+      "endMs": 55080
+    },
+    {
+      "word": "100%,",
+      "startMs": 55080,
+      "endMs": 56080
+    },
+    {
+      "word": "which",
+      "startMs": 56080,
+      "endMs": 56400
+    },
+    {
+      "word": "means",
+      "startMs": 56400,
+      "endMs": 56660
+    },
+    {
+      "word": "people",
+      "startMs": 56660,
+      "endMs": 57020
+    },
+    {
+      "word": "are",
+      "startMs": 57020,
+      "endMs": 57140
+    },
+    {
+      "word": "looping",
+      "startMs": 57140,
+      "endMs": 57420
+    },
+    {
+      "word": "your",
+      "startMs": 57420,
+      "endMs": 57580
+    },
+    {
+      "word": "video.",
+      "startMs": 57580,
+      "endMs": 57920
+    },
+    {
+      "word": "Rewatch",
+      "startMs": 58420,
+      "endMs": 58700
+    },
+    {
+      "word": "behavior",
+      "startMs": 58700,
+      "endMs": 59200
+    },
+    {
+      "word": "is",
+      "startMs": 59200,
+      "endMs": 59440
+    },
+    {
+      "word": "the",
+      "startMs": 59440,
+      "endMs": 59560
+    },
+    {
+      "word": "strongest",
+      "startMs": 59560,
+      "endMs": 59900
+    },
+    {
+      "word": "signal",
+      "startMs": 59900,
+      "endMs": 60280
+    },
+    {
+      "word": "of",
+      "startMs": 60280,
+      "endMs": 60540
+    },
+    {
+      "word": "high",
+      "startMs": 60540,
+      "endMs": 60720
+    },
+    {
+      "word": "quality.",
+      "startMs": 60720,
+      "endMs": 61220
+    },
+    {
+      "word": "How",
+      "startMs": 61720,
+      "endMs": 61820
+    },
+    {
+      "word": "do",
+      "startMs": 61820,
+      "endMs": 61900
+    },
+    {
+      "word": "you",
+      "startMs": 61900,
+      "endMs": 62000
+    },
+    {
+      "word": "induce",
+      "startMs": 62000,
+      "endMs": 62260
+    },
+    {
+      "word": "a",
+      "startMs": 62260,
+      "endMs": 62480
+    },
+    {
+      "word": "loop?",
+      "startMs": 62480,
+      "endMs": 62620
+    },
+    {
+      "word": "You",
+      "startMs": 63140,
+      "endMs": 63260
+    },
+    {
+      "word": "must",
+      "startMs": 63260,
+      "endMs": 63440
+    },
+    {
+      "word": "design",
+      "startMs": 63440,
+      "endMs": 63720
+    },
+    {
+      "word": "a",
+      "startMs": 63720,
+      "endMs": 63900
+    },
+    {
+      "word": "seamless",
+      "startMs": 63900,
+      "endMs": 64180
+    },
+    {
+      "word": "transition",
+      "startMs": 64180,
+      "endMs": 64620
+    },
+    {
+      "word": "from",
+      "startMs": 64620,
+      "endMs": 64920
+    },
+    {
+      "word": "the",
+      "startMs": 64920,
+      "endMs": 65060
+    },
+    {
+      "word": "end",
+      "startMs": 65060,
+      "endMs": 65239
+    },
+    {
+      "word": "of",
+      "startMs": 65239,
+      "endMs": 65360
+    },
+    {
+      "word": "the",
+      "startMs": 65360,
+      "endMs": 65459
+    },
+    {
+      "word": "video",
+      "startMs": 65459,
+      "endMs": 65720
+    },
+    {
+      "word": "back",
+      "startMs": 65720,
+      "endMs": 65940
+    },
+    {
+      "word": "to",
+      "startMs": 65940,
+      "endMs": 66100
+    },
+    {
+      "word": "the",
+      "startMs": 66100,
+      "endMs": 66200
+    },
+    {
+      "word": "start.",
+      "startMs": 66200,
+      "endMs": 66420
+    },
+    {
+      "word": "The",
+      "startMs": 66900,
+      "endMs": 67020
+    },
+    {
+      "word": "system",
+      "startMs": 67020,
+      "endMs": 67320
+    },
+    {
+      "word": "also",
+      "startMs": 67320,
+      "endMs": 67620
+    },
+    {
+      "word": "tracks",
+      "startMs": 67620,
+      "endMs": 67940
+    },
+    {
+      "word": "engaged",
+      "startMs": 67940,
+      "endMs": 68500
+    },
+    {
+      "word": "views,",
+      "startMs": 68500,
+      "endMs": 68800
+    },
+    {
+      "word": "which",
+      "startMs": 69120,
+      "endMs": 69240
+    },
+    {
+      "word": "measures",
+      "startMs": 69240,
+      "endMs": 69540
+    },
+    {
+      "word": "viewers",
+      "startMs": 69540,
+      "endMs": 69880
+    },
+    {
+      "word": "who",
+      "startMs": 69880,
+      "endMs": 70120
+    },
+    {
+      "word": "stay",
+      "startMs": 70120,
+      "endMs": 70340
+    },
+    {
+      "word": "for",
+      "startMs": 70340,
+      "endMs": 70560
+    },
+    {
+      "word": "a",
+      "startMs": 70560,
+      "endMs": 70660
+    },
+    {
+      "word": "significant",
+      "startMs": 70660,
+      "endMs": 71060
+    },
+    {
+      "word": "duration.",
+      "startMs": 71060,
+      "endMs": 71580
+    },
+    {
+      "word": "This",
+      "startMs": 72120,
+      "endMs": 72220
+    },
+    {
+      "word": "metric",
+      "startMs": 72220,
+      "endMs": 72540
+    },
+    {
+      "word": "decides",
+      "startMs": 72540,
+      "endMs": 72840
+    },
+    {
+      "word": "your",
+      "startMs": 72840,
+      "endMs": 73120
+    },
+    {
+      "word": "partner",
+      "startMs": 73120,
+      "endMs": 73420
+    },
+    {
+      "word": "program",
+      "startMs": 73420,
+      "endMs": 73860
+    },
+    {
+      "word": "revenue",
+      "startMs": 73860,
+      "endMs": 74280
+    },
+    {
+      "word": "and",
+      "startMs": 74280,
+      "endMs": 74560
+    },
+    {
+      "word": "long",
+      "startMs": 74560,
+      "endMs": 74760
+    },
+    {
+      "word": "-term",
+      "startMs": 74760,
+      "endMs": 75000
+    },
+    {
+      "word": "reach.",
+      "startMs": 75000,
+      "endMs": 75320
+    },
+    {
+      "word": "To",
+      "startMs": 75760,
+      "endMs": 75880
+    },
+    {
+      "word": "grow",
+      "startMs": 75880,
+      "endMs": 76060
+    },
+    {
+      "word": "your",
+      "startMs": 76060,
+      "endMs": 76280
+    },
+    {
+      "word": "channel,",
+      "startMs": 76280,
+      "endMs": 76640
+    },
+    {
+      "word": "focus",
+      "startMs": 76780,
+      "endMs": 76980
+    },
+    {
+      "word": "entirely",
+      "startMs": 76980,
+      "endMs": 77540
+    },
+    {
+      "word": "on",
+      "startMs": 77540,
+      "endMs": 77820
+    },
+    {
+      "word": "holding",
+      "startMs": 77820,
+      "endMs": 78100
+    },
+    {
+      "word": "attention",
+      "startMs": 78100,
+      "endMs": 78460
+    },
+    {
+      "word": "past",
+      "startMs": 78460,
+      "endMs": 78840
+    },
+    {
+      "word": "the",
+      "startMs": 78840,
+      "endMs": 79040
+    },
+    {
+      "word": "three",
+      "startMs": 79040,
+      "endMs": 79280
+    },
+    {
+      "word": "second",
+      "startMs": 79280,
+      "endMs": 79580
+    },
+    {
+      "word": "mark.",
+      "startMs": 79580,
+      "endMs": 79800
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/youtube_algo_project_10/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

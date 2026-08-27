@@ -1,0 +1,68 @@
+# Why Gemini Keeps Losing to Claude and ChatGPT (Monkey Explains)
+
+## 📌 Title Options
+1. Why Gemini Keeps Losing to Claude and ChatGPT (Monkey Explains)
+2. What Google’s $2 Trillion AI Is Still Getting Wrong
+3. Why Claude Beats Gemini at Real-World Coding
+4. The Computer Science Behind Why Gemini Hallucinates
+
+---
+
+## 📝 Video Description
+
+Ever wondered why Google’s two-trillion-dollar AI keeps losing to Claude and ChatGPT in real-world coding and complex logic tasks? In this video, our cartoon monkey teacher breaks down the exact computer science reasons behind Gemini's failures—from Mixture of Experts (MoE) routing breakdowns to post-training alignment trade-offs!
+
+In under 3 minutes, you'll discover:
+- Why Mixture of Experts (MoE) architectures suffer from routing misallocations.
+- How RLHF alignment causes Gemini to skip code with lazy `// TODO` comments.
+- Why a 2-million token context window doesn't guarantee high attention retrieval precision.
+- The difference between benchmark overfitting and real-world production execution.
+
+Music: "Monkeys Spinning Monkeys" by Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+If you found this monkey tech explainer helpful, please hit Like and Subscribe for more simplified tech breakdown videos!
+
+#Gemini #Claude #ChatGPT #AI #ComputerScience #TechMonkeyExplains #MachineLearning #ArtificialIntelligence #Coding #SoftwareEngineering #TechNews #MoE #RLHF #GoogleAI #Anthropic
+
+---
+
+## ⏱️ Timestamps / Chapters
+
+- `0:00` - Big Google AI Box: Gemini
+- `0:27` - Reason 1: MoE Expert Routing vs Dense Attention
+- `1:08` - Reason 2: Post-Training Alignment & Reward Models
+- `1:43` - Reason 3: Needle In A Haystack & Context Drift
+- `2:13` - Reason 4: Benchmark Overfitting vs Real-World Coding
+- `2:33` - Summary & Conclusion
+
+---
+
+## 🏷️ Keywords & Tags
+
+```text
+Gemini vs Claude, why Gemini loses, Google Gemini vs ChatGPT, Gemini coding fail, Mixture of Experts explained, MoE routing breakdown, RLHF vs Constitutional AI, Gemini hallucination, Needle in a Haystack AI, context drift LLM, HumanEval benchmark overfitting, Claude 3.5 Sonnet vs Gemini, AI explainer, monkey tech explainer, computer science ELI5, software engineering AI tools, Gemini 1.5 Pro review
+```
+
+---
+
+## 📚 Sources & References
+
+- Anthropic Research: Constitutional AI & Alignment (https://www.anthropic.com/research)
+- Google DeepMind: Gemini Architecture & Technical Report (https://deepmind.google/technologies/gemini/)
+- Needle In A Haystack LLM Retrieval Evaluation (https://github.com/gkamradt/LLMTest_NeedleInAHaystack)
+
+---
+
+## 🖼️ Thumbnail Prompts
+
+### Option 1: "WHY GEMINI LOSES"
+```text
+Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, educational whiteboard illustration with funny cartoon monkey/gorilla characters matching the script context (deadpan poker faces, glasses on gorillas, exaggerated reactions), cute brown monkey wearing thick glasses pointing with a banana at a chalkboard displaying high-contrast text "WHY GEMINI LOSES", next to a shiny blue AI box knocked over with green bugs crawling out, yellow star sparkles, white background, no gradients, no shadows, no textures, no photorealism, no realistic faces, no anime style, no 3D render, clean educational infographic composition, large negative space for camera movement, 16:9 widescreen landscape aspect ratio (1280x720 or 1920x1080 for HD quality), consistent tech monkey doodle style.
+```
+
+### Option 2: "CLAUDE vs GEMINI"
+```text
+Hand-drawn 2D doodle cartoon animation, flat colors, bold black outlines, slightly imperfect sketchy marker lines, educational whiteboard illustration with funny cartoon monkey/gorilla characters matching the script context (deadpan poker faces, glasses on gorillas, exaggerated reactions), split chalkboard layout: left side blue Gemini box dizzy with red X mark, right side purple Claude chimp flexing muscles holding a golden code scroll, bold text "REAL WORLD CODING" at top, bright yellow background, no gradients, no shadows, no textures, no photorealism, no realistic faces, no anime style, no 3D render, clean educational infographic composition, large negative space for camera movement, 16:9 widescreen landscape aspect ratio (1280x720 or 1920x1080 for HD quality), consistent tech monkey doodle style.
+```

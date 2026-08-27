@@ -1,0 +1,38 @@
+namespace com.supercell.texture;
+
+table StreamingTexture {
+    pixel_type: int32;
+    width: uint16;
+    height: uint16;
+    data: [ubyte];
+}
+
+table TextureVariants {
+    streaming_ids: [int32];
+    streaming_textures: [StreamingTexture];
+}
+
+enum TextureFlags : uint32(bit_flags) {
+    is_compressed,
+    unk2,
+    unk3,
+    use_padding
+}
+
+table TextureData {
+    unk1: int32;
+    pixel_type: int32;
+    width: uint16;
+    height: uint16;
+    level_count: ubyte = 1;
+    unk6: int32;
+    flags: TextureFlags = 0;
+    data_length: uint32;
+    unk9: int32;
+    unk10: int32;
+    variants: TextureVariants;
+}
+
+file_identifier "SCTX";
+file_extension "sctx";
+root_type TextureData;

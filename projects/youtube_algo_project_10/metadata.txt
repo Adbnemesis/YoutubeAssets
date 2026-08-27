@@ -1,0 +1,40 @@
+# Video Metadata - The YouTube Shorts Algorithm in 120 Seconds
+
+## Title Options
+1. How the YouTube Shorts Algorithm Actually Works in 2026
+2. The Secret Metric That Controls Your Shorts Views
+3. Stop Hooking Viewers: The 2026 YouTube Shorts Update
+4. Why 99% of YouTube Shorts Fail (The Gatekeeper Metric)
+
+## Video Description
+I spent three months decoding the YouTube Shorts algorithm, and here is how the feed actually distributes your videos. Raw views are officially a vanity metric. If you want to go viral, you need to understand the true gatekeeper metrics.
+
+In this video, you will discover the Viewed vs. Swiped Away benchmark needed to pass the initial hook gate. We explain how YouTube's 2025 view-count update changed retention forever, and why Average Percentage Viewed (APV) is now the ultimate ranking metric. Learn how to design seamless loops that trigger exponential platform reach.
+
+If this breakdown helped you understand the system, leave a like and subscribe for more direct, metric-focused educational content.
+
+#YouTubeShorts #YouTubeAlgorithm #ShortsAlgorithm #CreatorTips #GrowthHacks #CTR #AudienceRetention #ViralShorts #YouTubeGrowth #VideoEditing #ShortsTips #SessionDuration #APV #Looping #ContentStrategy #YouTubeCreators
+
+## Timestamps / Chapters
+00:00 How the Algorithm Works
+00:10 Viewed vs. Swiped Away Rate
+00:24 The Hook Gate
+00:36 The 2025 Views Update
+00:48 Average Percentage Viewed (APV)
+01:03 Creating Loop Transitions
+01:12 Engaged Views & Revenue
+
+## Keywords & Tags
+youtube shorts algorithm, youtube shorts algorithm 2026, how the youtube shorts algorithm works, how to go viral on youtube shorts, viewed vs swiped away rate, youtube shorts hook gate, average percentage viewed shorts, apv youtube, youtube shorts looping trick, engaged views youtube, shorts algorithm explained, how to grow on youtube shorts, youtube shorts metrics, youtube analytics guide
+
+## Sources & References
+- YouTube Creator Liaison: "How the Shorts Algorithm Works" (https://www.youtube.com/@CreatorLiaison)
+- YouTube Help: "Understand your Shorts performance metrics" (https://support.google.com/youtube/answer/12475004)
+- Google Research: "Recommending What Video to Watch Next: A Multitask Ranking System" (https://research.google/pubs/pub48405/)
+
+## Thumbnail Prompts
+### Option 1: Shorts Explained "shorts explained"
+Hand-drawn 2D doodle cartoon style, clean solid white background. On the left, a dark grey YouTube Studio analytics dashboard interface card showing a line graph and metrics, with "89.4%" circled in a sketchy hand-drawn red circle. On the right, bold clean sans-serif text in black and red spelling "shorts explained" with the word "explained" in red. A hand-drawn sketchy red arrow curves from the text pointing to the circled "89.4%" metric. Flat colors, bold outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+
+### Option 2: Stupid Easy "stupid easy"
+Hand-drawn 2D doodle cartoon style, clean solid white background. On the left, a dark grey YouTube Studio analytics dashboard interface card showing a rising line graph, with "124.5%" circled in a sketchy hand-drawn red circle. On the right, bold clean sans-serif text in black and red spelling "stupid easy" with the word "easy" in red. A hand-drawn sketchy red arrow curves from the text pointing to the circled "124.5%" metric. Flat colors, bold outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.

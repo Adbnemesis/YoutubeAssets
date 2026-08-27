@@ -1,0 +1,27 @@
+{
+  "name": "nani_007_atk_projectile_red",
+  "frameCount": 2,
+  "canvas": {
+    "width": 290,
+    "height": 320
+  },
+  "anchor": {
+    "x": 145,
+    "y": 160
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 1,
+      "y": 1,
+      "w": 274,
+      "h": 274
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "w": 274,
+      "h": 285
+    }
+  ]
+}

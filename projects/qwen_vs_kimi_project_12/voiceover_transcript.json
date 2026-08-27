@@ -1,0 +1,5110 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.56,
+      "text": "Imagine walking in to a massive jungle research lab.",
+      "words": [
+        {
+          "word": " Imagine",
+          "start": 0.0,
+          "end": 0.64,
+          "probability": 0.95
+        },
+        {
+          "word": " walking",
+          "start": 0.64,
+          "end": 1.1,
+          "probability": 0.986
+        },
+        {
+          "word": " in",
+          "start": 1.1,
+          "end": 1.36,
+          "probability": 0.225
+        },
+        {
+          "word": " to",
+          "start": 1.36,
+          "end": 1.58,
+          "probability": 0.977
+        },
+        {
+          "word": " a",
+          "start": 1.58,
+          "end": 1.7,
+          "probability": 0.992
+        },
+        {
+          "word": " massive",
+          "start": 1.7,
+          "end": 2.2,
+          "probability": 0.926
+        },
+        {
+          "word": " jungle",
+          "start": 2.2,
+          "end": 2.66,
+          "probability": 0.854
+        },
+        {
+          "word": " research",
+          "start": 2.66,
+          "end": 3.12,
+          "probability": 0.982
+        },
+        {
+          "word": " lab.",
+          "start": 3.12,
+          "end": 3.56,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 3.94,
+      "end": 7.72,
+      "text": "You want to translate a text, but instead of one giant smart monkey,",
+      "words": [
+        {
+          "word": " You",
+          "start": 3.94,
+          "end": 4.08,
+          "probability": 0.995
+        },
+        {
+          "word": " want",
+          "start": 4.08,
+          "end": 4.26,
+          "probability": 0.845
+        },
+        {
+          "word": " to",
+          "start": 4.26,
+          "end": 4.36,
+          "probability": 0.992
+        },
+        {
+          "word": " translate",
+          "start": 4.36,
+          "end": 4.78,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 4.78,
+          "end": 4.92,
+          "probability": 0.997
+        },
+        {
+          "word": " text,",
+          "start": 4.92,
+          "end": 5.34,
+          "probability": 0.996
+        },
+        {
+          "word": " but",
+          "start": 5.48,
+          "end": 5.64,
+          "probability": 0.996
+        },
+        {
+          "word": " instead",
+          "start": 5.64,
+          "end": 6.0,
+          "probability": 0.991
+        },
+        {
+          "word": " of",
+          "start": 6.0,
+          "end": 6.2,
+          "probability": 0.993
+        },
+        {
+          "word": " one",
+          "start": 6.2,
+          "end": 6.46,
+          "probability": 0.964
+        },
+        {
+          "word": " giant",
+          "start": 6.46,
+          "end": 6.94,
+          "probability": 0.99
+        },
+        {
+          "word": " smart",
+          "start": 6.94,
+          "end": 7.42,
+          "probability": 0.877
+        },
+        {
+          "word": " monkey,",
+          "start": 7.42,
+          "end": 7.72,
+          "probability": 0.956
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 8.26,
+      "end": 12.78,
+      "text": "you find a team of 896 specialized monkey scientists.",
+      "words": [
+        {
+          "word": " you",
+          "start": 8.26,
+          "end": 8.38,
+          "probability": 0.997
+        },
+        {
+          "word": " find",
+          "start": 8.38,
+          "end": 8.6,
+          "probability": 0.994
+        },
+        {
+          "word": " a",
+          "start": 8.6,
+          "end": 8.78,
+          "probability": 0.999
+        },
+        {
+          "word": " team",
+          "start": 8.78,
+          "end": 9.06,
+          "probability": 0.997
+        },
+        {
+          "word": " of",
+          "start": 9.06,
+          "end": 9.32,
+          "probability": 0.997
+        },
+        {
+          "word": " 896",
+          "start": 9.32,
+          "end": 10.8,
+          "probability": 0.923
+        },
+        {
+          "word": " specialized",
+          "start": 10.8,
+          "end": 11.6,
+          "probability": 0.978
+        },
+        {
+          "word": " monkey",
+          "start": 11.6,
+          "end": 12.18,
+          "probability": 0.954
+        },
+        {
+          "word": " scientists.",
+          "start": 12.18,
+          "end": 12.78,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 13.42,
+      "end": 16.34,
+      "text": "That is exactly how Kimi K3 works.",
+      "words": [
+        {
+          "word": " That",
+          "start": 13.42,
+          "end": 13.7,
+          "probability": 0.996
+        },
+        {
+          "word": " is",
+          "start": 13.7,
+          "end": 13.84,
+          "probability": 0.959
+        },
+        {
+          "word": " exactly",
+          "start": 13.84,
+          "end": 14.62,
+          "probability": 0.977
+        },
+        {
+          "word": " how",
+          "start": 14.62,
+          "end": 14.92,
+          "probability": 0.997
+        },
+        {
+          "word": " Kimi",
+          "start": 14.92,
+          "end": 15.4,
+          "probability": 0.553
+        },
+        {
+          "word": " K3",
+          "start": 15.4,
+          "end": 15.92,
+          "probability": 0.76
+        },
+        {
+          "word": " works.",
+          "start": 15.92,
+          "end": 16.34,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.76,
+      "end": 19.32,
+      "text": "It is a massive mixture of experts model.",
+      "words": [
+        {
+          "word": " It",
+          "start": 16.76,
+          "end": 16.96,
+          "probability": 0.997
+        },
+        {
+          "word": " is",
+          "start": 16.96,
+          "end": 17.04,
+          "probability": 0.982
+        },
+        {
+          "word": " a",
+          "start": 17.04,
+          "end": 17.16,
+          "probability": 0.995
+        },
+        {
+          "word": " massive",
+          "start": 17.16,
+          "end": 17.68,
+          "probability": 0.997
+        },
+        {
+          "word": " mixture",
+          "start": 17.68,
+          "end": 18.14,
+          "probability": 0.991
+        },
+        {
+          "word": " of",
+          "start": 18.14,
+          "end": 18.44,
+          "probability": 0.997
+        },
+        {
+          "word": " experts",
+          "start": 18.44,
+          "end": 18.84,
+          "probability": 0.972
+        },
+        {
+          "word": " model.",
+          "start": 18.84,
+          "end": 19.32,
+          "probability": 0.801
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 19.8,
+      "end": 24.06,
+      "text": "But does it actually beat Ali Baba's brand new QN3.8 Max?",
+      "words": [
+        {
+          "word": " But",
+          "start": 19.8,
+          "end": 19.98,
+          "probability": 0.995
+        },
+        {
+          "word": " does",
+          "start": 19.98,
+          "end": 20.14,
+          "probability": 0.985
+        },
+        {
+          "word": " it",
+          "start": 20.14,
+          "end": 20.28,
+          "probability": 0.997
+        },
+        {
+          "word": " actually",
+          "start": 20.28,
+          "end": 20.74,
+          "probability": 0.996
+        },
+        {
+          "word": " beat",
+          "start": 20.74,
+          "end": 21.1,
+          "probability": 0.995
+        },
+        {
+          "word": " Ali",
+          "start": 21.1,
+          "end": 21.44,
+          "probability": 0.609
+        },
+        {
+          "word": " Baba's",
+          "start": 21.44,
+          "end": 21.9,
+          "probability": 0.848
+        },
+        {
+          "word": " brand",
+          "start": 21.9,
+          "end": 22.2,
+          "probability": 0.993
+        },
+        {
+          "word": " new",
+          "start": 22.2,
+          "end": 22.54,
+          "probability": 0.867
+        },
+        {
+          "word": " QN3",
+          "start": 22.54,
+          "end": 23.38,
+          "probability": 0.772
+        },
+        {
+          "word": ".8",
+          "start": 23.38,
+          "end": 23.84,
+          "probability": 0.994
+        },
+        {
+          "word": " Max?",
+          "start": 23.84,
+          "end": 24.06,
+          "probability": 0.638
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 24.76,
+      "end": 27.9,
+      "text": "Let us break down these two brand new Chinese AI giants",
+      "words": [
+        {
+          "word": " Let",
+          "start": 24.76,
+          "end": 24.86,
+          "probability": 0.996
+        },
+        {
+          "word": " us",
+          "start": 24.86,
+          "end": 24.96,
+          "probability": 0.995
+        },
+        {
+          "word": " break",
+          "start": 24.96,
+          "end": 25.2,
+          "probability": 0.976
+        },
+        {
+          "word": " down",
+          "start": 25.2,
+          "end": 25.46,
+          "probability": 0.999
+        },
+        {
+          "word": " these",
+          "start": 25.46,
+          "end": 25.72,
+          "probability": 0.993
+        },
+        {
+          "word": " two",
+          "start": 25.72,
+          "end": 25.98,
+          "probability": 0.974
+        },
+        {
+          "word": " brand",
+          "start": 25.98,
+          "end": 26.34,
+          "probability": 0.996
+        },
+        {
+          "word": " new",
+          "start": 26.34,
+          "end": 26.62,
+          "probability": 0.885
+        },
+        {
+          "word": " Chinese",
+          "start": 26.62,
+          "end": 27.0,
+          "probability": 0.991
+        },
+        {
+          "word": " AI",
+          "start": 27.0,
+          "end": 27.36,
+          "probability": 0.901
+        },
+        {
+          "word": " giants",
+          "start": 27.36,
+          "end": 27.9,
+          "probability": 0.95
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 27.9,
+      "end": 29.3,
+      "text": "in under 3 minutes.",
+      "words": [
+        {
+          "word": " in",
+          "start": 27.9,
+          "end": 28.14,
+          "probability": 0.351
+        },
+        {
+          "word": " under",
+          "start": 28.14,
+          "end": 28.56,
+          "probability": 0.909
+        },
+        {
+          "word": " 3",
+          "start": 28.56,
+          "end": 29.0,
+          "probability": 0.517
+        },
+        {
+          "word": " minutes.",
+          "start": 29.0,
+          "end": 29.3,
+          "probability": 0.936
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 29.98,
+      "end": 31.76,
+      "text": "First, let us look at their size.",
+      "words": [
+        {
+          "word": " First,",
+          "start": 29.98,
+          "end": 30.34,
+          "probability": 0.936
+        },
+        {
+          "word": " let",
+          "start": 30.72,
+          "end": 30.82,
+          "probability": 0.979
+        },
+        {
+          "word": " us",
+          "start": 30.82,
+          "end": 30.96,
+          "probability": 0.794
+        },
+        {
+          "word": " look",
+          "start": 30.96,
+          "end": 31.16,
+          "probability": 0.993
+        },
+        {
+          "word": " at",
+          "start": 31.16,
+          "end": 31.26,
+          "probability": 0.986
+        },
+        {
+          "word": " their",
+          "start": 31.26,
+          "end": 31.4,
+          "probability": 0.985
+        },
+        {
+          "word": " size.",
+          "start": 31.4,
+          "end": 31.76,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 32.34,
+      "end": 37.26,
+      "text": "Kimi K3 is an absolute monster with 2.8 trillion parameters.",
+      "words": [
+        {
+          "word": " Kimi",
+          "start": 32.34,
+          "end": 32.64,
+          "probability": 0.531
+        },
+        {
+          "word": " K3",
+          "start": 32.64,
+          "end": 33.12,
+          "probability": 0.842
+        },
+        {
+          "word": " is",
+          "start": 33.12,
+          "end": 33.38,
+          "probability": 0.988
+        },
+        {
+          "word": " an",
+          "start": 33.38,
+          "end": 33.52,
+          "probability": 0.976
+        },
+        {
+          "word": " absolute",
+          "start": 33.52,
+          "end": 34.1,
+          "probability": 0.99
+        },
+        {
+          "word": " monster",
+          "start": 34.1,
+          "end": 34.8,
+          "probability": 0.981
+        },
+        {
+          "word": " with",
+          "start": 34.8,
+          "end": 35.1,
+          "probability": 0.971
+        },
+        {
+          "word": " 2",
+          "start": 35.1,
+          "end": 35.4,
+          "probability": 0.981
+        },
+        {
+          "word": ".8",
+          "start": 35.4,
+          "end": 35.9,
+          "probability": 0.996
+        },
+        {
+          "word": " trillion",
+          "start": 35.9,
+          "end": 36.58,
+          "probability": 0.951
+        },
+        {
+          "word": " parameters.",
+          "start": 36.58,
+          "end": 37.26,
+          "probability": 0.953
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 37.86,
+      "end": 42.18,
+      "text": "QN3.8 Max is slightly smaller coming in at 2.4 trillion.",
+      "words": [
+        {
+          "word": " QN3",
+          "start": 37.86,
+          "end": 38.46,
+          "probability": 0.675
+        },
+        {
+          "word": ".8",
+          "start": 38.46,
+          "end": 38.88,
+          "probability": 0.996
+        },
+        {
+          "word": " Max",
+          "start": 38.88,
+          "end": 39.12,
+          "probability": 0.247
+        },
+        {
+          "word": " is",
+          "start": 39.12,
+          "end": 39.46,
+          "probability": 0.809
+        },
+        {
+          "word": " slightly",
+          "start": 39.46,
+          "end": 39.84,
+          "probability": 0.99
+        },
+        {
+          "word": " smaller",
+          "start": 39.84,
+          "end": 40.36,
+          "probability": 0.998
+        },
+        {
+          "word": " coming",
+          "start": 40.36,
+          "end": 40.7,
+          "probability": 0.527
+        },
+        {
+          "word": " in",
+          "start": 40.7,
+          "end": 40.9,
+          "probability": 0.993
+        },
+        {
+          "word": " at",
+          "start": 40.9,
+          "end": 41.0,
+          "probability": 0.967
+        },
+        {
+          "word": " 2",
+          "start": 41.0,
+          "end": 41.24,
+          "probability": 0.995
+        },
+        {
+          "word": ".4",
+          "start": 41.24,
+          "end": 41.76,
+          "probability": 0.997
+        },
+        {
+          "word": " trillion.",
+          "start": 41.76,
+          "end": 42.18,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 42.6,
+      "end": 44.28,
+      "text": "But wait, why does size matter?",
+      "words": [
+        {
+          "word": " But",
+          "start": 42.6,
+          "end": 42.82,
+          "probability": 0.985
+        },
+        {
+          "word": " wait,",
+          "start": 42.82,
+          "end": 43.0,
+          "probability": 0.965
+        },
+        {
+          "word": " why",
+          "start": 43.3,
+          "end": 43.44,
+          "probability": 0.991
+        },
+        {
+          "word": " does",
+          "start": 43.44,
+          "end": 43.54,
+          "probability": 0.981
+        },
+        {
+          "word": " size",
+          "start": 43.54,
+          "end": 43.82,
+          "probability": 0.982
+        },
+        {
+          "word": " matter?",
+          "start": 43.82,
+          "end": 44.28,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 44.78,
+      "end": 49.0,
+      "text": "More parameters mean the model can store more knowledge and spot deeper patterns.",
+      "words": [
+        {
+          "word": " More",
+          "start": 44.78,
+          "end": 44.98,
+          "probability": 0.989
+        },
+        {
+          "word": " parameters",
+          "start": 44.98,
+          "end": 45.52,
+          "probability": 0.995
+        },
+        {
+          "word": " mean",
+          "start": 45.52,
+          "end": 45.84,
+          "probability": 0.998
+        },
+        {
+          "word": " the",
+          "start": 45.84,
+          "end": 46.02,
+          "probability": 0.977
+        },
+        {
+          "word": " model",
+          "start": 46.02,
+          "end": 46.32,
+          "probability": 0.991
+        },
+        {
+          "word": " can",
+          "start": 46.32,
+          "end": 46.54,
+          "probability": 0.998
+        },
+        {
+          "word": " store",
+          "start": 46.54,
+          "end": 46.8,
+          "probability": 0.973
+        },
+        {
+          "word": " more",
+          "start": 46.8,
+          "end": 47.1,
+          "probability": 0.998
+        },
+        {
+          "word": " knowledge",
+          "start": 47.1,
+          "end": 47.56,
+          "probability": 0.998
+        },
+        {
+          "word": " and",
+          "start": 47.56,
+          "end": 47.8,
+          "probability": 0.954
+        },
+        {
+          "word": " spot",
+          "start": 47.8,
+          "end": 48.06,
+          "probability": 0.992
+        },
+        {
+          "word": " deeper",
+          "start": 48.06,
+          "end": 48.48,
+          "probability": 0.998
+        },
+        {
+          "word": " patterns.",
+          "start": 48.48,
+          "end": 49.0,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 49.44,
+      "end": 52.82,
+      "text": "However, running a model this big is incredibly expensive.",
+      "words": [
+        {
+          "word": " However,",
+          "start": 49.44,
+          "end": 49.76,
+          "probability": 0.997
+        },
+        {
+          "word": " running",
+          "start": 50.06,
+          "end": 50.22,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 50.22,
+          "end": 50.36,
+          "probability": 0.995
+        },
+        {
+          "word": " model",
+          "start": 50.36,
+          "end": 50.64,
+          "probability": 0.999
+        },
+        {
+          "word": " this",
+          "start": 50.64,
+          "end": 50.92,
+          "probability": 0.738
+        },
+        {
+          "word": " big",
+          "start": 50.92,
+          "end": 51.16,
+          "probability": 0.993
+        },
+        {
+          "word": " is",
+          "start": 51.16,
+          "end": 51.42,
+          "probability": 0.998
+        },
+        {
+          "word": " incredibly",
+          "start": 51.42,
+          "end": 52.12,
+          "probability": 0.996
+        },
+        {
+          "word": " expensive.",
+          "start": 52.12,
+          "end": 52.82,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 53.2,
+      "end": 54.88,
+      "text": "How do they keep it fast and cheap?",
+      "words": [
+        {
+          "word": " How",
+          "start": 53.2,
+          "end": 53.44,
+          "probability": 0.998
+        },
+        {
+          "word": " do",
+          "start": 53.44,
+          "end": 53.52,
+          "probability": 0.974
+        },
+        {
+          "word": " they",
+          "start": 53.52,
+          "end": 53.66,
+          "probability": 0.998
+        },
+        {
+          "word": " keep",
+          "start": 53.66,
+          "end": 53.86,
+          "probability": 0.998
+        },
+        {
+          "word": " it",
+          "start": 53.86,
+          "end": 54.0,
+          "probability": 0.998
+        },
+        {
+          "word": " fast",
+          "start": 54.0,
+          "end": 54.32,
+          "probability": 0.996
+        },
+        {
+          "word": " and",
+          "start": 54.32,
+          "end": 54.6,
+          "probability": 0.994
+        },
+        {
+          "word": " cheap?",
+          "start": 54.6,
+          "end": 54.88,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 54.88,
+      "end": 59.0,
+      "text": "They use a trick called mixture of experts or MOE.",
+      "words": [
+        {
+          "word": " They",
+          "start": 54.88,
+          "end": 55.52,
+          "probability": 0.435
+        },
+        {
+          "word": " use",
+          "start": 55.52,
+          "end": 55.72,
+          "probability": 0.976
+        },
+        {
+          "word": " a",
+          "start": 55.72,
+          "end": 55.86,
+          "probability": 0.994
+        },
+        {
+          "word": " trick",
+          "start": 55.86,
+          "end": 56.06,
+          "probability": 0.996
+        },
+        {
+          "word": " called",
+          "start": 56.06,
+          "end": 56.4,
+          "probability": 0.995
+        },
+        {
+          "word": " mixture",
+          "start": 56.4,
+          "end": 56.82,
+          "probability": 0.633
+        },
+        {
+          "word": " of",
+          "start": 56.82,
+          "end": 57.12,
+          "probability": 0.993
+        },
+        {
+          "word": " experts",
+          "start": 57.12,
+          "end": 57.56,
+          "probability": 0.951
+        },
+        {
+          "word": " or",
+          "start": 57.56,
+          "end": 57.96,
+          "probability": 0.569
+        },
+        {
+          "word": " MOE.",
+          "start": 57.96,
+          "end": 59.0,
+          "probability": 0.784
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 59.4,
+      "end": 60.42,
+      "text": "Think of it like this.",
+      "words": [
+        {
+          "word": " Think",
+          "start": 59.4,
+          "end": 59.66,
+          "probability": 0.976
+        },
+        {
+          "word": " of",
+          "start": 59.66,
+          "end": 59.8,
+          "probability": 0.983
+        },
+        {
+          "word": " it",
+          "start": 59.8,
+          "end": 59.86,
+          "probability": 0.998
+        },
+        {
+          "word": " like",
+          "start": 59.86,
+          "end": 60.02,
+          "probability": 0.997
+        },
+        {
+          "word": " this.",
+          "start": 60.02,
+          "end": 60.42,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 60.72,
+      "end": 66.58,
+      "text": "When you ask Kimi K3 a question, it does not wake up all 896 scientists.",
+      "words": [
+        {
+          "word": " When",
+          "start": 60.72,
+          "end": 60.92,
+          "probability": 0.971
+        },
+        {
+          "word": " you",
+          "start": 60.92,
+          "end": 61.06,
+          "probability": 0.998
+        },
+        {
+          "word": " ask",
+          "start": 61.06,
+          "end": 61.44,
+          "probability": 0.996
+        },
+        {
+          "word": " Kimi",
+          "start": 61.44,
+          "end": 61.92,
+          "probability": 0.549
+        },
+        {
+          "word": " K3",
+          "start": 61.92,
+          "end": 62.42,
+          "probability": 0.845
+        },
+        {
+          "word": " a",
+          "start": 62.42,
+          "end": 62.64,
+          "probability": 0.962
+        },
+        {
+          "word": " question,",
+          "start": 62.64,
+          "end": 63.08,
+          "probability": 0.998
+        },
+        {
+          "word": " it",
+          "start": 63.32,
+          "end": 63.38,
+          "probability": 0.937
+        },
+        {
+          "word": " does",
+          "start": 63.38,
+          "end": 63.52,
+          "probability": 0.969
+        },
+        {
+          "word": " not",
+          "start": 63.52,
+          "end": 63.7,
+          "probability": 0.992
+        },
+        {
+          "word": " wake",
+          "start": 63.7,
+          "end": 63.94,
+          "probability": 0.995
+        },
+        {
+          "word": " up",
+          "start": 63.94,
+          "end": 64.22,
+          "probability": 0.997
+        },
+        {
+          "word": " all",
+          "start": 64.22,
+          "end": 64.56,
+          "probability": 0.965
+        },
+        {
+          "word": " 896",
+          "start": 64.56,
+          "end": 65.9,
+          "probability": 0.962
+        },
+        {
+          "word": " scientists.",
+          "start": 65.9,
+          "end": 66.58,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 67.0,
+      "end": 71.46,
+      "text": "It only activates the 16 best monkeys for your specific question.",
+      "words": [
+        {
+          "word": " It",
+          "start": 67.0,
+          "end": 67.16,
+          "probability": 0.994
+        },
+        {
+          "word": " only",
+          "start": 67.16,
+          "end": 67.48,
+          "probability": 0.995
+        },
+        {
+          "word": " activates",
+          "start": 67.48,
+          "end": 68.0,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 68.0,
+          "end": 68.28,
+          "probability": 0.997
+        },
+        {
+          "word": " 16",
+          "start": 68.28,
+          "end": 68.8,
+          "probability": 0.961
+        },
+        {
+          "word": " best",
+          "start": 68.8,
+          "end": 69.42,
+          "probability": 0.918
+        },
+        {
+          "word": " monkeys",
+          "start": 69.42,
+          "end": 69.76,
+          "probability": 0.968
+        },
+        {
+          "word": " for",
+          "start": 69.76,
+          "end": 70.1,
+          "probability": 0.996
+        },
+        {
+          "word": " your",
+          "start": 70.1,
+          "end": 70.32,
+          "probability": 0.989
+        },
+        {
+          "word": " specific",
+          "start": 70.32,
+          "end": 70.92,
+          "probability": 0.995
+        },
+        {
+          "word": " question.",
+          "start": 70.92,
+          "end": 71.46,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 71.9,
+      "end": 74.0,
+      "text": "That keeps it fast and energy efficient.",
+      "words": [
+        {
+          "word": " That",
+          "start": 71.9,
+          "end": 72.02,
+          "probability": 0.989
+        },
+        {
+          "word": " keeps",
+          "start": 72.02,
+          "end": 72.24,
+          "probability": 0.995
+        },
+        {
+          "word": " it",
+          "start": 72.24,
+          "end": 72.44,
+          "probability": 0.998
+        },
+        {
+          "word": " fast",
+          "start": 72.44,
+          "end": 72.74,
+          "probability": 0.995
+        },
+        {
+          "word": " and",
+          "start": 72.74,
+          "end": 73.06,
+          "probability": 0.983
+        },
+        {
+          "word": " energy",
+          "start": 73.06,
+          "end": 73.46,
+          "probability": 0.999
+        },
+        {
+          "word": " efficient.",
+          "start": 73.46,
+          "end": 74.0,
+          "probability": 0.855
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 74.52,
+      "end": 81.38,
+      "text": "Plus, moonshot AI introduced two secret weapons called Kimi Delta Attention and Attention Residuals.",
+      "words": [
+        {
+          "word": " Plus,",
+          "start": 74.52,
+          "end": 74.82,
+          "probability": 0.981
+        },
+        {
+          "word": " moonshot",
+          "start": 75.12,
+          "end": 75.5,
+          "probability": 0.594
+        },
+        {
+          "word": " AI",
+          "start": 75.5,
+          "end": 75.78,
+          "probability": 0.908
+        },
+        {
+          "word": " introduced",
+          "start": 75.78,
+          "end": 76.36,
+          "probability": 0.984
+        },
+        {
+          "word": " two",
+          "start": 76.36,
+          "end": 76.86,
+          "probability": 0.939
+        },
+        {
+          "word": " secret",
+          "start": 76.86,
+          "end": 77.32,
+          "probability": 0.994
+        },
+        {
+          "word": " weapons",
+          "start": 77.32,
+          "end": 77.74,
+          "probability": 0.992
+        },
+        {
+          "word": " called",
+          "start": 77.74,
+          "end": 78.16,
+          "probability": 0.965
+        },
+        {
+          "word": " Kimi",
+          "start": 78.16,
+          "end": 78.64,
+          "probability": 0.718
+        },
+        {
+          "word": " Delta",
+          "start": 78.64,
+          "end": 79.0,
+          "probability": 0.739
+        },
+        {
+          "word": " Attention",
+          "start": 79.0,
+          "end": 79.56,
+          "probability": 0.583
+        },
+        {
+          "word": " and",
+          "start": 79.56,
+          "end": 80.08,
+          "probability": 0.911
+        },
+        {
+          "word": " Attention",
+          "start": 80.08,
+          "end": 80.52,
+          "probability": 0.928
+        },
+        {
+          "word": " Residuals.",
+          "start": 80.52,
+          "end": 81.38,
+          "probability": 0.88
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 81.38,
+      "end": 87.44,
+      "text": "These tricks make Kimi K3 2.5 times more efficient at moving information than before.",
+      "words": [
+        {
+          "word": " These",
+          "start": 81.38,
+          "end": 81.92,
+          "probability": 0.944
+        },
+        {
+          "word": " tricks",
+          "start": 81.92,
+          "end": 82.24,
+          "probability": 0.988
+        },
+        {
+          "word": " make",
+          "start": 82.24,
+          "end": 82.5,
+          "probability": 0.98
+        },
+        {
+          "word": " Kimi",
+          "start": 82.5,
+          "end": 82.9,
+          "probability": 0.47
+        },
+        {
+          "word": " K3",
+          "start": 82.9,
+          "end": 83.42,
+          "probability": 0.904
+        },
+        {
+          "word": " 2",
+          "start": 83.42,
+          "end": 83.84,
+          "probability": 0.938
+        },
+        {
+          "word": ".5",
+          "start": 83.84,
+          "end": 84.4,
+          "probability": 0.996
+        },
+        {
+          "word": " times",
+          "start": 84.4,
+          "end": 84.82,
+          "probability": 0.797
+        },
+        {
+          "word": " more",
+          "start": 84.82,
+          "end": 85.16,
+          "probability": 0.996
+        },
+        {
+          "word": " efficient",
+          "start": 85.16,
+          "end": 85.7,
+          "probability": 0.996
+        },
+        {
+          "word": " at",
+          "start": 85.7,
+          "end": 85.92,
+          "probability": 0.997
+        },
+        {
+          "word": " moving",
+          "start": 85.92,
+          "end": 86.2,
+          "probability": 0.997
+        },
+        {
+          "word": " information",
+          "start": 86.2,
+          "end": 86.86,
+          "probability": 0.998
+        },
+        {
+          "word": " than",
+          "start": 86.86,
+          "end": 87.02,
+          "probability": 0.975
+        },
+        {
+          "word": " before.",
+          "start": 87.02,
+          "end": 87.44,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 87.82,
+      "end": 89.22,
+      "text": "Isn't that a massive leap?",
+      "words": [
+        {
+          "word": " Isn't",
+          "start": 87.82,
+          "end": 88.18,
+          "probability": 0.993
+        },
+        {
+          "word": " that",
+          "start": 88.18,
+          "end": 88.32,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 88.32,
+          "end": 88.44,
+          "probability": 0.998
+        },
+        {
+          "word": " massive",
+          "start": 88.44,
+          "end": 88.92,
+          "probability": 0.944
+        },
+        {
+          "word": " leap?",
+          "start": 88.92,
+          "end": 89.22,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 89.96,
+      "end": 92.42,
+      "text": "What about Ali Baba's QN3.8 Max?",
+      "words": [
+        {
+          "word": " What",
+          "start": 89.96,
+          "end": 90.08,
+          "probability": 0.987
+        },
+        {
+          "word": " about",
+          "start": 90.08,
+          "end": 90.32,
+          "probability": 0.999
+        },
+        {
+          "word": " Ali",
+          "start": 90.32,
+          "end": 90.58,
+          "probability": 0.331
+        },
+        {
+          "word": " Baba's",
+          "start": 90.58,
+          "end": 91.06,
+          "probability": 0.767
+        },
+        {
+          "word": " QN3",
+          "start": 91.06,
+          "end": 91.76,
+          "probability": 0.736
+        },
+        {
+          "word": ".8",
+          "start": 91.76,
+          "end": 92.2,
+          "probability": 0.996
+        },
+        {
+          "word": " Max?",
+          "start": 92.2,
+          "end": 92.42,
+          "probability": 0.487
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 93.18,
+      "end": 95.76,
+      "text": "Ali Baba hasn't shared its exact expert count.",
+      "words": [
+        {
+          "word": " Ali",
+          "start": 93.18,
+          "end": 93.34,
+          "probability": 0.964
+        },
+        {
+          "word": " Baba",
+          "start": 93.34,
+          "end": 93.6,
+          "probability": 0.994
+        },
+        {
+          "word": " hasn't",
+          "start": 93.6,
+          "end": 94.02,
+          "probability": 0.995
+        },
+        {
+          "word": " shared",
+          "start": 94.02,
+          "end": 94.32,
+          "probability": 0.997
+        },
+        {
+          "word": " its",
+          "start": 94.32,
+          "end": 94.52,
+          "probability": 0.952
+        },
+        {
+          "word": " exact",
+          "start": 94.52,
+          "end": 94.94,
+          "probability": 0.988
+        },
+        {
+          "word": " expert",
+          "start": 94.94,
+          "end": 95.42,
+          "probability": 0.942
+        },
+        {
+          "word": " count.",
+          "start": 95.42,
+          "end": 95.76,
+          "probability": 0.979
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 96.08,
+      "end": 102.28,
+      "text": "But they claim it's a multimodal beast that handles text, images, video and documents easily.",
+      "words": [
+        {
+          "word": " But",
+          "start": 96.08,
+          "end": 96.18,
+          "probability": 0.979
+        },
+        {
+          "word": " they",
+          "start": 96.18,
+          "end": 96.3,
+          "probability": 0.985
+        },
+        {
+          "word": " claim",
+          "start": 96.3,
+          "end": 96.62,
+          "probability": 0.991
+        },
+        {
+          "word": " it's",
+          "start": 96.62,
+          "end": 96.86,
+          "probability": 0.975
+        },
+        {
+          "word": " a",
+          "start": 96.86,
+          "end": 96.94,
+          "probability": 0.997
+        },
+        {
+          "word": " multimodal",
+          "start": 96.94,
+          "end": 97.76,
+          "probability": 0.93
+        },
+        {
+          "word": " beast",
+          "start": 97.76,
+          "end": 98.1,
+          "probability": 0.987
+        },
+        {
+          "word": " that",
+          "start": 98.1,
+          "end": 98.48,
+          "probability": 0.988
+        },
+        {
+          "word": " handles",
+          "start": 98.48,
+          "end": 98.76,
+          "probability": 0.997
+        },
+        {
+          "word": " text,",
+          "start": 98.76,
+          "end": 99.08,
+          "probability": 0.988
+        },
+        {
+          "word": " images,",
+          "start": 99.56,
+          "end": 99.9,
+          "probability": 0.998
+        },
+        {
+          "word": " video",
+          "start": 100.4,
+          "end": 100.68,
+          "probability": 0.993
+        },
+        {
+          "word": " and",
+          "start": 100.68,
+          "end": 101.14,
+          "probability": 0.271
+        },
+        {
+          "word": " documents",
+          "start": 101.14,
+          "end": 101.66,
+          "probability": 0.994
+        },
+        {
+          "word": " easily.",
+          "start": 101.66,
+          "end": 102.28,
+          "probability": 0.994
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 102.84,
+      "end": 106.9,
+      "text": "In early testing, Ali Baba ranks its second only to clawed 5 Fable.",
+      "words": [
+        {
+          "word": " In",
+          "start": 102.84,
+          "end": 102.92,
+          "probability": 0.993
+        },
+        {
+          "word": " early",
+          "start": 102.92,
+          "end": 103.2,
+          "probability": 0.981
+        },
+        {
+          "word": " testing,",
+          "start": 103.2,
+          "end": 103.64,
+          "probability": 0.996
+        },
+        {
+          "word": " Ali",
+          "start": 103.96,
+          "end": 104.0,
+          "probability": 0.986
+        },
+        {
+          "word": " Baba",
+          "start": 104.0,
+          "end": 104.24,
+          "probability": 0.999
+        },
+        {
+          "word": " ranks",
+          "start": 104.24,
+          "end": 104.58,
+          "probability": 0.989
+        },
+        {
+          "word": " its",
+          "start": 104.58,
+          "end": 104.78,
+          "probability": 0.849
+        },
+        {
+          "word": " second",
+          "start": 104.78,
+          "end": 105.16,
+          "probability": 0.98
+        },
+        {
+          "word": " only",
+          "start": 105.16,
+          "end": 105.58,
+          "probability": 0.95
+        },
+        {
+          "word": " to",
+          "start": 105.58,
+          "end": 105.74,
+          "probability": 0.999
+        },
+        {
+          "word": " clawed",
+          "start": 105.74,
+          "end": 106.16,
+          "probability": 0.717
+        },
+        {
+          "word": " 5",
+          "start": 106.16,
+          "end": 106.44,
+          "probability": 0.595
+        },
+        {
+          "word": " Fable.",
+          "start": 106.44,
+          "end": 106.9,
+          "probability": 0.588
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 107.36,
+      "end": 110.88,
+      "text": "Both models have a massive 1 million token context window.",
+      "words": [
+        {
+          "word": " Both",
+          "start": 107.36,
+          "end": 107.64,
+          "probability": 0.997
+        },
+        {
+          "word": " models",
+          "start": 107.64,
+          "end": 108.04,
+          "probability": 0.994
+        },
+        {
+          "word": " have",
+          "start": 108.04,
+          "end": 108.2,
+          "probability": 0.999
+        },
+        {
+          "word": " a",
+          "start": 108.2,
+          "end": 108.34,
+          "probability": 0.996
+        },
+        {
+          "word": " massive",
+          "start": 108.34,
+          "end": 108.74,
+          "probability": 0.985
+        },
+        {
+          "word": " 1",
+          "start": 108.74,
+          "end": 109.18,
+          "probability": 0.895
+        },
+        {
+          "word": " million",
+          "start": 109.18,
+          "end": 109.48,
+          "probability": 0.844
+        },
+        {
+          "word": " token",
+          "start": 109.48,
+          "end": 109.9,
+          "probability": 0.949
+        },
+        {
+          "word": " context",
+          "start": 109.9,
+          "end": 110.4,
+          "probability": 0.849
+        },
+        {
+          "word": " window.",
+          "start": 110.4,
+          "end": 110.88,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 110.88,
+      "end": 115.04,
+      "text": "That's like handing them a thousand-page book to read in one second.",
+      "words": [
+        {
+          "word": " That's",
+          "start": 110.88,
+          "end": 111.66,
+          "probability": 0.687
+        },
+        {
+          "word": " like",
+          "start": 111.66,
+          "end": 111.78,
+          "probability": 0.981
+        },
+        {
+          "word": " handing",
+          "start": 111.78,
+          "end": 112.04,
+          "probability": 0.99
+        },
+        {
+          "word": " them",
+          "start": 112.04,
+          "end": 112.24,
+          "probability": 0.986
+        },
+        {
+          "word": " a",
+          "start": 112.24,
+          "end": 112.4,
+          "probability": 0.555
+        },
+        {
+          "word": " thousand",
+          "start": 112.4,
+          "end": 112.86,
+          "probability": 0.771
+        },
+        {
+          "word": "-page",
+          "start": 112.86,
+          "end": 113.2,
+          "probability": 0.825
+        },
+        {
+          "word": " book",
+          "start": 113.2,
+          "end": 113.56,
+          "probability": 0.996
+        },
+        {
+          "word": " to",
+          "start": 113.56,
+          "end": 113.84,
+          "probability": 0.987
+        },
+        {
+          "word": " read",
+          "start": 113.84,
+          "end": 114.08,
+          "probability": 0.944
+        },
+        {
+          "word": " in",
+          "start": 114.08,
+          "end": 114.32,
+          "probability": 0.994
+        },
+        {
+          "word": " one",
+          "start": 114.32,
+          "end": 114.56,
+          "probability": 0.928
+        },
+        {
+          "word": " second.",
+          "start": 114.56,
+          "end": 115.04,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 115.54,
+      "end": 118.42,
+      "text": "But Kimi K3 has an insane pricing advantage.",
+      "words": [
+        {
+          "word": " But",
+          "start": 115.54,
+          "end": 115.62,
+          "probability": 0.97
+        },
+        {
+          "word": " Kimi",
+          "start": 115.62,
+          "end": 116.02,
+          "probability": 0.495
+        },
+        {
+          "word": " K3",
+          "start": 116.02,
+          "end": 116.5,
+          "probability": 0.872
+        },
+        {
+          "word": " has",
+          "start": 116.5,
+          "end": 116.82,
+          "probability": 0.99
+        },
+        {
+          "word": " an",
+          "start": 116.82,
+          "end": 116.96,
+          "probability": 0.993
+        },
+        {
+          "word": " insane",
+          "start": 116.96,
+          "end": 117.4,
+          "probability": 0.972
+        },
+        {
+          "word": " pricing",
+          "start": 117.4,
+          "end": 117.92,
+          "probability": 0.985
+        },
+        {
+          "word": " advantage.",
+          "start": 117.92,
+          "end": 118.42,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 118.78,
+      "end": 124.78,
+      "text": "If you ask it a question about a document it already read, it retrieves pre-peeled bananas from its cash.",
+      "words": [
+        {
+          "word": " If",
+          "start": 118.78,
+          "end": 119.0,
+          "probability": 0.993
+        },
+        {
+          "word": " you",
+          "start": 119.0,
+          "end": 119.1,
+          "probability": 0.999
+        },
+        {
+          "word": " ask",
+          "start": 119.1,
+          "end": 119.46,
+          "probability": 0.983
+        },
+        {
+          "word": " it",
+          "start": 119.46,
+          "end": 119.6,
+          "probability": 0.822
+        },
+        {
+          "word": " a",
+          "start": 119.6,
+          "end": 119.68,
+          "probability": 0.993
+        },
+        {
+          "word": " question",
+          "start": 119.68,
+          "end": 120.06,
+          "probability": 0.998
+        },
+        {
+          "word": " about",
+          "start": 120.06,
+          "end": 120.34,
+          "probability": 0.992
+        },
+        {
+          "word": " a",
+          "start": 120.34,
+          "end": 120.48,
+          "probability": 0.994
+        },
+        {
+          "word": " document",
+          "start": 120.48,
+          "end": 120.94,
+          "probability": 0.997
+        },
+        {
+          "word": " it",
+          "start": 120.94,
+          "end": 121.1,
+          "probability": 0.827
+        },
+        {
+          "word": " already",
+          "start": 121.1,
+          "end": 121.46,
+          "probability": 0.99
+        },
+        {
+          "word": " read,",
+          "start": 121.46,
+          "end": 121.82,
+          "probability": 0.993
+        },
+        {
+          "word": " it",
+          "start": 122.12,
+          "end": 122.24,
+          "probability": 0.955
+        },
+        {
+          "word": " retrieves",
+          "start": 122.24,
+          "end": 122.84,
+          "probability": 0.942
+        },
+        {
+          "word": " pre",
+          "start": 122.84,
+          "end": 123.18,
+          "probability": 0.796
+        },
+        {
+          "word": "-peeled",
+          "start": 123.18,
+          "end": 123.64,
+          "probability": 0.84
+        },
+        {
+          "word": " bananas",
+          "start": 123.64,
+          "end": 124.04,
+          "probability": 0.971
+        },
+        {
+          "word": " from",
+          "start": 124.04,
+          "end": 124.32,
+          "probability": 0.996
+        },
+        {
+          "word": " its",
+          "start": 124.32,
+          "end": 124.5,
+          "probability": 0.933
+        },
+        {
+          "word": " cash.",
+          "start": 124.5,
+          "end": 124.78,
+          "probability": 0.752
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 125.28,
+      "end": 130.74,
+      "text": "This cash hit gets you a 90% discount, costing just 30 cents per million tokens.",
+      "words": [
+        {
+          "word": " This",
+          "start": 125.28,
+          "end": 125.56,
+          "probability": 0.986
+        },
+        {
+          "word": " cash",
+          "start": 125.56,
+          "end": 125.98,
+          "probability": 0.964
+        },
+        {
+          "word": " hit",
+          "start": 125.98,
+          "end": 126.12,
+          "probability": 0.934
+        },
+        {
+          "word": " gets",
+          "start": 126.12,
+          "end": 126.32,
+          "probability": 0.99
+        },
+        {
+          "word": " you",
+          "start": 126.32,
+          "end": 126.5,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 126.5,
+          "end": 126.62,
+          "probability": 0.948
+        },
+        {
+          "word": " 90",
+          "start": 126.62,
+          "end": 126.96,
+          "probability": 0.98
+        },
+        {
+          "word": "%",
+          "start": 126.96,
+          "end": 127.36,
+          "probability": 0.901
+        },
+        {
+          "word": " discount,",
+          "start": 127.36,
+          "end": 127.8,
+          "probability": 0.998
+        },
+        {
+          "word": " costing",
+          "start": 128.22,
+          "end": 128.52,
+          "probability": 0.996
+        },
+        {
+          "word": " just",
+          "start": 128.52,
+          "end": 128.76,
+          "probability": 0.974
+        },
+        {
+          "word": " 30",
+          "start": 128.76,
+          "end": 129.22,
+          "probability": 0.648
+        },
+        {
+          "word": " cents",
+          "start": 129.22,
+          "end": 129.66,
+          "probability": 0.986
+        },
+        {
+          "word": " per",
+          "start": 129.66,
+          "end": 129.88,
+          "probability": 0.977
+        },
+        {
+          "word": " million",
+          "start": 129.88,
+          "end": 130.26,
+          "probability": 0.984
+        },
+        {
+          "word": " tokens.",
+          "start": 130.26,
+          "end": 130.74,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 131.22,
+      "end": 133.2,
+      "text": "For new questions, it costs $3.",
+      "words": [
+        {
+          "word": " For",
+          "start": 131.22,
+          "end": 131.4,
+          "probability": 0.997
+        },
+        {
+          "word": " new",
+          "start": 131.4,
+          "end": 131.6,
+          "probability": 0.983
+        },
+        {
+          "word": " questions,",
+          "start": 131.6,
+          "end": 132.06,
+          "probability": 0.997
+        },
+        {
+          "word": " it",
+          "start": 132.3,
+          "end": 132.36,
+          "probability": 0.996
+        },
+        {
+          "word": " costs",
+          "start": 132.36,
+          "end": 132.6,
+          "probability": 0.991
+        },
+        {
+          "word": " $3.",
+          "start": 132.6,
+          "end": 133.2,
+          "probability": 0.852
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 134.06,
+      "end": 139.16,
+      "text": "QN3.8 Max is currently in preview, offering monthly subscription plans instead.",
+      "words": [
+        {
+          "word": " QN3",
+          "start": 134.06,
+          "end": 134.74,
+          "probability": 0.403
+        },
+        {
+          "word": ".8",
+          "start": 134.74,
+          "end": 135.14,
+          "probability": 0.998
+        },
+        {
+          "word": " Max",
+          "start": 135.14,
+          "end": 135.4,
+          "probability": 0.329
+        },
+        {
+          "word": " is",
+          "start": 135.4,
+          "end": 135.64,
+          "probability": 0.812
+        },
+        {
+          "word": " currently",
+          "start": 135.64,
+          "end": 136.02,
+          "probability": 0.999
+        },
+        {
+          "word": " in",
+          "start": 136.02,
+          "end": 136.24,
+          "probability": 0.997
+        },
+        {
+          "word": " preview,",
+          "start": 136.24,
+          "end": 136.62,
+          "probability": 0.941
+        },
+        {
+          "word": " offering",
+          "start": 137.0,
+          "end": 137.28,
+          "probability": 0.998
+        },
+        {
+          "word": " monthly",
+          "start": 137.28,
+          "end": 137.72,
+          "probability": 0.985
+        },
+        {
+          "word": " subscription",
+          "start": 137.72,
+          "end": 138.22,
+          "probability": 0.998
+        },
+        {
+          "word": " plans",
+          "start": 138.22,
+          "end": 138.66,
+          "probability": 0.997
+        },
+        {
+          "word": " instead.",
+          "start": 138.66,
+          "end": 139.16,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 139.16,
+      "end": 141.44,
+      "text": "So, which model wins the crown?",
+      "words": [
+        {
+          "word": " So,",
+          "start": 139.16,
+          "end": 139.94,
+          "probability": 0.726
+        },
+        {
+          "word": " which",
+          "start": 140.26,
+          "end": 140.44,
+          "probability": 0.982
+        },
+        {
+          "word": " model",
+          "start": 140.44,
+          "end": 140.76,
+          "probability": 0.986
+        },
+        {
+          "word": " wins",
+          "start": 140.76,
+          "end": 141.04,
+          "probability": 0.992
+        },
+        {
+          "word": " the",
+          "start": 141.04,
+          "end": 141.2,
+          "probability": 0.991
+        },
+        {
+          "word": " crown?",
+          "start": 141.2,
+          "end": 141.44,
+          "probability": 0.852
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 142.0,
+      "end": 147.4,
+      "text": "If you need long horizon coding or deep repository search, Kimi K3 is your champion.",
+      "words": [
+        {
+          "word": " If",
+          "start": 142.0,
+          "end": 142.16,
+          "probability": 0.99
+        },
+        {
+          "word": " you",
+          "start": 142.16,
+          "end": 142.28,
+          "probability": 0.998
+        },
+        {
+          "word": " need",
+          "start": 142.28,
+          "end": 142.48,
+          "probability": 0.998
+        },
+        {
+          "word": " long",
+          "start": 142.48,
+          "end": 142.8,
+          "probability": 0.816
+        },
+        {
+          "word": " horizon",
+          "start": 142.8,
+          "end": 143.26,
+          "probability": 0.914
+        },
+        {
+          "word": " coding",
+          "start": 143.26,
+          "end": 143.66,
+          "probability": 0.804
+        },
+        {
+          "word": " or",
+          "start": 143.66,
+          "end": 143.96,
+          "probability": 0.882
+        },
+        {
+          "word": " deep",
+          "start": 143.96,
+          "end": 144.24,
+          "probability": 0.95
+        },
+        {
+          "word": " repository",
+          "start": 144.24,
+          "end": 144.72,
+          "probability": 0.975
+        },
+        {
+          "word": " search,",
+          "start": 144.72,
+          "end": 145.44,
+          "probability": 0.957
+        },
+        {
+          "word": " Kimi",
+          "start": 145.82,
+          "end": 146.02,
+          "probability": 0.517
+        },
+        {
+          "word": " K3",
+          "start": 146.02,
+          "end": 146.54,
+          "probability": 0.842
+        },
+        {
+          "word": " is",
+          "start": 146.54,
+          "end": 146.84,
+          "probability": 0.99
+        },
+        {
+          "word": " your",
+          "start": 146.84,
+          "end": 146.96,
+          "probability": 0.997
+        },
+        {
+          "word": " champion.",
+          "start": 146.96,
+          "end": 147.4,
+          "probability": 0.958
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 147.9,
+      "end": 153.72,
+      "text": "If you need a multimodal agent to handle video and images, QN3.8 Max takes the lead.",
+      "words": [
+        {
+          "word": " If",
+          "start": 147.9,
+          "end": 148.04,
+          "probability": 0.994
+        },
+        {
+          "word": " you",
+          "start": 148.04,
+          "end": 148.14,
+          "probability": 0.998
+        },
+        {
+          "word": " need",
+          "start": 148.14,
+          "end": 148.28,
+          "probability": 0.998
+        },
+        {
+          "word": " a",
+          "start": 148.28,
+          "end": 148.42,
+          "probability": 0.985
+        },
+        {
+          "word": " multimodal",
+          "start": 148.42,
+          "end": 149.12,
+          "probability": 0.862
+        },
+        {
+          "word": " agent",
+          "start": 149.12,
+          "end": 149.5,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 149.5,
+          "end": 149.72,
+          "probability": 0.995
+        },
+        {
+          "word": " handle",
+          "start": 149.72,
+          "end": 149.96,
+          "probability": 0.998
+        },
+        {
+          "word": " video",
+          "start": 149.96,
+          "end": 150.34,
+          "probability": 0.992
+        },
+        {
+          "word": " and",
+          "start": 150.34,
+          "end": 150.62,
+          "probability": 0.992
+        },
+        {
+          "word": " images,",
+          "start": 150.62,
+          "end": 151.0,
+          "probability": 0.996
+        },
+        {
+          "word": " QN3",
+          "start": 151.52,
+          "end": 152.14,
+          "probability": 0.698
+        },
+        {
+          "word": ".8",
+          "start": 152.14,
+          "end": 152.6,
+          "probability": 0.997
+        },
+        {
+          "word": " Max",
+          "start": 152.6,
+          "end": 152.84,
+          "probability": 0.373
+        },
+        {
+          "word": " takes",
+          "start": 152.84,
+          "end": 153.24,
+          "probability": 0.98
+        },
+        {
+          "word": " the",
+          "start": 153.24,
+          "end": 153.46,
+          "probability": 0.992
+        },
+        {
+          "word": " lead.",
+          "start": 153.46,
+          "end": 153.72,
+          "probability": 1.0
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 154.24,
+      "end": 155.96,
+      "text": "Both models are changing the game.",
+      "words": [
+        {
+          "word": " Both",
+          "start": 154.24,
+          "end": 154.4,
+          "probability": 0.997
+        },
+        {
+          "word": " models",
+          "start": 154.4,
+          "end": 154.82,
+          "probability": 0.994
+        },
+        {
+          "word": " are",
+          "start": 154.82,
+          "end": 154.98,
+          "probability": 0.994
+        },
+        {
+          "word": " changing",
+          "start": 154.98,
+          "end": 155.44,
+          "probability": 0.994
+        },
+        {
+          "word": " the",
+          "start": 155.44,
+          "end": 155.66,
+          "probability": 0.996
+        },
+        {
+          "word": " game.",
+          "start": 155.66,
+          "end": 155.96,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 156.42,
+      "end": 157.56,
+      "text": "Which one will you try first?",
+      "words": [
+        {
+          "word": " Which",
+          "start": 156.42,
+          "end": 156.6,
+          "probability": 0.992
+        },
+        {
+          "word": " one",
+          "start": 156.6,
+          "end": 156.8,
+          "probability": 0.991
+        },
+        {
+          "word": " will",
+          "start": 156.8,
+          "end": 156.9,
+          "probability": 0.995
+        },
+        {
+          "word": " you",
+          "start": 156.9,
+          "end": 157.06,
+          "probability": 0.997
+        },
+        {
+          "word": " try",
+          "start": 157.06,
+          "end": 157.26,
+          "probability": 0.997
+        },
+        {
+          "word": " first?",
+          "start": 157.26,
+          "end": 157.56,
+          "probability": 0.997
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Imagine",
+      "start": 0.0,
+      "end": 0.64,
+      "probability": 0.95
+    },
+    {
+      "word": " walking",
+      "start": 0.64,
+      "end": 1.1,
+      "probability": 0.986
+    },
+    {
+      "word": " in",
+      "start": 1.1,
+      "end": 1.36,
+      "probability": 0.225
+    },
+    {
+      "word": " to",
+      "start": 1.36,
+      "end": 1.58,
+      "probability": 0.977
+    },
+    {
+      "word": " a",
+      "start": 1.58,
+      "end": 1.7,
+      "probability": 0.992
+    },
+    {
+      "word": " massive",
+      "start": 1.7,
+      "end": 2.2,
+      "probability": 0.926
+    },
+    {
+      "word": " jungle",
+      "start": 2.2,
+      "end": 2.66,
+      "probability": 0.854
+    },
+    {
+      "word": " research",
+      "start": 2.66,
+      "end": 3.12,
+      "probability": 0.982
+    },
+    {
+      "word": " lab.",
+      "start": 3.12,
+      "end": 3.56,
+      "probability": 0.997
+    },
+    {
+      "word": " You",
+      "start": 3.94,
+      "end": 4.08,
+      "probability": 0.995
+    },
+    {
+      "word": " want",
+      "start": 4.08,
+      "end": 4.26,
+      "probability": 0.845
+    },
+    {
+      "word": " to",
+      "start": 4.26,
+      "end": 4.36,
+      "probability": 0.992
+    },
+    {
+      "word": " translate",
+      "start": 4.36,
+      "end": 4.78,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 4.78,
+      "end": 4.92,
+      "probability": 0.997
+    },
+    {
+      "word": " text,",
+      "start": 4.92,
+      "end": 5.34,
+      "probability": 0.996
+    },
+    {
+      "word": " but",
+      "start": 5.48,
+      "end": 5.64,
+      "probability": 0.996
+    },
+    {
+      "word": " instead",
+      "start": 5.64,
+      "end": 6.0,
+      "probability": 0.991
+    },
+    {
+      "word": " of",
+      "start": 6.0,
+      "end": 6.2,
+      "probability": 0.993
+    },
+    {
+      "word": " one",
+      "start": 6.2,
+      "end": 6.46,
+      "probability": 0.964
+    },
+    {
+      "word": " giant",
+      "start": 6.46,
+      "end": 6.94,
+      "probability": 0.99
+    },
+    {
+      "word": " smart",
+      "start": 6.94,
+      "end": 7.42,
+      "probability": 0.877
+    },
+    {
+      "word": " monkey,",
+      "start": 7.42,
+      "end": 7.72,
+      "probability": 0.956
+    },
+    {
+      "word": " you",
+      "start": 8.26,
+      "end": 8.38,
+      "probability": 0.997
+    },
+    {
+      "word": " find",
+      "start": 8.38,
+      "end": 8.6,
+      "probability": 0.994
+    },
+    {
+      "word": " a",
+      "start": 8.6,
+      "end": 8.78,
+      "probability": 0.999
+    },
+    {
+      "word": " team",
+      "start": 8.78,
+      "end": 9.06,
+      "probability": 0.997
+    },
+    {
+      "word": " of",
+      "start": 9.06,
+      "end": 9.32,
+      "probability": 0.997
+    },
+    {
+      "word": " 896",
+      "start": 9.32,
+      "end": 10.8,
+      "probability": 0.923
+    },
+    {
+      "word": " specialized",
+      "start": 10.8,
+      "end": 11.6,
+      "probability": 0.978
+    },
+    {
+      "word": " monkey",
+      "start": 11.6,
+      "end": 12.18,
+      "probability": 0.954
+    },
+    {
+      "word": " scientists.",
+      "start": 12.18,
+      "end": 12.78,
+      "probability": 0.994
+    },
+    {
+      "word": " That",
+      "start": 13.42,
+      "end": 13.7,
+      "probability": 0.996
+    },
+    {
+      "word": " is",
+      "start": 13.7,
+      "end": 13.84,
+      "probability": 0.959
+    },
+    {
+      "word": " exactly",
+      "start": 13.84,
+      "end": 14.62,
+      "probability": 0.977
+    },
+    {
+      "word": " how",
+      "start": 14.62,
+      "end": 14.92,
+      "probability": 0.997
+    },
+    {
+      "word": " Kimi",
+      "start": 14.92,
+      "end": 15.4,
+      "probability": 0.553
+    },
+    {
+      "word": " K3",
+      "start": 15.4,
+      "end": 15.92,
+      "probability": 0.76
+    },
+    {
+      "word": " works.",
+      "start": 15.92,
+      "end": 16.34,
+      "probability": 0.991
+    },
+    {
+      "word": " It",
+      "start": 16.76,
+      "end": 16.96,
+      "probability": 0.997
+    },
+    {
+      "word": " is",
+      "start": 16.96,
+      "end": 17.04,
+      "probability": 0.982
+    },
+    {
+      "word": " a",
+      "start": 17.04,
+      "end": 17.16,
+      "probability": 0.995
+    },
+    {
+      "word": " massive",
+      "start": 17.16,
+      "end": 17.68,
+      "probability": 0.997
+    },
+    {
+      "word": " mixture",
+      "start": 17.68,
+      "end": 18.14,
+      "probability": 0.991
+    },
+    {
+      "word": " of",
+      "start": 18.14,
+      "end": 18.44,
+      "probability": 0.997
+    },
+    {
+      "word": " experts",
+      "start": 18.44,
+      "end": 18.84,
+      "probability": 0.972
+    },
+    {
+      "word": " model.",
+      "start": 18.84,
+      "end": 19.32,
+      "probability": 0.801
+    },
+    {
+      "word": " But",
+      "start": 19.8,
+      "end": 19.98,
+      "probability": 0.995
+    },
+    {
+      "word": " does",
+      "start": 19.98,
+      "end": 20.14,
+      "probability": 0.985
+    },
+    {
+      "word": " it",
+      "start": 20.14,
+      "end": 20.28,
+      "probability": 0.997
+    },
+    {
+      "word": " actually",
+      "start": 20.28,
+      "end": 20.74,
+      "probability": 0.996
+    },
+    {
+      "word": " beat",
+      "start": 20.74,
+      "end": 21.1,
+      "probability": 0.995
+    },
+    {
+      "word": " Ali",
+      "start": 21.1,
+      "end": 21.44,
+      "probability": 0.609
+    },
+    {
+      "word": " Baba's",
+      "start": 21.44,
+      "end": 21.9,
+      "probability": 0.848
+    },
+    {
+      "word": " brand",
+      "start": 21.9,
+      "end": 22.2,
+      "probability": 0.993
+    },
+    {
+      "word": " new",
+      "start": 22.2,
+      "end": 22.54,
+      "probability": 0.867
+    },
+    {
+      "word": " QN3",
+      "start": 22.54,
+      "end": 23.38,
+      "probability": 0.772
+    },
+    {
+      "word": ".8",
+      "start": 23.38,
+      "end": 23.84,
+      "probability": 0.994
+    },
+    {
+      "word": " Max?",
+      "start": 23.84,
+      "end": 24.06,
+      "probability": 0.638
+    },
+    {
+      "word": " Let",
+      "start": 24.76,
+      "end": 24.86,
+      "probability": 0.996
+    },
+    {
+      "word": " us",
+      "start": 24.86,
+      "end": 24.96,
+      "probability": 0.995
+    },
+    {
+      "word": " break",
+      "start": 24.96,
+      "end": 25.2,
+      "probability": 0.976
+    },
+    {
+      "word": " down",
+      "start": 25.2,
+      "end": 25.46,
+      "probability": 0.999
+    },
+    {
+      "word": " these",
+      "start": 25.46,
+      "end": 25.72,
+      "probability": 0.993
+    },
+    {
+      "word": " two",
+      "start": 25.72,
+      "end": 25.98,
+      "probability": 0.974
+    },
+    {
+      "word": " brand",
+      "start": 25.98,
+      "end": 26.34,
+      "probability": 0.996
+    },
+    {
+      "word": " new",
+      "start": 26.34,
+      "end": 26.62,
+      "probability": 0.885
+    },
+    {
+      "word": " Chinese",
+      "start": 26.62,
+      "end": 27.0,
+      "probability": 0.991
+    },
+    {
+      "word": " AI",
+      "start": 27.0,
+      "end": 27.36,
+      "probability": 0.901
+    },
+    {
+      "word": " giants",
+      "start": 27.36,
+      "end": 27.9,
+      "probability": 0.95
+    },
+    {
+      "word": " in",
+      "start": 27.9,
+      "end": 28.14,
+      "probability": 0.351
+    },
+    {
+      "word": " under",
+      "start": 28.14,
+      "end": 28.56,
+      "probability": 0.909
+    },
+    {
+      "word": " 3",
+      "start": 28.56,
+      "end": 29.0,
+      "probability": 0.517
+    },
+    {
+      "word": " minutes.",
+      "start": 29.0,
+      "end": 29.3,
+      "probability": 0.936
+    },
+    {
+      "word": " First,",
+      "start": 29.98,
+      "end": 30.34,
+      "probability": 0.936
+    },
+    {
+      "word": " let",
+      "start": 30.72,
+      "end": 30.82,
+      "probability": 0.979
+    },
+    {
+      "word": " us",
+      "start": 30.82,
+      "end": 30.96,
+      "probability": 0.794
+    },
+    {
+      "word": " look",
+      "start": 30.96,
+      "end": 31.16,
+      "probability": 0.993
+    },
+    {
+      "word": " at",
+      "start": 31.16,
+      "end": 31.26,
+      "probability": 0.986
+    },
+    {
+      "word": " their",
+      "start": 31.26,
+      "end": 31.4,
+      "probability": 0.985
+    },
+    {
+      "word": " size.",
+      "start": 31.4,
+      "end": 31.76,
+      "probability": 0.993
+    },
+    {
+      "word": " Kimi",
+      "start": 32.34,
+      "end": 32.64,
+      "probability": 0.531
+    },
+    {
+      "word": " K3",
+      "start": 32.64,
+      "end": 33.12,
+      "probability": 0.842
+    },
+    {
+      "word": " is",
+      "start": 33.12,
+      "end": 33.38,
+      "probability": 0.988
+    },
+    {
+      "word": " an",
+      "start": 33.38,
+      "end": 33.52,
+      "probability": 0.976
+    },
+    {
+      "word": " absolute",
+      "start": 33.52,
+      "end": 34.1,
+      "probability": 0.99
+    },
+    {
+      "word": " monster",
+      "start": 34.1,
+      "end": 34.8,
+      "probability": 0.981
+    },
+    {
+      "word": " with",
+      "start": 34.8,
+      "end": 35.1,
+      "probability": 0.971
+    },
+    {
+      "word": " 2",
+      "start": 35.1,
+      "end": 35.4,
+      "probability": 0.981
+    },
+    {
+      "word": ".8",
+      "start": 35.4,
+      "end": 35.9,
+      "probability": 0.996
+    },
+    {
+      "word": " trillion",
+      "start": 35.9,
+      "end": 36.58,
+      "probability": 0.951
+    },
+    {
+      "word": " parameters.",
+      "start": 36.58,
+      "end": 37.26,
+      "probability": 0.953
+    },
+    {
+      "word": " QN3",
+      "start": 37.86,
+      "end": 38.46,
+      "probability": 0.675
+    },
+    {
+      "word": ".8",
+      "start": 38.46,
+      "end": 38.88,
+      "probability": 0.996
+    },
+    {
+      "word": " Max",
+      "start": 38.88,
+      "end": 39.12,
+      "probability": 0.247
+    },
+    {
+      "word": " is",
+      "start": 39.12,
+      "end": 39.46,
+      "probability": 0.809
+    },
+    {
+      "word": " slightly",
+      "start": 39.46,
+      "end": 39.84,
+      "probability": 0.99
+    },
+    {
+      "word": " smaller",
+      "start": 39.84,
+      "end": 40.36,
+      "probability": 0.998
+    },
+    {
+      "word": " coming",
+      "start": 40.36,
+      "end": 40.7,
+      "probability": 0.527
+    },
+    {
+      "word": " in",
+      "start": 40.7,
+      "end": 40.9,
+      "probability": 0.993
+    },
+    {
+      "word": " at",
+      "start": 40.9,
+      "end": 41.0,
+      "probability": 0.967
+    },
+    {
+      "word": " 2",
+      "start": 41.0,
+      "end": 41.24,
+      "probability": 0.995
+    },
+    {
+      "word": ".4",
+      "start": 41.24,
+      "end": 41.76,
+      "probability": 0.997
+    },
+    {
+      "word": " trillion.",
+      "start": 41.76,
+      "end": 42.18,
+      "probability": 0.998
+    },
+    {
+      "word": " But",
+      "start": 42.6,
+      "end": 42.82,
+      "probability": 0.985
+    },
+    {
+      "word": " wait,",
+      "start": 42.82,
+      "end": 43.0,
+      "probability": 0.965
+    },
+    {
+      "word": " why",
+      "start": 43.3,
+      "end": 43.44,
+      "probability": 0.991
+    },
+    {
+      "word": " does",
+      "start": 43.44,
+      "end": 43.54,
+      "probability": 0.981
+    },
+    {
+      "word": " size",
+      "start": 43.54,
+      "end": 43.82,
+      "probability": 0.982
+    },
+    {
+      "word": " matter?",
+      "start": 43.82,
+      "end": 44.28,
+      "probability": 0.996
+    },
+    {
+      "word": " More",
+      "start": 44.78,
+      "end": 44.98,
+      "probability": 0.989
+    },
+    {
+      "word": " parameters",
+      "start": 44.98,
+      "end": 45.52,
+      "probability": 0.995
+    },
+    {
+      "word": " mean",
+      "start": 45.52,
+      "end": 45.84,
+      "probability": 0.998
+    },
+    {
+      "word": " the",
+      "start": 45.84,
+      "end": 46.02,
+      "probability": 0.977
+    },
+    {
+      "word": " model",
+      "start": 46.02,
+      "end": 46.32,
+      "probability": 0.991
+    },
+    {
+      "word": " can",
+      "start": 46.32,
+      "end": 46.54,
+      "probability": 0.998
+    },
+    {
+      "word": " store",
+      "start": 46.54,
+      "end": 46.8,
+      "probability": 0.973
+    },
+    {
+      "word": " more",
+      "start": 46.8,
+      "end": 47.1,
+      "probability": 0.998
+    },
+    {
+      "word": " knowledge",
+      "start": 47.1,
+      "end": 47.56,
+      "probability": 0.998
+    },
+    {
+      "word": " and",
+      "start": 47.56,
+      "end": 47.8,
+      "probability": 0.954
+    },
+    {
+      "word": " spot",
+      "start": 47.8,
+      "end": 48.06,
+      "probability": 0.992
+    },
+    {
+      "word": " deeper",
+      "start": 48.06,
+      "end": 48.48,
+      "probability": 0.998
+    },
+    {
+      "word": " patterns.",
+      "start": 48.48,
+      "end": 49.0,
+      "probability": 0.996
+    },
+    {
+      "word": " However,",
+      "start": 49.44,
+      "end": 49.76,
+      "probability": 0.997
+    },
+    {
+      "word": " running",
+      "start": 50.06,
+      "end": 50.22,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 50.22,
+      "end": 50.36,
+      "probability": 0.995
+    },
+    {
+      "word": " model",
+      "start": 50.36,
+      "end": 50.64,
+      "probability": 0.999
+    },
+    {
+      "word": " this",
+      "start": 50.64,
+      "end": 50.92,
+      "probability": 0.738
+    },
+    {
+      "word": " big",
+      "start": 50.92,
+      "end": 51.16,
+      "probability": 0.993
+    },
+    {
+      "word": " is",
+      "start": 51.16,
+      "end": 51.42,
+      "probability": 0.998
+    },
+    {
+      "word": " incredibly",
+      "start": 51.42,
+      "end": 52.12,
+      "probability": 0.996
+    },
+    {
+      "word": " expensive.",
+      "start": 52.12,
+      "end": 52.82,
+      "probability": 0.998
+    },
+    {
+      "word": " How",
+      "start": 53.2,
+      "end": 53.44,
+      "probability": 0.998
+    },
+    {
+      "word": " do",
+      "start": 53.44,
+      "end": 53.52,
+      "probability": 0.974
+    },
+    {
+      "word": " they",
+      "start": 53.52,
+      "end": 53.66,
+      "probability": 0.998
+    },
+    {
+      "word": " keep",
+      "start": 53.66,
+      "end": 53.86,
+      "probability": 0.998
+    },
+    {
+      "word": " it",
+      "start": 53.86,
+      "end": 54.0,
+      "probability": 0.998
+    },
+    {
+      "word": " fast",
+      "start": 54.0,
+      "end": 54.32,
+      "probability": 0.996
+    },
+    {
+      "word": " and",
+      "start": 54.32,
+      "end": 54.6,
+      "probability": 0.994
+    },
+    {
+      "word": " cheap?",
+      "start": 54.6,
+      "end": 54.88,
+      "probability": 0.999
+    },
+    {
+      "word": " They",
+      "start": 54.88,
+      "end": 55.52,
+      "probability": 0.435
+    },
+    {
+      "word": " use",
+      "start": 55.52,
+      "end": 55.72,
+      "probability": 0.976
+    },
+    {
+      "word": " a",
+      "start": 55.72,
+      "end": 55.86,
+      "probability": 0.994
+    },
+    {
+      "word": " trick",
+      "start": 55.86,
+      "end": 56.06,
+      "probability": 0.996
+    },
+    {
+      "word": " called",
+      "start": 56.06,
+      "end": 56.4,
+      "probability": 0.995
+    },
+    {
+      "word": " mixture",
+      "start": 56.4,
+      "end": 56.82,
+      "probability": 0.633
+    },
+    {
+      "word": " of",
+      "start": 56.82,
+      "end": 57.12,
+      "probability": 0.993
+    },
+    {
+      "word": " experts",
+      "start": 57.12,
+      "end": 57.56,
+      "probability": 0.951
+    },
+    {
+      "word": " or",
+      "start": 57.56,
+      "end": 57.96,
+      "probability": 0.569
+    },
+    {
+      "word": " MOE.",
+      "start": 57.96,
+      "end": 59.0,
+      "probability": 0.784
+    },
+    {
+      "word": " Think",
+      "start": 59.4,
+      "end": 59.66,
+      "probability": 0.976
+    },
+    {
+      "word": " of",
+      "start": 59.66,
+      "end": 59.8,
+      "probability": 0.983
+    },
+    {
+      "word": " it",
+      "start": 59.8,
+      "end": 59.86,
+      "probability": 0.998
+    },
+    {
+      "word": " like",
+      "start": 59.86,
+      "end": 60.02,
+      "probability": 0.997
+    },
+    {
+      "word": " this.",
+      "start": 60.02,
+      "end": 60.42,
+      "probability": 0.998
+    },
+    {
+      "word": " When",
+      "start": 60.72,
+      "end": 60.92,
+      "probability": 0.971
+    },
+    {
+      "word": " you",
+      "start": 60.92,
+      "end": 61.06,
+      "probability": 0.998
+    },
+    {
+      "word": " ask",
+      "start": 61.06,
+      "end": 61.44,
+      "probability": 0.996
+    },
+    {
+      "word": " Kimi",
+      "start": 61.44,
+      "end": 61.92,
+      "probability": 0.549
+    },
+    {
+      "word": " K3",
+      "start": 61.92,
+      "end": 62.42,
+      "probability": 0.845
+    },
+    {
+      "word": " a",
+      "start": 62.42,
+      "end": 62.64,
+      "probability": 0.962
+    },
+    {
+      "word": " question,",
+      "start": 62.64,
+      "end": 63.08,
+      "probability": 0.998
+    },
+    {
+      "word": " it",
+      "start": 63.32,
+      "end": 63.38,
+      "probability": 0.937
+    },
+    {
+      "word": " does",
+      "start": 63.38,
+      "end": 63.52,
+      "probability": 0.969
+    },
+    {
+      "word": " not",
+      "start": 63.52,
+      "end": 63.7,
+      "probability": 0.992
+    },
+    {
+      "word": " wake",
+      "start": 63.7,
+      "end": 63.94,
+      "probability": 0.995
+    },
+    {
+      "word": " up",
+      "start": 63.94,
+      "end": 64.22,
+      "probability": 0.997
+    },
+    {
+      "word": " all",
+      "start": 64.22,
+      "end": 64.56,
+      "probability": 0.965
+    },
+    {
+      "word": " 896",
+      "start": 64.56,
+      "end": 65.9,
+      "probability": 0.962
+    },
+    {
+      "word": " scientists.",
+      "start": 65.9,
+      "end": 66.58,
+      "probability": 0.985
+    },
+    {
+      "word": " It",
+      "start": 67.0,
+      "end": 67.16,
+      "probability": 0.994
+    },
+    {
+      "word": " only",
+      "start": 67.16,
+      "end": 67.48,
+      "probability": 0.995
+    },
+    {
+      "word": " activates",
+      "start": 67.48,
+      "end": 68.0,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 68.0,
+      "end": 68.28,
+      "probability": 0.997
+    },
+    {
+      "word": " 16",
+      "start": 68.28,
+      "end": 68.8,
+      "probability": 0.961
+    },
+    {
+      "word": " best",
+      "start": 68.8,
+      "end": 69.42,
+      "probability": 0.918
+    },
+    {
+      "word": " monkeys",
+      "start": 69.42,
+      "end": 69.76,
+      "probability": 0.968
+    },
+    {
+      "word": " for",
+      "start": 69.76,
+      "end": 70.1,
+      "probability": 0.996
+    },
+    {
+      "word": " your",
+      "start": 70.1,
+      "end": 70.32,
+      "probability": 0.989
+    },
+    {
+      "word": " specific",
+      "start": 70.32,
+      "end": 70.92,
+      "probability": 0.995
+    },
+    {
+      "word": " question.",
+      "start": 70.92,
+      "end": 71.46,
+      "probability": 0.997
+    },
+    {
+      "word": " That",
+      "start": 71.9,
+      "end": 72.02,
+      "probability": 0.989
+    },
+    {
+      "word": " keeps",
+      "start": 72.02,
+      "end": 72.24,
+      "probability": 0.995
+    },
+    {
+      "word": " it",
+      "start": 72.24,
+      "end": 72.44,
+      "probability": 0.998
+    },
+    {
+      "word": " fast",
+      "start": 72.44,
+      "end": 72.74,
+      "probability": 0.995
+    },
+    {
+      "word": " and",
+      "start": 72.74,
+      "end": 73.06,
+      "probability": 0.983
+    },
+    {
+      "word": " energy",
+      "start": 73.06,
+      "end": 73.46,
+      "probability": 0.999
+    },
+    {
+      "word": " efficient.",
+      "start": 73.46,
+      "end": 74.0,
+      "probability": 0.855
+    },
+    {
+      "word": " Plus,",
+      "start": 74.52,
+      "end": 74.82,
+      "probability": 0.981
+    },
+    {
+      "word": " moonshot",
+      "start": 75.12,
+      "end": 75.5,
+      "probability": 0.594
+    },
+    {
+      "word": " AI",
+      "start": 75.5,
+      "end": 75.78,
+      "probability": 0.908
+    },
+    {
+      "word": " introduced",
+      "start": 75.78,
+      "end": 76.36,
+      "probability": 0.984
+    },
+    {
+      "word": " two",
+      "start": 76.36,
+      "end": 76.86,
+      "probability": 0.939
+    },
+    {
+      "word": " secret",
+      "start": 76.86,
+      "end": 77.32,
+      "probability": 0.994
+    },
+    {
+      "word": " weapons",
+      "start": 77.32,
+      "end": 77.74,
+      "probability": 0.992
+    },
+    {
+      "word": " called",
+      "start": 77.74,
+      "end": 78.16,
+      "probability": 0.965
+    },
+    {
+      "word": " Kimi",
+      "start": 78.16,
+      "end": 78.64,
+      "probability": 0.718
+    },
+    {
+      "word": " Delta",
+      "start": 78.64,
+      "end": 79.0,
+      "probability": 0.739
+    },
+    {
+      "word": " Attention",
+      "start": 79.0,
+      "end": 79.56,
+      "probability": 0.583
+    },
+    {
+      "word": " and",
+      "start": 79.56,
+      "end": 80.08,
+      "probability": 0.911
+    },
+    {
+      "word": " Attention",
+      "start": 80.08,
+      "end": 80.52,
+      "probability": 0.928
+    },
+    {
+      "word": " Residuals.",
+      "start": 80.52,
+      "end": 81.38,
+      "probability": 0.88
+    },
+    {
+      "word": " These",
+      "start": 81.38,
+      "end": 81.92,
+      "probability": 0.944
+    },
+    {
+      "word": " tricks",
+      "start": 81.92,
+      "end": 82.24,
+      "probability": 0.988
+    },
+    {
+      "word": " make",
+      "start": 82.24,
+      "end": 82.5,
+      "probability": 0.98
+    },
+    {
+      "word": " Kimi",
+      "start": 82.5,
+      "end": 82.9,
+      "probability": 0.47
+    },
+    {
+      "word": " K3",
+      "start": 82.9,
+      "end": 83.42,
+      "probability": 0.904
+    },
+    {
+      "word": " 2",
+      "start": 83.42,
+      "end": 83.84,
+      "probability": 0.938
+    },
+    {
+      "word": ".5",
+      "start": 83.84,
+      "end": 84.4,
+      "probability": 0.996
+    },
+    {
+      "word": " times",
+      "start": 84.4,
+      "end": 84.82,
+      "probability": 0.797
+    },
+    {
+      "word": " more",
+      "start": 84.82,
+      "end": 85.16,
+      "probability": 0.996
+    },
+    {
+      "word": " efficient",
+      "start": 85.16,
+      "end": 85.7,
+      "probability": 0.996
+    },
+    {
+      "word": " at",
+      "start": 85.7,
+      "end": 85.92,
+      "probability": 0.997
+    },
+    {
+      "word": " moving",
+      "start": 85.92,
+      "end": 86.2,
+      "probability": 0.997
+    },
+    {
+      "word": " information",
+      "start": 86.2,
+      "end": 86.86,
+      "probability": 0.998
+    },
+    {
+      "word": " than",
+      "start": 86.86,
+      "end": 87.02,
+      "probability": 0.975
+    },
+    {
+      "word": " before.",
+      "start": 87.02,
+      "end": 87.44,
+      "probability": 0.999
+    },
+    {
+      "word": " Isn't",
+      "start": 87.82,
+      "end": 88.18,
+      "probability": 0.993
+    },
+    {
+      "word": " that",
+      "start": 88.18,
+      "end": 88.32,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 88.32,
+      "end": 88.44,
+      "probability": 0.998
+    },
+    {
+      "word": " massive",
+      "start": 88.44,
+      "end": 88.92,
+      "probability": 0.944
+    },
+    {
+      "word": " leap?",
+      "start": 88.92,
+      "end": 89.22,
+      "probability": 0.998
+    },
+    {
+      "word": " What",
+      "start": 89.96,
+      "end": 90.08,
+      "probability": 0.987
+    },
+    {
+      "word": " about",
+      "start": 90.08,
+      "end": 90.32,
+      "probability": 0.999
+    },
+    {
+      "word": " Ali",
+      "start": 90.32,
+      "end": 90.58,
+      "probability": 0.331
+    },
+    {
+      "word": " Baba's",
+      "start": 90.58,
+      "end": 91.06,
+      "probability": 0.767
+    },
+    {
+      "word": " QN3",
+      "start": 91.06,
+      "end": 91.76,
+      "probability": 0.736
+    },
+    {
+      "word": ".8",
+      "start": 91.76,
+      "end": 92.2,
+      "probability": 0.996
+    },
+    {
+      "word": " Max?",
+      "start": 92.2,
+      "end": 92.42,
+      "probability": 0.487
+    },
+    {
+      "word": " Ali",
+      "start": 93.18,
+      "end": 93.34,
+      "probability": 0.964
+    },
+    {
+      "word": " Baba",
+      "start": 93.34,
+      "end": 93.6,
+      "probability": 0.994
+    },
+    {
+      "word": " hasn't",
+      "start": 93.6,
+      "end": 94.02,
+      "probability": 0.995
+    },
+    {
+      "word": " shared",
+      "start": 94.02,
+      "end": 94.32,
+      "probability": 0.997
+    },
+    {
+      "word": " its",
+      "start": 94.32,
+      "end": 94.52,
+      "probability": 0.952
+    },
+    {
+      "word": " exact",
+      "start": 94.52,
+      "end": 94.94,
+      "probability": 0.988
+    },
+    {
+      "word": " expert",
+      "start": 94.94,
+      "end": 95.42,
+      "probability": 0.942
+    },
+    {
+      "word": " count.",
+      "start": 95.42,
+      "end": 95.76,
+      "probability": 0.979
+    },
+    {
+      "word": " But",
+      "start": 96.08,
+      "end": 96.18,
+      "probability": 0.979
+    },
+    {
+      "word": " they",
+      "start": 96.18,
+      "end": 96.3,
+      "probability": 0.985
+    },
+    {
+      "word": " claim",
+      "start": 96.3,
+      "end": 96.62,
+      "probability": 0.991
+    },
+    {
+      "word": " it's",
+      "start": 96.62,
+      "end": 96.86,
+      "probability": 0.975
+    },
+    {
+      "word": " a",
+      "start": 96.86,
+      "end": 96.94,
+      "probability": 0.997
+    },
+    {
+      "word": " multimodal",
+      "start": 96.94,
+      "end": 97.76,
+      "probability": 0.93
+    },
+    {
+      "word": " beast",
+      "start": 97.76,
+      "end": 98.1,
+      "probability": 0.987
+    },
+    {
+      "word": " that",
+      "start": 98.1,
+      "end": 98.48,
+      "probability": 0.988
+    },
+    {
+      "word": " handles",
+      "start": 98.48,
+      "end": 98.76,
+      "probability": 0.997
+    },
+    {
+      "word": " text,",
+      "start": 98.76,
+      "end": 99.08,
+      "probability": 0.988
+    },
+    {
+      "word": " images,",
+      "start": 99.56,
+      "end": 99.9,
+      "probability": 0.998
+    },
+    {
+      "word": " video",
+      "start": 100.4,
+      "end": 100.68,
+      "probability": 0.993
+    },
+    {
+      "word": " and",
+      "start": 100.68,
+      "end": 101.14,
+      "probability": 0.271
+    },
+    {
+      "word": " documents",
+      "start": 101.14,
+      "end": 101.66,
+      "probability": 0.994
+    },
+    {
+      "word": " easily.",
+      "start": 101.66,
+      "end": 102.28,
+      "probability": 0.994
+    },
+    {
+      "word": " In",
+      "start": 102.84,
+      "end": 102.92,
+      "probability": 0.993
+    },
+    {
+      "word": " early",
+      "start": 102.92,
+      "end": 103.2,
+      "probability": 0.981
+    },
+    {
+      "word": " testing,",
+      "start": 103.2,
+      "end": 103.64,
+      "probability": 0.996
+    },
+    {
+      "word": " Ali",
+      "start": 103.96,
+      "end": 104.0,
+      "probability": 0.986
+    },
+    {
+      "word": " Baba",
+      "start": 104.0,
+      "end": 104.24,
+      "probability": 0.999
+    },
+    {
+      "word": " ranks",
+      "start": 104.24,
+      "end": 104.58,
+      "probability": 0.989
+    },
+    {
+      "word": " its",
+      "start": 104.58,
+      "end": 104.78,
+      "probability": 0.849
+    },
+    {
+      "word": " second",
+      "start": 104.78,
+      "end": 105.16,
+      "probability": 0.98
+    },
+    {
+      "word": " only",
+      "start": 105.16,
+      "end": 105.58,
+      "probability": 0.95
+    },
+    {
+      "word": " to",
+      "start": 105.58,
+      "end": 105.74,
+      "probability": 0.999
+    },
+    {
+      "word": " clawed",
+      "start": 105.74,
+      "end": 106.16,
+      "probability": 0.717
+    },
+    {
+      "word": " 5",
+      "start": 106.16,
+      "end": 106.44,
+      "probability": 0.595
+    },
+    {
+      "word": " Fable.",
+      "start": 106.44,
+      "end": 106.9,
+      "probability": 0.588
+    },
+    {
+      "word": " Both",
+      "start": 107.36,
+      "end": 107.64,
+      "probability": 0.997
+    },
+    {
+      "word": " models",
+      "start": 107.64,
+      "end": 108.04,
+      "probability": 0.994
+    },
+    {
+      "word": " have",
+      "start": 108.04,
+      "end": 108.2,
+      "probability": 0.999
+    },
+    {
+      "word": " a",
+      "start": 108.2,
+      "end": 108.34,
+      "probability": 0.996
+    },
+    {
+      "word": " massive",
+      "start": 108.34,
+      "end": 108.74,
+      "probability": 0.985
+    },
+    {
+      "word": " 1",
+      "start": 108.74,
+      "end": 109.18,
+      "probability": 0.895
+    },
+    {
+      "word": " million",
+      "start": 109.18,
+      "end": 109.48,
+      "probability": 0.844
+    },
+    {
+      "word": " token",
+      "start": 109.48,
+      "end": 109.9,
+      "probability": 0.949
+    },
+    {
+      "word": " context",
+      "start": 109.9,
+      "end": 110.4,
+      "probability": 0.849
+    },
+    {
+      "word": " window.",
+      "start": 110.4,
+      "end": 110.88,
+      "probability": 0.998
+    },
+    {
+      "word": " That's",
+      "start": 110.88,
+      "end": 111.66,
+      "probability": 0.687
+    },
+    {
+      "word": " like",
+      "start": 111.66,
+      "end": 111.78,
+      "probability": 0.981
+    },
+    {
+      "word": " handing",
+      "start": 111.78,
+      "end": 112.04,
+      "probability": 0.99
+    },
+    {
+      "word": " them",
+      "start": 112.04,
+      "end": 112.24,
+      "probability": 0.986
+    },
+    {
+      "word": " a",
+      "start": 112.24,
+      "end": 112.4,
+      "probability": 0.555
+    },
+    {
+      "word": " thousand",
+      "start": 112.4,
+      "end": 112.86,
+      "probability": 0.771
+    },
+    {
+      "word": "-page",
+      "start": 112.86,
+      "end": 113.2,
+      "probability": 0.825
+    },
+    {
+      "word": " book",
+      "start": 113.2,
+      "end": 113.56,
+      "probability": 0.996
+    },
+    {
+      "word": " to",
+      "start": 113.56,
+      "end": 113.84,
+      "probability": 0.987
+    },
+    {
+      "word": " read",
+      "start": 113.84,
+      "end": 114.08,
+      "probability": 0.944
+    },
+    {
+      "word": " in",
+      "start": 114.08,
+      "end": 114.32,
+      "probability": 0.994
+    },
+    {
+      "word": " one",
+      "start": 114.32,
+      "end": 114.56,
+      "probability": 0.928
+    },
+    {
+      "word": " second.",
+      "start": 114.56,
+      "end": 115.04,
+      "probability": 0.991
+    },
+    {
+      "word": " But",
+      "start": 115.54,
+      "end": 115.62,
+      "probability": 0.97
+    },
+    {
+      "word": " Kimi",
+      "start": 115.62,
+      "end": 116.02,
+      "probability": 0.495
+    },
+    {
+      "word": " K3",
+      "start": 116.02,
+      "end": 116.5,
+      "probability": 0.872
+    },
+    {
+      "word": " has",
+      "start": 116.5,
+      "end": 116.82,
+      "probability": 0.99
+    },
+    {
+      "word": " an",
+      "start": 116.82,
+      "end": 116.96,
+      "probability": 0.993
+    },
+    {
+      "word": " insane",
+      "start": 116.96,
+      "end": 117.4,
+      "probability": 0.972
+    },
+    {
+      "word": " pricing",
+      "start": 117.4,
+      "end": 117.92,
+      "probability": 0.985
+    },
+    {
+      "word": " advantage.",
+      "start": 117.92,
+      "end": 118.42,
+      "probability": 0.995
+    },
+    {
+      "word": " If",
+      "start": 118.78,
+      "end": 119.0,
+      "probability": 0.993
+    },
+    {
+      "word": " you",
+      "start": 119.0,
+      "end": 119.1,
+      "probability": 0.999
+    },
+    {
+      "word": " ask",
+      "start": 119.1,
+      "end": 119.46,
+      "probability": 0.983
+    },
+    {
+      "word": " it",
+      "start": 119.46,
+      "end": 119.6,
+      "probability": 0.822
+    },
+    {
+      "word": " a",
+      "start": 119.6,
+      "end": 119.68,
+      "probability": 0.993
+    },
+    {
+      "word": " question",
+      "start": 119.68,
+      "end": 120.06,
+      "probability": 0.998
+    },
+    {
+      "word": " about",
+      "start": 120.06,
+      "end": 120.34,
+      "probability": 0.992
+    },
+    {
+      "word": " a",
+      "start": 120.34,
+      "end": 120.48,
+      "probability": 0.994
+    },
+    {
+      "word": " document",
+      "start": 120.48,
+      "end": 120.94,
+      "probability": 0.997
+    },
+    {
+      "word": " it",
+      "start": 120.94,
+      "end": 121.1,
+      "probability": 0.827
+    },
+    {
+      "word": " already",
+      "start": 121.1,
+      "end": 121.46,
+      "probability": 0.99
+    },
+    {
+      "word": " read,",
+      "start": 121.46,
+      "end": 121.82,
+      "probability": 0.993
+    },
+    {
+      "word": " it",
+      "start": 122.12,
+      "end": 122.24,
+      "probability": 0.955
+    },
+    {
+      "word": " retrieves",
+      "start": 122.24,
+      "end": 122.84,
+      "probability": 0.942
+    },
+    {
+      "word": " pre",
+      "start": 122.84,
+      "end": 123.18,
+      "probability": 0.796
+    },
+    {
+      "word": "-peeled",
+      "start": 123.18,
+      "end": 123.64,
+      "probability": 0.84
+    },
+    {
+      "word": " bananas",
+      "start": 123.64,
+      "end": 124.04,
+      "probability": 0.971
+    },
+    {
+      "word": " from",
+      "start": 124.04,
+      "end": 124.32,
+      "probability": 0.996
+    },
+    {
+      "word": " its",
+      "start": 124.32,
+      "end": 124.5,
+      "probability": 0.933
+    },
+    {
+      "word": " cash.",
+      "start": 124.5,
+      "end": 124.78,
+      "probability": 0.752
+    },
+    {
+      "word": " This",
+      "start": 125.28,
+      "end": 125.56,
+      "probability": 0.986
+    },
+    {
+      "word": " cash",
+      "start": 125.56,
+      "end": 125.98,
+      "probability": 0.964
+    },
+    {
+      "word": " hit",
+      "start": 125.98,
+      "end": 126.12,
+      "probability": 0.934
+    },
+    {
+      "word": " gets",
+      "start": 126.12,
+      "end": 126.32,
+      "probability": 0.99
+    },
+    {
+      "word": " you",
+      "start": 126.32,
+      "end": 126.5,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 126.5,
+      "end": 126.62,
+      "probability": 0.948
+    },
+    {
+      "word": " 90",
+      "start": 126.62,
+      "end": 126.96,
+      "probability": 0.98
+    },
+    {
+      "word": "%",
+      "start": 126.96,
+      "end": 127.36,
+      "probability": 0.901
+    },
+    {
+      "word": " discount,",
+      "start": 127.36,
+      "end": 127.8,
+      "probability": 0.998
+    },
+    {
+      "word": " costing",
+      "start": 128.22,
+      "end": 128.52,
+      "probability": 0.996
+    },
+    {
+      "word": " just",
+      "start": 128.52,
+      "end": 128.76,
+      "probability": 0.974
+    },
+    {
+      "word": " 30",
+      "start": 128.76,
+      "end": 129.22,
+      "probability": 0.648
+    },
+    {
+      "word": " cents",
+      "start": 129.22,
+      "end": 129.66,
+      "probability": 0.986
+    },
+    {
+      "word": " per",
+      "start": 129.66,
+      "end": 129.88,
+      "probability": 0.977
+    },
+    {
+      "word": " million",
+      "start": 129.88,
+      "end": 130.26,
+      "probability": 0.984
+    },
+    {
+      "word": " tokens.",
+      "start": 130.26,
+      "end": 130.74,
+      "probability": 0.997
+    },
+    {
+      "word": " For",
+      "start": 131.22,
+      "end": 131.4,
+      "probability": 0.997
+    },
+    {
+      "word": " new",
+      "start": 131.4,
+      "end": 131.6,
+      "probability": 0.983
+    },
+    {
+      "word": " questions,",
+      "start": 131.6,
+      "end": 132.06,
+      "probability": 0.997
+    },
+    {
+      "word": " it",
+      "start": 132.3,
+      "end": 132.36,
+      "probability": 0.996
+    },
+    {
+      "word": " costs",
+      "start": 132.36,
+      "end": 132.6,
+      "probability": 0.991
+    },
+    {
+      "word": " $3.",
+      "start": 132.6,
+      "end": 133.2,
+      "probability": 0.852
+    },
+    {
+      "word": " QN3",
+      "start": 134.06,
+      "end": 134.74,
+      "probability": 0.403
+    },
+    {
+      "word": ".8",
+      "start": 134.74,
+      "end": 135.14,
+      "probability": 0.998
+    },
+    {
+      "word": " Max",
+      "start": 135.14,
+      "end": 135.4,
+      "probability": 0.329
+    },
+    {
+      "word": " is",
+      "start": 135.4,
+      "end": 135.64,
+      "probability": 0.812
+    },
+    {
+      "word": " currently",
+      "start": 135.64,
+      "end": 136.02,
+      "probability": 0.999
+    },
+    {
+      "word": " in",
+      "start": 136.02,
+      "end": 136.24,
+      "probability": 0.997
+    },
+    {
+      "word": " preview,",
+      "start": 136.24,
+      "end": 136.62,
+      "probability": 0.941
+    },
+    {
+      "word": " offering",
+      "start": 137.0,
+      "end": 137.28,
+      "probability": 0.998
+    },
+    {
+      "word": " monthly",
+      "start": 137.28,
+      "end": 137.72,
+      "probability": 0.985
+    },
+    {
+      "word": " subscription",
+      "start": 137.72,
+      "end": 138.22,
+      "probability": 0.998
+    },
+    {
+      "word": " plans",
+      "start": 138.22,
+      "end": 138.66,
+      "probability": 0.997
+    },
+    {
+      "word": " instead.",
+      "start": 138.66,
+      "end": 139.16,
+      "probability": 0.991
+    },
+    {
+      "word": " So,",
+      "start": 139.16,
+      "end": 139.94,
+      "probability": 0.726
+    },
+    {
+      "word": " which",
+      "start": 140.26,
+      "end": 140.44,
+      "probability": 0.982
+    },
+    {
+      "word": " model",
+      "start": 140.44,
+      "end": 140.76,
+      "probability": 0.986
+    },
+    {
+      "word": " wins",
+      "start": 140.76,
+      "end": 141.04,
+      "probability": 0.992
+    },
+    {
+      "word": " the",
+      "start": 141.04,
+      "end": 141.2,
+      "probability": 0.991
+    },
+    {
+      "word": " crown?",
+      "start": 141.2,
+      "end": 141.44,
+      "probability": 0.852
+    },
+    {
+      "word": " If",
+      "start": 142.0,
+      "end": 142.16,
+      "probability": 0.99
+    },
+    {
+      "word": " you",
+      "start": 142.16,
+      "end": 142.28,
+      "probability": 0.998
+    },
+    {
+      "word": " need",
+      "start": 142.28,
+      "end": 142.48,
+      "probability": 0.998
+    },
+    {
+      "word": " long",
+      "start": 142.48,
+      "end": 142.8,
+      "probability": 0.816
+    },
+    {
+      "word": " horizon",
+      "start": 142.8,
+      "end": 143.26,
+      "probability": 0.914
+    },
+    {
+      "word": " coding",
+      "start": 143.26,
+      "end": 143.66,
+      "probability": 0.804
+    },
+    {
+      "word": " or",
+      "start": 143.66,
+      "end": 143.96,
+      "probability": 0.882
+    },
+    {
+      "word": " deep",
+      "start": 143.96,
+      "end": 144.24,
+      "probability": 0.95
+    },
+    {
+      "word": " repository",
+      "start": 144.24,
+      "end": 144.72,
+      "probability": 0.975
+    },
+    {
+      "word": " search,",
+      "start": 144.72,
+      "end": 145.44,
+      "probability": 0.957
+    },
+    {
+      "word": " Kimi",
+      "start": 145.82,
+      "end": 146.02,
+      "probability": 0.517
+    },
+    {
+      "word": " K3",
+      "start": 146.02,
+      "end": 146.54,
+      "probability": 0.842
+    },
+    {
+      "word": " is",
+      "start": 146.54,
+      "end": 146.84,
+      "probability": 0.99
+    },
+    {
+      "word": " your",
+      "start": 146.84,
+      "end": 146.96,
+      "probability": 0.997
+    },
+    {
+      "word": " champion.",
+      "start": 146.96,
+      "end": 147.4,
+      "probability": 0.958
+    },
+    {
+      "word": " If",
+      "start": 147.9,
+      "end": 148.04,
+      "probability": 0.994
+    },
+    {
+      "word": " you",
+      "start": 148.04,
+      "end": 148.14,
+      "probability": 0.998
+    },
+    {
+      "word": " need",
+      "start": 148.14,
+      "end": 148.28,
+      "probability": 0.998
+    },
+    {
+      "word": " a",
+      "start": 148.28,
+      "end": 148.42,
+      "probability": 0.985
+    },
+    {
+      "word": " multimodal",
+      "start": 148.42,
+      "end": 149.12,
+      "probability": 0.862
+    },
+    {
+      "word": " agent",
+      "start": 149.12,
+      "end": 149.5,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 149.5,
+      "end": 149.72,
+      "probability": 0.995
+    },
+    {
+      "word": " handle",
+      "start": 149.72,
+      "end": 149.96,
+      "probability": 0.998
+    },
+    {
+      "word": " video",
+      "start": 149.96,
+      "end": 150.34,
+      "probability": 0.992
+    },
+    {
+      "word": " and",
+      "start": 150.34,
+      "end": 150.62,
+      "probability": 0.992
+    },
+    {
+      "word": " images,",
+      "start": 150.62,
+      "end": 151.0,
+      "probability": 0.996
+    },
+    {
+      "word": " QN3",
+      "start": 151.52,
+      "end": 152.14,
+      "probability": 0.698
+    },
+    {
+      "word": ".8",
+      "start": 152.14,
+      "end": 152.6,
+      "probability": 0.997
+    },
+    {
+      "word": " Max",
+      "start": 152.6,
+      "end": 152.84,
+      "probability": 0.373
+    },
+    {
+      "word": " takes",
+      "start": 152.84,
+      "end": 153.24,
+      "probability": 0.98
+    },
+    {
+      "word": " the",
+      "start": 153.24,
+      "end": 153.46,
+      "probability": 0.992
+    },
+    {
+      "word": " lead.",
+      "start": 153.46,
+      "end": 153.72,
+      "probability": 1.0
+    },
+    {
+      "word": " Both",
+      "start": 154.24,
+      "end": 154.4,
+      "probability": 0.997
+    },
+    {
+      "word": " models",
+      "start": 154.4,
+      "end": 154.82,
+      "probability": 0.994
+    },
+    {
+      "word": " are",
+      "start": 154.82,
+      "end": 154.98,
+      "probability": 0.994
+    },
+    {
+      "word": " changing",
+      "start": 154.98,
+      "end": 155.44,
+      "probability": 0.994
+    },
+    {
+      "word": " the",
+      "start": 155.44,
+      "end": 155.66,
+      "probability": 0.996
+    },
+    {
+      "word": " game.",
+      "start": 155.66,
+      "end": 155.96,
+      "probability": 0.998
+    },
+    {
+      "word": " Which",
+      "start": 156.42,
+      "end": 156.6,
+      "probability": 0.992
+    },
+    {
+      "word": " one",
+      "start": 156.6,
+      "end": 156.8,
+      "probability": 0.991
+    },
+    {
+      "word": " will",
+      "start": 156.8,
+      "end": 156.9,
+      "probability": 0.995
+    },
+    {
+      "word": " you",
+      "start": 156.9,
+      "end": 157.06,
+      "probability": 0.997
+    },
+    {
+      "word": " try",
+      "start": 157.06,
+      "end": 157.26,
+      "probability": 0.997
+    },
+    {
+      "word": " first?",
+      "start": 157.26,
+      "end": 157.56,
+      "probability": 0.997
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 157.971,
+  "model_size": "base",
+  "device": "cpu"
+}

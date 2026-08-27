@@ -39,10 +39,16 @@ def get_youtube_service():
         creds = Credentials.from_authorized_user_file(str(TOKEN_FILE), SCOPES)
 
     if not creds or not creds.valid:
+        refreshed = False
         if creds and creds.expired and creds.refresh_token:
-            print("Refreshing expired upload token...", flush=True)
-            creds.refresh(Request())
-        else:
+            try:
+                print("Refreshing expired upload token...", flush=True)
+                creds.refresh(Request())
+                refreshed = True
+            except Exception as e:
+                print(f"Token refresh failed ({e}), re-authenticating...", flush=True)
+
+        if not refreshed:
             if not CLIENT_SECRETS_FILE.exists():
                 raise FileNotFoundError(
                     f"Missing '{CLIENT_SECRETS_FILE.name}'!\n"

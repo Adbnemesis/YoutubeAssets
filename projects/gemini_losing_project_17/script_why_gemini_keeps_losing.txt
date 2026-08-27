@@ -1,0 +1,67 @@
+[excited] big Google monkey build shiny blue AI box!
+[excited] call it Gemini!
+[normal] google monkey say:
+[excited] Gemini best AI in jungle!
+[excited] beat ChatGPT on paper benchmarks!
+[excited] beat Claude on context window size!
+[normal] but when monkey coders use Gemini in real jungle...
+[sad] monkey cry...
+[sad] Gemini lose again!
+[normal] why Google AI with two trillion dollar jungle money...
+[whisper] keep losing to small purple AI monkey Claude?
+[normal] let monkey explain real computer science!
+
+[normal] reason one is MoE Expert Routing vs Dense Attention.
+[normal] Gemini use Mixture of Experts architecture.
+[normal] Gemini is like a huge jungle office with many specialist monkeys.
+[normal] monkey desk A know Python code.
+[normal] monkey desk B know English grammar.
+[normal] monkey desk C know safety rules.
+[normal] when you ask big coding question...
+[normal] router monkey send your request across different desks.
+[normal] but router monkey sometimes send code task to wrong desk!
+[normal] if routing miss the optimal path...
+[sad] Gemini give shallow answer...
+[sad] or forget half of your instruction!
+[dramatic] computer monkeys call this...
+[dramatic] Expert Routing Breakdown!
+[normal] while Claude use Dense Transformer Attention.
+[happy] every single neuron process your code together at the exact same time!
+
+[normal] reason two is Post-Training Alignment and Reward Models.
+[normal] Google train Gemini with RLHF for fast search engine answers.
+[normal] Gemini want answer quick so user click more links!
+[normal] Anthropic train Claude with Constitutional AI and direct preference optimization.
+[normal] Claude train to be quiet thoughtful coding monkey.
+[normal] Claude think step by step before touching any banana.
+[normal] so when coding project get complex...
+[sad] Gemini get lazy...
+[sad] skip middle lines of code...
+[sad] write comment "todo insert code here"...
+[angry] monkey furious!
+[happy] while Claude write full clean code without lazy shortcut!
+
+[normal] reason three is Needle In A Haystack and Context Drift.
+[normal] Google brag Gemini have two million token context window!
+[normal] monkey drop giant code repository inside Gemini.
+[normal] Gemini say "monkey I see everything!"
+[normal] but when monkey ask specific bug location on line four hundred...
+[dramatic] Gemini miss needle in haystack!
+[normal] large context window is not equal to high attention retrieval!
+[sad] Gemini hallucinate wrong function name!
+[happy] Claude have smaller context...
+[happy] but Claude attention mechanism retain precise long-range logic!
+
+[normal] reason four is Benchmark Overfitting vs Real World Execution.
+[normal] Gemini win static HumanEval test on paper benchmark chart...
+[normal] because test questions are predictable!
+[sad] but in messy real-world production codebase...
+[sad] Gemini fail real jungle coding fight!
+
+[normal] will Gemini stay losing?
+[normal] Google updating Gemini brain with deeper reasoning search tree.
+[normal] but for now...
+[happy] if monkey want massive multi-file document summary, ask Gemini!
+[happy] if monkey want working code without bug insect, ask Claude!
+[normal] sometimes tech get really bananas!
+[happy] please subscribe for more monkey tech explainer!

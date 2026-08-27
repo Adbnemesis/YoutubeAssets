@@ -1,0 +1,2722 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#F5820D",
+    "accentColor": "#2D5FBF",
+    "surfaceColor": "#F9FAFB",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040",
+      "#8B5CF6"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "Imagine walking into a massive jungle research lab.",
+      "in_seconds": 0.0,
+      "out_seconds": 3.56,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "You want to translate a text, but instead of one giant smart monkey, you find a team of eight hundred and ninety-six specialized monkey scientists.",
+      "in_seconds": 3.94,
+      "out_seconds": 12.78,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-03]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_2",
+      "text": "That is exactly how Kimi K3 works.",
+      "in_seconds": 13.42,
+      "out_seconds": 16.34,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-13]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_3",
+      "text": "It is a massive Mixture-of-Experts model.",
+      "in_seconds": 16.76,
+      "out_seconds": 19.32,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "But does it actually beat Alibaba's brand new Qwen 3.8 Max?",
+      "in_seconds": 19.8,
+      "out_seconds": 24.06,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-19]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.3,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_5",
+      "text": "Let us break down these two brand new Chinese AI giants in under three minutes.",
+      "in_seconds": 24.76,
+      "out_seconds": 29.3,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/clock-ticking.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "First, let us look at their size.",
+      "in_seconds": 29.98,
+      "out_seconds": 31.76,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-29]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_7",
+      "text": "Kimi K3 is an absolute monster with two point eight trillion parameters.",
+      "in_seconds": 32.34,
+      "out_seconds": 37.26,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-32]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "Qwen 3.8 Max is slightly smaller, coming in at two point four trillion.",
+      "in_seconds": 37.86,
+      "out_seconds": 42.18,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "But wait, why does size matter?",
+      "in_seconds": 42.6,
+      "out_seconds": 44.28,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-42]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "More parameters mean the model can store more knowledge and spot deeper patterns.",
+      "in_seconds": 44.78,
+      "out_seconds": 49.0,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns"
+    },
+    {
+      "id": "scene_11",
+      "text": "However, running a model this big is incredibly expensive.",
+      "in_seconds": 49.44,
+      "out_seconds": 52.82,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-49]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "How do they keep it fast and cheap?",
+      "in_seconds": 53.2,
+      "out_seconds": 54.88,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_13",
+      "text": "They use a trick called Mixture-of-Experts, or MoE.",
+      "in_seconds": 54.88,
+      "out_seconds": 59.0,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-54]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "Think of it like this.",
+      "in_seconds": 59.4,
+      "out_seconds": 60.42,
+      "source": "projects/qwen_vs_kimi_project_12/images/[00-59]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_15",
+      "text": "When you ask Kimi K3 a question, it does not wake up all eight hundred and ninety-six scientists.",
+      "in_seconds": 60.72,
+      "out_seconds": 66.58,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_16",
+      "text": "It only activates the sixteen best monkeys for your specific question.",
+      "in_seconds": 67.0,
+      "out_seconds": 71.46,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-07]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "That keeps it fast and energy-efficient.",
+      "in_seconds": 71.9,
+      "out_seconds": 73.46,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_18",
+      "text": "Plus, Moonshot AI introduced two secret weapons called Kimi Delta Attention and Attention Residuals.",
+      "in_seconds": 74.52,
+      "out_seconds": 81.38,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "These tricks make Kimi K3 two point five times more efficient at moving information than before.",
+      "in_seconds": 81.38,
+      "out_seconds": 87.44,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "Isn't that a massive leap?",
+      "in_seconds": 87.82,
+      "out_seconds": 89.22,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "What about Alibaba's Qwen 3.8 Max?",
+      "in_seconds": 89.96,
+      "out_seconds": 90.58,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-29]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_22",
+      "text": "Alibaba has not shared its exact expert count, but they claim it is a multi-modal beast that handles text, images, video, and documents easily.",
+      "in_seconds": 90.58,
+      "out_seconds": 102.28,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns"
+    },
+    {
+      "id": "scene_23",
+      "text": "In early testing, Alibaba ranks it second only to Claude five Fable.",
+      "in_seconds": 102.84,
+      "out_seconds": 106.9,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-42]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_24",
+      "text": "Both models have a massive one million token context window.",
+      "in_seconds": 107.36,
+      "out_seconds": 110.88,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-47]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_25",
+      "text": "That is like handing them a thousand-page book to read in one second.",
+      "in_seconds": 110.88,
+      "out_seconds": 115.04,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/clock-ticking.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "But Kimi K3 has an insane pricing advantage.",
+      "in_seconds": 115.54,
+      "out_seconds": 118.42,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-55]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_27",
+      "text": "If you ask it a question about a document it already read, it retrieves pre-peeled bananas from its cache.",
+      "in_seconds": 118.78,
+      "out_seconds": 124.78,
+      "source": "projects/qwen_vs_kimi_project_12/images/[01-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_28",
+      "text": "This cache hit gets you a ninety percent discount, costing just thirty cents per million tokens.",
+      "in_seconds": 125.28,
+      "out_seconds": 130.74,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_29",
+      "text": "For new questions, it costs three dollars.",
+      "in_seconds": 131.22,
+      "out_seconds": 133.2,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_30",
+      "text": "Qwen 3.8 Max is currently in preview, offering monthly subscription plans instead.",
+      "in_seconds": 133.2,
+      "out_seconds": 139.16,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-13]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_31",
+      "text": "So, which model wins the crown?",
+      "in_seconds": 139.16,
+      "out_seconds": 141.44,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-19]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_32",
+      "text": "If you need long-horizon coding or deep repository search, Kimi K3 is your champion.",
+      "in_seconds": 142.0,
+      "out_seconds": 147.4,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-22]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_33",
+      "text": "If you need a multi-modal agent to handle video and images, Qwen 3.8 Max takes the lead.",
+      "in_seconds": 147.9,
+      "out_seconds": 153.72,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_34",
+      "text": "Both models are changing the game.",
+      "in_seconds": 154.24,
+      "out_seconds": 155.96,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-34]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_35",
+      "text": "Which one will you try first?",
+      "in_seconds": 156.42,
+      "out_seconds": 157.56,
+      "source": "projects/qwen_vs_kimi_project_12/images/[02-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "hero_title",
+      "in_seconds": 0.0,
+      "out_seconds": 3.56,
+      "text": "QWEN 3.8 MAX vs KIMI K3",
+      "subtitle": "Jungle AI Battle",
+      "accentColor": "#F5820D",
+      "position": "center"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 24.76,
+      "out_seconds": 29.3,
+      "text": "THE DUEL",
+      "subtitle": "3-Minute Breakdown",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 32.34,
+      "out_seconds": 37.26,
+      "text": "2.8 Trillion",
+      "subtitle": "Parameters",
+      "accentColor": "#2D5FBF",
+      "position": "bottom-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 37.86,
+      "out_seconds": 42.18,
+      "text": "2.4 Trillion",
+      "subtitle": "Parameters",
+      "accentColor": "#EC4899",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 54.88,
+      "out_seconds": 59.0,
+      "text": "THE SECRET",
+      "subtitle": "Mixture-of-Experts",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 67.0,
+      "out_seconds": 71.46,
+      "text": "16 / 896",
+      "subtitle": "Active Experts",
+      "accentColor": "#10B981",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 74.52,
+      "out_seconds": 81.38,
+      "text": "INNOVATION",
+      "subtitle": "KDA & AttnRes",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 81.38,
+      "out_seconds": 87.44,
+      "text": "2.5x",
+      "subtitle": "Efficiency Boost",
+      "accentColor": "#F59E0B",
+      "position": "center"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 89.96,
+      "out_seconds": 90.58,
+      "text": "ALIBABA'S PLAY",
+      "subtitle": "Qwen 3.8 Max",
+      "accentColor": "#EC4899",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 102.84,
+      "out_seconds": 106.9,
+      "text": "#2 Rank",
+      "subtitle": "Below Claude 5 Fable",
+      "accentColor": "#F5820D",
+      "position": "bottom-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 107.36,
+      "out_seconds": 110.88,
+      "text": "1M Tokens",
+      "subtitle": "Context Window",
+      "accentColor": "#2D5FBF",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 115.54,
+      "out_seconds": 118.42,
+      "text": "THE PRICING WAR",
+      "subtitle": "Cost Breakdown",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 125.28,
+      "out_seconds": 130.74,
+      "text": "90% OFF",
+      "subtitle": "$0.30 per 1M (Cache Hit)",
+      "accentColor": "#10B981",
+      "position": "center"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 131.22,
+      "out_seconds": 133.2,
+      "text": "$3.00",
+      "subtitle": "Standard Price (Cache Miss)",
+      "accentColor": "#EF4444",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 142.0,
+      "out_seconds": 147.4,
+      "text": "KIMI K3",
+      "subtitle": "Coding Champion",
+      "accentColor": "#2D5FBF",
+      "position": "top-left"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 147.9,
+      "out_seconds": 153.72,
+      "text": "QWEN 3.8 MAX",
+      "subtitle": "Multimodal Champion",
+      "accentColor": "#EC4899",
+      "position": "top-left"
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 3.94,
+      "out_seconds": 8.36,
+      "stickerSrc": "projects/common_assets/stickers/question_mark.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 8.36,
+      "out_seconds": 12.78,
+      "stickerSrc": "projects/common_assets/stickers/lightbulb.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "right": 120,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 49.44,
+      "out_seconds": 52.82,
+      "stickerSrc": "projects/common_assets/stickers/warning.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 100,
+        "right": 100,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 87.82,
+      "out_seconds": 89.22,
+      "stickerSrc": "projects/common_assets/stickers/up_arrow.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 90.58,
+      "out_seconds": 96.43,
+      "stickerSrc": "projects/common_assets/stickers/warning.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 96.43,
+      "out_seconds": 102.28,
+      "stickerSrc": "projects/common_assets/stickers/lightbulb.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "right": 120,
+        "width": 240,
+        "height": 240
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 125.28,
+      "out_seconds": 130.74,
+      "stickerSrc": "projects/common_assets/stickers/red_down_arrow.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "top": 100,
+        "left": 100,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 131.22,
+      "out_seconds": 133.2,
+      "stickerSrc": "projects/common_assets/stickers/gold_coin.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 142.0,
+      "out_seconds": 147.4,
+      "stickerSrc": "projects/common_assets/stickers/green_checkmark.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "right": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 147.9,
+      "out_seconds": 153.72,
+      "stickerSrc": "projects/common_assets/stickers/green_checkmark.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "right": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 156.42,
+      "out_seconds": 157.56,
+      "stickerSrc": "projects/common_assets/stickers/question_mark.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "top": 120,
+        "right": 120,
+        "width": 240,
+        "height": 240
+      }
+    }
+  ],
+  "captions": [
+    {
+      "word": "Imagine",
+      "startMs": 0,
+      "endMs": 640
+    },
+    {
+      "word": "walking",
+      "startMs": 640,
+      "endMs": 1100
+    },
+    {
+      "word": "in",
+      "startMs": 1100,
+      "endMs": 1360
+    },
+    {
+      "word": "to",
+      "startMs": 1360,
+      "endMs": 1580
+    },
+    {
+      "word": "a",
+      "startMs": 1580,
+      "endMs": 1700
+    },
+    {
+      "word": "massive",
+      "startMs": 1700,
+      "endMs": 2200
+    },
+    {
+      "word": "jungle",
+      "startMs": 2200,
+      "endMs": 2660
+    },
+    {
+      "word": "research",
+      "startMs": 2660,
+      "endMs": 3120
+    },
+    {
+      "word": "lab.",
+      "startMs": 3120,
+      "endMs": 3560
+    },
+    {
+      "word": "You",
+      "startMs": 3940,
+      "endMs": 4080
+    },
+    {
+      "word": "want",
+      "startMs": 4080,
+      "endMs": 4260
+    },
+    {
+      "word": "to",
+      "startMs": 4260,
+      "endMs": 4360
+    },
+    {
+      "word": "translate",
+      "startMs": 4360,
+      "endMs": 4780
+    },
+    {
+      "word": "a",
+      "startMs": 4780,
+      "endMs": 4920
+    },
+    {
+      "word": "text,",
+      "startMs": 4920,
+      "endMs": 5340
+    },
+    {
+      "word": "but",
+      "startMs": 5480,
+      "endMs": 5640
+    },
+    {
+      "word": "instead",
+      "startMs": 5640,
+      "endMs": 6000
+    },
+    {
+      "word": "of",
+      "startMs": 6000,
+      "endMs": 6200
+    },
+    {
+      "word": "one",
+      "startMs": 6200,
+      "endMs": 6460
+    },
+    {
+      "word": "giant",
+      "startMs": 6460,
+      "endMs": 6940
+    },
+    {
+      "word": "smart",
+      "startMs": 6940,
+      "endMs": 7420
+    },
+    {
+      "word": "monkey,",
+      "startMs": 7420,
+      "endMs": 7720
+    },
+    {
+      "word": "you",
+      "startMs": 8260,
+      "endMs": 8380
+    },
+    {
+      "word": "find",
+      "startMs": 8380,
+      "endMs": 8600
+    },
+    {
+      "word": "a",
+      "startMs": 8600,
+      "endMs": 8780
+    },
+    {
+      "word": "team",
+      "startMs": 8780,
+      "endMs": 9060
+    },
+    {
+      "word": "of",
+      "startMs": 9060,
+      "endMs": 9320
+    },
+    {
+      "word": "896",
+      "startMs": 9320,
+      "endMs": 10800
+    },
+    {
+      "word": "specialized",
+      "startMs": 10800,
+      "endMs": 11600
+    },
+    {
+      "word": "monkey",
+      "startMs": 11600,
+      "endMs": 12180
+    },
+    {
+      "word": "scientists.",
+      "startMs": 12180,
+      "endMs": 12780
+    },
+    {
+      "word": "That",
+      "startMs": 13420,
+      "endMs": 13700
+    },
+    {
+      "word": "is",
+      "startMs": 13700,
+      "endMs": 13840
+    },
+    {
+      "word": "exactly",
+      "startMs": 13840,
+      "endMs": 14620
+    },
+    {
+      "word": "how",
+      "startMs": 14620,
+      "endMs": 14920
+    },
+    {
+      "word": "Kimi",
+      "startMs": 14920,
+      "endMs": 15400
+    },
+    {
+      "word": "K3",
+      "startMs": 15400,
+      "endMs": 15920
+    },
+    {
+      "word": "works.",
+      "startMs": 15920,
+      "endMs": 16340
+    },
+    {
+      "word": "It",
+      "startMs": 16760,
+      "endMs": 16960
+    },
+    {
+      "word": "is",
+      "startMs": 16960,
+      "endMs": 17040
+    },
+    {
+      "word": "a",
+      "startMs": 17040,
+      "endMs": 17160
+    },
+    {
+      "word": "massive",
+      "startMs": 17160,
+      "endMs": 17680
+    },
+    {
+      "word": "mixture",
+      "startMs": 17680,
+      "endMs": 18140
+    },
+    {
+      "word": "of",
+      "startMs": 18140,
+      "endMs": 18440
+    },
+    {
+      "word": "experts",
+      "startMs": 18440,
+      "endMs": 18840
+    },
+    {
+      "word": "model.",
+      "startMs": 18840,
+      "endMs": 19320
+    },
+    {
+      "word": "But",
+      "startMs": 19800,
+      "endMs": 19980
+    },
+    {
+      "word": "does",
+      "startMs": 19980,
+      "endMs": 20140
+    },
+    {
+      "word": "it",
+      "startMs": 20140,
+      "endMs": 20280
+    },
+    {
+      "word": "actually",
+      "startMs": 20280,
+      "endMs": 20740
+    },
+    {
+      "word": "beat",
+      "startMs": 20740,
+      "endMs": 21100
+    },
+    {
+      "word": "Ali",
+      "startMs": 21100,
+      "endMs": 21440
+    },
+    {
+      "word": "Baba's",
+      "startMs": 21440,
+      "endMs": 21900
+    },
+    {
+      "word": "brand",
+      "startMs": 21900,
+      "endMs": 22200
+    },
+    {
+      "word": "new",
+      "startMs": 22200,
+      "endMs": 22540
+    },
+    {
+      "word": "QN3",
+      "startMs": 22540,
+      "endMs": 23380
+    },
+    {
+      "word": ".8",
+      "startMs": 23380,
+      "endMs": 23840
+    },
+    {
+      "word": "Max?",
+      "startMs": 23840,
+      "endMs": 24060
+    },
+    {
+      "word": "Let",
+      "startMs": 24760,
+      "endMs": 24860
+    },
+    {
+      "word": "us",
+      "startMs": 24860,
+      "endMs": 24960
+    },
+    {
+      "word": "break",
+      "startMs": 24960,
+      "endMs": 25200
+    },
+    {
+      "word": "down",
+      "startMs": 25200,
+      "endMs": 25460
+    },
+    {
+      "word": "these",
+      "startMs": 25460,
+      "endMs": 25720
+    },
+    {
+      "word": "two",
+      "startMs": 25720,
+      "endMs": 25980
+    },
+    {
+      "word": "brand",
+      "startMs": 25980,
+      "endMs": 26340
+    },
+    {
+      "word": "new",
+      "startMs": 26340,
+      "endMs": 26620
+    },
+    {
+      "word": "Chinese",
+      "startMs": 26620,
+      "endMs": 27000
+    },
+    {
+      "word": "AI",
+      "startMs": 27000,
+      "endMs": 27360
+    },
+    {
+      "word": "giants",
+      "startMs": 27360,
+      "endMs": 27900
+    },
+    {
+      "word": "in",
+      "startMs": 27900,
+      "endMs": 28140
+    },
+    {
+      "word": "under",
+      "startMs": 28140,
+      "endMs": 28560
+    },
+    {
+      "word": "3",
+      "startMs": 28560,
+      "endMs": 29000
+    },
+    {
+      "word": "minutes.",
+      "startMs": 29000,
+      "endMs": 29300
+    },
+    {
+      "word": "First,",
+      "startMs": 29980,
+      "endMs": 30340
+    },
+    {
+      "word": "let",
+      "startMs": 30720,
+      "endMs": 30820
+    },
+    {
+      "word": "us",
+      "startMs": 30820,
+      "endMs": 30960
+    },
+    {
+      "word": "look",
+      "startMs": 30960,
+      "endMs": 31160
+    },
+    {
+      "word": "at",
+      "startMs": 31160,
+      "endMs": 31260
+    },
+    {
+      "word": "their",
+      "startMs": 31260,
+      "endMs": 31400
+    },
+    {
+      "word": "size.",
+      "startMs": 31400,
+      "endMs": 31760
+    },
+    {
+      "word": "Kimi",
+      "startMs": 32340,
+      "endMs": 32640
+    },
+    {
+      "word": "K3",
+      "startMs": 32640,
+      "endMs": 33120
+    },
+    {
+      "word": "is",
+      "startMs": 33120,
+      "endMs": 33380
+    },
+    {
+      "word": "an",
+      "startMs": 33380,
+      "endMs": 33520
+    },
+    {
+      "word": "absolute",
+      "startMs": 33520,
+      "endMs": 34100
+    },
+    {
+      "word": "monster",
+      "startMs": 34100,
+      "endMs": 34800
+    },
+    {
+      "word": "with",
+      "startMs": 34800,
+      "endMs": 35100
+    },
+    {
+      "word": "2",
+      "startMs": 35100,
+      "endMs": 35400
+    },
+    {
+      "word": ".8",
+      "startMs": 35400,
+      "endMs": 35900
+    },
+    {
+      "word": "trillion",
+      "startMs": 35900,
+      "endMs": 36580
+    },
+    {
+      "word": "parameters.",
+      "startMs": 36580,
+      "endMs": 37260
+    },
+    {
+      "word": "QN3",
+      "startMs": 37860,
+      "endMs": 38460
+    },
+    {
+      "word": ".8",
+      "startMs": 38460,
+      "endMs": 38880
+    },
+    {
+      "word": "Max",
+      "startMs": 38880,
+      "endMs": 39120
+    },
+    {
+      "word": "is",
+      "startMs": 39120,
+      "endMs": 39460
+    },
+    {
+      "word": "slightly",
+      "startMs": 39460,
+      "endMs": 39840
+    },
+    {
+      "word": "smaller",
+      "startMs": 39840,
+      "endMs": 40360
+    },
+    {
+      "word": "coming",
+      "startMs": 40360,
+      "endMs": 40700
+    },
+    {
+      "word": "in",
+      "startMs": 40700,
+      "endMs": 40900
+    },
+    {
+      "word": "at",
+      "startMs": 40900,
+      "endMs": 41000
+    },
+    {
+      "word": "2",
+      "startMs": 41000,
+      "endMs": 41240
+    },
+    {
+      "word": ".4",
+      "startMs": 41240,
+      "endMs": 41760
+    },
+    {
+      "word": "trillion.",
+      "startMs": 41760,
+      "endMs": 42180
+    },
+    {
+      "word": "But",
+      "startMs": 42600,
+      "endMs": 42820
+    },
+    {
+      "word": "wait,",
+      "startMs": 42820,
+      "endMs": 43000
+    },
+    {
+      "word": "why",
+      "startMs": 43300,
+      "endMs": 43440
+    },
+    {
+      "word": "does",
+      "startMs": 43440,
+      "endMs": 43540
+    },
+    {
+      "word": "size",
+      "startMs": 43540,
+      "endMs": 43820
+    },
+    {
+      "word": "matter?",
+      "startMs": 43820,
+      "endMs": 44280
+    },
+    {
+      "word": "More",
+      "startMs": 44780,
+      "endMs": 44980
+    },
+    {
+      "word": "parameters",
+      "startMs": 44980,
+      "endMs": 45520
+    },
+    {
+      "word": "mean",
+      "startMs": 45520,
+      "endMs": 45840
+    },
+    {
+      "word": "the",
+      "startMs": 45840,
+      "endMs": 46020
+    },
+    {
+      "word": "model",
+      "startMs": 46020,
+      "endMs": 46320
+    },
+    {
+      "word": "can",
+      "startMs": 46320,
+      "endMs": 46540
+    },
+    {
+      "word": "store",
+      "startMs": 46540,
+      "endMs": 46800
+    },
+    {
+      "word": "more",
+      "startMs": 46800,
+      "endMs": 47100
+    },
+    {
+      "word": "knowledge",
+      "startMs": 47100,
+      "endMs": 47560
+    },
+    {
+      "word": "and",
+      "startMs": 47560,
+      "endMs": 47800
+    },
+    {
+      "word": "spot",
+      "startMs": 47800,
+      "endMs": 48060
+    },
+    {
+      "word": "deeper",
+      "startMs": 48060,
+      "endMs": 48480
+    },
+    {
+      "word": "patterns.",
+      "startMs": 48480,
+      "endMs": 49000
+    },
+    {
+      "word": "However,",
+      "startMs": 49440,
+      "endMs": 49760
+    },
+    {
+      "word": "running",
+      "startMs": 50060,
+      "endMs": 50220
+    },
+    {
+      "word": "a",
+      "startMs": 50220,
+      "endMs": 50360
+    },
+    {
+      "word": "model",
+      "startMs": 50360,
+      "endMs": 50640
+    },
+    {
+      "word": "this",
+      "startMs": 50640,
+      "endMs": 50920
+    },
+    {
+      "word": "big",
+      "startMs": 50920,
+      "endMs": 51160
+    },
+    {
+      "word": "is",
+      "startMs": 51160,
+      "endMs": 51420
+    },
+    {
+      "word": "incredibly",
+      "startMs": 51420,
+      "endMs": 52120
+    },
+    {
+      "word": "expensive.",
+      "startMs": 52120,
+      "endMs": 52820
+    },
+    {
+      "word": "How",
+      "startMs": 53200,
+      "endMs": 53440
+    },
+    {
+      "word": "do",
+      "startMs": 53440,
+      "endMs": 53520
+    },
+    {
+      "word": "they",
+      "startMs": 53520,
+      "endMs": 53660
+    },
+    {
+      "word": "keep",
+      "startMs": 53660,
+      "endMs": 53860
+    },
+    {
+      "word": "it",
+      "startMs": 53860,
+      "endMs": 54000
+    },
+    {
+      "word": "fast",
+      "startMs": 54000,
+      "endMs": 54320
+    },
+    {
+      "word": "and",
+      "startMs": 54320,
+      "endMs": 54600
+    },
+    {
+      "word": "cheap?",
+      "startMs": 54600,
+      "endMs": 54880
+    },
+    {
+      "word": "They",
+      "startMs": 54880,
+      "endMs": 55520
+    },
+    {
+      "word": "use",
+      "startMs": 55520,
+      "endMs": 55720
+    },
+    {
+      "word": "a",
+      "startMs": 55720,
+      "endMs": 55860
+    },
+    {
+      "word": "trick",
+      "startMs": 55860,
+      "endMs": 56060
+    },
+    {
+      "word": "called",
+      "startMs": 56060,
+      "endMs": 56400
+    },
+    {
+      "word": "mixture",
+      "startMs": 56400,
+      "endMs": 56820
+    },
+    {
+      "word": "of",
+      "startMs": 56820,
+      "endMs": 57120
+    },
+    {
+      "word": "experts",
+      "startMs": 57120,
+      "endMs": 57560
+    },
+    {
+      "word": "or",
+      "startMs": 57560,
+      "endMs": 57960
+    },
+    {
+      "word": "MOE.",
+      "startMs": 57960,
+      "endMs": 59000
+    },
+    {
+      "word": "Think",
+      "startMs": 59400,
+      "endMs": 59660
+    },
+    {
+      "word": "of",
+      "startMs": 59660,
+      "endMs": 59800
+    },
+    {
+      "word": "it",
+      "startMs": 59800,
+      "endMs": 59860
+    },
+    {
+      "word": "like",
+      "startMs": 59860,
+      "endMs": 60020
+    },
+    {
+      "word": "this.",
+      "startMs": 60020,
+      "endMs": 60420
+    },
+    {
+      "word": "When",
+      "startMs": 60720,
+      "endMs": 60920
+    },
+    {
+      "word": "you",
+      "startMs": 60920,
+      "endMs": 61060
+    },
+    {
+      "word": "ask",
+      "startMs": 61060,
+      "endMs": 61440
+    },
+    {
+      "word": "Kimi",
+      "startMs": 61440,
+      "endMs": 61920
+    },
+    {
+      "word": "K3",
+      "startMs": 61920,
+      "endMs": 62420
+    },
+    {
+      "word": "a",
+      "startMs": 62420,
+      "endMs": 62640
+    },
+    {
+      "word": "question,",
+      "startMs": 62640,
+      "endMs": 63080
+    },
+    {
+      "word": "it",
+      "startMs": 63320,
+      "endMs": 63380
+    },
+    {
+      "word": "does",
+      "startMs": 63380,
+      "endMs": 63520
+    },
+    {
+      "word": "not",
+      "startMs": 63520,
+      "endMs": 63700
+    },
+    {
+      "word": "wake",
+      "startMs": 63700,
+      "endMs": 63940
+    },
+    {
+      "word": "up",
+      "startMs": 63940,
+      "endMs": 64220
+    },
+    {
+      "word": "all",
+      "startMs": 64220,
+      "endMs": 64560
+    },
+    {
+      "word": "896",
+      "startMs": 64560,
+      "endMs": 65900
+    },
+    {
+      "word": "scientists.",
+      "startMs": 65900,
+      "endMs": 66580
+    },
+    {
+      "word": "It",
+      "startMs": 67000,
+      "endMs": 67160
+    },
+    {
+      "word": "only",
+      "startMs": 67160,
+      "endMs": 67480
+    },
+    {
+      "word": "activates",
+      "startMs": 67480,
+      "endMs": 68000
+    },
+    {
+      "word": "the",
+      "startMs": 68000,
+      "endMs": 68280
+    },
+    {
+      "word": "16",
+      "startMs": 68280,
+      "endMs": 68800
+    },
+    {
+      "word": "best",
+      "startMs": 68800,
+      "endMs": 69420
+    },
+    {
+      "word": "monkeys",
+      "startMs": 69420,
+      "endMs": 69760
+    },
+    {
+      "word": "for",
+      "startMs": 69760,
+      "endMs": 70100
+    },
+    {
+      "word": "your",
+      "startMs": 70100,
+      "endMs": 70320
+    },
+    {
+      "word": "specific",
+      "startMs": 70320,
+      "endMs": 70920
+    },
+    {
+      "word": "question.",
+      "startMs": 70920,
+      "endMs": 71460
+    },
+    {
+      "word": "That",
+      "startMs": 71900,
+      "endMs": 72020
+    },
+    {
+      "word": "keeps",
+      "startMs": 72020,
+      "endMs": 72240
+    },
+    {
+      "word": "it",
+      "startMs": 72240,
+      "endMs": 72440
+    },
+    {
+      "word": "fast",
+      "startMs": 72440,
+      "endMs": 72740
+    },
+    {
+      "word": "and",
+      "startMs": 72740,
+      "endMs": 73060
+    },
+    {
+      "word": "energy",
+      "startMs": 73060,
+      "endMs": 73460
+    },
+    {
+      "word": "efficient.",
+      "startMs": 73460,
+      "endMs": 74000
+    },
+    {
+      "word": "Plus,",
+      "startMs": 74520,
+      "endMs": 74820
+    },
+    {
+      "word": "moonshot",
+      "startMs": 75120,
+      "endMs": 75500
+    },
+    {
+      "word": "AI",
+      "startMs": 75500,
+      "endMs": 75780
+    },
+    {
+      "word": "introduced",
+      "startMs": 75780,
+      "endMs": 76360
+    },
+    {
+      "word": "two",
+      "startMs": 76360,
+      "endMs": 76860
+    },
+    {
+      "word": "secret",
+      "startMs": 76860,
+      "endMs": 77320
+    },
+    {
+      "word": "weapons",
+      "startMs": 77320,
+      "endMs": 77740
+    },
+    {
+      "word": "called",
+      "startMs": 77740,
+      "endMs": 78160
+    },
+    {
+      "word": "Kimi",
+      "startMs": 78160,
+      "endMs": 78640
+    },
+    {
+      "word": "Delta",
+      "startMs": 78640,
+      "endMs": 79000
+    },
+    {
+      "word": "Attention",
+      "startMs": 79000,
+      "endMs": 79560
+    },
+    {
+      "word": "and",
+      "startMs": 79560,
+      "endMs": 80080
+    },
+    {
+      "word": "Attention",
+      "startMs": 80080,
+      "endMs": 80520
+    },
+    {
+      "word": "Residuals.",
+      "startMs": 80520,
+      "endMs": 81380
+    },
+    {
+      "word": "These",
+      "startMs": 81380,
+      "endMs": 81920
+    },
+    {
+      "word": "tricks",
+      "startMs": 81920,
+      "endMs": 82240
+    },
+    {
+      "word": "make",
+      "startMs": 82240,
+      "endMs": 82500
+    },
+    {
+      "word": "Kimi",
+      "startMs": 82500,
+      "endMs": 82900
+    },
+    {
+      "word": "K3",
+      "startMs": 82900,
+      "endMs": 83420
+    },
+    {
+      "word": "2",
+      "startMs": 83420,
+      "endMs": 83840
+    },
+    {
+      "word": ".5",
+      "startMs": 83840,
+      "endMs": 84400
+    },
+    {
+      "word": "times",
+      "startMs": 84400,
+      "endMs": 84820
+    },
+    {
+      "word": "more",
+      "startMs": 84820,
+      "endMs": 85160
+    },
+    {
+      "word": "efficient",
+      "startMs": 85160,
+      "endMs": 85700
+    },
+    {
+      "word": "at",
+      "startMs": 85700,
+      "endMs": 85920
+    },
+    {
+      "word": "moving",
+      "startMs": 85920,
+      "endMs": 86200
+    },
+    {
+      "word": "information",
+      "startMs": 86200,
+      "endMs": 86860
+    },
+    {
+      "word": "than",
+      "startMs": 86860,
+      "endMs": 87020
+    },
+    {
+      "word": "before.",
+      "startMs": 87020,
+      "endMs": 87440
+    },
+    {
+      "word": "Isn't",
+      "startMs": 87820,
+      "endMs": 88180
+    },
+    {
+      "word": "that",
+      "startMs": 88180,
+      "endMs": 88320
+    },
+    {
+      "word": "a",
+      "startMs": 88320,
+      "endMs": 88440
+    },
+    {
+      "word": "massive",
+      "startMs": 88440,
+      "endMs": 88920
+    },
+    {
+      "word": "leap?",
+      "startMs": 88920,
+      "endMs": 89220
+    },
+    {
+      "word": "What",
+      "startMs": 89960,
+      "endMs": 90080
+    },
+    {
+      "word": "about",
+      "startMs": 90080,
+      "endMs": 90320
+    },
+    {
+      "word": "Ali",
+      "startMs": 90320,
+      "endMs": 90580
+    },
+    {
+      "word": "Baba's",
+      "startMs": 90580,
+      "endMs": 91060
+    },
+    {
+      "word": "QN3",
+      "startMs": 91060,
+      "endMs": 91760
+    },
+    {
+      "word": ".8",
+      "startMs": 91760,
+      "endMs": 92200
+    },
+    {
+      "word": "Max?",
+      "startMs": 92200,
+      "endMs": 92420
+    },
+    {
+      "word": "Ali",
+      "startMs": 93180,
+      "endMs": 93340
+    },
+    {
+      "word": "Baba",
+      "startMs": 93340,
+      "endMs": 93600
+    },
+    {
+      "word": "hasn't",
+      "startMs": 93600,
+      "endMs": 94020
+    },
+    {
+      "word": "shared",
+      "startMs": 94020,
+      "endMs": 94320
+    },
+    {
+      "word": "its",
+      "startMs": 94320,
+      "endMs": 94520
+    },
+    {
+      "word": "exact",
+      "startMs": 94520,
+      "endMs": 94940
+    },
+    {
+      "word": "expert",
+      "startMs": 94940,
+      "endMs": 95420
+    },
+    {
+      "word": "count.",
+      "startMs": 95420,
+      "endMs": 95760
+    },
+    {
+      "word": "But",
+      "startMs": 96080,
+      "endMs": 96180
+    },
+    {
+      "word": "they",
+      "startMs": 96180,
+      "endMs": 96300
+    },
+    {
+      "word": "claim",
+      "startMs": 96300,
+      "endMs": 96620
+    },
+    {
+      "word": "it's",
+      "startMs": 96620,
+      "endMs": 96860
+    },
+    {
+      "word": "a",
+      "startMs": 96860,
+      "endMs": 96940
+    },
+    {
+      "word": "multimodal",
+      "startMs": 96940,
+      "endMs": 97760
+    },
+    {
+      "word": "beast",
+      "startMs": 97760,
+      "endMs": 98100
+    },
+    {
+      "word": "that",
+      "startMs": 98100,
+      "endMs": 98480
+    },
+    {
+      "word": "handles",
+      "startMs": 98480,
+      "endMs": 98760
+    },
+    {
+      "word": "text,",
+      "startMs": 98760,
+      "endMs": 99080
+    },
+    {
+      "word": "images,",
+      "startMs": 99560,
+      "endMs": 99900
+    },
+    {
+      "word": "video",
+      "startMs": 100400,
+      "endMs": 100680
+    },
+    {
+      "word": "and",
+      "startMs": 100680,
+      "endMs": 101140
+    },
+    {
+      "word": "documents",
+      "startMs": 101140,
+      "endMs": 101660
+    },
+    {
+      "word": "easily.",
+      "startMs": 101660,
+      "endMs": 102280
+    },
+    {
+      "word": "In",
+      "startMs": 102840,
+      "endMs": 102920
+    },
+    {
+      "word": "early",
+      "startMs": 102920,
+      "endMs": 103200
+    },
+    {
+      "word": "testing,",
+      "startMs": 103200,
+      "endMs": 103640
+    },
+    {
+      "word": "Ali",
+      "startMs": 103960,
+      "endMs": 104000
+    },
+    {
+      "word": "Baba",
+      "startMs": 104000,
+      "endMs": 104240
+    },
+    {
+      "word": "ranks",
+      "startMs": 104240,
+      "endMs": 104580
+    },
+    {
+      "word": "its",
+      "startMs": 104580,
+      "endMs": 104780
+    },
+    {
+      "word": "second",
+      "startMs": 104780,
+      "endMs": 105160
+    },
+    {
+      "word": "only",
+      "startMs": 105160,
+      "endMs": 105580
+    },
+    {
+      "word": "to",
+      "startMs": 105580,
+      "endMs": 105740
+    },
+    {
+      "word": "clawed",
+      "startMs": 105740,
+      "endMs": 106160
+    },
+    {
+      "word": "5",
+      "startMs": 106160,
+      "endMs": 106440
+    },
+    {
+      "word": "Fable.",
+      "startMs": 106440,
+      "endMs": 106900
+    },
+    {
+      "word": "Both",
+      "startMs": 107360,
+      "endMs": 107640
+    },
+    {
+      "word": "models",
+      "startMs": 107640,
+      "endMs": 108040
+    },
+    {
+      "word": "have",
+      "startMs": 108040,
+      "endMs": 108200
+    },
+    {
+      "word": "a",
+      "startMs": 108200,
+      "endMs": 108340
+    },
+    {
+      "word": "massive",
+      "startMs": 108340,
+      "endMs": 108740
+    },
+    {
+      "word": "1",
+      "startMs": 108740,
+      "endMs": 109180
+    },
+    {
+      "word": "million",
+      "startMs": 109180,
+      "endMs": 109480
+    },
+    {
+      "word": "token",
+      "startMs": 109480,
+      "endMs": 109900
+    },
+    {
+      "word": "context",
+      "startMs": 109900,
+      "endMs": 110400
+    },
+    {
+      "word": "window.",
+      "startMs": 110400,
+      "endMs": 110880
+    },
+    {
+      "word": "That's",
+      "startMs": 110880,
+      "endMs": 111660
+    },
+    {
+      "word": "like",
+      "startMs": 111660,
+      "endMs": 111780
+    },
+    {
+      "word": "handing",
+      "startMs": 111780,
+      "endMs": 112040
+    },
+    {
+      "word": "them",
+      "startMs": 112040,
+      "endMs": 112240
+    },
+    {
+      "word": "a",
+      "startMs": 112240,
+      "endMs": 112400
+    },
+    {
+      "word": "thousand",
+      "startMs": 112400,
+      "endMs": 112860
+    },
+    {
+      "word": "-page",
+      "startMs": 112860,
+      "endMs": 113200
+    },
+    {
+      "word": "book",
+      "startMs": 113200,
+      "endMs": 113560
+    },
+    {
+      "word": "to",
+      "startMs": 113560,
+      "endMs": 113840
+    },
+    {
+      "word": "read",
+      "startMs": 113840,
+      "endMs": 114080
+    },
+    {
+      "word": "in",
+      "startMs": 114080,
+      "endMs": 114320
+    },
+    {
+      "word": "one",
+      "startMs": 114320,
+      "endMs": 114560
+    },
+    {
+      "word": "second.",
+      "startMs": 114560,
+      "endMs": 115040
+    },
+    {
+      "word": "But",
+      "startMs": 115540,
+      "endMs": 115620
+    },
+    {
+      "word": "Kimi",
+      "startMs": 115620,
+      "endMs": 116020
+    },
+    {
+      "word": "K3",
+      "startMs": 116020,
+      "endMs": 116500
+    },
+    {
+      "word": "has",
+      "startMs": 116500,
+      "endMs": 116820
+    },
+    {
+      "word": "an",
+      "startMs": 116820,
+      "endMs": 116960
+    },
+    {
+      "word": "insane",
+      "startMs": 116960,
+      "endMs": 117400
+    },
+    {
+      "word": "pricing",
+      "startMs": 117400,
+      "endMs": 117920
+    },
+    {
+      "word": "advantage.",
+      "startMs": 117920,
+      "endMs": 118420
+    },
+    {
+      "word": "If",
+      "startMs": 118780,
+      "endMs": 119000
+    },
+    {
+      "word": "you",
+      "startMs": 119000,
+      "endMs": 119100
+    },
+    {
+      "word": "ask",
+      "startMs": 119100,
+      "endMs": 119460
+    },
+    {
+      "word": "it",
+      "startMs": 119460,
+      "endMs": 119600
+    },
+    {
+      "word": "a",
+      "startMs": 119600,
+      "endMs": 119680
+    },
+    {
+      "word": "question",
+      "startMs": 119680,
+      "endMs": 120060
+    },
+    {
+      "word": "about",
+      "startMs": 120060,
+      "endMs": 120340
+    },
+    {
+      "word": "a",
+      "startMs": 120340,
+      "endMs": 120480
+    },
+    {
+      "word": "document",
+      "startMs": 120480,
+      "endMs": 120940
+    },
+    {
+      "word": "it",
+      "startMs": 120940,
+      "endMs": 121100
+    },
+    {
+      "word": "already",
+      "startMs": 121100,
+      "endMs": 121460
+    },
+    {
+      "word": "read,",
+      "startMs": 121460,
+      "endMs": 121820
+    },
+    {
+      "word": "it",
+      "startMs": 122120,
+      "endMs": 122240
+    },
+    {
+      "word": "retrieves",
+      "startMs": 122240,
+      "endMs": 122840
+    },
+    {
+      "word": "pre",
+      "startMs": 122840,
+      "endMs": 123180
+    },
+    {
+      "word": "-peeled",
+      "startMs": 123180,
+      "endMs": 123640
+    },
+    {
+      "word": "bananas",
+      "startMs": 123640,
+      "endMs": 124040
+    },
+    {
+      "word": "from",
+      "startMs": 124040,
+      "endMs": 124320
+    },
+    {
+      "word": "its",
+      "startMs": 124320,
+      "endMs": 124500
+    },
+    {
+      "word": "cash.",
+      "startMs": 124500,
+      "endMs": 124780
+    },
+    {
+      "word": "This",
+      "startMs": 125280,
+      "endMs": 125560
+    },
+    {
+      "word": "cash",
+      "startMs": 125560,
+      "endMs": 125980
+    },
+    {
+      "word": "hit",
+      "startMs": 125980,
+      "endMs": 126120
+    },
+    {
+      "word": "gets",
+      "startMs": 126120,
+      "endMs": 126320
+    },
+    {
+      "word": "you",
+      "startMs": 126320,
+      "endMs": 126500
+    },
+    {
+      "word": "a",
+      "startMs": 126500,
+      "endMs": 126620
+    },
+    {
+      "word": "90",
+      "startMs": 126620,
+      "endMs": 126960
+    },
+    {
+      "word": "%",
+      "startMs": 126960,
+      "endMs": 127360
+    },
+    {
+      "word": "discount,",
+      "startMs": 127360,
+      "endMs": 127800
+    },
+    {
+      "word": "costing",
+      "startMs": 128220,
+      "endMs": 128520
+    },
+    {
+      "word": "just",
+      "startMs": 128520,
+      "endMs": 128759
+    },
+    {
+      "word": "30",
+      "startMs": 128759,
+      "endMs": 129220
+    },
+    {
+      "word": "cents",
+      "startMs": 129220,
+      "endMs": 129660
+    },
+    {
+      "word": "per",
+      "startMs": 129660,
+      "endMs": 129880
+    },
+    {
+      "word": "million",
+      "startMs": 129880,
+      "endMs": 130259
+    },
+    {
+      "word": "tokens.",
+      "startMs": 130259,
+      "endMs": 130740
+    },
+    {
+      "word": "For",
+      "startMs": 131220,
+      "endMs": 131400
+    },
+    {
+      "word": "new",
+      "startMs": 131400,
+      "endMs": 131600
+    },
+    {
+      "word": "questions,",
+      "startMs": 131600,
+      "endMs": 132060
+    },
+    {
+      "word": "it",
+      "startMs": 132300,
+      "endMs": 132360
+    },
+    {
+      "word": "costs",
+      "startMs": 132360,
+      "endMs": 132600
+    },
+    {
+      "word": "$3.",
+      "startMs": 132600,
+      "endMs": 133200
+    },
+    {
+      "word": "QN3",
+      "startMs": 134060,
+      "endMs": 134740
+    },
+    {
+      "word": ".8",
+      "startMs": 134740,
+      "endMs": 135140
+    },
+    {
+      "word": "Max",
+      "startMs": 135140,
+      "endMs": 135400
+    },
+    {
+      "word": "is",
+      "startMs": 135400,
+      "endMs": 135640
+    },
+    {
+      "word": "currently",
+      "startMs": 135640,
+      "endMs": 136020
+    },
+    {
+      "word": "in",
+      "startMs": 136020,
+      "endMs": 136240
+    },
+    {
+      "word": "preview,",
+      "startMs": 136240,
+      "endMs": 136620
+    },
+    {
+      "word": "offering",
+      "startMs": 137000,
+      "endMs": 137280
+    },
+    {
+      "word": "monthly",
+      "startMs": 137280,
+      "endMs": 137720
+    },
+    {
+      "word": "subscription",
+      "startMs": 137720,
+      "endMs": 138220
+    },
+    {
+      "word": "plans",
+      "startMs": 138220,
+      "endMs": 138660
+    },
+    {
+      "word": "instead.",
+      "startMs": 138660,
+      "endMs": 139160
+    },
+    {
+      "word": "So,",
+      "startMs": 139160,
+      "endMs": 139940
+    },
+    {
+      "word": "which",
+      "startMs": 140260,
+      "endMs": 140440
+    },
+    {
+      "word": "model",
+      "startMs": 140440,
+      "endMs": 140760
+    },
+    {
+      "word": "wins",
+      "startMs": 140760,
+      "endMs": 141040
+    },
+    {
+      "word": "the",
+      "startMs": 141040,
+      "endMs": 141200
+    },
+    {
+      "word": "crown?",
+      "startMs": 141200,
+      "endMs": 141440
+    },
+    {
+      "word": "If",
+      "startMs": 142000,
+      "endMs": 142160
+    },
+    {
+      "word": "you",
+      "startMs": 142160,
+      "endMs": 142280
+    },
+    {
+      "word": "need",
+      "startMs": 142280,
+      "endMs": 142480
+    },
+    {
+      "word": "long",
+      "startMs": 142480,
+      "endMs": 142800
+    },
+    {
+      "word": "horizon",
+      "startMs": 142800,
+      "endMs": 143260
+    },
+    {
+      "word": "coding",
+      "startMs": 143260,
+      "endMs": 143660
+    },
+    {
+      "word": "or",
+      "startMs": 143660,
+      "endMs": 143960
+    },
+    {
+      "word": "deep",
+      "startMs": 143960,
+      "endMs": 144240
+    },
+    {
+      "word": "repository",
+      "startMs": 144240,
+      "endMs": 144720
+    },
+    {
+      "word": "search,",
+      "startMs": 144720,
+      "endMs": 145440
+    },
+    {
+      "word": "Kimi",
+      "startMs": 145820,
+      "endMs": 146020
+    },
+    {
+      "word": "K3",
+      "startMs": 146020,
+      "endMs": 146540
+    },
+    {
+      "word": "is",
+      "startMs": 146540,
+      "endMs": 146840
+    },
+    {
+      "word": "your",
+      "startMs": 146840,
+      "endMs": 146960
+    },
+    {
+      "word": "champion.",
+      "startMs": 146960,
+      "endMs": 147400
+    },
+    {
+      "word": "If",
+      "startMs": 147900,
+      "endMs": 148040
+    },
+    {
+      "word": "you",
+      "startMs": 148040,
+      "endMs": 148140
+    },
+    {
+      "word": "need",
+      "startMs": 148140,
+      "endMs": 148280
+    },
+    {
+      "word": "a",
+      "startMs": 148280,
+      "endMs": 148420
+    },
+    {
+      "word": "multimodal",
+      "startMs": 148420,
+      "endMs": 149120
+    },
+    {
+      "word": "agent",
+      "startMs": 149120,
+      "endMs": 149500
+    },
+    {
+      "word": "to",
+      "startMs": 149500,
+      "endMs": 149720
+    },
+    {
+      "word": "handle",
+      "startMs": 149720,
+      "endMs": 149960
+    },
+    {
+      "word": "video",
+      "startMs": 149960,
+      "endMs": 150340
+    },
+    {
+      "word": "and",
+      "startMs": 150340,
+      "endMs": 150620
+    },
+    {
+      "word": "images,",
+      "startMs": 150620,
+      "endMs": 151000
+    },
+    {
+      "word": "QN3",
+      "startMs": 151520,
+      "endMs": 152140
+    },
+    {
+      "word": ".8",
+      "startMs": 152140,
+      "endMs": 152600
+    },
+    {
+      "word": "Max",
+      "startMs": 152600,
+      "endMs": 152840
+    },
+    {
+      "word": "takes",
+      "startMs": 152840,
+      "endMs": 153240
+    },
+    {
+      "word": "the",
+      "startMs": 153240,
+      "endMs": 153460
+    },
+    {
+      "word": "lead.",
+      "startMs": 153460,
+      "endMs": 153720
+    },
+    {
+      "word": "Both",
+      "startMs": 154240,
+      "endMs": 154400
+    },
+    {
+      "word": "models",
+      "startMs": 154400,
+      "endMs": 154820
+    },
+    {
+      "word": "are",
+      "startMs": 154820,
+      "endMs": 154980
+    },
+    {
+      "word": "changing",
+      "startMs": 154980,
+      "endMs": 155440
+    },
+    {
+      "word": "the",
+      "startMs": 155440,
+      "endMs": 155660
+    },
+    {
+      "word": "game.",
+      "startMs": 155660,
+      "endMs": 155960
+    },
+    {
+      "word": "Which",
+      "startMs": 156420,
+      "endMs": 156600
+    },
+    {
+      "word": "one",
+      "startMs": 156600,
+      "endMs": 156800
+    },
+    {
+      "word": "will",
+      "startMs": 156800,
+      "endMs": 156900
+    },
+    {
+      "word": "you",
+      "startMs": 156900,
+      "endMs": 157060
+    },
+    {
+      "word": "try",
+      "startMs": 157060,
+      "endMs": 157260
+    },
+    {
+      "word": "first?",
+      "startMs": 157260,
+      "endMs": 157560
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/qwen_vs_kimi_project_12/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

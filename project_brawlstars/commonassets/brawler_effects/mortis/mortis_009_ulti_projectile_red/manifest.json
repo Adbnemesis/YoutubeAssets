@@ -1,0 +1,21 @@
+{
+  "name": "mortis_009_ulti_projectile_red",
+  "frameCount": 1,
+  "canvas": {
+    "width": 570,
+    "height": 570
+  },
+  "anchor": {
+    "x": 285,
+    "y": 285
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 36,
+      "y": 36,
+      "w": 498,
+      "h": 498
+    }
+  ]
+}

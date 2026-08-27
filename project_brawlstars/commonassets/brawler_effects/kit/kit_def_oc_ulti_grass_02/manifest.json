@@ -1,0 +1,21 @@
+{
+  "name": "kit_def_oc_ulti_grass_02",
+  "frameCount": 1,
+  "canvas": {
+    "width": 140,
+    "height": 70
+  },
+  "anchor": {
+    "x": 70,
+    "y": 35
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 7,
+      "y": 2,
+      "w": 133,
+      "h": 48
+    }
+  ]
+}

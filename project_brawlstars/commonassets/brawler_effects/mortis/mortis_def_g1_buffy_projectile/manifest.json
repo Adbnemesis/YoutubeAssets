@@ -1,0 +1,21 @@
+{
+  "name": "mortis_def_g1_buffy_projectile",
+  "frameCount": 1,
+  "canvas": {
+    "width": 414,
+    "height": 514
+  },
+  "anchor": {
+    "x": 207,
+    "y": 257
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 5,
+      "y": 1,
+      "w": 408,
+      "h": 512
+    }
+  ]
+}

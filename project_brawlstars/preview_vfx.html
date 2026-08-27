@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brawl Stars VFX Preview</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0a0f;
+      color: #e8e8f0;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      padding: 24px 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .header p {
+      color: #888;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 12px;
+      padding: 16px 32px;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .controls label {
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .controls select,
+    .controls button,
+    .controls input {
+      background: #1a1a2e;
+      color: #ddd;
+      border: 1px solid #333;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .controls button:hover {
+      background: #2a2a4e;
+    }
+
+    .controls button.active {
+      background: #3a7bd5;
+      border-color: #3a7bd5;
+      color: #fff;
+    }
+
+    .preview-area {
+      display: flex;
+      gap: 24px;
+      padding: 24px 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .scene-card {
+      background: #111120;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+      width: fit-content;
+    }
+
+    .scene-card h3 {
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #bbb;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .canvas-wrapper {
+      position: relative;
+      width: 540px;
+      height: 540px;
+      background: repeating-conic-gradient(#1a1a2e 0% 25%, #15152a 0% 50%) 50% / 20px 20px;
+      overflow: hidden;
+    }
+
+    .canvas-wrapper.dark-bg {
+      background: #0a0a12;
+    }
+
+    .canvas-wrapper.game-bg {
+      background: linear-gradient(135deg, #8b6f47, #a0825a, #7d6342);
+    }
+
+    .frame-info {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.7);
+      color: #aaa;
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .effect-layer {
+      position: absolute;
+      pointer-events: none;
+      image-rendering: auto;
+    }
+
+    .effect-layer.blend-screen {
+      mix-blend-mode: screen;
+    }
+
+    .effect-layer.blend-add {
+      mix-blend-mode: screen;
+    }
+
+    .grid-view {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 24px 32px;
+    }
+
+    .grid-cell {
+      background: #111120;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      text-align: center;
+    }
+
+    .grid-cell .part-name {
+      font-size: 11px;
+      color: #888;
+      padding: 6px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      font-family: monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .grid-cell canvas {
+      display: block;
+      margin: 0 auto;
+      background: repeating-conic-gradient(#1a1a2e 0% 25%, #15152a 0% 50%) 50% / 10px 10px;
+    }
+
+    .tab-bar {
+      display: flex;
+      gap: 0;
+      padding: 0 32px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .tab {
+      padding: 10px 20px;
+      font-size: 13px;
+      color: #888;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .tab:hover {
+      color: #ccc;
+    }
+
+    .tab.active {
+      color: #3a7bd5;
+      border-bottom-color: #3a7bd5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>⚡ Brawl Stars VFX Preview</h1>
+    <p>Game-accurate effects extracted via sc-editor reference renderer</p>
+  </div>
+
+  <div class="tab-bar">
+    <div class="tab active" data-tab="scenes">Attack Scenes</div>
+    <div class="tab" data-tab="parts">Individual Parts</div>
+  </div>
+
+  <div class="controls">
+    <label>Brawler:</label>
+    <select id="brawlerSelect">
+      <option value="gale">Gale</option>
+      <option value="ash">Ash</option>
+      <option value="kit">Kit</option>
+      <option value="mortis">Mortis</option>
+      <option value="hank">Hank</option>
+      <option value="willow">Willow</option>
+      <option value="nani">Nani</option>
+    </select>
+    <label>Scene:</label>
+    <select id="sceneSelect"></select>
+    <label>BG:</label>
+    <select id="bgSelect">
+      <option value="checker">Checkerboard</option>
+      <option value="dark">Dark</option>
+      <option value="game">Game Ground</option>
+    </select>
+    <label>Speed:</label>
+    <input type="range" id="speedSlider" min="0.1" max="3" step="0.1" value="1" style="width:100px">
+    <span id="speedLabel">1.0x</span>
+    <button id="playBtn" class="active">▶ Play</button>
+    <button id="resetBtn">⏹ Reset</button>
+  </div>
+
+  <div id="scenesTab" class="preview-area">
+    <div class="scene-card">
+      <h3 id="sceneTitle">Gale Attack — "Polar Vortex"</h3>
+      <div class="canvas-wrapper" id="sceneCanvas">
+        <div class="frame-info" id="frameInfo">Frame: 0 / 0</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="partsTab" class="grid-view" style="display:none"></div>
+
+  <script>
+    const BASE = 'commonassets/brawler_effects';
+
+    // Effect manifests cache
+    const manifestCache = {};
+    const imageCache = {};
+    let currentFrame = 0;
+    let playing = true;
+    let animationId = null;
+    let speed = 1;
+    let lastTimestamp = 0;
+
+    // Scene definitions matching AttackSceneComposition.tsx
+    const SCENES = {
+      gale: {
+        attack: {
+          title: 'Gale Attack — Snowball Fan',
+          duration: 70,
+          spawns: (() => {
+            const cx = 120, cy = 270, targetX = 460;
+            const spawns = [];
+            // Muzzle flash
+            spawns.push({ part: 'gale_006_atk_muzzle_01', start: 0, x: cx + 15, y: cy, scale: 1.8, blend: 'screen' });
+            spawns.push({ part: 'gale_006_atk_muzzle_02', start: 2, x: cx + 20, y: cy + 5, scale: 1.5, blend: 'screen', opacity: 0.8 });
+            // 6 snowballs flying vertically parallel, each looping its 6-frame clip
+            const spreadWidth = 140;
+            for (let i = 0; i < 6; i++) {
+              const yOffset = -spreadWidth / 2 + (i / 5) * spreadWidth;
+              const dist = targetX - cx;
+              spawns.push({
+                part: 'gale_006_atk_projectile', start: 0,
+                move: { fx: cx + 30, fy: cy + yOffset, tx: cx + dist, ty: cy + yOffset, dur: 22 },
+                scale: 1.4, rotate: 0,
+                linger: 6,
+              });
+              spawns.push({
+                part: 'gale_006_atk_trail_twinkle', start: 4,
+                move: { fx: cx + 60, fy: cy + yOffset, tx: cx + dist - 40, ty: cy + yOffset, dur: 16 },
+                scale: 0.6, blend: 'screen', opacity: 0.5, loop: true,
+              });
+            }
+            // Impact at the target
+            spawns.push({ part: 'gale_006_atk_hit', start: 24, x: targetX, y: cy, scale: 1.2, blend: 'screen' });
+            spawns.push({ part: 'gale_006_atk_reached', start: 26, x: targetX, y: cy, scale: 1.1, blend: 'screen' });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Gale Super — Gale Force',
+          duration: 70,
+          spawns: (() => {
+            const cx = 120, cy = 270, targetX = 460;
+            const spawns = [];
+            const dist = targetX - cx;
+            const spreadWidth = 220;
+            for (let i = 0; i < 7; i++) {
+              const yOff = -spreadWidth / 2 + (i / 6) * spreadWidth;
+              spawns.push({
+                part: 'gale_006_ulti_projectile', start: 0,
+                move: { fx: cx, fy: cy + yOff, tx: cx + dist, ty: cy + yOff, dur: 28 },
+                scale: 1.5, rotate: 0,
+                linger: 5,
+              });
+              spawns.push({
+                part: 'gale_006_ulti_trail_nuts_01', start: 0,
+                move: { fx: cx - 20, fy: cy + yOff, tx: cx + dist - 20, ty: cy + yOff, dur: 28 },
+                scale: 0.8, rotate: 180, loop: true, opacity: 0.8,
+              });
+              spawns.push({
+                part: 'gale_006_ulti_trail_bolts_01', start: 0,
+                move: { fx: cx - 10, fy: cy + yOff, tx: cx + dist - 30, ty: cy + yOff, dur: 28 },
+                scale: 0.8, loop: true, opacity: 0.7, blend: 'screen',
+              });
+            }
+            return spawns;
+          })(),
+        },
+      },
+      ash: {
+        attack: {
+          title: 'Ash Attack — Clean-Up',
+          duration: 90,
+          spawns: (() => {
+            const cx = 120, cy = 310, targetX = 440;
+            const spawns = [];
+            const clouds = ['ash_008_atk_cloud_01', 'ash_008_atk_cloud_02'];
+            for (let i = 0; i < 7; i++) {
+              const progress = (i + 1) / 8;
+              const cloudX = lerp(cx + 40, targetX - 20, progress);
+              const yJitter = (i % 3 - 1) * 20;
+              spawns.push({
+                part: clouds[i % 2], start: i * 3,
+                x: cloudX, y: cy + yJitter - 10, scale: 1.0 + (i % 3) * 0.2, rotate: (i % 2 === 0 ? -10 : 10) + i * 5, opacity: 0.9
+              });
+            }
+            spawns.push({ part: 'ash_008_atk_impact01', start: 16, x: targetX, y: cy, scale: 1.8 });
+            spawns.push({ part: 'ash_008_atk_impact02', start: 19, x: targetX + 15, y: cy - 10, scale: 1.5, rotate: 15, opacity: 0.9 });
+            spawns.push({ part: 'ash_008_atk_impact03', start: 22, x: targetX - 10, y: cy + 15, scale: 1.3, rotate: -10, opacity: 0.8 });
+            spawns.push({ part: 'ash_008_ulti_ground_crack_lv1_01', start: 18, x: targetX, y: cy + 30, scale: 1.5, opacity: 0.9 });
+            spawns.push({ part: 'ash_008_ulti_ground_crack_lv1_02', start: 36, x: targetX + 20, y: cy + 25, scale: 1.3, rotate: 20, opacity: 0.8 });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Ash Super — Little Helpers',
+          duration: 90,
+          spawns: (() => {
+            const cx = 120, cy = 310, targetX = 440;
+            const spawns = [];
+            spawns.push({
+              part: 'ash_008_ulti_projectile', start: 0,
+              move: { fx: cx + 20, fy: cy, tx: targetX, ty: cy, dur: 25, arc: 100 },
+              scale: 1.5, rotate: 360,
+              linger: 4,
+            });
+            spawns.push({ part: 'ulti_reached_explode01', start: 26, x: targetX, y: cy + 10, scale: 1.2, blend: 'screen' });
+            spawns.push({ part: 'ulti_reached_cloud_01', start: 28, x: targetX - 30, y: cy + 40, scale: 1.3, loop: true });
+            spawns.push({ part: 'ulti_reached_cloud_02', start: 30, x: targetX + 30, y: cy + 30, scale: 1.2, loop: true });
+            return spawns;
+          })(),
+        }
+      },
+      kit: {
+        attack: {
+          title: 'Kit Attack — Yarn (friendly)',
+          duration: 60,
+          spawns: (() => {
+            const cx = 270, cy = 300, spawns = [];
+            // Friendly: Kit throws a yarn-ball lob that lands & explodes
+            spawns.push({
+              part: 'kit_def_oc_ulti_projectile', start: 0,
+              move: { fx: cx - 80, fy: cy - 60, tx: cx, ty: cy - 10, dur: 18, arc: 130 },
+              scale: 1.6, rotate: 360, linger: 3,
+            });
+            spawns.push({ part: 'kit_def_oc_ulti_explode', start: 18, x: cx, y: cy, scale: 1.6 });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Kit Super — Friendly Yarn (ally attach)',
+          duration: 90,
+          spawns: (() => {
+            const cx = 270, cy = 300, spawns = [];
+            spawns.push({
+              part: 'kit_def_oc_ulti_projectile', start: 0,
+              move: { fx: cx - 80, fy: cy - 60, tx: cx, ty: cy - 10, dur: 20, arc: 120 },
+              scale: 2.0, rotate: 360, linger: 3,
+            });
+            spawns.push({ part: 'kit_def_oc_ulti_explode', start: 20, x: cx, y: cy - 10, scale: 1.8 });
+            spawns.push({ part: 'kit_def_oc_ulti_ground', start: 24, x: cx, y: cy + 60, scale: 1.6 });
+            spawns.push({ part: 'kit_def_oc_ulti_wool', start: 26, x: cx - 40, y: cy - 30, scale: 1.3, loop: true });
+            spawns.push({ part: 'kit_def_oc_ulti_grass_01', start: 28, x: cx - 80, y: cy + 90, scale: 1.3, loop: true });
+            spawns.push({ part: 'kit_def_oc_ulti_grass_02', start: 30, x: cx + 70, y: cy + 80, scale: 1.3, loop: true });
+            return spawns;
+          })(),
+        },
+        super_enemy: {
+          title: 'Kit Super — Enemy Attach (red)',
+          duration: 80,
+          spawns: (() => {
+            const cx = 270, cy = 300, spawns = [];
+            spawns.push({
+              part: 'kit_def_oc_ulti_projectile_red', start: 0,
+              move: { fx: cx - 80, fy: cy - 60, tx: cx, ty: cy - 20, dur: 20, arc: 110 },
+              scale: 2.0, rotate: 360, linger: 3,
+            });
+            spawns.push({ part: 'kit_def_oc_ulti_trail_elec_red_01', start: 6, x: cx - 40, y: cy - 40, scale: 1.4, loop: true, blend: 'screen' });
+            spawns.push({ part: 'kit_def_oc_ulti_trail_elec_red_02', start: 12, x: cx + 20, y: cy - 20, scale: 1.4, loop: true, blend: 'screen' });
+            spawns.push({ part: 'kit_def_oc_ulti_explode', start: 20, x: cx, y: cy - 10, scale: 1.8 });
+            spawns.push({ part: 'kit_def_oc_ulti_ground_red', start: 24, x: cx, y: cy + 60, scale: 1.7 });
+            spawns.push({ part: 'kit_def_oc_ulti_grass_red_01', start: 28, x: cx - 70, y: cy + 90, scale: 1.3, loop: true });
+            spawns.push({ part: 'kit_def_oc_ulti_grass_red_02', start: 30, x: cx + 60, y: cy + 80, scale: 1.3, loop: true });
+            spawns.push({ part: 'kit_def_oc_ulti_trail_elec_red_03', start: 32, x: cx + 10, y: cy + 40, scale: 1.5, loop: true, blend: 'screen' });
+            return spawns;
+          })(),
+        },
+      },
+      mortis: {
+        attack: {
+          title: 'Mortis Attack',
+          duration: 40,
+          spawns: (() => {
+            const cx = 120, cy = 300, targetX = 400, spawns = [];
+            spawns.push({ part: 'mortis_def_oc_atk_slash', start: 0, x: cx + 150, y: cy, scale: 1.8 });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Mortis Super',
+          duration: 58,
+          spawns: (() => {
+            const cx = 120, cy = 300, targetX = 460, spawns = [];
+            const dist = targetX - cx;
+            const batSpread = 160;
+            for (let i = 0; i < 8; i++) {
+              const yOff = -batSpread / 2 + (i / 7) * batSpread;
+              spawns.push({
+                part: 'mortis_def_g1_bat_flight', start: i % 3,
+                move: { fx: cx, fy: cy + yOff, tx: cx + dist, ty: cy + yOff + (i % 2 === 0 ? 30 : -30), dur: 25 + (i % 2) * 5 },
+                scale: 1.8 + (i % 3) * 0.2, loop: true,
+              });
+            }
+            return spawns;
+          })(),
+        }
+      },
+      hank: {
+        attack: {
+          title: 'Hank Attack',
+          duration: 90,
+          spawns: (() => {
+            const cx = 270, cy = 300, spawns = [];
+            spawns.push({ part: 'hank_004_atk_graffiti', start: 0, x: cx, y: cy, scale: 1.5 });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Hank Super',
+          duration: 78,
+          spawns: (() => {
+            const cx = 270, cy = 300, spawns = [];
+            for (let i = 0; i < 6; i++) {
+              const angle = (i * 60) * (Math.PI / 180);
+              const dist = 300;
+              spawns.push({
+                part: 'hank_004_ulti_projectile', start: 0,
+                move: { fx: cx, fy: cy, tx: cx + Math.cos(angle) * dist, ty: cy + Math.sin(angle) * dist, dur: 40 },
+                scale: 1.5, rotate: i * 60,
+              });
+            }
+            return spawns;
+          })(),
+        }
+      },
+      willow: {
+        attack: {
+          title: 'Willow Attack',
+          duration: 60,
+          spawns: (() => {
+            const cx = 120, cy = 300, targetX = 400, spawns = [];
+            const dist = targetX - cx;
+            spawns.push({
+              part: 'willow_004_atk_muzzle', start: 0,
+              move: { fx: cx, fy: cy - 20, tx: cx + dist, ty: cy - 20, dur: 20, arc: 60 },
+              scale: 1.5, rotate: 360,
+            });
+            spawns.push({ part: 'willow_004_atk_pond', start: 20, x: cx + dist, y: cy, scale: 1.8, loop: true });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Willow Super',
+          duration: 30,
+          spawns: (() => {
+            const cx = 120, cy = 300, targetX = 400, spawns = [];
+            const dist = targetX - cx;
+            spawns.push({
+              part: 'willow_004_ulti_mindcontrol', start: 0,
+              move: { fx: cx, fy: cy, tx: cx + dist, ty: cy, dur: 25 },
+              scale: 1.5,
+            });
+            spawns.push({ part: 'willow_004_ulti_reached', start: 25, x: cx + dist, y: cy, scale: 1.8 });
+            return spawns;
+          })(),
+        }
+      },
+      nani: {
+        attack: {
+          title: 'Nani Attack — Converging Light Orbs',
+          duration: 60,
+          spawns: (() => {
+            const cx = 120, cy = 300, targetX = 380, targetY = 300;
+            const spawns = [];
+            // 3 light orbs curve in a shallow cone and converge at the target.
+            // The orb clip is only 2 frames → loop so it stays visible in flight.
+            for (let i = 0; i < 3; i++) {
+              const spread = (i - 1) * 90; // -90, 0, +90 px vertical offset at start
+              const bulge = i === 1 ? 0 : (i === 0 ? -90 : 90);
+              spawns.push({
+                part: 'nani_007_atk_projectile', start: 0,
+                move: {
+                  fx: cx, fy: cy + spread * 0.3,
+                  cx: cx + (targetX - cx) * 0.5, cy: cy + bulge,
+                  tx: targetX, ty: targetY,
+                  dur: 22,
+                },
+                scale: 1.2, loop: true, blend: 'screen',
+              });
+              // sparkle trail
+              spawns.push({
+                part: 'nani_007_atk_twinkle_01', start: 4,
+                move: {
+                  fx: cx + (targetX - cx) * 0.3, fy: cy + spread * 0.5,
+                  cx: cx + (targetX - cx) * 0.6, cy: cy + bulge * 0.6,
+                  tx: targetX, ty: targetY,
+                  dur: 16,
+                },
+                scale: 1.0, loop: true, blend: 'screen', opacity: 0.8,
+              });
+            }
+            // Contain the convergence: rotating sphere + big hit
+            spawns.push({ part: 'nani_007_atk_reached_sphear', start: 22, x: targetX, y: targetY, scale: 1.2, loop: true, blend: 'screen' });
+            spawns.push({ part: 'nani_007_atk_hit', start: 24, x: targetX, y: targetY, scale: 0.8, blend: 'screen' });
+            return spawns;
+          })(),
+        },
+        super: {
+          title: 'Nani Super — Peep Loop & Detonate',
+          duration: 80,
+          spawns: (() => {
+            const cx = 120, cy = 300, detX = 400, detY = 280;
+            const spawns = [];
+            // Peep: a glowing trail orb that loops around then detonates
+            spawns.push({
+              part: 'nani_007_ulti_projectile_trail_1', start: 0,
+              move: {
+                fx: cx, fy: cy,
+                cx: (cx + detX) / 2, cy: cy - 220,
+                tx: detX, ty: detY,
+                dur: 40,
+              },
+              scale: 2.0, loop: true, blend: 'screen',
+            });
+            spawns.push({
+              part: 'nani_007_ulti_projectile_trail_2', start: 2,
+              move: {
+                fx: cx + 10, fy: cy + 10,
+                cx: (cx + detX) / 2 + 20, cy: cy - 200,
+                tx: detX + 12, ty: detY,
+                dur: 38,
+              },
+              scale: 1.8, loop: true, blend: 'screen', opacity: 0.7,
+            });
+            // Full explosion column at detonation (canvas is very tall; scale keeps it on-screen)
+            spawns.push({ part: 'nani_007_ulti_explode_huge_impact', start: 42, x: detX, y: detY, scale: 0.9, blend: 'screen' });
+            spawns.push({ part: 'nani_007_ulti_explode_huge_floor', start: 44, x: detX, y: detY + 30, scale: 1.5 });
+            spawns.push({ part: 'nani_007_ulti_explode_huge', start: 46, x: detX, y: detY, scale: 0.95, blend: 'screen' });
+            spawns.push({ part: 'nani_007_ulti_explode_sphere_blue', start: 4, x: cx, y: cy - 20, scale: 1.2, loop: true, blend: 'screen' });
+            return spawns;
+          })(),
+        }
+      }
+    };
+
+    // Load manifest
+    async function loadManifest(brawler, part) {
+      const key = `${brawler}/${part}`;
+      if (manifestCache[key]) return manifestCache[key];
+      try {
+        const res = await fetch(`${BASE}/${brawler}/${part}/manifest.json`);
+        if (!res.ok) return null;
+        const data = await res.json();
+        manifestCache[key] = data;
+        return data;
+      } catch { return null; }
+    }
+
+    // Load frame image
+    function loadImage(src) {
+      if (imageCache[src]) return Promise.resolve(imageCache[src]);
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => { imageCache[src] = img; resolve(img); };
+        img.onerror = () => resolve(null);
+        img.src = src;
+      });
+    }
+
+    // Easing
+    function easeOut(t) { return 1 - Math.pow(1 - t, 2); }
+    function lerp(a, b, t) { return a + (b - a) * t; }
+
+    // Render a single spawn at the given frame
+    async function renderSpawn(ctx, brawler, spawn, frame) {
+      const t = frame - spawn.start;
+      if (t < 0) return;
+
+      const manifest = await loadManifest(brawler, spawn.part);
+      if (!manifest || !manifest.frameCount) return;
+
+      const total = manifest.frameCount;
+      const elapsed = Math.max(0, Math.floor(t));
+      const loop = spawn.loop || false;
+      // Moving projectiles keep looping their short clip for the whole flight;
+      // static one-shots play once then hide (unless `hold` keeps the last frame).
+      if (spawn.move) {
+        if (t >= spawn.move.dur + (spawn.linger || 0)) return;
+      } else if (!loop && elapsed >= total) {
+        if (!spawn.hold) return;
+      }
+      const idx = (spawn.move || loop)
+        ? elapsed % total
+        : Math.min(elapsed, total - 1);
+
+      const src = `${BASE}/${brawler}/${spawn.part}/frame_${String(idx).padStart(4, '0')}.png`;
+      const img = await loadImage(src);
+      if (!img) return;
+
+      const uni = manifest.scale || 1;
+      const scl = spawn.scale || 1;
+      // Draw in game-sized pixels and honor the effect's anchor (matches ScEffect.tsx).
+      const w = (img.width / uni) * scl;
+      const h = (img.height / uni) * scl;
+      const ax = (manifest.anchor.x / uni) * scl;
+      const ay = (manifest.anchor.y / uni) * scl;
+      const opacity = spawn.opacity ?? 1;
+      const rotate = spawn.rotate || 0;
+
+      let x, y;
+      if (spawn.move) {
+        const dur = spawn.move.dur || 1;
+        const prog = Math.min(1, t / dur);
+        const e = easeOut(prog);
+        if (spawn.move.cx !== undefined && spawn.move.cy !== undefined) {
+          x = (1 - e) * (1 - e) * spawn.move.fx + 2 * (1 - e) * e * spawn.move.cx + e * e * spawn.move.tx;
+          y = (1 - e) * (1 - e) * spawn.move.fy + 2 * (1 - e) * e * spawn.move.cy + e * e * spawn.move.ty;
+        } else {
+          x = lerp(spawn.move.fx, spawn.move.tx, e);
+          y = lerp(spawn.move.fy, spawn.move.ty, e);
+        }
+        if (spawn.move.arc) {
+          y -= Math.sin(e * Math.PI) * spawn.move.arc;
+        }
+      } else {
+        x = spawn.x || 0;
+        y = spawn.y || 0;
+      }
+
+      ctx.save();
+      ctx.globalAlpha = opacity * (spawn.move ? (1 - Math.pow(Math.min(1, t / (spawn.move?.dur || 30)), 4) * 0.7) : 1);
+      if (spawn.blend === 'screen') ctx.globalCompositeOperation = 'screen';
+      ctx.translate(x, y);
+      if (rotate) ctx.rotate(rotate * Math.PI / 180);
+      if (spawn.filter) ctx.filter = spawn.filter;
+      ctx.drawImage(img, -ax, -ay, w, h);
+      ctx.restore();
+    }
+
+    // Main render loop
+    let currentBrawler = 'gale';
+    let currentSceneKey = 'attack';
+    let currentAudio = null;
+
+    async function render(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const delta = timestamp - lastTimestamp;
+
+      if (playing && delta > 33 / speed) { // ~30fps
+        currentFrame++;
+        lastTimestamp = timestamp;
+      }
+
+      const scene = SCENES[currentBrawler]?.[currentSceneKey];
+      if (!scene) { animationId = requestAnimationFrame(render); return; }
+
+      if (currentFrame >= scene.duration) {
+        if (playing) currentFrame = 0;
+      }
+      
+      // Play audio on frame 0
+      if (playing && currentFrame === 0) {
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+        
+        let audioName = '';
+        if (currentSceneKey === 'attack') audioName = `${currentBrawler}_atk_01`;
+        if (currentSceneKey === 'super') {
+            audioName = `${currentBrawler}_ulti_01`;
+            if (currentBrawler === 'ash') audioName = `ash_rats_01`;
+            if (currentBrawler === 'kit') audioName = `kit_ulti_atk_01`;
+        }
+        
+        currentAudio = new Audio(`commonassets/sound_effects/${audioName}.ogg`);
+        // Fallback to mp3 if ogg doesn't exist
+        currentAudio.onerror = () => {
+            currentAudio = new Audio(`commonassets/sound_effects/${audioName}.mp3`);
+            currentAudio.play().catch(e => console.log('Audio play failed:', e));
+        };
+        currentAudio.play().catch(e => console.log('Audio play failed:', e));
+      }
+
+      const container = document.getElementById('sceneCanvas');
+      let canvas = container.querySelector('canvas');
+      if (!canvas) {
+        canvas = document.createElement('canvas');
+        canvas.width = 540; canvas.height = 540;
+        canvas.style.width = '540px'; canvas.style.height = '540px';
+        container.insertBefore(canvas, container.firstChild);
+      }
+
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, 540, 540);
+
+      // Render all spawns
+      for (const spawn of scene.spawns) {
+        await renderSpawn(ctx, currentBrawler, spawn, currentFrame);
+      }
+
+      document.getElementById('frameInfo').textContent = `Frame: ${currentFrame} / ${scene.duration}`;
+      document.getElementById('sceneTitle').textContent = scene.title;
+
+      animationId = requestAnimationFrame(render);
+    }
+
+    // Parts grid view
+    async function showParts(brawler) {
+      const grid = document.getElementById('partsTab');
+      grid.innerHTML = '<p style="color:#888;padding:12px">Loading parts...</p>';
+
+      try {
+        const res = await fetch(`${BASE}/${brawler}/index.json`);
+        if (!res.ok) { grid.innerHTML = '<p style="color:#f88">No index.json found. Run extraction first.</p>'; return; }
+        const index = await res.json();
+
+        grid.innerHTML = '';
+        for (const [name, manifest] of Object.entries(index)) {
+          const cell = document.createElement('div');
+          cell.className = 'grid-cell';
+          cell.innerHTML = `<div class="part-name">${name}</div>`;
+
+          const cv = document.createElement('canvas');
+          const size = 160;
+          cv.width = size; cv.height = size;
+          cv.style.width = size + 'px'; cv.style.height = size + 'px';
+          cell.appendChild(cv);
+          grid.appendChild(cell);
+
+          // Animate this cell
+          let frame = 0;
+          const total = manifest.frameCount || 1;
+          const animate = async () => {
+            const ctx = cv.getContext('2d');
+            ctx.clearRect(0, 0, size, size);
+            const src = `${BASE}/${brawler}/${name}/frame_${String(frame % total).padStart(4, '0')}.png`;
+            const img = await loadImage(src);
+            if (img) {
+              const sc = Math.min(size / img.width, size / img.height) * 0.9;
+              const w = img.width * sc, h = img.height * sc;
+              ctx.drawImage(img, (size - w) / 2, (size - h) / 2, w, h);
+            }
+            frame++;
+            setTimeout(animate, 100);
+          };
+          animate();
+        }
+      } catch (e) {
+        grid.innerHTML = `<p style="color:#f88">Error: ${e.message}</p>`;
+      }
+    }
+
+    // Populate the scene dropdown from the selected brawler's scene keys
+    const SCENE_LABELS = {
+      attack: 'Attack',
+      super: 'Super',
+      super_enemy: 'Super (Enemy attach)',
+    };
+    function populateScenes(brawler) {
+      const sel = document.getElementById('sceneSelect');
+      const scenes = SCENES[brawler] || {};
+      const keys = Object.keys(scenes);
+      sel.innerHTML = '';
+      keys.forEach((k) => {
+        const opt = document.createElement('option');
+        opt.value = k;
+        opt.textContent = SCENE_LABELS[k] || k;
+        sel.appendChild(opt);
+      });
+      if (keys.includes(currentSceneKey)) {
+        sel.value = currentSceneKey;
+      } else {
+        currentSceneKey = keys[0] || 'attack';
+        sel.value = currentSceneKey;
+      }
+    }
+
+    // Event handlers
+    document.getElementById('brawlerSelect').onchange = (e) => {
+      currentBrawler = e.target.value;
+      currentFrame = 0;
+      populateScenes(currentBrawler);
+      const tab = document.querySelector('.tab.active');
+      if (tab?.dataset.tab === 'parts') showParts(currentBrawler);
+    };
+
+    document.getElementById('sceneSelect').onchange = (e) => {
+      currentSceneKey = e.target.value;
+      currentFrame = 0;
+    };
+
+    document.getElementById('bgSelect').onchange = (e) => {
+      const wrapper = document.querySelector('.canvas-wrapper');
+      wrapper.className = 'canvas-wrapper';
+      if (e.target.value === 'dark') wrapper.classList.add('dark-bg');
+      if (e.target.value === 'game') wrapper.classList.add('game-bg');
+    };
+
+    document.getElementById('speedSlider').oninput = (e) => {
+      speed = parseFloat(e.target.value);
+      document.getElementById('speedLabel').textContent = speed.toFixed(1) + 'x';
+    };
+
+    document.getElementById('playBtn').onclick = () => {
+      playing = !playing;
+      const btn = document.getElementById('playBtn');
+      btn.textContent = playing ? '▶ Play' : '⏸ Pause';
+      btn.classList.toggle('active', playing);
+    };
+
+    document.getElementById('resetBtn').onclick = () => {
+      currentFrame = 0;
+      lastTimestamp = 0;
+    };
+
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.onclick = () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const id = tab.dataset.tab;
+        document.getElementById('scenesTab').style.display = id === 'scenes' ? 'flex' : 'none';
+        document.getElementById('partsTab').style.display = id === 'parts' ? 'grid' : 'none';
+        if (id === 'parts') showParts(currentBrawler);
+      };
+    });
+
+    // Start
+    populateScenes(currentBrawler);
+    animationId = requestAnimationFrame(render);
+  </script>
+</body>
+
+</html>

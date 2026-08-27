@@ -2,11 +2,6 @@
 Facebook Automated Reels Publisher
 ----------------------------------
 Publishes Reels directly to your Facebook Page via the Meta Graph API.
-
-Endpoints used:
-- POST /{page_id}/video_reels (upload_phase: start)
-- POST {upload_url} (Binary or Staged URL Transfer)
-- POST /{page_id}/video_reels (upload_phase: finish, video_state: PUBLISHED)
 """
 
 import os
@@ -30,20 +25,17 @@ else:
 
 def get_credentials():
     access_token = os.getenv("INSTAGRAM_ACCESS_TOKEN") or os.getenv("FACEBOOK_ACCESS_TOKEN")
-    page_id = os.getenv("FACEBOOK_PAGE_ID")
+    page_id = os.getenv("FACEBOOK_PAGE_ID", "1243122028888830")
     
     if not access_token:
-        raise ValueError(
-            f"Missing access token in {ENV_FILE}!\n"
-            f"Ensure your token has 'pages_manage_posts' and 'pages_read_engagement' permissions."
-        )
+        raise ValueError(f"Missing access token in {ENV_FILE}!")
     return access_token, page_id
 
 
-def get_page_access_token(user_access_token: str, page_id: str = None):
+def get_page_access_token(user_access_token: str, page_id: str):
     """Fetches the Page-specific Access Token from the User token."""
-    print(" Fetching Facebook Page access token...", flush=True)
-    url = f"{BASE_GRAPH_URL}/me/accounts"
+    print(f" Fetching Facebook Page access token for Page ID: {page_id}...", flush=True)
+    url = f"{BASE_GRAPH_URL}/{page_id}"
     params = {
         "access_token": user_access_token,
         "fields": "id,name,access_token"
@@ -51,24 +43,11 @@ def get_page_access_token(user_access_token: str, page_id: str = None):
     resp = requests.get(url, params=params).json()
     
     if "error" in resp:
-        raise RuntimeError(f"Error fetching Facebook accounts: {resp['error'].get('message')}")
+        raise RuntimeError(f"Error fetching Facebook Page token: {resp['error'].get('message')}")
         
-    pages = resp.get("data", [])
-    if not pages:
-        # If no pages returned, the token might directly be a page token, or user has single page
-        if page_id:
-            return user_access_token, page_id
-        raise RuntimeError("No Facebook Pages found for this token. Ensure 'pages_show_list' and 'pages_manage_posts' are granted.")
-        
-    target_page = None
-    if page_id:
-        target_page = next((p for p in pages if p["id"] == page_id), None)
-    
-    if not target_page:
-        target_page = pages[0]  # Default to first page
-        
-    print(f" Connected to Facebook Page: '{target_page['name']}' (ID: {target_page['id']})", flush=True)
-    return target_page["access_token"], target_page["id"]
+    page_token = resp.get("access_token", user_access_token)
+    print(f" Connected to Facebook Page: '{resp.get('name')}' (ID: {page_id})", flush=True)
+    return page_token, page_id
 
 
 def stage_local_video(local_path: str) -> str:
@@ -105,7 +84,8 @@ def stage_local_video(local_path: str) -> str:
 
 def publish_facebook_reel(video_url: str = None, video_path: str = None, description: str = "", page_id: str = None):
     user_token, env_page_id = get_credentials()
-    page_access_token, target_page_id = get_page_access_token(user_token, page_id or env_page_id)
+    target_page_id = page_id or env_page_id
+    page_access_token, target_page_id = get_page_access_token(user_token, target_page_id)
     
     if not video_url and video_path:
         video_url = stage_local_video(video_path)
@@ -162,8 +142,9 @@ def publish_facebook_reel(video_url: str = None, video_path: str = None, descrip
         raise RuntimeError(f"Error finalizing FB Reel: {finish_resp['error'].get('message')}")
 
     print(f" Success! Facebook Reel is published! (Video ID: {video_id})", flush=True)
-    print(f" Link: https://www.facebook.com/reel/{video_id}", flush=True)
-    return video_id
+    reel_link = f"https://www.facebook.com/reel/{video_id}"
+    print(f" Link: {reel_link}", flush=True)
+    return video_id, reel_link
 
 
 if __name__ == "__main__":
@@ -171,7 +152,7 @@ if __name__ == "__main__":
     parser.add_argument("--video", default=None, help="Path to local video file (.mp4)")
     parser.add_argument("--video-url", default=None, help="Publicly accessible HTTPS URL to video")
     parser.add_argument("--description", default="", help="Reel caption/description")
-    parser.add_argument("--page-id", default=None, help="Facebook Page ID (optional if linked to token)")
+    parser.add_argument("--page-id", default=None, help="Facebook Page ID")
 
     args = parser.parse_args()
 

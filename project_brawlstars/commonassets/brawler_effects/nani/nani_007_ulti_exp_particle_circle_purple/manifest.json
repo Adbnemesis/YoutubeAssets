@@ -1,0 +1,21 @@
+{
+  "name": "nani_007_ulti_exp_particle_circle_purple",
+  "frameCount": 1,
+  "canvas": {
+    "width": 320,
+    "height": 320
+  },
+  "anchor": {
+    "x": 160,
+    "y": 160
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 320
+    }
+  ]
+}

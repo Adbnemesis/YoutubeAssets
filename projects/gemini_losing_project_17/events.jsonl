@@ -1,0 +1,4 @@
+{"ts": "2026-07-28T05:56:03.629177+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-28T05:56:03.629799+00:00", "tool": "transcriber", "event": "finish", "success": false, "cost_usd": 0.0, "duration_s": 0.0}
+{"ts": "2026-07-28T05:56:06.672879+00:00", "tool": "transcriber", "event": "start"}
+{"ts": "2026-07-28T05:56:18.036896+00:00", "tool": "transcriber", "event": "finish", "success": true, "cost_usd": 0.0, "duration_s": 11.36}

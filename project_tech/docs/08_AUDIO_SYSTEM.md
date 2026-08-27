@@ -21,6 +21,31 @@ Short-form audio must be loud, crisp, and punchy on mobile phone speakers withou
 
 > **Key Discovery:** Overly aggressive ducking makes the background music sound muffled and creates a flat, boring video. The music groove and rhythm must remain **clearly audible** throughout the video!
 
+### BGM Library (project_tech/public/bgm/) — 2026-08-22 audit
+
+| Track | Duration | Mean loudness | Peak | Vibe | Used by | Era |
+|---|---|---|---|---|---|---|
+| `joel sunny - luminary [original song]` | 3:09 | −14.3 dB | 0.0 dBFS | Energetic violin-synth, anthemic | qr_06, shazam_07, tokenize_08, gps_10 | Modern (last 4) |
+| `Death of a Bluebird - Rorschach Roy` | 1:00 | −19.5 dB | −2.4 dB | Quiet, atmospheric, introspective | chatgpt_04, riddle_05, **noise_11** | Mid + current |
+| `Synthwave Goose - Blade Runner 2049` | 3:47 | −10.1 dB | 0.0 dB | Hot, dense synthwave | captcha_01, google_02, twosum_03, floating_point_01 | Early |
+
+### BGM ROTATION RULE (added 2026-08-22)
+
+1. **Never use the same track more than 2 consecutive reels.** Luminary ran 4 straight (Ep.6–Ep.9) → rotation debt. Bluebird now breaks the streak for Ep.11.
+2. **Match the track to the topic mood, then the mix:**
+   - Quiet/atmospheric topic (silence, deep focus) → **Death of a Bluebird** (it is ~5 dB quieter, so the dynamic envelope gets a higher plateau — see noise_11 mix: hook 0.40–0.60 vs Luminary's 0.26–0.42).
+   - Energetic/tech/hidden-journey → **Luminary**.
+   - High-energy / contrast topics → **Synthwave Goose** (mastered hot at 0 dBFS; pre-gain low ~0.22 and strong ducking required).
+3. **Every reel's generate_audio.py must record which track was used + the exact envelope in the reel's case study** (`docs/reels/<slug>/V01.md`), so the rotation is auditable.
+
+### Two-Layer Audio Strategy for Trending IG Audio (added 2026-08-22)
+
+Trending Instagram audio only pays the full algorithmic dividend when added **in-app via the music sticker at publish time** (that's how IG counts usage and ranks the sound's page). Baked-in mp3s can't be tracked/ducked, and a ripped track risks Content-ID issues on YouTube Shorts on the same cross-post.
+
+- **Layer 1 (baked):** quiet, royalty-free/self-owned brand bed (the BGM library above), sidechain-ducked to narration. This is the "brand consistency" layer.
+- **Layer 2 (sticker):** at publish, overlay the user's chosen trending sound at low volume (~20–30%) via IG's music sticker. Full trend boost, zero copyright risk, voice mix untouched.
+- Rule: pick the trending sound the day of publishing (trends rotate fast), not at render time. Add it to every reel's publish checklist.
+
 * **Pre-Gain BGM Volume:** `0.50 – 0.55` (upbeat 110–130 BPM energetic tech/synthwave tracks).
 * **Musical Sidechain Compressor Filter (FFmpeg):**
   ```bash

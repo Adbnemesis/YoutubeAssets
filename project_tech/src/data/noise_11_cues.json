@@ -1,0 +1,1278 @@
+{
+  "reel_id": "noise_11",
+  "title": "Silence Is Made of Sound.",
+  "total_duration_s": 19.341,
+  "total_frames": 580,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "nc01_hook",
+      "speaker": "narrator",
+      "text": "Silence is made of sound.",
+      "start_time_ms": 0,
+      "end_time_ms": 1493,
+      "duration_s": 1.493,
+      "start_frame": 0,
+      "end_frame": 45,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "Silence",
+          "cue": "wave_in",
+          "time_ms": 223,
+          "frame": 7
+        },
+        {
+          "phrase": "made of sound",
+          "cue": "wave_collapse",
+          "time_ms": 1194,
+          "frame": 36
+        }
+      ]
+    },
+    {
+      "id": "nc02_assumption",
+      "speaker": "narrator",
+      "text": "You think headphones drown noise like earplugs do.",
+      "start_time_ms": 1603,
+      "end_time_ms": 3949,
+      "duration_s": 2.347,
+      "start_frame": 48,
+      "end_frame": 118,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "drown out",
+          "cue": "deaden_stamp",
+          "time_ms": 2306,
+          "frame": 69
+        },
+        {
+          "phrase": "earplugs",
+          "cue": "earplug_bump",
+          "time_ms": 3362,
+          "frame": 101
+        }
+      ]
+    },
+    {
+      "id": "nc03_nemi_guess",
+      "speaker": "nemi",
+      "text": "So it just muffles the noise?!",
+      "start_time_ms": 4049,
+      "end_time_ms": 5627,
+      "duration_s": 1.579,
+      "start_frame": 121,
+      "end_frame": 169,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "muffles",
+          "cue": "buzzer_shock",
+          "time_ms": 4838,
+          "frame": 145
+        }
+      ]
+    },
+    {
+      "id": "nc04_reversal",
+      "speaker": "narrator",
+      "text": "Nope! It listens to the noise, then plays a mirror image back.",
+      "start_time_ms": 5717,
+      "end_time_ms": 8703,
+      "duration_s": 2.987,
+      "start_frame": 172,
+      "end_frame": 261,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "listens",
+          "cue": "mic_in",
+          "time_ms": 6463,
+          "frame": 194
+        },
+        {
+          "phrase": "mirror image",
+          "cue": "mirror_flip",
+          "time_ms": 8105,
+          "frame": 243
+        },
+        {
+          "phrase": "back",
+          "cue": "anti_fire",
+          "time_ms": 8464,
+          "frame": 254
+        }
+      ]
+    },
+    {
+      "id": "nc05_mechanism",
+      "speaker": "narrator",
+      "text": "Every noise peak gets an exact anti-peak fired straight at it.",
+      "start_time_ms": 8803,
+      "end_time_ms": 12195,
+      "duration_s": 3.392,
+      "start_frame": 264,
+      "end_frame": 366,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "noise peak",
+          "cue": "peak_rise",
+          "time_ms": 9481,
+          "frame": 284
+        },
+        {
+          "phrase": "anti-peak",
+          "cue": "anti_fire2",
+          "time_ms": 11177,
+          "frame": 335
+        }
+      ]
+    },
+    {
+      "id": "nc06_payoff",
+      "speaker": "narrator",
+      "text": "They overlap and cancel out, leaving total silence.",
+      "start_time_ms": 12295,
+      "end_time_ms": 14919,
+      "duration_s": 2.624,
+      "start_frame": 369,
+      "end_frame": 448,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "cancel out",
+          "cue": "cancel_zero",
+          "time_ms": 13738,
+          "frame": 412
+        },
+        {
+          "phrase": "total silence",
+          "cue": "flatline_zero",
+          "time_ms": 14525,
+          "frame": 436
+        }
+      ]
+    },
+    {
+      "id": "nc07_nemi_payoff",
+      "speaker": "nemi",
+      "text": "So my quiet is pure math?",
+      "start_time_ms": 15029,
+      "end_time_ms": 16543,
+      "duration_s": 1.515,
+      "start_frame": 451,
+      "end_frame": 496,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "pure math",
+          "cue": "smug_stamp",
+          "time_ms": 15634,
+          "frame": 469
+        }
+      ]
+    },
+    {
+      "id": "nc08_loop",
+      "speaker": "narrator",
+      "text": "So when your headphones go quiet, the sound is still fighting.",
+      "start_time_ms": 16683,
+      "end_time_ms": 19221,
+      "duration_s": 2.539,
+      "start_frame": 500,
+      "end_frame": 577,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "go quiet",
+          "cue": "loop_quiet",
+          "time_ms": 17698,
+          "frame": 531
+        },
+        {
+          "phrase": "still fighting",
+          "cue": "loop_fight",
+          "time_ms": 18840,
+          "frame": 565
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 33,
+      "text": "Silence is made of",
+      "words": [
+        {
+          "word": "Silence",
+          "start_s": 0.0,
+          "end_s": 0.38,
+          "start_frame": 0,
+          "end_frame": 11
+        },
+        {
+          "word": "is",
+          "start_s": 0.38,
+          "end_s": 0.66,
+          "start_frame": 11,
+          "end_frame": 20
+        },
+        {
+          "word": "made",
+          "start_s": 0.66,
+          "end_s": 0.84,
+          "start_frame": 20,
+          "end_frame": 25
+        },
+        {
+          "word": "of",
+          "start_s": 0.84,
+          "end_s": 0.98,
+          "start_frame": 25,
+          "end_frame": 29
+        }
+      ]
+    },
+    {
+      "start_frame": 29,
+      "end_frame": 74,
+      "text": "sound. You think headphones",
+      "words": [
+        {
+          "word": "sound.",
+          "start_s": 0.98,
+          "end_s": 1.22,
+          "start_frame": 29,
+          "end_frame": 37
+        },
+        {
+          "word": "You",
+          "start_s": 1.66,
+          "end_s": 1.74,
+          "start_frame": 50,
+          "end_frame": 52
+        },
+        {
+          "word": "think",
+          "start_s": 1.74,
+          "end_s": 1.96,
+          "start_frame": 52,
+          "end_frame": 59
+        },
+        {
+          "word": "headphones",
+          "start_s": 1.96,
+          "end_s": 2.32,
+          "start_frame": 59,
+          "end_frame": 70
+        }
+      ]
+    },
+    {
+      "start_frame": 70,
+      "end_frame": 110,
+      "text": "drown noise like earplugs",
+      "words": [
+        {
+          "word": "drown",
+          "start_s": 2.32,
+          "end_s": 2.58,
+          "start_frame": 70,
+          "end_frame": 77
+        },
+        {
+          "word": "noise",
+          "start_s": 2.58,
+          "end_s": 2.88,
+          "start_frame": 77,
+          "end_frame": 86
+        },
+        {
+          "word": "like",
+          "start_s": 2.88,
+          "end_s": 3.1,
+          "start_frame": 86,
+          "end_frame": 93
+        },
+        {
+          "word": "earplugs",
+          "start_s": 3.1,
+          "end_s": 3.54,
+          "start_frame": 93,
+          "end_frame": 106
+        }
+      ]
+    },
+    {
+      "start_frame": 106,
+      "end_frame": 141,
+      "text": "do. So it just",
+      "words": [
+        {
+          "word": "do.",
+          "start_s": 3.54,
+          "end_s": 3.72,
+          "start_frame": 106,
+          "end_frame": 112
+        },
+        {
+          "word": "So",
+          "start_s": 4.04,
+          "end_s": 4.22,
+          "start_frame": 121,
+          "end_frame": 127
+        },
+        {
+          "word": "it",
+          "start_s": 4.22,
+          "end_s": 4.38,
+          "start_frame": 127,
+          "end_frame": 131
+        },
+        {
+          "word": "just",
+          "start_s": 4.38,
+          "end_s": 4.58,
+          "start_frame": 131,
+          "end_frame": 137
+        }
+      ]
+    },
+    {
+      "start_frame": 137,
+      "end_frame": 181,
+      "text": "muffles the noise? Nope,",
+      "words": [
+        {
+          "word": "muffles",
+          "start_s": 4.58,
+          "end_s": 5.0,
+          "start_frame": 137,
+          "end_frame": 150
+        },
+        {
+          "word": "the",
+          "start_s": 5.0,
+          "end_s": 5.18,
+          "start_frame": 150,
+          "end_frame": 155
+        },
+        {
+          "word": "noise?",
+          "start_s": 5.18,
+          "end_s": 5.4,
+          "start_frame": 155,
+          "end_frame": 162
+        },
+        {
+          "word": "Nope,",
+          "start_s": 5.74,
+          "end_s": 5.9,
+          "start_frame": 172,
+          "end_frame": 177
+        }
+      ]
+    },
+    {
+      "start_frame": 188,
+      "end_frame": 210,
+      "text": "it listens to the",
+      "words": [
+        {
+          "word": "it",
+          "start_s": 6.26,
+          "end_s": 6.36,
+          "start_frame": 188,
+          "end_frame": 191
+        },
+        {
+          "word": "listens",
+          "start_s": 6.36,
+          "end_s": 6.56,
+          "start_frame": 191,
+          "end_frame": 197
+        },
+        {
+          "word": "to",
+          "start_s": 6.56,
+          "end_s": 6.76,
+          "start_frame": 197,
+          "end_frame": 203
+        },
+        {
+          "word": "the",
+          "start_s": 6.76,
+          "end_s": 6.86,
+          "start_frame": 203,
+          "end_frame": 206
+        }
+      ]
+    },
+    {
+      "start_frame": 206,
+      "end_frame": 238,
+      "text": "noise, then plays a",
+      "words": [
+        {
+          "word": "noise,",
+          "start_s": 6.86,
+          "end_s": 7.08,
+          "start_frame": 206,
+          "end_frame": 212
+        },
+        {
+          "word": "then",
+          "start_s": 7.38,
+          "end_s": 7.48,
+          "start_frame": 221,
+          "end_frame": 224
+        },
+        {
+          "word": "plays",
+          "start_s": 7.48,
+          "end_s": 7.66,
+          "start_frame": 224,
+          "end_frame": 230
+        },
+        {
+          "word": "a",
+          "start_s": 7.66,
+          "end_s": 7.8,
+          "start_frame": 230,
+          "end_frame": 234
+        }
+      ]
+    },
+    {
+      "start_frame": 234,
+      "end_frame": 274,
+      "text": "mirror image back. Every",
+      "words": [
+        {
+          "word": "mirror",
+          "start_s": 7.8,
+          "end_s": 7.94,
+          "start_frame": 234,
+          "end_frame": 238
+        },
+        {
+          "word": "image",
+          "start_s": 7.94,
+          "end_s": 8.22,
+          "start_frame": 238,
+          "end_frame": 247
+        },
+        {
+          "word": "back.",
+          "start_s": 8.22,
+          "end_s": 8.56,
+          "start_frame": 247,
+          "end_frame": 257
+        },
+        {
+          "word": "Every",
+          "start_s": 8.84,
+          "end_s": 9.0,
+          "start_frame": 265,
+          "end_frame": 270
+        }
+      ]
+    },
+    {
+      "start_frame": 270,
+      "end_frame": 302,
+      "text": "noise peak gets an",
+      "words": [
+        {
+          "word": "noise",
+          "start_s": 9.0,
+          "end_s": 9.24,
+          "start_frame": 270,
+          "end_frame": 277
+        },
+        {
+          "word": "peak",
+          "start_s": 9.24,
+          "end_s": 9.5,
+          "start_frame": 277,
+          "end_frame": 285
+        },
+        {
+          "word": "gets",
+          "start_s": 9.5,
+          "end_s": 9.78,
+          "start_frame": 285,
+          "end_frame": 293
+        },
+        {
+          "word": "an",
+          "start_s": 9.78,
+          "end_s": 9.92,
+          "start_frame": 293,
+          "end_frame": 298
+        }
+      ]
+    },
+    {
+      "start_frame": 298,
+      "end_frame": 345,
+      "text": "exact anti -peak fired",
+      "words": [
+        {
+          "word": "exact",
+          "start_s": 9.92,
+          "end_s": 10.2,
+          "start_frame": 298,
+          "end_frame": 306
+        },
+        {
+          "word": "anti",
+          "start_s": 10.2,
+          "end_s": 10.7,
+          "start_frame": 306,
+          "end_frame": 321
+        },
+        {
+          "word": "-peak",
+          "start_s": 10.7,
+          "end_s": 11.1,
+          "start_frame": 321,
+          "end_frame": 333
+        },
+        {
+          "word": "fired",
+          "start_s": 11.1,
+          "end_s": 11.36,
+          "start_frame": 333,
+          "end_frame": 341
+        }
+      ]
+    },
+    {
+      "start_frame": 341,
+      "end_frame": 376,
+      "text": "straight at it. They",
+      "words": [
+        {
+          "word": "straight",
+          "start_s": 11.36,
+          "end_s": 11.66,
+          "start_frame": 341,
+          "end_frame": 350
+        },
+        {
+          "word": "at",
+          "start_s": 11.66,
+          "end_s": 11.84,
+          "start_frame": 350,
+          "end_frame": 355
+        },
+        {
+          "word": "it.",
+          "start_s": 11.84,
+          "end_s": 12.1,
+          "start_frame": 355,
+          "end_frame": 363
+        },
+        {
+          "word": "They",
+          "start_s": 12.3,
+          "end_s": 12.4,
+          "start_frame": 369,
+          "end_frame": 372
+        }
+      ]
+    },
+    {
+      "start_frame": 372,
+      "end_frame": 411,
+      "text": "overlap and cancel out,",
+      "words": [
+        {
+          "word": "overlap",
+          "start_s": 12.4,
+          "end_s": 12.74,
+          "start_frame": 372,
+          "end_frame": 382
+        },
+        {
+          "word": "and",
+          "start_s": 12.74,
+          "end_s": 13.0,
+          "start_frame": 382,
+          "end_frame": 390
+        },
+        {
+          "word": "cancel",
+          "start_s": 13.0,
+          "end_s": 13.28,
+          "start_frame": 390,
+          "end_frame": 398
+        },
+        {
+          "word": "out,",
+          "start_s": 13.28,
+          "end_s": 13.56,
+          "start_frame": 398,
+          "end_frame": 407
+        }
+      ]
+    },
+    {
+      "start_frame": 413,
+      "end_frame": 460,
+      "text": "leaving total silence. So",
+      "words": [
+        {
+          "word": "leaving",
+          "start_s": 13.76,
+          "end_s": 13.9,
+          "start_frame": 413,
+          "end_frame": 417
+        },
+        {
+          "word": "total",
+          "start_s": 13.9,
+          "end_s": 14.22,
+          "start_frame": 417,
+          "end_frame": 427
+        },
+        {
+          "word": "silence.",
+          "start_s": 14.22,
+          "end_s": 14.66,
+          "start_frame": 427,
+          "end_frame": 440
+        },
+        {
+          "word": "So",
+          "start_s": 14.98,
+          "end_s": 15.2,
+          "start_frame": 449,
+          "end_frame": 456
+        }
+      ]
+    },
+    {
+      "start_frame": 456,
+      "end_frame": 490,
+      "text": "my quiet is pure",
+      "words": [
+        {
+          "word": "my",
+          "start_s": 15.2,
+          "end_s": 15.38,
+          "start_frame": 456,
+          "end_frame": 461
+        },
+        {
+          "word": "quiet",
+          "start_s": 15.38,
+          "end_s": 15.74,
+          "start_frame": 461,
+          "end_frame": 472
+        },
+        {
+          "word": "is",
+          "start_s": 15.74,
+          "end_s": 15.94,
+          "start_frame": 472,
+          "end_frame": 478
+        },
+        {
+          "word": "pure",
+          "start_s": 15.94,
+          "end_s": 16.2,
+          "start_frame": 478,
+          "end_frame": 486
+        }
+      ]
+    },
+    {
+      "start_frame": 486,
+      "end_frame": 521,
+      "text": "math? So when your",
+      "words": [
+        {
+          "word": "math?",
+          "start_s": 16.2,
+          "end_s": 16.42,
+          "start_frame": 486,
+          "end_frame": 493
+        },
+        {
+          "word": "So",
+          "start_s": 16.72,
+          "end_s": 16.86,
+          "start_frame": 502,
+          "end_frame": 506
+        },
+        {
+          "word": "when",
+          "start_s": 16.86,
+          "end_s": 17.1,
+          "start_frame": 506,
+          "end_frame": 513
+        },
+        {
+          "word": "your",
+          "start_s": 17.1,
+          "end_s": 17.22,
+          "start_frame": 513,
+          "end_frame": 517
+        }
+      ]
+    },
+    {
+      "start_frame": 517,
+      "end_frame": 553,
+      "text": "headphones go quiet, the",
+      "words": [
+        {
+          "word": "headphones",
+          "start_s": 17.22,
+          "end_s": 17.46,
+          "start_frame": 517,
+          "end_frame": 524
+        },
+        {
+          "word": "go",
+          "start_s": 17.46,
+          "end_s": 17.68,
+          "start_frame": 524,
+          "end_frame": 530
+        },
+        {
+          "word": "quiet,",
+          "start_s": 17.68,
+          "end_s": 18.02,
+          "start_frame": 530,
+          "end_frame": 541
+        },
+        {
+          "word": "the",
+          "start_s": 18.24,
+          "end_s": 18.3,
+          "start_frame": 547,
+          "end_frame": 549
+        }
+      ]
+    },
+    {
+      "start_frame": 549,
+      "end_frame": 575,
+      "text": "sound is still fighting.",
+      "words": [
+        {
+          "word": "sound",
+          "start_s": 18.3,
+          "end_s": 18.48,
+          "start_frame": 549,
+          "end_frame": 554
+        },
+        {
+          "word": "is",
+          "start_s": 18.48,
+          "end_s": 18.6,
+          "start_frame": 554,
+          "end_frame": 558
+        },
+        {
+          "word": "still",
+          "start_s": 18.6,
+          "end_s": 18.76,
+          "start_frame": 558,
+          "end_frame": 563
+        },
+        {
+          "word": "fighting.",
+          "start_s": 18.76,
+          "end_s": 19.02,
+          "start_frame": 563,
+          "end_frame": 571
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Silence",
+      "start_s": 0.0,
+      "end_s": 0.38,
+      "start_frame": 0,
+      "end_frame": 11
+    },
+    {
+      "word": "is",
+      "start_s": 0.38,
+      "end_s": 0.66,
+      "start_frame": 11,
+      "end_frame": 20
+    },
+    {
+      "word": "made",
+      "start_s": 0.66,
+      "end_s": 0.84,
+      "start_frame": 20,
+      "end_frame": 25
+    },
+    {
+      "word": "of",
+      "start_s": 0.84,
+      "end_s": 0.98,
+      "start_frame": 25,
+      "end_frame": 29
+    },
+    {
+      "word": "sound.",
+      "start_s": 0.98,
+      "end_s": 1.22,
+      "start_frame": 29,
+      "end_frame": 37
+    },
+    {
+      "word": "You",
+      "start_s": 1.66,
+      "end_s": 1.74,
+      "start_frame": 50,
+      "end_frame": 52
+    },
+    {
+      "word": "think",
+      "start_s": 1.74,
+      "end_s": 1.96,
+      "start_frame": 52,
+      "end_frame": 59
+    },
+    {
+      "word": "headphones",
+      "start_s": 1.96,
+      "end_s": 2.32,
+      "start_frame": 59,
+      "end_frame": 70
+    },
+    {
+      "word": "drown",
+      "start_s": 2.32,
+      "end_s": 2.58,
+      "start_frame": 70,
+      "end_frame": 77
+    },
+    {
+      "word": "noise",
+      "start_s": 2.58,
+      "end_s": 2.88,
+      "start_frame": 77,
+      "end_frame": 86
+    },
+    {
+      "word": "like",
+      "start_s": 2.88,
+      "end_s": 3.1,
+      "start_frame": 86,
+      "end_frame": 93
+    },
+    {
+      "word": "earplugs",
+      "start_s": 3.1,
+      "end_s": 3.54,
+      "start_frame": 93,
+      "end_frame": 106
+    },
+    {
+      "word": "do.",
+      "start_s": 3.54,
+      "end_s": 3.72,
+      "start_frame": 106,
+      "end_frame": 112
+    },
+    {
+      "word": "So",
+      "start_s": 4.04,
+      "end_s": 4.22,
+      "start_frame": 121,
+      "end_frame": 127
+    },
+    {
+      "word": "it",
+      "start_s": 4.22,
+      "end_s": 4.38,
+      "start_frame": 127,
+      "end_frame": 131
+    },
+    {
+      "word": "just",
+      "start_s": 4.38,
+      "end_s": 4.58,
+      "start_frame": 131,
+      "end_frame": 137
+    },
+    {
+      "word": "muffles",
+      "start_s": 4.58,
+      "end_s": 5.0,
+      "start_frame": 137,
+      "end_frame": 150
+    },
+    {
+      "word": "the",
+      "start_s": 5.0,
+      "end_s": 5.18,
+      "start_frame": 150,
+      "end_frame": 155
+    },
+    {
+      "word": "noise?",
+      "start_s": 5.18,
+      "end_s": 5.4,
+      "start_frame": 155,
+      "end_frame": 162
+    },
+    {
+      "word": "Nope,",
+      "start_s": 5.74,
+      "end_s": 5.9,
+      "start_frame": 172,
+      "end_frame": 177
+    },
+    {
+      "word": "it",
+      "start_s": 6.26,
+      "end_s": 6.36,
+      "start_frame": 188,
+      "end_frame": 191
+    },
+    {
+      "word": "listens",
+      "start_s": 6.36,
+      "end_s": 6.56,
+      "start_frame": 191,
+      "end_frame": 197
+    },
+    {
+      "word": "to",
+      "start_s": 6.56,
+      "end_s": 6.76,
+      "start_frame": 197,
+      "end_frame": 203
+    },
+    {
+      "word": "the",
+      "start_s": 6.76,
+      "end_s": 6.86,
+      "start_frame": 203,
+      "end_frame": 206
+    },
+    {
+      "word": "noise,",
+      "start_s": 6.86,
+      "end_s": 7.08,
+      "start_frame": 206,
+      "end_frame": 212
+    },
+    {
+      "word": "then",
+      "start_s": 7.38,
+      "end_s": 7.48,
+      "start_frame": 221,
+      "end_frame": 224
+    },
+    {
+      "word": "plays",
+      "start_s": 7.48,
+      "end_s": 7.66,
+      "start_frame": 224,
+      "end_frame": 230
+    },
+    {
+      "word": "a",
+      "start_s": 7.66,
+      "end_s": 7.8,
+      "start_frame": 230,
+      "end_frame": 234
+    },
+    {
+      "word": "mirror",
+      "start_s": 7.8,
+      "end_s": 7.94,
+      "start_frame": 234,
+      "end_frame": 238
+    },
+    {
+      "word": "image",
+      "start_s": 7.94,
+      "end_s": 8.22,
+      "start_frame": 238,
+      "end_frame": 247
+    },
+    {
+      "word": "back.",
+      "start_s": 8.22,
+      "end_s": 8.56,
+      "start_frame": 247,
+      "end_frame": 257
+    },
+    {
+      "word": "Every",
+      "start_s": 8.84,
+      "end_s": 9.0,
+      "start_frame": 265,
+      "end_frame": 270
+    },
+    {
+      "word": "noise",
+      "start_s": 9.0,
+      "end_s": 9.24,
+      "start_frame": 270,
+      "end_frame": 277
+    },
+    {
+      "word": "peak",
+      "start_s": 9.24,
+      "end_s": 9.5,
+      "start_frame": 277,
+      "end_frame": 285
+    },
+    {
+      "word": "gets",
+      "start_s": 9.5,
+      "end_s": 9.78,
+      "start_frame": 285,
+      "end_frame": 293
+    },
+    {
+      "word": "an",
+      "start_s": 9.78,
+      "end_s": 9.92,
+      "start_frame": 293,
+      "end_frame": 298
+    },
+    {
+      "word": "exact",
+      "start_s": 9.92,
+      "end_s": 10.2,
+      "start_frame": 298,
+      "end_frame": 306
+    },
+    {
+      "word": "anti",
+      "start_s": 10.2,
+      "end_s": 10.7,
+      "start_frame": 306,
+      "end_frame": 321
+    },
+    {
+      "word": "-peak",
+      "start_s": 10.7,
+      "end_s": 11.1,
+      "start_frame": 321,
+      "end_frame": 333
+    },
+    {
+      "word": "fired",
+      "start_s": 11.1,
+      "end_s": 11.36,
+      "start_frame": 333,
+      "end_frame": 341
+    },
+    {
+      "word": "straight",
+      "start_s": 11.36,
+      "end_s": 11.66,
+      "start_frame": 341,
+      "end_frame": 350
+    },
+    {
+      "word": "at",
+      "start_s": 11.66,
+      "end_s": 11.84,
+      "start_frame": 350,
+      "end_frame": 355
+    },
+    {
+      "word": "it.",
+      "start_s": 11.84,
+      "end_s": 12.1,
+      "start_frame": 355,
+      "end_frame": 363
+    },
+    {
+      "word": "They",
+      "start_s": 12.3,
+      "end_s": 12.4,
+      "start_frame": 369,
+      "end_frame": 372
+    },
+    {
+      "word": "overlap",
+      "start_s": 12.4,
+      "end_s": 12.74,
+      "start_frame": 372,
+      "end_frame": 382
+    },
+    {
+      "word": "and",
+      "start_s": 12.74,
+      "end_s": 13.0,
+      "start_frame": 382,
+      "end_frame": 390
+    },
+    {
+      "word": "cancel",
+      "start_s": 13.0,
+      "end_s": 13.28,
+      "start_frame": 390,
+      "end_frame": 398
+    },
+    {
+      "word": "out,",
+      "start_s": 13.28,
+      "end_s": 13.56,
+      "start_frame": 398,
+      "end_frame": 407
+    },
+    {
+      "word": "leaving",
+      "start_s": 13.76,
+      "end_s": 13.9,
+      "start_frame": 413,
+      "end_frame": 417
+    },
+    {
+      "word": "total",
+      "start_s": 13.9,
+      "end_s": 14.22,
+      "start_frame": 417,
+      "end_frame": 427
+    },
+    {
+      "word": "silence.",
+      "start_s": 14.22,
+      "end_s": 14.66,
+      "start_frame": 427,
+      "end_frame": 440
+    },
+    {
+      "word": "So",
+      "start_s": 14.98,
+      "end_s": 15.2,
+      "start_frame": 449,
+      "end_frame": 456
+    },
+    {
+      "word": "my",
+      "start_s": 15.2,
+      "end_s": 15.38,
+      "start_frame": 456,
+      "end_frame": 461
+    },
+    {
+      "word": "quiet",
+      "start_s": 15.38,
+      "end_s": 15.74,
+      "start_frame": 461,
+      "end_frame": 472
+    },
+    {
+      "word": "is",
+      "start_s": 15.74,
+      "end_s": 15.94,
+      "start_frame": 472,
+      "end_frame": 478
+    },
+    {
+      "word": "pure",
+      "start_s": 15.94,
+      "end_s": 16.2,
+      "start_frame": 478,
+      "end_frame": 486
+    },
+    {
+      "word": "math?",
+      "start_s": 16.2,
+      "end_s": 16.42,
+      "start_frame": 486,
+      "end_frame": 493
+    },
+    {
+      "word": "So",
+      "start_s": 16.72,
+      "end_s": 16.86,
+      "start_frame": 502,
+      "end_frame": 506
+    },
+    {
+      "word": "when",
+      "start_s": 16.86,
+      "end_s": 17.1,
+      "start_frame": 506,
+      "end_frame": 513
+    },
+    {
+      "word": "your",
+      "start_s": 17.1,
+      "end_s": 17.22,
+      "start_frame": 513,
+      "end_frame": 517
+    },
+    {
+      "word": "headphones",
+      "start_s": 17.22,
+      "end_s": 17.46,
+      "start_frame": 517,
+      "end_frame": 524
+    },
+    {
+      "word": "go",
+      "start_s": 17.46,
+      "end_s": 17.68,
+      "start_frame": 524,
+      "end_frame": 530
+    },
+    {
+      "word": "quiet,",
+      "start_s": 17.68,
+      "end_s": 18.02,
+      "start_frame": 530,
+      "end_frame": 541
+    },
+    {
+      "word": "the",
+      "start_s": 18.24,
+      "end_s": 18.3,
+      "start_frame": 547,
+      "end_frame": 549
+    },
+    {
+      "word": "sound",
+      "start_s": 18.3,
+      "end_s": 18.48,
+      "start_frame": 549,
+      "end_frame": 554
+    },
+    {
+      "word": "is",
+      "start_s": 18.48,
+      "end_s": 18.6,
+      "start_frame": 554,
+      "end_frame": 558
+    },
+    {
+      "word": "still",
+      "start_s": 18.6,
+      "end_s": 18.76,
+      "start_frame": 558,
+      "end_frame": 563
+    },
+    {
+      "word": "fighting.",
+      "start_s": 18.76,
+      "end_s": 19.02,
+      "start_frame": 563,
+      "end_frame": 571
+    }
+  ]
+}

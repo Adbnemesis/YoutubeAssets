@@ -1,0 +1,59 @@
+# YouTube Viral Metadata — Seedance 2.5 Explained in 3 Mins
+
+## 1. Title Options
+- Monkey Explains Seedance 2.5 In 3 Mins
+- Why ByteDance's Seedance 2.5 Changes AI Video Forever (ELI5)
+- What Actually Is Seedance 2.5? (Explain Like I'm 5)
+- Why Seedance 2.5 Is Secretly Easy To Understand
+
+---
+
+## 2. Video Description
+
+ByteDance TikTok monkey just dropped Seedance 2.5! Old AI video models had lazy 3-second glitch limits where monkey faces turned into green frogs... but Seedance 2.5 draws 30 full banana-seconds of smooth 4K continuous cinema in one single take!
+
+In this quick explainer, Tech Monkey breaks down how Seedance 2.5 works using simple jungle banana analogies. Discover how its 50-asset magic memory keeps your characters consistent, how timestamp camera control gives you a real steering wheel, and why it's changing AI video creation forever!
+
+Music: "Monkeys Spinning Monkeys" by Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/
+
+If you learned something new, don't forget to like, comment, and subscribe to Tech Monkey Academy for more jungle tech explainers!
+
+#Seedance25 #ByteDance #AIVideo #TechExplainer #CapCut #Dreamina #MachineLearning #TechMonkey #ELI5 #AITools #VideoGeneration #AIAnimation #TechTrends2026 #ComputerScience
+
+---
+
+## 3. Timestamps / Chapters
+00:00 - Introduction to Seedance 2.5
+00:21 - Three Second Video Collapse
+00:36 - Thirty Second One-Take Cinema
+01:07 - Fifty Asset Magic Memory
+01:29 - Timestamp Camera Control
+01:37 - CapCut Integration & Final Takeaway
+
+---
+
+## 4. Keywords & Tags
+Seedance 2.5, ByteDance Seedance 2.5, AI video generation, Seedance AI, Dreamina Seedance, CapCut AI video, 30 second AI video, Seedance 2.5 vs Sora, AI video model 2026, monkey explains tech, tech monkey academy, explain like im 5 AI, text to video AI, image to video AI, multimodal AI video, temporal consistency AI, 4K AI video generation, ByteDance AI tool
+
+---
+
+## 5. Sources & References
+- ByteDance Official Seedance 2.5 Announcement (bytedance.com)
+- Seedance 2.5 Technical Specifications & Features Guide
+- CapCut & Dreamina Integration Documentation
+
+---
+
+## 6. Thumbnail Prompts (High-CTR Reference Style)
+
+### Option 1: "IT'S HERE..." (30-Sec AI Video Revolution)
+```text
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey with thick black-rimmed glasses, simple dot eyes, basic line mouth, looking shocked and sweating, with wide anxious eyes and holding his cartoon hands to his cheeks. On the left side, a clean whiteboard comparison drawing is shown: a giant unbroken golden film strip labeled "30 SECONDS" with green checkmarks, next to a tiny broken 3-second film strip labeled "3 SECS" with a red cross over a green frog icon. At the top-left, a light red pill-shaped capsule contains red text "BYTEDANCE 2.5" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S HERE...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+```
+
+### Option 2: "IT'S OVER..." (End of Glitchy 3-Sec AI Video)
+```text
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey with thick black-rimmed glasses, simple dot eyes, basic line mouth, looking extremely excited with wide open mouth pointing to the left side. On the left side, a giant shiny movie camera box labeled "SEEDANCE 2.5" with a golden banana stack on top, throwing 50 asset cards into a magic pot. At the top-left, a light red pill-shaped capsule contains red text "30-SEC ONE-TAKE" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S OVER...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+```

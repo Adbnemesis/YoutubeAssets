@@ -1,5 +1,12 @@
 # NEMI EXPLAINS — COMPLETE VERSION HISTORY & EVOLUTION LOG
 
+> ⚠️ **REALITY NOTE (2026-08-22):** Internal scores below measure *craft intent only*.
+> Field data (`13_ANALYTICS_SYSTEM.md` §0, `26_RETENTION_POSTMORTEM_AND_PLAYBOOK.md`) showed the
+> V10/V11 "98/100" masters averaged just 13–25% APV with 3–6s watch time. Self-scores are
+> **advisory**; T+48h retention metrics are the only verdict. The production line also switched
+> from version numbers to topic slugs from Ep.5 onward (`riddle_05`, `qr_06`, …).
+
+
 ## V01 — Initial Proof of Concept
 * **Date:** 2026-08-16 | **File:** `out/NemiExplains_01.mp4` | MCQ format, no voice narration.
 
@@ -43,3 +50,16 @@
 * **Date:** 2026-08-17 | **File:** `out/NemiExplains_14.mp4` | 22.20s @ 30fps | **Score: 93.8 / 100 (Overall: 9.38 / 10.0)**
 * **Key Breakthrough:** Solved the weak vertical 1080×1920 frame utilization by distributing visual weight across the full canvas (top headline, central hero console, active Nemi actor, lower educational context boxes) and introduced a dynamic BGM story arc with automated volume curve and sidechain ducking.
 * **Status:** **ACTIVE PRODUCTION MASTER (SURPASSED $\ge 9.0/10$).**
+
+---
+
+## FIELD ERA — TOPIC-SLUG PRODUCTION LINE (Ep.5+)
+
+| Episode | Slug | Topic | Duration | Master | Notes |
+|:---:|:---|:---|:---:|:---|:---|
+| Ep.5 | `riddle_05` | Dining Philosophers / Deadlock Riddle | ~22s | `out/NemiExplains_Riddle_Deadlock_4K_20260821.mp4` | APV ~18% (analyzer guessed duration — bug logged) |
+| Ep.6 | `qr_06` | QR Codes Survive Damage (Reed–Solomon) | 18.13s | `out/NemiExplains_QR_20260822.mp4` | First post-mortem doctrine reel; loudness took 3 passes → -3dB SFX doctrine born |
+| Ep.7 | `shazam_07` | Shazam Fingerprints | 20.27s | `out/NemiExplains_Shazam_20260822.mp4` | -15.74 LUFS first-pass compliant; case study: `docs/reels/shazam_07/V01.md` |
+| Ep.8 | `tokenize_08` | Tokenizer Trap ("strawberry") | 22.17s | `out/NemiExplains_Tokenize_4K_20260822.mp4` | Dev-niche topic — retention A/B vs Ep.6/7 pending |
+| Ep.9 | `mcp_09` | MCP vs API | 23.77s | `out/NemiExplains_Mcp_4K_20260822.mp4` | Dev-niche topic — retention A/B vs Ep.6/7 pending |
+| Ep.10 | `gps_10` | GPS Trilateration (Silent Phone) | 22.46s | `out/NemiExplains_Gps_20260822.mp4` | Everyday mystery; queue #3; -15.93 LUFS / -1.73 dBTP; case study: `docs/reels/gps_10/V01.md` |

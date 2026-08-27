@@ -1,0 +1,21 @@
+{
+  "name": "mortis_008_oc_fire_01",
+  "frameCount": 1,
+  "canvas": {
+    "width": 256,
+    "height": 820
+  },
+  "anchor": {
+    "x": 128,
+    "y": 410
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 1,
+      "y": 0,
+      "w": 252,
+      "h": 124
+    }
+  ]
+}

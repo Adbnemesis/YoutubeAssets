@@ -1,0 +1,21 @@
+{
+  "name": "kit_def_oc_ulti_projectile_red",
+  "frameCount": 1,
+  "canvas": {
+    "width": 228,
+    "height": 280
+  },
+  "anchor": {
+    "x": 112,
+    "y": 136
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 228,
+      "h": 280
+    }
+  ]
+}

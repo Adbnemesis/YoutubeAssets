@@ -1,0 +1,2851 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#7C3AED",
+    "accentColor": "#EC4899",
+    "surfaceColor": "#F9FAFB",
+    "textColor": "#000000",
+    "captionHighlightColor": "#7C3AED",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#7C3AED",
+      "#EC4899",
+      "#06B6D4",
+      "#F59E0B",
+      "#10B981",
+      "#EF4444"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "You press the purple button, hear that epic lightning sound effect, and immediately charge straight into the enemy team.",
+      "in_seconds": 0.0,
+      "out_seconds": 5.76,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "Two seconds later, you are looking at a respawn screen.",
+      "in_seconds": 6.28,
+      "out_seconds": 8.72,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-06]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.6,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_2",
+      "text": "Why does this happen?",
+      "in_seconds": 9.18,
+      "out_seconds": 9.94,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-09]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_3",
+      "text": "The most common mistake players make with Hypercharge is assuming it makes them invincible.",
+      "in_seconds": 10.48,
+      "out_seconds": 14.44,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-10]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.3,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "In reality, activating Hypercharge is often the easiest way to throw a game.",
+      "in_seconds": 14.88,
+      "out_seconds": 18.64,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_5",
+      "text": "Let us look at the math.",
+      "in_seconds": 18.96,
+      "out_seconds": 19.82,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_6",
+      "text": "A level 11 Edgar has 6600 health.",
+      "in_seconds": 20.12,
+      "out_seconds": 23.24,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-20]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "When he activates his Hypercharge, he receives a 15% shield.",
+      "in_seconds": 23.4,
+      "out_seconds": 27.02,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "This increases his effective health to 7764.",
+      "in_seconds": 27.34,
+      "out_seconds": 29.34,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "That is less than one extra shot from a Piper.",
+      "in_seconds": 31.38,
+      "out_seconds": 33.7,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-31]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "If you run in a straight line, you are not an unstoppable force.",
+      "in_seconds": 34.02,
+      "out_seconds": 36.96,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-34]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_11",
+      "text": "You are just a purple target.",
+      "in_seconds": 37.56,
+      "out_seconds": 38.7,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "This leads to the second major mistake: tunnel vision.",
+      "in_seconds": 39.56,
+      "out_seconds": 42.46,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-39]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "The moment players activate Hypercharge, they stop playing tactically.",
+      "in_seconds": 43.06,
+      "out_seconds": 46.48,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "They stop using walls, they stop dodging, and they focus entirely on trying to get value from their upgraded Super.",
+      "in_seconds": 46.94,
+      "out_seconds": 52.82,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-46]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out"
+    },
+    {
+      "id": "scene_15",
+      "text": "But why waste the most powerful part of the buff?",
+      "in_seconds": 52.82,
+      "out_seconds": 55.68,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-52]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_16",
+      "text": "When you activate Hypercharge, you receive a massive speed boost, usually between 20% and 26%.",
+      "in_seconds": 56.0,
+      "out_seconds": 62.14,
+      "source": "projects/hypercharge_mistakes_project_11/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "Instead of immediately using your Super, you should use this speed to position yourself, bait out enemy gadgets, and force them to waste their ammo.",
+      "in_seconds": 62.14,
+      "out_seconds": 69.16,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns"
+    },
+    {
+      "id": "scene_18",
+      "text": "Once they are defenseless, that is when you strike.",
+      "in_seconds": 69.42,
+      "out_seconds": 71.44,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-09]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "There is also a hidden mechanic that even seasoned players miss.",
+      "in_seconds": 71.78,
+      "out_seconds": 74.64,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "It is called the Hypercharge charge lock.",
+      "in_seconds": 74.92,
+      "out_seconds": 76.78,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.3,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "Normally, your Hypercharge charges at 40% of your regular Super charge rate.",
+      "in_seconds": 77.12,
+      "out_seconds": 81.22,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-17]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns"
+    },
+    {
+      "id": "scene_22",
+      "text": "However, while your Hypercharge is active, any damage you deal does not contribute to your next Hypercharge.",
+      "in_seconds": 81.46,
+      "out_seconds": 86.62,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in"
+    },
+    {
+      "id": "scene_23",
+      "text": "The meter is completely locked.",
+      "in_seconds": 86.94,
+      "out_seconds": 88.32,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-26]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_24",
+      "text": "If you dump all your ammo and charge another Super while the purple lightning is active, you get zero progress toward your next Hypercharge.",
+      "in_seconds": 88.76,
+      "out_seconds": 95.46,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out"
+    },
+    {
+      "id": "scene_25",
+      "text": "To maximize efficiency, you should try to charge your regular Super before activating Hypercharge.",
+      "in_seconds": 95.7,
+      "out_seconds": 100.48,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-35]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "This allows you to use your upgraded Super immediately, and then use your normal attacks after the Hypercharge ends to immediately start building the next one.",
+      "in_seconds": 100.8,
+      "out_seconds": 108.0,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_27",
+      "text": "Finally, you must learn how to play against Hypercharge.",
+      "in_seconds": 108.2,
+      "out_seconds": 110.6,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-48]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_28",
+      "text": "When you see an enemy turn purple, your immediate reaction should be to retreat.",
+      "in_seconds": 110.94,
+      "out_seconds": 114.52,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_29",
+      "text": "Hypercharge only lasts for 5 seconds.",
+      "in_seconds": 114.92,
+      "out_seconds": 116.98,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-54]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/clock-ticking.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_30",
+      "text": "If you can use knockbacks, stuns, or simply run behind walls, you can easily waste their entire activation.",
+      "in_seconds": 117.24,
+      "out_seconds": 123.04,
+      "source": "projects/hypercharge_mistakes_project_11/images/[01-57]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_31",
+      "text": "A wasted Hypercharge is a massive 5000-coin deficit for the enemy team.",
+      "in_seconds": 123.38,
+      "out_seconds": 127.54,
+      "source": "projects/hypercharge_mistakes_project_11/images/[02-03]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_32",
+      "text": "Next time you play, treat Hypercharge as a positioning tool first and a damage tool second.",
+      "in_seconds": 127.8,
+      "out_seconds": 132.24,
+      "source": "projects/hypercharge_mistakes_project_11/images/[02-07]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_33",
+      "text": "Use the speed to take space, wait for the enemy to panic, and only use your Super when you are guaranteed a value play.",
+      "in_seconds": 132.54,
+      "out_seconds": 138.5,
+      "source": "projects/hypercharge_mistakes_project_11/images/[02-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in"
+    },
+    {
+      "id": "scene_34",
+      "text": "If you want to learn more hidden mechanics to level up your gameplay, make sure to subscribe and watch our next video.",
+      "in_seconds": 138.9,
+      "out_seconds": 143.92,
+      "source": "projects/hypercharge_mistakes_project_11/images/[02-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "section_title",
+      "in_seconds": 10.48,
+      "out_seconds": 14.44,
+      "text": "MISTAKE #1",
+      "subtitle": "The Invincibility Myth",
+      "accentColor": "#EF4444",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 20.12,
+      "out_seconds": 23.24,
+      "text": "6,600 HP",
+      "subtitle": "Edgar Base Health",
+      "accentColor": "#7C3AED",
+      "position": "bottom-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 23.4,
+      "out_seconds": 27.02,
+      "text": "+15%",
+      "subtitle": "Shield Bonus",
+      "accentColor": "#10B981",
+      "position": "bottom-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 27.34,
+      "out_seconds": 29.34,
+      "text": "7,764 HP",
+      "subtitle": "Effective Health",
+      "accentColor": "#F59E0B",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 39.56,
+      "out_seconds": 42.46,
+      "text": "MISTAKE #2",
+      "subtitle": "Tunnel Vision",
+      "accentColor": "#EF4444",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 56.0,
+      "out_seconds": 62.14,
+      "text": "20\u201326%",
+      "subtitle": "Speed Boost",
+      "accentColor": "#06B6D4",
+      "position": "center"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 62.14,
+      "out_seconds": 69.16,
+      "text": "THE FIX",
+      "subtitle": "Use Speed First",
+      "accentColor": "#10B981",
+      "position": "top-left"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 71.78,
+      "out_seconds": 74.64,
+      "text": "MISTAKE #3",
+      "subtitle": "Hidden Mechanic",
+      "accentColor": "#EF4444",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 74.92,
+      "out_seconds": 76.78,
+      "text": "CHARGE LOCK",
+      "subtitle": "Hidden Mechanic",
+      "accentColor": "#EF4444",
+      "position": "center"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 77.12,
+      "out_seconds": 81.22,
+      "text": "40%",
+      "subtitle": "Super Charge Rate",
+      "accentColor": "#F59E0B",
+      "position": "bottom-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 88.76,
+      "out_seconds": 95.46,
+      "text": "0%",
+      "subtitle": "Progress While Active",
+      "accentColor": "#EF4444",
+      "position": "center"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 95.7,
+      "out_seconds": 100.48,
+      "text": "PRO TIP",
+      "subtitle": "Charge First, Activate Second",
+      "accentColor": "#10B981",
+      "position": "top-left"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 108.2,
+      "out_seconds": 110.6,
+      "text": "COUNTER-PLAY",
+      "subtitle": "vs Hypercharge",
+      "accentColor": "#06B6D4",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 114.92,
+      "out_seconds": 116.98,
+      "text": "5s",
+      "subtitle": "Hypercharge Duration",
+      "accentColor": "#F59E0B",
+      "position": "bottom-right"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 123.38,
+      "out_seconds": 127.54,
+      "text": "5,000",
+      "subtitle": "Wasted Enemy Investment",
+      "accentColor": "#EC4899",
+      "position": "center"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 138.9,
+      "out_seconds": 143.92,
+      "text": "SUBSCRIBE",
+      "subtitle": "More Hidden Mechanics",
+      "accentColor": "#7C3AED",
+      "position": "top-left"
+    }
+  ],
+  "captions": [
+    {
+      "word": "You",
+      "startMs": 0,
+      "endMs": 180
+    },
+    {
+      "word": "press",
+      "startMs": 180,
+      "endMs": 420
+    },
+    {
+      "word": "the",
+      "startMs": 420,
+      "endMs": 660
+    },
+    {
+      "word": "purple",
+      "startMs": 660,
+      "endMs": 880
+    },
+    {
+      "word": "button,",
+      "startMs": 880,
+      "endMs": 1280
+    },
+    {
+      "word": "hear",
+      "startMs": 1540,
+      "endMs": 1660
+    },
+    {
+      "word": "that",
+      "startMs": 1660,
+      "endMs": 1860
+    },
+    {
+      "word": "epic",
+      "startMs": 1860,
+      "endMs": 2180
+    },
+    {
+      "word": "lightning",
+      "startMs": 2180,
+      "endMs": 2540
+    },
+    {
+      "word": "sound",
+      "startMs": 2540,
+      "endMs": 2820
+    },
+    {
+      "word": "effect,",
+      "startMs": 2820,
+      "endMs": 3120
+    },
+    {
+      "word": "and",
+      "startMs": 3440,
+      "endMs": 3500
+    },
+    {
+      "word": "immediately",
+      "startMs": 3500,
+      "endMs": 3880
+    },
+    {
+      "word": "charge",
+      "startMs": 3880,
+      "endMs": 4320
+    },
+    {
+      "word": "straight",
+      "startMs": 4320,
+      "endMs": 4700
+    },
+    {
+      "word": "into",
+      "startMs": 4700,
+      "endMs": 5040
+    },
+    {
+      "word": "the",
+      "startMs": 5040,
+      "endMs": 5180
+    },
+    {
+      "word": "enemy",
+      "startMs": 5180,
+      "endMs": 5360
+    },
+    {
+      "word": "team.",
+      "startMs": 5360,
+      "endMs": 5760
+    },
+    {
+      "word": "Two",
+      "startMs": 6280,
+      "endMs": 6500
+    },
+    {
+      "word": "seconds",
+      "startMs": 6500,
+      "endMs": 6760
+    },
+    {
+      "word": "later,",
+      "startMs": 6760,
+      "endMs": 7100
+    },
+    {
+      "word": "you",
+      "startMs": 7320,
+      "endMs": 7380
+    },
+    {
+      "word": "are",
+      "startMs": 7380,
+      "endMs": 7500
+    },
+    {
+      "word": "looking",
+      "startMs": 7500,
+      "endMs": 7760
+    },
+    {
+      "word": "at",
+      "startMs": 7760,
+      "endMs": 7940
+    },
+    {
+      "word": "a",
+      "startMs": 7940,
+      "endMs": 8020
+    },
+    {
+      "word": "respawn",
+      "startMs": 8020,
+      "endMs": 8420
+    },
+    {
+      "word": "screen.",
+      "startMs": 8420,
+      "endMs": 8720
+    },
+    {
+      "word": "Why",
+      "startMs": 9180,
+      "endMs": 9360
+    },
+    {
+      "word": "does",
+      "startMs": 9360,
+      "endMs": 9500
+    },
+    {
+      "word": "this",
+      "startMs": 9500,
+      "endMs": 9620
+    },
+    {
+      "word": "happen?",
+      "startMs": 9620,
+      "endMs": 9940
+    },
+    {
+      "word": "The",
+      "startMs": 10480,
+      "endMs": 10620
+    },
+    {
+      "word": "most",
+      "startMs": 10620,
+      "endMs": 10840
+    },
+    {
+      "word": "common",
+      "startMs": 10840,
+      "endMs": 11140
+    },
+    {
+      "word": "mistake",
+      "startMs": 11140,
+      "endMs": 11440
+    },
+    {
+      "word": "players",
+      "startMs": 11440,
+      "endMs": 11760
+    },
+    {
+      "word": "make",
+      "startMs": 11760,
+      "endMs": 11980
+    },
+    {
+      "word": "with",
+      "startMs": 11980,
+      "endMs": 12200
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 12200,
+      "endMs": 12700
+    },
+    {
+      "word": "is",
+      "startMs": 12700,
+      "endMs": 13000
+    },
+    {
+      "word": "assuming",
+      "startMs": 13000,
+      "endMs": 13440
+    },
+    {
+      "word": "it",
+      "startMs": 13440,
+      "endMs": 13620
+    },
+    {
+      "word": "makes",
+      "startMs": 13620,
+      "endMs": 13820
+    },
+    {
+      "word": "them",
+      "startMs": 13820,
+      "endMs": 14000
+    },
+    {
+      "word": "invincible.",
+      "startMs": 14000,
+      "endMs": 14440
+    },
+    {
+      "word": "In",
+      "startMs": 14880,
+      "endMs": 14980
+    },
+    {
+      "word": "reality,",
+      "startMs": 14980,
+      "endMs": 15340
+    },
+    {
+      "word": "activating",
+      "startMs": 15640,
+      "endMs": 15980
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 15980,
+      "endMs": 16620
+    },
+    {
+      "word": "is",
+      "startMs": 16620,
+      "endMs": 16800
+    },
+    {
+      "word": "often",
+      "startMs": 16800,
+      "endMs": 17180
+    },
+    {
+      "word": "the",
+      "startMs": 17180,
+      "endMs": 17340
+    },
+    {
+      "word": "easiest",
+      "startMs": 17340,
+      "endMs": 17740
+    },
+    {
+      "word": "way",
+      "startMs": 17740,
+      "endMs": 17960
+    },
+    {
+      "word": "to",
+      "startMs": 17960,
+      "endMs": 18080
+    },
+    {
+      "word": "throw",
+      "startMs": 18080,
+      "endMs": 18280
+    },
+    {
+      "word": "a",
+      "startMs": 18280,
+      "endMs": 18420
+    },
+    {
+      "word": "game.",
+      "startMs": 18420,
+      "endMs": 18640
+    },
+    {
+      "word": "Let",
+      "startMs": 18960,
+      "endMs": 19080
+    },
+    {
+      "word": "us",
+      "startMs": 19080,
+      "endMs": 19200
+    },
+    {
+      "word": "look",
+      "startMs": 19200,
+      "endMs": 19360
+    },
+    {
+      "word": "at",
+      "startMs": 19360,
+      "endMs": 19480
+    },
+    {
+      "word": "the",
+      "startMs": 19480,
+      "endMs": 19580
+    },
+    {
+      "word": "math.",
+      "startMs": 19580,
+      "endMs": 19820
+    },
+    {
+      "word": "A",
+      "startMs": 20120,
+      "endMs": 20200
+    },
+    {
+      "word": "level",
+      "startMs": 20200,
+      "endMs": 20500
+    },
+    {
+      "word": "11",
+      "startMs": 20500,
+      "endMs": 20840
+    },
+    {
+      "word": "Edgar",
+      "startMs": 20840,
+      "endMs": 21300
+    },
+    {
+      "word": "has",
+      "startMs": 21300,
+      "endMs": 21540
+    },
+    {
+      "word": "6600",
+      "startMs": 21540,
+      "endMs": 22820
+    },
+    {
+      "word": "health.",
+      "startMs": 22820,
+      "endMs": 23240
+    },
+    {
+      "word": "When",
+      "startMs": 23400,
+      "endMs": 23560
+    },
+    {
+      "word": "he",
+      "startMs": 23560,
+      "endMs": 23660
+    },
+    {
+      "word": "activates",
+      "startMs": 23660,
+      "endMs": 24100
+    },
+    {
+      "word": "his",
+      "startMs": 24100,
+      "endMs": 24320
+    },
+    {
+      "word": "hypercharge,",
+      "startMs": 24320,
+      "endMs": 24940
+    },
+    {
+      "word": "he",
+      "startMs": 24940,
+      "endMs": 25280
+    },
+    {
+      "word": "receives",
+      "startMs": 25280,
+      "endMs": 25660
+    },
+    {
+      "word": "a",
+      "startMs": 25660,
+      "endMs": 25860
+    },
+    {
+      "word": "15",
+      "startMs": 25860,
+      "endMs": 26240
+    },
+    {
+      "word": "%",
+      "startMs": 26240,
+      "endMs": 26620
+    },
+    {
+      "word": "shield.",
+      "startMs": 26620,
+      "endMs": 27020
+    },
+    {
+      "word": "This",
+      "startMs": 27340,
+      "endMs": 27440
+    },
+    {
+      "word": "increases",
+      "startMs": 27440,
+      "endMs": 27880
+    },
+    {
+      "word": "his",
+      "startMs": 27880,
+      "endMs": 28120
+    },
+    {
+      "word": "effective",
+      "startMs": 28120,
+      "endMs": 28460
+    },
+    {
+      "word": "health",
+      "startMs": 28460,
+      "endMs": 28800
+    },
+    {
+      "word": "to",
+      "startMs": 28800,
+      "endMs": 28980
+    },
+    {
+      "word": "7",
+      "startMs": 28980,
+      "endMs": 29340
+    },
+    {
+      "word": ",764.",
+      "startMs": 29340,
+      "endMs": 30980
+    },
+    {
+      "word": "That",
+      "startMs": 31380,
+      "endMs": 31540
+    },
+    {
+      "word": "is",
+      "startMs": 31540,
+      "endMs": 31660
+    },
+    {
+      "word": "less",
+      "startMs": 31660,
+      "endMs": 31860
+    },
+    {
+      "word": "than",
+      "startMs": 31860,
+      "endMs": 32080
+    },
+    {
+      "word": "one",
+      "startMs": 32080,
+      "endMs": 32380
+    },
+    {
+      "word": "extra",
+      "startMs": 32380,
+      "endMs": 32840
+    },
+    {
+      "word": "shot",
+      "startMs": 32840,
+      "endMs": 33080
+    },
+    {
+      "word": "from",
+      "startMs": 33080,
+      "endMs": 33260
+    },
+    {
+      "word": "a",
+      "startMs": 33260,
+      "endMs": 33420
+    },
+    {
+      "word": "piper.",
+      "startMs": 33420,
+      "endMs": 33700
+    },
+    {
+      "word": "If",
+      "startMs": 34020,
+      "endMs": 34160
+    },
+    {
+      "word": "you",
+      "startMs": 34160,
+      "endMs": 34260
+    },
+    {
+      "word": "run",
+      "startMs": 34260,
+      "endMs": 34440
+    },
+    {
+      "word": "in",
+      "startMs": 34440,
+      "endMs": 34560
+    },
+    {
+      "word": "a",
+      "startMs": 34560,
+      "endMs": 34660
+    },
+    {
+      "word": "straight",
+      "startMs": 34660,
+      "endMs": 34860
+    },
+    {
+      "word": "line,",
+      "startMs": 34860,
+      "endMs": 35180
+    },
+    {
+      "word": "you",
+      "startMs": 35480,
+      "endMs": 35560
+    },
+    {
+      "word": "are",
+      "startMs": 35560,
+      "endMs": 35640
+    },
+    {
+      "word": "not",
+      "startMs": 35640,
+      "endMs": 35880
+    },
+    {
+      "word": "an",
+      "startMs": 35880,
+      "endMs": 36060
+    },
+    {
+      "word": "unstoppable",
+      "startMs": 36060,
+      "endMs": 36520
+    },
+    {
+      "word": "force.",
+      "startMs": 36520,
+      "endMs": 36960
+    },
+    {
+      "word": "You",
+      "startMs": 37560,
+      "endMs": 37700
+    },
+    {
+      "word": "are",
+      "startMs": 37700,
+      "endMs": 37760
+    },
+    {
+      "word": "just",
+      "startMs": 37760,
+      "endMs": 37920
+    },
+    {
+      "word": "a",
+      "startMs": 37920,
+      "endMs": 38060
+    },
+    {
+      "word": "purple",
+      "startMs": 38060,
+      "endMs": 38320
+    },
+    {
+      "word": "target.",
+      "startMs": 38320,
+      "endMs": 38700
+    },
+    {
+      "word": "This",
+      "startMs": 39560,
+      "endMs": 39740
+    },
+    {
+      "word": "leads",
+      "startMs": 39740,
+      "endMs": 39920
+    },
+    {
+      "word": "to",
+      "startMs": 39920,
+      "endMs": 40140
+    },
+    {
+      "word": "the",
+      "startMs": 40140,
+      "endMs": 40240
+    },
+    {
+      "word": "second",
+      "startMs": 40240,
+      "endMs": 40600
+    },
+    {
+      "word": "major",
+      "startMs": 40600,
+      "endMs": 40880
+    },
+    {
+      "word": "mistake.",
+      "startMs": 40880,
+      "endMs": 41240
+    },
+    {
+      "word": "Tunnel",
+      "startMs": 41940,
+      "endMs": 42180
+    },
+    {
+      "word": "vision.",
+      "startMs": 42180,
+      "endMs": 42460
+    },
+    {
+      "word": "The",
+      "startMs": 43060,
+      "endMs": 43180
+    },
+    {
+      "word": "moment",
+      "startMs": 43180,
+      "endMs": 43420
+    },
+    {
+      "word": "players",
+      "startMs": 43420,
+      "endMs": 43740
+    },
+    {
+      "word": "activate",
+      "startMs": 43740,
+      "endMs": 44280
+    },
+    {
+      "word": "hypercharge,",
+      "startMs": 44280,
+      "endMs": 44900
+    },
+    {
+      "word": "they",
+      "startMs": 45220,
+      "endMs": 45320
+    },
+    {
+      "word": "stop",
+      "startMs": 45320,
+      "endMs": 45580
+    },
+    {
+      "word": "playing",
+      "startMs": 45580,
+      "endMs": 45900
+    },
+    {
+      "word": "tactically.",
+      "startMs": 45900,
+      "endMs": 46480
+    },
+    {
+      "word": "They",
+      "startMs": 46940,
+      "endMs": 47160
+    },
+    {
+      "word": "stop",
+      "startMs": 47160,
+      "endMs": 47360
+    },
+    {
+      "word": "using",
+      "startMs": 47360,
+      "endMs": 47660
+    },
+    {
+      "word": "walls,",
+      "startMs": 47660,
+      "endMs": 47960
+    },
+    {
+      "word": "they",
+      "startMs": 48320,
+      "endMs": 48420
+    },
+    {
+      "word": "stop",
+      "startMs": 48420,
+      "endMs": 48720
+    },
+    {
+      "word": "dodging,",
+      "startMs": 48720,
+      "endMs": 49100
+    },
+    {
+      "word": "and",
+      "startMs": 49300,
+      "endMs": 49440
+    },
+    {
+      "word": "they",
+      "startMs": 49440,
+      "endMs": 49560
+    },
+    {
+      "word": "focus",
+      "startMs": 49560,
+      "endMs": 49840
+    },
+    {
+      "word": "entirely",
+      "startMs": 49840,
+      "endMs": 50360
+    },
+    {
+      "word": "on",
+      "startMs": 50360,
+      "endMs": 50680
+    },
+    {
+      "word": "trying",
+      "startMs": 50680,
+      "endMs": 50920
+    },
+    {
+      "word": "to",
+      "startMs": 50920,
+      "endMs": 51100
+    },
+    {
+      "word": "get",
+      "startMs": 51100,
+      "endMs": 51240
+    },
+    {
+      "word": "value",
+      "startMs": 51240,
+      "endMs": 51620
+    },
+    {
+      "word": "from",
+      "startMs": 51620,
+      "endMs": 51820
+    },
+    {
+      "word": "their",
+      "startMs": 51820,
+      "endMs": 51960
+    },
+    {
+      "word": "upgraded",
+      "startMs": 51960,
+      "endMs": 52420
+    },
+    {
+      "word": "super,",
+      "startMs": 52420,
+      "endMs": 52820
+    },
+    {
+      "word": "but",
+      "startMs": 52820,
+      "endMs": 53220
+    },
+    {
+      "word": "why",
+      "startMs": 53220,
+      "endMs": 53500
+    },
+    {
+      "word": "waste",
+      "startMs": 53500,
+      "endMs": 53860
+    },
+    {
+      "word": "the",
+      "startMs": 53860,
+      "endMs": 54020
+    },
+    {
+      "word": "most",
+      "startMs": 54020,
+      "endMs": 54320
+    },
+    {
+      "word": "powerful",
+      "startMs": 54320,
+      "endMs": 54800
+    },
+    {
+      "word": "part",
+      "startMs": 54800,
+      "endMs": 55120
+    },
+    {
+      "word": "of",
+      "startMs": 55120,
+      "endMs": 55320
+    },
+    {
+      "word": "the",
+      "startMs": 55320,
+      "endMs": 55440
+    },
+    {
+      "word": "buff?",
+      "startMs": 55440,
+      "endMs": 55680
+    },
+    {
+      "word": "When",
+      "startMs": 56000,
+      "endMs": 56080
+    },
+    {
+      "word": "you",
+      "startMs": 56080,
+      "endMs": 56200
+    },
+    {
+      "word": "activate",
+      "startMs": 56200,
+      "endMs": 56640
+    },
+    {
+      "word": "hypercharge,",
+      "startMs": 56640,
+      "endMs": 57240
+    },
+    {
+      "word": "you",
+      "startMs": 57580,
+      "endMs": 57640
+    },
+    {
+      "word": "receive",
+      "startMs": 57640,
+      "endMs": 57920
+    },
+    {
+      "word": "a",
+      "startMs": 57920,
+      "endMs": 58160
+    },
+    {
+      "word": "massive",
+      "startMs": 58160,
+      "endMs": 58540
+    },
+    {
+      "word": "speed",
+      "startMs": 58540,
+      "endMs": 58940
+    },
+    {
+      "word": "boost,",
+      "startMs": 58940,
+      "endMs": 59220
+    },
+    {
+      "word": "usually",
+      "startMs": 59460,
+      "endMs": 59660
+    },
+    {
+      "word": "between",
+      "startMs": 59660,
+      "endMs": 60040
+    },
+    {
+      "word": "20",
+      "startMs": 60040,
+      "endMs": 60400
+    },
+    {
+      "word": "%",
+      "startMs": 60400,
+      "endMs": 60720
+    },
+    {
+      "word": "and",
+      "startMs": 60720,
+      "endMs": 61080
+    },
+    {
+      "word": "26%,",
+      "startMs": 61080,
+      "endMs": 62140
+    },
+    {
+      "word": "instead",
+      "startMs": 62140,
+      "endMs": 62520
+    },
+    {
+      "word": "of",
+      "startMs": 62520,
+      "endMs": 62700
+    },
+    {
+      "word": "immediately",
+      "startMs": 62700,
+      "endMs": 63060
+    },
+    {
+      "word": "using",
+      "startMs": 63060,
+      "endMs": 63440
+    },
+    {
+      "word": "your",
+      "startMs": 63440,
+      "endMs": 63660
+    },
+    {
+      "word": "super,",
+      "startMs": 63660,
+      "endMs": 63920
+    },
+    {
+      "word": "you",
+      "startMs": 64200,
+      "endMs": 64280
+    },
+    {
+      "word": "should",
+      "startMs": 64280,
+      "endMs": 64440
+    },
+    {
+      "word": "use",
+      "startMs": 64440,
+      "endMs": 64599
+    },
+    {
+      "word": "this",
+      "startMs": 64599,
+      "endMs": 64800
+    },
+    {
+      "word": "speed",
+      "startMs": 64800,
+      "endMs": 65099
+    },
+    {
+      "word": "to",
+      "startMs": 65099,
+      "endMs": 65319
+    },
+    {
+      "word": "position",
+      "startMs": 65319,
+      "endMs": 65640
+    },
+    {
+      "word": "yourself,",
+      "startMs": 65640,
+      "endMs": 66060
+    },
+    {
+      "word": "bait",
+      "startMs": 66400,
+      "endMs": 66500
+    },
+    {
+      "word": "out",
+      "startMs": 66500,
+      "endMs": 66700
+    },
+    {
+      "word": "enemy",
+      "startMs": 66700,
+      "endMs": 66980
+    },
+    {
+      "word": "gadgets,",
+      "startMs": 66980,
+      "endMs": 67360
+    },
+    {
+      "word": "and",
+      "startMs": 67680,
+      "endMs": 67780
+    },
+    {
+      "word": "force",
+      "startMs": 67780,
+      "endMs": 68020
+    },
+    {
+      "word": "them",
+      "startMs": 68020,
+      "endMs": 68220
+    },
+    {
+      "word": "to",
+      "startMs": 68220,
+      "endMs": 68400
+    },
+    {
+      "word": "waste",
+      "startMs": 68400,
+      "endMs": 68600
+    },
+    {
+      "word": "their",
+      "startMs": 68600,
+      "endMs": 68860
+    },
+    {
+      "word": "ammo.",
+      "startMs": 68860,
+      "endMs": 69160
+    },
+    {
+      "word": "Once",
+      "startMs": 69420,
+      "endMs": 69600
+    },
+    {
+      "word": "they",
+      "startMs": 69600,
+      "endMs": 69740
+    },
+    {
+      "word": "are",
+      "startMs": 69740,
+      "endMs": 69820
+    },
+    {
+      "word": "defenseless,",
+      "startMs": 69820,
+      "endMs": 70360
+    },
+    {
+      "word": "that",
+      "startMs": 70640,
+      "endMs": 70800
+    },
+    {
+      "word": "is",
+      "startMs": 70800,
+      "endMs": 70900
+    },
+    {
+      "word": "when",
+      "startMs": 70900,
+      "endMs": 71060
+    },
+    {
+      "word": "you",
+      "startMs": 71060,
+      "endMs": 71180
+    },
+    {
+      "word": "strike.",
+      "startMs": 71180,
+      "endMs": 71440
+    },
+    {
+      "word": "There",
+      "startMs": 71780,
+      "endMs": 71880
+    },
+    {
+      "word": "is",
+      "startMs": 71880,
+      "endMs": 72020
+    },
+    {
+      "word": "also",
+      "startMs": 72020,
+      "endMs": 72300
+    },
+    {
+      "word": "a",
+      "startMs": 72300,
+      "endMs": 72440
+    },
+    {
+      "word": "hidden",
+      "startMs": 72440,
+      "endMs": 72620
+    },
+    {
+      "word": "mechanic",
+      "startMs": 72620,
+      "endMs": 73080
+    },
+    {
+      "word": "that",
+      "startMs": 73080,
+      "endMs": 73380
+    },
+    {
+      "word": "even",
+      "startMs": 73380,
+      "endMs": 73640
+    },
+    {
+      "word": "seasoned",
+      "startMs": 73640,
+      "endMs": 73960
+    },
+    {
+      "word": "players",
+      "startMs": 73960,
+      "endMs": 74320
+    },
+    {
+      "word": "miss.",
+      "startMs": 74320,
+      "endMs": 74640
+    },
+    {
+      "word": "It",
+      "startMs": 74920,
+      "endMs": 75020
+    },
+    {
+      "word": "is",
+      "startMs": 75020,
+      "endMs": 75140
+    },
+    {
+      "word": "called",
+      "startMs": 75140,
+      "endMs": 75340
+    },
+    {
+      "word": "the",
+      "startMs": 75340,
+      "endMs": 75560
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 75560,
+      "endMs": 76140
+    },
+    {
+      "word": "charge",
+      "startMs": 76140,
+      "endMs": 76560
+    },
+    {
+      "word": "lock.",
+      "startMs": 76560,
+      "endMs": 76780
+    },
+    {
+      "word": "Normally,",
+      "startMs": 77120,
+      "endMs": 77420
+    },
+    {
+      "word": "your",
+      "startMs": 77700,
+      "endMs": 77760
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 77760,
+      "endMs": 78320
+    },
+    {
+      "word": "charges",
+      "startMs": 78320,
+      "endMs": 78780
+    },
+    {
+      "word": "at",
+      "startMs": 78780,
+      "endMs": 79020
+    },
+    {
+      "word": "40",
+      "startMs": 79020,
+      "endMs": 79380
+    },
+    {
+      "word": "%",
+      "startMs": 79380,
+      "endMs": 79680
+    },
+    {
+      "word": "of",
+      "startMs": 79680,
+      "endMs": 79920
+    },
+    {
+      "word": "your",
+      "startMs": 79920,
+      "endMs": 80040
+    },
+    {
+      "word": "regular",
+      "startMs": 80040,
+      "endMs": 80360
+    },
+    {
+      "word": "supercharge",
+      "startMs": 80360,
+      "endMs": 81000
+    },
+    {
+      "word": "rate.",
+      "startMs": 81000,
+      "endMs": 81220
+    },
+    {
+      "word": "However,",
+      "startMs": 81460,
+      "endMs": 81720
+    },
+    {
+      "word": "while",
+      "startMs": 81720,
+      "endMs": 82120
+    },
+    {
+      "word": "your",
+      "startMs": 82120,
+      "endMs": 82320
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 82320,
+      "endMs": 82760
+    },
+    {
+      "word": "is",
+      "startMs": 82760,
+      "endMs": 83020
+    },
+    {
+      "word": "active,",
+      "startMs": 83020,
+      "endMs": 83300
+    },
+    {
+      "word": "any",
+      "startMs": 83620,
+      "endMs": 83800
+    },
+    {
+      "word": "damage",
+      "startMs": 83800,
+      "endMs": 84100
+    },
+    {
+      "word": "you",
+      "startMs": 84100,
+      "endMs": 84320
+    },
+    {
+      "word": "deal",
+      "startMs": 84320,
+      "endMs": 84600
+    },
+    {
+      "word": "does",
+      "startMs": 84600,
+      "endMs": 84880
+    },
+    {
+      "word": "not",
+      "startMs": 84880,
+      "endMs": 85060
+    },
+    {
+      "word": "contribute",
+      "startMs": 85060,
+      "endMs": 85480
+    },
+    {
+      "word": "to",
+      "startMs": 85480,
+      "endMs": 85680
+    },
+    {
+      "word": "your",
+      "startMs": 85680,
+      "endMs": 85760
+    },
+    {
+      "word": "next",
+      "startMs": 85760,
+      "endMs": 85980
+    },
+    {
+      "word": "hypercharge.",
+      "startMs": 85980,
+      "endMs": 86620
+    },
+    {
+      "word": "The",
+      "startMs": 86940,
+      "endMs": 87060
+    },
+    {
+      "word": "meter",
+      "startMs": 87060,
+      "endMs": 87280
+    },
+    {
+      "word": "is",
+      "startMs": 87280,
+      "endMs": 87520
+    },
+    {
+      "word": "completely",
+      "startMs": 87520,
+      "endMs": 88020
+    },
+    {
+      "word": "locked.",
+      "startMs": 88020,
+      "endMs": 88320
+    },
+    {
+      "word": "If",
+      "startMs": 88760,
+      "endMs": 88880
+    },
+    {
+      "word": "you",
+      "startMs": 88880,
+      "endMs": 89000
+    },
+    {
+      "word": "dump",
+      "startMs": 89000,
+      "endMs": 89180
+    },
+    {
+      "word": "all",
+      "startMs": 89180,
+      "endMs": 89400
+    },
+    {
+      "word": "your",
+      "startMs": 89400,
+      "endMs": 89600
+    },
+    {
+      "word": "ammo",
+      "startMs": 89600,
+      "endMs": 89840
+    },
+    {
+      "word": "and",
+      "startMs": 89840,
+      "endMs": 90120
+    },
+    {
+      "word": "charge",
+      "startMs": 90120,
+      "endMs": 90340
+    },
+    {
+      "word": "another",
+      "startMs": 90340,
+      "endMs": 90660
+    },
+    {
+      "word": "super,",
+      "startMs": 90660,
+      "endMs": 91040
+    },
+    {
+      "word": "while",
+      "startMs": 91400,
+      "endMs": 91500
+    },
+    {
+      "word": "the",
+      "startMs": 91500,
+      "endMs": 91640
+    },
+    {
+      "word": "purple",
+      "startMs": 91640,
+      "endMs": 91880
+    },
+    {
+      "word": "lightning",
+      "startMs": 91880,
+      "endMs": 92160
+    },
+    {
+      "word": "is",
+      "startMs": 92160,
+      "endMs": 92380
+    },
+    {
+      "word": "active,",
+      "startMs": 92380,
+      "endMs": 92680
+    },
+    {
+      "word": "you",
+      "startMs": 93040,
+      "endMs": 93160
+    },
+    {
+      "word": "get",
+      "startMs": 93160,
+      "endMs": 93320
+    },
+    {
+      "word": "zero",
+      "startMs": 93320,
+      "endMs": 93620
+    },
+    {
+      "word": "progress",
+      "startMs": 93620,
+      "endMs": 94100
+    },
+    {
+      "word": "towards",
+      "startMs": 94100,
+      "endMs": 94420
+    },
+    {
+      "word": "your",
+      "startMs": 94420,
+      "endMs": 94600
+    },
+    {
+      "word": "next",
+      "startMs": 94600,
+      "endMs": 94760
+    },
+    {
+      "word": "hypercharge.",
+      "startMs": 94760,
+      "endMs": 95460
+    },
+    {
+      "word": "To",
+      "startMs": 95700,
+      "endMs": 95820
+    },
+    {
+      "word": "maximize",
+      "startMs": 95820,
+      "endMs": 96180
+    },
+    {
+      "word": "efficiency,",
+      "startMs": 96180,
+      "endMs": 96720
+    },
+    {
+      "word": "you",
+      "startMs": 97100,
+      "endMs": 97160
+    },
+    {
+      "word": "should",
+      "startMs": 97160,
+      "endMs": 97300
+    },
+    {
+      "word": "try",
+      "startMs": 97300,
+      "endMs": 97500
+    },
+    {
+      "word": "to",
+      "startMs": 97500,
+      "endMs": 97620
+    },
+    {
+      "word": "charge",
+      "startMs": 97620,
+      "endMs": 97880
+    },
+    {
+      "word": "your",
+      "startMs": 97880,
+      "endMs": 98040
+    },
+    {
+      "word": "regular",
+      "startMs": 98040,
+      "endMs": 98340
+    },
+    {
+      "word": "super",
+      "startMs": 98340,
+      "endMs": 98760
+    },
+    {
+      "word": "before",
+      "startMs": 98760,
+      "endMs": 99240
+    },
+    {
+      "word": "activating",
+      "startMs": 99240,
+      "endMs": 99820
+    },
+    {
+      "word": "hypercharge.",
+      "startMs": 99820,
+      "endMs": 100480
+    },
+    {
+      "word": "This",
+      "startMs": 100800,
+      "endMs": 100940
+    },
+    {
+      "word": "allows",
+      "startMs": 100940,
+      "endMs": 101220
+    },
+    {
+      "word": "you",
+      "startMs": 101220,
+      "endMs": 101440
+    },
+    {
+      "word": "to",
+      "startMs": 101440,
+      "endMs": 101560
+    },
+    {
+      "word": "use",
+      "startMs": 101560,
+      "endMs": 101760
+    },
+    {
+      "word": "your",
+      "startMs": 101760,
+      "endMs": 101920
+    },
+    {
+      "word": "upgraded",
+      "startMs": 101920,
+      "endMs": 102300
+    },
+    {
+      "word": "super",
+      "startMs": 102300,
+      "endMs": 102660
+    },
+    {
+      "word": "immediately,",
+      "startMs": 102660,
+      "endMs": 103060
+    },
+    {
+      "word": "and",
+      "startMs": 103440,
+      "endMs": 103540
+    },
+    {
+      "word": "then",
+      "startMs": 103540,
+      "endMs": 103680
+    },
+    {
+      "word": "use",
+      "startMs": 103680,
+      "endMs": 103900
+    },
+    {
+      "word": "your",
+      "startMs": 103900,
+      "endMs": 104040
+    },
+    {
+      "word": "normal",
+      "startMs": 104040,
+      "endMs": 104320
+    },
+    {
+      "word": "attacks",
+      "startMs": 104320,
+      "endMs": 104720
+    },
+    {
+      "word": "after",
+      "startMs": 104720,
+      "endMs": 105160
+    },
+    {
+      "word": "the",
+      "startMs": 105160,
+      "endMs": 105320
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 105320,
+      "endMs": 105820
+    },
+    {
+      "word": "ends",
+      "startMs": 105820,
+      "endMs": 106140
+    },
+    {
+      "word": "to",
+      "startMs": 106140,
+      "endMs": 106400
+    },
+    {
+      "word": "immediately",
+      "startMs": 106400,
+      "endMs": 106720
+    },
+    {
+      "word": "start",
+      "startMs": 106720,
+      "endMs": 107100
+    },
+    {
+      "word": "building",
+      "startMs": 107100,
+      "endMs": 107320
+    },
+    {
+      "word": "the",
+      "startMs": 107320,
+      "endMs": 107540
+    },
+    {
+      "word": "next",
+      "startMs": 107540,
+      "endMs": 107760
+    },
+    {
+      "word": "one.",
+      "startMs": 107760,
+      "endMs": 108000
+    },
+    {
+      "word": "Finally,",
+      "startMs": 108200,
+      "endMs": 108580
+    },
+    {
+      "word": "you",
+      "startMs": 108800,
+      "endMs": 108880
+    },
+    {
+      "word": "must",
+      "startMs": 108880,
+      "endMs": 109040
+    },
+    {
+      "word": "learn",
+      "startMs": 109040,
+      "endMs": 109240
+    },
+    {
+      "word": "how",
+      "startMs": 109240,
+      "endMs": 109440
+    },
+    {
+      "word": "to",
+      "startMs": 109440,
+      "endMs": 109540
+    },
+    {
+      "word": "play",
+      "startMs": 109540,
+      "endMs": 109720
+    },
+    {
+      "word": "against",
+      "startMs": 109720,
+      "endMs": 110080
+    },
+    {
+      "word": "hypercharge.",
+      "startMs": 110080,
+      "endMs": 110600
+    },
+    {
+      "word": "When",
+      "startMs": 110940,
+      "endMs": 111060
+    },
+    {
+      "word": "you",
+      "startMs": 111060,
+      "endMs": 111180
+    },
+    {
+      "word": "see",
+      "startMs": 111180,
+      "endMs": 111380
+    },
+    {
+      "word": "an",
+      "startMs": 111380,
+      "endMs": 111500
+    },
+    {
+      "word": "enemy",
+      "startMs": 111500,
+      "endMs": 111740
+    },
+    {
+      "word": "turn",
+      "startMs": 111740,
+      "endMs": 112020
+    },
+    {
+      "word": "purple,",
+      "startMs": 112020,
+      "endMs": 112380
+    },
+    {
+      "word": "your",
+      "startMs": 112660,
+      "endMs": 112760
+    },
+    {
+      "word": "immediate",
+      "startMs": 112760,
+      "endMs": 113120
+    },
+    {
+      "word": "reaction",
+      "startMs": 113120,
+      "endMs": 113620
+    },
+    {
+      "word": "should",
+      "startMs": 113620,
+      "endMs": 113880
+    },
+    {
+      "word": "be",
+      "startMs": 113880,
+      "endMs": 114040
+    },
+    {
+      "word": "to",
+      "startMs": 114040,
+      "endMs": 114220
+    },
+    {
+      "word": "retreat.",
+      "startMs": 114220,
+      "endMs": 114520
+    },
+    {
+      "word": "Hypercharge",
+      "startMs": 114920,
+      "endMs": 115400
+    },
+    {
+      "word": "only",
+      "startMs": 115400,
+      "endMs": 115720
+    },
+    {
+      "word": "lasts",
+      "startMs": 115720,
+      "endMs": 115980
+    },
+    {
+      "word": "for",
+      "startMs": 115980,
+      "endMs": 116280
+    },
+    {
+      "word": "5",
+      "startMs": 116280,
+      "endMs": 116600
+    },
+    {
+      "word": "seconds.",
+      "startMs": 116600,
+      "endMs": 116980
+    },
+    {
+      "word": "If",
+      "startMs": 117240,
+      "endMs": 117380
+    },
+    {
+      "word": "you",
+      "startMs": 117380,
+      "endMs": 117500
+    },
+    {
+      "word": "can",
+      "startMs": 117500,
+      "endMs": 117680
+    },
+    {
+      "word": "use",
+      "startMs": 117680,
+      "endMs": 117900
+    },
+    {
+      "word": "knockbacks,",
+      "startMs": 117900,
+      "endMs": 118360
+    },
+    {
+      "word": "stuns,",
+      "startMs": 118780,
+      "endMs": 119160
+    },
+    {
+      "word": "or",
+      "startMs": 119240,
+      "endMs": 119320
+    },
+    {
+      "word": "simply",
+      "startMs": 119320,
+      "endMs": 119640
+    },
+    {
+      "word": "run",
+      "startMs": 119640,
+      "endMs": 119900
+    },
+    {
+      "word": "behind",
+      "startMs": 119900,
+      "endMs": 120240
+    },
+    {
+      "word": "walls,",
+      "startMs": 120240,
+      "endMs": 120600
+    },
+    {
+      "word": "you",
+      "startMs": 120820,
+      "endMs": 120920
+    },
+    {
+      "word": "can",
+      "startMs": 120920,
+      "endMs": 121080
+    },
+    {
+      "word": "easily",
+      "startMs": 121080,
+      "endMs": 121480
+    },
+    {
+      "word": "waste",
+      "startMs": 121480,
+      "endMs": 121840
+    },
+    {
+      "word": "their",
+      "startMs": 121840,
+      "endMs": 122040
+    },
+    {
+      "word": "entire",
+      "startMs": 122040,
+      "endMs": 122360
+    },
+    {
+      "word": "activation.",
+      "startMs": 122360,
+      "endMs": 123040
+    },
+    {
+      "word": "A",
+      "startMs": 123380,
+      "endMs": 123460
+    },
+    {
+      "word": "wasted",
+      "startMs": 123460,
+      "endMs": 123800
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 123800,
+      "endMs": 124480
+    },
+    {
+      "word": "is",
+      "startMs": 124480,
+      "endMs": 124700
+    },
+    {
+      "word": "a",
+      "startMs": 124700,
+      "endMs": 124800
+    },
+    {
+      "word": "massive",
+      "startMs": 124800,
+      "endMs": 125180
+    },
+    {
+      "word": "5000",
+      "startMs": 125180,
+      "endMs": 125740
+    },
+    {
+      "word": "coin",
+      "startMs": 125740,
+      "endMs": 126180
+    },
+    {
+      "word": "deficit",
+      "startMs": 126180,
+      "endMs": 126520
+    },
+    {
+      "word": "for",
+      "startMs": 126520,
+      "endMs": 126820
+    },
+    {
+      "word": "the",
+      "startMs": 126820,
+      "endMs": 126960
+    },
+    {
+      "word": "enemy",
+      "startMs": 126960,
+      "endMs": 127140
+    },
+    {
+      "word": "team.",
+      "startMs": 127140,
+      "endMs": 127540
+    },
+    {
+      "word": "Next",
+      "startMs": 127800,
+      "endMs": 127980
+    },
+    {
+      "word": "time",
+      "startMs": 127980,
+      "endMs": 128180
+    },
+    {
+      "word": "you",
+      "startMs": 128180,
+      "endMs": 128320
+    },
+    {
+      "word": "play,",
+      "startMs": 128320,
+      "endMs": 128560
+    },
+    {
+      "word": "treat",
+      "startMs": 128840,
+      "endMs": 128960
+    },
+    {
+      "word": "hypercharge",
+      "startMs": 128960,
+      "endMs": 129620
+    },
+    {
+      "word": "as",
+      "startMs": 129620,
+      "endMs": 129840
+    },
+    {
+      "word": "a",
+      "startMs": 129840,
+      "endMs": 129940
+    },
+    {
+      "word": "positioning",
+      "startMs": 129940,
+      "endMs": 130300
+    },
+    {
+      "word": "tool",
+      "startMs": 130300,
+      "endMs": 130600
+    },
+    {
+      "word": "first,",
+      "startMs": 130600,
+      "endMs": 130940
+    },
+    {
+      "word": "and",
+      "startMs": 131200,
+      "endMs": 131280
+    },
+    {
+      "word": "a",
+      "startMs": 131280,
+      "endMs": 131360
+    },
+    {
+      "word": "damage",
+      "startMs": 131360,
+      "endMs": 131620
+    },
+    {
+      "word": "tool",
+      "startMs": 131620,
+      "endMs": 131880
+    },
+    {
+      "word": "second.",
+      "startMs": 131880,
+      "endMs": 132240
+    },
+    {
+      "word": "Use",
+      "startMs": 132540,
+      "endMs": 132680
+    },
+    {
+      "word": "the",
+      "startMs": 132680,
+      "endMs": 132860
+    },
+    {
+      "word": "speed",
+      "startMs": 132860,
+      "endMs": 133120
+    },
+    {
+      "word": "to",
+      "startMs": 133120,
+      "endMs": 133300
+    },
+    {
+      "word": "take",
+      "startMs": 133300,
+      "endMs": 133500
+    },
+    {
+      "word": "space,",
+      "startMs": 133500,
+      "endMs": 133800
+    },
+    {
+      "word": "wait",
+      "startMs": 134200,
+      "endMs": 134340
+    },
+    {
+      "word": "for",
+      "startMs": 134340,
+      "endMs": 134520
+    },
+    {
+      "word": "the",
+      "startMs": 134520,
+      "endMs": 134660
+    },
+    {
+      "word": "enemy",
+      "startMs": 134660,
+      "endMs": 134900
+    },
+    {
+      "word": "to",
+      "startMs": 134900,
+      "endMs": 135120
+    },
+    {
+      "word": "panic,",
+      "startMs": 135120,
+      "endMs": 135380
+    },
+    {
+      "word": "and",
+      "startMs": 135640,
+      "endMs": 135740
+    },
+    {
+      "word": "only",
+      "startMs": 135740,
+      "endMs": 136060
+    },
+    {
+      "word": "use",
+      "startMs": 136060,
+      "endMs": 136300
+    },
+    {
+      "word": "your",
+      "startMs": 136300,
+      "endMs": 136440
+    },
+    {
+      "word": "super",
+      "startMs": 136440,
+      "endMs": 136740
+    },
+    {
+      "word": "when",
+      "startMs": 136740,
+      "endMs": 137060
+    },
+    {
+      "word": "you",
+      "startMs": 137060,
+      "endMs": 137200
+    },
+    {
+      "word": "are",
+      "startMs": 137200,
+      "endMs": 137300
+    },
+    {
+      "word": "guaranteed",
+      "startMs": 137300,
+      "endMs": 137800
+    },
+    {
+      "word": "a",
+      "startMs": 137800,
+      "endMs": 137980
+    },
+    {
+      "word": "value",
+      "startMs": 137980,
+      "endMs": 138220
+    },
+    {
+      "word": "play.",
+      "startMs": 138220,
+      "endMs": 138500
+    },
+    {
+      "word": "If",
+      "startMs": 138900,
+      "endMs": 139000
+    },
+    {
+      "word": "you",
+      "startMs": 139000,
+      "endMs": 139100
+    },
+    {
+      "word": "want",
+      "startMs": 139100,
+      "endMs": 139260
+    },
+    {
+      "word": "to",
+      "startMs": 139260,
+      "endMs": 139400
+    },
+    {
+      "word": "learn",
+      "startMs": 139400,
+      "endMs": 139540
+    },
+    {
+      "word": "more",
+      "startMs": 139540,
+      "endMs": 139760
+    },
+    {
+      "word": "hidden",
+      "startMs": 139760,
+      "endMs": 140020
+    },
+    {
+      "word": "mechanics",
+      "startMs": 140020,
+      "endMs": 140440
+    },
+    {
+      "word": "to",
+      "startMs": 140440,
+      "endMs": 140700
+    },
+    {
+      "word": "level",
+      "startMs": 140700,
+      "endMs": 140920
+    },
+    {
+      "word": "up",
+      "startMs": 140920,
+      "endMs": 141100
+    },
+    {
+      "word": "your",
+      "startMs": 141100,
+      "endMs": 141220
+    },
+    {
+      "word": "gameplay,",
+      "startMs": 141220,
+      "endMs": 141620
+    },
+    {
+      "word": "make",
+      "startMs": 141920,
+      "endMs": 142020
+    },
+    {
+      "word": "sure",
+      "startMs": 142020,
+      "endMs": 142220
+    },
+    {
+      "word": "to",
+      "startMs": 142220,
+      "endMs": 142320
+    },
+    {
+      "word": "subscribe",
+      "startMs": 142320,
+      "endMs": 142720
+    },
+    {
+      "word": "and",
+      "startMs": 142720,
+      "endMs": 143040
+    },
+    {
+      "word": "watch",
+      "startMs": 143040,
+      "endMs": 143280
+    },
+    {
+      "word": "our",
+      "startMs": 143280,
+      "endMs": 143400
+    },
+    {
+      "word": "next",
+      "startMs": 143400,
+      "endMs": 143600
+    },
+    {
+      "word": "video.",
+      "startMs": 143600,
+      "endMs": 143920
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/hypercharge_mistakes_project_11/voiceover.mp3",
+      "volume": 1.0
+    }
+  }
+}

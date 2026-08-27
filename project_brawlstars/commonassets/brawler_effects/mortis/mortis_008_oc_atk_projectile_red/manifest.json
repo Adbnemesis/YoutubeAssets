@@ -1,0 +1,27 @@
+{
+  "name": "mortis_008_oc_atk_projectile_red",
+  "frameCount": 2,
+  "canvas": {
+    "width": 402,
+    "height": 406
+  },
+  "anchor": {
+    "x": 201,
+    "y": 203
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 107,
+      "y": 0,
+      "w": 295,
+      "h": 384
+    },
+    {
+      "x": 114,
+      "y": 9,
+      "w": 282,
+      "h": 367
+    }
+  ]
+}

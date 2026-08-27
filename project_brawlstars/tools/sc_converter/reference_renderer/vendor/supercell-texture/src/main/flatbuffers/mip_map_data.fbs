@@ -1,0 +1,10 @@
+namespace com.supercell.texture;
+
+table MipMapData {
+    width: uint16;
+    height: uint16;
+    offset: int32 = 0;
+    hash: [ubyte];  // fnv1a_64 hash
+}
+
+root_type MipMapData;

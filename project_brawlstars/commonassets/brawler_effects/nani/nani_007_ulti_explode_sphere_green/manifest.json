@@ -1,0 +1,21 @@
+{
+  "name": "nani_007_ulti_explode_sphere_green",
+  "frameCount": 1,
+  "canvas": {
+    "width": 116,
+    "height": 116
+  },
+  "anchor": {
+    "x": 58,
+    "y": 58
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 116,
+      "h": 116
+    }
+  ]
+}

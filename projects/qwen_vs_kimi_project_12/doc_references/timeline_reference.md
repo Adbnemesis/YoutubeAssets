@@ -1,0 +1,42 @@
+# Timeline Reference - Project 12
+
+This document acts as the source of truth for the timeline segment transitions.
+
+| Start | End | Text |
+|-------|-----|------|
+| 00:00 | 00:03 | Imagine walking into a massive jungle research lab. |
+| 00:03 | 00:13 | You want to translate a text, but instead of one giant smart monkey, you find a team of eight hundred and ninety-six specialized monkey scientists. |
+| 00:13 | 00:16 | That is exactly how Kimi K3 works. |
+| 00:16 | 00:19 | It is a massive Mixture-of-Experts model. |
+| 00:19 | 00:24 | But does it actually beat Alibaba's brand new Qwen 3.8 Max? |
+| 00:24 | 00:29 | Let us break down these two brand new Chinese AI giants in under three minutes. |
+| 00:29 | 00:32 | First, let us look at their size. |
+| 00:32 | 00:37 | Kimi K3 is an absolute monster with two point eight trillion parameters. |
+| 00:37 | 00:42 | Qwen 3.8 Max is slightly smaller, coming in at two point four trillion. |
+| 00:42 | 00:44 | But wait, why does size matter? |
+| 00:44 | 00:49 | More parameters mean the model can store more knowledge and spot deeper patterns. |
+| 00:49 | 00:53 | However, running a model this big is incredibly expensive. |
+| 00:53 | 00:54 | How do they keep it fast and cheap? |
+| 00:54 | 00:59 | They use a trick called Mixture-of-Experts, or MoE. |
+| 00:59 | 01:00 | Think of it like this. |
+| 01:00 | 01:07 | When you ask Kimi K3 a question, it does not wake up all eight hundred and ninety-six scientists. |
+| 01:07 | 01:11 | It only activates the sixteen best monkeys for your specific question. |
+| 01:11 | 01:14 | That keeps it fast and energy-efficient. |
+| 01:14 | 01:21 | Plus, Moonshot AI introduced two secret weapons called Kimi Delta Attention and Attention Residuals. |
+| 01:21 | 01:27 | These tricks make Kimi K3 two point five times more efficient at moving information than before. |
+| 01:27 | 01:29 | Isn't that a massive leap? |
+| 01:29 | 01:30 | What about Alibaba's Qwen 3.8 Max? |
+| 01:30 | 01:42 | Alibaba has not shared its exact expert count, but they claim it is a multi-modal beast that handles text, images, video, and documents easily. |
+| 01:42 | 01:47 | In early testing, Alibaba ranks it second only to Claude five Fable. |
+| 01:47 | 01:50 | Both models have a massive one million token context window. |
+| 01:50 | 01:55 | That is like handing them a thousand-page book to read in one second. |
+| 01:55 | 01:58 | But Kimi K3 has an insane pricing advantage. |
+| 01:58 | 02:05 | If you ask it a question about a document it already read, it retrieves pre-peeled bananas from its cache. |
+| 02:05 | 02:11 | This cache hit gets you a ninety percent discount, costing just thirty cents per million tokens. |
+| 02:11 | 02:13 | For new questions, it costs three dollars. |
+| 02:13 | 02:19 | Qwen 3.8 Max is currently in preview, offering monthly subscription plans instead. |
+| 02:19 | 02:22 | So, which model wins the crown? |
+| 02:22 | 02:27 | If you need long-horizon coding or deep repository search, Kimi K3 is your champion. |
+| 02:27 | 02:34 | If you need a multi-modal agent to handle video and images, Qwen 3.8 Max takes the lead. |
+| 02:34 | 02:36 | Both models are changing the game. |
+| 02:36 | 02:40 | Which one will you try first? |

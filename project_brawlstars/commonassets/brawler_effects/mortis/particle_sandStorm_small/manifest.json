@@ -1,0 +1,21 @@
+{
+  "name": "particle_sandStorm_small",
+  "frameCount": 1,
+  "canvas": {
+    "width": 256,
+    "height": 256
+  },
+  "anchor": {
+    "x": 128,
+    "y": 128
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 256,
+      "h": 256
+    }
+  ]
+}

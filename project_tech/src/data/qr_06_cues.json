@@ -1,0 +1,1016 @@
+{
+  "reel_id": "qr_06",
+  "title": "You Destroyed This QR Code. It Still Scanned.",
+  "total_duration_s": 18.133,
+  "total_frames": 544,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "qr01_hook",
+      "speaker": "narrator",
+      "text": "You just destroyed this QR code... and it still scanned.",
+      "start_time_ms": 0,
+      "end_time_ms": 2816,
+      "duration_s": 2.816,
+      "start_frame": 0,
+      "end_frame": 84,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "destroyed",
+          "cue": "scribble_burst",
+          "time_ms": 985,
+          "frame": 30
+        },
+        {
+          "phrase": "still scanned",
+          "cue": "scan_check",
+          "time_ms": 2309,
+          "frame": 69
+        }
+      ]
+    },
+    {
+      "id": "qr02_secret",
+      "speaker": "narrator",
+      "text": "Every QR code secretly carries backup math of its own data.",
+      "start_time_ms": 2926,
+      "end_time_ms": 5912,
+      "duration_s": 2.987,
+      "start_frame": 88,
+      "end_frame": 177,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "secretly",
+          "cue": "grid_reveal",
+          "time_ms": 4120,
+          "frame": 124
+        },
+        {
+          "phrase": "backup math",
+          "cue": "gold_modules",
+          "time_ms": 5255,
+          "frame": 158
+        }
+      ]
+    },
+    {
+      "id": "qr03_nemi_guess",
+      "speaker": "nemi",
+      "text": "Spare copies?! \ud83e\udd2f",
+      "start_time_ms": 6012,
+      "end_time_ms": 6950,
+      "duration_s": 0.939,
+      "start_frame": 180,
+      "end_frame": 208,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "Spare copies",
+          "cue": "buzzer_shock",
+          "time_ms": 6434,
+          "frame": 193
+        }
+      ]
+    },
+    {
+      "id": "qr04_reversal",
+      "speaker": "narrator",
+      "text": "No spare room! Reed-Solomon equations rebuild missing blocks from whatever survives.",
+      "start_time_ms": 7040,
+      "end_time_ms": 11200,
+      "duration_s": 4.16,
+      "start_frame": 211,
+      "end_frame": 336,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "Reed-Solomon",
+          "cue": "rs_title",
+          "time_ms": 7955,
+          "frame": 239
+        },
+        {
+          "phrase": "rebuild missing blocks",
+          "cue": "laser_rebuild",
+          "time_ms": 9452,
+          "frame": 284
+        }
+      ]
+    },
+    {
+      "id": "qr05_payoff",
+      "speaker": "narrator",
+      "text": "Erase thirty percent \u2014 it reconstructs perfectly.",
+      "start_time_ms": 11300,
+      "end_time_ms": 13753,
+      "duration_s": 2.453,
+      "start_frame": 339,
+      "end_frame": 413,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "thirty percent",
+          "cue": "meter_surge",
+          "time_ms": 12232,
+          "frame": 367
+        },
+        {
+          "phrase": "perfectly",
+          "cue": "rebuilt_chime",
+          "time_ms": 13385,
+          "frame": 402
+        }
+      ]
+    },
+    {
+      "id": "qr06_nemi_payoff",
+      "speaker": "nemi",
+      "text": "Math wins again! \ud83d\ude0e",
+      "start_time_ms": 13863,
+      "end_time_ms": 14865,
+      "duration_s": 1.003,
+      "start_frame": 416,
+      "end_frame": 446,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "Math wins",
+          "cue": "smug_stamp",
+          "time_ms": 14263,
+          "frame": 428
+        }
+      ]
+    },
+    {
+      "id": "qr07_loop",
+      "speaker": "narrator",
+      "text": "So scribble away. Under that limit, it always scans.",
+      "start_time_ms": 15005,
+      "end_time_ms": 18013,
+      "duration_s": 3.008,
+      "start_frame": 450,
+      "end_frame": 540,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "scribble away",
+          "cue": "scribble_again",
+          "time_ms": 15847,
+          "frame": 475
+        },
+        {
+          "phrase": "always scans",
+          "cue": "loop_check",
+          "time_ms": 17411,
+          "frame": 522
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 31,
+      "text": "You just destroyed this",
+      "words": [
+        {
+          "word": "You",
+          "start_s": 0.0,
+          "end_s": 0.16,
+          "start_frame": 0,
+          "end_frame": 5
+        },
+        {
+          "word": "just",
+          "start_s": 0.16,
+          "end_s": 0.38,
+          "start_frame": 5,
+          "end_frame": 11
+        },
+        {
+          "word": "destroyed",
+          "start_s": 0.38,
+          "end_s": 0.7,
+          "start_frame": 11,
+          "end_frame": 21
+        },
+        {
+          "word": "this",
+          "start_s": 0.7,
+          "end_s": 0.9,
+          "start_frame": 21,
+          "end_frame": 27
+        }
+      ]
+    },
+    {
+      "start_frame": 27,
+      "end_frame": 68,
+      "text": "QR code, and it's",
+      "words": [
+        {
+          "word": "QR",
+          "start_s": 0.9,
+          "end_s": 1.1,
+          "start_frame": 27,
+          "end_frame": 33
+        },
+        {
+          "word": "code,",
+          "start_s": 1.1,
+          "end_s": 1.4,
+          "start_frame": 33,
+          "end_frame": 42
+        },
+        {
+          "word": "and",
+          "start_s": 1.66,
+          "end_s": 1.78,
+          "start_frame": 50,
+          "end_frame": 53
+        },
+        {
+          "word": "it's",
+          "start_s": 1.78,
+          "end_s": 2.12,
+          "start_frame": 53,
+          "end_frame": 64
+        }
+      ]
+    },
+    {
+      "start_frame": 64,
+      "end_frame": 106,
+      "text": "still scanned. Every QR",
+      "words": [
+        {
+          "word": "still",
+          "start_s": 2.12,
+          "end_s": 2.26,
+          "start_frame": 64,
+          "end_frame": 68
+        },
+        {
+          "word": "scanned.",
+          "start_s": 2.26,
+          "end_s": 2.58,
+          "start_frame": 68,
+          "end_frame": 77
+        },
+        {
+          "word": "Every",
+          "start_s": 2.96,
+          "end_s": 3.14,
+          "start_frame": 89,
+          "end_frame": 94
+        },
+        {
+          "word": "QR",
+          "start_s": 3.14,
+          "end_s": 3.4,
+          "start_frame": 94,
+          "end_frame": 102
+        }
+      ]
+    },
+    {
+      "start_frame": 102,
+      "end_frame": 144,
+      "text": "code secretly carries back",
+      "words": [
+        {
+          "word": "code",
+          "start_s": 3.4,
+          "end_s": 3.74,
+          "start_frame": 102,
+          "end_frame": 112
+        },
+        {
+          "word": "secretly",
+          "start_s": 3.74,
+          "end_s": 4.08,
+          "start_frame": 112,
+          "end_frame": 122
+        },
+        {
+          "word": "carries",
+          "start_s": 4.08,
+          "end_s": 4.44,
+          "start_frame": 122,
+          "end_frame": 133
+        },
+        {
+          "word": "back",
+          "start_s": 4.44,
+          "end_s": 4.66,
+          "start_frame": 133,
+          "end_frame": 140
+        }
+      ]
+    },
+    {
+      "start_frame": 140,
+      "end_frame": 164,
+      "text": "up math of its",
+      "words": [
+        {
+          "word": "up",
+          "start_s": 4.66,
+          "end_s": 4.8,
+          "start_frame": 140,
+          "end_frame": 144
+        },
+        {
+          "word": "math",
+          "start_s": 4.8,
+          "end_s": 5.0,
+          "start_frame": 144,
+          "end_frame": 150
+        },
+        {
+          "word": "of",
+          "start_s": 5.0,
+          "end_s": 5.18,
+          "start_frame": 150,
+          "end_frame": 155
+        },
+        {
+          "word": "its",
+          "start_s": 5.18,
+          "end_s": 5.32,
+          "start_frame": 155,
+          "end_frame": 160
+        }
+      ]
+    },
+    {
+      "start_frame": 160,
+      "end_frame": 204,
+      "text": "own data. Spare copies.",
+      "words": [
+        {
+          "word": "own",
+          "start_s": 5.32,
+          "end_s": 5.46,
+          "start_frame": 160,
+          "end_frame": 164
+        },
+        {
+          "word": "data.",
+          "start_s": 5.46,
+          "end_s": 5.74,
+          "start_frame": 164,
+          "end_frame": 172
+        },
+        {
+          "word": "Spare",
+          "start_s": 5.98,
+          "end_s": 6.34,
+          "start_frame": 179,
+          "end_frame": 190
+        },
+        {
+          "word": "copies.",
+          "start_s": 6.34,
+          "end_s": 6.68,
+          "start_frame": 190,
+          "end_frame": 200
+        }
+      ]
+    },
+    {
+      "start_frame": 212,
+      "end_frame": 253,
+      "text": "No spare room. Reed-",
+      "words": [
+        {
+          "word": "No",
+          "start_s": 7.08,
+          "end_s": 7.2,
+          "start_frame": 212,
+          "end_frame": 216
+        },
+        {
+          "word": "spare",
+          "start_s": 7.2,
+          "end_s": 7.44,
+          "start_frame": 216,
+          "end_frame": 223
+        },
+        {
+          "word": "room.",
+          "start_s": 7.44,
+          "end_s": 7.76,
+          "start_frame": 223,
+          "end_frame": 233
+        },
+        {
+          "word": "Reed-",
+          "start_s": 8.14,
+          "end_s": 8.3,
+          "start_frame": 244,
+          "end_frame": 249
+        }
+      ]
+    },
+    {
+      "start_frame": 249,
+      "end_frame": 298,
+      "text": "Solomon Equations, rebuild missing",
+      "words": [
+        {
+          "word": "Solomon",
+          "start_s": 8.3,
+          "end_s": 8.72,
+          "start_frame": 249,
+          "end_frame": 262
+        },
+        {
+          "word": "Equations,",
+          "start_s": 8.72,
+          "end_s": 9.2,
+          "start_frame": 262,
+          "end_frame": 276
+        },
+        {
+          "word": "rebuild",
+          "start_s": 9.34,
+          "end_s": 9.54,
+          "start_frame": 280,
+          "end_frame": 286
+        },
+        {
+          "word": "missing",
+          "start_s": 9.54,
+          "end_s": 9.8,
+          "start_frame": 286,
+          "end_frame": 294
+        }
+      ]
+    },
+    {
+      "start_frame": 294,
+      "end_frame": 332,
+      "text": "blocks from whatever survives.",
+      "words": [
+        {
+          "word": "blocks",
+          "start_s": 9.8,
+          "end_s": 10.04,
+          "start_frame": 294,
+          "end_frame": 301
+        },
+        {
+          "word": "from",
+          "start_s": 10.04,
+          "end_s": 10.28,
+          "start_frame": 301,
+          "end_frame": 308
+        },
+        {
+          "word": "whatever",
+          "start_s": 10.28,
+          "end_s": 10.44,
+          "start_frame": 308,
+          "end_frame": 313
+        },
+        {
+          "word": "survives.",
+          "start_s": 10.44,
+          "end_s": 10.94,
+          "start_frame": 313,
+          "end_frame": 328
+        }
+      ]
+    },
+    {
+      "start_frame": 340,
+      "end_frame": 398,
+      "text": "Erase 30%, it reconstructs",
+      "words": [
+        {
+          "word": "Erase",
+          "start_s": 11.32,
+          "end_s": 11.5,
+          "start_frame": 340,
+          "end_frame": 345
+        },
+        {
+          "word": "30%,",
+          "start_s": 11.5,
+          "end_s": 12.36,
+          "start_frame": 345,
+          "end_frame": 371
+        },
+        {
+          "word": "it",
+          "start_s": 12.36,
+          "end_s": 12.54,
+          "start_frame": 371,
+          "end_frame": 376
+        },
+        {
+          "word": "reconstructs",
+          "start_s": 12.54,
+          "end_s": 13.14,
+          "start_frame": 376,
+          "end_frame": 394
+        }
+      ]
+    },
+    {
+      "start_frame": 394,
+      "end_frame": 445,
+      "text": "perfectly. Math wins again.",
+      "words": [
+        {
+          "word": "perfectly.",
+          "start_s": 13.14,
+          "end_s": 13.52,
+          "start_frame": 394,
+          "end_frame": 406
+        },
+        {
+          "word": "Math",
+          "start_s": 13.82,
+          "end_s": 14.1,
+          "start_frame": 415,
+          "end_frame": 423
+        },
+        {
+          "word": "wins",
+          "start_s": 14.1,
+          "end_s": 14.36,
+          "start_frame": 423,
+          "end_frame": 431
+        },
+        {
+          "word": "again.",
+          "start_s": 14.36,
+          "end_s": 14.7,
+          "start_frame": 431,
+          "end_frame": 441
+        }
+      ]
+    },
+    {
+      "start_frame": 451,
+      "end_frame": 494,
+      "text": "So, scribble away. Under",
+      "words": [
+        {
+          "word": "So,",
+          "start_s": 15.02,
+          "end_s": 15.22,
+          "start_frame": 451,
+          "end_frame": 457
+        },
+        {
+          "word": "scribble",
+          "start_s": 15.44,
+          "end_s": 15.68,
+          "start_frame": 463,
+          "end_frame": 470
+        },
+        {
+          "word": "away.",
+          "start_s": 15.68,
+          "end_s": 15.88,
+          "start_frame": 470,
+          "end_frame": 476
+        },
+        {
+          "word": "Under",
+          "start_s": 16.2,
+          "end_s": 16.34,
+          "start_frame": 486,
+          "end_frame": 490
+        }
+      ]
+    },
+    {
+      "start_frame": 490,
+      "end_frame": 524,
+      "text": "that limit, it always",
+      "words": [
+        {
+          "word": "that",
+          "start_s": 16.34,
+          "end_s": 16.52,
+          "start_frame": 490,
+          "end_frame": 496
+        },
+        {
+          "word": "limit,",
+          "start_s": 16.52,
+          "end_s": 16.78,
+          "start_frame": 496,
+          "end_frame": 503
+        },
+        {
+          "word": "it",
+          "start_s": 16.96,
+          "end_s": 17.02,
+          "start_frame": 509,
+          "end_frame": 511
+        },
+        {
+          "word": "always",
+          "start_s": 17.02,
+          "end_s": 17.32,
+          "start_frame": 511,
+          "end_frame": 520
+        }
+      ]
+    },
+    {
+      "start_frame": 520,
+      "end_frame": 534,
+      "text": "scans.",
+      "words": [
+        {
+          "word": "scans.",
+          "start_s": 17.32,
+          "end_s": 17.66,
+          "start_frame": 520,
+          "end_frame": 530
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "You",
+      "start_s": 0.0,
+      "end_s": 0.16,
+      "start_frame": 0,
+      "end_frame": 5
+    },
+    {
+      "word": "just",
+      "start_s": 0.16,
+      "end_s": 0.38,
+      "start_frame": 5,
+      "end_frame": 11
+    },
+    {
+      "word": "destroyed",
+      "start_s": 0.38,
+      "end_s": 0.7,
+      "start_frame": 11,
+      "end_frame": 21
+    },
+    {
+      "word": "this",
+      "start_s": 0.7,
+      "end_s": 0.9,
+      "start_frame": 21,
+      "end_frame": 27
+    },
+    {
+      "word": "QR",
+      "start_s": 0.9,
+      "end_s": 1.1,
+      "start_frame": 27,
+      "end_frame": 33
+    },
+    {
+      "word": "code,",
+      "start_s": 1.1,
+      "end_s": 1.4,
+      "start_frame": 33,
+      "end_frame": 42
+    },
+    {
+      "word": "and",
+      "start_s": 1.66,
+      "end_s": 1.78,
+      "start_frame": 50,
+      "end_frame": 53
+    },
+    {
+      "word": "it's",
+      "start_s": 1.78,
+      "end_s": 2.12,
+      "start_frame": 53,
+      "end_frame": 64
+    },
+    {
+      "word": "still",
+      "start_s": 2.12,
+      "end_s": 2.26,
+      "start_frame": 64,
+      "end_frame": 68
+    },
+    {
+      "word": "scanned.",
+      "start_s": 2.26,
+      "end_s": 2.58,
+      "start_frame": 68,
+      "end_frame": 77
+    },
+    {
+      "word": "Every",
+      "start_s": 2.96,
+      "end_s": 3.14,
+      "start_frame": 89,
+      "end_frame": 94
+    },
+    {
+      "word": "QR",
+      "start_s": 3.14,
+      "end_s": 3.4,
+      "start_frame": 94,
+      "end_frame": 102
+    },
+    {
+      "word": "code",
+      "start_s": 3.4,
+      "end_s": 3.74,
+      "start_frame": 102,
+      "end_frame": 112
+    },
+    {
+      "word": "secretly",
+      "start_s": 3.74,
+      "end_s": 4.08,
+      "start_frame": 112,
+      "end_frame": 122
+    },
+    {
+      "word": "carries",
+      "start_s": 4.08,
+      "end_s": 4.44,
+      "start_frame": 122,
+      "end_frame": 133
+    },
+    {
+      "word": "back",
+      "start_s": 4.44,
+      "end_s": 4.66,
+      "start_frame": 133,
+      "end_frame": 140
+    },
+    {
+      "word": "up",
+      "start_s": 4.66,
+      "end_s": 4.8,
+      "start_frame": 140,
+      "end_frame": 144
+    },
+    {
+      "word": "math",
+      "start_s": 4.8,
+      "end_s": 5.0,
+      "start_frame": 144,
+      "end_frame": 150
+    },
+    {
+      "word": "of",
+      "start_s": 5.0,
+      "end_s": 5.18,
+      "start_frame": 150,
+      "end_frame": 155
+    },
+    {
+      "word": "its",
+      "start_s": 5.18,
+      "end_s": 5.32,
+      "start_frame": 155,
+      "end_frame": 160
+    },
+    {
+      "word": "own",
+      "start_s": 5.32,
+      "end_s": 5.46,
+      "start_frame": 160,
+      "end_frame": 164
+    },
+    {
+      "word": "data.",
+      "start_s": 5.46,
+      "end_s": 5.74,
+      "start_frame": 164,
+      "end_frame": 172
+    },
+    {
+      "word": "Spare",
+      "start_s": 5.98,
+      "end_s": 6.34,
+      "start_frame": 179,
+      "end_frame": 190
+    },
+    {
+      "word": "copies.",
+      "start_s": 6.34,
+      "end_s": 6.68,
+      "start_frame": 190,
+      "end_frame": 200
+    },
+    {
+      "word": "No",
+      "start_s": 7.08,
+      "end_s": 7.2,
+      "start_frame": 212,
+      "end_frame": 216
+    },
+    {
+      "word": "spare",
+      "start_s": 7.2,
+      "end_s": 7.44,
+      "start_frame": 216,
+      "end_frame": 223
+    },
+    {
+      "word": "room.",
+      "start_s": 7.44,
+      "end_s": 7.76,
+      "start_frame": 223,
+      "end_frame": 233
+    },
+    {
+      "word": "Reed-",
+      "start_s": 8.14,
+      "end_s": 8.3,
+      "start_frame": 244,
+      "end_frame": 249
+    },
+    {
+      "word": "Solomon",
+      "start_s": 8.3,
+      "end_s": 8.72,
+      "start_frame": 249,
+      "end_frame": 262
+    },
+    {
+      "word": "Equations,",
+      "start_s": 8.72,
+      "end_s": 9.2,
+      "start_frame": 262,
+      "end_frame": 276
+    },
+    {
+      "word": "rebuild",
+      "start_s": 9.34,
+      "end_s": 9.54,
+      "start_frame": 280,
+      "end_frame": 286
+    },
+    {
+      "word": "missing",
+      "start_s": 9.54,
+      "end_s": 9.8,
+      "start_frame": 286,
+      "end_frame": 294
+    },
+    {
+      "word": "blocks",
+      "start_s": 9.8,
+      "end_s": 10.04,
+      "start_frame": 294,
+      "end_frame": 301
+    },
+    {
+      "word": "from",
+      "start_s": 10.04,
+      "end_s": 10.28,
+      "start_frame": 301,
+      "end_frame": 308
+    },
+    {
+      "word": "whatever",
+      "start_s": 10.28,
+      "end_s": 10.44,
+      "start_frame": 308,
+      "end_frame": 313
+    },
+    {
+      "word": "survives.",
+      "start_s": 10.44,
+      "end_s": 10.94,
+      "start_frame": 313,
+      "end_frame": 328
+    },
+    {
+      "word": "Erase",
+      "start_s": 11.32,
+      "end_s": 11.5,
+      "start_frame": 340,
+      "end_frame": 345
+    },
+    {
+      "word": "30%,",
+      "start_s": 11.5,
+      "end_s": 12.36,
+      "start_frame": 345,
+      "end_frame": 371
+    },
+    {
+      "word": "it",
+      "start_s": 12.36,
+      "end_s": 12.54,
+      "start_frame": 371,
+      "end_frame": 376
+    },
+    {
+      "word": "reconstructs",
+      "start_s": 12.54,
+      "end_s": 13.14,
+      "start_frame": 376,
+      "end_frame": 394
+    },
+    {
+      "word": "perfectly.",
+      "start_s": 13.14,
+      "end_s": 13.52,
+      "start_frame": 394,
+      "end_frame": 406
+    },
+    {
+      "word": "Math",
+      "start_s": 13.82,
+      "end_s": 14.1,
+      "start_frame": 415,
+      "end_frame": 423
+    },
+    {
+      "word": "wins",
+      "start_s": 14.1,
+      "end_s": 14.36,
+      "start_frame": 423,
+      "end_frame": 431
+    },
+    {
+      "word": "again.",
+      "start_s": 14.36,
+      "end_s": 14.7,
+      "start_frame": 431,
+      "end_frame": 441
+    },
+    {
+      "word": "So,",
+      "start_s": 15.02,
+      "end_s": 15.22,
+      "start_frame": 451,
+      "end_frame": 457
+    },
+    {
+      "word": "scribble",
+      "start_s": 15.44,
+      "end_s": 15.68,
+      "start_frame": 463,
+      "end_frame": 470
+    },
+    {
+      "word": "away.",
+      "start_s": 15.68,
+      "end_s": 15.88,
+      "start_frame": 470,
+      "end_frame": 476
+    },
+    {
+      "word": "Under",
+      "start_s": 16.2,
+      "end_s": 16.34,
+      "start_frame": 486,
+      "end_frame": 490
+    },
+    {
+      "word": "that",
+      "start_s": 16.34,
+      "end_s": 16.52,
+      "start_frame": 490,
+      "end_frame": 496
+    },
+    {
+      "word": "limit,",
+      "start_s": 16.52,
+      "end_s": 16.78,
+      "start_frame": 496,
+      "end_frame": 503
+    },
+    {
+      "word": "it",
+      "start_s": 16.96,
+      "end_s": 17.02,
+      "start_frame": 509,
+      "end_frame": 511
+    },
+    {
+      "word": "always",
+      "start_s": 17.02,
+      "end_s": 17.32,
+      "start_frame": 511,
+      "end_frame": 520
+    },
+    {
+      "word": "scans.",
+      "start_s": 17.32,
+      "end_s": 17.66,
+      "start_frame": 520,
+      "end_frame": 530
+    }
+  ]
+}

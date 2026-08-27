@@ -1,0 +1,1370 @@
+{
+  "reel_id": "gps_10",
+  "title": "Your Phone Is Silent. They Still Find You.",
+  "total_duration_s": 22.456,
+  "total_frames": 674,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "gp01_hook",
+      "speaker": "narrator",
+      "text": "Your phone says nothing... and satellites still find you.",
+      "start_time_ms": 0,
+      "end_time_ms": 2282,
+      "duration_s": 2.283,
+      "start_frame": 0,
+      "end_frame": 68,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "says nothing",
+          "cue": "silent_mode",
+          "time_ms": 798,
+          "frame": 24
+        },
+        {
+          "phrase": "find you",
+          "cue": "spheres_lock",
+          "time_ms": 1939,
+          "frame": 58
+        }
+      ]
+    },
+    {
+      "id": "gp02_secret",
+      "speaker": "narrator",
+      "text": "It never sends a signal. It only listens for atomic timestamps.",
+      "start_time_ms": 2392,
+      "end_time_ms": 5634,
+      "duration_s": 3.243,
+      "start_frame": 72,
+      "end_frame": 169,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "never sends",
+          "cue": "tx_off",
+          "time_ms": 3202,
+          "frame": 96
+        },
+        {
+          "phrase": "atomic timestamps",
+          "cue": "timestamp_pop",
+          "time_ms": 4985,
+          "frame": 150
+        }
+      ]
+    },
+    {
+      "id": "gp03_nemi_guess",
+      "speaker": "nemi",
+      "text": "So it tracks my phone?! \ud83e\udd2f",
+      "start_time_ms": 5734,
+      "end_time_ms": 6992,
+      "duration_s": 1.259,
+      "start_frame": 172,
+      "end_frame": 210,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "tracks my phone",
+          "cue": "buzzer_shock",
+          "time_ms": 6363,
+          "frame": 191
+        }
+      ]
+    },
+    {
+      "id": "gp04_reversal",
+      "speaker": "narrator",
+      "text": "Wrong! Every satellite paints one giant distance sphere around itself.",
+      "start_time_ms": 7082,
+      "end_time_ms": 10580,
+      "duration_s": 3.499,
+      "start_frame": 212,
+      "end_frame": 317,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "Wrong",
+          "cue": "wrong_stamp",
+          "time_ms": 7431,
+          "frame": 223
+        },
+        {
+          "phrase": "distance sphere",
+          "cue": "sphere_one",
+          "time_ms": 9355,
+          "frame": 281
+        }
+      ]
+    },
+    {
+      "id": "gp05_mechanism",
+      "speaker": "narrator",
+      "text": "Where three spheres cross... that's exactly where you're standing.",
+      "start_time_ms": 10680,
+      "end_time_ms": 13304,
+      "duration_s": 2.624,
+      "start_frame": 320,
+      "end_frame": 399,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "three spheres",
+          "cue": "sphere_two",
+          "time_ms": 11204,
+          "frame": 336
+        },
+        {
+          "phrase": "where you're standing",
+          "cue": "sphere_three",
+          "time_ms": 12648,
+          "frame": 379
+        }
+      ]
+    },
+    {
+      "id": "gp06_payoff",
+      "speaker": "narrator",
+      "text": "A fourth satellite erases your chip's tiny clock error... pin dropped.",
+      "start_time_ms": 13404,
+      "end_time_ms": 16710,
+      "duration_s": 3.307,
+      "start_frame": 402,
+      "end_frame": 501,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "fourth satellite",
+          "cue": "clock_fix",
+          "time_ms": 14395,
+          "frame": 432
+        },
+        {
+          "phrase": "pin dropped",
+          "cue": "pin_drop",
+          "time_ms": 16214,
+          "frame": 486
+        }
+      ]
+    },
+    {
+      "id": "gp07_nemi_payoff",
+      "speaker": "nemi",
+      "text": "Silence is the trick! \ud83d\ude0e",
+      "start_time_ms": 16820,
+      "end_time_ms": 17908,
+      "duration_s": 1.088,
+      "start_frame": 505,
+      "end_frame": 537,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "Silence is the trick",
+          "cue": "smug_stamp",
+          "time_ms": 17255,
+          "frame": 518
+        }
+      ]
+    },
+    {
+      "id": "gp08_loop",
+      "speaker": "narrator",
+      "text": "So when your map nails your location instantly... remember, your phone never said a word.",
+      "start_time_ms": 18048,
+      "end_time_ms": 22336,
+      "duration_s": 4.288,
+      "start_frame": 541,
+      "end_frame": 670,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "nails your location",
+          "cue": "loop_map",
+          "time_ms": 19763,
+          "frame": 593
+        },
+        {
+          "phrase": "never said a word",
+          "cue": "loop_silent",
+          "time_ms": 21564,
+          "frame": 647
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 26,
+      "text": "Your phone says nothing",
+      "words": [
+        {
+          "word": "Your",
+          "start_s": 0.0,
+          "end_s": 0.08,
+          "start_frame": 0,
+          "end_frame": 2
+        },
+        {
+          "word": "phone",
+          "start_s": 0.08,
+          "end_s": 0.24,
+          "start_frame": 2,
+          "end_frame": 7
+        },
+        {
+          "word": "says",
+          "start_s": 0.24,
+          "end_s": 0.46,
+          "start_frame": 7,
+          "end_frame": 14
+        },
+        {
+          "word": "nothing",
+          "start_s": 0.46,
+          "end_s": 0.74,
+          "start_frame": 14,
+          "end_frame": 22
+        }
+      ]
+    },
+    {
+      "start_frame": 22,
+      "end_frame": 60,
+      "text": "and satellites still find",
+      "words": [
+        {
+          "word": "and",
+          "start_s": 0.74,
+          "end_s": 1.04,
+          "start_frame": 22,
+          "end_frame": 31
+        },
+        {
+          "word": "satellites",
+          "start_s": 1.04,
+          "end_s": 1.34,
+          "start_frame": 31,
+          "end_frame": 40
+        },
+        {
+          "word": "still",
+          "start_s": 1.34,
+          "end_s": 1.66,
+          "start_frame": 40,
+          "end_frame": 50
+        },
+        {
+          "word": "find",
+          "start_s": 1.66,
+          "end_s": 1.88,
+          "start_frame": 50,
+          "end_frame": 56
+        }
+      ]
+    },
+    {
+      "start_frame": 56,
+      "end_frame": 93,
+      "text": "you. It never sends",
+      "words": [
+        {
+          "word": "you.",
+          "start_s": 1.88,
+          "end_s": 2.14,
+          "start_frame": 56,
+          "end_frame": 64
+        },
+        {
+          "word": "It",
+          "start_s": 2.44,
+          "end_s": 2.52,
+          "start_frame": 73,
+          "end_frame": 76
+        },
+        {
+          "word": "never",
+          "start_s": 2.52,
+          "end_s": 2.78,
+          "start_frame": 76,
+          "end_frame": 83
+        },
+        {
+          "word": "sends",
+          "start_s": 2.78,
+          "end_s": 2.96,
+          "start_frame": 83,
+          "end_frame": 89
+        }
+      ]
+    },
+    {
+      "start_frame": 89,
+      "end_frame": 124,
+      "text": "a signal. It only",
+      "words": [
+        {
+          "word": "a",
+          "start_s": 2.96,
+          "end_s": 3.14,
+          "start_frame": 89,
+          "end_frame": 94
+        },
+        {
+          "word": "signal.",
+          "start_s": 3.14,
+          "end_s": 3.42,
+          "start_frame": 94,
+          "end_frame": 103
+        },
+        {
+          "word": "It",
+          "start_s": 3.74,
+          "end_s": 3.82,
+          "start_frame": 112,
+          "end_frame": 115
+        },
+        {
+          "word": "only",
+          "start_s": 3.82,
+          "end_s": 4.0,
+          "start_frame": 115,
+          "end_frame": 120
+        }
+      ]
+    },
+    {
+      "start_frame": 120,
+      "end_frame": 167,
+      "text": "listens for atomic timestamps.",
+      "words": [
+        {
+          "word": "listens",
+          "start_s": 4.0,
+          "end_s": 4.28,
+          "start_frame": 120,
+          "end_frame": 128
+        },
+        {
+          "word": "for",
+          "start_s": 4.28,
+          "end_s": 4.48,
+          "start_frame": 128,
+          "end_frame": 134
+        },
+        {
+          "word": "atomic",
+          "start_s": 4.48,
+          "end_s": 4.8,
+          "start_frame": 134,
+          "end_frame": 144
+        },
+        {
+          "word": "timestamps.",
+          "start_s": 4.8,
+          "end_s": 5.44,
+          "start_frame": 144,
+          "end_frame": 163
+        }
+      ]
+    },
+    {
+      "start_frame": 169,
+      "end_frame": 201,
+      "text": "So it tracks my",
+      "words": [
+        {
+          "word": "So",
+          "start_s": 5.64,
+          "end_s": 5.92,
+          "start_frame": 169,
+          "end_frame": 178
+        },
+        {
+          "word": "it",
+          "start_s": 5.92,
+          "end_s": 6.08,
+          "start_frame": 178,
+          "end_frame": 182
+        },
+        {
+          "word": "tracks",
+          "start_s": 6.08,
+          "end_s": 6.32,
+          "start_frame": 182,
+          "end_frame": 190
+        },
+        {
+          "word": "my",
+          "start_s": 6.32,
+          "end_s": 6.58,
+          "start_frame": 190,
+          "end_frame": 197
+        }
+      ]
+    },
+    {
+      "start_frame": 197,
+      "end_frame": 251,
+      "text": "phone. Wrong. Every satellite",
+      "words": [
+        {
+          "word": "phone.",
+          "start_s": 6.58,
+          "end_s": 6.88,
+          "start_frame": 197,
+          "end_frame": 206
+        },
+        {
+          "word": "Wrong.",
+          "start_s": 7.1,
+          "end_s": 7.26,
+          "start_frame": 213,
+          "end_frame": 218
+        },
+        {
+          "word": "Every",
+          "start_s": 7.7,
+          "end_s": 7.9,
+          "start_frame": 231,
+          "end_frame": 237
+        },
+        {
+          "word": "satellite",
+          "start_s": 7.9,
+          "end_s": 8.22,
+          "start_frame": 237,
+          "end_frame": 247
+        }
+      ]
+    },
+    {
+      "start_frame": 247,
+      "end_frame": 286,
+      "text": "paints one giant distance",
+      "words": [
+        {
+          "word": "paints",
+          "start_s": 8.22,
+          "end_s": 8.56,
+          "start_frame": 247,
+          "end_frame": 257
+        },
+        {
+          "word": "one",
+          "start_s": 8.56,
+          "end_s": 8.82,
+          "start_frame": 257,
+          "end_frame": 265
+        },
+        {
+          "word": "giant",
+          "start_s": 8.82,
+          "end_s": 9.14,
+          "start_frame": 265,
+          "end_frame": 274
+        },
+        {
+          "word": "distance",
+          "start_s": 9.14,
+          "end_s": 9.4,
+          "start_frame": 274,
+          "end_frame": 282
+        }
+      ]
+    },
+    {
+      "start_frame": 282,
+      "end_frame": 328,
+      "text": "spear around itself, where",
+      "words": [
+        {
+          "word": "spear",
+          "start_s": 9.4,
+          "end_s": 9.7,
+          "start_frame": 282,
+          "end_frame": 291
+        },
+        {
+          "word": "around",
+          "start_s": 9.7,
+          "end_s": 10.02,
+          "start_frame": 291,
+          "end_frame": 301
+        },
+        {
+          "word": "itself,",
+          "start_s": 10.02,
+          "end_s": 10.44,
+          "start_frame": 301,
+          "end_frame": 313
+        },
+        {
+          "word": "where",
+          "start_s": 10.72,
+          "end_s": 10.8,
+          "start_frame": 322,
+          "end_frame": 324
+        }
+      ]
+    },
+    {
+      "start_frame": 324,
+      "end_frame": 368,
+      "text": "three spears cross, that's",
+      "words": [
+        {
+          "word": "three",
+          "start_s": 10.8,
+          "end_s": 11.06,
+          "start_frame": 324,
+          "end_frame": 332
+        },
+        {
+          "word": "spears",
+          "start_s": 11.06,
+          "end_s": 11.38,
+          "start_frame": 332,
+          "end_frame": 341
+        },
+        {
+          "word": "cross,",
+          "start_s": 11.38,
+          "end_s": 11.62,
+          "start_frame": 341,
+          "end_frame": 349
+        },
+        {
+          "word": "that's",
+          "start_s": 11.94,
+          "end_s": 12.14,
+          "start_frame": 358,
+          "end_frame": 364
+        }
+      ]
+    },
+    {
+      "start_frame": 364,
+      "end_frame": 396,
+      "text": "exactly where you're standing.",
+      "words": [
+        {
+          "word": "exactly",
+          "start_s": 12.14,
+          "end_s": 12.44,
+          "start_frame": 364,
+          "end_frame": 373
+        },
+        {
+          "word": "where",
+          "start_s": 12.44,
+          "end_s": 12.62,
+          "start_frame": 373,
+          "end_frame": 379
+        },
+        {
+          "word": "you're",
+          "start_s": 12.62,
+          "end_s": 12.74,
+          "start_frame": 379,
+          "end_frame": 382
+        },
+        {
+          "word": "standing.",
+          "start_s": 12.74,
+          "end_s": 13.06,
+          "start_frame": 382,
+          "end_frame": 392
+        }
+      ]
+    },
+    {
+      "start_frame": 403,
+      "end_frame": 440,
+      "text": "A fourth satellite erases",
+      "words": [
+        {
+          "word": "A",
+          "start_s": 13.42,
+          "end_s": 13.5,
+          "start_frame": 403,
+          "end_frame": 405
+        },
+        {
+          "word": "fourth",
+          "start_s": 13.5,
+          "end_s": 13.68,
+          "start_frame": 405,
+          "end_frame": 410
+        },
+        {
+          "word": "satellite",
+          "start_s": 13.68,
+          "end_s": 14.06,
+          "start_frame": 410,
+          "end_frame": 422
+        },
+        {
+          "word": "erases",
+          "start_s": 14.06,
+          "end_s": 14.54,
+          "start_frame": 422,
+          "end_frame": 436
+        }
+      ]
+    },
+    {
+      "start_frame": 436,
+      "end_frame": 467,
+      "text": "your chip's tiny clock",
+      "words": [
+        {
+          "word": "your",
+          "start_s": 14.54,
+          "end_s": 14.72,
+          "start_frame": 436,
+          "end_frame": 442
+        },
+        {
+          "word": "chip's",
+          "start_s": 14.72,
+          "end_s": 15.04,
+          "start_frame": 442,
+          "end_frame": 451
+        },
+        {
+          "word": "tiny",
+          "start_s": 15.04,
+          "end_s": 15.22,
+          "start_frame": 451,
+          "end_frame": 457
+        },
+        {
+          "word": "clock",
+          "start_s": 15.22,
+          "end_s": 15.44,
+          "start_frame": 457,
+          "end_frame": 463
+        }
+      ]
+    },
+    {
+      "start_frame": 463,
+      "end_frame": 519,
+      "text": "error, pen dropped. Silence",
+      "words": [
+        {
+          "word": "error,",
+          "start_s": 15.44,
+          "end_s": 15.78,
+          "start_frame": 463,
+          "end_frame": 473
+        },
+        {
+          "word": "pen",
+          "start_s": 16.06,
+          "end_s": 16.18,
+          "start_frame": 482,
+          "end_frame": 485
+        },
+        {
+          "word": "dropped.",
+          "start_s": 16.18,
+          "end_s": 16.48,
+          "start_frame": 485,
+          "end_frame": 494
+        },
+        {
+          "word": "Silence",
+          "start_s": 16.82,
+          "end_s": 17.18,
+          "start_frame": 505,
+          "end_frame": 515
+        }
+      ]
+    },
+    {
+      "start_frame": 515,
+      "end_frame": 552,
+      "text": "is the trick. So",
+      "words": [
+        {
+          "word": "is",
+          "start_s": 17.18,
+          "end_s": 17.46,
+          "start_frame": 515,
+          "end_frame": 524
+        },
+        {
+          "word": "the",
+          "start_s": 17.46,
+          "end_s": 17.58,
+          "start_frame": 524,
+          "end_frame": 527
+        },
+        {
+          "word": "trick.",
+          "start_s": 17.58,
+          "end_s": 17.82,
+          "start_frame": 527,
+          "end_frame": 535
+        },
+        {
+          "word": "So",
+          "start_s": 18.04,
+          "end_s": 18.28,
+          "start_frame": 541,
+          "end_frame": 548
+        }
+      ]
+    },
+    {
+      "start_frame": 548,
+      "end_frame": 576,
+      "text": "when your map nails",
+      "words": [
+        {
+          "word": "when",
+          "start_s": 18.28,
+          "end_s": 18.5,
+          "start_frame": 548,
+          "end_frame": 555
+        },
+        {
+          "word": "your",
+          "start_s": 18.5,
+          "end_s": 18.6,
+          "start_frame": 555,
+          "end_frame": 558
+        },
+        {
+          "word": "map",
+          "start_s": 18.6,
+          "end_s": 18.8,
+          "start_frame": 558,
+          "end_frame": 564
+        },
+        {
+          "word": "nails",
+          "start_s": 18.8,
+          "end_s": 19.06,
+          "start_frame": 564,
+          "end_frame": 572
+        }
+      ]
+    },
+    {
+      "start_frame": 572,
+      "end_frame": 627,
+      "text": "your location instantly, remember",
+      "words": [
+        {
+          "word": "your",
+          "start_s": 19.06,
+          "end_s": 19.24,
+          "start_frame": 572,
+          "end_frame": 577
+        },
+        {
+          "word": "location",
+          "start_s": 19.24,
+          "end_s": 19.56,
+          "start_frame": 577,
+          "end_frame": 587
+        },
+        {
+          "word": "instantly,",
+          "start_s": 19.56,
+          "end_s": 20.16,
+          "start_frame": 587,
+          "end_frame": 605
+        },
+        {
+          "word": "remember",
+          "start_s": 20.48,
+          "end_s": 20.78,
+          "start_frame": 614,
+          "end_frame": 623
+        }
+      ]
+    },
+    {
+      "start_frame": 623,
+      "end_frame": 659,
+      "text": "your phone never said",
+      "words": [
+        {
+          "word": "your",
+          "start_s": 20.78,
+          "end_s": 21.08,
+          "start_frame": 623,
+          "end_frame": 632
+        },
+        {
+          "word": "phone",
+          "start_s": 21.08,
+          "end_s": 21.4,
+          "start_frame": 632,
+          "end_frame": 642
+        },
+        {
+          "word": "never",
+          "start_s": 21.4,
+          "end_s": 21.6,
+          "start_frame": 642,
+          "end_frame": 648
+        },
+        {
+          "word": "said",
+          "start_s": 21.6,
+          "end_s": 21.84,
+          "start_frame": 648,
+          "end_frame": 655
+        }
+      ]
+    },
+    {
+      "start_frame": 655,
+      "end_frame": 669,
+      "text": "a word.",
+      "words": [
+        {
+          "word": "a",
+          "start_s": 21.84,
+          "end_s": 21.96,
+          "start_frame": 655,
+          "end_frame": 659
+        },
+        {
+          "word": "word.",
+          "start_s": 21.96,
+          "end_s": 22.16,
+          "start_frame": 659,
+          "end_frame": 665
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Your",
+      "start_s": 0.0,
+      "end_s": 0.08,
+      "start_frame": 0,
+      "end_frame": 2
+    },
+    {
+      "word": "phone",
+      "start_s": 0.08,
+      "end_s": 0.24,
+      "start_frame": 2,
+      "end_frame": 7
+    },
+    {
+      "word": "says",
+      "start_s": 0.24,
+      "end_s": 0.46,
+      "start_frame": 7,
+      "end_frame": 14
+    },
+    {
+      "word": "nothing",
+      "start_s": 0.46,
+      "end_s": 0.74,
+      "start_frame": 14,
+      "end_frame": 22
+    },
+    {
+      "word": "and",
+      "start_s": 0.74,
+      "end_s": 1.04,
+      "start_frame": 22,
+      "end_frame": 31
+    },
+    {
+      "word": "satellites",
+      "start_s": 1.04,
+      "end_s": 1.34,
+      "start_frame": 31,
+      "end_frame": 40
+    },
+    {
+      "word": "still",
+      "start_s": 1.34,
+      "end_s": 1.66,
+      "start_frame": 40,
+      "end_frame": 50
+    },
+    {
+      "word": "find",
+      "start_s": 1.66,
+      "end_s": 1.88,
+      "start_frame": 50,
+      "end_frame": 56
+    },
+    {
+      "word": "you.",
+      "start_s": 1.88,
+      "end_s": 2.14,
+      "start_frame": 56,
+      "end_frame": 64
+    },
+    {
+      "word": "It",
+      "start_s": 2.44,
+      "end_s": 2.52,
+      "start_frame": 73,
+      "end_frame": 76
+    },
+    {
+      "word": "never",
+      "start_s": 2.52,
+      "end_s": 2.78,
+      "start_frame": 76,
+      "end_frame": 83
+    },
+    {
+      "word": "sends",
+      "start_s": 2.78,
+      "end_s": 2.96,
+      "start_frame": 83,
+      "end_frame": 89
+    },
+    {
+      "word": "a",
+      "start_s": 2.96,
+      "end_s": 3.14,
+      "start_frame": 89,
+      "end_frame": 94
+    },
+    {
+      "word": "signal.",
+      "start_s": 3.14,
+      "end_s": 3.42,
+      "start_frame": 94,
+      "end_frame": 103
+    },
+    {
+      "word": "It",
+      "start_s": 3.74,
+      "end_s": 3.82,
+      "start_frame": 112,
+      "end_frame": 115
+    },
+    {
+      "word": "only",
+      "start_s": 3.82,
+      "end_s": 4.0,
+      "start_frame": 115,
+      "end_frame": 120
+    },
+    {
+      "word": "listens",
+      "start_s": 4.0,
+      "end_s": 4.28,
+      "start_frame": 120,
+      "end_frame": 128
+    },
+    {
+      "word": "for",
+      "start_s": 4.28,
+      "end_s": 4.48,
+      "start_frame": 128,
+      "end_frame": 134
+    },
+    {
+      "word": "atomic",
+      "start_s": 4.48,
+      "end_s": 4.8,
+      "start_frame": 134,
+      "end_frame": 144
+    },
+    {
+      "word": "timestamps.",
+      "start_s": 4.8,
+      "end_s": 5.44,
+      "start_frame": 144,
+      "end_frame": 163
+    },
+    {
+      "word": "So",
+      "start_s": 5.64,
+      "end_s": 5.92,
+      "start_frame": 169,
+      "end_frame": 178
+    },
+    {
+      "word": "it",
+      "start_s": 5.92,
+      "end_s": 6.08,
+      "start_frame": 178,
+      "end_frame": 182
+    },
+    {
+      "word": "tracks",
+      "start_s": 6.08,
+      "end_s": 6.32,
+      "start_frame": 182,
+      "end_frame": 190
+    },
+    {
+      "word": "my",
+      "start_s": 6.32,
+      "end_s": 6.58,
+      "start_frame": 190,
+      "end_frame": 197
+    },
+    {
+      "word": "phone.",
+      "start_s": 6.58,
+      "end_s": 6.88,
+      "start_frame": 197,
+      "end_frame": 206
+    },
+    {
+      "word": "Wrong.",
+      "start_s": 7.1,
+      "end_s": 7.26,
+      "start_frame": 213,
+      "end_frame": 218
+    },
+    {
+      "word": "Every",
+      "start_s": 7.7,
+      "end_s": 7.9,
+      "start_frame": 231,
+      "end_frame": 237
+    },
+    {
+      "word": "satellite",
+      "start_s": 7.9,
+      "end_s": 8.22,
+      "start_frame": 237,
+      "end_frame": 247
+    },
+    {
+      "word": "paints",
+      "start_s": 8.22,
+      "end_s": 8.56,
+      "start_frame": 247,
+      "end_frame": 257
+    },
+    {
+      "word": "one",
+      "start_s": 8.56,
+      "end_s": 8.82,
+      "start_frame": 257,
+      "end_frame": 265
+    },
+    {
+      "word": "giant",
+      "start_s": 8.82,
+      "end_s": 9.14,
+      "start_frame": 265,
+      "end_frame": 274
+    },
+    {
+      "word": "distance",
+      "start_s": 9.14,
+      "end_s": 9.4,
+      "start_frame": 274,
+      "end_frame": 282
+    },
+    {
+      "word": "spear",
+      "start_s": 9.4,
+      "end_s": 9.7,
+      "start_frame": 282,
+      "end_frame": 291
+    },
+    {
+      "word": "around",
+      "start_s": 9.7,
+      "end_s": 10.02,
+      "start_frame": 291,
+      "end_frame": 301
+    },
+    {
+      "word": "itself,",
+      "start_s": 10.02,
+      "end_s": 10.44,
+      "start_frame": 301,
+      "end_frame": 313
+    },
+    {
+      "word": "where",
+      "start_s": 10.72,
+      "end_s": 10.8,
+      "start_frame": 322,
+      "end_frame": 324
+    },
+    {
+      "word": "three",
+      "start_s": 10.8,
+      "end_s": 11.06,
+      "start_frame": 324,
+      "end_frame": 332
+    },
+    {
+      "word": "spears",
+      "start_s": 11.06,
+      "end_s": 11.38,
+      "start_frame": 332,
+      "end_frame": 341
+    },
+    {
+      "word": "cross,",
+      "start_s": 11.38,
+      "end_s": 11.62,
+      "start_frame": 341,
+      "end_frame": 349
+    },
+    {
+      "word": "that's",
+      "start_s": 11.94,
+      "end_s": 12.14,
+      "start_frame": 358,
+      "end_frame": 364
+    },
+    {
+      "word": "exactly",
+      "start_s": 12.14,
+      "end_s": 12.44,
+      "start_frame": 364,
+      "end_frame": 373
+    },
+    {
+      "word": "where",
+      "start_s": 12.44,
+      "end_s": 12.62,
+      "start_frame": 373,
+      "end_frame": 379
+    },
+    {
+      "word": "you're",
+      "start_s": 12.62,
+      "end_s": 12.74,
+      "start_frame": 379,
+      "end_frame": 382
+    },
+    {
+      "word": "standing.",
+      "start_s": 12.74,
+      "end_s": 13.06,
+      "start_frame": 382,
+      "end_frame": 392
+    },
+    {
+      "word": "A",
+      "start_s": 13.42,
+      "end_s": 13.5,
+      "start_frame": 403,
+      "end_frame": 405
+    },
+    {
+      "word": "fourth",
+      "start_s": 13.5,
+      "end_s": 13.68,
+      "start_frame": 405,
+      "end_frame": 410
+    },
+    {
+      "word": "satellite",
+      "start_s": 13.68,
+      "end_s": 14.06,
+      "start_frame": 410,
+      "end_frame": 422
+    },
+    {
+      "word": "erases",
+      "start_s": 14.06,
+      "end_s": 14.54,
+      "start_frame": 422,
+      "end_frame": 436
+    },
+    {
+      "word": "your",
+      "start_s": 14.54,
+      "end_s": 14.72,
+      "start_frame": 436,
+      "end_frame": 442
+    },
+    {
+      "word": "chip's",
+      "start_s": 14.72,
+      "end_s": 15.04,
+      "start_frame": 442,
+      "end_frame": 451
+    },
+    {
+      "word": "tiny",
+      "start_s": 15.04,
+      "end_s": 15.22,
+      "start_frame": 451,
+      "end_frame": 457
+    },
+    {
+      "word": "clock",
+      "start_s": 15.22,
+      "end_s": 15.44,
+      "start_frame": 457,
+      "end_frame": 463
+    },
+    {
+      "word": "error,",
+      "start_s": 15.44,
+      "end_s": 15.78,
+      "start_frame": 463,
+      "end_frame": 473
+    },
+    {
+      "word": "pen",
+      "start_s": 16.06,
+      "end_s": 16.18,
+      "start_frame": 482,
+      "end_frame": 485
+    },
+    {
+      "word": "dropped.",
+      "start_s": 16.18,
+      "end_s": 16.48,
+      "start_frame": 485,
+      "end_frame": 494
+    },
+    {
+      "word": "Silence",
+      "start_s": 16.82,
+      "end_s": 17.18,
+      "start_frame": 505,
+      "end_frame": 515
+    },
+    {
+      "word": "is",
+      "start_s": 17.18,
+      "end_s": 17.46,
+      "start_frame": 515,
+      "end_frame": 524
+    },
+    {
+      "word": "the",
+      "start_s": 17.46,
+      "end_s": 17.58,
+      "start_frame": 524,
+      "end_frame": 527
+    },
+    {
+      "word": "trick.",
+      "start_s": 17.58,
+      "end_s": 17.82,
+      "start_frame": 527,
+      "end_frame": 535
+    },
+    {
+      "word": "So",
+      "start_s": 18.04,
+      "end_s": 18.28,
+      "start_frame": 541,
+      "end_frame": 548
+    },
+    {
+      "word": "when",
+      "start_s": 18.28,
+      "end_s": 18.5,
+      "start_frame": 548,
+      "end_frame": 555
+    },
+    {
+      "word": "your",
+      "start_s": 18.5,
+      "end_s": 18.6,
+      "start_frame": 555,
+      "end_frame": 558
+    },
+    {
+      "word": "map",
+      "start_s": 18.6,
+      "end_s": 18.8,
+      "start_frame": 558,
+      "end_frame": 564
+    },
+    {
+      "word": "nails",
+      "start_s": 18.8,
+      "end_s": 19.06,
+      "start_frame": 564,
+      "end_frame": 572
+    },
+    {
+      "word": "your",
+      "start_s": 19.06,
+      "end_s": 19.24,
+      "start_frame": 572,
+      "end_frame": 577
+    },
+    {
+      "word": "location",
+      "start_s": 19.24,
+      "end_s": 19.56,
+      "start_frame": 577,
+      "end_frame": 587
+    },
+    {
+      "word": "instantly,",
+      "start_s": 19.56,
+      "end_s": 20.16,
+      "start_frame": 587,
+      "end_frame": 605
+    },
+    {
+      "word": "remember",
+      "start_s": 20.48,
+      "end_s": 20.78,
+      "start_frame": 614,
+      "end_frame": 623
+    },
+    {
+      "word": "your",
+      "start_s": 20.78,
+      "end_s": 21.08,
+      "start_frame": 623,
+      "end_frame": 632
+    },
+    {
+      "word": "phone",
+      "start_s": 21.08,
+      "end_s": 21.4,
+      "start_frame": 632,
+      "end_frame": 642
+    },
+    {
+      "word": "never",
+      "start_s": 21.4,
+      "end_s": 21.6,
+      "start_frame": 642,
+      "end_frame": 648
+    },
+    {
+      "word": "said",
+      "start_s": 21.6,
+      "end_s": 21.84,
+      "start_frame": 648,
+      "end_frame": 655
+    },
+    {
+      "word": "a",
+      "start_s": 21.84,
+      "end_s": 21.96,
+      "start_frame": 655,
+      "end_frame": 659
+    },
+    {
+      "word": "word.",
+      "start_s": 21.96,
+      "end_s": 22.16,
+      "start_frame": 659,
+      "end_frame": 665
+    }
+  ]
+}

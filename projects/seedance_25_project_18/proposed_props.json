@@ -1,0 +1,629 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#F5820D",
+    "accentColor": "#2D5FBF",
+    "surfaceColor": "#F9FAFB",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)"
+  },
+  "cuts": [
+    {
+      "id": "scene_1",
+      "text": "ByteDance TikTok monkey drop new magic movie machine!",
+      "in_seconds": 0.0,
+      "out_seconds": 3.0,
+      "source": "projects/seedance_25_project_18/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_2",
+      "text": "call it Seedance 2.5!",
+      "in_seconds": 3.0,
+      "out_seconds": 5.0,
+      "source": "projects/seedance_25_project_18/images/[00-03]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_3",
+      "text": "old video AI was lazy glitchy monkey.",
+      "in_seconds": 5.0,
+      "out_seconds": 8.0,
+      "source": "projects/seedance_25_project_18/images/[00-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "monkey want make 3D cartoon movie...",
+      "in_seconds": 8.0,
+      "out_seconds": 11.0,
+      "source": "projects/seedance_25_project_18/images/[00-08]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_5",
+      "text": "old AI only make 3 banana-second clip!",
+      "in_seconds": 11.0,
+      "out_seconds": 14.0,
+      "source": "projects/seedance_25_project_18/images/[00-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "after 3 seconds, monkey face glitch out...",
+      "in_seconds": 14.0,
+      "out_seconds": 16.0,
+      "source": "projects/seedance_25_project_18/images/[00-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "turn into green frog...",
+      "in_seconds": 16.0,
+      "out_seconds": 18.0,
+      "source": "projects/seedance_25_project_18/images/[00-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "camera shake like jungle earthquake!",
+      "in_seconds": 18.0,
+      "out_seconds": 20.0,
+      "source": "projects/seedance_25_project_18/images/[00-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_9",
+      "text": "computer monkeys call this...",
+      "in_seconds": 20.0,
+      "out_seconds": 21.0,
+      "source": "projects/seedance_25_project_18/images/[00-20]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "Three Second Video Collapse!",
+      "in_seconds": 21.0,
+      "out_seconds": 23.0,
+      "source": "projects/seedance_25_project_18/images/[00-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_11",
+      "text": "but Seedance 2.5 change entire jungle!",
+      "in_seconds": 23.0,
+      "out_seconds": 24.5,
+      "source": "projects/seedance_25_project_18/images/[00-23]_Hand-drawn_2D_doo (1).jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "Seedance 2.5 draw 30 full banana-second continuous movie in one go!",
+      "in_seconds": 23.0,
+      "out_seconds": 24.0,
+      "source": "projects/seedance_25_project_18/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "no glitching!",
+      "in_seconds": 24.0,
+      "out_seconds": 30.0,
+      "source": "projects/seedance_25_project_18/images/[00-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_14",
+      "text": "no frog face!",
+      "in_seconds": 30.0,
+      "out_seconds": 32.0,
+      "source": "projects/seedance_25_project_18/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_15",
+      "text": "same monkey face from start to finish!",
+      "in_seconds": 32.0,
+      "out_seconds": 35.0,
+      "source": "projects/seedance_25_project_18/images/[00-32]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_16",
+      "text": "monkey call this...",
+      "in_seconds": 35.0,
+      "out_seconds": 36.0,
+      "source": "projects/seedance_25_project_18/images/[00-35]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_17",
+      "text": "Thirty Second One-Take Cinema!",
+      "in_seconds": 36.0,
+      "out_seconds": 38.0,
+      "source": "projects/seedance_25_project_18/images/[00-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_18",
+      "text": "problem two with old video AI...",
+      "in_seconds": 38.0,
+      "out_seconds": 39.0,
+      "source": "projects/seedance_25_project_18/images/[00-38]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "old AI only let monkey throw ONE picture into magic soup pot.",
+      "in_seconds": 39.0,
+      "out_seconds": 42.0,
+      "source": "projects/seedance_25_project_18/images/[00-39]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "monkey throw picture of brown monkey...",
+      "in_seconds": 42.0,
+      "out_seconds": 48.0,
+      "source": "projects/seedance_25_project_18/images/[00-42]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_21",
+      "text": "next scene, magic pot forget...",
+      "in_seconds": 48.0,
+      "out_seconds": 50.0,
+      "source": "projects/seedance_25_project_18/images/[00-48]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_22",
+      "text": "turn monkey into yellow duck!",
+      "in_seconds": 50.0,
+      "out_seconds": 52.0,
+      "source": "projects/seedance_25_project_18/images/[00-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_23",
+      "text": "monkey mad!",
+      "in_seconds": 52.0,
+      "out_seconds": 53.0,
+      "source": "projects/seedance_25_project_18/images/[00-52]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/bruh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_24",
+      "text": "Seedance 2.5 let monkey throw FIFTY jungle items into magic pot at the exact same time!",
+      "in_seconds": 53.0,
+      "out_seconds": 54.5,
+      "source": "projects/seedance_25_project_18/images/[00-53]_Hand-drawn_2D_doo (1).jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_25",
+      "text": "picture of monkey...",
+      "in_seconds": 53.0,
+      "out_seconds": 58.0,
+      "source": "projects/seedance_25_project_18/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "picture of banana...",
+      "in_seconds": 58.0,
+      "out_seconds": 61.0,
+      "source": "projects/seedance_25_project_18/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_27",
+      "text": "audio of monkey screech...",
+      "in_seconds": 61.0,
+      "out_seconds": 62.0,
+      "source": "projects/seedance_25_project_18/images/[01-01]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_28",
+      "text": "machine remember every single item across whole movie!",
+      "in_seconds": 62.0,
+      "out_seconds": 65.0,
+      "source": "projects/seedance_25_project_18/images/[01-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_29",
+      "text": "jungle monkeys call this...",
+      "in_seconds": 65.0,
+      "out_seconds": 67.0,
+      "source": "projects/seedance_25_project_18/images/[01-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_30",
+      "text": "Fifty Asset Magic Memory!",
+      "in_seconds": 67.0,
+      "out_seconds": 69.0,
+      "source": "projects/seedance_25_project_18/images/[01-07]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_31",
+      "text": "problem three is camera control.",
+      "in_seconds": 69.0,
+      "out_seconds": 71.0,
+      "source": "projects/seedance_25_project_18/images/[01-09]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_32",
+      "text": "old AI camera spin around like crazy coconut.",
+      "in_seconds": 71.0,
+      "out_seconds": 74.0,
+      "source": "projects/seedance_25_project_18/images/[01-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_33",
+      "text": "Seedance 2.5 give monkey real camera steering wheel!",
+      "in_seconds": 74.0,
+      "out_seconds": 75.0,
+      "source": "projects/seedance_25_project_18/images/[01-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_34",
+      "text": "monkey tell machine:",
+      "in_seconds": 75.0,
+      "out_seconds": 78.0,
+      "source": "projects/seedance_25_project_18/images/[01-15]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_35",
+      "text": "at second five, zoom in on banana!",
+      "in_seconds": 78.0,
+      "out_seconds": 80.0,
+      "source": "projects/seedance_25_project_18/images/[01-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_36",
+      "text": "at second fifteen, pan left to gorilla!",
+      "in_seconds": 80.0,
+      "out_seconds": 84.0,
+      "source": "projects/seedance_25_project_18/images/[01-20]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right"
+    },
+    {
+      "id": "scene_37",
+      "text": "plus super sharp 4K jungle vision!",
+      "in_seconds": 84.0,
+      "out_seconds": 86.0,
+      "source": "projects/seedance_25_project_18/images/[01-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_38",
+      "text": "no blurry jungle fog!",
+      "in_seconds": 86.0,
+      "out_seconds": 88.0,
+      "source": "projects/seedance_25_project_18/images/[01-26]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_39",
+      "text": "camera monkeys call this...",
+      "in_seconds": 88.0,
+      "out_seconds": 89.0,
+      "source": "projects/seedance_25_project_18/images/[01-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_40",
+      "text": "Timestamp Camera Control!",
+      "in_seconds": 89.0,
+      "out_seconds": 91.0,
+      "source": "projects/seedance_25_project_18/images/[01-29]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_41",
+      "text": "plus monkey can snatch jungle background away!",
+      "in_seconds": 91.0,
+      "out_seconds": 94.0,
+      "source": "projects/seedance_25_project_18/images/[01-31]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_42",
+      "text": "swap jungle trees for moon space background in one second!",
+      "in_seconds": 94.0,
+      "out_seconds": 97.0,
+      "source": "projects/seedance_25_project_18/images/[01-34]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_43",
+      "text": "and ByteDance put magic machine right inside CapCut editing box!",
+      "in_seconds": 97.0,
+      "out_seconds": 100.0,
+      "source": "projects/seedance_25_project_18/images/[01-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/click.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_44",
+      "text": "monkey push one button, full 30-second viral movie ready!",
+      "in_seconds": 100.0,
+      "out_seconds": 103.0,
+      "source": "projects/seedance_25_project_18/images/[01-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_45",
+      "text": "so if you want make long smooth cartoon movies...",
+      "in_seconds": 103.0,
+      "out_seconds": 106.0,
+      "source": "projects/seedance_25_project_18/images/[01-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_46",
+      "text": "Seedance 2.5 make video creation super bananas!",
+      "in_seconds": 106.0,
+      "out_seconds": 109.0,
+      "source": "projects/seedance_25_project_18/images/[01-46]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/anime-wow.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_47",
+      "text": "subscribe for more jungle tech!",
+      "in_seconds": 109.0,
+      "out_seconds": 111.765,
+      "source": "projects/seedance_25_project_18/images/[01-49]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.45,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "hero_title",
+      "text": "SEEDANCE 2.5 EXPLAINED",
+      "subtitle": "30-Second AI Video Revolution",
+      "in_seconds": 0.0,
+      "out_seconds": 5.0
+    },
+    {
+      "type": "section_title",
+      "text": "FEATURE 1: 30s ONE-TAKE CINEMA",
+      "subtitle": "No Glitching & Continuous 4K Quality",
+      "in_seconds": 23.0,
+      "out_seconds": 30.0
+    },
+    {
+      "type": "section_title",
+      "text": "FEATURE 2: 50 ASSET MAGIC MEMORY",
+      "subtitle": "Multimodal Multitask Character Consistency",
+      "in_seconds": 53.0,
+      "out_seconds": 61.0
+    },
+    {
+      "type": "section_title",
+      "text": "FEATURE 3: TIMESTAMP CAMERA CONTROL",
+      "subtitle": "Zoom, Pan & Green Screen Background Swapping",
+      "in_seconds": 69.0,
+      "out_seconds": 78.0
+    }
+  ],
+  "captions": [],
+  "audio": {
+    "narration": {
+      "src": "projects/seedance_25_project_18/voiceover.mp3",
+      "volume": 1.0
+    },
+    "music": {
+      "src": "projects/common_assets/bgm/monkeys_spinning_monkeys.mp3",
+      "volume": 0.2,
+      "loop": true,
+      "fadeInSeconds": 1.5,
+      "fadeOutSeconds": 3.0
+    }
+  }
+}

@@ -1,0 +1,2169 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#F5820D",
+    "accentColor": "#2D5FBF",
+    "surfaceColor": "#F9FAFB",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)",
+    "chartColors": [
+      "#F5820D",
+      "#2D5FBF",
+      "#3A9E3A",
+      "#F5C518",
+      "#D94040",
+      "#8B5CF6"
+    ]
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "Imagine you run a massive jungle delivery business.",
+      "in_seconds": 0.0,
+      "out_seconds": 3.32,
+      "source": "projects/gpt56_comparison_project_13/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_1",
+      "text": "Some days you need to translate complex ancient maps.",
+      "in_seconds": 3.7,
+      "out_seconds": 6.92,
+      "source": "projects/gpt56_comparison_project_13/images/[00-03]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_2",
+      "text": "Other days you just need to sort mail, or organize banana baskets.",
+      "in_seconds": 7.56,
+      "out_seconds": 11.12,
+      "source": "projects/gpt56_comparison_project_13/images/[00-07]_Hand-drawn_2D_doo.jpg",
+      "animation": "none"
+    },
+    {
+      "id": "scene_3",
+      "text": "For all of this, OpenAI gave us three different monkey helpers in their GPT 5.6 family: Sol, Terra, and Luna.",
+      "in_seconds": 11.9,
+      "out_seconds": 21.16,
+      "source": "projects/gpt56_comparison_project_13/images/[00-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_4",
+      "text": "They all share the exact same memory size, but their brainpower and banana cost are completely different.",
+      "in_seconds": 21.82,
+      "out_seconds": 27.62,
+      "source": "projects/gpt56_comparison_project_13/images/[00-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_5",
+      "text": "Let\u2019s start with Luna, the speed racer.",
+      "in_seconds": 28.36,
+      "out_seconds": 31.1,
+      "source": "projects/gpt56_comparison_project_13/images/[00-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_6",
+      "text": "Luna is like a tiny chimpanzee on a skateboard.",
+      "in_seconds": 31.62,
+      "out_seconds": 34.4,
+      "source": "projects/gpt56_comparison_project_13/images/[00-31]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_7",
+      "text": "She is lightning-fast and works for almost pennies.",
+      "in_seconds": 35.0,
+      "out_seconds": 37.88,
+      "source": "projects/gpt56_comparison_project_13/images/[00-35]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_8",
+      "text": "If you need her to quickly categorize incoming emails or detect simple spam, Luna is your go-to.",
+      "in_seconds": 38.46,
+      "out_seconds": 44.06,
+      "source": "projects/gpt56_comparison_project_13/images/[00-38]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out"
+    },
+    {
+      "id": "scene_9",
+      "text": "But don't ask her to solve a complex coding puzzle.",
+      "in_seconds": 44.86,
+      "out_seconds": 47.94,
+      "source": "projects/gpt56_comparison_project_13/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_10",
+      "text": "She'll get confused and drop the ball.",
+      "in_seconds": 48.32,
+      "out_seconds": 50.1,
+      "source": "projects/gpt56_comparison_project_13/images/[00-48]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_11",
+      "text": "Next is Terra, the balanced worker.",
+      "in_seconds": 51.12,
+      "out_seconds": 53.44,
+      "source": "projects/gpt56_comparison_project_13/images/[00-51]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_12",
+      "text": "Think of Terra as your reliable, everyday assistant monkey.",
+      "in_seconds": 53.44,
+      "out_seconds": 57.44,
+      "source": "projects/gpt56_comparison_project_13/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_13",
+      "text": "Terra is smart enough to handle regular agent workflows, write standard emails, and draft simple blog posts.",
+      "in_seconds": 58.2,
+      "out_seconds": 64.58,
+      "source": "projects/gpt56_comparison_project_13/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-left"
+    },
+    {
+      "id": "scene_14",
+      "text": "She is the middle ground, giving you solid reasoning without costing too many bananas.",
+      "in_seconds": 65.04,
+      "out_seconds": 69.36,
+      "source": "projects/gpt56_comparison_project_13/images/[01-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_15",
+      "text": "Finally, we have Sol, the grand chieftain of the jungle.",
+      "in_seconds": 70.26,
+      "out_seconds": 73.84,
+      "source": "projects/gpt56_comparison_project_13/images/[01-10]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/whoosh.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_16",
+      "text": "Sol is the heavy-lifting gorilla who sits on a throne of books.",
+      "in_seconds": 74.58,
+      "out_seconds": 78.0,
+      "source": "projects/gpt56_comparison_project_13/images/[01-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "ken-burns",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_17",
+      "text": "Sol is expensive and takes a bit longer to think, but has massive reasoning power.",
+      "in_seconds": 78.66,
+      "out_seconds": 83.7,
+      "source": "projects/gpt56_comparison_project_13/images/[01-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_18",
+      "text": "If you need to audit security code, design a database, or solve complex logic riddles, Sol is the only one who can do it.",
+      "in_seconds": 84.04,
+      "out_seconds": 92.1,
+      "source": "projects/gpt56_comparison_project_13/images/[01-24]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_19",
+      "text": "Why not just use Sol for everything?",
+      "in_seconds": 92.9,
+      "out_seconds": 94.66,
+      "source": "projects/gpt56_comparison_project_13/images/[01-32]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/riser.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_20",
+      "text": "Because you'll run out of bananas in minutes!",
+      "in_seconds": 95.14,
+      "out_seconds": 96.96,
+      "source": "projects/gpt56_comparison_project_13/images/[01-35]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_21",
+      "text": "And why not use Luna for everything?",
+      "in_seconds": 97.62,
+      "out_seconds": 99.36,
+      "source": "projects/gpt56_comparison_project_13/images/[01-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_22",
+      "text": "Because she isn't smart enough for complex tasks.",
+      "in_seconds": 99.76,
+      "out_seconds": 102.34,
+      "source": "projects/gpt56_comparison_project_13/images/[01-39]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/error.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_23",
+      "text": "Choosing the right tier is all about matching the job to the right brainpower.",
+      "in_seconds": 102.98,
+      "out_seconds": 106.58,
+      "source": "projects/gpt56_comparison_project_13/images/[01-42]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-out",
+      "sfx": {
+        "src": "projects/common_assets/sfx/chime.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_24",
+      "text": "So, are you building a high-speed chat widget, a standard automated agent, or a deep analysis tool?",
+      "in_seconds": 106.9,
+      "out_seconds": 113.58,
+      "source": "projects/gpt56_comparison_project_13/images/[01-46]_Hand-drawn_2D_doo.jpg",
+      "animation": "pan-right",
+      "sfx": {
+        "src": "projects/common_assets/sfx/notification.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_25",
+      "text": "Pick the right monkey helper, save your bananas, and build something awesome.",
+      "in_seconds": 114.1,
+      "out_seconds": 117.78,
+      "source": "projects/gpt56_comparison_project_13/images/[01-54]_Hand-drawn_2D_doo.jpg",
+      "animation": "zoom-in",
+      "sfx": {
+        "src": "projects/common_assets/sfx/pop.mp3",
+        "volume": 0.4,
+        "startOffsetSeconds": 0.0
+      }
+    },
+    {
+      "id": "scene_26",
+      "text": "Subscribe for more simple tech breakdowns!",
+      "in_seconds": 118.3,
+      "out_seconds": 120.36,
+      "source": "projects/gpt56_comparison_project_13/images/[01-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "none",
+      "sfx": {
+        "src": "projects/common_assets/sfx/ping.mp3",
+        "volume": 0.5,
+        "startOffsetSeconds": 0.0
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "hero_title",
+      "in_seconds": 0.0,
+      "out_seconds": 3.32,
+      "text": "GPT-5.6: SOL, TERRA, LUNA",
+      "subtitle": "OpenAI's New Tier Family",
+      "accentColor": "#F5820D",
+      "position": "center"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 11.9,
+      "out_seconds": 21.16,
+      "text": "GPT-5.6 FAMILY",
+      "subtitle": "Three Tiers",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 21.82,
+      "out_seconds": 27.62,
+      "text": "1M Context",
+      "subtitle": "Shared Memory Window",
+      "accentColor": "#2D5FBF",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 28.36,
+      "out_seconds": 31.1,
+      "text": "MEET LUNA",
+      "subtitle": "The Speed Racer",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 35.0,
+      "out_seconds": 37.88,
+      "text": "Lowest Cost",
+      "subtitle": "90% Cheaper than Sol",
+      "accentColor": "#10B981",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 51.12,
+      "out_seconds": 53.44,
+      "text": "MEET TERRA",
+      "subtitle": "The Balanced Worker",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 65.04,
+      "out_seconds": 69.36,
+      "text": "Balanced",
+      "subtitle": "Medium Cost & Brainpower",
+      "accentColor": "#2D5FBF",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 70.26,
+      "out_seconds": 73.84,
+      "text": "MEET SOL",
+      "subtitle": "The Grand Chieftain",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "stat_reveal",
+      "in_seconds": 78.66,
+      "out_seconds": 83.7,
+      "text": "Highest Reasoning",
+      "subtitle": "Flagship Model",
+      "accentColor": "#EC4899",
+      "position": "bottom-right"
+    },
+    {
+      "type": "section_title",
+      "in_seconds": 102.98,
+      "out_seconds": 106.58,
+      "text": "MATCH TIER",
+      "subtitle": "Maximize Banana Value",
+      "accentColor": "#F5820D",
+      "position": "top-left"
+    },
+    {
+      "type": "hero_title",
+      "in_seconds": 118.3,
+      "out_seconds": 120.36,
+      "text": "SUBSCRIBE",
+      "subtitle": "For More Simple Tech Breakdowns",
+      "accentColor": "#F5820D",
+      "position": "center"
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 31.62,
+      "out_seconds": 34.4,
+      "stickerSrc": "projects/common_assets/stickers/gold_coin.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 35.0,
+      "out_seconds": 37.88,
+      "stickerSrc": "projects/common_assets/stickers/fire.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 44.86,
+      "out_seconds": 47.94,
+      "stickerSrc": "projects/common_assets/stickers/warning.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 100,
+        "right": 100,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 53.44,
+      "out_seconds": 57.44,
+      "stickerSrc": "projects/common_assets/stickers/green_checkmark.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 78.66,
+      "out_seconds": 81.18,
+      "stickerSrc": "projects/common_assets/stickers/clock.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 84.04,
+      "out_seconds": 88.07,
+      "stickerSrc": "projects/common_assets/stickers/lock.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 88.07,
+      "out_seconds": 92.1,
+      "stickerSrc": "projects/common_assets/stickers/database.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "right": 120,
+        "width": 200,
+        "height": 200
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 95.14,
+      "out_seconds": 96.96,
+      "stickerSrc": "projects/common_assets/stickers/red_down_arrow.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "left": 120,
+        "width": 220,
+        "height": 220
+      }
+    },
+    {
+      "type": "sticker",
+      "in_seconds": 114.1,
+      "out_seconds": 117.78,
+      "stickerSrc": "projects/common_assets/stickers/thumbs_up.svg",
+      "stickerStyle": {
+        "position": "absolute",
+        "bottom": 120,
+        "right": 120,
+        "width": 200,
+        "height": 200
+      }
+    }
+  ],
+  "captions": [
+    {
+      "word": "Imagine",
+      "startMs": 0,
+      "endMs": 640
+    },
+    {
+      "word": "you",
+      "startMs": 640,
+      "endMs": 920
+    },
+    {
+      "word": "run",
+      "startMs": 920,
+      "endMs": 1100
+    },
+    {
+      "word": "a",
+      "startMs": 1100,
+      "endMs": 1240
+    },
+    {
+      "word": "massive",
+      "startMs": 1240,
+      "endMs": 1740
+    },
+    {
+      "word": "jungle",
+      "startMs": 1740,
+      "endMs": 2220
+    },
+    {
+      "word": "delivery",
+      "startMs": 2220,
+      "endMs": 2660
+    },
+    {
+      "word": "business.",
+      "startMs": 2660,
+      "endMs": 3320
+    },
+    {
+      "word": "Some",
+      "startMs": 3700,
+      "endMs": 4040
+    },
+    {
+      "word": "days",
+      "startMs": 4040,
+      "endMs": 4220
+    },
+    {
+      "word": "you",
+      "startMs": 4220,
+      "endMs": 4440
+    },
+    {
+      "word": "need",
+      "startMs": 4440,
+      "endMs": 4580
+    },
+    {
+      "word": "to",
+      "startMs": 4580,
+      "endMs": 4760
+    },
+    {
+      "word": "translate",
+      "startMs": 4760,
+      "endMs": 5260
+    },
+    {
+      "word": "complex",
+      "startMs": 5260,
+      "endMs": 5860
+    },
+    {
+      "word": "ancient",
+      "startMs": 5860,
+      "endMs": 6460
+    },
+    {
+      "word": "maps.",
+      "startMs": 6460,
+      "endMs": 6920
+    },
+    {
+      "word": "Other",
+      "startMs": 7560,
+      "endMs": 7760
+    },
+    {
+      "word": "days",
+      "startMs": 7760,
+      "endMs": 8000
+    },
+    {
+      "word": "you",
+      "startMs": 8000,
+      "endMs": 8260
+    },
+    {
+      "word": "just",
+      "startMs": 8260,
+      "endMs": 8520
+    },
+    {
+      "word": "need",
+      "startMs": 8520,
+      "endMs": 8700
+    },
+    {
+      "word": "to",
+      "startMs": 8700,
+      "endMs": 8840
+    },
+    {
+      "word": "sort",
+      "startMs": 8840,
+      "endMs": 9080
+    },
+    {
+      "word": "mail",
+      "startMs": 9080,
+      "endMs": 9400
+    },
+    {
+      "word": "or",
+      "startMs": 9400,
+      "endMs": 9760
+    },
+    {
+      "word": "organize",
+      "startMs": 9760,
+      "endMs": 10320
+    },
+    {
+      "word": "banana",
+      "startMs": 10320,
+      "endMs": 10680
+    },
+    {
+      "word": "baskets.",
+      "startMs": 10680,
+      "endMs": 11120
+    },
+    {
+      "word": "For",
+      "startMs": 11900,
+      "endMs": 12160
+    },
+    {
+      "word": "all",
+      "startMs": 12160,
+      "endMs": 12460
+    },
+    {
+      "word": "of",
+      "startMs": 12460,
+      "endMs": 12660
+    },
+    {
+      "word": "this,",
+      "startMs": 12660,
+      "endMs": 12960
+    },
+    {
+      "word": "open",
+      "startMs": 13140,
+      "endMs": 13360
+    },
+    {
+      "word": "AI",
+      "startMs": 13360,
+      "endMs": 13620
+    },
+    {
+      "word": "gave",
+      "startMs": 13620,
+      "endMs": 13960
+    },
+    {
+      "word": "us",
+      "startMs": 13960,
+      "endMs": 14200
+    },
+    {
+      "word": "three",
+      "startMs": 14200,
+      "endMs": 14520
+    },
+    {
+      "word": "different",
+      "startMs": 14520,
+      "endMs": 15060
+    },
+    {
+      "word": "monkey",
+      "startMs": 15060,
+      "endMs": 15380
+    },
+    {
+      "word": "helpers",
+      "startMs": 15380,
+      "endMs": 15960
+    },
+    {
+      "word": "in",
+      "startMs": 15960,
+      "endMs": 16140
+    },
+    {
+      "word": "their",
+      "startMs": 16140,
+      "endMs": 16280
+    },
+    {
+      "word": "GPT",
+      "startMs": 16280,
+      "endMs": 16960
+    },
+    {
+      "word": "5",
+      "startMs": 16960,
+      "endMs": 17400
+    },
+    {
+      "word": ".6",
+      "startMs": 17400,
+      "endMs": 18000
+    },
+    {
+      "word": "family.",
+      "startMs": 18000,
+      "endMs": 18560
+    },
+    {
+      "word": "Soul,",
+      "startMs": 19140,
+      "endMs": 19540
+    },
+    {
+      "word": "Terra,",
+      "startMs": 20100,
+      "endMs": 20320
+    },
+    {
+      "word": "and",
+      "startMs": 20800,
+      "endMs": 20980
+    },
+    {
+      "word": "Luna.",
+      "startMs": 20980,
+      "endMs": 21160
+    },
+    {
+      "word": "They",
+      "startMs": 21820,
+      "endMs": 22080
+    },
+    {
+      "word": "all",
+      "startMs": 22080,
+      "endMs": 22260
+    },
+    {
+      "word": "share",
+      "startMs": 22260,
+      "endMs": 22460
+    },
+    {
+      "word": "the",
+      "startMs": 22460,
+      "endMs": 22640
+    },
+    {
+      "word": "exact",
+      "startMs": 22640,
+      "endMs": 23020
+    },
+    {
+      "word": "same",
+      "startMs": 23020,
+      "endMs": 23420
+    },
+    {
+      "word": "memory",
+      "startMs": 23420,
+      "endMs": 23760
+    },
+    {
+      "word": "size",
+      "startMs": 23760,
+      "endMs": 24180
+    },
+    {
+      "word": "but",
+      "startMs": 24180,
+      "endMs": 24620
+    },
+    {
+      "word": "their",
+      "startMs": 24620,
+      "endMs": 24780
+    },
+    {
+      "word": "brain",
+      "startMs": 24780,
+      "endMs": 25100
+    },
+    {
+      "word": "power",
+      "startMs": 25100,
+      "endMs": 25480
+    },
+    {
+      "word": "and",
+      "startMs": 25480,
+      "endMs": 25720
+    },
+    {
+      "word": "banana",
+      "startMs": 25720,
+      "endMs": 26000
+    },
+    {
+      "word": "cost",
+      "startMs": 26000,
+      "endMs": 26340
+    },
+    {
+      "word": "are",
+      "startMs": 26340,
+      "endMs": 26620
+    },
+    {
+      "word": "completely",
+      "startMs": 26620,
+      "endMs": 27080
+    },
+    {
+      "word": "different.",
+      "startMs": 27080,
+      "endMs": 27620
+    },
+    {
+      "word": "Let's",
+      "startMs": 28360,
+      "endMs": 29000
+    },
+    {
+      "word": "start",
+      "startMs": 29000,
+      "endMs": 29180
+    },
+    {
+      "word": "with",
+      "startMs": 29180,
+      "endMs": 29500
+    },
+    {
+      "word": "Luna,",
+      "startMs": 29500,
+      "endMs": 29720
+    },
+    {
+      "word": "the",
+      "startMs": 30160,
+      "endMs": 30240
+    },
+    {
+      "word": "skied",
+      "startMs": 30240,
+      "endMs": 30640
+    },
+    {
+      "word": "racer.",
+      "startMs": 30640,
+      "endMs": 31100
+    },
+    {
+      "word": "Luna",
+      "startMs": 31620,
+      "endMs": 31820
+    },
+    {
+      "word": "is",
+      "startMs": 31820,
+      "endMs": 32100
+    },
+    {
+      "word": "like",
+      "startMs": 32100,
+      "endMs": 32299
+    },
+    {
+      "word": "a",
+      "startMs": 32299,
+      "endMs": 32439
+    },
+    {
+      "word": "tiny",
+      "startMs": 32439,
+      "endMs": 32840
+    },
+    {
+      "word": "chimpanzee",
+      "startMs": 32840,
+      "endMs": 33740
+    },
+    {
+      "word": "on",
+      "startMs": 33740,
+      "endMs": 33820
+    },
+    {
+      "word": "a",
+      "startMs": 33820,
+      "endMs": 33940
+    },
+    {
+      "word": "skateboard.",
+      "startMs": 33940,
+      "endMs": 34400
+    },
+    {
+      "word": "She",
+      "startMs": 35000,
+      "endMs": 35160
+    },
+    {
+      "word": "is",
+      "startMs": 35160,
+      "endMs": 35300
+    },
+    {
+      "word": "lightning",
+      "startMs": 35300,
+      "endMs": 35700
+    },
+    {
+      "word": "fast",
+      "startMs": 35700,
+      "endMs": 36080
+    },
+    {
+      "word": "and",
+      "startMs": 36080,
+      "endMs": 36420
+    },
+    {
+      "word": "works",
+      "startMs": 36420,
+      "endMs": 36660
+    },
+    {
+      "word": "for",
+      "startMs": 36660,
+      "endMs": 36900
+    },
+    {
+      "word": "almost",
+      "startMs": 36900,
+      "endMs": 37240
+    },
+    {
+      "word": "pennies.",
+      "startMs": 37240,
+      "endMs": 37880
+    },
+    {
+      "word": "If",
+      "startMs": 38460,
+      "endMs": 38640
+    },
+    {
+      "word": "you",
+      "startMs": 38640,
+      "endMs": 38760
+    },
+    {
+      "word": "need",
+      "startMs": 38760,
+      "endMs": 38900
+    },
+    {
+      "word": "her",
+      "startMs": 38900,
+      "endMs": 39040
+    },
+    {
+      "word": "to",
+      "startMs": 39040,
+      "endMs": 39140
+    },
+    {
+      "word": "quickly",
+      "startMs": 39140,
+      "endMs": 39400
+    },
+    {
+      "word": "categorize",
+      "startMs": 39400,
+      "endMs": 40180
+    },
+    {
+      "word": "incoming",
+      "startMs": 40180,
+      "endMs": 40540
+    },
+    {
+      "word": "emails",
+      "startMs": 40540,
+      "endMs": 41100
+    },
+    {
+      "word": "or",
+      "startMs": 41100,
+      "endMs": 41480
+    },
+    {
+      "word": "detect",
+      "startMs": 41480,
+      "endMs": 41760
+    },
+    {
+      "word": "simple",
+      "startMs": 41760,
+      "endMs": 42280
+    },
+    {
+      "word": "spam,",
+      "startMs": 42280,
+      "endMs": 42600
+    },
+    {
+      "word": "Luna",
+      "startMs": 43180,
+      "endMs": 43340
+    },
+    {
+      "word": "is",
+      "startMs": 43340,
+      "endMs": 43580
+    },
+    {
+      "word": "your",
+      "startMs": 43580,
+      "endMs": 43820
+    },
+    {
+      "word": "go",
+      "startMs": 43820,
+      "endMs": 44060
+    },
+    {
+      "word": "-to.",
+      "startMs": 44060,
+      "endMs": 44280
+    },
+    {
+      "word": "But",
+      "startMs": 44860,
+      "endMs": 45160
+    },
+    {
+      "word": "don't",
+      "startMs": 45160,
+      "endMs": 45540
+    },
+    {
+      "word": "ask",
+      "startMs": 45540,
+      "endMs": 45860
+    },
+    {
+      "word": "her",
+      "startMs": 45860,
+      "endMs": 46000
+    },
+    {
+      "word": "to",
+      "startMs": 46000,
+      "endMs": 46100
+    },
+    {
+      "word": "solve",
+      "startMs": 46100,
+      "endMs": 46380
+    },
+    {
+      "word": "a",
+      "startMs": 46380,
+      "endMs": 46580
+    },
+    {
+      "word": "complex",
+      "startMs": 46580,
+      "endMs": 47040
+    },
+    {
+      "word": "coding",
+      "startMs": 47040,
+      "endMs": 47560
+    },
+    {
+      "word": "puzzle.",
+      "startMs": 47560,
+      "endMs": 47940
+    },
+    {
+      "word": "She'll",
+      "startMs": 48320,
+      "endMs": 48540
+    },
+    {
+      "word": "get",
+      "startMs": 48540,
+      "endMs": 48660
+    },
+    {
+      "word": "confused",
+      "startMs": 48660,
+      "endMs": 49120
+    },
+    {
+      "word": "and",
+      "startMs": 49120,
+      "endMs": 49480
+    },
+    {
+      "word": "drop",
+      "startMs": 49480,
+      "endMs": 49720
+    },
+    {
+      "word": "the",
+      "startMs": 49720,
+      "endMs": 49920
+    },
+    {
+      "word": "ball.",
+      "startMs": 49920,
+      "endMs": 50100
+    },
+    {
+      "word": "Next",
+      "startMs": 51120,
+      "endMs": 51480
+    },
+    {
+      "word": "is",
+      "startMs": 51480,
+      "endMs": 51860
+    },
+    {
+      "word": "Terra,",
+      "startMs": 51860,
+      "endMs": 52240
+    },
+    {
+      "word": "the",
+      "startMs": 52560,
+      "endMs": 52640
+    },
+    {
+      "word": "balanced",
+      "startMs": 52640,
+      "endMs": 53000
+    },
+    {
+      "word": "worker.",
+      "startMs": 53000,
+      "endMs": 53440
+    },
+    {
+      "word": "Think",
+      "startMs": 53440,
+      "endMs": 54300
+    },
+    {
+      "word": "of",
+      "startMs": 54300,
+      "endMs": 54540
+    },
+    {
+      "word": "Terra",
+      "startMs": 54540,
+      "endMs": 54760
+    },
+    {
+      "word": "as",
+      "startMs": 54760,
+      "endMs": 55080
+    },
+    {
+      "word": "your",
+      "startMs": 55080,
+      "endMs": 55180
+    },
+    {
+      "word": "reliable",
+      "startMs": 55180,
+      "endMs": 55760
+    },
+    {
+      "word": "everyday",
+      "startMs": 55760,
+      "endMs": 56460
+    },
+    {
+      "word": "assistant",
+      "startMs": 56460,
+      "endMs": 57060
+    },
+    {
+      "word": "monkey.",
+      "startMs": 57060,
+      "endMs": 57440
+    },
+    {
+      "word": "Terra",
+      "startMs": 58200,
+      "endMs": 58500
+    },
+    {
+      "word": "is",
+      "startMs": 58500,
+      "endMs": 58680
+    },
+    {
+      "word": "smart",
+      "startMs": 58680,
+      "endMs": 58960
+    },
+    {
+      "word": "enough",
+      "startMs": 58960,
+      "endMs": 59260
+    },
+    {
+      "word": "to",
+      "startMs": 59260,
+      "endMs": 59460
+    },
+    {
+      "word": "handle",
+      "startMs": 59460,
+      "endMs": 59720
+    },
+    {
+      "word": "regular",
+      "startMs": 59720,
+      "endMs": 60220
+    },
+    {
+      "word": "agent",
+      "startMs": 60220,
+      "endMs": 60620
+    },
+    {
+      "word": "workflows,",
+      "startMs": 60620,
+      "endMs": 61100
+    },
+    {
+      "word": "write",
+      "startMs": 61700,
+      "endMs": 61820
+    },
+    {
+      "word": "standard",
+      "startMs": 61820,
+      "endMs": 62300
+    },
+    {
+      "word": "emails",
+      "startMs": 62300,
+      "endMs": 62720
+    },
+    {
+      "word": "and",
+      "startMs": 62720,
+      "endMs": 63060
+    },
+    {
+      "word": "draft",
+      "startMs": 63060,
+      "endMs": 63380
+    },
+    {
+      "word": "simple",
+      "startMs": 63380,
+      "endMs": 63860
+    },
+    {
+      "word": "blog",
+      "startMs": 63860,
+      "endMs": 64140
+    },
+    {
+      "word": "posts.",
+      "startMs": 64140,
+      "endMs": 64580
+    },
+    {
+      "word": "She",
+      "startMs": 65040,
+      "endMs": 65280
+    },
+    {
+      "word": "is",
+      "startMs": 65280,
+      "endMs": 65420
+    },
+    {
+      "word": "the",
+      "startMs": 65420,
+      "endMs": 65540
+    },
+    {
+      "word": "middle",
+      "startMs": 65540,
+      "endMs": 65760
+    },
+    {
+      "word": "ground,",
+      "startMs": 65760,
+      "endMs": 66100
+    },
+    {
+      "word": "giving",
+      "startMs": 66340,
+      "endMs": 66480
+    },
+    {
+      "word": "you",
+      "startMs": 66480,
+      "endMs": 66680
+    },
+    {
+      "word": "solid",
+      "startMs": 66680,
+      "endMs": 67020
+    },
+    {
+      "word": "reasoning",
+      "startMs": 67020,
+      "endMs": 67480
+    },
+    {
+      "word": "without",
+      "startMs": 67480,
+      "endMs": 67880
+    },
+    {
+      "word": "costing",
+      "startMs": 67880,
+      "endMs": 68500
+    },
+    {
+      "word": "too",
+      "startMs": 68500,
+      "endMs": 68760
+    },
+    {
+      "word": "many",
+      "startMs": 68760,
+      "endMs": 69000
+    },
+    {
+      "word": "bananas.",
+      "startMs": 69000,
+      "endMs": 69360
+    },
+    {
+      "word": "Finally,",
+      "startMs": 70260,
+      "endMs": 70760
+    },
+    {
+      "word": "we",
+      "startMs": 70980,
+      "endMs": 71060
+    },
+    {
+      "word": "have",
+      "startMs": 71060,
+      "endMs": 71380
+    },
+    {
+      "word": "Soul,",
+      "startMs": 71380,
+      "endMs": 71720
+    },
+    {
+      "word": "the",
+      "startMs": 72080,
+      "endMs": 72160
+    },
+    {
+      "word": "grand",
+      "startMs": 72160,
+      "endMs": 72540
+    },
+    {
+      "word": "chieftain",
+      "startMs": 72540,
+      "endMs": 73140
+    },
+    {
+      "word": "of",
+      "startMs": 73140,
+      "endMs": 73380
+    },
+    {
+      "word": "the",
+      "startMs": 73380,
+      "endMs": 73500
+    },
+    {
+      "word": "jungle.",
+      "startMs": 73500,
+      "endMs": 73840
+    },
+    {
+      "word": "Soul",
+      "startMs": 74580,
+      "endMs": 74840
+    },
+    {
+      "word": "is",
+      "startMs": 74840,
+      "endMs": 75080
+    },
+    {
+      "word": "the",
+      "startMs": 75080,
+      "endMs": 75220
+    },
+    {
+      "word": "heavy",
+      "startMs": 75220,
+      "endMs": 75480
+    },
+    {
+      "word": "lifting",
+      "startMs": 75480,
+      "endMs": 75860
+    },
+    {
+      "word": "gorilla",
+      "startMs": 75860,
+      "endMs": 76220
+    },
+    {
+      "word": "who",
+      "startMs": 76220,
+      "endMs": 76540
+    },
+    {
+      "word": "sits",
+      "startMs": 76540,
+      "endMs": 76860
+    },
+    {
+      "word": "on",
+      "startMs": 76860,
+      "endMs": 77020
+    },
+    {
+      "word": "a",
+      "startMs": 77020,
+      "endMs": 77140
+    },
+    {
+      "word": "throne",
+      "startMs": 77140,
+      "endMs": 77480
+    },
+    {
+      "word": "of",
+      "startMs": 77480,
+      "endMs": 77720
+    },
+    {
+      "word": "books.",
+      "startMs": 77720,
+      "endMs": 78000
+    },
+    {
+      "word": "Soul",
+      "startMs": 78660,
+      "endMs": 78960
+    },
+    {
+      "word": "is",
+      "startMs": 78960,
+      "endMs": 79200
+    },
+    {
+      "word": "expensive",
+      "startMs": 79200,
+      "endMs": 79820
+    },
+    {
+      "word": "and",
+      "startMs": 79820,
+      "endMs": 80140
+    },
+    {
+      "word": "takes",
+      "startMs": 80140,
+      "endMs": 80420
+    },
+    {
+      "word": "a",
+      "startMs": 80420,
+      "endMs": 80620
+    },
+    {
+      "word": "bit",
+      "startMs": 80620,
+      "endMs": 80700
+    },
+    {
+      "word": "longer",
+      "startMs": 80700,
+      "endMs": 81040
+    },
+    {
+      "word": "to",
+      "startMs": 81040,
+      "endMs": 81260
+    },
+    {
+      "word": "think",
+      "startMs": 81260,
+      "endMs": 81540
+    },
+    {
+      "word": "but",
+      "startMs": 81540,
+      "endMs": 82020
+    },
+    {
+      "word": "has",
+      "startMs": 82020,
+      "endMs": 82240
+    },
+    {
+      "word": "massive",
+      "startMs": 82240,
+      "endMs": 82800
+    },
+    {
+      "word": "reasoning",
+      "startMs": 82800,
+      "endMs": 83260
+    },
+    {
+      "word": "power.",
+      "startMs": 83260,
+      "endMs": 83700
+    },
+    {
+      "word": "If",
+      "startMs": 84040,
+      "endMs": 84440
+    },
+    {
+      "word": "you",
+      "startMs": 84440,
+      "endMs": 84560
+    },
+    {
+      "word": "need",
+      "startMs": 84560,
+      "endMs": 84740
+    },
+    {
+      "word": "to",
+      "startMs": 84740,
+      "endMs": 84920
+    },
+    {
+      "word": "audit",
+      "startMs": 84920,
+      "endMs": 85220
+    },
+    {
+      "word": "security",
+      "startMs": 85220,
+      "endMs": 85680
+    },
+    {
+      "word": "code,",
+      "startMs": 85680,
+      "endMs": 86280
+    },
+    {
+      "word": "design",
+      "startMs": 86620,
+      "endMs": 86860
+    },
+    {
+      "word": "a",
+      "startMs": 86860,
+      "endMs": 87060
+    },
+    {
+      "word": "database,",
+      "startMs": 87060,
+      "endMs": 87500
+    },
+    {
+      "word": "or",
+      "startMs": 87980,
+      "endMs": 88100
+    },
+    {
+      "word": "solve",
+      "startMs": 88100,
+      "endMs": 88380
+    },
+    {
+      "word": "complex",
+      "startMs": 88380,
+      "endMs": 88920
+    },
+    {
+      "word": "logic",
+      "startMs": 88920,
+      "endMs": 89420
+    },
+    {
+      "word": "riddles,",
+      "startMs": 89420,
+      "endMs": 89820
+    },
+    {
+      "word": "Soul",
+      "startMs": 90280,
+      "endMs": 90400
+    },
+    {
+      "word": "is",
+      "startMs": 90400,
+      "endMs": 90620
+    },
+    {
+      "word": "the",
+      "startMs": 90620,
+      "endMs": 90760
+    },
+    {
+      "word": "only",
+      "startMs": 90760,
+      "endMs": 91160
+    },
+    {
+      "word": "one",
+      "startMs": 91160,
+      "endMs": 91440
+    },
+    {
+      "word": "who",
+      "startMs": 91440,
+      "endMs": 91620
+    },
+    {
+      "word": "can",
+      "startMs": 91620,
+      "endMs": 91760
+    },
+    {
+      "word": "do",
+      "startMs": 91760,
+      "endMs": 91900
+    },
+    {
+      "word": "it.",
+      "startMs": 91900,
+      "endMs": 92100
+    },
+    {
+      "word": "Why",
+      "startMs": 92900,
+      "endMs": 93140
+    },
+    {
+      "word": "not",
+      "startMs": 93140,
+      "endMs": 93300
+    },
+    {
+      "word": "just",
+      "startMs": 93300,
+      "endMs": 93520
+    },
+    {
+      "word": "use",
+      "startMs": 93520,
+      "endMs": 93740
+    },
+    {
+      "word": "Soul",
+      "startMs": 93740,
+      "endMs": 93980
+    },
+    {
+      "word": "for",
+      "startMs": 93980,
+      "endMs": 94240
+    },
+    {
+      "word": "everything?",
+      "startMs": 94240,
+      "endMs": 94660
+    },
+    {
+      "word": "Because",
+      "startMs": 95140,
+      "endMs": 95400
+    },
+    {
+      "word": "you'll",
+      "startMs": 95400,
+      "endMs": 95620
+    },
+    {
+      "word": "run",
+      "startMs": 95620,
+      "endMs": 95780
+    },
+    {
+      "word": "out",
+      "startMs": 95780,
+      "endMs": 95940
+    },
+    {
+      "word": "of",
+      "startMs": 95940,
+      "endMs": 96060
+    },
+    {
+      "word": "bananas",
+      "startMs": 96060,
+      "endMs": 96320
+    },
+    {
+      "word": "in",
+      "startMs": 96320,
+      "endMs": 96640
+    },
+    {
+      "word": "minutes.",
+      "startMs": 96640,
+      "endMs": 96960
+    },
+    {
+      "word": "And",
+      "startMs": 97620,
+      "endMs": 97840
+    },
+    {
+      "word": "why",
+      "startMs": 97840,
+      "endMs": 98040
+    },
+    {
+      "word": "not",
+      "startMs": 98040,
+      "endMs": 98180
+    },
+    {
+      "word": "use",
+      "startMs": 98180,
+      "endMs": 98460
+    },
+    {
+      "word": "Luna",
+      "startMs": 98460,
+      "endMs": 98640
+    },
+    {
+      "word": "for",
+      "startMs": 98640,
+      "endMs": 98920
+    },
+    {
+      "word": "everything?",
+      "startMs": 98920,
+      "endMs": 99360
+    },
+    {
+      "word": "Because",
+      "startMs": 99760,
+      "endMs": 100020
+    },
+    {
+      "word": "she",
+      "startMs": 100020,
+      "endMs": 100240
+    },
+    {
+      "word": "isn't",
+      "startMs": 100240,
+      "endMs": 100640
+    },
+    {
+      "word": "smart",
+      "startMs": 100640,
+      "endMs": 100920
+    },
+    {
+      "word": "enough",
+      "startMs": 100920,
+      "endMs": 101180
+    },
+    {
+      "word": "for",
+      "startMs": 101180,
+      "endMs": 101400
+    },
+    {
+      "word": "complex",
+      "startMs": 101400,
+      "endMs": 101800
+    },
+    {
+      "word": "tasks.",
+      "startMs": 101800,
+      "endMs": 102340
+    },
+    {
+      "word": "Choosing",
+      "startMs": 102980,
+      "endMs": 103360
+    },
+    {
+      "word": "the",
+      "startMs": 103360,
+      "endMs": 103540
+    },
+    {
+      "word": "right",
+      "startMs": 103540,
+      "endMs": 103700
+    },
+    {
+      "word": "tier",
+      "startMs": 103700,
+      "endMs": 104040
+    },
+    {
+      "word": "is",
+      "startMs": 104040,
+      "endMs": 104340
+    },
+    {
+      "word": "all",
+      "startMs": 104340,
+      "endMs": 104580
+    },
+    {
+      "word": "about",
+      "startMs": 104580,
+      "endMs": 104840
+    },
+    {
+      "word": "matching",
+      "startMs": 104840,
+      "endMs": 105300
+    },
+    {
+      "word": "the",
+      "startMs": 105300,
+      "endMs": 105500
+    },
+    {
+      "word": "job",
+      "startMs": 105500,
+      "endMs": 105740
+    },
+    {
+      "word": "to",
+      "startMs": 105740,
+      "endMs": 105980
+    },
+    {
+      "word": "the",
+      "startMs": 105980,
+      "endMs": 106080
+    },
+    {
+      "word": "right",
+      "startMs": 106080,
+      "endMs": 106280
+    },
+    {
+      "word": "brain",
+      "startMs": 106280,
+      "endMs": 106580
+    },
+    {
+      "word": "power.",
+      "startMs": 106580,
+      "endMs": 106900
+    },
+    {
+      "word": "So,",
+      "startMs": 106900,
+      "endMs": 108000
+    },
+    {
+      "word": "are",
+      "startMs": 108260,
+      "endMs": 108400
+    },
+    {
+      "word": "you",
+      "startMs": 108400,
+      "endMs": 108520
+    },
+    {
+      "word": "building",
+      "startMs": 108520,
+      "endMs": 108780
+    },
+    {
+      "word": "a",
+      "startMs": 108780,
+      "endMs": 109040
+    },
+    {
+      "word": "high",
+      "startMs": 109040,
+      "endMs": 109300
+    },
+    {
+      "word": "speed",
+      "startMs": 109300,
+      "endMs": 109600
+    },
+    {
+      "word": "chat",
+      "startMs": 109600,
+      "endMs": 109940
+    },
+    {
+      "word": "widget,",
+      "startMs": 109940,
+      "endMs": 110260
+    },
+    {
+      "word": "a",
+      "startMs": 110640,
+      "endMs": 110720
+    },
+    {
+      "word": "standard",
+      "startMs": 110720,
+      "endMs": 111080
+    },
+    {
+      "word": "automated",
+      "startMs": 111080,
+      "endMs": 111640
+    },
+    {
+      "word": "agent,",
+      "startMs": 111640,
+      "endMs": 112060
+    },
+    {
+      "word": "or",
+      "startMs": 112300,
+      "endMs": 112360
+    },
+    {
+      "word": "a",
+      "startMs": 112360,
+      "endMs": 112500
+    },
+    {
+      "word": "deep",
+      "startMs": 112500,
+      "endMs": 112660
+    },
+    {
+      "word": "analysis",
+      "startMs": 112660,
+      "endMs": 113160
+    },
+    {
+      "word": "tool?",
+      "startMs": 113160,
+      "endMs": 113580
+    },
+    {
+      "word": "Pick",
+      "startMs": 114100,
+      "endMs": 114240
+    },
+    {
+      "word": "the",
+      "startMs": 114240,
+      "endMs": 114440
+    },
+    {
+      "word": "right",
+      "startMs": 114440,
+      "endMs": 114620
+    },
+    {
+      "word": "monkey",
+      "startMs": 114620,
+      "endMs": 114960
+    },
+    {
+      "word": "helper,",
+      "startMs": 114960,
+      "endMs": 115340
+    },
+    {
+      "word": "save",
+      "startMs": 115680,
+      "endMs": 115820
+    },
+    {
+      "word": "your",
+      "startMs": 115820,
+      "endMs": 116000
+    },
+    {
+      "word": "bananas,",
+      "startMs": 116000,
+      "endMs": 116300
+    },
+    {
+      "word": "and",
+      "startMs": 116620,
+      "endMs": 116700
+    },
+    {
+      "word": "build",
+      "startMs": 116700,
+      "endMs": 116980
+    },
+    {
+      "word": "something",
+      "startMs": 116980,
+      "endMs": 117360
+    },
+    {
+      "word": "awesome.",
+      "startMs": 117360,
+      "endMs": 117780
+    },
+    {
+      "word": "Subscribe",
+      "startMs": 118300,
+      "endMs": 118620
+    },
+    {
+      "word": "for",
+      "startMs": 118620,
+      "endMs": 118860
+    },
+    {
+      "word": "more",
+      "startMs": 118860,
+      "endMs": 119040
+    },
+    {
+      "word": "simple",
+      "startMs": 119040,
+      "endMs": 119360
+    },
+    {
+      "word": "tech",
+      "startMs": 119360,
+      "endMs": 119600
+    },
+    {
+      "word": "breakdowns.",
+      "startMs": 119600,
+      "endMs": 120360
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/gpt56_comparison_project_13/voiceover.wav",
+      "volume": 1.0
+    }
+  }
+}

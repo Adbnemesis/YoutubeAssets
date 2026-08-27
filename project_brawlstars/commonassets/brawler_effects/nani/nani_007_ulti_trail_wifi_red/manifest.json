@@ -1,0 +1,21 @@
+{
+  "name": "nani_007_ulti_trail_wifi_red",
+  "frameCount": 1,
+  "canvas": {
+    "width": 424,
+    "height": 430
+  },
+  "anchor": {
+    "x": 212,
+    "y": 215
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 78,
+      "y": 48,
+      "w": 268,
+      "h": 269
+    }
+  ]
+}

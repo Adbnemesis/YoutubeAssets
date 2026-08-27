@@ -1,0 +1,42 @@
+# YouTube Metadata - Project 13: Monkey Explains GPT-5.6 (Sol, Terra, Luna) In 3 Mins!
+
+## Title Options
+1. Monkey Explains GPT-5.6 (Sol, Terra, Luna) In 3 Mins!
+2. OpenAI's New GPT-5.6 Tiers Explained (Sol, Terra, Luna)
+3. Sol vs Terra vs Luna: Which GPT-5.6 Tier Should You Use?
+4. OpenAI's GPT-5.6: The Sol, Terra, and Luna Breakdown
+
+## Video Description
+Imagine running a massive jungle delivery business where you have different helper monkeys for different tasks. That is exactly how OpenAI's new GPT-5.6 model family works.
+
+In this video, we break down the three capability tiers—Sol (the wise flagship gorilla), Terra (the balanced everyday assistant), and Luna (the lightning-fast messenger)—to help you choose the perfect brainpower for your next build while saving your precious bananas.
+
+If you found this breakdown helpful, don't forget to like, comment, and subscribe to Monkey Explains Tech for more!
+
+#openai #gpt56 #sol #terra #luna #artificialintelligence #llm #coding #softwareengineering #developer #automation #chatgpt #techmonkey #monkeyexplainstech
+
+## Timestamps / Chapters
+00:00 Introduction & The Jungle Express Metaphor
+00:11 Meet the GPT-5.6 Family
+00:28 Luna: The Speed Racer
+00:51 Terra: The Balanced Assistant
+01:10 Sol: The Grand Chieftain
+01:32 Banana Economics: How to Save Costs
+01:46 Picking the Right Helper Monkey
+
+## Keywords & Tags
+gpt-5.6, gpt 5.6, openai gpt-5.6, gpt-5.6 sol, gpt-5.6 terra, gpt-5.6 luna, gpt-5.6 comparison, openai sol terra luna, choose gpt-5.6 tier, artificial intelligence, large language models, tech monkey, monkey explains tech, llm comparison, cheap chat gpt, fast ai models, complex coding ai
+
+## Sources & References
+- OpenAI Official Announcement (https://openai.com)
+- GPT-5.6 Technical Specifications (https://openai.com/research/gpt-5-6-tiers)
+
+## Thumbnail Prompts
+### Option 1: The Banana Crash "IT'S OVER..." (High-CTR style mimicking monkeythumbnail.png reference)
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey teacher looking devastated and crying blue tears (no realistic features, zero fur textures, zero shading, flat solid brown color fill, clean bold black outlines, matching the design of the crying monkey in monkeythumbnail.png). On the left side, a clean bar chart is drawn with a vertical y-axis labeled "GPT 5.6 COST" in small hand-drawn letters, showing three red bars: a giant red bar for "SOL" (next to 10 bananas), a medium red bar for "TERRA" (next to 3 bananas), and a tiny red bar for "LUNA" (next to 1 banana). A red curved arrow points down from Sol to Luna, showing the massive drop in banana cost. At the top-left, a light red pill-shaped capsule contains red text "-90% COST" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S OVER...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+
+
+### Option 2: The Banana Shortage "0 BANANAS!" (High-CTR style mimicking monkeythumbnail.png reference)
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey developer with thick black-rimmed glasses, looking shocked and sweating with wide anxious eyes, holding his simple cartoon hands to his cheeks (no realistic features, zero fur textures, zero shading, flat solid brown color fill, clean bold black marker outlines). On the left side, a flat illustration of an empty wooden crate labeled "BANANAS" with a dotted outline of a banana inside and a giant red "X" over it. A simple line graph below it has a vertical y-axis labeled "GPT 5.6" and shows a line plunging straight down to zero. At the top-left, a light red pill-shaped capsule contains red text "↓ 100%" next to giant bold hand-drawn marker ALL CAPS text spelling "0 BANANAS!". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+
+

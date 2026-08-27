@@ -1,0 +1,1156 @@
+{
+  "reel_id": "shazam_07",
+  "title": "It Heard 1 Second of Noise. And Named the Song.",
+  "total_duration_s": 20.267,
+  "total_frames": 608,
+  "fps": 30,
+  "timeline_events": [
+    {
+      "id": "sh01_hook",
+      "speaker": "narrator",
+      "text": "Shazam heard one second of this bar noise... and still named the song.",
+      "start_time_ms": 0,
+      "end_time_ms": 3072,
+      "duration_s": 3.072,
+      "start_frame": 0,
+      "end_frame": 92,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "bar noise",
+          "cue": "waveform_chaos",
+          "time_ms": 1382,
+          "frame": 41
+        },
+        {
+          "phrase": "named the song",
+          "cue": "title_pop",
+          "time_ms": 2611,
+          "frame": 78
+        }
+      ]
+    },
+    {
+      "id": "sh02_secret",
+      "speaker": "narrator",
+      "text": "It never records music. It draws the song's secret fingerprint.",
+      "start_time_ms": 3182,
+      "end_time_ms": 6339,
+      "duration_s": 3.157,
+      "start_frame": 95,
+      "end_frame": 190,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "draws",
+          "cue": "spectrogram_morph",
+          "time_ms": 4760,
+          "frame": 143
+        },
+        {
+          "phrase": "fingerprint",
+          "cue": "constellation",
+          "time_ms": 5770,
+          "frame": 173
+        }
+      ]
+    },
+    {
+      "id": "sh03_nemi_guess",
+      "speaker": "nemi",
+      "text": "Search all songs?! \ud83e\udd2f",
+      "start_time_ms": 6439,
+      "end_time_ms": 7505,
+      "duration_s": 1.067,
+      "start_frame": 193,
+      "end_frame": 225,
+      "gap_after_ms": 90,
+      "semantic_cues": [
+        {
+          "phrase": "Search all songs",
+          "cue": "buzzer_shock",
+          "time_ms": 6972,
+          "frame": 209
+        }
+      ]
+    },
+    {
+      "id": "sh04_reversal",
+      "speaker": "narrator",
+      "text": "Impossible! Star pairs become tiny codes, and billions live in one lookup table.",
+      "start_time_ms": 7595,
+      "end_time_ms": 12288,
+      "duration_s": 4.693,
+      "start_frame": 228,
+      "end_frame": 369,
+      "gap_after_ms": 100,
+      "semantic_cues": [
+        {
+          "phrase": "Star pairs",
+          "cue": "star_pairs",
+          "time_ms": 8627,
+          "frame": 259
+        },
+        {
+          "phrase": "lookup table",
+          "cue": "hash_table",
+          "time_ms": 10880,
+          "frame": 326
+        }
+      ]
+    },
+    {
+      "id": "sh05_payoff",
+      "speaker": "narrator",
+      "text": "Match enough pairs... and one time offset spikes perfectly.",
+      "start_time_ms": 12388,
+      "end_time_ms": 15673,
+      "duration_s": 3.285,
+      "start_frame": 372,
+      "end_frame": 470,
+      "gap_after_ms": 110,
+      "semantic_cues": [
+        {
+          "phrase": "Match enough pairs",
+          "cue": "hist_bars",
+          "time_ms": 13373,
+          "frame": 401
+        },
+        {
+          "phrase": "spikes perfectly",
+          "cue": "hist_spike",
+          "time_ms": 14687,
+          "frame": 441
+        }
+      ]
+    },
+    {
+      "id": "sh06_nemi_payoff",
+      "speaker": "nemi",
+      "text": "Stars don't lie! \ud83d\ude0e",
+      "start_time_ms": 15783,
+      "end_time_ms": 16871,
+      "duration_s": 1.088,
+      "start_frame": 473,
+      "end_frame": 506,
+      "gap_after_ms": 140,
+      "semantic_cues": [
+        {
+          "phrase": "Stars don't lie",
+          "cue": "smug_stamp",
+          "time_ms": 16218,
+          "frame": 487
+        }
+      ]
+    },
+    {
+      "id": "sh07_loop",
+      "speaker": "narrator",
+      "text": "So next time it feels like magic... remember, one heartbeat is enough.",
+      "start_time_ms": 17011,
+      "end_time_ms": 20147,
+      "duration_s": 3.136,
+      "start_frame": 510,
+      "end_frame": 604,
+      "gap_after_ms": 120,
+      "semantic_cues": [
+        {
+          "phrase": "feels like magic",
+          "cue": "loop_wave",
+          "time_ms": 18108,
+          "frame": 543
+        },
+        {
+          "phrase": "one heartbeat",
+          "cue": "loop_check",
+          "time_ms": 19457,
+          "frame": 584
+        }
+      ]
+    }
+  ],
+  "subtitles": [
+    {
+      "start_frame": 0,
+      "end_frame": 36,
+      "text": "Shazam heard one second",
+      "words": [
+        {
+          "word": "Shazam",
+          "start_s": 0.0,
+          "end_s": 0.38,
+          "start_frame": 0,
+          "end_frame": 11
+        },
+        {
+          "word": "heard",
+          "start_s": 0.38,
+          "end_s": 0.54,
+          "start_frame": 11,
+          "end_frame": 16
+        },
+        {
+          "word": "one",
+          "start_s": 0.54,
+          "end_s": 0.76,
+          "start_frame": 16,
+          "end_frame": 23
+        },
+        {
+          "word": "second",
+          "start_s": 0.76,
+          "end_s": 1.08,
+          "start_frame": 23,
+          "end_frame": 32
+        }
+      ]
+    },
+    {
+      "start_frame": 32,
+      "end_frame": 65,
+      "text": "of this bar noise, and",
+      "words": [
+        {
+          "word": "of",
+          "start_s": 1.08,
+          "end_s": 1.24,
+          "start_frame": 32,
+          "end_frame": 37
+        },
+        {
+          "word": "this",
+          "start_s": 1.24,
+          "end_s": 1.36,
+          "start_frame": 37,
+          "end_frame": 41
+        },
+        {
+          "word": "bar noise,",
+          "start_s": 1.36,
+          "end_s": 1.76,
+          "start_frame": 41,
+          "end_frame": 53
+        },
+        {
+          "word": "and",
+          "start_s": 1.76,
+          "end_s": 2.04,
+          "start_frame": 53,
+          "end_frame": 61
+        }
+      ]
+    },
+    {
+      "start_frame": 61,
+      "end_frame": 90,
+      "text": "still named the song.",
+      "words": [
+        {
+          "word": "still",
+          "start_s": 2.04,
+          "end_s": 2.28,
+          "start_frame": 61,
+          "end_frame": 68
+        },
+        {
+          "word": "named",
+          "start_s": 2.28,
+          "end_s": 2.5,
+          "start_frame": 68,
+          "end_frame": 75
+        },
+        {
+          "word": "the",
+          "start_s": 2.5,
+          "end_s": 2.66,
+          "start_frame": 75,
+          "end_frame": 80
+        },
+        {
+          "word": "song.",
+          "start_s": 2.66,
+          "end_s": 2.86,
+          "start_frame": 80,
+          "end_frame": 86
+        }
+      ]
+    },
+    {
+      "start_frame": 96,
+      "end_frame": 128,
+      "text": "It never records music,",
+      "words": [
+        {
+          "word": "It",
+          "start_s": 3.2,
+          "end_s": 3.26,
+          "start_frame": 96,
+          "end_frame": 98
+        },
+        {
+          "word": "never",
+          "start_s": 3.26,
+          "end_s": 3.46,
+          "start_frame": 98,
+          "end_frame": 104
+        },
+        {
+          "word": "records",
+          "start_s": 3.46,
+          "end_s": 3.76,
+          "start_frame": 104,
+          "end_frame": 113
+        },
+        {
+          "word": "music,",
+          "start_s": 3.76,
+          "end_s": 4.14,
+          "start_frame": 113,
+          "end_frame": 124
+        }
+      ]
+    },
+    {
+      "start_frame": 135,
+      "end_frame": 164,
+      "text": "it draws the song's",
+      "words": [
+        {
+          "word": "it",
+          "start_s": 4.5,
+          "end_s": 4.58,
+          "start_frame": 135,
+          "end_frame": 137
+        },
+        {
+          "word": "draws",
+          "start_s": 4.58,
+          "end_s": 4.74,
+          "start_frame": 137,
+          "end_frame": 142
+        },
+        {
+          "word": "the",
+          "start_s": 4.74,
+          "end_s": 4.92,
+          "start_frame": 142,
+          "end_frame": 148
+        },
+        {
+          "word": "song's",
+          "start_s": 4.92,
+          "end_s": 5.32,
+          "start_frame": 148,
+          "end_frame": 160
+        }
+      ]
+    },
+    {
+      "start_frame": 160,
+      "end_frame": 211,
+      "text": "secret fingerprint. Search all",
+      "words": [
+        {
+          "word": "secret",
+          "start_s": 5.32,
+          "end_s": 5.64,
+          "start_frame": 160,
+          "end_frame": 169
+        },
+        {
+          "word": "fingerprint.",
+          "start_s": 5.64,
+          "end_s": 6.1,
+          "start_frame": 169,
+          "end_frame": 183
+        },
+        {
+          "word": "Search",
+          "start_s": 6.36,
+          "end_s": 6.66,
+          "start_frame": 191,
+          "end_frame": 200
+        },
+        {
+          "word": "all",
+          "start_s": 6.66,
+          "end_s": 6.9,
+          "start_frame": 200,
+          "end_frame": 207
+        }
+      ]
+    },
+    {
+      "start_frame": 207,
+      "end_frame": 277,
+      "text": "songs. Impossible. Star pairs",
+      "words": [
+        {
+          "word": "songs.",
+          "start_s": 6.9,
+          "end_s": 7.28,
+          "start_frame": 207,
+          "end_frame": 218
+        },
+        {
+          "word": "Impossible.",
+          "start_s": 7.6,
+          "end_s": 8.16,
+          "start_frame": 228,
+          "end_frame": 245
+        },
+        {
+          "word": "Star",
+          "start_s": 8.74,
+          "end_s": 8.9,
+          "start_frame": 262,
+          "end_frame": 267
+        },
+        {
+          "word": "pairs",
+          "start_s": 8.9,
+          "end_s": 9.1,
+          "start_frame": 267,
+          "end_frame": 273
+        }
+      ]
+    },
+    {
+      "start_frame": 273,
+      "end_frame": 319,
+      "text": "become tiny codes and",
+      "words": [
+        {
+          "word": "become",
+          "start_s": 9.1,
+          "end_s": 9.44,
+          "start_frame": 273,
+          "end_frame": 283
+        },
+        {
+          "word": "tiny",
+          "start_s": 9.44,
+          "end_s": 9.78,
+          "start_frame": 283,
+          "end_frame": 293
+        },
+        {
+          "word": "codes",
+          "start_s": 9.78,
+          "end_s": 10.2,
+          "start_frame": 293,
+          "end_frame": 306
+        },
+        {
+          "word": "and",
+          "start_s": 10.2,
+          "end_s": 10.5,
+          "start_frame": 306,
+          "end_frame": 315
+        }
+      ]
+    },
+    {
+      "start_frame": 315,
+      "end_frame": 346,
+      "text": "billions live in one",
+      "words": [
+        {
+          "word": "billions",
+          "start_s": 10.5,
+          "end_s": 10.82,
+          "start_frame": 315,
+          "end_frame": 325
+        },
+        {
+          "word": "live",
+          "start_s": 10.82,
+          "end_s": 11.08,
+          "start_frame": 325,
+          "end_frame": 332
+        },
+        {
+          "word": "in",
+          "start_s": 11.08,
+          "end_s": 11.22,
+          "start_frame": 332,
+          "end_frame": 337
+        },
+        {
+          "word": "one",
+          "start_s": 11.22,
+          "end_s": 11.4,
+          "start_frame": 337,
+          "end_frame": 342
+        }
+      ]
+    },
+    {
+      "start_frame": 342,
+      "end_frame": 387,
+      "text": "lookup table. Match enough",
+      "words": [
+        {
+          "word": "lookup",
+          "start_s": 11.4,
+          "end_s": 11.74,
+          "start_frame": 342,
+          "end_frame": 352
+        },
+        {
+          "word": "table.",
+          "start_s": 11.74,
+          "end_s": 12.08,
+          "start_frame": 352,
+          "end_frame": 362
+        },
+        {
+          "word": "Match",
+          "start_s": 12.42,
+          "end_s": 12.58,
+          "start_frame": 373,
+          "end_frame": 377
+        },
+        {
+          "word": "enough",
+          "start_s": 12.58,
+          "end_s": 12.78,
+          "start_frame": 377,
+          "end_frame": 383
+        }
+      ]
+    },
+    {
+      "start_frame": 383,
+      "end_frame": 425,
+      "text": "pairs and one time",
+      "words": [
+        {
+          "word": "pairs",
+          "start_s": 12.78,
+          "end_s": 13.1,
+          "start_frame": 383,
+          "end_frame": 393
+        },
+        {
+          "word": "and",
+          "start_s": 13.1,
+          "end_s": 13.54,
+          "start_frame": 393,
+          "end_frame": 406
+        },
+        {
+          "word": "one",
+          "start_s": 13.54,
+          "end_s": 13.74,
+          "start_frame": 406,
+          "end_frame": 412
+        },
+        {
+          "word": "time",
+          "start_s": 13.74,
+          "end_s": 14.02,
+          "start_frame": 412,
+          "end_frame": 421
+        }
+      ]
+    },
+    {
+      "start_frame": 421,
+      "end_frame": 488,
+      "text": "offset spikes perfectly. Stars",
+      "words": [
+        {
+          "word": "offset",
+          "start_s": 14.02,
+          "end_s": 14.5,
+          "start_frame": 421,
+          "end_frame": 435
+        },
+        {
+          "word": "spikes",
+          "start_s": 14.5,
+          "end_s": 14.84,
+          "start_frame": 435,
+          "end_frame": 445
+        },
+        {
+          "word": "perfectly.",
+          "start_s": 14.84,
+          "end_s": 15.44,
+          "start_frame": 445,
+          "end_frame": 463
+        },
+        {
+          "word": "Stars",
+          "start_s": 15.78,
+          "end_s": 16.14,
+          "start_frame": 473,
+          "end_frame": 484
+        }
+      ]
+    },
+    {
+      "start_frame": 484,
+      "end_frame": 525,
+      "text": "don't lie. So next",
+      "words": [
+        {
+          "word": "don't",
+          "start_s": 16.14,
+          "end_s": 16.54,
+          "start_frame": 484,
+          "end_frame": 496
+        },
+        {
+          "word": "lie.",
+          "start_s": 16.54,
+          "end_s": 16.76,
+          "start_frame": 496,
+          "end_frame": 503
+        },
+        {
+          "word": "So",
+          "start_s": 17.0,
+          "end_s": 17.14,
+          "start_frame": 510,
+          "end_frame": 514
+        },
+        {
+          "word": "next",
+          "start_s": 17.14,
+          "end_s": 17.36,
+          "start_frame": 514,
+          "end_frame": 521
+        }
+      ]
+    },
+    {
+      "start_frame": 521,
+      "end_frame": 543,
+      "text": "time it feels like",
+      "words": [
+        {
+          "word": "time",
+          "start_s": 17.36,
+          "end_s": 17.54,
+          "start_frame": 521,
+          "end_frame": 526
+        },
+        {
+          "word": "it",
+          "start_s": 17.54,
+          "end_s": 17.66,
+          "start_frame": 526,
+          "end_frame": 530
+        },
+        {
+          "word": "feels",
+          "start_s": 17.66,
+          "end_s": 17.8,
+          "start_frame": 530,
+          "end_frame": 534
+        },
+        {
+          "word": "like",
+          "start_s": 17.8,
+          "end_s": 17.98,
+          "start_frame": 534,
+          "end_frame": 539
+        }
+      ]
+    },
+    {
+      "start_frame": 539,
+      "end_frame": 590,
+      "text": "magic, remember one heartbeat",
+      "words": [
+        {
+          "word": "magic,",
+          "start_s": 17.98,
+          "end_s": 18.34,
+          "start_frame": 539,
+          "end_frame": 550
+        },
+        {
+          "word": "remember",
+          "start_s": 18.58,
+          "end_s": 18.88,
+          "start_frame": 557,
+          "end_frame": 566
+        },
+        {
+          "word": "one",
+          "start_s": 18.88,
+          "end_s": 19.22,
+          "start_frame": 566,
+          "end_frame": 577
+        },
+        {
+          "word": "heartbeat",
+          "start_s": 19.22,
+          "end_s": 19.54,
+          "start_frame": 577,
+          "end_frame": 586
+        }
+      ]
+    },
+    {
+      "start_frame": 586,
+      "end_frame": 602,
+      "text": "is enough.",
+      "words": [
+        {
+          "word": "is",
+          "start_s": 19.54,
+          "end_s": 19.72,
+          "start_frame": 586,
+          "end_frame": 592
+        },
+        {
+          "word": "enough.",
+          "start_s": 19.72,
+          "end_s": 19.94,
+          "start_frame": 592,
+          "end_frame": 598
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Shazam",
+      "start_s": 0.0,
+      "end_s": 0.38,
+      "start_frame": 0,
+      "end_frame": 11
+    },
+    {
+      "word": "heard",
+      "start_s": 0.38,
+      "end_s": 0.54,
+      "start_frame": 11,
+      "end_frame": 16
+    },
+    {
+      "word": "one",
+      "start_s": 0.54,
+      "end_s": 0.76,
+      "start_frame": 16,
+      "end_frame": 23
+    },
+    {
+      "word": "second",
+      "start_s": 0.76,
+      "end_s": 1.08,
+      "start_frame": 23,
+      "end_frame": 32
+    },
+    {
+      "word": "of",
+      "start_s": 1.08,
+      "end_s": 1.24,
+      "start_frame": 32,
+      "end_frame": 37
+    },
+    {
+      "word": "this",
+      "start_s": 1.24,
+      "end_s": 1.36,
+      "start_frame": 37,
+      "end_frame": 41
+    },
+    {
+      "word": "bar noise,",
+      "start_s": 1.36,
+      "end_s": 1.76,
+      "start_frame": 41,
+      "end_frame": 53
+    },
+    {
+      "word": "and",
+      "start_s": 1.76,
+      "end_s": 2.04,
+      "start_frame": 53,
+      "end_frame": 61
+    },
+    {
+      "word": "still",
+      "start_s": 2.04,
+      "end_s": 2.28,
+      "start_frame": 61,
+      "end_frame": 68
+    },
+    {
+      "word": "named",
+      "start_s": 2.28,
+      "end_s": 2.5,
+      "start_frame": 68,
+      "end_frame": 75
+    },
+    {
+      "word": "the",
+      "start_s": 2.5,
+      "end_s": 2.66,
+      "start_frame": 75,
+      "end_frame": 80
+    },
+    {
+      "word": "song.",
+      "start_s": 2.66,
+      "end_s": 2.86,
+      "start_frame": 80,
+      "end_frame": 86
+    },
+    {
+      "word": "It",
+      "start_s": 3.2,
+      "end_s": 3.26,
+      "start_frame": 96,
+      "end_frame": 98
+    },
+    {
+      "word": "never",
+      "start_s": 3.26,
+      "end_s": 3.46,
+      "start_frame": 98,
+      "end_frame": 104
+    },
+    {
+      "word": "records",
+      "start_s": 3.46,
+      "end_s": 3.76,
+      "start_frame": 104,
+      "end_frame": 113
+    },
+    {
+      "word": "music,",
+      "start_s": 3.76,
+      "end_s": 4.14,
+      "start_frame": 113,
+      "end_frame": 124
+    },
+    {
+      "word": "it",
+      "start_s": 4.5,
+      "end_s": 4.58,
+      "start_frame": 135,
+      "end_frame": 137
+    },
+    {
+      "word": "draws",
+      "start_s": 4.58,
+      "end_s": 4.74,
+      "start_frame": 137,
+      "end_frame": 142
+    },
+    {
+      "word": "the",
+      "start_s": 4.74,
+      "end_s": 4.92,
+      "start_frame": 142,
+      "end_frame": 148
+    },
+    {
+      "word": "song's",
+      "start_s": 4.92,
+      "end_s": 5.32,
+      "start_frame": 148,
+      "end_frame": 160
+    },
+    {
+      "word": "secret",
+      "start_s": 5.32,
+      "end_s": 5.64,
+      "start_frame": 160,
+      "end_frame": 169
+    },
+    {
+      "word": "fingerprint.",
+      "start_s": 5.64,
+      "end_s": 6.1,
+      "start_frame": 169,
+      "end_frame": 183
+    },
+    {
+      "word": "Search",
+      "start_s": 6.36,
+      "end_s": 6.66,
+      "start_frame": 191,
+      "end_frame": 200
+    },
+    {
+      "word": "all",
+      "start_s": 6.66,
+      "end_s": 6.9,
+      "start_frame": 200,
+      "end_frame": 207
+    },
+    {
+      "word": "songs.",
+      "start_s": 6.9,
+      "end_s": 7.28,
+      "start_frame": 207,
+      "end_frame": 218
+    },
+    {
+      "word": "Impossible.",
+      "start_s": 7.6,
+      "end_s": 8.16,
+      "start_frame": 228,
+      "end_frame": 245
+    },
+    {
+      "word": "Star",
+      "start_s": 8.74,
+      "end_s": 8.9,
+      "start_frame": 262,
+      "end_frame": 267
+    },
+    {
+      "word": "pairs",
+      "start_s": 8.9,
+      "end_s": 9.1,
+      "start_frame": 267,
+      "end_frame": 273
+    },
+    {
+      "word": "become",
+      "start_s": 9.1,
+      "end_s": 9.44,
+      "start_frame": 273,
+      "end_frame": 283
+    },
+    {
+      "word": "tiny",
+      "start_s": 9.44,
+      "end_s": 9.78,
+      "start_frame": 283,
+      "end_frame": 293
+    },
+    {
+      "word": "codes",
+      "start_s": 9.78,
+      "end_s": 10.2,
+      "start_frame": 293,
+      "end_frame": 306
+    },
+    {
+      "word": "and",
+      "start_s": 10.2,
+      "end_s": 10.5,
+      "start_frame": 306,
+      "end_frame": 315
+    },
+    {
+      "word": "billions",
+      "start_s": 10.5,
+      "end_s": 10.82,
+      "start_frame": 315,
+      "end_frame": 325
+    },
+    {
+      "word": "live",
+      "start_s": 10.82,
+      "end_s": 11.08,
+      "start_frame": 325,
+      "end_frame": 332
+    },
+    {
+      "word": "in",
+      "start_s": 11.08,
+      "end_s": 11.22,
+      "start_frame": 332,
+      "end_frame": 337
+    },
+    {
+      "word": "one",
+      "start_s": 11.22,
+      "end_s": 11.4,
+      "start_frame": 337,
+      "end_frame": 342
+    },
+    {
+      "word": "lookup",
+      "start_s": 11.4,
+      "end_s": 11.74,
+      "start_frame": 342,
+      "end_frame": 352
+    },
+    {
+      "word": "table.",
+      "start_s": 11.74,
+      "end_s": 12.08,
+      "start_frame": 352,
+      "end_frame": 362
+    },
+    {
+      "word": "Match",
+      "start_s": 12.42,
+      "end_s": 12.58,
+      "start_frame": 373,
+      "end_frame": 377
+    },
+    {
+      "word": "enough",
+      "start_s": 12.58,
+      "end_s": 12.78,
+      "start_frame": 377,
+      "end_frame": 383
+    },
+    {
+      "word": "pairs",
+      "start_s": 12.78,
+      "end_s": 13.1,
+      "start_frame": 383,
+      "end_frame": 393
+    },
+    {
+      "word": "and",
+      "start_s": 13.1,
+      "end_s": 13.54,
+      "start_frame": 393,
+      "end_frame": 406
+    },
+    {
+      "word": "one",
+      "start_s": 13.54,
+      "end_s": 13.74,
+      "start_frame": 406,
+      "end_frame": 412
+    },
+    {
+      "word": "time",
+      "start_s": 13.74,
+      "end_s": 14.02,
+      "start_frame": 412,
+      "end_frame": 421
+    },
+    {
+      "word": "offset",
+      "start_s": 14.02,
+      "end_s": 14.5,
+      "start_frame": 421,
+      "end_frame": 435
+    },
+    {
+      "word": "spikes",
+      "start_s": 14.5,
+      "end_s": 14.84,
+      "start_frame": 435,
+      "end_frame": 445
+    },
+    {
+      "word": "perfectly.",
+      "start_s": 14.84,
+      "end_s": 15.44,
+      "start_frame": 445,
+      "end_frame": 463
+    },
+    {
+      "word": "Stars",
+      "start_s": 15.78,
+      "end_s": 16.14,
+      "start_frame": 473,
+      "end_frame": 484
+    },
+    {
+      "word": "don't",
+      "start_s": 16.14,
+      "end_s": 16.54,
+      "start_frame": 484,
+      "end_frame": 496
+    },
+    {
+      "word": "lie.",
+      "start_s": 16.54,
+      "end_s": 16.76,
+      "start_frame": 496,
+      "end_frame": 503
+    },
+    {
+      "word": "So",
+      "start_s": 17.0,
+      "end_s": 17.14,
+      "start_frame": 510,
+      "end_frame": 514
+    },
+    {
+      "word": "next",
+      "start_s": 17.14,
+      "end_s": 17.36,
+      "start_frame": 514,
+      "end_frame": 521
+    },
+    {
+      "word": "time",
+      "start_s": 17.36,
+      "end_s": 17.54,
+      "start_frame": 521,
+      "end_frame": 526
+    },
+    {
+      "word": "it",
+      "start_s": 17.54,
+      "end_s": 17.66,
+      "start_frame": 526,
+      "end_frame": 530
+    },
+    {
+      "word": "feels",
+      "start_s": 17.66,
+      "end_s": 17.8,
+      "start_frame": 530,
+      "end_frame": 534
+    },
+    {
+      "word": "like",
+      "start_s": 17.8,
+      "end_s": 17.98,
+      "start_frame": 534,
+      "end_frame": 539
+    },
+    {
+      "word": "magic,",
+      "start_s": 17.98,
+      "end_s": 18.34,
+      "start_frame": 539,
+      "end_frame": 550
+    },
+    {
+      "word": "remember",
+      "start_s": 18.58,
+      "end_s": 18.88,
+      "start_frame": 557,
+      "end_frame": 566
+    },
+    {
+      "word": "one",
+      "start_s": 18.88,
+      "end_s": 19.22,
+      "start_frame": 566,
+      "end_frame": 577
+    },
+    {
+      "word": "heartbeat",
+      "start_s": 19.22,
+      "end_s": 19.54,
+      "start_frame": 577,
+      "end_frame": 586
+    },
+    {
+      "word": "is",
+      "start_s": 19.54,
+      "end_s": 19.72,
+      "start_frame": 586,
+      "end_frame": 592
+    },
+    {
+      "word": "enough.",
+      "start_s": 19.72,
+      "end_s": 19.94,
+      "start_frame": 592,
+      "end_frame": 598
+    }
+  ]
+}

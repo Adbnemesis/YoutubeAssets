@@ -1,0 +1,2988 @@
+{
+  "theme": "flat-motion-graphics",
+  "themeConfig": {
+    "backgroundColor": "#FFFFFF",
+    "primaryColor": "#F5820D",
+    "accentColor": "#2D5FBF",
+    "surfaceColor": "#F9FAFB",
+    "textColor": "#000000",
+    "captionHighlightColor": "#F5820D",
+    "captionBackgroundColor": "rgba(255, 255, 255, 0.85)"
+  },
+  "cuts": [
+    {
+      "id": "scene_0",
+      "text": "Monkey wants to build an automated banana factory.",
+      "in_seconds": 0.0,
+      "out_seconds": 2.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_1",
+      "text": "Which new Anthropic model does Monkey hire?",
+      "in_seconds": 2.0,
+      "out_seconds": 4.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_2",
+      "text": "There are two new apes in the jungle.",
+      "in_seconds": 4.0,
+      "out_seconds": 6.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-04]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_3",
+      "text": "Option one. Hire Gorilla Fable 5.",
+      "in_seconds": 6.0,
+      "out_seconds": 9.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-06]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_4",
+      "text": "Fable 5 is a giant Mythos gorilla!",
+      "in_seconds": 9.0,
+      "out_seconds": 11.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-09]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_5",
+      "text": "Built for multi-day autonomous research.",
+      "in_seconds": 11.0,
+      "out_seconds": 14.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-11]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_6",
+      "text": "Deep reasoning. Long horizon tasks.",
+      "in_seconds": 14.0,
+      "out_seconds": 17.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_7",
+      "text": "Monkey hands Fable 5 broken banana code.",
+      "in_seconds": 17.0,
+      "out_seconds": 19.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-17]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_8",
+      "text": "Fable 5 stares at the screen.",
+      "in_seconds": 19.0,
+      "out_seconds": 21.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-19]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_9",
+      "text": "Thinks for five days straight!",
+      "in_seconds": 21.0,
+      "out_seconds": 23.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_10",
+      "text": "No sleep. No banana break.",
+      "in_seconds": 23.0,
+      "out_seconds": 25.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-23]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_11",
+      "text": "Rebuilds the entire factory from scratch!",
+      "in_seconds": 25.0,
+      "out_seconds": 27.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-25]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_12",
+      "text": "Fable 5 gets top scores on SWE-bench!",
+      "in_seconds": 27.0,
+      "out_seconds": 30.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-27]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_13",
+      "text": "Number one on the AI index!",
+      "in_seconds": 30.0,
+      "out_seconds": 32.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_14",
+      "text": "Gorilla dominates every test.",
+      "in_seconds": 32.0,
+      "out_seconds": 34.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-32]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_15",
+      "text": "Monkey happy! Monkey hires Fable 5!",
+      "in_seconds": 34.0,
+      "out_seconds": 36.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-34]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_16",
+      "text": "Then Monkey gets the bill.",
+      "in_seconds": 36.0,
+      "out_seconds": 38.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_17",
+      "text": "Input costs ten bananas per million words.",
+      "in_seconds": 38.0,
+      "out_seconds": 41.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-38]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_18",
+      "text": "Output costs fifty bananas per million words.",
+      "in_seconds": 41.0,
+      "out_seconds": 44.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-41]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_19",
+      "text": "Monkey reads the invoice three times.",
+      "in_seconds": 44.0,
+      "out_seconds": 47.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-44]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_20",
+      "text": "Your card was declined!",
+      "in_seconds": 47.0,
+      "out_seconds": 48.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-47]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_21",
+      "text": "Monkey wallet empty.",
+      "in_seconds": 48.0,
+      "out_seconds": 50.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-48]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_22",
+      "text": "Pesky gorilla pricing.",
+      "in_seconds": 50.0,
+      "out_seconds": 51.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_23",
+      "text": "Monkey poor... monkey sad...",
+      "in_seconds": 51.0,
+      "out_seconds": 53.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-51]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_24",
+      "text": "Option two. Hire Chimp Engineer Opus 5.",
+      "in_seconds": 53.0,
+      "out_seconds": 56.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_25",
+      "text": "Opus 5 is the flagship workhorse!",
+      "in_seconds": 56.0,
+      "out_seconds": 58.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-56]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_26",
+      "text": "Built for daily software engineering.",
+      "in_seconds": 58.0,
+      "out_seconds": 60.0,
+      "source": "projects/opus_vs_fable_project_16/images/[00-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_27",
+      "text": "Monkey hands Opus 5 one million scrolls.",
+      "in_seconds": 60.0,
+      "out_seconds": 63.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_28",
+      "text": "Opus 5 reads everything in one second!",
+      "in_seconds": 63.0,
+      "out_seconds": 65.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-03]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_29",
+      "text": "One million token context window!",
+      "in_seconds": 65.0,
+      "out_seconds": 68.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_30",
+      "text": "Fixes code. Builds tools. Audits security.",
+      "in_seconds": 68.0,
+      "out_seconds": 72.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-08]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_31",
+      "text": "Finished before lunch time.",
+      "in_seconds": 72.0,
+      "out_seconds": 73.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_32",
+      "text": "On intelligence tests, Opus 5 ties Fable 5!",
+      "in_seconds": 73.0,
+      "out_seconds": 76.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-13]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_33",
+      "text": "Same brain. Same gorilla-level reasoning.",
+      "in_seconds": 76.0,
+      "out_seconds": 79.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_34",
+      "text": "But Opus 5 wears a yellow hard hat.",
+      "in_seconds": 79.0,
+      "out_seconds": 81.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-19]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_35",
+      "text": "Shows up to work every single day.",
+      "in_seconds": 81.0,
+      "out_seconds": 83.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-21]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_36",
+      "text": "Best of all, Opus 5 costs half!",
+      "in_seconds": 83.0,
+      "out_seconds": 85.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-23]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_37",
+      "text": "Five bananas input per million words.",
+      "in_seconds": 85.0,
+      "out_seconds": 88.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-25]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_38",
+      "text": "Twenty-five bananas output per million words.",
+      "in_seconds": 88.0,
+      "out_seconds": 91.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_39",
+      "text": "Half price! Same intelligence!",
+      "in_seconds": 91.0,
+      "out_seconds": 93.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-31]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_40",
+      "text": "Monkey wallet happy! Monkey rich!",
+      "in_seconds": 93.0,
+      "out_seconds": 97.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-33]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_41",
+      "text": "But wait. Which model is actually better?",
+      "in_seconds": 97.0,
+      "out_seconds": 100.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-37]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_42",
+      "text": "Monkey runs a jungle stress test.",
+      "in_seconds": 100.0,
+      "out_seconds": 101.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_43",
+      "text": "Gives both models the exact same broken app.",
+      "in_seconds": 101.0,
+      "out_seconds": 103.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-41]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_44",
+      "text": "Fable 5 disappears for three days.",
+      "in_seconds": 103.0,
+      "out_seconds": 106.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_45",
+      "text": "Returns with a complex masterpiece.",
+      "in_seconds": 106.0,
+      "out_seconds": 108.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-46]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_46",
+      "text": "Opus 5 fixes the bug in two hours.",
+      "in_seconds": 108.0,
+      "out_seconds": 110.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-48]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_47",
+      "text": "Both apps work perfectly.",
+      "in_seconds": 110.0,
+      "out_seconds": 111.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_48",
+      "text": "So what is the secret difference?",
+      "in_seconds": 111.0,
+      "out_seconds": 114.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-51]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_49",
+      "text": "Fable 5 thinks deeper and takes longer.",
+      "in_seconds": 114.0,
+      "out_seconds": 117.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-54]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_50",
+      "text": "Opus 5 thinks fast and ships code faster.",
+      "in_seconds": 117.0,
+      "out_seconds": 120.0,
+      "source": "projects/opus_vs_fable_project_16/images/[01-57]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_51",
+      "text": "Same destination. Different jungle paths.",
+      "in_seconds": 120.0,
+      "out_seconds": 122.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-00]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_52",
+      "text": "Option three. Secret jungle discounts.",
+      "in_seconds": 122.0,
+      "out_seconds": 125.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-02]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_53",
+      "text": "Both models have Adaptive Thinking.",
+      "in_seconds": 125.0,
+      "out_seconds": 127.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-05]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_54",
+      "text": "Monkey turns the brain knob up or down.",
+      "in_seconds": 127.0,
+      "out_seconds": 129.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-07]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_55",
+      "text": "Low effort for quick simple answers.",
+      "in_seconds": 129.0,
+      "out_seconds": 132.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-09]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_56",
+      "text": "Max effort for deep gorilla reasoning.",
+      "in_seconds": 132.0,
+      "out_seconds": 134.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-12]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_57",
+      "text": "Monkey controls how hard they think!",
+      "in_seconds": 134.0,
+      "out_seconds": 136.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-14]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_58",
+      "text": "Both models use pre-peeled banana caching.",
+      "in_seconds": 136.0,
+      "out_seconds": 138.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-16]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_59",
+      "text": "Show the same scroll blueprint twice?",
+      "in_seconds": 138.0,
+      "out_seconds": 140.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-18]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_60",
+      "text": "Monkey Bank gives ninety percent discount!",
+      "in_seconds": 140.0,
+      "out_seconds": 142.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-20]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_61",
+      "text": "Opus 5 cached input costs half a banana.",
+      "in_seconds": 142.0,
+      "out_seconds": 145.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-22]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_62",
+      "text": "Fable 5 cached input costs one banana.",
+      "in_seconds": 145.0,
+      "out_seconds": 148.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-25]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_63",
+      "text": "Jungle startup runs super cheap with caching!",
+      "in_seconds": 148.0,
+      "out_seconds": 150.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-28]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_64",
+      "text": "So which model should Monkey pick?",
+      "in_seconds": 150.0,
+      "out_seconds": 152.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-30]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_65",
+      "text": "Multi-day autonomous research jobs?",
+      "in_seconds": 152.0,
+      "out_seconds": 154.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-32]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_66",
+      "text": "Complex multi-step engineering projects?",
+      "in_seconds": 154.0,
+      "out_seconds": 156.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-34]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_67",
+      "text": "Hire Gorilla Fable 5.",
+      "in_seconds": 156.0,
+      "out_seconds": 158.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-36]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_68",
+      "text": "Worth every single banana!",
+      "in_seconds": 158.0,
+      "out_seconds": 160.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-38]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_69",
+      "text": "Daily coding copilots and chat assistants?",
+      "in_seconds": 160.0,
+      "out_seconds": 163.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-40]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_70",
+      "text": "Fast reliable software engineering?",
+      "in_seconds": 163.0,
+      "out_seconds": 165.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-43]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_71",
+      "text": "Hire Chimp Engineer Opus 5!",
+      "in_seconds": 165.0,
+      "out_seconds": 167.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-45]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_72",
+      "text": "Ninety-five percent performance at half price!",
+      "in_seconds": 167.0,
+      "out_seconds": 169.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-47]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_73",
+      "text": "Smart Monkey uses both.",
+      "in_seconds": 169.0,
+      "out_seconds": 170.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-49]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    },
+    {
+      "id": "scene_74",
+      "text": "Fable 5 for big gorilla tasks.",
+      "in_seconds": 170.0,
+      "out_seconds": 173.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-50]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-out"
+    },
+    {
+      "id": "scene_75",
+      "text": "Opus 5 for daily engineering.",
+      "in_seconds": 173.0,
+      "out_seconds": 175.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-53]_Hand-drawn_2D_doo.jpg",
+      "animation": "slow-zoom-in"
+    },
+    {
+      "id": "scene_76",
+      "text": "Two monkeys. One jungle. Maximum bananas!",
+      "in_seconds": 175.0,
+      "out_seconds": 178.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-55]_Hand-drawn_2D_doo.jpg",
+      "animation": "character-close-up"
+    },
+    {
+      "id": "scene_77",
+      "text": "Save your bananas.",
+      "in_seconds": 178.0,
+      "out_seconds": 179.0,
+      "source": "projects/opus_vs_fable_project_16/images/[02-58]_Hand-drawn_2D_doo.jpg",
+      "animation": "push-wb"
+    },
+    {
+      "id": "scene_78",
+      "text": "Subscribe for more monkey breakdowns!",
+      "in_seconds": 179.0,
+      "out_seconds": 181.515,
+      "source": "projects/opus_vs_fable_project_16/images/[02-59]_Hand-drawn_2D_doo.jpg",
+      "animation": "diagram-close-up"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "hero_title",
+      "text": "OPUS 5 vs FABLE 5",
+      "subtitle": "Anthropic Model Battle",
+      "in_seconds": 0.0,
+      "out_seconds": 2.0
+    },
+    {
+      "type": "section_title",
+      "text": "OPTION 1: GORILLA FABLE 5",
+      "subtitle": "Multi-Day Deep Reasoning",
+      "in_seconds": 6.0,
+      "out_seconds": 9.0
+    },
+    {
+      "type": "section_title",
+      "text": "OPTION 2: CHIMP OPUS 5",
+      "subtitle": "Daily Software Engineer",
+      "in_seconds": 53.0,
+      "out_seconds": 56.0
+    },
+    {
+      "type": "section_title",
+      "text": "SECRET DISCOUNTS",
+      "subtitle": "Adaptive Thinking & Caching",
+      "in_seconds": 122.0,
+      "out_seconds": 125.0
+    },
+    {
+      "type": "section_title",
+      "text": "SAVE YOUR BANANAS",
+      "subtitle": "Subscribe For More Breakdowns",
+      "in_seconds": 179.0,
+      "out_seconds": 181.515
+    }
+  ],
+  "captions": [
+    {
+      "word": "Monkey",
+      "startMs": 0,
+      "endMs": 250
+    },
+    {
+      "word": "wants",
+      "startMs": 250,
+      "endMs": 500
+    },
+    {
+      "word": "to",
+      "startMs": 500,
+      "endMs": 750
+    },
+    {
+      "word": "build",
+      "startMs": 750,
+      "endMs": 1000
+    },
+    {
+      "word": "an",
+      "startMs": 1000,
+      "endMs": 1250
+    },
+    {
+      "word": "automated",
+      "startMs": 1250,
+      "endMs": 1500
+    },
+    {
+      "word": "banana",
+      "startMs": 1500,
+      "endMs": 1750
+    },
+    {
+      "word": "factory.",
+      "startMs": 1750,
+      "endMs": 2000
+    },
+    {
+      "word": "Which",
+      "startMs": 2000,
+      "endMs": 2285
+    },
+    {
+      "word": "new",
+      "startMs": 2285,
+      "endMs": 2571
+    },
+    {
+      "word": "Anthropic",
+      "startMs": 2571,
+      "endMs": 2857
+    },
+    {
+      "word": "model",
+      "startMs": 2857,
+      "endMs": 3142
+    },
+    {
+      "word": "does",
+      "startMs": 3142,
+      "endMs": 3428
+    },
+    {
+      "word": "Monkey",
+      "startMs": 3428,
+      "endMs": 3714
+    },
+    {
+      "word": "hire?",
+      "startMs": 3714,
+      "endMs": 4000
+    },
+    {
+      "word": "There",
+      "startMs": 4000,
+      "endMs": 4250
+    },
+    {
+      "word": "are",
+      "startMs": 4250,
+      "endMs": 4500
+    },
+    {
+      "word": "two",
+      "startMs": 4500,
+      "endMs": 4750
+    },
+    {
+      "word": "new",
+      "startMs": 4750,
+      "endMs": 5000
+    },
+    {
+      "word": "apes",
+      "startMs": 5000,
+      "endMs": 5250
+    },
+    {
+      "word": "in",
+      "startMs": 5250,
+      "endMs": 5500
+    },
+    {
+      "word": "the",
+      "startMs": 5500,
+      "endMs": 5750
+    },
+    {
+      "word": "jungle.",
+      "startMs": 5750,
+      "endMs": 6000
+    },
+    {
+      "word": "Option",
+      "startMs": 6000,
+      "endMs": 6500
+    },
+    {
+      "word": "one.",
+      "startMs": 6500,
+      "endMs": 7000
+    },
+    {
+      "word": "Hire",
+      "startMs": 7000,
+      "endMs": 7500
+    },
+    {
+      "word": "Gorilla",
+      "startMs": 7500,
+      "endMs": 8000
+    },
+    {
+      "word": "Fable",
+      "startMs": 8000,
+      "endMs": 8500
+    },
+    {
+      "word": "5.",
+      "startMs": 8500,
+      "endMs": 9000
+    },
+    {
+      "word": "Fable",
+      "startMs": 9000,
+      "endMs": 9285
+    },
+    {
+      "word": "5",
+      "startMs": 9285,
+      "endMs": 9571
+    },
+    {
+      "word": "is",
+      "startMs": 9571,
+      "endMs": 9857
+    },
+    {
+      "word": "a",
+      "startMs": 9857,
+      "endMs": 10142
+    },
+    {
+      "word": "giant",
+      "startMs": 10142,
+      "endMs": 10428
+    },
+    {
+      "word": "Mythos",
+      "startMs": 10428,
+      "endMs": 10714
+    },
+    {
+      "word": "gorilla!",
+      "startMs": 10714,
+      "endMs": 11000
+    },
+    {
+      "word": "Built",
+      "startMs": 11000,
+      "endMs": 11600
+    },
+    {
+      "word": "for",
+      "startMs": 11600,
+      "endMs": 12200
+    },
+    {
+      "word": "multi-day",
+      "startMs": 12200,
+      "endMs": 12800
+    },
+    {
+      "word": "autonomous",
+      "startMs": 12800,
+      "endMs": 13400
+    },
+    {
+      "word": "research.",
+      "startMs": 13400,
+      "endMs": 14000
+    },
+    {
+      "word": "Deep",
+      "startMs": 14000,
+      "endMs": 14600
+    },
+    {
+      "word": "reasoning.",
+      "startMs": 14600,
+      "endMs": 15200
+    },
+    {
+      "word": "Long",
+      "startMs": 15200,
+      "endMs": 15800
+    },
+    {
+      "word": "horizon",
+      "startMs": 15800,
+      "endMs": 16400
+    },
+    {
+      "word": "tasks.",
+      "startMs": 16400,
+      "endMs": 17000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 17000,
+      "endMs": 17285
+    },
+    {
+      "word": "hands",
+      "startMs": 17285,
+      "endMs": 17571
+    },
+    {
+      "word": "Fable",
+      "startMs": 17571,
+      "endMs": 17857
+    },
+    {
+      "word": "5",
+      "startMs": 17857,
+      "endMs": 18142
+    },
+    {
+      "word": "broken",
+      "startMs": 18142,
+      "endMs": 18428
+    },
+    {
+      "word": "banana",
+      "startMs": 18428,
+      "endMs": 18714
+    },
+    {
+      "word": "code.",
+      "startMs": 18714,
+      "endMs": 19000
+    },
+    {
+      "word": "Fable",
+      "startMs": 19000,
+      "endMs": 19333
+    },
+    {
+      "word": "5",
+      "startMs": 19333,
+      "endMs": 19666
+    },
+    {
+      "word": "stares",
+      "startMs": 19666,
+      "endMs": 20000
+    },
+    {
+      "word": "at",
+      "startMs": 20000,
+      "endMs": 20333
+    },
+    {
+      "word": "the",
+      "startMs": 20333,
+      "endMs": 20666
+    },
+    {
+      "word": "screen.",
+      "startMs": 20666,
+      "endMs": 21000
+    },
+    {
+      "word": "Thinks",
+      "startMs": 21000,
+      "endMs": 21400
+    },
+    {
+      "word": "for",
+      "startMs": 21400,
+      "endMs": 21800
+    },
+    {
+      "word": "five",
+      "startMs": 21800,
+      "endMs": 22200
+    },
+    {
+      "word": "days",
+      "startMs": 22200,
+      "endMs": 22600
+    },
+    {
+      "word": "straight!",
+      "startMs": 22600,
+      "endMs": 23000
+    },
+    {
+      "word": "No",
+      "startMs": 23000,
+      "endMs": 23400
+    },
+    {
+      "word": "sleep.",
+      "startMs": 23400,
+      "endMs": 23800
+    },
+    {
+      "word": "No",
+      "startMs": 23800,
+      "endMs": 24200
+    },
+    {
+      "word": "banana",
+      "startMs": 24200,
+      "endMs": 24600
+    },
+    {
+      "word": "break.",
+      "startMs": 24600,
+      "endMs": 25000
+    },
+    {
+      "word": "Rebuilds",
+      "startMs": 25000,
+      "endMs": 25333
+    },
+    {
+      "word": "the",
+      "startMs": 25333,
+      "endMs": 25666
+    },
+    {
+      "word": "entire",
+      "startMs": 25666,
+      "endMs": 26000
+    },
+    {
+      "word": "factory",
+      "startMs": 26000,
+      "endMs": 26333
+    },
+    {
+      "word": "from",
+      "startMs": 26333,
+      "endMs": 26666
+    },
+    {
+      "word": "scratch!",
+      "startMs": 26666,
+      "endMs": 27000
+    },
+    {
+      "word": "Fable",
+      "startMs": 27000,
+      "endMs": 27428
+    },
+    {
+      "word": "5",
+      "startMs": 27428,
+      "endMs": 27857
+    },
+    {
+      "word": "gets",
+      "startMs": 27857,
+      "endMs": 28285
+    },
+    {
+      "word": "top",
+      "startMs": 28285,
+      "endMs": 28714
+    },
+    {
+      "word": "scores",
+      "startMs": 28714,
+      "endMs": 29142
+    },
+    {
+      "word": "on",
+      "startMs": 29142,
+      "endMs": 29571
+    },
+    {
+      "word": "SWE-bench!",
+      "startMs": 29571,
+      "endMs": 30000
+    },
+    {
+      "word": "Number",
+      "startMs": 30000,
+      "endMs": 30333
+    },
+    {
+      "word": "one",
+      "startMs": 30333,
+      "endMs": 30666
+    },
+    {
+      "word": "on",
+      "startMs": 30666,
+      "endMs": 31000
+    },
+    {
+      "word": "the",
+      "startMs": 31000,
+      "endMs": 31333
+    },
+    {
+      "word": "AI",
+      "startMs": 31333,
+      "endMs": 31666
+    },
+    {
+      "word": "index!",
+      "startMs": 31666,
+      "endMs": 32000
+    },
+    {
+      "word": "Gorilla",
+      "startMs": 32000,
+      "endMs": 32500
+    },
+    {
+      "word": "dominates",
+      "startMs": 32500,
+      "endMs": 33000
+    },
+    {
+      "word": "every",
+      "startMs": 33000,
+      "endMs": 33500
+    },
+    {
+      "word": "test.",
+      "startMs": 33500,
+      "endMs": 34000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 34000,
+      "endMs": 34333
+    },
+    {
+      "word": "happy!",
+      "startMs": 34333,
+      "endMs": 34666
+    },
+    {
+      "word": "Monkey",
+      "startMs": 34666,
+      "endMs": 35000
+    },
+    {
+      "word": "hires",
+      "startMs": 35000,
+      "endMs": 35333
+    },
+    {
+      "word": "Fable",
+      "startMs": 35333,
+      "endMs": 35666
+    },
+    {
+      "word": "5!",
+      "startMs": 35666,
+      "endMs": 36000
+    },
+    {
+      "word": "Then",
+      "startMs": 36000,
+      "endMs": 36400
+    },
+    {
+      "word": "Monkey",
+      "startMs": 36400,
+      "endMs": 36800
+    },
+    {
+      "word": "gets",
+      "startMs": 36800,
+      "endMs": 37200
+    },
+    {
+      "word": "the",
+      "startMs": 37200,
+      "endMs": 37600
+    },
+    {
+      "word": "bill.",
+      "startMs": 37600,
+      "endMs": 38000
+    },
+    {
+      "word": "Input",
+      "startMs": 38000,
+      "endMs": 38428
+    },
+    {
+      "word": "costs",
+      "startMs": 38428,
+      "endMs": 38857
+    },
+    {
+      "word": "ten",
+      "startMs": 38857,
+      "endMs": 39285
+    },
+    {
+      "word": "bananas",
+      "startMs": 39285,
+      "endMs": 39714
+    },
+    {
+      "word": "per",
+      "startMs": 39714,
+      "endMs": 40142
+    },
+    {
+      "word": "million",
+      "startMs": 40142,
+      "endMs": 40571
+    },
+    {
+      "word": "words.",
+      "startMs": 40571,
+      "endMs": 41000
+    },
+    {
+      "word": "Output",
+      "startMs": 41000,
+      "endMs": 41428
+    },
+    {
+      "word": "costs",
+      "startMs": 41428,
+      "endMs": 41857
+    },
+    {
+      "word": "fifty",
+      "startMs": 41857,
+      "endMs": 42285
+    },
+    {
+      "word": "bananas",
+      "startMs": 42285,
+      "endMs": 42714
+    },
+    {
+      "word": "per",
+      "startMs": 42714,
+      "endMs": 43142
+    },
+    {
+      "word": "million",
+      "startMs": 43142,
+      "endMs": 43571
+    },
+    {
+      "word": "words.",
+      "startMs": 43571,
+      "endMs": 44000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 44000,
+      "endMs": 44500
+    },
+    {
+      "word": "reads",
+      "startMs": 44500,
+      "endMs": 45000
+    },
+    {
+      "word": "the",
+      "startMs": 45000,
+      "endMs": 45500
+    },
+    {
+      "word": "invoice",
+      "startMs": 45500,
+      "endMs": 46000
+    },
+    {
+      "word": "three",
+      "startMs": 46000,
+      "endMs": 46500
+    },
+    {
+      "word": "times.",
+      "startMs": 46500,
+      "endMs": 47000
+    },
+    {
+      "word": "Your",
+      "startMs": 47000,
+      "endMs": 47250
+    },
+    {
+      "word": "card",
+      "startMs": 47250,
+      "endMs": 47500
+    },
+    {
+      "word": "was",
+      "startMs": 47500,
+      "endMs": 47750
+    },
+    {
+      "word": "declined!",
+      "startMs": 47750,
+      "endMs": 48000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 48000,
+      "endMs": 48666
+    },
+    {
+      "word": "wallet",
+      "startMs": 48666,
+      "endMs": 49333
+    },
+    {
+      "word": "empty.",
+      "startMs": 49333,
+      "endMs": 50000
+    },
+    {
+      "word": "Pesky",
+      "startMs": 50000,
+      "endMs": 50333
+    },
+    {
+      "word": "gorilla",
+      "startMs": 50333,
+      "endMs": 50666
+    },
+    {
+      "word": "pricing.",
+      "startMs": 50666,
+      "endMs": 51000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 51000,
+      "endMs": 51500
+    },
+    {
+      "word": "poor...",
+      "startMs": 51500,
+      "endMs": 52000
+    },
+    {
+      "word": "monkey",
+      "startMs": 52000,
+      "endMs": 52500
+    },
+    {
+      "word": "sad...",
+      "startMs": 52500,
+      "endMs": 53000
+    },
+    {
+      "word": "Option",
+      "startMs": 53000,
+      "endMs": 53428
+    },
+    {
+      "word": "two.",
+      "startMs": 53428,
+      "endMs": 53857
+    },
+    {
+      "word": "Hire",
+      "startMs": 53857,
+      "endMs": 54285
+    },
+    {
+      "word": "Chimp",
+      "startMs": 54285,
+      "endMs": 54714
+    },
+    {
+      "word": "Engineer",
+      "startMs": 54714,
+      "endMs": 55142
+    },
+    {
+      "word": "Opus",
+      "startMs": 55142,
+      "endMs": 55571
+    },
+    {
+      "word": "5.",
+      "startMs": 55571,
+      "endMs": 56000
+    },
+    {
+      "word": "Opus",
+      "startMs": 56000,
+      "endMs": 56333
+    },
+    {
+      "word": "5",
+      "startMs": 56333,
+      "endMs": 56666
+    },
+    {
+      "word": "is",
+      "startMs": 56666,
+      "endMs": 57000
+    },
+    {
+      "word": "the",
+      "startMs": 57000,
+      "endMs": 57333
+    },
+    {
+      "word": "flagship",
+      "startMs": 57333,
+      "endMs": 57666
+    },
+    {
+      "word": "workhorse!",
+      "startMs": 57666,
+      "endMs": 58000
+    },
+    {
+      "word": "Built",
+      "startMs": 58000,
+      "endMs": 58400
+    },
+    {
+      "word": "for",
+      "startMs": 58400,
+      "endMs": 58800
+    },
+    {
+      "word": "daily",
+      "startMs": 58800,
+      "endMs": 59200
+    },
+    {
+      "word": "software",
+      "startMs": 59200,
+      "endMs": 59600
+    },
+    {
+      "word": "engineering.",
+      "startMs": 59600,
+      "endMs": 60000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 60000,
+      "endMs": 60428
+    },
+    {
+      "word": "hands",
+      "startMs": 60428,
+      "endMs": 60857
+    },
+    {
+      "word": "Opus",
+      "startMs": 60857,
+      "endMs": 61285
+    },
+    {
+      "word": "5",
+      "startMs": 61285,
+      "endMs": 61714
+    },
+    {
+      "word": "one",
+      "startMs": 61714,
+      "endMs": 62142
+    },
+    {
+      "word": "million",
+      "startMs": 62142,
+      "endMs": 62571
+    },
+    {
+      "word": "scrolls.",
+      "startMs": 62571,
+      "endMs": 63000
+    },
+    {
+      "word": "Opus",
+      "startMs": 63000,
+      "endMs": 63285
+    },
+    {
+      "word": "5",
+      "startMs": 63285,
+      "endMs": 63571
+    },
+    {
+      "word": "reads",
+      "startMs": 63571,
+      "endMs": 63857
+    },
+    {
+      "word": "everything",
+      "startMs": 63857,
+      "endMs": 64142
+    },
+    {
+      "word": "in",
+      "startMs": 64142,
+      "endMs": 64428
+    },
+    {
+      "word": "one",
+      "startMs": 64428,
+      "endMs": 64714
+    },
+    {
+      "word": "second!",
+      "startMs": 64714,
+      "endMs": 65000
+    },
+    {
+      "word": "One",
+      "startMs": 65000,
+      "endMs": 65600
+    },
+    {
+      "word": "million",
+      "startMs": 65600,
+      "endMs": 66200
+    },
+    {
+      "word": "token",
+      "startMs": 66200,
+      "endMs": 66800
+    },
+    {
+      "word": "context",
+      "startMs": 66800,
+      "endMs": 67400
+    },
+    {
+      "word": "window!",
+      "startMs": 67400,
+      "endMs": 68000
+    },
+    {
+      "word": "Fixes",
+      "startMs": 68000,
+      "endMs": 68666
+    },
+    {
+      "word": "code.",
+      "startMs": 68666,
+      "endMs": 69333
+    },
+    {
+      "word": "Builds",
+      "startMs": 69333,
+      "endMs": 70000
+    },
+    {
+      "word": "tools.",
+      "startMs": 70000,
+      "endMs": 70666
+    },
+    {
+      "word": "Audits",
+      "startMs": 70666,
+      "endMs": 71333
+    },
+    {
+      "word": "security.",
+      "startMs": 71333,
+      "endMs": 72000
+    },
+    {
+      "word": "Finished",
+      "startMs": 72000,
+      "endMs": 72250
+    },
+    {
+      "word": "before",
+      "startMs": 72250,
+      "endMs": 72500
+    },
+    {
+      "word": "lunch",
+      "startMs": 72500,
+      "endMs": 72750
+    },
+    {
+      "word": "time.",
+      "startMs": 72750,
+      "endMs": 73000
+    },
+    {
+      "word": "On",
+      "startMs": 73000,
+      "endMs": 73375
+    },
+    {
+      "word": "intelligence",
+      "startMs": 73375,
+      "endMs": 73750
+    },
+    {
+      "word": "tests,",
+      "startMs": 73750,
+      "endMs": 74125
+    },
+    {
+      "word": "Opus",
+      "startMs": 74125,
+      "endMs": 74500
+    },
+    {
+      "word": "5",
+      "startMs": 74500,
+      "endMs": 74875
+    },
+    {
+      "word": "ties",
+      "startMs": 74875,
+      "endMs": 75250
+    },
+    {
+      "word": "Fable",
+      "startMs": 75250,
+      "endMs": 75625
+    },
+    {
+      "word": "5!",
+      "startMs": 75625,
+      "endMs": 76000
+    },
+    {
+      "word": "Same",
+      "startMs": 76000,
+      "endMs": 76600
+    },
+    {
+      "word": "brain.",
+      "startMs": 76600,
+      "endMs": 77200
+    },
+    {
+      "word": "Same",
+      "startMs": 77200,
+      "endMs": 77800
+    },
+    {
+      "word": "gorilla-level",
+      "startMs": 77800,
+      "endMs": 78400
+    },
+    {
+      "word": "reasoning.",
+      "startMs": 78400,
+      "endMs": 79000
+    },
+    {
+      "word": "But",
+      "startMs": 79000,
+      "endMs": 79250
+    },
+    {
+      "word": "Opus",
+      "startMs": 79250,
+      "endMs": 79500
+    },
+    {
+      "word": "5",
+      "startMs": 79500,
+      "endMs": 79750
+    },
+    {
+      "word": "wears",
+      "startMs": 79750,
+      "endMs": 80000
+    },
+    {
+      "word": "a",
+      "startMs": 80000,
+      "endMs": 80250
+    },
+    {
+      "word": "yellow",
+      "startMs": 80250,
+      "endMs": 80500
+    },
+    {
+      "word": "hard",
+      "startMs": 80500,
+      "endMs": 80750
+    },
+    {
+      "word": "hat.",
+      "startMs": 80750,
+      "endMs": 81000
+    },
+    {
+      "word": "Shows",
+      "startMs": 81000,
+      "endMs": 81285
+    },
+    {
+      "word": "up",
+      "startMs": 81285,
+      "endMs": 81571
+    },
+    {
+      "word": "to",
+      "startMs": 81571,
+      "endMs": 81857
+    },
+    {
+      "word": "work",
+      "startMs": 81857,
+      "endMs": 82142
+    },
+    {
+      "word": "every",
+      "startMs": 82142,
+      "endMs": 82428
+    },
+    {
+      "word": "single",
+      "startMs": 82428,
+      "endMs": 82714
+    },
+    {
+      "word": "day.",
+      "startMs": 82714,
+      "endMs": 83000
+    },
+    {
+      "word": "Best",
+      "startMs": 83000,
+      "endMs": 83285
+    },
+    {
+      "word": "of",
+      "startMs": 83285,
+      "endMs": 83571
+    },
+    {
+      "word": "all,",
+      "startMs": 83571,
+      "endMs": 83857
+    },
+    {
+      "word": "Opus",
+      "startMs": 83857,
+      "endMs": 84142
+    },
+    {
+      "word": "5",
+      "startMs": 84142,
+      "endMs": 84428
+    },
+    {
+      "word": "costs",
+      "startMs": 84428,
+      "endMs": 84714
+    },
+    {
+      "word": "half!",
+      "startMs": 84714,
+      "endMs": 85000
+    },
+    {
+      "word": "Five",
+      "startMs": 85000,
+      "endMs": 85500
+    },
+    {
+      "word": "bananas",
+      "startMs": 85500,
+      "endMs": 86000
+    },
+    {
+      "word": "input",
+      "startMs": 86000,
+      "endMs": 86500
+    },
+    {
+      "word": "per",
+      "startMs": 86500,
+      "endMs": 87000
+    },
+    {
+      "word": "million",
+      "startMs": 87000,
+      "endMs": 87500
+    },
+    {
+      "word": "words.",
+      "startMs": 87500,
+      "endMs": 88000
+    },
+    {
+      "word": "Twenty-five",
+      "startMs": 88000,
+      "endMs": 88500
+    },
+    {
+      "word": "bananas",
+      "startMs": 88500,
+      "endMs": 89000
+    },
+    {
+      "word": "output",
+      "startMs": 89000,
+      "endMs": 89500
+    },
+    {
+      "word": "per",
+      "startMs": 89500,
+      "endMs": 90000
+    },
+    {
+      "word": "million",
+      "startMs": 90000,
+      "endMs": 90500
+    },
+    {
+      "word": "words.",
+      "startMs": 90500,
+      "endMs": 91000
+    },
+    {
+      "word": "Half",
+      "startMs": 91000,
+      "endMs": 91500
+    },
+    {
+      "word": "price!",
+      "startMs": 91500,
+      "endMs": 92000
+    },
+    {
+      "word": "Same",
+      "startMs": 92000,
+      "endMs": 92500
+    },
+    {
+      "word": "intelligence!",
+      "startMs": 92500,
+      "endMs": 93000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 93000,
+      "endMs": 93800
+    },
+    {
+      "word": "wallet",
+      "startMs": 93800,
+      "endMs": 94600
+    },
+    {
+      "word": "happy!",
+      "startMs": 94600,
+      "endMs": 95400
+    },
+    {
+      "word": "Monkey",
+      "startMs": 95400,
+      "endMs": 96200
+    },
+    {
+      "word": "rich!",
+      "startMs": 96200,
+      "endMs": 97000
+    },
+    {
+      "word": "But",
+      "startMs": 97000,
+      "endMs": 97428
+    },
+    {
+      "word": "wait.",
+      "startMs": 97428,
+      "endMs": 97857
+    },
+    {
+      "word": "Which",
+      "startMs": 97857,
+      "endMs": 98285
+    },
+    {
+      "word": "model",
+      "startMs": 98285,
+      "endMs": 98714
+    },
+    {
+      "word": "is",
+      "startMs": 98714,
+      "endMs": 99142
+    },
+    {
+      "word": "actually",
+      "startMs": 99142,
+      "endMs": 99571
+    },
+    {
+      "word": "better?",
+      "startMs": 99571,
+      "endMs": 100000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 100000,
+      "endMs": 100166
+    },
+    {
+      "word": "runs",
+      "startMs": 100166,
+      "endMs": 100333
+    },
+    {
+      "word": "a",
+      "startMs": 100333,
+      "endMs": 100500
+    },
+    {
+      "word": "jungle",
+      "startMs": 100500,
+      "endMs": 100666
+    },
+    {
+      "word": "stress",
+      "startMs": 100666,
+      "endMs": 100833
+    },
+    {
+      "word": "test.",
+      "startMs": 100833,
+      "endMs": 101000
+    },
+    {
+      "word": "Gives",
+      "startMs": 101000,
+      "endMs": 101250
+    },
+    {
+      "word": "both",
+      "startMs": 101250,
+      "endMs": 101500
+    },
+    {
+      "word": "models",
+      "startMs": 101500,
+      "endMs": 101750
+    },
+    {
+      "word": "the",
+      "startMs": 101750,
+      "endMs": 102000
+    },
+    {
+      "word": "exact",
+      "startMs": 102000,
+      "endMs": 102250
+    },
+    {
+      "word": "same",
+      "startMs": 102250,
+      "endMs": 102500
+    },
+    {
+      "word": "broken",
+      "startMs": 102500,
+      "endMs": 102750
+    },
+    {
+      "word": "app.",
+      "startMs": 102750,
+      "endMs": 103000
+    },
+    {
+      "word": "Fable",
+      "startMs": 103000,
+      "endMs": 103500
+    },
+    {
+      "word": "5",
+      "startMs": 103500,
+      "endMs": 104000
+    },
+    {
+      "word": "disappears",
+      "startMs": 104000,
+      "endMs": 104500
+    },
+    {
+      "word": "for",
+      "startMs": 104500,
+      "endMs": 105000
+    },
+    {
+      "word": "three",
+      "startMs": 105000,
+      "endMs": 105500
+    },
+    {
+      "word": "days.",
+      "startMs": 105500,
+      "endMs": 106000
+    },
+    {
+      "word": "Returns",
+      "startMs": 106000,
+      "endMs": 106400
+    },
+    {
+      "word": "with",
+      "startMs": 106400,
+      "endMs": 106800
+    },
+    {
+      "word": "a",
+      "startMs": 106800,
+      "endMs": 107200
+    },
+    {
+      "word": "complex",
+      "startMs": 107200,
+      "endMs": 107600
+    },
+    {
+      "word": "masterpiece.",
+      "startMs": 107600,
+      "endMs": 108000
+    },
+    {
+      "word": "Opus",
+      "startMs": 108000,
+      "endMs": 108250
+    },
+    {
+      "word": "5",
+      "startMs": 108250,
+      "endMs": 108500
+    },
+    {
+      "word": "fixes",
+      "startMs": 108500,
+      "endMs": 108750
+    },
+    {
+      "word": "the",
+      "startMs": 108750,
+      "endMs": 109000
+    },
+    {
+      "word": "bug",
+      "startMs": 109000,
+      "endMs": 109250
+    },
+    {
+      "word": "in",
+      "startMs": 109250,
+      "endMs": 109500
+    },
+    {
+      "word": "two",
+      "startMs": 109500,
+      "endMs": 109750
+    },
+    {
+      "word": "hours.",
+      "startMs": 109750,
+      "endMs": 110000
+    },
+    {
+      "word": "Both",
+      "startMs": 110000,
+      "endMs": 110250
+    },
+    {
+      "word": "apps",
+      "startMs": 110250,
+      "endMs": 110500
+    },
+    {
+      "word": "work",
+      "startMs": 110500,
+      "endMs": 110750
+    },
+    {
+      "word": "perfectly.",
+      "startMs": 110750,
+      "endMs": 111000
+    },
+    {
+      "word": "So",
+      "startMs": 111000,
+      "endMs": 111500
+    },
+    {
+      "word": "what",
+      "startMs": 111500,
+      "endMs": 112000
+    },
+    {
+      "word": "is",
+      "startMs": 112000,
+      "endMs": 112500
+    },
+    {
+      "word": "the",
+      "startMs": 112500,
+      "endMs": 113000
+    },
+    {
+      "word": "secret",
+      "startMs": 113000,
+      "endMs": 113500
+    },
+    {
+      "word": "difference?",
+      "startMs": 113500,
+      "endMs": 114000
+    },
+    {
+      "word": "Fable",
+      "startMs": 114000,
+      "endMs": 114428
+    },
+    {
+      "word": "5",
+      "startMs": 114428,
+      "endMs": 114857
+    },
+    {
+      "word": "thinks",
+      "startMs": 114857,
+      "endMs": 115285
+    },
+    {
+      "word": "deeper",
+      "startMs": 115285,
+      "endMs": 115714
+    },
+    {
+      "word": "and",
+      "startMs": 115714,
+      "endMs": 116142
+    },
+    {
+      "word": "takes",
+      "startMs": 116142,
+      "endMs": 116571
+    },
+    {
+      "word": "longer.",
+      "startMs": 116571,
+      "endMs": 117000
+    },
+    {
+      "word": "Opus",
+      "startMs": 117000,
+      "endMs": 117375
+    },
+    {
+      "word": "5",
+      "startMs": 117375,
+      "endMs": 117750
+    },
+    {
+      "word": "thinks",
+      "startMs": 117750,
+      "endMs": 118125
+    },
+    {
+      "word": "fast",
+      "startMs": 118125,
+      "endMs": 118500
+    },
+    {
+      "word": "and",
+      "startMs": 118500,
+      "endMs": 118875
+    },
+    {
+      "word": "ships",
+      "startMs": 118875,
+      "endMs": 119250
+    },
+    {
+      "word": "code",
+      "startMs": 119250,
+      "endMs": 119625
+    },
+    {
+      "word": "faster.",
+      "startMs": 119625,
+      "endMs": 120000
+    },
+    {
+      "word": "Same",
+      "startMs": 120000,
+      "endMs": 120400
+    },
+    {
+      "word": "destination.",
+      "startMs": 120400,
+      "endMs": 120800
+    },
+    {
+      "word": "Different",
+      "startMs": 120800,
+      "endMs": 121200
+    },
+    {
+      "word": "jungle",
+      "startMs": 121200,
+      "endMs": 121600
+    },
+    {
+      "word": "paths.",
+      "startMs": 121600,
+      "endMs": 122000
+    },
+    {
+      "word": "Option",
+      "startMs": 122000,
+      "endMs": 122600
+    },
+    {
+      "word": "three.",
+      "startMs": 122600,
+      "endMs": 123200
+    },
+    {
+      "word": "Secret",
+      "startMs": 123200,
+      "endMs": 123800
+    },
+    {
+      "word": "jungle",
+      "startMs": 123800,
+      "endMs": 124400
+    },
+    {
+      "word": "discounts.",
+      "startMs": 124400,
+      "endMs": 125000
+    },
+    {
+      "word": "Both",
+      "startMs": 125000,
+      "endMs": 125400
+    },
+    {
+      "word": "models",
+      "startMs": 125400,
+      "endMs": 125800
+    },
+    {
+      "word": "have",
+      "startMs": 125800,
+      "endMs": 126200
+    },
+    {
+      "word": "Adaptive",
+      "startMs": 126200,
+      "endMs": 126600
+    },
+    {
+      "word": "Thinking.",
+      "startMs": 126600,
+      "endMs": 127000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 127000,
+      "endMs": 127250
+    },
+    {
+      "word": "turns",
+      "startMs": 127250,
+      "endMs": 127500
+    },
+    {
+      "word": "the",
+      "startMs": 127500,
+      "endMs": 127750
+    },
+    {
+      "word": "brain",
+      "startMs": 127750,
+      "endMs": 128000
+    },
+    {
+      "word": "knob",
+      "startMs": 128000,
+      "endMs": 128250
+    },
+    {
+      "word": "up",
+      "startMs": 128250,
+      "endMs": 128500
+    },
+    {
+      "word": "or",
+      "startMs": 128500,
+      "endMs": 128750
+    },
+    {
+      "word": "down.",
+      "startMs": 128750,
+      "endMs": 129000
+    },
+    {
+      "word": "Low",
+      "startMs": 129000,
+      "endMs": 129500
+    },
+    {
+      "word": "effort",
+      "startMs": 129500,
+      "endMs": 130000
+    },
+    {
+      "word": "for",
+      "startMs": 130000,
+      "endMs": 130500
+    },
+    {
+      "word": "quick",
+      "startMs": 130500,
+      "endMs": 131000
+    },
+    {
+      "word": "simple",
+      "startMs": 131000,
+      "endMs": 131500
+    },
+    {
+      "word": "answers.",
+      "startMs": 131500,
+      "endMs": 132000
+    },
+    {
+      "word": "Max",
+      "startMs": 132000,
+      "endMs": 132333
+    },
+    {
+      "word": "effort",
+      "startMs": 132333,
+      "endMs": 132666
+    },
+    {
+      "word": "for",
+      "startMs": 132666,
+      "endMs": 133000
+    },
+    {
+      "word": "deep",
+      "startMs": 133000,
+      "endMs": 133333
+    },
+    {
+      "word": "gorilla",
+      "startMs": 133333,
+      "endMs": 133666
+    },
+    {
+      "word": "reasoning.",
+      "startMs": 133666,
+      "endMs": 134000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 134000,
+      "endMs": 134333
+    },
+    {
+      "word": "controls",
+      "startMs": 134333,
+      "endMs": 134666
+    },
+    {
+      "word": "how",
+      "startMs": 134666,
+      "endMs": 135000
+    },
+    {
+      "word": "hard",
+      "startMs": 135000,
+      "endMs": 135333
+    },
+    {
+      "word": "they",
+      "startMs": 135333,
+      "endMs": 135666
+    },
+    {
+      "word": "think!",
+      "startMs": 135666,
+      "endMs": 136000
+    },
+    {
+      "word": "Both",
+      "startMs": 136000,
+      "endMs": 136333
+    },
+    {
+      "word": "models",
+      "startMs": 136333,
+      "endMs": 136666
+    },
+    {
+      "word": "use",
+      "startMs": 136666,
+      "endMs": 137000
+    },
+    {
+      "word": "pre-peeled",
+      "startMs": 137000,
+      "endMs": 137333
+    },
+    {
+      "word": "banana",
+      "startMs": 137333,
+      "endMs": 137666
+    },
+    {
+      "word": "caching.",
+      "startMs": 137666,
+      "endMs": 138000
+    },
+    {
+      "word": "Show",
+      "startMs": 138000,
+      "endMs": 138333
+    },
+    {
+      "word": "the",
+      "startMs": 138333,
+      "endMs": 138666
+    },
+    {
+      "word": "same",
+      "startMs": 138666,
+      "endMs": 139000
+    },
+    {
+      "word": "scroll",
+      "startMs": 139000,
+      "endMs": 139333
+    },
+    {
+      "word": "blueprint",
+      "startMs": 139333,
+      "endMs": 139666
+    },
+    {
+      "word": "twice?",
+      "startMs": 139666,
+      "endMs": 140000
+    },
+    {
+      "word": "Monkey",
+      "startMs": 140000,
+      "endMs": 140333
+    },
+    {
+      "word": "Bank",
+      "startMs": 140333,
+      "endMs": 140666
+    },
+    {
+      "word": "gives",
+      "startMs": 140666,
+      "endMs": 141000
+    },
+    {
+      "word": "ninety",
+      "startMs": 141000,
+      "endMs": 141333
+    },
+    {
+      "word": "percent",
+      "startMs": 141333,
+      "endMs": 141666
+    },
+    {
+      "word": "discount!",
+      "startMs": 141666,
+      "endMs": 142000
+    },
+    {
+      "word": "Opus",
+      "startMs": 142000,
+      "endMs": 142375
+    },
+    {
+      "word": "5",
+      "startMs": 142375,
+      "endMs": 142750
+    },
+    {
+      "word": "cached",
+      "startMs": 142750,
+      "endMs": 143125
+    },
+    {
+      "word": "input",
+      "startMs": 143125,
+      "endMs": 143500
+    },
+    {
+      "word": "costs",
+      "startMs": 143500,
+      "endMs": 143875
+    },
+    {
+      "word": "half",
+      "startMs": 143875,
+      "endMs": 144250
+    },
+    {
+      "word": "a",
+      "startMs": 144250,
+      "endMs": 144625
+    },
+    {
+      "word": "banana.",
+      "startMs": 144625,
+      "endMs": 145000
+    },
+    {
+      "word": "Fable",
+      "startMs": 145000,
+      "endMs": 145428
+    },
+    {
+      "word": "5",
+      "startMs": 145428,
+      "endMs": 145857
+    },
+    {
+      "word": "cached",
+      "startMs": 145857,
+      "endMs": 146285
+    },
+    {
+      "word": "input",
+      "startMs": 146285,
+      "endMs": 146714
+    },
+    {
+      "word": "costs",
+      "startMs": 146714,
+      "endMs": 147142
+    },
+    {
+      "word": "one",
+      "startMs": 147142,
+      "endMs": 147571
+    },
+    {
+      "word": "banana.",
+      "startMs": 147571,
+      "endMs": 148000
+    },
+    {
+      "word": "Jungle",
+      "startMs": 148000,
+      "endMs": 148285
+    },
+    {
+      "word": "startup",
+      "startMs": 148285,
+      "endMs": 148571
+    },
+    {
+      "word": "runs",
+      "startMs": 148571,
+      "endMs": 148857
+    },
+    {
+      "word": "super",
+      "startMs": 148857,
+      "endMs": 149142
+    },
+    {
+      "word": "cheap",
+      "startMs": 149142,
+      "endMs": 149428
+    },
+    {
+      "word": "with",
+      "startMs": 149428,
+      "endMs": 149714
+    },
+    {
+      "word": "caching!",
+      "startMs": 149714,
+      "endMs": 150000
+    },
+    {
+      "word": "So",
+      "startMs": 150000,
+      "endMs": 150333
+    },
+    {
+      "word": "which",
+      "startMs": 150333,
+      "endMs": 150666
+    },
+    {
+      "word": "model",
+      "startMs": 150666,
+      "endMs": 151000
+    },
+    {
+      "word": "should",
+      "startMs": 151000,
+      "endMs": 151333
+    },
+    {
+      "word": "Monkey",
+      "startMs": 151333,
+      "endMs": 151666
+    },
+    {
+      "word": "pick?",
+      "startMs": 151666,
+      "endMs": 152000
+    },
+    {
+      "word": "Multi-day",
+      "startMs": 152000,
+      "endMs": 152500
+    },
+    {
+      "word": "autonomous",
+      "startMs": 152500,
+      "endMs": 153000
+    },
+    {
+      "word": "research",
+      "startMs": 153000,
+      "endMs": 153500
+    },
+    {
+      "word": "jobs?",
+      "startMs": 153500,
+      "endMs": 154000
+    },
+    {
+      "word": "Complex",
+      "startMs": 154000,
+      "endMs": 154500
+    },
+    {
+      "word": "multi-step",
+      "startMs": 154500,
+      "endMs": 155000
+    },
+    {
+      "word": "engineering",
+      "startMs": 155000,
+      "endMs": 155500
+    },
+    {
+      "word": "projects?",
+      "startMs": 155500,
+      "endMs": 156000
+    },
+    {
+      "word": "Hire",
+      "startMs": 156000,
+      "endMs": 156500
+    },
+    {
+      "word": "Gorilla",
+      "startMs": 156500,
+      "endMs": 157000
+    },
+    {
+      "word": "Fable",
+      "startMs": 157000,
+      "endMs": 157500
+    },
+    {
+      "word": "5.",
+      "startMs": 157500,
+      "endMs": 158000
+    },
+    {
+      "word": "Worth",
+      "startMs": 158000,
+      "endMs": 158500
+    },
+    {
+      "word": "every",
+      "startMs": 158500,
+      "endMs": 159000
+    },
+    {
+      "word": "single",
+      "startMs": 159000,
+      "endMs": 159500
+    },
+    {
+      "word": "banana!",
+      "startMs": 159500,
+      "endMs": 160000
+    },
+    {
+      "word": "Daily",
+      "startMs": 160000,
+      "endMs": 160500
+    },
+    {
+      "word": "coding",
+      "startMs": 160500,
+      "endMs": 161000
+    },
+    {
+      "word": "copilots",
+      "startMs": 161000,
+      "endMs": 161500
+    },
+    {
+      "word": "and",
+      "startMs": 161500,
+      "endMs": 162000
+    },
+    {
+      "word": "chat",
+      "startMs": 162000,
+      "endMs": 162500
+    },
+    {
+      "word": "assistants?",
+      "startMs": 162500,
+      "endMs": 163000
+    },
+    {
+      "word": "Fast",
+      "startMs": 163000,
+      "endMs": 163500
+    },
+    {
+      "word": "reliable",
+      "startMs": 163500,
+      "endMs": 164000
+    },
+    {
+      "word": "software",
+      "startMs": 164000,
+      "endMs": 164500
+    },
+    {
+      "word": "engineering?",
+      "startMs": 164500,
+      "endMs": 165000
+    },
+    {
+      "word": "Hire",
+      "startMs": 165000,
+      "endMs": 165400
+    },
+    {
+      "word": "Chimp",
+      "startMs": 165400,
+      "endMs": 165800
+    },
+    {
+      "word": "Engineer",
+      "startMs": 165800,
+      "endMs": 166200
+    },
+    {
+      "word": "Opus",
+      "startMs": 166200,
+      "endMs": 166600
+    },
+    {
+      "word": "5!",
+      "startMs": 166600,
+      "endMs": 167000
+    },
+    {
+      "word": "Ninety-five",
+      "startMs": 167000,
+      "endMs": 167333
+    },
+    {
+      "word": "percent",
+      "startMs": 167333,
+      "endMs": 167666
+    },
+    {
+      "word": "performance",
+      "startMs": 167666,
+      "endMs": 168000
+    },
+    {
+      "word": "at",
+      "startMs": 168000,
+      "endMs": 168333
+    },
+    {
+      "word": "half",
+      "startMs": 168333,
+      "endMs": 168666
+    },
+    {
+      "word": "price!",
+      "startMs": 168666,
+      "endMs": 169000
+    },
+    {
+      "word": "Smart",
+      "startMs": 169000,
+      "endMs": 169250
+    },
+    {
+      "word": "Monkey",
+      "startMs": 169250,
+      "endMs": 169500
+    },
+    {
+      "word": "uses",
+      "startMs": 169500,
+      "endMs": 169750
+    },
+    {
+      "word": "both.",
+      "startMs": 169750,
+      "endMs": 170000
+    },
+    {
+      "word": "Fable",
+      "startMs": 170000,
+      "endMs": 170500
+    },
+    {
+      "word": "5",
+      "startMs": 170500,
+      "endMs": 171000
+    },
+    {
+      "word": "for",
+      "startMs": 171000,
+      "endMs": 171500
+    },
+    {
+      "word": "big",
+      "startMs": 171500,
+      "endMs": 172000
+    },
+    {
+      "word": "gorilla",
+      "startMs": 172000,
+      "endMs": 172500
+    },
+    {
+      "word": "tasks.",
+      "startMs": 172500,
+      "endMs": 173000
+    },
+    {
+      "word": "Opus",
+      "startMs": 173000,
+      "endMs": 173400
+    },
+    {
+      "word": "5",
+      "startMs": 173400,
+      "endMs": 173800
+    },
+    {
+      "word": "for",
+      "startMs": 173800,
+      "endMs": 174200
+    },
+    {
+      "word": "daily",
+      "startMs": 174200,
+      "endMs": 174600
+    },
+    {
+      "word": "engineering.",
+      "startMs": 174600,
+      "endMs": 175000
+    },
+    {
+      "word": "Two",
+      "startMs": 175000,
+      "endMs": 175500
+    },
+    {
+      "word": "monkeys.",
+      "startMs": 175500,
+      "endMs": 176000
+    },
+    {
+      "word": "One",
+      "startMs": 176000,
+      "endMs": 176500
+    },
+    {
+      "word": "jungle.",
+      "startMs": 176500,
+      "endMs": 177000
+    },
+    {
+      "word": "Maximum",
+      "startMs": 177000,
+      "endMs": 177500
+    },
+    {
+      "word": "bananas!",
+      "startMs": 177500,
+      "endMs": 178000
+    },
+    {
+      "word": "Save",
+      "startMs": 178000,
+      "endMs": 178333
+    },
+    {
+      "word": "your",
+      "startMs": 178333,
+      "endMs": 178666
+    },
+    {
+      "word": "bananas.",
+      "startMs": 178666,
+      "endMs": 179000
+    },
+    {
+      "word": "Subscribe",
+      "startMs": 179000,
+      "endMs": 179502
+    },
+    {
+      "word": "for",
+      "startMs": 179502,
+      "endMs": 180005
+    },
+    {
+      "word": "more",
+      "startMs": 180005,
+      "endMs": 180508
+    },
+    {
+      "word": "monkey",
+      "startMs": 180508,
+      "endMs": 181011
+    },
+    {
+      "word": "breakdowns!",
+      "startMs": 181011,
+      "endMs": 181514
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "projects/opus_vs_fable_project_16/voiceover.mp3",
+      "volume": 1.0
+    },
+    "music": {
+      "src": "projects/common_assets/bgm/monkeys_spinning_monkeys.mp3",
+      "volume": 0.22,
+      "loop": true,
+      "fadeInSeconds": 2.0,
+      "fadeOutSeconds": 3.0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "willow_004_ulti_leaf_01_red",
+  "frameCount": 1,
+  "canvas": {
+    "width": 272,
+    "height": 240
+  },
+  "anchor": {
+    "x": 136,
+    "y": 120
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 262,
+      "h": 240
+    }
+  ]
+}

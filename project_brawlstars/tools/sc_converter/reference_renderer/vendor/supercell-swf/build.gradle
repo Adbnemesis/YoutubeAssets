@@ -1,0 +1,133 @@
+plugins {
+    id "dev.donutquine.flatbuffers" version "1.0.8"
+    id 'java-library'
+    id 'maven-publish'
+    id 'signing'
+    
+    // https://github.com/yananhub/flying-gradle-plugin
+    id "tech.yanand.maven-central-publish" version "1.3.0"
+}
+
+group = 'dev.donutquine'
+version = project.version
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = uri("https://maven.pkg.github.com/danila-schelkov/*")
+        credentials {
+            username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+            password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+        }
+    }
+}
+
+dependencies {
+    implementation group: 'com.google.flatbuffers', name: 'flatbuffers-java', version: project.flatbuffers_version
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: project.slf4j_version
+    implementation group: 'dev.donutquine', name: 'sc-file', version: project.sc_file_version
+}
+
+import io.netifi.flatbuffers.plugin.tasks.FlatBuffers
+
+flatbuffers {
+    flatcPath = project.findProperty("flatc.path") ?: System.getenv("FLATC_PATH")
+    language = 'java'
+}
+
+tasks.withType(JavaCompile) {
+    options.release = 17
+}
+
+tasks.register('createFlatBuffers', FlatBuffers) {
+    inputDir = file("src/main/flatbuffers")
+    outputDir = file("src/generated/flatbuffers")
+    language = 'java'
+
+    delete outputDir
+}
+
+tasks.register("sourcesJar", Jar) {
+    archiveClassifier.set("sources")
+    from(sourceSets.main.allSource)     
+    from(tasks.named("createFlatBuffers").get().outputs)
+    
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.register("javadocJar", Jar) {
+    archiveClassifier.set("javadoc")
+    from(tasks.javadoc)
+}
+
+tasks.named("compileJava") {
+    dependsOn(tasks.named("createFlatBuffers"))
+}
+
+publishing {
+    repositories {
+        // GitHub Packages
+        maven {
+            name = "github"
+            url = uri("https://maven.pkg.github.com/danila-schelkov/supercell-swf")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifact(tasks.named("sourcesJar").get())
+            artifact(tasks.named("javadocJar").get())
+
+            pom {
+                name = "supercell-swf"
+                description = "A library for parsing Supercell SWF file format"
+                url = "https://github.com/danila-schelkov/supercell-swf"
+
+                licenses {
+                    license {
+                        name = "MIT License"
+                        url = "https://opensource.org/licenses/MIT"
+                        distribution = "repo"
+                    }
+                }
+
+                developers {
+                    developer {
+                        id = "danila-schelkov"
+                        name = "Danila Schelkov"
+                        email = "me@donutquine.dev"
+                    }
+                }
+
+                scm {
+                    url = "https://github.com/danila-schelkov/supercell-swf"
+                    connection = "scm:git:https://github.com/danila-schelkov/supercell-swf.git"
+                    developerConnection = "scm:git:ssh://git@github.com/danila-schelkov/supercell-swf.git"
+                }
+            }
+        }
+    }
+}
+
+signing {
+    useInMemoryPgpKeys(
+        findProperty("signing.key") as String,
+        findProperty("signing.password") as String
+    )
+    sign publishing.publications.mavenJava
+}
+
+import java.nio.charset.StandardCharsets
+
+mavenCentral {
+    def username = findProperty("sonatype.username") ?: System.getenv("SONATYPE_USERNAME")
+    def password = findProperty("sonatype.password") ?: System.getenv("SONATYPE_PASSWORD")
+
+    def credentials = "${username}:${password}"
+    authToken = credentials.getBytes(StandardCharsets.UTF_8).encodeBase64().toString()
+}

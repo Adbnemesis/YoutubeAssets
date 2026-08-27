@@ -1,0 +1,5934 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.24,
+      "text": "Monkey wants to build an automated banana factory, which new anthropic model does monkey",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 0.0,
+          "end": 0.44,
+          "probability": 0.763
+        },
+        {
+          "word": " wants",
+          "start": 0.44,
+          "end": 0.64,
+          "probability": 0.972
+        },
+        {
+          "word": " to",
+          "start": 0.64,
+          "end": 0.8,
+          "probability": 0.994
+        },
+        {
+          "word": " build",
+          "start": 0.8,
+          "end": 0.94,
+          "probability": 0.994
+        },
+        {
+          "word": " an",
+          "start": 0.94,
+          "end": 1.1,
+          "probability": 0.992
+        },
+        {
+          "word": " automated",
+          "start": 1.1,
+          "end": 1.5,
+          "probability": 0.952
+        },
+        {
+          "word": " banana",
+          "start": 1.5,
+          "end": 1.76,
+          "probability": 0.931
+        },
+        {
+          "word": " factory,",
+          "start": 1.76,
+          "end": 2.28,
+          "probability": 0.993
+        },
+        {
+          "word": " which",
+          "start": 2.58,
+          "end": 2.88,
+          "probability": 0.993
+        },
+        {
+          "word": " new",
+          "start": 2.88,
+          "end": 3.08,
+          "probability": 0.959
+        },
+        {
+          "word": " anthropic",
+          "start": 3.08,
+          "end": 3.6,
+          "probability": 0.888
+        },
+        {
+          "word": " model",
+          "start": 3.6,
+          "end": 3.82,
+          "probability": 0.96
+        },
+        {
+          "word": " does",
+          "start": 3.82,
+          "end": 4.04,
+          "probability": 0.696
+        },
+        {
+          "word": " monkey",
+          "start": 4.04,
+          "end": 4.24,
+          "probability": 0.203
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 4.24,
+      "end": 4.6,
+      "text": "hire.",
+      "words": [
+        {
+          "word": " hire.",
+          "start": 4.24,
+          "end": 4.6,
+          "probability": 0.91
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 4.92,
+      "end": 6.34,
+      "text": "There are two new apes in the jungle.",
+      "words": [
+        {
+          "word": " There",
+          "start": 4.92,
+          "end": 5.02,
+          "probability": 0.979
+        },
+        {
+          "word": " are",
+          "start": 5.02,
+          "end": 5.14,
+          "probability": 0.996
+        },
+        {
+          "word": " two",
+          "start": 5.14,
+          "end": 5.38,
+          "probability": 0.955
+        },
+        {
+          "word": " new",
+          "start": 5.38,
+          "end": 5.6,
+          "probability": 0.994
+        },
+        {
+          "word": " apes",
+          "start": 5.6,
+          "end": 5.86,
+          "probability": 0.953
+        },
+        {
+          "word": " in",
+          "start": 5.86,
+          "end": 5.96,
+          "probability": 0.989
+        },
+        {
+          "word": " the",
+          "start": 5.96,
+          "end": 6.04,
+          "probability": 0.997
+        },
+        {
+          "word": " jungle.",
+          "start": 6.04,
+          "end": 6.34,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 6.8,
+      "end": 7.38,
+      "text": "Option 1.",
+      "words": [
+        {
+          "word": " Option",
+          "start": 6.8,
+          "end": 7.02,
+          "probability": 0.821
+        },
+        {
+          "word": " 1.",
+          "start": 7.02,
+          "end": 7.38,
+          "probability": 0.6
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 7.66,
+      "end": 13.56,
+      "text": "Higher Gorilla Fable 5 Fable 5 is a giant mythos gorilla built from multi-day autonomous",
+      "words": [
+        {
+          "word": " Higher",
+          "start": 7.66,
+          "end": 7.88,
+          "probability": 0.629
+        },
+        {
+          "word": " Gorilla",
+          "start": 7.88,
+          "end": 8.32,
+          "probability": 0.77
+        },
+        {
+          "word": " Fable",
+          "start": 8.32,
+          "end": 8.72,
+          "probability": 0.634
+        },
+        {
+          "word": " 5",
+          "start": 8.72,
+          "end": 9.14,
+          "probability": 0.87
+        },
+        {
+          "word": " Fable",
+          "start": 9.14,
+          "end": 9.7,
+          "probability": 0.667
+        },
+        {
+          "word": " 5",
+          "start": 9.7,
+          "end": 10.08,
+          "probability": 0.99
+        },
+        {
+          "word": " is",
+          "start": 10.08,
+          "end": 10.24,
+          "probability": 0.987
+        },
+        {
+          "word": " a",
+          "start": 10.24,
+          "end": 10.36,
+          "probability": 0.995
+        },
+        {
+          "word": " giant",
+          "start": 10.36,
+          "end": 10.7,
+          "probability": 0.977
+        },
+        {
+          "word": " mythos",
+          "start": 10.7,
+          "end": 11.24,
+          "probability": 0.892
+        },
+        {
+          "word": " gorilla",
+          "start": 11.24,
+          "end": 11.58,
+          "probability": 0.777
+        },
+        {
+          "word": " built",
+          "start": 11.58,
+          "end": 12.16,
+          "probability": 0.669
+        },
+        {
+          "word": " from",
+          "start": 12.16,
+          "end": 12.38,
+          "probability": 0.652
+        },
+        {
+          "word": " multi",
+          "start": 12.38,
+          "end": 12.72,
+          "probability": 0.854
+        },
+        {
+          "word": "-day",
+          "start": 12.72,
+          "end": 13.02,
+          "probability": 0.942
+        },
+        {
+          "word": " autonomous",
+          "start": 13.02,
+          "end": 13.56,
+          "probability": 0.929
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 13.56,
+      "end": 19.28,
+      "text": "research, deep reasoning, long horizon tasks, monkey hands Fable 5 broken banana code.",
+      "words": [
+        {
+          "word": " research,",
+          "start": 13.56,
+          "end": 14.22,
+          "probability": 0.997
+        },
+        {
+          "word": " deep",
+          "start": 14.46,
+          "end": 14.62,
+          "probability": 0.977
+        },
+        {
+          "word": " reasoning,",
+          "start": 14.62,
+          "end": 15.1,
+          "probability": 0.969
+        },
+        {
+          "word": " long",
+          "start": 15.54,
+          "end": 15.68,
+          "probability": 0.961
+        },
+        {
+          "word": " horizon",
+          "start": 15.68,
+          "end": 16.1,
+          "probability": 0.947
+        },
+        {
+          "word": " tasks,",
+          "start": 16.1,
+          "end": 16.64,
+          "probability": 0.982
+        },
+        {
+          "word": " monkey",
+          "start": 17.14,
+          "end": 17.32,
+          "probability": 0.79
+        },
+        {
+          "word": " hands",
+          "start": 17.32,
+          "end": 17.64,
+          "probability": 0.948
+        },
+        {
+          "word": " Fable",
+          "start": 17.64,
+          "end": 17.98,
+          "probability": 0.833
+        },
+        {
+          "word": " 5",
+          "start": 17.98,
+          "end": 18.28,
+          "probability": 0.988
+        },
+        {
+          "word": " broken",
+          "start": 18.28,
+          "end": 18.62,
+          "probability": 0.819
+        },
+        {
+          "word": " banana",
+          "start": 18.62,
+          "end": 18.9,
+          "probability": 0.953
+        },
+        {
+          "word": " code.",
+          "start": 18.9,
+          "end": 19.28,
+          "probability": 0.971
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 19.7,
+      "end": 21.22,
+      "text": "Fable 5 stares at the screen.",
+      "words": [
+        {
+          "word": " Fable",
+          "start": 19.7,
+          "end": 19.86,
+          "probability": 0.982
+        },
+        {
+          "word": " 5",
+          "start": 19.86,
+          "end": 20.24,
+          "probability": 0.994
+        },
+        {
+          "word": " stares",
+          "start": 20.24,
+          "end": 20.62,
+          "probability": 0.709
+        },
+        {
+          "word": " at",
+          "start": 20.62,
+          "end": 20.78,
+          "probability": 0.993
+        },
+        {
+          "word": " the",
+          "start": 20.78,
+          "end": 20.86,
+          "probability": 0.991
+        },
+        {
+          "word": " screen.",
+          "start": 20.86,
+          "end": 21.22,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 21.62,
+      "end": 26.62,
+      "text": "Thing for a five day straight, no sleep, no banana break, rebuilds the entire factory",
+      "words": [
+        {
+          "word": " Thing",
+          "start": 21.62,
+          "end": 21.76,
+          "probability": 0.746
+        },
+        {
+          "word": " for",
+          "start": 21.76,
+          "end": 21.92,
+          "probability": 0.665
+        },
+        {
+          "word": " a",
+          "start": 21.92,
+          "end": 22.04,
+          "probability": 0.343
+        },
+        {
+          "word": " five",
+          "start": 22.04,
+          "end": 22.2,
+          "probability": 0.416
+        },
+        {
+          "word": " day",
+          "start": 22.2,
+          "end": 22.4,
+          "probability": 0.503
+        },
+        {
+          "word": " straight,",
+          "start": 22.4,
+          "end": 22.78,
+          "probability": 0.954
+        },
+        {
+          "word": " no",
+          "start": 23.12,
+          "end": 23.26,
+          "probability": 0.959
+        },
+        {
+          "word": " sleep,",
+          "start": 23.26,
+          "end": 23.6,
+          "probability": 0.996
+        },
+        {
+          "word": " no",
+          "start": 23.96,
+          "end": 24.16,
+          "probability": 0.997
+        },
+        {
+          "word": " banana",
+          "start": 24.16,
+          "end": 24.5,
+          "probability": 0.993
+        },
+        {
+          "word": " break,",
+          "start": 24.5,
+          "end": 24.92,
+          "probability": 0.953
+        },
+        {
+          "word": " rebuilds",
+          "start": 25.22,
+          "end": 25.66,
+          "probability": 0.893
+        },
+        {
+          "word": " the",
+          "start": 25.66,
+          "end": 25.74,
+          "probability": 0.996
+        },
+        {
+          "word": " entire",
+          "start": 25.74,
+          "end": 26.12,
+          "probability": 0.996
+        },
+        {
+          "word": " factory",
+          "start": 26.12,
+          "end": 26.62,
+          "probability": 0.991
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 26.62,
+      "end": 27.2,
+      "text": "from scratch.",
+      "words": [
+        {
+          "word": " from",
+          "start": 26.62,
+          "end": 26.88,
+          "probability": 0.995
+        },
+        {
+          "word": " scratch.",
+          "start": 26.88,
+          "end": 27.2,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 27.2,
+      "end": 33.34,
+      "text": "Fable 5 gets top scores on SWE Bench, a number one on the AI index, gorilla dominates",
+      "words": [
+        {
+          "word": " Fable",
+          "start": 27.2,
+          "end": 27.78,
+          "probability": 0.442
+        },
+        {
+          "word": " 5",
+          "start": 27.78,
+          "end": 28.06,
+          "probability": 0.791
+        },
+        {
+          "word": " gets",
+          "start": 28.06,
+          "end": 28.28,
+          "probability": 0.771
+        },
+        {
+          "word": " top",
+          "start": 28.28,
+          "end": 28.56,
+          "probability": 0.934
+        },
+        {
+          "word": " scores",
+          "start": 28.56,
+          "end": 28.84,
+          "probability": 0.946
+        },
+        {
+          "word": " on",
+          "start": 28.84,
+          "end": 29.16,
+          "probability": 0.99
+        },
+        {
+          "word": " SWE",
+          "start": 29.16,
+          "end": 29.92,
+          "probability": 0.905
+        },
+        {
+          "word": " Bench,",
+          "start": 29.92,
+          "end": 30.4,
+          "probability": 0.751
+        },
+        {
+          "word": " a",
+          "start": 30.46,
+          "end": 30.68,
+          "probability": 0.303
+        },
+        {
+          "word": " number",
+          "start": 30.68,
+          "end": 30.92,
+          "probability": 0.822
+        },
+        {
+          "word": " one",
+          "start": 30.92,
+          "end": 31.16,
+          "probability": 0.653
+        },
+        {
+          "word": " on",
+          "start": 31.16,
+          "end": 31.26,
+          "probability": 0.94
+        },
+        {
+          "word": " the",
+          "start": 31.26,
+          "end": 31.38,
+          "probability": 0.94
+        },
+        {
+          "word": " AI",
+          "start": 31.38,
+          "end": 31.66,
+          "probability": 0.953
+        },
+        {
+          "word": " index,",
+          "start": 31.66,
+          "end": 32.02,
+          "probability": 0.425
+        },
+        {
+          "word": " gorilla",
+          "start": 32.52,
+          "end": 32.74,
+          "probability": 0.096
+        },
+        {
+          "word": " dominates",
+          "start": 32.74,
+          "end": 33.34,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 33.34,
+      "end": 34.08,
+      "text": "every test.",
+      "words": [
+        {
+          "word": " every",
+          "start": 33.34,
+          "end": 33.62,
+          "probability": 0.994
+        },
+        {
+          "word": " test.",
+          "start": 33.62,
+          "end": 34.08,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 34.46,
+      "end": 40.64,
+      "text": "Monkey happy, monkey hires Fable 5, then monkey gets the bill, input costs 10 bananas per",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 34.46,
+          "end": 34.66,
+          "probability": 0.719
+        },
+        {
+          "word": " happy,",
+          "start": 34.66,
+          "end": 35.0,
+          "probability": 0.804
+        },
+        {
+          "word": " monkey",
+          "start": 35.38,
+          "end": 35.64,
+          "probability": 0.742
+        },
+        {
+          "word": " hires",
+          "start": 35.64,
+          "end": 36.02,
+          "probability": 0.97
+        },
+        {
+          "word": " Fable",
+          "start": 36.02,
+          "end": 36.3,
+          "probability": 0.832
+        },
+        {
+          "word": " 5,",
+          "start": 36.3,
+          "end": 36.72,
+          "probability": 0.973
+        },
+        {
+          "word": " then",
+          "start": 36.92,
+          "end": 37.3,
+          "probability": 0.977
+        },
+        {
+          "word": " monkey",
+          "start": 37.3,
+          "end": 37.7,
+          "probability": 0.869
+        },
+        {
+          "word": " gets",
+          "start": 37.7,
+          "end": 37.88,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 37.88,
+          "end": 38.1,
+          "probability": 0.996
+        },
+        {
+          "word": " bill,",
+          "start": 38.1,
+          "end": 38.34,
+          "probability": 0.946
+        },
+        {
+          "word": " input",
+          "start": 38.76,
+          "end": 38.94,
+          "probability": 0.934
+        },
+        {
+          "word": " costs",
+          "start": 38.94,
+          "end": 39.42,
+          "probability": 0.978
+        },
+        {
+          "word": " 10",
+          "start": 39.42,
+          "end": 39.96,
+          "probability": 0.64
+        },
+        {
+          "word": " bananas",
+          "start": 39.96,
+          "end": 40.38,
+          "probability": 0.965
+        },
+        {
+          "word": " per",
+          "start": 40.38,
+          "end": 40.64,
+          "probability": 0.924
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 40.64,
+      "end": 44.36,
+      "text": "million words, output costs 50 bananas per million words.",
+      "words": [
+        {
+          "word": " million",
+          "start": 40.64,
+          "end": 40.92,
+          "probability": 0.979
+        },
+        {
+          "word": " words,",
+          "start": 40.92,
+          "end": 41.32,
+          "probability": 0.784
+        },
+        {
+          "word": " output",
+          "start": 41.8,
+          "end": 41.98,
+          "probability": 0.948
+        },
+        {
+          "word": " costs",
+          "start": 41.98,
+          "end": 42.48,
+          "probability": 0.97
+        },
+        {
+          "word": " 50",
+          "start": 42.48,
+          "end": 42.92,
+          "probability": 0.992
+        },
+        {
+          "word": " bananas",
+          "start": 42.92,
+          "end": 43.36,
+          "probability": 0.99
+        },
+        {
+          "word": " per",
+          "start": 43.36,
+          "end": 43.64,
+          "probability": 0.993
+        },
+        {
+          "word": " million",
+          "start": 43.64,
+          "end": 43.88,
+          "probability": 0.993
+        },
+        {
+          "word": " words.",
+          "start": 43.88,
+          "end": 44.36,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 44.96,
+      "end": 50.32,
+      "text": "Monkey reads the invoice three times, your card was declined, monkey wallet empty, pesky",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 44.96,
+          "end": 45.18,
+          "probability": 0.735
+        },
+        {
+          "word": " reads",
+          "start": 45.18,
+          "end": 45.44,
+          "probability": 0.991
+        },
+        {
+          "word": " the",
+          "start": 45.44,
+          "end": 45.66,
+          "probability": 0.982
+        },
+        {
+          "word": " invoice",
+          "start": 45.66,
+          "end": 45.94,
+          "probability": 0.986
+        },
+        {
+          "word": " three",
+          "start": 45.94,
+          "end": 46.3,
+          "probability": 0.897
+        },
+        {
+          "word": " times,",
+          "start": 46.3,
+          "end": 46.7,
+          "probability": 0.994
+        },
+        {
+          "word": " your",
+          "start": 47.08,
+          "end": 47.14,
+          "probability": 0.687
+        },
+        {
+          "word": " card",
+          "start": 47.14,
+          "end": 47.42,
+          "probability": 0.992
+        },
+        {
+          "word": " was",
+          "start": 47.42,
+          "end": 47.6,
+          "probability": 0.998
+        },
+        {
+          "word": " declined,",
+          "start": 47.6,
+          "end": 48.0,
+          "probability": 0.99
+        },
+        {
+          "word": " monkey",
+          "start": 48.66,
+          "end": 48.84,
+          "probability": 0.706
+        },
+        {
+          "word": " wallet",
+          "start": 48.84,
+          "end": 49.08,
+          "probability": 0.989
+        },
+        {
+          "word": " empty,",
+          "start": 49.08,
+          "end": 49.5,
+          "probability": 0.978
+        },
+        {
+          "word": " pesky",
+          "start": 50.04,
+          "end": 50.32,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 50.32,
+      "end": 56.94,
+      "text": "gorilla pricing, monkey poor, monkey sad, option 2, higher chip engineer opus 5, opus",
+      "words": [
+        {
+          "word": " gorilla",
+          "start": 50.32,
+          "end": 50.58,
+          "probability": 0.912
+        },
+        {
+          "word": " pricing,",
+          "start": 50.58,
+          "end": 51.06,
+          "probability": 0.996
+        },
+        {
+          "word": " monkey",
+          "start": 51.64,
+          "end": 51.96,
+          "probability": 0.878
+        },
+        {
+          "word": " poor,",
+          "start": 51.96,
+          "end": 52.34,
+          "probability": 0.64
+        },
+        {
+          "word": " monkey",
+          "start": 52.66,
+          "end": 52.92,
+          "probability": 0.971
+        },
+        {
+          "word": " sad,",
+          "start": 52.92,
+          "end": 53.3,
+          "probability": 0.949
+        },
+        {
+          "word": " option",
+          "start": 53.76,
+          "end": 54.02,
+          "probability": 0.986
+        },
+        {
+          "word": " 2,",
+          "start": 54.02,
+          "end": 54.38,
+          "probability": 0.473
+        },
+        {
+          "word": " higher",
+          "start": 54.78,
+          "end": 54.96,
+          "probability": 0.891
+        },
+        {
+          "word": " chip",
+          "start": 54.96,
+          "end": 55.2,
+          "probability": 0.394
+        },
+        {
+          "word": " engineer",
+          "start": 55.2,
+          "end": 55.68,
+          "probability": 0.985
+        },
+        {
+          "word": " opus",
+          "start": 55.68,
+          "end": 56.1,
+          "probability": 0.634
+        },
+        {
+          "word": " 5,",
+          "start": 56.1,
+          "end": 56.36,
+          "probability": 0.696
+        },
+        {
+          "word": " opus",
+          "start": 56.68,
+          "end": 56.94,
+          "probability": 0.968
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 56.94,
+      "end": 62.2,
+      "text": "5 is the flagship workhorse built for daily software engineering, monkey hands, opus 5",
+      "words": [
+        {
+          "word": " 5",
+          "start": 56.94,
+          "end": 57.16,
+          "probability": 0.028
+        },
+        {
+          "word": " is",
+          "start": 57.16,
+          "end": 57.44,
+          "probability": 0.683
+        },
+        {
+          "word": " the",
+          "start": 57.44,
+          "end": 57.56,
+          "probability": 0.845
+        },
+        {
+          "word": " flagship",
+          "start": 57.56,
+          "end": 58.04,
+          "probability": 0.892
+        },
+        {
+          "word": " workhorse",
+          "start": 58.04,
+          "end": 58.66,
+          "probability": 0.919
+        },
+        {
+          "word": " built",
+          "start": 58.66,
+          "end": 59.04,
+          "probability": 0.641
+        },
+        {
+          "word": " for",
+          "start": 59.04,
+          "end": 59.24,
+          "probability": 0.99
+        },
+        {
+          "word": " daily",
+          "start": 59.24,
+          "end": 59.5,
+          "probability": 0.977
+        },
+        {
+          "word": " software",
+          "start": 59.5,
+          "end": 59.88,
+          "probability": 0.986
+        },
+        {
+          "word": " engineering,",
+          "start": 59.88,
+          "end": 60.56,
+          "probability": 0.996
+        },
+        {
+          "word": " monkey",
+          "start": 60.82,
+          "end": 61.12,
+          "probability": 0.617
+        },
+        {
+          "word": " hands,",
+          "start": 61.12,
+          "end": 61.48,
+          "probability": 0.976
+        },
+        {
+          "word": " opus",
+          "start": 61.82,
+          "end": 62.02,
+          "probability": 0.58
+        },
+        {
+          "word": " 5",
+          "start": 62.02,
+          "end": 62.2,
+          "probability": 0.798
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 62.2,
+      "end": 67.26,
+      "text": "1 million scrolls, opus 5 reads everything in one second, one million token context",
+      "words": [
+        {
+          "word": " 1",
+          "start": 62.2,
+          "end": 62.48,
+          "probability": 0.186
+        },
+        {
+          "word": " million",
+          "start": 62.48,
+          "end": 62.72,
+          "probability": 0.808
+        },
+        {
+          "word": " scrolls,",
+          "start": 62.72,
+          "end": 63.36,
+          "probability": 0.963
+        },
+        {
+          "word": " opus",
+          "start": 63.68,
+          "end": 63.84,
+          "probability": 0.951
+        },
+        {
+          "word": " 5",
+          "start": 63.84,
+          "end": 64.02,
+          "probability": 0.986
+        },
+        {
+          "word": " reads",
+          "start": 64.02,
+          "end": 64.18,
+          "probability": 0.834
+        },
+        {
+          "word": " everything",
+          "start": 64.18,
+          "end": 64.58,
+          "probability": 0.974
+        },
+        {
+          "word": " in",
+          "start": 64.58,
+          "end": 64.74,
+          "probability": 0.988
+        },
+        {
+          "word": " one",
+          "start": 64.74,
+          "end": 64.88,
+          "probability": 0.665
+        },
+        {
+          "word": " second,",
+          "start": 64.88,
+          "end": 65.28,
+          "probability": 0.989
+        },
+        {
+          "word": " one",
+          "start": 65.68,
+          "end": 65.94,
+          "probability": 0.14
+        },
+        {
+          "word": " million",
+          "start": 65.94,
+          "end": 66.34,
+          "probability": 0.987
+        },
+        {
+          "word": " token",
+          "start": 66.34,
+          "end": 66.72,
+          "probability": 0.973
+        },
+        {
+          "word": " context",
+          "start": 66.72,
+          "end": 67.26,
+          "probability": 0.919
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 67.26,
+      "end": 73.48,
+      "text": "window, fixes code, builds tools, audit security, finished before lunchtime.",
+      "words": [
+        {
+          "word": " window,",
+          "start": 67.26,
+          "end": 67.82,
+          "probability": 0.975
+        },
+        {
+          "word": " fixes",
+          "start": 68.26,
+          "end": 68.56,
+          "probability": 0.942
+        },
+        {
+          "word": " code,",
+          "start": 68.56,
+          "end": 69.0,
+          "probability": 0.985
+        },
+        {
+          "word": " builds",
+          "start": 69.54,
+          "end": 69.82,
+          "probability": 0.982
+        },
+        {
+          "word": " tools,",
+          "start": 69.82,
+          "end": 70.26,
+          "probability": 0.964
+        },
+        {
+          "word": " audit",
+          "start": 70.86,
+          "end": 71.04,
+          "probability": 0.991
+        },
+        {
+          "word": " security,",
+          "start": 71.04,
+          "end": 71.74,
+          "probability": 0.972
+        },
+        {
+          "word": " finished",
+          "start": 72.28,
+          "end": 72.46,
+          "probability": 0.96
+        },
+        {
+          "word": " before",
+          "start": 72.46,
+          "end": 72.82,
+          "probability": 0.982
+        },
+        {
+          "word": " lunchtime.",
+          "start": 72.82,
+          "end": 73.48,
+          "probability": 0.897
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 73.88,
+      "end": 78.86,
+      "text": "On intelligence tests, opus 5 ties Pable 5, same brain, same gorilla level reasoning,",
+      "words": [
+        {
+          "word": " On",
+          "start": 73.88,
+          "end": 74.02,
+          "probability": 0.94
+        },
+        {
+          "word": " intelligence",
+          "start": 74.02,
+          "end": 74.4,
+          "probability": 0.718
+        },
+        {
+          "word": " tests,",
+          "start": 74.4,
+          "end": 74.82,
+          "probability": 0.968
+        },
+        {
+          "word": " opus",
+          "start": 75.08,
+          "end": 75.3,
+          "probability": 0.868
+        },
+        {
+          "word": " 5",
+          "start": 75.3,
+          "end": 75.54,
+          "probability": 0.973
+        },
+        {
+          "word": " ties",
+          "start": 75.54,
+          "end": 75.78,
+          "probability": 0.882
+        },
+        {
+          "word": " Pable",
+          "start": 75.78,
+          "end": 76.16,
+          "probability": 0.532
+        },
+        {
+          "word": " 5,",
+          "start": 76.16,
+          "end": 76.46,
+          "probability": 0.918
+        },
+        {
+          "word": " same",
+          "start": 76.78,
+          "end": 76.92,
+          "probability": 0.978
+        },
+        {
+          "word": " brain,",
+          "start": 76.92,
+          "end": 77.22,
+          "probability": 0.945
+        },
+        {
+          "word": " same",
+          "start": 77.7,
+          "end": 77.9,
+          "probability": 0.994
+        },
+        {
+          "word": " gorilla",
+          "start": 77.9,
+          "end": 78.16,
+          "probability": 0.463
+        },
+        {
+          "word": " level",
+          "start": 78.16,
+          "end": 78.5,
+          "probability": 0.913
+        },
+        {
+          "word": " reasoning,",
+          "start": 78.5,
+          "end": 78.86,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 79.26,
+      "end": 83.1,
+      "text": "but opus 5 wears a yellow hard hat, shows up to work every single day.",
+      "words": [
+        {
+          "word": " but",
+          "start": 79.26,
+          "end": 79.34,
+          "probability": 0.958
+        },
+        {
+          "word": " opus",
+          "start": 79.34,
+          "end": 79.66,
+          "probability": 0.954
+        },
+        {
+          "word": " 5",
+          "start": 79.66,
+          "end": 79.96,
+          "probability": 0.974
+        },
+        {
+          "word": " wears",
+          "start": 79.96,
+          "end": 80.18,
+          "probability": 0.909
+        },
+        {
+          "word": " a",
+          "start": 80.18,
+          "end": 80.32,
+          "probability": 0.995
+        },
+        {
+          "word": " yellow",
+          "start": 80.32,
+          "end": 80.54,
+          "probability": 0.996
+        },
+        {
+          "word": " hard",
+          "start": 80.54,
+          "end": 80.88,
+          "probability": 0.649
+        },
+        {
+          "word": " hat,",
+          "start": 80.88,
+          "end": 81.14,
+          "probability": 0.893
+        },
+        {
+          "word": " shows",
+          "start": 81.48,
+          "end": 81.6,
+          "probability": 0.978
+        },
+        {
+          "word": " up",
+          "start": 81.6,
+          "end": 81.8,
+          "probability": 0.999
+        },
+        {
+          "word": " to",
+          "start": 81.8,
+          "end": 81.9,
+          "probability": 0.997
+        },
+        {
+          "word": " work",
+          "start": 81.9,
+          "end": 82.08,
+          "probability": 0.997
+        },
+        {
+          "word": " every",
+          "start": 82.08,
+          "end": 82.44,
+          "probability": 0.989
+        },
+        {
+          "word": " single",
+          "start": 82.44,
+          "end": 82.8,
+          "probability": 0.983
+        },
+        {
+          "word": " day.",
+          "start": 82.8,
+          "end": 83.1,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 83.1,
+      "end": 90.38,
+      "text": "Best of all, opus 5 costs half, 5 bananas input per million words, 25 bananas output per",
+      "words": [
+        {
+          "word": " Best",
+          "start": 83.1,
+          "end": 83.58,
+          "probability": 0.114
+        },
+        {
+          "word": " of",
+          "start": 83.58,
+          "end": 83.8,
+          "probability": 0.992
+        },
+        {
+          "word": " all,",
+          "start": 83.8,
+          "end": 84.06,
+          "probability": 0.99
+        },
+        {
+          "word": " opus",
+          "start": 84.2,
+          "end": 84.48,
+          "probability": 0.527
+        },
+        {
+          "word": " 5",
+          "start": 84.48,
+          "end": 84.68,
+          "probability": 0.773
+        },
+        {
+          "word": " costs",
+          "start": 84.68,
+          "end": 85.0,
+          "probability": 0.944
+        },
+        {
+          "word": " half,",
+          "start": 85.0,
+          "end": 85.44,
+          "probability": 0.737
+        },
+        {
+          "word": " 5",
+          "start": 85.82,
+          "end": 86.1,
+          "probability": 0.764
+        },
+        {
+          "word": " bananas",
+          "start": 86.1,
+          "end": 86.6,
+          "probability": 0.961
+        },
+        {
+          "word": " input",
+          "start": 86.6,
+          "end": 87.1,
+          "probability": 0.393
+        },
+        {
+          "word": " per",
+          "start": 87.1,
+          "end": 87.42,
+          "probability": 0.938
+        },
+        {
+          "word": " million",
+          "start": 87.42,
+          "end": 87.68,
+          "probability": 0.972
+        },
+        {
+          "word": " words,",
+          "start": 87.68,
+          "end": 88.26,
+          "probability": 0.849
+        },
+        {
+          "word": " 25",
+          "start": 88.54,
+          "end": 89.02,
+          "probability": 0.973
+        },
+        {
+          "word": " bananas",
+          "start": 89.02,
+          "end": 89.74,
+          "probability": 0.961
+        },
+        {
+          "word": " output",
+          "start": 89.74,
+          "end": 90.12,
+          "probability": 0.985
+        },
+        {
+          "word": " per",
+          "start": 90.12,
+          "end": 90.38,
+          "probability": 0.993
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 90.38,
+      "end": 97.92,
+      "text": "million words, half price, same intelligence, monkey wallet happy, monkey rich, but wait,",
+      "words": [
+        {
+          "word": " million",
+          "start": 90.38,
+          "end": 90.64,
+          "probability": 0.985
+        },
+        {
+          "word": " words,",
+          "start": 90.64,
+          "end": 91.22,
+          "probability": 0.984
+        },
+        {
+          "word": " half",
+          "start": 91.62,
+          "end": 91.78,
+          "probability": 0.806
+        },
+        {
+          "word": " price,",
+          "start": 91.78,
+          "end": 91.98,
+          "probability": 0.74
+        },
+        {
+          "word": " same",
+          "start": 92.48,
+          "end": 92.62,
+          "probability": 0.983
+        },
+        {
+          "word": " intelligence,",
+          "start": 92.62,
+          "end": 93.08,
+          "probability": 0.99
+        },
+        {
+          "word": " monkey",
+          "start": 93.6,
+          "end": 94.86,
+          "probability": 0.016
+        },
+        {
+          "word": " wallet",
+          "start": 94.86,
+          "end": 95.24,
+          "probability": 0.929
+        },
+        {
+          "word": " happy,",
+          "start": 95.24,
+          "end": 95.72,
+          "probability": 0.906
+        },
+        {
+          "word": " monkey",
+          "start": 96.14,
+          "end": 96.3,
+          "probability": 0.971
+        },
+        {
+          "word": " rich,",
+          "start": 96.3,
+          "end": 96.6,
+          "probability": 0.957
+        },
+        {
+          "word": " but",
+          "start": 97.08,
+          "end": 97.38,
+          "probability": 0.959
+        },
+        {
+          "word": " wait,",
+          "start": 97.38,
+          "end": 97.92,
+          "probability": 0.74
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 98.42,
+      "end": 99.82,
+      "text": "which model is actually better.",
+      "words": [
+        {
+          "word": " which",
+          "start": 98.42,
+          "end": 98.68,
+          "probability": 0.979
+        },
+        {
+          "word": " model",
+          "start": 98.68,
+          "end": 98.98,
+          "probability": 0.99
+        },
+        {
+          "word": " is",
+          "start": 98.98,
+          "end": 99.16,
+          "probability": 0.996
+        },
+        {
+          "word": " actually",
+          "start": 99.16,
+          "end": 99.5,
+          "probability": 0.988
+        },
+        {
+          "word": " better.",
+          "start": 99.5,
+          "end": 99.82,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 100.4,
+      "end": 105.0,
+      "text": "Monkey runs a jungle stress test, gives both models the exact same broken app, Able 5 disappears",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 100.4,
+          "end": 100.64,
+          "probability": 0.813
+        },
+        {
+          "word": " runs",
+          "start": 100.64,
+          "end": 100.82,
+          "probability": 0.941
+        },
+        {
+          "word": " a",
+          "start": 100.82,
+          "end": 100.96,
+          "probability": 0.96
+        },
+        {
+          "word": " jungle",
+          "start": 100.96,
+          "end": 101.14,
+          "probability": 0.824
+        },
+        {
+          "word": " stress",
+          "start": 101.14,
+          "end": 101.38,
+          "probability": 0.987
+        },
+        {
+          "word": " test,",
+          "start": 101.38,
+          "end": 101.74,
+          "probability": 0.996
+        },
+        {
+          "word": " gives",
+          "start": 101.92,
+          "end": 102.02,
+          "probability": 0.923
+        },
+        {
+          "word": " both",
+          "start": 102.02,
+          "end": 102.22,
+          "probability": 0.975
+        },
+        {
+          "word": " models",
+          "start": 102.22,
+          "end": 102.52,
+          "probability": 0.981
+        },
+        {
+          "word": " the",
+          "start": 102.52,
+          "end": 102.7,
+          "probability": 0.991
+        },
+        {
+          "word": " exact",
+          "start": 102.7,
+          "end": 102.96,
+          "probability": 0.993
+        },
+        {
+          "word": " same",
+          "start": 102.96,
+          "end": 103.24,
+          "probability": 0.998
+        },
+        {
+          "word": " broken",
+          "start": 103.24,
+          "end": 103.46,
+          "probability": 0.995
+        },
+        {
+          "word": " app,",
+          "start": 103.46,
+          "end": 103.68,
+          "probability": 0.911
+        },
+        {
+          "word": " Able",
+          "start": 103.96,
+          "end": 104.14,
+          "probability": 0.504
+        },
+        {
+          "word": " 5",
+          "start": 104.14,
+          "end": 104.48,
+          "probability": 0.896
+        },
+        {
+          "word": " disappears",
+          "start": 104.48,
+          "end": 105.0,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 105.0,
+      "end": 111.02,
+      "text": "for 3 days, returns with a complex masterpiece, opus 5 fixes the bug in 2 hours, both apps",
+      "words": [
+        {
+          "word": " for",
+          "start": 105.0,
+          "end": 105.34,
+          "probability": 0.961
+        },
+        {
+          "word": " 3",
+          "start": 105.34,
+          "end": 105.68,
+          "probability": 0.486
+        },
+        {
+          "word": " days,",
+          "start": 105.68,
+          "end": 105.94,
+          "probability": 0.997
+        },
+        {
+          "word": " returns",
+          "start": 106.3,
+          "end": 106.54,
+          "probability": 0.981
+        },
+        {
+          "word": " with",
+          "start": 106.54,
+          "end": 106.84,
+          "probability": 0.99
+        },
+        {
+          "word": " a",
+          "start": 106.84,
+          "end": 106.92,
+          "probability": 0.871
+        },
+        {
+          "word": " complex",
+          "start": 106.92,
+          "end": 107.28,
+          "probability": 0.984
+        },
+        {
+          "word": " masterpiece,",
+          "start": 107.28,
+          "end": 107.92,
+          "probability": 0.979
+        },
+        {
+          "word": " opus",
+          "start": 108.38,
+          "end": 108.58,
+          "probability": 0.936
+        },
+        {
+          "word": " 5",
+          "start": 108.58,
+          "end": 108.76,
+          "probability": 0.969
+        },
+        {
+          "word": " fixes",
+          "start": 108.76,
+          "end": 109.1,
+          "probability": 0.979
+        },
+        {
+          "word": " the",
+          "start": 109.1,
+          "end": 109.28,
+          "probability": 0.979
+        },
+        {
+          "word": " bug",
+          "start": 109.28,
+          "end": 109.4,
+          "probability": 0.993
+        },
+        {
+          "word": " in",
+          "start": 109.4,
+          "end": 109.62,
+          "probability": 0.995
+        },
+        {
+          "word": " 2",
+          "start": 109.62,
+          "end": 109.86,
+          "probability": 0.898
+        },
+        {
+          "word": " hours,",
+          "start": 109.86,
+          "end": 110.2,
+          "probability": 0.993
+        },
+        {
+          "word": " both",
+          "start": 110.54,
+          "end": 110.7,
+          "probability": 0.994
+        },
+        {
+          "word": " apps",
+          "start": 110.7,
+          "end": 111.02,
+          "probability": 0.972
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 111.02,
+      "end": 113.96,
+      "text": "work perfectly, so what is the secret difference?",
+      "words": [
+        {
+          "word": " work",
+          "start": 111.02,
+          "end": 111.18,
+          "probability": 0.021
+        },
+        {
+          "word": " perfectly,",
+          "start": 111.18,
+          "end": 111.66,
+          "probability": 0.991
+        },
+        {
+          "word": " so",
+          "start": 111.98,
+          "end": 112.06,
+          "probability": 0.974
+        },
+        {
+          "word": " what",
+          "start": 112.06,
+          "end": 112.36,
+          "probability": 0.921
+        },
+        {
+          "word": " is",
+          "start": 112.36,
+          "end": 112.76,
+          "probability": 0.759
+        },
+        {
+          "word": " the",
+          "start": 112.76,
+          "end": 113.08,
+          "probability": 0.988
+        },
+        {
+          "word": " secret",
+          "start": 113.08,
+          "end": 113.42,
+          "probability": 0.961
+        },
+        {
+          "word": " difference?",
+          "start": 113.42,
+          "end": 113.96,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 114.5,
+      "end": 119.78,
+      "text": "Fable 5 thinks deeper and takes longer, opus 5 thinks fast and ships code faster.",
+      "words": [
+        {
+          "word": " Fable",
+          "start": 114.5,
+          "end": 114.7,
+          "probability": 0.591
+        },
+        {
+          "word": " 5",
+          "start": 114.7,
+          "end": 115.06,
+          "probability": 0.83
+        },
+        {
+          "word": " thinks",
+          "start": 115.06,
+          "end": 115.4,
+          "probability": 0.921
+        },
+        {
+          "word": " deeper",
+          "start": 115.4,
+          "end": 115.8,
+          "probability": 0.983
+        },
+        {
+          "word": " and",
+          "start": 115.8,
+          "end": 116.08,
+          "probability": 0.967
+        },
+        {
+          "word": " takes",
+          "start": 116.08,
+          "end": 116.32,
+          "probability": 0.995
+        },
+        {
+          "word": " longer,",
+          "start": 116.32,
+          "end": 116.8,
+          "probability": 0.999
+        },
+        {
+          "word": " opus",
+          "start": 117.26,
+          "end": 117.54,
+          "probability": 0.512
+        },
+        {
+          "word": " 5",
+          "start": 117.54,
+          "end": 117.84,
+          "probability": 0.951
+        },
+        {
+          "word": " thinks",
+          "start": 117.84,
+          "end": 118.12,
+          "probability": 0.992
+        },
+        {
+          "word": " fast",
+          "start": 118.12,
+          "end": 118.46,
+          "probability": 0.975
+        },
+        {
+          "word": " and",
+          "start": 118.46,
+          "end": 118.8,
+          "probability": 0.877
+        },
+        {
+          "word": " ships",
+          "start": 118.8,
+          "end": 118.98,
+          "probability": 0.92
+        },
+        {
+          "word": " code",
+          "start": 118.98,
+          "end": 119.32,
+          "probability": 0.801
+        },
+        {
+          "word": " faster.",
+          "start": 119.32,
+          "end": 119.78,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 120.4,
+      "end": 126.14,
+      "text": "Same destination, different jungle paths, option 3, secret jungle discounts, both models",
+      "words": [
+        {
+          "word": " Same",
+          "start": 120.4,
+          "end": 120.52,
+          "probability": 0.875
+        },
+        {
+          "word": " destination,",
+          "start": 120.52,
+          "end": 121.0,
+          "probability": 0.974
+        },
+        {
+          "word": " different",
+          "start": 121.48,
+          "end": 121.72,
+          "probability": 0.982
+        },
+        {
+          "word": " jungle",
+          "start": 121.72,
+          "end": 121.98,
+          "probability": 0.949
+        },
+        {
+          "word": " paths,",
+          "start": 121.98,
+          "end": 122.32,
+          "probability": 0.943
+        },
+        {
+          "word": " option",
+          "start": 122.96,
+          "end": 123.24,
+          "probability": 0.772
+        },
+        {
+          "word": " 3,",
+          "start": 123.24,
+          "end": 123.64,
+          "probability": 0.925
+        },
+        {
+          "word": " secret",
+          "start": 124.06,
+          "end": 124.36,
+          "probability": 0.902
+        },
+        {
+          "word": " jungle",
+          "start": 124.36,
+          "end": 124.72,
+          "probability": 0.98
+        },
+        {
+          "word": " discounts,",
+          "start": 124.72,
+          "end": 125.12,
+          "probability": 0.985
+        },
+        {
+          "word": " both",
+          "start": 125.72,
+          "end": 125.84,
+          "probability": 0.929
+        },
+        {
+          "word": " models",
+          "start": 125.84,
+          "end": 126.14,
+          "probability": 0.989
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 126.14,
+      "end": 130.96,
+      "text": "have adaptive thinking, monkey turns the brain knob up or down, low effort for quick, simple",
+      "words": [
+        {
+          "word": " have",
+          "start": 126.14,
+          "end": 126.34,
+          "probability": 0.997
+        },
+        {
+          "word": " adaptive",
+          "start": 126.34,
+          "end": 126.7,
+          "probability": 0.805
+        },
+        {
+          "word": " thinking,",
+          "start": 126.7,
+          "end": 127.04,
+          "probability": 0.995
+        },
+        {
+          "word": " monkey",
+          "start": 127.54,
+          "end": 127.72,
+          "probability": 0.734
+        },
+        {
+          "word": " turns",
+          "start": 127.72,
+          "end": 127.9,
+          "probability": 0.995
+        },
+        {
+          "word": " the",
+          "start": 127.9,
+          "end": 128.08,
+          "probability": 0.99
+        },
+        {
+          "word": " brain",
+          "start": 128.08,
+          "end": 128.26,
+          "probability": 0.962
+        },
+        {
+          "word": " knob",
+          "start": 128.26,
+          "end": 128.44,
+          "probability": 0.517
+        },
+        {
+          "word": " up",
+          "start": 128.44,
+          "end": 128.68,
+          "probability": 0.998
+        },
+        {
+          "word": " or",
+          "start": 128.68,
+          "end": 128.86,
+          "probability": 0.986
+        },
+        {
+          "word": " down,",
+          "start": 128.86,
+          "end": 129.12,
+          "probability": 1.0
+        },
+        {
+          "word": " low",
+          "start": 129.4,
+          "end": 129.52,
+          "probability": 0.993
+        },
+        {
+          "word": " effort",
+          "start": 129.52,
+          "end": 129.9,
+          "probability": 0.986
+        },
+        {
+          "word": " for",
+          "start": 129.9,
+          "end": 130.14,
+          "probability": 0.995
+        },
+        {
+          "word": " quick,",
+          "start": 130.14,
+          "end": 130.46,
+          "probability": 0.997
+        },
+        {
+          "word": " simple",
+          "start": 130.64,
+          "end": 130.96,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 130.96,
+      "end": 136.26,
+      "text": "answers, max effort for deep gorilla reasoning, monkey controls how hard they think, both",
+      "words": [
+        {
+          "word": " answers,",
+          "start": 130.96,
+          "end": 131.4,
+          "probability": 0.99
+        },
+        {
+          "word": " max",
+          "start": 132.04,
+          "end": 132.12,
+          "probability": 0.851
+        },
+        {
+          "word": " effort",
+          "start": 132.12,
+          "end": 132.58,
+          "probability": 0.971
+        },
+        {
+          "word": " for",
+          "start": 132.58,
+          "end": 132.88,
+          "probability": 0.995
+        },
+        {
+          "word": " deep",
+          "start": 132.88,
+          "end": 133.1,
+          "probability": 0.978
+        },
+        {
+          "word": " gorilla",
+          "start": 133.1,
+          "end": 133.4,
+          "probability": 0.715
+        },
+        {
+          "word": " reasoning,",
+          "start": 133.4,
+          "end": 133.92,
+          "probability": 0.994
+        },
+        {
+          "word": " monkey",
+          "start": 134.52,
+          "end": 134.68,
+          "probability": 0.948
+        },
+        {
+          "word": " controls",
+          "start": 134.68,
+          "end": 134.98,
+          "probability": 0.996
+        },
+        {
+          "word": " how",
+          "start": 134.98,
+          "end": 135.2,
+          "probability": 0.971
+        },
+        {
+          "word": " hard",
+          "start": 135.2,
+          "end": 135.4,
+          "probability": 0.999
+        },
+        {
+          "word": " they",
+          "start": 135.4,
+          "end": 135.56,
+          "probability": 0.989
+        },
+        {
+          "word": " think,",
+          "start": 135.56,
+          "end": 135.9,
+          "probability": 0.996
+        },
+        {
+          "word": " both",
+          "start": 136.18,
+          "end": 136.26,
+          "probability": 0.925
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 136.26,
+      "end": 140.88,
+      "text": "models use pre-peeled banana caching, show the same scroll blueprint twice, monkey bank",
+      "words": [
+        {
+          "word": " models",
+          "start": 136.26,
+          "end": 136.62,
+          "probability": 0.996
+        },
+        {
+          "word": " use",
+          "start": 136.62,
+          "end": 136.86,
+          "probability": 0.943
+        },
+        {
+          "word": " pre",
+          "start": 136.86,
+          "end": 137.06,
+          "probability": 0.9
+        },
+        {
+          "word": "-peeled",
+          "start": 137.06,
+          "end": 137.4,
+          "probability": 0.761
+        },
+        {
+          "word": " banana",
+          "start": 137.4,
+          "end": 137.62,
+          "probability": 0.858
+        },
+        {
+          "word": " caching,",
+          "start": 137.62,
+          "end": 138.06,
+          "probability": 0.952
+        },
+        {
+          "word": " show",
+          "start": 138.34,
+          "end": 138.42,
+          "probability": 0.973
+        },
+        {
+          "word": " the",
+          "start": 138.42,
+          "end": 138.56,
+          "probability": 0.997
+        },
+        {
+          "word": " same",
+          "start": 138.56,
+          "end": 138.76,
+          "probability": 0.995
+        },
+        {
+          "word": " scroll",
+          "start": 138.76,
+          "end": 139.06,
+          "probability": 0.866
+        },
+        {
+          "word": " blueprint",
+          "start": 139.06,
+          "end": 139.4,
+          "probability": 0.945
+        },
+        {
+          "word": " twice,",
+          "start": 139.4,
+          "end": 139.82,
+          "probability": 0.995
+        },
+        {
+          "word": " monkey",
+          "start": 140.46,
+          "end": 140.66,
+          "probability": 0.98
+        },
+        {
+          "word": " bank",
+          "start": 140.66,
+          "end": 140.88,
+          "probability": 0.196
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 140.88,
+      "end": 147.22,
+      "text": "gives 90% discount, opus 5 cash input costs half a banana, fable 5 cash input costs",
+      "words": [
+        {
+          "word": " gives",
+          "start": 140.88,
+          "end": 141.08,
+          "probability": 0.371
+        },
+        {
+          "word": " 90",
+          "start": 141.08,
+          "end": 141.4,
+          "probability": 0.974
+        },
+        {
+          "word": "%",
+          "start": 141.4,
+          "end": 141.74,
+          "probability": 0.904
+        },
+        {
+          "word": " discount,",
+          "start": 141.74,
+          "end": 142.14,
+          "probability": 0.996
+        },
+        {
+          "word": " opus",
+          "start": 142.7,
+          "end": 143.0,
+          "probability": 0.553
+        },
+        {
+          "word": " 5",
+          "start": 143.0,
+          "end": 143.28,
+          "probability": 0.66
+        },
+        {
+          "word": " cash",
+          "start": 143.28,
+          "end": 143.56,
+          "probability": 0.335
+        },
+        {
+          "word": " input",
+          "start": 143.56,
+          "end": 143.9,
+          "probability": 0.013
+        },
+        {
+          "word": " costs",
+          "start": 143.9,
+          "end": 144.36,
+          "probability": 0.882
+        },
+        {
+          "word": " half",
+          "start": 144.36,
+          "end": 144.7,
+          "probability": 0.959
+        },
+        {
+          "word": " a",
+          "start": 144.7,
+          "end": 144.82,
+          "probability": 0.973
+        },
+        {
+          "word": " banana,",
+          "start": 144.82,
+          "end": 145.12,
+          "probability": 0.991
+        },
+        {
+          "word": " fable",
+          "start": 145.7,
+          "end": 145.96,
+          "probability": 0.629
+        },
+        {
+          "word": " 5",
+          "start": 145.96,
+          "end": 146.2,
+          "probability": 0.946
+        },
+        {
+          "word": " cash",
+          "start": 146.2,
+          "end": 146.48,
+          "probability": 0.963
+        },
+        {
+          "word": " input",
+          "start": 146.48,
+          "end": 146.8,
+          "probability": 0.99
+        },
+        {
+          "word": " costs",
+          "start": 146.8,
+          "end": 147.22,
+          "probability": 0.589
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 147.22,
+      "end": 151.88,
+      "text": "swine banana, jungle startup runs super cheap with caching, so which model should monkey",
+      "words": [
+        {
+          "word": " swine",
+          "start": 147.22,
+          "end": 147.46,
+          "probability": 0.349
+        },
+        {
+          "word": " banana,",
+          "start": 147.46,
+          "end": 147.86,
+          "probability": 0.975
+        },
+        {
+          "word": " jungle",
+          "start": 148.32,
+          "end": 148.5,
+          "probability": 0.767
+        },
+        {
+          "word": " startup",
+          "start": 148.5,
+          "end": 148.86,
+          "probability": 0.804
+        },
+        {
+          "word": " runs",
+          "start": 148.86,
+          "end": 149.1,
+          "probability": 0.659
+        },
+        {
+          "word": " super",
+          "start": 149.1,
+          "end": 149.46,
+          "probability": 0.984
+        },
+        {
+          "word": " cheap",
+          "start": 149.46,
+          "end": 149.72,
+          "probability": 0.992
+        },
+        {
+          "word": " with",
+          "start": 149.72,
+          "end": 149.9,
+          "probability": 0.91
+        },
+        {
+          "word": " caching,",
+          "start": 149.9,
+          "end": 150.26,
+          "probability": 0.897
+        },
+        {
+          "word": " so",
+          "start": 150.62,
+          "end": 150.78,
+          "probability": 0.966
+        },
+        {
+          "word": " which",
+          "start": 150.78,
+          "end": 151.12,
+          "probability": 0.976
+        },
+        {
+          "word": " model",
+          "start": 151.12,
+          "end": 151.42,
+          "probability": 0.93
+        },
+        {
+          "word": " should",
+          "start": 151.42,
+          "end": 151.64,
+          "probability": 0.998
+        },
+        {
+          "word": " monkey",
+          "start": 151.64,
+          "end": 151.88,
+          "probability": 0.808
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 151.88,
+      "end": 152.2,
+      "text": "pick?",
+      "words": [
+        {
+          "word": " pick?",
+          "start": 151.88,
+          "end": 152.2,
+          "probability": 0.973
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 152.54,
+      "end": 157.48,
+      "text": "Multiday autonomous research jobs, complex multi-step engineering projects, higher gorilla",
+      "words": [
+        {
+          "word": " Multiday",
+          "start": 152.54,
+          "end": 153.0,
+          "probability": 0.609
+        },
+        {
+          "word": " autonomous",
+          "start": 153.0,
+          "end": 153.46,
+          "probability": 0.639
+        },
+        {
+          "word": " research",
+          "start": 153.46,
+          "end": 153.86,
+          "probability": 0.994
+        },
+        {
+          "word": " jobs,",
+          "start": 153.86,
+          "end": 154.32,
+          "probability": 0.974
+        },
+        {
+          "word": " complex",
+          "start": 154.64,
+          "end": 154.96,
+          "probability": 0.992
+        },
+        {
+          "word": " multi",
+          "start": 154.96,
+          "end": 155.38,
+          "probability": 0.826
+        },
+        {
+          "word": "-step",
+          "start": 155.38,
+          "end": 155.6,
+          "probability": 0.731
+        },
+        {
+          "word": " engineering",
+          "start": 155.6,
+          "end": 155.9,
+          "probability": 0.998
+        },
+        {
+          "word": " projects,",
+          "start": 155.9,
+          "end": 156.52,
+          "probability": 0.996
+        },
+        {
+          "word": " higher",
+          "start": 156.88,
+          "end": 157.12,
+          "probability": 0.737
+        },
+        {
+          "word": " gorilla",
+          "start": 157.12,
+          "end": 157.48,
+          "probability": 0.653
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 157.48,
+      "end": 163.16,
+      "text": "fable 5, worth every single banana, daily coding, coal pilots and chat assistance, fast",
+      "words": [
+        {
+          "word": " fable",
+          "start": 157.48,
+          "end": 157.88,
+          "probability": 0.938
+        },
+        {
+          "word": " 5,",
+          "start": 157.88,
+          "end": 158.36,
+          "probability": 0.945
+        },
+        {
+          "word": " worth",
+          "start": 158.76,
+          "end": 158.86,
+          "probability": 0.997
+        },
+        {
+          "word": " every",
+          "start": 158.86,
+          "end": 159.28,
+          "probability": 0.996
+        },
+        {
+          "word": " single",
+          "start": 159.28,
+          "end": 159.66,
+          "probability": 0.999
+        },
+        {
+          "word": " banana,",
+          "start": 159.66,
+          "end": 160.1,
+          "probability": 0.991
+        },
+        {
+          "word": " daily",
+          "start": 160.6,
+          "end": 160.78,
+          "probability": 0.986
+        },
+        {
+          "word": " coding,",
+          "start": 160.78,
+          "end": 161.12,
+          "probability": 0.91
+        },
+        {
+          "word": " coal",
+          "start": 161.26,
+          "end": 161.34,
+          "probability": 0.352
+        },
+        {
+          "word": " pilots",
+          "start": 161.34,
+          "end": 161.68,
+          "probability": 0.95
+        },
+        {
+          "word": " and",
+          "start": 161.68,
+          "end": 161.88,
+          "probability": 0.575
+        },
+        {
+          "word": " chat",
+          "start": 161.88,
+          "end": 162.06,
+          "probability": 0.946
+        },
+        {
+          "word": " assistance,",
+          "start": 162.06,
+          "end": 162.48,
+          "probability": 0.546
+        },
+        {
+          "word": " fast",
+          "start": 163.02,
+          "end": 163.16,
+          "probability": 0.939
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 163.16,
+      "end": 168.12,
+      "text": "reliable software engineering, higher chimp engineer opus 5, 95% for set performance",
+      "words": [
+        {
+          "word": " reliable",
+          "start": 163.16,
+          "end": 163.48,
+          "probability": 0.884
+        },
+        {
+          "word": " software",
+          "start": 163.48,
+          "end": 164.0,
+          "probability": 0.997
+        },
+        {
+          "word": " engineering,",
+          "start": 164.0,
+          "end": 164.58,
+          "probability": 0.997
+        },
+        {
+          "word": " higher",
+          "start": 165.14,
+          "end": 165.32,
+          "probability": 0.974
+        },
+        {
+          "word": " chimp",
+          "start": 165.32,
+          "end": 165.58,
+          "probability": 0.633
+        },
+        {
+          "word": " engineer",
+          "start": 165.58,
+          "end": 165.96,
+          "probability": 0.968
+        },
+        {
+          "word": " opus",
+          "start": 165.96,
+          "end": 166.38,
+          "probability": 0.943
+        },
+        {
+          "word": " 5,",
+          "start": 166.38,
+          "end": 166.68,
+          "probability": 0.921
+        },
+        {
+          "word": " 95",
+          "start": 167.0,
+          "end": 167.34,
+          "probability": 0.96
+        },
+        {
+          "word": "%",
+          "start": 167.34,
+          "end": 167.62,
+          "probability": 0.423
+        },
+        {
+          "word": " for",
+          "start": 167.62,
+          "end": 167.62,
+          "probability": 0.695
+        },
+        {
+          "word": " set",
+          "start": 167.62,
+          "end": 167.74,
+          "probability": 0.323
+        },
+        {
+          "word": " performance",
+          "start": 167.74,
+          "end": 168.12,
+          "probability": 0.986
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 168.12,
+      "end": 174.3,
+      "text": "at half price, smart monkey uses both, fable 5 for big gorilla tasks, opus 5 for daily",
+      "words": [
+        {
+          "word": " at",
+          "start": 168.12,
+          "end": 168.28,
+          "probability": 0.763
+        },
+        {
+          "word": " half",
+          "start": 168.28,
+          "end": 168.48,
+          "probability": 0.952
+        },
+        {
+          "word": " price,",
+          "start": 168.48,
+          "end": 168.78,
+          "probability": 0.975
+        },
+        {
+          "word": " smart",
+          "start": 169.32,
+          "end": 169.48,
+          "probability": 0.55
+        },
+        {
+          "word": " monkey",
+          "start": 169.48,
+          "end": 169.7,
+          "probability": 0.887
+        },
+        {
+          "word": " uses",
+          "start": 169.7,
+          "end": 170.08,
+          "probability": 0.986
+        },
+        {
+          "word": " both,",
+          "start": 170.08,
+          "end": 170.46,
+          "probability": 0.999
+        },
+        {
+          "word": " fable",
+          "start": 170.96,
+          "end": 171.18,
+          "probability": 0.428
+        },
+        {
+          "word": " 5",
+          "start": 171.18,
+          "end": 171.5,
+          "probability": 0.73
+        },
+        {
+          "word": " for",
+          "start": 171.5,
+          "end": 171.92,
+          "probability": 0.973
+        },
+        {
+          "word": " big",
+          "start": 171.92,
+          "end": 172.16,
+          "probability": 0.962
+        },
+        {
+          "word": " gorilla",
+          "start": 172.16,
+          "end": 172.4,
+          "probability": 0.78
+        },
+        {
+          "word": " tasks,",
+          "start": 172.4,
+          "end": 172.98,
+          "probability": 0.97
+        },
+        {
+          "word": " opus",
+          "start": 173.44,
+          "end": 173.7,
+          "probability": 0.765
+        },
+        {
+          "word": " 5",
+          "start": 173.7,
+          "end": 173.92,
+          "probability": 0.758
+        },
+        {
+          "word": " for",
+          "start": 173.92,
+          "end": 174.12,
+          "probability": 0.996
+        },
+        {
+          "word": " daily",
+          "start": 174.12,
+          "end": 174.3,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 174.3,
+      "end": 179.96,
+      "text": "engineering, two monkeys, one jungle, maximum bananas, save your bananas, subscribe for",
+      "words": [
+        {
+          "word": " engineering,",
+          "start": 174.3,
+          "end": 174.88,
+          "probability": 0.996
+        },
+        {
+          "word": " two",
+          "start": 175.26,
+          "end": 175.4,
+          "probability": 0.677
+        },
+        {
+          "word": " monkeys,",
+          "start": 175.4,
+          "end": 175.74,
+          "probability": 0.969
+        },
+        {
+          "word": " one",
+          "start": 176.12,
+          "end": 176.28,
+          "probability": 0.974
+        },
+        {
+          "word": " jungle,",
+          "start": 176.28,
+          "end": 176.62,
+          "probability": 0.989
+        },
+        {
+          "word": " maximum",
+          "start": 176.88,
+          "end": 177.2,
+          "probability": 0.904
+        },
+        {
+          "word": " bananas,",
+          "start": 177.2,
+          "end": 177.6,
+          "probability": 0.984
+        },
+        {
+          "word": " save",
+          "start": 178.24,
+          "end": 178.34,
+          "probability": 0.983
+        },
+        {
+          "word": " your",
+          "start": 178.34,
+          "end": 178.54,
+          "probability": 0.992
+        },
+        {
+          "word": " bananas,",
+          "start": 178.54,
+          "end": 178.98,
+          "probability": 0.989
+        },
+        {
+          "word": " subscribe",
+          "start": 179.34,
+          "end": 179.64,
+          "probability": 0.989
+        },
+        {
+          "word": " for",
+          "start": 179.64,
+          "end": 179.96,
+          "probability": 0.996
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 179.96,
+      "end": 181.32,
+      "text": "more monkey breakdowns.",
+      "words": [
+        {
+          "word": " more",
+          "start": 179.96,
+          "end": 180.14,
+          "probability": 0.245
+        },
+        {
+          "word": " monkey",
+          "start": 180.14,
+          "end": 180.42,
+          "probability": 0.744
+        },
+        {
+          "word": " breakdowns.",
+          "start": 180.42,
+          "end": 181.32,
+          "probability": 0.981
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Monkey",
+      "start": 0.0,
+      "end": 0.44,
+      "probability": 0.763
+    },
+    {
+      "word": " wants",
+      "start": 0.44,
+      "end": 0.64,
+      "probability": 0.972
+    },
+    {
+      "word": " to",
+      "start": 0.64,
+      "end": 0.8,
+      "probability": 0.994
+    },
+    {
+      "word": " build",
+      "start": 0.8,
+      "end": 0.94,
+      "probability": 0.994
+    },
+    {
+      "word": " an",
+      "start": 0.94,
+      "end": 1.1,
+      "probability": 0.992
+    },
+    {
+      "word": " automated",
+      "start": 1.1,
+      "end": 1.5,
+      "probability": 0.952
+    },
+    {
+      "word": " banana",
+      "start": 1.5,
+      "end": 1.76,
+      "probability": 0.931
+    },
+    {
+      "word": " factory,",
+      "start": 1.76,
+      "end": 2.28,
+      "probability": 0.993
+    },
+    {
+      "word": " which",
+      "start": 2.58,
+      "end": 2.88,
+      "probability": 0.993
+    },
+    {
+      "word": " new",
+      "start": 2.88,
+      "end": 3.08,
+      "probability": 0.959
+    },
+    {
+      "word": " anthropic",
+      "start": 3.08,
+      "end": 3.6,
+      "probability": 0.888
+    },
+    {
+      "word": " model",
+      "start": 3.6,
+      "end": 3.82,
+      "probability": 0.96
+    },
+    {
+      "word": " does",
+      "start": 3.82,
+      "end": 4.04,
+      "probability": 0.696
+    },
+    {
+      "word": " monkey",
+      "start": 4.04,
+      "end": 4.24,
+      "probability": 0.203
+    },
+    {
+      "word": " hire.",
+      "start": 4.24,
+      "end": 4.6,
+      "probability": 0.91
+    },
+    {
+      "word": " There",
+      "start": 4.92,
+      "end": 5.02,
+      "probability": 0.979
+    },
+    {
+      "word": " are",
+      "start": 5.02,
+      "end": 5.14,
+      "probability": 0.996
+    },
+    {
+      "word": " two",
+      "start": 5.14,
+      "end": 5.38,
+      "probability": 0.955
+    },
+    {
+      "word": " new",
+      "start": 5.38,
+      "end": 5.6,
+      "probability": 0.994
+    },
+    {
+      "word": " apes",
+      "start": 5.6,
+      "end": 5.86,
+      "probability": 0.953
+    },
+    {
+      "word": " in",
+      "start": 5.86,
+      "end": 5.96,
+      "probability": 0.989
+    },
+    {
+      "word": " the",
+      "start": 5.96,
+      "end": 6.04,
+      "probability": 0.997
+    },
+    {
+      "word": " jungle.",
+      "start": 6.04,
+      "end": 6.34,
+      "probability": 0.991
+    },
+    {
+      "word": " Option",
+      "start": 6.8,
+      "end": 7.02,
+      "probability": 0.821
+    },
+    {
+      "word": " 1.",
+      "start": 7.02,
+      "end": 7.38,
+      "probability": 0.6
+    },
+    {
+      "word": " Higher",
+      "start": 7.66,
+      "end": 7.88,
+      "probability": 0.629
+    },
+    {
+      "word": " Gorilla",
+      "start": 7.88,
+      "end": 8.32,
+      "probability": 0.77
+    },
+    {
+      "word": " Fable",
+      "start": 8.32,
+      "end": 8.72,
+      "probability": 0.634
+    },
+    {
+      "word": " 5",
+      "start": 8.72,
+      "end": 9.14,
+      "probability": 0.87
+    },
+    {
+      "word": " Fable",
+      "start": 9.14,
+      "end": 9.7,
+      "probability": 0.667
+    },
+    {
+      "word": " 5",
+      "start": 9.7,
+      "end": 10.08,
+      "probability": 0.99
+    },
+    {
+      "word": " is",
+      "start": 10.08,
+      "end": 10.24,
+      "probability": 0.987
+    },
+    {
+      "word": " a",
+      "start": 10.24,
+      "end": 10.36,
+      "probability": 0.995
+    },
+    {
+      "word": " giant",
+      "start": 10.36,
+      "end": 10.7,
+      "probability": 0.977
+    },
+    {
+      "word": " mythos",
+      "start": 10.7,
+      "end": 11.24,
+      "probability": 0.892
+    },
+    {
+      "word": " gorilla",
+      "start": 11.24,
+      "end": 11.58,
+      "probability": 0.777
+    },
+    {
+      "word": " built",
+      "start": 11.58,
+      "end": 12.16,
+      "probability": 0.669
+    },
+    {
+      "word": " from",
+      "start": 12.16,
+      "end": 12.38,
+      "probability": 0.652
+    },
+    {
+      "word": " multi",
+      "start": 12.38,
+      "end": 12.72,
+      "probability": 0.854
+    },
+    {
+      "word": "-day",
+      "start": 12.72,
+      "end": 13.02,
+      "probability": 0.942
+    },
+    {
+      "word": " autonomous",
+      "start": 13.02,
+      "end": 13.56,
+      "probability": 0.929
+    },
+    {
+      "word": " research,",
+      "start": 13.56,
+      "end": 14.22,
+      "probability": 0.997
+    },
+    {
+      "word": " deep",
+      "start": 14.46,
+      "end": 14.62,
+      "probability": 0.977
+    },
+    {
+      "word": " reasoning,",
+      "start": 14.62,
+      "end": 15.1,
+      "probability": 0.969
+    },
+    {
+      "word": " long",
+      "start": 15.54,
+      "end": 15.68,
+      "probability": 0.961
+    },
+    {
+      "word": " horizon",
+      "start": 15.68,
+      "end": 16.1,
+      "probability": 0.947
+    },
+    {
+      "word": " tasks,",
+      "start": 16.1,
+      "end": 16.64,
+      "probability": 0.982
+    },
+    {
+      "word": " monkey",
+      "start": 17.14,
+      "end": 17.32,
+      "probability": 0.79
+    },
+    {
+      "word": " hands",
+      "start": 17.32,
+      "end": 17.64,
+      "probability": 0.948
+    },
+    {
+      "word": " Fable",
+      "start": 17.64,
+      "end": 17.98,
+      "probability": 0.833
+    },
+    {
+      "word": " 5",
+      "start": 17.98,
+      "end": 18.28,
+      "probability": 0.988
+    },
+    {
+      "word": " broken",
+      "start": 18.28,
+      "end": 18.62,
+      "probability": 0.819
+    },
+    {
+      "word": " banana",
+      "start": 18.62,
+      "end": 18.9,
+      "probability": 0.953
+    },
+    {
+      "word": " code.",
+      "start": 18.9,
+      "end": 19.28,
+      "probability": 0.971
+    },
+    {
+      "word": " Fable",
+      "start": 19.7,
+      "end": 19.86,
+      "probability": 0.982
+    },
+    {
+      "word": " 5",
+      "start": 19.86,
+      "end": 20.24,
+      "probability": 0.994
+    },
+    {
+      "word": " stares",
+      "start": 20.24,
+      "end": 20.62,
+      "probability": 0.709
+    },
+    {
+      "word": " at",
+      "start": 20.62,
+      "end": 20.78,
+      "probability": 0.993
+    },
+    {
+      "word": " the",
+      "start": 20.78,
+      "end": 20.86,
+      "probability": 0.991
+    },
+    {
+      "word": " screen.",
+      "start": 20.86,
+      "end": 21.22,
+      "probability": 0.996
+    },
+    {
+      "word": " Thing",
+      "start": 21.62,
+      "end": 21.76,
+      "probability": 0.746
+    },
+    {
+      "word": " for",
+      "start": 21.76,
+      "end": 21.92,
+      "probability": 0.665
+    },
+    {
+      "word": " a",
+      "start": 21.92,
+      "end": 22.04,
+      "probability": 0.343
+    },
+    {
+      "word": " five",
+      "start": 22.04,
+      "end": 22.2,
+      "probability": 0.416
+    },
+    {
+      "word": " day",
+      "start": 22.2,
+      "end": 22.4,
+      "probability": 0.503
+    },
+    {
+      "word": " straight,",
+      "start": 22.4,
+      "end": 22.78,
+      "probability": 0.954
+    },
+    {
+      "word": " no",
+      "start": 23.12,
+      "end": 23.26,
+      "probability": 0.959
+    },
+    {
+      "word": " sleep,",
+      "start": 23.26,
+      "end": 23.6,
+      "probability": 0.996
+    },
+    {
+      "word": " no",
+      "start": 23.96,
+      "end": 24.16,
+      "probability": 0.997
+    },
+    {
+      "word": " banana",
+      "start": 24.16,
+      "end": 24.5,
+      "probability": 0.993
+    },
+    {
+      "word": " break,",
+      "start": 24.5,
+      "end": 24.92,
+      "probability": 0.953
+    },
+    {
+      "word": " rebuilds",
+      "start": 25.22,
+      "end": 25.66,
+      "probability": 0.893
+    },
+    {
+      "word": " the",
+      "start": 25.66,
+      "end": 25.74,
+      "probability": 0.996
+    },
+    {
+      "word": " entire",
+      "start": 25.74,
+      "end": 26.12,
+      "probability": 0.996
+    },
+    {
+      "word": " factory",
+      "start": 26.12,
+      "end": 26.62,
+      "probability": 0.991
+    },
+    {
+      "word": " from",
+      "start": 26.62,
+      "end": 26.88,
+      "probability": 0.995
+    },
+    {
+      "word": " scratch.",
+      "start": 26.88,
+      "end": 27.2,
+      "probability": 0.999
+    },
+    {
+      "word": " Fable",
+      "start": 27.2,
+      "end": 27.78,
+      "probability": 0.442
+    },
+    {
+      "word": " 5",
+      "start": 27.78,
+      "end": 28.06,
+      "probability": 0.791
+    },
+    {
+      "word": " gets",
+      "start": 28.06,
+      "end": 28.28,
+      "probability": 0.771
+    },
+    {
+      "word": " top",
+      "start": 28.28,
+      "end": 28.56,
+      "probability": 0.934
+    },
+    {
+      "word": " scores",
+      "start": 28.56,
+      "end": 28.84,
+      "probability": 0.946
+    },
+    {
+      "word": " on",
+      "start": 28.84,
+      "end": 29.16,
+      "probability": 0.99
+    },
+    {
+      "word": " SWE",
+      "start": 29.16,
+      "end": 29.92,
+      "probability": 0.905
+    },
+    {
+      "word": " Bench,",
+      "start": 29.92,
+      "end": 30.4,
+      "probability": 0.751
+    },
+    {
+      "word": " a",
+      "start": 30.46,
+      "end": 30.68,
+      "probability": 0.303
+    },
+    {
+      "word": " number",
+      "start": 30.68,
+      "end": 30.92,
+      "probability": 0.822
+    },
+    {
+      "word": " one",
+      "start": 30.92,
+      "end": 31.16,
+      "probability": 0.653
+    },
+    {
+      "word": " on",
+      "start": 31.16,
+      "end": 31.26,
+      "probability": 0.94
+    },
+    {
+      "word": " the",
+      "start": 31.26,
+      "end": 31.38,
+      "probability": 0.94
+    },
+    {
+      "word": " AI",
+      "start": 31.38,
+      "end": 31.66,
+      "probability": 0.953
+    },
+    {
+      "word": " index,",
+      "start": 31.66,
+      "end": 32.02,
+      "probability": 0.425
+    },
+    {
+      "word": " gorilla",
+      "start": 32.52,
+      "end": 32.74,
+      "probability": 0.096
+    },
+    {
+      "word": " dominates",
+      "start": 32.74,
+      "end": 33.34,
+      "probability": 0.995
+    },
+    {
+      "word": " every",
+      "start": 33.34,
+      "end": 33.62,
+      "probability": 0.994
+    },
+    {
+      "word": " test.",
+      "start": 33.62,
+      "end": 34.08,
+      "probability": 0.996
+    },
+    {
+      "word": " Monkey",
+      "start": 34.46,
+      "end": 34.66,
+      "probability": 0.719
+    },
+    {
+      "word": " happy,",
+      "start": 34.66,
+      "end": 35.0,
+      "probability": 0.804
+    },
+    {
+      "word": " monkey",
+      "start": 35.38,
+      "end": 35.64,
+      "probability": 0.742
+    },
+    {
+      "word": " hires",
+      "start": 35.64,
+      "end": 36.02,
+      "probability": 0.97
+    },
+    {
+      "word": " Fable",
+      "start": 36.02,
+      "end": 36.3,
+      "probability": 0.832
+    },
+    {
+      "word": " 5,",
+      "start": 36.3,
+      "end": 36.72,
+      "probability": 0.973
+    },
+    {
+      "word": " then",
+      "start": 36.92,
+      "end": 37.3,
+      "probability": 0.977
+    },
+    {
+      "word": " monkey",
+      "start": 37.3,
+      "end": 37.7,
+      "probability": 0.869
+    },
+    {
+      "word": " gets",
+      "start": 37.7,
+      "end": 37.88,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 37.88,
+      "end": 38.1,
+      "probability": 0.996
+    },
+    {
+      "word": " bill,",
+      "start": 38.1,
+      "end": 38.34,
+      "probability": 0.946
+    },
+    {
+      "word": " input",
+      "start": 38.76,
+      "end": 38.94,
+      "probability": 0.934
+    },
+    {
+      "word": " costs",
+      "start": 38.94,
+      "end": 39.42,
+      "probability": 0.978
+    },
+    {
+      "word": " 10",
+      "start": 39.42,
+      "end": 39.96,
+      "probability": 0.64
+    },
+    {
+      "word": " bananas",
+      "start": 39.96,
+      "end": 40.38,
+      "probability": 0.965
+    },
+    {
+      "word": " per",
+      "start": 40.38,
+      "end": 40.64,
+      "probability": 0.924
+    },
+    {
+      "word": " million",
+      "start": 40.64,
+      "end": 40.92,
+      "probability": 0.979
+    },
+    {
+      "word": " words,",
+      "start": 40.92,
+      "end": 41.32,
+      "probability": 0.784
+    },
+    {
+      "word": " output",
+      "start": 41.8,
+      "end": 41.98,
+      "probability": 0.948
+    },
+    {
+      "word": " costs",
+      "start": 41.98,
+      "end": 42.48,
+      "probability": 0.97
+    },
+    {
+      "word": " 50",
+      "start": 42.48,
+      "end": 42.92,
+      "probability": 0.992
+    },
+    {
+      "word": " bananas",
+      "start": 42.92,
+      "end": 43.36,
+      "probability": 0.99
+    },
+    {
+      "word": " per",
+      "start": 43.36,
+      "end": 43.64,
+      "probability": 0.993
+    },
+    {
+      "word": " million",
+      "start": 43.64,
+      "end": 43.88,
+      "probability": 0.993
+    },
+    {
+      "word": " words.",
+      "start": 43.88,
+      "end": 44.36,
+      "probability": 0.993
+    },
+    {
+      "word": " Monkey",
+      "start": 44.96,
+      "end": 45.18,
+      "probability": 0.735
+    },
+    {
+      "word": " reads",
+      "start": 45.18,
+      "end": 45.44,
+      "probability": 0.991
+    },
+    {
+      "word": " the",
+      "start": 45.44,
+      "end": 45.66,
+      "probability": 0.982
+    },
+    {
+      "word": " invoice",
+      "start": 45.66,
+      "end": 45.94,
+      "probability": 0.986
+    },
+    {
+      "word": " three",
+      "start": 45.94,
+      "end": 46.3,
+      "probability": 0.897
+    },
+    {
+      "word": " times,",
+      "start": 46.3,
+      "end": 46.7,
+      "probability": 0.994
+    },
+    {
+      "word": " your",
+      "start": 47.08,
+      "end": 47.14,
+      "probability": 0.687
+    },
+    {
+      "word": " card",
+      "start": 47.14,
+      "end": 47.42,
+      "probability": 0.992
+    },
+    {
+      "word": " was",
+      "start": 47.42,
+      "end": 47.6,
+      "probability": 0.998
+    },
+    {
+      "word": " declined,",
+      "start": 47.6,
+      "end": 48.0,
+      "probability": 0.99
+    },
+    {
+      "word": " monkey",
+      "start": 48.66,
+      "end": 48.84,
+      "probability": 0.706
+    },
+    {
+      "word": " wallet",
+      "start": 48.84,
+      "end": 49.08,
+      "probability": 0.989
+    },
+    {
+      "word": " empty,",
+      "start": 49.08,
+      "end": 49.5,
+      "probability": 0.978
+    },
+    {
+      "word": " pesky",
+      "start": 50.04,
+      "end": 50.32,
+      "probability": 0.983
+    },
+    {
+      "word": " gorilla",
+      "start": 50.32,
+      "end": 50.58,
+      "probability": 0.912
+    },
+    {
+      "word": " pricing,",
+      "start": 50.58,
+      "end": 51.06,
+      "probability": 0.996
+    },
+    {
+      "word": " monkey",
+      "start": 51.64,
+      "end": 51.96,
+      "probability": 0.878
+    },
+    {
+      "word": " poor,",
+      "start": 51.96,
+      "end": 52.34,
+      "probability": 0.64
+    },
+    {
+      "word": " monkey",
+      "start": 52.66,
+      "end": 52.92,
+      "probability": 0.971
+    },
+    {
+      "word": " sad,",
+      "start": 52.92,
+      "end": 53.3,
+      "probability": 0.949
+    },
+    {
+      "word": " option",
+      "start": 53.76,
+      "end": 54.02,
+      "probability": 0.986
+    },
+    {
+      "word": " 2,",
+      "start": 54.02,
+      "end": 54.38,
+      "probability": 0.473
+    },
+    {
+      "word": " higher",
+      "start": 54.78,
+      "end": 54.96,
+      "probability": 0.891
+    },
+    {
+      "word": " chip",
+      "start": 54.96,
+      "end": 55.2,
+      "probability": 0.394
+    },
+    {
+      "word": " engineer",
+      "start": 55.2,
+      "end": 55.68,
+      "probability": 0.985
+    },
+    {
+      "word": " opus",
+      "start": 55.68,
+      "end": 56.1,
+      "probability": 0.634
+    },
+    {
+      "word": " 5,",
+      "start": 56.1,
+      "end": 56.36,
+      "probability": 0.696
+    },
+    {
+      "word": " opus",
+      "start": 56.68,
+      "end": 56.94,
+      "probability": 0.968
+    },
+    {
+      "word": " 5",
+      "start": 56.94,
+      "end": 57.16,
+      "probability": 0.028
+    },
+    {
+      "word": " is",
+      "start": 57.16,
+      "end": 57.44,
+      "probability": 0.683
+    },
+    {
+      "word": " the",
+      "start": 57.44,
+      "end": 57.56,
+      "probability": 0.845
+    },
+    {
+      "word": " flagship",
+      "start": 57.56,
+      "end": 58.04,
+      "probability": 0.892
+    },
+    {
+      "word": " workhorse",
+      "start": 58.04,
+      "end": 58.66,
+      "probability": 0.919
+    },
+    {
+      "word": " built",
+      "start": 58.66,
+      "end": 59.04,
+      "probability": 0.641
+    },
+    {
+      "word": " for",
+      "start": 59.04,
+      "end": 59.24,
+      "probability": 0.99
+    },
+    {
+      "word": " daily",
+      "start": 59.24,
+      "end": 59.5,
+      "probability": 0.977
+    },
+    {
+      "word": " software",
+      "start": 59.5,
+      "end": 59.88,
+      "probability": 0.986
+    },
+    {
+      "word": " engineering,",
+      "start": 59.88,
+      "end": 60.56,
+      "probability": 0.996
+    },
+    {
+      "word": " monkey",
+      "start": 60.82,
+      "end": 61.12,
+      "probability": 0.617
+    },
+    {
+      "word": " hands,",
+      "start": 61.12,
+      "end": 61.48,
+      "probability": 0.976
+    },
+    {
+      "word": " opus",
+      "start": 61.82,
+      "end": 62.02,
+      "probability": 0.58
+    },
+    {
+      "word": " 5",
+      "start": 62.02,
+      "end": 62.2,
+      "probability": 0.798
+    },
+    {
+      "word": " 1",
+      "start": 62.2,
+      "end": 62.48,
+      "probability": 0.186
+    },
+    {
+      "word": " million",
+      "start": 62.48,
+      "end": 62.72,
+      "probability": 0.808
+    },
+    {
+      "word": " scrolls,",
+      "start": 62.72,
+      "end": 63.36,
+      "probability": 0.963
+    },
+    {
+      "word": " opus",
+      "start": 63.68,
+      "end": 63.84,
+      "probability": 0.951
+    },
+    {
+      "word": " 5",
+      "start": 63.84,
+      "end": 64.02,
+      "probability": 0.986
+    },
+    {
+      "word": " reads",
+      "start": 64.02,
+      "end": 64.18,
+      "probability": 0.834
+    },
+    {
+      "word": " everything",
+      "start": 64.18,
+      "end": 64.58,
+      "probability": 0.974
+    },
+    {
+      "word": " in",
+      "start": 64.58,
+      "end": 64.74,
+      "probability": 0.988
+    },
+    {
+      "word": " one",
+      "start": 64.74,
+      "end": 64.88,
+      "probability": 0.665
+    },
+    {
+      "word": " second,",
+      "start": 64.88,
+      "end": 65.28,
+      "probability": 0.989
+    },
+    {
+      "word": " one",
+      "start": 65.68,
+      "end": 65.94,
+      "probability": 0.14
+    },
+    {
+      "word": " million",
+      "start": 65.94,
+      "end": 66.34,
+      "probability": 0.987
+    },
+    {
+      "word": " token",
+      "start": 66.34,
+      "end": 66.72,
+      "probability": 0.973
+    },
+    {
+      "word": " context",
+      "start": 66.72,
+      "end": 67.26,
+      "probability": 0.919
+    },
+    {
+      "word": " window,",
+      "start": 67.26,
+      "end": 67.82,
+      "probability": 0.975
+    },
+    {
+      "word": " fixes",
+      "start": 68.26,
+      "end": 68.56,
+      "probability": 0.942
+    },
+    {
+      "word": " code,",
+      "start": 68.56,
+      "end": 69.0,
+      "probability": 0.985
+    },
+    {
+      "word": " builds",
+      "start": 69.54,
+      "end": 69.82,
+      "probability": 0.982
+    },
+    {
+      "word": " tools,",
+      "start": 69.82,
+      "end": 70.26,
+      "probability": 0.964
+    },
+    {
+      "word": " audit",
+      "start": 70.86,
+      "end": 71.04,
+      "probability": 0.991
+    },
+    {
+      "word": " security,",
+      "start": 71.04,
+      "end": 71.74,
+      "probability": 0.972
+    },
+    {
+      "word": " finished",
+      "start": 72.28,
+      "end": 72.46,
+      "probability": 0.96
+    },
+    {
+      "word": " before",
+      "start": 72.46,
+      "end": 72.82,
+      "probability": 0.982
+    },
+    {
+      "word": " lunchtime.",
+      "start": 72.82,
+      "end": 73.48,
+      "probability": 0.897
+    },
+    {
+      "word": " On",
+      "start": 73.88,
+      "end": 74.02,
+      "probability": 0.94
+    },
+    {
+      "word": " intelligence",
+      "start": 74.02,
+      "end": 74.4,
+      "probability": 0.718
+    },
+    {
+      "word": " tests,",
+      "start": 74.4,
+      "end": 74.82,
+      "probability": 0.968
+    },
+    {
+      "word": " opus",
+      "start": 75.08,
+      "end": 75.3,
+      "probability": 0.868
+    },
+    {
+      "word": " 5",
+      "start": 75.3,
+      "end": 75.54,
+      "probability": 0.973
+    },
+    {
+      "word": " ties",
+      "start": 75.54,
+      "end": 75.78,
+      "probability": 0.882
+    },
+    {
+      "word": " Pable",
+      "start": 75.78,
+      "end": 76.16,
+      "probability": 0.532
+    },
+    {
+      "word": " 5,",
+      "start": 76.16,
+      "end": 76.46,
+      "probability": 0.918
+    },
+    {
+      "word": " same",
+      "start": 76.78,
+      "end": 76.92,
+      "probability": 0.978
+    },
+    {
+      "word": " brain,",
+      "start": 76.92,
+      "end": 77.22,
+      "probability": 0.945
+    },
+    {
+      "word": " same",
+      "start": 77.7,
+      "end": 77.9,
+      "probability": 0.994
+    },
+    {
+      "word": " gorilla",
+      "start": 77.9,
+      "end": 78.16,
+      "probability": 0.463
+    },
+    {
+      "word": " level",
+      "start": 78.16,
+      "end": 78.5,
+      "probability": 0.913
+    },
+    {
+      "word": " reasoning,",
+      "start": 78.5,
+      "end": 78.86,
+      "probability": 0.995
+    },
+    {
+      "word": " but",
+      "start": 79.26,
+      "end": 79.34,
+      "probability": 0.958
+    },
+    {
+      "word": " opus",
+      "start": 79.34,
+      "end": 79.66,
+      "probability": 0.954
+    },
+    {
+      "word": " 5",
+      "start": 79.66,
+      "end": 79.96,
+      "probability": 0.974
+    },
+    {
+      "word": " wears",
+      "start": 79.96,
+      "end": 80.18,
+      "probability": 0.909
+    },
+    {
+      "word": " a",
+      "start": 80.18,
+      "end": 80.32,
+      "probability": 0.995
+    },
+    {
+      "word": " yellow",
+      "start": 80.32,
+      "end": 80.54,
+      "probability": 0.996
+    },
+    {
+      "word": " hard",
+      "start": 80.54,
+      "end": 80.88,
+      "probability": 0.649
+    },
+    {
+      "word": " hat,",
+      "start": 80.88,
+      "end": 81.14,
+      "probability": 0.893
+    },
+    {
+      "word": " shows",
+      "start": 81.48,
+      "end": 81.6,
+      "probability": 0.978
+    },
+    {
+      "word": " up",
+      "start": 81.6,
+      "end": 81.8,
+      "probability": 0.999
+    },
+    {
+      "word": " to",
+      "start": 81.8,
+      "end": 81.9,
+      "probability": 0.997
+    },
+    {
+      "word": " work",
+      "start": 81.9,
+      "end": 82.08,
+      "probability": 0.997
+    },
+    {
+      "word": " every",
+      "start": 82.08,
+      "end": 82.44,
+      "probability": 0.989
+    },
+    {
+      "word": " single",
+      "start": 82.44,
+      "end": 82.8,
+      "probability": 0.983
+    },
+    {
+      "word": " day.",
+      "start": 82.8,
+      "end": 83.1,
+      "probability": 0.999
+    },
+    {
+      "word": " Best",
+      "start": 83.1,
+      "end": 83.58,
+      "probability": 0.114
+    },
+    {
+      "word": " of",
+      "start": 83.58,
+      "end": 83.8,
+      "probability": 0.992
+    },
+    {
+      "word": " all,",
+      "start": 83.8,
+      "end": 84.06,
+      "probability": 0.99
+    },
+    {
+      "word": " opus",
+      "start": 84.2,
+      "end": 84.48,
+      "probability": 0.527
+    },
+    {
+      "word": " 5",
+      "start": 84.48,
+      "end": 84.68,
+      "probability": 0.773
+    },
+    {
+      "word": " costs",
+      "start": 84.68,
+      "end": 85.0,
+      "probability": 0.944
+    },
+    {
+      "word": " half,",
+      "start": 85.0,
+      "end": 85.44,
+      "probability": 0.737
+    },
+    {
+      "word": " 5",
+      "start": 85.82,
+      "end": 86.1,
+      "probability": 0.764
+    },
+    {
+      "word": " bananas",
+      "start": 86.1,
+      "end": 86.6,
+      "probability": 0.961
+    },
+    {
+      "word": " input",
+      "start": 86.6,
+      "end": 87.1,
+      "probability": 0.393
+    },
+    {
+      "word": " per",
+      "start": 87.1,
+      "end": 87.42,
+      "probability": 0.938
+    },
+    {
+      "word": " million",
+      "start": 87.42,
+      "end": 87.68,
+      "probability": 0.972
+    },
+    {
+      "word": " words,",
+      "start": 87.68,
+      "end": 88.26,
+      "probability": 0.849
+    },
+    {
+      "word": " 25",
+      "start": 88.54,
+      "end": 89.02,
+      "probability": 0.973
+    },
+    {
+      "word": " bananas",
+      "start": 89.02,
+      "end": 89.74,
+      "probability": 0.961
+    },
+    {
+      "word": " output",
+      "start": 89.74,
+      "end": 90.12,
+      "probability": 0.985
+    },
+    {
+      "word": " per",
+      "start": 90.12,
+      "end": 90.38,
+      "probability": 0.993
+    },
+    {
+      "word": " million",
+      "start": 90.38,
+      "end": 90.64,
+      "probability": 0.985
+    },
+    {
+      "word": " words,",
+      "start": 90.64,
+      "end": 91.22,
+      "probability": 0.984
+    },
+    {
+      "word": " half",
+      "start": 91.62,
+      "end": 91.78,
+      "probability": 0.806
+    },
+    {
+      "word": " price,",
+      "start": 91.78,
+      "end": 91.98,
+      "probability": 0.74
+    },
+    {
+      "word": " same",
+      "start": 92.48,
+      "end": 92.62,
+      "probability": 0.983
+    },
+    {
+      "word": " intelligence,",
+      "start": 92.62,
+      "end": 93.08,
+      "probability": 0.99
+    },
+    {
+      "word": " monkey",
+      "start": 93.6,
+      "end": 94.86,
+      "probability": 0.016
+    },
+    {
+      "word": " wallet",
+      "start": 94.86,
+      "end": 95.24,
+      "probability": 0.929
+    },
+    {
+      "word": " happy,",
+      "start": 95.24,
+      "end": 95.72,
+      "probability": 0.906
+    },
+    {
+      "word": " monkey",
+      "start": 96.14,
+      "end": 96.3,
+      "probability": 0.971
+    },
+    {
+      "word": " rich,",
+      "start": 96.3,
+      "end": 96.6,
+      "probability": 0.957
+    },
+    {
+      "word": " but",
+      "start": 97.08,
+      "end": 97.38,
+      "probability": 0.959
+    },
+    {
+      "word": " wait,",
+      "start": 97.38,
+      "end": 97.92,
+      "probability": 0.74
+    },
+    {
+      "word": " which",
+      "start": 98.42,
+      "end": 98.68,
+      "probability": 0.979
+    },
+    {
+      "word": " model",
+      "start": 98.68,
+      "end": 98.98,
+      "probability": 0.99
+    },
+    {
+      "word": " is",
+      "start": 98.98,
+      "end": 99.16,
+      "probability": 0.996
+    },
+    {
+      "word": " actually",
+      "start": 99.16,
+      "end": 99.5,
+      "probability": 0.988
+    },
+    {
+      "word": " better.",
+      "start": 99.5,
+      "end": 99.82,
+      "probability": 0.998
+    },
+    {
+      "word": " Monkey",
+      "start": 100.4,
+      "end": 100.64,
+      "probability": 0.813
+    },
+    {
+      "word": " runs",
+      "start": 100.64,
+      "end": 100.82,
+      "probability": 0.941
+    },
+    {
+      "word": " a",
+      "start": 100.82,
+      "end": 100.96,
+      "probability": 0.96
+    },
+    {
+      "word": " jungle",
+      "start": 100.96,
+      "end": 101.14,
+      "probability": 0.824
+    },
+    {
+      "word": " stress",
+      "start": 101.14,
+      "end": 101.38,
+      "probability": 0.987
+    },
+    {
+      "word": " test,",
+      "start": 101.38,
+      "end": 101.74,
+      "probability": 0.996
+    },
+    {
+      "word": " gives",
+      "start": 101.92,
+      "end": 102.02,
+      "probability": 0.923
+    },
+    {
+      "word": " both",
+      "start": 102.02,
+      "end": 102.22,
+      "probability": 0.975
+    },
+    {
+      "word": " models",
+      "start": 102.22,
+      "end": 102.52,
+      "probability": 0.981
+    },
+    {
+      "word": " the",
+      "start": 102.52,
+      "end": 102.7,
+      "probability": 0.991
+    },
+    {
+      "word": " exact",
+      "start": 102.7,
+      "end": 102.96,
+      "probability": 0.993
+    },
+    {
+      "word": " same",
+      "start": 102.96,
+      "end": 103.24,
+      "probability": 0.998
+    },
+    {
+      "word": " broken",
+      "start": 103.24,
+      "end": 103.46,
+      "probability": 0.995
+    },
+    {
+      "word": " app,",
+      "start": 103.46,
+      "end": 103.68,
+      "probability": 0.911
+    },
+    {
+      "word": " Able",
+      "start": 103.96,
+      "end": 104.14,
+      "probability": 0.504
+    },
+    {
+      "word": " 5",
+      "start": 104.14,
+      "end": 104.48,
+      "probability": 0.896
+    },
+    {
+      "word": " disappears",
+      "start": 104.48,
+      "end": 105.0,
+      "probability": 0.986
+    },
+    {
+      "word": " for",
+      "start": 105.0,
+      "end": 105.34,
+      "probability": 0.961
+    },
+    {
+      "word": " 3",
+      "start": 105.34,
+      "end": 105.68,
+      "probability": 0.486
+    },
+    {
+      "word": " days,",
+      "start": 105.68,
+      "end": 105.94,
+      "probability": 0.997
+    },
+    {
+      "word": " returns",
+      "start": 106.3,
+      "end": 106.54,
+      "probability": 0.981
+    },
+    {
+      "word": " with",
+      "start": 106.54,
+      "end": 106.84,
+      "probability": 0.99
+    },
+    {
+      "word": " a",
+      "start": 106.84,
+      "end": 106.92,
+      "probability": 0.871
+    },
+    {
+      "word": " complex",
+      "start": 106.92,
+      "end": 107.28,
+      "probability": 0.984
+    },
+    {
+      "word": " masterpiece,",
+      "start": 107.28,
+      "end": 107.92,
+      "probability": 0.979
+    },
+    {
+      "word": " opus",
+      "start": 108.38,
+      "end": 108.58,
+      "probability": 0.936
+    },
+    {
+      "word": " 5",
+      "start": 108.58,
+      "end": 108.76,
+      "probability": 0.969
+    },
+    {
+      "word": " fixes",
+      "start": 108.76,
+      "end": 109.1,
+      "probability": 0.979
+    },
+    {
+      "word": " the",
+      "start": 109.1,
+      "end": 109.28,
+      "probability": 0.979
+    },
+    {
+      "word": " bug",
+      "start": 109.28,
+      "end": 109.4,
+      "probability": 0.993
+    },
+    {
+      "word": " in",
+      "start": 109.4,
+      "end": 109.62,
+      "probability": 0.995
+    },
+    {
+      "word": " 2",
+      "start": 109.62,
+      "end": 109.86,
+      "probability": 0.898
+    },
+    {
+      "word": " hours,",
+      "start": 109.86,
+      "end": 110.2,
+      "probability": 0.993
+    },
+    {
+      "word": " both",
+      "start": 110.54,
+      "end": 110.7,
+      "probability": 0.994
+    },
+    {
+      "word": " apps",
+      "start": 110.7,
+      "end": 111.02,
+      "probability": 0.972
+    },
+    {
+      "word": " work",
+      "start": 111.02,
+      "end": 111.18,
+      "probability": 0.021
+    },
+    {
+      "word": " perfectly,",
+      "start": 111.18,
+      "end": 111.66,
+      "probability": 0.991
+    },
+    {
+      "word": " so",
+      "start": 111.98,
+      "end": 112.06,
+      "probability": 0.974
+    },
+    {
+      "word": " what",
+      "start": 112.06,
+      "end": 112.36,
+      "probability": 0.921
+    },
+    {
+      "word": " is",
+      "start": 112.36,
+      "end": 112.76,
+      "probability": 0.759
+    },
+    {
+      "word": " the",
+      "start": 112.76,
+      "end": 113.08,
+      "probability": 0.988
+    },
+    {
+      "word": " secret",
+      "start": 113.08,
+      "end": 113.42,
+      "probability": 0.961
+    },
+    {
+      "word": " difference?",
+      "start": 113.42,
+      "end": 113.96,
+      "probability": 0.985
+    },
+    {
+      "word": " Fable",
+      "start": 114.5,
+      "end": 114.7,
+      "probability": 0.591
+    },
+    {
+      "word": " 5",
+      "start": 114.7,
+      "end": 115.06,
+      "probability": 0.83
+    },
+    {
+      "word": " thinks",
+      "start": 115.06,
+      "end": 115.4,
+      "probability": 0.921
+    },
+    {
+      "word": " deeper",
+      "start": 115.4,
+      "end": 115.8,
+      "probability": 0.983
+    },
+    {
+      "word": " and",
+      "start": 115.8,
+      "end": 116.08,
+      "probability": 0.967
+    },
+    {
+      "word": " takes",
+      "start": 116.08,
+      "end": 116.32,
+      "probability": 0.995
+    },
+    {
+      "word": " longer,",
+      "start": 116.32,
+      "end": 116.8,
+      "probability": 0.999
+    },
+    {
+      "word": " opus",
+      "start": 117.26,
+      "end": 117.54,
+      "probability": 0.512
+    },
+    {
+      "word": " 5",
+      "start": 117.54,
+      "end": 117.84,
+      "probability": 0.951
+    },
+    {
+      "word": " thinks",
+      "start": 117.84,
+      "end": 118.12,
+      "probability": 0.992
+    },
+    {
+      "word": " fast",
+      "start": 118.12,
+      "end": 118.46,
+      "probability": 0.975
+    },
+    {
+      "word": " and",
+      "start": 118.46,
+      "end": 118.8,
+      "probability": 0.877
+    },
+    {
+      "word": " ships",
+      "start": 118.8,
+      "end": 118.98,
+      "probability": 0.92
+    },
+    {
+      "word": " code",
+      "start": 118.98,
+      "end": 119.32,
+      "probability": 0.801
+    },
+    {
+      "word": " faster.",
+      "start": 119.32,
+      "end": 119.78,
+      "probability": 0.989
+    },
+    {
+      "word": " Same",
+      "start": 120.4,
+      "end": 120.52,
+      "probability": 0.875
+    },
+    {
+      "word": " destination,",
+      "start": 120.52,
+      "end": 121.0,
+      "probability": 0.974
+    },
+    {
+      "word": " different",
+      "start": 121.48,
+      "end": 121.72,
+      "probability": 0.982
+    },
+    {
+      "word": " jungle",
+      "start": 121.72,
+      "end": 121.98,
+      "probability": 0.949
+    },
+    {
+      "word": " paths,",
+      "start": 121.98,
+      "end": 122.32,
+      "probability": 0.943
+    },
+    {
+      "word": " option",
+      "start": 122.96,
+      "end": 123.24,
+      "probability": 0.772
+    },
+    {
+      "word": " 3,",
+      "start": 123.24,
+      "end": 123.64,
+      "probability": 0.925
+    },
+    {
+      "word": " secret",
+      "start": 124.06,
+      "end": 124.36,
+      "probability": 0.902
+    },
+    {
+      "word": " jungle",
+      "start": 124.36,
+      "end": 124.72,
+      "probability": 0.98
+    },
+    {
+      "word": " discounts,",
+      "start": 124.72,
+      "end": 125.12,
+      "probability": 0.985
+    },
+    {
+      "word": " both",
+      "start": 125.72,
+      "end": 125.84,
+      "probability": 0.929
+    },
+    {
+      "word": " models",
+      "start": 125.84,
+      "end": 126.14,
+      "probability": 0.989
+    },
+    {
+      "word": " have",
+      "start": 126.14,
+      "end": 126.34,
+      "probability": 0.997
+    },
+    {
+      "word": " adaptive",
+      "start": 126.34,
+      "end": 126.7,
+      "probability": 0.805
+    },
+    {
+      "word": " thinking,",
+      "start": 126.7,
+      "end": 127.04,
+      "probability": 0.995
+    },
+    {
+      "word": " monkey",
+      "start": 127.54,
+      "end": 127.72,
+      "probability": 0.734
+    },
+    {
+      "word": " turns",
+      "start": 127.72,
+      "end": 127.9,
+      "probability": 0.995
+    },
+    {
+      "word": " the",
+      "start": 127.9,
+      "end": 128.08,
+      "probability": 0.99
+    },
+    {
+      "word": " brain",
+      "start": 128.08,
+      "end": 128.26,
+      "probability": 0.962
+    },
+    {
+      "word": " knob",
+      "start": 128.26,
+      "end": 128.44,
+      "probability": 0.517
+    },
+    {
+      "word": " up",
+      "start": 128.44,
+      "end": 128.68,
+      "probability": 0.998
+    },
+    {
+      "word": " or",
+      "start": 128.68,
+      "end": 128.86,
+      "probability": 0.986
+    },
+    {
+      "word": " down,",
+      "start": 128.86,
+      "end": 129.12,
+      "probability": 1.0
+    },
+    {
+      "word": " low",
+      "start": 129.4,
+      "end": 129.52,
+      "probability": 0.993
+    },
+    {
+      "word": " effort",
+      "start": 129.52,
+      "end": 129.9,
+      "probability": 0.986
+    },
+    {
+      "word": " for",
+      "start": 129.9,
+      "end": 130.14,
+      "probability": 0.995
+    },
+    {
+      "word": " quick,",
+      "start": 130.14,
+      "end": 130.46,
+      "probability": 0.997
+    },
+    {
+      "word": " simple",
+      "start": 130.64,
+      "end": 130.96,
+      "probability": 0.998
+    },
+    {
+      "word": " answers,",
+      "start": 130.96,
+      "end": 131.4,
+      "probability": 0.99
+    },
+    {
+      "word": " max",
+      "start": 132.04,
+      "end": 132.12,
+      "probability": 0.851
+    },
+    {
+      "word": " effort",
+      "start": 132.12,
+      "end": 132.58,
+      "probability": 0.971
+    },
+    {
+      "word": " for",
+      "start": 132.58,
+      "end": 132.88,
+      "probability": 0.995
+    },
+    {
+      "word": " deep",
+      "start": 132.88,
+      "end": 133.1,
+      "probability": 0.978
+    },
+    {
+      "word": " gorilla",
+      "start": 133.1,
+      "end": 133.4,
+      "probability": 0.715
+    },
+    {
+      "word": " reasoning,",
+      "start": 133.4,
+      "end": 133.92,
+      "probability": 0.994
+    },
+    {
+      "word": " monkey",
+      "start": 134.52,
+      "end": 134.68,
+      "probability": 0.948
+    },
+    {
+      "word": " controls",
+      "start": 134.68,
+      "end": 134.98,
+      "probability": 0.996
+    },
+    {
+      "word": " how",
+      "start": 134.98,
+      "end": 135.2,
+      "probability": 0.971
+    },
+    {
+      "word": " hard",
+      "start": 135.2,
+      "end": 135.4,
+      "probability": 0.999
+    },
+    {
+      "word": " they",
+      "start": 135.4,
+      "end": 135.56,
+      "probability": 0.989
+    },
+    {
+      "word": " think,",
+      "start": 135.56,
+      "end": 135.9,
+      "probability": 0.996
+    },
+    {
+      "word": " both",
+      "start": 136.18,
+      "end": 136.26,
+      "probability": 0.925
+    },
+    {
+      "word": " models",
+      "start": 136.26,
+      "end": 136.62,
+      "probability": 0.996
+    },
+    {
+      "word": " use",
+      "start": 136.62,
+      "end": 136.86,
+      "probability": 0.943
+    },
+    {
+      "word": " pre",
+      "start": 136.86,
+      "end": 137.06,
+      "probability": 0.9
+    },
+    {
+      "word": "-peeled",
+      "start": 137.06,
+      "end": 137.4,
+      "probability": 0.761
+    },
+    {
+      "word": " banana",
+      "start": 137.4,
+      "end": 137.62,
+      "probability": 0.858
+    },
+    {
+      "word": " caching,",
+      "start": 137.62,
+      "end": 138.06,
+      "probability": 0.952
+    },
+    {
+      "word": " show",
+      "start": 138.34,
+      "end": 138.42,
+      "probability": 0.973
+    },
+    {
+      "word": " the",
+      "start": 138.42,
+      "end": 138.56,
+      "probability": 0.997
+    },
+    {
+      "word": " same",
+      "start": 138.56,
+      "end": 138.76,
+      "probability": 0.995
+    },
+    {
+      "word": " scroll",
+      "start": 138.76,
+      "end": 139.06,
+      "probability": 0.866
+    },
+    {
+      "word": " blueprint",
+      "start": 139.06,
+      "end": 139.4,
+      "probability": 0.945
+    },
+    {
+      "word": " twice,",
+      "start": 139.4,
+      "end": 139.82,
+      "probability": 0.995
+    },
+    {
+      "word": " monkey",
+      "start": 140.46,
+      "end": 140.66,
+      "probability": 0.98
+    },
+    {
+      "word": " bank",
+      "start": 140.66,
+      "end": 140.88,
+      "probability": 0.196
+    },
+    {
+      "word": " gives",
+      "start": 140.88,
+      "end": 141.08,
+      "probability": 0.371
+    },
+    {
+      "word": " 90",
+      "start": 141.08,
+      "end": 141.4,
+      "probability": 0.974
+    },
+    {
+      "word": "%",
+      "start": 141.4,
+      "end": 141.74,
+      "probability": 0.904
+    },
+    {
+      "word": " discount,",
+      "start": 141.74,
+      "end": 142.14,
+      "probability": 0.996
+    },
+    {
+      "word": " opus",
+      "start": 142.7,
+      "end": 143.0,
+      "probability": 0.553
+    },
+    {
+      "word": " 5",
+      "start": 143.0,
+      "end": 143.28,
+      "probability": 0.66
+    },
+    {
+      "word": " cash",
+      "start": 143.28,
+      "end": 143.56,
+      "probability": 0.335
+    },
+    {
+      "word": " input",
+      "start": 143.56,
+      "end": 143.9,
+      "probability": 0.013
+    },
+    {
+      "word": " costs",
+      "start": 143.9,
+      "end": 144.36,
+      "probability": 0.882
+    },
+    {
+      "word": " half",
+      "start": 144.36,
+      "end": 144.7,
+      "probability": 0.959
+    },
+    {
+      "word": " a",
+      "start": 144.7,
+      "end": 144.82,
+      "probability": 0.973
+    },
+    {
+      "word": " banana,",
+      "start": 144.82,
+      "end": 145.12,
+      "probability": 0.991
+    },
+    {
+      "word": " fable",
+      "start": 145.7,
+      "end": 145.96,
+      "probability": 0.629
+    },
+    {
+      "word": " 5",
+      "start": 145.96,
+      "end": 146.2,
+      "probability": 0.946
+    },
+    {
+      "word": " cash",
+      "start": 146.2,
+      "end": 146.48,
+      "probability": 0.963
+    },
+    {
+      "word": " input",
+      "start": 146.48,
+      "end": 146.8,
+      "probability": 0.99
+    },
+    {
+      "word": " costs",
+      "start": 146.8,
+      "end": 147.22,
+      "probability": 0.589
+    },
+    {
+      "word": " swine",
+      "start": 147.22,
+      "end": 147.46,
+      "probability": 0.349
+    },
+    {
+      "word": " banana,",
+      "start": 147.46,
+      "end": 147.86,
+      "probability": 0.975
+    },
+    {
+      "word": " jungle",
+      "start": 148.32,
+      "end": 148.5,
+      "probability": 0.767
+    },
+    {
+      "word": " startup",
+      "start": 148.5,
+      "end": 148.86,
+      "probability": 0.804
+    },
+    {
+      "word": " runs",
+      "start": 148.86,
+      "end": 149.1,
+      "probability": 0.659
+    },
+    {
+      "word": " super",
+      "start": 149.1,
+      "end": 149.46,
+      "probability": 0.984
+    },
+    {
+      "word": " cheap",
+      "start": 149.46,
+      "end": 149.72,
+      "probability": 0.992
+    },
+    {
+      "word": " with",
+      "start": 149.72,
+      "end": 149.9,
+      "probability": 0.91
+    },
+    {
+      "word": " caching,",
+      "start": 149.9,
+      "end": 150.26,
+      "probability": 0.897
+    },
+    {
+      "word": " so",
+      "start": 150.62,
+      "end": 150.78,
+      "probability": 0.966
+    },
+    {
+      "word": " which",
+      "start": 150.78,
+      "end": 151.12,
+      "probability": 0.976
+    },
+    {
+      "word": " model",
+      "start": 151.12,
+      "end": 151.42,
+      "probability": 0.93
+    },
+    {
+      "word": " should",
+      "start": 151.42,
+      "end": 151.64,
+      "probability": 0.998
+    },
+    {
+      "word": " monkey",
+      "start": 151.64,
+      "end": 151.88,
+      "probability": 0.808
+    },
+    {
+      "word": " pick?",
+      "start": 151.88,
+      "end": 152.2,
+      "probability": 0.973
+    },
+    {
+      "word": " Multiday",
+      "start": 152.54,
+      "end": 153.0,
+      "probability": 0.609
+    },
+    {
+      "word": " autonomous",
+      "start": 153.0,
+      "end": 153.46,
+      "probability": 0.639
+    },
+    {
+      "word": " research",
+      "start": 153.46,
+      "end": 153.86,
+      "probability": 0.994
+    },
+    {
+      "word": " jobs,",
+      "start": 153.86,
+      "end": 154.32,
+      "probability": 0.974
+    },
+    {
+      "word": " complex",
+      "start": 154.64,
+      "end": 154.96,
+      "probability": 0.992
+    },
+    {
+      "word": " multi",
+      "start": 154.96,
+      "end": 155.38,
+      "probability": 0.826
+    },
+    {
+      "word": "-step",
+      "start": 155.38,
+      "end": 155.6,
+      "probability": 0.731
+    },
+    {
+      "word": " engineering",
+      "start": 155.6,
+      "end": 155.9,
+      "probability": 0.998
+    },
+    {
+      "word": " projects,",
+      "start": 155.9,
+      "end": 156.52,
+      "probability": 0.996
+    },
+    {
+      "word": " higher",
+      "start": 156.88,
+      "end": 157.12,
+      "probability": 0.737
+    },
+    {
+      "word": " gorilla",
+      "start": 157.12,
+      "end": 157.48,
+      "probability": 0.653
+    },
+    {
+      "word": " fable",
+      "start": 157.48,
+      "end": 157.88,
+      "probability": 0.938
+    },
+    {
+      "word": " 5,",
+      "start": 157.88,
+      "end": 158.36,
+      "probability": 0.945
+    },
+    {
+      "word": " worth",
+      "start": 158.76,
+      "end": 158.86,
+      "probability": 0.997
+    },
+    {
+      "word": " every",
+      "start": 158.86,
+      "end": 159.28,
+      "probability": 0.996
+    },
+    {
+      "word": " single",
+      "start": 159.28,
+      "end": 159.66,
+      "probability": 0.999
+    },
+    {
+      "word": " banana,",
+      "start": 159.66,
+      "end": 160.1,
+      "probability": 0.991
+    },
+    {
+      "word": " daily",
+      "start": 160.6,
+      "end": 160.78,
+      "probability": 0.986
+    },
+    {
+      "word": " coding,",
+      "start": 160.78,
+      "end": 161.12,
+      "probability": 0.91
+    },
+    {
+      "word": " coal",
+      "start": 161.26,
+      "end": 161.34,
+      "probability": 0.352
+    },
+    {
+      "word": " pilots",
+      "start": 161.34,
+      "end": 161.68,
+      "probability": 0.95
+    },
+    {
+      "word": " and",
+      "start": 161.68,
+      "end": 161.88,
+      "probability": 0.575
+    },
+    {
+      "word": " chat",
+      "start": 161.88,
+      "end": 162.06,
+      "probability": 0.946
+    },
+    {
+      "word": " assistance,",
+      "start": 162.06,
+      "end": 162.48,
+      "probability": 0.546
+    },
+    {
+      "word": " fast",
+      "start": 163.02,
+      "end": 163.16,
+      "probability": 0.939
+    },
+    {
+      "word": " reliable",
+      "start": 163.16,
+      "end": 163.48,
+      "probability": 0.884
+    },
+    {
+      "word": " software",
+      "start": 163.48,
+      "end": 164.0,
+      "probability": 0.997
+    },
+    {
+      "word": " engineering,",
+      "start": 164.0,
+      "end": 164.58,
+      "probability": 0.997
+    },
+    {
+      "word": " higher",
+      "start": 165.14,
+      "end": 165.32,
+      "probability": 0.974
+    },
+    {
+      "word": " chimp",
+      "start": 165.32,
+      "end": 165.58,
+      "probability": 0.633
+    },
+    {
+      "word": " engineer",
+      "start": 165.58,
+      "end": 165.96,
+      "probability": 0.968
+    },
+    {
+      "word": " opus",
+      "start": 165.96,
+      "end": 166.38,
+      "probability": 0.943
+    },
+    {
+      "word": " 5,",
+      "start": 166.38,
+      "end": 166.68,
+      "probability": 0.921
+    },
+    {
+      "word": " 95",
+      "start": 167.0,
+      "end": 167.34,
+      "probability": 0.96
+    },
+    {
+      "word": "%",
+      "start": 167.34,
+      "end": 167.62,
+      "probability": 0.423
+    },
+    {
+      "word": " for",
+      "start": 167.62,
+      "end": 167.62,
+      "probability": 0.695
+    },
+    {
+      "word": " set",
+      "start": 167.62,
+      "end": 167.74,
+      "probability": 0.323
+    },
+    {
+      "word": " performance",
+      "start": 167.74,
+      "end": 168.12,
+      "probability": 0.986
+    },
+    {
+      "word": " at",
+      "start": 168.12,
+      "end": 168.28,
+      "probability": 0.763
+    },
+    {
+      "word": " half",
+      "start": 168.28,
+      "end": 168.48,
+      "probability": 0.952
+    },
+    {
+      "word": " price,",
+      "start": 168.48,
+      "end": 168.78,
+      "probability": 0.975
+    },
+    {
+      "word": " smart",
+      "start": 169.32,
+      "end": 169.48,
+      "probability": 0.55
+    },
+    {
+      "word": " monkey",
+      "start": 169.48,
+      "end": 169.7,
+      "probability": 0.887
+    },
+    {
+      "word": " uses",
+      "start": 169.7,
+      "end": 170.08,
+      "probability": 0.986
+    },
+    {
+      "word": " both,",
+      "start": 170.08,
+      "end": 170.46,
+      "probability": 0.999
+    },
+    {
+      "word": " fable",
+      "start": 170.96,
+      "end": 171.18,
+      "probability": 0.428
+    },
+    {
+      "word": " 5",
+      "start": 171.18,
+      "end": 171.5,
+      "probability": 0.73
+    },
+    {
+      "word": " for",
+      "start": 171.5,
+      "end": 171.92,
+      "probability": 0.973
+    },
+    {
+      "word": " big",
+      "start": 171.92,
+      "end": 172.16,
+      "probability": 0.962
+    },
+    {
+      "word": " gorilla",
+      "start": 172.16,
+      "end": 172.4,
+      "probability": 0.78
+    },
+    {
+      "word": " tasks,",
+      "start": 172.4,
+      "end": 172.98,
+      "probability": 0.97
+    },
+    {
+      "word": " opus",
+      "start": 173.44,
+      "end": 173.7,
+      "probability": 0.765
+    },
+    {
+      "word": " 5",
+      "start": 173.7,
+      "end": 173.92,
+      "probability": 0.758
+    },
+    {
+      "word": " for",
+      "start": 173.92,
+      "end": 174.12,
+      "probability": 0.996
+    },
+    {
+      "word": " daily",
+      "start": 174.12,
+      "end": 174.3,
+      "probability": 0.997
+    },
+    {
+      "word": " engineering,",
+      "start": 174.3,
+      "end": 174.88,
+      "probability": 0.996
+    },
+    {
+      "word": " two",
+      "start": 175.26,
+      "end": 175.4,
+      "probability": 0.677
+    },
+    {
+      "word": " monkeys,",
+      "start": 175.4,
+      "end": 175.74,
+      "probability": 0.969
+    },
+    {
+      "word": " one",
+      "start": 176.12,
+      "end": 176.28,
+      "probability": 0.974
+    },
+    {
+      "word": " jungle,",
+      "start": 176.28,
+      "end": 176.62,
+      "probability": 0.989
+    },
+    {
+      "word": " maximum",
+      "start": 176.88,
+      "end": 177.2,
+      "probability": 0.904
+    },
+    {
+      "word": " bananas,",
+      "start": 177.2,
+      "end": 177.6,
+      "probability": 0.984
+    },
+    {
+      "word": " save",
+      "start": 178.24,
+      "end": 178.34,
+      "probability": 0.983
+    },
+    {
+      "word": " your",
+      "start": 178.34,
+      "end": 178.54,
+      "probability": 0.992
+    },
+    {
+      "word": " bananas,",
+      "start": 178.54,
+      "end": 178.98,
+      "probability": 0.989
+    },
+    {
+      "word": " subscribe",
+      "start": 179.34,
+      "end": 179.64,
+      "probability": 0.989
+    },
+    {
+      "word": " for",
+      "start": 179.64,
+      "end": 179.96,
+      "probability": 0.996
+    },
+    {
+      "word": " more",
+      "start": 179.96,
+      "end": 180.14,
+      "probability": 0.245
+    },
+    {
+      "word": " monkey",
+      "start": 180.14,
+      "end": 180.42,
+      "probability": 0.744
+    },
+    {
+      "word": " breakdowns.",
+      "start": 180.42,
+      "end": 181.32,
+      "probability": 0.981
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 181.515,
+  "model_size": "base",
+  "device": "cpu"
+}

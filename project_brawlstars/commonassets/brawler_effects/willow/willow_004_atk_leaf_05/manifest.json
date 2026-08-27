@@ -1,0 +1,21 @@
+{
+  "name": "willow_004_atk_leaf_05",
+  "frameCount": 1,
+  "canvas": {
+    "width": 406,
+    "height": 472
+  },
+  "anchor": {
+    "x": 203,
+    "y": 236
+  },
+  "scale": 4,
+  "frames": [
+    {
+      "x": 141,
+      "y": 25,
+      "w": 250,
+      "h": 221
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+[cheerful]
+Monkey wants to build an automated banana factory.
+Which new Anthropic model does Monkey hire?
+There are two new apes in the jungle.
+
+[dramatic]
+Option one. Hire Gorilla Fable 5.
+
+[excited]
+Fable 5 is a giant Mythos gorilla!
+Built for multi-day autonomous research.
+Deep reasoning. Long horizon tasks.
+
+[cheerful]
+Monkey hands Fable 5 broken banana code.
+Fable 5 stares at the screen.
+
+[dramatic]
+Thinks for five days straight!
+No sleep. No banana break.
+
+[excited]
+Rebuilds the entire factory from scratch!
+Fable 5 gets top scores on SWE-bench!
+
+[cheerful]
+Number one on the AI index!
+Gorilla dominates every test.
+
+[happy]
+Monkey happy! Monkey hires Fable 5!
+
+[dramatic]
+Then Monkey gets the bill.
+
+[normal]
+Input costs ten bananas per million words.
+Output costs fifty bananas per million words.
+
+[dramatic]
+Monkey reads the invoice three times.
+Your card was declined!
+
+[whisper]
+Monkey wallet empty.
+Pesky gorilla pricing.
+
+[sad]
+Monkey poor... monkey sad...
+
+[cheerful]
+Option two. Hire Chimp Engineer Opus 5.
+
+[excited]
+Opus 5 is the flagship workhorse!
+Built for daily software engineering.
+
+[cheerful]
+Monkey hands Opus 5 one million scrolls.
+Opus 5 reads everything in one second!
+
+[excited]
+One million token context window!
+
+[normal]
+Fixes code. Builds tools. Audits security.
+Finished before lunch time.
+
+[happy]
+On intelligence tests, Opus 5 ties Fable 5!
+Same brain. Same gorilla-level reasoning.
+
+[cheerful]
+But Opus 5 wears a yellow hard hat.
+Shows up to work every single day.
+
+[excited]
+Best of all, Opus 5 costs half!
+
+[normal]
+Five bananas input per million words.
+Twenty-five bananas output per million words.
+
+[excited]
+Half price! Same intelligence!
+
+[happy]
+Monkey wallet happy! Monkey rich!
+
+[normal]
+But wait. Which model is actually better?
+
+[cheerful]
+Monkey runs a jungle stress test.
+Gives both models the exact same broken app.
+
+[dramatic]
+Fable 5 disappears for three days.
+Returns with a complex masterpiece.
+
+[cheerful]
+Opus 5 fixes the bug in two hours.
+Both apps work perfectly.
+
+[dramatic]
+So what is the secret difference?
+
+[normal]
+Fable 5 thinks deeper and takes longer.
+Opus 5 thinks fast and ships code faster.
+
+[dramatic]
+Same destination. Different jungle paths.
+
+[normal]
+Option three. Secret jungle discounts.
+
+[cheerful]
+Both models have Adaptive Thinking.
+Monkey turns the brain knob up or down.
+
+[normal]
+Low effort for quick simple answers.
+Max effort for deep gorilla reasoning.
+
+[cheerful]
+Monkey controls how hard they think!
+
+[cheerful]
+Both models use pre-peeled banana caching.
+Show the same scroll blueprint twice?
+
+[excited]
+Monkey Bank gives ninety percent discount!
+
+[normal]
+Opus 5 cached input costs half a banana.
+Fable 5 cached input costs one banana.
+
+[happy]
+Jungle startup runs super cheap with caching!
+
+[dramatic]
+So which model should Monkey pick?
+
+[excited]
+Multi-day autonomous research jobs?
+Complex multi-step engineering projects?
+
+[cheerful]
+Hire Gorilla Fable 5.
+Worth every single banana!
+
+[cheerful]
+Daily coding copilots and chat assistants?
+Fast reliable software engineering?
+
+[excited]
+Hire Chimp Engineer Opus 5!
+Ninety-five percent performance at half price!
+
+[normal]
+Smart Monkey uses both.
+Fable 5 for big gorilla tasks.
+
+[cheerful]
+Opus 5 for daily engineering.
+Two monkeys. One jungle. Maximum bananas!
+
+[happy]
+Save your bananas.
+Subscribe for more monkey breakdowns!

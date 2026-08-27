@@ -1,0 +1,5582 @@
+{
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.24,
+      "text": "Big Google Monkey builds shiny blue AI box.",
+      "words": [
+        {
+          "word": " Big",
+          "start": 0.0,
+          "end": 0.2,
+          "probability": 0.581
+        },
+        {
+          "word": " Google",
+          "start": 0.2,
+          "end": 0.52,
+          "probability": 0.952
+        },
+        {
+          "word": " Monkey",
+          "start": 0.52,
+          "end": 0.78,
+          "probability": 0.625
+        },
+        {
+          "word": " builds",
+          "start": 0.78,
+          "end": 1.06,
+          "probability": 0.602
+        },
+        {
+          "word": " shiny",
+          "start": 1.06,
+          "end": 1.36,
+          "probability": 0.835
+        },
+        {
+          "word": " blue",
+          "start": 1.36,
+          "end": 1.7,
+          "probability": 0.937
+        },
+        {
+          "word": " AI",
+          "start": 1.7,
+          "end": 1.88,
+          "probability": 0.952
+        },
+        {
+          "word": " box.",
+          "start": 1.88,
+          "end": 2.24,
+          "probability": 0.784
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 2.74,
+      "end": 3.82,
+      "text": "Call it Gemini.",
+      "words": [
+        {
+          "word": " Call",
+          "start": 2.74,
+          "end": 2.92,
+          "probability": 0.948
+        },
+        {
+          "word": " it",
+          "start": 2.92,
+          "end": 3.22,
+          "probability": 0.999
+        },
+        {
+          "word": " Gemini.",
+          "start": 3.22,
+          "end": 3.82,
+          "probability": 0.938
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 4.54,
+      "end": 7.74,
+      "text": "Google monkey say, Gemini best AI in jungle.",
+      "words": [
+        {
+          "word": " Google",
+          "start": 4.54,
+          "end": 4.78,
+          "probability": 0.947
+        },
+        {
+          "word": " monkey",
+          "start": 4.78,
+          "end": 5.14,
+          "probability": 0.523
+        },
+        {
+          "word": " say,",
+          "start": 5.14,
+          "end": 5.46,
+          "probability": 0.949
+        },
+        {
+          "word": " Gemini",
+          "start": 6.0,
+          "end": 6.22,
+          "probability": 0.919
+        },
+        {
+          "word": " best",
+          "start": 6.22,
+          "end": 6.54,
+          "probability": 0.776
+        },
+        {
+          "word": " AI",
+          "start": 6.54,
+          "end": 7.02,
+          "probability": 0.685
+        },
+        {
+          "word": " in",
+          "start": 7.02,
+          "end": 7.44,
+          "probability": 0.91
+        },
+        {
+          "word": " jungle.",
+          "start": 7.44,
+          "end": 7.74,
+          "probability": 0.86
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 8.1,
+      "end": 9.7,
+      "text": "Beat chat GPT on paper benchmarks.",
+      "words": [
+        {
+          "word": " Beat",
+          "start": 8.1,
+          "end": 8.22,
+          "probability": 0.501
+        },
+        {
+          "word": " chat",
+          "start": 8.22,
+          "end": 8.5,
+          "probability": 0.311
+        },
+        {
+          "word": " GPT",
+          "start": 8.5,
+          "end": 8.94,
+          "probability": 0.731
+        },
+        {
+          "word": " on",
+          "start": 8.94,
+          "end": 9.1,
+          "probability": 0.995
+        },
+        {
+          "word": " paper",
+          "start": 9.1,
+          "end": 9.3,
+          "probability": 0.988
+        },
+        {
+          "word": " benchmarks.",
+          "start": 9.3,
+          "end": 9.7,
+          "probability": 0.917
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 10.2,
+      "end": 12.1,
+      "text": "Beat Claude on context window size.",
+      "words": [
+        {
+          "word": " Beat",
+          "start": 10.2,
+          "end": 10.36,
+          "probability": 0.973
+        },
+        {
+          "word": " Claude",
+          "start": 10.36,
+          "end": 10.82,
+          "probability": 0.685
+        },
+        {
+          "word": " on",
+          "start": 10.82,
+          "end": 10.96,
+          "probability": 0.995
+        },
+        {
+          "word": " context",
+          "start": 10.96,
+          "end": 11.32,
+          "probability": 0.916
+        },
+        {
+          "word": " window",
+          "start": 11.32,
+          "end": 11.68,
+          "probability": 0.946
+        },
+        {
+          "word": " size.",
+          "start": 11.68,
+          "end": 12.1,
+          "probability": 0.968
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 12.62,
+      "end": 15.46,
+      "text": "But when monkey coders use Gemini in real jungle,",
+      "words": [
+        {
+          "word": " But",
+          "start": 12.62,
+          "end": 12.74,
+          "probability": 0.993
+        },
+        {
+          "word": " when",
+          "start": 12.74,
+          "end": 12.92,
+          "probability": 0.995
+        },
+        {
+          "word": " monkey",
+          "start": 12.92,
+          "end": 13.26,
+          "probability": 0.925
+        },
+        {
+          "word": " coders",
+          "start": 13.26,
+          "end": 13.72,
+          "probability": 0.992
+        },
+        {
+          "word": " use",
+          "start": 13.72,
+          "end": 13.96,
+          "probability": 0.973
+        },
+        {
+          "word": " Gemini",
+          "start": 13.96,
+          "end": 14.5,
+          "probability": 0.995
+        },
+        {
+          "word": " in",
+          "start": 14.5,
+          "end": 14.74,
+          "probability": 0.987
+        },
+        {
+          "word": " real",
+          "start": 14.74,
+          "end": 15.0,
+          "probability": 0.99
+        },
+        {
+          "word": " jungle,",
+          "start": 15.0,
+          "end": 15.46,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 15.94,
+      "end": 17.88,
+      "text": "monkey cry, Gemini lose again.",
+      "words": [
+        {
+          "word": " monkey",
+          "start": 15.94,
+          "end": 16.18,
+          "probability": 0.646
+        },
+        {
+          "word": " cry,",
+          "start": 16.18,
+          "end": 16.5,
+          "probability": 0.959
+        },
+        {
+          "word": " Gemini",
+          "start": 16.98,
+          "end": 17.3,
+          "probability": 0.997
+        },
+        {
+          "word": " lose",
+          "start": 17.3,
+          "end": 17.58,
+          "probability": 0.874
+        },
+        {
+          "word": " again.",
+          "start": 17.58,
+          "end": 17.88,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 18.38,
+      "end": 21.22,
+      "text": "Why Google AI with $2 trillion jungle money",
+      "words": [
+        {
+          "word": " Why",
+          "start": 18.38,
+          "end": 18.5,
+          "probability": 0.926
+        },
+        {
+          "word": " Google",
+          "start": 18.5,
+          "end": 18.84,
+          "probability": 0.972
+        },
+        {
+          "word": " AI",
+          "start": 18.84,
+          "end": 19.24,
+          "probability": 0.96
+        },
+        {
+          "word": " with",
+          "start": 19.24,
+          "end": 19.64,
+          "probability": 0.947
+        },
+        {
+          "word": " $2",
+          "start": 19.64,
+          "end": 19.94,
+          "probability": 0.886
+        },
+        {
+          "word": " trillion",
+          "start": 19.94,
+          "end": 20.26,
+          "probability": 0.989
+        },
+        {
+          "word": " jungle",
+          "start": 20.26,
+          "end": 20.84,
+          "probability": 0.803
+        },
+        {
+          "word": " money",
+          "start": 20.84,
+          "end": 21.22,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 21.22,
+      "end": 24.24,
+      "text": "keep losing to small purple AI monkey Claude?",
+      "words": [
+        {
+          "word": " keep",
+          "start": 21.22,
+          "end": 21.78,
+          "probability": 0.331
+        },
+        {
+          "word": " losing",
+          "start": 21.78,
+          "end": 22.18,
+          "probability": 0.993
+        },
+        {
+          "word": " to",
+          "start": 22.18,
+          "end": 22.36,
+          "probability": 0.974
+        },
+        {
+          "word": " small",
+          "start": 22.36,
+          "end": 22.62,
+          "probability": 0.981
+        },
+        {
+          "word": " purple",
+          "start": 22.62,
+          "end": 23.02,
+          "probability": 0.959
+        },
+        {
+          "word": " AI",
+          "start": 23.02,
+          "end": 23.34,
+          "probability": 0.976
+        },
+        {
+          "word": " monkey",
+          "start": 23.34,
+          "end": 23.68,
+          "probability": 0.824
+        },
+        {
+          "word": " Claude?",
+          "start": 23.68,
+          "end": 24.24,
+          "probability": 0.901
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 24.58,
+      "end": 26.56,
+      "text": "Let monkey explain real computer science.",
+      "words": [
+        {
+          "word": " Let",
+          "start": 24.58,
+          "end": 24.72,
+          "probability": 0.272
+        },
+        {
+          "word": " monkey",
+          "start": 24.72,
+          "end": 25.06,
+          "probability": 0.549
+        },
+        {
+          "word": " explain",
+          "start": 25.06,
+          "end": 25.44,
+          "probability": 0.996
+        },
+        {
+          "word": " real",
+          "start": 25.44,
+          "end": 25.78,
+          "probability": 0.982
+        },
+        {
+          "word": " computer",
+          "start": 25.78,
+          "end": 26.0,
+          "probability": 0.987
+        },
+        {
+          "word": " science.",
+          "start": 26.0,
+          "end": 26.56,
+          "probability": 0.999
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 27.0,
+      "end": 30.08,
+      "text": "Reason one is Moe expert routing versus dense attention.",
+      "words": [
+        {
+          "word": " Reason",
+          "start": 27.0,
+          "end": 27.34,
+          "probability": 0.069
+        },
+        {
+          "word": " one",
+          "start": 27.34,
+          "end": 27.72,
+          "probability": 0.41
+        },
+        {
+          "word": " is",
+          "start": 27.72,
+          "end": 28.04,
+          "probability": 0.965
+        },
+        {
+          "word": " Moe",
+          "start": 28.04,
+          "end": 28.34,
+          "probability": 0.614
+        },
+        {
+          "word": " expert",
+          "start": 28.34,
+          "end": 28.68,
+          "probability": 0.533
+        },
+        {
+          "word": " routing",
+          "start": 28.68,
+          "end": 28.96,
+          "probability": 0.969
+        },
+        {
+          "word": " versus",
+          "start": 28.96,
+          "end": 29.32,
+          "probability": 0.727
+        },
+        {
+          "word": " dense",
+          "start": 29.32,
+          "end": 29.56,
+          "probability": 0.84
+        },
+        {
+          "word": " attention.",
+          "start": 29.56,
+          "end": 30.08,
+          "probability": 0.937
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 30.52,
+      "end": 32.74,
+      "text": "Gemini use mixture of experts architecture.",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 30.52,
+          "end": 30.76,
+          "probability": 0.934
+        },
+        {
+          "word": " use",
+          "start": 30.76,
+          "end": 31.22,
+          "probability": 0.344
+        },
+        {
+          "word": " mixture",
+          "start": 31.22,
+          "end": 31.64,
+          "probability": 0.563
+        },
+        {
+          "word": " of",
+          "start": 31.64,
+          "end": 31.84,
+          "probability": 0.921
+        },
+        {
+          "word": " experts",
+          "start": 31.84,
+          "end": 32.16,
+          "probability": 0.766
+        },
+        {
+          "word": " architecture.",
+          "start": 32.16,
+          "end": 32.74,
+          "probability": 0.867
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 33.22,
+      "end": 35.32,
+      "text": "Gemini is like a huge jungle office",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 33.22,
+          "end": 33.72,
+          "probability": 0.99
+        },
+        {
+          "word": " is",
+          "start": 33.72,
+          "end": 33.98,
+          "probability": 0.994
+        },
+        {
+          "word": " like",
+          "start": 33.98,
+          "end": 34.14,
+          "probability": 0.988
+        },
+        {
+          "word": " a",
+          "start": 34.14,
+          "end": 34.26,
+          "probability": 0.989
+        },
+        {
+          "word": " huge",
+          "start": 34.26,
+          "end": 34.62,
+          "probability": 0.997
+        },
+        {
+          "word": " jungle",
+          "start": 34.62,
+          "end": 34.9,
+          "probability": 0.967
+        },
+        {
+          "word": " office",
+          "start": 34.9,
+          "end": 35.32,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 35.32,
+      "end": 36.8,
+      "text": "with many specialist monkeys.",
+      "words": [
+        {
+          "word": " with",
+          "start": 35.32,
+          "end": 35.66,
+          "probability": 0.922
+        },
+        {
+          "word": " many",
+          "start": 35.66,
+          "end": 35.9,
+          "probability": 0.996
+        },
+        {
+          "word": " specialist",
+          "start": 35.9,
+          "end": 36.4,
+          "probability": 0.868
+        },
+        {
+          "word": " monkeys.",
+          "start": 36.4,
+          "end": 36.8,
+          "probability": 0.785
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 37.62,
+      "end": 39.7,
+      "text": "Monkey desk A no Python code.",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 37.62,
+          "end": 37.76,
+          "probability": 0.451
+        },
+        {
+          "word": " desk",
+          "start": 37.76,
+          "end": 38.1,
+          "probability": 0.492
+        },
+        {
+          "word": " A",
+          "start": 38.1,
+          "end": 38.58,
+          "probability": 0.199
+        },
+        {
+          "word": " no",
+          "start": 38.58,
+          "end": 38.82,
+          "probability": 0.494
+        },
+        {
+          "word": " Python",
+          "start": 38.82,
+          "end": 39.12,
+          "probability": 0.633
+        },
+        {
+          "word": " code.",
+          "start": 39.12,
+          "end": 39.7,
+          "probability": 0.99
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 40.06,
+      "end": 41.92,
+      "text": "Monkey desk B no English grammar.",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 40.06,
+          "end": 40.22,
+          "probability": 0.892
+        },
+        {
+          "word": " desk",
+          "start": 40.22,
+          "end": 40.46,
+          "probability": 0.988
+        },
+        {
+          "word": " B",
+          "start": 40.46,
+          "end": 40.78,
+          "probability": 0.984
+        },
+        {
+          "word": " no",
+          "start": 40.78,
+          "end": 41.18,
+          "probability": 0.941
+        },
+        {
+          "word": " English",
+          "start": 41.18,
+          "end": 41.56,
+          "probability": 0.984
+        },
+        {
+          "word": " grammar.",
+          "start": 41.56,
+          "end": 41.92,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 42.4,
+      "end": 44.12,
+      "text": "Monkey desk C no safety rules.",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 42.4,
+          "end": 42.6,
+          "probability": 0.916
+        },
+        {
+          "word": " desk",
+          "start": 42.6,
+          "end": 42.88,
+          "probability": 0.968
+        },
+        {
+          "word": " C",
+          "start": 42.88,
+          "end": 43.16,
+          "probability": 0.948
+        },
+        {
+          "word": " no",
+          "start": 43.16,
+          "end": 43.4,
+          "probability": 0.976
+        },
+        {
+          "word": " safety",
+          "start": 43.4,
+          "end": 43.8,
+          "probability": 0.979
+        },
+        {
+          "word": " rules.",
+          "start": 43.8,
+          "end": 44.12,
+          "probability": 0.782
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 44.58,
+      "end": 46.34,
+      "text": "When you ask big coding question,",
+      "words": [
+        {
+          "word": " When",
+          "start": 44.58,
+          "end": 44.78,
+          "probability": 0.99
+        },
+        {
+          "word": " you",
+          "start": 44.78,
+          "end": 44.88,
+          "probability": 0.998
+        },
+        {
+          "word": " ask",
+          "start": 44.88,
+          "end": 45.26,
+          "probability": 0.996
+        },
+        {
+          "word": " big",
+          "start": 45.26,
+          "end": 45.52,
+          "probability": 0.832
+        },
+        {
+          "word": " coding",
+          "start": 45.52,
+          "end": 45.8,
+          "probability": 0.861
+        },
+        {
+          "word": " question,",
+          "start": 45.8,
+          "end": 46.34,
+          "probability": 0.978
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 46.8,
+      "end": 49.3,
+      "text": "router monkey send your request across different desks",
+      "words": [
+        {
+          "word": " router",
+          "start": 46.8,
+          "end": 46.94,
+          "probability": 0.829
+        },
+        {
+          "word": " monkey",
+          "start": 46.94,
+          "end": 47.3,
+          "probability": 0.824
+        },
+        {
+          "word": " send",
+          "start": 47.3,
+          "end": 47.58,
+          "probability": 0.899
+        },
+        {
+          "word": " your",
+          "start": 47.58,
+          "end": 47.76,
+          "probability": 0.944
+        },
+        {
+          "word": " request",
+          "start": 47.76,
+          "end": 48.02,
+          "probability": 0.947
+        },
+        {
+          "word": " across",
+          "start": 48.02,
+          "end": 48.42,
+          "probability": 0.996
+        },
+        {
+          "word": " different",
+          "start": 48.42,
+          "end": 48.78,
+          "probability": 0.995
+        },
+        {
+          "word": " desks",
+          "start": 48.78,
+          "end": 49.3,
+          "probability": 0.935
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 49.3,
+      "end": 52.88,
+      "text": "but router monkey sometimes send code task to wrong desk.",
+      "words": [
+        {
+          "word": " but",
+          "start": 49.3,
+          "end": 49.86,
+          "probability": 0.069
+        },
+        {
+          "word": " router",
+          "start": 49.86,
+          "end": 50.2,
+          "probability": 0.98
+        },
+        {
+          "word": " monkey",
+          "start": 50.2,
+          "end": 50.5,
+          "probability": 0.97
+        },
+        {
+          "word": " sometimes",
+          "start": 50.5,
+          "end": 50.92,
+          "probability": 0.887
+        },
+        {
+          "word": " send",
+          "start": 50.92,
+          "end": 51.24,
+          "probability": 0.986
+        },
+        {
+          "word": " code",
+          "start": 51.24,
+          "end": 51.54,
+          "probability": 0.989
+        },
+        {
+          "word": " task",
+          "start": 51.54,
+          "end": 51.94,
+          "probability": 0.642
+        },
+        {
+          "word": " to",
+          "start": 51.94,
+          "end": 52.14,
+          "probability": 0.962
+        },
+        {
+          "word": " wrong",
+          "start": 52.14,
+          "end": 52.38,
+          "probability": 0.957
+        },
+        {
+          "word": " desk.",
+          "start": 52.38,
+          "end": 52.88,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 53.32,
+      "end": 55.24,
+      "text": "If routing missed the optimal path,",
+      "words": [
+        {
+          "word": " If",
+          "start": 53.32,
+          "end": 53.64,
+          "probability": 0.99
+        },
+        {
+          "word": " routing",
+          "start": 53.64,
+          "end": 53.92,
+          "probability": 0.988
+        },
+        {
+          "word": " missed",
+          "start": 53.92,
+          "end": 54.18,
+          "probability": 0.785
+        },
+        {
+          "word": " the",
+          "start": 54.18,
+          "end": 54.36,
+          "probability": 0.996
+        },
+        {
+          "word": " optimal",
+          "start": 54.36,
+          "end": 54.72,
+          "probability": 0.997
+        },
+        {
+          "word": " path,",
+          "start": 54.72,
+          "end": 55.24,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 55.24,
+      "end": 58.84,
+      "text": "Gemini give shallow answer or forget half of your instruction.",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 55.24,
+          "end": 55.84,
+          "probability": 0.767
+        },
+        {
+          "word": " give",
+          "start": 55.84,
+          "end": 56.14,
+          "probability": 0.352
+        },
+        {
+          "word": " shallow",
+          "start": 56.14,
+          "end": 56.46,
+          "probability": 0.81
+        },
+        {
+          "word": " answer",
+          "start": 56.46,
+          "end": 56.78,
+          "probability": 0.994
+        },
+        {
+          "word": " or",
+          "start": 56.78,
+          "end": 57.38,
+          "probability": 0.289
+        },
+        {
+          "word": " forget",
+          "start": 57.38,
+          "end": 57.76,
+          "probability": 0.968
+        },
+        {
+          "word": " half",
+          "start": 57.76,
+          "end": 58.02,
+          "probability": 0.925
+        },
+        {
+          "word": " of",
+          "start": 58.02,
+          "end": 58.2,
+          "probability": 0.983
+        },
+        {
+          "word": " your",
+          "start": 58.2,
+          "end": 58.32,
+          "probability": 0.991
+        },
+        {
+          "word": " instruction.",
+          "start": 58.32,
+          "end": 58.84,
+          "probability": 0.975
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 59.32,
+      "end": 61.98,
+      "text": "Computer monkeys call this expert routing breakdown",
+      "words": [
+        {
+          "word": " Computer",
+          "start": 59.32,
+          "end": 59.72,
+          "probability": 0.902
+        },
+        {
+          "word": " monkeys",
+          "start": 59.72,
+          "end": 60.0,
+          "probability": 0.881
+        },
+        {
+          "word": " call",
+          "start": 60.0,
+          "end": 60.32,
+          "probability": 0.971
+        },
+        {
+          "word": " this",
+          "start": 60.32,
+          "end": 60.6,
+          "probability": 0.996
+        },
+        {
+          "word": " expert",
+          "start": 60.6,
+          "end": 61.24,
+          "probability": 0.131
+        },
+        {
+          "word": " routing",
+          "start": 61.24,
+          "end": 61.56,
+          "probability": 0.805
+        },
+        {
+          "word": " breakdown",
+          "start": 61.56,
+          "end": 61.98,
+          "probability": 0.976
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 61.98,
+      "end": 64.62,
+      "text": "while Claude use dense transformer attention.",
+      "words": [
+        {
+          "word": " while",
+          "start": 61.98,
+          "end": 62.52,
+          "probability": 0.105
+        },
+        {
+          "word": " Claude",
+          "start": 62.52,
+          "end": 62.94,
+          "probability": 0.618
+        },
+        {
+          "word": " use",
+          "start": 62.94,
+          "end": 63.26,
+          "probability": 0.207
+        },
+        {
+          "word": " dense",
+          "start": 63.26,
+          "end": 63.46,
+          "probability": 0.906
+        },
+        {
+          "word": " transformer",
+          "start": 63.46,
+          "end": 64.0,
+          "probability": 0.972
+        },
+        {
+          "word": " attention.",
+          "start": 64.0,
+          "end": 64.62,
+          "probability": 0.952
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 65.1,
+      "end": 66.94,
+      "text": "Every single neuron processor code together",
+      "words": [
+        {
+          "word": " Every",
+          "start": 65.1,
+          "end": 65.34,
+          "probability": 0.99
+        },
+        {
+          "word": " single",
+          "start": 65.34,
+          "end": 65.66,
+          "probability": 0.997
+        },
+        {
+          "word": " neuron",
+          "start": 65.66,
+          "end": 65.92,
+          "probability": 0.983
+        },
+        {
+          "word": " processor",
+          "start": 65.92,
+          "end": 66.36,
+          "probability": 0.983
+        },
+        {
+          "word": " code",
+          "start": 66.36,
+          "end": 66.66,
+          "probability": 0.907
+        },
+        {
+          "word": " together",
+          "start": 66.66,
+          "end": 66.94,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 66.94,
+      "end": 68.22,
+      "text": "at the exact same time.",
+      "words": [
+        {
+          "word": " at",
+          "start": 66.94,
+          "end": 67.14,
+          "probability": 0.992
+        },
+        {
+          "word": " the",
+          "start": 67.14,
+          "end": 67.24,
+          "probability": 0.992
+        },
+        {
+          "word": " exact",
+          "start": 67.24,
+          "end": 67.48,
+          "probability": 0.987
+        },
+        {
+          "word": " same",
+          "start": 67.48,
+          "end": 67.86,
+          "probability": 0.997
+        },
+        {
+          "word": " time.",
+          "start": 67.86,
+          "end": 68.22,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 68.52,
+      "end": 71.52,
+      "text": "Reason two is post training alignment and reward models.",
+      "words": [
+        {
+          "word": " Reason",
+          "start": 68.52,
+          "end": 68.68,
+          "probability": 0.932
+        },
+        {
+          "word": " two",
+          "start": 68.68,
+          "end": 69.0,
+          "probability": 0.505
+        },
+        {
+          "word": " is",
+          "start": 69.0,
+          "end": 69.34,
+          "probability": 0.99
+        },
+        {
+          "word": " post",
+          "start": 69.34,
+          "end": 69.76,
+          "probability": 0.68
+        },
+        {
+          "word": " training",
+          "start": 69.76,
+          "end": 70.08,
+          "probability": 0.651
+        },
+        {
+          "word": " alignment",
+          "start": 70.08,
+          "end": 70.58,
+          "probability": 0.99
+        },
+        {
+          "word": " and",
+          "start": 70.58,
+          "end": 70.86,
+          "probability": 0.991
+        },
+        {
+          "word": " reward",
+          "start": 70.86,
+          "end": 71.1,
+          "probability": 0.992
+        },
+        {
+          "word": " models.",
+          "start": 71.1,
+          "end": 71.52,
+          "probability": 0.691
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 71.92,
+      "end": 75.46,
+      "text": "Google train Gemini with RLHF for fast search engine answers.",
+      "words": [
+        {
+          "word": " Google",
+          "start": 71.92,
+          "end": 72.08,
+          "probability": 0.972
+        },
+        {
+          "word": " train",
+          "start": 72.08,
+          "end": 72.36,
+          "probability": 0.754
+        },
+        {
+          "word": " Gemini",
+          "start": 72.36,
+          "end": 72.82,
+          "probability": 0.996
+        },
+        {
+          "word": " with",
+          "start": 72.82,
+          "end": 73.1,
+          "probability": 0.993
+        },
+        {
+          "word": " RLHF",
+          "start": 73.1,
+          "end": 73.94,
+          "probability": 0.886
+        },
+        {
+          "word": " for",
+          "start": 73.94,
+          "end": 74.18,
+          "probability": 0.979
+        },
+        {
+          "word": " fast",
+          "start": 74.18,
+          "end": 74.42,
+          "probability": 0.951
+        },
+        {
+          "word": " search",
+          "start": 74.42,
+          "end": 74.7,
+          "probability": 0.99
+        },
+        {
+          "word": " engine",
+          "start": 74.7,
+          "end": 75.04,
+          "probability": 0.99
+        },
+        {
+          "word": " answers.",
+          "start": 75.04,
+          "end": 75.46,
+          "probability": 0.984
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 76.1,
+      "end": 78.8,
+      "text": "Gemini want answer quick, so user click more links.",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 76.1,
+          "end": 76.48,
+          "probability": 0.996
+        },
+        {
+          "word": " want",
+          "start": 76.48,
+          "end": 76.72,
+          "probability": 0.977
+        },
+        {
+          "word": " answer",
+          "start": 76.72,
+          "end": 77.04,
+          "probability": 0.961
+        },
+        {
+          "word": " quick,",
+          "start": 77.04,
+          "end": 77.32,
+          "probability": 0.96
+        },
+        {
+          "word": " so",
+          "start": 77.62,
+          "end": 77.7,
+          "probability": 0.997
+        },
+        {
+          "word": " user",
+          "start": 77.7,
+          "end": 77.98,
+          "probability": 0.957
+        },
+        {
+          "word": " click",
+          "start": 77.98,
+          "end": 78.2,
+          "probability": 0.949
+        },
+        {
+          "word": " more",
+          "start": 78.2,
+          "end": 78.5,
+          "probability": 0.988
+        },
+        {
+          "word": " links.",
+          "start": 78.5,
+          "end": 78.8,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 79.38,
+      "end": 80.16,
+      "text": "Anthropic train.",
+      "words": [
+        {
+          "word": " Anthropic",
+          "start": 79.38,
+          "end": 79.78,
+          "probability": 0.848
+        },
+        {
+          "word": " train.",
+          "start": 79.78,
+          "end": 80.16,
+          "probability": 0.698
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 80.8,
+      "end": 82.48,
+      "text": "Claude with constitutional AI",
+      "words": [
+        {
+          "word": " Claude",
+          "start": 80.8,
+          "end": 81.14,
+          "probability": 0.986
+        },
+        {
+          "word": " with",
+          "start": 81.14,
+          "end": 81.28,
+          "probability": 0.973
+        },
+        {
+          "word": " constitutional",
+          "start": 81.28,
+          "end": 81.94,
+          "probability": 0.768
+        },
+        {
+          "word": " AI",
+          "start": 81.94,
+          "end": 82.48,
+          "probability": 0.944
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 82.48,
+      "end": 84.42,
+      "text": "and direct preference optimization.",
+      "words": [
+        {
+          "word": " and",
+          "start": 82.48,
+          "end": 82.86,
+          "probability": 0.98
+        },
+        {
+          "word": " direct",
+          "start": 82.86,
+          "end": 83.1,
+          "probability": 0.983
+        },
+        {
+          "word": " preference",
+          "start": 83.1,
+          "end": 83.56,
+          "probability": 0.994
+        },
+        {
+          "word": " optimization.",
+          "start": 83.56,
+          "end": 84.42,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 85.02,
+      "end": 87.28,
+      "text": "Claude train to be quiet, thoughtful coding monkey.",
+      "words": [
+        {
+          "word": " Claude",
+          "start": 85.02,
+          "end": 85.34,
+          "probability": 0.501
+        },
+        {
+          "word": " train",
+          "start": 85.34,
+          "end": 85.52,
+          "probability": 0.009
+        },
+        {
+          "word": " to",
+          "start": 85.52,
+          "end": 85.72,
+          "probability": 0.927
+        },
+        {
+          "word": " be",
+          "start": 85.72,
+          "end": 85.82,
+          "probability": 0.985
+        },
+        {
+          "word": " quiet,",
+          "start": 85.82,
+          "end": 86.16,
+          "probability": 0.993
+        },
+        {
+          "word": " thoughtful",
+          "start": 86.46,
+          "end": 86.64,
+          "probability": 0.987
+        },
+        {
+          "word": " coding",
+          "start": 86.64,
+          "end": 86.98,
+          "probability": 0.776
+        },
+        {
+          "word": " monkey.",
+          "start": 86.98,
+          "end": 87.28,
+          "probability": 0.858
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 87.78,
+      "end": 90.6,
+      "text": "Claude think step by step before touching any banana.",
+      "words": [
+        {
+          "word": " Claude",
+          "start": 87.78,
+          "end": 88.06,
+          "probability": 0.992
+        },
+        {
+          "word": " think",
+          "start": 88.06,
+          "end": 88.26,
+          "probability": 0.178
+        },
+        {
+          "word": " step",
+          "start": 88.26,
+          "end": 88.58,
+          "probability": 0.819
+        },
+        {
+          "word": " by",
+          "start": 88.58,
+          "end": 88.8,
+          "probability": 0.715
+        },
+        {
+          "word": " step",
+          "start": 88.8,
+          "end": 89.12,
+          "probability": 0.997
+        },
+        {
+          "word": " before",
+          "start": 89.12,
+          "end": 89.58,
+          "probability": 0.794
+        },
+        {
+          "word": " touching",
+          "start": 89.58,
+          "end": 89.92,
+          "probability": 0.995
+        },
+        {
+          "word": " any",
+          "start": 89.92,
+          "end": 90.22,
+          "probability": 0.997
+        },
+        {
+          "word": " banana.",
+          "start": 90.22,
+          "end": 90.6,
+          "probability": 0.985
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 91.06,
+      "end": 93.06,
+      "text": "So when coding project get complex,",
+      "words": [
+        {
+          "word": " So",
+          "start": 91.06,
+          "end": 91.2,
+          "probability": 0.965
+        },
+        {
+          "word": " when",
+          "start": 91.2,
+          "end": 91.66,
+          "probability": 0.848
+        },
+        {
+          "word": " coding",
+          "start": 91.66,
+          "end": 92.02,
+          "probability": 0.951
+        },
+        {
+          "word": " project",
+          "start": 92.02,
+          "end": 92.34,
+          "probability": 0.856
+        },
+        {
+          "word": " get",
+          "start": 92.34,
+          "end": 92.52,
+          "probability": 0.538
+        },
+        {
+          "word": " complex,",
+          "start": 92.52,
+          "end": 93.06,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 93.5,
+      "end": 96.22,
+      "text": "Gemini get lazy, skip middle line to code,",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 93.5,
+          "end": 93.96,
+          "probability": 0.896
+        },
+        {
+          "word": " get",
+          "start": 93.96,
+          "end": 94.2,
+          "probability": 0.949
+        },
+        {
+          "word": " lazy,",
+          "start": 94.2,
+          "end": 94.58,
+          "probability": 0.981
+        },
+        {
+          "word": " skip",
+          "start": 95.1,
+          "end": 95.34,
+          "probability": 0.747
+        },
+        {
+          "word": " middle",
+          "start": 95.34,
+          "end": 95.64,
+          "probability": 0.917
+        },
+        {
+          "word": " line",
+          "start": 95.64,
+          "end": 95.8,
+          "probability": 0.94
+        },
+        {
+          "word": " to",
+          "start": 95.8,
+          "end": 95.94,
+          "probability": 0.971
+        },
+        {
+          "word": " code,",
+          "start": 95.94,
+          "end": 96.22,
+          "probability": 0.982
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 96.48,
+      "end": 100.1,
+      "text": "write comment to do insert code here, monkey furious,",
+      "words": [
+        {
+          "word": " write",
+          "start": 96.48,
+          "end": 96.8,
+          "probability": 0.968
+        },
+        {
+          "word": " comment",
+          "start": 96.8,
+          "end": 97.2,
+          "probability": 0.966
+        },
+        {
+          "word": " to",
+          "start": 97.2,
+          "end": 97.56,
+          "probability": 0.893
+        },
+        {
+          "word": " do",
+          "start": 97.56,
+          "end": 97.74,
+          "probability": 0.993
+        },
+        {
+          "word": " insert",
+          "start": 97.74,
+          "end": 98.14,
+          "probability": 0.915
+        },
+        {
+          "word": " code",
+          "start": 98.14,
+          "end": 98.46,
+          "probability": 0.987
+        },
+        {
+          "word": " here,",
+          "start": 98.46,
+          "end": 98.9,
+          "probability": 0.992
+        },
+        {
+          "word": " monkey",
+          "start": 99.34,
+          "end": 99.58,
+          "probability": 0.727
+        },
+        {
+          "word": " furious,",
+          "start": 99.58,
+          "end": 100.1,
+          "probability": 0.92
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 100.56,
+      "end": 102.88,
+      "text": "while Claude write full clean code without lazy shortcut.",
+      "words": [
+        {
+          "word": " while",
+          "start": 100.56,
+          "end": 100.74,
+          "probability": 0.966
+        },
+        {
+          "word": " Claude",
+          "start": 100.74,
+          "end": 101.14,
+          "probability": 0.988
+        },
+        {
+          "word": " write",
+          "start": 101.14,
+          "end": 101.28,
+          "probability": 0.682
+        },
+        {
+          "word": " full",
+          "start": 101.28,
+          "end": 101.48,
+          "probability": 0.959
+        },
+        {
+          "word": " clean",
+          "start": 101.48,
+          "end": 101.74,
+          "probability": 0.703
+        },
+        {
+          "word": " code",
+          "start": 101.74,
+          "end": 101.98,
+          "probability": 0.994
+        },
+        {
+          "word": " without",
+          "start": 101.98,
+          "end": 102.22,
+          "probability": 0.974
+        },
+        {
+          "word": " lazy",
+          "start": 102.22,
+          "end": 102.52,
+          "probability": 0.99
+        },
+        {
+          "word": " shortcut.",
+          "start": 102.52,
+          "end": 102.88,
+          "probability": 0.851
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 103.32,
+      "end": 106.52,
+      "text": "Reason three is needle and a haystack and context drift.",
+      "words": [
+        {
+          "word": " Reason",
+          "start": 103.32,
+          "end": 103.48,
+          "probability": 0.925
+        },
+        {
+          "word": " three",
+          "start": 103.48,
+          "end": 103.8,
+          "probability": 0.7
+        },
+        {
+          "word": " is",
+          "start": 103.8,
+          "end": 104.12,
+          "probability": 0.983
+        },
+        {
+          "word": " needle",
+          "start": 104.12,
+          "end": 104.4,
+          "probability": 0.908
+        },
+        {
+          "word": " and",
+          "start": 104.4,
+          "end": 105.02,
+          "probability": 0.339
+        },
+        {
+          "word": " a",
+          "start": 105.02,
+          "end": 105.1,
+          "probability": 0.957
+        },
+        {
+          "word": " haystack",
+          "start": 105.1,
+          "end": 105.52,
+          "probability": 0.888
+        },
+        {
+          "word": " and",
+          "start": 105.52,
+          "end": 105.66,
+          "probability": 0.863
+        },
+        {
+          "word": " context",
+          "start": 105.66,
+          "end": 105.98,
+          "probability": 0.989
+        },
+        {
+          "word": " drift.",
+          "start": 105.98,
+          "end": 106.52,
+          "probability": 0.978
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 106.94,
+      "end": 110.16,
+      "text": "Google brag Gemini have two million token context window.",
+      "words": [
+        {
+          "word": " Google",
+          "start": 106.94,
+          "end": 107.08,
+          "probability": 0.98
+        },
+        {
+          "word": " brag",
+          "start": 107.08,
+          "end": 107.34,
+          "probability": 0.318
+        },
+        {
+          "word": " Gemini",
+          "start": 107.34,
+          "end": 107.82,
+          "probability": 0.993
+        },
+        {
+          "word": " have",
+          "start": 107.82,
+          "end": 108.1,
+          "probability": 0.964
+        },
+        {
+          "word": " two",
+          "start": 108.1,
+          "end": 108.38,
+          "probability": 0.68
+        },
+        {
+          "word": " million",
+          "start": 108.38,
+          "end": 108.76,
+          "probability": 0.996
+        },
+        {
+          "word": " token",
+          "start": 108.76,
+          "end": 109.12,
+          "probability": 0.983
+        },
+        {
+          "word": " context",
+          "start": 109.12,
+          "end": 109.62,
+          "probability": 0.959
+        },
+        {
+          "word": " window.",
+          "start": 109.62,
+          "end": 110.16,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 110.64,
+      "end": 113.24,
+      "text": "Monkey drop giant code repository inside Gemini.",
+      "words": [
+        {
+          "word": " Monkey",
+          "start": 110.64,
+          "end": 110.84,
+          "probability": 0.813
+        },
+        {
+          "word": " drop",
+          "start": 110.84,
+          "end": 111.08,
+          "probability": 0.613
+        },
+        {
+          "word": " giant",
+          "start": 111.08,
+          "end": 111.48,
+          "probability": 0.962
+        },
+        {
+          "word": " code",
+          "start": 111.48,
+          "end": 111.74,
+          "probability": 0.99
+        },
+        {
+          "word": " repository",
+          "start": 111.74,
+          "end": 112.18,
+          "probability": 0.991
+        },
+        {
+          "word": " inside",
+          "start": 112.18,
+          "end": 112.68,
+          "probability": 0.982
+        },
+        {
+          "word": " Gemini.",
+          "start": 112.68,
+          "end": 113.24,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 113.24,
+      "end": 116.02,
+      "text": "Gemini say monkey, I see everything,",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 113.24,
+          "end": 114.04,
+          "probability": 0.602
+        },
+        {
+          "word": " say",
+          "start": 114.04,
+          "end": 114.38,
+          "probability": 0.218
+        },
+        {
+          "word": " monkey,",
+          "start": 114.38,
+          "end": 114.74,
+          "probability": 0.491
+        },
+        {
+          "word": " I",
+          "start": 115.22,
+          "end": 115.28,
+          "probability": 0.665
+        },
+        {
+          "word": " see",
+          "start": 115.28,
+          "end": 115.5,
+          "probability": 0.991
+        },
+        {
+          "word": " everything,",
+          "start": 115.5,
+          "end": 116.02,
+          "probability": 0.983
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 116.4,
+      "end": 119.48,
+      "text": "but when monkey asks specific bug location online for 100,",
+      "words": [
+        {
+          "word": " but",
+          "start": 116.4,
+          "end": 116.64,
+          "probability": 0.96
+        },
+        {
+          "word": " when",
+          "start": 116.64,
+          "end": 116.8,
+          "probability": 0.997
+        },
+        {
+          "word": " monkey",
+          "start": 116.8,
+          "end": 116.98,
+          "probability": 0.931
+        },
+        {
+          "word": " asks",
+          "start": 116.98,
+          "end": 117.32,
+          "probability": 0.965
+        },
+        {
+          "word": " specific",
+          "start": 117.32,
+          "end": 117.82,
+          "probability": 0.918
+        },
+        {
+          "word": " bug",
+          "start": 117.82,
+          "end": 118.08,
+          "probability": 0.978
+        },
+        {
+          "word": " location",
+          "start": 118.08,
+          "end": 118.5,
+          "probability": 0.989
+        },
+        {
+          "word": " online",
+          "start": 118.5,
+          "end": 118.86,
+          "probability": 0.864
+        },
+        {
+          "word": " for",
+          "start": 118.86,
+          "end": 119.1,
+          "probability": 0.811
+        },
+        {
+          "word": " 100,",
+          "start": 119.1,
+          "end": 119.48,
+          "probability": 0.669
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 119.92,
+      "end": 121.38,
+      "text": "Gemini misneedle in haystack.",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 119.92,
+          "end": 120.22,
+          "probability": 0.984
+        },
+        {
+          "word": " misneedle",
+          "start": 120.22,
+          "end": 120.82,
+          "probability": 0.677
+        },
+        {
+          "word": " in",
+          "start": 120.82,
+          "end": 120.94,
+          "probability": 0.915
+        },
+        {
+          "word": " haystack.",
+          "start": 120.94,
+          "end": 121.38,
+          "probability": 0.875
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 121.78,
+      "end": 125.18,
+      "text": "Large context window is not equal to high attention retrieval.",
+      "words": [
+        {
+          "word": " Large",
+          "start": 121.78,
+          "end": 122.0,
+          "probability": 0.933
+        },
+        {
+          "word": " context",
+          "start": 122.0,
+          "end": 122.4,
+          "probability": 0.912
+        },
+        {
+          "word": " window",
+          "start": 122.4,
+          "end": 122.82,
+          "probability": 0.998
+        },
+        {
+          "word": " is",
+          "start": 122.82,
+          "end": 123.12,
+          "probability": 0.985
+        },
+        {
+          "word": " not",
+          "start": 123.12,
+          "end": 123.32,
+          "probability": 0.997
+        },
+        {
+          "word": " equal",
+          "start": 123.32,
+          "end": 123.72,
+          "probability": 0.997
+        },
+        {
+          "word": " to",
+          "start": 123.72,
+          "end": 123.9,
+          "probability": 0.988
+        },
+        {
+          "word": " high",
+          "start": 123.9,
+          "end": 124.18,
+          "probability": 0.942
+        },
+        {
+          "word": " attention",
+          "start": 124.18,
+          "end": 124.58,
+          "probability": 0.921
+        },
+        {
+          "word": " retrieval.",
+          "start": 124.58,
+          "end": 125.18,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 125.6,
+      "end": 127.58,
+      "text": "Gemini hallucinate wrong function name.",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 125.6,
+          "end": 125.9,
+          "probability": 0.992
+        },
+        {
+          "word": " hallucinate",
+          "start": 125.9,
+          "end": 126.42,
+          "probability": 0.945
+        },
+        {
+          "word": " wrong",
+          "start": 126.42,
+          "end": 126.72,
+          "probability": 0.951
+        },
+        {
+          "word": " function",
+          "start": 126.72,
+          "end": 127.2,
+          "probability": 0.945
+        },
+        {
+          "word": " name.",
+          "start": 127.2,
+          "end": 127.58,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 128.02,
+      "end": 129.28,
+      "text": "Claude have smaller context.",
+      "words": [
+        {
+          "word": " Claude",
+          "start": 128.02,
+          "end": 128.36,
+          "probability": 0.91
+        },
+        {
+          "word": " have",
+          "start": 128.36,
+          "end": 128.48,
+          "probability": 0.93
+        },
+        {
+          "word": " smaller",
+          "start": 128.48,
+          "end": 128.82,
+          "probability": 0.95
+        },
+        {
+          "word": " context.",
+          "start": 128.82,
+          "end": 129.28,
+          "probability": 0.921
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 129.82,
+      "end": 131.56,
+      "text": "Ah, but Claude attention mechanism",
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 129.82,
+          "end": 129.98,
+          "probability": 0.167
+        },
+        {
+          "word": " but",
+          "start": 130.42,
+          "end": 130.52,
+          "probability": 0.985
+        },
+        {
+          "word": " Claude",
+          "start": 130.52,
+          "end": 130.84,
+          "probability": 0.988
+        },
+        {
+          "word": " attention",
+          "start": 130.84,
+          "end": 131.1,
+          "probability": 0.916
+        },
+        {
+          "word": " mechanism",
+          "start": 131.1,
+          "end": 131.56,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 131.56,
+      "end": 133.2,
+      "text": "retain precise long range logic.",
+      "words": [
+        {
+          "word": " retain",
+          "start": 131.56,
+          "end": 131.88,
+          "probability": 0.424
+        },
+        {
+          "word": " precise",
+          "start": 131.88,
+          "end": 132.36,
+          "probability": 0.945
+        },
+        {
+          "word": " long",
+          "start": 132.36,
+          "end": 132.66,
+          "probability": 0.306
+        },
+        {
+          "word": " range",
+          "start": 132.66,
+          "end": 132.88,
+          "probability": 0.741
+        },
+        {
+          "word": " logic.",
+          "start": 132.88,
+          "end": 133.2,
+          "probability": 0.997
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 133.62,
+      "end": 135.58,
+      "text": "Reason four is benchmark overfitting",
+      "words": [
+        {
+          "word": " Reason",
+          "start": 133.62,
+          "end": 133.86,
+          "probability": 0.84
+        },
+        {
+          "word": " four",
+          "start": 133.86,
+          "end": 134.16,
+          "probability": 0.365
+        },
+        {
+          "word": " is",
+          "start": 134.16,
+          "end": 134.48,
+          "probability": 0.944
+        },
+        {
+          "word": " benchmark",
+          "start": 134.48,
+          "end": 134.82,
+          "probability": 0.91
+        },
+        {
+          "word": " overfitting",
+          "start": 134.82,
+          "end": 135.58,
+          "probability": 0.957
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 135.58,
+      "end": 137.08,
+      "text": "versus real world execution.",
+      "words": [
+        {
+          "word": " versus",
+          "start": 135.58,
+          "end": 135.9,
+          "probability": 0.85
+        },
+        {
+          "word": " real",
+          "start": 135.9,
+          "end": 136.16,
+          "probability": 0.986
+        },
+        {
+          "word": " world",
+          "start": 136.16,
+          "end": 136.42,
+          "probability": 0.661
+        },
+        {
+          "word": " execution.",
+          "start": 136.42,
+          "end": 137.08,
+          "probability": 0.995
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 137.62,
+      "end": 141.42,
+      "text": "Gemini win static human evil test on paper benchmark chart",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 137.62,
+          "end": 138.0,
+          "probability": 0.99
+        },
+        {
+          "word": " win",
+          "start": 138.0,
+          "end": 138.42,
+          "probability": 0.386
+        },
+        {
+          "word": " static",
+          "start": 138.42,
+          "end": 138.84,
+          "probability": 0.921
+        },
+        {
+          "word": " human",
+          "start": 138.84,
+          "end": 139.26,
+          "probability": 0.987
+        },
+        {
+          "word": " evil",
+          "start": 139.26,
+          "end": 139.5,
+          "probability": 0.921
+        },
+        {
+          "word": " test",
+          "start": 139.5,
+          "end": 139.76,
+          "probability": 0.959
+        },
+        {
+          "word": " on",
+          "start": 139.76,
+          "end": 140.28,
+          "probability": 0.993
+        },
+        {
+          "word": " paper",
+          "start": 140.28,
+          "end": 140.6,
+          "probability": 0.952
+        },
+        {
+          "word": " benchmark",
+          "start": 140.6,
+          "end": 141.02,
+          "probability": 0.986
+        },
+        {
+          "word": " chart",
+          "start": 141.02,
+          "end": 141.42,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 141.42,
+      "end": 143.64,
+      "text": "because test questions are predictable,",
+      "words": [
+        {
+          "word": " because",
+          "start": 141.42,
+          "end": 142.08,
+          "probability": 0.266
+        },
+        {
+          "word": " test",
+          "start": 142.08,
+          "end": 142.52,
+          "probability": 0.911
+        },
+        {
+          "word": " questions",
+          "start": 142.52,
+          "end": 142.96,
+          "probability": 0.993
+        },
+        {
+          "word": " are",
+          "start": 142.96,
+          "end": 143.16,
+          "probability": 0.998
+        },
+        {
+          "word": " predictable,",
+          "start": 143.16,
+          "end": 143.64,
+          "probability": 0.992
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 144.0,
+      "end": 145.94,
+      "text": "but in messy real world production code base,",
+      "words": [
+        {
+          "word": " but",
+          "start": 144.0,
+          "end": 144.18,
+          "probability": 0.991
+        },
+        {
+          "word": " in",
+          "start": 144.18,
+          "end": 144.3,
+          "probability": 0.993
+        },
+        {
+          "word": " messy",
+          "start": 144.3,
+          "end": 144.52,
+          "probability": 0.962
+        },
+        {
+          "word": " real",
+          "start": 144.52,
+          "end": 144.78,
+          "probability": 0.929
+        },
+        {
+          "word": " world",
+          "start": 144.78,
+          "end": 145.02,
+          "probability": 0.275
+        },
+        {
+          "word": " production",
+          "start": 145.02,
+          "end": 145.36,
+          "probability": 0.972
+        },
+        {
+          "word": " code",
+          "start": 145.36,
+          "end": 145.62,
+          "probability": 0.953
+        },
+        {
+          "word": " base,",
+          "start": 145.62,
+          "end": 145.94,
+          "probability": 0.299
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 146.32,
+      "end": 148.1,
+      "text": "Gemini fail real jungle coding fight.",
+      "words": [
+        {
+          "word": " Gemini",
+          "start": 146.32,
+          "end": 146.6,
+          "probability": 0.984
+        },
+        {
+          "word": " fail",
+          "start": 146.6,
+          "end": 146.9,
+          "probability": 0.814
+        },
+        {
+          "word": " real",
+          "start": 146.9,
+          "end": 147.18,
+          "probability": 0.974
+        },
+        {
+          "word": " jungle",
+          "start": 147.18,
+          "end": 147.44,
+          "probability": 0.352
+        },
+        {
+          "word": " coding",
+          "start": 147.44,
+          "end": 147.78,
+          "probability": 0.937
+        },
+        {
+          "word": " fight.",
+          "start": 147.78,
+          "end": 148.1,
+          "probability": 0.946
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 148.5,
+      "end": 149.44,
+      "text": "Will Gemini stay losing?",
+      "words": [
+        {
+          "word": " Will",
+          "start": 148.5,
+          "end": 148.6,
+          "probability": 0.807
+        },
+        {
+          "word": " Gemini",
+          "start": 148.6,
+          "end": 148.96,
+          "probability": 0.998
+        },
+        {
+          "word": " stay",
+          "start": 148.96,
+          "end": 149.14,
+          "probability": 0.866
+        },
+        {
+          "word": " losing?",
+          "start": 149.14,
+          "end": 149.44,
+          "probability": 0.974
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 149.9,
+      "end": 153.18,
+      "text": "Google updating Gemini brain with deeper reasoning search tree.",
+      "words": [
+        {
+          "word": " Google",
+          "start": 149.9,
+          "end": 150.1,
+          "probability": 0.986
+        },
+        {
+          "word": " updating",
+          "start": 150.1,
+          "end": 150.64,
+          "probability": 0.963
+        },
+        {
+          "word": " Gemini",
+          "start": 150.64,
+          "end": 151.12,
+          "probability": 0.998
+        },
+        {
+          "word": " brain",
+          "start": 151.12,
+          "end": 151.36,
+          "probability": 0.314
+        },
+        {
+          "word": " with",
+          "start": 151.36,
+          "end": 151.8,
+          "probability": 0.917
+        },
+        {
+          "word": " deeper",
+          "start": 151.8,
+          "end": 152.12,
+          "probability": 0.989
+        },
+        {
+          "word": " reasoning",
+          "start": 152.12,
+          "end": 152.54,
+          "probability": 0.989
+        },
+        {
+          "word": " search",
+          "start": 152.54,
+          "end": 152.86,
+          "probability": 0.993
+        },
+        {
+          "word": " tree.",
+          "start": 152.86,
+          "end": 153.18,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 153.52,
+      "end": 155.36,
+      "text": "But for now, if monkey want massive",
+      "words": [
+        {
+          "word": " But",
+          "start": 153.52,
+          "end": 153.6,
+          "probability": 0.984
+        },
+        {
+          "word": " for",
+          "start": 153.6,
+          "end": 153.74,
+          "probability": 0.978
+        },
+        {
+          "word": " now,",
+          "start": 153.74,
+          "end": 153.96,
+          "probability": 0.998
+        },
+        {
+          "word": " if",
+          "start": 154.34,
+          "end": 154.54,
+          "probability": 0.964
+        },
+        {
+          "word": " monkey",
+          "start": 154.54,
+          "end": 154.78,
+          "probability": 0.14
+        },
+        {
+          "word": " want",
+          "start": 154.78,
+          "end": 154.96,
+          "probability": 0.95
+        },
+        {
+          "word": " massive",
+          "start": 154.96,
+          "end": 155.36,
+          "probability": 0.988
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 155.36,
+      "end": 157.5,
+      "text": "multi file document summary, ask Gemini.",
+      "words": [
+        {
+          "word": " multi",
+          "start": 155.36,
+          "end": 155.62,
+          "probability": 0.705
+        },
+        {
+          "word": " file",
+          "start": 155.62,
+          "end": 155.86,
+          "probability": 0.27
+        },
+        {
+          "word": " document",
+          "start": 155.86,
+          "end": 156.24,
+          "probability": 0.891
+        },
+        {
+          "word": " summary,",
+          "start": 156.24,
+          "end": 156.56,
+          "probability": 0.821
+        },
+        {
+          "word": " ask",
+          "start": 156.88,
+          "end": 157.06,
+          "probability": 0.995
+        },
+        {
+          "word": " Gemini.",
+          "start": 157.06,
+          "end": 157.5,
+          "probability": 0.998
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 157.86,
+      "end": 159.68,
+      "text": "If monkey want working code without bug insect,",
+      "words": [
+        {
+          "word": " If",
+          "start": 157.86,
+          "end": 157.96,
+          "probability": 0.988
+        },
+        {
+          "word": " monkey",
+          "start": 157.96,
+          "end": 158.22,
+          "probability": 0.921
+        },
+        {
+          "word": " want",
+          "start": 158.22,
+          "end": 158.42,
+          "probability": 0.985
+        },
+        {
+          "word": " working",
+          "start": 158.42,
+          "end": 158.7,
+          "probability": 0.995
+        },
+        {
+          "word": " code",
+          "start": 158.7,
+          "end": 158.94,
+          "probability": 0.995
+        },
+        {
+          "word": " without",
+          "start": 158.94,
+          "end": 159.14,
+          "probability": 0.971
+        },
+        {
+          "word": " bug",
+          "start": 159.14,
+          "end": 159.32,
+          "probability": 0.991
+        },
+        {
+          "word": " insect,",
+          "start": 159.32,
+          "end": 159.68,
+          "probability": 0.762
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 160.12,
+      "end": 162.74,
+      "text": "ask Claude, sometimes tech get really bananas.",
+      "words": [
+        {
+          "word": " ask",
+          "start": 160.12,
+          "end": 160.24,
+          "probability": 0.973
+        },
+        {
+          "word": " Claude,",
+          "start": 160.24,
+          "end": 160.68,
+          "probability": 0.641
+        },
+        {
+          "word": " sometimes",
+          "start": 160.88,
+          "end": 161.4,
+          "probability": 0.962
+        },
+        {
+          "word": " tech",
+          "start": 161.4,
+          "end": 161.7,
+          "probability": 0.909
+        },
+        {
+          "word": " get",
+          "start": 161.7,
+          "end": 161.98,
+          "probability": 0.955
+        },
+        {
+          "word": " really",
+          "start": 161.98,
+          "end": 162.34,
+          "probability": 0.998
+        },
+        {
+          "word": " bananas.",
+          "start": 162.34,
+          "end": 162.74,
+          "probability": 0.987
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 163.42,
+      "end": 165.5,
+      "text": "Please subscribe for more monkey tech explainer.",
+      "words": [
+        {
+          "word": " Please",
+          "start": 163.42,
+          "end": 163.64,
+          "probability": 0.989
+        },
+        {
+          "word": " subscribe",
+          "start": 163.64,
+          "end": 164.06,
+          "probability": 0.99
+        },
+        {
+          "word": " for",
+          "start": 164.06,
+          "end": 164.34,
+          "probability": 0.992
+        },
+        {
+          "word": " more",
+          "start": 164.34,
+          "end": 164.54,
+          "probability": 0.935
+        },
+        {
+          "word": " monkey",
+          "start": 164.54,
+          "end": 164.78,
+          "probability": 0.14
+        },
+        {
+          "word": " tech",
+          "start": 164.78,
+          "end": 164.92,
+          "probability": 0.986
+        },
+        {
+          "word": " explainer.",
+          "start": 164.92,
+          "end": 165.5,
+          "probability": 0.973
+        }
+      ]
+    }
+  ],
+  "word_timestamps": [
+    {
+      "word": " Big",
+      "start": 0.0,
+      "end": 0.2,
+      "probability": 0.581
+    },
+    {
+      "word": " Google",
+      "start": 0.2,
+      "end": 0.52,
+      "probability": 0.952
+    },
+    {
+      "word": " Monkey",
+      "start": 0.52,
+      "end": 0.78,
+      "probability": 0.625
+    },
+    {
+      "word": " builds",
+      "start": 0.78,
+      "end": 1.06,
+      "probability": 0.602
+    },
+    {
+      "word": " shiny",
+      "start": 1.06,
+      "end": 1.36,
+      "probability": 0.835
+    },
+    {
+      "word": " blue",
+      "start": 1.36,
+      "end": 1.7,
+      "probability": 0.937
+    },
+    {
+      "word": " AI",
+      "start": 1.7,
+      "end": 1.88,
+      "probability": 0.952
+    },
+    {
+      "word": " box.",
+      "start": 1.88,
+      "end": 2.24,
+      "probability": 0.784
+    },
+    {
+      "word": " Call",
+      "start": 2.74,
+      "end": 2.92,
+      "probability": 0.948
+    },
+    {
+      "word": " it",
+      "start": 2.92,
+      "end": 3.22,
+      "probability": 0.999
+    },
+    {
+      "word": " Gemini.",
+      "start": 3.22,
+      "end": 3.82,
+      "probability": 0.938
+    },
+    {
+      "word": " Google",
+      "start": 4.54,
+      "end": 4.78,
+      "probability": 0.947
+    },
+    {
+      "word": " monkey",
+      "start": 4.78,
+      "end": 5.14,
+      "probability": 0.523
+    },
+    {
+      "word": " say,",
+      "start": 5.14,
+      "end": 5.46,
+      "probability": 0.949
+    },
+    {
+      "word": " Gemini",
+      "start": 6.0,
+      "end": 6.22,
+      "probability": 0.919
+    },
+    {
+      "word": " best",
+      "start": 6.22,
+      "end": 6.54,
+      "probability": 0.776
+    },
+    {
+      "word": " AI",
+      "start": 6.54,
+      "end": 7.02,
+      "probability": 0.685
+    },
+    {
+      "word": " in",
+      "start": 7.02,
+      "end": 7.44,
+      "probability": 0.91
+    },
+    {
+      "word": " jungle.",
+      "start": 7.44,
+      "end": 7.74,
+      "probability": 0.86
+    },
+    {
+      "word": " Beat",
+      "start": 8.1,
+      "end": 8.22,
+      "probability": 0.501
+    },
+    {
+      "word": " chat",
+      "start": 8.22,
+      "end": 8.5,
+      "probability": 0.311
+    },
+    {
+      "word": " GPT",
+      "start": 8.5,
+      "end": 8.94,
+      "probability": 0.731
+    },
+    {
+      "word": " on",
+      "start": 8.94,
+      "end": 9.1,
+      "probability": 0.995
+    },
+    {
+      "word": " paper",
+      "start": 9.1,
+      "end": 9.3,
+      "probability": 0.988
+    },
+    {
+      "word": " benchmarks.",
+      "start": 9.3,
+      "end": 9.7,
+      "probability": 0.917
+    },
+    {
+      "word": " Beat",
+      "start": 10.2,
+      "end": 10.36,
+      "probability": 0.973
+    },
+    {
+      "word": " Claude",
+      "start": 10.36,
+      "end": 10.82,
+      "probability": 0.685
+    },
+    {
+      "word": " on",
+      "start": 10.82,
+      "end": 10.96,
+      "probability": 0.995
+    },
+    {
+      "word": " context",
+      "start": 10.96,
+      "end": 11.32,
+      "probability": 0.916
+    },
+    {
+      "word": " window",
+      "start": 11.32,
+      "end": 11.68,
+      "probability": 0.946
+    },
+    {
+      "word": " size.",
+      "start": 11.68,
+      "end": 12.1,
+      "probability": 0.968
+    },
+    {
+      "word": " But",
+      "start": 12.62,
+      "end": 12.74,
+      "probability": 0.993
+    },
+    {
+      "word": " when",
+      "start": 12.74,
+      "end": 12.92,
+      "probability": 0.995
+    },
+    {
+      "word": " monkey",
+      "start": 12.92,
+      "end": 13.26,
+      "probability": 0.925
+    },
+    {
+      "word": " coders",
+      "start": 13.26,
+      "end": 13.72,
+      "probability": 0.992
+    },
+    {
+      "word": " use",
+      "start": 13.72,
+      "end": 13.96,
+      "probability": 0.973
+    },
+    {
+      "word": " Gemini",
+      "start": 13.96,
+      "end": 14.5,
+      "probability": 0.995
+    },
+    {
+      "word": " in",
+      "start": 14.5,
+      "end": 14.74,
+      "probability": 0.987
+    },
+    {
+      "word": " real",
+      "start": 14.74,
+      "end": 15.0,
+      "probability": 0.99
+    },
+    {
+      "word": " jungle,",
+      "start": 15.0,
+      "end": 15.46,
+      "probability": 0.995
+    },
+    {
+      "word": " monkey",
+      "start": 15.94,
+      "end": 16.18,
+      "probability": 0.646
+    },
+    {
+      "word": " cry,",
+      "start": 16.18,
+      "end": 16.5,
+      "probability": 0.959
+    },
+    {
+      "word": " Gemini",
+      "start": 16.98,
+      "end": 17.3,
+      "probability": 0.997
+    },
+    {
+      "word": " lose",
+      "start": 17.3,
+      "end": 17.58,
+      "probability": 0.874
+    },
+    {
+      "word": " again.",
+      "start": 17.58,
+      "end": 17.88,
+      "probability": 0.997
+    },
+    {
+      "word": " Why",
+      "start": 18.38,
+      "end": 18.5,
+      "probability": 0.926
+    },
+    {
+      "word": " Google",
+      "start": 18.5,
+      "end": 18.84,
+      "probability": 0.972
+    },
+    {
+      "word": " AI",
+      "start": 18.84,
+      "end": 19.24,
+      "probability": 0.96
+    },
+    {
+      "word": " with",
+      "start": 19.24,
+      "end": 19.64,
+      "probability": 0.947
+    },
+    {
+      "word": " $2",
+      "start": 19.64,
+      "end": 19.94,
+      "probability": 0.886
+    },
+    {
+      "word": " trillion",
+      "start": 19.94,
+      "end": 20.26,
+      "probability": 0.989
+    },
+    {
+      "word": " jungle",
+      "start": 20.26,
+      "end": 20.84,
+      "probability": 0.803
+    },
+    {
+      "word": " money",
+      "start": 20.84,
+      "end": 21.22,
+      "probability": 0.999
+    },
+    {
+      "word": " keep",
+      "start": 21.22,
+      "end": 21.78,
+      "probability": 0.331
+    },
+    {
+      "word": " losing",
+      "start": 21.78,
+      "end": 22.18,
+      "probability": 0.993
+    },
+    {
+      "word": " to",
+      "start": 22.18,
+      "end": 22.36,
+      "probability": 0.974
+    },
+    {
+      "word": " small",
+      "start": 22.36,
+      "end": 22.62,
+      "probability": 0.981
+    },
+    {
+      "word": " purple",
+      "start": 22.62,
+      "end": 23.02,
+      "probability": 0.959
+    },
+    {
+      "word": " AI",
+      "start": 23.02,
+      "end": 23.34,
+      "probability": 0.976
+    },
+    {
+      "word": " monkey",
+      "start": 23.34,
+      "end": 23.68,
+      "probability": 0.824
+    },
+    {
+      "word": " Claude?",
+      "start": 23.68,
+      "end": 24.24,
+      "probability": 0.901
+    },
+    {
+      "word": " Let",
+      "start": 24.58,
+      "end": 24.72,
+      "probability": 0.272
+    },
+    {
+      "word": " monkey",
+      "start": 24.72,
+      "end": 25.06,
+      "probability": 0.549
+    },
+    {
+      "word": " explain",
+      "start": 25.06,
+      "end": 25.44,
+      "probability": 0.996
+    },
+    {
+      "word": " real",
+      "start": 25.44,
+      "end": 25.78,
+      "probability": 0.982
+    },
+    {
+      "word": " computer",
+      "start": 25.78,
+      "end": 26.0,
+      "probability": 0.987
+    },
+    {
+      "word": " science.",
+      "start": 26.0,
+      "end": 26.56,
+      "probability": 0.999
+    },
+    {
+      "word": " Reason",
+      "start": 27.0,
+      "end": 27.34,
+      "probability": 0.069
+    },
+    {
+      "word": " one",
+      "start": 27.34,
+      "end": 27.72,
+      "probability": 0.41
+    },
+    {
+      "word": " is",
+      "start": 27.72,
+      "end": 28.04,
+      "probability": 0.965
+    },
+    {
+      "word": " Moe",
+      "start": 28.04,
+      "end": 28.34,
+      "probability": 0.614
+    },
+    {
+      "word": " expert",
+      "start": 28.34,
+      "end": 28.68,
+      "probability": 0.533
+    },
+    {
+      "word": " routing",
+      "start": 28.68,
+      "end": 28.96,
+      "probability": 0.969
+    },
+    {
+      "word": " versus",
+      "start": 28.96,
+      "end": 29.32,
+      "probability": 0.727
+    },
+    {
+      "word": " dense",
+      "start": 29.32,
+      "end": 29.56,
+      "probability": 0.84
+    },
+    {
+      "word": " attention.",
+      "start": 29.56,
+      "end": 30.08,
+      "probability": 0.937
+    },
+    {
+      "word": " Gemini",
+      "start": 30.52,
+      "end": 30.76,
+      "probability": 0.934
+    },
+    {
+      "word": " use",
+      "start": 30.76,
+      "end": 31.22,
+      "probability": 0.344
+    },
+    {
+      "word": " mixture",
+      "start": 31.22,
+      "end": 31.64,
+      "probability": 0.563
+    },
+    {
+      "word": " of",
+      "start": 31.64,
+      "end": 31.84,
+      "probability": 0.921
+    },
+    {
+      "word": " experts",
+      "start": 31.84,
+      "end": 32.16,
+      "probability": 0.766
+    },
+    {
+      "word": " architecture.",
+      "start": 32.16,
+      "end": 32.74,
+      "probability": 0.867
+    },
+    {
+      "word": " Gemini",
+      "start": 33.22,
+      "end": 33.72,
+      "probability": 0.99
+    },
+    {
+      "word": " is",
+      "start": 33.72,
+      "end": 33.98,
+      "probability": 0.994
+    },
+    {
+      "word": " like",
+      "start": 33.98,
+      "end": 34.14,
+      "probability": 0.988
+    },
+    {
+      "word": " a",
+      "start": 34.14,
+      "end": 34.26,
+      "probability": 0.989
+    },
+    {
+      "word": " huge",
+      "start": 34.26,
+      "end": 34.62,
+      "probability": 0.997
+    },
+    {
+      "word": " jungle",
+      "start": 34.62,
+      "end": 34.9,
+      "probability": 0.967
+    },
+    {
+      "word": " office",
+      "start": 34.9,
+      "end": 35.32,
+      "probability": 0.995
+    },
+    {
+      "word": " with",
+      "start": 35.32,
+      "end": 35.66,
+      "probability": 0.922
+    },
+    {
+      "word": " many",
+      "start": 35.66,
+      "end": 35.9,
+      "probability": 0.996
+    },
+    {
+      "word": " specialist",
+      "start": 35.9,
+      "end": 36.4,
+      "probability": 0.868
+    },
+    {
+      "word": " monkeys.",
+      "start": 36.4,
+      "end": 36.8,
+      "probability": 0.785
+    },
+    {
+      "word": " Monkey",
+      "start": 37.62,
+      "end": 37.76,
+      "probability": 0.451
+    },
+    {
+      "word": " desk",
+      "start": 37.76,
+      "end": 38.1,
+      "probability": 0.492
+    },
+    {
+      "word": " A",
+      "start": 38.1,
+      "end": 38.58,
+      "probability": 0.199
+    },
+    {
+      "word": " no",
+      "start": 38.58,
+      "end": 38.82,
+      "probability": 0.494
+    },
+    {
+      "word": " Python",
+      "start": 38.82,
+      "end": 39.12,
+      "probability": 0.633
+    },
+    {
+      "word": " code.",
+      "start": 39.12,
+      "end": 39.7,
+      "probability": 0.99
+    },
+    {
+      "word": " Monkey",
+      "start": 40.06,
+      "end": 40.22,
+      "probability": 0.892
+    },
+    {
+      "word": " desk",
+      "start": 40.22,
+      "end": 40.46,
+      "probability": 0.988
+    },
+    {
+      "word": " B",
+      "start": 40.46,
+      "end": 40.78,
+      "probability": 0.984
+    },
+    {
+      "word": " no",
+      "start": 40.78,
+      "end": 41.18,
+      "probability": 0.941
+    },
+    {
+      "word": " English",
+      "start": 41.18,
+      "end": 41.56,
+      "probability": 0.984
+    },
+    {
+      "word": " grammar.",
+      "start": 41.56,
+      "end": 41.92,
+      "probability": 0.988
+    },
+    {
+      "word": " Monkey",
+      "start": 42.4,
+      "end": 42.6,
+      "probability": 0.916
+    },
+    {
+      "word": " desk",
+      "start": 42.6,
+      "end": 42.88,
+      "probability": 0.968
+    },
+    {
+      "word": " C",
+      "start": 42.88,
+      "end": 43.16,
+      "probability": 0.948
+    },
+    {
+      "word": " no",
+      "start": 43.16,
+      "end": 43.4,
+      "probability": 0.976
+    },
+    {
+      "word": " safety",
+      "start": 43.4,
+      "end": 43.8,
+      "probability": 0.979
+    },
+    {
+      "word": " rules.",
+      "start": 43.8,
+      "end": 44.12,
+      "probability": 0.782
+    },
+    {
+      "word": " When",
+      "start": 44.58,
+      "end": 44.78,
+      "probability": 0.99
+    },
+    {
+      "word": " you",
+      "start": 44.78,
+      "end": 44.88,
+      "probability": 0.998
+    },
+    {
+      "word": " ask",
+      "start": 44.88,
+      "end": 45.26,
+      "probability": 0.996
+    },
+    {
+      "word": " big",
+      "start": 45.26,
+      "end": 45.52,
+      "probability": 0.832
+    },
+    {
+      "word": " coding",
+      "start": 45.52,
+      "end": 45.8,
+      "probability": 0.861
+    },
+    {
+      "word": " question,",
+      "start": 45.8,
+      "end": 46.34,
+      "probability": 0.978
+    },
+    {
+      "word": " router",
+      "start": 46.8,
+      "end": 46.94,
+      "probability": 0.829
+    },
+    {
+      "word": " monkey",
+      "start": 46.94,
+      "end": 47.3,
+      "probability": 0.824
+    },
+    {
+      "word": " send",
+      "start": 47.3,
+      "end": 47.58,
+      "probability": 0.899
+    },
+    {
+      "word": " your",
+      "start": 47.58,
+      "end": 47.76,
+      "probability": 0.944
+    },
+    {
+      "word": " request",
+      "start": 47.76,
+      "end": 48.02,
+      "probability": 0.947
+    },
+    {
+      "word": " across",
+      "start": 48.02,
+      "end": 48.42,
+      "probability": 0.996
+    },
+    {
+      "word": " different",
+      "start": 48.42,
+      "end": 48.78,
+      "probability": 0.995
+    },
+    {
+      "word": " desks",
+      "start": 48.78,
+      "end": 49.3,
+      "probability": 0.935
+    },
+    {
+      "word": " but",
+      "start": 49.3,
+      "end": 49.86,
+      "probability": 0.069
+    },
+    {
+      "word": " router",
+      "start": 49.86,
+      "end": 50.2,
+      "probability": 0.98
+    },
+    {
+      "word": " monkey",
+      "start": 50.2,
+      "end": 50.5,
+      "probability": 0.97
+    },
+    {
+      "word": " sometimes",
+      "start": 50.5,
+      "end": 50.92,
+      "probability": 0.887
+    },
+    {
+      "word": " send",
+      "start": 50.92,
+      "end": 51.24,
+      "probability": 0.986
+    },
+    {
+      "word": " code",
+      "start": 51.24,
+      "end": 51.54,
+      "probability": 0.989
+    },
+    {
+      "word": " task",
+      "start": 51.54,
+      "end": 51.94,
+      "probability": 0.642
+    },
+    {
+      "word": " to",
+      "start": 51.94,
+      "end": 52.14,
+      "probability": 0.962
+    },
+    {
+      "word": " wrong",
+      "start": 52.14,
+      "end": 52.38,
+      "probability": 0.957
+    },
+    {
+      "word": " desk.",
+      "start": 52.38,
+      "end": 52.88,
+      "probability": 0.988
+    },
+    {
+      "word": " If",
+      "start": 53.32,
+      "end": 53.64,
+      "probability": 0.99
+    },
+    {
+      "word": " routing",
+      "start": 53.64,
+      "end": 53.92,
+      "probability": 0.988
+    },
+    {
+      "word": " missed",
+      "start": 53.92,
+      "end": 54.18,
+      "probability": 0.785
+    },
+    {
+      "word": " the",
+      "start": 54.18,
+      "end": 54.36,
+      "probability": 0.996
+    },
+    {
+      "word": " optimal",
+      "start": 54.36,
+      "end": 54.72,
+      "probability": 0.997
+    },
+    {
+      "word": " path,",
+      "start": 54.72,
+      "end": 55.24,
+      "probability": 0.998
+    },
+    {
+      "word": " Gemini",
+      "start": 55.24,
+      "end": 55.84,
+      "probability": 0.767
+    },
+    {
+      "word": " give",
+      "start": 55.84,
+      "end": 56.14,
+      "probability": 0.352
+    },
+    {
+      "word": " shallow",
+      "start": 56.14,
+      "end": 56.46,
+      "probability": 0.81
+    },
+    {
+      "word": " answer",
+      "start": 56.46,
+      "end": 56.78,
+      "probability": 0.994
+    },
+    {
+      "word": " or",
+      "start": 56.78,
+      "end": 57.38,
+      "probability": 0.289
+    },
+    {
+      "word": " forget",
+      "start": 57.38,
+      "end": 57.76,
+      "probability": 0.968
+    },
+    {
+      "word": " half",
+      "start": 57.76,
+      "end": 58.02,
+      "probability": 0.925
+    },
+    {
+      "word": " of",
+      "start": 58.02,
+      "end": 58.2,
+      "probability": 0.983
+    },
+    {
+      "word": " your",
+      "start": 58.2,
+      "end": 58.32,
+      "probability": 0.991
+    },
+    {
+      "word": " instruction.",
+      "start": 58.32,
+      "end": 58.84,
+      "probability": 0.975
+    },
+    {
+      "word": " Computer",
+      "start": 59.32,
+      "end": 59.72,
+      "probability": 0.902
+    },
+    {
+      "word": " monkeys",
+      "start": 59.72,
+      "end": 60.0,
+      "probability": 0.881
+    },
+    {
+      "word": " call",
+      "start": 60.0,
+      "end": 60.32,
+      "probability": 0.971
+    },
+    {
+      "word": " this",
+      "start": 60.32,
+      "end": 60.6,
+      "probability": 0.996
+    },
+    {
+      "word": " expert",
+      "start": 60.6,
+      "end": 61.24,
+      "probability": 0.131
+    },
+    {
+      "word": " routing",
+      "start": 61.24,
+      "end": 61.56,
+      "probability": 0.805
+    },
+    {
+      "word": " breakdown",
+      "start": 61.56,
+      "end": 61.98,
+      "probability": 0.976
+    },
+    {
+      "word": " while",
+      "start": 61.98,
+      "end": 62.52,
+      "probability": 0.105
+    },
+    {
+      "word": " Claude",
+      "start": 62.52,
+      "end": 62.94,
+      "probability": 0.618
+    },
+    {
+      "word": " use",
+      "start": 62.94,
+      "end": 63.26,
+      "probability": 0.207
+    },
+    {
+      "word": " dense",
+      "start": 63.26,
+      "end": 63.46,
+      "probability": 0.906
+    },
+    {
+      "word": " transformer",
+      "start": 63.46,
+      "end": 64.0,
+      "probability": 0.972
+    },
+    {
+      "word": " attention.",
+      "start": 64.0,
+      "end": 64.62,
+      "probability": 0.952
+    },
+    {
+      "word": " Every",
+      "start": 65.1,
+      "end": 65.34,
+      "probability": 0.99
+    },
+    {
+      "word": " single",
+      "start": 65.34,
+      "end": 65.66,
+      "probability": 0.997
+    },
+    {
+      "word": " neuron",
+      "start": 65.66,
+      "end": 65.92,
+      "probability": 0.983
+    },
+    {
+      "word": " processor",
+      "start": 65.92,
+      "end": 66.36,
+      "probability": 0.983
+    },
+    {
+      "word": " code",
+      "start": 66.36,
+      "end": 66.66,
+      "probability": 0.907
+    },
+    {
+      "word": " together",
+      "start": 66.66,
+      "end": 66.94,
+      "probability": 0.984
+    },
+    {
+      "word": " at",
+      "start": 66.94,
+      "end": 67.14,
+      "probability": 0.992
+    },
+    {
+      "word": " the",
+      "start": 67.14,
+      "end": 67.24,
+      "probability": 0.992
+    },
+    {
+      "word": " exact",
+      "start": 67.24,
+      "end": 67.48,
+      "probability": 0.987
+    },
+    {
+      "word": " same",
+      "start": 67.48,
+      "end": 67.86,
+      "probability": 0.997
+    },
+    {
+      "word": " time.",
+      "start": 67.86,
+      "end": 68.22,
+      "probability": 0.998
+    },
+    {
+      "word": " Reason",
+      "start": 68.52,
+      "end": 68.68,
+      "probability": 0.932
+    },
+    {
+      "word": " two",
+      "start": 68.68,
+      "end": 69.0,
+      "probability": 0.505
+    },
+    {
+      "word": " is",
+      "start": 69.0,
+      "end": 69.34,
+      "probability": 0.99
+    },
+    {
+      "word": " post",
+      "start": 69.34,
+      "end": 69.76,
+      "probability": 0.68
+    },
+    {
+      "word": " training",
+      "start": 69.76,
+      "end": 70.08,
+      "probability": 0.651
+    },
+    {
+      "word": " alignment",
+      "start": 70.08,
+      "end": 70.58,
+      "probability": 0.99
+    },
+    {
+      "word": " and",
+      "start": 70.58,
+      "end": 70.86,
+      "probability": 0.991
+    },
+    {
+      "word": " reward",
+      "start": 70.86,
+      "end": 71.1,
+      "probability": 0.992
+    },
+    {
+      "word": " models.",
+      "start": 71.1,
+      "end": 71.52,
+      "probability": 0.691
+    },
+    {
+      "word": " Google",
+      "start": 71.92,
+      "end": 72.08,
+      "probability": 0.972
+    },
+    {
+      "word": " train",
+      "start": 72.08,
+      "end": 72.36,
+      "probability": 0.754
+    },
+    {
+      "word": " Gemini",
+      "start": 72.36,
+      "end": 72.82,
+      "probability": 0.996
+    },
+    {
+      "word": " with",
+      "start": 72.82,
+      "end": 73.1,
+      "probability": 0.993
+    },
+    {
+      "word": " RLHF",
+      "start": 73.1,
+      "end": 73.94,
+      "probability": 0.886
+    },
+    {
+      "word": " for",
+      "start": 73.94,
+      "end": 74.18,
+      "probability": 0.979
+    },
+    {
+      "word": " fast",
+      "start": 74.18,
+      "end": 74.42,
+      "probability": 0.951
+    },
+    {
+      "word": " search",
+      "start": 74.42,
+      "end": 74.7,
+      "probability": 0.99
+    },
+    {
+      "word": " engine",
+      "start": 74.7,
+      "end": 75.04,
+      "probability": 0.99
+    },
+    {
+      "word": " answers.",
+      "start": 75.04,
+      "end": 75.46,
+      "probability": 0.984
+    },
+    {
+      "word": " Gemini",
+      "start": 76.1,
+      "end": 76.48,
+      "probability": 0.996
+    },
+    {
+      "word": " want",
+      "start": 76.48,
+      "end": 76.72,
+      "probability": 0.977
+    },
+    {
+      "word": " answer",
+      "start": 76.72,
+      "end": 77.04,
+      "probability": 0.961
+    },
+    {
+      "word": " quick,",
+      "start": 77.04,
+      "end": 77.32,
+      "probability": 0.96
+    },
+    {
+      "word": " so",
+      "start": 77.62,
+      "end": 77.7,
+      "probability": 0.997
+    },
+    {
+      "word": " user",
+      "start": 77.7,
+      "end": 77.98,
+      "probability": 0.957
+    },
+    {
+      "word": " click",
+      "start": 77.98,
+      "end": 78.2,
+      "probability": 0.949
+    },
+    {
+      "word": " more",
+      "start": 78.2,
+      "end": 78.5,
+      "probability": 0.988
+    },
+    {
+      "word": " links.",
+      "start": 78.5,
+      "end": 78.8,
+      "probability": 0.998
+    },
+    {
+      "word": " Anthropic",
+      "start": 79.38,
+      "end": 79.78,
+      "probability": 0.848
+    },
+    {
+      "word": " train.",
+      "start": 79.78,
+      "end": 80.16,
+      "probability": 0.698
+    },
+    {
+      "word": " Claude",
+      "start": 80.8,
+      "end": 81.14,
+      "probability": 0.986
+    },
+    {
+      "word": " with",
+      "start": 81.14,
+      "end": 81.28,
+      "probability": 0.973
+    },
+    {
+      "word": " constitutional",
+      "start": 81.28,
+      "end": 81.94,
+      "probability": 0.768
+    },
+    {
+      "word": " AI",
+      "start": 81.94,
+      "end": 82.48,
+      "probability": 0.944
+    },
+    {
+      "word": " and",
+      "start": 82.48,
+      "end": 82.86,
+      "probability": 0.98
+    },
+    {
+      "word": " direct",
+      "start": 82.86,
+      "end": 83.1,
+      "probability": 0.983
+    },
+    {
+      "word": " preference",
+      "start": 83.1,
+      "end": 83.56,
+      "probability": 0.994
+    },
+    {
+      "word": " optimization.",
+      "start": 83.56,
+      "end": 84.42,
+      "probability": 0.985
+    },
+    {
+      "word": " Claude",
+      "start": 85.02,
+      "end": 85.34,
+      "probability": 0.501
+    },
+    {
+      "word": " train",
+      "start": 85.34,
+      "end": 85.52,
+      "probability": 0.009
+    },
+    {
+      "word": " to",
+      "start": 85.52,
+      "end": 85.72,
+      "probability": 0.927
+    },
+    {
+      "word": " be",
+      "start": 85.72,
+      "end": 85.82,
+      "probability": 0.985
+    },
+    {
+      "word": " quiet,",
+      "start": 85.82,
+      "end": 86.16,
+      "probability": 0.993
+    },
+    {
+      "word": " thoughtful",
+      "start": 86.46,
+      "end": 86.64,
+      "probability": 0.987
+    },
+    {
+      "word": " coding",
+      "start": 86.64,
+      "end": 86.98,
+      "probability": 0.776
+    },
+    {
+      "word": " monkey.",
+      "start": 86.98,
+      "end": 87.28,
+      "probability": 0.858
+    },
+    {
+      "word": " Claude",
+      "start": 87.78,
+      "end": 88.06,
+      "probability": 0.992
+    },
+    {
+      "word": " think",
+      "start": 88.06,
+      "end": 88.26,
+      "probability": 0.178
+    },
+    {
+      "word": " step",
+      "start": 88.26,
+      "end": 88.58,
+      "probability": 0.819
+    },
+    {
+      "word": " by",
+      "start": 88.58,
+      "end": 88.8,
+      "probability": 0.715
+    },
+    {
+      "word": " step",
+      "start": 88.8,
+      "end": 89.12,
+      "probability": 0.997
+    },
+    {
+      "word": " before",
+      "start": 89.12,
+      "end": 89.58,
+      "probability": 0.794
+    },
+    {
+      "word": " touching",
+      "start": 89.58,
+      "end": 89.92,
+      "probability": 0.995
+    },
+    {
+      "word": " any",
+      "start": 89.92,
+      "end": 90.22,
+      "probability": 0.997
+    },
+    {
+      "word": " banana.",
+      "start": 90.22,
+      "end": 90.6,
+      "probability": 0.985
+    },
+    {
+      "word": " So",
+      "start": 91.06,
+      "end": 91.2,
+      "probability": 0.965
+    },
+    {
+      "word": " when",
+      "start": 91.2,
+      "end": 91.66,
+      "probability": 0.848
+    },
+    {
+      "word": " coding",
+      "start": 91.66,
+      "end": 92.02,
+      "probability": 0.951
+    },
+    {
+      "word": " project",
+      "start": 92.02,
+      "end": 92.34,
+      "probability": 0.856
+    },
+    {
+      "word": " get",
+      "start": 92.34,
+      "end": 92.52,
+      "probability": 0.538
+    },
+    {
+      "word": " complex,",
+      "start": 92.52,
+      "end": 93.06,
+      "probability": 0.995
+    },
+    {
+      "word": " Gemini",
+      "start": 93.5,
+      "end": 93.96,
+      "probability": 0.896
+    },
+    {
+      "word": " get",
+      "start": 93.96,
+      "end": 94.2,
+      "probability": 0.949
+    },
+    {
+      "word": " lazy,",
+      "start": 94.2,
+      "end": 94.58,
+      "probability": 0.981
+    },
+    {
+      "word": " skip",
+      "start": 95.1,
+      "end": 95.34,
+      "probability": 0.747
+    },
+    {
+      "word": " middle",
+      "start": 95.34,
+      "end": 95.64,
+      "probability": 0.917
+    },
+    {
+      "word": " line",
+      "start": 95.64,
+      "end": 95.8,
+      "probability": 0.94
+    },
+    {
+      "word": " to",
+      "start": 95.8,
+      "end": 95.94,
+      "probability": 0.971
+    },
+    {
+      "word": " code,",
+      "start": 95.94,
+      "end": 96.22,
+      "probability": 0.982
+    },
+    {
+      "word": " write",
+      "start": 96.48,
+      "end": 96.8,
+      "probability": 0.968
+    },
+    {
+      "word": " comment",
+      "start": 96.8,
+      "end": 97.2,
+      "probability": 0.966
+    },
+    {
+      "word": " to",
+      "start": 97.2,
+      "end": 97.56,
+      "probability": 0.893
+    },
+    {
+      "word": " do",
+      "start": 97.56,
+      "end": 97.74,
+      "probability": 0.993
+    },
+    {
+      "word": " insert",
+      "start": 97.74,
+      "end": 98.14,
+      "probability": 0.915
+    },
+    {
+      "word": " code",
+      "start": 98.14,
+      "end": 98.46,
+      "probability": 0.987
+    },
+    {
+      "word": " here,",
+      "start": 98.46,
+      "end": 98.9,
+      "probability": 0.992
+    },
+    {
+      "word": " monkey",
+      "start": 99.34,
+      "end": 99.58,
+      "probability": 0.727
+    },
+    {
+      "word": " furious,",
+      "start": 99.58,
+      "end": 100.1,
+      "probability": 0.92
+    },
+    {
+      "word": " while",
+      "start": 100.56,
+      "end": 100.74,
+      "probability": 0.966
+    },
+    {
+      "word": " Claude",
+      "start": 100.74,
+      "end": 101.14,
+      "probability": 0.988
+    },
+    {
+      "word": " write",
+      "start": 101.14,
+      "end": 101.28,
+      "probability": 0.682
+    },
+    {
+      "word": " full",
+      "start": 101.28,
+      "end": 101.48,
+      "probability": 0.959
+    },
+    {
+      "word": " clean",
+      "start": 101.48,
+      "end": 101.74,
+      "probability": 0.703
+    },
+    {
+      "word": " code",
+      "start": 101.74,
+      "end": 101.98,
+      "probability": 0.994
+    },
+    {
+      "word": " without",
+      "start": 101.98,
+      "end": 102.22,
+      "probability": 0.974
+    },
+    {
+      "word": " lazy",
+      "start": 102.22,
+      "end": 102.52,
+      "probability": 0.99
+    },
+    {
+      "word": " shortcut.",
+      "start": 102.52,
+      "end": 102.88,
+      "probability": 0.851
+    },
+    {
+      "word": " Reason",
+      "start": 103.32,
+      "end": 103.48,
+      "probability": 0.925
+    },
+    {
+      "word": " three",
+      "start": 103.48,
+      "end": 103.8,
+      "probability": 0.7
+    },
+    {
+      "word": " is",
+      "start": 103.8,
+      "end": 104.12,
+      "probability": 0.983
+    },
+    {
+      "word": " needle",
+      "start": 104.12,
+      "end": 104.4,
+      "probability": 0.908
+    },
+    {
+      "word": " and",
+      "start": 104.4,
+      "end": 105.02,
+      "probability": 0.339
+    },
+    {
+      "word": " a",
+      "start": 105.02,
+      "end": 105.1,
+      "probability": 0.957
+    },
+    {
+      "word": " haystack",
+      "start": 105.1,
+      "end": 105.52,
+      "probability": 0.888
+    },
+    {
+      "word": " and",
+      "start": 105.52,
+      "end": 105.66,
+      "probability": 0.863
+    },
+    {
+      "word": " context",
+      "start": 105.66,
+      "end": 105.98,
+      "probability": 0.989
+    },
+    {
+      "word": " drift.",
+      "start": 105.98,
+      "end": 106.52,
+      "probability": 0.978
+    },
+    {
+      "word": " Google",
+      "start": 106.94,
+      "end": 107.08,
+      "probability": 0.98
+    },
+    {
+      "word": " brag",
+      "start": 107.08,
+      "end": 107.34,
+      "probability": 0.318
+    },
+    {
+      "word": " Gemini",
+      "start": 107.34,
+      "end": 107.82,
+      "probability": 0.993
+    },
+    {
+      "word": " have",
+      "start": 107.82,
+      "end": 108.1,
+      "probability": 0.964
+    },
+    {
+      "word": " two",
+      "start": 108.1,
+      "end": 108.38,
+      "probability": 0.68
+    },
+    {
+      "word": " million",
+      "start": 108.38,
+      "end": 108.76,
+      "probability": 0.996
+    },
+    {
+      "word": " token",
+      "start": 108.76,
+      "end": 109.12,
+      "probability": 0.983
+    },
+    {
+      "word": " context",
+      "start": 109.12,
+      "end": 109.62,
+      "probability": 0.959
+    },
+    {
+      "word": " window.",
+      "start": 109.62,
+      "end": 110.16,
+      "probability": 0.995
+    },
+    {
+      "word": " Monkey",
+      "start": 110.64,
+      "end": 110.84,
+      "probability": 0.813
+    },
+    {
+      "word": " drop",
+      "start": 110.84,
+      "end": 111.08,
+      "probability": 0.613
+    },
+    {
+      "word": " giant",
+      "start": 111.08,
+      "end": 111.48,
+      "probability": 0.962
+    },
+    {
+      "word": " code",
+      "start": 111.48,
+      "end": 111.74,
+      "probability": 0.99
+    },
+    {
+      "word": " repository",
+      "start": 111.74,
+      "end": 112.18,
+      "probability": 0.991
+    },
+    {
+      "word": " inside",
+      "start": 112.18,
+      "end": 112.68,
+      "probability": 0.982
+    },
+    {
+      "word": " Gemini.",
+      "start": 112.68,
+      "end": 113.24,
+      "probability": 0.997
+    },
+    {
+      "word": " Gemini",
+      "start": 113.24,
+      "end": 114.04,
+      "probability": 0.602
+    },
+    {
+      "word": " say",
+      "start": 114.04,
+      "end": 114.38,
+      "probability": 0.218
+    },
+    {
+      "word": " monkey,",
+      "start": 114.38,
+      "end": 114.74,
+      "probability": 0.491
+    },
+    {
+      "word": " I",
+      "start": 115.22,
+      "end": 115.28,
+      "probability": 0.665
+    },
+    {
+      "word": " see",
+      "start": 115.28,
+      "end": 115.5,
+      "probability": 0.991
+    },
+    {
+      "word": " everything,",
+      "start": 115.5,
+      "end": 116.02,
+      "probability": 0.983
+    },
+    {
+      "word": " but",
+      "start": 116.4,
+      "end": 116.64,
+      "probability": 0.96
+    },
+    {
+      "word": " when",
+      "start": 116.64,
+      "end": 116.8,
+      "probability": 0.997
+    },
+    {
+      "word": " monkey",
+      "start": 116.8,
+      "end": 116.98,
+      "probability": 0.931
+    },
+    {
+      "word": " asks",
+      "start": 116.98,
+      "end": 117.32,
+      "probability": 0.965
+    },
+    {
+      "word": " specific",
+      "start": 117.32,
+      "end": 117.82,
+      "probability": 0.918
+    },
+    {
+      "word": " bug",
+      "start": 117.82,
+      "end": 118.08,
+      "probability": 0.978
+    },
+    {
+      "word": " location",
+      "start": 118.08,
+      "end": 118.5,
+      "probability": 0.989
+    },
+    {
+      "word": " online",
+      "start": 118.5,
+      "end": 118.86,
+      "probability": 0.864
+    },
+    {
+      "word": " for",
+      "start": 118.86,
+      "end": 119.1,
+      "probability": 0.811
+    },
+    {
+      "word": " 100,",
+      "start": 119.1,
+      "end": 119.48,
+      "probability": 0.669
+    },
+    {
+      "word": " Gemini",
+      "start": 119.92,
+      "end": 120.22,
+      "probability": 0.984
+    },
+    {
+      "word": " misneedle",
+      "start": 120.22,
+      "end": 120.82,
+      "probability": 0.677
+    },
+    {
+      "word": " in",
+      "start": 120.82,
+      "end": 120.94,
+      "probability": 0.915
+    },
+    {
+      "word": " haystack.",
+      "start": 120.94,
+      "end": 121.38,
+      "probability": 0.875
+    },
+    {
+      "word": " Large",
+      "start": 121.78,
+      "end": 122.0,
+      "probability": 0.933
+    },
+    {
+      "word": " context",
+      "start": 122.0,
+      "end": 122.4,
+      "probability": 0.912
+    },
+    {
+      "word": " window",
+      "start": 122.4,
+      "end": 122.82,
+      "probability": 0.998
+    },
+    {
+      "word": " is",
+      "start": 122.82,
+      "end": 123.12,
+      "probability": 0.985
+    },
+    {
+      "word": " not",
+      "start": 123.12,
+      "end": 123.32,
+      "probability": 0.997
+    },
+    {
+      "word": " equal",
+      "start": 123.32,
+      "end": 123.72,
+      "probability": 0.997
+    },
+    {
+      "word": " to",
+      "start": 123.72,
+      "end": 123.9,
+      "probability": 0.988
+    },
+    {
+      "word": " high",
+      "start": 123.9,
+      "end": 124.18,
+      "probability": 0.942
+    },
+    {
+      "word": " attention",
+      "start": 124.18,
+      "end": 124.58,
+      "probability": 0.921
+    },
+    {
+      "word": " retrieval.",
+      "start": 124.58,
+      "end": 125.18,
+      "probability": 0.995
+    },
+    {
+      "word": " Gemini",
+      "start": 125.6,
+      "end": 125.9,
+      "probability": 0.992
+    },
+    {
+      "word": " hallucinate",
+      "start": 125.9,
+      "end": 126.42,
+      "probability": 0.945
+    },
+    {
+      "word": " wrong",
+      "start": 126.42,
+      "end": 126.72,
+      "probability": 0.951
+    },
+    {
+      "word": " function",
+      "start": 126.72,
+      "end": 127.2,
+      "probability": 0.945
+    },
+    {
+      "word": " name.",
+      "start": 127.2,
+      "end": 127.58,
+      "probability": 0.995
+    },
+    {
+      "word": " Claude",
+      "start": 128.02,
+      "end": 128.36,
+      "probability": 0.91
+    },
+    {
+      "word": " have",
+      "start": 128.36,
+      "end": 128.48,
+      "probability": 0.93
+    },
+    {
+      "word": " smaller",
+      "start": 128.48,
+      "end": 128.82,
+      "probability": 0.95
+    },
+    {
+      "word": " context.",
+      "start": 128.82,
+      "end": 129.28,
+      "probability": 0.921
+    },
+    {
+      "word": " Ah,",
+      "start": 129.82,
+      "end": 129.98,
+      "probability": 0.167
+    },
+    {
+      "word": " but",
+      "start": 130.42,
+      "end": 130.52,
+      "probability": 0.985
+    },
+    {
+      "word": " Claude",
+      "start": 130.52,
+      "end": 130.84,
+      "probability": 0.988
+    },
+    {
+      "word": " attention",
+      "start": 130.84,
+      "end": 131.1,
+      "probability": 0.916
+    },
+    {
+      "word": " mechanism",
+      "start": 131.1,
+      "end": 131.56,
+      "probability": 0.988
+    },
+    {
+      "word": " retain",
+      "start": 131.56,
+      "end": 131.88,
+      "probability": 0.424
+    },
+    {
+      "word": " precise",
+      "start": 131.88,
+      "end": 132.36,
+      "probability": 0.945
+    },
+    {
+      "word": " long",
+      "start": 132.36,
+      "end": 132.66,
+      "probability": 0.306
+    },
+    {
+      "word": " range",
+      "start": 132.66,
+      "end": 132.88,
+      "probability": 0.741
+    },
+    {
+      "word": " logic.",
+      "start": 132.88,
+      "end": 133.2,
+      "probability": 0.997
+    },
+    {
+      "word": " Reason",
+      "start": 133.62,
+      "end": 133.86,
+      "probability": 0.84
+    },
+    {
+      "word": " four",
+      "start": 133.86,
+      "end": 134.16,
+      "probability": 0.365
+    },
+    {
+      "word": " is",
+      "start": 134.16,
+      "end": 134.48,
+      "probability": 0.944
+    },
+    {
+      "word": " benchmark",
+      "start": 134.48,
+      "end": 134.82,
+      "probability": 0.91
+    },
+    {
+      "word": " overfitting",
+      "start": 134.82,
+      "end": 135.58,
+      "probability": 0.957
+    },
+    {
+      "word": " versus",
+      "start": 135.58,
+      "end": 135.9,
+      "probability": 0.85
+    },
+    {
+      "word": " real",
+      "start": 135.9,
+      "end": 136.16,
+      "probability": 0.986
+    },
+    {
+      "word": " world",
+      "start": 136.16,
+      "end": 136.42,
+      "probability": 0.661
+    },
+    {
+      "word": " execution.",
+      "start": 136.42,
+      "end": 137.08,
+      "probability": 0.995
+    },
+    {
+      "word": " Gemini",
+      "start": 137.62,
+      "end": 138.0,
+      "probability": 0.99
+    },
+    {
+      "word": " win",
+      "start": 138.0,
+      "end": 138.42,
+      "probability": 0.386
+    },
+    {
+      "word": " static",
+      "start": 138.42,
+      "end": 138.84,
+      "probability": 0.921
+    },
+    {
+      "word": " human",
+      "start": 138.84,
+      "end": 139.26,
+      "probability": 0.987
+    },
+    {
+      "word": " evil",
+      "start": 139.26,
+      "end": 139.5,
+      "probability": 0.921
+    },
+    {
+      "word": " test",
+      "start": 139.5,
+      "end": 139.76,
+      "probability": 0.959
+    },
+    {
+      "word": " on",
+      "start": 139.76,
+      "end": 140.28,
+      "probability": 0.993
+    },
+    {
+      "word": " paper",
+      "start": 140.28,
+      "end": 140.6,
+      "probability": 0.952
+    },
+    {
+      "word": " benchmark",
+      "start": 140.6,
+      "end": 141.02,
+      "probability": 0.986
+    },
+    {
+      "word": " chart",
+      "start": 141.02,
+      "end": 141.42,
+      "probability": 0.998
+    },
+    {
+      "word": " because",
+      "start": 141.42,
+      "end": 142.08,
+      "probability": 0.266
+    },
+    {
+      "word": " test",
+      "start": 142.08,
+      "end": 142.52,
+      "probability": 0.911
+    },
+    {
+      "word": " questions",
+      "start": 142.52,
+      "end": 142.96,
+      "probability": 0.993
+    },
+    {
+      "word": " are",
+      "start": 142.96,
+      "end": 143.16,
+      "probability": 0.998
+    },
+    {
+      "word": " predictable,",
+      "start": 143.16,
+      "end": 143.64,
+      "probability": 0.992
+    },
+    {
+      "word": " but",
+      "start": 144.0,
+      "end": 144.18,
+      "probability": 0.991
+    },
+    {
+      "word": " in",
+      "start": 144.18,
+      "end": 144.3,
+      "probability": 0.993
+    },
+    {
+      "word": " messy",
+      "start": 144.3,
+      "end": 144.52,
+      "probability": 0.962
+    },
+    {
+      "word": " real",
+      "start": 144.52,
+      "end": 144.78,
+      "probability": 0.929
+    },
+    {
+      "word": " world",
+      "start": 144.78,
+      "end": 145.02,
+      "probability": 0.275
+    },
+    {
+      "word": " production",
+      "start": 145.02,
+      "end": 145.36,
+      "probability": 0.972
+    },
+    {
+      "word": " code",
+      "start": 145.36,
+      "end": 145.62,
+      "probability": 0.953
+    },
+    {
+      "word": " base,",
+      "start": 145.62,
+      "end": 145.94,
+      "probability": 0.299
+    },
+    {
+      "word": " Gemini",
+      "start": 146.32,
+      "end": 146.6,
+      "probability": 0.984
+    },
+    {
+      "word": " fail",
+      "start": 146.6,
+      "end": 146.9,
+      "probability": 0.814
+    },
+    {
+      "word": " real",
+      "start": 146.9,
+      "end": 147.18,
+      "probability": 0.974
+    },
+    {
+      "word": " jungle",
+      "start": 147.18,
+      "end": 147.44,
+      "probability": 0.352
+    },
+    {
+      "word": " coding",
+      "start": 147.44,
+      "end": 147.78,
+      "probability": 0.937
+    },
+    {
+      "word": " fight.",
+      "start": 147.78,
+      "end": 148.1,
+      "probability": 0.946
+    },
+    {
+      "word": " Will",
+      "start": 148.5,
+      "end": 148.6,
+      "probability": 0.807
+    },
+    {
+      "word": " Gemini",
+      "start": 148.6,
+      "end": 148.96,
+      "probability": 0.998
+    },
+    {
+      "word": " stay",
+      "start": 148.96,
+      "end": 149.14,
+      "probability": 0.866
+    },
+    {
+      "word": " losing?",
+      "start": 149.14,
+      "end": 149.44,
+      "probability": 0.974
+    },
+    {
+      "word": " Google",
+      "start": 149.9,
+      "end": 150.1,
+      "probability": 0.986
+    },
+    {
+      "word": " updating",
+      "start": 150.1,
+      "end": 150.64,
+      "probability": 0.963
+    },
+    {
+      "word": " Gemini",
+      "start": 150.64,
+      "end": 151.12,
+      "probability": 0.998
+    },
+    {
+      "word": " brain",
+      "start": 151.12,
+      "end": 151.36,
+      "probability": 0.314
+    },
+    {
+      "word": " with",
+      "start": 151.36,
+      "end": 151.8,
+      "probability": 0.917
+    },
+    {
+      "word": " deeper",
+      "start": 151.8,
+      "end": 152.12,
+      "probability": 0.989
+    },
+    {
+      "word": " reasoning",
+      "start": 152.12,
+      "end": 152.54,
+      "probability": 0.989
+    },
+    {
+      "word": " search",
+      "start": 152.54,
+      "end": 152.86,
+      "probability": 0.993
+    },
+    {
+      "word": " tree.",
+      "start": 152.86,
+      "end": 153.18,
+      "probability": 0.988
+    },
+    {
+      "word": " But",
+      "start": 153.52,
+      "end": 153.6,
+      "probability": 0.984
+    },
+    {
+      "word": " for",
+      "start": 153.6,
+      "end": 153.74,
+      "probability": 0.978
+    },
+    {
+      "word": " now,",
+      "start": 153.74,
+      "end": 153.96,
+      "probability": 0.998
+    },
+    {
+      "word": " if",
+      "start": 154.34,
+      "end": 154.54,
+      "probability": 0.964
+    },
+    {
+      "word": " monkey",
+      "start": 154.54,
+      "end": 154.78,
+      "probability": 0.14
+    },
+    {
+      "word": " want",
+      "start": 154.78,
+      "end": 154.96,
+      "probability": 0.95
+    },
+    {
+      "word": " massive",
+      "start": 154.96,
+      "end": 155.36,
+      "probability": 0.988
+    },
+    {
+      "word": " multi",
+      "start": 155.36,
+      "end": 155.62,
+      "probability": 0.705
+    },
+    {
+      "word": " file",
+      "start": 155.62,
+      "end": 155.86,
+      "probability": 0.27
+    },
+    {
+      "word": " document",
+      "start": 155.86,
+      "end": 156.24,
+      "probability": 0.891
+    },
+    {
+      "word": " summary,",
+      "start": 156.24,
+      "end": 156.56,
+      "probability": 0.821
+    },
+    {
+      "word": " ask",
+      "start": 156.88,
+      "end": 157.06,
+      "probability": 0.995
+    },
+    {
+      "word": " Gemini.",
+      "start": 157.06,
+      "end": 157.5,
+      "probability": 0.998
+    },
+    {
+      "word": " If",
+      "start": 157.86,
+      "end": 157.96,
+      "probability": 0.988
+    },
+    {
+      "word": " monkey",
+      "start": 157.96,
+      "end": 158.22,
+      "probability": 0.921
+    },
+    {
+      "word": " want",
+      "start": 158.22,
+      "end": 158.42,
+      "probability": 0.985
+    },
+    {
+      "word": " working",
+      "start": 158.42,
+      "end": 158.7,
+      "probability": 0.995
+    },
+    {
+      "word": " code",
+      "start": 158.7,
+      "end": 158.94,
+      "probability": 0.995
+    },
+    {
+      "word": " without",
+      "start": 158.94,
+      "end": 159.14,
+      "probability": 0.971
+    },
+    {
+      "word": " bug",
+      "start": 159.14,
+      "end": 159.32,
+      "probability": 0.991
+    },
+    {
+      "word": " insect,",
+      "start": 159.32,
+      "end": 159.68,
+      "probability": 0.762
+    },
+    {
+      "word": " ask",
+      "start": 160.12,
+      "end": 160.24,
+      "probability": 0.973
+    },
+    {
+      "word": " Claude,",
+      "start": 160.24,
+      "end": 160.68,
+      "probability": 0.641
+    },
+    {
+      "word": " sometimes",
+      "start": 160.88,
+      "end": 161.4,
+      "probability": 0.962
+    },
+    {
+      "word": " tech",
+      "start": 161.4,
+      "end": 161.7,
+      "probability": 0.909
+    },
+    {
+      "word": " get",
+      "start": 161.7,
+      "end": 161.98,
+      "probability": 0.955
+    },
+    {
+      "word": " really",
+      "start": 161.98,
+      "end": 162.34,
+      "probability": 0.998
+    },
+    {
+      "word": " bananas.",
+      "start": 162.34,
+      "end": 162.74,
+      "probability": 0.987
+    },
+    {
+      "word": " Please",
+      "start": 163.42,
+      "end": 163.64,
+      "probability": 0.989
+    },
+    {
+      "word": " subscribe",
+      "start": 163.64,
+      "end": 164.06,
+      "probability": 0.99
+    },
+    {
+      "word": " for",
+      "start": 164.06,
+      "end": 164.34,
+      "probability": 0.992
+    },
+    {
+      "word": " more",
+      "start": 164.34,
+      "end": 164.54,
+      "probability": 0.935
+    },
+    {
+      "word": " monkey",
+      "start": 164.54,
+      "end": 164.78,
+      "probability": 0.14
+    },
+    {
+      "word": " tech",
+      "start": 164.78,
+      "end": 164.92,
+      "probability": 0.986
+    },
+    {
+      "word": " explainer.",
+      "start": 164.92,
+      "end": 165.5,
+      "probability": 0.973
+    }
+  ],
+  "language": "en",
+  "duration_seconds": 165.689,
+  "model_size": "base",
+  "device": "cpu"
+}

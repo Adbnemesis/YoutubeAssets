@@ -1,0 +1,62 @@
+# YouTube Metadata: Opus 5 vs Fable 5 (Project 16)
+
+## 📌 Title Options (Scroll-Stopping & Curiosity-Driven)
+1. **Claude Opus 5 vs Fable 5: Don't Make This $10,000 Mistake!**
+2. **Anthropic Fable 5 vs Opus 5: Which AI Should You Hire?**
+3. **Opus 5 is Half Price... But Is Fable 5 Still Better?**
+4. **Why Everyone is Switching from Fable 5 to Opus 5 (Explained)**
+
+---
+
+## 🖼️ High-CTR Thumbnail Prompts (Qwen vs Kimi Reference Style)
+
+### Option 1: The AI Duel "IT'S WAR..." (High-CTR Style)
+```text
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey with thick black-rimmed glasses, simple dot eyes, basic line mouth, looking shocked and sweating, with wide anxious eyes and holding his cartoon hands to his cheeks. On the left side, a clean blackboard comparison graph is drawn with two giant columns: a bright orange bar labeled "OPUS 5" and a cobalt blue bar labeled "FABLE 5". At the top-left, a light red pill-shaped capsule contains red text "50% CHEAPER" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S WAR...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+```
+
+### Option 2: The Cost Crash "IT'S OVER..." (High-CTR Style)
+```text
+Hand-drawn 2D doodle cartoon style, solid clean white background. On the right side, a highly simplified flat cartoon monkey with thick black-rimmed glasses, simple dot eyes, basic line mouth, looking extremely worried with a single cartoon tear rolling down his cheek, looking at the viewer. On the left side, a simple line chart is drawn in thick blue marker lines showing a steep line crashing downwards, with a giant red down-pointing arrow labeled "HALF PRICE". At the top-left, a light red pill-shaped capsule contains a red down arrow icon and text "50% OFF" next to giant bold hand-drawn marker ALL CAPS text spelling "IT'S OVER...". Flat colors, bold black outlines, no gradients, no shadows, no textures, no photorealism, no 3D, 16:9 aspect ratio, high-CTR YouTube thumbnail.
+```
+
+---
+
+## 📝 Video Description
+Imagine hiring a genius AI gorilla that thinks for five days straight... only to decline your credit card! Anthropic just dropped two brand new flagship models: Opus 5 and Fable 5. In this video, we break down exact pricing, context windows, adaptive thinking, and real-world benchmark performance so you know which model to use.
+
+In this breakdown, you'll discover:
+- The hidden cost difference between Fable 5 ($50 output) and Opus 5 ($25 output)
+- How 1,000,000 token context windows handle massive codebase audits
+- Adaptive Thinking controls and 90% pre-peeled prompt caching discounts
+- Which model to pick for multi-day autonomous research vs. daily software engineering
+
+If you enjoyed this breakdown, make sure to like, comment your favorite model, and subscribe for more bite-sized AI engineering breakdowns!
+
+#ClaudeOpus5 #Fable5 #Anthropic #AIExplained #SoftwareEngineering #TechExplainer #LLM #AIPricing #PromptCaching #Developers #CodingCopilot #ArtificialIntelligence #TechBreakdown #CodingLife
+
+---
+
+## ⏰ Timestamps & Chapters
+00:00 - Banana App Factory Dilemma
+00:06 - Option 1: Gorilla Fable 5
+00:36 - The Pesky Gorilla Invoice ($50/1M)
+00:53 - Option 2: Chimp Engineer Opus 5
+01:23 - Half Price & Same Intelligence
+01:37 - Jungle Stress Test Comparison
+02:02 - Option 3: Adaptive Thinking & 90% Caching
+02:30 - Final Verdict: Which AI Should You Pick?
+
+---
+
+## 🏷️ Keywords & Tags (SEO)
+Anthropic, Claude Opus 5, Fable 5, Claude 3.5 Sonnet, Anthropic Fable, AI Model Comparison, SWE-bench, AI Pricing, Prompt Caching, Adaptive Thinking, Artificial Intelligence, LLM Benchmarks, Coding Copilot, AI Software Engineering, Opus 5 vs Fable 5, AI Tech Breakdown, AI News, Developer Tools, Autonomous AI Agents
+
+---
+
+## 📊 Summary of Production Assets
+- **Video File**: `projects/opus_vs_fable_project_16/final_video.mp4` (93 MB)
+- **Voiceover**: `projects/opus_vs_fable_project_16/voiceover.mp3` (3m 01s)
+- **Transcript**: `projects/opus_vs_fable_project_16/project_16_transcript` (79 timestamped scenes)
+- **Prompts**: `projects/opus_vs_fable_project_16/image_prompts_opus_vs_fable.txt`
+- **Metadata**: `projects/opus_vs_fable_project_16/metadata.txt`
