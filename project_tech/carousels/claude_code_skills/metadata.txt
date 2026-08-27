@@ -1,0 +1,21 @@
+Title:
+Top 5 Claude Code Skills (SKILL.md) You Need to Know ⚡️🤖
+
+Description:
+Did you know Anthropic's Claude Code uses an open standard called "Agent Skills" (SKILL.md)?
+
+Unlike standard chat prompts that waste context, a Skill is a persistent, reusable Standard Operating Procedure (SOP) with progressive disclosure:
+
+1️⃣ Code Reviewer & Security Gatekeeper 🛡️
+2️⃣ Browser Automation & UI Testing (browser-act) 🌐
+3️⃣ Frontend Design System Builder 🎨
+4️⃣ Self-Healing Test-Debug Loop 🔄
+5️⃣ Database & Infra Manager 🗄️
+
+Swipe through the carousel to master how SKILL.md works and build your first AI skill in 30 seconds! 📲
+
+Save this for your next coding session! 📌
+Follow @nemi.explains for daily engineering & AI insights.
+
+Tags:
+#claudecode #anthropic #aiagents #coding #softwareengineering #webdev #programming #ai #developer #learntocode #tech #sysadmin #devops #aitools

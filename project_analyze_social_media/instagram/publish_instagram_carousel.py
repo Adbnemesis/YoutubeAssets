@@ -2,11 +2,13 @@
 Instagram Automated Carousel Publisher
 ---------------------------------------
 Publishes multi-image carousels to Instagram (@nemi.explains) using Meta's Graph API.
+Reads captions, title, and tags from metadata.txt.
 """
 
 import os
 import time
 import sys
+import re
 import argparse
 from pathlib import Path
 import requests
@@ -34,6 +36,37 @@ def get_credentials():
             f"Ensure your token has 'instagram_content_publish' permission."
         )
     return access_token, account_id
+
+
+def parse_metadata_file(metadata_path: Path) -> str:
+    """Parses metadata.txt and formats a clean, high-engagement Instagram caption."""
+    if not metadata_path.exists():
+        raise FileNotFoundError(f"metadata.txt not found at: {metadata_path}")
+        
+    content = metadata_path.read_text(encoding="utf-8").strip()
+    
+    # Check if standard format (Title:, Description:, Tags:)
+    title_match = re.search(r"Title:\s*\n(.*?)(?=\n\s*(?:Description|Tags|Thumbnail|$))", content, re.DOTALL | re.IGNORECASE)
+    desc_match = re.search(r"Description:\s*\n(.*?)(?=\n\s*(?:Tags|Thumbnail|Title|$))", content, re.DOTALL | re.IGNORECASE)
+    tags_match = re.search(r"Tags:\s*\n(.*?)(?=\n\s*(?:Thumbnail|Title|Description|$))", content, re.DOTALL | re.IGNORECASE)
+    
+    if title_match or desc_match:
+        title = title_match.group(1).strip() if title_match else ""
+        desc = desc_match.group(1).strip() if desc_match else ""
+        tags = tags_match.group(1).strip() if tags_match else ""
+        
+        parts = []
+        if title:
+            parts.append(title)
+        if desc:
+            parts.append(desc)
+        if tags:
+            parts.append(tags)
+            
+        return "\n\n".join(parts)
+        
+    # If raw text, return as-is
+    return content
 
 
 def stage_local_image(local_path: Path) -> str:
@@ -166,13 +199,27 @@ def get_media_permalink(media_id: str, access_token: str) -> str:
     return resp.get("permalink", f"https://www.instagram.com/p/{media_id}")
 
 
-def publish_carousel_from_folder(folder_path: str, caption: str = "") -> dict:
+def publish_carousel_from_folder(folder_path: str, caption: str = "", metadata_file: str = None) -> dict:
     access_token, account_id = get_credentials()
     folder = Path(folder_path)
     
     if not folder.exists() or not folder.is_dir():
         raise FileNotFoundError(f"Directory not found: {folder_path}")
         
+    # Auto-resolve caption from metadata.txt if not explicitly passed
+    if not caption:
+        meta_candidates = []
+        if metadata_file:
+            meta_candidates.append(Path(metadata_file))
+        meta_candidates.append(folder / "metadata.txt")
+        meta_candidates.append(folder.parent / "metadata.txt")
+        
+        for candidate in meta_candidates:
+            if candidate.exists():
+                print(f"📄 Found metadata file: {candidate}")
+                caption = parse_metadata_file(candidate)
+                break
+                
     # Get all PNG/JPG slides sorted
     slide_files = sorted(
         [f for f in folder.iterdir() if f.suffix.lower() in [".png", ".jpg", ".jpeg"]],
@@ -221,7 +268,8 @@ def publish_carousel_from_folder(folder_path: str, caption: str = "") -> dict:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Publish an Instagram Carousel")
     parser.add_argument("--folder", type=str, required=True, help="Path to folder containing PNG slides")
-    parser.add_argument("--caption", type=str, default="", help="Post caption")
+    parser.add_argument("--caption", type=str, default="", help="Optional explicit post caption")
+    parser.add_argument("--metadata", type=str, default="", help="Optional path to metadata.txt file")
     
     args = parser.parse_args()
-    publish_carousel_from_folder(args.folder, args.caption)
+    publish_carousel_from_folder(args.folder, caption=args.caption, metadata_file=args.metadata)

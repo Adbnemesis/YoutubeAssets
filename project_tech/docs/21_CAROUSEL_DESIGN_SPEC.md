@@ -81,5 +81,43 @@ Unlike futuristic cyber/neon sci-fi cards, our carousels follow a **minimalist, 
 
 1. **Conversational First-Person Tone:** Talk directly to the reader (*"Your program has no access to hardware resources... You might think 'that can't be right.'"*).
 2. **One Core Idea Per Slide:** Never overcrowd a slide. 2–3 sentences max + 1 clear visual per slide.
-3. **Humor & Anime Meme Culture:** Use relatable anime character reaction tropes (e.g. nervous anime student for low privilege vs gigachad manga for kernel mode).
+3. **Humor & Anime Meme Culture:** Use relatable anime character reaction tropes.
 4. **Zero Fluff:** Get straight to the technical insight in plain English.
+
+---
+
+## 6. Metadata & Publishing Standard (`metadata.txt`)
+
+Every carousel project must store its publication metadata in a clean **`metadata.txt`** file alongside the rendered slides or in the project folder (never in ad-hoc Python scripts).
+
+### `metadata.txt` Template Format:
+```text
+Title:
+Top 5 Claude Code Skills (SKILL.md) You Need to Know ⚡️🤖
+
+Description:
+Did you know Anthropic's Claude Code uses an open standard called "Agent Skills" (SKILL.md)?
+
+Unlike standard chat prompts that waste context, a Skill is a persistent, reusable Standard Operating Procedure (SOP) with progressive disclosure:
+
+1️⃣ Code Reviewer & Security Gatekeeper 🛡️
+2️⃣ Browser Automation & UI Testing (browser-act) 🌐
+3️⃣ Frontend Design System Builder 🎨
+4️⃣ Self-Healing Test-Debug Loop 🔄
+5️⃣ Database & Infra Manager 🗄️
+
+Swipe through the carousel to master how SKILL.md works and build your first AI skill in 30 seconds! 📲
+
+Save this for your next coding session! 📌
+Follow @nemi.explains for daily engineering & AI insights.
+
+Tags:
+#claudecode #anthropic #aiagents #coding #softwareengineering #webdev #programming #ai #developer #learntocode #tech #sysadmin #devops #aitools
+```
+
+### Publishing Command:
+```bash
+python project_analyze_social_media/instagram/publish_instagram_carousel.py --folder project_tech/out/carousels/<carousel_name>
+```
+*(The publisher automatically detects and parses `metadata.txt` inside the folder to extract title, description, and hashtags)*.
+
