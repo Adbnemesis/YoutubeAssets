@@ -44,7 +44,7 @@ const getEventTimeString = (eventIndex: number, script: ChatScript): string => {
     }
   }
 
-  const minutesToAdd = Math.floor(messageCount / 3);
+  const minutesToAdd = Math.floor(messageCount / 4);
   let totalMinutes = baseHour * 60 + baseMinute + minutesToAdd;
   let currentHour = Math.floor(totalMinutes / 60) % 12;
   if (currentHour === 0) currentHour = 12;
@@ -63,19 +63,19 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return new Map(script.characters.map((c) => [c.id, c]));
   }, [script.characters]);
 
-  // Build the timeline sequentially without dead gaps
+  // Build the timeline sequentially with rapid, snappy Beluga-style pacing
   const { timeline, sfxTracks } = useMemo(() => {
     let currentFrame = 0;
     const computedTimeline: any[] = [];
     const computedSfx: any[] = [];
 
     script.events.forEach((evt, index) => {
-      // Delay before this event starts (previous message stays on screen during this time)
+      // Delay before this event starts (snappy 0.1s - 0.4s)
       if (evt.delaySeconds && evt.delaySeconds > 0) {
         currentFrame += Math.round(evt.delaySeconds * fps);
       }
 
-      // Typing phase
+      // Typing phase (snappy 0.25s - 0.45s)
       if (evt.type === "message" && evt.isTypingDuration && evt.isTypingDuration > 0) {
         const typingDurationFrames = Math.round(evt.isTypingDuration * fps);
         computedTimeline.push({
@@ -101,7 +101,8 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
         let msgDuration = evt.durationSeconds;
         if (!msgDuration) {
           const charLen = (evt.text || "").length;
-          msgDuration = Math.max(1.4, 0.9 + charLen * 0.038);
+          // Beluga snappy reading formula (0.65s base + 0.022s per char, max 1.6s)
+          msgDuration = Math.min(1.6, Math.max(0.7, 0.65 + charLen * 0.022));
         }
         const msgDurationFrames = Math.round(msgDuration * fps);
 
@@ -118,14 +119,14 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
           computedSfx.push({
             file: evt.sfx,
             startFrame: currentFrame,
-            durationFrames: Math.round(2.5 * fps),
+            durationFrames: Math.round(2.0 * fps),
             volume: evt.sfx === "vine_boom.mp3" || evt.sfx === "fahhh.mp3" ? 0.9 : 0.6,
           });
         }
 
         currentFrame += msgDurationFrames;
       } else if (evt.type === "cutaway") {
-        const cutawayDuration = evt.durationSeconds || 2.0;
+        const cutawayDuration = evt.durationSeconds || 1.8;
         const cutawayDurationFrames = Math.round(cutawayDuration * fps);
 
         computedTimeline.push({
@@ -153,40 +154,34 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return { timeline: computedTimeline, sfxTracks: computedSfx };
   }, [script, fps]);
 
-  // Find what is happening at current frame
+  // Find active cutaway
   const activeCutaway = timeline.find(
     (t) => t.type === "cutaway" && frame >= t.startFrame && frame < t.endFrame
   );
 
-  // Find the currently active or most recently completed non-cutaway event
+  // Find active non-cutaway event
   const currentEvent = useMemo(() => {
-    // Check if an event is actively in progress
     const active = timeline.find((t) => t.type !== "cutaway" && frame >= t.startFrame && frame < t.endFrame);
     if (active) return active;
 
-    // Otherwise, find the last event that already started before this frame
     const started = timeline.filter((t) => t.type !== "cutaway" && frame >= t.startFrame);
     if (started.length > 0) return started[started.length - 1];
 
-    // Fallback to first non-cutaway event
     return timeline.find((t) => t.type !== "cutaway") || null;
   }, [timeline, frame]);
 
-  // Determine what messages to display on screen (show current message and previous context)
+  // Display messages on screen
   const displayedMessages = useMemo(() => {
     if (!currentEvent) return [];
 
     const currentIndex = currentEvent.eventIndex;
     const items: any[] = [];
 
-    // Find the latest message event up to currentEvent
     let latestMsgIndex = currentIndex;
     if (currentEvent.type === "typing") {
-      // If typing, find the message before this typing event
       latestMsgIndex = currentIndex - 1;
     }
 
-    // Include the active message (or previous message if typing)
     if (latestMsgIndex >= 0 && latestMsgIndex < script.events.length) {
       const evt = script.events[latestMsgIndex];
       if (evt.type === "message") {
@@ -199,7 +194,6 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       }
     }
 
-    // If currently typing, append typing indicator below
     if (currentEvent.type === "typing") {
       items.push({
         type: "typing",
@@ -211,7 +205,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return items;
   }, [currentEvent, script.events]);
 
-  // Dynamic Scale calculation based on current message text length
+  // Dynamic punchy zoom scale based on text length
   const currentScale = useMemo(() => {
     if (!currentEvent || currentEvent.type === "cutaway") return 2.2;
     
@@ -240,7 +234,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return Math.min(1.3, 1500 / Math.max(estimatedWidth, 1200));
   }, [currentEvent, charMap]);
 
-  // Screen shake calculation on impact SFX
+  // Screen shake on heavy SFX
   let screenShakeX = 0;
   let screenShakeY = 0;
   let punchZoom = 1.0;

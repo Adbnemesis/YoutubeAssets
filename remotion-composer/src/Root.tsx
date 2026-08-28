@@ -145,16 +145,26 @@ const calculateChatnemiMetadata: CalculateMetadataFunction<any> = async ({ props
   const script = props.events ? props : props.script;
   if (script && script.events) {
     script.events.forEach((evt: any) => {
-      if (evt.type === 'cutaway') {
-        frames += (evt.delaySeconds || 0) * 30;
-        frames += evt.durationSeconds * 30;
-      } else {
-        frames += (evt.delaySeconds || 0) * 30;
-        frames += (evt.isTypingDuration || 0) * 30;
+      if (evt.delaySeconds) {
+        frames += evt.delaySeconds * 30;
+      }
+      if (evt.type === "message") {
+        if (evt.isTypingDuration) {
+          frames += evt.isTypingDuration * 30;
+        }
+        let msgDuration = evt.durationSeconds;
+        if (!msgDuration) {
+          const charLen = (evt.text || "").length;
+          msgDuration = Math.min(1.6, Math.max(0.7, 0.65 + charLen * 0.022));
+        }
+        frames += msgDuration * 30;
+      } else if (evt.type === "cutaway") {
+        const cutawayDuration = evt.durationSeconds || 1.8;
+        frames += cutawayDuration * 30;
       }
     });
   }
-  return { durationInFrames: Math.max(30, Math.ceil(frames)) };
+  return { durationInFrames: Math.max(30, Math.ceil(frames) + 15) };
 };
 
 const ChatnemiWrapper: React.FC<any> = (props) => {
