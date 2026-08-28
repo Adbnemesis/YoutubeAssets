@@ -41,14 +41,19 @@ def get_youtube_service():
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             print("Refreshing expired upload token...", flush=True)
-            creds.refresh(Request())
-        else:
+            try:
+                creds.refresh(Request())
+            except Exception as e:
+                print(f"⚠️ Refresh failed ({e}), re-authenticating with Google OAuth...", flush=True)
+                creds = None
+
+        if not creds or not creds.valid:
             if not CLIENT_SECRETS_FILE.exists():
                 raise FileNotFoundError(
                     f"Missing '{CLIENT_SECRETS_FILE.name}'!\n"
                     f"Please ensure client_secrets.json is present in {BASE_DIR}"
                 )
-            print("\n Authorizing YouTube Uploader with Google OAuth...", flush=True)
+            print("\n🔑 Authorizing YouTube Uploader with Google OAuth...", flush=True)
             print("Please approve upload permissions in your browser...\n", flush=True)
             flow = InstalledAppFlow.from_client_secrets_file(
                 str(CLIENT_SECRETS_FILE), SCOPES
