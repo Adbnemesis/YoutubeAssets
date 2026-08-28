@@ -12,17 +12,17 @@
   "startTime": "6:01 PM",
   "bgm": "monkeys_spinning_monkeys.mp3",
   "events": [
-    { "type": "message", "characterId": "edgar", "text": "GUYS I FINALLY GOT THE FILES 📁🤫", "delaySeconds": 0.5, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "GTA_6_BRAWL_STARS_EDITION.zip\n[ 999.84 GB ]", "delaySeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "GUYS I FINALLY GOT THE LEAKED FILES 📁🤫", "delaySeconds": 0.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "[FILE: GTA_6_BRAWL_STARS_EDITION.zip | 999.84 GB]", "delaySeconds": 1.2, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "colt", "text": "Edgar that is literally 1 terabyte\nof russian crypto malware.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "colt", "text": "Edgar that is literally 1,000 gigabytes\nof russian crypto malware.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
     
     { "type": "message", "characterId": "shelly", "text": "Download it and your phone\nwill explode like Dynamike's Hypercharge.", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "IT IS NOT MALWARE", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "IT IS NOT MALWARE", "delaySeconds": 2.0, "isTypingDuration": 0.7, "sfx": "fahhh.mp3" },
     { "type": "message", "characterId": "edgar", "text": "my uncle is a lead developer\nat Rockstar Games headquarters", "delaySeconds": 1.6, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "Edgar Paul Astay.", "delaySeconds": 2.6, "isTypingDuration": 0.9, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Edgar Paul Astay.", "delaySeconds": 2.4, "isTypingDuration": 0.9, "sfx": "discord_join.mp3" },
     { "type": "message", "characterId": "rockstar_bot", "text": "You are currently seated at\nStarr Park Gift Shop Cash Register #4.", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
     { "type": "message", "characterId": "rockstar_bot", "text": "Your blood type is A-Negative Emo.\nYour Wi-Fi ping is 942ms.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
@@ -30,11 +30,11 @@
     { "type": "message", "characterId": "edgar", "text": "HOW DO YOU KNOW MY BLOOD TYPE 😭", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "rockstar_bot", "text": "You leaked official GTA 6 source code.\nA crime punishable by immediate banishment.", "delaySeconds": 2.2, "isTypingDuration": 0.9, "sfx": "vine_boom.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "Activating Dynamike TNT barrels\nunder Gift Shop Desk #4 in 5... 4... 3...", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Activating Dynamike Super TNT barrels\nunder Gift Shop Desk #4 in 5... 4... 3...", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "error.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "edgar_gta6_leak_cctv.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "anime-wow.mp3" },
+    { "type": "cutaway", "mediaUrl": "edgar_gta6_leak_cctv.png", "durationSeconds": 2.0, "delaySeconds": 2.4, "fadeIn": true, "effect": "zoom", "sfx": "anime-wow.mp3" },
     
-    { "type": "message", "characterId": "colette", "text": "EDGAR WHY IS THERE A TICKING DYNAMITE\nTAPED TO OUR CASH REGISTER 😭😭", "delaySeconds": 1.4, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "colette", "text": "EDGAR WHY IS THERE A TICKING DYNAMITE\nTAPED UNDER OUR CASH REGISTER 😭😭", "delaySeconds": 1.4, "sfx": "error.mp3" },
     { "type": "message", "characterId": "colette", "text": "MY SPIKE SCRAPBOOK IS IN THAT DRAWER", "delaySeconds": 1.4, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "I DONT EVEN WORK AT ROCKSTAR\nI BOUGHT THE USB STICK FROM CHESTER FOR 50 GEMS", "delaySeconds": 2.4, "isTypingDuration": 0.9, "sfx": "fahhh.mp3" },
@@ -47,7 +47,7 @@
     
     { "type": "message", "characterId": "rockstar_bot", "text": "Target identity confirmed.\nEdgar has achieved 5 WANTED STARS in Starr Park.", "delaySeconds": 2.4, "isTypingDuration": 0.9, "sfx": "brawl_hypercharge.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "brawl_gta6_wanted_stars.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "fahhh.mp3" },
+    { "type": "cutaway", "mediaUrl": "brawl_gta6_wanted_stars.png", "durationSeconds": 2.0, "delaySeconds": 2.4, "fadeIn": true, "effect": "zoom", "sfx": "fahhh.mp3" },
     
     { "type": "message", "characterId": "shelly", "text": "Edgar you have the entire FBI\nand SWAT team in the Showdown bush.", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "shelly", "text": "Even your living scarf put its hands in the air.", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
@@ -56,17 +56,20 @@
     { "type": "message", "characterId": "rockstar_bot", "text": "Deliver the master hard drive\nto our headquarters in 60 seconds.", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "OKAY FINE I SENT THE COURIER", "delaySeconds": 2.0, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "GPS ADDRESS:\nItämerenkatu 11-13, Helsinki, Finland", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "GPS ADDRESS:\nItämerenkatu 11-13, 00180 Helsinki, Finland", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "Verifying GPS Coordinates...", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "Wait. That address is not a residential house.", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "That is the Official Headquarters of SUPERCELL.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Verifying GPS Coordinates on Satellite Map...", "delaySeconds": 2.0, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    
+    { "type": "cutaway", "mediaUrl": "GOOGLE_SEARCH_SUPERCELL", "durationSeconds": 3.0, "delaySeconds": 2.2, "sfx": "anime-wow.mp3" },
+    
+    { "type": "message", "characterId": "rockstar_bot", "text": "WAIT. That address is not a residential house.", "delaySeconds": 1.6, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "That is the Official Worldwide Headquarters of SUPERCELL.", "delaySeconds": 1.8, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
     
     { "type": "message", "characterId": "starr_park_bot", "text": "SUPERCELL CEO HAS ENTERED THE CHAT 🏆", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "supercell_jingle.mp3" },
     { "type": "message", "characterId": "starr_park_bot", "text": "Thanks for the 500 million free impressions\nRockstar Games.", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "ping.mp3" },
     { "type": "message", "characterId": "starr_park_bot", "text": "BRAWL STARS x GTA 6 CROSSOVER\nOFFICIALLY LAUNCHING TOMORROW 🚗💥", "delaySeconds": 1.8, "isTypingDuration": 0.9, "sfx": "brawl_match_win.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "supercell_rockstar_deal.png", "durationSeconds": 1.5, "delaySeconds": 2.8, "fadeIn": true, "effect": "fade", "sfx": "chime.mp3" },
+    { "type": "cutaway", "mediaUrl": "supercell_rockstar_deal.png", "durationSeconds": 2.2, "delaySeconds": 2.4, "fadeIn": true, "effect": "zoom", "sfx": "chime.mp3" },
     
     { "type": "message", "characterId": "edgar", "text": "WAIT DO I GET A FREE HAWAIIAN SHIRT\nAND A PINK SPORTS CAR SKIN?! 😎🌴", "delaySeconds": 2.2, "isTypingDuration": 0.8, "sfx": "brawl_hypercharge.mp3" },
     

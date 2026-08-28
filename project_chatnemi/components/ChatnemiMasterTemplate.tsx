@@ -15,6 +15,7 @@ import { DiscordLayout } from "./DiscordLayout";
 import { DiscordMessage } from "./DiscordMessage";
 import { TypingIndicator } from "./TypingIndicator";
 import { DiscordCall } from "./DiscordCall";
+import { GoogleSearchCutaway } from "./GoogleSearchCutaway";
 
 const getEventTimeString = (eventIndex: number, script: ChatScript): string => {
   const evt = script.events[eventIndex] as any;
@@ -119,247 +120,245 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
     // Avatar (40) + Margins (16) + Content
     estimatedMessageWidth = 56 + contentWidth;
   }
-  
-  // Estimate total unscaled height of active messages including multi-line text
-  let estimatedHeight = 68; // Base height of first message with header & margins
-  activeEvents.forEach(e => {
-    if (e.type === "message") {
-      const scriptEvt = script.events[e.eventIndex] as any;
-      if (scriptEvt && scriptEvt.text) {
-        const lineCount = (scriptEvt.text.match(/\n/g) || []).length + 1;
-        estimatedHeight += (lineCount - 1) * 22;
-      }
-    }
-  });
 
-  const activeCount = activeEvents.filter(e => e.type === "message" || e.type === "typing").length;
-  if (activeCount > 1) {
-    estimatedHeight += (activeCount - 1) * 28;
-  }
+  // Single word punch zooms (e.g. "what", "no", "🔥")
+  if (estimatedMessageWidth < 220) return 8.5;
+  if (estimatedMessageWidth < 300) return 6.0;
+  if (estimatedMessageWidth < 450) return 4.2;
+  if (estimatedMessageWidth < 650) return 3.0;
+  if (estimatedMessageWidth < 900) return 2.2;
+  if (estimatedMessageWidth < 1200) return 1.6;
 
-  // Bound scale horizontally (1520px max safe width from X=80 origin leaves safe 200px right-side margin)
-  const scaleByWidth = 1520 / estimatedMessageWidth;
-
-  // Bound scale vertically so stacked messages never overflow the 1080px screen (840px max safe height)
-  const maxVerticalScale = 840 / estimatedHeight;
-
-  const finalScale = Math.min(scaleByWidth, maxVerticalScale);
-  
-  // Allow massive zoom-ins for short text like Beluga (e.g. 10x-12x for short text)
-  return Math.max(1.2, Math.min(finalScale, 12));
+  // For very long multi-line sentences, bound scale safely so it NEVER clips off screen (safe 1520px margin)
+  return Math.min(1.3, 1520 / Math.max(estimatedMessageWidth, 1200));
 };
 
-export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
-  script,
-}) => {
+export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ script }) => {
   const { fps } = useVideoConfig();
+  const frame = useCurrentFrame();
 
-  // Pre-calculate the exact frame when each event should appear
-  const events = useMemo(() => {
+  const charMap = useMemo(() => {
+    return new Map(script.characters.map((c) => [c.id, c]));
+  }, [script.characters]);
+
+  // Build timeline
+  const { events, sfxTracks } = useMemo(() => {
     let currentFrame = 0;
-    const items: {
-      type: "typing" | "message" | "cutaway";
-      eventIndex: number;
-      startFrame: number;
-      endFrame: number;
-      durationFrames?: number;
-      sfx?: string;
-    }[] = [];
+    const computedEvents: any[] = [];
+    const computedSfx: any[] = [];
 
     script.events.forEach((evt, index) => {
-      if (evt.type === "cutaway") {
-        if (evt.delaySeconds) {
-          currentFrame += Math.round(evt.delaySeconds * fps);
+      // 1. Initial Delay before this event
+      if (evt.delaySeconds && evt.delaySeconds > 0) {
+        currentFrame += Math.round(evt.delaySeconds * fps);
+      }
+
+      // 2. Typing Sequence (if requested)
+      if (evt.type === "message" && evt.isTypingDuration && evt.isTypingDuration > 0) {
+        const typingDurationFrames = Math.round(evt.isTypingDuration * fps);
+        computedEvents.push({
+          type: "typing",
+          eventIndex: index,
+          startFrame: currentFrame,
+          endFrame: currentFrame + typingDurationFrames,
+        });
+
+        // Typing SFX loop
+        computedSfx.push({
+          file: "typing.mp3",
+          startFrame: currentFrame,
+          durationFrames: typingDurationFrames,
+          volume: 0.4,
+        });
+
+        currentFrame += typingDurationFrames;
+      }
+
+      // 3. Main Event (Message or Cutaway)
+      if (evt.type === "message") {
+        // Calculate reading duration if not explicitly provided
+        let msgDuration = evt.durationSeconds;
+        if (!msgDuration) {
+          const charLen = (evt.text || "").length;
+          // Fast paced reading formula (0.8s base + 0.035s per char)
+          msgDuration = Math.max(1.2, 0.8 + charLen * 0.035);
         }
-        const cutawayDurationFrames = Math.round(evt.durationSeconds * fps);
-        items.push({
+
+        const msgDurationFrames = Math.round(msgDuration * fps);
+        computedEvents.push({
+          type: "message",
+          eventIndex: index,
+          startFrame: currentFrame,
+          endFrame: currentFrame + msgDurationFrames,
+        });
+
+        // Message SFX (Ping, Vine boom, etc.)
+        if (evt.sfx) {
+          computedSfx.push({
+            file: evt.sfx,
+            startFrame: currentFrame,
+            durationFrames: Math.round(2.5 * fps),
+            volume: evt.sfx === "vine_boom.mp3" || evt.sfx === "fahhh.mp3" ? 0.9 : 0.6,
+          });
+        }
+
+        currentFrame += msgDurationFrames;
+      } else if (evt.type === "cutaway") {
+        const cutawayDuration = evt.durationSeconds || 2.0;
+        const cutawayDurationFrames = Math.round(cutawayDuration * fps);
+
+        computedEvents.push({
           type: "cutaway",
           eventIndex: index,
           startFrame: currentFrame,
           endFrame: currentFrame + cutawayDurationFrames,
           durationFrames: cutawayDurationFrames,
-          sfx: evt.sfx,
         });
-        currentFrame += cutawayDurationFrames;
-      } else if (evt.type === "message") {
-        currentFrame += Math.round(evt.delaySeconds * fps);
 
-        if (evt.isTypingDuration && evt.isTypingDuration > 0) {
-          const typingDurationFrames = Math.round(evt.isTypingDuration * fps);
-          items.push({
-            type: "typing",
-            eventIndex: index,
+        // Cutaway SFX / Audio cue
+        if (evt.sfx) {
+          computedSfx.push({
+            file: evt.sfx,
             startFrame: currentFrame,
-            endFrame: currentFrame + typingDurationFrames,
-            durationFrames: typingDurationFrames,
+            durationFrames: cutawayDurationFrames,
+            volume: 0.8,
           });
-          currentFrame += typingDurationFrames;
         }
 
-        items.push({
-          type: "message",
-          eventIndex: index,
-          startFrame: currentFrame,
-          endFrame: Infinity,
-          sfx: evt.sfx,
-        });
+        currentFrame += cutawayDurationFrames;
       }
     });
 
-    // Set endFrames for messages so they disappear when a DIFFERENT character starts their turn or a cutaway happens
-    for (let i = 0; i < items.length; i++) {
-      if (items[i].type === "message") {
-        let nextDiffEvent = null;
-        for (let j = i + 1; j < items.length; j++) {
-          if (items[j].type === "cutaway") {
-             nextDiffEvent = items[j];
-             break;
-          } else if (items[j].type === "message") {
-            const charId = (script.events[items[j].eventIndex] as any).characterId;
-            const myCharId = (script.events[items[i].eventIndex] as any).characterId;
-            if (charId !== myCharId) {
-              nextDiffEvent = items[j];
-              break;
-            }
-          }
-        }
-        
-        if (nextDiffEvent) {
-          items[i].endFrame = nextDiffEvent.startFrame;
-        }
-      }
-    }
-
-    return items;
+    return { events: computedEvents, sfxTracks: computedSfx };
   }, [script, fps]);
 
-  const charMap = useMemo(() => {
-    const map = new Map();
-    script.characters.forEach((c) => map.set(c.id, c));
-    return map;
-  }, [script]);
+  // Active event detection
+  const activeEvents = events.filter(e => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame);
+  const currentScale = calculateScale(activeEvents, script);
 
-  const frame = useCurrentFrame();
+  // Dynamic Screen Shake & Punch Zoom calculation on punchy SFX
+  let screenShakeX = 0;
+  let screenShakeY = 0;
+  let punchZoom = 1.0;
+
+  for (const sfx of sfxTracks) {
+    if (["vine_boom.mp3", "error.mp3", "fahhh.mp3", "brawl_hypercharge.mp3"].includes(sfx.file)) {
+      const elapsed = frame - sfx.startFrame;
+      if (elapsed >= 0 && elapsed <= 8) {
+        const decay = (8 - elapsed) / 8;
+        screenShakeX = Math.sin(elapsed * 2.5) * 6 * decay;
+        screenShakeY = Math.cos(elapsed * 3.0) * 4 * decay;
+        punchZoom = 1.0 + (0.04 * decay);
+      }
+    }
+  }
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "#000000" }}>
-      {/* GLOBAL BGM LAYER */}
+    <AbsoluteFill style={{ backgroundColor: "#000000", overflow: "hidden" }}>
+      {/* BACKGROUND MUSIC */}
       {script.bgm && (
         <Audio
           src={staticFile(`project_chatnemi_assets/sounds/${script.bgm}`)}
-          volume={0.15}
+          volume={(f) => {
+            // Cut BGM completely during heavy cutaways or dramatic pauses
+            const isCutawayActive = events.some(e => e.type === "cutaway" && f >= e.startFrame && f < e.endFrame);
+            if (isCutawayActive) return 0.08;
+            return 0.22;
+          }}
           loop
         />
       )}
 
-      {/* AUDIO LAYER */}
-      {events.map((event, i) => {
-        if (event.type === "typing") {
-          return (
-            <Sequence
-              key={`audio-typing-${i}`}
-              from={event.startFrame}
-              layout="none"
-              durationInFrames={event.durationFrames}
-            >
-              <Audio
-                src={staticFile(`project_chatnemi_assets/sounds/typing.mp3`)}
-                volume={0.5}
-              />
-            </Sequence>
-          );
-        }
-
-        if (event.sfx) {
-          return (
-            <Sequence
-              key={`audio-sfx-${i}`}
-              from={event.startFrame}
-              layout="none"
-              durationInFrames={event.durationFrames}
-            >
-              <Audio
-                src={staticFile(`project_chatnemi_assets/sounds/${event.sfx}`)}
-              />
-            </Sequence>
-          );
-        }
-
-        return null;
-      })}
+      {/* SOUND EFFECTS */}
+      {sfxTracks.map((sfx, i) => (
+        <Sequence
+          key={`sfx-${i}`}
+          from={sfx.startFrame}
+          durationInFrames={sfx.durationFrames}
+        >
+          <Audio
+            src={staticFile(`project_chatnemi_assets/sounds/${sfx.file}`)}
+            volume={sfx.volume || 0.6}
+          />
+        </Sequence>
+      ))}
 
       {/* DISCORD UI LAYER */}
-      <AbsoluteFill style={{
-          justifyContent: "center", // Center vertically
-          opacity: events.filter(e => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame).length > 0 ? 1 : 0
-      }}>
+      <AbsoluteFill
+        style={{
+          justifyContent: "center",
+          opacity: activeEvents.length > 0 ? 1 : 0,
+          transform: `translate(${screenShakeX}px, ${screenShakeY}px) scale(${punchZoom})`,
+        }}
+      >
         {/* Scaled Grey Band Container */}
-        <div style={{
-           transformOrigin: "80px center", // Scale exactly from the center of the avatar (paddingLeft 60 + 20px half avatar)
-           transform: `scale(${calculateScale(
-            events.filter(e => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame),
-            script
-          )})`,
-           width: "100%", // 1920px base width
-           paddingLeft: 60, // Place avatar 60px from the left before scaling
-           position: "relative",
-           backgroundColor: "#36393f",
-        }}>
+        <div
+          style={{
+            transformOrigin: "80px center",
+            transform: `scale(${currentScale})`,
+            width: "100%",
+            paddingLeft: 60,
+            position: "relative",
+            backgroundColor: "#36393f",
+          }}
+        >
           {/* Infinite Grey Extensions to prevent edges showing on scale/shift */}
-          <div style={{
-             position: "absolute",
-             left: -10000,
-             right: -10000,
-             top: 0,
-             bottom: 0,
-             backgroundColor: "#36393f",
-             zIndex: -1,
-          }} />
+          <div
+            style={{
+              position: "absolute",
+              left: -10000,
+              right: -10000,
+              top: 0,
+              bottom: 0,
+              backgroundColor: "#36393f",
+              zIndex: -1,
+            }}
+          />
 
           <DiscordLayout>
-          {events.map((event, i) => {
-            if (event.type === "cutaway") return null;
-            if (frame < event.startFrame || frame >= event.endFrame) return null;
+            {events.map((event, i) => {
+              if (event.type === "cutaway") return null;
+              if (frame < event.startFrame || frame >= event.endFrame) return null;
 
-            const scriptEvent = script.events[event.eventIndex];
-            if (scriptEvent.type !== "message") return null;
+              const scriptEvent = script.events[event.eventIndex];
+              if (!scriptEvent) return null;
 
-            const character = charMap.get(scriptEvent.characterId);
-            if (!character) return null;
+              const character = charMap.get(scriptEvent.characterId);
+              if (!character) return null;
 
-            let isFirst = true;
-            // Find previous message event
-            for (let j = event.eventIndex - 1; j >= 0; j--) {
+              let isFirst = true;
+              // Find previous message event
+              for (let j = event.eventIndex - 1; j >= 0; j--) {
                 const prevEvt = script.events[j];
-                if (prevEvt.type === "cutaway") break; // Cutaway breaks the group
+                if (prevEvt.type === "cutaway") break;
                 if (prevEvt.type === "message") {
-                    if (prevEvt.characterId === scriptEvent.characterId) {
-                        isFirst = false;
-                    }
-                    break;
+                  if (prevEvt.characterId === scriptEvent.characterId) {
+                    isFirst = false;
+                  }
+                  break;
                 }
-            }
+              }
 
-            if (event.type === "typing") {
-              return <TypingIndicator key={`ui-typing-${i}`} name={character.name} />;
-            }
+              if (event.type === "typing") {
+                return <TypingIndicator key={`ui-typing-${i}`} name={character.name} />;
+              }
 
-            if (event.type === "message") {
-              const timeString = getEventTimeString(event.eventIndex, script);
-              return (
-                <DiscordMessage
-                  key={`ui-msg-${i}`}
-                  character={character}
-                  text={scriptEvent.text}
-                  timeString={timeString}
-                  isFirstMessageInGroup={isFirst}
-                />
-              );
-            }
+              if (event.type === "message") {
+                const timeString = getEventTimeString(event.eventIndex, script);
+                return (
+                  <DiscordMessage
+                    key={`ui-msg-${i}`}
+                    character={character}
+                    text={scriptEvent.text}
+                    timeString={timeString}
+                    isFirstMessageInGroup={isFirst}
+                  />
+                );
+              }
 
-            return null;
-          })}
-            </DiscordLayout>
+              return null;
+            })}
+          </DiscordLayout>
         </div>
       </AbsoluteFill>
 
@@ -371,21 +370,34 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
         const scriptEvent = script.events[event.eventIndex];
         if (scriptEvent.type !== "cutaway") return null;
 
+        // 1. Google Search / Maps Reveal Cutaway
+        if (scriptEvent.mediaUrl === "GOOGLE_SEARCH_SUPERCELL" || (scriptEvent.mediaUrl && scriptEvent.mediaUrl.startsWith("GOOGLE_SEARCH"))) {
+          return (
+            <AbsoluteFill key={`cutaway-google-${i}`} style={{ zIndex: 100 }}>
+              <GoogleSearchCutaway
+                searchQuery="Itämerenkatu 11-13, 00180 Helsinki, Finland"
+                resultTitle="Supercell Headquarters"
+                resultAddress="Itämerenkatu 11-13, 00180 Helsinki, Finland"
+                resultCategory="Brawl Stars & Clash of Clans Creator"
+              />
+            </AbsoluteFill>
+          );
+        }
+
+        // 2. Discord Voice Call Cutaway
         if (scriptEvent.mediaUrl && scriptEvent.mediaUrl.startsWith("DISCORD_CALL")) {
           const parts = scriptEvent.mediaUrl.split("_");
           const callerId = parts.length > 2 ? parts[2] : "Unknown";
           const caller = charMap.get(callerId);
           const callerName = caller ? caller.name : callerId;
           return (
-            <AbsoluteFill
-              key={`cutaway-${i}`}
-              style={{ zIndex: 100 }}
-            >
+            <AbsoluteFill key={`cutaway-call-${i}`} style={{ zIndex: 100 }}>
               <DiscordCall callerName={callerName} callerAvatarUrl={caller?.avatarUrl} callerId={callerId} />
             </AbsoluteFill>
           );
         }
 
+        // 3. Image Cutaways
         const elapsed = frame - event.startFrame;
         const duration = event.durationFrames || 30;
         const effect = (scriptEvent as any).effect || (scriptEvent.fadeIn ? "fade" : "fade");
@@ -426,19 +438,19 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              zIndex: 100, // Always on top
+              zIndex: 100,
               overflow: "hidden",
             }}
           >
-             <Img 
-                src={staticFile(`project_chatnemi_assets/images/${scriptEvent.mediaUrl}`)} 
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "contain",
-                  transform: `scale(${imageScale})`,
-                }} 
-             />
+            <Img
+              src={staticFile(`project_chatnemi_assets/images/${scriptEvent.mediaUrl}`)}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                transform: `scale(${imageScale})`,
+              }}
+            />
           </AbsoluteFill>
         );
       })}
