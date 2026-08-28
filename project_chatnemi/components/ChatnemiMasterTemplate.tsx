@@ -56,7 +56,7 @@ const getEventTimeString = (eventIndex: number, script: ChatScript): string => {
 };
 
 const calculateScale = (activeEvents: any[], script: ChatScript) => {
-  if (activeEvents.length === 0) return 1.8;
+  if (activeEvents.length === 0) return 2.0;
 
   const firstEvent = activeEvents[0];
   let currentCharId = null;
@@ -68,25 +68,20 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
     if (typingEvt && typingEvt.characterId) currentCharId = typingEvt.characterId;
   }
 
-  let estimatedMessageWidth = 150; // Minimum width
+  let estimatedMessageWidth = 150;
 
   if (currentCharId) {
     let startIndex = firstEvent.eventIndex;
-    
-    // Scan backwards to find block start
     while (startIndex > 0) {
       const prev = script.events[startIndex - 1] as any;
       if (prev.type === "cutaway" || prev.characterId !== currentCharId) break;
       startIndex--;
     }
 
-    // Get the character for name length calculation
-    const character = script.characters.find(c => c.id === currentCharId);
-    const nameLineWidth = character ? (character.name.length * 9) + 128 : 128;
+    const character = script.characters.find((c) => c.id === currentCharId);
+    const nameLineWidth = character ? character.name.length * 9 + 128 : 128;
 
     let maxTextWidth = 0;
-
-    // Scan forwards to find max line length in block
     for (let i = startIndex; i < script.events.length; i++) {
       const evt = script.events[i] as any;
       if (evt.type === "cutaway" || evt.characterId !== currentCharId) break;
@@ -104,10 +99,10 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
     const contentWidth = Math.max(nameLineWidth, maxTextWidth);
     estimatedMessageWidth = 56 + contentWidth;
   }
-  
-  // Dynamic scale calculation bounded safely to 1520px max horizontal width
-  const scaleX = 1520 / Math.max(estimatedMessageWidth, 320);
-  return Math.max(1.3, Math.min(2.8, scaleX));
+
+  // Bounded safe scaling to prevent horizontal clipping (safe 1520px)
+  const scaleX = 1520 / Math.max(estimatedMessageWidth, 340);
+  return Math.max(1.35, Math.min(2.6, scaleX));
 };
 
 export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ script }) => {
@@ -118,74 +113,33 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return new Map(script.characters.map((c) => [c.id, c]));
   }, [script.characters]);
 
-  // Build events timeline
+  // Build events with proper character-turn persistence
   const { events, sfxTracks } = useMemo(() => {
     let currentFrame = 0;
-    const computedEvents: any[] = [];
+    const items: {
+      type: "typing" | "message" | "cutaway";
+      eventIndex: number;
+      startFrame: number;
+      endFrame: number;
+      durationFrames?: number;
+      sfx?: string;
+      effect?: string;
+    }[] = [];
     const computedSfx: any[] = [];
 
     script.events.forEach((evt, index) => {
-      // Delay before this event
-      if (evt.delaySeconds && evt.delaySeconds > 0) {
-        currentFrame += Math.round(evt.delaySeconds * fps);
-      }
-
-      // Typing sequence
-      if (evt.type === "message" && evt.isTypingDuration && evt.isTypingDuration > 0) {
-        const typingDurationFrames = Math.round(evt.isTypingDuration * fps);
-        computedEvents.push({
-          type: "typing",
-          eventIndex: index,
-          startFrame: currentFrame,
-          endFrame: currentFrame + typingDurationFrames,
-        });
-
-        computedSfx.push({
-          file: "typing.mp3",
-          startFrame: currentFrame,
-          durationFrames: typingDurationFrames,
-          volume: 0.4,
-        });
-
-        currentFrame += typingDurationFrames;
-      }
-
-      // Message event
-      if (evt.type === "message") {
-        let msgDuration = evt.durationSeconds;
-        if (!msgDuration) {
-          const charLen = (evt.text || "").length;
-          msgDuration = Math.max(2.0, 1.4 + charLen * 0.035);
+      if (evt.type === "cutaway") {
+        if (evt.delaySeconds) {
+          currentFrame += Math.round(evt.delaySeconds * fps);
         }
-        const msgDurationFrames = Math.round(msgDuration * fps);
-
-        computedEvents.push({
-          type: "message",
-          eventIndex: index,
-          startFrame: currentFrame,
-          endFrame: currentFrame + msgDurationFrames,
-        });
-
-        if (evt.sfx) {
-          computedSfx.push({
-            file: evt.sfx,
-            startFrame: currentFrame,
-            durationFrames: Math.round(2.5 * fps),
-            volume: evt.sfx === "vine_boom.mp3" || evt.sfx === "fahhh.mp3" ? 0.9 : 0.65,
-          });
-        }
-
-        currentFrame += msgDurationFrames;
-      } else if (evt.type === "cutaway") {
-        const cutawayDuration = evt.durationSeconds || 2.8;
-        const cutawayDurationFrames = Math.round(cutawayDuration * fps);
-
-        computedEvents.push({
+        const cutawayDurationFrames = Math.round((evt.durationSeconds || 2.8) * fps);
+        items.push({
           type: "cutaway",
           eventIndex: index,
           startFrame: currentFrame,
           endFrame: currentFrame + cutawayDurationFrames,
           durationFrames: cutawayDurationFrames,
+          sfx: evt.sfx,
         });
 
         if (evt.sfx) {
@@ -198,10 +152,86 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
         }
 
         currentFrame += cutawayDurationFrames;
+      } else if (evt.type === "message") {
+        if (evt.delaySeconds) {
+          currentFrame += Math.round(evt.delaySeconds * fps);
+        }
+
+        if (evt.isTypingDuration && evt.isTypingDuration > 0) {
+          const typingDurationFrames = Math.round(evt.isTypingDuration * fps);
+          items.push({
+            type: "typing",
+            eventIndex: index,
+            startFrame: currentFrame,
+            endFrame: currentFrame + typingDurationFrames,
+            durationFrames: typingDurationFrames,
+          });
+
+          computedSfx.push({
+            file: "typing.mp3",
+            startFrame: currentFrame,
+            durationFrames: typingDurationFrames,
+            volume: 0.4,
+          });
+
+          currentFrame += typingDurationFrames;
+        }
+
+        let msgDuration = evt.durationSeconds;
+        if (!msgDuration) {
+          const charLen = (evt.text || "").length;
+          msgDuration = Math.max(1.8, 1.4 + charLen * 0.032);
+        }
+        const msgDurationFrames = Math.round(msgDuration * fps);
+
+        items.push({
+          type: "message",
+          eventIndex: index,
+          startFrame: currentFrame,
+          endFrame: Infinity, // Will be resolved below
+          durationFrames: msgDurationFrames,
+          sfx: evt.sfx,
+          effect: (evt as any).effect,
+        });
+
+        if (evt.sfx) {
+          computedSfx.push({
+            file: evt.sfx,
+            startFrame: currentFrame,
+            durationFrames: Math.round(2.5 * fps),
+            volume: evt.sfx === "vine_boom.mp3" || evt.sfx === "fahhh.mp3" ? 0.9 : 0.65,
+          });
+        }
+
+        currentFrame += msgDurationFrames;
       }
     });
 
-    return { events: computedEvents, sfxTracks: computedSfx };
+    // Set endFrames for messages so they persist until a DIFFERENT character or cutaway begins
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].type === "message") {
+        let nextDiffEvent = null;
+        for (let j = i + 1; j < items.length; j++) {
+          if (items[j].type === "cutaway") {
+            nextDiffEvent = items[j];
+            break;
+          } else if (items[j].type === "message") {
+            const charId = (script.events[items[j].eventIndex] as any).characterId;
+            const myCharId = (script.events[items[i].eventIndex] as any).characterId;
+            if (charId !== myCharId) {
+              nextDiffEvent = items[j];
+              break;
+            }
+          }
+        }
+
+        if (nextDiffEvent) {
+          items[i].endFrame = nextDiffEvent.startFrame;
+        }
+      }
+    }
+
+    return { events: items, sfxTracks: computedSfx };
   }, [script, fps]);
 
   // Find active cutaway
@@ -209,26 +239,52 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     (e) => e.type === "cutaway" && frame >= e.startFrame && frame < e.endFrame
   );
 
-  // Active non-cutaway events (maintain the most recent event during delay gaps to eliminate black screens)
+  // Active non-cutaway events at current frame
   const activeEvents = useMemo(() => {
-    // Currently active event in progress
     const active = events.filter(
       (e) => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame
     );
     if (active.length > 0) return active;
 
-    // During delays, keep the previous non-cutaway event visible
+    // During gaps, keep the previous non-cutaway events visible
     const previous = events.filter(
       (e) => e.type !== "cutaway" && frame >= e.startFrame
     );
     if (previous.length > 0) {
-      return [previous[previous.length - 1]];
+      const last = previous[previous.length - 1];
+      const lastCharId = (script.events[last.eventIndex] as any).characterId;
+      return previous.filter(
+        (e) =>
+          e.type === "message" &&
+          (script.events[e.eventIndex] as any).characterId === lastCharId
+      );
     }
 
     return events.filter((e) => e.type !== "cutaway").slice(0, 1);
-  }, [events, frame]);
+  }, [events, frame, script.events]);
 
-  const currentScale = calculateScale(activeEvents, script);
+  const baseScale = calculateScale(activeEvents, script);
+
+  // Dramatic Creep Zoom for tense/funny moments
+  let creepZoom = 1.0;
+  if (activeEvents.length > 0) {
+    const primaryEvent = activeEvents[activeEvents.length - 1];
+    const scriptEvt = script.events[primaryEvent.eventIndex] as any;
+    const isDramatic =
+      scriptEvt?.effect === "slow_zoom" ||
+      (scriptEvt?.text &&
+        (scriptEvt.text.includes("TNT") ||
+          scriptEvt.text.includes("WANTED STARS") ||
+          scriptEvt.text.includes("blood type") ||
+          scriptEvt.text.includes("source code")));
+
+    if (isDramatic && primaryEvent.durationFrames) {
+      const elapsed = frame - primaryEvent.startFrame;
+      creepZoom = interpolate(elapsed, [0, primaryEvent.durationFrames], [1.0, 1.08], {
+        extrapolateRight: "clamp",
+      });
+    }
+  }
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000000", overflow: "hidden" }}>
@@ -236,7 +292,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       {script.bgm && (
         <Audio
           src={staticFile(`project_chatnemi_assets/sounds/${script.bgm}`)}
-          volume={() => (isCutawayActive ? 0.08 : 0.24)}
+          volume={() => (isCutawayActive ? 0.08 : 0.22)}
           loop
         />
       )}
@@ -265,7 +321,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
         <div
           style={{
             transformOrigin: "80px center",
-            transform: `scale(${currentScale})`,
+            transform: `scale(${baseScale * creepZoom})`,
             width: "100%",
             paddingLeft: 60,
             position: "relative",
@@ -287,13 +343,10 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
 
           <DiscordLayout>
             {activeEvents.map((event, i) => {
-              const scriptEvent = script.events[event.eventIndex];
-              if (!scriptEvent) return null;
-
-              const character = charMap.get(scriptEvent.characterId);
-              if (!character) return null;
-
               if (event.type === "typing") {
+                const scriptEvent = script.events[event.eventIndex];
+                const character = charMap.get(scriptEvent.characterId);
+                if (!character) return null;
                 return (
                   <TypingIndicator
                     key={`ui-typing-${i}-${event.eventIndex}`}
@@ -303,6 +356,26 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
               }
 
               if (event.type === "message") {
+                const scriptEvent = script.events[event.eventIndex];
+                if (!scriptEvent) return null;
+
+                const character = charMap.get(scriptEvent.characterId);
+                if (!character) return null;
+
+                // Group consecutive messages: Only show avatar on first message of the block
+                let isFirst = true;
+                for (let j = 0; j < i; j++) {
+                  if (activeEvents[j].type === "message") {
+                    const prevCharId = (
+                      script.events[activeEvents[j].eventIndex] as any
+                    ).characterId;
+                    if (prevCharId === scriptEvent.characterId) {
+                      isFirst = false;
+                      break;
+                    }
+                  }
+                }
+
                 const timeString = getEventTimeString(event.eventIndex, script);
                 return (
                   <DiscordMessage
@@ -310,6 +383,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
                     character={character}
                     text={scriptEvent.text}
                     timeString={timeString}
+                    isFirstMessageInGroup={isFirst}
                   />
                 );
               }

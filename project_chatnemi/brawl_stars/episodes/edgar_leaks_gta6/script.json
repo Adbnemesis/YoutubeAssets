@@ -12,71 +12,71 @@
   "startTime": "6:01 PM",
   "bgm": "monkeys_spinning_monkeys.mp3",
   "events": [
-    { "type": "message", "characterId": "edgar", "text": "GUYS I FINALLY GOT THE LEAKED FILES 📁🤫", "durationSeconds": 2.2, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "[FILE: GTA_6_BRAWL_STARS_EDITION.zip | 999.84 GB]", "durationSeconds": 2.6, "delaySeconds": 0.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "GUYS I FINALLY GOT THE LEAKED FILES 📁🤫", "durationSeconds": 1.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "[FILE: GTA_6_BRAWL_STARS_EDITION.zip | 999.84 GB]", "durationSeconds": 1.8, "delaySeconds": 0.2, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "colt", "text": "Edgar that is literally 1,000 gigabytes\nof russian crypto malware.", "durationSeconds": 2.8, "delaySeconds": 0.4, "isTypingDuration": 0.8, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "colt", "text": "Edgar that is literally 1,000 gigabytes\nof russian crypto malware.", "durationSeconds": 2.0, "delaySeconds": 0.3, "isTypingDuration": 0.5, "sfx": "record_scratch.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "Download it and your phone\nwill explode like Dynamike's Hypercharge.", "durationSeconds": 2.8, "delaySeconds": 0.4, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Download it and your phone\nwill explode like Dynamike's Hypercharge.", "durationSeconds": 2.0, "delaySeconds": 0.3, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "IT IS NOT MALWARE", "durationSeconds": 1.8, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "fahhh.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "my uncle is a lead developer\nat Rockstar Games headquarters", "durationSeconds": 2.6, "delaySeconds": 0.3, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "IT IS NOT MALWARE", "durationSeconds": 1.2, "delaySeconds": 0.2, "isTypingDuration": 0.4, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "my uncle is a lead developer\nat Rockstar Games headquarters", "durationSeconds": 1.8, "delaySeconds": 0.2, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "Edgar Paul Astay.", "durationSeconds": 2.2, "delaySeconds": 0.5, "isTypingDuration": 0.9, "sfx": "discord_join.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "You are currently seated at\nStarr Park Gift Shop Cash Register #4.", "durationSeconds": 2.8, "delaySeconds": 0.4, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "Your blood type is A-Negative Emo.\nYour Wi-Fi ping is 942ms.", "durationSeconds": 2.6, "delaySeconds": 0.3, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Edgar Paul Astay.", "durationSeconds": 1.4, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "You are currently seated at\nStarr Park Gift Shop Cash Register #4.", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Your blood type is A-Negative Emo.\nYour Wi-Fi ping is 942ms.", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "ping.mp3", "effect": "slow_zoom" },
     
-    { "type": "message", "characterId": "edgar", "text": "WAIT", "durationSeconds": 1.5, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "error.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "HOW DO YOU KNOW MY BLOOD TYPE 😭", "durationSeconds": 2.2, "delaySeconds": 0.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "WAIT", "durationSeconds": 1.0, "delaySeconds": 0.15, "isTypingDuration": 0.3, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "HOW DO YOU KNOW MY BLOOD TYPE 😭", "durationSeconds": 1.6, "delaySeconds": 0.15, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "You leaked official GTA 6 source code.\nA crime punishable by immediate banishment.", "durationSeconds": 3.0, "delaySeconds": 0.4, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "Activating Dynamike Super TNT barrels\nunder Gift Shop Desk #4 in 5... 4... 3...", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "You leaked official GTA 6 source code.\nA crime punishable by immediate banishment.", "durationSeconds": 2.2, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Activating Dynamike Super TNT barrels\nunder Gift Shop Desk #4 in 5... 4... 3...", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "error.mp3", "effect": "slow_zoom" },
     
-    { "type": "cutaway", "mediaUrl": "edgar_gta6_leak_cctv.png", "durationSeconds": 3.0, "delaySeconds": 0.2, "fadeIn": true, "effect": "zoom", "sfx": "anime-wow.mp3" },
+    { "type": "cutaway", "mediaUrl": "edgar_gta6_leak_cctv.png", "durationSeconds": 2.4, "delaySeconds": 0.15, "fadeIn": true, "effect": "zoom", "sfx": "anime-wow.mp3" },
     
-    { "type": "message", "characterId": "colette", "text": "EDGAR WHY IS THERE A TICKING DYNAMITE\nTAPED UNDER OUR CASH REGISTER 😭😭", "durationSeconds": 2.8, "delaySeconds": 0.3, "sfx": "error.mp3" },
-    { "type": "message", "characterId": "colette", "text": "MY SPIKE SCRAPBOOK IS IN THAT DRAWER", "durationSeconds": 2.2, "delaySeconds": 0.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "colette", "text": "EDGAR WHY IS THERE A TICKING DYNAMITE\nTAPED UNDER OUR CASH REGISTER 😭😭", "durationSeconds": 2.0, "delaySeconds": 0.2, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "colette", "text": "MY SPIKE SCRAPBOOK IS IN THAT DRAWER", "durationSeconds": 1.6, "delaySeconds": 0.15, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "I DONT EVEN WORK AT ROCKSTAR\nI BOUGHT THE USB STICK FROM CHESTER FOR 50 GEMS", "durationSeconds": 3.2, "delaySeconds": 0.4, "isTypingDuration": 0.9, "sfx": "fahhh.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I DONT EVEN WORK AT ROCKSTAR\nI BOUGHT THE USB STICK FROM CHESTER FOR 50 GEMS", "durationSeconds": 2.4, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "fahhh.mp3" },
     
-    { "type": "message", "characterId": "chester", "text": "NO REFUNDS EDGAR 🎪😂", "durationSeconds": 2.0, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "discord_join.mp3" },
-    { "type": "message", "characterId": "chester", "text": "Also I seeded the GTA 6 torrent\non Mortis's mortuary graveyard Wi-Fi.", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "chester", "text": "NO REFUNDS EDGAR 🎪😂", "durationSeconds": 1.4, "delaySeconds": 0.2, "isTypingDuration": 0.4, "sfx": "discord_join.mp3" },
+    { "type": "message", "characterId": "chester", "text": "Also I seeded the GTA 6 torrent\non Mortis's mortuary graveyard Wi-Fi.", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "vine_boom.mp3" },
     
-    { "type": "message", "characterId": "mortis", "text": "WHY ARE 5 POLICE HELICOPTERS\nCIRCLING OVER MY GRAVEYARD", "durationSeconds": 2.8, "delaySeconds": 0.4, "isTypingDuration": 0.8, "sfx": "error.mp3" },
-    { "type": "message", "characterId": "mortis", "text": "my bats are getting blinded by searchlights", "durationSeconds": 2.2, "delaySeconds": 0.2, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "WHY ARE 5 POLICE HELICOPTERS\nCIRCLING OVER MY GRAVEYARD", "durationSeconds": 2.0, "delaySeconds": 0.25, "isTypingDuration": 0.5, "sfx": "error.mp3" },
+    { "type": "message", "characterId": "mortis", "text": "my bats are getting blinded by searchlights", "durationSeconds": 1.6, "delaySeconds": 0.15, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "Target identity confirmed.\nEdgar has achieved 5 WANTED STARS in Starr Park.", "durationSeconds": 3.0, "delaySeconds": 0.4, "isTypingDuration": 0.9, "sfx": "brawl_hypercharge.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Target identity confirmed.\nEdgar has achieved 5 WANTED STARS in Starr Park.", "durationSeconds": 2.2, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "brawl_hypercharge.mp3", "effect": "slow_zoom" },
     
-    { "type": "cutaway", "mediaUrl": "brawl_gta6_wanted_stars.png", "durationSeconds": 3.0, "delaySeconds": 0.2, "fadeIn": true, "effect": "zoom", "sfx": "fahhh.mp3" },
+    { "type": "cutaway", "mediaUrl": "brawl_gta6_wanted_stars.png", "durationSeconds": 2.5, "delaySeconds": 0.15, "fadeIn": true, "effect": "zoom", "sfx": "fahhh.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "Edgar you have the entire FBI\nand SWAT team in the Showdown bush.", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "shelly", "text": "Even your living scarf put its hands in the air.", "durationSeconds": 2.4, "delaySeconds": 0.3, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Edgar you have the entire FBI\nand SWAT team in the Showdown bush.", "durationSeconds": 2.0, "delaySeconds": 0.25, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Even your living scarf put its hands in the air.", "durationSeconds": 1.8, "delaySeconds": 0.2, "isTypingDuration": 0.4, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "FINAL DEMAND TO EDGAR:", "durationSeconds": 2.0, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "Deliver the master hard drive\nto our headquarters in 60 seconds.", "durationSeconds": 2.6, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "FINAL DEMAND TO EDGAR:", "durationSeconds": 1.4, "delaySeconds": 0.2, "isTypingDuration": 0.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Deliver the master hard drive\nto our headquarters in 60 seconds.", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "OKAY FINE I SENT THE COURIER", "durationSeconds": 2.0, "delaySeconds": 0.3, "isTypingDuration": 0.6, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "edgar", "text": "GPS ADDRESS:\nItämerenkatu 11-13, 00180 Helsinki, Finland", "durationSeconds": 2.6, "delaySeconds": 0.3, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "OKAY FINE I SENT THE COURIER", "durationSeconds": 1.4, "delaySeconds": 0.2, "isTypingDuration": 0.4, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "GPS ADDRESS:\nItämerenkatu 11-13, 00180 Helsinki, Finland", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "Verifying GPS Coordinates on Satellite Map...", "durationSeconds": 2.4, "delaySeconds": 0.3, "isTypingDuration": 0.7, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "Verifying GPS Coordinates on Satellite Map...", "durationSeconds": 1.8, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "GOOGLE_SEARCH_SUPERCELL", "durationSeconds": 3.6, "delaySeconds": 0.2, "sfx": "anime-wow.mp3" },
+    { "type": "cutaway", "mediaUrl": "GOOGLE_SEARCH_SUPERCELL", "durationSeconds": 3.0, "delaySeconds": 0.15, "sfx": "anime-wow.mp3" },
     
-    { "type": "message", "characterId": "rockstar_bot", "text": "WAIT. That address is not a residential house.", "durationSeconds": 2.4, "delaySeconds": 0.2, "isTypingDuration": 0.6, "sfx": "record_scratch.mp3" },
-    { "type": "message", "characterId": "rockstar_bot", "text": "That is the Official Worldwide Headquarters of SUPERCELL.", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "vine_boom.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "WAIT. That address is not a residential house.", "durationSeconds": 1.6, "delaySeconds": 0.15, "isTypingDuration": 0.4, "sfx": "record_scratch.mp3" },
+    { "type": "message", "characterId": "rockstar_bot", "text": "That is the Official Worldwide Headquarters of SUPERCELL.", "durationSeconds": 2.2, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "vine_boom.mp3" },
     
-    { "type": "message", "characterId": "starr_park_bot", "text": "SUPERCELL CEO HAS ENTERED THE CHAT 🏆", "durationSeconds": 2.6, "delaySeconds": 0.4, "isTypingDuration": 0.8, "sfx": "supercell_jingle.mp3" },
-    { "type": "message", "characterId": "starr_park_bot", "text": "Thanks for the 500 million free impressions\nRockstar Games.", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "ping.mp3" },
-    { "type": "message", "characterId": "starr_park_bot", "text": "BRAWL STARS x GTA 6 CROSSOVER\nOFFICIALLY LAUNCHING TOMORROW 🚗💥", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "brawl_match_win.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "SUPERCELL CEO HAS ENTERED THE CHAT 🏆", "durationSeconds": 2.0, "delaySeconds": 0.3, "isTypingDuration": 0.5, "sfx": "supercell_jingle.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "Thanks for the 500 million free impressions\nRockstar Games.", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "ping.mp3" },
+    { "type": "message", "characterId": "starr_park_bot", "text": "BRAWL STARS x GTA 6 CROSSOVER\nOFFICIALLY LAUNCHING TOMORROW 🚗💥", "durationSeconds": 2.2, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "brawl_match_win.mp3" },
     
-    { "type": "cutaway", "mediaUrl": "supercell_rockstar_deal.png", "durationSeconds": 3.2, "delaySeconds": 0.2, "fadeIn": true, "effect": "zoom", "sfx": "chime.mp3" },
+    { "type": "cutaway", "mediaUrl": "supercell_rockstar_deal.png", "durationSeconds": 2.5, "delaySeconds": 0.15, "fadeIn": true, "effect": "zoom", "sfx": "chime.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "WAIT DO I GET A FREE HAWAIIAN SHIRT\nAND A PINK SPORTS CAR SKIN?! 😎🌴", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "brawl_hypercharge.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "WAIT DO I GET A FREE HAWAIIAN SHIRT\nAND A PINK SPORTS CAR SKIN?! 😎🌴", "durationSeconds": 2.0, "delaySeconds": 0.2, "isTypingDuration": 0.5, "sfx": "brawl_hypercharge.mp3" },
     
-    { "type": "message", "characterId": "shelly", "text": "Edgar you still owe Starr Park\n5,000 gems for the blown-up cash register.", "durationSeconds": 2.8, "delaySeconds": 0.3, "isTypingDuration": 0.8, "sfx": "get-out.mp3" },
+    { "type": "message", "characterId": "shelly", "text": "Edgar you still owe Starr Park\n5,000 gems for the blown-up cash register.", "durationSeconds": 2.0, "delaySeconds": 0.25, "isTypingDuration": 0.5, "sfx": "get-out.mp3" },
     
-    { "type": "message", "characterId": "edgar", "text": "I AM FLEEING TO RETROPOLIS IN MY NEW CAR 👋🚗💨", "durationSeconds": 2.6, "delaySeconds": 0.3, "sfx": "discord_leave.mp3" },
+    { "type": "message", "characterId": "edgar", "text": "I AM FLEEING TO RETROPOLIS IN MY NEW CAR 👋🚗💨", "durationSeconds": 1.8, "delaySeconds": 0.2, "sfx": "discord_leave.mp3" },
     
-    { "type": "message", "characterId": "colette", "text": "WAIT FOR ME HUBBY 🥰❤️", "durationSeconds": 2.0, "delaySeconds": 0.2, "sfx": "ping.mp3" }
+    { "type": "message", "characterId": "colette", "text": "WAIT FOR ME HUBBY 🥰❤️", "durationSeconds": 1.4, "delaySeconds": 0.15, "sfx": "ping.mp3" }
   ]
 }
