@@ -109,21 +109,33 @@ http://creativecommons.org/licenses/by/4.0/
 - For `sneaky_snitch.mp3`: `"Sneaky Snitch" Kevin MacLeod (incompetech.com)`
 - For `monkeys_spinning_monkeys.mp3`: `"Monkeys Spinning Monkeys" Kevin MacLeod (incompetech.com)`
 
+### 🎭 Multi-BGM Dynamic Mood Staging:
+Do NOT use the exact same BGM for the entire duration of an episode! Switch BGM dynamically based on narrative mood and tension:
+- **Act 1 (Casual / Boasting / Chat Opening)**: `monkeys_spinning_monkeys.mp3` (comedic, lighthearted).
+- **Act 2 & 3 (Suspense / Doxxing / Chaos / Police)**: `sneaky_snitch.mp3` (stealthy, investigative, tense).
+- **Act 4 (Resolution / Victory / Collab Reveal)**: `fluffing_a_duck.mp3` or `supercell_jingle.mp3` (triumphant, upbeat).
+- Set `"bgm": "<track.mp3>"` directly on the event where the mood shifts. The engine will execute a smooth 15-frame crossfade.
+
 ---
 
 ## 🖼️ Visuals, Cutaways & Engine Rules
 
 This edition runs on the proven `ChatnemiMasterTemplate.tsx` engine:
 
-1. **The Dynamic Bounding-Box Zoom:**
-   - Single short words ("👎", "what", "bro") automatically trigger extreme **8x–12x zooms**.
-   - Multi-line arguments stay cleanly framed against the 1920x1080 canvas.
-2. **Infinite Grey Background:**
-   - The Discord `#36393f` band stretches infinitely horizontally, framed with cinematic black bars top and bottom.
-3. **Brawler Cutaways (`mediaUrl`):**
-   - `thumbs_down.png` / `clown_pin.png`: Zoom in on toxic pin reactions.
-   - `DISCORD_CALL_<characterId>`: Triggers the authentic Discord incoming call overlay with vibrating avatar and ringing audio.
-   - Custom match result screenshots, bad Wi-Fi icons, and bush camping memes.
+1. **Consecutive Message Vertical Stacking:**
+   - When the same character sends multiple messages in a row, they stack vertically inside the same grey band container.
+   - The first message shows the avatar and header; subsequent messages stack cleanly below with left-indent.
+   - The conversation block stays on screen until a DIFFERENT speaker or cutaway begins.
+
+2. **State Isolation & Post-Cutaway Clean Entry:**
+   - When returning from a cutaway or during delay gaps, previous speakers NEVER leak back onto screen. The next speaker starts cleanly.
+
+3. **Cinematic Slow Creep Zoom for Tense Moments:**
+   - Tagging a dramatic message with `"effect": "slow_zoom"` applies a smooth sinusoidal camera push-in (`1.0x -> 1.08x`) over the message's duration to build tension.
+
+4. **Rich Interactive Cutaways:**
+   - `GOOGLE_SEARCH_SUPERCELL`: Renders an interactive live Google search bar typing and popping up the Supercell HQ card.
+   - `[FILE: name | size]`: Renders an authentic Discord dark-mode download box with ZIP badge and cloud download icon.
 
 ---
 

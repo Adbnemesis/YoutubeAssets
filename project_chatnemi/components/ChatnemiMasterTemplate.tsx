@@ -100,7 +100,6 @@ const calculateScale = (activeEvents: any[], script: ChatScript) => {
     estimatedMessageWidth = 56 + contentWidth;
   }
 
-  // Bounded safe scaling to prevent horizontal clipping (safe 1520px)
   const scaleX = 1520 / Math.max(estimatedMessageWidth, 340);
   return Math.max(1.35, Math.min(2.6, scaleX));
 };
@@ -113,8 +112,8 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return new Map(script.characters.map((c) => [c.id, c]));
   }, [script.characters]);
 
-  // Build events with proper character-turn persistence
-  const { events, sfxTracks } = useMemo(() => {
+  // Build clean sequential timeline and multi-BGM segments
+  const { timeline, sfxTracks, bgmSegments } = useMemo(() => {
     let currentFrame = 0;
     const items: {
       type: "typing" | "message" | "cutaway";
@@ -124,15 +123,35 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       durationFrames?: number;
       sfx?: string;
       effect?: string;
+      characterId?: string;
     }[] = [];
     const computedSfx: any[] = [];
+    const rawBgmSegments: { file: string; startFrame: number; endFrame: number; volume: number }[] = [];
+
+    // Track active BGM file
+    let currentBgmFile = script.bgm || "monkeys_spinning_monkeys.mp3";
+    let currentBgmStartFrame = 0;
 
     script.events.forEach((evt, index) => {
+      // Check if this event changes BGM
+      if ((evt as any).bgm && (evt as any).bgm !== currentBgmFile) {
+        if (currentFrame > currentBgmStartFrame) {
+          rawBgmSegments.push({
+            file: currentBgmFile,
+            startFrame: currentBgmStartFrame,
+            endFrame: currentFrame,
+            volume: 0.22,
+          });
+        }
+        currentBgmFile = (evt as any).bgm;
+        currentBgmStartFrame = currentFrame;
+      }
+
       if (evt.type === "cutaway") {
         if (evt.delaySeconds) {
           currentFrame += Math.round(evt.delaySeconds * fps);
         }
-        const cutawayDurationFrames = Math.round((evt.durationSeconds || 2.8) * fps);
+        const cutawayDurationFrames = Math.round((evt.durationSeconds || 2.5) * fps);
         items.push({
           type: "cutaway",
           eventIndex: index,
@@ -165,6 +184,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
             startFrame: currentFrame,
             endFrame: currentFrame + typingDurationFrames,
             durationFrames: typingDurationFrames,
+            characterId: evt.characterId,
           });
 
           computedSfx.push({
@@ -188,10 +208,11 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
           type: "message",
           eventIndex: index,
           startFrame: currentFrame,
-          endFrame: Infinity, // Will be resolved below
+          endFrame: Infinity, // Resolved below
           durationFrames: msgDurationFrames,
           sfx: evt.sfx,
           effect: (evt as any).effect,
+          characterId: evt.characterId,
         });
 
         if (evt.sfx) {
@@ -207,7 +228,15 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       }
     });
 
-    // Set endFrames for messages so they persist until a DIFFERENT character or cutaway begins
+    // Close the final BGM segment
+    rawBgmSegments.push({
+      file: currentBgmFile,
+      startFrame: currentBgmStartFrame,
+      endFrame: currentFrame + 60,
+      volume: 0.22,
+    });
+
+    // Resolve endFrames: consecutive messages stay active together until a different speaker or cutaway
     for (let i = 0; i < items.length; i++) {
       if (items[i].type === "message") {
         let nextDiffEvent = null;
@@ -215,7 +244,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
           if (items[j].type === "cutaway") {
             nextDiffEvent = items[j];
             break;
-          } else if (items[j].type === "message") {
+          } else if (items[j].type === "message" || items[j].type === "typing") {
             const charId = (script.events[items[j].eventIndex] as any).characterId;
             const myCharId = (script.events[items[i].eventIndex] as any).characterId;
             if (charId !== myCharId) {
@@ -227,45 +256,54 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
 
         if (nextDiffEvent) {
           items[i].endFrame = nextDiffEvent.startFrame;
+        } else if (i === items.length - 1) {
+          items[i].endFrame = items[i].startFrame + (items[i].durationFrames || 60);
         }
       }
     }
 
-    return { events: items, sfxTracks: computedSfx };
+    return { timeline: items, sfxTracks: computedSfx, bgmSegments: rawBgmSegments };
   }, [script, fps]);
 
-  // Find active cutaway
-  const isCutawayActive = events.some(
-    (e) => e.type === "cutaway" && frame >= e.startFrame && frame < e.endFrame
+  // Find active cutaway (if any)
+  const activeCutaway = timeline.find(
+    (t) => t.type === "cutaway" && frame >= t.startFrame && frame < t.endFrame
   );
 
   // Active non-cutaway events at current frame
   const activeEvents = useMemo(() => {
-    const active = events.filter(
+    // 1. Direct active events matching current frame window
+    const active = timeline.filter(
       (e) => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame
     );
     if (active.length > 0) return active;
 
-    // During gaps, keep the previous non-cutaway events visible
-    const previous = events.filter(
-      (e) => e.type !== "cutaway" && frame >= e.startFrame
-    );
-    if (previous.length > 0) {
-      const last = previous[previous.length - 1];
-      const lastCharId = (script.events[last.eventIndex] as any).characterId;
-      return previous.filter(
-        (e) =>
-          e.type === "message" &&
-          (script.events[e.eventIndex] as any).characterId === lastCharId
-      );
+    // 2. Clean fallback: find the most recent event that started
+    const started = timeline.filter((e) => frame >= e.startFrame);
+    if (started.length > 0) {
+      const last = started[started.length - 1];
+      // If the last started event was a cutaway and it already ended, don't show old pre-cutaway speaker!
+      if (last.type === "cutaway") {
+        return [];
+      }
+      const lastCharId = last.characterId;
+      if (lastCharId) {
+        return timeline.filter(
+          (e) =>
+            e.type === "message" &&
+            e.characterId === lastCharId &&
+            frame >= e.startFrame &&
+            frame < e.endFrame
+        );
+      }
     }
 
-    return events.filter((e) => e.type !== "cutaway").slice(0, 1);
-  }, [events, frame, script.events]);
+    return [];
+  }, [timeline, frame]);
 
   const baseScale = calculateScale(activeEvents, script);
 
-  // Dramatic Creep Zoom for tense/funny moments
+  // Smooth Cinematic Creep Zoom for dramatic / funny moments
   let creepZoom = 1.0;
   if (activeEvents.length > 0) {
     const primaryEvent = activeEvents[activeEvents.length - 1];
@@ -279,23 +317,46 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
           scriptEvt.text.includes("source code")));
 
     if (isDramatic && primaryEvent.durationFrames) {
-      const elapsed = frame - primaryEvent.startFrame;
-      creepZoom = interpolate(elapsed, [0, primaryEvent.durationFrames], [1.0, 1.08], {
-        extrapolateRight: "clamp",
-      });
+      const elapsed = Math.max(0, frame - primaryEvent.startFrame);
+      const progress = Math.min(1.0, elapsed / primaryEvent.durationFrames);
+      // Smooth sinusoidal ease-in-out
+      creepZoom = 1.0 + 0.08 * (1 - Math.cos(progress * Math.PI)) / 2;
     }
   }
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000000", overflow: "hidden" }}>
-      {/* BACKGROUND MUSIC */}
-      {script.bgm && (
-        <Audio
-          src={staticFile(`project_chatnemi_assets/sounds/${script.bgm}`)}
-          volume={() => (isCutawayActive ? 0.08 : 0.22)}
-          loop
-        />
-      )}
+      {/* MULTI-BGM AUDIO TRACKS (DYNAMIC MOOD TRANSITIONS) */}
+      {bgmSegments.map((bgmSeg, idx) => (
+        <Sequence
+          key={`bgm-seg-${idx}`}
+          from={bgmSeg.startFrame}
+          durationInFrames={Math.max(1, bgmSeg.endFrame - bgmSeg.startFrame)}
+        >
+          <Audio
+            src={staticFile(`project_chatnemi_assets/sounds/${bgmSeg.file}`)}
+            volume={(f) => {
+              const globalFrame = bgmSeg.startFrame + f;
+              const isCutaway = timeline.some(
+                (t) => t.type === "cutaway" && globalFrame >= t.startFrame && globalFrame < t.endFrame
+              );
+              if (isCutaway) return 0.06;
+              // Smooth 15-frame fade in / fade out
+              const fadeIn = interpolate(f, [0, 15], [0, bgmSeg.volume], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              });
+              const remaining = (bgmSeg.endFrame - bgmSeg.startFrame) - f;
+              const fadeOut = interpolate(remaining, [0, 15], [0, bgmSeg.volume], {
+                extrapolateLeft: "clamp",
+                extrapolateRight: "clamp",
+              });
+              return Math.min(fadeIn, fadeOut);
+            }}
+            loop
+          />
+        </Sequence>
+      ))}
 
       {/* SOUND EFFECTS */}
       {sfxTracks.map((sfx, i) => (
@@ -315,7 +376,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       <AbsoluteFill
         style={{
           justifyContent: "center",
-          opacity: isCutawayActive ? 0 : 1,
+          opacity: activeCutaway || activeEvents.length === 0 ? 0 : 1,
         }}
       >
         <div
@@ -395,7 +456,7 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       </AbsoluteFill>
 
       {/* CUTAWAYS LAYER (Google Search, Voice Calls, 3D Meme Images) */}
-      {events.map((event, i) => {
+      {timeline.map((event, i) => {
         if (event.type !== "cutaway") return null;
         if (frame < event.startFrame || frame >= event.endFrame) return null;
 
