@@ -11,6 +11,7 @@ import {
   spring,
 } from "remotion";
 import { ChatScript } from "../types";
+import { DiscordLayout } from "./DiscordLayout";
 import { DiscordMessage } from "./DiscordMessage";
 import { TypingIndicator } from "./TypingIndicator";
 import { DiscordCall } from "./DiscordCall";
@@ -54,6 +55,61 @@ const getEventTimeString = (eventIndex: number, script: ChatScript): string => {
   return `Today at ${currentHour}:${minutePadded} ${ampm}`;
 };
 
+const calculateScale = (activeEvents: any[], script: ChatScript) => {
+  if (activeEvents.length === 0) return 1.8;
+
+  const firstEvent = activeEvents[0];
+  let currentCharId = null;
+
+  if (firstEvent.type === "message") {
+    currentCharId = (script.events[firstEvent.eventIndex] as any).characterId;
+  } else if (firstEvent.type === "typing") {
+    const typingEvt = script.events[firstEvent.eventIndex] as any;
+    if (typingEvt && typingEvt.characterId) currentCharId = typingEvt.characterId;
+  }
+
+  let estimatedMessageWidth = 150; // Minimum width
+
+  if (currentCharId) {
+    let startIndex = firstEvent.eventIndex;
+    
+    // Scan backwards to find block start
+    while (startIndex > 0) {
+      const prev = script.events[startIndex - 1] as any;
+      if (prev.type === "cutaway" || prev.characterId !== currentCharId) break;
+      startIndex--;
+    }
+
+    // Get the character for name length calculation
+    const character = script.characters.find(c => c.id === currentCharId);
+    const nameLineWidth = character ? (character.name.length * 9) + 128 : 128;
+
+    let maxTextWidth = 0;
+
+    // Scan forwards to find max line length in block
+    for (let i = startIndex; i < script.events.length; i++) {
+      const evt = script.events[i] as any;
+      if (evt.type === "cutaway" || evt.characterId !== currentCharId) break;
+      if (evt.type === "message" && evt.text) {
+        const lines = evt.text.split("\n");
+        for (const line of lines) {
+          const textWidth = line.length * 9.5;
+          if (textWidth > maxTextWidth) {
+            maxTextWidth = textWidth;
+          }
+        }
+      }
+    }
+
+    const contentWidth = Math.max(nameLineWidth, maxTextWidth);
+    estimatedMessageWidth = 56 + contentWidth;
+  }
+  
+  // Dynamic scale calculation bounded safely to 1520px max horizontal width
+  const scaleX = 1520 / Math.max(estimatedMessageWidth, 320);
+  return Math.max(1.3, Math.min(2.8, scaleX));
+};
+
 export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ script }) => {
   const { fps } = useVideoConfig();
   const frame = useCurrentFrame();
@@ -62,10 +118,10 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
     return new Map(script.characters.map((c) => [c.id, c]));
   }, [script.characters]);
 
-  // Build the complete timeline with comfortable, readable pacing (2:00 - 2:30 min target)
-  const { timeline, sfxTracks } = useMemo(() => {
+  // Build events timeline
+  const { events, sfxTracks } = useMemo(() => {
     let currentFrame = 0;
-    const computedTimeline: any[] = [];
+    const computedEvents: any[] = [];
     const computedSfx: any[] = [];
 
     script.events.forEach((evt, index) => {
@@ -74,15 +130,14 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
         currentFrame += Math.round(evt.delaySeconds * fps);
       }
 
-      // Typing phase (0.6s to 1.0s)
+      // Typing sequence
       if (evt.type === "message" && evt.isTypingDuration && evt.isTypingDuration > 0) {
         const typingDurationFrames = Math.round(evt.isTypingDuration * fps);
-        computedTimeline.push({
+        computedEvents.push({
           type: "typing",
           eventIndex: index,
           startFrame: currentFrame,
           endFrame: currentFrame + typingDurationFrames,
-          characterId: evt.characterId,
         });
 
         computedSfx.push({
@@ -95,23 +150,20 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
         currentFrame += typingDurationFrames;
       }
 
-      // Message phase (comfortable 1.8s to 2.8s reading time)
+      // Message event
       if (evt.type === "message") {
         let msgDuration = evt.durationSeconds;
         if (!msgDuration) {
           const charLen = (evt.text || "").length;
-          // Natural reading pacing formula
-          msgDuration = Math.max(1.8, 1.4 + charLen * 0.032);
+          msgDuration = Math.max(2.0, 1.4 + charLen * 0.035);
         }
         const msgDurationFrames = Math.round(msgDuration * fps);
 
-        computedTimeline.push({
+        computedEvents.push({
           type: "message",
           eventIndex: index,
           startFrame: currentFrame,
           endFrame: currentFrame + msgDurationFrames,
-          characterId: evt.characterId,
-          text: evt.text,
         });
 
         if (evt.sfx) {
@@ -125,16 +177,15 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
 
         currentFrame += msgDurationFrames;
       } else if (evt.type === "cutaway") {
-        const cutawayDuration = evt.durationSeconds || 2.5;
+        const cutawayDuration = evt.durationSeconds || 2.8;
         const cutawayDurationFrames = Math.round(cutawayDuration * fps);
 
-        computedTimeline.push({
+        computedEvents.push({
           type: "cutaway",
           eventIndex: index,
           startFrame: currentFrame,
           endFrame: currentFrame + cutawayDurationFrames,
-          mediaUrl: evt.mediaUrl,
-          effect: (evt as any).effect || "zoom",
+          durationFrames: cutawayDurationFrames,
         });
 
         if (evt.sfx) {
@@ -150,76 +201,42 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
       }
     });
 
-    return { timeline: computedTimeline, sfxTracks: computedSfx };
+    return { events: computedEvents, sfxTracks: computedSfx };
   }, [script, fps]);
 
-  // Find active cutaway (if any)
-  const activeCutaway = timeline.find(
-    (t) => t.type === "cutaway" && frame >= t.startFrame && frame < t.endFrame
+  // Find active cutaway
+  const isCutawayActive = events.some(
+    (e) => e.type === "cutaway" && frame >= e.startFrame && frame < e.endFrame
   );
 
-  // Find all messages and events that have started up to the current frame
-  const visibleMessages = useMemo(() => {
-    // Collect all message events that started on or before current frame
-    const pastMessages = timeline.filter(
-      (t) => t.type === "message" && frame >= t.startFrame
+  // Active non-cutaway events (maintain the most recent event during delay gaps to eliminate black screens)
+  const activeEvents = useMemo(() => {
+    // Currently active event in progress
+    const active = events.filter(
+      (e) => e.type !== "cutaway" && frame >= e.startFrame && frame < e.endFrame
     );
+    if (active.length > 0) return active;
 
-    // Active typing event (if currently typing)
-    const activeTyping = timeline.find(
-      (t) => t.type === "typing" && frame >= t.startFrame && frame < t.endFrame
+    // During delays, keep the previous non-cutaway event visible
+    const previous = events.filter(
+      (e) => e.type !== "cutaway" && frame >= e.startFrame
     );
-
-    // Keep the latest 4 messages for a natural Discord chat feed
-    const recentMessages = pastMessages.slice(-4);
-
-    const items: any[] = recentMessages.map((m) => ({
-      type: "message",
-      eventIndex: m.eventIndex,
-      characterId: m.characterId,
-      text: m.text,
-      startFrame: m.startFrame,
-    }));
-
-    if (activeTyping) {
-      items.push({
-        type: "typing",
-        eventIndex: activeTyping.eventIndex,
-        characterId: activeTyping.characterId,
-        startFrame: activeTyping.startFrame,
-      });
+    if (previous.length > 0) {
+      return [previous[previous.length - 1]];
     }
 
-    return items;
-  }, [timeline, frame]);
+    return events.filter((e) => e.type !== "cutaway").slice(0, 1);
+  }, [events, frame]);
 
-  // STABLE, CONSISTENT SCALE (No dizzying random zoom jumps!)
-  const stableScale = 1.35;
-
-  // Subtle punch zoom on heavy impact SFX
-  let screenShakeX = 0;
-  let screenShakeY = 0;
-  let punchZoom = 1.0;
-
-  for (const sfx of sfxTracks) {
-    if (["vine_boom.mp3", "error.mp3", "fahhh.mp3", "brawl_hypercharge.mp3"].includes(sfx.file)) {
-      const elapsed = frame - sfx.startFrame;
-      if (elapsed >= 0 && elapsed <= 8) {
-        const decay = (8 - elapsed) / 8;
-        screenShakeX = Math.sin(elapsed * 2.5) * 4 * decay;
-        screenShakeY = Math.cos(elapsed * 3.0) * 3 * decay;
-        punchZoom = 1.0 + 0.02 * decay;
-      }
-    }
-  }
+  const currentScale = calculateScale(activeEvents, script);
 
   return (
-    <AbsoluteFill style={{ backgroundColor: "#313338", overflow: "hidden" }}>
+    <AbsoluteFill style={{ backgroundColor: "#000000", overflow: "hidden" }}>
       {/* BACKGROUND MUSIC */}
       {script.bgm && (
         <Audio
           src={staticFile(`project_chatnemi_assets/sounds/${script.bgm}`)}
-          volume={() => (activeCutaway ? 0.08 : 0.22)}
+          volume={() => (isCutawayActive ? 0.08 : 0.24)}
           loop
         />
       )}
@@ -238,147 +255,153 @@ export const ChatnemiMasterTemplate: React.FC<{ script: ChatScript }> = ({ scrip
         </Sequence>
       ))}
 
-      {/* DISCORD UI LAYER (STABLE 1.35x FRAMING, REAL-TIME ACCUMULATING CHAT) */}
+      {/* THE ICONIC DISCORD CENTER GREY BAND (ORIGINAL CHATNEMI LAYOUT) */}
       <AbsoluteFill
         style={{
-          display: "flex",
-          flexDirection: "column",
           justifyContent: "center",
-          alignItems: "flex-start",
-          paddingLeft: 80,
-          paddingRight: 80,
-          backgroundColor: "#313338",
-          opacity: activeCutaway ? 0 : 1,
-          transform: `translate(${screenShakeX}px, ${screenShakeY}px) scale(${punchZoom})`,
+          opacity: isCutawayActive ? 0 : 1,
         }}
       >
-        {/* Discord Header Bar */}
         <div
           style={{
-            position: "absolute",
-            top: 24,
-            left: 80,
-            display: "flex",
-            alignItems: "center",
-            gap: 12,
-            borderBottom: "1px solid #232428",
-            paddingBottom: 16,
-            width: "calc(100% - 160px)",
-          }}
-        >
-          <span style={{ fontSize: 28, color: "#80848e" }}>#</span>
-          <span style={{ fontSize: 24, fontWeight: 700, color: "#f2f3f5" }}>general-chat</span>
-          <span style={{ fontSize: 16, color: "#949ba4", marginLeft: 16 }}>| Brawl Stars Starr Park Official</span>
-        </div>
-
-        {/* Discord Messages Feed */}
-        <div
-          style={{
+            transformOrigin: "80px center",
+            transform: `scale(${currentScale})`,
             width: "100%",
-            maxWidth: 1400,
-            transform: `scale(${stableScale})`,
-            transformOrigin: "left center",
-            display: "flex",
-            flexDirection: "column",
-            gap: 4,
+            paddingLeft: 60,
+            position: "relative",
+            backgroundColor: "#36393f",
           }}
         >
-          {visibleMessages.map((item, idx) => {
-            const character = charMap.get(item.characterId);
-            if (!character) return null;
+          {/* Infinite Grey Extensions */}
+          <div
+            style={{
+              position: "absolute",
+              left: -10000,
+              right: -10000,
+              top: 0,
+              bottom: 0,
+              backgroundColor: "#36393f",
+              zIndex: -1,
+            }}
+          />
 
-            if (item.type === "typing") {
-              return (
-                <TypingIndicator
-                  key={`typing-${item.eventIndex}`}
-                  name={character.name}
-                />
-              );
-            }
+          <DiscordLayout>
+            {activeEvents.map((event, i) => {
+              const scriptEvent = script.events[event.eventIndex];
+              if (!scriptEvent) return null;
 
-            const timeString = getEventTimeString(item.eventIndex, script);
-            return (
-              <DiscordMessage
-                key={`msg-${item.eventIndex}`}
-                character={character}
-                text={item.text}
-                timeString={timeString}
-              />
-            );
-          })}
+              const character = charMap.get(scriptEvent.characterId);
+              if (!character) return null;
+
+              if (event.type === "typing") {
+                return (
+                  <TypingIndicator
+                    key={`ui-typing-${i}-${event.eventIndex}`}
+                    name={character.name}
+                  />
+                );
+              }
+
+              if (event.type === "message") {
+                const timeString = getEventTimeString(event.eventIndex, script);
+                return (
+                  <DiscordMessage
+                    key={`ui-msg-${i}-${event.eventIndex}`}
+                    character={character}
+                    text={scriptEvent.text}
+                    timeString={timeString}
+                  />
+                );
+              }
+
+              return null;
+            })}
+          </DiscordLayout>
         </div>
       </AbsoluteFill>
 
-      {/* CUTAWAYS / OVERLAYS (Google Search, Voice Calls, 3D Images) */}
-      {activeCutaway && (
-        <AbsoluteFill key={`cutaway-active-${activeCutaway.eventIndex}`} style={{ zIndex: 100 }}>
-          {/* 1. Google Search / Maps Reveal Cutaway */}
-          {activeCutaway.mediaUrl === "GOOGLE_SEARCH_SUPERCELL" ||
-          activeCutaway.mediaUrl.startsWith("GOOGLE_SEARCH") ? (
-            <GoogleSearchCutaway
-              searchQuery="Itämerenkatu 11-13, 00180 Helsinki, Finland"
-              resultTitle="Supercell Headquarters"
-              resultAddress="Itämerenkatu 11-13, 00180 Helsinki, Finland"
-              resultCategory="Brawl Stars & Clash of Clans Creator"
-            />
-          ) : activeCutaway.mediaUrl.startsWith("DISCORD_CALL") ? (
-            /* 2. Discord Voice Call Cutaway */
-            (() => {
-              const parts = activeCutaway.mediaUrl.split("_");
-              const callerId = parts.length > 2 ? parts[2] : "Unknown";
-              const caller = charMap.get(callerId);
-              return (
-                <DiscordCall
-                  callerName={caller?.name || callerId}
-                  callerAvatarUrl={caller?.avatarUrl}
-                  callerId={callerId}
-                />
-              );
-            })()
-          ) : (
-            /* 3. 3D Image Cutaway */
-            (() => {
-              const elapsed = frame - activeCutaway.startFrame;
-              const duration = activeCutaway.endFrame - activeCutaway.startFrame;
-              const slam = spring({
-                frame: elapsed,
-                fps,
-                config: { damping: 14, mass: 0.5, stiffness: 220 },
-              });
-              const entryScale = interpolate(slam, [0, 1], [1.08, 1.0], {
-                extrapolateRight: "clamp",
-              });
-              const panZoom = interpolate(elapsed, [0, duration], [1.0, 1.03], {
-                extrapolateRight: "clamp",
-              });
+      {/* CUTAWAYS LAYER (Google Search, Voice Calls, 3D Meme Images) */}
+      {events.map((event, i) => {
+        if (event.type !== "cutaway") return null;
+        if (frame < event.startFrame || frame >= event.endFrame) return null;
 
-              return (
-                <AbsoluteFill
-                  style={{
-                    backgroundColor: "black",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    overflow: "hidden",
-                  }}
-                >
-                  <Img
-                    src={staticFile(
-                      `project_chatnemi_assets/images/${activeCutaway.mediaUrl}`
-                    )}
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                      transform: `scale(${entryScale * panZoom})`,
-                    }}
-                  />
-                </AbsoluteFill>
-              );
-            })()
-          )}
-        </AbsoluteFill>
-      )}
+        const scriptEvent = script.events[event.eventIndex];
+        if (!scriptEvent || scriptEvent.type !== "cutaway") return null;
+
+        // 1. Google Search / Maps Cutaway
+        if (
+          scriptEvent.mediaUrl === "GOOGLE_SEARCH_SUPERCELL" ||
+          (scriptEvent.mediaUrl && scriptEvent.mediaUrl.startsWith("GOOGLE_SEARCH"))
+        ) {
+          return (
+            <AbsoluteFill key={`cutaway-google-${i}`} style={{ zIndex: 100 }}>
+              <GoogleSearchCutaway
+                searchQuery="Itämerenkatu 11-13, 00180 Helsinki, Finland"
+                resultTitle="Supercell Headquarters"
+                resultAddress="Itämerenkatu 11-13, 00180 Helsinki, Finland"
+                resultCategory="Brawl Stars & Clash of Clans Creator"
+              />
+            </AbsoluteFill>
+          );
+        }
+
+        // 2. Discord Voice Call Cutaway
+        if (scriptEvent.mediaUrl && scriptEvent.mediaUrl.startsWith("DISCORD_CALL")) {
+          const parts = scriptEvent.mediaUrl.split("_");
+          const callerId = parts.length > 2 ? parts[2] : "Unknown";
+          const caller = charMap.get(callerId);
+          return (
+            <AbsoluteFill key={`cutaway-call-${i}`} style={{ zIndex: 100 }}>
+              <DiscordCall
+                callerName={caller?.name || callerId}
+                callerAvatarUrl={caller?.avatarUrl}
+                callerId={callerId}
+              />
+            </AbsoluteFill>
+          );
+        }
+
+        // 3. 3D Image Cutaway
+        const elapsed = frame - event.startFrame;
+        const duration = event.durationFrames || 30;
+        const slam = spring({
+          frame: elapsed,
+          fps,
+          config: { damping: 14, mass: 0.5, stiffness: 220 },
+        });
+        const entryScale = interpolate(slam, [0, 1], [1.08, 1.0], {
+          extrapolateRight: "clamp",
+        });
+        const panZoom = interpolate(elapsed, [0, duration], [1.0, 1.03], {
+          extrapolateRight: "clamp",
+        });
+
+        return (
+          <AbsoluteFill
+            key={`cutaway-${i}`}
+            style={{
+              backgroundColor: "black",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 100,
+              overflow: "hidden",
+            }}
+          >
+            <Img
+              src={staticFile(
+                `project_chatnemi_assets/images/${scriptEvent.mediaUrl}`
+              )}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                transform: `scale(${entryScale * panZoom})`,
+              }}
+            />
+          </AbsoluteFill>
+        );
+      })}
     </AbsoluteFill>
   );
 };
