@@ -26,6 +26,6 @@ floyds cycle detection, tortoise and hare algorithm, leetcode 141, linked list c
 
 TECHNICAL SPECS:
 - Composition: NemiExplainsCycle
-- Duration: 28.15s (844 frames @ 30fps)
+- Duration: 24.43s (733 frames @ 30fps)
 - Aspect Ratio: 9:16 (4K 2160x3840)
 - Master File: out/NemiExplains_Cycle_4K_20260830.mp4
