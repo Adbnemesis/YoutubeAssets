@@ -1,0 +1,21 @@
+Title: Trapping Rain Water in O(1) Space with Two Pointers 🌧️ | LeetCode 42
+Audio: Death of a Bluebird - Rorschach Roy 4
+Duration: 23.92s (718 frames @ 30fps)
+
+Caption:
+How do you calculate trapped rainwater in an irregular elevation map without testing every single block? 🌧️
+
+Most people allocate two auxiliary arrays for Left-Max and Right-Max, but that consumes O(N) extra RAM! 😱
+
+Here is why Two Pointers solve it in constant O(1) space:
+• Water height is strictly limited by the shorter wall
+• Because the taller wall guarantees containment, we only advance the pointer with the smaller maximum!
+• Left and Right march inward, trapping water in every valley in a single linear pass ⚡
+
+Drop your favorite two-pointer problem in the comments! 👇
+.
+.
+.
+.
+.
+#leetcode #softwareengineer #codinginterview #python #algorithms #computerscience #datastructures #faang #techreels #codingtips

@@ -1,0 +1,1576 @@
+{
+  "composition": "NemiExplainsRainWater",
+  "fps": 30,
+  "total_duration_s": 23.92,
+  "total_frames": 718,
+  "timeline_events": [
+    {
+      "id": "rw01_hook",
+      "speaker": "narrator",
+      "text": "How much rain water can an elevation map trap without checking every single block?",
+      "start_ms": 0,
+      "end_ms": 2880,
+      "duration_ms": 2880,
+      "start_frame": 0,
+      "end_frame": 86,
+      "cues": [
+        {
+          "phrase": "elevation map",
+          "cue": "terrain_spawn",
+          "frame": 30
+        },
+        {
+          "phrase": "rain water",
+          "cue": "water_spawn",
+          "frame": 64
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw01_hook.wav"
+    },
+    {
+      "id": "rw02_nemi",
+      "speaker": "nemi",
+      "text": "Can't we just create two arrays for Left-Max and Right-Max? \ud83e\udd14",
+      "start_ms": 2960,
+      "end_ms": 6160,
+      "duration_ms": 3200,
+      "start_frame": 89,
+      "end_frame": 185,
+      "cues": [
+        {
+          "phrase": "two arrays",
+          "cue": "array_spawn",
+          "frame": 137
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw02_nemi.wav"
+    },
+    {
+      "id": "rw03_trap",
+      "speaker": "narrator",
+      "text": "That wastes O(N) extra RAM! Two pointers solve it in constant O(1) space.",
+      "start_ms": 6240,
+      "end_ms": 10763,
+      "duration_ms": 4523,
+      "start_frame": 187,
+      "end_frame": 323,
+      "cues": [
+        {
+          "phrase": "extra RAM",
+          "cue": "ram_warning",
+          "frame": 241
+        },
+        {
+          "phrase": "constant O(1) space",
+          "cue": "two_pointers_reveal",
+          "frame": 296
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw03_trap.wav"
+    },
+    {
+      "id": "rw04_bottleneck",
+      "speaker": "narrator",
+      "text": "Water height is always trapped by the shorter wall. So we only advance the smaller pointer!",
+      "start_ms": 10843,
+      "end_ms": 14747,
+      "duration_ms": 3904,
+      "start_frame": 325,
+      "end_frame": 442,
+      "cues": [
+        {
+          "phrase": "shorter wall",
+          "cue": "shorter_wall_focus",
+          "frame": 378
+        },
+        {
+          "phrase": "smaller pointer",
+          "cue": "pointer_step",
+          "frame": 424
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw04_bottleneck.wav"
+    },
+    {
+      "id": "rw05_simulation",
+      "speaker": "narrator",
+      "text": "Both sides march inward, filling every valley until BAM! They meet at the peak.",
+      "start_ms": 14827,
+      "end_ms": 18518,
+      "duration_ms": 3691,
+      "start_frame": 445,
+      "end_frame": 556,
+      "cues": [
+        {
+          "phrase": "filling every valley",
+          "cue": "water_fill_wave",
+          "frame": 495
+        },
+        {
+          "phrase": "They meet",
+          "cue": "peak_collision",
+          "frame": 539
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw05_simulation.wav"
+    },
+    {
+      "id": "rw06_nemi",
+      "speaker": "nemi",
+      "text": "Zero extra memory and 6 lines of code! \ud83d\ude0e\u26a1",
+      "start_ms": 18598,
+      "end_ms": 21243,
+      "duration_ms": 2645,
+      "start_frame": 558,
+      "end_frame": 637,
+      "cues": [
+        {
+          "phrase": "Zero extra memory",
+          "cue": "nemi_smug",
+          "frame": 605
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw06_nemi.wav"
+    },
+    {
+      "id": "rw07_loop",
+      "speaker": "narrator",
+      "text": "That's how two pointers trap rain water in linear time.",
+      "start_ms": 21323,
+      "end_ms": 23819,
+      "duration_ms": 2496,
+      "start_frame": 640,
+      "end_frame": 715,
+      "cues": [
+        {
+          "phrase": "linear time",
+          "cue": "loop_seam",
+          "frame": 696
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/rainwater_16/audio/blocks/rw07_loop.wav"
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "sub_001",
+      "text": "How much rainwater can",
+      "start_frame": 0,
+      "end_frame": 26,
+      "words": [
+        {
+          "word": "How",
+          "start_ms": 0,
+          "end_ms": 80,
+          "start_frame": 0,
+          "end_frame": 2
+        },
+        {
+          "word": "much",
+          "start_ms": 80,
+          "end_ms": 200,
+          "start_frame": 2,
+          "end_frame": 6
+        },
+        {
+          "word": "rainwater",
+          "start_ms": 200,
+          "end_ms": 580,
+          "start_frame": 6,
+          "end_frame": 17
+        },
+        {
+          "word": "can",
+          "start_ms": 580,
+          "end_ms": 720,
+          "start_frame": 17,
+          "end_frame": 22
+        }
+      ]
+    },
+    {
+      "id": "sub_002",
+      "text": "an elevation map trap",
+      "start_frame": 22,
+      "end_frame": 51,
+      "words": [
+        {
+          "word": "an",
+          "start_ms": 720,
+          "end_ms": 820,
+          "start_frame": 22,
+          "end_frame": 25
+        },
+        {
+          "word": "elevation",
+          "start_ms": 820,
+          "end_ms": 1160,
+          "start_frame": 25,
+          "end_frame": 35
+        },
+        {
+          "word": "map",
+          "start_ms": 1160,
+          "end_ms": 1400,
+          "start_frame": 35,
+          "end_frame": 42
+        },
+        {
+          "word": "trap",
+          "start_ms": 1400,
+          "end_ms": 1580,
+          "start_frame": 42,
+          "end_frame": 47
+        }
+      ]
+    },
+    {
+      "id": "sub_003",
+      "text": "without testing every single",
+      "start_frame": 47,
+      "end_frame": 80,
+      "words": [
+        {
+          "word": "without",
+          "start_ms": 1580,
+          "end_ms": 1760,
+          "start_frame": 47,
+          "end_frame": 53
+        },
+        {
+          "word": "testing",
+          "start_ms": 1760,
+          "end_ms": 2040,
+          "start_frame": 53,
+          "end_frame": 61
+        },
+        {
+          "word": "every",
+          "start_ms": 2040,
+          "end_ms": 2300,
+          "start_frame": 61,
+          "end_frame": 69
+        },
+        {
+          "word": "single",
+          "start_ms": 2300,
+          "end_ms": 2520,
+          "start_frame": 69,
+          "end_frame": 76
+        }
+      ]
+    },
+    {
+      "id": "sub_004",
+      "text": "block?",
+      "start_frame": 76,
+      "end_frame": 87,
+      "words": [
+        {
+          "word": "block?",
+          "start_ms": 2520,
+          "end_ms": 2780,
+          "start_frame": 76,
+          "end_frame": 83
+        }
+      ]
+    },
+    {
+      "id": "sub_005",
+      "text": "Can't we just create",
+      "start_frame": 88,
+      "end_frame": 120,
+      "words": [
+        {
+          "word": "Can't",
+          "start_ms": 2940,
+          "end_ms": 3240,
+          "start_frame": 88,
+          "end_frame": 97
+        },
+        {
+          "word": "we",
+          "start_ms": 3240,
+          "end_ms": 3320,
+          "start_frame": 97,
+          "end_frame": 100
+        },
+        {
+          "word": "just",
+          "start_ms": 3320,
+          "end_ms": 3500,
+          "start_frame": 100,
+          "end_frame": 105
+        },
+        {
+          "word": "create",
+          "start_ms": 3500,
+          "end_ms": 3860,
+          "start_frame": 105,
+          "end_frame": 116
+        }
+      ]
+    },
+    {
+      "id": "sub_006",
+      "text": "two arrays for left",
+      "start_frame": 116,
+      "end_frame": 151,
+      "words": [
+        {
+          "word": "two",
+          "start_ms": 3860,
+          "end_ms": 4140,
+          "start_frame": 116,
+          "end_frame": 124
+        },
+        {
+          "word": "arrays",
+          "start_ms": 4140,
+          "end_ms": 4440,
+          "start_frame": 124,
+          "end_frame": 133
+        },
+        {
+          "word": "for",
+          "start_ms": 4440,
+          "end_ms": 4720,
+          "start_frame": 133,
+          "end_frame": 142
+        },
+        {
+          "word": "left",
+          "start_ms": 4720,
+          "end_ms": 4900,
+          "start_frame": 142,
+          "end_frame": 147
+        }
+      ]
+    },
+    {
+      "id": "sub_007",
+      "text": "max and right max?",
+      "start_frame": 147,
+      "end_frame": 182,
+      "words": [
+        {
+          "word": "max",
+          "start_ms": 4900,
+          "end_ms": 5160,
+          "start_frame": 147,
+          "end_frame": 155
+        },
+        {
+          "word": "and",
+          "start_ms": 5160,
+          "end_ms": 5480,
+          "start_frame": 155,
+          "end_frame": 164
+        },
+        {
+          "word": "right",
+          "start_ms": 5480,
+          "end_ms": 5660,
+          "start_frame": 164,
+          "end_frame": 170
+        },
+        {
+          "word": "max?",
+          "start_ms": 5660,
+          "end_ms": 5920,
+          "start_frame": 170,
+          "end_frame": 178
+        }
+      ]
+    },
+    {
+      "id": "sub_008",
+      "text": "Oh, that wastes O",
+      "start_frame": 188,
+      "end_frame": 223,
+      "words": [
+        {
+          "word": "Oh,",
+          "start_ms": 6260,
+          "end_ms": 6360,
+          "start_frame": 188,
+          "end_frame": 191
+        },
+        {
+          "word": "that",
+          "start_ms": 6580,
+          "end_ms": 6740,
+          "start_frame": 197,
+          "end_frame": 202
+        },
+        {
+          "word": "wastes",
+          "start_ms": 6740,
+          "end_ms": 7140,
+          "start_frame": 202,
+          "end_frame": 214
+        },
+        {
+          "word": "O",
+          "start_ms": 7140,
+          "end_ms": 7300,
+          "start_frame": 214,
+          "end_frame": 219
+        }
+      ]
+    },
+    {
+      "id": "sub_009",
+      "text": "and extra RAM.",
+      "start_frame": 219,
+      "end_frame": 251,
+      "words": [
+        {
+          "word": "and",
+          "start_ms": 7300,
+          "end_ms": 7540,
+          "start_frame": 219,
+          "end_frame": 226
+        },
+        {
+          "word": "extra",
+          "start_ms": 7540,
+          "end_ms": 7920,
+          "start_frame": 226,
+          "end_frame": 238
+        },
+        {
+          "word": "RAM.",
+          "start_ms": 7920,
+          "end_ms": 8240,
+          "start_frame": 238,
+          "end_frame": 247
+        }
+      ]
+    },
+    {
+      "id": "sub_010",
+      "text": "Two pointer solve it",
+      "start_frame": 257,
+      "end_frame": 284,
+      "words": [
+        {
+          "word": "Two",
+          "start_ms": 8560,
+          "end_ms": 8660,
+          "start_frame": 257,
+          "end_frame": 260
+        },
+        {
+          "word": "pointer",
+          "start_ms": 8660,
+          "end_ms": 8920,
+          "start_frame": 260,
+          "end_frame": 268
+        },
+        {
+          "word": "solve",
+          "start_ms": 8920,
+          "end_ms": 9200,
+          "start_frame": 268,
+          "end_frame": 276
+        },
+        {
+          "word": "it",
+          "start_ms": 9200,
+          "end_ms": 9340,
+          "start_frame": 276,
+          "end_frame": 280
+        }
+      ]
+    },
+    {
+      "id": "sub_011",
+      "text": "in constant O1 space.",
+      "start_frame": 280,
+      "end_frame": 320,
+      "words": [
+        {
+          "word": "in",
+          "start_ms": 9340,
+          "end_ms": 9460,
+          "start_frame": 280,
+          "end_frame": 284
+        },
+        {
+          "word": "constant",
+          "start_ms": 9460,
+          "end_ms": 9820,
+          "start_frame": 284,
+          "end_frame": 295
+        },
+        {
+          "word": "O1",
+          "start_ms": 9820,
+          "end_ms": 10220,
+          "start_frame": 295,
+          "end_frame": 307
+        },
+        {
+          "word": "space.",
+          "start_ms": 10220,
+          "end_ms": 10520,
+          "start_frame": 307,
+          "end_frame": 316
+        }
+      ]
+    },
+    {
+      "id": "sub_012",
+      "text": "Water height is always",
+      "start_frame": 326,
+      "end_frame": 354,
+      "words": [
+        {
+          "word": "Water",
+          "start_ms": 10880,
+          "end_ms": 11060,
+          "start_frame": 326,
+          "end_frame": 332
+        },
+        {
+          "word": "height",
+          "start_ms": 11060,
+          "end_ms": 11200,
+          "start_frame": 332,
+          "end_frame": 336
+        },
+        {
+          "word": "is",
+          "start_ms": 11200,
+          "end_ms": 11360,
+          "start_frame": 336,
+          "end_frame": 341
+        },
+        {
+          "word": "always",
+          "start_ms": 11360,
+          "end_ms": 11660,
+          "start_frame": 341,
+          "end_frame": 350
+        }
+      ]
+    },
+    {
+      "id": "sub_013",
+      "text": "trapped by the shorter",
+      "start_frame": 350,
+      "end_frame": 378,
+      "words": [
+        {
+          "word": "trapped",
+          "start_ms": 11660,
+          "end_ms": 11980,
+          "start_frame": 350,
+          "end_frame": 359
+        },
+        {
+          "word": "by",
+          "start_ms": 11980,
+          "end_ms": 12180,
+          "start_frame": 359,
+          "end_frame": 365
+        },
+        {
+          "word": "the",
+          "start_ms": 12180,
+          "end_ms": 12280,
+          "start_frame": 365,
+          "end_frame": 368
+        },
+        {
+          "word": "shorter",
+          "start_ms": 12280,
+          "end_ms": 12480,
+          "start_frame": 368,
+          "end_frame": 374
+        }
+      ]
+    },
+    {
+      "id": "sub_014",
+      "text": "wall, so we only",
+      "start_frame": 374,
+      "end_frame": 408,
+      "words": [
+        {
+          "word": "wall,",
+          "start_ms": 12480,
+          "end_ms": 12740,
+          "start_frame": 374,
+          "end_frame": 382
+        },
+        {
+          "word": "so",
+          "start_ms": 13020,
+          "end_ms": 13180,
+          "start_frame": 391,
+          "end_frame": 395
+        },
+        {
+          "word": "we",
+          "start_ms": 13180,
+          "end_ms": 13280,
+          "start_frame": 395,
+          "end_frame": 398
+        },
+        {
+          "word": "only",
+          "start_ms": 13280,
+          "end_ms": 13460,
+          "start_frame": 398,
+          "end_frame": 404
+        }
+      ]
+    },
+    {
+      "id": "sub_015",
+      "text": "advance the smaller pointer.",
+      "start_frame": 404,
+      "end_frame": 442,
+      "words": [
+        {
+          "word": "advance",
+          "start_ms": 13460,
+          "end_ms": 13760,
+          "start_frame": 404,
+          "end_frame": 413
+        },
+        {
+          "word": "the",
+          "start_ms": 13760,
+          "end_ms": 13980,
+          "start_frame": 413,
+          "end_frame": 419
+        },
+        {
+          "word": "smaller",
+          "start_ms": 13980,
+          "end_ms": 14240,
+          "start_frame": 419,
+          "end_frame": 427
+        },
+        {
+          "word": "pointer.",
+          "start_ms": 14240,
+          "end_ms": 14600,
+          "start_frame": 427,
+          "end_frame": 438
+        }
+      ]
+    },
+    {
+      "id": "sub_016",
+      "text": "Both sides march inward,",
+      "start_frame": 446,
+      "end_frame": 477,
+      "words": [
+        {
+          "word": "Both",
+          "start_ms": 14860,
+          "end_ms": 14960,
+          "start_frame": 446,
+          "end_frame": 449
+        },
+        {
+          "word": "sides",
+          "start_ms": 14960,
+          "end_ms": 15240,
+          "start_frame": 449,
+          "end_frame": 457
+        },
+        {
+          "word": "march",
+          "start_ms": 15240,
+          "end_ms": 15420,
+          "start_frame": 457,
+          "end_frame": 463
+        },
+        {
+          "word": "inward,",
+          "start_ms": 15420,
+          "end_ms": 15760,
+          "start_frame": 463,
+          "end_frame": 473
+        }
+      ]
+    },
+    {
+      "id": "sub_017",
+      "text": "filling every valley until",
+      "start_frame": 479,
+      "end_frame": 512,
+      "words": [
+        {
+          "word": "filling",
+          "start_ms": 15960,
+          "end_ms": 16100,
+          "start_frame": 479,
+          "end_frame": 483
+        },
+        {
+          "word": "every",
+          "start_ms": 16100,
+          "end_ms": 16400,
+          "start_frame": 483,
+          "end_frame": 492
+        },
+        {
+          "word": "valley",
+          "start_ms": 16400,
+          "end_ms": 16660,
+          "start_frame": 492,
+          "end_frame": 500
+        },
+        {
+          "word": "until",
+          "start_ms": 16660,
+          "end_ms": 16920,
+          "start_frame": 500,
+          "end_frame": 508
+        }
+      ]
+    },
+    {
+      "id": "sub_018",
+      "text": "BAM.",
+      "start_frame": 508,
+      "end_frame": 527,
+      "words": [
+        {
+          "word": "BAM.",
+          "start_ms": 16920,
+          "end_ms": 17440,
+          "start_frame": 508,
+          "end_frame": 523
+        }
+      ]
+    },
+    {
+      "id": "sub_019",
+      "text": "They meet at the",
+      "start_frame": 532,
+      "end_frame": 549,
+      "words": [
+        {
+          "word": "They",
+          "start_ms": 17720,
+          "end_ms": 17820,
+          "start_frame": 532,
+          "end_frame": 535
+        },
+        {
+          "word": "meet",
+          "start_ms": 17820,
+          "end_ms": 18000,
+          "start_frame": 535,
+          "end_frame": 540
+        },
+        {
+          "word": "at",
+          "start_ms": 18000,
+          "end_ms": 18100,
+          "start_frame": 540,
+          "end_frame": 543
+        },
+        {
+          "word": "the",
+          "start_ms": 18100,
+          "end_ms": 18180,
+          "start_frame": 543,
+          "end_frame": 545
+        }
+      ]
+    },
+    {
+      "id": "sub_020",
+      "text": "peak.",
+      "start_frame": 545,
+      "end_frame": 558,
+      "words": [
+        {
+          "word": "peak.",
+          "start_ms": 18180,
+          "end_ms": 18480,
+          "start_frame": 545,
+          "end_frame": 554
+        }
+      ]
+    },
+    {
+      "id": "sub_021",
+      "text": "Zero extra memory and",
+      "start_frame": 557,
+      "end_frame": 603,
+      "words": [
+        {
+          "word": "Zero",
+          "start_ms": 18580,
+          "end_ms": 18880,
+          "start_frame": 557,
+          "end_frame": 566
+        },
+        {
+          "word": "extra",
+          "start_ms": 18880,
+          "end_ms": 19320,
+          "start_frame": 566,
+          "end_frame": 580
+        },
+        {
+          "word": "memory",
+          "start_ms": 19320,
+          "end_ms": 19700,
+          "start_frame": 580,
+          "end_frame": 591
+        },
+        {
+          "word": "and",
+          "start_ms": 19700,
+          "end_ms": 19980,
+          "start_frame": 591,
+          "end_frame": 599
+        }
+      ]
+    },
+    {
+      "id": "sub_022",
+      "text": "six lines of code.",
+      "start_frame": 599,
+      "end_frame": 638,
+      "words": [
+        {
+          "word": "six",
+          "start_ms": 19980,
+          "end_ms": 20300,
+          "start_frame": 599,
+          "end_frame": 609
+        },
+        {
+          "word": "lines",
+          "start_ms": 20300,
+          "end_ms": 20580,
+          "start_frame": 609,
+          "end_frame": 617
+        },
+        {
+          "word": "of",
+          "start_ms": 20580,
+          "end_ms": 20840,
+          "start_frame": 617,
+          "end_frame": 625
+        },
+        {
+          "word": "code.",
+          "start_ms": 20840,
+          "end_ms": 21120,
+          "start_frame": 625,
+          "end_frame": 634
+        }
+      ]
+    },
+    {
+      "id": "sub_023",
+      "text": "That's how two pointers",
+      "start_frame": 640,
+      "end_frame": 667,
+      "words": [
+        {
+          "word": "That's",
+          "start_ms": 21320,
+          "end_ms": 21560,
+          "start_frame": 640,
+          "end_frame": 647
+        },
+        {
+          "word": "how",
+          "start_ms": 21560,
+          "end_ms": 21620,
+          "start_frame": 647,
+          "end_frame": 649
+        },
+        {
+          "word": "two",
+          "start_ms": 21620,
+          "end_ms": 21800,
+          "start_frame": 649,
+          "end_frame": 654
+        },
+        {
+          "word": "pointers",
+          "start_ms": 21800,
+          "end_ms": 22100,
+          "start_frame": 654,
+          "end_frame": 663
+        }
+      ]
+    },
+    {
+      "id": "sub_024",
+      "text": "trap rainwater in linear",
+      "start_frame": 663,
+      "end_frame": 704,
+      "words": [
+        {
+          "word": "trap",
+          "start_ms": 22100,
+          "end_ms": 22380,
+          "start_frame": 663,
+          "end_frame": 671
+        },
+        {
+          "word": "rainwater",
+          "start_ms": 22380,
+          "end_ms": 22900,
+          "start_frame": 671,
+          "end_frame": 687
+        },
+        {
+          "word": "in",
+          "start_ms": 22900,
+          "end_ms": 23100,
+          "start_frame": 687,
+          "end_frame": 693
+        },
+        {
+          "word": "linear",
+          "start_ms": 23100,
+          "end_ms": 23320,
+          "start_frame": 693,
+          "end_frame": 700
+        }
+      ]
+    },
+    {
+      "id": "sub_025",
+      "text": "time.",
+      "start_frame": 700,
+      "end_frame": 713,
+      "words": [
+        {
+          "word": "time.",
+          "start_ms": 23320,
+          "end_ms": 23640,
+          "start_frame": 700,
+          "end_frame": 709
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "How",
+      "start_ms": 0,
+      "end_ms": 80,
+      "start_frame": 0,
+      "end_frame": 2
+    },
+    {
+      "word": "much",
+      "start_ms": 80,
+      "end_ms": 200,
+      "start_frame": 2,
+      "end_frame": 6
+    },
+    {
+      "word": "rainwater",
+      "start_ms": 200,
+      "end_ms": 580,
+      "start_frame": 6,
+      "end_frame": 17
+    },
+    {
+      "word": "can",
+      "start_ms": 580,
+      "end_ms": 720,
+      "start_frame": 17,
+      "end_frame": 22
+    },
+    {
+      "word": "an",
+      "start_ms": 720,
+      "end_ms": 820,
+      "start_frame": 22,
+      "end_frame": 25
+    },
+    {
+      "word": "elevation",
+      "start_ms": 820,
+      "end_ms": 1160,
+      "start_frame": 25,
+      "end_frame": 35
+    },
+    {
+      "word": "map",
+      "start_ms": 1160,
+      "end_ms": 1400,
+      "start_frame": 35,
+      "end_frame": 42
+    },
+    {
+      "word": "trap",
+      "start_ms": 1400,
+      "end_ms": 1580,
+      "start_frame": 42,
+      "end_frame": 47
+    },
+    {
+      "word": "without",
+      "start_ms": 1580,
+      "end_ms": 1760,
+      "start_frame": 47,
+      "end_frame": 53
+    },
+    {
+      "word": "testing",
+      "start_ms": 1760,
+      "end_ms": 2040,
+      "start_frame": 53,
+      "end_frame": 61
+    },
+    {
+      "word": "every",
+      "start_ms": 2040,
+      "end_ms": 2300,
+      "start_frame": 61,
+      "end_frame": 69
+    },
+    {
+      "word": "single",
+      "start_ms": 2300,
+      "end_ms": 2520,
+      "start_frame": 69,
+      "end_frame": 76
+    },
+    {
+      "word": "block?",
+      "start_ms": 2520,
+      "end_ms": 2780,
+      "start_frame": 76,
+      "end_frame": 83
+    },
+    {
+      "word": "Can't",
+      "start_ms": 2940,
+      "end_ms": 3240,
+      "start_frame": 88,
+      "end_frame": 97
+    },
+    {
+      "word": "we",
+      "start_ms": 3240,
+      "end_ms": 3320,
+      "start_frame": 97,
+      "end_frame": 100
+    },
+    {
+      "word": "just",
+      "start_ms": 3320,
+      "end_ms": 3500,
+      "start_frame": 100,
+      "end_frame": 105
+    },
+    {
+      "word": "create",
+      "start_ms": 3500,
+      "end_ms": 3860,
+      "start_frame": 105,
+      "end_frame": 116
+    },
+    {
+      "word": "two",
+      "start_ms": 3860,
+      "end_ms": 4140,
+      "start_frame": 116,
+      "end_frame": 124
+    },
+    {
+      "word": "arrays",
+      "start_ms": 4140,
+      "end_ms": 4440,
+      "start_frame": 124,
+      "end_frame": 133
+    },
+    {
+      "word": "for",
+      "start_ms": 4440,
+      "end_ms": 4720,
+      "start_frame": 133,
+      "end_frame": 142
+    },
+    {
+      "word": "left",
+      "start_ms": 4720,
+      "end_ms": 4900,
+      "start_frame": 142,
+      "end_frame": 147
+    },
+    {
+      "word": "max",
+      "start_ms": 4900,
+      "end_ms": 5160,
+      "start_frame": 147,
+      "end_frame": 155
+    },
+    {
+      "word": "and",
+      "start_ms": 5160,
+      "end_ms": 5480,
+      "start_frame": 155,
+      "end_frame": 164
+    },
+    {
+      "word": "right",
+      "start_ms": 5480,
+      "end_ms": 5660,
+      "start_frame": 164,
+      "end_frame": 170
+    },
+    {
+      "word": "max?",
+      "start_ms": 5660,
+      "end_ms": 5920,
+      "start_frame": 170,
+      "end_frame": 178
+    },
+    {
+      "word": "Oh,",
+      "start_ms": 6260,
+      "end_ms": 6360,
+      "start_frame": 188,
+      "end_frame": 191
+    },
+    {
+      "word": "that",
+      "start_ms": 6580,
+      "end_ms": 6740,
+      "start_frame": 197,
+      "end_frame": 202
+    },
+    {
+      "word": "wastes",
+      "start_ms": 6740,
+      "end_ms": 7140,
+      "start_frame": 202,
+      "end_frame": 214
+    },
+    {
+      "word": "O",
+      "start_ms": 7140,
+      "end_ms": 7300,
+      "start_frame": 214,
+      "end_frame": 219
+    },
+    {
+      "word": "and",
+      "start_ms": 7300,
+      "end_ms": 7540,
+      "start_frame": 219,
+      "end_frame": 226
+    },
+    {
+      "word": "extra",
+      "start_ms": 7540,
+      "end_ms": 7920,
+      "start_frame": 226,
+      "end_frame": 238
+    },
+    {
+      "word": "RAM.",
+      "start_ms": 7920,
+      "end_ms": 8240,
+      "start_frame": 238,
+      "end_frame": 247
+    },
+    {
+      "word": "Two",
+      "start_ms": 8560,
+      "end_ms": 8660,
+      "start_frame": 257,
+      "end_frame": 260
+    },
+    {
+      "word": "pointer",
+      "start_ms": 8660,
+      "end_ms": 8920,
+      "start_frame": 260,
+      "end_frame": 268
+    },
+    {
+      "word": "solve",
+      "start_ms": 8920,
+      "end_ms": 9200,
+      "start_frame": 268,
+      "end_frame": 276
+    },
+    {
+      "word": "it",
+      "start_ms": 9200,
+      "end_ms": 9340,
+      "start_frame": 276,
+      "end_frame": 280
+    },
+    {
+      "word": "in",
+      "start_ms": 9340,
+      "end_ms": 9460,
+      "start_frame": 280,
+      "end_frame": 284
+    },
+    {
+      "word": "constant",
+      "start_ms": 9460,
+      "end_ms": 9820,
+      "start_frame": 284,
+      "end_frame": 295
+    },
+    {
+      "word": "O1",
+      "start_ms": 9820,
+      "end_ms": 10220,
+      "start_frame": 295,
+      "end_frame": 307
+    },
+    {
+      "word": "space.",
+      "start_ms": 10220,
+      "end_ms": 10520,
+      "start_frame": 307,
+      "end_frame": 316
+    },
+    {
+      "word": "Water",
+      "start_ms": 10880,
+      "end_ms": 11060,
+      "start_frame": 326,
+      "end_frame": 332
+    },
+    {
+      "word": "height",
+      "start_ms": 11060,
+      "end_ms": 11200,
+      "start_frame": 332,
+      "end_frame": 336
+    },
+    {
+      "word": "is",
+      "start_ms": 11200,
+      "end_ms": 11360,
+      "start_frame": 336,
+      "end_frame": 341
+    },
+    {
+      "word": "always",
+      "start_ms": 11360,
+      "end_ms": 11660,
+      "start_frame": 341,
+      "end_frame": 350
+    },
+    {
+      "word": "trapped",
+      "start_ms": 11660,
+      "end_ms": 11980,
+      "start_frame": 350,
+      "end_frame": 359
+    },
+    {
+      "word": "by",
+      "start_ms": 11980,
+      "end_ms": 12180,
+      "start_frame": 359,
+      "end_frame": 365
+    },
+    {
+      "word": "the",
+      "start_ms": 12180,
+      "end_ms": 12280,
+      "start_frame": 365,
+      "end_frame": 368
+    },
+    {
+      "word": "shorter",
+      "start_ms": 12280,
+      "end_ms": 12480,
+      "start_frame": 368,
+      "end_frame": 374
+    },
+    {
+      "word": "wall,",
+      "start_ms": 12480,
+      "end_ms": 12740,
+      "start_frame": 374,
+      "end_frame": 382
+    },
+    {
+      "word": "so",
+      "start_ms": 13020,
+      "end_ms": 13180,
+      "start_frame": 391,
+      "end_frame": 395
+    },
+    {
+      "word": "we",
+      "start_ms": 13180,
+      "end_ms": 13280,
+      "start_frame": 395,
+      "end_frame": 398
+    },
+    {
+      "word": "only",
+      "start_ms": 13280,
+      "end_ms": 13460,
+      "start_frame": 398,
+      "end_frame": 404
+    },
+    {
+      "word": "advance",
+      "start_ms": 13460,
+      "end_ms": 13760,
+      "start_frame": 404,
+      "end_frame": 413
+    },
+    {
+      "word": "the",
+      "start_ms": 13760,
+      "end_ms": 13980,
+      "start_frame": 413,
+      "end_frame": 419
+    },
+    {
+      "word": "smaller",
+      "start_ms": 13980,
+      "end_ms": 14240,
+      "start_frame": 419,
+      "end_frame": 427
+    },
+    {
+      "word": "pointer.",
+      "start_ms": 14240,
+      "end_ms": 14600,
+      "start_frame": 427,
+      "end_frame": 438
+    },
+    {
+      "word": "Both",
+      "start_ms": 14860,
+      "end_ms": 14960,
+      "start_frame": 446,
+      "end_frame": 449
+    },
+    {
+      "word": "sides",
+      "start_ms": 14960,
+      "end_ms": 15240,
+      "start_frame": 449,
+      "end_frame": 457
+    },
+    {
+      "word": "march",
+      "start_ms": 15240,
+      "end_ms": 15420,
+      "start_frame": 457,
+      "end_frame": 463
+    },
+    {
+      "word": "inward,",
+      "start_ms": 15420,
+      "end_ms": 15760,
+      "start_frame": 463,
+      "end_frame": 473
+    },
+    {
+      "word": "filling",
+      "start_ms": 15960,
+      "end_ms": 16100,
+      "start_frame": 479,
+      "end_frame": 483
+    },
+    {
+      "word": "every",
+      "start_ms": 16100,
+      "end_ms": 16400,
+      "start_frame": 483,
+      "end_frame": 492
+    },
+    {
+      "word": "valley",
+      "start_ms": 16400,
+      "end_ms": 16660,
+      "start_frame": 492,
+      "end_frame": 500
+    },
+    {
+      "word": "until",
+      "start_ms": 16660,
+      "end_ms": 16920,
+      "start_frame": 500,
+      "end_frame": 508
+    },
+    {
+      "word": "BAM.",
+      "start_ms": 16920,
+      "end_ms": 17440,
+      "start_frame": 508,
+      "end_frame": 523
+    },
+    {
+      "word": "They",
+      "start_ms": 17720,
+      "end_ms": 17820,
+      "start_frame": 532,
+      "end_frame": 535
+    },
+    {
+      "word": "meet",
+      "start_ms": 17820,
+      "end_ms": 18000,
+      "start_frame": 535,
+      "end_frame": 540
+    },
+    {
+      "word": "at",
+      "start_ms": 18000,
+      "end_ms": 18100,
+      "start_frame": 540,
+      "end_frame": 543
+    },
+    {
+      "word": "the",
+      "start_ms": 18100,
+      "end_ms": 18180,
+      "start_frame": 543,
+      "end_frame": 545
+    },
+    {
+      "word": "peak.",
+      "start_ms": 18180,
+      "end_ms": 18480,
+      "start_frame": 545,
+      "end_frame": 554
+    },
+    {
+      "word": "Zero",
+      "start_ms": 18580,
+      "end_ms": 18880,
+      "start_frame": 557,
+      "end_frame": 566
+    },
+    {
+      "word": "extra",
+      "start_ms": 18880,
+      "end_ms": 19320,
+      "start_frame": 566,
+      "end_frame": 580
+    },
+    {
+      "word": "memory",
+      "start_ms": 19320,
+      "end_ms": 19700,
+      "start_frame": 580,
+      "end_frame": 591
+    },
+    {
+      "word": "and",
+      "start_ms": 19700,
+      "end_ms": 19980,
+      "start_frame": 591,
+      "end_frame": 599
+    },
+    {
+      "word": "six",
+      "start_ms": 19980,
+      "end_ms": 20300,
+      "start_frame": 599,
+      "end_frame": 609
+    },
+    {
+      "word": "lines",
+      "start_ms": 20300,
+      "end_ms": 20580,
+      "start_frame": 609,
+      "end_frame": 617
+    },
+    {
+      "word": "of",
+      "start_ms": 20580,
+      "end_ms": 20840,
+      "start_frame": 617,
+      "end_frame": 625
+    },
+    {
+      "word": "code.",
+      "start_ms": 20840,
+      "end_ms": 21120,
+      "start_frame": 625,
+      "end_frame": 634
+    },
+    {
+      "word": "That's",
+      "start_ms": 21320,
+      "end_ms": 21560,
+      "start_frame": 640,
+      "end_frame": 647
+    },
+    {
+      "word": "how",
+      "start_ms": 21560,
+      "end_ms": 21620,
+      "start_frame": 647,
+      "end_frame": 649
+    },
+    {
+      "word": "two",
+      "start_ms": 21620,
+      "end_ms": 21800,
+      "start_frame": 649,
+      "end_frame": 654
+    },
+    {
+      "word": "pointers",
+      "start_ms": 21800,
+      "end_ms": 22100,
+      "start_frame": 654,
+      "end_frame": 663
+    },
+    {
+      "word": "trap",
+      "start_ms": 22100,
+      "end_ms": 22380,
+      "start_frame": 663,
+      "end_frame": 671
+    },
+    {
+      "word": "rainwater",
+      "start_ms": 22380,
+      "end_ms": 22900,
+      "start_frame": 671,
+      "end_frame": 687
+    },
+    {
+      "word": "in",
+      "start_ms": 22900,
+      "end_ms": 23100,
+      "start_frame": 687,
+      "end_frame": 693
+    },
+    {
+      "word": "linear",
+      "start_ms": 23100,
+      "end_ms": 23320,
+      "start_frame": 693,
+      "end_frame": 700
+    },
+    {
+      "word": "time.",
+      "start_ms": 23320,
+      "end_ms": 23640,
+      "start_frame": 700,
+      "end_frame": 709
+    }
+  ]
+}
