@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { CycleComp } from "../reels/cycle_15/CycleComp";
 import { OxAlphaComp } from "../reels/ox_alpha_14/OxAlphaComp";
 import { BinaryComp } from "../reels/binary_13/BinaryComp";
 import { TrashComp } from "../reels/trash_12/TrashComp";
@@ -40,6 +41,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsCycle"
+        component={CycleComp}
+        durationInFrames={1107}
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="ClaudeCodeSkillsCarousel"
         component={ClaudeCodeSkillsCarouselComp}
