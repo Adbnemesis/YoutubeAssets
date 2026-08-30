@@ -1,28 +1,28 @@
 {
   "composition": "NemiExplainsCycle",
   "fps": 30,
-  "total_duration_s": 36.89,
-  "total_frames": 1107,
+  "total_duration_s": 28.15,
+  "total_frames": 844,
   "events": [
     {
       "id": "c01_hook",
       "speaker": "narrator",
-      "text": "How do you detect an infinite loop in a linked list without using any extra memory?",
+      "text": "How do you detect an infinite loop in a linked list without using extra memory?",
       "start_ms": 0,
-      "end_ms": 4656,
-      "duration_ms": 4656,
+      "end_ms": 4152,
+      "duration_ms": 4152,
       "start_frame": 0,
-      "end_frame": 140,
+      "end_frame": 125,
       "cues": [
         {
           "phrase": "infinite loop",
           "cue": "cycle_spawn",
-          "frame": 49
+          "frame": 44
         },
         {
           "phrase": "extra memory",
           "cue": "zero_memory",
-          "frame": 119
+          "frame": 106
         }
       ],
       "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c01_hook.wav"
@@ -31,16 +31,16 @@
       "id": "c02_nemi",
       "speaker": "nemi",
       "text": "Can't we just store visited nodes in a Hash Set?",
-      "start_ms": 4756,
-      "end_ms": 8068,
-      "duration_ms": 3312,
-      "start_frame": 143,
-      "end_frame": 242,
+      "start_ms": 4192,
+      "end_ms": 7384,
+      "duration_ms": 3192,
+      "start_frame": 126,
+      "end_frame": 222,
       "cues": [
         {
           "phrase": "Hash Set",
           "cue": "hashset_spawn",
-          "frame": 207
+          "frame": 188
         }
       ],
       "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c02_nemi.wav"
@@ -48,123 +48,95 @@
     {
       "id": "c03_memory_trap",
       "speaker": "narrator",
-      "text": "That costs O(N) RAM. In a billion nodes, your memory explodes.",
-      "start_ms": 8148,
-      "end_ms": 14340,
-      "duration_ms": 6192,
-      "start_frame": 244,
-      "end_frame": 430,
+      "text": "That costs O(N) RAM. In a billion nodes, memory crashes!",
+      "start_ms": 7424,
+      "end_ms": 13136,
+      "duration_ms": 5712,
+      "start_frame": 223,
+      "end_frame": 394,
       "cues": [
         {
           "phrase": "costs O(N) RAM",
           "cue": "ram_warning",
-          "frame": 290
+          "frame": 266
         },
         {
-          "phrase": "memory explodes",
-          "cue": "ram_explode",
-          "frame": 384
+          "phrase": "memory crashes",
+          "cue": "ram_crash",
+          "frame": 351
         }
       ],
       "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c03_memory_trap.wav"
     },
     {
-      "id": "c04_two_pointers",
+      "id": "c04_tortoise_hare",
       "speaker": "narrator",
-      "text": "Use Floyd's trick: two pointers starting together.",
-      "start_ms": 14440,
-      "end_ms": 18088,
-      "duration_ms": 3648,
-      "start_frame": 433,
-      "end_frame": 543,
-      "cues": [
-        {
-          "phrase": "Floyd's trick",
-          "cue": "floyd_title",
-          "frame": 466
-        },
-        {
-          "phrase": "two pointers",
-          "cue": "spawn_pointers",
-          "frame": 515
-        }
-      ],
-      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c04_two_pointers.wav"
-    },
-    {
-      "id": "c05_tortoise_hare",
-      "speaker": "narrator",
-      "text": "The slow tortoise moves 1 step. The fast hare moves 2 steps.",
-      "start_ms": 18168,
-      "end_ms": 23688,
-      "duration_ms": 5520,
-      "start_frame": 545,
-      "end_frame": 711,
+      "text": "Use Floyd's trick: slow tortoise moves 1 step, fast hare moves 2 steps.",
+      "start_ms": 13176,
+      "end_ms": 18648,
+      "duration_ms": 5472,
+      "start_frame": 395,
+      "end_frame": 559,
       "cues": [
         {
           "phrase": "slow tortoise",
-          "cue": "tortoise_one",
-          "frame": 587
+          "cue": "tortoise_spawn",
+          "frame": 452
         },
         {
           "phrase": "fast hare",
-          "cue": "hare_two",
-          "frame": 669
+          "cue": "hare_spawn",
+          "frame": 518
         }
       ],
-      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c05_tortoise_hare.wav"
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c04_tortoise_hare.wav"
     },
     {
-      "id": "c06_chase_collision",
+      "id": "c05_chase_collision",
       "speaker": "narrator",
       "text": "Inside the loop, the hare gains 1 node every turn until BAM! They collide.",
-      "start_ms": 23778,
-      "end_ms": 30090,
-      "duration_ms": 6312,
-      "start_frame": 713,
-      "end_frame": 903,
+      "start_ms": 18688,
+      "end_ms": 24616,
+      "duration_ms": 5928,
+      "start_frame": 561,
+      "end_frame": 738,
       "cues": [
         {
           "phrase": "gains 1 node",
           "cue": "relative_speed",
-          "frame": 770
+          "frame": 614
         },
         {
           "phrase": "They collide",
           "cue": "collision_slam",
-          "frame": 875
+          "frame": 711
         }
       ],
-      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c06_chase_collision.wav"
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c05_chase_collision.wav"
     },
     {
-      "id": "c07_payoff",
-      "speaker": "narrator",
-      "text": "If they meet, cycle confirmed. Zero extra memory, O(N) time!",
-      "start_ms": 30190,
-      "end_ms": 36766,
-      "duration_ms": 6576,
-      "start_frame": 906,
-      "end_frame": 1103,
+      "id": "c06_nemi_payoff",
+      "speaker": "nemi",
+      "text": "Zero extra RAM and O(N) time!",
+      "start_ms": 24656,
+      "end_ms": 28088,
+      "duration_ms": 3432,
+      "start_frame": 740,
+      "end_frame": 843,
       "cues": [
         {
-          "phrase": "cycle confirmed",
-          "cue": "cycle_verified",
-          "frame": 975
-        },
-        {
           "phrase": "O(N) time",
-          "cue": "complexity_badge",
-          "frame": 1064
+          "cue": "payoff_badge",
+          "frame": 812
         }
       ],
-      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c07_payoff.wav"
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/cycle_15/audio/blocks/c06_nemi_payoff.wav"
     }
   ],
   "subtitles": [
     {
       "start_frame": 0,
-      "end_frame": 24,
+      "end_frame": 22,
       "text": "How do you detect",
       "words": [
         {
@@ -177,723 +149,625 @@
         {
           "word": "do",
           "start_s": 0.3,
-          "end_s": 0.42,
+          "end_s": 0.4,
           "start_frame": 9,
-          "end_frame": 13
+          "end_frame": 12
         },
         {
           "word": "you",
-          "start_s": 0.42,
-          "end_s": 0.52,
-          "start_frame": 13,
-          "end_frame": 16
+          "start_s": 0.4,
+          "end_s": 0.5,
+          "start_frame": 12,
+          "end_frame": 15
         },
         {
           "word": "detect",
-          "start_s": 0.52,
-          "end_s": 0.8,
-          "start_frame": 16,
-          "end_frame": 24
+          "start_s": 0.5,
+          "end_s": 0.74,
+          "start_frame": 15,
+          "end_frame": 22
         }
       ]
     },
     {
-      "start_frame": 24,
-      "end_frame": 51,
+      "start_frame": 22,
+      "end_frame": 48,
       "text": "an infinite loop in",
       "words": [
         {
           "word": "an",
-          "start_s": 0.8,
-          "end_s": 1.02,
-          "start_frame": 24,
-          "end_frame": 31
+          "start_s": 0.74,
+          "end_s": 0.96,
+          "start_frame": 22,
+          "end_frame": 29
         },
         {
           "word": "infinite",
-          "start_s": 1.02,
-          "end_s": 1.32,
-          "start_frame": 31,
-          "end_frame": 40
+          "start_s": 0.96,
+          "end_s": 1.24,
+          "start_frame": 29,
+          "end_frame": 37
         },
         {
           "word": "loop",
-          "start_s": 1.32,
-          "end_s": 1.52,
-          "start_frame": 40,
-          "end_frame": 46
+          "start_s": 1.24,
+          "end_s": 1.44,
+          "start_frame": 37,
+          "end_frame": 43
         },
         {
           "word": "in",
-          "start_s": 1.52,
-          "end_s": 1.7,
-          "start_frame": 46,
-          "end_frame": 51
+          "start_s": 1.44,
+          "end_s": 1.6,
+          "start_frame": 43,
+          "end_frame": 48
         }
       ]
     },
     {
-      "start_frame": 51,
-      "end_frame": 75,
+      "start_frame": 48,
+      "end_frame": 71,
       "text": "a linked list without",
       "words": [
         {
           "word": "a",
-          "start_s": 1.7,
-          "end_s": 1.8,
-          "start_frame": 51,
-          "end_frame": 54
+          "start_s": 1.6,
+          "end_s": 1.7,
+          "start_frame": 48,
+          "end_frame": 51
         },
         {
           "word": "linked",
-          "start_s": 1.8,
-          "end_s": 1.98,
-          "start_frame": 54,
-          "end_frame": 59
+          "start_s": 1.7,
+          "end_s": 1.86,
+          "start_frame": 51,
+          "end_frame": 56
         },
         {
           "word": "list",
-          "start_s": 1.98,
-          "end_s": 2.24,
-          "start_frame": 59,
-          "end_frame": 67
+          "start_s": 1.86,
+          "end_s": 2.1,
+          "start_frame": 56,
+          "end_frame": 63
         },
         {
           "word": "without",
-          "start_s": 2.24,
-          "end_s": 2.5,
-          "start_frame": 67,
-          "end_frame": 75
+          "start_s": 2.1,
+          "end_s": 2.38,
+          "start_frame": 63,
+          "end_frame": 71
         }
       ]
     },
     {
-      "start_frame": 75,
-      "end_frame": 112,
-      "text": "using any extra memory?",
+      "start_frame": 71,
+      "end_frame": 98,
+      "text": "using extra memory?",
       "words": [
         {
           "word": "using",
-          "start_s": 2.5,
-          "end_s": 2.84,
-          "start_frame": 75,
-          "end_frame": 85
-        },
-        {
-          "word": "any",
-          "start_s": 2.84,
-          "end_s": 3.14,
-          "start_frame": 85,
-          "end_frame": 94
+          "start_s": 2.38,
+          "end_s": 2.68,
+          "start_frame": 71,
+          "end_frame": 80
         },
         {
           "word": "extra",
-          "start_s": 3.14,
-          "end_s": 3.4,
-          "start_frame": 94,
-          "end_frame": 102
+          "start_s": 2.68,
+          "end_s": 3.0,
+          "start_frame": 80,
+          "end_frame": 90
         },
         {
           "word": "memory?",
-          "start_s": 3.4,
-          "end_s": 3.74,
-          "start_frame": 102,
-          "end_frame": 112
+          "start_s": 3.0,
+          "end_s": 3.28,
+          "start_frame": 90,
+          "end_frame": 98
         }
       ]
     },
     {
-      "start_frame": 137,
-      "end_frame": 173,
+      "start_frame": 125,
+      "end_frame": 156,
       "text": "Can't we just store",
       "words": [
         {
           "word": "Can't",
-          "start_s": 4.58,
-          "end_s": 5.18,
-          "start_frame": 137,
-          "end_frame": 155
+          "start_s": 4.16,
+          "end_s": 4.6,
+          "start_frame": 125,
+          "end_frame": 138
         },
         {
           "word": "we",
-          "start_s": 5.18,
-          "end_s": 5.26,
-          "start_frame": 155,
-          "end_frame": 158
+          "start_s": 4.6,
+          "end_s": 4.68,
+          "start_frame": 138,
+          "end_frame": 140
         },
         {
           "word": "just",
-          "start_s": 5.26,
-          "end_s": 5.46,
-          "start_frame": 158,
-          "end_frame": 164
+          "start_s": 4.68,
+          "end_s": 4.86,
+          "start_frame": 140,
+          "end_frame": 146
         },
         {
           "word": "store",
-          "start_s": 5.46,
-          "end_s": 5.78,
-          "start_frame": 164,
-          "end_frame": 173
+          "start_s": 4.86,
+          "end_s": 5.2,
+          "start_frame": 146,
+          "end_frame": 156
         }
       ]
     },
     {
-      "start_frame": 173,
-      "end_frame": 203,
-      "text": "visitor nodes in a",
+      "start_frame": 156,
+      "end_frame": 184,
+      "text": "visited nodes in a",
       "words": [
         {
-          "word": "visitor",
-          "start_s": 5.78,
-          "end_s": 6.14,
-          "start_frame": 173,
-          "end_frame": 184
+          "word": "visited",
+          "start_s": 5.2,
+          "end_s": 5.54,
+          "start_frame": 156,
+          "end_frame": 166
         },
         {
           "word": "nodes",
-          "start_s": 6.14,
-          "end_s": 6.44,
-          "start_frame": 184,
-          "end_frame": 193
+          "start_s": 5.54,
+          "end_s": 5.82,
+          "start_frame": 166,
+          "end_frame": 175
         },
         {
           "word": "in",
-          "start_s": 6.44,
-          "end_s": 6.66,
-          "start_frame": 193,
-          "end_frame": 200
+          "start_s": 5.82,
+          "end_s": 6.04,
+          "start_frame": 175,
+          "end_frame": 181
         },
         {
           "word": "a",
-          "start_s": 6.66,
-          "end_s": 6.78,
-          "start_frame": 200,
-          "end_frame": 203
+          "start_s": 6.04,
+          "end_s": 6.14,
+          "start_frame": 181,
+          "end_frame": 184
         }
       ]
     },
     {
-      "start_frame": 203,
-      "end_frame": 218,
+      "start_frame": 184,
+      "end_frame": 199,
       "text": "hash set?",
       "words": [
         {
           "word": "hash",
-          "start_s": 6.78,
-          "end_s": 7.0,
-          "start_frame": 203,
-          "end_frame": 210
+          "start_s": 6.14,
+          "end_s": 6.36,
+          "start_frame": 184,
+          "end_frame": 191
         },
         {
           "word": "set?",
-          "start_s": 7.0,
-          "end_s": 7.26,
-          "start_frame": 210,
-          "end_frame": 218
+          "start_s": 6.36,
+          "end_s": 6.62,
+          "start_frame": 191,
+          "end_frame": 199
         }
       ]
     },
     {
-      "start_frame": 241,
-      "end_frame": 291,
-      "text": "That costs so, and",
+      "start_frame": 221,
+      "end_frame": 266,
+      "text": "That costs O, N,",
       "words": [
         {
           "word": "That",
-          "start_s": 8.02,
-          "end_s": 8.5,
-          "start_frame": 241,
-          "end_frame": 255
+          "start_s": 7.36,
+          "end_s": 7.76,
+          "start_frame": 221,
+          "end_frame": 233
         },
         {
           "word": "costs",
-          "start_s": 8.5,
-          "end_s": 8.78,
-          "start_frame": 255,
-          "end_frame": 263
+          "start_s": 7.76,
+          "end_s": 8.02,
+          "start_frame": 233,
+          "end_frame": 241
         },
         {
-          "word": "so,",
-          "start_s": 8.78,
-          "end_s": 9.12,
-          "start_frame": 263,
-          "end_frame": 274
+          "word": "O,",
+          "start_s": 8.02,
+          "end_s": 8.36,
+          "start_frame": 241,
+          "end_frame": 251
         },
         {
-          "word": "and",
-          "start_s": 9.48,
-          "end_s": 9.7,
-          "start_frame": 284,
-          "end_frame": 291
+          "word": "N,",
+          "start_s": 8.7,
+          "end_s": 8.88,
+          "start_frame": 261,
+          "end_frame": 266
         }
       ]
     },
     {
-      "start_frame": 291,
-      "end_frame": 349,
-      "text": "RAM. In a billion",
+      "start_frame": 273,
+      "end_frame": 278,
+      "text": "RAM.",
       "words": [
         {
           "word": "RAM.",
-          "start_s": 9.7,
-          "end_s": 10.1,
-          "start_frame": 291,
-          "end_frame": 303
-        },
+          "start_s": 9.1,
+          "end_s": 9.26,
+          "start_frame": 273,
+          "end_frame": 278
+        }
+      ]
+    },
+    {
+      "start_frame": 300,
+      "end_frame": 333,
+      "text": "In a billion nodes,",
+      "words": [
         {
           "word": "In",
-          "start_s": 11.12,
-          "end_s": 11.26,
-          "start_frame": 334,
-          "end_frame": 338
+          "start_s": 10.0,
+          "end_s": 10.36,
+          "start_frame": 300,
+          "end_frame": 311
         },
         {
           "word": "a",
-          "start_s": 11.26,
-          "end_s": 11.34,
-          "start_frame": 338,
-          "end_frame": 340
+          "start_s": 10.36,
+          "end_s": 10.42,
+          "start_frame": 311,
+          "end_frame": 313
         },
         {
           "word": "billion",
-          "start_s": 11.34,
-          "end_s": 11.64,
-          "start_frame": 340,
-          "end_frame": 349
-        }
-      ]
-    },
-    {
-      "start_frame": 349,
-      "end_frame": 395,
-      "text": "nodes, your memory explodes.",
-      "words": [
+          "start_s": 10.42,
+          "end_s": 10.68,
+          "start_frame": 313,
+          "end_frame": 320
+        },
         {
           "word": "nodes,",
-          "start_s": 11.64,
-          "end_s": 12.08,
-          "start_frame": 349,
-          "end_frame": 362
-        },
-        {
-          "word": "your",
-          "start_s": 12.36,
-          "end_s": 12.44,
-          "start_frame": 371,
-          "end_frame": 373
-        },
-        {
-          "word": "memory",
-          "start_s": 12.44,
-          "end_s": 12.7,
-          "start_frame": 373,
-          "end_frame": 381
-        },
-        {
-          "word": "explodes.",
-          "start_s": 12.7,
-          "end_s": 13.18,
-          "start_frame": 381,
-          "end_frame": 395
+          "start_s": 10.68,
+          "end_s": 11.1,
+          "start_frame": 320,
+          "end_frame": 333
         }
       ]
     },
     {
-      "start_frame": 436,
-      "end_frame": 481,
-      "text": "Use Floyd's trick, two",
+      "start_frame": 343,
+      "end_frame": 364,
+      "text": "memory crashes.",
+      "words": [
+        {
+          "word": "memory",
+          "start_s": 11.44,
+          "end_s": 11.66,
+          "start_frame": 343,
+          "end_frame": 350
+        },
+        {
+          "word": "crashes.",
+          "start_s": 11.66,
+          "end_s": 12.14,
+          "start_frame": 350,
+          "end_frame": 364
+        }
+      ]
+    },
+    {
+      "start_frame": 393,
+      "end_frame": 444,
+      "text": "Use Floyd's trick, slow",
       "words": [
         {
           "word": "Use",
-          "start_s": 14.52,
-          "end_s": 14.84,
-          "start_frame": 436,
-          "end_frame": 445
+          "start_s": 13.1,
+          "end_s": 13.6,
+          "start_frame": 393,
+          "end_frame": 408
         },
         {
           "word": "Floyd's",
-          "start_s": 14.84,
-          "end_s": 15.32,
-          "start_frame": 445,
-          "end_frame": 460
+          "start_s": 13.6,
+          "end_s": 14.02,
+          "start_frame": 408,
+          "end_frame": 421
         },
         {
           "word": "trick,",
-          "start_s": 15.32,
-          "end_s": 15.46,
-          "start_frame": 460,
-          "end_frame": 464
-        },
-        {
-          "word": "two",
-          "start_s": 15.86,
-          "end_s": 16.02,
-          "start_frame": 476,
-          "end_frame": 481
-        }
-      ]
-    },
-    {
-      "start_frame": 481,
-      "end_frame": 515,
-      "text": "pointers starting together.",
-      "words": [
-        {
-          "word": "pointers",
-          "start_s": 16.02,
-          "end_s": 16.34,
-          "start_frame": 481,
-          "end_frame": 490
-        },
-        {
-          "word": "starting",
-          "start_s": 16.34,
-          "end_s": 16.74,
-          "start_frame": 490,
-          "end_frame": 502
-        },
-        {
-          "word": "together.",
-          "start_s": 16.74,
-          "end_s": 17.16,
-          "start_frame": 502,
-          "end_frame": 515
-        }
-      ]
-    },
-    {
-      "start_frame": 543,
-      "end_frame": 583,
-      "text": "The slow tortoise moves",
-      "words": [
-        {
-          "word": "The",
-          "start_s": 18.1,
-          "end_s": 18.44,
-          "start_frame": 543,
-          "end_frame": 553
+          "start_s": 14.02,
+          "end_s": 14.16,
+          "start_frame": 421,
+          "end_frame": 425
         },
         {
           "word": "slow",
-          "start_s": 18.44,
-          "end_s": 18.72,
-          "start_frame": 553,
-          "end_frame": 562
-        },
+          "start_s": 14.54,
+          "end_s": 14.8,
+          "start_frame": 436,
+          "end_frame": 444
+        }
+      ]
+    },
+    {
+      "start_frame": 444,
+      "end_frame": 482,
+      "text": "tortoise moves one step,",
+      "words": [
         {
           "word": "tortoise",
-          "start_s": 18.72,
-          "end_s": 19.16,
-          "start_frame": 562,
-          "end_frame": 575
+          "start_s": 14.8,
+          "end_s": 15.26,
+          "start_frame": 444,
+          "end_frame": 458
         },
         {
           "word": "moves",
-          "start_s": 19.16,
-          "end_s": 19.44,
-          "start_frame": 575,
-          "end_frame": 583
-        }
-      ]
-    },
-    {
-      "start_frame": 583,
-      "end_frame": 643,
-      "text": "one step. The fast",
-      "words": [
+          "start_s": 15.26,
+          "end_s": 15.46,
+          "start_frame": 458,
+          "end_frame": 464
+        },
         {
           "word": "one",
-          "start_s": 19.44,
-          "end_s": 19.76,
-          "start_frame": 583,
-          "end_frame": 593
+          "start_s": 15.46,
+          "end_s": 15.76,
+          "start_frame": 464,
+          "end_frame": 473
         },
         {
-          "word": "step.",
-          "start_s": 19.76,
-          "end_s": 20.08,
-          "start_frame": 593,
-          "end_frame": 602
-        },
-        {
-          "word": "The",
-          "start_s": 20.86,
-          "end_s": 21.18,
-          "start_frame": 626,
-          "end_frame": 635
-        },
-        {
-          "word": "fast",
-          "start_s": 21.18,
-          "end_s": 21.44,
-          "start_frame": 635,
-          "end_frame": 643
+          "word": "step,",
+          "start_s": 15.76,
+          "end_s": 16.08,
+          "start_frame": 473,
+          "end_frame": 482
         }
       ]
     },
     {
-      "start_frame": 643,
-      "end_frame": 682,
-      "text": "hair moves two steps.",
+      "start_frame": 494,
+      "end_frame": 521,
+      "text": "fast hare moves two",
       "words": [
         {
-          "word": "hair",
-          "start_s": 21.44,
-          "end_s": 21.7,
-          "start_frame": 643,
-          "end_frame": 651
+          "word": "fast",
+          "start_s": 16.46,
+          "end_s": 16.64,
+          "start_frame": 494,
+          "end_frame": 499
+        },
+        {
+          "word": "hare",
+          "start_s": 16.64,
+          "end_s": 16.84,
+          "start_frame": 499,
+          "end_frame": 505
         },
         {
           "word": "moves",
-          "start_s": 21.7,
-          "end_s": 21.98,
-          "start_frame": 651,
-          "end_frame": 659
+          "start_s": 16.84,
+          "end_s": 17.06,
+          "start_frame": 505,
+          "end_frame": 512
         },
         {
           "word": "two",
-          "start_s": 21.98,
-          "end_s": 22.3,
-          "start_frame": 659,
-          "end_frame": 669
-        },
-        {
-          "word": "steps.",
-          "start_s": 22.3,
-          "end_s": 22.74,
-          "start_frame": 669,
-          "end_frame": 682
+          "start_s": 17.06,
+          "end_s": 17.36,
+          "start_frame": 512,
+          "end_frame": 521
         }
       ]
     },
     {
-      "start_frame": 713,
-      "end_frame": 754,
+      "start_frame": 521,
+      "end_frame": 533,
+      "text": "steps.",
+      "words": [
+        {
+          "word": "steps.",
+          "start_s": 17.36,
+          "end_s": 17.76,
+          "start_frame": 521,
+          "end_frame": 533
+        }
+      ]
+    },
+    {
+      "start_frame": 562,
+      "end_frame": 599,
       "text": "Inside the loop, the",
       "words": [
         {
           "word": "Inside",
-          "start_s": 23.76,
-          "end_s": 24.28,
-          "start_frame": 713,
-          "end_frame": 728
+          "start_s": 18.74,
+          "end_s": 19.14,
+          "start_frame": 562,
+          "end_frame": 574
         },
         {
           "word": "the",
-          "start_s": 24.28,
-          "end_s": 24.48,
-          "start_frame": 728,
-          "end_frame": 734
+          "start_s": 19.14,
+          "end_s": 19.36,
+          "start_frame": 574,
+          "end_frame": 581
         },
         {
           "word": "loop,",
-          "start_s": 24.48,
-          "end_s": 24.68,
-          "start_frame": 734,
-          "end_frame": 740
+          "start_s": 19.36,
+          "end_s": 19.54,
+          "start_frame": 581,
+          "end_frame": 586
         },
         {
           "word": "the",
-          "start_s": 25.04,
-          "end_s": 25.14,
-          "start_frame": 751,
-          "end_frame": 754
+          "start_s": 19.86,
+          "end_s": 19.98,
+          "start_frame": 596,
+          "end_frame": 599
         }
       ]
     },
     {
-      "start_frame": 754,
-      "end_frame": 786,
+      "start_frame": 599,
+      "end_frame": 629,
       "text": "hair gains one node",
       "words": [
         {
           "word": "hair",
-          "start_s": 25.14,
-          "end_s": 25.34,
-          "start_frame": 754,
-          "end_frame": 760
+          "start_s": 19.98,
+          "end_s": 20.16,
+          "start_frame": 599,
+          "end_frame": 605
         },
         {
           "word": "gains",
-          "start_s": 25.34,
-          "end_s": 25.68,
-          "start_frame": 760,
-          "end_frame": 770
+          "start_s": 20.16,
+          "end_s": 20.46,
+          "start_frame": 605,
+          "end_frame": 614
         },
         {
           "word": "one",
-          "start_s": 25.68,
-          "end_s": 25.94,
-          "start_frame": 770,
-          "end_frame": 778
+          "start_s": 20.46,
+          "end_s": 20.72,
+          "start_frame": 614,
+          "end_frame": 622
         },
         {
           "word": "node",
-          "start_s": 25.94,
-          "end_s": 26.2,
-          "start_frame": 778,
-          "end_frame": 786
+          "start_s": 20.72,
+          "end_s": 20.96,
+          "start_frame": 622,
+          "end_frame": 629
         }
       ]
     },
     {
-      "start_frame": 786,
-      "end_frame": 826,
+      "start_frame": 629,
+      "end_frame": 667,
       "text": "every turn until BAM.",
       "words": [
         {
           "word": "every",
-          "start_s": 26.2,
-          "end_s": 26.54,
-          "start_frame": 786,
-          "end_frame": 796
+          "start_s": 20.96,
+          "end_s": 21.28,
+          "start_frame": 629,
+          "end_frame": 638
         },
         {
           "word": "turn",
-          "start_s": 26.54,
-          "end_s": 26.8,
-          "start_frame": 796,
-          "end_frame": 804
+          "start_s": 21.28,
+          "end_s": 21.54,
+          "start_frame": 638,
+          "end_frame": 646
         },
         {
           "word": "until",
-          "start_s": 26.8,
-          "end_s": 27.12,
-          "start_frame": 804,
-          "end_frame": 814
+          "start_s": 21.54,
+          "end_s": 21.82,
+          "start_frame": 646,
+          "end_frame": 655
         },
         {
           "word": "BAM.",
-          "start_s": 27.12,
-          "end_s": 27.52,
-          "start_frame": 814,
-          "end_frame": 826
+          "start_s": 21.82,
+          "end_s": 22.22,
+          "start_frame": 655,
+          "end_frame": 667
         }
       ]
     },
     {
-      "start_frame": 850,
-      "end_frame": 870,
+      "start_frame": 691,
+      "end_frame": 708,
       "text": "They collide.",
       "words": [
         {
           "word": "They",
-          "start_s": 28.34,
-          "end_s": 28.68,
-          "start_frame": 850,
-          "end_frame": 860
+          "start_s": 23.02,
+          "end_s": 23.3,
+          "start_frame": 691,
+          "end_frame": 699
         },
         {
           "word": "collide.",
-          "start_s": 28.68,
-          "end_s": 29.0,
-          "start_frame": 860,
-          "end_frame": 870
+          "start_s": 23.3,
+          "end_s": 23.6,
+          "start_frame": 699,
+          "end_frame": 708
         }
       ]
     },
     {
-      "start_frame": 900,
-      "end_frame": 946,
-      "text": "If they meet, cycle",
-      "words": [
-        {
-          "word": "If",
-          "start_s": 30.0,
-          "end_s": 30.52,
-          "start_frame": 900,
-          "end_frame": 916
-        },
-        {
-          "word": "they",
-          "start_s": 30.52,
-          "end_s": 30.66,
-          "start_frame": 916,
-          "end_frame": 920
-        },
-        {
-          "word": "meet,",
-          "start_s": 30.66,
-          "end_s": 30.94,
-          "start_frame": 920,
-          "end_frame": 928
-        },
-        {
-          "word": "cycle",
-          "start_s": 31.22,
-          "end_s": 31.52,
-          "start_frame": 937,
-          "end_frame": 946
-        }
-      ]
-    },
-    {
-      "start_frame": 946,
-      "end_frame": 965,
-      "text": "confirmed.",
-      "words": [
-        {
-          "word": "confirmed.",
-          "start_s": 31.52,
-          "end_s": 32.16,
-          "start_frame": 946,
-          "end_frame": 965
-        }
-      ]
-    },
-    {
-      "start_frame": 987,
-      "end_frame": 1041,
-      "text": "Zero extra memory, oh,",
+      "start_frame": 708,
+      "end_frame": 784,
+      "text": "Zero extra RAM and",
       "words": [
         {
           "word": "Zero",
-          "start_s": 32.9,
-          "end_s": 33.4,
-          "start_frame": 987,
-          "end_frame": 1002
+          "start_s": 23.6,
+          "end_s": 25.1,
+          "start_frame": 708,
+          "end_frame": 753
         },
         {
           "word": "extra",
-          "start_s": 33.4,
-          "end_s": 33.82,
-          "start_frame": 1002,
-          "end_frame": 1015
+          "start_s": 25.1,
+          "end_s": 25.56,
+          "start_frame": 753,
+          "end_frame": 767
         },
         {
-          "word": "memory,",
-          "start_s": 33.82,
-          "end_s": 34.14,
-          "start_frame": 1015,
-          "end_frame": 1024
+          "word": "RAM",
+          "start_s": 25.56,
+          "end_s": 25.94,
+          "start_frame": 767,
+          "end_frame": 778
         },
         {
-          "word": "oh,",
-          "start_s": 34.52,
-          "end_s": 34.7,
-          "start_frame": 1036,
-          "end_frame": 1041
+          "word": "and",
+          "start_s": 25.94,
+          "end_s": 26.14,
+          "start_frame": 778,
+          "end_frame": 784
         }
       ]
     },
     {
-      "start_frame": 1052,
-      "end_frame": 1075,
-      "text": "and time.",
+      "start_frame": 784,
+      "end_frame": 819,
+      "text": "O, and time.",
       "words": [
         {
+          "word": "O,",
+          "start_s": 26.14,
+          "end_s": 26.36,
+          "start_frame": 784,
+          "end_frame": 791
+        },
+        {
           "word": "and",
-          "start_s": 35.08,
-          "end_s": 35.32,
-          "start_frame": 1052,
-          "end_frame": 1060
+          "start_s": 26.64,
+          "end_s": 26.8,
+          "start_frame": 799,
+          "end_frame": 804
         },
         {
           "word": "time.",
-          "start_s": 35.32,
-          "end_s": 35.82,
-          "start_frame": 1060,
-          "end_frame": 1075
+          "start_s": 26.8,
+          "end_s": 27.3,
+          "start_frame": 804,
+          "end_frame": 819
         }
       ]
     }
@@ -909,569 +783,485 @@
     {
       "word": "do",
       "start_s": 0.3,
-      "end_s": 0.42,
+      "end_s": 0.4,
       "start_frame": 9,
-      "end_frame": 13
+      "end_frame": 12
     },
     {
       "word": "you",
-      "start_s": 0.42,
-      "end_s": 0.52,
-      "start_frame": 13,
-      "end_frame": 16
+      "start_s": 0.4,
+      "end_s": 0.5,
+      "start_frame": 12,
+      "end_frame": 15
     },
     {
       "word": "detect",
-      "start_s": 0.52,
-      "end_s": 0.8,
-      "start_frame": 16,
-      "end_frame": 24
+      "start_s": 0.5,
+      "end_s": 0.74,
+      "start_frame": 15,
+      "end_frame": 22
     },
     {
       "word": "an",
-      "start_s": 0.8,
-      "end_s": 1.02,
-      "start_frame": 24,
-      "end_frame": 31
+      "start_s": 0.74,
+      "end_s": 0.96,
+      "start_frame": 22,
+      "end_frame": 29
     },
     {
       "word": "infinite",
-      "start_s": 1.02,
-      "end_s": 1.32,
-      "start_frame": 31,
-      "end_frame": 40
+      "start_s": 0.96,
+      "end_s": 1.24,
+      "start_frame": 29,
+      "end_frame": 37
     },
     {
       "word": "loop",
-      "start_s": 1.32,
-      "end_s": 1.52,
-      "start_frame": 40,
-      "end_frame": 46
+      "start_s": 1.24,
+      "end_s": 1.44,
+      "start_frame": 37,
+      "end_frame": 43
     },
     {
       "word": "in",
-      "start_s": 1.52,
+      "start_s": 1.44,
+      "end_s": 1.6,
+      "start_frame": 43,
+      "end_frame": 48
+    },
+    {
+      "word": "a",
+      "start_s": 1.6,
       "end_s": 1.7,
-      "start_frame": 46,
+      "start_frame": 48,
       "end_frame": 51
     },
     {
-      "word": "a",
-      "start_s": 1.7,
-      "end_s": 1.8,
-      "start_frame": 51,
-      "end_frame": 54
-    },
-    {
       "word": "linked",
-      "start_s": 1.8,
-      "end_s": 1.98,
-      "start_frame": 54,
-      "end_frame": 59
+      "start_s": 1.7,
+      "end_s": 1.86,
+      "start_frame": 51,
+      "end_frame": 56
     },
     {
       "word": "list",
-      "start_s": 1.98,
-      "end_s": 2.24,
-      "start_frame": 59,
-      "end_frame": 67
+      "start_s": 1.86,
+      "end_s": 2.1,
+      "start_frame": 56,
+      "end_frame": 63
     },
     {
       "word": "without",
-      "start_s": 2.24,
-      "end_s": 2.5,
-      "start_frame": 67,
-      "end_frame": 75
+      "start_s": 2.1,
+      "end_s": 2.38,
+      "start_frame": 63,
+      "end_frame": 71
     },
     {
       "word": "using",
-      "start_s": 2.5,
-      "end_s": 2.84,
-      "start_frame": 75,
-      "end_frame": 85
-    },
-    {
-      "word": "any",
-      "start_s": 2.84,
-      "end_s": 3.14,
-      "start_frame": 85,
-      "end_frame": 94
+      "start_s": 2.38,
+      "end_s": 2.68,
+      "start_frame": 71,
+      "end_frame": 80
     },
     {
       "word": "extra",
-      "start_s": 3.14,
-      "end_s": 3.4,
-      "start_frame": 94,
-      "end_frame": 102
+      "start_s": 2.68,
+      "end_s": 3.0,
+      "start_frame": 80,
+      "end_frame": 90
     },
     {
       "word": "memory?",
-      "start_s": 3.4,
-      "end_s": 3.74,
-      "start_frame": 102,
-      "end_frame": 112
+      "start_s": 3.0,
+      "end_s": 3.28,
+      "start_frame": 90,
+      "end_frame": 98
     },
     {
       "word": "Can't",
-      "start_s": 4.58,
-      "end_s": 5.18,
-      "start_frame": 137,
-      "end_frame": 155
+      "start_s": 4.16,
+      "end_s": 4.6,
+      "start_frame": 125,
+      "end_frame": 138
     },
     {
       "word": "we",
-      "start_s": 5.18,
-      "end_s": 5.26,
-      "start_frame": 155,
-      "end_frame": 158
+      "start_s": 4.6,
+      "end_s": 4.68,
+      "start_frame": 138,
+      "end_frame": 140
     },
     {
       "word": "just",
-      "start_s": 5.26,
-      "end_s": 5.46,
-      "start_frame": 158,
-      "end_frame": 164
+      "start_s": 4.68,
+      "end_s": 4.86,
+      "start_frame": 140,
+      "end_frame": 146
     },
     {
       "word": "store",
-      "start_s": 5.46,
-      "end_s": 5.78,
-      "start_frame": 164,
-      "end_frame": 173
+      "start_s": 4.86,
+      "end_s": 5.2,
+      "start_frame": 146,
+      "end_frame": 156
     },
     {
-      "word": "visitor",
-      "start_s": 5.78,
-      "end_s": 6.14,
-      "start_frame": 173,
-      "end_frame": 184
+      "word": "visited",
+      "start_s": 5.2,
+      "end_s": 5.54,
+      "start_frame": 156,
+      "end_frame": 166
     },
     {
       "word": "nodes",
-      "start_s": 6.14,
-      "end_s": 6.44,
-      "start_frame": 184,
-      "end_frame": 193
+      "start_s": 5.54,
+      "end_s": 5.82,
+      "start_frame": 166,
+      "end_frame": 175
     },
     {
       "word": "in",
-      "start_s": 6.44,
-      "end_s": 6.66,
-      "start_frame": 193,
-      "end_frame": 200
+      "start_s": 5.82,
+      "end_s": 6.04,
+      "start_frame": 175,
+      "end_frame": 181
     },
     {
       "word": "a",
-      "start_s": 6.66,
-      "end_s": 6.78,
-      "start_frame": 200,
-      "end_frame": 203
+      "start_s": 6.04,
+      "end_s": 6.14,
+      "start_frame": 181,
+      "end_frame": 184
     },
     {
       "word": "hash",
-      "start_s": 6.78,
-      "end_s": 7.0,
-      "start_frame": 203,
-      "end_frame": 210
+      "start_s": 6.14,
+      "end_s": 6.36,
+      "start_frame": 184,
+      "end_frame": 191
     },
     {
       "word": "set?",
-      "start_s": 7.0,
-      "end_s": 7.26,
-      "start_frame": 210,
-      "end_frame": 218
+      "start_s": 6.36,
+      "end_s": 6.62,
+      "start_frame": 191,
+      "end_frame": 199
     },
     {
       "word": "That",
-      "start_s": 8.02,
-      "end_s": 8.5,
-      "start_frame": 241,
-      "end_frame": 255
+      "start_s": 7.36,
+      "end_s": 7.76,
+      "start_frame": 221,
+      "end_frame": 233
     },
     {
       "word": "costs",
-      "start_s": 8.5,
-      "end_s": 8.78,
-      "start_frame": 255,
-      "end_frame": 263
+      "start_s": 7.76,
+      "end_s": 8.02,
+      "start_frame": 233,
+      "end_frame": 241
     },
     {
-      "word": "so,",
-      "start_s": 8.78,
-      "end_s": 9.12,
-      "start_frame": 263,
-      "end_frame": 274
+      "word": "O,",
+      "start_s": 8.02,
+      "end_s": 8.36,
+      "start_frame": 241,
+      "end_frame": 251
     },
     {
-      "word": "and",
-      "start_s": 9.48,
-      "end_s": 9.7,
-      "start_frame": 284,
-      "end_frame": 291
+      "word": "N,",
+      "start_s": 8.7,
+      "end_s": 8.88,
+      "start_frame": 261,
+      "end_frame": 266
     },
     {
       "word": "RAM.",
-      "start_s": 9.7,
-      "end_s": 10.1,
-      "start_frame": 291,
-      "end_frame": 303
+      "start_s": 9.1,
+      "end_s": 9.26,
+      "start_frame": 273,
+      "end_frame": 278
     },
     {
       "word": "In",
-      "start_s": 11.12,
-      "end_s": 11.26,
-      "start_frame": 334,
-      "end_frame": 338
+      "start_s": 10.0,
+      "end_s": 10.36,
+      "start_frame": 300,
+      "end_frame": 311
     },
     {
       "word": "a",
-      "start_s": 11.26,
-      "end_s": 11.34,
-      "start_frame": 338,
-      "end_frame": 340
+      "start_s": 10.36,
+      "end_s": 10.42,
+      "start_frame": 311,
+      "end_frame": 313
     },
     {
       "word": "billion",
-      "start_s": 11.34,
-      "end_s": 11.64,
-      "start_frame": 340,
-      "end_frame": 349
+      "start_s": 10.42,
+      "end_s": 10.68,
+      "start_frame": 313,
+      "end_frame": 320
     },
     {
       "word": "nodes,",
-      "start_s": 11.64,
-      "end_s": 12.08,
-      "start_frame": 349,
-      "end_frame": 362
-    },
-    {
-      "word": "your",
-      "start_s": 12.36,
-      "end_s": 12.44,
-      "start_frame": 371,
-      "end_frame": 373
+      "start_s": 10.68,
+      "end_s": 11.1,
+      "start_frame": 320,
+      "end_frame": 333
     },
     {
       "word": "memory",
-      "start_s": 12.44,
-      "end_s": 12.7,
-      "start_frame": 373,
-      "end_frame": 381
+      "start_s": 11.44,
+      "end_s": 11.66,
+      "start_frame": 343,
+      "end_frame": 350
     },
     {
-      "word": "explodes.",
-      "start_s": 12.7,
-      "end_s": 13.18,
-      "start_frame": 381,
-      "end_frame": 395
+      "word": "crashes.",
+      "start_s": 11.66,
+      "end_s": 12.14,
+      "start_frame": 350,
+      "end_frame": 364
     },
     {
       "word": "Use",
-      "start_s": 14.52,
-      "end_s": 14.84,
-      "start_frame": 436,
-      "end_frame": 445
+      "start_s": 13.1,
+      "end_s": 13.6,
+      "start_frame": 393,
+      "end_frame": 408
     },
     {
       "word": "Floyd's",
-      "start_s": 14.84,
-      "end_s": 15.32,
-      "start_frame": 445,
-      "end_frame": 460
+      "start_s": 13.6,
+      "end_s": 14.02,
+      "start_frame": 408,
+      "end_frame": 421
     },
     {
       "word": "trick,",
-      "start_s": 15.32,
-      "end_s": 15.46,
-      "start_frame": 460,
-      "end_frame": 464
-    },
-    {
-      "word": "two",
-      "start_s": 15.86,
-      "end_s": 16.02,
-      "start_frame": 476,
-      "end_frame": 481
-    },
-    {
-      "word": "pointers",
-      "start_s": 16.02,
-      "end_s": 16.34,
-      "start_frame": 481,
-      "end_frame": 490
-    },
-    {
-      "word": "starting",
-      "start_s": 16.34,
-      "end_s": 16.74,
-      "start_frame": 490,
-      "end_frame": 502
-    },
-    {
-      "word": "together.",
-      "start_s": 16.74,
-      "end_s": 17.16,
-      "start_frame": 502,
-      "end_frame": 515
-    },
-    {
-      "word": "The",
-      "start_s": 18.1,
-      "end_s": 18.44,
-      "start_frame": 543,
-      "end_frame": 553
+      "start_s": 14.02,
+      "end_s": 14.16,
+      "start_frame": 421,
+      "end_frame": 425
     },
     {
       "word": "slow",
-      "start_s": 18.44,
-      "end_s": 18.72,
-      "start_frame": 553,
-      "end_frame": 562
+      "start_s": 14.54,
+      "end_s": 14.8,
+      "start_frame": 436,
+      "end_frame": 444
     },
     {
       "word": "tortoise",
-      "start_s": 18.72,
-      "end_s": 19.16,
-      "start_frame": 562,
-      "end_frame": 575
+      "start_s": 14.8,
+      "end_s": 15.26,
+      "start_frame": 444,
+      "end_frame": 458
     },
     {
       "word": "moves",
-      "start_s": 19.16,
-      "end_s": 19.44,
-      "start_frame": 575,
-      "end_frame": 583
+      "start_s": 15.26,
+      "end_s": 15.46,
+      "start_frame": 458,
+      "end_frame": 464
     },
     {
       "word": "one",
-      "start_s": 19.44,
-      "end_s": 19.76,
-      "start_frame": 583,
-      "end_frame": 593
+      "start_s": 15.46,
+      "end_s": 15.76,
+      "start_frame": 464,
+      "end_frame": 473
     },
     {
-      "word": "step.",
-      "start_s": 19.76,
-      "end_s": 20.08,
-      "start_frame": 593,
-      "end_frame": 602
-    },
-    {
-      "word": "The",
-      "start_s": 20.86,
-      "end_s": 21.18,
-      "start_frame": 626,
-      "end_frame": 635
+      "word": "step,",
+      "start_s": 15.76,
+      "end_s": 16.08,
+      "start_frame": 473,
+      "end_frame": 482
     },
     {
       "word": "fast",
-      "start_s": 21.18,
-      "end_s": 21.44,
-      "start_frame": 635,
-      "end_frame": 643
+      "start_s": 16.46,
+      "end_s": 16.64,
+      "start_frame": 494,
+      "end_frame": 499
     },
     {
       "word": "hair",
-      "start_s": 21.44,
-      "end_s": 21.7,
-      "start_frame": 643,
-      "end_frame": 651
+      "start_s": 16.64,
+      "end_s": 16.84,
+      "start_frame": 499,
+      "end_frame": 505
     },
     {
       "word": "moves",
-      "start_s": 21.7,
-      "end_s": 21.98,
-      "start_frame": 651,
-      "end_frame": 659
+      "start_s": 16.84,
+      "end_s": 17.06,
+      "start_frame": 505,
+      "end_frame": 512
     },
     {
       "word": "two",
-      "start_s": 21.98,
-      "end_s": 22.3,
-      "start_frame": 659,
-      "end_frame": 669
+      "start_s": 17.06,
+      "end_s": 17.36,
+      "start_frame": 512,
+      "end_frame": 521
     },
     {
       "word": "steps.",
-      "start_s": 22.3,
-      "end_s": 22.74,
-      "start_frame": 669,
-      "end_frame": 682
+      "start_s": 17.36,
+      "end_s": 17.76,
+      "start_frame": 521,
+      "end_frame": 533
     },
     {
       "word": "Inside",
-      "start_s": 23.76,
-      "end_s": 24.28,
-      "start_frame": 713,
-      "end_frame": 728
+      "start_s": 18.74,
+      "end_s": 19.14,
+      "start_frame": 562,
+      "end_frame": 574
     },
     {
       "word": "the",
-      "start_s": 24.28,
-      "end_s": 24.48,
-      "start_frame": 728,
-      "end_frame": 734
+      "start_s": 19.14,
+      "end_s": 19.36,
+      "start_frame": 574,
+      "end_frame": 581
     },
     {
       "word": "loop,",
-      "start_s": 24.48,
-      "end_s": 24.68,
-      "start_frame": 734,
-      "end_frame": 740
+      "start_s": 19.36,
+      "end_s": 19.54,
+      "start_frame": 581,
+      "end_frame": 586
     },
     {
       "word": "the",
-      "start_s": 25.04,
-      "end_s": 25.14,
-      "start_frame": 751,
-      "end_frame": 754
+      "start_s": 19.86,
+      "end_s": 19.98,
+      "start_frame": 596,
+      "end_frame": 599
     },
     {
       "word": "hair",
-      "start_s": 25.14,
-      "end_s": 25.34,
-      "start_frame": 754,
-      "end_frame": 760
+      "start_s": 19.98,
+      "end_s": 20.16,
+      "start_frame": 599,
+      "end_frame": 605
     },
     {
       "word": "gains",
-      "start_s": 25.34,
-      "end_s": 25.68,
-      "start_frame": 760,
-      "end_frame": 770
+      "start_s": 20.16,
+      "end_s": 20.46,
+      "start_frame": 605,
+      "end_frame": 614
     },
     {
       "word": "one",
-      "start_s": 25.68,
-      "end_s": 25.94,
-      "start_frame": 770,
-      "end_frame": 778
+      "start_s": 20.46,
+      "end_s": 20.72,
+      "start_frame": 614,
+      "end_frame": 622
     },
     {
       "word": "node",
-      "start_s": 25.94,
-      "end_s": 26.2,
-      "start_frame": 778,
-      "end_frame": 786
+      "start_s": 20.72,
+      "end_s": 20.96,
+      "start_frame": 622,
+      "end_frame": 629
     },
     {
       "word": "every",
-      "start_s": 26.2,
-      "end_s": 26.54,
-      "start_frame": 786,
-      "end_frame": 796
+      "start_s": 20.96,
+      "end_s": 21.28,
+      "start_frame": 629,
+      "end_frame": 638
     },
     {
       "word": "turn",
-      "start_s": 26.54,
-      "end_s": 26.8,
-      "start_frame": 796,
-      "end_frame": 804
+      "start_s": 21.28,
+      "end_s": 21.54,
+      "start_frame": 638,
+      "end_frame": 646
     },
     {
       "word": "until",
-      "start_s": 26.8,
-      "end_s": 27.12,
-      "start_frame": 804,
-      "end_frame": 814
+      "start_s": 21.54,
+      "end_s": 21.82,
+      "start_frame": 646,
+      "end_frame": 655
     },
     {
       "word": "BAM.",
-      "start_s": 27.12,
-      "end_s": 27.52,
-      "start_frame": 814,
-      "end_frame": 826
+      "start_s": 21.82,
+      "end_s": 22.22,
+      "start_frame": 655,
+      "end_frame": 667
     },
     {
       "word": "They",
-      "start_s": 28.34,
-      "end_s": 28.68,
-      "start_frame": 850,
-      "end_frame": 860
+      "start_s": 23.02,
+      "end_s": 23.3,
+      "start_frame": 691,
+      "end_frame": 699
     },
     {
       "word": "collide.",
-      "start_s": 28.68,
-      "end_s": 29.0,
-      "start_frame": 860,
-      "end_frame": 870
-    },
-    {
-      "word": "If",
-      "start_s": 30.0,
-      "end_s": 30.52,
-      "start_frame": 900,
-      "end_frame": 916
-    },
-    {
-      "word": "they",
-      "start_s": 30.52,
-      "end_s": 30.66,
-      "start_frame": 916,
-      "end_frame": 920
-    },
-    {
-      "word": "meet,",
-      "start_s": 30.66,
-      "end_s": 30.94,
-      "start_frame": 920,
-      "end_frame": 928
-    },
-    {
-      "word": "cycle",
-      "start_s": 31.22,
-      "end_s": 31.52,
-      "start_frame": 937,
-      "end_frame": 946
-    },
-    {
-      "word": "confirmed.",
-      "start_s": 31.52,
-      "end_s": 32.16,
-      "start_frame": 946,
-      "end_frame": 965
+      "start_s": 23.3,
+      "end_s": 23.6,
+      "start_frame": 699,
+      "end_frame": 708
     },
     {
       "word": "Zero",
-      "start_s": 32.9,
-      "end_s": 33.4,
-      "start_frame": 987,
-      "end_frame": 1002
+      "start_s": 23.6,
+      "end_s": 25.1,
+      "start_frame": 708,
+      "end_frame": 753
     },
     {
       "word": "extra",
-      "start_s": 33.4,
-      "end_s": 33.82,
-      "start_frame": 1002,
-      "end_frame": 1015
+      "start_s": 25.1,
+      "end_s": 25.56,
+      "start_frame": 753,
+      "end_frame": 767
     },
     {
-      "word": "memory,",
-      "start_s": 33.82,
-      "end_s": 34.14,
-      "start_frame": 1015,
-      "end_frame": 1024
-    },
-    {
-      "word": "oh,",
-      "start_s": 34.52,
-      "end_s": 34.7,
-      "start_frame": 1036,
-      "end_frame": 1041
+      "word": "RAM",
+      "start_s": 25.56,
+      "end_s": 25.94,
+      "start_frame": 767,
+      "end_frame": 778
     },
     {
       "word": "and",
-      "start_s": 35.08,
-      "end_s": 35.32,
-      "start_frame": 1052,
-      "end_frame": 1060
+      "start_s": 25.94,
+      "end_s": 26.14,
+      "start_frame": 778,
+      "end_frame": 784
+    },
+    {
+      "word": "O,",
+      "start_s": 26.14,
+      "end_s": 26.36,
+      "start_frame": 784,
+      "end_frame": 791
+    },
+    {
+      "word": "and",
+      "start_s": 26.64,
+      "end_s": 26.8,
+      "start_frame": 799,
+      "end_frame": 804
     },
     {
       "word": "time.",
-      "start_s": 35.32,
-      "end_s": 35.82,
-      "start_frame": 1060,
-      "end_frame": 1075
+      "start_s": 26.8,
+      "end_s": 27.3,
+      "start_frame": 804,
+      "end_frame": 819
     }
   ]
 }

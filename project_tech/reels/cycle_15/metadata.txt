@@ -1,23 +1,23 @@
 INSTAGRAM DESCRIPTION:
-How to detect an infinite loop in a linked list using Floyd's Tortoise and Hare algorithm (O(1) memory).
+How to detect an infinite loop in a linked list in O(1) memory using Floyd's Tortoise & Hare algorithm.
 .
 .
 .
 .
 .
-#leetcode #dsa #softwareengineering #algorithm #nemiexplains
+#leetcode #dsa #placement #algorithms #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 Detect Infinite Loops in O(1) Memory! 🐢🐇 (Floyd's Algorithm) #shorts
 
 YOUTUBE SHORTS DESCRIPTION:
-How to detect an infinite loop in a linked list using Floyd's Tortoise and Hare algorithm (O(1) memory).
+How to detect an infinite loop in a linked list in O(1) memory using Floyd's Tortoise & Hare algorithm.
 .
 .
 .
 .
 .
-#leetcode #dsa #softwareengineering #algorithm #nemiexplains
+#leetcode #dsa #placement #algorithms #nemiexplains
 
 🔔 Subscribe to @nemi.explains for weekly visual tech & AI deep-dives!
 
@@ -26,8 +26,6 @@ floyds cycle detection, tortoise and hare algorithm, leetcode 141, linked list c
 
 TECHNICAL SPECS:
 - Composition: NemiExplainsCycle
-- Duration: 36.89s (1107 frames @ 30fps)
-- Aspect Ratio: 9:16 (1080x1920 / 4K 2160x3840)
-
-PUBLISHED LINKS:
-- Status: Ready for render & publication
+- Duration: 28.15s (844 frames @ 30fps)
+- Aspect Ratio: 9:16 (4K 2160x3840)
+- Master File: out/NemiExplains_Cycle_4K_20260830.mp4
