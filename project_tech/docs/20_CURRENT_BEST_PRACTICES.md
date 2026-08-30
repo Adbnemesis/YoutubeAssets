@@ -11,7 +11,7 @@
 3. **Law of 2.0s Visual Velocity:** Every 1.5–2.5 seconds, something on screen must move, transform, color-shift, or pop.
 4. **Law of the Audible Groove:** Background music must be heard! Set pre-gain to `0.52` with gentle `2.5:1` sidechain ducking.
 5. **Law of Tactile SFX:** Every state transition has a whoosh (-15ms lead), every card pop has a pluck, every reveal has an impact.
-6. **Law of Kinetic Captions:** High-visibility karaoke captions at `top: 1140px` with active words scaling to `1.18x` in Gold/Cyan.
+6. **Law of Kinetic Captions (Zero Layout-Shifting Zoom):** High-visibility karaoke captions at `top: 1140px`. Active words must NEVER use jumping scale transforms (`transform: scale(...)`). Instead, active words pop cleanly by color-shifting into **Vibrant Gold (`#FFD166`)** or **Electric Cyan (`#06B6D4`)** with subtle text-shadow glow (`0 0 20px ${activeColor}`) against crisp white inactive text (`#F8FAFC`).
 7. **Law of the Mascot Payoff:** Nemi Mascot mirrors the audience's surprise at second 20 and delivers the technical punchline at second 24.
 8. **Law of the Duration Window:** Total video duration targets **19.0s – 22.0s** with a **24.0s hard cap**. Length is not the retention problem — the hook is (see `06_HOOK_SYSTEM.md` §6). Field data: the two longest reels had the two worst APVs; don't creep past 24s chasing completeness — compress setup instead.
 9. **Law of the Hybrid Manim Cutaway:** Use Python Manim for mathematical proofs, vector embeddings, and tree traversals embedded in Remotion.
@@ -24,6 +24,7 @@
 13. **Law of Clean Metadata & 5-Dot Spacing:** Never use long horizontal dashes / divider lines (`====` or `----`) in metadata files. Files must lead with `INSTAGRAM DESCRIPTION:`, followed by a punchy one-liner, 5 lines containing only a single dot `.`, and exactly 5 tech-based hashtags (LeetCode/DSA reels: `#leetcode #dsa #placement` + 2 specific; Generic Tech reels: `#tech #algorithm` + 3 specific).
 14. **Law of Open-Canvas Holographic Visuals (Zero Mandatory Box Container):** Do NOT enclose every visual inside a generic rounded card or rectangular boundary. Visuals should be **free-floating, spatial, and open-canvas**: circular radar sweeps, glowing coordinate axes, spatial nodes, floating neon badges, energy conduits, and full-bleed particle fields that breathe freely across the canvas without artificial box frames.
 15. **Law of 4K Master Production (Zero 1080p Clutter):** Master production videos are rendered **exclusively in 4K** (`--scale=2`, 2160x3840 @ 30fps). Do not output or keep secondary 1080p files.
+16. **Law of Stage-by-Stage Visual Metamorphosis:** A reel must NEVER retain the same visual scene across its entire runtime. Each semantic phase MUST mount a distinct, purpose-built, animated visual engine (e.g. Problem Hook $\to$ Memory Grid Laser Trap $\to$ Dual-Speedometer Mechanism $\to$ Dynamic Racetrack Chase $\to$ Shockwave Collision $\to$ Cartesian Complexity Graph Showdown).
 
 
 ---
