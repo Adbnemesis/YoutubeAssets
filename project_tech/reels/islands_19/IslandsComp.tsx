@@ -45,11 +45,11 @@ export const IslandsComp: React.FC = () => {
   const totalFrames = timelineData.total_frames || 662;
 
   // ─── Stage Timing Cut Points (Strict 22.08s / 662 frames) ───
-  const cutB = 142; // Nemi Double Count Question -> Dark Mode
-  const cutC = 202; // "Sink It!" & Scanner Hits Island 1
-  const cutD = 335; // DFS Flood Wave Sinks Island 1
-  const cutE = 445; // Clean Sweep Across Islands 2 & 3
-  const cutF = 530; // LeetCode 200 O(M*N) Victory
+  const cutB = 142; // Stage 1 -> Stage 2 (Double-Count Loop Trap)
+  const cutC = 202; // Stage 2 -> Stage 3 (Tsunami Sink Impact)
+  const cutD = 335; // Stage 3 -> Stage 4 (4-Way DFS Compass Laser)
+  const cutE = 445; // Stage 4 -> Stage 5 (High-Speed Radar Sweep across Islands 2 & 3)
+  const cutF = 530; // Stage 5 -> Stage 6 (LeetCode 200 Victory Arena & Light Mode Loop)
 
   // ─── Smooth Background Crossfade (Light <-> Dark) ───
   const darkOpacity = interpolate(
@@ -130,7 +130,7 @@ export const IslandsComp: React.FC = () => {
         <Audio src={staticFile("sfx/anime-wow.mp3")} volume={0.8} />
       </Sequence>
 
-      {/* Ambient Glow */}
+      {/* Ambient Radial Glow */}
       <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 1, opacity: darkOpacity }}>
         <div
           style={{
@@ -208,13 +208,13 @@ export const IslandsComp: React.FC = () => {
           }}
         >
           {frame < cutB
-            ? "2D MATRIX EXPLORATION"
+            ? "OCEAN MAP RADAR"
             : frame < cutC
             ? "DOUBLE-COUNT TRAP"
             : frame < cutD
-            ? "SINK THE ISLAND"
+            ? "TSUNAMI SINK"
             : frame < cutE
-            ? "DFS FLOOD WAVE"
+            ? "4-WAY DFS COMPASS"
             : "O(M×N) LINEAR SWEEP"}
         </div>
       </div>
@@ -249,24 +249,89 @@ export const IslandsComp: React.FC = () => {
             </>
           ) : frame < cutD ? (
             <>
-              Touch A Land Tile? <span style={{ color: nemiTheme.colors.brandCyan }}>Sink The Island!</span> 🌊
+              Touch A Land Tile? <span style={{ color: nemiTheme.colors.brandCyan }}>Sink It Underwater!</span> 🌊
             </>
           ) : frame < cutE ? (
             <>
-              DFS Flood Wave <span style={{ color: nemiTheme.colors.brandGreen }}>Turns Land To Water!</span> 💧
+              4-Way DFS Compass <span style={{ color: nemiTheme.colors.brandGreen }}>Fires In All Directions!</span> 🧭
             </>
           ) : (
             <>
-              All Islands Counted In <span style={{ color: nemiTheme.colors.brandGreen }}>O(M × N) Time!</span> 👑
+              All Islands Sunk In <span style={{ color: nemiTheme.colors.brandGreen }}>O(M × N) Time!</span> 👑
             </>
           )}
         </div>
       </div>
 
-      {/* DYNAMIC 2D ISLAND MATRIX CANVAS */}
-      <DynamicIslandMatrix frame={frame} cutB={cutB} cutC={cutC} cutD={cutD} cutE={cutE} cutF={cutF} />
+      {/* ══════════════════════════════════════════════════════════ */}
+      {/* 6 DIVERSE, DYNAMIC, PHYSICAL VISUAL STAGES */}
+      {/* ══════════════════════════════════════════════════════════ */}
 
+      {/* STAGE 1: THE TOP-DOWN SATELLITE OCEAN ARCHIPELAGO (0 to 142) */}
+      {frame < cutB + 6 && (
+        <div style={{ opacity: interpolate(frame, [cutB - 6, cutB + 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
+          <Stage1_OceanArchipelago frame={frame} />
+        </div>
+      )}
+
+      {/* STAGE 2: THE INFINITE DOUBLE-COUNT LOOP TRAP (142 to 202) */}
+      {frame >= cutB - 6 && frame < cutC + 6 && (
+        <div
+          style={{
+            opacity: interpolate(
+              frame,
+              [cutB - 6, cutB + 6, cutC - 6, cutC + 6],
+              [0, 1, 1, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+            ),
+          }}
+        >
+          <Stage2_DoubleCountTrap frame={frame} />
+        </div>
+      )}
+
+      {/* STAGE 3: THE TSUNAMI SINK WATER IMPACT (202 to 335) */}
+      {frame >= cutC - 6 && frame < cutD + 6 && (
+        <div
+          style={{
+            opacity: interpolate(
+              frame,
+              [cutC - 6, cutC + 6, cutD - 6, cutD + 6],
+              [0, 1, 1, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+            ),
+          }}
+        >
+          <Stage3_TsunamiSink frame={frame} />
+        </div>
+      )}
+
+      {/* STAGE 4: THE 4-WAY DFS LASER COMPASS (335 to 445) */}
+      {frame >= cutD - 6 && frame < cutE + 6 && (
+        <div
+          style={{
+            opacity: interpolate(
+              frame,
+              [cutD - 6, cutD + 6, cutE - 6, cutE + 6],
+              [0, 1, 1, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+            ),
+          }}
+        >
+          <Stage4_DFSCompass frame={frame} />
+        </div>
+      )}
+
+      {/* STAGE 5: HIGH-SPEED RADAR SWEEP & MULTI-ISLAND VICTORY (445 to 662) */}
+      {frame >= cutE - 6 && (
+        <div style={{ opacity: interpolate(frame, [cutE - 6, cutE + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
+          <Stage5_RadarSweepVictory frame={frame} />
+        </div>
+      )}
+
+      {/* ══════════════════════════════════════════════════════════ */}
       {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
+      {/* ══════════════════════════════════════════════════════════ */}
       {!nemiSpeech && <DynamicKaraokeCaptions frame={frame} />}
 
       {/* HERO MASCOT DOCK (Safe Zone: bottom: 70px) */}
@@ -350,224 +415,490 @@ export const IslandsComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// DYNAMIC 2D ISLAND MATRIX COMPONENT
+// 1. STAGE 1: SATELLITE OCEAN ARCHIPELAGO (0 to 142)
 // ═══════════════════════════════════════════════════════════════
-interface MatrixProps {
-  frame: number;
-  cutB: number;
-  cutC: number;
-  cutD: number;
-  cutE: number;
-  cutF: number;
-}
-
-const DynamicIslandMatrix: React.FC<MatrixProps> = ({ frame, cutB, cutC, cutD, cutE, cutF }) => {
-  // 5x5 Grid Matrix Layout
-  // Island 1: (0,0), (0,1), (1,0), (1,1) [Top-Left 2x2]
-  // Island 2: (0,4), (1,4), (2,4) [Top-Right 3x1]
-  // Island 3: (3,1), (3,2), (4,2) [Bottom-Middle]
-
-  // Island Count dynamically increments
-  let islandCount = 0;
-  if (frame >= cutC + 20 && frame < cutE) {
-    islandCount = 1;
-  } else if (frame >= cutE && frame < cutE + 40) {
-    islandCount = 2;
-  } else if (frame >= cutE + 40) {
-    islandCount = 3;
-  }
-
-  // Island 1 Sink Status
-  const isIsland1Sunk = frame >= cutD + 30;
-  const isIsland2Sunk = frame >= cutE + 35;
-  const isIsland3Sunk = frame >= cutE + 65;
-
-  // Scanner Coordinates [row, col]
-  let scanRow = 0;
-  let scanCol = 0;
-
-  if (frame < cutC) {
-    scanRow = Math.floor((frame / cutC) * 5);
-    scanCol = Math.floor(((frame * 2) % cutC) / (cutC / 5));
-  } else if (frame < cutD) {
-    // Locked at Island 1 start: (0,0)
-    scanRow = 0;
-    scanCol = 0;
-  } else if (frame < cutE) {
-    // DFS Ripple on Island 1
-    scanRow = 1;
-    scanCol = 1;
-  } else {
-    // Sweeping through rest
-    const p = interpolate(frame, [cutE, cutF], [0, 24], { extrapolateRight: "clamp" });
-    scanRow = Math.min(4, Math.floor(p / 5));
-    scanCol = Math.min(4, Math.floor(p % 5));
-  }
-
-  // Grid Data [5 rows x 5 cols]
-  const initialGrid = [
-    [1, 1, 0, 0, 1],
-    [1, 1, 0, 0, 1],
-    [0, 0, 0, 0, 1],
-    [0, 1, 1, 0, 0],
-    [0, 0, 1, 0, 0],
-  ];
+const Stage1_OceanArchipelago: React.FC<{ frame: number }> = ({ frame }) => {
+  const radarAngle = (frame * 3.5) % 360;
+  const pulse = Math.sin(frame * 0.2);
 
   return (
-    <div style={{ position: "absolute", top: 340, left: 70, right: 70, height: 600, zIndex: 30 }}>
-      {/* ISLAND COUNTER SCORECARD BANNER (top: 0px) */}
+    <div style={{ position: "absolute", top: 340, left: 70, right: 70, height: 620, zIndex: 30 }}>
+      {/* 3D Top-Down Ocean Viewport */}
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          backgroundColor: frame >= cutB ? "#0B1120" : "#FFFFFF",
-          padding: "16px 28px",
-          borderRadius: 22,
-          border: `2.5px solid ${frame >= cutB ? "#10B981" : "#E2E8F0"}`,
-          boxShadow: "0 12px 35px rgba(0,0,0,0.1)",
-          marginBottom: 24,
+          width: "100%",
+          height: 500,
+          backgroundColor: "#082F49",
+          borderRadius: 32,
+          border: "3.5px solid #0284C7",
+          boxShadow: "0 25px 70px rgba(2, 132, 199, 0.35)",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <span style={{ fontSize: 28 }}>🏝️</span>
-          <span style={{ fontSize: 20, fontWeight: 900, color: frame >= cutB ? "#F8FAFC" : "#0F172A" }}>
-            ISLANDS FOUND:
-          </span>
-        </div>
+        {/* Animated Water Ripple Rings */}
+        <svg width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
+          <circle cx="280" cy="220" r={80 + pulse * 10} fill="none" stroke="rgba(6, 182, 212, 0.3)" strokeWidth="3" />
+          <circle cx="700" cy="180" r={70 + pulse * 8} fill="none" stroke="rgba(6, 182, 212, 0.3)" strokeWidth="3" />
+          <circle cx="480" cy="380" r={65 + pulse * 8} fill="none" stroke="rgba(6, 182, 212, 0.3)" strokeWidth="3" />
+
+          {/* Rotating Radar Scanner Cone */}
+          <line
+            x1="470"
+            y1="250"
+            x2={470 + 400 * Math.cos((radarAngle * Math.PI) / 180)}
+            y2={250 + 400 * Math.sin((radarAngle * Math.PI) / 180)}
+            stroke="#38BDF8"
+            strokeWidth="3.5"
+            strokeDasharray="6 4"
+            opacity="0.85"
+          />
+        </svg>
+
+        {/* 3 Physical Island Landmasses */}
+        {/* Island 1 (Alpha - Top Left) */}
         <div
           style={{
-            fontSize: 36,
-            fontWeight: 900,
-            color: "#10B981",
-            fontFamily: nemiTheme.typography.fontFamily.mono,
-            textShadow: "0 0 15px rgba(16, 185, 129, 0.6)",
+            position: "absolute",
+            top: 140,
+            left: 180,
+            width: 180,
+            height: 140,
+            backgroundColor: "#10B981",
+            borderRadius: "45% 55% 60% 40%",
+            border: "4px solid #6EE7B7",
+            boxShadow: "0 12px 30px rgba(16, 185, 129, 0.6)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          {islandCount} ⚡
+          <span style={{ fontSize: 32 }}>🌴</span>
+          <span style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            Island #1 [1 1]
+          </span>
+        </div>
+
+        {/* Island 2 (Beta - Top Right) */}
+        <div
+          style={{
+            position: "absolute",
+            top: 110,
+            right: 140,
+            width: 150,
+            height: 180,
+            backgroundColor: "#10B981",
+            borderRadius: "50% 50% 40% 60%",
+            border: "4px solid #6EE7B7",
+            boxShadow: "0 12px 30px rgba(16, 185, 129, 0.6)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <span style={{ fontSize: 32 }}>🌴</span>
+          <span style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            Island #2 [1]
+          </span>
+        </div>
+
+        {/* Island 3 (Gamma - Bottom Center) */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 60,
+            left: 380,
+            width: 170,
+            height: 120,
+            backgroundColor: "#10B981",
+            borderRadius: "60% 40% 50% 50%",
+            border: "4px solid #6EE7B7",
+            boxShadow: "0 12px 30px rgba(16, 185, 129, 0.6)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <span style={{ fontSize: 30 }}>🌴</span>
+          <span style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            Island #3 [1]
+          </span>
         </div>
       </div>
 
-      {/* 5x5 GRID MATRIX DISPLAY */}
+      {/* Floating Bottom Question Badge */}
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(5, 1fr)",
-          gap: 14,
-          padding: 22,
-          backgroundColor: frame >= cutB ? "#030712" : "#F1F5F9",
-          borderRadius: 28,
-          border: `3px solid ${frame >= cutB ? "rgba(6, 182, 212, 0.4)" : "#CBD5E1"}`,
-          boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
-        }}
-      >
-        {initialGrid.map((row, rIdx) =>
-          row.map((val, cIdx) => {
-            // Determine if this cell belongs to Island 1, 2, or 3
-            const isIsland1 = (rIdx === 0 && cIdx === 0) || (rIdx === 0 && cIdx === 1) || (rIdx === 1 && cIdx === 0) || (rIdx === 1 && cIdx === 1);
-            const isIsland2 = (rIdx === 0 && cIdx === 4) || (rIdx === 1 && cIdx === 4) || (rIdx === 2 && cIdx === 4);
-            const isIsland3 = (rIdx === 3 && cIdx === 1) || (rIdx === 3 && cIdx === 2) || (rIdx === 4 && cIdx === 2);
-
-            let isSunk = false;
-            if (isIsland1 && isIsland1Sunk) isSunk = true;
-            if (isIsland2 && isIsland2Sunk) isSunk = true;
-            if (isIsland3 && isIsland3Sunk) isSunk = true;
-
-            const isLand = val === 1 && !isSunk;
-            const isCurrentlyScanning = rIdx === scanRow && cIdx === scanCol;
-            const isFlooding = frame >= cutD && frame < cutD + 30 && isIsland1;
-
-            return (
-              <div
-                key={`${rIdx}_${cIdx}`}
-                style={{
-                  height: 76,
-                  borderRadius: 18,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  backgroundColor: isFlooding
-                    ? "rgba(6, 182, 212, 0.6)"
-                    : isLand
-                    ? "#10B981"
-                    : isSunk
-                    ? "rgba(6, 182, 212, 0.2)"
-                    : frame >= cutB
-                    ? "#0F172A"
-                    : "#E2E8F0",
-                  border: isCurrentlyScanning
-                    ? "4px solid #FFD166"
-                    : isLand
-                    ? "3px solid #6EE7B7"
-                    : "2px solid rgba(255, 255, 255, 0.08)",
-                  boxShadow: isCurrentlyScanning
-                    ? "0 0 25px #FFD166"
-                    : isLand
-                    ? "0 8px 20px rgba(16, 185, 129, 0.4)"
-                    : "none",
-                  transform: isCurrentlyScanning ? "scale(1.08)" : isFlooding ? "scale(0.95)" : "scale(1.0)",
-                  transition: "all 0.15s ease",
-                  position: "relative",
-                  overflow: "hidden",
-                }}
-              >
-                {/* Value Display */}
-                <span
-                  style={{
-                    fontSize: 26,
-                    fontWeight: 900,
-                    fontFamily: nemiTheme.typography.fontFamily.mono,
-                    color: isLand ? "#FFFFFF" : isSunk ? "#06B6D4" : frame >= cutB ? "#64748B" : "#94A3B8",
-                  }}
-                >
-                  {isLand ? "1" : "0"}
-                </span>
-
-                {/* Subtitle label */}
-                <span
-                  style={{
-                    fontSize: 10,
-                    fontWeight: 800,
-                    color: isLand ? "#D1FAE5" : isSunk ? "#06B6D4" : "#64748B",
-                    letterSpacing: "0.5px",
-                  }}
-                >
-                  {isLand ? "LAND" : isSunk ? "SUNK 🌊" : "WATER"}
-                </span>
-              </div>
-            );
-          })
-        )}
-      </div>
-
-      {/* FLOATING COMPLEXITY BADGE (top: 530px) */}
-      <div
-        style={{
-          marginTop: 24,
-          backgroundColor: frame >= cutB ? "#0B1120" : "#FFFFFF",
+          marginTop: 20,
+          backgroundColor: "#FFFFFF",
           padding: "16px 28px",
           borderRadius: 20,
-          border: `2.5px solid ${frame >= cutB ? "#06B6D4" : "#E2E8F0"}`,
+          border: "2.5px solid #0284C7",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.06)",
         }}
       >
-        <span style={{ color: frame >= cutB ? "#94A3B8" : "#64748B", fontSize: 18, fontWeight: 700 }}>
-          Time Complexity:
+        <span style={{ color: "#64748B", fontSize: 18, fontWeight: 700 }}>2D Matrix Dimension:</span>
+        <span style={{ color: "#0284C7", fontWeight: 900, fontSize: 24, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+          M × N Grid (Land '1' vs Water '0') 🌊
         </span>
-        <span
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 2. STAGE 2: DOUBLE-COUNT LOOP TRAP (142 to 202)
+// ═══════════════════════════════════════════════════════════════
+const Stage2_DoubleCountTrap: React.FC<{ frame: number }> = ({ frame }) => {
+  const spin = (frame * 8) % 360;
+
+  return (
+    <div style={{ position: "absolute", top: 340, left: 70, right: 70, height: 620, zIndex: 30 }}>
+      <div
+        style={{
+          width: "100%",
+          height: 480,
+          backgroundColor: "#180D10",
+          borderRadius: 32,
+          border: "3.5px solid #EF4444",
+          boxShadow: "0 25px 70px rgba(239, 68, 68, 0.4)",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* Infinite Spinning Loop Trap Circle */}
+        <div
           style={{
-            color: "#10B981",
-            fontWeight: 900,
-            fontSize: 24,
-            fontFamily: nemiTheme.typography.fontFamily.mono,
+            width: 260,
+            height: 260,
+            borderRadius: "50%",
+            border: "6px dashed #EF4444",
+            transform: `rotate(${spin}deg)`,
+            position: "absolute",
+          }}
+        />
+
+        {/* Trapped Land Node */}
+        <div
+          style={{
+            width: 140,
+            height: 140,
+            borderRadius: 24,
+            backgroundColor: "#EF4444",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            boxShadow: "0 0 40px #EF4444",
+            zIndex: 10,
           }}
         >
-          O(M × N) Linear Sweep ⚡
-        </span>
+          <span style={{ fontSize: 38 }}>⚠️</span>
+          <span style={{ color: "#FFF", fontWeight: 900, fontSize: 18, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            LOOP TRAP
+          </span>
+        </div>
+
+        {/* Alarm Banner */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 40,
+            backgroundColor: "rgba(239, 68, 68, 0.2)",
+            border: "2px solid #EF4444",
+            padding: "10px 24px",
+            borderRadius: 16,
+            color: "#FCA5A5",
+            fontSize: 20,
+            fontWeight: 800,
+          }}
+        >
+          COUNT: 1 ➔ 2 ➔ 3 ➔ 4 ➔ ∞ (DUPLICATE ERROR!) ❌
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 3. STAGE 3: TSUNAMI SINK WATER IMPACT (202 to 335)
+// ═══════════════════════════════════════════════════════════════
+const Stage3_TsunamiSink: React.FC<{ frame: number }> = ({ frame }) => {
+  const waveDropY = interpolate(frame, [202, 235], [-120, 200], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const waterSplashScale = interpolate(frame, [230, 260], [0.5, 1.4], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const landSinkOpacity = interpolate(frame, [230, 265], [1, 0.2], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+  return (
+    <div style={{ position: "absolute", top: 340, left: 70, right: 70, height: 620, zIndex: 30 }}>
+      <div
+        style={{
+          width: "100%",
+          height: 500,
+          backgroundColor: "#030712",
+          borderRadius: 32,
+          border: "3.5px solid #06B6D4",
+          boxShadow: "0 25px 70px rgba(6, 182, 212, 0.35)",
+          position: "relative",
+          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {/* Falling Tsunami Flood Wave */}
+        {frame < 260 && (
+          <div
+            style={{
+              position: "absolute",
+              top: waveDropY,
+              width: "100%",
+              height: 180,
+              background: "linear-gradient(to bottom, transparent, rgba(6, 182, 212, 0.85))",
+              filter: "blur(8px)",
+              zIndex: 15,
+            }}
+          />
+        )}
+
+        {/* Central Sinking Island Tile */}
+        <div
+          style={{
+            width: 240,
+            height: 240,
+            borderRadius: 30,
+            backgroundColor: frame >= 240 ? "rgba(6, 182, 212, 0.3)" : "#10B981",
+            border: `4px solid ${frame >= 240 ? "#06B6D4" : "#6EE7B7"}`,
+            boxShadow: `0 0 50px ${frame >= 240 ? "#06B6D4" : "#10B981"}`,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            opacity: landSinkOpacity,
+            transform: `scale(${frame >= 240 ? 0.9 : 1.0})`,
+            transition: "all 0.2s ease",
+            zIndex: 10,
+          }}
+        >
+          <span style={{ fontSize: 50 }}>{frame >= 240 ? "🌊" : "🌴"}</span>
+          <span style={{ fontSize: 34, fontWeight: 900, color: "#FFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            {frame >= 240 ? "0 (WATER)" : "1 (LAND)"}
+          </span>
+          <span style={{ fontSize: 16, fontWeight: 800, color: frame >= 240 ? "#67E8F9" : "#D1FAE5" }}>
+            {frame >= 240 ? "SUNK INTO OCEAN ✓" : "TOUCHED BY SCANNER"}
+          </span>
+        </div>
+
+        {/* Giant Water Splash Ring */}
+        {frame >= 235 && (
+          <div
+            style={{
+              position: "absolute",
+              width: 320 * waterSplashScale,
+              height: 320 * waterSplashScale,
+              borderRadius: "50%",
+              border: "5px solid #38BDF8",
+              opacity: interpolate(waterSplashScale, [0.5, 1.4], [1, 0]),
+              pointerEvents: "none",
+            }}
+          />
+        )}
+
+        {/* Counter Pop Badge */}
+        <div
+          style={{
+            position: "absolute",
+            top: 25,
+            right: 25,
+            backgroundColor: "#10B981",
+            color: "#FFF",
+            padding: "12px 24px",
+            borderRadius: 20,
+            fontSize: 22,
+            fontWeight: 900,
+            boxShadow: "0 10px 30px rgba(16, 185, 129, 0.6)",
+          }}
+        >
+          ISLAND COUNT: +1 🏝️
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 4. STAGE 4: 4-WAY DFS LASER COMPASS (335 to 445)
+// ═══════════════════════════════════════════════════════════════
+const Stage4_DFSCompass: React.FC<{ frame: number }> = ({ frame }) => {
+  const laserReach = interpolate(frame, [335, 375], [0, 160], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+  return (
+    <div style={{ position: "absolute", top: 340, left: 70, right: 70, height: 620, zIndex: 30 }}>
+      <div
+        style={{
+          width: "100%",
+          height: 500,
+          backgroundColor: "#030712",
+          borderRadius: 32,
+          border: "3.5px solid #10B981",
+          boxShadow: "0 25px 70px rgba(16, 185, 129, 0.35)",
+          position: "relative",
+          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {/* SVG Compass Directional Lasers */}
+        <svg width="100%" height="100%" style={{ position: "absolute", inset: 0 }}>
+          {/* UP Laser */}
+          <line x1="470" y1="250" x2="470" y2={250 - laserReach} stroke="#10B981" strokeWidth="5" filter="drop-shadow(0 0 10px #10B981)" />
+          {/* DOWN Laser */}
+          <line x1="470" y1="250" x2="470" y2={250 + laserReach} stroke="#10B981" strokeWidth="5" filter="drop-shadow(0 0 10px #10B981)" />
+          {/* LEFT Laser */}
+          <line x1="470" y1="250" x2={470 - laserReach} y2="250" stroke="#10B981" strokeWidth="5" filter="drop-shadow(0 0 10px #10B981)" />
+          {/* RIGHT Laser */}
+          <line x1="470" y1="250" x2={470 + laserReach} y2="250" stroke="#10B981" strokeWidth="5" filter="drop-shadow(0 0 10px #10B981)" />
+        </svg>
+
+        {/* Central Active Node */}
+        <div
+          style={{
+            width: 140,
+            height: 140,
+            borderRadius: 24,
+            backgroundColor: "#10B981",
+            boxShadow: "0 0 45px #10B981",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 10,
+          }}
+        >
+          <span style={{ fontSize: 32 }}>🧭</span>
+          <span style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            DFS (r, c)
+          </span>
+        </div>
+
+        {/* 4 Directional Badges */}
+        <div style={{ position: "absolute", top: 40, color: "#6EE7B7", fontWeight: 900, fontSize: 18 }}>▲ UP (-1, 0)</div>
+        <div style={{ position: "absolute", bottom: 40, color: "#6EE7B7", fontWeight: 900, fontSize: 18 }}>▼ DOWN (+1, 0)</div>
+        <div style={{ position: "absolute", left: 40, color: "#6EE7B7", fontWeight: 900, fontSize: 18 }}>◀ LEFT (0, -1)</div>
+        <div style={{ position: "absolute", right: 40, color: "#6EE7B7", fontWeight: 900, fontSize: 18 }}>▶ RIGHT (0, +1)</div>
+      </div>
+    </div>
+  );
+};
+
+// ═══════════════════════════════════════════════════════════════
+// 5. STAGE 5: RADAR SWEEP & VICTORY ARENA (445 to 662)
+// ═══════════════════════════════════════════════════════════════
+const Stage5_RadarSweepVictory: React.FC<{ frame: number }> = ({ frame }) => {
+  return (
+    <div style={{ position: "absolute", top: 340, left: 70, right: 70, height: 620, zIndex: 30 }}>
+      {/* Big Victory Showcase Card */}
+      <div
+        style={{
+          width: "100%",
+          height: 380,
+          backgroundColor: "#0B1120",
+          borderRadius: 30,
+          border: "3.5px solid #10B981",
+          boxShadow: "0 20px 60px rgba(16, 185, 129, 0.3)",
+          padding: "24px 32px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ color: "#6EE7B7", fontSize: 22, fontWeight: 900 }}>ALL 3 ISLANDS SUNK ✓</span>
+          <span style={{ color: "#FFD166", fontSize: 26, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            COUNT = 3 🏝️
+          </span>
+        </div>
+
+        {/* 3 Sunk Island Badges */}
+        <div style={{ display: "flex", gap: 16 }}>
+          {["Island #1: 4 Cells Sunk", "Island #2: 3 Cells Sunk", "Island #3: 2 Cells Sunk"].map((lbl, idx) => (
+            <div
+              key={idx}
+              style={{
+                flex: 1,
+                backgroundColor: "rgba(16, 185, 129, 0.15)",
+                border: "2px solid #10B981",
+                borderRadius: 18,
+                padding: "14px 10px",
+                textAlign: "center",
+                color: "#D1FAE5",
+                fontSize: 15,
+                fontWeight: 800,
+              }}
+            >
+              {lbl}
+            </div>
+          ))}
+        </div>
+
+        {/* In-Place Mutation Zero-Memory Highlight */}
+        <div
+          style={{
+            backgroundColor: "#030712",
+            padding: "12px 20px",
+            borderRadius: 16,
+            border: "1.5px solid rgba(255, 255, 255, 0.1)",
+            textAlign: "center",
+            color: "#94A3B8",
+            fontSize: 16,
+            fontWeight: 700,
+          }}
+        >
+          ⚡ In-Place Grid Sinking = <span style={{ color: "#10B981", fontWeight: 900 }}>ZERO Visited Set Memory!</span>
+        </div>
+      </div>
+
+      {/* Floating Split Complexity Metrics (top: 410px) */}
+      <div style={{ display: "flex", gap: 20, marginTop: 20 }}>
+        <div
+          style={{
+            flex: 1,
+            backgroundColor: "#FFFFFF",
+            border: "3px solid #06B6D4",
+            borderRadius: 22,
+            padding: "16px",
+            textAlign: "center",
+            boxShadow: "0 10px 30px rgba(6, 182, 212, 0.15)",
+          }}
+        >
+          <div style={{ fontSize: 14, fontWeight: 900, color: "#64748B" }}>TIME COMPLEXITY</div>
+          <div style={{ fontSize: 34, fontWeight: 900, color: "#0891B2" }}>O(M × N) ⚡</div>
+        </div>
+
+        <div
+          style={{
+            flex: 1,
+            backgroundColor: "#FFFFFF",
+            border: "3px solid #10B981",
+            borderRadius: 22,
+            padding: "16px",
+            textAlign: "center",
+            boxShadow: "0 10px 30px rgba(16, 185, 129, 0.15)",
+          }}
+        >
+          <div style={{ fontSize: 14, fontWeight: 900, color: "#64748B" }}>SPACE COMPLEXITY</div>
+          <div style={{ fontSize: 34, fontWeight: 900, color: "#059669" }}>O(M × N) 🧠</div>
+        </div>
       </div>
     </div>
   );
