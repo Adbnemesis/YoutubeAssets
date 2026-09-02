@@ -24,7 +24,7 @@ climbing stairs leetcode, leetcode 70, dynamic programming, fibonacci series, ti
 
 TECHNICAL SPECS:
 - Composition: NemiExplainsClimbingStairs
-- Duration: 24.48s (734 frames @ 30fps)
+- Duration: 28.94s (868 frames @ 30fps)
 - Aspect Ratio: 9:16 (4K 2160x3840)
 
 PUBLISHED LINKS:

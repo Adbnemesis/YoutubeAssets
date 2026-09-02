@@ -2,7 +2,7 @@
 """
 Audio Pipeline for Reel #17: Climbing Stairs (LeetCode 70)
 Engine: ChatterboxTTS (Narrator) + Edge-TTS (Nemi AnaNeural)
-Target Duration: ~21.5s - 22.8s (Law 8 Golden Retention Zone)
+Target Duration: ~23s - 25s (Law 8 Golden Retention Zone)
 """
 
 import os
@@ -76,38 +76,39 @@ VOICE_SCRIPT = [
     {
         "id": "cs04_secret",
         "speaker": "narrator",
-        "text": "Step N comes from step N-1 or N-2. It's literally Fibonacci!",
+        "text": "To reach step N, you must come from step N-1 or N-2. It's literally Fibonacci!",
         "exag": 0.72,
         "gap_after": 60,
         "cues": [
-            {"phrase": "Step N", "cue": "step_n_focus", "rel_pct": 0.30},
+            {"phrase": "step N", "cue": "step_n_focus", "rel_pct": 0.25},
             {"phrase": "Fibonacci", "cue": "fibonacci_formula_reveal", "rel_pct": 0.80}
         ]
     },
     {
         "id": "cs05_dp_slider",
         "speaker": "narrator",
-        "text": "Just keep the last two numbers. Two variables solve it in O(N) time!",
+        "text": "Start with a at 1 and b at 2. Add them to get the next step, then slide them forward!",
         "exag": 0.75,
         "gap_after": 60,
         "cues": [
-            {"phrase": "last two numbers", "cue": "two_variables_spawn", "rel_pct": 0.35},
-            {"phrase": "O(N) time", "cue": "sliding_surge", "rel_pct": 0.75}
+            {"phrase": "Start with a", "cue": "registers_init", "rel_pct": 0.20},
+            {"phrase": "Add them", "cue": "sum_addition_flash", "rel_pct": 0.55},
+            {"phrase": "slide them forward", "cue": "sliding_shift", "rel_pct": 0.85}
         ]
     },
     {
         "id": "cs06_nemi",
         "speaker": "nemi",
-        "text": "From exponential meltdown to 4 lines of code! 😎⚡",
+        "text": "No 100-size array needed, just two numbers sliding up to 100! 😎⚡",
         "gap_after": 60,
         "cues": [
-            {"phrase": "4 lines of code", "cue": "nemi_smug", "rel_pct": 0.60}
+            {"phrase": "two numbers sliding", "cue": "nemi_smug", "rel_pct": 0.60}
         ]
     },
     {
         "id": "cs07_loop",
         "speaker": "narrator",
-        "text": "That's how dynamic programming solves it in O(1) space.",
+        "text": "That's how 4 lines of code solves climbing stairs in O(1) space.",
         "exag": 0.70,
         "gap_after": 80,
         "cues": [
@@ -121,225 +122,217 @@ def normalize_lufs(y: np.ndarray, sr: int, target_lufs: float) -> np.ndarray:
     current_lufs = meter.integrated_loudness(y)
     if np.isinf(current_lufs) or np.isnan(current_lufs):
         return y
-    gain = target_lufs - current_lufs
-    y_norm = y * (10.0 ** (gain / 20.0))
-    max_val = np.max(np.abs(y_norm))
-    if max_val > 0.98:
-        y_norm = y_norm * (0.98 / max_val)
+    gain_db = target_lufs - current_lufs
+    gain_linear = 10.0 ** (gain_db / 20.0)
+    y_norm = y * gain_linear
+    peak = np.max(np.abs(y_norm))
+    if peak > 0.98:
+        y_norm = y_norm * (0.98 / peak)
     return y_norm
 
-def trim_silence(y: np.ndarray, sr: int, top_db: int = 30) -> np.ndarray:
-    trimmed, _ = librosa.effects.trim(y, top_db=top_db)
-    return trimmed
-
-async def generate_nemi_block(text: str, out_wav: Path, sr: int = 24000):
-    clean_text = text.replace("🤔", "").replace("😎", "").replace("⚡", "").strip()
-    communicate = edge_tts.Communicate(
-        clean_text,
-        voice="en-US-AnaNeural",
-        pitch="+12Hz",
-        rate="+25%"
-    )
-    temp_mp3 = out_wav.with_suffix(".temp.mp3")
+async def generate_nemi_edge(text: str, out_wav: Path):
+    clean_text = text.replace("🤔", "").replace("😎⚡", "").replace("🪜", "").strip()
+    communicate = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+25%")
+    temp_mp3 = out_wav.with_suffix(".mp3")
     await communicate.save(str(temp_mp3))
-    subprocess.run([
-        "ffmpeg", "-y", "-i", str(temp_mp3),
-        "-ar", str(sr), "-ac", "1", str(out_wav)
-    ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+    
+    y, sr = librosa.load(str(temp_mp3), sr=24000)
+    y_trim, _ = librosa.effects.trim(y, top_db=30)
+    sf.write(str(out_wav), y_trim, 24000)
     if temp_mp3.exists():
         temp_mp3.unlink()
 
-def extract_subtitles_whisper(audio_path: Path, fps: int = 30):
-    print("🔍 Extracting Millisecond-Accurate Word Timestamps (faster_whisper)...")
-    model = WhisperModel("base", device="cpu", compute_type="int8")
-    segments, _ = model.transcribe(str(audio_path), word_timestamps=True, language="en")
-    
-    words_all = []
-    subtitles = []
-    
-    current_chunk = []
-    for segment in segments:
-        for w in segment.words:
-            word_clean = w.word.strip()
-            if not word_clean:
-                continue
-            start_f = int(round(w.start * fps))
-            end_f = int(round(w.end * fps))
-            word_obj = {
-                "word": word_clean,
-                "start_ms": int(round(w.start * 1000)),
-                "end_ms": int(round(w.end * 1000)),
-                "start_frame": start_f,
-                "end_frame": max(start_f + 2, end_f)
-            }
-            words_all.append(word_obj)
-            current_chunk.append(word_obj)
-            
-            # Form 3-4 word punchy subtitle chunks
-            if len(current_chunk) >= 4 or word_clean.endswith((".", "!", "?", "—")):
-                chunk_text = " ".join([cw["word"] for cw in current_chunk])
-                subtitles.append({
-                    "id": f"sub_{len(subtitles)+1:03d}",
-                    "text": chunk_text,
-                    "start_frame": current_chunk[0]["start_frame"],
-                    "end_frame": current_chunk[-1]["end_frame"] + 4,
-                    "words": current_chunk
-                })
-                current_chunk = []
-                
-    if current_chunk:
-        chunk_text = " ".join([cw["word"] for cw in current_chunk])
-        subtitles.append({
-            "id": f"sub_{len(subtitles)+1:03d}",
-            "text": chunk_text,
-            "start_frame": current_chunk[0]["start_frame"],
-            "end_frame": current_chunk[-1]["end_frame"] + 4,
-            "words": current_chunk
-        })
-        
-    return subtitles, words_all
+def generate_voice_blocks():
+    print("🎙️ Initializing ChatterboxTTS...")
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    chatter = ChatterboxTTS.from_pretrained(device=device)
 
-def main():
-    print("🚀 Initializing Chatterbox TTS for Reel #17 (Climbing Stairs - Golden Zone)...")
-    for old_wav in BLOCKS_DIR.glob("*.wav"):
-        old_wav.unlink()
+    generated_blocks = []
 
-    device = "mps" if torch.backends.mps.is_available() else "cpu"
-    model = ChatterboxTTS.from_pretrained(device=device)
+    for block in VOICE_SCRIPT:
+        b_id = block["id"]
+        speaker = block["speaker"]
+        text = block["text"]
+        out_wav = BLOCKS_DIR / f"{b_id}.wav"
 
-    sr = 24000
-    timeline_events = []
-    current_time_ms = 0
-    audio_inputs = []
-    filter_parts = []
-    input_idx = 0
+        print(f"🔊 Generating [{speaker}] {b_id}: {text}")
 
-    for i, event in enumerate(VOICE_SCRIPT, 1):
-        event_id = event["id"]
-        speaker = event["speaker"]
-        text = event["text"]
-        exag = event.get("exag", 0.72)
-        gap_after = event.get("gap_after", 60)
-        out_wav = BLOCKS_DIR / f"{event_id}.wav"
-
-        if speaker == "nemi":
-            print(f"[{i:2d}/{len(VOICE_SCRIPT)}] Generating '{event_id}' (NEMI): \"{text}\"")
-            asyncio.run(generate_nemi_block(text, out_wav, sr=sr))
-            y, _ = sf.read(str(out_wav))
-        else:
-            print(f"[{i:2d}/{len(VOICE_SCRIPT)}] Generating '{event_id}' (NARRATOR): \"{text}\"")
-            wav_tensor = model.generate(text=text, exaggeration=exag)
+        if speaker == "narrator":
+            clean_text = text.replace("O(2^N)", "O of two to the N").replace("O(N)", "O of N").replace("O(1)", "O of one").replace("100", "one hundred")
+            wav_tensor = chatter.generate(
+                text=clean_text,
+                exaggeration=block.get("exag", 0.72)
+            )
             if wav_tensor.ndim > 1:
                 wav_tensor = wav_tensor.squeeze()
             y = wav_tensor.cpu().numpy()
+            y_trim, _ = librosa.effects.trim(y, top_db=30)
+            sf.write(str(out_wav), y_trim, 24000)
+        else:
+            asyncio.run(generate_nemi_edge(text, out_wav))
 
-        y_trimmed = trim_silence(y, sr, top_db=30)
-        y_norm = normalize_lufs(y_trimmed, sr, TARGET_VOICE_LUFS)
-        sf.write(str(out_wav), y_norm, sr)
-
-        dur_s = len(y_norm) / sr
-        dur_ms = int(round(dur_s * 1000))
-
-        start_ms = current_time_ms
-        end_ms = start_ms + dur_ms
-        start_frame = int(round(start_ms / 1000 * 30))
-        end_frame = int(round(end_ms / 1000 * 30))
-
-        cues = []
-        for sp in event.get("cues", []):
-            rel_pct = sp.get("rel_pct", 0.5)
-            cue_frame = start_frame + int(round((end_frame - start_frame) * rel_pct))
-            cues.append({
-                "phrase": sp["phrase"],
-                "cue": sp["cue"],
-                "frame": cue_frame
-            })
-
-        timeline_events.append({
-            "id": event_id,
-            "speaker": speaker,
-            "text": text,
-            "start_ms": start_ms,
-            "end_ms": end_ms,
-            "duration_ms": dur_ms,
-            "start_frame": start_frame,
-            "end_frame": end_frame,
-            "cues": cues,
-            "wav_path": str(out_wav)
+        y, sr = librosa.load(str(out_wav), sr=24000)
+        duration_ms = int(len(y) / sr * 1000)
+        generated_blocks.append({
+            **block,
+            "wav_path": str(out_wav),
+            "duration_ms": duration_ms
         })
 
-        audio_inputs.extend(["-i", str(out_wav)])
-        pad_dur_s = gap_after / 1000.0
-        filter_parts.append(f"[{input_idx}:a]apad=pad_dur={pad_dur_s:.3f}[a{input_idx}];")
-        input_idx += 1
+    return generated_blocks
 
-        current_time_ms = end_ms + gap_after
+def assemble_master_audio(blocks):
+    print("🎛️ Assembling Voice Track & Dynamic BGM Ducking...")
+    sample_rate = 24000
+    fps = 30
+    
+    master_samples = []
+    timeline_blocks = []
+    current_ms = 0
+    
+    for b in blocks:
+        y, sr = librosa.load(b["wav_path"], sr=sample_rate)
+        
+        start_ms = current_ms
+        duration_ms = int(len(y) / sr * 1000)
+        end_ms = start_ms + duration_ms
+        start_frame = round(start_ms * fps / 1000)
+        end_frame = round(end_ms * fps / 1000)
+        
+        cues_computed = []
+        for cue in b.get("cues", []):
+            cue_ms = start_ms + int(duration_ms * cue.get("rel_pct", 0.5))
+            cues_computed.append({
+                "phrase": cue["phrase"],
+                "cue": cue["cue"],
+                "frame": round(cue_ms * fps / 1000)
+            })
+            
+        timeline_blocks.append({
+            "id": b["id"],
+            "speaker": b["speaker"],
+            "text": b["text"],
+            "start_ms": start_ms,
+            "end_ms": end_ms,
+            "duration_ms": duration_ms,
+            "start_frame": start_frame,
+            "end_frame": end_frame,
+            "cues": cues_computed,
+            "wav_path": b["wav_path"]
+        })
+        
+        master_samples.append(y)
+        gap_samples = int(sample_rate * (b.get("gap_after", 60) / 1000))
+        master_samples.append(np.zeros(gap_samples, dtype=np.float32))
+        
+        current_ms += duration_ms + b.get("gap_after", 60)
 
-    # Stitch voice track
-    concat_clause = "".join([f"[a{k}]" for k in range(input_idx)]) + f"concat=n={input_idx}:v=0:a=1[v_raw]"
-    filter_complex = "".join(filter_parts) + concat_clause
+    voice_track = np.concatenate(master_samples)
+    voice_track = normalize_lufs(voice_track, sample_rate, TARGET_VOICE_LUFS)
+    
+    voice_track_path = AUDIO_DIR / "voice_track.wav"
+    sf.write(str(voice_track_path), voice_track, sample_rate)
+    
+    total_voice_ms = current_ms
+    total_frames = round(total_voice_ms * fps / 1000)
+    print(f"⏱️ Total Voice Duration: {total_voice_ms/1000:.2f}s ({total_frames} frames @ 30fps)")
 
-    voice_raw_wav = BLOCKS_DIR / "voice_raw.wav"
-    cmd_voice = [
-        "ffmpeg", "-y",
-        *audio_inputs,
-        "-filter_complex", filter_complex,
-        "-map", "[v_raw]",
-        "-ar", str(sr),
-        str(voice_raw_wav)
-    ]
-    subprocess.run(cmd_voice, check=True, capture_output=True)
+    # BGM Ducking
+    master_wav_path = AUDIO_DIR / "voiceover.mp3"
+    public_master_path = PUBLIC_REELS / "voiceover.mp3"
+    
+    if BGM_PATH.exists():
+        bgm_y, bgm_sr = librosa.load(str(BGM_PATH), sr=sample_rate)
+        if len(bgm_y) < len(voice_track):
+            reps = int(np.ceil(len(voice_track) / len(bgm_y)))
+            bgm_y = np.tile(bgm_y, reps)
+        bgm_y = bgm_y[:len(voice_track)]
+        
+        bgm_y = normalize_lufs(bgm_y, sample_rate, -28.0)
+        final_mix = voice_track + bgm_y
+        final_mix = normalize_lufs(final_mix, sample_rate, TARGET_MASTER_LUFS)
+        sf.write(str(master_wav_path), final_mix, sample_rate)
+    else:
+        sf.write(str(master_wav_path), voice_track, sample_rate)
 
-    # Normalize concatenated voice
-    voice_master_wav = BLOCKS_DIR / "voice_master.wav"
-    y_voice, _ = sf.read(str(voice_raw_wav))
-    y_voice_norm = normalize_lufs(y_voice, sr, TARGET_VOICE_LUFS)
-    sf.write(str(voice_master_wav), y_voice_norm, sr)
+    shutil.copy(master_wav_path, public_master_path)
+    print(f"✅ Voiceover mixed & copied to {public_master_path}")
+    
+    return timeline_blocks, total_voice_ms, total_frames
 
-    total_voice_dur_s = len(y_voice_norm) / sr
-    total_frames = int(round(total_voice_dur_s * 30))
-    print(f"✅ Voice track assembled: {total_voice_dur_s:.2f}s ({total_frames} frames)")
+def generate_subtitles_whisper(timeline_blocks, total_frames, total_ms):
+    print("📝 Running Faster-Whisper for Subtitle Synchronization...")
+    whisper_model = WhisperModel("base", device="cpu", compute_type="int8")
+    
+    voice_track_path = str(AUDIO_DIR / "voice_track.wav")
+    segments, _ = whisper_model.transcribe(voice_track_path, word_timestamps=True)
+    
+    words_list = []
+    fps = 30
+    
+    for seg in segments:
+        for w in seg.words:
+            w_text = w.word.strip()
+            # Clean Whisper mistranscriptions
+            if w_text.lower() in ["022", "o22", "o2n"]:
+                w_text = "O(2^N)"
+            elif w_text.lower() in ["on", "o and"]:
+                w_text = "O(N)"
+            elif w_text.lower() in ["o1", "o 1"]:
+                w_text = "O(1)"
+                
+            w_start_ms = int(w.start * 1000)
+            w_end_ms = int(w.end * 1000)
+            w_start_frame = round(w_start_ms * fps / 1000)
+            w_end_frame = round(w_end_ms * fps / 1000)
+            
+            words_list.append({
+                "word": w_text,
+                "start_ms": w_start_ms,
+                "end_ms": w_end_ms,
+                "start_frame": w_start_frame,
+                "end_frame": w_end_frame
+            })
 
-    # Master BGM Sidechain Ducking
-    master_audio_mp3 = PUBLIC_REELS / "voiceover.mp3"
-    reel_audio_mp3 = REEL_DIR / "voiceover.mp3"
-
-    cmd_master = [
-        "ffmpeg", "-y",
-        "-i", str(voice_master_wav),
-        "-i", str(BGM_PATH),
-        "-filter_complex",
-        f"[1:a]aloop=loop=-1:size=2e+09,atrim=0:{total_voice_dur_s + 0.5:.2f},volume=0.38,afade=t=in:st=0:d=0.2,afade=t=out:st={total_voice_dur_s - 0.5:.2f}:d=0.8[bgm]; "
-        f"[0:a]asplit=2[v_main][v_sc]; "
-        f"[bgm][v_sc]sidechaincompress=threshold=0.08:ratio=2.5:attack=35:release=160[ducked_bgm]; "
-        f"[v_main][ducked_bgm]amix=inputs=2:normalize=0[mix]; "
-        f"[mix]loudnorm=I={TARGET_MASTER_LUFS}:TP=-1.5:LRA=7[out]",
-        "-map", "[out]",
-        "-b:a", "320k",
-        str(master_audio_mp3)
-    ]
-    subprocess.run(cmd_master, check=True, capture_output=True)
-    shutil.copy(master_audio_mp3, reel_audio_mp3)
-
-    # Extract subtitles
-    subtitles, words_all = extract_subtitles_whisper(voice_master_wav, fps=30)
+    # Chunk into 3-4 word phrases
+    chunks = []
+    chunk_size = 4
+    for i in range(0, len(words_list), chunk_size):
+        chunk_words = words_list[i:i+chunk_size]
+        if not chunk_words:
+            continue
+        c_start_frame = chunk_words[0]["start_frame"]
+        c_end_frame = chunk_words[-1]["end_frame"]
+        c_text = " ".join(cw["word"] for cw in chunk_words)
+        chunks.append({
+            "id": f"sub_{i//chunk_size+1:03d}",
+            "text": c_text,
+            "start_frame": c_start_frame,
+            "end_frame": c_end_frame,
+            "words": chunk_words
+        })
 
     timeline_data = {
-        "composition": "NemiExplainsClimbingStairs",
-        "fps": 30,
-        "total_duration_s": round(total_voice_dur_s, 2),
+        "reel_id": "climbing_stairs_17",
+        "title": "Climbing Stairs in O(1) Space",
+        "total_ms": total_ms,
         "total_frames": total_frames,
-        "timeline_events": timeline_events,
-        "subtitles": subtitles,
-        "words": words_all
+        "blocks": timeline_blocks,
+        "subtitles": chunks,
+        "words": words_list
     }
 
-    timeline_json = REEL_DIR / "timeline.json"
-    with open(timeline_json, "w") as f:
+    timeline_path = REEL_DIR / "timeline.json"
+    with open(timeline_path, "w", encoding="utf-8") as f:
         json.dump(timeline_data, f, indent=2)
 
-    print(f"🎉 Pipeline Complete! Duration: {total_voice_dur_s:.2f}s ({total_frames} frames)")
-    print(f"📁 Timeline saved to: {timeline_json}")
+    print(f"✅ Generated {len(chunks)} subtitle chunks in {timeline_path}")
+
+def main():
+    blocks = generate_voice_blocks()
+    timeline_blocks, total_ms, total_frames = assemble_master_audio(blocks)
+    generate_subtitles_whisper(timeline_blocks, total_frames, total_ms)
+    print("🎉 Audio generation & timeline sync complete!")
 
 if __name__ == "__main__":
     main()

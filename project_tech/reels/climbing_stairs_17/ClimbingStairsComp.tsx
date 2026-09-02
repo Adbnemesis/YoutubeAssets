@@ -42,15 +42,15 @@ export const nemiTheme = {
 export const ClimbingStairsComp: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const totalFrames = timelineData.total_frames || 734;
+  const totalFrames = timelineData.total_frames || 868;
 
-  // ─── Stage Boundaries ───
-  const cutB = 111;  // Nemi question -> dark mode
-  const cutC = 230;  // Recursion tree meltdown
-  const cutD = 338;  // Fibonacci secret
-  const cutE = 486;  // DP 2-variable slider
-  const cutF = 582;  // Victory -> light mode
-  const cutG = 662;  // Loop seam
+  // ─── Stage Boundaries (Synced with new Timeline Blocks) ───
+  const cutB = 126;  // Nemi question -> dark mode
+  const cutC = 245;  // Recursion tree meltdown
+  const cutD = 364;  // Fibonacci secret
+  const cutE = 507;  // DP 2-variable slider
+  const cutF = 775;  // Victory -> light mode crossfade
+  const cutG = 778;  // Loop seam
 
   // ─── Smooth Background Crossfade Transition (Light <-> Dark) ───
   const darkOpacity = interpolate(
@@ -85,11 +85,11 @@ export const ClimbingStairsComp: React.FC = () => {
     nemiPose = "shocked";
   } else if (frame < cutE) {
     nemiPose = "explaining";
-  } else if (frame < cutF) {
+  } else if (frame < 647) {
     nemiPose = "aha";
-  } else if (frame < cutG + 20) {
+  } else if (frame < 778) {
     nemiPose = "smug";
-    nemiSpeech = "From exponential meltdown to 4 lines of code! 😎⚡";
+    nemiSpeech = "No 100-size array needed, just two numbers sliding up to 100! 😎⚡";
   } else {
     nemiPose = "smug";
   }
@@ -146,10 +146,10 @@ export const ClimbingStairsComp: React.FC = () => {
       <Sequence from={cutE} durationInFrames={20}>
         <Audio src={staticFile("sfx/click.mp3")} volume={0.45} />
       </Sequence>
-      <Sequence from={540} durationInFrames={20}>
+      <Sequence from={580} durationInFrames={20}>
         <Audio src={staticFile("sfx/click.mp3")} volume={0.45} />
       </Sequence>
-      <Sequence from={cutF} durationInFrames={40}>
+      <Sequence from={cutG} durationInFrames={40}>
         <Audio src={staticFile("sfx/anime-wow.mp3")} volume={0.8} />
       </Sequence>
 
@@ -246,7 +246,7 @@ export const ClimbingStairsComp: React.FC = () => {
             ? "O(2^N) MELTDOWN"
             : frame < cutE
             ? "FIBONACCI LAW"
-            : frame < cutF
+            : frame < cutG
             ? "2-VARIABLE SLIDER"
             : "O(1) SPACE VICTORY"}
         </div>
@@ -290,9 +290,9 @@ export const ClimbingStairsComp: React.FC = () => {
             <>
               Step N = <span style={{ color: nemiTheme.colors.brandCyan }}>Step(N-1) + Step(N-2)!</span> ⚡
             </>
-          ) : frame < cutF ? (
+          ) : frame < cutG ? (
             <>
-              Two Variables <span style={{ color: nemiTheme.colors.brandGreen }}>Slide Up In O(N) Time!</span> 🚀
+              How 2 Variables <span style={{ color: nemiTheme.colors.brandGreen }}>Slide Up In O(N) Time!</span> 🚀
             </>
           ) : (
             <>
@@ -307,14 +307,14 @@ export const ClimbingStairsComp: React.FC = () => {
       {/* DYNAMIC OPEN-CANVAS SPATIAL VISUAL STAGES */}
       {/* ══════════════════════════════════════════════════════════ */}
 
-      {/* STAGE 1: DYNAMIC LEAPING ISOMETRIC STAIRCASE (0 to 111) */}
+      {/* STAGE 1: DYNAMIC LEAPING ISOMETRIC STAIRCASE (0 to 126) */}
       {frame < cutB + 6 && (
         <div style={{ opacity: interpolate(frame, [cutB - 6, cutB + 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
           <OpenVisual1_Staircase frame={frame} />
         </div>
       )}
 
-      {/* STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN & SIZZLING CPU (111 to 338) */}
+      {/* STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN & SIZZLING CPU (126 to 364) */}
       {frame >= cutB - 6 && frame < cutD + 6 && (
         <div
           style={{
@@ -330,7 +330,7 @@ export const ClimbingStairsComp: React.FC = () => {
         </div>
       )}
 
-      {/* STAGE 3: FIBONACCI STEP-BACK CONVERGENCE CONDUITS (338 to 486) */}
+      {/* STAGE 3: FIBONACCI STEP-BACK CONVERGENCE CONDUITS (364 to 507) */}
       {frame >= cutD - 6 && frame < cutE + 6 && (
         <div
           style={{
@@ -346,13 +346,13 @@ export const ClimbingStairsComp: React.FC = () => {
         </div>
       )}
 
-      {/* STAGE 4: HIGH-CLARITY 2-VARIABLE DUAL REGISTER ENGINE (486 to 582) */}
-      {frame >= cutE - 6 && frame < cutF + 6 && (
+      {/* STAGE 4: EXPLICIT 2-VARIABLE SLIDING MEMORY ENGINE (507 to 777) */}
+      {frame >= cutE - 6 && frame < cutG + 6 && (
         <div
           style={{
             opacity: interpolate(
               frame,
-              [cutE - 6, cutE + 6, cutF - 6, cutF + 6],
+              [cutE - 6, cutE + 6, cutG - 6, cutG + 6],
               [0, 1, 1, 0],
               { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
             ),
@@ -362,9 +362,9 @@ export const ClimbingStairsComp: React.FC = () => {
         </div>
       )}
 
-      {/* STAGE 5: VICTORY PYTHON CODE & SCANLINE COMPLEXITY (582 to 734) */}
-      {frame >= cutF - 6 && (
-        <div style={{ opacity: interpolate(frame, [cutF - 6, cutF + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
+      {/* STAGE 5: VICTORY PYTHON CODE & SCANLINE COMPLEXITY (777 to 868) */}
+      {frame >= cutG - 6 && (
+        <div style={{ opacity: interpolate(frame, [cutG - 6, cutG + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
           <OpenVisual5_VictoryCode frame={frame} />
         </div>
       )}
@@ -474,7 +474,7 @@ export const ClimbingStairsComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. STAGE 1: DYNAMIC LEAPING ISOMETRIC STAIRCASE (0 to 111)
+// 1. STAGE 1: DYNAMIC LEAPING ISOMETRIC STAIRCASE (0 to 126)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual1_Staircase: React.FC<{ frame: number }> = ({ frame }) => {
   const stepPositions = [
@@ -637,7 +637,7 @@ const OpenVisual1_Staircase: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 2. STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN & SIZZLING CPU (111 to 338)
+// 2. STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN & SIZZLING CPU (126 to 364)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> = ({ frame, cutC }) => {
   const isMeltdown = frame >= cutC;
@@ -795,7 +795,7 @@ const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> =
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 3. STAGE 3: FIBONACCI STEP-BACK CONVERGENCE CONDUITS (338 to 486)
+// 3. STAGE 3: FIBONACCI STEP-BACK CONVERGENCE CONDUITS (364 to 507)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual3_FibonacciLaw: React.FC<{ frame: number }> = ({ frame }) => {
   const pulse = Math.sin(frame * 0.25);
@@ -916,34 +916,44 @@ const OpenVisual3_FibonacciLaw: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 4. STAGE 4: HIGH-CLARITY 2-VARIABLE DUAL REGISTER ENGINE (486 to 582)
+// 4. STAGE 4: EXPLICIT 2-VARIABLE SLIDING MEMORY ENGINE (507 to 777)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
-  // Clear Step-by-Step Simulation Progression
-  // Frame 486-510: Step 3 (a=1, b=2 -> sum=3)
-  // Frame 510-535: Shift! (a=2, b=3 -> sum=5) (Step 4)
-  // Frame 535-560: Shift! (a=3, b=5 -> sum=8) (Step 5)
-  // Frame 560-582: Flash forward to Step 100!
+  // Clear Step-by-Step Simulation Progression perfectly aligned with voiceover:
+  // Frame 508-545 ("Start with a at 1 and b at 2"): Registers init
+  // Frame 545-585 ("Add them to get the next step"): 1 + 2 = 3 (Step 3)
+  // Frame 585-645 ("then slide them forward!"): Shift a<-2, b<-3, 2+3=5 (Step 4), a<-3, b<-5
+  // Frame 647-777 (Nemi: "No 100-size array needed, just two numbers sliding up to 100!"): Flash forward to 100!
   let currentStep = 3;
   let valA = 1;
   let valB = 2;
   let nextSum = 3;
+  let phaseText = "INITIALIZE: a = 1 (Step 1), b = 2 (Step 2)";
 
-  if (frame >= 510 && frame < 535) {
+  if (frame >= 545 && frame < 585) {
+    currentStep = 3;
+    valA = 1;
+    valB = 2;
+    nextSum = 3;
+    phaseText = "ADD: 1 + 2 = 3 (Step 3 Ways)";
+  } else if (frame >= 585 && frame < 620) {
     currentStep = 4;
     valA = 2;
     valB = 3;
     nextSum = 5;
-  } else if (frame >= 535 && frame < 560) {
+    phaseText = "SLIDE: a ← 2, b ← 3 → Next Sum = 5 (Step 4)";
+  } else if (frame >= 620 && frame < 647) {
     currentStep = 5;
     valA = 3;
     valB = 5;
     nextSum = 8;
-  } else if (frame >= 560) {
+    phaseText = "SLIDE: a ← 3, b ← 5 → Next Sum = 8 (Step 5)";
+  } else if (frame >= 647) {
     currentStep = 100;
     valA = 218922995834555169026;
     valB = 354224848179261915075;
     nextSum = 354224848179261915075;
+    phaseText = "SLID TO STEP 100! 🚀 NO ARRAY ALLOCATED!";
   }
 
   const pulse = Math.sin(frame * 0.3);
@@ -975,7 +985,7 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
         >
           <span style={{ fontSize: 24 }}>⚡</span>
           <span style={{ fontSize: 20, fontWeight: 900, color: "#6EE7B7", fontFamily: nemiTheme.typography.fontFamily.mono }}>
-            {currentStep === 100 ? "STEP 100 COMPUTED! 🚀" : `COMPUTING STEP ${currentStep}: a + b = ${nextSum}`}
+            {phaseText}
           </span>
         </div>
 
@@ -991,7 +1001,7 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
             fontFamily: nemiTheme.typography.fontFamily.mono,
           }}
         >
-          O(1) SPACE (ONLY 2 NUMBERS)
+          O(1) SPACE (2 INTEGERS)
         </div>
       </div>
 
@@ -1093,7 +1103,7 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span style={{ color: "#6EE7B7", fontSize: 18, fontWeight: 900, letterSpacing: "1px" }}>
-            THE 1-LINE SLIDING SHIFT:
+            HOW THE TWO VARIABLES SLIDE:
           </span>
           <span style={{ color: "#FFD166", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
             a, b = b, a + b
@@ -1107,7 +1117,8 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
           </div>
           <div>👉</div>
           <div>
-            2. Shift: <span style={{ color: "#06B6D4" }}>a ← {currentStep === 100 ? "218Q" : valB}</span>, <span style={{ color: "#F59E0B" }}>b ← {currentStep === 100 ? "354Q" : nextSum}</span>
+            2. Shift: <span style={{ color: "#06B6D4" }}>a ← {currentStep === 100 ? "218Q" : valB}</span>,{" "}
+            <span style={{ color: "#F59E0B" }}>b ← {currentStep === 100 ? "354Q" : nextSum}</span>
           </div>
         </div>
       </div>
@@ -1129,7 +1140,7 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
           boxShadow: "0 14px 40px rgba(16, 185, 129, 0.25)",
         }}
       >
-        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Memory Footprint:</span>
+        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Memory Optimization:</span>
         <span style={{ color: "#6EE7B7", fontWeight: 900, fontSize: 22, fontFamily: nemiTheme.typography.fontFamily.mono }}>
           ZERO ARRAY ALLOCATIONS (2 INTEGERS ONLY!) ✓
         </span>
@@ -1139,7 +1150,7 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 5. STAGE 5: VICTORY PYTHON CODE & SCANLINE COMPLEXITY (582 to 734)
+// 5. STAGE 5: VICTORY PYTHON CODE & SCANLINE COMPLEXITY (777 to 868)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual5_VictoryCode: React.FC<{ frame: number }> = ({ frame }) => {
   const scanlineY = ((frame * 4) % 180) + 20;
@@ -1202,10 +1213,10 @@ const OpenVisual5_VictoryCode: React.FC<{ frame: number }> = ({ frame }) => {
         />
 
         <div><span style={{ color: "#F43F5E" }}>def</span> <span style={{ color: "#67E8F9" }}>climbStairs</span>(n: <span style={{ color: "#FBBF24" }}>int</span>) -&gt; <span style={{ color: "#FBBF24" }}>int</span>:</div>
-        <div style={{ paddingLeft: 32 }}>a, b = <span style={{ color: "#A78BFA" }}>1</span>, <span style={{ color: "#A78BFA" }}>1</span></div>
+        <div style={{ paddingLeft: 32 }}>a, b = <span style={{ color: "#A78BFA" }}>1</span>, <span style={{ color: "#A78BFA" }}>2</span></div>
         <div style={{ paddingLeft: 32 }}><span style={{ color: "#F43F5E" }}>for</span> _ <span style={{ color: "#F43F5E" }}>in</span> <span style={{ color: "#67E8F9" }}>range</span>(n - <span style={{ color: "#A78BFA" }}>1</span>):</div>
         <div style={{ paddingLeft: 64 }}>a, b = b, a + b</div>
-        <div style={{ paddingLeft: 32, color: "#10B981", fontWeight: 700 }}><span style={{ color: "#F43F5E" }}>return</span> b <span style={{ color: "#94A3B8" }}># 🎯 O(1) Space!</span></div>
+        <div style={{ paddingLeft: 32, color: "#10B981", fontWeight: 700 }}><span style={{ color: "#F43F5E" }}>return</span> a <span style={{ color: "#94A3B8" }}># 🎯 O(1) Space!</span></div>
       </div>
 
       {/* Floating Complexity Scorecard (top: 840px) */}
