@@ -444,7 +444,7 @@
     },
     {
       "id": "sub_011",
-      "text": "in exponential 022 and",
+      "text": "in exponential O(2^N) time!",
       "start_frame": 277,
       "end_frame": 324,
       "words": [
@@ -463,14 +463,14 @@
           "end_frame": 296
         },
         {
-          "word": "022",
+          "word": "O(2^N)",
           "start_ms": 9860,
           "end_ms": 10340,
           "start_frame": 296,
           "end_frame": 310
         },
         {
-          "word": "and",
+          "word": "time!",
           "start_ms": 10340,
           "end_ms": 10680,
           "start_frame": 310,
@@ -1110,14 +1110,14 @@
       "end_frame": 296
     },
     {
-      "word": "022",
+      "word": "O(2^N)",
       "start_ms": 9860,
       "end_ms": 10340,
       "start_frame": 296,
       "end_frame": 310
     },
     {
-      "word": "and",
+      "word": "time!",
       "start_ms": 10340,
       "end_ms": 10680,
       "start_frame": 310,

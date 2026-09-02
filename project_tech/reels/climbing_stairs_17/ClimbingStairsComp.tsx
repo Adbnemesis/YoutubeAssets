@@ -3,6 +3,7 @@ import {
   AbsoluteFill,
   Audio,
   interpolate,
+  interpolateColors,
   staticFile,
   useCurrentFrame,
   useVideoConfig,
@@ -51,9 +52,20 @@ export const ClimbingStairsComp: React.FC = () => {
   const cutF = 582;  // Victory -> light mode
   const cutG = 662;  // Loop seam
 
-  // ─── Smooth Background Theme ───
-  const isDarkWorld = frame >= cutB && frame < cutF;
-  const canvasBg = isDarkWorld ? nemiTheme.colors.canvasDark : nemiTheme.colors.canvasLight;
+  // ─── Smooth Background Crossfade Transition (Light <-> Dark) ───
+  const darkOpacity = interpolate(
+    frame,
+    [cutB - 12, cutB + 8, cutF - 12, cutF + 8],
+    [0, 1, 1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+  const isDarkWorld = darkOpacity > 0.5;
+
+  // Smoothly interpolated text and border colors
+  const titleColor = interpolateColors(darkOpacity, [0, 1], ["#0F172A", "#F8FAFC"]);
+  const hudBg = interpolateColors(darkOpacity, [0, 1], ["#FFFFFF", "#0F172A"]);
+  const hudBorder = interpolateColors(darkOpacity, [0, 1], ["#E2E8F0", "rgba(255, 255, 255, 0.14)"]);
+  const hudTextColor = interpolateColors(darkOpacity, [0, 1], ["#0F172A", "#F8FAFC"]);
 
   // ─── Camera Breathing ───
   const cameraScale = interpolate(frame, [0, totalFrames], [1.0, 1.025], {
@@ -94,13 +106,25 @@ export const ClimbingStairsComp: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        backgroundColor: canvasBg,
+        backgroundColor: nemiTheme.colors.canvasLight,
         fontFamily: nemiTheme.typography.fontFamily.sans,
         overflow: "hidden",
         transform: `scale(${cameraScale})`,
         transformOrigin: "center center",
       }}
     >
+      {/* ══════════════════════════════════════════════════════════ */}
+      {/* SMOOTH CROSSFADE DARK WORLD LAYER */}
+      {/* ══════════════════════════════════════════════════════════ */}
+      <AbsoluteFill
+        style={{
+          backgroundColor: nemiTheme.colors.canvasDark,
+          opacity: darkOpacity,
+          pointerEvents: "none",
+          zIndex: 0,
+        }}
+      />
+
       {/* ══════════════════════════════════════════════════════════ */}
       {/* MASTER AUDIO (Voice + Ducked BGM) */}
       {/* ══════════════════════════════════════════════════════════ */}
@@ -130,38 +154,36 @@ export const ClimbingStairsComp: React.FC = () => {
       </Sequence>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* AMBIENT BACKGROUND GLOW (DARK WORLD) */}
+      {/* AMBIENT BACKGROUND GLOW (SMOOTH FADE) */}
       {/* ══════════════════════════════════════════════════════════ */}
-      {isDarkWorld && (
-        <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 1 }}>
-          <div
-            style={{
-              position: "absolute",
-              top: 250,
-              left: -100,
-              width: 700,
-              height: 700,
-              borderRadius: "50%",
-              background: frame < cutD
-                ? "radial-gradient(circle, rgba(239, 68, 68, 0.18) 0%, transparent 70%)"
-                : "radial-gradient(circle, rgba(6, 182, 212, 0.22) 0%, transparent 70%)",
-              filter: "blur(100px)",
-            }}
-          />
-          <div
-            style={{
-              position: "absolute",
-              top: 600,
-              right: -100,
-              width: 700,
-              height: 700,
-              borderRadius: "50%",
-              background: "radial-gradient(circle, rgba(245, 158, 11, 0.20) 0%, transparent 70%)",
-              filter: "blur(100px)",
-            }}
-          />
-        </div>
-      )}
+      <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 1, opacity: darkOpacity }}>
+        <div
+          style={{
+            position: "absolute",
+            top: 250,
+            left: -100,
+            width: 700,
+            height: 700,
+            borderRadius: "50%",
+            background: frame < cutD
+              ? "radial-gradient(circle, rgba(239, 68, 68, 0.22) 0%, transparent 70%)"
+              : "radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 70%)",
+            filter: "blur(100px)",
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            top: 600,
+            right: -100,
+            width: 700,
+            height: 700,
+            borderRadius: "50%",
+            background: "radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, transparent 70%)",
+            filter: "blur(100px)",
+          }}
+        />
+      </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
       {/* TOP HUD (Safe Zone: top: 85px) */}
@@ -205,13 +227,13 @@ export const ClimbingStairsComp: React.FC = () => {
 
         <div
           style={{
-            backgroundColor: isDarkWorld ? "rgba(15, 23, 42, 0.94)" : "#FFFFFF",
+            backgroundColor: hudBg,
             padding: "10px 22px",
             borderRadius: 24,
-            border: `2px solid ${isDarkWorld ? nemiTheme.colors.borderDark : nemiTheme.colors.borderLight}`,
+            border: `2px solid ${hudBorder}`,
             fontSize: 20,
             fontWeight: 900,
-            color: isDarkWorld ? "#F8FAFC" : "#0F172A",
+            color: hudTextColor,
             fontFamily: nemiTheme.typography.fontFamily.mono,
             boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
           }}
@@ -249,7 +271,7 @@ export const ClimbingStairsComp: React.FC = () => {
             fontWeight: 900,
             letterSpacing: -1.5,
             lineHeight: 1.15,
-            color: isDarkWorld ? "#F8FAFC" : nemiTheme.colors.textHeadingDark,
+            color: titleColor,
           }}
         >
           {frame < cutB ? (
@@ -282,23 +304,70 @@ export const ClimbingStairsComp: React.FC = () => {
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* OPEN-CANVAS SPATIAL VISUAL STAGES (Safe Zone: top: 290px to 1050px) */}
+      {/* DYNAMIC OPEN-CANVAS SPATIAL VISUAL STAGES */}
       {/* ══════════════════════════════════════════════════════════ */}
 
-      {/* STAGE 1: ISOMETRIC NEON STAIRCASE (0 to 111) */}
-      {frame < cutB && <OpenVisual1_Staircase frame={frame} />}
+      {/* STAGE 1: DYNAMIC LEAPING ISOMETRIC STAIRCASE (0 to 111) */}
+      {frame < cutB + 6 && (
+        <div style={{ opacity: interpolate(frame, [cutB - 6, cutB + 6], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
+          <OpenVisual1_Staircase frame={frame} />
+        </div>
+      )}
 
-      {/* STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN (111 to 338) */}
-      {frame >= cutB && frame < cutD && <OpenVisual2_RecursionMeltdown frame={frame} cutC={cutC} />}
+      {/* STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN & SIZZLING CPU (111 to 338) */}
+      {frame >= cutB - 6 && frame < cutD + 6 && (
+        <div
+          style={{
+            opacity: interpolate(
+              frame,
+              [cutB - 6, cutB + 6, cutD - 6, cutD + 6],
+              [0, 1, 1, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+            ),
+          }}
+        >
+          <OpenVisual2_RecursionMeltdown frame={frame} cutC={cutC} />
+        </div>
+      )}
 
-      {/* STAGE 3: FIBONACCI STEP-BACK CONVERGENCE (338 to 486) */}
-      {frame >= cutD && frame < cutE && <OpenVisual3_FibonacciLaw frame={frame} />}
+      {/* STAGE 3: FIBONACCI STEP-BACK CONVERGENCE CONDUITS (338 to 486) */}
+      {frame >= cutD - 6 && frame < cutE + 6 && (
+        <div
+          style={{
+            opacity: interpolate(
+              frame,
+              [cutD - 6, cutD + 6, cutE - 6, cutE + 6],
+              [0, 1, 1, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+            ),
+          }}
+        >
+          <OpenVisual3_FibonacciLaw frame={frame} />
+        </div>
+      )}
 
-      {/* STAGE 4: DYNAMIC 2-VARIABLE DP SLIDER (486 to 582) */}
-      {frame >= cutE && frame < cutF && <OpenVisual4_DPSlider frame={frame} />}
+      {/* STAGE 4: DYNAMIC 2-VARIABLE DP SLIDER IN ACTION (486 to 582) */}
+      {frame >= cutE - 6 && frame < cutF + 6 && (
+        <div
+          style={{
+            opacity: interpolate(
+              frame,
+              [cutE - 6, cutE + 6, cutF - 6, cutF + 6],
+              [0, 1, 1, 0],
+              { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+            ),
+          }}
+        >
+          <OpenVisual4_DPSlider frame={frame} />
+        </div>
+      )}
 
-      {/* STAGE 5: VICTORY PYTHON CODE & COMPLEXITY (582 to 734) */}
-      {frame >= cutF && <OpenVisual5_VictoryCode frame={frame} />}
+      {/* STAGE 5: VICTORY PYTHON CODE & SCANLINE COMPLEXITY (582 to 734) */}
+      {frame >= cutF - 6 && (
+        <div style={{ opacity: interpolate(frame, [cutF - 6, cutF + 6], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>
+          <OpenVisual5_VictoryCode frame={frame} />
+        </div>
+      )}
 
       {/* ══════════════════════════════════════════════════════════ */}
       {/* DYNAMIC VIRAL KARAOKE CAPTIONS (Safe Zone: top: 1140px) */}
@@ -405,10 +474,31 @@ export const ClimbingStairsComp: React.FC = () => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 1. STAGE 1: ISOMETRIC NEON STAIRCASE (0 to 111)
+// 1. STAGE 1: DYNAMIC LEAPING ISOMETRIC STAIRCASE (0 to 111)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual1_Staircase: React.FC<{ frame: number }> = ({ frame }) => {
-  const jumpOffset = (frame * 6) % 180;
+  const stepPositions = [
+    { x: 120, y: 420 }, // Ground
+    { x: 260, y: 350 }, // Step 1
+    { x: 400, y: 280 }, // Step 2
+    { x: 540, y: 210 }, // Step 3
+    { x: 680, y: 140 }, // Step 4
+    { x: 825, y: 70 },  // Step 100
+  ];
+
+  const totalSteps = stepPositions.length - 1;
+  const cycleProgress = (frame * 0.05) % totalSteps;
+  const currentStepIdx = Math.floor(cycleProgress);
+  const nextStepIdx = Math.min(currentStepIdx + 1, totalSteps);
+  const stepT = cycleProgress - currentStepIdx;
+
+  const fromPos = stepPositions[currentStepIdx];
+  const toPos = stepPositions[nextStepIdx];
+  const orbX = fromPos.x + (toPos.x - fromPos.x) * stepT;
+  const arcHeight = 70;
+  const orbY = fromPos.y + (toPos.y - fromPos.y) * stepT - 4 * arcHeight * stepT * (1 - stepT);
+
+  const dashOffset = -frame * 8;
 
   return (
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 25 }}>
@@ -435,7 +525,7 @@ const OpenVisual1_Staircase: React.FC<{ frame: number }> = ({ frame }) => {
         </span>
       </div>
 
-      {/* SVG Neon Staircase with Jumping Arcs */}
+      {/* SVG Neon Staircase with Dynamic Jumping Orb */}
       <div style={{ position: "absolute", top: 380, left: 70, right: 70, height: 500 }}>
         <svg width="940" height="500" viewBox="0 0 940 500">
           <defs>
@@ -461,50 +551,62 @@ const OpenVisual1_Staircase: React.FC<{ frame: number }> = ({ frame }) => {
             { step: "Step 3", x: 480, y: 210, w: 120, h: 260, val: "3 Ways" },
             { step: "Step 4", x: 620, y: 140, w: 120, h: 330, val: "5 Ways" },
             { step: "Step 100", x: 760, y: 70, w: 130, h: 400, val: "? Ways" },
-          ].map((s, idx) => (
-            <g key={idx}>
-              <rect
-                x={s.x}
-                y={s.y}
-                width={s.w}
-                height={s.h}
-                rx="14"
-                fill={idx === 5 ? "url(#stairGrad)" : "#FFFFFF"}
-                stroke={idx === 5 ? "#D97706" : "#CBD5E1"}
-                strokeWidth="3.5"
-              />
-              <text x={s.x + s.w / 2} y={s.y + 36} fill="#0F172A" fontSize="18" fontWeight="900" textAnchor="middle">
-                {s.step}
-              </text>
-              <text x={s.x + s.w / 2} y={s.y + 64} fill={idx === 5 ? "#B45309" : "#64748B"} fontSize="15" fontWeight="800" textAnchor="middle" fontFamily="monospace">
-                {s.val}
-              </text>
-            </g>
-          ))}
+          ].map((s, idx) => {
+            const isStepActive = currentStepIdx === idx;
+            return (
+              <g key={idx}>
+                <rect
+                  x={s.x}
+                  y={s.y}
+                  width={s.w}
+                  height={s.h}
+                  rx="14"
+                  fill={idx === 5 ? "url(#stairGrad)" : isStepActive ? "#FEF3C7" : "#FFFFFF"}
+                  stroke={idx === 5 ? "#D97706" : isStepActive ? "#F59E0B" : "#CBD5E1"}
+                  strokeWidth={isStepActive ? "4" : "3"}
+                />
+                <text x={s.x + s.w / 2} y={s.y + 36} fill="#0F172A" fontSize="18" fontWeight="900" textAnchor="middle">
+                  {s.step}
+                </text>
+                <text x={s.x + s.w / 2} y={s.y + 64} fill={idx === 5 ? "#B45309" : "#64748B"} fontSize="15" fontWeight="800" textAnchor="middle" fontFamily="monospace">
+                  {s.val}
+                </text>
+              </g>
+            );
+          })}
 
-          {/* Jumping Arcs: +1 Step (Cyan) */}
+          {/* Flowing Laser Arc: +1 Step (Cyan) */}
           <path
             d="M 260 350 Q 330 260 400 280"
             fill="none"
             stroke="url(#arc1Grad)"
             strokeWidth="4"
             strokeDasharray="8 6"
+            strokeDashoffset={dashOffset}
           />
           <text x="330" y="270" fill="#0891B2" fontSize="16" fontWeight="900" textAnchor="middle">
             +1 Step 👉
           </text>
 
-          {/* Jumping Arcs: +2 Steps (Amber) */}
+          {/* Flowing Laser Arc: +2 Steps (Amber) */}
           <path
             d="M 260 350 Q 400 130 540 210"
             fill="none"
             stroke="url(#arc2Grad)"
             strokeWidth="5"
             strokeDasharray="10 8"
+            strokeDashoffset={dashOffset * 1.2}
           />
           <text x="400" y="160" fill="#DC2626" fontSize="18" fontWeight="900" textAnchor="middle">
             +2 Steps 🚀
           </text>
+
+          {/* Living Jumping Energy Orb */}
+          <g transform={`translate(${orbX}, ${orbY})`}>
+            <circle r="22" fill="#F59E0B" opacity="0.4" filter="blur(6px)" />
+            <circle r="14" fill="#FFD166" stroke="#B45309" strokeWidth="3" />
+            <text x="0" y="5" fill="#18181B" fontSize="12" fontWeight="900" textAnchor="middle">🏃</text>
+          </g>
         </svg>
       </div>
 
@@ -535,10 +637,16 @@ const OpenVisual1_Staircase: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 2. STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN (111 to 338)
+// 2. STAGE 2: EXPONENTIAL RECURSION TREE MELTDOWN & SIZZLING CPU (111 to 338)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> = ({ frame, cutC }) => {
   const isMeltdown = frame >= cutC;
+  const pulse = Math.sin(frame * 0.4);
+  const scanLaserY = 120 + 200 * (0.5 + 0.5 * Math.sin(frame * 0.15));
+
+  const cpuTemp = isMeltdown
+    ? Math.min(125, Math.floor(65 + (frame - cutC) * 0.6 + 5 * Math.sin(frame * 0.8)))
+    : 45;
 
   return (
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 25 }}>
@@ -571,25 +679,44 @@ const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> =
           </span>
         </div>
 
+        {/* Live CPU Sizzle Meter */}
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.9)",
+            backgroundColor: isMeltdown ? "rgba(239, 68, 68, 0.35)" : "rgba(15, 23, 42, 0.9)",
             border: `2px solid ${isMeltdown ? "#EF4444" : "#F59E0B"}`,
             borderRadius: 999,
             padding: "8px 24px",
             fontSize: 18,
             fontWeight: 900,
-            color: isMeltdown ? "#EF4444" : "#F59E0B",
+            color: isMeltdown ? "#FF8080" : "#F59E0B",
             fontFamily: nemiTheme.typography.fontFamily.mono,
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
           }}
         >
-          {isMeltdown ? "2^100 OPERATIONS (FREEZE!) ⚠️" : "EXPONENTIAL CALLS"}
+          <span>{isMeltdown ? "🔥" : "❄️"}</span>
+          <span>{`CPU TEMP: ${cpuTemp}°C`}</span>
         </div>
       </div>
 
       {/* SVG Branching Recursion Tree (top: 380px) */}
       <div style={{ position: "absolute", top: 380, left: 70, right: 70, height: 480 }}>
         <svg width="940" height="480" viewBox="0 0 940 480">
+          {/* Scanning Red Laser Beam during Meltdown */}
+          {isMeltdown && (
+            <line
+              x1="50"
+              y1={scanLaserY}
+              x2="890"
+              y2={scanLaserY}
+              stroke="#EF4444"
+              strokeWidth="2.5"
+              strokeDasharray="6 4"
+              opacity="0.85"
+            />
+          )}
+
           {/* Tree Branches */}
           <line x1="470" y1="60" x2="270" y2="180" stroke={isMeltdown ? "#EF4444" : "#475569"} strokeWidth="3" />
           <line x1="470" y1="60" x2="670" y2="180" stroke={isMeltdown ? "#EF4444" : "#475569"} strokeWidth="3" />
@@ -612,7 +739,8 @@ const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> =
             <text x="0" y="7" fill="#FFF" fontSize="18" fontWeight="900" textAnchor="middle" fontFamily="monospace">f(4)</text>
           </g>
           <g transform="translate(670, 180)">
-            {/* Duplicate f(3) in Red */}
+            {/* Duplicate f(3) in Red with Pulsing Shockwave */}
+            {isMeltdown && <circle r={46 + pulse * 4} fill="none" stroke="#EF4444" strokeWidth="2" opacity="0.6" />}
             <circle r="38" fill={isMeltdown ? "rgba(239, 68, 68, 0.4)" : "#1E293B"} stroke={isMeltdown ? "#EF4444" : "#F59E0B"} strokeWidth="3.5" />
             <text x="0" y="7" fill="#FFF" fontSize="18" fontWeight="900" textAnchor="middle" fontFamily="monospace">f(3) ⚠️</text>
           </g>
@@ -620,6 +748,7 @@ const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> =
           {/* Level 2: Duplicates */}
           <g transform="translate(160, 310)">
             {/* Duplicate f(3) in Red */}
+            {isMeltdown && <circle r={42 + pulse * 4} fill="none" stroke="#EF4444" strokeWidth="2" opacity="0.6" />}
             <circle r="34" fill={isMeltdown ? "rgba(239, 68, 68, 0.4)" : "#1E293B"} stroke={isMeltdown ? "#EF4444" : "#F59E0B"} strokeWidth="3.5" />
             <text x="0" y="6" fill="#FFF" fontSize="16" fontWeight="900" textAnchor="middle" fontFamily="monospace">f(3) ⚠️</text>
           </g>
@@ -666,10 +795,11 @@ const OpenVisual2_RecursionMeltdown: React.FC<{ frame: number; cutC: number }> =
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 3. STAGE 3: FIBONACCI STEP-BACK CONVERGENCE (338 to 486)
+// 3. STAGE 3: FIBONACCI STEP-BACK CONVERGENCE CONDUITS (338 to 486)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual3_FibonacciLaw: React.FC<{ frame: number }> = ({ frame }) => {
   const pulse = Math.sin(frame * 0.25);
+  const flowOffset = -frame * 10;
 
   return (
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 25 }}>
@@ -724,9 +854,27 @@ const OpenVisual3_FibonacciLaw: React.FC<{ frame: number }> = ({ frame }) => {
         </div>
       </div>
 
-      {/* Fibonacci Convergence Equation Box (top: 590px) */}
+      {/* Fibonacci Convergence Equation Box with Flowing Energy Paths (top: 590px) */}
       <div style={{ position: "absolute", top: 590, left: 70, right: 70, height: 260 }}>
         <svg width="940" height="260" viewBox="0 0 940 260">
+          {/* Flowing Energy Beams into Center */}
+          <path
+            d="M 180 0 Q 300 80 470 80"
+            fill="none"
+            stroke="#06B6D4"
+            strokeWidth="3.5"
+            strokeDasharray="8 6"
+            strokeDashoffset={flowOffset}
+          />
+          <path
+            d="M 760 0 Q 640 80 470 80"
+            fill="none"
+            stroke="#F59E0B"
+            strokeWidth="3.5"
+            strokeDasharray="8 6"
+            strokeDashoffset={flowOffset}
+          />
+
           <rect x="80" y="30" width="780" height="200" rx="24" fill="#0B1120" stroke="#06B6D4" strokeWidth="3" />
           <text x="470" y="85" fill="#67E8F9" fontSize="22" fontWeight="900" textAnchor="middle" fontFamily="monospace">
             THE CLIMBING STAIRS LAW:
@@ -768,7 +916,7 @@ const OpenVisual3_FibonacciLaw: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 4. STAGE 4: DYNAMIC 2-VARIABLE DP SLIDER (486 to 582)
+// 4. STAGE 4: DYNAMIC 2-VARIABLE DP SLIDER IN ACTION (486 to 582)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
   let step = 3;
@@ -792,6 +940,14 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
     valB = 8;
     valNext = 13;
   }
+
+  // Smooth sliding animation
+  const smoothX = interpolate(
+    frame,
+    [486, 510, 535, 560],
+    [360, 510, 660, 810],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
 
   return (
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 25 }}>
@@ -843,6 +999,17 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
       {/* Active DP Sliding Window Diagram (top: 380px) */}
       <div style={{ position: "absolute", top: 380, left: 70, right: 70, height: 480 }}>
         <svg width="940" height="480" viewBox="0 0 940 480">
+          {/* Dynamic Laser Guide Line under current slider */}
+          <line
+            x1={smoothX - 100}
+            y1="380"
+            x2={smoothX + 100}
+            y2="380"
+            stroke="#10B981"
+            strokeWidth="3"
+            strokeDasharray="6 4"
+          />
+
           {/* Fibonacci Numerical Runway */}
           {[
             { stepNum: 1, ways: 1, x: 60 },
@@ -934,9 +1101,11 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 5. STAGE 5: VICTORY PYTHON CODE & COMPLEXITY (582 to 734)
+// 5. STAGE 5: VICTORY PYTHON CODE & SCANLINE COMPLEXITY (582 to 734)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual5_VictoryCode: React.FC<{ frame: number }> = ({ frame }) => {
+  const scanlineY = ((frame * 4) % 180) + 20;
+
   return (
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 25 }}>
       {/* Floating Victory Header Pill */}
@@ -962,7 +1131,7 @@ const OpenVisual5_VictoryCode: React.FC<{ frame: number }> = ({ frame }) => {
         </span>
       </div>
 
-      {/* Floating Python Code Card (top: 380px) */}
+      {/* Floating Python Code Card with Scanline Laser (top: 380px) */}
       <div
         style={{
           position: "absolute",
@@ -978,8 +1147,22 @@ const OpenVisual5_VictoryCode: React.FC<{ frame: number }> = ({ frame }) => {
           fontSize: 22,
           lineHeight: 1.6,
           boxShadow: "0 20px 60px rgba(6, 182, 212, 0.25)",
+          overflow: "hidden",
         }}
       >
+        {/* Active Laser Scanning Beam */}
+        <div
+          style={{
+            position: "absolute",
+            top: scanlineY,
+            left: 0,
+            right: 0,
+            height: 2,
+            background: "linear-gradient(90deg, transparent, #06B6D4, transparent)",
+            boxShadow: "0 0 12px #06B6D4",
+          }}
+        />
+
         <div><span style={{ color: "#F43F5E" }}>def</span> <span style={{ color: "#67E8F9" }}>climbStairs</span>(n: <span style={{ color: "#FBBF24" }}>int</span>) -&gt; <span style={{ color: "#FBBF24" }}>int</span>:</div>
         <div style={{ paddingLeft: 32 }}>a, b = <span style={{ color: "#A78BFA" }}>1</span>, <span style={{ color: "#A78BFA" }}>1</span></div>
         <div style={{ paddingLeft: 32 }}><span style={{ color: "#F43F5E" }}>for</span> _ <span style={{ color: "#F43F5E" }}>in</span> <span style={{ color: "#67E8F9" }}>range</span>(n - <span style={{ color: "#A78BFA" }}>1</span>):</div>
