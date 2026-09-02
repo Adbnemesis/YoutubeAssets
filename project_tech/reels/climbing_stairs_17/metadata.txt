@@ -1,0 +1,17 @@
+INSTAGRAM DESCRIPTION:
+Why does solving Climbing Stairs with pure recursion melt your CPU? 🪜💥
+
+If you test every branch recursively, you recalculate the exact same sub-problems billions of times in O(2^N) exponential disaster! 😱
+
+Here is how Dynamic Programming solves it in O(1) space:
+• To reach Step N, you either took 1 step from N-1, or 2 steps from N-2
+• That means ways(N) = ways(N-1) + ways(N-2) — it's literally Fibonacci! ⚡
+• You only need to track the last two numbers: sliding two variables up the staircase in a single linear pass! 🚀
+
+Drop your favorite DP problem in the comments! 👇
+.
+.
+.
+.
+.
+#leetcode #softwareengineer #codinginterview #python #algorithms #computerscience #datastructures #faang #techreels #codingtips

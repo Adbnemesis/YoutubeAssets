@@ -1,0 +1,1428 @@
+{
+  "composition": "NemiExplainsClimbingStairs",
+  "fps": 30,
+  "total_duration_s": 24.48,
+  "total_frames": 734,
+  "timeline_events": [
+    {
+      "id": "cs01_hook",
+      "speaker": "narrator",
+      "text": "Can you climb 100 stairs with 1 or 2 steps? Pure recursion freezes your CPU!",
+      "start_ms": 0,
+      "end_ms": 3648,
+      "duration_ms": 3648,
+      "start_frame": 0,
+      "end_frame": 109,
+      "cues": [
+        {
+          "phrase": "100 stairs",
+          "cue": "staircase_spawn",
+          "frame": 38
+        },
+        {
+          "phrase": "freezes your CPU",
+          "cue": "cpu_warning",
+          "frame": 87
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs01_hook.wav"
+    },
+    {
+      "id": "cs02_nemi",
+      "speaker": "nemi",
+      "text": "Can't we just return climb(n-1) plus climb(n-2)? \ud83e\udd14",
+      "start_ms": 3708,
+      "end_ms": 7612,
+      "duration_ms": 3904,
+      "start_frame": 111,
+      "end_frame": 228,
+      "cues": [
+        {
+          "phrase": "climb(n-1)",
+          "cue": "recursion_tree_spawn",
+          "frame": 169
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs02_nemi.wav"
+    },
+    {
+      "id": "cs03_trap",
+      "speaker": "narrator",
+      "text": "That recalculates duplicate branches in exponential O(2^N) time!",
+      "start_ms": 7672,
+      "end_ms": 11192,
+      "duration_ms": 3520,
+      "start_frame": 230,
+      "end_frame": 336,
+      "cues": [
+        {
+          "phrase": "duplicate branches",
+          "cue": "redundant_nodes_highlight",
+          "frame": 267
+        },
+        {
+          "phrase": "exponential",
+          "cue": "exponential_alert",
+          "frame": 310
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs03_trap.wav"
+    },
+    {
+      "id": "cs04_secret",
+      "speaker": "narrator",
+      "text": "Step N comes from step N-1 or N-2. It's literally Fibonacci!",
+      "start_ms": 11252,
+      "end_ms": 16137,
+      "duration_ms": 4885,
+      "start_frame": 338,
+      "end_frame": 484,
+      "cues": [
+        {
+          "phrase": "Step N",
+          "cue": "step_n_focus",
+          "frame": 382
+        },
+        {
+          "phrase": "Fibonacci",
+          "cue": "fibonacci_formula_reveal",
+          "frame": 455
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs04_secret.wav"
+    },
+    {
+      "id": "cs05_dp_slider",
+      "speaker": "narrator",
+      "text": "Just keep the last two numbers. Two variables solve it in O(N) time!",
+      "start_ms": 16197,
+      "end_ms": 19333,
+      "duration_ms": 3136,
+      "start_frame": 486,
+      "end_frame": 580,
+      "cues": [
+        {
+          "phrase": "last two numbers",
+          "cue": "two_variables_spawn",
+          "frame": 519
+        },
+        {
+          "phrase": "O(N) time",
+          "cue": "sliding_surge",
+          "frame": 556
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs05_dp_slider.wav"
+    },
+    {
+      "id": "cs06_nemi",
+      "speaker": "nemi",
+      "text": "From exponential meltdown to 4 lines of code! \ud83d\ude0e\u26a1",
+      "start_ms": 19393,
+      "end_ms": 21996,
+      "duration_ms": 2603,
+      "start_frame": 582,
+      "end_frame": 660,
+      "cues": [
+        {
+          "phrase": "4 lines of code",
+          "cue": "nemi_smug",
+          "frame": 629
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs06_nemi.wav"
+    },
+    {
+      "id": "cs07_loop",
+      "speaker": "narrator",
+      "text": "That's how dynamic programming solves it in O(1) space.",
+      "start_ms": 22056,
+      "end_ms": 24403,
+      "duration_ms": 2347,
+      "start_frame": 662,
+      "end_frame": 732,
+      "cues": [
+        {
+          "phrase": "O(1) space",
+          "cue": "loop_seam",
+          "frame": 714
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/climbing_stairs_17/audio/blocks/cs07_loop.wav"
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "sub_001",
+      "text": "Can you climb 100",
+      "start_frame": 0,
+      "end_frame": 26,
+      "words": [
+        {
+          "word": "Can",
+          "start_ms": 0,
+          "end_ms": 80,
+          "start_frame": 0,
+          "end_frame": 2
+        },
+        {
+          "word": "you",
+          "start_ms": 80,
+          "end_ms": 180,
+          "start_frame": 2,
+          "end_frame": 5
+        },
+        {
+          "word": "climb",
+          "start_ms": 180,
+          "end_ms": 320,
+          "start_frame": 5,
+          "end_frame": 10
+        },
+        {
+          "word": "100",
+          "start_ms": 320,
+          "end_ms": 720,
+          "start_frame": 10,
+          "end_frame": 22
+        }
+      ]
+    },
+    {
+      "id": "sub_002",
+      "text": "stairs with one or",
+      "start_frame": 22,
+      "end_frame": 44,
+      "words": [
+        {
+          "word": "stairs",
+          "start_ms": 720,
+          "end_ms": 1000,
+          "start_frame": 22,
+          "end_frame": 30
+        },
+        {
+          "word": "with",
+          "start_ms": 1000,
+          "end_ms": 1140,
+          "start_frame": 30,
+          "end_frame": 34
+        },
+        {
+          "word": "one",
+          "start_ms": 1140,
+          "end_ms": 1280,
+          "start_frame": 34,
+          "end_frame": 38
+        },
+        {
+          "word": "or",
+          "start_ms": 1280,
+          "end_ms": 1340,
+          "start_frame": 38,
+          "end_frame": 40
+        }
+      ]
+    },
+    {
+      "id": "sub_003",
+      "text": "two steps?",
+      "start_frame": 40,
+      "end_frame": 54,
+      "words": [
+        {
+          "word": "two",
+          "start_ms": 1340,
+          "end_ms": 1460,
+          "start_frame": 40,
+          "end_frame": 44
+        },
+        {
+          "word": "steps?",
+          "start_ms": 1460,
+          "end_ms": 1660,
+          "start_frame": 44,
+          "end_frame": 50
+        }
+      ]
+    },
+    {
+      "id": "sub_004",
+      "text": "Peer recursion freezes your",
+      "start_frame": 64,
+      "end_frame": 97,
+      "words": [
+        {
+          "word": "Peer",
+          "start_ms": 2140,
+          "end_ms": 2240,
+          "start_frame": 64,
+          "end_frame": 67
+        },
+        {
+          "word": "recursion",
+          "start_ms": 2240,
+          "end_ms": 2660,
+          "start_frame": 67,
+          "end_frame": 80
+        },
+        {
+          "word": "freezes",
+          "start_ms": 2660,
+          "end_ms": 2960,
+          "start_frame": 80,
+          "end_frame": 89
+        },
+        {
+          "word": "your",
+          "start_ms": 2960,
+          "end_ms": 3100,
+          "start_frame": 89,
+          "end_frame": 93
+        }
+      ]
+    },
+    {
+      "id": "sub_005",
+      "text": "CPU.",
+      "start_frame": 93,
+      "end_frame": 107,
+      "words": [
+        {
+          "word": "CPU.",
+          "start_ms": 3100,
+          "end_ms": 3420,
+          "start_frame": 93,
+          "end_frame": 103
+        }
+      ]
+    },
+    {
+      "id": "sub_006",
+      "text": "Can't we just return",
+      "start_frame": 110,
+      "end_frame": 143,
+      "words": [
+        {
+          "word": "Can't",
+          "start_ms": 3680,
+          "end_ms": 4000,
+          "start_frame": 110,
+          "end_frame": 120
+        },
+        {
+          "word": "we",
+          "start_ms": 4000,
+          "end_ms": 4080,
+          "start_frame": 120,
+          "end_frame": 122
+        },
+        {
+          "word": "just",
+          "start_ms": 4080,
+          "end_ms": 4300,
+          "start_frame": 122,
+          "end_frame": 129
+        },
+        {
+          "word": "return",
+          "start_ms": 4300,
+          "end_ms": 4620,
+          "start_frame": 129,
+          "end_frame": 139
+        }
+      ]
+    },
+    {
+      "id": "sub_007",
+      "text": "climb?",
+      "start_frame": 139,
+      "end_frame": 153,
+      "words": [
+        {
+          "word": "climb?",
+          "start_ms": 4620,
+          "end_ms": 4980,
+          "start_frame": 139,
+          "end_frame": 149
+        }
+      ]
+    },
+    {
+      "id": "sub_008",
+      "text": "Then one plus climb,",
+      "start_frame": 160,
+      "end_frame": 204,
+      "words": [
+        {
+          "word": "Then",
+          "start_ms": 5340,
+          "end_ms": 5460,
+          "start_frame": 160,
+          "end_frame": 164
+        },
+        {
+          "word": "one",
+          "start_ms": 5460,
+          "end_ms": 5800,
+          "start_frame": 164,
+          "end_frame": 174
+        },
+        {
+          "word": "plus",
+          "start_ms": 5800,
+          "end_ms": 6300,
+          "start_frame": 174,
+          "end_frame": 189
+        },
+        {
+          "word": "climb,",
+          "start_ms": 6300,
+          "end_ms": 6660,
+          "start_frame": 189,
+          "end_frame": 200
+        }
+      ]
+    },
+    {
+      "id": "sub_009",
+      "text": "then two.",
+      "start_frame": 208,
+      "end_frame": 228,
+      "words": [
+        {
+          "word": "then",
+          "start_ms": 6940,
+          "end_ms": 7100,
+          "start_frame": 208,
+          "end_frame": 213
+        },
+        {
+          "word": "two.",
+          "start_ms": 7100,
+          "end_ms": 7480,
+          "start_frame": 213,
+          "end_frame": 224
+        }
+      ]
+    },
+    {
+      "id": "sub_010",
+      "text": "That recalculates duplicate branches",
+      "start_frame": 230,
+      "end_frame": 281,
+      "words": [
+        {
+          "word": "That",
+          "start_ms": 7680,
+          "end_ms": 7880,
+          "start_frame": 230,
+          "end_frame": 236
+        },
+        {
+          "word": "recalculates",
+          "start_ms": 7880,
+          "end_ms": 8540,
+          "start_frame": 236,
+          "end_frame": 256
+        },
+        {
+          "word": "duplicate",
+          "start_ms": 8540,
+          "end_ms": 8840,
+          "start_frame": 256,
+          "end_frame": 265
+        },
+        {
+          "word": "branches",
+          "start_ms": 8840,
+          "end_ms": 9220,
+          "start_frame": 265,
+          "end_frame": 277
+        }
+      ]
+    },
+    {
+      "id": "sub_011",
+      "text": "in exponential 022 and",
+      "start_frame": 277,
+      "end_frame": 324,
+      "words": [
+        {
+          "word": "in",
+          "start_ms": 9220,
+          "end_ms": 9420,
+          "start_frame": 277,
+          "end_frame": 283
+        },
+        {
+          "word": "exponential",
+          "start_ms": 9420,
+          "end_ms": 9860,
+          "start_frame": 283,
+          "end_frame": 296
+        },
+        {
+          "word": "022",
+          "start_ms": 9860,
+          "end_ms": 10340,
+          "start_frame": 296,
+          "end_frame": 310
+        },
+        {
+          "word": "and",
+          "start_ms": 10340,
+          "end_ms": 10680,
+          "start_frame": 310,
+          "end_frame": 320
+        }
+      ]
+    },
+    {
+      "id": "sub_012",
+      "text": "time.",
+      "start_frame": 320,
+      "end_frame": 333,
+      "words": [
+        {
+          "word": "time.",
+          "start_ms": 10680,
+          "end_ms": 10980,
+          "start_frame": 320,
+          "end_frame": 329
+        }
+      ]
+    },
+    {
+      "id": "sub_013",
+      "text": "Step N comes from",
+      "start_frame": 340,
+      "end_frame": 375,
+      "words": [
+        {
+          "word": "Step",
+          "start_ms": 11320,
+          "end_ms": 11460,
+          "start_frame": 340,
+          "end_frame": 344
+        },
+        {
+          "word": "N",
+          "start_ms": 11460,
+          "end_ms": 11820,
+          "start_frame": 344,
+          "end_frame": 355
+        },
+        {
+          "word": "comes",
+          "start_ms": 11820,
+          "end_ms": 12140,
+          "start_frame": 355,
+          "end_frame": 364
+        },
+        {
+          "word": "from",
+          "start_ms": 12140,
+          "end_ms": 12360,
+          "start_frame": 364,
+          "end_frame": 371
+        }
+      ]
+    },
+    {
+      "id": "sub_014",
+      "text": "step N1 or N2.",
+      "start_frame": 371,
+      "end_frame": 423,
+      "words": [
+        {
+          "word": "step",
+          "start_ms": 12360,
+          "end_ms": 12660,
+          "start_frame": 371,
+          "end_frame": 380
+        },
+        {
+          "word": "N1",
+          "start_ms": 12660,
+          "end_ms": 13160,
+          "start_frame": 380,
+          "end_frame": 395
+        },
+        {
+          "word": "or",
+          "start_ms": 13160,
+          "end_ms": 13480,
+          "start_frame": 395,
+          "end_frame": 404
+        },
+        {
+          "word": "N2.",
+          "start_ms": 13480,
+          "end_ms": 13960,
+          "start_frame": 404,
+          "end_frame": 419
+        }
+      ]
+    },
+    {
+      "id": "sub_015",
+      "text": "It's literally Fibonacci.",
+      "start_frame": 430,
+      "end_frame": 476,
+      "words": [
+        {
+          "word": "It's",
+          "start_ms": 14320,
+          "end_ms": 14500,
+          "start_frame": 430,
+          "end_frame": 435
+        },
+        {
+          "word": "literally",
+          "start_ms": 14500,
+          "end_ms": 14880,
+          "start_frame": 435,
+          "end_frame": 446
+        },
+        {
+          "word": "Fibonacci.",
+          "start_ms": 14880,
+          "end_ms": 15740,
+          "start_frame": 446,
+          "end_frame": 472
+        }
+      ]
+    },
+    {
+      "id": "sub_016",
+      "text": "Just keep the last",
+      "start_frame": 487,
+      "end_frame": 507,
+      "words": [
+        {
+          "word": "Just",
+          "start_ms": 16240,
+          "end_ms": 16320,
+          "start_frame": 487,
+          "end_frame": 490
+        },
+        {
+          "word": "keep",
+          "start_ms": 16320,
+          "end_ms": 16500,
+          "start_frame": 490,
+          "end_frame": 495
+        },
+        {
+          "word": "the",
+          "start_ms": 16500,
+          "end_ms": 16620,
+          "start_frame": 495,
+          "end_frame": 499
+        },
+        {
+          "word": "last",
+          "start_ms": 16620,
+          "end_ms": 16760,
+          "start_frame": 499,
+          "end_frame": 503
+        }
+      ]
+    },
+    {
+      "id": "sub_017",
+      "text": "two numbers.",
+      "start_frame": 503,
+      "end_frame": 518,
+      "words": [
+        {
+          "word": "two",
+          "start_ms": 16760,
+          "end_ms": 16920,
+          "start_frame": 503,
+          "end_frame": 508
+        },
+        {
+          "word": "numbers.",
+          "start_ms": 16920,
+          "end_ms": 17140,
+          "start_frame": 508,
+          "end_frame": 514
+        }
+      ]
+    },
+    {
+      "id": "sub_018",
+      "text": "Two variables solve it",
+      "start_frame": 524,
+      "end_frame": 552,
+      "words": [
+        {
+          "word": "Two",
+          "start_ms": 17480,
+          "end_ms": 17580,
+          "start_frame": 524,
+          "end_frame": 527
+        },
+        {
+          "word": "variables",
+          "start_ms": 17580,
+          "end_ms": 17840,
+          "start_frame": 527,
+          "end_frame": 535
+        },
+        {
+          "word": "solve",
+          "start_ms": 17840,
+          "end_ms": 18120,
+          "start_frame": 535,
+          "end_frame": 544
+        },
+        {
+          "word": "it",
+          "start_ms": 18120,
+          "end_ms": 18260,
+          "start_frame": 544,
+          "end_frame": 548
+        }
+      ]
+    },
+    {
+      "id": "sub_019",
+      "text": "in O and time.",
+      "start_frame": 548,
+      "end_frame": 579,
+      "words": [
+        {
+          "word": "in",
+          "start_ms": 18260,
+          "end_ms": 18420,
+          "start_frame": 548,
+          "end_frame": 553
+        },
+        {
+          "word": "O",
+          "start_ms": 18420,
+          "end_ms": 18640,
+          "start_frame": 553,
+          "end_frame": 559
+        },
+        {
+          "word": "and",
+          "start_ms": 18640,
+          "end_ms": 18860,
+          "start_frame": 559,
+          "end_frame": 566
+        },
+        {
+          "word": "time.",
+          "start_ms": 18860,
+          "end_ms": 19180,
+          "start_frame": 566,
+          "end_frame": 575
+        }
+      ]
+    },
+    {
+      "id": "sub_020",
+      "text": "From exponential meltdown to",
+      "start_frame": 580,
+      "end_frame": 630,
+      "words": [
+        {
+          "word": "From",
+          "start_ms": 19340,
+          "end_ms": 19520,
+          "start_frame": 580,
+          "end_frame": 586
+        },
+        {
+          "word": "exponential",
+          "start_ms": 19520,
+          "end_ms": 20160,
+          "start_frame": 586,
+          "end_frame": 605
+        },
+        {
+          "word": "meltdown",
+          "start_ms": 20160,
+          "end_ms": 20640,
+          "start_frame": 605,
+          "end_frame": 619
+        },
+        {
+          "word": "to",
+          "start_ms": 20640,
+          "end_ms": 20860,
+          "start_frame": 619,
+          "end_frame": 626
+        }
+      ]
+    },
+    {
+      "id": "sub_021",
+      "text": "four lines of code.",
+      "start_frame": 626,
+      "end_frame": 660,
+      "words": [
+        {
+          "word": "four",
+          "start_ms": 20860,
+          "end_ms": 21100,
+          "start_frame": 626,
+          "end_frame": 633
+        },
+        {
+          "word": "lines",
+          "start_ms": 21100,
+          "end_ms": 21380,
+          "start_frame": 633,
+          "end_frame": 641
+        },
+        {
+          "word": "of",
+          "start_ms": 21380,
+          "end_ms": 21640,
+          "start_frame": 641,
+          "end_frame": 649
+        },
+        {
+          "word": "code.",
+          "start_ms": 21640,
+          "end_ms": 21880,
+          "start_frame": 649,
+          "end_frame": 656
+        }
+      ]
+    },
+    {
+      "id": "sub_022",
+      "text": "That's how dynamic programming",
+      "start_frame": 662,
+      "end_frame": 695,
+      "words": [
+        {
+          "word": "That's",
+          "start_ms": 22060,
+          "end_ms": 22300,
+          "start_frame": 662,
+          "end_frame": 669
+        },
+        {
+          "word": "how",
+          "start_ms": 22300,
+          "end_ms": 22360,
+          "start_frame": 669,
+          "end_frame": 671
+        },
+        {
+          "word": "dynamic",
+          "start_ms": 22360,
+          "end_ms": 22620,
+          "start_frame": 671,
+          "end_frame": 679
+        },
+        {
+          "word": "programming",
+          "start_ms": 22620,
+          "end_ms": 23020,
+          "start_frame": 679,
+          "end_frame": 691
+        }
+      ]
+    },
+    {
+      "id": "sub_023",
+      "text": "solves it in O1",
+      "start_frame": 691,
+      "end_frame": 721,
+      "words": [
+        {
+          "word": "solves",
+          "start_ms": 23020,
+          "end_ms": 23320,
+          "start_frame": 691,
+          "end_frame": 700
+        },
+        {
+          "word": "it",
+          "start_ms": 23320,
+          "end_ms": 23520,
+          "start_frame": 700,
+          "end_frame": 706
+        },
+        {
+          "word": "in",
+          "start_ms": 23520,
+          "end_ms": 23640,
+          "start_frame": 706,
+          "end_frame": 709
+        },
+        {
+          "word": "O1",
+          "start_ms": 23640,
+          "end_ms": 23900,
+          "start_frame": 709,
+          "end_frame": 717
+        }
+      ]
+    },
+    {
+      "id": "sub_024",
+      "text": "space.",
+      "start_frame": 717,
+      "end_frame": 728,
+      "words": [
+        {
+          "word": "space.",
+          "start_ms": 23900,
+          "end_ms": 24120,
+          "start_frame": 717,
+          "end_frame": 724
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Can",
+      "start_ms": 0,
+      "end_ms": 80,
+      "start_frame": 0,
+      "end_frame": 2
+    },
+    {
+      "word": "you",
+      "start_ms": 80,
+      "end_ms": 180,
+      "start_frame": 2,
+      "end_frame": 5
+    },
+    {
+      "word": "climb",
+      "start_ms": 180,
+      "end_ms": 320,
+      "start_frame": 5,
+      "end_frame": 10
+    },
+    {
+      "word": "100",
+      "start_ms": 320,
+      "end_ms": 720,
+      "start_frame": 10,
+      "end_frame": 22
+    },
+    {
+      "word": "stairs",
+      "start_ms": 720,
+      "end_ms": 1000,
+      "start_frame": 22,
+      "end_frame": 30
+    },
+    {
+      "word": "with",
+      "start_ms": 1000,
+      "end_ms": 1140,
+      "start_frame": 30,
+      "end_frame": 34
+    },
+    {
+      "word": "one",
+      "start_ms": 1140,
+      "end_ms": 1280,
+      "start_frame": 34,
+      "end_frame": 38
+    },
+    {
+      "word": "or",
+      "start_ms": 1280,
+      "end_ms": 1340,
+      "start_frame": 38,
+      "end_frame": 40
+    },
+    {
+      "word": "two",
+      "start_ms": 1340,
+      "end_ms": 1460,
+      "start_frame": 40,
+      "end_frame": 44
+    },
+    {
+      "word": "steps?",
+      "start_ms": 1460,
+      "end_ms": 1660,
+      "start_frame": 44,
+      "end_frame": 50
+    },
+    {
+      "word": "Peer",
+      "start_ms": 2140,
+      "end_ms": 2240,
+      "start_frame": 64,
+      "end_frame": 67
+    },
+    {
+      "word": "recursion",
+      "start_ms": 2240,
+      "end_ms": 2660,
+      "start_frame": 67,
+      "end_frame": 80
+    },
+    {
+      "word": "freezes",
+      "start_ms": 2660,
+      "end_ms": 2960,
+      "start_frame": 80,
+      "end_frame": 89
+    },
+    {
+      "word": "your",
+      "start_ms": 2960,
+      "end_ms": 3100,
+      "start_frame": 89,
+      "end_frame": 93
+    },
+    {
+      "word": "CPU.",
+      "start_ms": 3100,
+      "end_ms": 3420,
+      "start_frame": 93,
+      "end_frame": 103
+    },
+    {
+      "word": "Can't",
+      "start_ms": 3680,
+      "end_ms": 4000,
+      "start_frame": 110,
+      "end_frame": 120
+    },
+    {
+      "word": "we",
+      "start_ms": 4000,
+      "end_ms": 4080,
+      "start_frame": 120,
+      "end_frame": 122
+    },
+    {
+      "word": "just",
+      "start_ms": 4080,
+      "end_ms": 4300,
+      "start_frame": 122,
+      "end_frame": 129
+    },
+    {
+      "word": "return",
+      "start_ms": 4300,
+      "end_ms": 4620,
+      "start_frame": 129,
+      "end_frame": 139
+    },
+    {
+      "word": "climb?",
+      "start_ms": 4620,
+      "end_ms": 4980,
+      "start_frame": 139,
+      "end_frame": 149
+    },
+    {
+      "word": "Then",
+      "start_ms": 5340,
+      "end_ms": 5460,
+      "start_frame": 160,
+      "end_frame": 164
+    },
+    {
+      "word": "one",
+      "start_ms": 5460,
+      "end_ms": 5800,
+      "start_frame": 164,
+      "end_frame": 174
+    },
+    {
+      "word": "plus",
+      "start_ms": 5800,
+      "end_ms": 6300,
+      "start_frame": 174,
+      "end_frame": 189
+    },
+    {
+      "word": "climb,",
+      "start_ms": 6300,
+      "end_ms": 6660,
+      "start_frame": 189,
+      "end_frame": 200
+    },
+    {
+      "word": "then",
+      "start_ms": 6940,
+      "end_ms": 7100,
+      "start_frame": 208,
+      "end_frame": 213
+    },
+    {
+      "word": "two.",
+      "start_ms": 7100,
+      "end_ms": 7480,
+      "start_frame": 213,
+      "end_frame": 224
+    },
+    {
+      "word": "That",
+      "start_ms": 7680,
+      "end_ms": 7880,
+      "start_frame": 230,
+      "end_frame": 236
+    },
+    {
+      "word": "recalculates",
+      "start_ms": 7880,
+      "end_ms": 8540,
+      "start_frame": 236,
+      "end_frame": 256
+    },
+    {
+      "word": "duplicate",
+      "start_ms": 8540,
+      "end_ms": 8840,
+      "start_frame": 256,
+      "end_frame": 265
+    },
+    {
+      "word": "branches",
+      "start_ms": 8840,
+      "end_ms": 9220,
+      "start_frame": 265,
+      "end_frame": 277
+    },
+    {
+      "word": "in",
+      "start_ms": 9220,
+      "end_ms": 9420,
+      "start_frame": 277,
+      "end_frame": 283
+    },
+    {
+      "word": "exponential",
+      "start_ms": 9420,
+      "end_ms": 9860,
+      "start_frame": 283,
+      "end_frame": 296
+    },
+    {
+      "word": "022",
+      "start_ms": 9860,
+      "end_ms": 10340,
+      "start_frame": 296,
+      "end_frame": 310
+    },
+    {
+      "word": "and",
+      "start_ms": 10340,
+      "end_ms": 10680,
+      "start_frame": 310,
+      "end_frame": 320
+    },
+    {
+      "word": "time.",
+      "start_ms": 10680,
+      "end_ms": 10980,
+      "start_frame": 320,
+      "end_frame": 329
+    },
+    {
+      "word": "Step",
+      "start_ms": 11320,
+      "end_ms": 11460,
+      "start_frame": 340,
+      "end_frame": 344
+    },
+    {
+      "word": "N",
+      "start_ms": 11460,
+      "end_ms": 11820,
+      "start_frame": 344,
+      "end_frame": 355
+    },
+    {
+      "word": "comes",
+      "start_ms": 11820,
+      "end_ms": 12140,
+      "start_frame": 355,
+      "end_frame": 364
+    },
+    {
+      "word": "from",
+      "start_ms": 12140,
+      "end_ms": 12360,
+      "start_frame": 364,
+      "end_frame": 371
+    },
+    {
+      "word": "step",
+      "start_ms": 12360,
+      "end_ms": 12660,
+      "start_frame": 371,
+      "end_frame": 380
+    },
+    {
+      "word": "N1",
+      "start_ms": 12660,
+      "end_ms": 13160,
+      "start_frame": 380,
+      "end_frame": 395
+    },
+    {
+      "word": "or",
+      "start_ms": 13160,
+      "end_ms": 13480,
+      "start_frame": 395,
+      "end_frame": 404
+    },
+    {
+      "word": "N2.",
+      "start_ms": 13480,
+      "end_ms": 13960,
+      "start_frame": 404,
+      "end_frame": 419
+    },
+    {
+      "word": "It's",
+      "start_ms": 14320,
+      "end_ms": 14500,
+      "start_frame": 430,
+      "end_frame": 435
+    },
+    {
+      "word": "literally",
+      "start_ms": 14500,
+      "end_ms": 14880,
+      "start_frame": 435,
+      "end_frame": 446
+    },
+    {
+      "word": "Fibonacci.",
+      "start_ms": 14880,
+      "end_ms": 15740,
+      "start_frame": 446,
+      "end_frame": 472
+    },
+    {
+      "word": "Just",
+      "start_ms": 16240,
+      "end_ms": 16320,
+      "start_frame": 487,
+      "end_frame": 490
+    },
+    {
+      "word": "keep",
+      "start_ms": 16320,
+      "end_ms": 16500,
+      "start_frame": 490,
+      "end_frame": 495
+    },
+    {
+      "word": "the",
+      "start_ms": 16500,
+      "end_ms": 16620,
+      "start_frame": 495,
+      "end_frame": 499
+    },
+    {
+      "word": "last",
+      "start_ms": 16620,
+      "end_ms": 16760,
+      "start_frame": 499,
+      "end_frame": 503
+    },
+    {
+      "word": "two",
+      "start_ms": 16760,
+      "end_ms": 16920,
+      "start_frame": 503,
+      "end_frame": 508
+    },
+    {
+      "word": "numbers.",
+      "start_ms": 16920,
+      "end_ms": 17140,
+      "start_frame": 508,
+      "end_frame": 514
+    },
+    {
+      "word": "Two",
+      "start_ms": 17480,
+      "end_ms": 17580,
+      "start_frame": 524,
+      "end_frame": 527
+    },
+    {
+      "word": "variables",
+      "start_ms": 17580,
+      "end_ms": 17840,
+      "start_frame": 527,
+      "end_frame": 535
+    },
+    {
+      "word": "solve",
+      "start_ms": 17840,
+      "end_ms": 18120,
+      "start_frame": 535,
+      "end_frame": 544
+    },
+    {
+      "word": "it",
+      "start_ms": 18120,
+      "end_ms": 18260,
+      "start_frame": 544,
+      "end_frame": 548
+    },
+    {
+      "word": "in",
+      "start_ms": 18260,
+      "end_ms": 18420,
+      "start_frame": 548,
+      "end_frame": 553
+    },
+    {
+      "word": "O",
+      "start_ms": 18420,
+      "end_ms": 18640,
+      "start_frame": 553,
+      "end_frame": 559
+    },
+    {
+      "word": "and",
+      "start_ms": 18640,
+      "end_ms": 18860,
+      "start_frame": 559,
+      "end_frame": 566
+    },
+    {
+      "word": "time.",
+      "start_ms": 18860,
+      "end_ms": 19180,
+      "start_frame": 566,
+      "end_frame": 575
+    },
+    {
+      "word": "From",
+      "start_ms": 19340,
+      "end_ms": 19520,
+      "start_frame": 580,
+      "end_frame": 586
+    },
+    {
+      "word": "exponential",
+      "start_ms": 19520,
+      "end_ms": 20160,
+      "start_frame": 586,
+      "end_frame": 605
+    },
+    {
+      "word": "meltdown",
+      "start_ms": 20160,
+      "end_ms": 20640,
+      "start_frame": 605,
+      "end_frame": 619
+    },
+    {
+      "word": "to",
+      "start_ms": 20640,
+      "end_ms": 20860,
+      "start_frame": 619,
+      "end_frame": 626
+    },
+    {
+      "word": "four",
+      "start_ms": 20860,
+      "end_ms": 21100,
+      "start_frame": 626,
+      "end_frame": 633
+    },
+    {
+      "word": "lines",
+      "start_ms": 21100,
+      "end_ms": 21380,
+      "start_frame": 633,
+      "end_frame": 641
+    },
+    {
+      "word": "of",
+      "start_ms": 21380,
+      "end_ms": 21640,
+      "start_frame": 641,
+      "end_frame": 649
+    },
+    {
+      "word": "code.",
+      "start_ms": 21640,
+      "end_ms": 21880,
+      "start_frame": 649,
+      "end_frame": 656
+    },
+    {
+      "word": "That's",
+      "start_ms": 22060,
+      "end_ms": 22300,
+      "start_frame": 662,
+      "end_frame": 669
+    },
+    {
+      "word": "how",
+      "start_ms": 22300,
+      "end_ms": 22360,
+      "start_frame": 669,
+      "end_frame": 671
+    },
+    {
+      "word": "dynamic",
+      "start_ms": 22360,
+      "end_ms": 22620,
+      "start_frame": 671,
+      "end_frame": 679
+    },
+    {
+      "word": "programming",
+      "start_ms": 22620,
+      "end_ms": 23020,
+      "start_frame": 679,
+      "end_frame": 691
+    },
+    {
+      "word": "solves",
+      "start_ms": 23020,
+      "end_ms": 23320,
+      "start_frame": 691,
+      "end_frame": 700
+    },
+    {
+      "word": "it",
+      "start_ms": 23320,
+      "end_ms": 23520,
+      "start_frame": 700,
+      "end_frame": 706
+    },
+    {
+      "word": "in",
+      "start_ms": 23520,
+      "end_ms": 23640,
+      "start_frame": 706,
+      "end_frame": 709
+    },
+    {
+      "word": "O1",
+      "start_ms": 23640,
+      "end_ms": 23900,
+      "start_frame": 709,
+      "end_frame": 717
+    },
+    {
+      "word": "space.",
+      "start_ms": 23900,
+      "end_ms": 24120,
+      "start_frame": 717,
+      "end_frame": 724
+    }
+  ]
+}
