@@ -1,0 +1,1723 @@
+{
+  "reel_id": "git_18",
+  "title": "How Git Actually Stores Your Code",
+  "total_ms": 29495,
+  "total_frames": 885,
+  "blocks": [
+    {
+      "id": "git01_hook",
+      "speaker": "narrator",
+      "text": "Your project has 1,000 files and 500 commits, but dot git is barely 10 megabytes. How?",
+      "start_ms": 0,
+      "end_ms": 4992,
+      "duration_ms": 4992,
+      "start_frame": 0,
+      "end_frame": 150,
+      "cues": [
+        {
+          "phrase": "1,000 files",
+          "cue": "project_files_spawn",
+          "frame": 45
+        },
+        {
+          "phrase": "10 megabytes",
+          "cue": "small_size_highlight",
+          "frame": 112
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git01_hook.wav"
+    },
+    {
+      "id": "git02_nemi",
+      "speaker": "nemi",
+      "text": "Doesn't Git just save a list of text diffs line-by-line? \ud83e\udd14",
+      "start_ms": 5052,
+      "end_ms": 7932,
+      "duration_ms": 2880,
+      "start_frame": 152,
+      "end_frame": 238,
+      "cues": [
+        {
+          "phrase": "text diffs",
+          "cue": "diff_myth_animation",
+          "frame": 195
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git02_nemi.wav"
+    },
+    {
+      "id": "git03_truth",
+      "speaker": "narrator",
+      "text": "No! Git is actually a content-addressable database of immutable snapshots.",
+      "start_ms": 7992,
+      "end_ms": 12280,
+      "duration_ms": 4288,
+      "start_frame": 240,
+      "end_frame": 368,
+      "cues": [
+        {
+          "phrase": "content-addressable",
+          "cue": "database_vault_reveal",
+          "frame": 285
+        },
+        {
+          "phrase": "immutable snapshots",
+          "cue": "snapshot_tree_glow",
+          "frame": 336
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git03_truth.wav"
+    },
+    {
+      "id": "git04_hashing",
+      "speaker": "narrator",
+      "text": "Every file is compressed into a blob named by its SHA-1 hash. Change one word, and only that one hash changes.",
+      "start_ms": 12340,
+      "end_ms": 18377,
+      "duration_ms": 6037,
+      "start_frame": 370,
+      "end_frame": 551,
+      "cues": [
+        {
+          "phrase": "blob named",
+          "cue": "sha1_hash_laser",
+          "frame": 425
+        },
+        {
+          "phrase": "only that one hash",
+          "cue": "hash_mutation_pulse",
+          "frame": 515
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git04_hashing.wav"
+    },
+    {
+      "id": "git05_pointers",
+      "speaker": "narrator",
+      "text": "The new commit just points to the new blob, while reusing the other 999 old pointers for free!",
+      "start_ms": 18437,
+      "end_ms": 22959,
+      "duration_ms": 4522,
+      "start_frame": 553,
+      "end_frame": 689,
+      "cues": [
+        {
+          "phrase": "points to the new blob",
+          "cue": "commit_tree_repoint",
+          "frame": 601
+        },
+        {
+          "phrase": "reusing the other",
+          "cue": "shared_pointers_glow",
+          "frame": 655
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git05_pointers.wav"
+    },
+    {
+      "id": "git06_nemi",
+      "speaker": "nemi",
+      "text": "So Git never duplicates unchanged files \u2014 it's just a tree of hashes! \ud83d\ude0e\u26a1",
+      "start_ms": 23019,
+      "end_ms": 27051,
+      "duration_ms": 4032,
+      "start_frame": 691,
+      "end_frame": 812,
+      "cues": [
+        {
+          "phrase": "tree of hashes",
+          "cue": "nemi_smug_tree",
+          "frame": 763
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git06_nemi.wav"
+    },
+    {
+      "id": "git07_loop",
+      "speaker": "narrator",
+      "text": "That's how Git branches and merges in milliseconds.",
+      "start_ms": 27111,
+      "end_ms": 29415,
+      "duration_ms": 2304,
+      "start_frame": 813,
+      "end_frame": 882,
+      "cues": [
+        {
+          "phrase": "branches and merges",
+          "cue": "dag_branch_merge_loop",
+          "frame": 862
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/git_18/audio/blocks/git07_loop.wav"
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "sub_001",
+      "text": "Your project has 1,000",
+      "start_frame": 0,
+      "end_frame": 32,
+      "words": [
+        {
+          "word": "Your",
+          "start_ms": 0,
+          "end_ms": 100,
+          "start_frame": 0,
+          "end_frame": 3
+        },
+        {
+          "word": "project",
+          "start_ms": 100,
+          "end_ms": 380,
+          "start_frame": 3,
+          "end_frame": 11
+        },
+        {
+          "word": "has",
+          "start_ms": 380,
+          "end_ms": 580,
+          "start_frame": 11,
+          "end_frame": 17
+        },
+        {
+          "word": "1,000",
+          "start_ms": 580,
+          "end_ms": 1060,
+          "start_frame": 17,
+          "end_frame": 32
+        }
+      ]
+    },
+    {
+      "id": "sub_002",
+      "text": "files and 500",
+      "start_frame": 32,
+      "end_frame": 58,
+      "words": [
+        {
+          "word": "files",
+          "start_ms": 1060,
+          "end_ms": 1340,
+          "start_frame": 32,
+          "end_frame": 40
+        },
+        {
+          "word": "and",
+          "start_ms": 1340,
+          "end_ms": 1540,
+          "start_frame": 40,
+          "end_frame": 46
+        },
+        {
+          "word": "500",
+          "start_ms": 1540,
+          "end_ms": 1920,
+          "start_frame": 46,
+          "end_frame": 58
+        }
+      ]
+    },
+    {
+      "id": "sub_003",
+      "text": "commits, but .git is",
+      "start_frame": 58,
+      "end_frame": 97,
+      "words": [
+        {
+          "word": "commits,",
+          "start_ms": 1920,
+          "end_ms": 2180,
+          "start_frame": 58,
+          "end_frame": 65
+        },
+        {
+          "word": "but",
+          "start_ms": 2460,
+          "end_ms": 2600,
+          "start_frame": 74,
+          "end_frame": 78
+        },
+        {
+          "word": ".git",
+          "start_ms": 2600,
+          "end_ms": 3080,
+          "start_frame": 78,
+          "end_frame": 92
+        },
+        {
+          "word": "is",
+          "start_ms": 3080,
+          "end_ms": 3240,
+          "start_frame": 92,
+          "end_frame": 97
+        }
+      ]
+    },
+    {
+      "id": "sub_004",
+      "text": "barely 10 megabytes. How?",
+      "start_frame": 97,
+      "end_frame": 142,
+      "words": [
+        {
+          "word": "barely",
+          "start_ms": 3240,
+          "end_ms": 3460,
+          "start_frame": 97,
+          "end_frame": 104
+        },
+        {
+          "word": "10",
+          "start_ms": 3460,
+          "end_ms": 3700,
+          "start_frame": 104,
+          "end_frame": 111
+        },
+        {
+          "word": "megabytes.",
+          "start_ms": 3700,
+          "end_ms": 4100,
+          "start_frame": 111,
+          "end_frame": 123
+        },
+        {
+          "word": "How?",
+          "start_ms": 4580,
+          "end_ms": 4740,
+          "start_frame": 137,
+          "end_frame": 142
+        }
+      ]
+    },
+    {
+      "id": "sub_005",
+      "text": "Doesn't Git just save",
+      "start_frame": 151,
+      "end_frame": 181,
+      "words": [
+        {
+          "word": "Doesn't",
+          "start_ms": 5020,
+          "end_ms": 5360,
+          "start_frame": 151,
+          "end_frame": 161
+        },
+        {
+          "word": "Git",
+          "start_ms": 5360,
+          "end_ms": 5460,
+          "start_frame": 161,
+          "end_frame": 164
+        },
+        {
+          "word": "just",
+          "start_ms": 5460,
+          "end_ms": 5720,
+          "start_frame": 164,
+          "end_frame": 172
+        },
+        {
+          "word": "save",
+          "start_ms": 5720,
+          "end_ms": 6020,
+          "start_frame": 172,
+          "end_frame": 181
+        }
+      ]
+    },
+    {
+      "id": "sub_006",
+      "text": "a list of text",
+      "start_frame": 181,
+      "end_frame": 205,
+      "words": [
+        {
+          "word": "a",
+          "start_ms": 6020,
+          "end_ms": 6160,
+          "start_frame": 181,
+          "end_frame": 185
+        },
+        {
+          "word": "list",
+          "start_ms": 6160,
+          "end_ms": 6360,
+          "start_frame": 185,
+          "end_frame": 191
+        },
+        {
+          "word": "of",
+          "start_ms": 6360,
+          "end_ms": 6500,
+          "start_frame": 191,
+          "end_frame": 195
+        },
+        {
+          "word": "text",
+          "start_ms": 6500,
+          "end_ms": 6840,
+          "start_frame": 195,
+          "end_frame": 205
+        }
+      ]
+    },
+    {
+      "id": "sub_007",
+      "text": "-diffs line by line?",
+      "start_frame": 205,
+      "end_frame": 234,
+      "words": [
+        {
+          "word": "-diffs",
+          "start_ms": 6840,
+          "end_ms": 7180,
+          "start_frame": 205,
+          "end_frame": 215
+        },
+        {
+          "word": "line",
+          "start_ms": 7180,
+          "end_ms": 7380,
+          "start_frame": 215,
+          "end_frame": 221
+        },
+        {
+          "word": "by",
+          "start_ms": 7380,
+          "end_ms": 7580,
+          "start_frame": 221,
+          "end_frame": 227
+        },
+        {
+          "word": "line?",
+          "start_ms": 7580,
+          "end_ms": 7800,
+          "start_frame": 227,
+          "end_frame": 234
+        }
+      ]
+    },
+    {
+      "id": "sub_008",
+      "text": "No. Git is actually",
+      "start_frame": 239,
+      "end_frame": 284,
+      "words": [
+        {
+          "word": "No.",
+          "start_ms": 7980,
+          "end_ms": 8260,
+          "start_frame": 239,
+          "end_frame": 248
+        },
+        {
+          "word": "Git",
+          "start_ms": 8700,
+          "end_ms": 8900,
+          "start_frame": 261,
+          "end_frame": 267
+        },
+        {
+          "word": "is",
+          "start_ms": 8900,
+          "end_ms": 9060,
+          "start_frame": 267,
+          "end_frame": 272
+        },
+        {
+          "word": "actually",
+          "start_ms": 9060,
+          "end_ms": 9460,
+          "start_frame": 272,
+          "end_frame": 284
+        }
+      ]
+    },
+    {
+      "id": "sub_009",
+      "text": "a content -addressable database",
+      "start_frame": 284,
+      "end_frame": 325,
+      "words": [
+        {
+          "word": "a",
+          "start_ms": 9460,
+          "end_ms": 9680,
+          "start_frame": 284,
+          "end_frame": 290
+        },
+        {
+          "word": "content",
+          "start_ms": 9680,
+          "end_ms": 9980,
+          "start_frame": 290,
+          "end_frame": 299
+        },
+        {
+          "word": "-addressable",
+          "start_ms": 9980,
+          "end_ms": 10480,
+          "start_frame": 299,
+          "end_frame": 314
+        },
+        {
+          "word": "database",
+          "start_ms": 10480,
+          "end_ms": 10840,
+          "start_frame": 314,
+          "end_frame": 325
+        }
+      ]
+    },
+    {
+      "id": "sub_010",
+      "text": "of immutable snapshots. Every",
+      "start_frame": 325,
+      "end_frame": 376,
+      "words": [
+        {
+          "word": "of",
+          "start_ms": 10840,
+          "end_ms": 11120,
+          "start_frame": 325,
+          "end_frame": 334
+        },
+        {
+          "word": "immutable",
+          "start_ms": 11120,
+          "end_ms": 11440,
+          "start_frame": 334,
+          "end_frame": 343
+        },
+        {
+          "word": "snapshots.",
+          "start_ms": 11440,
+          "end_ms": 12020,
+          "start_frame": 343,
+          "end_frame": 361
+        },
+        {
+          "word": "Every",
+          "start_ms": 12340,
+          "end_ms": 12520,
+          "start_frame": 370,
+          "end_frame": 376
+        }
+      ]
+    },
+    {
+      "id": "sub_011",
+      "text": "file is compressed into",
+      "start_frame": 376,
+      "end_frame": 406,
+      "words": [
+        {
+          "word": "file",
+          "start_ms": 12520,
+          "end_ms": 12820,
+          "start_frame": 376,
+          "end_frame": 385
+        },
+        {
+          "word": "is",
+          "start_ms": 12820,
+          "end_ms": 12980,
+          "start_frame": 385,
+          "end_frame": 389
+        },
+        {
+          "word": "compressed",
+          "start_ms": 12980,
+          "end_ms": 13240,
+          "start_frame": 389,
+          "end_frame": 397
+        },
+        {
+          "word": "into",
+          "start_ms": 13240,
+          "end_ms": 13540,
+          "start_frame": 397,
+          "end_frame": 406
+        }
+      ]
+    },
+    {
+      "id": "sub_012",
+      "text": "a blob named by",
+      "start_frame": 406,
+      "end_frame": 434,
+      "words": [
+        {
+          "word": "a",
+          "start_ms": 13540,
+          "end_ms": 13720,
+          "start_frame": 406,
+          "end_frame": 412
+        },
+        {
+          "word": "blob",
+          "start_ms": 13720,
+          "end_ms": 13880,
+          "start_frame": 412,
+          "end_frame": 416
+        },
+        {
+          "word": "named",
+          "start_ms": 13880,
+          "end_ms": 14220,
+          "start_frame": 416,
+          "end_frame": 427
+        },
+        {
+          "word": "by",
+          "start_ms": 14220,
+          "end_ms": 14460,
+          "start_frame": 427,
+          "end_frame": 434
+        }
+      ]
+    },
+    {
+      "id": "sub_013",
+      "text": "its SHA-1 hash. Change",
+      "start_frame": 434,
+      "end_frame": 485,
+      "words": [
+        {
+          "word": "its",
+          "start_ms": 14460,
+          "end_ms": 14660,
+          "start_frame": 434,
+          "end_frame": 440
+        },
+        {
+          "word": "SHA-1",
+          "start_ms": 14660,
+          "end_ms": 15460,
+          "start_frame": 440,
+          "end_frame": 464
+        },
+        {
+          "word": "hash.",
+          "start_ms": 15460,
+          "end_ms": 15680,
+          "start_frame": 464,
+          "end_frame": 470
+        },
+        {
+          "word": "Change",
+          "start_ms": 16040,
+          "end_ms": 16180,
+          "start_frame": 481,
+          "end_frame": 485
+        }
+      ]
+    },
+    {
+      "id": "sub_014",
+      "text": "one word, and only",
+      "start_frame": 485,
+      "end_frame": 515,
+      "words": [
+        {
+          "word": "one",
+          "start_ms": 16180,
+          "end_ms": 16400,
+          "start_frame": 485,
+          "end_frame": 492
+        },
+        {
+          "word": "word,",
+          "start_ms": 16400,
+          "end_ms": 16640,
+          "start_frame": 492,
+          "end_frame": 499
+        },
+        {
+          "word": "and",
+          "start_ms": 16840,
+          "end_ms": 16920,
+          "start_frame": 505,
+          "end_frame": 508
+        },
+        {
+          "word": "only",
+          "start_ms": 16920,
+          "end_ms": 17160,
+          "start_frame": 508,
+          "end_frame": 515
+        }
+      ]
+    },
+    {
+      "id": "sub_015",
+      "text": "that one hash changes.",
+      "start_frame": 515,
+      "end_frame": 544,
+      "words": [
+        {
+          "word": "that",
+          "start_ms": 17160,
+          "end_ms": 17340,
+          "start_frame": 515,
+          "end_frame": 520
+        },
+        {
+          "word": "one",
+          "start_ms": 17340,
+          "end_ms": 17520,
+          "start_frame": 520,
+          "end_frame": 526
+        },
+        {
+          "word": "hash",
+          "start_ms": 17520,
+          "end_ms": 17760,
+          "start_frame": 526,
+          "end_frame": 533
+        },
+        {
+          "word": "changes.",
+          "start_ms": 17760,
+          "end_ms": 18140,
+          "start_frame": 533,
+          "end_frame": 544
+        }
+      ]
+    },
+    {
+      "id": "sub_016",
+      "text": "The new commit just",
+      "start_frame": 553,
+      "end_frame": 571,
+      "words": [
+        {
+          "word": "The",
+          "start_ms": 18420,
+          "end_ms": 18500,
+          "start_frame": 553,
+          "end_frame": 555
+        },
+        {
+          "word": "new",
+          "start_ms": 18500,
+          "end_ms": 18620,
+          "start_frame": 555,
+          "end_frame": 559
+        },
+        {
+          "word": "commit",
+          "start_ms": 18620,
+          "end_ms": 18820,
+          "start_frame": 559,
+          "end_frame": 565
+        },
+        {
+          "word": "just",
+          "start_ms": 18820,
+          "end_ms": 19020,
+          "start_frame": 565,
+          "end_frame": 571
+        }
+      ]
+    },
+    {
+      "id": "sub_017",
+      "text": "points to the new",
+      "start_frame": 571,
+      "end_frame": 590,
+      "words": [
+        {
+          "word": "points",
+          "start_ms": 19020,
+          "end_ms": 19240,
+          "start_frame": 571,
+          "end_frame": 577
+        },
+        {
+          "word": "to",
+          "start_ms": 19240,
+          "end_ms": 19460,
+          "start_frame": 577,
+          "end_frame": 584
+        },
+        {
+          "word": "the",
+          "start_ms": 19460,
+          "end_ms": 19540,
+          "start_frame": 584,
+          "end_frame": 586
+        },
+        {
+          "word": "new",
+          "start_ms": 19540,
+          "end_ms": 19660,
+          "start_frame": 586,
+          "end_frame": 590
+        }
+      ]
+    },
+    {
+      "id": "sub_018",
+      "text": "blob while reusing the",
+      "start_frame": 590,
+      "end_frame": 625,
+      "words": [
+        {
+          "word": "blob",
+          "start_ms": 19660,
+          "end_ms": 19920,
+          "start_frame": 590,
+          "end_frame": 598
+        },
+        {
+          "word": "while",
+          "start_ms": 19920,
+          "end_ms": 20240,
+          "start_frame": 598,
+          "end_frame": 607
+        },
+        {
+          "word": "reusing",
+          "start_ms": 20240,
+          "end_ms": 20640,
+          "start_frame": 607,
+          "end_frame": 619
+        },
+        {
+          "word": "the",
+          "start_ms": 20640,
+          "end_ms": 20840,
+          "start_frame": 619,
+          "end_frame": 625
+        }
+      ]
+    },
+    {
+      "id": "sub_019",
+      "text": "other 999 old pointers",
+      "start_frame": 625,
+      "end_frame": 670,
+      "words": [
+        {
+          "word": "other",
+          "start_ms": 20840,
+          "end_ms": 21000,
+          "start_frame": 625,
+          "end_frame": 630
+        },
+        {
+          "word": "999",
+          "start_ms": 21000,
+          "end_ms": 21780,
+          "start_frame": 630,
+          "end_frame": 653
+        },
+        {
+          "word": "old",
+          "start_ms": 21780,
+          "end_ms": 22060,
+          "start_frame": 653,
+          "end_frame": 662
+        },
+        {
+          "word": "pointers",
+          "start_ms": 22060,
+          "end_ms": 22340,
+          "start_frame": 662,
+          "end_frame": 670
+        }
+      ]
+    },
+    {
+      "id": "sub_020",
+      "text": "for free. So Git",
+      "start_frame": 670,
+      "end_frame": 701,
+      "words": [
+        {
+          "word": "for",
+          "start_ms": 22340,
+          "end_ms": 22560,
+          "start_frame": 670,
+          "end_frame": 677
+        },
+        {
+          "word": "free.",
+          "start_ms": 22560,
+          "end_ms": 22840,
+          "start_frame": 677,
+          "end_frame": 685
+        },
+        {
+          "word": "So",
+          "start_ms": 22980,
+          "end_ms": 23180,
+          "start_frame": 689,
+          "end_frame": 695
+        },
+        {
+          "word": "Git",
+          "start_ms": 23180,
+          "end_ms": 23380,
+          "start_frame": 695,
+          "end_frame": 701
+        }
+      ]
+    },
+    {
+      "id": "sub_021",
+      "text": "never duplicates unchanged files.",
+      "start_frame": 701,
+      "end_frame": 755,
+      "words": [
+        {
+          "word": "never",
+          "start_ms": 23380,
+          "end_ms": 23720,
+          "start_frame": 701,
+          "end_frame": 712
+        },
+        {
+          "word": "duplicates",
+          "start_ms": 23720,
+          "end_ms": 24260,
+          "start_frame": 712,
+          "end_frame": 728
+        },
+        {
+          "word": "unchanged",
+          "start_ms": 24260,
+          "end_ms": 24580,
+          "start_frame": 728,
+          "end_frame": 737
+        },
+        {
+          "word": "files.",
+          "start_ms": 24580,
+          "end_ms": 25180,
+          "start_frame": 737,
+          "end_frame": 755
+        }
+      ]
+    },
+    {
+      "id": "sub_022",
+      "text": "It's just a tree",
+      "start_frame": 767,
+      "end_frame": 789,
+      "words": [
+        {
+          "word": "It's",
+          "start_ms": 25580,
+          "end_ms": 25780,
+          "start_frame": 767,
+          "end_frame": 773
+        },
+        {
+          "word": "just",
+          "start_ms": 25780,
+          "end_ms": 25920,
+          "start_frame": 773,
+          "end_frame": 778
+        },
+        {
+          "word": "a",
+          "start_ms": 25920,
+          "end_ms": 26100,
+          "start_frame": 778,
+          "end_frame": 783
+        },
+        {
+          "word": "tree",
+          "start_ms": 26100,
+          "end_ms": 26300,
+          "start_frame": 783,
+          "end_frame": 789
+        }
+      ]
+    },
+    {
+      "id": "sub_023",
+      "text": "of hashes. That's how",
+      "start_frame": 789,
+      "end_frame": 824,
+      "words": [
+        {
+          "word": "of",
+          "start_ms": 26300,
+          "end_ms": 26500,
+          "start_frame": 789,
+          "end_frame": 795
+        },
+        {
+          "word": "hashes.",
+          "start_ms": 26500,
+          "end_ms": 26840,
+          "start_frame": 795,
+          "end_frame": 805
+        },
+        {
+          "word": "That's",
+          "start_ms": 26840,
+          "end_ms": 27440,
+          "start_frame": 805,
+          "end_frame": 823
+        },
+        {
+          "word": "how",
+          "start_ms": 27440,
+          "end_ms": 27480,
+          "start_frame": 823,
+          "end_frame": 824
+        }
+      ]
+    },
+    {
+      "id": "sub_024",
+      "text": "Git branches and merges",
+      "start_frame": 824,
+      "end_frame": 856,
+      "words": [
+        {
+          "word": "Git",
+          "start_ms": 27480,
+          "end_ms": 27640,
+          "start_frame": 824,
+          "end_frame": 829
+        },
+        {
+          "word": "branches",
+          "start_ms": 27640,
+          "end_ms": 27960,
+          "start_frame": 829,
+          "end_frame": 839
+        },
+        {
+          "word": "and",
+          "start_ms": 27960,
+          "end_ms": 28240,
+          "start_frame": 839,
+          "end_frame": 847
+        },
+        {
+          "word": "merges",
+          "start_ms": 28240,
+          "end_ms": 28540,
+          "start_frame": 847,
+          "end_frame": 856
+        }
+      ]
+    },
+    {
+      "id": "sub_025",
+      "text": "in milliseconds.",
+      "start_frame": 856,
+      "end_frame": 872,
+      "words": [
+        {
+          "word": "in",
+          "start_ms": 28540,
+          "end_ms": 28680,
+          "start_frame": 856,
+          "end_frame": 860
+        },
+        {
+          "word": "milliseconds.",
+          "start_ms": 28680,
+          "end_ms": 29080,
+          "start_frame": 860,
+          "end_frame": 872
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "Your",
+      "start_ms": 0,
+      "end_ms": 100,
+      "start_frame": 0,
+      "end_frame": 3
+    },
+    {
+      "word": "project",
+      "start_ms": 100,
+      "end_ms": 380,
+      "start_frame": 3,
+      "end_frame": 11
+    },
+    {
+      "word": "has",
+      "start_ms": 380,
+      "end_ms": 580,
+      "start_frame": 11,
+      "end_frame": 17
+    },
+    {
+      "word": "1",
+      "start_ms": 580,
+      "end_ms": 820,
+      "start_frame": 17,
+      "end_frame": 25
+    },
+    {
+      "word": ",000",
+      "start_ms": 820,
+      "end_ms": 1060,
+      "start_frame": 25,
+      "end_frame": 32
+    },
+    {
+      "word": "files",
+      "start_ms": 1060,
+      "end_ms": 1340,
+      "start_frame": 32,
+      "end_frame": 40
+    },
+    {
+      "word": "and",
+      "start_ms": 1340,
+      "end_ms": 1540,
+      "start_frame": 40,
+      "end_frame": 46
+    },
+    {
+      "word": "500",
+      "start_ms": 1540,
+      "end_ms": 1920,
+      "start_frame": 46,
+      "end_frame": 58
+    },
+    {
+      "word": "commits,",
+      "start_ms": 1920,
+      "end_ms": 2180,
+      "start_frame": 58,
+      "end_frame": 65
+    },
+    {
+      "word": "but",
+      "start_ms": 2460,
+      "end_ms": 2600,
+      "start_frame": 74,
+      "end_frame": 78
+    },
+    {
+      "word": ".git",
+      "start_ms": 2600,
+      "end_ms": 3080,
+      "start_frame": 78,
+      "end_frame": 92
+    },
+    {
+      "word": "is",
+      "start_ms": 3080,
+      "end_ms": 3240,
+      "start_frame": 92,
+      "end_frame": 97
+    },
+    {
+      "word": "barely",
+      "start_ms": 3240,
+      "end_ms": 3460,
+      "start_frame": 97,
+      "end_frame": 104
+    },
+    {
+      "word": "10",
+      "start_ms": 3460,
+      "end_ms": 3700,
+      "start_frame": 104,
+      "end_frame": 111
+    },
+    {
+      "word": "megabytes.",
+      "start_ms": 3700,
+      "end_ms": 4100,
+      "start_frame": 111,
+      "end_frame": 123
+    },
+    {
+      "word": "How?",
+      "start_ms": 4580,
+      "end_ms": 4740,
+      "start_frame": 137,
+      "end_frame": 142
+    },
+    {
+      "word": "Doesn't",
+      "start_ms": 5020,
+      "end_ms": 5360,
+      "start_frame": 151,
+      "end_frame": 161
+    },
+    {
+      "word": "Git",
+      "start_ms": 5360,
+      "end_ms": 5460,
+      "start_frame": 161,
+      "end_frame": 164
+    },
+    {
+      "word": "just",
+      "start_ms": 5460,
+      "end_ms": 5720,
+      "start_frame": 164,
+      "end_frame": 172
+    },
+    {
+      "word": "save",
+      "start_ms": 5720,
+      "end_ms": 6020,
+      "start_frame": 172,
+      "end_frame": 181
+    },
+    {
+      "word": "a",
+      "start_ms": 6020,
+      "end_ms": 6160,
+      "start_frame": 181,
+      "end_frame": 185
+    },
+    {
+      "word": "list",
+      "start_ms": 6160,
+      "end_ms": 6360,
+      "start_frame": 185,
+      "end_frame": 191
+    },
+    {
+      "word": "of",
+      "start_ms": 6360,
+      "end_ms": 6500,
+      "start_frame": 191,
+      "end_frame": 195
+    },
+    {
+      "word": "text",
+      "start_ms": 6500,
+      "end_ms": 6840,
+      "start_frame": 195,
+      "end_frame": 205
+    },
+    {
+      "word": "-diffs",
+      "start_ms": 6840,
+      "end_ms": 7180,
+      "start_frame": 205,
+      "end_frame": 215
+    },
+    {
+      "word": "line",
+      "start_ms": 7180,
+      "end_ms": 7380,
+      "start_frame": 215,
+      "end_frame": 221
+    },
+    {
+      "word": "by",
+      "start_ms": 7380,
+      "end_ms": 7580,
+      "start_frame": 221,
+      "end_frame": 227
+    },
+    {
+      "word": "line?",
+      "start_ms": 7580,
+      "end_ms": 7800,
+      "start_frame": 227,
+      "end_frame": 234
+    },
+    {
+      "word": "No.",
+      "start_ms": 7980,
+      "end_ms": 8260,
+      "start_frame": 239,
+      "end_frame": 248
+    },
+    {
+      "word": "Git",
+      "start_ms": 8700,
+      "end_ms": 8900,
+      "start_frame": 261,
+      "end_frame": 267
+    },
+    {
+      "word": "is",
+      "start_ms": 8900,
+      "end_ms": 9060,
+      "start_frame": 267,
+      "end_frame": 272
+    },
+    {
+      "word": "actually",
+      "start_ms": 9060,
+      "end_ms": 9460,
+      "start_frame": 272,
+      "end_frame": 284
+    },
+    {
+      "word": "a",
+      "start_ms": 9460,
+      "end_ms": 9680,
+      "start_frame": 284,
+      "end_frame": 290
+    },
+    {
+      "word": "content",
+      "start_ms": 9680,
+      "end_ms": 9980,
+      "start_frame": 290,
+      "end_frame": 299
+    },
+    {
+      "word": "-addressable",
+      "start_ms": 9980,
+      "end_ms": 10480,
+      "start_frame": 299,
+      "end_frame": 314
+    },
+    {
+      "word": "database",
+      "start_ms": 10480,
+      "end_ms": 10840,
+      "start_frame": 314,
+      "end_frame": 325
+    },
+    {
+      "word": "of",
+      "start_ms": 10840,
+      "end_ms": 11120,
+      "start_frame": 325,
+      "end_frame": 334
+    },
+    {
+      "word": "immutable",
+      "start_ms": 11120,
+      "end_ms": 11440,
+      "start_frame": 334,
+      "end_frame": 343
+    },
+    {
+      "word": "snapshots.",
+      "start_ms": 11440,
+      "end_ms": 12020,
+      "start_frame": 343,
+      "end_frame": 361
+    },
+    {
+      "word": "Every",
+      "start_ms": 12340,
+      "end_ms": 12520,
+      "start_frame": 370,
+      "end_frame": 376
+    },
+    {
+      "word": "file",
+      "start_ms": 12520,
+      "end_ms": 12820,
+      "start_frame": 376,
+      "end_frame": 385
+    },
+    {
+      "word": "is",
+      "start_ms": 12820,
+      "end_ms": 12980,
+      "start_frame": 385,
+      "end_frame": 389
+    },
+    {
+      "word": "compressed",
+      "start_ms": 12980,
+      "end_ms": 13240,
+      "start_frame": 389,
+      "end_frame": 397
+    },
+    {
+      "word": "into",
+      "start_ms": 13240,
+      "end_ms": 13540,
+      "start_frame": 397,
+      "end_frame": 406
+    },
+    {
+      "word": "a",
+      "start_ms": 13540,
+      "end_ms": 13720,
+      "start_frame": 406,
+      "end_frame": 412
+    },
+    {
+      "word": "blob",
+      "start_ms": 13720,
+      "end_ms": 13880,
+      "start_frame": 412,
+      "end_frame": 416
+    },
+    {
+      "word": "named",
+      "start_ms": 13880,
+      "end_ms": 14220,
+      "start_frame": 416,
+      "end_frame": 427
+    },
+    {
+      "word": "by",
+      "start_ms": 14220,
+      "end_ms": 14460,
+      "start_frame": 427,
+      "end_frame": 434
+    },
+    {
+      "word": "its",
+      "start_ms": 14460,
+      "end_ms": 14660,
+      "start_frame": 434,
+      "end_frame": 440
+    },
+    {
+      "word": "SHA-1",
+      "start_ms": 14660,
+      "end_ms": 15460,
+      "start_frame": 440,
+      "end_frame": 464
+    },
+    {
+      "word": "hash.",
+      "start_ms": 15460,
+      "end_ms": 15680,
+      "start_frame": 464,
+      "end_frame": 470
+    },
+    {
+      "word": "Change",
+      "start_ms": 16040,
+      "end_ms": 16180,
+      "start_frame": 481,
+      "end_frame": 485
+    },
+    {
+      "word": "one",
+      "start_ms": 16180,
+      "end_ms": 16400,
+      "start_frame": 485,
+      "end_frame": 492
+    },
+    {
+      "word": "word,",
+      "start_ms": 16400,
+      "end_ms": 16640,
+      "start_frame": 492,
+      "end_frame": 499
+    },
+    {
+      "word": "and",
+      "start_ms": 16840,
+      "end_ms": 16920,
+      "start_frame": 505,
+      "end_frame": 508
+    },
+    {
+      "word": "only",
+      "start_ms": 16920,
+      "end_ms": 17160,
+      "start_frame": 508,
+      "end_frame": 515
+    },
+    {
+      "word": "that",
+      "start_ms": 17160,
+      "end_ms": 17340,
+      "start_frame": 515,
+      "end_frame": 520
+    },
+    {
+      "word": "one",
+      "start_ms": 17340,
+      "end_ms": 17520,
+      "start_frame": 520,
+      "end_frame": 526
+    },
+    {
+      "word": "hash",
+      "start_ms": 17520,
+      "end_ms": 17760,
+      "start_frame": 526,
+      "end_frame": 533
+    },
+    {
+      "word": "changes.",
+      "start_ms": 17760,
+      "end_ms": 18140,
+      "start_frame": 533,
+      "end_frame": 544
+    },
+    {
+      "word": "The",
+      "start_ms": 18420,
+      "end_ms": 18500,
+      "start_frame": 553,
+      "end_frame": 555
+    },
+    {
+      "word": "new",
+      "start_ms": 18500,
+      "end_ms": 18620,
+      "start_frame": 555,
+      "end_frame": 559
+    },
+    {
+      "word": "commit",
+      "start_ms": 18620,
+      "end_ms": 18820,
+      "start_frame": 559,
+      "end_frame": 565
+    },
+    {
+      "word": "just",
+      "start_ms": 18820,
+      "end_ms": 19020,
+      "start_frame": 565,
+      "end_frame": 571
+    },
+    {
+      "word": "points",
+      "start_ms": 19020,
+      "end_ms": 19240,
+      "start_frame": 571,
+      "end_frame": 577
+    },
+    {
+      "word": "to",
+      "start_ms": 19240,
+      "end_ms": 19460,
+      "start_frame": 577,
+      "end_frame": 584
+    },
+    {
+      "word": "the",
+      "start_ms": 19460,
+      "end_ms": 19540,
+      "start_frame": 584,
+      "end_frame": 586
+    },
+    {
+      "word": "new",
+      "start_ms": 19540,
+      "end_ms": 19660,
+      "start_frame": 586,
+      "end_frame": 590
+    },
+    {
+      "word": "blob",
+      "start_ms": 19660,
+      "end_ms": 19920,
+      "start_frame": 590,
+      "end_frame": 598
+    },
+    {
+      "word": "while",
+      "start_ms": 19920,
+      "end_ms": 20240,
+      "start_frame": 598,
+      "end_frame": 607
+    },
+    {
+      "word": "reusing",
+      "start_ms": 20240,
+      "end_ms": 20640,
+      "start_frame": 607,
+      "end_frame": 619
+    },
+    {
+      "word": "the",
+      "start_ms": 20640,
+      "end_ms": 20840,
+      "start_frame": 619,
+      "end_frame": 625
+    },
+    {
+      "word": "other",
+      "start_ms": 20840,
+      "end_ms": 21000,
+      "start_frame": 625,
+      "end_frame": 630
+    },
+    {
+      "word": "999",
+      "start_ms": 21000,
+      "end_ms": 21780,
+      "start_frame": 630,
+      "end_frame": 653
+    },
+    {
+      "word": "old",
+      "start_ms": 21780,
+      "end_ms": 22060,
+      "start_frame": 653,
+      "end_frame": 662
+    },
+    {
+      "word": "pointers",
+      "start_ms": 22060,
+      "end_ms": 22340,
+      "start_frame": 662,
+      "end_frame": 670
+    },
+    {
+      "word": "for",
+      "start_ms": 22340,
+      "end_ms": 22560,
+      "start_frame": 670,
+      "end_frame": 677
+    },
+    {
+      "word": "free.",
+      "start_ms": 22560,
+      "end_ms": 22840,
+      "start_frame": 677,
+      "end_frame": 685
+    },
+    {
+      "word": "So",
+      "start_ms": 22980,
+      "end_ms": 23180,
+      "start_frame": 689,
+      "end_frame": 695
+    },
+    {
+      "word": "Git",
+      "start_ms": 23180,
+      "end_ms": 23380,
+      "start_frame": 695,
+      "end_frame": 701
+    },
+    {
+      "word": "never",
+      "start_ms": 23380,
+      "end_ms": 23720,
+      "start_frame": 701,
+      "end_frame": 712
+    },
+    {
+      "word": "duplicates",
+      "start_ms": 23720,
+      "end_ms": 24260,
+      "start_frame": 712,
+      "end_frame": 728
+    },
+    {
+      "word": "unchanged",
+      "start_ms": 24260,
+      "end_ms": 24580,
+      "start_frame": 728,
+      "end_frame": 737
+    },
+    {
+      "word": "files.",
+      "start_ms": 24580,
+      "end_ms": 25180,
+      "start_frame": 737,
+      "end_frame": 755
+    },
+    {
+      "word": "It's",
+      "start_ms": 25580,
+      "end_ms": 25780,
+      "start_frame": 767,
+      "end_frame": 773
+    },
+    {
+      "word": "just",
+      "start_ms": 25780,
+      "end_ms": 25920,
+      "start_frame": 773,
+      "end_frame": 778
+    },
+    {
+      "word": "a",
+      "start_ms": 25920,
+      "end_ms": 26100,
+      "start_frame": 778,
+      "end_frame": 783
+    },
+    {
+      "word": "tree",
+      "start_ms": 26100,
+      "end_ms": 26300,
+      "start_frame": 783,
+      "end_frame": 789
+    },
+    {
+      "word": "of",
+      "start_ms": 26300,
+      "end_ms": 26500,
+      "start_frame": 789,
+      "end_frame": 795
+    },
+    {
+      "word": "hashes.",
+      "start_ms": 26500,
+      "end_ms": 26840,
+      "start_frame": 795,
+      "end_frame": 805
+    },
+    {
+      "word": "That's",
+      "start_ms": 26840,
+      "end_ms": 27440,
+      "start_frame": 805,
+      "end_frame": 823
+    },
+    {
+      "word": "how",
+      "start_ms": 27440,
+      "end_ms": 27480,
+      "start_frame": 823,
+      "end_frame": 824
+    },
+    {
+      "word": "Git",
+      "start_ms": 27480,
+      "end_ms": 27640,
+      "start_frame": 824,
+      "end_frame": 829
+    },
+    {
+      "word": "branches",
+      "start_ms": 27640,
+      "end_ms": 27960,
+      "start_frame": 829,
+      "end_frame": 839
+    },
+    {
+      "word": "and",
+      "start_ms": 27960,
+      "end_ms": 28240,
+      "start_frame": 839,
+      "end_frame": 847
+    },
+    {
+      "word": "merges",
+      "start_ms": 28240,
+      "end_ms": 28540,
+      "start_frame": 847,
+      "end_frame": 856
+    },
+    {
+      "word": "in",
+      "start_ms": 28540,
+      "end_ms": 28680,
+      "start_frame": 856,
+      "end_frame": 860
+    },
+    {
+      "word": "milliseconds.",
+      "start_ms": 28680,
+      "end_ms": 29080,
+      "start_frame": 860,
+      "end_frame": 872
+    }
+  ]
+}

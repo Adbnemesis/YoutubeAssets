@@ -1,0 +1,31 @@
+INSTAGRAM DESCRIPTION:
+How Git stores 1,000 files across 500 commits in just 10MB using content-addressable hash trees.
+.
+.
+.
+.
+.
+#tech #git #programming #coding #nemiexplains
+
+YOUTUBE SHORTS TITLE:
+How Git Actually Stores Your Code in 10MB! 🌳⚡ (It's Not Diffs) #shorts
+
+YOUTUBE SHORTS DESCRIPTION:
+How Git stores 1,000 files across 500 commits in just 10MB using content-addressable hash trees.
+.
+.
+.
+.
+.
+#tech #git #programming #coding #nemiexplains
+
+YOUTUBE TAGS:
+how git works, git internals, git blobs trees commits, sha1 content addressable, git dag, version control, git tutorial, software engineering, nemi explains, shorts
+
+TECHNICAL SPECS:
+- Composition: NemiExplainsGit
+- Duration: 29.50s (885 frames @ 30fps)
+- Aspect Ratio: 9:16 (4K 2160x3840)
+
+PUBLISHED LINKS:
+- Status: Pending publication
