@@ -690,7 +690,7 @@
     },
     {
       "id": "sub_019",
-      "text": "in O and time.",
+      "text": "in O(N) time!",
       "start_frame": 548,
       "end_frame": 579,
       "words": [
@@ -702,25 +702,18 @@
           "end_frame": 553
         },
         {
-          "word": "O",
+          "word": "O(N)",
           "start_ms": 18420,
-          "end_ms": 18640,
-          "start_frame": 553,
-          "end_frame": 559
-        },
-        {
-          "word": "and",
-          "start_ms": 18640,
           "end_ms": 18860,
-          "start_frame": 559,
+          "start_frame": 553,
           "end_frame": 566
         },
         {
-          "word": "time.",
+          "word": "time!",
           "start_ms": 18860,
-          "end_ms": 19180,
+          "end_ms": 19260,
           "start_frame": 566,
-          "end_frame": 575
+          "end_frame": 578
         }
       ]
     },
@@ -834,7 +827,7 @@
     },
     {
       "id": "sub_023",
-      "text": "solves it in O1",
+      "text": "solves it in O(1)",
       "start_frame": 691,
       "end_frame": 721,
       "words": [
@@ -860,7 +853,7 @@
           "end_frame": 709
         },
         {
-          "word": "O1",
+          "word": "O(1)",
           "start_ms": 23640,
           "end_ms": 23900,
           "start_frame": 709,
@@ -1411,7 +1404,7 @@
       "end_frame": 709
     },
     {
-      "word": "O1",
+      "word": "O(1)",
       "start_ms": 23640,
       "end_ms": 23900,
       "start_frame": 709,

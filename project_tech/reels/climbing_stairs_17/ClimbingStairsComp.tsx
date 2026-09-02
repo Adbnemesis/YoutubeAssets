@@ -346,7 +346,7 @@ export const ClimbingStairsComp: React.FC = () => {
         </div>
       )}
 
-      {/* STAGE 4: DYNAMIC 2-VARIABLE DP SLIDER IN ACTION (486 to 582) */}
+      {/* STAGE 4: HIGH-CLARITY 2-VARIABLE DUAL REGISTER ENGINE (486 to 582) */}
       {frame >= cutE - 6 && frame < cutF + 6 && (
         <div
           style={{
@@ -916,42 +916,41 @@ const OpenVisual3_FibonacciLaw: React.FC<{ frame: number }> = ({ frame }) => {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// 4. STAGE 4: DYNAMIC 2-VARIABLE DP SLIDER IN ACTION (486 to 582)
+// 4. STAGE 4: HIGH-CLARITY 2-VARIABLE DUAL REGISTER ENGINE (486 to 582)
 // ═══════════════════════════════════════════════════════════════
 const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
-  let step = 3;
+  // Clear Step-by-Step Simulation Progression
+  // Frame 486-510: Step 3 (a=1, b=2 -> sum=3)
+  // Frame 510-535: Shift! (a=2, b=3 -> sum=5) (Step 4)
+  // Frame 535-560: Shift! (a=3, b=5 -> sum=8) (Step 5)
+  // Frame 560-582: Flash forward to Step 100!
+  let currentStep = 3;
   let valA = 1;
   let valB = 2;
-  let valNext = 3;
+  let nextSum = 3;
 
   if (frame >= 510 && frame < 535) {
-    step = 4;
+    currentStep = 4;
     valA = 2;
     valB = 3;
-    valNext = 5;
+    nextSum = 5;
   } else if (frame >= 535 && frame < 560) {
-    step = 5;
+    currentStep = 5;
     valA = 3;
     valB = 5;
-    valNext = 8;
+    nextSum = 8;
   } else if (frame >= 560) {
-    step = 6;
-    valA = 5;
-    valB = 8;
-    valNext = 13;
+    currentStep = 100;
+    valA = 218922995834555169026;
+    valB = 354224848179261915075;
+    nextSum = 354224848179261915075;
   }
 
-  // Smooth sliding animation
-  const smoothX = interpolate(
-    frame,
-    [486, 510, 535, 560],
-    [360, 510, 660, 810],
-    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
-  );
+  const pulse = Math.sin(frame * 0.3);
 
   return (
     <div style={{ position: "absolute", inset: 0, pointerEvents: "none", zIndex: 25 }}>
-      {/* Floating DP Telemetry */}
+      {/* Floating Top Telemetry Pill */}
       <div
         style={{
           position: "absolute",
@@ -965,7 +964,7 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
       >
         <div
           style={{
-            backgroundColor: "rgba(16, 185, 129, 0.2)",
+            backgroundColor: "rgba(16, 185, 129, 0.22)",
             border: "2px solid #10B981",
             borderRadius: 999,
             padding: "10px 28px",
@@ -975,14 +974,14 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
           }}
         >
           <span style={{ fontSize: 24 }}>⚡</span>
-          <span style={{ fontSize: 20, fontWeight: 900, color: "#6EE7B7" }}>
-            {`CALCULATING STEP [${step}]: a + b = ${valNext}`}
+          <span style={{ fontSize: 20, fontWeight: 900, color: "#6EE7B7", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            {currentStep === 100 ? "STEP 100 COMPUTED! 🚀" : `COMPUTING STEP ${currentStep}: a + b = ${nextSum}`}
           </span>
         </div>
 
         <div
           style={{
-            backgroundColor: "rgba(15, 23, 42, 0.9)",
+            backgroundColor: "rgba(15, 23, 42, 0.94)",
             border: "2px solid #10B981",
             borderRadius: 999,
             padding: "10px 24px",
@@ -992,93 +991,132 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
             fontFamily: nemiTheme.typography.fontFamily.mono,
           }}
         >
-          O(1) SPACE (2 VARIABLES)
+          O(1) SPACE (ONLY 2 NUMBERS)
         </div>
       </div>
 
-      {/* Active DP Sliding Window Diagram (top: 380px) */}
-      <div style={{ position: "absolute", top: 380, left: 70, right: 70, height: 480 }}>
-        <svg width="940" height="480" viewBox="0 0 940 480">
-          {/* Dynamic Laser Guide Line under current slider */}
-          <line
-            x1={smoothX - 100}
-            y1="380"
-            x2={smoothX + 100}
-            y2="380"
-            stroke="#10B981"
-            strokeWidth="3"
-            strokeDasharray="6 4"
-          />
+      {/* 2 Big Glowing Memory Registers in Center (top: 380px) */}
+      <div style={{ position: "absolute", top: 380, left: 70, right: 70, display: "flex", gap: 30 }}>
+        {/* Register A */}
+        <div
+          style={{
+            flex: 1,
+            backgroundColor: "rgba(6, 182, 212, 0.14)",
+            border: "3.5px solid #06B6D4",
+            borderRadius: 28,
+            padding: "26px 28px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 10,
+            boxShadow: "0 18px 50px rgba(6, 182, 212, 0.3)",
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center" }}>
+            <span style={{ backgroundColor: "#06B6D4", color: "#000", fontSize: 16, fontWeight: 900, padding: "4px 14px", borderRadius: 12 }}>
+              VARIABLE A
+            </span>
+            <span style={{ fontSize: 16, fontWeight: 800, color: "#67E8F9" }}>Step (N-2)</span>
+          </div>
+          <div style={{ fontSize: 64, fontWeight: 900, color: "#FFFFFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            {currentStep === 100 ? "218Q..." : valA}
+          </div>
+          <div style={{ fontSize: 16, fontWeight: 700, color: "#94A3B8" }}>Previous-2 ways</div>
+        </div>
 
-          {/* Fibonacci Numerical Runway */}
-          {[
-            { stepNum: 1, ways: 1, x: 60 },
-            { stepNum: 2, ways: 2, x: 210 },
-            { stepNum: 3, ways: 3, x: 360 },
-            { stepNum: 4, ways: 5, x: 510 },
-            { stepNum: 5, ways: 8, x: 660 },
-            { stepNum: 6, ways: 13, x: 810 },
-          ].map((item, idx) => {
-            const isA = item.ways === valA;
-            const isB = item.ways === valB;
-            const isCurrentTarget = item.stepNum === step;
+        {/* Central Plus Fusion Icon */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div
+            style={{
+              width: 56,
+              height: 56,
+              borderRadius: "50%",
+              backgroundColor: "#10B981",
+              color: "#000",
+              fontSize: 34,
+              fontWeight: 900,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 0 25px rgba(16, 185, 129, 0.6)",
+              transform: `scale(${1 + pulse * 0.08})`,
+            }}
+          >
+            +
+          </div>
+        </div>
 
-            return (
-              <g key={idx}>
-                {/* Step Block */}
-                <rect
-                  x={item.x}
-                  y="200"
-                  width="110"
-                  height="160"
-                  rx="18"
-                  fill={isCurrentTarget ? "rgba(16, 185, 129, 0.25)" : "#1E293B"}
-                  stroke={isA ? "#06B6D4" : isB ? "#F59E0B" : isCurrentTarget ? "#10B981" : "#475569"}
-                  strokeWidth={isA || isB || isCurrentTarget ? 4 : 2}
-                />
-                <text x={item.x + 55} y="245" fill="#94A3B8" fontSize="16" fontWeight="900" textAnchor="middle" fontFamily="monospace">
-                  Step {item.stepNum}
-                </text>
-                <text x={item.x + 55} y="300" fill={isCurrentTarget ? "#10B981" : "#FFFFFF"} fontSize="28" fontWeight="900" textAnchor="middle">
-                  {item.ways}
-                </text>
-
-                {/* Variable Indicator Labels */}
-                {isA && (
-                  <g transform={`translate(${item.x + 55}, 140)`}>
-                    <rect x="-35" y="-18" width="70" height="36" rx="18" fill="#06B6D4" />
-                    <text x="0" y="6" fill="#000" fontSize="16" fontWeight="900" textAnchor="middle">a = {valA}</text>
-                  </g>
-                )}
-                {isB && (
-                  <g transform={`translate(${item.x + 55}, 140)`}>
-                    <rect x="-35" y="-18" width="70" height="36" rx="18" fill="#F59E0B" />
-                    <text x="0" y="6" fill="#000" fontSize="16" fontWeight="900" textAnchor="middle">b = {valB}</text>
-                  </g>
-                )}
-              </g>
-            );
-          })}
-
-          {/* Sum Addition Formula Line */}
-          <path
-            d="M 265 140 Q 360 60 415 140"
-            fill="none"
-            stroke="#10B981"
-            strokeWidth="3.5"
-            strokeDasharray="6 4"
-          />
-          <text x="470" y="80" fill="#6EE7B7" fontSize="22" fontWeight="900" textAnchor="middle" fontFamily="monospace">
-            a, b = b, a + b
-          </text>
-        </svg>
+        {/* Register B */}
+        <div
+          style={{
+            flex: 1,
+            backgroundColor: "rgba(245, 158, 11, 0.14)",
+            border: "3.5px solid #F59E0B",
+            borderRadius: 28,
+            padding: "26px 28px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 10,
+            boxShadow: "0 18px 50px rgba(245, 158, 11, 0.3)",
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", width: "100%", alignItems: "center" }}>
+            <span style={{ backgroundColor: "#F59E0B", color: "#000", fontSize: 16, fontWeight: 900, padding: "4px 14px", borderRadius: 12 }}>
+              VARIABLE B
+            </span>
+            <span style={{ fontSize: 16, fontWeight: 800, color: "#FDE68A" }}>Step (N-1)</span>
+          </div>
+          <div style={{ fontSize: 64, fontWeight: 900, color: "#FFFFFF", fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            {currentStep === 100 ? "354Q..." : valB}
+          </div>
+          <div style={{ fontSize: 16, fontWeight: 700, color: "#94A3B8" }}>Previous-1 ways</div>
+        </div>
       </div>
 
-      {/* Floating Bottom Callout */}
+      {/* Real-time Calculation & Shifting Box (top: 640px) */}
       <div
         style={{
           position: "absolute",
-          top: 930,
+          top: 640,
+          left: 70,
+          right: 70,
+          backgroundColor: "#0B1120",
+          borderRadius: 26,
+          border: "2.5px solid #10B981",
+          padding: "20px 32px",
+          display: "flex",
+          flexDirection: "column",
+          gap: 12,
+          boxShadow: "0 16px 45px rgba(16, 185, 129, 0.25)",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <span style={{ color: "#6EE7B7", fontSize: 18, fontWeight: 900, letterSpacing: "1px" }}>
+            THE 1-LINE SLIDING SHIFT:
+          </span>
+          <span style={{ color: "#FFD166", fontSize: 20, fontWeight: 900, fontFamily: nemiTheme.typography.fontFamily.mono }}>
+            a, b = b, a + b
+          </span>
+        </div>
+
+        {/* Shift explanation step */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", color: "#FFF", fontSize: 24, fontWeight: 800 }}>
+          <div>
+            1. New Sum = <span style={{ color: "#10B981" }}>{currentStep === 100 ? "354 Quintillion 🚀" : nextSum}</span>
+          </div>
+          <div>👉</div>
+          <div>
+            2. Shift: <span style={{ color: "#06B6D4" }}>a ← {currentStep === 100 ? "218Q" : valB}</span>, <span style={{ color: "#F59E0B" }}>b ← {currentStep === 100 ? "354Q" : nextSum}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Floating Bottom Ledger (top: 890px) */}
+      <div
+        style={{
+          position: "absolute",
+          top: 890,
           left: 70,
           right: 70,
           backgroundColor: "#03070D",
@@ -1091,9 +1129,9 @@ const OpenVisual4_DPSlider: React.FC<{ frame: number }> = ({ frame }) => {
           boxShadow: "0 14px 40px rgba(16, 185, 129, 0.25)",
         }}
       >
-        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Constant Memory Optimization:</span>
+        <span style={{ color: "#F8FAFC", fontSize: 20, fontWeight: 800 }}>Memory Footprint:</span>
         <span style={{ color: "#6EE7B7", fontWeight: 900, fontSize: 22, fontFamily: nemiTheme.typography.fontFamily.mono }}>
-          ZERO ARRAY ALLOCATIONS! ✓
+          ZERO ARRAY ALLOCATIONS (2 INTEGERS ONLY!) ✓
         </span>
       </div>
     </div>

@@ -1,43 +1,23 @@
 INSTAGRAM DESCRIPTION:
-Why does solving Climbing Stairs with pure recursion melt your CPU? 🪜💥
-
-If you test every branch recursively, you recalculate the exact same sub-problems billions of times in O(2^N) exponential disaster! 😱
-
-Here is why Dynamic Programming solves it in O(1) space:
-• To reach Step N, you either took 1 step from N-1, or 2 steps from N-2
-• That means ways(N) = ways(N-1) + ways(N-2) — it's literally Fibonacci! ⚡
-• You only need to track the last two numbers: sliding two variables up the staircase in a single linear pass! 🚀
-
-Drop your favorite DP problem in the comments! 👇
+How to solve Climbing Stairs in O(1) memory using two sliding variables.
 .
 .
 .
 .
 .
-#leetcode #dsa #placement #algorithms #nemiexplains
+#leetcode #dsa #placement #climbingstairs #nemiexplains
 
 YOUTUBE SHORTS TITLE:
 Climbing Stairs in O(1) Space with Dynamic Programming 🪜 | LeetCode 70 #shorts
 
 YOUTUBE SHORTS DESCRIPTION:
-Why does solving Climbing Stairs with pure recursion melt your CPU? 🪜💥
-
-If you test every branch recursively, you recalculate the exact same sub-problems billions of times in O(2^N) exponential disaster! 😱
-
-Here is why Dynamic Programming solves it in O(1) space:
-• To reach Step N, you either took 1 step from N-1, or 2 steps from N-2
-• That means ways(N) = ways(N-1) + ways(N-2) — it's literally Fibonacci! ⚡
-• You only need to track the last two numbers: sliding two variables up the staircase in a single linear pass! 🚀
-
-Drop your favorite DP problem in the comments! 👇
+How to solve Climbing Stairs in O(1) memory using two sliding variables.
 .
 .
 .
 .
 .
-#leetcode #dsa #placement #algorithms #nemiexplains
-
-🔔 Subscribe to @nemi.explains for weekly visual tech & algorithm deep-dives!
+#leetcode #dsa #placement #climbingstairs #nemiexplains
 
 YOUTUBE TAGS:
 climbing stairs leetcode, leetcode 70, dynamic programming, fibonacci series, time complexity o n, space complexity o 1, recursion tree explosion, coding interview, nemi explains, shorts
@@ -46,3 +26,6 @@ TECHNICAL SPECS:
 - Composition: NemiExplainsClimbingStairs
 - Duration: 24.48s (734 frames @ 30fps)
 - Aspect Ratio: 9:16 (4K 2160x3840)
+
+PUBLISHED LINKS:
+- Status: Pending publication

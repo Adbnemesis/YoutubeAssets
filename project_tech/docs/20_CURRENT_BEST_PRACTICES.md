@@ -21,7 +21,40 @@
     * **Algorithms & Search/Sort:** Real coordinate complexity graphs ($O(N)$ vs $O(\log N)$ Cartesian plots), dynamic frequency spectrum density bars, laser partition slicers, animated branching decision trees, and exponential telescope funnels.
     * **Audio & Signals:** Real-time frequency waterfall spectrograms, constellation peak star maps, audio wave interference collisions.
     * **Systems & Error Correction:** Reed-Solomon parity repair beams, laser module rebuilds, active packet routing conduits.
-13. **Law of Clean Metadata & 5-Dot Spacing:** Never use long horizontal dashes / divider lines (`====` or `----`) in metadata files. Files must lead with `INSTAGRAM DESCRIPTION:`, followed by a punchy one-liner, 5 lines containing only a single dot `.`, and exactly 5 tech-based hashtags (LeetCode/DSA reels: `#leetcode #dsa #placement` + 2 specific; Generic Tech reels: `#tech #algorithm` + 3 specific).
+13. **Law of Clean Metadata & 1-Line Description Standard:** Never write multi-paragraph or long descriptions in `metadata.txt`. The description MUST be a single, punchy 1-line summary sentence (e.g. `How to solve Climbing Stairs in O(1) memory using two sliding variables.`). The file MUST follow this exact schema:
+    ```text
+    INSTAGRAM DESCRIPTION:
+    <Single punchy 1-line summary sentence>
+    .
+    .
+    .
+    .
+    .
+    #leetcode #dsa #placement #<topic> #nemiexplains
+
+    YOUTUBE SHORTS TITLE:
+    <Title with Emoji> #shorts
+
+    YOUTUBE SHORTS DESCRIPTION:
+    <Exact same 1-line summary sentence>
+    .
+    .
+    .
+    .
+    .
+    #leetcode #dsa #placement #<topic> #nemiexplains
+
+    YOUTUBE TAGS:
+    <comma-separated tags>, shorts
+
+    TECHNICAL SPECS:
+    - Composition: NemiExplains<Topic>
+    - Duration: <duration>s (<frames> frames @ 30fps)
+    - Aspect Ratio: 9:16 (4K 2160x3840)
+
+    PUBLISHED LINKS:
+    - Status: Pending publication
+    ```
 14. **Law of Open-Canvas Holographic Visuals (Zero Mandatory Box Container):** Do NOT enclose every visual inside a generic rounded card or rectangular boundary. Visuals should be **free-floating, spatial, and open-canvas**: circular radar sweeps, glowing coordinate axes, spatial nodes, floating neon badges, energy conduits, and full-bleed particle fields that breathe freely across the canvas without artificial box frames.
 15. **Law of 4K Master Production (Zero 1080p Clutter):** Master production videos are rendered **exclusively in 4K** (`--scale=2`, 2160x3840 @ 30fps). Do not output or keep secondary 1080p files.
 16. **Law of Stage-by-Stage Visual Metamorphosis:** A reel must NEVER retain the same visual scene across its entire runtime. Each semantic phase MUST mount a distinct, purpose-built, animated visual engine (e.g. Problem Hook $\to$ Memory Grid Laser Trap $\to$ Dual-Speedometer Mechanism $\to$ Dynamic Racetrack Chase $\to$ Shockwave Collision $\to$ Cartesian Complexity Graph Showdown).
