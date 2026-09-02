@@ -24,7 +24,7 @@ how git works, git internals, git blobs trees commits, sha1 content addressable,
 
 TECHNICAL SPECS:
 - Composition: NemiExplainsGit
-- Duration: 29.50s (885 frames @ 30fps)
+- Duration: 19.69s (591 frames @ 30fps)
 - Aspect Ratio: 9:16 (4K 2160x3840)
 
 PUBLISHED LINKS:

@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """
-Audio Pipeline for Reel #18: How Git Actually Stores Code
+Audio Pipeline for Reel #18: How Git Stores Code in 10MB
 Engine: ChatterboxTTS (Narrator) + Edge-TTS (Nemi AnaNeural)
-Target Duration: ~23s - 25s (Law 8 Golden Retention Zone)
+Target Duration: ~21.0s (630 frames @ 30fps) — Strict <24s Rule
 """
 
 import os
 import json
 import shutil
 import asyncio
-import subprocess
 from pathlib import Path
 import torch
 import torchaudio
@@ -41,77 +40,67 @@ PUBLIC_REELS.mkdir(parents=True, exist_ok=True)
 TARGET_VOICE_LUFS = -16.0
 TARGET_MASTER_LUFS = -15.0
 
+# Tight, high-velocity 20-21s script with zero fluff
 VOICE_SCRIPT = [
     {
         "id": "git01_hook",
         "speaker": "narrator",
-        "text": "Your project has 1,000 files and 500 commits, but dot git is barely 10 megabytes. How?",
-        "exag": 0.72,
-        "gap_after": 60,
+        "text": "Your project has 1,000 files, but .git is barely 10 megabytes. How?",
+        "exag": 0.74,
+        "gap_after": 40,
         "cues": [
-            {"phrase": "1,000 files", "cue": "project_files_spawn", "rel_pct": 0.30},
-            {"phrase": "10 megabytes", "cue": "small_size_highlight", "rel_pct": 0.75}
+            {"phrase": "1,000 files", "cue": "vortex_files_spawn", "rel_pct": 0.35},
+            {"phrase": "10 megabytes", "cue": "compression_lock", "rel_pct": 0.80}
         ]
     },
     {
         "id": "git02_nemi",
         "speaker": "nemi",
-        "text": "Doesn't Git just save a list of text diffs line-by-line? 🤔",
-        "gap_after": 60,
+        "text": "Doesn't it just save text diffs? 🤔",
+        "gap_after": 40,
         "cues": [
-            {"phrase": "text diffs", "cue": "diff_myth_animation", "rel_pct": 0.50}
+            {"phrase": "text diffs", "cue": "diff_slash_out", "rel_pct": 0.50}
         ]
     },
     {
-        "id": "git03_truth",
+        "id": "git03_prism",
         "speaker": "narrator",
-        "text": "No! Git is actually a content-addressable database of immutable snapshots.",
+        "text": "No! Every file is hashed into a unique SHA-1 blob.",
         "exag": 0.75,
-        "gap_after": 60,
+        "gap_after": 40,
         "cues": [
-            {"phrase": "content-addressable", "cue": "database_vault_reveal", "rel_pct": 0.35},
-            {"phrase": "immutable snapshots", "cue": "snapshot_tree_glow", "rel_pct": 0.75}
+            {"phrase": "hashed into", "cue": "prism_hash_beam", "rel_pct": 0.40},
+            {"phrase": "SHA-1 blob", "cue": "blob_crystal_reveal", "rel_pct": 0.80}
         ]
     },
     {
-        "id": "git04_hashing",
+        "id": "git04_mutation",
         "speaker": "narrator",
-        "text": "Every file is compressed into a blob named by its SHA-1 hash. Change one word, and only that one hash changes.",
+        "text": "When you edit one file, Git only creates one new blob and reuses the other 999 pointers for free!",
+        "exag": 0.76,
+        "gap_after": 40,
+        "cues": [
+            {"phrase": "one new blob", "cue": "single_mutation_spark", "rel_pct": 0.40},
+            {"phrase": "999 pointers", "cue": "pointer_web_lock", "rel_pct": 0.80}
+        ]
+    },
+    {
+        "id": "git05_nemi",
+        "speaker": "nemi",
+        "text": "Zero duplicate copies, just a tree of hashes! 😎⚡",
+        "gap_after": 40,
+        "cues": [
+            {"phrase": "tree of hashes", "cue": "dag_tree_bloom", "rel_pct": 0.60}
+        ]
+    },
+    {
+        "id": "git06_loop",
+        "speaker": "narrator",
+        "text": "That's how Git snapshots your entire codebase in milliseconds.",
         "exag": 0.72,
         "gap_after": 60,
         "cues": [
-            {"phrase": "blob named", "cue": "sha1_hash_laser", "rel_pct": 0.30},
-            {"phrase": "only that one hash", "cue": "hash_mutation_pulse", "rel_pct": 0.80}
-        ]
-    },
-    {
-        "id": "git05_pointers",
-        "speaker": "narrator",
-        "text": "The new commit just points to the new blob, while reusing the other 999 old pointers for free!",
-        "exag": 0.75,
-        "gap_after": 60,
-        "cues": [
-            {"phrase": "points to the new blob", "cue": "commit_tree_repoint", "rel_pct": 0.35},
-            {"phrase": "reusing the other", "cue": "shared_pointers_glow", "rel_pct": 0.75}
-        ]
-    },
-    {
-        "id": "git06_nemi",
-        "speaker": "nemi",
-        "text": "So Git never duplicates unchanged files — it's just a tree of hashes! 😎⚡",
-        "gap_after": 60,
-        "cues": [
-            {"phrase": "tree of hashes", "cue": "nemi_smug_tree", "rel_pct": 0.60}
-        ]
-    },
-    {
-        "id": "git07_loop",
-        "speaker": "narrator",
-        "text": "That's how Git branches and merges in milliseconds.",
-        "exag": 0.70,
-        "gap_after": 80,
-        "cues": [
-            {"phrase": "branches and merges", "cue": "dag_branch_merge_loop", "rel_pct": 0.70}
+            {"phrase": "entire codebase", "cue": "loop_seam_snap", "rel_pct": 0.70}
         ]
     }
 ]
@@ -130,8 +119,8 @@ def normalize_lufs(y: np.ndarray, sr: int, target_lufs: float) -> np.ndarray:
     return y_norm
 
 async def generate_nemi_edge(text: str, out_wav: Path):
-    clean_text = text.replace("🤔", "").replace("😎⚡", "").replace("🌳", "").strip()
-    communicate = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+12Hz", rate="+25%")
+    clean_text = text.replace("🤔", "").replace("😎⚡", "").strip()
+    communicate = edge_tts.Communicate(clean_text, "en-US-AnaNeural", pitch="+14Hz", rate="+30%")
     temp_mp3 = out_wav.with_suffix(".mp3")
     await communicate.save(str(temp_mp3))
     
@@ -159,15 +148,14 @@ def generate_voice_blocks():
         if speaker == "narrator":
             clean_text = (
                 text.replace("1,000", "one thousand")
-                .replace("500", "five hundred")
                 .replace("10", "ten")
                 .replace("999", "nine hundred ninety-nine")
-                .replace("dot git", ".git")
+                .replace(".git", "dot git")
                 .replace("SHA-1", "S H A one")
             )
             wav_tensor = chatter.generate(
                 text=clean_text,
-                exaggeration=block.get("exag", 0.72)
+                exaggeration=block.get("exag", 0.74)
             )
             if wav_tensor.ndim > 1:
                 wav_tensor = wav_tensor.squeeze()
@@ -228,10 +216,10 @@ def assemble_master_audio(blocks):
         })
         
         master_samples.append(y)
-        gap_samples = int(sample_rate * (b.get("gap_after", 60) / 1000))
+        gap_samples = int(sample_rate * (b.get("gap_after", 40) / 1000))
         master_samples.append(np.zeros(gap_samples, dtype=np.float32))
         
-        current_ms += duration_ms + b.get("gap_after", 60)
+        current_ms += duration_ms + b.get("gap_after", 40)
 
     voice_track = np.concatenate(master_samples)
     voice_track = normalize_lufs(voice_track, sample_rate, TARGET_VOICE_LUFS)
@@ -279,7 +267,6 @@ def generate_subtitles_whisper(timeline_blocks, total_frames, total_ms):
     for seg in segments:
         for w in seg.words:
             w_text = w.word.strip()
-            # Clean Whisper mistranscriptions
             if w_text.lower() in ["sha1", "sha 1", "sha-1"]:
                 w_text = "SHA-1"
             elif w_text.lower() in ["dot git", ".git"]:
@@ -318,7 +305,7 @@ def generate_subtitles_whisper(timeline_blocks, total_frames, total_ms):
 
     timeline_data = {
         "reel_id": "git_18",
-        "title": "How Git Actually Stores Your Code",
+        "title": "How Git Stores Your Code in 10MB",
         "total_ms": total_ms,
         "total_frames": total_frames,
         "blocks": timeline_blocks,
@@ -336,7 +323,7 @@ def main():
     blocks = generate_voice_blocks()
     timeline_blocks, total_ms, total_frames = assemble_master_audio(blocks)
     generate_subtitles_whisper(timeline_blocks, total_frames, total_ms)
-    print("🎉 Audio generation & timeline sync complete!")
+    print("🎉 Fast-Paced Audio generation & timeline sync complete!")
 
 if __name__ == "__main__":
     main()

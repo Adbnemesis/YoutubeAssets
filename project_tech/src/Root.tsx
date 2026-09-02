@@ -47,7 +47,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="NemiExplainsGit"
         component={GitComp}
-        durationInFrames={885}
+        durationInFrames={591}
         fps={THEME.dimensions.fps}
         width={THEME.dimensions.width}
         height={THEME.dimensions.height}
