@@ -1,5 +1,6 @@
 import React from "react";
 import { Composition } from "remotion";
+import { IslandsComp } from "../reels/islands_19/IslandsComp";
 import { GitComp } from "../reels/git_18/GitComp";
 import { ClimbingStairsComp } from "../reels/climbing_stairs_17/ClimbingStairsComp";
 import { RainWaterComp } from "../reels/rainwater_16/RainWaterComp";
@@ -44,6 +45,14 @@ import { THEME } from "./constants/theme";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="NemiExplainsIslands"
+        component={IslandsComp}
+        durationInFrames={662}
+        fps={THEME.dimensions.fps}
+        width={THEME.dimensions.width}
+        height={THEME.dimensions.height}
+      />
       <Composition
         id="NemiExplainsGit"
         component={GitComp}

@@ -1,0 +1,1544 @@
+{
+  "reel_id": "islands_19",
+  "title": "LeetCode #200: Number of Islands",
+  "total_ms": 22082,
+  "total_frames": 662,
+  "blocks": [
+    {
+      "id": "island01_hook",
+      "speaker": "narrator",
+      "text": "You are given a 2D grid of ones and zeros. How do you count every isolated island in just one pass?",
+      "start_ms": 0,
+      "end_ms": 4736,
+      "duration_ms": 4736,
+      "start_frame": 0,
+      "end_frame": 142,
+      "cues": [
+        {
+          "phrase": "2D grid",
+          "cue": "grid_spawn",
+          "frame": 43
+        },
+        {
+          "phrase": "isolated island",
+          "cue": "islands_glow",
+          "frame": 99
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/islands_19/audio/blocks/island01_hook.wav"
+    },
+    {
+      "id": "island02_nemi",
+      "speaker": "nemi",
+      "text": "Won't we count the same island ten times? \ud83e\udd14",
+      "start_ms": 4776,
+      "end_ms": 6717,
+      "duration_ms": 1941,
+      "start_frame": 143,
+      "end_frame": 202,
+      "cues": [
+        {
+          "phrase": "same island",
+          "cue": "double_count_trap",
+          "frame": 172
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/islands_19/audio/blocks/island02_nemi.wav"
+    },
+    {
+      "id": "island03_sink",
+      "speaker": "narrator",
+      "text": "Not if you sink it! When your scanner hits a one, count one island, then trigger a flood wave.",
+      "start_ms": 6757,
+      "end_ms": 11151,
+      "duration_ms": 4394,
+      "start_frame": 203,
+      "end_frame": 335,
+      "cues": [
+        {
+          "phrase": "sink it",
+          "cue": "sink_title_stamp",
+          "frame": 236
+        },
+        {
+          "phrase": "count one island",
+          "cue": "counter_pop_1",
+          "frame": 288
+        },
+        {
+          "phrase": "flood wave",
+          "cue": "flood_wave_expand",
+          "frame": 315
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/islands_19/audio/blocks/island03_sink.wav"
+    },
+    {
+      "id": "island04_dfs",
+      "speaker": "narrator",
+      "text": "A quick depth-first search turns all connected land tiles into water instantly.",
+      "start_ms": 11191,
+      "end_ms": 14817,
+      "duration_ms": 3626,
+      "start_frame": 336,
+      "end_frame": 445,
+      "cues": [
+        {
+          "phrase": "depth-first search",
+          "cue": "dfs_laser_ripple",
+          "frame": 379
+        },
+        {
+          "phrase": "into water",
+          "cue": "tiles_morph_zero",
+          "frame": 423
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/islands_19/audio/blocks/island04_dfs.wav"
+    },
+    {
+      "id": "island05_nemi",
+      "speaker": "nemi",
+      "text": "So the island vanishes, and we never double-count it! \ud83d\ude0e\u26a1",
+      "start_ms": 14857,
+      "end_ms": 17630,
+      "duration_ms": 2773,
+      "start_frame": 446,
+      "end_frame": 529,
+      "cues": [
+        {
+          "phrase": "island vanishes",
+          "cue": "island_submerged_splash",
+          "frame": 479
+        },
+        {
+          "phrase": "never double-count",
+          "cue": "clean_sweep_speed",
+          "frame": 512
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/islands_19/audio/blocks/island05_nemi.wav"
+    },
+    {
+      "id": "island06_loop",
+      "speaker": "narrator",
+      "text": "That's how LeetCode 200 solves the entire matrix in pure linear O of M times N time.",
+      "start_ms": 17670,
+      "end_ms": 22022,
+      "duration_ms": 4352,
+      "start_frame": 530,
+      "end_frame": 661,
+      "cues": [
+        {
+          "phrase": "LeetCode 200",
+          "cue": "victory_badge_bloom",
+          "frame": 569
+        },
+        {
+          "phrase": "O of M times N",
+          "cue": "complexity_lock",
+          "frame": 628
+        }
+      ],
+      "wav_path": "/Users/talus/Downloads/youtube_ai/OpenMontage/project_tech/reels/islands_19/audio/blocks/island06_loop.wav"
+    }
+  ],
+  "subtitles": [
+    {
+      "id": "sub_001",
+      "text": "You're given a 2D",
+      "start_frame": 0,
+      "end_frame": 24,
+      "words": [
+        {
+          "word": "You're",
+          "start_ms": 0,
+          "end_ms": 180,
+          "start_frame": 0,
+          "end_frame": 5
+        },
+        {
+          "word": "given",
+          "start_ms": 180,
+          "end_ms": 380,
+          "start_frame": 5,
+          "end_frame": 11
+        },
+        {
+          "word": "a",
+          "start_ms": 380,
+          "end_ms": 540,
+          "start_frame": 11,
+          "end_frame": 16
+        },
+        {
+          "word": "2D",
+          "start_ms": 540,
+          "end_ms": 800,
+          "start_frame": 16,
+          "end_frame": 24
+        }
+      ]
+    },
+    {
+      "id": "sub_002",
+      "text": "grid of 1s and",
+      "start_frame": 24,
+      "end_frame": 45,
+      "words": [
+        {
+          "word": "grid",
+          "start_ms": 800,
+          "end_ms": 980,
+          "start_frame": 24,
+          "end_frame": 29
+        },
+        {
+          "word": "of",
+          "start_ms": 980,
+          "end_ms": 1220,
+          "start_frame": 29,
+          "end_frame": 37
+        },
+        {
+          "word": "1s",
+          "start_ms": 1220,
+          "end_ms": 1420,
+          "start_frame": 37,
+          "end_frame": 43
+        },
+        {
+          "word": "and",
+          "start_ms": 1420,
+          "end_ms": 1500,
+          "start_frame": 43,
+          "end_frame": 45
+        }
+      ]
+    },
+    {
+      "id": "sub_003",
+      "text": "0s. How do you",
+      "start_frame": 45,
+      "end_frame": 73,
+      "words": [
+        {
+          "word": "0s.",
+          "start_ms": 1500,
+          "end_ms": 1920,
+          "start_frame": 45,
+          "end_frame": 58
+        },
+        {
+          "word": "How",
+          "start_ms": 2180,
+          "end_ms": 2280,
+          "start_frame": 65,
+          "end_frame": 68
+        },
+        {
+          "word": "do",
+          "start_ms": 2280,
+          "end_ms": 2340,
+          "start_frame": 68,
+          "end_frame": 70
+        },
+        {
+          "word": "you",
+          "start_ms": 2340,
+          "end_ms": 2440,
+          "start_frame": 70,
+          "end_frame": 73
+        }
+      ]
+    },
+    {
+      "id": "sub_004",
+      "text": "count every isolated island",
+      "start_frame": 73,
+      "end_frame": 109,
+      "words": [
+        {
+          "word": "count",
+          "start_ms": 2440,
+          "end_ms": 2560,
+          "start_frame": 73,
+          "end_frame": 77
+        },
+        {
+          "word": "every",
+          "start_ms": 2560,
+          "end_ms": 2900,
+          "start_frame": 77,
+          "end_frame": 87
+        },
+        {
+          "word": "isolated",
+          "start_ms": 2900,
+          "end_ms": 3320,
+          "start_frame": 87,
+          "end_frame": 100
+        },
+        {
+          "word": "island",
+          "start_ms": 3320,
+          "end_ms": 3620,
+          "start_frame": 100,
+          "end_frame": 109
+        }
+      ]
+    },
+    {
+      "id": "sub_005",
+      "text": "in just one pass?",
+      "start_frame": 109,
+      "end_frame": 135,
+      "words": [
+        {
+          "word": "in",
+          "start_ms": 3620,
+          "end_ms": 3820,
+          "start_frame": 109,
+          "end_frame": 115
+        },
+        {
+          "word": "just",
+          "start_ms": 3820,
+          "end_ms": 3940,
+          "start_frame": 115,
+          "end_frame": 118
+        },
+        {
+          "word": "one",
+          "start_ms": 3940,
+          "end_ms": 4220,
+          "start_frame": 118,
+          "end_frame": 127
+        },
+        {
+          "word": "pass?",
+          "start_ms": 4220,
+          "end_ms": 4500,
+          "start_frame": 127,
+          "end_frame": 135
+        }
+      ]
+    },
+    {
+      "id": "sub_006",
+      "text": "Won't we count the",
+      "start_frame": 143,
+      "end_frame": 163,
+      "words": [
+        {
+          "word": "Won't",
+          "start_ms": 4760,
+          "end_ms": 4980,
+          "start_frame": 143,
+          "end_frame": 149
+        },
+        {
+          "word": "we",
+          "start_ms": 4980,
+          "end_ms": 5060,
+          "start_frame": 149,
+          "end_frame": 152
+        },
+        {
+          "word": "count",
+          "start_ms": 5060,
+          "end_ms": 5240,
+          "start_frame": 152,
+          "end_frame": 157
+        },
+        {
+          "word": "the",
+          "start_ms": 5240,
+          "end_ms": 5420,
+          "start_frame": 157,
+          "end_frame": 163
+        }
+      ]
+    },
+    {
+      "id": "sub_007",
+      "text": "same island 10 times?",
+      "start_frame": 163,
+      "end_frame": 194,
+      "words": [
+        {
+          "word": "same",
+          "start_ms": 5420,
+          "end_ms": 5600,
+          "start_frame": 163,
+          "end_frame": 168
+        },
+        {
+          "word": "island",
+          "start_ms": 5600,
+          "end_ms": 5900,
+          "start_frame": 168,
+          "end_frame": 177
+        },
+        {
+          "word": "10",
+          "start_ms": 5900,
+          "end_ms": 6200,
+          "start_frame": 177,
+          "end_frame": 186
+        },
+        {
+          "word": "times?",
+          "start_ms": 6200,
+          "end_ms": 6460,
+          "start_frame": 186,
+          "end_frame": 194
+        }
+      ]
+    },
+    {
+      "id": "sub_008",
+      "text": "Not if you sink",
+      "start_frame": 203,
+      "end_frame": 223,
+      "words": [
+        {
+          "word": "Not",
+          "start_ms": 6780,
+          "end_ms": 6920,
+          "start_frame": 203,
+          "end_frame": 208
+        },
+        {
+          "word": "if",
+          "start_ms": 6920,
+          "end_ms": 7060,
+          "start_frame": 208,
+          "end_frame": 212
+        },
+        {
+          "word": "you",
+          "start_ms": 7060,
+          "end_ms": 7180,
+          "start_frame": 212,
+          "end_frame": 215
+        },
+        {
+          "word": "sink",
+          "start_ms": 7180,
+          "end_ms": 7420,
+          "start_frame": 215,
+          "end_frame": 223
+        }
+      ]
+    },
+    {
+      "id": "sub_009",
+      "text": "it, when your scanner",
+      "start_frame": 223,
+      "end_frame": 248,
+      "words": [
+        {
+          "word": "it,",
+          "start_ms": 7420,
+          "end_ms": 7580,
+          "start_frame": 223,
+          "end_frame": 227
+        },
+        {
+          "word": "when",
+          "start_ms": 7760,
+          "end_ms": 7880,
+          "start_frame": 233,
+          "end_frame": 236
+        },
+        {
+          "word": "your",
+          "start_ms": 7880,
+          "end_ms": 8000,
+          "start_frame": 236,
+          "end_frame": 240
+        },
+        {
+          "word": "scanner",
+          "start_ms": 8000,
+          "end_ms": 8260,
+          "start_frame": 240,
+          "end_frame": 248
+        }
+      ]
+    },
+    {
+      "id": "sub_010",
+      "text": "hits a 1, count",
+      "start_frame": 248,
+      "end_frame": 276,
+      "words": [
+        {
+          "word": "hits",
+          "start_ms": 8260,
+          "end_ms": 8480,
+          "start_frame": 248,
+          "end_frame": 254
+        },
+        {
+          "word": "a",
+          "start_ms": 8480,
+          "end_ms": 8580,
+          "start_frame": 254,
+          "end_frame": 257
+        },
+        {
+          "word": "1,",
+          "start_ms": 8580,
+          "end_ms": 8800,
+          "start_frame": 257,
+          "end_frame": 264
+        },
+        {
+          "word": "count",
+          "start_ms": 9080,
+          "end_ms": 9200,
+          "start_frame": 272,
+          "end_frame": 276
+        }
+      ]
+    },
+    {
+      "id": "sub_011",
+      "text": "1 island, then trigger",
+      "start_frame": 276,
+      "end_frame": 313,
+      "words": [
+        {
+          "word": "1",
+          "start_ms": 9200,
+          "end_ms": 9420,
+          "start_frame": 276,
+          "end_frame": 283
+        },
+        {
+          "word": "island,",
+          "start_ms": 9420,
+          "end_ms": 9780,
+          "start_frame": 283,
+          "end_frame": 293
+        },
+        {
+          "word": "then",
+          "start_ms": 9980,
+          "end_ms": 10140,
+          "start_frame": 299,
+          "end_frame": 304
+        },
+        {
+          "word": "trigger",
+          "start_ms": 10140,
+          "end_ms": 10440,
+          "start_frame": 304,
+          "end_frame": 313
+        }
+      ]
+    },
+    {
+      "id": "sub_012",
+      "text": "a flood wave. A",
+      "start_frame": 313,
+      "end_frame": 338,
+      "words": [
+        {
+          "word": "a",
+          "start_ms": 10440,
+          "end_ms": 10620,
+          "start_frame": 313,
+          "end_frame": 319
+        },
+        {
+          "word": "flood",
+          "start_ms": 10620,
+          "end_ms": 10780,
+          "start_frame": 319,
+          "end_frame": 323
+        },
+        {
+          "word": "wave.",
+          "start_ms": 10780,
+          "end_ms": 11000,
+          "start_frame": 323,
+          "end_frame": 330
+        },
+        {
+          "word": "A",
+          "start_ms": 11220,
+          "end_ms": 11280,
+          "start_frame": 337,
+          "end_frame": 338
+        }
+      ]
+    },
+    {
+      "id": "sub_013",
+      "text": "quick depth first search",
+      "start_frame": 338,
+      "end_frame": 370,
+      "words": [
+        {
+          "word": "quick",
+          "start_ms": 11280,
+          "end_ms": 11420,
+          "start_frame": 338,
+          "end_frame": 343
+        },
+        {
+          "word": "depth",
+          "start_ms": 11420,
+          "end_ms": 11660,
+          "start_frame": 343,
+          "end_frame": 350
+        },
+        {
+          "word": "first",
+          "start_ms": 11660,
+          "end_ms": 12020,
+          "start_frame": 350,
+          "end_frame": 361
+        },
+        {
+          "word": "search",
+          "start_ms": 12020,
+          "end_ms": 12320,
+          "start_frame": 361,
+          "end_frame": 370
+        }
+      ]
+    },
+    {
+      "id": "sub_014",
+      "text": "turns all connected land",
+      "start_frame": 370,
+      "end_frame": 400,
+      "words": [
+        {
+          "word": "turns",
+          "start_ms": 12320,
+          "end_ms": 12580,
+          "start_frame": 370,
+          "end_frame": 377
+        },
+        {
+          "word": "all",
+          "start_ms": 12580,
+          "end_ms": 12820,
+          "start_frame": 377,
+          "end_frame": 385
+        },
+        {
+          "word": "connected",
+          "start_ms": 12820,
+          "end_ms": 13100,
+          "start_frame": 385,
+          "end_frame": 393
+        },
+        {
+          "word": "land",
+          "start_ms": 13100,
+          "end_ms": 13340,
+          "start_frame": 393,
+          "end_frame": 400
+        }
+      ]
+    },
+    {
+      "id": "sub_015",
+      "text": "tiles into water instantly.",
+      "start_frame": 400,
+      "end_frame": 440,
+      "words": [
+        {
+          "word": "tiles",
+          "start_ms": 13340,
+          "end_ms": 13600,
+          "start_frame": 400,
+          "end_frame": 408
+        },
+        {
+          "word": "into",
+          "start_ms": 13600,
+          "end_ms": 13820,
+          "start_frame": 408,
+          "end_frame": 415
+        },
+        {
+          "word": "water",
+          "start_ms": 13820,
+          "end_ms": 14120,
+          "start_frame": 415,
+          "end_frame": 424
+        },
+        {
+          "word": "instantly.",
+          "start_ms": 14120,
+          "end_ms": 14680,
+          "start_frame": 424,
+          "end_frame": 440
+        }
+      ]
+    },
+    {
+      "id": "sub_016",
+      "text": "So the island vanishes,",
+      "start_frame": 446,
+      "end_frame": 479,
+      "words": [
+        {
+          "word": "So",
+          "start_ms": 14860,
+          "end_ms": 15020,
+          "start_frame": 446,
+          "end_frame": 451
+        },
+        {
+          "word": "the",
+          "start_ms": 15020,
+          "end_ms": 15180,
+          "start_frame": 451,
+          "end_frame": 455
+        },
+        {
+          "word": "island",
+          "start_ms": 15180,
+          "end_ms": 15460,
+          "start_frame": 455,
+          "end_frame": 464
+        },
+        {
+          "word": "vanishes,",
+          "start_ms": 15460,
+          "end_ms": 15980,
+          "start_frame": 464,
+          "end_frame": 479
+        }
+      ]
+    },
+    {
+      "id": "sub_017",
+      "text": "and we never double",
+      "start_frame": 489,
+      "end_frame": 514,
+      "words": [
+        {
+          "word": "and",
+          "start_ms": 16300,
+          "end_ms": 16480,
+          "start_frame": 489,
+          "end_frame": 494
+        },
+        {
+          "word": "we",
+          "start_ms": 16480,
+          "end_ms": 16600,
+          "start_frame": 494,
+          "end_frame": 498
+        },
+        {
+          "word": "never",
+          "start_ms": 16600,
+          "end_ms": 16840,
+          "start_frame": 498,
+          "end_frame": 505
+        },
+        {
+          "word": "double",
+          "start_ms": 16840,
+          "end_ms": 17120,
+          "start_frame": 505,
+          "end_frame": 514
+        }
+      ]
+    },
+    {
+      "id": "sub_018",
+      "text": "count it. That's how",
+      "start_frame": 514,
+      "end_frame": 538,
+      "words": [
+        {
+          "word": "count",
+          "start_ms": 17120,
+          "end_ms": 17400,
+          "start_frame": 514,
+          "end_frame": 522
+        },
+        {
+          "word": "it.",
+          "start_ms": 17400,
+          "end_ms": 17600,
+          "start_frame": 522,
+          "end_frame": 528
+        },
+        {
+          "word": "That's",
+          "start_ms": 17680,
+          "end_ms": 17900,
+          "start_frame": 530,
+          "end_frame": 537
+        },
+        {
+          "word": "how",
+          "start_ms": 17900,
+          "end_ms": 17920,
+          "start_frame": 537,
+          "end_frame": 538
+        }
+      ]
+    },
+    {
+      "id": "sub_019",
+      "text": "Leaco 200 solves the",
+      "start_frame": 538,
+      "end_frame": 571,
+      "words": [
+        {
+          "word": "Leaco",
+          "start_ms": 17920,
+          "end_ms": 18140,
+          "start_frame": 538,
+          "end_frame": 544
+        },
+        {
+          "word": "200",
+          "start_ms": 18140,
+          "end_ms": 18380,
+          "start_frame": 544,
+          "end_frame": 551
+        },
+        {
+          "word": "solves",
+          "start_ms": 18380,
+          "end_ms": 18800,
+          "start_frame": 551,
+          "end_frame": 564
+        },
+        {
+          "word": "the",
+          "start_ms": 18800,
+          "end_ms": 19020,
+          "start_frame": 564,
+          "end_frame": 571
+        }
+      ]
+    },
+    {
+      "id": "sub_020",
+      "text": "entire matrix in pure",
+      "start_frame": 571,
+      "end_frame": 602,
+      "words": [
+        {
+          "word": "entire",
+          "start_ms": 19020,
+          "end_ms": 19260,
+          "start_frame": 571,
+          "end_frame": 578
+        },
+        {
+          "word": "matrix",
+          "start_ms": 19260,
+          "end_ms": 19600,
+          "start_frame": 578,
+          "end_frame": 588
+        },
+        {
+          "word": "in",
+          "start_ms": 19600,
+          "end_ms": 19800,
+          "start_frame": 588,
+          "end_frame": 594
+        },
+        {
+          "word": "pure",
+          "start_ms": 19800,
+          "end_ms": 20060,
+          "start_frame": 594,
+          "end_frame": 602
+        }
+      ]
+    },
+    {
+      "id": "sub_021",
+      "text": "Linear O of M",
+      "start_frame": 602,
+      "end_frame": 632,
+      "words": [
+        {
+          "word": "Linear",
+          "start_ms": 20060,
+          "end_ms": 20500,
+          "start_frame": 602,
+          "end_frame": 615
+        },
+        {
+          "word": "O",
+          "start_ms": 20500,
+          "end_ms": 20680,
+          "start_frame": 615,
+          "end_frame": 620
+        },
+        {
+          "word": "of",
+          "start_ms": 20680,
+          "end_ms": 20920,
+          "start_frame": 620,
+          "end_frame": 628
+        },
+        {
+          "word": "M",
+          "start_ms": 20920,
+          "end_ms": 21060,
+          "start_frame": 628,
+          "end_frame": 632
+        }
+      ]
+    },
+    {
+      "id": "sub_022",
+      "text": "times N time.",
+      "start_frame": 632,
+      "end_frame": 656,
+      "words": [
+        {
+          "word": "times",
+          "start_ms": 21060,
+          "end_ms": 21480,
+          "start_frame": 632,
+          "end_frame": 644
+        },
+        {
+          "word": "N",
+          "start_ms": 21480,
+          "end_ms": 21660,
+          "start_frame": 644,
+          "end_frame": 650
+        },
+        {
+          "word": "time.",
+          "start_ms": 21660,
+          "end_ms": 21880,
+          "start_frame": 650,
+          "end_frame": 656
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "word": "You're",
+      "start_ms": 0,
+      "end_ms": 180,
+      "start_frame": 0,
+      "end_frame": 5
+    },
+    {
+      "word": "given",
+      "start_ms": 180,
+      "end_ms": 380,
+      "start_frame": 5,
+      "end_frame": 11
+    },
+    {
+      "word": "a",
+      "start_ms": 380,
+      "end_ms": 540,
+      "start_frame": 11,
+      "end_frame": 16
+    },
+    {
+      "word": "2D",
+      "start_ms": 540,
+      "end_ms": 800,
+      "start_frame": 16,
+      "end_frame": 24
+    },
+    {
+      "word": "grid",
+      "start_ms": 800,
+      "end_ms": 980,
+      "start_frame": 24,
+      "end_frame": 29
+    },
+    {
+      "word": "of",
+      "start_ms": 980,
+      "end_ms": 1220,
+      "start_frame": 29,
+      "end_frame": 37
+    },
+    {
+      "word": "1s",
+      "start_ms": 1220,
+      "end_ms": 1420,
+      "start_frame": 37,
+      "end_frame": 43
+    },
+    {
+      "word": "and",
+      "start_ms": 1420,
+      "end_ms": 1500,
+      "start_frame": 43,
+      "end_frame": 45
+    },
+    {
+      "word": "0s.",
+      "start_ms": 1500,
+      "end_ms": 1920,
+      "start_frame": 45,
+      "end_frame": 58
+    },
+    {
+      "word": "How",
+      "start_ms": 2180,
+      "end_ms": 2280,
+      "start_frame": 65,
+      "end_frame": 68
+    },
+    {
+      "word": "do",
+      "start_ms": 2280,
+      "end_ms": 2340,
+      "start_frame": 68,
+      "end_frame": 70
+    },
+    {
+      "word": "you",
+      "start_ms": 2340,
+      "end_ms": 2440,
+      "start_frame": 70,
+      "end_frame": 73
+    },
+    {
+      "word": "count",
+      "start_ms": 2440,
+      "end_ms": 2560,
+      "start_frame": 73,
+      "end_frame": 77
+    },
+    {
+      "word": "every",
+      "start_ms": 2560,
+      "end_ms": 2900,
+      "start_frame": 77,
+      "end_frame": 87
+    },
+    {
+      "word": "isolated",
+      "start_ms": 2900,
+      "end_ms": 3320,
+      "start_frame": 87,
+      "end_frame": 100
+    },
+    {
+      "word": "island",
+      "start_ms": 3320,
+      "end_ms": 3620,
+      "start_frame": 100,
+      "end_frame": 109
+    },
+    {
+      "word": "in",
+      "start_ms": 3620,
+      "end_ms": 3820,
+      "start_frame": 109,
+      "end_frame": 115
+    },
+    {
+      "word": "just",
+      "start_ms": 3820,
+      "end_ms": 3940,
+      "start_frame": 115,
+      "end_frame": 118
+    },
+    {
+      "word": "one",
+      "start_ms": 3940,
+      "end_ms": 4220,
+      "start_frame": 118,
+      "end_frame": 127
+    },
+    {
+      "word": "pass?",
+      "start_ms": 4220,
+      "end_ms": 4500,
+      "start_frame": 127,
+      "end_frame": 135
+    },
+    {
+      "word": "Won't",
+      "start_ms": 4760,
+      "end_ms": 4980,
+      "start_frame": 143,
+      "end_frame": 149
+    },
+    {
+      "word": "we",
+      "start_ms": 4980,
+      "end_ms": 5060,
+      "start_frame": 149,
+      "end_frame": 152
+    },
+    {
+      "word": "count",
+      "start_ms": 5060,
+      "end_ms": 5240,
+      "start_frame": 152,
+      "end_frame": 157
+    },
+    {
+      "word": "the",
+      "start_ms": 5240,
+      "end_ms": 5420,
+      "start_frame": 157,
+      "end_frame": 163
+    },
+    {
+      "word": "same",
+      "start_ms": 5420,
+      "end_ms": 5600,
+      "start_frame": 163,
+      "end_frame": 168
+    },
+    {
+      "word": "island",
+      "start_ms": 5600,
+      "end_ms": 5900,
+      "start_frame": 168,
+      "end_frame": 177
+    },
+    {
+      "word": "10",
+      "start_ms": 5900,
+      "end_ms": 6200,
+      "start_frame": 177,
+      "end_frame": 186
+    },
+    {
+      "word": "times?",
+      "start_ms": 6200,
+      "end_ms": 6460,
+      "start_frame": 186,
+      "end_frame": 194
+    },
+    {
+      "word": "Not",
+      "start_ms": 6780,
+      "end_ms": 6920,
+      "start_frame": 203,
+      "end_frame": 208
+    },
+    {
+      "word": "if",
+      "start_ms": 6920,
+      "end_ms": 7060,
+      "start_frame": 208,
+      "end_frame": 212
+    },
+    {
+      "word": "you",
+      "start_ms": 7060,
+      "end_ms": 7180,
+      "start_frame": 212,
+      "end_frame": 215
+    },
+    {
+      "word": "sink",
+      "start_ms": 7180,
+      "end_ms": 7420,
+      "start_frame": 215,
+      "end_frame": 223
+    },
+    {
+      "word": "it,",
+      "start_ms": 7420,
+      "end_ms": 7580,
+      "start_frame": 223,
+      "end_frame": 227
+    },
+    {
+      "word": "when",
+      "start_ms": 7760,
+      "end_ms": 7880,
+      "start_frame": 233,
+      "end_frame": 236
+    },
+    {
+      "word": "your",
+      "start_ms": 7880,
+      "end_ms": 8000,
+      "start_frame": 236,
+      "end_frame": 240
+    },
+    {
+      "word": "scanner",
+      "start_ms": 8000,
+      "end_ms": 8260,
+      "start_frame": 240,
+      "end_frame": 248
+    },
+    {
+      "word": "hits",
+      "start_ms": 8260,
+      "end_ms": 8480,
+      "start_frame": 248,
+      "end_frame": 254
+    },
+    {
+      "word": "a",
+      "start_ms": 8480,
+      "end_ms": 8580,
+      "start_frame": 254,
+      "end_frame": 257
+    },
+    {
+      "word": "1,",
+      "start_ms": 8580,
+      "end_ms": 8800,
+      "start_frame": 257,
+      "end_frame": 264
+    },
+    {
+      "word": "count",
+      "start_ms": 9080,
+      "end_ms": 9200,
+      "start_frame": 272,
+      "end_frame": 276
+    },
+    {
+      "word": "1",
+      "start_ms": 9200,
+      "end_ms": 9420,
+      "start_frame": 276,
+      "end_frame": 283
+    },
+    {
+      "word": "island,",
+      "start_ms": 9420,
+      "end_ms": 9780,
+      "start_frame": 283,
+      "end_frame": 293
+    },
+    {
+      "word": "then",
+      "start_ms": 9980,
+      "end_ms": 10140,
+      "start_frame": 299,
+      "end_frame": 304
+    },
+    {
+      "word": "trigger",
+      "start_ms": 10140,
+      "end_ms": 10440,
+      "start_frame": 304,
+      "end_frame": 313
+    },
+    {
+      "word": "a",
+      "start_ms": 10440,
+      "end_ms": 10620,
+      "start_frame": 313,
+      "end_frame": 319
+    },
+    {
+      "word": "flood",
+      "start_ms": 10620,
+      "end_ms": 10780,
+      "start_frame": 319,
+      "end_frame": 323
+    },
+    {
+      "word": "wave.",
+      "start_ms": 10780,
+      "end_ms": 11000,
+      "start_frame": 323,
+      "end_frame": 330
+    },
+    {
+      "word": "A",
+      "start_ms": 11220,
+      "end_ms": 11280,
+      "start_frame": 337,
+      "end_frame": 338
+    },
+    {
+      "word": "quick",
+      "start_ms": 11280,
+      "end_ms": 11420,
+      "start_frame": 338,
+      "end_frame": 343
+    },
+    {
+      "word": "depth",
+      "start_ms": 11420,
+      "end_ms": 11660,
+      "start_frame": 343,
+      "end_frame": 350
+    },
+    {
+      "word": "first",
+      "start_ms": 11660,
+      "end_ms": 12020,
+      "start_frame": 350,
+      "end_frame": 361
+    },
+    {
+      "word": "search",
+      "start_ms": 12020,
+      "end_ms": 12320,
+      "start_frame": 361,
+      "end_frame": 370
+    },
+    {
+      "word": "turns",
+      "start_ms": 12320,
+      "end_ms": 12580,
+      "start_frame": 370,
+      "end_frame": 377
+    },
+    {
+      "word": "all",
+      "start_ms": 12580,
+      "end_ms": 12820,
+      "start_frame": 377,
+      "end_frame": 385
+    },
+    {
+      "word": "connected",
+      "start_ms": 12820,
+      "end_ms": 13100,
+      "start_frame": 385,
+      "end_frame": 393
+    },
+    {
+      "word": "land",
+      "start_ms": 13100,
+      "end_ms": 13340,
+      "start_frame": 393,
+      "end_frame": 400
+    },
+    {
+      "word": "tiles",
+      "start_ms": 13340,
+      "end_ms": 13600,
+      "start_frame": 400,
+      "end_frame": 408
+    },
+    {
+      "word": "into",
+      "start_ms": 13600,
+      "end_ms": 13820,
+      "start_frame": 408,
+      "end_frame": 415
+    },
+    {
+      "word": "water",
+      "start_ms": 13820,
+      "end_ms": 14120,
+      "start_frame": 415,
+      "end_frame": 424
+    },
+    {
+      "word": "instantly.",
+      "start_ms": 14120,
+      "end_ms": 14680,
+      "start_frame": 424,
+      "end_frame": 440
+    },
+    {
+      "word": "So",
+      "start_ms": 14860,
+      "end_ms": 15020,
+      "start_frame": 446,
+      "end_frame": 451
+    },
+    {
+      "word": "the",
+      "start_ms": 15020,
+      "end_ms": 15180,
+      "start_frame": 451,
+      "end_frame": 455
+    },
+    {
+      "word": "island",
+      "start_ms": 15180,
+      "end_ms": 15460,
+      "start_frame": 455,
+      "end_frame": 464
+    },
+    {
+      "word": "vanishes,",
+      "start_ms": 15460,
+      "end_ms": 15980,
+      "start_frame": 464,
+      "end_frame": 479
+    },
+    {
+      "word": "and",
+      "start_ms": 16300,
+      "end_ms": 16480,
+      "start_frame": 489,
+      "end_frame": 494
+    },
+    {
+      "word": "we",
+      "start_ms": 16480,
+      "end_ms": 16600,
+      "start_frame": 494,
+      "end_frame": 498
+    },
+    {
+      "word": "never",
+      "start_ms": 16600,
+      "end_ms": 16840,
+      "start_frame": 498,
+      "end_frame": 505
+    },
+    {
+      "word": "double",
+      "start_ms": 16840,
+      "end_ms": 17120,
+      "start_frame": 505,
+      "end_frame": 514
+    },
+    {
+      "word": "count",
+      "start_ms": 17120,
+      "end_ms": 17400,
+      "start_frame": 514,
+      "end_frame": 522
+    },
+    {
+      "word": "it.",
+      "start_ms": 17400,
+      "end_ms": 17600,
+      "start_frame": 522,
+      "end_frame": 528
+    },
+    {
+      "word": "That's",
+      "start_ms": 17680,
+      "end_ms": 17900,
+      "start_frame": 530,
+      "end_frame": 537
+    },
+    {
+      "word": "how",
+      "start_ms": 17900,
+      "end_ms": 17920,
+      "start_frame": 537,
+      "end_frame": 538
+    },
+    {
+      "word": "Leaco",
+      "start_ms": 17920,
+      "end_ms": 18140,
+      "start_frame": 538,
+      "end_frame": 544
+    },
+    {
+      "word": "200",
+      "start_ms": 18140,
+      "end_ms": 18380,
+      "start_frame": 544,
+      "end_frame": 551
+    },
+    {
+      "word": "solves",
+      "start_ms": 18380,
+      "end_ms": 18800,
+      "start_frame": 551,
+      "end_frame": 564
+    },
+    {
+      "word": "the",
+      "start_ms": 18800,
+      "end_ms": 19020,
+      "start_frame": 564,
+      "end_frame": 571
+    },
+    {
+      "word": "entire",
+      "start_ms": 19020,
+      "end_ms": 19260,
+      "start_frame": 571,
+      "end_frame": 578
+    },
+    {
+      "word": "matrix",
+      "start_ms": 19260,
+      "end_ms": 19600,
+      "start_frame": 578,
+      "end_frame": 588
+    },
+    {
+      "word": "in",
+      "start_ms": 19600,
+      "end_ms": 19800,
+      "start_frame": 588,
+      "end_frame": 594
+    },
+    {
+      "word": "pure",
+      "start_ms": 19800,
+      "end_ms": 20060,
+      "start_frame": 594,
+      "end_frame": 602
+    },
+    {
+      "word": "Linear",
+      "start_ms": 20060,
+      "end_ms": 20500,
+      "start_frame": 602,
+      "end_frame": 615
+    },
+    {
+      "word": "O",
+      "start_ms": 20500,
+      "end_ms": 20680,
+      "start_frame": 615,
+      "end_frame": 620
+    },
+    {
+      "word": "of",
+      "start_ms": 20680,
+      "end_ms": 20920,
+      "start_frame": 620,
+      "end_frame": 628
+    },
+    {
+      "word": "M",
+      "start_ms": 20920,
+      "end_ms": 21060,
+      "start_frame": 628,
+      "end_frame": 632
+    },
+    {
+      "word": "times",
+      "start_ms": 21060,
+      "end_ms": 21480,
+      "start_frame": 632,
+      "end_frame": 644
+    },
+    {
+      "word": "N",
+      "start_ms": 21480,
+      "end_ms": 21660,
+      "start_frame": 644,
+      "end_frame": 650
+    },
+    {
+      "word": "time.",
+      "start_ms": 21660,
+      "end_ms": 21880,
+      "start_frame": 650,
+      "end_frame": 656
+    }
+  ]
+}

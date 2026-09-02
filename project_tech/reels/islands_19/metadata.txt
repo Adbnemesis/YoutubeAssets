@@ -1,0 +1,31 @@
+INSTAGRAM DESCRIPTION:
+How to count 100 islands in a 2D matrix in linear time by sinking each island with a DFS flood fill.
+.
+.
+.
+.
+.
+#leetcode #dsa #programming #coding #nemiexplains
+
+YOUTUBE SHORTS TITLE:
+LeetCode 200: Number of Islands Solved in O(M×N)! 🏝️⚡ (Sink the Island) #shorts
+
+YOUTUBE SHORTS DESCRIPTION:
+How to count 100 islands in a 2D matrix in linear time by sinking each island with a DFS flood fill.
+.
+.
+.
+.
+.
+#leetcode #dsa #programming #coding #nemiexplains
+
+YOUTUBE TAGS:
+leetcode 200, number of islands, dfs flood fill, matrix traversal, leetcode interview, data structures, algorithms, coding interview, nemi explains, shorts
+
+TECHNICAL SPECS:
+- Composition: NemiExplainsIslands
+- Duration: 22.08s (662 frames @ 30fps)
+- Aspect Ratio: 9:16 (4K 2160x3840)
+
+PUBLISHED LINKS:
+- Status: Pending publication
