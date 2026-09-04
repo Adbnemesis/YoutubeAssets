@@ -55,10 +55,30 @@ def get_youtube_service():
                 )
             print("\n🔑 Authorizing YouTube Uploader with Google OAuth...", flush=True)
             print("Please approve upload permissions in your browser...\n", flush=True)
+            
+            import webbrowser
+            import subprocess
+            class MacBrowserController:
+                def open(self, url, new=0, autoraise=True):
+                    print(f"\n👉 OPENING AUTH URL IN BROWSER:\n{url}\n", flush=True)
+                    try:
+                        subprocess.Popen(["open", url])
+                    except Exception as e:
+                        print(f"Error launching browser: {e}", flush=True)
+                    return True
+            try:
+                webbrowser.register("mac_open", MacBrowserController, preferred=True)
+            except Exception:
+                pass
+
             flow = InstalledAppFlow.from_client_secrets_file(
                 str(CLIENT_SECRETS_FILE), SCOPES
             )
-            creds = flow.run_local_server(port=8080, open_browser=True)
+            creds = flow.run_local_server(
+                port=8080,
+                open_browser=True,
+                authorization_prompt_message="👉 Authorization URL:\n{url}\n"
+            )
 
         with open(TOKEN_FILE, "w") as token:
             token.write(creds.to_json())
@@ -90,7 +110,7 @@ def upload_video(
         if "#Shorts" not in title and "#shorts" not in title:
             title = f"{title} #Shorts"
         if "#Shorts" not in description and "#shorts" not in description:
-            description = f"{description}\n\n#Shorts #Gaming"
+            description = f"{description}\n\n#Shorts #Tech"
 
     youtube = get_youtube_service()
 
@@ -99,7 +119,7 @@ def upload_video(
         "snippet": {
             "title": title,
             "description": description,
-            "tags": tags or ["Gaming", "Brawl Stars"],
+            "tags": tags or ["tech", "coding", "nemiexplains"],
             "categoryId": category_id
         },
         "status": {
@@ -166,7 +186,7 @@ if __name__ == "__main__":
     parser.add_argument("--video", required=True, help="Path to video file (.mp4)")
     parser.add_argument("--title", required=True, help="Video title")
     parser.add_argument("--description", default="", help="Video description")
-    parser.add_argument("--tags", nargs="*", default=["brawlstars", "gaming"], help="List of tags")
+    parser.add_argument("--tags", nargs="*", default=["tech", "coding"], help="List of tags")
     parser.add_argument("--privacy", default="unlisted", choices=["public", "unlisted", "private"], help="Privacy status")
     parser.add_argument("--schedule", default=None, help="Schedule release (ISO 8601, e.g. 2026-08-20T12:00:00Z)")
     parser.add_argument("--category", default="28", help="YouTube Category ID (28 = Science & Tech, 27 = Education, 20 = Gaming)")
